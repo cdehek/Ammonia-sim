@@ -1,12 +1,16 @@
-# Ammonia Lab v0.4.5 · stage 1
+# Ammonia Lab v0.4.5 · stage 2
 
 Open `index.html` in Chrome, Edge, Firefox or Safari. The file is self-contained and works offline. HTML previews can disable JavaScript; the startup notice remains visible when controls cannot initialize.
 
 Display units default to **psig and Fahrenheit** on startup and Reset. Room temperatures and thermostat deadband follow the selected temperature units. SI units remain explicitly labeled in numerical reference data and CSV exports.
 
+## v0.4.5 stage 2 · refrigerant storage
+
+Live plant includes a **Refrigerant storage** laboratory, initialized from the active profile. Explore sealed heating/cooling or room/ambient exchange, with optional manual pump-down. Stored mass and internal energy determine pressure and phase; off-state pressures persist. Mass and combined room/refrigerant energy checks, adaptive integration, SI CSV and explicit fault limits are available. Feed/drain remain closed until stage 3 supplies valve flow and control. See [STORAGE_MODEL.md](STORAGE_MODEL.md) for equations, tested accuracy and scope. The integrated v0.4.5 release remains on its development branch.
+
 ## v0.4.5 stage 1 · profiles and initialization
 
-This development stage adds version-2 profiles, migration of version-1 profiles, and optional starting inventory by liquid volume fills or total modeled charge. A preview calculates mass, receiver fill and saturation temperatures and rejects infeasible charge. Defaults are illustrative assumptions. Current live physics is still quasi-steady; stage 2 will implement refrigerant storage evolution, followed by valve/control integration and full validation. See [INVENTORY_INITIALIZATION.md](INVENTORY_INITIALIZATION.md). The integrated v0.4.5 release is planned after all stages are complete.
+This development stage adds version-2 profiles, migration of version-1 profiles, and optional starting inventory by liquid volume fills or total modeled charge. A preview calculates mass, receiver fill and saturation temperatures and rejects infeasible charge. Defaults are illustrative assumptions. The original Live plant remains quasi-steady; the separate stage-2 laboratory uses these settings for storage evolution. Valve/control integration and full validation remain later stages. See [INVENTORY_INITIALIZATION.md](INVENTORY_INITIALIZATION.md). The integrated v0.4.5 release is planned after all stages are complete.
 
 ## v0.4.1 fault handling
 

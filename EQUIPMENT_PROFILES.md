@@ -1,4 +1,4 @@
-# Equipment profiles · v0.4.5 stage 1
+# Equipment profiles · v0.4.5 stage 2
 
 The Live plant has an immutable built-in **Default** and up to 20 custom profiles. Profiles describe equipment, while room temperatures, ambient conditions, heat gain, thermostat/control settings, availability and playback speed remain operating settings. The reference operating-point calculator and its existing scenario format remain separate.
 
@@ -18,7 +18,7 @@ Saving changes to the active profile does not change the active equipment snapsh
 - Per-compressor swept displacement in m³/h, evaporator/condenser UA in kW/K, and pressure/discharge-temperature operating limits.
 - Built-in example efficiency curves, or fixed volumetric, isentropic and motor efficiency assumptions in percent. Fixed assumptions affect compressor flow, work and electrical input; they do not constitute a manufacturer performance map.
 - Name, description, source category/reference, immutable ID, revision, and creation/update timestamps.
-- Receiver, evaporator and condenser refrigerant volumes in m³, with optional saturated inventory initialization by liquid volume fills or total modeled charge. The preview uses real-fluid densities, but these settings do not affect current live physics. Storage evolution and valve dynamics are later stages.
+- Receiver, evaporator and condenser refrigerant volumes in m³, with optional saturated inventory initialization by liquid volume fills or total modeled charge. The preview uses real-fluid densities, but these settings do not affect current live physics. The separate stage-2 storage laboratory uses these settings; valve dynamics remain a later stage.
 
 Data categories distinguish examples, user estimates, and user-entered manufacturer values. Manufacturer entries require a reference, but neither that label nor successful input validation establishes measured performance accuracy or an independently validated operating envelope. No manufacturer curves are downloaded or fitted in this release. Unsupported arrangements (including flooded Live plant profiles), performance-map types, schema versions, types and out-of-range values are rejected. The separate reference calculator still supports its ideal flooded mode.
 
@@ -50,4 +50,4 @@ The three isolated, fixed refrigerant volumes exclude connected piping, compress
 
 Version-1 profiles are accepted and normalized into version 2 without changing equipment, ID, revision or dates. `futureVolumes` becomes `inventory.volumes`; initialization becomes null, because charge and pressures cannot be inferred from old data. No missing volumes are replaced with zero or Default guesses. Migration occurs in memory on load; saving/importing/applying persists a version-2 library under the existing storage key. No old run is restored. Export a backup before using older app versions: version-2 exports/libraries require this stage or newer, while version-1 exports remain importable. Invalid records continue to be skipped individually.
 
-Profile exports, duplication, revisions, reload and active-profile CSV snapshots include the new initialization specification. Saving a new revision remains non-disruptive. Neither `inventory` nor initialization-derived mass/energy is passed into the current live engine.
+Profile exports, duplication, revisions, reload and active-profile CSV snapshots include the new initialization specification. Saving a new revision remains non-disruptive. Neither `inventory` nor initialization-derived mass/energy is passed into the original quasi-steady live engine. The stage-2 storage laboratory initializes a separate conserved inventory from the active snapshot and requires a ready initialization.

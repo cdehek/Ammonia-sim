@@ -3,7 +3,7 @@ const {chromium}=require('playwright'),{launchOptions}=require('./browser-helper
 (async()=>{
  const browser=await chromium.launch(launchOptions);
  try{
-  const legacy={...P.copy(P.DEFAULT),schemaVersion:1,id:'legacy-plant',name:'Legacy plant',futureVolumes:{receiver:.5,evaporator:null,condenser:.12}};delete legacy.inventory;
+  const legacy={...P.copy(P.DEFAULT),schemaVersion:1,revision:1,id:'legacy-plant',name:'Legacy plant',futureVolumes:{receiver:.5,evaporator:null,condenser:.12}};delete legacy.inventory;
   const page=await browser.newPage({acceptDownloads:true}),errors=[];page.on('pageerror',e=>errors.push(e.message));
   await page.addInitScript(old=>{if(!localStorage.getItem('ammonia-lab-equipment-v1'))localStorage.setItem('ammonia-lab-equipment-v1',JSON.stringify({schemaVersion:1,activeId:old.id,profiles:[old]}));},legacy);
   await page.goto(process.env.TEST_URL);await page.locator('#tab-live').click();
@@ -14,7 +14,7 @@ const {chromium}=require('playwright'),{launchOptions}=require('./browser-helper
   await page.locator('#profile-init-mode').selectOption('levels');await page.locator('#profile-save').click();assert.match(await page.locator('#profile-error').textContent(),/all three/);
   await page.locator('#profile-volume-evaporator').fill('.08');await page.locator('#temperature-unit').selectOption('C');await page.locator('#pressure-unit').selectOption('bara');
   assert.equal(await page.locator('#profile-init-suctionPressure').inputValue(),'2.5');assert.equal(await page.locator('#profile-init-dischargePressure').inputValue(),'12');
-  assert.match(await page.locator('#profile-inventory-preview').textContent(),/Calculated charge.*kg.*stage|Calculated charge.*kg.*Preview only/);
+  assert.match(await page.locator('#profile-inventory-preview').textContent(),/Calculated charge.*kg.*Equilibrium preview/);
   await page.locator('#profile-save').click();assert(await page.locator('#profile-form').isHidden());
   assert.match(await page.locator('#profile-active-label').textContent(),/revision 1/);await page.locator('#live-step').click();const liveBefore=await page.locator('#live-metrics').textContent();
   await page.locator('#profile-edit').click();await page.locator('#profile-init-mode').selectOption('charge');assert(await page.locator('#profile-fill-receiver-control').isHidden());assert(await page.locator('#profile-charge-control').isVisible());
