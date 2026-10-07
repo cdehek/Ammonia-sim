@@ -1,0 +1,55 @@
+{
+  "version": "0.2.0",
+  "engine": "CoolProp 7.2.0 HEOS Ammonia",
+  "counts": {
+    "singlePhaseStates": 560,
+    "saturationStates": 160,
+    "cycles": 159,
+    "outOfDomainCyclesRejected": 1,
+    "manufacturerCorrelationPoints": 17
+  },
+  "maxErrors": {
+    "temperatureK": 0.00045129006931432514,
+    "enthalpyPercent": 0.001116492100835145,
+    "entropyPercent": 0.0012717008088045207,
+    "densityPercent": 0.0046145106158969424,
+    "dischargeK": 0.007023464887879527,
+    "cycleCoolingPercent": 0.0011031956792550265,
+    "cycleElectricalPercent": 0.004658465548437922,
+    "cycleCOPPercent": 0.004030982914268131,
+    "energyResidualKW": 1.2789769243681803e-13,
+    "manufacturerFitK": 0.13968869912681647
+  },
+  "manufacturerSource": "https://assets.danfoss.com/documents/latest/493262/AM187286420404en-000702.pdf",
+  "notes": [
+    "Interpolation errors versus direct CoolProp at seeded unseen states; not total physical uncertainty.",
+    "Manufacturer comparison is agreement with a controller-fit correlation, not independent calorimetric validation.",
+    "NIST fluid data endpoint returned HTTP 403; no claim of direct NIST table validation."
+  ],
+  "defaultResult": {
+    "Q": 112.64036904179562,
+    "COP": 3.316153969917859,
+    "electrical": 33.967171025109465,
+    "dischargeTemperature": 139.44235631418164
+  },
+  "transient": {
+    "firstSetpointMinutes": 68.87770396112231,
+    "finalTemperatureC": 0.6574589188968929
+  },
+  "browserValidation": {
+    "status": "passed",
+    "checks": [
+      "component clicks and keyboard selection",
+      "pressure and temperature unit invariance",
+      "DX/flooded and all flow modes",
+      "invalid-state clearing",
+      "pressure\u2013enthalpy chart interactions",
+      "room simulation and CSV export",
+      "scenario save/restore/compare/import and reload persistence",
+      "JSON and CSV download",
+      "390px mobile overflow checks",
+      "print action",
+      "script-disabled preview notice"
+    ]
+  }
+}
