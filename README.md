@@ -1,8 +1,12 @@
-# Ammonia Lab v0.4.1
+# Ammonia Lab v0.4.5 · stage 1
 
 Open `index.html` in Chrome, Edge, Firefox or Safari. The file is self-contained and works offline. HTML previews can disable JavaScript; the startup notice remains visible when controls cannot initialize.
 
 Display units default to **psig and Fahrenheit** on startup and Reset. Room temperatures and thermostat deadband follow the selected temperature units. SI units remain explicitly labeled in numerical reference data and CSV exports.
+
+## v0.4.5 stage 1 · profiles and initialization
+
+This development stage adds version-2 profiles, migration of version-1 profiles, and optional starting inventory by liquid volume fills or total modeled charge. A preview calculates mass, receiver fill and saturation temperatures and rejects infeasible charge. Defaults are illustrative assumptions. Current live physics is still quasi-steady; stage 2 will implement refrigerant storage evolution, followed by valve/control integration and full validation. See [INVENTORY_INITIALIZATION.md](INVENTORY_INITIALIZATION.md). The integrated v0.4.5 release is planned after all stages are complete.
 
 ## v0.4.1 fault handling
 
@@ -12,7 +16,7 @@ Live playback stops within the current numerical interval (one simulated second 
 
 The Live plant now has a read-only **Default** and custom equipment profiles. Create from Default, duplicate, edit, save, select, delete inactive profiles, and import/export profile JSON. Custom specifications can use the existing example curves or fixed efficiency assumptions. Source notes and revisions distinguish user estimates and user-entered manufacturer values from validated performance data.
 
-Profiles persist in the browser; JSON exports are the portable backup. **Use profile** applies equipment and resets an existing run while retaining operating settings. Saving an active profile alone does not alter running equipment. Optional refrigerant volumes are stored but unused. See [EQUIPMENT_PROFILES.md](EQUIPMENT_PROFILES.md) for supported systems, workflow, units, storage and schema.
+Profiles persist in the browser; JSON exports are the portable backup. **Use profile** applies equipment and resets an existing run while retaining operating settings. Saving an active profile alone does not alter running equipment. Refrigerant volumes and optional charge/fill initialization have an equilibrium starting-state preview; they do not affect current live playback. See [EQUIPMENT_PROFILES.md](EQUIPMENT_PROFILES.md) for supported systems, workflow, units, storage and schema.
 
 ## Live plant
 
