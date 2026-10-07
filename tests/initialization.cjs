@@ -2,7 +2,7 @@ const assert=require('node:assert/strict'),P=require('../equipment-profiles');
 const engine=require('../engine').createEngine(require('../properties.json'));
 const initializer=require('../inventory-initialization').createInitializer(engine,P);
 const baseline=P.copy(P.DEFAULT),a=initializer.preview(baseline);
-assert.equal(baseline.schemaVersion,2);assert.equal(P.DEFAULT.revision,2);assert(a.ready);assert(a.totalMassKg>0);
+assert.equal(baseline.schemaVersion,3);assert.equal(P.DEFAULT.revision,3);assert(a.ready);assert(a.totalMassKg>0);
 assert(Object.isFrozen(P.DEFAULT.inventory.initialization.liquidFractions));
 for(const [key,v]of Object.entries(a.vessels)){
  const state=engine.statePX(v.pressureBarAbsolute,v.vaporMassFraction);
@@ -17,7 +17,7 @@ const b=initializer.preview(charged);assert(b.ready);assert(Math.abs(b.vessels.r
 for(const charge of [a.minChargeKg-1,a.maxChargeKg+1]){charged.inventory.initialization.chargeKg=charge;assert.equal(initializer.preview(charged).status,'invalid');}
 for(const [charge,fill]of [[a.minChargeKg,0],[a.maxChargeKg,1]]){charged.inventory.initialization.chargeKg=charge;const result=initializer.preview(charged);assert(result.ready);assert(Math.abs(result.vessels.receiver.liquidVolumeFraction-fill)<1e-12);assert(result.warnings.length);}
 const old={...P.copy(baseline),schemaVersion:1,futureVolumes:{receiver:.8,evaporator:null,condenser:.2}};delete old.inventory;
-const snapshot=JSON.stringify(old),migrated=P.normalize(old);assert.equal(JSON.stringify(old),snapshot);assert.equal(migrated.schemaVersion,2);assert.deepEqual(migrated.inventory.volumes,old.futureVolumes);assert.equal(migrated.inventory.initialization,null);assert.equal(migrated.revision,old.revision);assert.equal(migrated.id,old.id);assert.equal(initializer.preview(migrated).status,'unconfigured');
+const snapshot=JSON.stringify(old),migrated=P.normalize(old);assert.equal(JSON.stringify(old),snapshot);assert.equal(migrated.schemaVersion,3);assert.deepEqual(migrated.inventory.volumes,old.futureVolumes);assert.equal(migrated.inventory.initialization,null);assert.equal(migrated.revision,old.revision);assert.equal(migrated.id,old.id);assert.equal(initializer.preview(migrated).status,'unconfigured');
 const library=P.restore({schemaVersion:1,activeId:'legacy',profiles:[{...old,id:'legacy'}]});assert.equal(library.migrated,1);assert.equal(library.activeId,'legacy');assert.deepEqual(P.restore({schemaVersion:2,activeId:'legacy',profiles:library.profiles}).profiles,library.profiles);
 const invalid=[{...baseline.inventory,volumes:{...baseline.inventory.volumes,receiver:null}},{...baseline.inventory,initialization:{...baseline.inventory.initialization,suctionPressure:8,dischargePressure:3}},{...baseline.inventory,initialization:{...baseline.inventory.initialization,chargeKg:10}},{...baseline.inventory,initialization:{...baseline.inventory.initialization,liquidFractions:{...baseline.inventory.initialization.liquidFractions,evaporator:1.1}}},{...baseline.inventory,initialization:{...baseline.inventory.initialization,suctionPressure:'2.5'}}];
 for(const inventory of invalid)assert.throws(()=>P.normalize({...baseline,inventory}));

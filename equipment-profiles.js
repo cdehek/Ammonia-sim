@@ -2,12 +2,14 @@
 (function(root){
 'use strict';
 const keys=['compressors','displacement','evapUA','condUA','highTrip','lowTrip','dischargeTrip','performanceMode','etaVol','etaIs','etaMotor'];
+const connectionBounds={feedAreaM2:[1e-9,.1],feedRecovery:[.1,1],openingExponent:[.2,5],actuatorSeconds:[.05,300],sensorSeconds:[.05,300],drainAreaM2:[1e-9,.1],drainRecovery:[.1,1],drainHeightM:[0,20],outletVolumeFraction:[.01,.5],outletUAFraction:[.001,.5],vaporAreaM2:[1e-9,.1],outletInitialSuperheatK:[0,30]};
+const exampleConnections={feedAreaM2:2e-5,feedRecovery:.8,openingExponent:1.5,actuatorSeconds:2,sensorSeconds:2,drainAreaM2:2e-5,drainRecovery:.9,drainHeightM:2,outletVolumeFraction:.15,outletUAFraction:.015,vaporAreaM2:2e-4,outletInitialSuperheatK:5};
 const storageKey='ammonia-lab-equipment-v1';
 const equipment={compressors:1,displacement:180,evapUA:12,condUA:25,highTrip:24,lowTrip:.4,dischargeTrip:170,performanceMode:'example',etaVol:75,etaIs:75,etaMotor:92};
 function object(v,label){if(!v||typeof v!=='object'||Array.isArray(v))throw Error(label+' must be an object.');}
 function string(v,label,max,required=false){if(typeof v!=='string'||v.length>max||(required&&!v.trim()))throw Error(label+' must be '+(required?'non-empty ':'')+'text, up to '+max+' characters.');return v.trim();}
 function normalize(p){
- object(p,'Profile');if(p.schema!=='ammonia-equipment-profile'||![1,2].includes(p.schemaVersion))throw Error('Unsupported equipment profile format/version.');
+ object(p,'Profile');if(p.schema!=='ammonia-equipment-profile'||![1,2,3].includes(p.schemaVersion))throw Error('Unsupported equipment profile format/version.');
  const name=string(p.name,'Profile name',80,true),description=string(p.description,'Description',2000),source=string(p.source,'Source',1000);
  if(!['example','assumption','manufacturer'].includes(p.sourceKind))throw Error('Unknown data source category.');
  if(p.sourceKind==='manufacturer'&&!source)throw Error('Provide a manufacturer document/reference. This does not establish validated performance curves.');
@@ -40,17 +42,22 @@ function normalize(p){
   else if(typeof init.chargeKg!=='number'||!Number.isFinite(init.chargeKg)||init.chargeKg<=0||init.chargeKg>1e7)throw Error('Total charge must be greater than zero and at most 10,000,000 kg.');
   initialization={mode:init.mode,chargeKg:init.chargeKg,suctionPressure:init.suctionPressure,dischargePressure:init.dischargePressure,liquidFractions};
  }
- return {schema:'ammonia-equipment-profile',schemaVersion:2,id,name,description,sourceKind:p.sourceKind,source,arrangement:p.arrangement,revision:p.revision,createdAt:p.createdAt,updatedAt:p.updatedAt,equipment:clean,inventory:{volumes,initialization}};
+ let connections=null;
+ if(p.schemaVersion===3&&p.connections!==null){
+  object(p.connections,'Valve and outlet specifications');connections={};
+  for(const [key,[low,high]]of Object.entries(connectionBounds)){const v=p.connections[key];if(typeof v!=='number'||!Number.isFinite(v)||v<low||v>high)throw Error(key+' must be between '+low+' and '+high+' in SI units.');connections[key]=v;}
+ }
+ return {schema:'ammonia-equipment-profile',schemaVersion:3,id,name,description,sourceKind:p.sourceKind,source,arrangement:p.arrangement,revision:p.revision,createdAt:p.createdAt,updatedAt:p.updatedAt,equipment:clean,inventory:{volumes,initialization},connections};
 }
-const DEFAULT=normalize({schema:'ammonia-equipment-profile',schemaVersion:2,id:'default',name:'Default',description:'Built-in example equipment. Duplicate it to create your own specifications.',sourceKind:'example',source:'Ammonia Lab example curves; see DYNAMIC_MODEL.md.',arrangement:'single-stage-dx',revision:2,createdAt:'2026-10-07T00:00:00.000Z',updatedAt:'2026-10-07T00:00:00.000Z',equipment,inventory:{volumes:{receiver:.25,evaporator:.08,condenser:.12},initialization:{mode:'levels',chargeKg:null,suctionPressure:2.5,dischargePressure:12,liquidFractions:{receiver:.3,evaporator:.1,condenser:.1}}}});
-Object.freeze(DEFAULT.equipment);Object.freeze(DEFAULT.inventory.volumes);Object.freeze(DEFAULT.inventory.initialization.liquidFractions);Object.freeze(DEFAULT.inventory.initialization);Object.freeze(DEFAULT.inventory);Object.freeze(DEFAULT);
+const DEFAULT=normalize({schema:'ammonia-equipment-profile',schemaVersion:3,id:'default',name:'Default',description:'Built-in example equipment. Duplicate it to create your own specifications.',sourceKind:'example',source:'Ammonia Lab example curves; see DYNAMIC_MODEL.md.',arrangement:'single-stage-dx',revision:3,createdAt:'2026-10-07T00:00:00.000Z',updatedAt:'2026-10-07T00:00:00.000Z',equipment,connections:exampleConnections,inventory:{volumes:{receiver:.25,evaporator:.08,condenser:.12},initialization:{mode:'levels',chargeKg:null,suctionPressure:2.5,dischargePressure:12,liquidFractions:{receiver:.3,evaporator:.1,condenser:.1}}}});
+Object.freeze(DEFAULT.connections);Object.freeze(DEFAULT.equipment);Object.freeze(DEFAULT.inventory.volumes);Object.freeze(DEFAULT.inventory.initialization.liquidFractions);Object.freeze(DEFAULT.inventory.initialization);Object.freeze(DEFAULT.inventory);Object.freeze(DEFAULT);
 const copy=p=>JSON.parse(JSON.stringify(p));
 const newId=()=> 'equipment-'+Date.now().toString(36)+'-'+Math.random().toString(36).slice(2,10);
 function duplicate(p,name){const clean=normalize(p),now=new Date().toISOString();return {...copy(clean),id:newId(),name:name||clean.name+' copy',revision:1,createdAt:now,updatedAt:now};}
 function revise(original,draft){const base=normalize(original);if(base.id==='default')throw Error('Default is read-only. Duplicate it first.');return normalize({...draft,id:base.id,revision:base.revision+1,createdAt:base.createdAt,updatedAt:new Date().toISOString()});}
 function imported(p){const clean=normalize(p);return normalize({...copy(clean),id:newId(),name:clean.id==='default'?'Default imported':clean.name});}
-function restore(raw){object(raw,'Profile library');if(![1,2].includes(raw.schemaVersion)||!Array.isArray(raw.profiles)||raw.profiles.length>20)throw Error('Invalid equipment library.');const profiles=[],seen=new Set();let rejected=0,migrated=0;for(const p of raw.profiles){try{const clean=normalize(p);if(clean.id==='default'||seen.has(clean.id))throw Error('Duplicate/reserved ID.');seen.add(clean.id);profiles.push(clean);if(p.schemaVersion===1)migrated++;}catch{rejected++;}}return {profiles,activeId:raw.activeId==='default'||seen.has(raw.activeId)?raw.activeId:'default',rejected,migrated};}
+function restore(raw){object(raw,'Profile library');if(![1,2,3].includes(raw.schemaVersion)||!Array.isArray(raw.profiles)||raw.profiles.length>20)throw Error('Invalid equipment library.');const profiles=[],seen=new Set();let rejected=0,migrated=0;for(const p of raw.profiles){try{const clean=normalize(p);if(clean.id==='default'||seen.has(clean.id))throw Error('Duplicate/reserved ID.');seen.add(clean.id);profiles.push(clean);if(p.schemaVersion<3)migrated++;}catch{rejected++;}}return {profiles,activeId:raw.activeId==='default'||seen.has(raw.activeId)?raw.activeId:'default',rejected,migrated};}
 function apply(config,profile){const p=normalize(profile);return {...config,...p.equipment};}
-const api={keys,storageKey,DEFAULT,normalize,duplicate,revise,imported,restore,apply,copy};
+const api={keys,connectionBounds,storageKey,DEFAULT,normalize,duplicate,revise,imported,restore,apply,copy};
 if(typeof module!=='undefined'&&module.exports)module.exports=api;else root.AmmoniaProfiles=api;
 })(typeof globalThis!=='undefined'?globalThis:this);

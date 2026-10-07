@@ -5,7 +5,7 @@ const {chromium}=require('playwright'),{launchOptions}=require('./browser-helper
  try{
   const page=await browser.newPage({acceptDownloads:true,viewport:{width:1280,height:950}}),errors=[];page.on('pageerror',e=>errors.push(e.message));
   await page.clock.install();await page.goto(process.env.TEST_URL);await page.locator('#tab-live').click();await page.locator('#storage-initialize').click();
-  assert(await page.locator('#storage-error').isHidden());assert.match(await page.locator('#storage-status').textContent(),/Default revision 2/);
+  assert(await page.locator('#storage-error').isHidden());assert.match(await page.locator('#storage-status').textContent(),/Default revision 3/);
   assert.match(await page.locator('#storage-states').textContent(),/psig/);assert.match(await page.locator('#storage-states').textContent(),/°F/);
   const initial=await page.locator('#storage-states').textContent();await page.locator('#storage-step').click();assert.equal(await page.locator('#storage-clock').textContent(),'10.0 s simulated');assert.equal(await page.locator('#storage-states').textContent(),initial);
   await page.locator('#storage-evaporatorHeat').fill('5');await page.locator('#storage-form button[type="submit"]').click();await page.locator('#storage-step').click();assert.notEqual(await page.locator('#storage-states').textContent(),initial);assert.match(await page.locator('#storage-balance').textContent(),/50.000 kJ/);

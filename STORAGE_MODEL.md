@@ -1,6 +1,6 @@
-# Refrigerant storage model · v0.4.5 stage 2
+# Refrigerant storage model · v0.4.5 stages 2–3
 
-The stage-2 laboratory evolves three uniform fixed-volume refrigerant inventories. It is a development checkpoint, with feed and condenser-to-receiver drain connections closed. It supports sealed heating/cooling, air/room coupling and manual compressor pump-down from evaporator to condenser. Stage 3 must supply valve/drain flow laws and outlet superheat control before claiming a circulating refrigeration-plant simulation.
+Stage 3 adds an optional fourth outlet volume and connected valve control; see [VALVE_CONTROL.md](VALVE_CONTROL.md). The following describes the retained isolated mode. The stage-2 laboratory evolves three uniform fixed-volume refrigerant inventories. It is a development checkpoint, with feed and condenser-to-receiver drain connections closed. It supports sealed heating/cooling, air/room coupling and manual compressor pump-down from evaporator to condenser. Stage 3 must supply valve/drain flow laws and outlet superheat control before claiming a circulating refrigeration-plant simulation.
 
 ## State and property recovery
 
