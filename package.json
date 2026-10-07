@@ -1,0 +1,11 @@
+{
+  "name": "ammonia-lab",
+  "version": "0.3.0",
+  "private": true,
+  "scripts": {
+    "build": "python3 tools/build.py",
+    "test": "node tests/physics.cjs && node tests/dynamic.cjs",
+    "test:browser": "node tests/run-browser.cjs"
+  },
+  "devDependencies": {"playwright": "1.62.1"}
+}

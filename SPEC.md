@@ -23,3 +23,6 @@ Independent NIST saturation pressure comparisons; interpolation error tests acro
 
 ## Follow-on models
 Two-stage flash intercooling and full refrigerant-inventory dynamics require separately validated solvers and equipment data. Do not present placeholders as functioning modes. This release delivers a complete bounded steady-state application and room-load transient, with its scope visible in the app.
+
+## v0.3.0 addition
+Live plant adds quasi-steady coupled DX equipment, example speed/efficiency curves, segmented LMTD conductance balances, a one-second room/control integrator, thermostat/timers, manual speed or suction PI, latching example trips, disturbances and trends. See DYNAMIC_MODEL.md. The original reference solver remains compatible. Identical example-compressor staging is implemented; refrigerant inventory/startup and heterogeneous manufacturer compressor banks are not.

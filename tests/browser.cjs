@@ -1,0 +1,51 @@
+const path=require('path');const {launchOptions}=require('./browser-helpers.cjs');
+const {chromium}=require('playwright');const assert=require('node:assert/strict');const fs=require('fs');
+(async()=>{
+ const browser=await chromium.launch(launchOptions);
+ const page=await browser.newPage({viewport:{width:1500,height:1050},acceptDownloads:true});const errors=[];page.on('pageerror',e=>errors.push(e.message));
+ await page.goto(process.env.TEST_URL);await page.waitForSelector('#startup-notice',{state:'hidden'});
+ await page.evaluate(()=>localStorage.clear());await page.reload();
+ assert.equal(await page.locator('#run-status').textContent(),'Operating point solved');
+ assert.equal(await page.locator('#metric-Q').textContent(),'112.6 kW');assert.equal(await page.locator('#metric-COP').textContent(),'3.32');
+ const baseline={q:await page.locator('#metric-Q').textContent(),cop:await page.locator('#metric-COP').textContent(),temp:await page.locator('#metric-evap').textContent()};
+ for(let i=0;i<4;i++){await page.locator(`button[data-step="${i}"]`).click();assert.equal(await page.locator('#detail-number').textContent(),String(i+1).padStart(2,'0'));}
+ await page.locator('g[data-step="1"]').click();assert.match(await page.locator('#detail-title').textContent(),/Condensation/);
+ await page.locator('g[data-step="3"]').focus();await page.keyboard.press('Enter');assert.match(await page.locator('#detail-title').textContent(),/evaporation/);
+ await page.locator('#motion').click();assert.equal(await page.locator('#graphic').evaluate(el=>el.classList.contains('paused')),true);await page.locator('#motion').click();
+ for(const unit of ['barg','psia','psig','bara']){await page.locator('#pressure-unit').selectOption(unit);await page.locator('#cycle-form button[type="submit"]').click();assert.equal(await page.locator('#metric-Q').textContent(),baseline.q);assert.equal(await page.locator('#metric-COP').textContent(),baseline.cop);}
+ await page.locator('#temperature-unit').selectOption('F');await page.locator('#cycle-form button[type="submit"]').click();assert.equal(await page.locator('#metric-Q').textContent(),baseline.q);assert.equal(await page.locator('#metric-COP').textContent(),baseline.cop);assert.equal(await page.locator('#suctionDrop').inputValue(),'0');await page.locator('#reset').click();
+ await page.locator('#pressure').fill('1.8');await page.keyboard.press('Enter');assert.equal(await page.locator('#run-status').textContent(),'Operating point solved');assert(parseFloat(await page.locator('#metric-evap').textContent())<parseFloat(baseline.temp));
+ await page.locator('#pressure').fill('-20');await page.locator('#cycle-form button[type="submit"]').click();assert.equal(await page.locator('#metric-Q').textContent(),'—');assert(await page.locator('#export-json').isDisabled());assert.match(await page.locator('#cycle-error').textContent(),/pressure/);await page.locator('#reset').click();
+ await page.locator('#pressure').fill('');await page.locator('#cycle-form button[type="submit"]').click();assert.equal(await page.locator('#metric-COP').textContent(),'—');await page.locator('#reset').click();
+ await page.locator('#flowMode').selectOption('load');await page.locator('#load').fill('150');await page.locator('#cycle-form button[type="submit"]').click();assert.equal(await page.locator('#metric-Q').textContent(),'150.0 kW');assert.equal(await page.locator('#cooling-label').textContent(),'Required cooling duty');
+ await page.locator('#flowMode').selectOption('displacement');await page.locator('#cycle-form button[type="submit"]').click();assert.notEqual(await page.locator('#metric-Q').textContent(),'—');
+ await page.locator('#highMode').selectOption('ambient');await page.locator('#cycle-form button[type="submit"]').click();assert.notEqual(await page.locator('#metric-Q').textContent(),'—');
+ await page.locator('#system').selectOption('flooded');assert(await page.locator('#evapSH').isDisabled());assert.equal(await page.locator('#evapSH').inputValue(),'0');await page.locator('#cycle-form button[type="submit"]').click();assert.match(await page.locator('#schematic-title').textContent(),/flooded/);assert(await page.locator('#separator-symbol').isVisible());
+ for(const preset of ['storage','freezer','chiller']){await page.locator(`[data-preset="${preset}"]`).click();assert.notEqual(await page.locator('#metric-Q').textContent(),'—',preset+' invalid');}
+ await page.locator('#reset').click();
+ await page.locator('#tab-thermo').click();assert.equal(await page.locator('#state-table tr').count(),6);await page.locator('[data-point="1"]').click();assert.match(await page.locator('#point-info').textContent(),/Compressor discharge/);
+ await page.screenshot({path:path.join(__dirname,'thermodynamics-desktop.png'),fullPage:true});
+ await page.locator('#tab-room').click();await page.locator('#room-form button[type="submit"]').click();assert.match(await page.locator('#room-status').textContent(),/First reached setpoint/);assert(await page.locator('#export-room').isEnabled());
+ let downloadPromise=page.waitForEvent('download');await page.locator('#export-room').click();let download=await downloadPromise;await download.saveAs(path.join(__dirname,'export-room.csv'));assert(fs.readFileSync(path.join(__dirname,'export-room.csv'),'utf8').includes('Cumulative compressor kWh'));
+ await page.locator('#room-target').fill('-50');await page.locator('#room-form button[type="submit"]').click();assert(await page.locator('#room-error').isVisible());assert(await page.locator('#export-room').isDisabled());
+ await page.locator('#tab-scenarios').click();await page.locator('#scenario-name').fill('Baseline');await page.locator('#save-scenario').click();assert.equal(await page.locator('.scenario-item').count(),1);
+ downloadPromise=page.waitForEvent('download');await page.locator('#export-json').click();download=await downloadPromise;await download.saveAs(path.join(__dirname,'export-scenario.json'));const exported=JSON.parse(fs.readFileSync(path.join(__dirname,'export-scenario.json')));assert.equal(exported.solverVersion,'0.2.0');assert.equal(exported.config.pressure,2.5);
+ await page.locator('[data-preset="chiller"]').click();await page.locator('#scenario-name').fill('Chiller <safe>');await page.locator('#save-scenario').click();assert.equal(await page.locator('.scenario-item').count(),2);
+ for(const checkbox of await page.locator('[data-compare]').all())await checkbox.check();assert.match(await page.locator('#comparison').textContent(),/Baseline/);assert.match(await page.locator('#comparison').textContent(),/Chiller <safe>/);
+ await page.locator('[data-restore]').first().click();assert.equal(await page.locator('#metric-Q').textContent(),baseline.q);
+ await page.locator('#import-file').setInputFiles(path.join(__dirname,'export-scenario.json'));await page.waitForFunction(()=>document.querySelectorAll('.scenario-item').length===3);
+ await page.reload();await page.locator('#tab-scenarios').click();assert.equal(await page.locator('.scenario-item').count(),3);
+ fs.writeFileSync(path.join(__dirname,'invalid-import.json'),JSON.stringify({...exported,config:{...exported.config,pressure:0}}));await page.locator('#import-file').setInputFiles(path.join(__dirname,'invalid-import.json'));await page.waitForFunction(()=>document.querySelector('#scenario-status').textContent.includes('Import rejected'));assert.equal(await page.locator('.scenario-item').count(),3);
+ await page.locator('[data-delete]').first().click();assert.equal(await page.locator('.scenario-item').count(),2);
+ downloadPromise=page.waitForEvent('download');await page.locator('#export-csv').click();download=await downloadPromise;await download.saveAs(path.join(__dirname,'export-results.csv'));assert(fs.readFileSync(path.join(__dirname,'export-results.csv'),'utf8').includes('Energy residual'));
+ await page.evaluate(()=>{window.print=()=>{window.printCalled=true;};});await page.locator('#print').click();assert(await page.evaluate(()=>window.printCalled));
+ await page.locator('#tab-validation').click();assert.match(await page.locator('#validation-table').textContent(),/0.00702 K/);
+ await page.locator('#tab-cycle').click();await page.screenshot({path:path.join(__dirname,'overview-desktop.png'),fullPage:true});
+ await page.setViewportSize({width:390,height:844});assert(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth));await page.screenshot({path:path.join(__dirname,'overview-mobile.png'),fullPage:true});
+ await page.locator('#tab-thermo').click();assert(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth));
+ await page.locator('#tab-cycle').focus();await page.keyboard.press('ArrowRight');assert.equal(await page.locator('#tab-thermo').getAttribute('aria-selected'),'true');
+ await page.emulateMedia({media:'print'});await page.pdf({path:path.join(__dirname,'print-check.pdf'),format:'A4',printBackground:true});
+ const noJs=await browser.newContext({javaScriptEnabled:false});const preview=await noJs.newPage();await preview.goto(process.env.TEST_URL);assert(await preview.locator('#startup-notice').isVisible());await noJs.close();
+ assert.deepEqual(errors,[]);console.log('PASS: browser controls, keyboard selection, pressure/temperature units, modes, presets, invalid-state clearing, charts, room simulation, downloads, save/restore/compare/import/persistence, mobile overflow, print action, and script-blocked notice.');
+ await browser.close();
+})().catch(e=>{console.error(e);process.exit(1)});

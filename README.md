@@ -1,8 +1,28 @@
-# Ammonia Lab v0.2.2
+# Ammonia Lab v0.3.0
 
-Open `ammonia-lab-v0.2.0.html` in Chrome, Edge, Firefox or Safari. The file is self-contained and works offline. HTML previews can disable JavaScript; the startup notice remains visible when controls cannot initialize.
+Open `index.html` in Chrome, Edge, Firefox or Safari. The file is self-contained and works offline. HTML previews can disable JavaScript; the startup notice remains visible when controls cannot initialize.
 
 Display units default to **psig and Fahrenheit** on startup and Reset. Room temperatures and thermostat deadband follow the selected temperature units. SI units remain explicitly labeled in numerical reference data and CSV exports.
+
+## Live plant
+
+Select **Live plant** to run the coupled room/equipment model. Start, Pause/Resume, Reset and Advance 1 minute work at 1×, 60× or 300× playback. Apply live setpoints, heat load, ambient air, exchanger UAs, manual speed or automatic suction PI control and staging for up to three identical example compressors; disturbance buttons provide quick demonstration changes. Trends show pressures, room temperature, speed, capacity and power. Trips latch until reset, and minimum on/off times are enforced.
+
+The supplied compressor curves are **example equipment**. Pressures are solved from compressor flow and approximate exchanger-zone balances. Refrigerant equilibrates each step: this is a dynamic room/control model, not refrigerant-inventory or pressure-startup physics. [DYNAMIC_MODEL.md](DYNAMIC_MODEL.md) gives equations, assumptions, control behavior and validation. Reference calculator inputs at left and existing saved scenarios remain independent of the live plant. Defaults remain Fahrenheit and psig.
+
+### Build and verify
+
+With Node.js 22+ and Python 3.12:
+
+```sh
+npm ci
+npx playwright install --with-deps chromium
+npm test
+npm run build
+npm run test:browser
+```
+
+`npm test` uses checked-in reference data; Python CoolProp is needed only to regenerate that data/property grid. Browser tests launch a local server and use bundled Chromium (or `/usr/bin/chromium` when installed). The build embeds source and JSON data into `index.html`; no browser build dependencies or network APIs are needed at runtime. The GitHub verification workflow checks source/bundle consistency, physics, dynamic controls and browsers on pushes and PRs. GitHub Pages currently publishes the checked-in root `index.html` through its existing deployment configuration.
 
 ## What is implemented
 
