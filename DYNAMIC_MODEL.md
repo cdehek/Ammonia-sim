@@ -1,4 +1,4 @@
-# Live plant model v0.4.0
+# Live plant model v0.4.1
 
 The live plant is a room thermal transient coupled to a quasi-steady, single-stage direct-expansion equipment model. It is not a refrigerant-inventory or pressure-startup transient. The original operating-point calculator and version-1 scenario format remain independent and unchanged.
 
@@ -41,3 +41,11 @@ Room initial temperature, thermal mass and compressor count require Reset after 
 The measured default eight-hour case has two compressor starts. One-second versus half-second intervals differed by approximately 0.00028 K in final room temperature and 0.00035% in compressor electricity. Room energy residual was approximately 0.000002 kJ. These are numerical checks of the stated model, not measured plant or equipment validation. The original CoolProp property/cycle comparisons remain separate.
 
 Manufacturer maps, exchanger ratings, control settings and plant trends are required before representing a particular installation. Refrigerant inventory/startup dynamics, heterogeneous compressor banks, recirculation pumps/levels, evaporative condensers and two-stage systems are later models, not functioning options in this release.
+
+## v0.4.1 fault detection and playback
+
+Faults have explicit equipment, solver or domain categories. Only a solved operating point crossing a pressure/temperature limit asserts an equipment trip. Equipment snapshots include detection time, suction/discharge pressures, discharge and room temperatures, speed, active stages and configured limits. Solver stops report no converged equilibrium; domain stops report an unsupported state. These do not establish that a physical safety switch operated. Unexpected application errors still use the application-error path.
+
+Equipment limits are evaluated at the beginning of each numerical interval, from its quasi-steady operating point. Shutdown removes duty/power for that interval, following the existing discrete protection model. The interval completes, then advancement stops (within one simulated second with default numerics); this does not claim continuous-time threshold localization. Room-domain checks occur at the interval end. Unused batch time is discarded, including fractional pending time, and a latched fault blocks further advancement until an explicit clear/reset. Minimum-off timers remain in effect after clearing. No off-state refrigerant pressure is inferred from the fault snapshot.
+
+The fault summary and appended SI CSV fields preserve detection evidence separately from current metrics. Clearing a stop preserves historical row snapshots. Regression coverage includes all three equipment limits, solver/domain stops, delayed faults, 1/60/75/300-second batches, discarded pending time, recovery and browser playback/unit/export behavior.

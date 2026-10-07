@@ -9,6 +9,7 @@ const defaults={initial:15,target:0,deadband:2,thermalMass:30,leakUA:.1,gain:2,a
 function createDynamic(engine,numerics={}){
  const timeStep=numerics.timeStep===undefined?1:numerics.timeStep;
  if(!Number.isFinite(timeStep)||timeStep<.25||timeStep>1)throw Error('Numerical step must be 0.25–1 second.');
+ function modelError(kind,message){const error=new Error(message);error.faultKind=kind;return error;}
  function validate(o){
   const c={...defaults,...o};
   const bounds={etaVol:[20,100],etaIs:[40,100],etaMotor:[50,100],compressors:[1,3],stageDelay:[10,600],initial:[-35,40],target:[-35,30],deadband:[.2,10],thermalMass:[.1,100000],leakUA:[0,100],gain:[0,5000],ambient:[-20,45],displacement:[10,2000],evapUA:[.1,1000],condUA:[.1,2000],manualSpeed:[.2,1],suctionTarget:[.35,8],kp:[0,5],ki:[0,.1],actuatorSeconds:[1,300],minOn:[0,1800],minOff:[0,1800],highTrip:[3,30],lowTrip:[.35,8],dischargeTrip:[80,250]};
@@ -42,11 +43,11 @@ function createDynamic(engine,numerics={}){
    zones:{evapBoil,evapSH,desuperheat,condensation,subcool},evapRequired,condRequired};
  }
  function coupled(room,options,speed,warm,stages=1){
-  const c=validate(options);if(!Number.isInteger(stages)||stages<1||stages>c.compressors)throw Error('Invalid active compressor count.');if(!Number.isFinite(room)||room< -40||room>50)throw Error('Room left the supported −40 to 50 °C domain.');
+  const c=validate(options);if(!Number.isInteger(stages)||stages<1||stages>c.compressors)throw Error('Invalid active compressor count.');if(!Number.isFinite(room)||room< -40||room>50)throw modelError('domain','Room left the supported −40 to 50 °C domain.');
   if(!Number.isFinite(speed)||speed<.2||speed>1)throw Error('Running compressor speed must be 20–100%.');
   const emin=engine.sat(.35).T+.001,emax=Math.min(engine.sat(8).T-.001,room-.05);
   const cmin=Math.max(engine.sat(3).T+.001,c.ambient+.05),cmax=engine.sat(30).T-.001;
-  if(emin>=emax||cmin>=cmax)throw Error('No equipment equilibrium inside the supported property domain.');
+  if(emin>=emax||cmin>=cmax)throw modelError('domain','No equipment equilibrium inside the supported property domain.');
   const norm=a=>Math.max(...a.residual.map(Math.abs));
   const safe=(te,tc)=>{if(te<emin||te>emax||tc<cmin||tc>cmax||tc<=te)return null;try{return evaluate(room,c,speed,te,tc,stages);}catch{return null;}};
   const seeds=warm?[[warm.te,warm.tc]]:[];
@@ -64,15 +65,17 @@ function createDynamic(engine,numerics={}){
     let next=null;for(let f=1;f>=1/128;f/=2){const b=safe(a.te+dx*f,a.tc+dy*f);if(b&&norm(b)<norm(a)){next=b;break;}}if(!next)break;a=next;
    }
   }
-  throw Error('No converged equipment equilibrium within the pressure/temperature domain. Reduce load/speed or improve the heat exchangers.');
+  throw modelError('solver','No converged equipment equilibrium within the pressure/temperature domain. Reduce load/speed or improve the heat exchangers.');
  }
- function create(options){const c=validate(options);return {config:c,time:0,pending:0,T:c.initial,on:false,speed:0,command:0,integral:0,stages:0,stageDemand:0,slots:Array.from({length:c.compressors},()=>({on:false,lastSwitch:-c.minOff})),lastSwitch:-c.minOff,warm:null,point:null,trip:null,reason:'Ready',energy:0,removed:0,leakHeat:0,gainHeat:0,starts:0,events:[],rows:[]};}
+ function create(options){const c=validate(options);return {config:c,time:0,pending:0,T:c.initial,on:false,speed:0,command:0,integral:0,stages:0,stageDemand:0,slots:Array.from({length:c.compressors},()=>({on:false,lastSwitch:-c.minOff})),lastSwitch:-c.minOff,warm:null,point:null,trip:null,fault:null,reason:'Ready',energy:0,removed:0,leakHeat:0,gainHeat:0,starts:0,events:[],rows:[]};}
  function event(s,text){s.reason=text;s.events.push({seconds:s.time,text});if(s.events.length>200)s.events.shift();}
- function resetTrip(s){s.trip=null;s.integral=0;event(s,'Trip reset; waiting for restart conditions.');}
+ function resetTrip(s){const equipment=s.fault&&s.fault.kind==='equipment';s.trip=null;s.fault=null;s.pending=0;s.integral=0;event(s,equipment?'Trip reset; waiting for restart conditions.':'Model stop cleared; waiting for restart conditions.');}
  function update(s,patch){const next=validate({...s.config,...patch});if(s.time&&(next.thermalMass!==s.config.thermalMass||next.initial!==s.config.initial||next.compressors!==s.config.compressors))throw Error('Reset the plant to change initial temperature, thermal mass or compressor count.');if(!s.time){s.T=next.initial;s.slots=Array.from({length:next.compressors},()=>({on:false,lastSwitch:-next.minOff}));}s.config=next;event(s,'Live inputs updated.');}
- function record(s){const r=s.point&&s.point.r;return {seconds:s.time,T:s.T,target:s.config.target,ambient:s.config.ambient,gain:s.config.gain,evapUA:s.config.evapUA,condUA:s.config.condUA,on:s.on,stages:s.stages,speed:s.speed,command:s.command,pressure:r?r.config.pressure:null,condensing:r?r.pHigh:null,Q:r?r.Q:0,power:r?r.electrical:0,COP:r?r.COP:null,discharge:r?r.states[1].T:null,kWh:s.energy,starts:s.starts,reason:s.reason,trip:s.trip,residual:s.point?Math.max(...s.point.residual.map(Math.abs)):null};}
+ function record(s){const r=s.point&&s.point.r;return {seconds:s.time,T:s.T,target:s.config.target,ambient:s.config.ambient,gain:s.config.gain,evapUA:s.config.evapUA,condUA:s.config.condUA,on:s.on,stages:s.stages,speed:s.speed,command:s.command,pressure:r?r.config.pressure:null,condensing:r?r.pHigh:null,Q:r?r.Q:0,power:r?r.electrical:0,COP:r?r.COP:null,discharge:r?r.states[1].T:null,kWh:s.energy,starts:s.starts,reason:s.reason,trip:s.trip,fault:s.fault,residual:s.point?Math.max(...s.point.residual.map(Math.abs)):null};}
  function step(s,seconds){
   if(!Number.isFinite(seconds)||seconds<=0||seconds>3600)throw Error('Advance by 0–3600 seconds.');
+  // A latched stop freezes the run; unused playback time is never carried into a restart.
+  if(s.fault){s.pending=0;return record(s);}
   s.pending+=seconds;
   while(s.pending>=timeStep-1e-9){
    const dt=timeStep,c=s.config;
@@ -102,9 +105,16 @@ function createDynamic(engine,numerics={}){
      if(r.pHigh>=c.highTrip)s.trip='High discharge pressure';
      else if(r.config.pressure<=c.lowTrip)s.trip='Low suction pressure';
      else if(r.states[1].T>=c.dischargeTrip)s.trip='High discharge temperature';
-     if(s.trip)off('Tripped: '+s.trip);
+     if(s.trip){
+      s.fault={kind:'equipment',message:s.trip,seconds:s.time,readings:{room:s.T,pressure:r.config.pressure,condensing:r.pHigh,discharge:r.states[1].T,speed:s.speed,stages:s.stages},limits:{highTrip:c.highTrip,lowTrip:c.lowTrip,dischargeTrip:c.dischargeTrip}};
+      off('Tripped: '+s.trip);
+     }
      else if(s.time-s.lastSwitch>=c.minOn&&s.T>c.target-c.deadband/2)s.reason=c.mode==='manual'?'Manual speed; thermostat enabled':command>=.999?'At maximum speed':command<=.201?'At minimum speed':'Suction PI control';
-    }catch(error){s.trip=error.message;off('Tripped: '+s.trip);}
+    }catch(error){
+     if(!error.faultKind)throw error;
+     s.fault={kind:error.faultKind,message:error.message,seconds:s.time,readings:{room:s.T},limits:null};
+     off((error.faultKind==='solver'?'Solver limit: ':'Model limit: ')+error.message);
+    }
    }
    const Q=s.point?s.point.r.Q:0,P=s.point?s.point.r.electrical:0,C=c.thermalMass*1000;
    // Analytical room update for frozen equipment duty over this short step.
@@ -112,7 +122,9 @@ function createDynamic(engine,numerics={}){
    s.T=U>0?b/U+(before-b/U)*Math.exp(-U*dt/C):before+b*dt/C;
    const integralT=U>0?b/U*dt+(before-b/U)*C/U*(-Math.expm1(-U*dt/C)):(before+s.T)/2*dt;
    s.removed+=Q*dt;s.leakHeat+=U*(c.ambient*dt-integralT);s.gainHeat+=c.gain*dt;s.energy+=P*dt/3600;s.time+=dt;s.pending-=dt;
-   if(!Number.isFinite(s.T)||s.T< -40||s.T>50){s.trip='Room left supported −40 to 50 °C range';off('Tripped: '+s.trip);break;}
+   if(!s.fault&&(!Number.isFinite(s.T)||s.T< -40||s.T>50)){s.fault={kind:'domain',message:'Room left supported −40 to 50 °C range',seconds:s.time,readings:{room:s.T},limits:null};off('Model limit: '+s.fault.message);}
+   // Finish only the current numerical interval (1 s by default), then pause.
+   if(s.fault){s.pending=0;break;}
   }
   const row=record(s);if(s.rows.length&&s.rows[s.rows.length-1].seconds===s.time)s.rows[s.rows.length-1]=row;else s.rows.push(row);if(s.rows.length>7200)s.rows.shift();return row;
  }

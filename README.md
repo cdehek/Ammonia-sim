@@ -1,8 +1,12 @@
-# Ammonia Lab v0.4.0
+# Ammonia Lab v0.4.1
 
 Open `index.html` in Chrome, Edge, Firefox or Safari. The file is self-contained and works offline. HTML previews can disable JavaScript; the startup notice remains visible when controls cannot initialize.
 
 Display units default to **psig and Fahrenheit** on startup and Reset. Room temperatures and thermostat deadband follow the selected temperature units. SI units remain explicitly labeled in numerical reference data and CSV exports.
+
+## v0.4.1 fault handling
+
+Live playback stops within the current numerical interval (one simulated second by default) when an equipment trip, solver limit or model-domain limit is detected, at every playback speed. Unused playback time is discarded. Equipment trips retain their triggering readings and configured limits in a separate fault summary and SI CSV columns; off-state pressure metrics remain unavailable. Solver/model stops are labeled separately and never assert an equipment trip. Correct inputs and reset the trip or clear the model stop before resuming; reset the plant when room temperature is outside the model domain. Historical fault records remain in CSV after clearing a stop.
 
 ## Equipment profiles
 
