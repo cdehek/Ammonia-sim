@@ -4,7 +4,7 @@
 function createEngine(data){
  const eps=1e-8;
  const lerp=(a,b,w)=>a+(b-a)*w;
- function bracket(values,x){if(x<values[0]-eps||x>values.at(-1)+eps)throw Error('State outside the validated property domain.');if(x>=values.at(-1))return [values.length-2,1];let lo=0,hi=values.length-1;while(hi-lo>1){const m=(lo+hi)>>1;if(values[m]<=x)lo=m;else hi=m;}return [lo,(x-values[lo])/(values[lo+1]-values[lo])];}
+ function bracket(values,x){if(x<values[0]-eps||x>values[values.length-1]+eps)throw Error('State outside the validated property domain.');if(x>=values[values.length-1])return [values.length-2,1];let lo=0,hi=values.length-1;while(hi-lo>1){const m=(lo+hi)>>1;if(values[m]<=x)lo=m;else hi=m;}return [lo,(x-values[lo])/(values[lo+1]-values[lo])];}
  const logs=data.p.map(Math.log);
  function pBracket(p){if(!(p>0))throw Error('Absolute pressure must be positive.');return bracket(logs,Math.log(p));}
  function mixRow(a,b,w){if(!a||!b)throw Error('Liquid state below the property table temperature limit.');return [lerp(a[0],b[0],w),lerp(a[1],b[1],w),Math.exp(lerp(Math.log(a[2]),Math.log(b[2]),w))];}

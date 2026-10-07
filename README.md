@@ -1,6 +1,8 @@
-# Ammonia Lab v0.2.0
+# Ammonia Lab v0.2.2
 
 Open `ammonia-lab-v0.2.0.html` in Chrome, Edge, Firefox or Safari. The file is self-contained and works offline. HTML previews can disable JavaScript; the startup notice remains visible when controls cannot initialize.
+
+Display units default to **psig and Fahrenheit** on startup and Reset. Room temperatures and thermostat deadband follow the selected temperature units. SI units remain explicitly labeled in numerical reference data and CSV exports.
 
 ## What is implemented
 
