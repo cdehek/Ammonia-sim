@@ -61,7 +61,7 @@
 (function () {
   var notice = document.getElementById('startup-notice');
   function showFailure(message) {
-    if (!notice) return;
+    if (!notice || (window.AmmoniaStartup && window.AmmoniaStartup.ready)) return;
     notice.hidden = false;
     notice.textContent = 'The simulator could not start: ' + message + '. Reload the page after updating index.html. If it continues, share this error message.';
   }
