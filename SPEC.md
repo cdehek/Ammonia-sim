@@ -26,3 +26,6 @@ Two-stage flash intercooling and full refrigerant-inventory dynamics require sep
 
 ## v0.3.0 addition
 Live plant adds quasi-steady coupled DX equipment, example speed/efficiency curves, segmented LMTD conductance balances, a one-second room/control integrator, thermostat/timers, manual speed or suction PI, latching example trips, disturbances and trends. See DYNAMIC_MODEL.md. The original reference solver remains compatible. Identical example-compressor staging is implemented; refrigerant inventory/startup and heterogeneous manufacturer compressor banks are not.
+
+## v0.4.0 addition
+Equipment profile schema version 1: immutable Default, custom identity/revision/source metadata, DX identical-bank specifications, example or fixed efficiency performance, optional stored-only volumes, local persistence, import/export and atomic validation. Profile application resets a running plant; saving a revision alone leaves active results unchanged. Operating settings and reference scenarios remain independent. See EQUIPMENT_PROFILES.md.

@@ -5,14 +5,15 @@ const clamp=(x,a,b)=>Math.max(a,Math.min(b,x));
 const defaults={initial:15,target:0,deadband:2,thermalMass:30,leakUA:.1,gain:2,ambient:25,
  compressors:1,stageDelay:60,displacement:180,evapUA:12,condUA:25,mode:'auto',manualSpeed:.7,suctionTarget:2.5,
  kp:.45,ki:.003,actuatorSeconds:30,minOn:90,minOff:90,available:true,
- highTrip:24,lowTrip:.4,dischargeTrip:170};
+ performanceMode:'example',etaVol:75,etaIs:75,etaMotor:92,highTrip:24,lowTrip:.4,dischargeTrip:170};
 function createDynamic(engine,numerics={}){
  const timeStep=numerics.timeStep===undefined?1:numerics.timeStep;
  if(!Number.isFinite(timeStep)||timeStep<.25||timeStep>1)throw Error('Numerical step must be 0.25–1 second.');
  function validate(o){
   const c={...defaults,...o};
-  const bounds={compressors:[1,3],stageDelay:[10,600],initial:[-35,40],target:[-35,30],deadband:[.2,10],thermalMass:[.1,100000],leakUA:[0,100],gain:[0,5000],ambient:[-20,45],displacement:[10,2000],evapUA:[.1,1000],condUA:[.1,2000],manualSpeed:[.2,1],suctionTarget:[.35,8],kp:[0,5],ki:[0,.1],actuatorSeconds:[1,300],minOn:[0,1800],minOff:[0,1800],highTrip:[3,30],lowTrip:[.35,8],dischargeTrip:[80,250]};
+  const bounds={etaVol:[20,100],etaIs:[40,100],etaMotor:[50,100],compressors:[1,3],stageDelay:[10,600],initial:[-35,40],target:[-35,30],deadband:[.2,10],thermalMass:[.1,100000],leakUA:[0,100],gain:[0,5000],ambient:[-20,45],displacement:[10,2000],evapUA:[.1,1000],condUA:[.1,2000],manualSpeed:[.2,1],suctionTarget:[.35,8],kp:[0,5],ki:[0,.1],actuatorSeconds:[1,300],minOn:[0,1800],minOff:[0,1800],highTrip:[3,30],lowTrip:[.35,8],dischargeTrip:[80,250]};
   for(const [k,[a,b]] of Object.entries(bounds))if(!Number.isFinite(c[k])||c[k]<a||c[k]>b)throw Error(k+' must be between '+a+' and '+b+' (internal SI).');
+  if(!['example','fixed'].includes(c.performanceMode))throw Error('Unknown compressor performance model.');
   if(!['auto','manual'].includes(c.mode)||typeof c.available!=='boolean')throw Error('Invalid control mode or compressor availability.');
   if(!Number.isInteger(c.compressors))throw Error('Compressor count must be an integer.');
   if(c.lowTrip>=c.highTrip)throw Error('Low-pressure trip must be below high-pressure trip.');
@@ -22,9 +23,9 @@ function createDynamic(engine,numerics={}){
  function lm(a,b){if(a<=0||b<=0)throw Error('Heat-exchanger temperature pinch.');return Math.abs(a-b)<1e-6?(a+b)/2:(a-b)/Math.log(a/b);}
  function evaluate(room,c,speed,te,tc,stages){
   const p=engine.satP(te),high=engine.satP(tc),ratio=high/p;
-  const etaVol=clamp(.88-.035*(ratio-2),.35,.9);
-  const etaIs=clamp(.78-.004*(ratio-4)**2-.035*(1-speed)**2,.45,.8);
-  const motor=clamp(.93-.07*(1-speed)**2,.8,.94);
+  const etaVol=c.performanceMode==='fixed'?c.etaVol/100:clamp(.88-.035*(ratio-2),.35,.9);
+  const etaIs=c.performanceMode==='fixed'?c.etaIs/100:clamp(.78-.004*(ratio-4)**2-.035*(1-speed)**2,.45,.8);
+  const motor=c.performanceMode==='fixed'?c.etaMotor/100:clamp(.93-.07*(1-speed)**2,.8,.94);
   const superheat=Math.min(3,.25*(room-te));
   const m=c.displacement/3600*stages*speed*etaVol*engine.statePT(p,te+superheat+2).rho;
   const r=engine.solve({pressure:p,condensing:high,ambient:c.ambient,spaceTemp:clamp(room,-50,30),

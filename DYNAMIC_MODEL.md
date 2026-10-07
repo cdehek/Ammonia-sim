@@ -1,4 +1,4 @@
-# Live plant model v0.3.0
+# Live plant model v0.4.0
 
 The live plant is a room thermal transient coupled to a quasi-steady, single-stage direct-expansion equipment model. It is not a refrigerant-inventory or pressure-startup transient. The original operating-point calculator and version-1 scenario format remain independent and unchanged.
 
@@ -12,7 +12,7 @@ Compressor flow is swept volume / 3600 × speed × volumetric efficiency × suct
 - isentropic efficiency = clamp(0.78 − 0.004 × (ratio − 4)² − 0.035 × (1 − speed)², 0.45, 0.80)
 - motor efficiency = clamp(0.93 − 0.07 × (1 − speed)², 0.80, 0.94)
 
-These curves are illustrative assumptions, not manufacturer data or an operating envelope. Speed denotes effective swept-volume fraction over 20–100%; one to three identical example compressors can share the suction/discharge pressures. There is no manufacturer unloading map.
+These curves are illustrative assumptions, not manufacturer data or an operating envelope. Equipment profiles can instead supply fixed volumetric, isentropic and motor efficiency assumptions. These values are used directly; no manufacturer map interpolation or fitting is implied. See EQUIPMENT_PROFILES.md. Speed denotes effective swept-volume fraction over 20–100%; one to three identical example compressors can share the suction/discharge pressures. There is no manufacturer unloading map.
 
 Evaporator required UA is the sum of boiling duty / room-to-saturation temperature difference and superheat duty / log-mean temperature difference. Condenser required UA sums desuperheating, condensation, and subcooling zones in the same way. Room and condenser air are treated as constant-temperature reservoirs within each zone: finite air flow, distributed refrigerant pressure loss, wet-bulb conditions, frost, and detailed exchanger geometry are omitted. Sensible-zone LMTD is an approximation with variable refrigerant heat capacity.
 

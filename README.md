@@ -1,8 +1,14 @@
-# Ammonia Lab v0.3.0
+# Ammonia Lab v0.4.0
 
 Open `index.html` in Chrome, Edge, Firefox or Safari. The file is self-contained and works offline. HTML previews can disable JavaScript; the startup notice remains visible when controls cannot initialize.
 
 Display units default to **psig and Fahrenheit** on startup and Reset. Room temperatures and thermostat deadband follow the selected temperature units. SI units remain explicitly labeled in numerical reference data and CSV exports.
+
+## Equipment profiles
+
+The Live plant now has a read-only **Default** and custom equipment profiles. Create from Default, duplicate, edit, save, select, delete inactive profiles, and import/export profile JSON. Custom specifications can use the existing example curves or fixed efficiency assumptions. Source notes and revisions distinguish user estimates and user-entered manufacturer values from validated performance data.
+
+Profiles persist in the browser; JSON exports are the portable backup. **Use profile** applies equipment and resets an existing run while retaining operating settings. Saving an active profile alone does not alter running equipment. Optional refrigerant volumes are stored but unused. See [EQUIPMENT_PROFILES.md](EQUIPMENT_PROFILES.md) for supported systems, workflow, units, storage and schema.
 
 ## Live plant
 
