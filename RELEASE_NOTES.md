@@ -1,3 +1,11 @@
+# Ammonia Lab v0.5.0 stage 3
+
+Five guided exercises now load repeatable Default connected-circuit setups: startup, increased room load, hot condenser air, short feed restriction and superheat target response. Disturbances use the existing model controls and boundaries. Objectives grade accepted observations, sustained superheat bands and original fault evidence; a correct reflection is also required. Hints, reset/end controls, debrief and full SI JSON evidence are available offline.
+
+Exercises pause on completion or interruption. Unplanned changes, custom equipment, unexpected stops and missing retained observations cannot silently earn completion. The hot-air exercise requires restored off-state inputs and ten simulated seconds after clearing; clearing alone does not qualify. Exported finished evidence stays frozen during subsequent exploration. Loading replaces the connected run without editing saved profiles.
+
+No integration equations changed. History observations additionally retain accepted feed/drain flow and its interval for grading/export. Verification covers ten numerical suites, thirteen Chromium suites and four WebKit suites in CI, including all five outcomes, negative paths, conservation, read-only grading, batching, units, keyboard/touch controls, responsive layouts and offline HTML. WebKit uses an iPad configuration, not physical hardware. See [TRAINING_SCENARIOS.md](TRAINING_SCENARIOS.md); stage 4 release polish is next, with calibration still reserved for v0.6.0.
+
 # Ammonia Lab v0.5.0 stage 2
 
 Connected trends now share simulated time, an exact observation cursor and selectable time windows. Pressure, temperature, actual/sensed/target superheat, command/actual valve opening, liquid volume fraction and compressor electrical demand can be inspected independently or together. Curve visibility controls, follow/pinned inspection, touch and keyboard navigation work offline on tablet/mobile layouts.

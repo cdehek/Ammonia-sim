@@ -4,7 +4,7 @@
  const engine=AmmoniaEngine.createEngine(JSON.parse($('property-data').textContent)),model=AmmoniaStorage.createStorage(engine,AmmoniaProfiles);
  const schematic=AmmoniaSchematic.create($('storage-schematic'));
  const trends=AmmoniaTrends.create($('storage-trends'));
- let state=null,running=false,timer=null,last=0,units={p:'psig',T:'F'};
+ let state=null,running=false,timer=null,last=0,units={p:'psig',T:'F'},training=null;
  const f=(v,n=3)=>Number.isFinite(v)?v.toFixed(n):'—',temp=v=>Number.isFinite(v)?(units.T==='F'?v*1.8+32:v):NaN;
  const pressure=v=>Number.isFinite(v)?(v-(units.p.endsWith('g')?1.01325:0))*(units.p.startsWith('psi')?14.503773773:1):NaN,pl=()=>({bara:'bar(a)',barg:'bar(g)',psia:'psia',psig:'psig'})[units.p];
  function operations(){const o={thermalMode:$('storage-thermalMode').value,compressorOn:$('storage-compressorOn').checked,circuit:$('storage-circuit').value,valveMode:$('storage-valveMode').value,drainEnabled:$('storage-drainEnabled').checked};for(const key of ['receiverHeat','evaporatorHeat','condenserHeat']){if(!$('storage-'+key).value.trim())throw Error('Fill in storage heat rates.');o[key]=Number($('storage-'+key).value);}if(!$('storage-compressorSpeed').value.trim())throw Error('Fill in compressor speed.');o.speed=Number($('storage-compressorSpeed').value)/100;for(const key of ['manualOpening','superheatTarget','kp','ki']){const el=$('storage-'+key);if(!el.value.trim())throw Error('Fill in valve operating controls.');o[key]=Number(el.value);}o.manualOpening/=100;o.superheatTarget/=units.T==='F'?1.8:1;return model.validateOperations(o);}
@@ -12,10 +12,11 @@
  function showError(e){$('storage-error').textContent=e.message;$('storage-error').hidden=false;}
  function clearError(){$('storage-error').hidden=true;}
  function pause(reason='User pause'){if(running&&state)model.logPlayback(state,'pause',{reason});running=false;clearInterval(timer);timer=null;$('storage-pause').disabled=true;render();}
- function initialize(){const snapshot=AmmoniaPlantSnapshot(),next=model.create(snapshot.profile,{...snapshot.roomConfig,...roomBoundary()},operations());pause();state=next;clearError();render();}
+ function initialize(){const snapshot=AmmoniaPlantSnapshot(),next=model.create(snapshot.profile,{...snapshot.roomConfig,...roomBoundary()},operations());training?.interrupt('Connected run reinitialized outside the exercise.');pause();state=next;clearError();render();}
  function step(seconds){if(!state)initialize();model.advance(state,seconds);if(state.fault)pause('Simulation stop');render();}
  function render(){
   $('storage-start').disabled=running;$('storage-export').disabled=!state;
+  training?.update(state);
   if(!state){schematic.update(null,units,false);trends.update(null,units);$('storage-clock').textContent='0.0 s simulated';$('storage-metrics').innerHTML='';$('storage-states').innerHTML='';$('storage-balance').innerHTML='';$('storage-flows').innerHTML='';$('storage-flow-window').textContent='';return;}
   const r=model.record(state);schematic.update({...r,profileLabel:state.profile.name+' revision '+state.profile.revision,compressor:model.observeCompressor(state)},units,running);$('storage-clock').textContent=f(state.time,1)+' s simulated';
   const status=state.fault?{equipment:'TRIPPED',solver:'SOLVER LIMIT',domain:'MODEL LIMIT'}[state.fault.kind]:running?'Running':'Paused';
@@ -33,7 +34,7 @@
  $('storage-start').addEventListener('click',()=>{try{if(!state)initialize();if(state.fault)throw Error('Clear the storage stop after correcting controls, or reinitialize.');model.update(state,operations(),roomBoundary());$('live-pause').click();clearError();running=true;model.logPlayback(state,'start',{speed:Number($('storage-speed').value)});$('storage-pause').disabled=false;last=performance.now();timer=setInterval(()=>{try{const now=performance.now(),elapsed=Math.min(1,(now-last)/1000);last=now;step(elapsed*Number($('storage-speed').value));}catch(e){pause();showError(e);}},250);render();}catch(e){showError(e);}});
  $('storage-form').addEventListener('submit',e=>{e.preventDefault();try{const o=operations();if(state)model.update(state,o,roomBoundary());clearError();render();}catch(e){showError(e);}});
  $('storage-clear').addEventListener('click',()=>{if(state){model.clearFault(state);clearError();render();}});
- document.addEventListener('ammonia-equipment',()=>{pause();state=null;render();$('storage-status').textContent='Active equipment changed. Initialize storage from the new profile.';});
+ document.addEventListener('ammonia-equipment',()=>{training?.interrupt('Applied equipment changed.');pause();state=null;render();$('storage-status').textContent='Active equipment changed. Initialize storage from the new profile.';});
  document.addEventListener('ammonia-run-live',()=>pause('Switched to quasi-steady playback'));
  document.addEventListener('ammonia-units',e=>{const ambient=$('storage-ambient'),air=ambient.value.trim()?(units.T==='F'?(Number(ambient.value)-32)/1.8:Number(ambient.value)):null;const el=$('storage-superheatTarget'),v=el.value.trim()?Number(el.value)/(units.T==='F'?1.8:1):null;units={...e.detail};if(air!==null)ambient.value=units.T==='F'?air*1.8+32:air;$('storage-tunit').textContent='°'+units.T;if(v!==null)el.value=v*(units.T==='F'?1.8:1);$('storage-dunit').textContent=units.T==='F'?'°F Δ':'K';render();});
  document.addEventListener('visibilitychange',()=>{if(document.hidden&&running)pause('Browser moved to background');});
@@ -42,6 +43,20 @@
  $('storage-export').addEventListener('click',()=>{
   if(!state)return;const rows=[['Storage model','v0.4.5; connected valves / resolved outlet'],['Equipment JSON SI',JSON.stringify(state.profile)],['Initial room conditions JSON SI',JSON.stringify(state.initialRoomConfig)],['Current room conditions JSON SI',JSON.stringify(state.roomConfig)],['Seconds','Room C','Charge kg','Refrigerant U kJ','Room energy change kJ','Mass residual kg','Combined energy residual kJ','External heat kJ','Fluid work kJ','Compressor kWh','Thermal mode','Receiver heat kW','Evaporator heat kW','Condenser heat kW','Compressor enabled','Speed fraction',...Object.keys(state.vessels).flatMap(key=>[key+' bar absolute',key+' C',key+' phase',key+' kg',key+' U kJ',key+' liquid volume fraction',key+' vapor mass fraction']),'Circuit','Valve mode','Manual command fraction','Superheat target K','PI kp fraction/K','PI ki fraction/(K s)','Drain enabled','Actual opening fraction','Sensor superheat K','Integrator fraction','Actual superheat K','Feed kg/s','Drain kg/s','Vapor link kg/s','Flow diagnostics JSON SI','Drain gravity energy kJ','Ambient C','Room gain kW','Room leak UA kW/K','Fault snapshot JSON SI','Fault kind','Fault message','Fault detection seconds','Fault readings JSON SI'],...state.rows.map(r=>[r.seconds,r.T,r.totalMassKg,r.totalEnergyKJ,r.roomEnergyKJ,r.massResidualKg,r.energyResidualKJ,r.externalHeatKJ,r.fluidWorkKJ,r.electricalKWh,r.operations.thermalMode,r.operations.receiverHeat,r.operations.evaporatorHeat,r.operations.condenserHeat,r.operations.compressorOn,r.operations.speed,...Object.values(r.vessels).flatMap(v=>[v.p,v.T,v.phase,v.massKg,v.internalEnergyKJ,v.liquidVolumeFraction,v.x??'']),r.operations.circuit,r.operations.valveMode,r.operations.manualOpening,r.operations.superheatTarget,r.operations.kp,r.operations.ki,r.operations.drainEnabled,r.controller.opening,r.controller.sensor,r.controller.integral,r.flows?.superheat??'',r.flows?.feed?.massFlow??'',r.flows?.drain?.massFlow??'',r.flows?.vapor?.massFlow??'',JSON.stringify(r.flows),r.gravityEnergyKJ,r.roomBoundary.ambient,r.roomBoundary.gain,r.roomBoundary.leakUA,r.fault?JSON.stringify(r.fault):'',r.fault?.kind??'',r.fault?.message??'',r.fault?.seconds??'',r.fault?JSON.stringify(r.fault.readings):''])];
   const csv=rows.map(row=>row.map(v=>'"'+String(v).replace(/"/g,'""')+'"').join(',')).join('\r\n'),url=URL.createObjectURL(new Blob([csv],{type:'text/csv'})),a=document.createElement('a');a.href=url;a.download='ammonia-storage-v045.csv';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);
+ });
+
+ function fillTrainingControls(s){
+  for(const key of ['circuit','thermalMode','valveMode'])$('storage-'+key).value=s.operations[key];
+  for(const key of ['compressorOn','drainEnabled'])$('storage-'+key).checked=s.operations[key];
+  for(const key of ['receiverHeat','evaporatorHeat','condenserHeat','kp','ki'])$('storage-'+key).value=s.operations[key];
+  $('storage-compressorSpeed').value=s.operations.speed*100;$('storage-manualOpening').value=s.operations.manualOpening*100;$('storage-superheatTarget').value=s.operations.superheatTarget*(units.T==='F'?1.8:1);
+  $('storage-ambient').value=units.T==='F'?s.roomConfig.ambient*1.8+32:s.roomConfig.ambient;$('storage-gain').value=s.roomConfig.gain;$('storage-leakUA').value=s.roomConfig.leakUA;
+ }
+ training=AmmoniaTrainingApp.create($('storage-training'),{
+  defaultActive:()=>AmmoniaPlantSnapshot().profile.id==='default',pause,refresh:render,isRunning:()=>running,advance:()=>$('storage-step').click(),toggleRun:()=>$(running?'storage-pause':'storage-start').click(),clearStop:()=>$('storage-clear').click(),
+  load(recipe){const next=model.create(AmmoniaProfiles.DEFAULT,recipe.room,recipe.operations);if(recipe.warmup)model.advance(next,recipe.warmup);if(next.fault)throw Error('Training warmup reached a model stop.');state=next;fillTrainingControls(state);clearError();render();return state;},
+  apply(o,r){model.update(state,o,r);fillTrainingControls(state);clearError();},
+  event(s,reason,details){AmmoniaHistory.sample(s.history,model.record(s),model.observeCompressor(s),'training');AmmoniaHistory.event(s.history,s.time,'training',{reason,...details});}
  });
  render();
 })();

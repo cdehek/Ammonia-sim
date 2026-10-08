@@ -15,6 +15,7 @@ function sample(h,r,compressor,reason='periodic'){
  const finite=x=>Number.isFinite(x)?x:null,connected=!!r.vessels.outlet;
  const point={id:h.nextSampleId++,seconds:r.seconds,reason,pressures:{},temperatures:{room:r.T,ambient:r.roomBoundary.ambient},levels:{},roomBoundary:{...r.roomBoundary},operations:{...r.operations},actualSuperheat:finite(r.flows?.superheat),sensedSuperheat:connected?r.controller.sensor:null,targetSuperheat:connected?r.operations.superheatTarget:null,opening:connected?r.controller.opening:null,command:finite(r.flows?.command),speedSetting:r.operations.speed,electricalDemand:finite(compressor?.electrical),dischargeTemperature:finite(compressor?.dischargeTemperature),faultKind:r.fault?.kind??null};
  for(const [key,v]of Object.entries(r.vessels)){point.pressures[key]=v.p;point.temperatures[key]=v.T;point.levels[key]=v.liquidVolumeFraction;}
+ point.feedMassFlow=finite(r.flows?.feed?.massFlow);point.drainMassFlow=finite(r.flows?.drain?.massFlow);point.flowInterval=r.flows?.interval?{...r.flows.interval}:null;
  h.samples.push(point);
  if(h.samples.length>h.limits.samples){h.samples.shift();h.droppedSamples++;}
  return point;

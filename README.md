@@ -1,8 +1,14 @@
-# Ammonia Lab v0.5.0 stage 2
+# Ammonia Lab v0.5.0 stage 3
 
 Open `index.html` in Chrome, Edge, Firefox or Safari. The file is self-contained and works offline. HTML previews can disable JavaScript; the startup notice remains visible when controls cannot initialize.
 
 Display units default to **psig and Fahrenheit** on startup and Reset. Room temperatures and thermostat deadband follow the selected temperature units. SI units remain explicitly labeled in numerical reference data and CSV exports.
+
+## v0.5.0 stage 3 · guided training
+
+Select **Live plant → Guided exercises** with Default equipment active. Choose startup, room load, hot condenser air, restricted feed or superheat target response, then **Load/reset exercise**. Each lesson loads a fixed, repeatable connected-circuit setup. Follow the brief, apply its disturbance, advance or play simulated time, inspect measured objectives and answer the reflection. Hints and the debrief explain the supported model response.
+
+Completion requires measured evidence and a correct reflection. Unexpected stops or edits outside the recipe interrupt the attempt. The hot-air lesson deliberately observes a computed discharge-temperature trip, then verifies off-state continuation after restoring inputs and clearing it. Completed attempts pause automatically and retain their evidence for JSON export. Loading/resetting replaces the connected run; saved custom profiles remain intact. See [TRAINING_SCENARIOS.md](TRAINING_SCENARIOS.md) for recipes, grading, evidence and limits.
 
 ## v0.5.0 stage 2 · trends and event history
 

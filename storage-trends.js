@@ -46,7 +46,7 @@ function create(container){
   return list.find(s=>s.id===pinnedId)||list.reduce((best,s)=>Math.abs(s.id-(pinnedId??s.id))<Math.abs(best.id-(pinnedId??best.id))?s:best,list[0]);
  }
  function selectSample(index){const list=points();if(!list.length)return;if($('storage-trend-follow').checked)frozenEnd=last(h.samples).seconds;$('storage-trend-follow').checked=false;pinnedId=list[Math.max(0,Math.min(list.length-1,index))].id;render();}
- function eventName(e){return {initialize:'Initialized',controls:'Applied changes',stop:e.details.fault?.kind==='equipment'?'Equipment trip':e.details.fault?.kind==='solver'?'Solver stop':'Model stop',clear:'Stop cleared',start:'Playback started',pause:'Playback paused',step:'Manual advance',speed:'Playback speed changed'}[e.type]||e.type;}
+ function eventName(e){return {training:'Exercise action',initialize:'Initialized',controls:'Applied changes',stop:e.details.fault?.kind==='equipment'?'Equipment trip':e.details.fault?.kind==='solver'?'Solver stop':'Model stop',clear:'Stop cleared',start:'Playback started',pause:'Playback paused',step:'Manual advance',speed:'Playback speed changed'}[e.type]||e.type;}
  function formatChange(c,value){
   if(typeof value!=='number')return String(value);
   if(c.key==='ambient')return f(units.T==='F'?value*1.8+32:value)+' °'+units.T;
