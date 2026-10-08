@@ -7,7 +7,7 @@ const DEFAULTS=Object.freeze({mode:'manual',manualSpeed:.7,suctionTarget:2.5,min
 const BOUNDS={manualSpeed:[.2,1],suctionTarget:[.35,8],minSpeed:[.2,1],maxSpeed:[.2,1],kp:[0,2],ki:[0,.1],deadbandBar:[0,.5],sensorSeconds:[.05,300],actuatorSeconds:[.05,300],rampPerSecond:[.0001,1],trackingSeconds:[.1,300],startDelay:[0,600],minOn:[0,3600],minOff:[0,3600]};
 function object(x,label){if(!x||typeof x!=='object'||Array.isArray(x)||(Object.getPrototypeOf(x)!==Object.prototype&&Object.getPrototypeOf(x)!==null))throw Error(label+' must be an object.');}
 function normalize(profile,settings={}){
- const p=profiles.normalize(profile);if(p.equipment.compressors!==1)throw Error('Capacity control stage 1 supports exactly one compressor.');
+ const p=profiles.normalize(profile);if(p.equipment.compressors!==1)throw Error('Managed capacity supports exactly one compressor.');
  object(settings,'Controller settings');for(const k of Object.keys(settings))if(!Object.prototype.hasOwnProperty.call(DEFAULTS,k))throw Error('Unknown capacity setting: '+k);
  const c={...DEFAULTS,...settings};if(!['manual','auto'].includes(c.mode))throw Error('Capacity mode must be manual or auto.');
  for(const [k,[a,b]]of Object.entries(BOUNDS))if(typeof c[k]!=='number'||!Number.isFinite(c[k])||c[k]<a||c[k]>b)throw Error(k+' is outside the supported controller range.');
@@ -96,7 +96,9 @@ function advanceAccepted(s,seconds,input={}){
  Object.assign(s,next);return record(s);
 }
 function nextBoundary(s){
- if(s.running||!s.input?.enabled||!s.input?.demand||!s.input?.available||s.input.pressureBarAbsolute===null||s.stop)return Infinity;
+ if(!s.input?.enabled||!s.input?.available||s.input.pressureBarAbsolute===null||s.stop)return Infinity;
+ if(s.running){const at=s.lastSwitch+s.settings.minOn;return !s.input.demand&&at>s.time+EPS?at-s.time:Infinity;}
+ if(!s.input.demand)return Infinity;
  const at=s.startDemandAt===null?s.lastSwitch+s.settings.minOff:s.startDemandAt+s.settings.startDelay;
  return at>s.time+EPS?at-s.time:Infinity;
 }
@@ -112,6 +114,6 @@ function update(s,patch){
  // No elapsed time is invented, and unapplied sub-cadence time is discarded at an edit boundary.
  s.pending=0;s.startDemandAt=null;return record(s);
 }
-function record(s){return copy({schemaVersion:s.schemaVersion,profile:{id:s.profile.id,revision:s.profile.revision,compressors:s.profile.equipment.compressors},settings:s.settings,seconds:s.time,pendingSeconds:s.pending,mode:s.settings.mode,running:s.running,actualSpeed:s.speed,requestedSpeed:s.command,rawCommand:s.rawCommand,measuredPressureBarAbsolute:s.measuredPressure,sensedPressureBarAbsolute:s.sensedPressure,targetBarAbsolute:s.settings.suctionTarget,errorBar:errorFor(s),integral:s.integral,reason:s.reason,limitedBy:s.limitedBy,starts:s.starts,minimumOnRemaining:s.running?Math.max(0,s.settings.minOn-(s.time-s.lastSwitch)):0,minimumOffRemaining:!s.running?Math.max(0,s.settings.minOff-(s.time-s.lastSwitch)):0,startDelayRemaining:s.startDemandAt===null?null:Math.max(0,s.settings.startDelay-(s.time-s.startDemandAt)),stop:s.stop,lastStop:s.lastStop});}
+function record(s){return copy({schemaVersion:s.schemaVersion,profile:{id:s.profile.id,revision:s.profile.revision,compressors:s.profile.equipment.compressors},settings:s.settings,seconds:s.time,pendingSeconds:s.pending,mode:s.settings.mode,running:s.running,actualSpeed:s.speed,requestedSpeed:s.command,rawCommand:s.rawCommand,measuredPressureBarAbsolute:s.measuredPressure,sensedPressureBarAbsolute:s.sensedPressure,targetBarAbsolute:s.settings.suctionTarget,errorBar:errorFor(s),integral:s.integral,reason:s.reason,limitedBy:s.limitedBy,starts:s.starts,lastSwitchSeconds:s.lastSwitch,minimumOnRemaining:s.running?Math.max(0,s.settings.minOn-(s.time-s.lastSwitch)):0,minimumOffRemaining:!s.running?Math.max(0,s.settings.minOff-(s.time-s.lastSwitch)):0,startDelayRemaining:s.startDemandAt===null?null:Math.max(0,s.settings.startDelay-(s.time-s.startDemandAt)),stop:s.stop,lastStop:s.lastStop});}
 const api={DEFAULTS,CADENCE,normalize,create,advance,advanceAccepted,nextBoundary,update,record};if(typeof module!=='undefined'&&module.exports)module.exports=api;else root.AmmoniaCapacity=api;
 })(typeof globalThis!=='undefined'?globalThis:this);

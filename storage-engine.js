@@ -13,6 +13,7 @@ function createStorage(engine,profiles,numerics={}){
  function validateOperations(o={}){
   const c={thermalMode:'sealed',receiverHeat:0,evaporatorHeat:0,condenserHeat:0,compressorOn:false,speed:.25,circuit:'closed',valveMode:'closed',manualOpening:.25,superheatTarget:5,kp:.04,ki:.004,drainEnabled:true,...o};
   if(!['sealed','air'].includes(c.thermalMode)||typeof c.compressorOn!=='boolean')throw Error('Invalid storage operating mode.');
+  if(c.compressorDemand!==undefined&&typeof c.compressorDemand!=='boolean')throw Error('Compressor run demand must be boolean.');
   for(const key of ['receiverHeat','evaporatorHeat','condenserHeat'])if(!Number.isFinite(c[key])||Math.abs(c[key])>1000)throw Error('Storage heat rates must be finite, between −1000 and 1000 kW.');
   if(!Number.isFinite(c.speed)||c.speed<.2||c.speed>1)throw Error('Storage compressor speed must be 20–100%.');
   if(!['closed','circulating'].includes(c.circuit)||!['closed','manual','auto'].includes(c.valveMode)||typeof c.drainEnabled!=='boolean')throw Error('Invalid connected-loop controls.');
@@ -28,6 +29,8 @@ function createStorage(engine,profiles,numerics={}){
   if(room.thermalMass<=0||room.leakUA<0||room.gain<0||room.initial< -40||room.initial>50||room.ambient< -20||room.ambient>45)throw Error('Storage room conditions are outside the supported domain.');
   const vessels={};for(const key of names){const v=preview.vessels[key];vessels[key]={massKg:v.massKg,volumeM3:v.volumeM3,internalEnergyKJ:v.internalEnergyKJ,guess:v.pressureBarAbsolute};}
   const ops=validateOperations(operations);
+  if(capacitySettings===null&&ops.compressorDemand!==undefined)throw Error('Run demand requires managed compressor capacity.');
+  if(capacitySettings!==null)ops.compressorDemand=ops.compressorDemand??true;
   if(ops.circuit==='circulating'){
    if(!clean.connections)throw Error('Configure valve and outlet geometry in the equipment profile before initializing circulation.');
    const v=vessels.evaporator,volume=v.volumeM3*clean.connections.outletVolumeFraction,dry=engine.statePT(v.guess,engine.sat(v.guess).T+clean.connections.outletInitialSuperheatK),mass=volume*dry.rho,energy=mass*(dry.h-100*dry.p/dry.rho);
@@ -38,7 +41,7 @@ function createStorage(engine,profiles,numerics={}){
   s.states=recover(s);if(capacitySettings!==null){
    if(!capacitySettings||typeof capacitySettings!=='object'||Array.isArray(capacitySettings)||(Object.getPrototypeOf(capacitySettings)!==Object.prototype&&Object.getPrototypeOf(capacitySettings)!==null))throw Error('Capacity settings must be a plain object.');
    if(ops.circuit!=='circulating')throw Error('Managed capacity requires the circulating circuit.');
-   s.capacity=capacity.create(clean,{manualSpeed:ops.speed,...capacitySettings},{running:ops.compressorOn,speed:ops.speed});
+   s.capacity=capacity.create(clean,{manualSpeed:ops.speed,...capacitySettings},{running:ops.compressorOn&&ops.compressorDemand,speed:ops.speed});
    capacity.advanceAccepted(s.capacity,0,capacityInput(s));
   }if(s.states.outlet)s.controller.sensor=Math.max(0,s.states.outlet.T-engine.sat(s.states.outlet.p).T);s.rows.push(record(s));s.history=history.create(s.rows[0],s.profile,s.initialRoomConfig,observeCompressor(s));return s;
  }
@@ -62,7 +65,7 @@ function createStorage(engine,profiles,numerics={}){
   }
   return {rates,fluidWork};
  }
- function capacityInput(s){return {pressureBarAbsolute:(s.states.outlet||s.states.evaporator).p,enabled:s.operations.compressorOn,stop:s.fault};}
+ function capacityInput(s){return {pressureBarAbsolute:(s.states.outlet||s.states.evaporator).p,enabled:s.operations.compressorOn,demand:s.operations.compressorDemand??true,stop:s.fault};}
  function effective(s){return s.capacity?{running:s.capacity.running,speed:s.capacity.speed}:{running:s.operations.compressorOn,speed:s.operations.speed};}
  function compressor(s,states,checkTrips=true){
   const actual=effective(s);if(!actual.running)return null;
@@ -166,11 +169,13 @@ function createStorage(engine,profiles,numerics={}){
     s.vessels=heun.vessels;s.states=heun.states;s.T=heun.T;s.controller=heun.controller;s.time+=dt;s.acceptedSteps++;remaining-=dt;
     // The plant used the previous delivered speed over this interval. Observe the
     // accepted endpoint only; rejected trials cannot consume sensor/actuator time.
-    if(s.capacity){const pressure=(s.states.outlet||s.states.evaporator).p;capacity.advanceAccepted(s.capacity,dt,{pressureBarAbsolute:pressure,enabled:s.operations.compressorOn});}
+    const wasRunning=s.capacity?.running;
+    if(s.capacity)capacity.advanceAccepted(s.capacity,dt,capacityInput(s));
     s.externalHeatKJ+=dt*(a.externalHeat+b.externalHeat)/2;s.fluidWorkKJ+=dt*(a.fluidWork+b.fluidWork)/2;
     s.gravityEnergyKJ+=dt*(a.gravityWork+b.gravityWork)/2;
     s.electricalKWh+=dt*(a.electrical+b.electrical)/2/3600;s.evaporatorHeatKJ+=dt*(a.heat.evaporator+(a.heat.outlet||0)+b.heat.evaporator+(b.heat.outlet||0))/2;
     try{compressor(s,s.states);}catch(error){if(!error.faultKind&&/property table|property domain|superheat/.test(error.message))error.faultKind='domain';if(!error.faultKind)throw error;latch(s,error);}
+    if(s.capacity&&!s.fault&&wasRunning!==s.capacity.running){history.sample(s.history,record(s),observeCompressor(s),'capacity-state');history.event(s.history,s.time,'capacity-state',{running:s.capacity.running,reason:s.capacity.reason,lastSwitchSeconds:s.capacity.lastSwitch});}
     dt=Math.min(maxStep,dt*2);
    }
    if(!s.fault){s.pending=Math.max(0,s.pending-maxStep);if(history.due(s.history,s.time))history.periodic(s.history,record(s),observeCompressor(s));}
@@ -193,6 +198,7 @@ function createStorage(engine,profiles,numerics={}){
  }
  function update(s,operations,roomBoundary={},capacityPatch=null){
   const next=validateOperations({...s.operations,...operations}),room=validateRoomBoundary(s.roomConfig,roomBoundary);
+  if(!s.capacity&&next.compressorDemand!==undefined)throw Error('Run demand requires managed compressor capacity.');
   if(next.circuit!==s.operations.circuit)throw Error('Reinitialize storage to change circuit geometry.');
   const managed=s.capacity?JSON.parse(JSON.stringify(s.capacity)):null;
   if(capacityPatch!==null&&!managed)throw Error('Reinitialize to enable managed compressor capacity.');
@@ -200,7 +206,7 @@ function createStorage(engine,profiles,numerics={}){
   if(managed&&(capacityPatch!==null||next.speed!==s.operations.speed))capacity.update(managed,{...(capacityPatch||{}),...(next.speed!==s.operations.speed?{manualSpeed:next.speed}:{})});
   if(managed&&next.speed===s.operations.speed&&capacityPatch?.mode==='manual'&&s.capacity.settings.mode!=='manual')next.speed=managed.settings.manualSpeed;
   const capacityChanged=managed&&JSON.stringify(managed.settings)!==JSON.stringify(s.capacity.settings);
-  if(managed)capacity.advanceAccepted(managed,0,{pressureBarAbsolute:(s.states.outlet||s.states.evaporator).p,enabled:next.compressorOn,stop:s.fault});
+  if(managed)capacity.advanceAccepted(managed,0,{pressureBarAbsolute:(s.states.outlet||s.states.evaporator).p,enabled:next.compressorOn,demand:next.compressorDemand??true,stop:s.fault});
   const before={operations:{...s.operations},roomBoundary:{ambient:s.roomConfig.ambient,gain:s.roomConfig.gain,leakUA:s.roomConfig.leakUA}},after={operations:next,roomBoundary:{ambient:room.ambient,gain:room.gain,leakUA:room.leakUA}},changed=history.changes(before,after);
   if(changed.length||capacityChanged)history.sample(s.history,record(s),observeCompressor(s),'before-change');
   if(next.valveMode!==s.operations.valveMode&&next.valveMode==='auto')s.controller.integral=s.controller.opening-next.kp*(s.controller.sensor-next.superheatTarget);
