@@ -32,3 +32,7 @@ Default compressor curves, valve coefficients and heat-transfer assumptions are 
 Attempt state is not persisted across reload. Export it before leaving. History is bounded with explicit removal counters. Custom equipment is available for free exploration, while guided recipes require Default. The reference cycle and quasi-steady room model remain separate from the connected circuit.
 
 GitHub Pages changes only after the release PR is merged and its deployment completes. This checklist documents release acceptance and known scope; it does not claim physical iPad or manufacturer validation.
+
+## v0.5.5 stage 3 acceptance
+
+`tests/capacity-controls-ui.cjs` covers the actual managed UI against SI history exports, pressure/capacity charts, meaningful applied-change events, pressure target/deadband conversion, atomic invalid/no-op edits, mode tracking, rest timers vs playback, explicit legacy reset, training isolation, tablet/phone widths, 44px buttons/selectors and offline/older-browser operation. Both Chromium and WebKit run it. `tests/capacity-plant.cjs` additionally validates combined plant/controller edit transactions and manual-mode request synchronization. Existing regression suites now open the actual settings/training disclosures before interacting with their controls.

@@ -1,4 +1,16 @@
-# Connected capacity control · v0.5.5 stage 2
+# Connected capacity control · v0.5.5 stage 3
+
+## User controls and workspace
+
+Stage 3 connects the explicit managed-capacity API to Live plant. Initialize the automatic-feed DX example, select managed manual or automatic suction PI, then initialize/reset the circuit. Apply edits to the active managed mode through the operating controls. The UI defaults to legacy manual and retains training/bank behavior. Managed modes require one compressor and circulation. Legacy/managed basis changes require explicit reset; manual/automatic managed transitions track actual speed.
+
+Targets use the selected pressure display units; deadband is a difference with no atmospheric offset. Pressure inputs display six decimal places at most while retaining unchanged SI drafts across conversion. Gains keep their labeled SI basis. Compressor speed is a manual request, not automatic delivered output. Mode, applied pressure target, requested/actual speed, compressor ON/OFF, playback state, limits and remaining delays are shown separately.
+
+The reference calculator is collapsible in Live plant and its shared unit selectors remain available. The schematic and primary capacity controls precede configuration. Room/feed settings, test heat/tuning, diagnostics and guided training use disclosures; faults reveal diagnostic evidence. Routine buttons/selects and checkbox labels/history cursor have 44px touch targets. Tablets show the full schematic; narrow phones retain horizontal diagram scrolling. Navigation links jump to schematic, trends, equipment and exercises.
+
+Managed histories add suction target/measured/sensed pressure and requested/actual speed series. Capacity setting events appear under Applied changes with meaningful converted descriptions. Legacy defaults to the pressure view; managed runs default to suction control; All trends remains available. Both CSV routes retain separate SI capacity snapshots and signals.
+
+`storage.update(state, operations, roomBoundary, capacityPatch)` validates combined form edits before changing state/history. A rejected capacity target cannot partially apply a room load, feed setting or manual request. A live transition to managed manual without a changed manual request tracks actual speed and synchronizes the applied operation speed. No-op settings and unit conversions preserve controller timing and add no setting events.
 
 ## Scope and API
 
@@ -8,7 +20,7 @@
 
 `storage.updateCapacity(state, patch)` changes managed settings atomically and records one settings event with before/after samples. Existing `storage.update` edits master permission/manual speed and room/feed controls. No-op settings edits preserve timing and generate no event. A mode change to manual without a speed request tracks actual speed; a later speed-setting edit supplies a new request. Controller settings and the legacy slider value are distinct records.
 
-`storage.record(state).capacity` and history sample `.capacity` hold detached SI settings, requested/actual speed, measured/sensed/target suction pressure, timing and limits. Automatic ticks do not produce user control events. Managed CSV exports add labeled capacity columns and retain complete JSON evidence; legacy CSV layout and history are unchanged. Stage 3 adds user-facing mode controls and charts; this stage's opt-in API is exercised by numerical/browser tests.
+`storage.record(state).capacity` and history sample `.capacity` hold detached SI settings, requested/actual speed, measured/sensed/target suction pressure, timing and limits. Automatic ticks do not produce user control events. Managed CSV exports add labeled capacity columns and retain complete JSON evidence; legacy CSV layout and history are unchanged. The opt-in API and user controls are exercised by numerical/browser tests.
 `create(profile, settings, initial)` normalizes an equipment snapshot and accepts exactly one compressor. Initial state supports `running` and `speed`; elapsed run/rest age starts at zero, never an invented history. `advance(state, seconds, input)` consumes a held accepted pressure observation and permissions. `update(state, patch)` validates setting edits atomically. `record(state)` returns a detached SI telemetry snapshot. Unsupported banks are rejected by this new module; existing manual bank profiles continue working unchanged in the plant.
 
 Inputs are `pressureBarAbsolute`, `enabled`, `demand`, `available` and `stop`. Pressure must be a number or null. Null, nonfinite or out-of-grid (0.3–35 bar absolute) readings inhibit operation in either mode. Incorrect types/settings reject without changing state. `enabled` is the operator master permission; `demand` is ordinary run demand, and `available` is an external equipment permission. A supplied stop must be an existing equipment/domain/solver snapshot with message and detection time. The controller does not detect new equipment trips, clear a model stop, infer discharge protection from suction pressure, or decide whether real equipment is safe to restart.
@@ -44,7 +56,7 @@ Ordinary `demand=false` honors minimum on time. Operator disable, equipment unav
 
 Turning on enters the minimum modeled speed; turning off inhibits capacity immediately. The running ramp limit does not model rotor coast-down, motor acceleration through the unsupported 0–20% range, unloaders, oil interlocks or a measured start sequence. The adapter passes actual running/speed to compressor calculations while retaining a valid user speed setting when off. Clearing a plant stop retains original evidence and starts no automatic bypass of the rest/start delay.
 
-Telemetry reports raw/requested/actual capacity, measured/sensed/target pressure, deadband error, integral, limit reasons, starts, delay/run/rest remaining time and original stop evidence. It is SI and detached from state. Display conversion and charts belong to stage 3; Fahrenheit/psig app defaults remain intact.
+Telemetry reports raw/requested/actual capacity, measured/sensed/target pressure, deadband error, integral, limit reasons, starts, delay/run/rest remaining time and original stop evidence. It is SI and detached from state. Display conversion and charts are implemented in stage 3; Fahrenheit/psig app defaults remain intact.
 
 ## Verification and next stages
 
@@ -54,7 +66,9 @@ Chromium and WebKit browser suites check the bundled module with iPad emulation,
 
 1. Stage 1: independent controller contract and tests (implemented).
 2. Stage 2: accepted-state integration, accounting/protection and coupled verification (implemented).
-3. Stage 3: user controls, target/actual trends and limiting reasons. Assess banks separately before adding sequencing.
+3. Stage 3: user controls, target/actual trends, limiting reasons and six workspace/UI improvements (implemented). Bank sequencing remains outside this release.
 4. Stage 4: integrated operating/recovery checks, suitable training exercises, browser/offline release polish.
 
 v0.6.0 remains manufacturer/measured equipment calibration. v0.5.0 remains the deployed stable baseline until the new release is approved and merged.
+
+Stage 3 verification adds a Chromium/WebKit user-path suite for model/export agreement, automatic startup, mode tracking/rest status, signal charts, capacity events, atomic invalid/no-op edits, SI-preserving target/deadband conversion, legacy reset, training isolation, tablet/phone layout, touch sizes and offline/older-browser execution. Existing controller, plant and training suites remain required.

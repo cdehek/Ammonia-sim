@@ -191,19 +191,25 @@ function createStorage(engine,profiles,numerics={}){
   if(!Number.isFinite(next.ambient)||next.ambient< -20||next.ambient>45||!Number.isFinite(next.gain)||next.gain<0||!Number.isFinite(next.leakUA)||next.leakUA<0)throw Error('Room boundaries require ambient −20 to 45 °C and finite non-negative heat gain / leakage.');
   return next;
  }
- function update(s,operations,roomBoundary={}){
+ function update(s,operations,roomBoundary={},capacityPatch=null){
   const next=validateOperations({...s.operations,...operations}),room=validateRoomBoundary(s.roomConfig,roomBoundary);
   if(next.circuit!==s.operations.circuit)throw Error('Reinitialize storage to change circuit geometry.');
   const managed=s.capacity?JSON.parse(JSON.stringify(s.capacity)):null;
-  if(managed&&next.speed!==s.operations.speed)capacity.update(managed,{manualSpeed:next.speed});
+  if(capacityPatch!==null&&!managed)throw Error('Reinitialize to enable managed compressor capacity.');
+  const previousCapacity=managed?capacity.record(managed):null;
+  if(managed&&(capacityPatch!==null||next.speed!==s.operations.speed))capacity.update(managed,{...(capacityPatch||{}),...(next.speed!==s.operations.speed?{manualSpeed:next.speed}:{})});
+  if(managed&&next.speed===s.operations.speed&&capacityPatch?.mode==='manual'&&s.capacity.settings.mode!=='manual')next.speed=managed.settings.manualSpeed;
+  const capacityChanged=managed&&JSON.stringify(managed.settings)!==JSON.stringify(s.capacity.settings);
   if(managed)capacity.advanceAccepted(managed,0,{pressureBarAbsolute:(s.states.outlet||s.states.evaporator).p,enabled:next.compressorOn,stop:s.fault});
   const before={operations:{...s.operations},roomBoundary:{ambient:s.roomConfig.ambient,gain:s.roomConfig.gain,leakUA:s.roomConfig.leakUA}},after={operations:next,roomBoundary:{ambient:room.ambient,gain:room.gain,leakUA:room.leakUA}},changed=history.changes(before,after);
-  if(changed.length)history.sample(s.history,record(s),observeCompressor(s),'before-change');
+  if(changed.length||capacityChanged)history.sample(s.history,record(s),observeCompressor(s),'before-change');
   if(next.valveMode!==s.operations.valveMode&&next.valveMode==='auto')s.controller.integral=s.controller.opening-next.kp*(s.controller.sensor-next.superheatTarget);
   s.operations=next;s.roomConfig=room;if(managed)s.capacity=managed;s.lastFlows=null;s.flowInterval=null;
   // Keep an applied control snapshot even when exporting immediately before a step.
   s.rows.push(record(s));if(s.rows.length>7200)s.rows.shift();
-  if(changed.length){history.sample(s.history,record(s),observeCompressor(s),'after-change');history.event(s.history,s.time,'controls',{changes:changed});}
+  if(changed.length||capacityChanged)history.sample(s.history,record(s),observeCompressor(s),'after-change');
+  if(changed.length)history.event(s.history,s.time,'controls',{changes:changed});
+  if(capacityChanged)history.event(s.history,s.time,'capacity-settings',{before:previousCapacity.settings,after:managed.settings});
  }
 
  function updateCapacity(s,patch){

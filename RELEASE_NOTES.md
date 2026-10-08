@@ -1,3 +1,12 @@
+# Ammonia Lab v0.5.5 stage 3
+
+- Added connected legacy/managed manual/automatic capacity selection, suction targets, running-speed bounds and illustrative response/timing settings. Legacy remains default; managed control requires one compressor and explicit initialization.
+- Added applied target/requested/actual capacity readings, true compressor state separate from playback, limiting reasons and remaining timers. Managed mode switching tracks actual speed.
+- Added suction target/measured/sensed and requested/actual capacity trends, converted capacity-edit details/filtering and SI snapshots in both CSV routes. Combined form edits validate atomically.
+- Incorporated all six UI review fixes: full-width tablet workspace with collapsible reference calculator; schematic/controls first with folded training/settings/diagnostics; distinct capacity/feed/model wording; actual compressor status/speed; enlarged touch targets/text; capacity trend/event presentation.
+- Preserved Fahrenheit/psig defaults, legacy banks, fixed training recipes, offline bundling and older-browser compatibility. Pressure draft formatting retains SI precision across unit changes.
+- Added a managed-controls Chromium/WebKit suite and transactional numerical checks. Required regression is twelve numerical suites, fifteen Chromium suites and six WebKit suites. Stage 4 remains training/integrated release polish; v0.6.0 remains equipment calibration.
+
 # Ammonia Lab v0.5.5 stage 2 · opt-in plant capacity feedback
 
 - Coupled suction PI and delivered compressor speed to conservative circulating physics; accepted adaptive steps alone advance controller time.

@@ -10,11 +10,11 @@
 ## v0.5.5 · connected compressor capacity control
 
 1. **Controller foundation** (implemented): independent single-compressor manual/automatic suction PI, speed limits, sensor/actuator/ramp response, run/rest/start timing, tracking anti-windup and external-stop priority. See [CAPACITY_CONTROL.md](CAPACITY_CONTROL.md).
-2. **Connect to the model** (implemented, current stage): integrate at accepted control boundaries, retain conservative accounting and independent protection; validate startup/load response and feed-valve interaction.
-3. **Controls and visualization**: user modes/setpoint/limits, target/actual pressure and requested/actual capacity trends, clear limiting reasons. Evaluate bank sequencing separately before implementing it.
+2. **Connect to the model** (implemented): integrate at accepted control boundaries, retain conservative accounting and independent protection; validate startup/load response and feed-valve interaction.
+3. **Controls and visualization** (implemented, current stage): user modes/setpoint/limits, target/actual pressure and requested/actual capacity trends, clear limiting reasons. Evaluate bank sequencing separately before implementing it.
 4. **Verification and release polish**: integrated dynamics, trips/recovery, mode switching, refinement, appropriate training, browsers/offline and final release checks.
 
-Stage 2 supports explicit managed-capacity initialization through the model API. Existing UI runs/training retain manual capacity; stage 3 adds mode/setpoint controls and trends. Existing manual multi-compressor profiles and saved schemas remain unchanged.
+Stage 3 exposes explicit managed capacity controls, pressure/capacity trends and limit explanations. Existing default/manual runs and training retain their legacy behavior; tablet layout, control grouping, model labels, compressor status, touch targets and event presentation have been improved. Existing manual multi-compressor profiles and saved schemas remain unchanged.
 
 ## v0.6.0 · equipment calibration
 

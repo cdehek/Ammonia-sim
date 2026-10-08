@@ -4,14 +4,14 @@ const P=require('../equipment-profiles'),e=require('../engine').createEngine(req
 (async()=>{
  const browser=await (process.env.TEST_BROWSER==='webkit'?webkit:chromium).launch(process.env.TEST_BROWSER==='webkit'?{headless:true}:launchOptions);
  try{
-  const page=await browser.newPage({...devices['iPad (gen 7)']}),errors=[];page.on('pageerror',e=>errors.push(e.message));await page.clock.install();await page.goto(process.env.TEST_URL);await page.locator('#tab-live').click();
+  const page=await browser.newPage({...devices['iPad (gen 7)']}),errors=[];page.on('pageerror',e=>errors.push(e.message));await page.clock.install();await page.goto(process.env.TEST_URL);await page.locator('#tab-live').click();await page.locator('#storage-configuration summary').first().click();
   assert.match(await page.locator('#schematic-status').textContent(),/Initialize/);assert.equal(await page.locator('[data-reading="receiver-pressure"]').textContent(),'—');
   await page.locator('#storage-example').click();
   const initial=model.create(P.DEFAULT,{}, {circuit:'circulating',thermalMode:'air',compressorOn:true,speed:.7,valveMode:'auto'}),r=model.record(initial),c=model.observeCompressor(initial);
   const level=page.locator('[data-level="receiver"]');assert(Math.abs(Number(await level.getAttribute('data-fraction'))-r.vessels.receiver.liquidVolumeFraction)<1e-12);
   assert.equal(await page.locator('[data-reading="receiver-pressure"]').textContent(),((r.vessels.receiver.p-1.01325)*14.503773773).toFixed(2)+' psig');
   assert.equal(await page.locator('[data-reading="discharge-temperature"]').textContent(),'Discharge: '+(c.dischargeTemperature*1.8+32).toFixed(2)+' °F');
-  assert.match(await page.locator('[data-reading="compressor-status"]').textContent(),/PAUSED/);
+  assert.equal(await page.locator('[data-reading="compressor-status"]').textContent(),'ON');assert.match(await page.locator('#schematic-status').textContent(),/Paused/);
   await page.locator('[data-component="feed"]').focus();await page.keyboard.press('Enter');assert.equal(await page.locator('[data-component="feed"]').getAttribute('aria-pressed'),'true');assert.match(await page.locator('#schematic-detail').textContent(),/lagged sensed/);
   await page.locator('#storage-step').click();assert.match(await page.locator('#schematic-status').textContent(),/^10.0 s/);assert.match(await page.locator('#schematic-flow-note').textContent(),/accepted average flow/);assert.equal(await page.locator('#schematic-graphic svg').getAttribute('class'),'schematic-still');
   await page.setViewportSize({width:1520,height:1100});await page.locator('#storage-schematic').screenshot({path:path.join(__dirname,'schematic-desktop.png')});await page.locator('[data-inspect="receiver"]').click();assert.equal(await page.locator('[data-component="receiver"]').getAttribute('aria-pressed'),'true');
