@@ -1,8 +1,14 @@
-# Ammonia Lab v0.5.0
+# Ammonia Lab v0.5.5 stage 1
 
 Open `index.html` in Chrome, Edge, Firefox or Safari. The file is self-contained and works offline. HTML previews can disable JavaScript; the startup notice remains visible when controls cannot initialize.
 
 Display units default to **psig and Fahrenheit** on startup and Reset. Room temperatures and thermostat deadband follow the selected temperature units. SI units remain explicitly labeled in numerical reference data and CSV exports.
+
+## v0.5.5 stage 1 · capacity controller foundation
+
+An independent single-compressor controller now provides manual/automatic suction-pressure modes, speed limits, lag/ramp response, start/run/rest timers, integral tracking and external model-stop priority. It is bundled and tested in Node, Chromium and WebKit. Controller calculations remain separate from connected physics in this stage: connected speed controls still work manually, and saved profiles/schemas and training behavior are unchanged. Automatic plant integration is stage 2; its controls/charts are stage 3.
+
+Settings are explicitly illustrative assumptions within the existing speed envelope and profile pressure limits. No manufacturer motor response or plant-calibrated gains are claimed. See [CAPACITY_CONTROL.md](CAPACITY_CONTROL.md) for the contract, timings, tests and staged plan. GitHub Pages retains the approved v0.5.0 baseline until this new release is merged.
 
 ## v0.5.0 · visualization and training release
 

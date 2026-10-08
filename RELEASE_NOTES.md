@@ -1,3 +1,11 @@
+# Ammonia Lab v0.5.5 stage 1
+
+Adds a standalone, single-compressor capacity-controller foundation: manual/automatic suction PI, absolute-pressure targets and deadband, speed bounds, sensor/actuator/ramp response, start/minimum run/rest timing, mode tracking and anti-windup against delivered capacity. Operator disable, missing signals, unavailable equipment and original model stops inhibit output with priority over ordinary demand holds. Validation is atomic, no-op edits preserve timing, and accepted cadence prevents batching-dependent results.
+
+The module is bundled but not connected to storage integration or user controls yet. No refrigerant equations, valve controls, saved profile schemas or existing manual bank behavior change. Controller response assumptions remain illustrative; targets respect profile pressure limits. Stage 2 must validate the actual coupled loop and preserve independent protection. See [CAPACITY_CONTROL.md](CAPACITY_CONTROL.md).
+
+New numerical and Chromium/WebKit foundation suites cover response, limits, saturation recovery, switching, timers, stops, invalid/no-op inputs, batching, detached SI evidence, single-compressor scope, offline/older-browser execution and unchanged plant trajectories/readings. Required regression now comprises eleven numerical suites, fourteen Chromium suites and five WebKit suites with iPad emulation.
+
 # Ammonia Lab v0.5.0
 
 Live plant now combines an accepted-state equipment schematic, synchronized trends/event history and five guided Default exercises with measured objectives, reflections, hints and exportable debrief evidence.

@@ -9,7 +9,12 @@
 
 ## v0.5.5 · connected compressor capacity control
 
-Automatic suction-pressure control, compressor speed limits and response delays, and interactions with feed-valve control. Connected speed remains manual until this work is implemented. Evaluate sequencing against the supported compressor-bank model.
+1. **Controller foundation** (implemented, current stage): independent single-compressor manual/automatic suction PI, speed limits, sensor/actuator/ramp response, run/rest/start timing, tracking anti-windup and external-stop priority. See [CAPACITY_CONTROL.md](CAPACITY_CONTROL.md).
+2. **Connect to the model**: integrate at accepted control boundaries, retain conservative accounting and independent protection; validate startup/load response and feed-valve interaction.
+3. **Controls and visualization**: user modes/setpoint/limits, target/actual pressure and requested/actual capacity trends, clear limiting reasons. Evaluate bank sequencing separately before implementing it.
+4. **Verification and release polish**: integrated dynamics, trips/recovery, mode switching, refinement, appropriate training, browsers/offline and final release checks.
+
+Connected plant speed remains manual in stage 1. The independent module is bundled but dormant; existing manual multi-compressor profiles and saved schemas remain unchanged.
 
 ## v0.6.0 · equipment calibration
 
