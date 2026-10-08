@@ -1,6 +1,6 @@
-# Refrigerant storage model · v0.4.5 stages 2–3
+# Refrigerant storage model · v0.4.5
 
-Stage 3 adds an optional fourth outlet volume and connected valve control; see [VALVE_CONTROL.md](VALVE_CONTROL.md). The following describes the retained isolated mode. The stage-2 laboratory evolves three uniform fixed-volume refrigerant inventories. It is a development checkpoint, with feed and condenser-to-receiver drain connections closed. It supports sealed heating/cooling, air/room coupling and manual compressor pump-down from evaporator to condenser. Stage 3 must supply valve/drain flow laws and outlet superheat control before claiming a circulating refrigeration-plant simulation.
+The laboratory supports three isolated volumes for sealed heating/cooling, room/air exchange and manual pump-down. Circulating mode partitions the existing evaporator into core/outlet volumes and adds feed/drain flow and superheat control; see [VALVE_CONTROL.md](VALVE_CONTROL.md). The following describes the retained isolated mode.
 
 ## State and property recovery
 
@@ -17,7 +17,7 @@ For every fixed refrigerant volume:
 
 There is no moving-wall boundary work. Flow energy is **enthalpy**, while stored energy is **internal energy**. Each internal connection removes and adds the same mass. Unchanged inlet/outlet enthalpy is an isenthalpic transfer boundary; a changed enthalpy contributes explicit work at rate ṁ(hin − hout). Stage 3 is responsible for the hydraulic flow law; the port API does not invent a valve coefficient or infer flow from a setpoint.
 
-Manual pump-down takes dry vapor from evaporator to condenser. For a two-phase evaporator the vapor outlet is saturated, with ideal phase selection; for a superheated evaporator it uses the bulk vapor state. A liquid-only suction volume stops the model instead of compressing liquid. This ideal outlet assumption is not a modeled separator or proof of carryover protection. No terminal superheat zone is resolved yet. The compressor uses profile displacement, compressor count and efficiency assumptions at actual recovered pressures. Discharge enthalpy follows the isentropic-efficiency relation. Refrigerant receives compressor fluid work; electrical input includes motor inefficiency, with motor losses external to the modeled room/refrigerant system.
+Manual pump-down takes dry vapor from evaporator to condenser. For a two-phase evaporator the vapor outlet is saturated, with ideal phase selection; for a superheated evaporator it uses the bulk vapor state. A liquid-only suction volume stops the model instead of compressing liquid. This ideal outlet assumption is not a modeled separator or proof of carryover protection. Isolated mode does not resolve terminal superheat; circulating mode resolves a separate outlet. The compressor uses profile displacement, compressor count and efficiency assumptions at actual recovered pressures. Discharge enthalpy follows the isentropic-efficiency relation. Refrigerant receives compressor fluid work; electrical input includes motor inefficiency, with motor losses external to the modeled room/refrigerant system.
 
 ## Thermal boundaries and controls
 
@@ -40,3 +40,7 @@ Direct-reference acceptance limits are 0.05 bar pressure for compressed liquid, 
 Observed seeded maximum differences: liquid pressure 0.026157 bar, vapor pressure 0.000151 bar, mixture pressure 0.000111 bar, temperature 0.002609 K. In the 20-second coupled pump-down/air case, mass residual was below 1e-12 kg and combined energy residual below 1e-8 kJ. Refining the maximum step from 0.1 to 0.05 seconds changed evaporator pressure by about 0.00000112 bar. These conservation checks verify accounting; they do not validate the heat-transfer or compressor assumptions against a real plant.
 
 The browser regression covers initialization, units, heat response, pressure retention, exports, recovery, timer isolation, unavailable initialization and mobile layout. CSV contains the exact profile and room-condition snapshots, applied controls, per-vessel states, conservation totals and fault evidence in SI.
+
+## Integrated release verification
+
+See RELEASE_NOTES.md and integration-validation.json for the 24 stage-4 cases. Fault evidence now always describes the accepted state at the recorded time; rejected-trial readings are retained separately. Live ambient/load/leakage changes are applied atomically, recorded per row, and integrated through the same external-heat ledger. Initial room temperature and heat capacity require reinitialization.

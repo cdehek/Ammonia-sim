@@ -1,4 +1,4 @@
-# Equipment profiles · v0.4.5 stage 3
+# Equipment profiles · v0.4.5
 
 The Live plant has an immutable built-in **Default** and up to 20 custom profiles. Profiles describe equipment, while room temperatures, ambient conditions, heat gain, thermostat/control settings, availability and playback speed remain operating settings. The reference operating-point calculator and its existing scenario format remain separate.
 
@@ -18,7 +18,7 @@ Saving changes to the active profile does not change the active equipment snapsh
 - Per-compressor swept displacement in m³/h, evaporator/condenser UA in kW/K, and pressure/discharge-temperature operating limits.
 - Built-in example efficiency curves, or fixed volumetric, isentropic and motor efficiency assumptions in percent. Fixed assumptions affect compressor flow, work and electrical input; they do not constitute a manufacturer performance map.
 - Name, description, source category/reference, immutable ID, revision, and creation/update timestamps.
-- Receiver, evaporator and condenser refrigerant volumes in m³, with optional saturated inventory initialization by liquid volume fills or total modeled charge. The preview uses real-fluid densities, but these settings do not affect current live physics. The separate storage laboratory uses these settings; optional connection specifications enable stage-3 circulation.
+- Receiver, evaporator and condenser refrigerant volumes in m³, with optional saturated inventory initialization by liquid volume fills or total modeled charge. The preview uses real-fluid densities, but these settings do not affect the original quasi-steady room physics. The separate storage laboratory uses these settings; optional connection specifications enable stage-3 circulation.
 
 Data categories distinguish examples, user estimates, and user-entered manufacturer values. Manufacturer entries require a reference, but neither that label nor successful input validation establishes measured performance accuracy or an independently validated operating envelope. No manufacturer curves are downloaded or fitted in this release. Unsupported arrangements (including flooded Live plant profiles), performance-map types, schema versions, types and out-of-range values are rejected. The separate reference calculator still supports its ideal flooded mode.
 

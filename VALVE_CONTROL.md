@@ -1,6 +1,6 @@
-# Connected DX circuit · v0.4.5 stage 3
+# Connected DX circuit · v0.4.5
 
-Stage 3 adds a circulating circuit to the storage laboratory. It remains a development model awaiting stage-4 integrated validation and release. Use Live plant → Connected refrigerant circuit. Select circulating DX, room/ambient boundaries, enable the compressor at 70%, select automatic feed control, and initialize. Default target is 9 °F temperature difference (5 K). All operating controls require Apply, Start or Advance; initialization always reads the current controls. Changing circuit geometry requires reinitialization.
+The connected storage laboratory supports a circulating DX circuit. Use Live plant → Initialize automatic DX example to load air boundaries, 70% compressor speed and automatic feed control at 9 °F difference (5 K), then Start or Advance. The example uses the active profile and applied initial room conditions; custom profiles need configured inventory and connections. Controls require Apply, Start or Advance. Changing circuit geometry requires reinitialization. Ambient air, internal room gain and heat leakage can be applied during a run; initial room temperature and thermal mass remain fixed until reinitialization.
 
 ## Inventory and outlet
 
@@ -8,7 +8,7 @@ Circulating mode resolves receiver, boiling core, evaporator outlet and condense
 
 The boiling core supplies vapor through ideal phase selection and a one-way pressure-driven vapor connection. The outlet itself uses its actual recovered bulk state. Compressor suction is taken from this outlet; a wet outlet latches a model-domain stop rather than synthesizing dry superheat or asserting a physical safety-device trip. This does not model droplet entrainment, a separator, pipe holdup, liquid carryover protection or moving phase boundaries. Closed-circuit mode preserves stage-2 isolated/pump-down behavior.
 
-Outlet heat transfer uses its specified fraction of evaporator UA. Remaining UA belongs to the core. In air mode both signed heat exchanges are drawn from the room. Outlet superheat is Tout − Tsat(Pout), zero for equilibrium mixtures, with a first-order sensor lag initialized to the actual outlet superheat. Compressor speed remains manual for this stage.
+Outlet heat transfer uses its specified fraction of evaporator UA. Remaining UA belongs to the core. In air mode both signed heat exchanges are drawn from the room. Outlet superheat is Tout − Tsat(Pout), zero for equilibrium mixtures, with a first-order sensor lag initialized to the actual outlet superheat. Compressor speed remains manual in this release.
 
 ## Hydraulic laws
 
@@ -32,4 +32,12 @@ Profiles v1/v2 migrate to v3 without inventing connection specifications or chan
 
 `tests/valves.cjs` checks liquid flashing caps, opening curves, reverse flow, gravity head, isenthalpic flashing, vapor choking, anti-windup, actuator response, missing phases, migration, initial partition conservation, wet startup rollback, batching invariance and timestep refinement. A 600-second Default automatic run reaches approximately 5.016 K actual superheat with mass residual below 1e-8 kg and combined energy residual below 1e-6 kJ. A 20-second refinement from 0.1 to 0.05-second outer intervals and half tolerance changes outlet pressure by approximately 0.00000735 bar. These are numerical and accounting checks, not measured plant or valve validation.
 
-`tests/valves-ui.cjs` verifies connected controls, actual versus sensed superheat, Fahrenheit differences, editable geometry, missing specifications, reset requirements, exports and mobile layout. Existing property, dynamic, profile, initialization and storage suites remain enabled. Stage 4 must broaden integrated operating/fault scenarios and complete release validation. Metal/pipe storage, frictional pressure loss, oil, defrost, latent loads, dynamic compressor sequencing and manufacturer-calibrated valve behavior remain outside this stage.
+`tests/valves-ui.cjs` verifies connected controls, actual versus sensed superheat, Fahrenheit differences, editable geometry, missing specifications, reset requirements, exports and mobile layout. Existing property, dynamic, profile, initialization and storage suites remain enabled. Stage 4 adds 24 integrated operating/fault/recovery cases and the embedded release report; see RELEASE_NOTES.md. Metal/pipe storage, frictional pressure loss, oil, defrost, latent loads, dynamic compressor sequencing and manufacturer-calibrated valve behavior remain outside this stage.
+
+## Phase exhaustion and recorded evidence
+
+A liquid port's transported rate is bounded by the available liquid mass divided by the maximum outer integration interval. The available mass is (1 − x)m for a mixture or m for a liquid-only source. This positivity-preserving numerical flux limiter prevents extracting unavailable liquid and avoids repeated dry/wet switching when a receiver or condenser runs out. It bounds paired transport before integration; it never clips stored mass/energy or adds charge. The limiter horizon shrinks under timestep refinement. It is not a manufacturer valve law or physical drain time constant.
+
+Accepted port rates are recorded as the mean of the two stage fluxes over the last accepted substep, with that interval, requested hydraulic demand and `phaseLimited` diagnostics. Initial/control-update samples show instantaneous demand. Actual superheat and command are evaluated at the recorded state. For the 40 °C condenser-air case, 0.1, 0.05 and 0.025-second outer steps all reach the expected discharge-temperature trip around 64.525 seconds; retained condenser pressures differ by less than 0.0001 bar. The default run takes roughly 2,000 accepted steps rather than exhausting a 200,000-trial call budget.
+
+Fault readings always refer to the committed state at the recorded stop time. A predictor that would enter wet suction can stop the model while retaining the last valid dry state. Its attempted readings are saved separately in `attemptedReadings`; they are never labeled as retained readings. CSV includes the full fault snapshot, exact limits, initial/current room metadata and per-row ambient/load/leakage controls. Valid Apply events append control snapshots without advancing time; rejected changes alter none of the state, controls or history.

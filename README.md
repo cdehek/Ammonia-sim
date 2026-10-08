@@ -1,20 +1,18 @@
-# Ammonia Lab v0.4.5 · stage 3
+# Ammonia Lab v0.4.5
 
 Open `index.html` in Chrome, Edge, Firefox or Safari. The file is self-contained and works offline. HTML previews can disable JavaScript; the startup notice remains visible when controls cannot initialize.
 
 Display units default to **psig and Fahrenheit** on startup and Reset. Room temperatures and thermostat deadband follow the selected temperature units. SI units remain explicitly labeled in numerical reference data and CSV exports.
 
-## v0.4.5 stage 3 · connected circuit and superheat control
+## v0.4.5 · connected refrigerant simulation
 
-The storage laboratory now supports a circulating DX circuit with pressure-driven liquid feed, gravity-assisted condenser drain, a resolved evaporator outlet and automatic/manual feed control. Valve opening and measured superheat have response lag; stored outlet temperature and pressure determine actual superheat. Charge and energy remain conservative, and wet suction stops the model. Default profiles include illustrative geometry; older profiles require explicit configuration for circulation. Follow [VALVE_CONTROL.md](VALVE_CONTROL.md) for setup, equations, assumptions, migration and verification. Stage 4 remains before the integrated release.
+Open **Live plant → Initialize automatic DX example** to load circulating DX, air boundaries, 70% manual compressor speed and automatic feed control at 9 °F difference (5 K). It uses the active profile and applied initial room conditions, and resets the circuit. With Default equipment this is a ready-to-run example. Use Start or Advance 10 seconds. Change ambient air, room heat gain, leakage, feed control, drain availability or speed and Apply to perturb the running circuit.
 
-## v0.4.5 stage 2 · refrigerant storage
+The connected model evolves receiver, evaporator core, outlet and condenser mass/internal energy. Pressures and phases follow the bounded real-fluid EOS. Feed/drain flow is pressure driven; the outlet provides actual superheat and dry compressor suction. Valve and sensor response lag are modeled. Mass and combined room/refrigerant energy remain conservative. Wet suction, property boundaries and numerical limits are explicit stops, separate from hardware trip thresholds. Isolated mode retains sealed heating/cooling and manual pump-down.
 
-Live plant includes a **Refrigerant storage** laboratory, initialized from the active profile. Explore sealed heating/cooling or room/ambient exchange, with optional manual pump-down. Stored mass and internal energy determine pressure and phase; off-state pressures persist. Mass and combined room/refrigerant energy checks, adaptive integration, SI CSV and explicit fault limits are available. Isolated mode retains closed feed/drain; circulating mode adds stage-3 valve flow and control. See [STORAGE_MODEL.md](STORAGE_MODEL.md) for equations, tested accuracy and scope. The integrated v0.4.5 release remains on its development branch.
+Profiles use schema 3 with optional inventory and connection specifications. Older profiles migrate without invented charge or valve geometry; configure a custom profile before using circulation. Default inputs remain illustrative. The original quasi-steady room model and reference cycle calculator remain available as separate models. See [STORAGE_MODEL.md](STORAGE_MODEL.md), [VALVE_CONTROL.md](VALVE_CONTROL.md) and [RELEASE_NOTES.md](RELEASE_NOTES.md).
 
-## v0.4.5 stage 1 · profiles and initialization
-
-This development stage adds version-2 profiles, migration of version-1 profiles, and optional starting inventory by liquid volume fills or total modeled charge. A preview calculates mass, receiver fill and saturation temperatures and rejects infeasible charge. Defaults are illustrative assumptions. The original Live plant remains quasi-steady; the separate stage-2 laboratory uses these settings for storage evolution. Stage 3 adds valve/control integration; full integrated validation remains stage 4. See [INVENTORY_INITIALIZATION.md](INVENTORY_INITIALIZATION.md). The integrated v0.4.5 release is planned after all stages are complete.
+Stage-4 integration checks cover 24 operating/fault/recovery cases, phase exhaustion, control changes, atomic invalid-input rejection, playback batching and timestep refinement. The deterministic [integration-validation.json](integration-validation.json) report is embedded in **Model & validation**. It verifies numerical behavior and accounting; it does not establish manufacturer-calibrated or measured plant accuracy.
 
 ## v0.4.1 fault handling
 
@@ -24,9 +22,9 @@ Live playback stops within the current numerical interval (one simulated second 
 
 The Live plant now has a read-only **Default** and custom equipment profiles. Create from Default, duplicate, edit, save, select, delete inactive profiles, and import/export profile JSON. Custom specifications can use the existing example curves or fixed efficiency assumptions. Source notes and revisions distinguish user estimates and user-entered manufacturer values from validated performance data.
 
-Profiles persist in the browser; JSON exports are the portable backup. **Use profile** applies equipment and resets an existing run while retaining operating settings. Saving an active profile alone does not alter running equipment. Refrigerant volumes and optional charge/fill initialization have an equilibrium starting-state preview; they do not affect current live playback. See [EQUIPMENT_PROFILES.md](EQUIPMENT_PROFILES.md) for supported systems, workflow, units, storage and schema.
+Profiles persist in the browser; JSON exports are the portable backup. **Use profile** applies equipment and resets an existing run while retaining operating settings. Saving an active profile alone does not alter running equipment. Refrigerant volumes and optional charge/fill initialization have an equilibrium starting-state preview; they initialize the connected circuit; they do not alter the original quasi-steady model. See [EQUIPMENT_PROFILES.md](EQUIPMENT_PROFILES.md) for supported systems, workflow, units, storage and schema.
 
-## Live plant
+## Quasi-steady room model
 
 Select **Live plant** to run the coupled room/equipment model. Start, Pause/Resume, Reset and Advance 1 minute work at 1×, 60× or 300× playback. Apply live setpoints, heat load, ambient air, exchanger UAs, manual speed or automatic suction PI control and staging for up to three identical example compressors; disturbance buttons provide quick demonstration changes. Trends show pressures, room temperature, speed, capacity and power. Trips latch until reset, and minimum on/off times are enforced.
 
@@ -42,6 +40,7 @@ npx playwright install --with-deps chromium
 npm test
 npm run build
 npm run test:browser
+npm run test:webkit
 ```
 
 `npm test` uses checked-in reference data; Python CoolProp is needed only to regenerate that data/property grid. Browser tests launch a local server and use bundled Chromium (or `/usr/bin/chromium` when installed). The build embeds source and JSON data into `index.html`; no browser build dependencies or network APIs are needed at runtime. The GitHub verification workflow checks source/bundle consistency, physics, dynamic controls and browsers on pushes and PRs. GitHub Pages currently publishes the checked-in root `index.html` through its existing deployment configuration.
@@ -73,7 +72,7 @@ The application rejects unsupported phases and property-domain requests. It warn
 
 The room model integrates a piecewise-linear thermal ODE analytically through thermostat and coil-capacity transitions. It is not a refrigerant startup or inventory model. Its targets must remain above the evaporator outlet temperature. It excludes latent loads, defrost, fan/pump power and oil behavior.
 
-Flooded mode omits recirculation flow, pump head and separator inventory. Compressor volumetric efficiency is a user assumption, not a manufacturer map. UA checks are isothermal screening estimates, not segmented heat-exchanger ratings. Two-stage flash intercooling and full refrigerant-inventory dynamics are not implemented in this release.
+Flooded mode omits recirculation flow, pump head and separator inventory. Compressor volumetric efficiency is a user assumption, not a manufacturer map. UA checks are isothermal screening estimates, not segmented heat-exchanger ratings. The separate connected DX model resolves lumped refrigerant inventory; metal/pipe storage, oil, entrainment, defrost and two-stage flash intercooling remain outside this release.
 
 ## Validation
 
