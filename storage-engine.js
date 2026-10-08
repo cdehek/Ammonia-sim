@@ -67,8 +67,8 @@ function createStorage(engine,profiles,numerics={}){
  }
  function capacityInput(s){return {pressureBarAbsolute:(s.states.outlet||s.states.evaporator).p,enabled:s.operations.compressorOn,demand:s.operations.compressorDemand??true,stop:s.fault};}
  function effective(s){return s.capacity?{running:s.capacity.running,speed:s.capacity.speed}:{running:s.operations.compressorOn,speed:s.operations.speed};}
- function compressor(s,states,checkTrips=true){
-  const actual=effective(s);if(!actual.running)return null;
+ function compressor(s,states,checkTrips=true,actual=effective(s)){
+  if(!actual.running)return null;
   const low=states.outlet||states.evaporator,high=states.condenser,c=s.profile.equipment,speed=actual.speed;
   const readings={room:s.T,pressure:low.p,condensing:high.p,discharge:null,speed,stages:c.compressors};
   if(checkTrips&&high.p>=c.highTrip)throw stop('equipment','High discharge pressure',readings);
@@ -169,12 +169,14 @@ function createStorage(engine,profiles,numerics={}){
     s.vessels=heun.vessels;s.states=heun.states;s.T=heun.T;s.controller=heun.controller;s.time+=dt;s.acceptedSteps++;remaining-=dt;
     // The plant used the previous delivered speed over this interval. Observe the
     // accepted endpoint only; rejected trials cannot consume sensor/actuator time.
-    const wasRunning=s.capacity?.running;
+    const wasRunning=s.capacity?.running,intervalSpeed=s.capacity?.speed;
     if(s.capacity)capacity.advanceAccepted(s.capacity,dt,capacityInput(s));
     s.externalHeatKJ+=dt*(a.externalHeat+b.externalHeat)/2;s.fluidWorkKJ+=dt*(a.fluidWork+b.fluidWork)/2;
     s.gravityEnergyKJ+=dt*(a.gravityWork+b.gravityWork)/2;
     s.electricalKWh+=dt*(a.electrical+b.electrical)/2/3600;s.evaporatorHeatKJ+=dt*(a.heat.evaporator+(a.heat.outlet||0)+b.heat.evaporator+(b.heat.outlet||0))/2;
-    try{compressor(s,s.states);}catch(error){if(!error.faultKind&&/property table|property domain|superheat/.test(error.message))error.faultKind='domain';if(!error.faultKind)throw error;latch(s,error);}
+    // An endpoint demand shutdown cannot hide a trip crossed while this interval ran.
+    const endpointCompressor=wasRunning&&!s.capacity.running?{running:true,speed:intervalSpeed}:undefined;
+    try{compressor(s,s.states,true,endpointCompressor);}catch(error){if(!error.faultKind&&/property table|property domain|superheat/.test(error.message))error.faultKind='domain';if(!error.faultKind)throw error;latch(s,error);}
     if(s.capacity&&!s.fault&&wasRunning!==s.capacity.running){history.sample(s.history,record(s),observeCompressor(s),'capacity-state');history.event(s.history,s.time,'capacity-state',{running:s.capacity.running,reason:s.capacity.reason,lastSwitchSeconds:s.capacity.lastSwitch});}
     dt=Math.min(maxStep,dt*2);
    }

@@ -27,6 +27,20 @@ const manual=m.create(P.DEFAULT,{},ops);assert(!('capacity' in m.record(manual))
 for(const invalid of [[],true,42,Object.create({mode:'auto'})])assert.throws(()=>m.create(P.DEFAULT,{},ops,invalid),/plain object/);
 const bank=P.copy(P.DEFAULT);bank.equipment.compressors=2;assert.doesNotThrow(()=>m.create(bank,{},ops));assert.throws(()=>m.create(bank,{},ops,{mode:'auto'}),/one compressor/);
 const delayed=m.create(P.DEFAULT,{}, {...ops,compressorOn:false},{minOff:1,startDelay:.25,minOn:2});m.update(delayed,{compressorOn:true});m.advance(delayed,1);assert(!delayed.capacity.running);m.advance(delayed,.2);assert(!delayed.capacity.running);m.advance(delayed,.1);assert(delayed.capacity.running);assert(Math.abs(delayed.capacity.lastSwitch-1.25)<1e-9);m.update(delayed,{compressorOn:false});assert.equal(delayed.capacity.speed,0);assert.equal(delayed.capacity.lastSwitch,delayed.time);
+// Protection still checks the final running interval when demand stops at its endpoint.
+const deadlineProfile=P.copy(P.DEFAULT);deadlineProfile.equipment.lowTrip=2.3092;
+const deadlineOps={...ops,speed:1},legacyDeadline=m.create(deadlineProfile,{},deadlineOps);m.advance(legacyDeadline,.1);assert.equal(legacyDeadline.fault?.message,'Low suction pressure');
+for(const chunk of [.05,.1,1]){
+ const s=m.create(deadlineProfile,{},deadlineOps,{mode:'manual',minOn:.1});m.update(s,{compressorDemand:false});for(let i=0;i<2&&!s.fault;i++)m.advance(s,chunk);
+ assert.equal(s.fault?.kind,'equipment');assert.equal(s.fault.message,'Low suction pressure');assert(Math.abs(s.time-.1)<1e-9);assert(s.states.outlet.p<deadlineProfile.equipment.lowTrip);assert.equal(s.fault.readings.pressure,s.states.outlet.p);assert.equal(s.fault.readings.speed,1);
+ assert.equal(s.capacity.speed,0);assert.deepEqual(s.capacity.lastStop,s.fault);assert.equal(s.pending,0);assert.equal(s.capacity.pending,0);assert(Math.abs(s.capacity.lastSwitch-s.time)<1e-9);assert(Math.abs(C.record(s.capacity).minimumOffRemaining-90)<1e-9);valid(m,s);
+ assert(Math.abs(s.states.outlet.p-legacyDeadline.states.outlet.p)<1e-9);assert(Math.abs(s.electricalKWh-legacyDeadline.electricalKWh)<1e-12);assert(s.electricalKWh>0);
+ assert(s.history.events.some(e=>e.type==='stop'));assert(!s.history.events.some(e=>e.type==='capacity-state'),'Trip wins over an ordinary demand-stop event');const frozen=JSON.stringify(s);m.advance(s,10);assert.equal(JSON.stringify(s),frozen);
+}
+// Off intervals do not invent trips, but an endpoint start must still check protection.
+const offProfile=P.copy(P.DEFAULT);offProfile.equipment.lowTrip=2.7;
+const offAtLimit=m.create(offProfile,{}, {...ops,compressorOn:false},{suctionTarget:3,minOff:0,startDelay:.1});m.advance(offAtLimit,.1);assert(offAtLimit.states.outlet.p<offProfile.equipment.lowTrip);assert(!offAtLimit.fault);assert.equal(offAtLimit.electricalKWh,0);
+const startingAtLimit=m.create(offProfile,{}, {...ops,compressorOn:false},{suctionTarget:3,minOff:0,startDelay:.1});m.update(startingAtLimit,{compressorOn:true});m.advance(startingAtLimit,.1);assert.equal(startingAtLimit.fault?.message,'Low suction pressure');assert(Math.abs(startingAtLimit.time-.1)<1e-9);assert.equal(startingAtLimit.electricalKWh,0);valid(m,startingAtLimit);
 // Fractional accepted controller stop records the physical clock and starts rest there.
 const pending=C.create(P.DEFAULT,{}, {running:true,speed:.7});C.advance(pending,.125,{pressureBarAbsolute:2.5});C.advance(pending,1,{pressureBarAbsolute:2.5,stop:{kind:'equipment',message:'Pending fractional stop',seconds:.125}});assert.equal(pending.time,.125);assert.equal(pending.lastSwitch,.125);assert.equal(pending.pending,0);
 const c=C.create(P.DEFAULT,{}, {running:true,speed:.7});C.advanceAccepted(c,.1,{pressureBarAbsolute:2.5});C.advanceAccepted(c,.025,{pressureBarAbsolute:2.5});const fault={kind:'equipment',message:'Fractional stop',seconds:.125,readings:{pressure:2.5}};C.advanceAccepted(c,0,{pressureBarAbsolute:2.5,stop:fault});assert.equal(c.time,.125);assert.equal(c.lastSwitch,.125);assert.deepEqual(c.stop,fault);assert.equal(C.record(c).minimumOffRemaining,90);
