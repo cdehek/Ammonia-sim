@@ -36,7 +36,7 @@ With Node.js 22+ and Python 3.12:
 
 ```sh
 npm ci
-npx playwright install --with-deps chromium
+npx playwright install --with-deps chromium webkit
 npm test
 npm run build
 npm run test:browser
