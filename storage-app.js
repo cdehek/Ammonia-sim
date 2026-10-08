@@ -28,7 +28,7 @@
  }
  function capacityAvailability(){const legacy=$('storage-capacity-mode').value==='legacy';for(const k of capacityKeys)$(capacityId(k)).disabled=legacy;$('storage-compressorDemand').disabled=legacy;capacityDraft();document.querySelector('label[for="storage-compressorSpeed"]').textContent=$('storage-capacity-mode').value==='auto'?'Manual speed request · % (automatic computes output)':'Manual compressor speed request · %';}
  function capacityDraft(){
-  const draft=$('storage-capacity-mode').value,managed=draft!=='legacy',applied=state?.capacity?.mode||'legacy';
+  const draft=$('storage-capacity-mode').value,managed=draft!=='legacy',applied=state?.capacity?.settings.mode||'legacy';
   let text=!state?'Initialize/reset applies these settings to a new run.':managed!==!!state.capacity?'Reset required: this mode changes the controller basis and replaces the current run.':'Readings show applied settings. Apply operating controls, Start or Advance commits the form inputs.';
   if(state&&managed===!!state.capacity&&draft!==applied)text='Mode change pending: '+draft+' will apply with operating controls; current readings remain '+applied+'.';
   if(state?.capacity?.running&&managed){const actual=state.capacity.speed*100,low=Number($('storage-capacity-minSpeed').value),high=Number($('storage-capacity-maxSpeed').value);if(actual<low||actual>high)text+=' Stop first: these limits exclude actual speed ('+f(actual,1)+'%). Disable and Apply with the existing limits, then edit the range.';}

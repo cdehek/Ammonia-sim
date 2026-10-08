@@ -18,11 +18,21 @@ for(const [from,to,reason]of [['manual','auto','Automatic suction PI'],['auto','
  assert.equal(returned.actualSpeed,prior.actualSpeed);assert.equal(returned.requestedSpeed,prior.actualSpeed);assert.equal(returned.rawCommand,prior.actualSpeed);
  near(returned.integral,prior.actualSpeed-state.settings.kp*returned.errorBar);assert.equal(state.track,true);
  if(to==='manual')assert.equal(returned.settings.manualSpeed,prior.actualSpeed);
- for(const key of ['time','pending','speed','running','lastSwitch','startDemandAt','starts','input','measuredPressure','sensedPressure','limitedBy','stop','lastStop','profile'])assert.deepEqual(state[key],physical[key],from+'→'+to+' preserves '+key);
+ assert.deepEqual(returned.limitedBy,[],'Rebased interior-speed request has no stale limits');
+ for(const key of ['time','pending','speed','running','lastSwitch','startDemandAt','starts','input','measuredPressure','sensedPressure','stop','lastStop','profile'])assert.deepEqual(state[key],physical[key],from+'→'+to+' preserves '+key);
  for(const key of ['seconds','pendingSeconds','lastSwitchSeconds','minimumOnRemaining','minimumOffRemaining','startDelayRemaining'])assert.deepEqual(returned[key],prior[key]);
  returned.reason='Changed detached record';assert.equal(C.record(state).reason,reason);
  const unchanged=JSON.stringify(state);assert.equal(C.update(state,{mode:to}).reason,reason);assert.equal(JSON.stringify(state),unchanged,'No-op mode edits remain pure');
 }
+// Remove prior actuator, ramp and saturation flags; preserve real boundary-speed flags.
+for(const [from,to]of [['manual','auto'],['auto','manual']])for(const [flag,settings]of [
+ ['actuator response',{manualSpeed:.9}],['ramp rate',{manualSpeed:1,actuatorSeconds:.05,rampPerSecond:.01}],['maximum speed',{manualSpeed:1,kp:2}]
+]){
+ const state=ready({mode:from,...settings});C.advance(state,1,input(2.5));C.advance(state,2,input(3.5));const before=C.record(state);
+ assert(before.limitedBy.includes(flag),from+' fixture exercises '+flag);assert(before.actualSpeed>.2&&before.actualSpeed<1);
+ const after=C.update(state,{mode:to});assert.deepEqual(after.limitedBy,[]);assert.deepEqual(after,C.record(state));assert.equal(after.actualSpeed,before.actualSpeed);assert.equal(after.seconds,before.seconds);assert.equal(after.requestedSpeed,after.actualSpeed);
+}
+for(const speed of [.2,1]){const state=C.create(P.DEFAULT,{manualSpeed:speed},{running:true,speed});C.advance(state,1,input(2.5));const before=C.record(state),after=C.update(state,{mode:'auto'});assert.deepEqual(after.limitedBy,[speed===.2?'minimum speed':'maximum speed']);assert.equal(after.actualSpeed,before.actualSpeed);assert.equal(after.seconds,before.seconds);}
 // Mode labels cannot override an active run hold or an off-state inhibit/delay.
 for(const [from,to]of [['manual','auto'],['auto','manual']])for(const kind of ['initial','hold','rest','delay','disabled','stop']){
  const state=kind==='rest'||kind==='delay'?C.create(P.DEFAULT,{mode:from,minOff:kind==='delay'?0:90,startDelay:3}):ready({mode:from});

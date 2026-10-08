@@ -112,6 +112,10 @@ function update(s,patch){
  s.settings=c;
  if(changedMode){
   s.command=s.speed;s.rawCommand=s.speed;s.integral=s.speed-c.kp*errorFor(s);s.track=true;
+  // The rebased request has no actuator/ramp gap. Retain only current speed-bound flags.
+  s.limitedBy=[];
+  if(s.running&&s.rawCommand<=c.minSpeed+EPS)s.limitedBy.push('minimum speed');
+  if(s.running&&s.rawCommand>=c.maxSpeed-EPS)s.limitedBy.push('maximum speed');
   // Refresh normal operating telemetry only; do not reevaluate gates or consume time.
   if(s.running&&['Running','Manual capacity','Automatic suction PI'].includes(s.reason))s.reason=c.mode==='auto'?'Automatic suction PI':'Manual capacity';
  }

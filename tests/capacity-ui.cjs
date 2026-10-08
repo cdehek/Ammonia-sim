@@ -9,10 +9,11 @@ const assert=require('node:assert/strict'),fs=require('fs'),path=require('path')
  });
  assert(results.high.actualSpeed>.7&&results.low.actualSpeed<results.high.actualSpeed);assert(Math.abs(results.switched.actualSpeed-results.old)<1e-8);assert.equal(results.inhibited.actualSpeed,0);assert.equal(results.inhibited.seconds,results.time);assert.equal(results.inhibited.stop.kind,'domain');assert.equal(results.waiting.reason,'Start delay');assert(results.started.running);assert(!results.disabled.running);assert(results.rejected&&results.atomic);
  const transitions=await page.evaluate(()=>[['manual','auto'],['auto','manual']].map(([from,to])=>{
-  const C=AmmoniaCapacity,s=C.create(AmmoniaProfiles.DEFAULT,{mode:from},{running:true,speed:.7});C.advance(s,2,{pressureBarAbsolute:3});const before=C.record(s),returned=C.update(s,{mode:to});return {from,to,before,returned,recorded:C.record(s)};
+  const C=AmmoniaCapacity,s=C.create(AmmoniaProfiles.DEFAULT,{mode:from,manualSpeed:.85},{running:true,speed:.7});C.advance(s,1,{pressureBarAbsolute:2.5});C.advance(s,2,{pressureBarAbsolute:3});const before=C.record(s),returned=C.update(s,{mode:to});return {from,to,before,returned,recorded:C.record(s)};
  }));
  for(const {to,before,returned,recorded}of transitions){
   assert.equal(returned.mode,to);assert.equal(returned.reason,to==='auto'?'Automatic suction PI':'Manual capacity');assert.deepEqual(returned,recorded);
+  assert(before.limitedBy.includes('actuator response'));assert.deepEqual(returned.limitedBy,[]);assert.equal(returned.requestedSpeed,returned.actualSpeed);
   for(const key of ['seconds','actualSpeed','running','lastSwitchSeconds','minimumOnRemaining','minimumOffRemaining','startDelayRemaining','measuredPressureBarAbsolute','sensedPressureBarAbsolute','starts'])assert.deepEqual(returned[key],before[key],'Immediate mode telemetry preserves '+key);
  }
  const coupled=await page.evaluate(()=>{
