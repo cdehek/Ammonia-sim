@@ -13,7 +13,7 @@ remaining=re.findall(r'__[A-Z_]+__',text)
 if remaining:raise RuntimeError('Unexpanded build placeholders: '+', '.join(sorted(set(remaining))))
 output=Path(sys.argv[1]) if len(sys.argv)>1 else root/'dist'
 output.mkdir(parents=True,exist_ok=True)
-for name in ['index.html','ammonia-lab-v0.5.0-stage.3.html','ammonia-lab-v0.5.0-stage.2.html','ammonia-lab-v0.5.0-stage.1.html','ammonia-lab-v0.4.5.html','ammonia-lab-v0.4.5-stage.3.html','ammonia-lab-v0.4.5-stage.2.html','ammonia-lab-v0.4.5-stage.1.html','ammonia-lab-v0.4.1.html','ammonia-lab-v0.4.0.html','ammonia-lab-v0.3.0.html','ammonia-lab-v0.2.0.html','ammonia-refrigeration-simulator.html','ammonia-refrigeration.html']:
+for name in ['index.html','ammonia-lab-v0.5.0.html','ammonia-lab-v0.5.0-stage.3.html','ammonia-lab-v0.5.0-stage.2.html','ammonia-lab-v0.5.0-stage.1.html','ammonia-lab-v0.4.5.html','ammonia-lab-v0.4.5-stage.3.html','ammonia-lab-v0.4.5-stage.2.html','ammonia-lab-v0.4.5-stage.1.html','ammonia-lab-v0.4.1.html','ammonia-lab-v0.4.0.html','ammonia-lab-v0.3.0.html','ammonia-lab-v0.2.0.html','ammonia-refrigeration-simulator.html','ammonia-refrigeration.html']:
  p=output/name;p.write_text(text)
 (root/'index.html').write_text(text)
 print('Built standalone HTML:',len(text.encode()),'bytes')

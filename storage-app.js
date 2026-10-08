@@ -13,7 +13,7 @@
  function clearError(){$('storage-error').hidden=true;}
  function pause(reason='User pause'){if(running&&state)model.logPlayback(state,'pause',{reason});running=false;clearInterval(timer);timer=null;$('storage-pause').disabled=true;render();}
  function initialize(){const snapshot=AmmoniaPlantSnapshot(),next=model.create(snapshot.profile,{...snapshot.roomConfig,...roomBoundary()},operations());training?.interrupt('Connected run reinitialized outside the exercise.');pause();state=next;clearError();render();}
- function step(seconds){if(!state)initialize();model.advance(state,seconds);if(state.fault)pause('Simulation stop');render();}
+ function step(seconds){if(!state)initialize();model.advance(state,seconds,[],training?.isActive()?training.acceptBoundary:null);if(state.fault)pause('Simulation stop');render();}
  function render(){
   $('storage-start').disabled=running;$('storage-export').disabled=!state;
   training?.update(state);

@@ -1,3 +1,15 @@
+# Ammonia Lab v0.5.0
+
+Live plant now combines an accepted-state equipment schematic, synchronized trends/event history and five guided Default exercises with measured objectives, reflections, hints and exportable debrief evidence.
+
+Stage 4 fixes fast-playback overshoot: exercise grading observes committed outer integration boundaries within a request, stops at completion and discards unused time. A short restriction lesson therefore completes at 40 s instead of continuing into a later starvation trip. Missing reflections still allow the modeled trip to occur. A non-stopping observer produces identical physical states and history to a run without it; the integration equations are unchanged.
+
+The selected lesson preview and current/retained attempt now have separate labels. Selecting another lesson preserves the original objectives, reflection, debrief and report under the retained-attempt heading. Reset/export buttons identify the retained attempt. Loading another lesson explicitly replaces it. Exported completion evidence remains unchanged after subsequent free exploration and stops.
+
+Final release checks cover all five recipes; 1×/10×/60× browser playback; large/fractional advancement; exact completion/fault timing; discarded pending time; original trip evidence; wrong controls/reflections; report freezing; selected/retained content; Default/custom profile guards; units; two hours of actual sealed-storage advancement through the production history-retention limit; mobile layouts; offline operation and source/bundle consistency. The suite comprises ten numerical suites, thirteen Chromium suites and four WebKit suites. WebKit uses iPad emulation, not physical hardware. See [RELEASE_CHECKS.md](RELEASE_CHECKS.md).
+
+Connected automatic suction capacity control remains v0.5.5; manufacturer/measured calibration remains v0.6.0. Default equipment and training outcomes remain illustrative supported-model behavior.
+
 # Ammonia Lab v0.5.0 stage 3
 
 Five guided exercises now load repeatable Default connected-circuit setups: startup, increased room load, hot condenser air, short feed restriction and superheat target response. Disturbances use the existing model controls and boundaries. Objectives grade accepted observations, sustained superheat bands and original fault evidence; a correct reflection is also required. Hints, reset/end controls, debrief and full SI JSON evidence are available offline.

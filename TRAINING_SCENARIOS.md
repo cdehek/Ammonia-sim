@@ -1,4 +1,4 @@
-# Guided exercises · v0.5.0 stage 3
+# Guided exercises · v0.5.0
 
 ## Start and repeat
 
@@ -16,7 +16,7 @@ Warmup advances the actual model before the attempt starts. It is not a fabricat
 | Restricted liquid feed | 30 s | Command 2% manual opening; observe opening initially above command due to actuator lag, then after 10 s opening below 4% and feed below half baseline without a stop. |
 | Superheat target response | 120 s | Set 7 K automatic target; after at least 30 s, actual/sensed superheat remain within ±0.5 K for 20 consecutive sampled seconds. |
 
-Each exercise additionally requires a correct reflection. Incorrect submissions are recorded and do not grant that objective. Measured objectives can be inspected as they are satisfied; hints explain where to look. Changing an input outside the supported recipe interrupts the attempt. End retains the partial evidence; load/reset begins a fresh attempt and clears the reflection selection. The selector is locked while an attempt is active.
+Each exercise additionally requires a correct reflection. Incorrect submissions are recorded and do not grant that objective. Measured objectives can be inspected as they are satisfied; hints explain where to look. Changing an input outside the supported recipe interrupts the attempt. End retains the partial evidence; load/reset begins a fresh attempt and clears the reflection selection. The selector is locked while an attempt is active. Afterward, the selected lesson preview is labeled separately from the retained attempt; objectives, hints, reflection and debrief beneath the attempt heading still refer to that attempt. Reset retained attempt restarts it, while Load exercise starts the selected lesson.
 
 ## Physics and grading
 
@@ -28,7 +28,7 @@ Default hot air reaches a discharge-temperature trip rather than the pressure tr
 
 ## Evidence lifecycle
 
-Completion, unexpected stop, manual end or interruption pauses playback. Finished debrief/export evidence is frozen before subsequent free exploration. Selecting another lesson retains the last report until Load/reset explicitly replaces it. External reinitialization or equipment application interrupts an active lesson before resetting the connected run.
+Completion, unexpected stop, manual end or interruption pauses playback. During a training advance, the grader observes committed outer endpoints before the next interval is integrated. The first accepted completion boundary halts the request and discards unused pending time, regardless of playback speed. Missing reflections still leave the lesson active, so supported physical stops can occur. This hook never observes rejected predictors or alters the integration equations. Finished debrief/export evidence is frozen before subsequent free exploration. Selecting another lesson retains the last report until Load/reset explicitly replaces it. External reinitialization or equipment application interrupts an active lesson before resetting the connected run.
 
 Export JSON contains the applied profile and initial room, baseline, objective timestamps/readings, reflection attempts, disturbance actions, original expected fault, accepted history observations/events and final controls/boundaries. It preserves SI values at full precision. Existing history retention limits still apply and appear in the report. Attempts are not restored after reload; download a report before leaving. Profile storage/import and existing CSV schemas are unchanged.
 
@@ -36,4 +36,4 @@ Export JSON contains the applied profile and initial room, baseline, objective t
 
 Numerical tests run all five recipes against the connected model and check sustained objectives, wrong reflections, unexpected stops, incompatible controls, conservation, batching and identical physical trajectories with/without grading. Browser tests cover all exercise flows, export freezing, warmup/reset, active-profile guards, units, playback, older-browser compatibility, keyboard, tablet/mobile layouts and offline operation. Chromium and WebKit CI complement numerical evidence; iPad emulation does not establish physical-device testing.
 
-These are lessons about this supported lumped Default model. No manufacturer/measured calibration, real operating procedure, oil or entrainment behavior, defrost, multistage systems or connected automatic suction capacity control is introduced. Unsupported physics must be implemented and validated before dependent lessons are added. Stage 4 covers final v0.5.0 verification and polish; v0.6.0 remains equipment calibration.
+These are lessons about this supported lumped Default model. No manufacturer/measured calibration, real operating procedure, oil or entrainment behavior, defrost, multistage systems or connected automatic suction capacity control is introduced. Unsupported physics must be implemented and validated before dependent lessons are added. Final acceptance coverage is recorded in [RELEASE_CHECKS.md](RELEASE_CHECKS.md); v0.6.0 remains equipment calibration.

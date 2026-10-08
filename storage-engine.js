@@ -130,9 +130,12 @@ function createStorage(engine,profiles,numerics={}){
   history.sample(s.history,record(s),observeCompressor(s),'stop');history.event(s.history,s.time,'stop',{fault:s.fault});
  }
 
- function advance(s,seconds,transfers=[]){
+ function advance(s,seconds,transfers=[],continueRun=null){
   if(!Number.isFinite(seconds)||seconds<=0||seconds>3600)throw Error('Advance storage by greater than zero and at most 3600 seconds.');
+  if(continueRun!==null&&typeof continueRun!=='function')throw Error('Invalid accepted-boundary observer.');
   if(s.fault)return record(s);
+  // External lesson stops discard unused playback without changing the accepted physics.
+  if(continueRun&&continueRun(s)===false){s.pending=0;return record(s);}
   s.pending+=seconds;let budget=0;
   // Fixed outer intervals make playback chunking invariant; substeps adapt inside each interval.
   while(s.pending>=maxStep-1e-10&&!s.fault){
@@ -159,6 +162,8 @@ function createStorage(engine,profiles,numerics={}){
     dt=Math.min(maxStep,dt*2);
    }
    if(!s.fault){s.pending=Math.max(0,s.pending-maxStep);if(history.due(s.history,s.time))history.periodic(s.history,record(s),observeCompressor(s));}
+   // Observe only committed outer endpoints (including a latched stop), never predictors.
+   if(continueRun&&continueRun(s)===false){s.pending=0;break;}
   }
   const row=record(s);if(s.rows[s.rows.length-1].seconds===s.time)s.rows[s.rows.length-1]=row;else s.rows.push(row);if(s.rows.length>7200)s.rows.shift();return row;
  }

@@ -1,8 +1,14 @@
-# Ammonia Lab v0.5.0 stage 3
+# Ammonia Lab v0.5.0
 
 Open `index.html` in Chrome, Edge, Firefox or Safari. The file is self-contained and works offline. HTML previews can disable JavaScript; the startup notice remains visible when controls cannot initialize.
 
 Display units default to **psig and Fahrenheit** on startup and Reset. Room temperatures and thermostat deadband follow the selected temperature units. SI units remain explicitly labeled in numerical reference data and CSV exports.
+
+## v0.5.0 · visualization and training release
+
+Live plant combines the connected schematic, synchronized trends/event history and five guided Default exercises. Training pauses at the first accepted model boundary where every objective and reflection is satisfied, including fast playback; unused playback time is discarded. The selected lesson preview is labeled separately from the current or retained attempt. Export and Reset retained attempt always refer to that retained evidence until a new lesson is loaded.
+
+See [RELEASE_CHECKS.md](RELEASE_CHECKS.md) for final acceptance coverage and a desktop/iPad demonstration checklist. Numerical agreement and browser checks verify the supported model; manufacturer/measured equipment calibration remains v0.6.0.
 
 ## v0.5.0 stage 3 · guided training
 
