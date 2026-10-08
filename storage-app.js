@@ -2,6 +2,7 @@
 (()=>{
  const $=id=>document.getElementById(id),esc=x=>String(x).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
  const engine=AmmoniaEngine.createEngine(JSON.parse($('property-data').textContent)),model=AmmoniaStorage.createStorage(engine,AmmoniaProfiles);
+ const schematic=AmmoniaSchematic.create($('storage-schematic'));
  let state=null,running=false,timer=null,last=0,units={p:'psig',T:'F'};
  const f=(v,n=3)=>Number.isFinite(v)?v.toFixed(n):'—',temp=v=>Number.isFinite(v)?(units.T==='F'?v*1.8+32:v):NaN;
  const pressure=v=>Number.isFinite(v)?(v-(units.p.endsWith('g')?1.01325:0))*(units.p.startsWith('psi')?14.503773773:1):NaN,pl=()=>({bara:'bar(a)',barg:'bar(g)',psia:'psia',psig:'psig'})[units.p];
@@ -23,8 +24,8 @@
  }
  function render(){
   $('storage-start').disabled=running;$('storage-export').disabled=!state;
-  if(!state){$('storage-clock').textContent='0.0 s simulated';$('storage-metrics').innerHTML='';$('storage-states').innerHTML='';$('storage-balance').innerHTML='';$('storage-trends').innerHTML='';$('storage-flows').innerHTML='';$('storage-flow-window').textContent='';return;}
-  const r=model.record(state);$('storage-clock').textContent=f(state.time,1)+' s simulated';
+  if(!state){schematic.update(null,units,false);$('storage-clock').textContent='0.0 s simulated';$('storage-metrics').innerHTML='';$('storage-states').innerHTML='';$('storage-balance').innerHTML='';$('storage-trends').innerHTML='';$('storage-flows').innerHTML='';$('storage-flow-window').textContent='';return;}
+  const r=model.record(state);schematic.update({...r,profileLabel:state.profile.name+' revision '+state.profile.revision,compressor:model.observeCompressor(state)},units,running);$('storage-clock').textContent=f(state.time,1)+' s simulated';
   const status=state.fault?{equipment:'TRIPPED',solver:'SOLVER LIMIT',domain:'MODEL LIMIT'}[state.fault.kind]:running?'Running':'Paused';
   $('storage-status').textContent=status+' · '+state.profile.name+' revision '+state.profile.revision+(state.fault?' · '+state.fault.message+' · detected at '+f(state.fault.seconds,3)+' s. Correct controls and clear the stop, or reinitialize storage.':' · '+state.operations.thermalMode+' boundaries · '+state.operations.circuit+' circuit.');
   if(state.fault?.readings){const v=state.fault.readings;$('storage-status').textContent+=' Captured suction / discharge '+f(pressure(v.pressure),2)+' / '+f(pressure(v.condensing),2)+' '+pl()+', discharge temperature '+f(temp(v.discharge),2)+' °'+units.T+'.';}

@@ -1,3 +1,11 @@
+# Ammonia Lab v0.5.0 stage 1
+
+Live plant now shows the connected refrigerant circuit as a live schematic. Vessel fills, pressure, temperature, phase, valve opening and supported flow direction follow the storage model's accepted state. Equipment inspection works through touch and keyboard controls. Compressor current-state demand supplies discharge temperature and electrical demand independently of condenser bulk temperature. Off/latched-stop demand is suppressed; animation pauses with playback and respects reduced motion.
+
+The display labels accepted port-flow intervals and distinguishes them from current-state compressor demand. Isolated storage uses its actual evaporator suction path; profile changes clear stale readings. Tablet/mobile scrolling and offline standalone operation are covered by the new schematic browser suite in Chromium and WebKit CI. A numerical telemetry suite verifies energy consistency, observational purity and identical trajectories with/without display sampling. No integration equations, equipment profile schemas or saved profile keys changed.
+
+Trend/event improvements and training scenarios are subsequent v0.5.0 stages. Connected automatic suction capacity control is planned for v0.5.5; manufacturer/measured equipment calibration is reserved for v0.6.0. See [LIVE_SCHEMATIC.md](LIVE_SCHEMATIC.md) and [ROADMAP.md](ROADMAP.md).
+
 # Ammonia Lab v0.4.5
 
 This release integrates equipment inventory, conservative storage dynamics, pressure-driven valve flow and outlet superheat control. It keeps the existing reference-cycle calculator and quasi-steady room/control model separate from the connected refrigerant model.

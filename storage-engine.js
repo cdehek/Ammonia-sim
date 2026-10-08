@@ -182,7 +182,14 @@ function createStorage(engine,profiles,numerics={}){
  }
 
  function clearFault(s){s.fault=null;s.pending=0;}
- return {create,advance,record,update,clearFault,phaseOutlet,portRates,validateOperations,validateRoomBoundary,hydraulics};
+ // Read-only current-state compressor demand for displays. No trial state or
+ // extrapolation; a latched stop inhibits demand until the user clears it.
+ function observeCompressor(s){
+  if(s.fault)return {inhibited:true,error:s.fault.message};
+  try{return {inhibited:false,...(compressor(s,s.states)||{massFlow:0,electrical:0,fluidWork:0,dischargeTemperature:null})};}
+  catch(error){return {inhibited:true,error:error.message};}
+ }
+ return {create,advance,record,update,clearFault,phaseOutlet,portRates,validateOperations,validateRoomBoundary,hydraulics,observeCompressor};
 }
 const api={createStorage};if(typeof module!=='undefined'&&module.exports)module.exports=api;else root.AmmoniaStorage=api;
 })(typeof globalThis!=='undefined'?globalThis:this);

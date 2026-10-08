@@ -1,8 +1,14 @@
-# Ammonia Lab v0.4.5
+# Ammonia Lab v0.5.0 stage 1
 
 Open `index.html` in Chrome, Edge, Firefox or Safari. The file is self-contained and works offline. HTML previews can disable JavaScript; the startup notice remains visible when controls cannot initialize.
 
 Display units default to **psig and Fahrenheit** on startup and Reset. Room temperatures and thermostat deadband follow the selected temperature units. SI units remain explicitly labeled in numerical reference data and CSV exports.
+
+## v0.5.0 stage 1 · live schematic
+
+The **Live plant** connected circuit now has a live schematic with modeled vessel fills, pressures, temperatures, compressor status/discharge temperature, feed-valve opening and directional flow. Tap equipment or select its inspection button for details. Start/stop, unit changes and active profile changes update the display. The diagram scrolls within its card on small screens; animation can be disabled and respects reduced-motion preferences.
+
+Readings use the connected model, independently of the reference cycle. Port-flow intervals and compressor current-state demand are explicitly distinguished. See [LIVE_SCHEMATIC.md](LIVE_SCHEMATIC.md) for timing and display boundaries, and [ROADMAP.md](ROADMAP.md) for the staged v0.5.0 work, v0.5.5 suction control and v0.6.0 equipment calibration.
 
 ## v0.4.5 · connected refrigerant simulation
 
