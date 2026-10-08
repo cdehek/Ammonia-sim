@@ -14,6 +14,7 @@ function changes(before,after){
 function sample(h,r,compressor,reason='periodic'){
  const finite=x=>Number.isFinite(x)?x:null,connected=!!r.vessels.outlet;
  const point={id:h.nextSampleId++,seconds:r.seconds,reason,pressures:{},temperatures:{room:r.T,ambient:r.roomBoundary.ambient},levels:{},roomBoundary:{...r.roomBoundary},operations:{...r.operations},actualSuperheat:finite(r.flows?.superheat),sensedSuperheat:connected?r.controller.sensor:null,targetSuperheat:connected?r.operations.superheatTarget:null,opening:connected?r.controller.opening:null,command:finite(r.flows?.command),speedSetting:r.operations.speed,electricalDemand:finite(compressor?.electrical),dischargeTemperature:finite(compressor?.dischargeTemperature),faultKind:r.fault?.kind??null};
+ if(r.capacity)point.capacity=copy(r.capacity);
  for(const [key,v]of Object.entries(r.vessels)){point.pressures[key]=v.p;point.temperatures[key]=v.T;point.levels[key]=v.liquidVolumeFraction;}
  point.feedMassFlow=finite(r.flows?.feed?.massFlow);point.drainMassFlow=finite(r.flows?.drain?.massFlow);point.flowInterval=r.flows?.interval?{...r.flows.interval}:null;
  h.samples.push(point);
@@ -37,7 +38,11 @@ function periodic(h,r,compressor){
 function csv(h){
  const keys=['receiver','condenser','evaporator','outlet'];
  const header=['Record type','Sequence','Seconds','Observation reason','Room C','Ambient C',...keys.map(k=>k+' bar absolute'),...keys.map(k=>k+' C'),...keys.map(k=>k+' liquid volume fraction'),'Actual superheat K','Sensed superheat K','Target superheat K','Actual valve fraction','Valve command fraction','Compressor speed setting fraction','Electrical demand kW','Compressor discharge C','Fault kind','Event type','Linked sample ID','Details JSON SI'];
+ const managed=h.samples.some(s=>s.capacity);
+ const capacityHeaders=['Capacity mode','Requested compressor fraction','Actual compressor fraction','Suction target bar absolute','Measured suction bar absolute','Sensed suction bar absolute','Capacity limiting reasons'];
+ if(managed)header.splice(header.length-1,0,...capacityHeaders);
  const samples=h.samples.map(s=>({seconds:s.seconds,sample:s.id,kind:0,row:['sample',s.id,s.seconds,s.reason,s.temperatures.room,s.temperatures.ambient,...keys.map(k=>s.pressures[k]??''),...keys.map(k=>s.temperatures[k]??''),...keys.map(k=>s.levels[k]??''),s.actualSuperheat??'',s.sensedSuperheat??'',s.targetSuperheat??'',s.opening??'',s.command??'',s.speedSetting,s.electricalDemand??'',s.dischargeTemperature??'',s.faultKind??'','',s.id,JSON.stringify(s)]}));
+ if(managed)for(const [i,item]of samples.entries()){const c=h.samples[i].capacity;item.row.splice(item.row.length-1,0,...(c?[c.mode,c.requestedSpeed,c.actualSpeed,c.targetBarAbsolute,c.measuredPressureBarAbsolute??'',c.sensedPressureBarAbsolute??'',c.limitedBy.join('; ')]:Array(capacityHeaders.length).fill('')));}
  const events=h.events.map(e=>{const row=Array(header.length).fill('');row[0]='event';row[1]=e.id;row[2]=e.seconds;row[header.indexOf('Event type')]=e.type;row[header.indexOf('Linked sample ID')]=e.sampleId??'';row[row.length-1]=JSON.stringify(e);return {seconds:e.seconds,sample:e.sampleId??0,kind:1,row};});
  const records=[...samples,...events].sort((a,b)=>a.seconds-b.seconds||a.sample-b.sample||a.kind-b.kind);
  const rows=[['History schema',h.schemaVersion],['Equipment JSON SI',JSON.stringify(h.profile)],['Initial room conditions JSON SI',JSON.stringify(h.initialRoom)],['Retention JSON',JSON.stringify({limits:h.limits,droppedSamples:h.droppedSamples,droppedEvents:h.droppedEvents})],header,...records.map(r=>r.row)];

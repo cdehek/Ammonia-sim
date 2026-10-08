@@ -14,7 +14,7 @@ const EXERCISES={
 function setup(id){const d=EXERCISES[id];if(!d)throw Error('Unknown exercise.');return {room:{...ROOM},operations:{...OPS},warmup:d.warmup};}
 function start(id,s){
  const d=EXERCISES[id];if(!d)throw Error('Unknown exercise.');if(s.profile.id!=='default'||s.fault)throw Error('Exercises require supported Default equipment without a stop.');
- return {schemaVersion:1,appVersion:'0.5.5-stage.1',exercise:id,status:'active',startedAt:s.time,lastSampleId:last(s.history.samples).id,profile:copy(s.profile),initialRoom:copy(s.initialRoomConfig),baseline:copy(last(s.history.samples)),goals:d.goals.map(label=>({label,met:false,evidence:null})),injectedAt:null,holdStart:null,expectedFault:null,restored:false,quizAttempts:[],actions:[],endedAt:null,reason:null};
+ return {schemaVersion:1,appVersion:'0.5.5-stage.2',exercise:id,status:'active',startedAt:s.time,lastSampleId:last(s.history.samples).id,profile:copy(s.profile),initialRoom:copy(s.initialRoomConfig),baseline:copy(last(s.history.samples)),goals:d.goals.map(label=>({label,met:false,evidence:null})),injectedAt:null,holdStart:null,expectedFault:null,restored:false,quizAttempts:[],actions:[],endedAt:null,reason:null};
 }
 function mark(a,index,p,values={}){if(!a.goals[index].met)a.goals[index]={...a.goals[index],met:true,evidence:{seconds:p.seconds,sampleId:p.id,...copy(values)}};}
 function injected(a,s){if(a.status!=='active'||a.injectedAt!==null)throw Error('Load/reset the exercise before applying another disturbance.');a.injectedAt=s.time;a.lastSampleId=last(s.history.samples).id-1;a.actions.push({type:'disturbance',seconds:s.time,operations:copy(s.operations),roomBoundary:copy(last(s.history.samples).roomBoundary)});}

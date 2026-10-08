@@ -44,8 +44,8 @@ function gate(s,u){
  if(s.time-s.startDemandAt+EPS<s.settings.startDelay){s.reason='Start delay';return;}
  s.running=true;s.lastSwitch=s.time;s.starts++;s.speed=s.settings.minSpeed;s.command=s.speed;s.rawCommand=s.speed;s.track=true;s.reason=s.settings.mode==='auto'?'Automatic suction PI':'Manual capacity';s.startDemandAt=null;
 }
-function tick(s,u){
- const c=s.settings,dt=CADENCE;
+function tick(s,u,dt=CADENCE){
+ const c=s.settings;
  if(u.pressureBarAbsolute!==null)s.sensedPressure+=(u.pressureBarAbsolute-s.sensedPressure)*(-Math.expm1(-dt/c.sensorSeconds));
  if(s.running){
   const error=errorFor(s);if(s.track){s.integral=s.speed-c.kp*error;s.track=false;}
@@ -65,7 +65,14 @@ function advance(s,seconds,input={}){
  if(!Number.isFinite(seconds)||seconds<=0||seconds>3600)throw Error('Advance controller by greater than zero and at most 3600 seconds.');
  const u=validateInput(input),next=copy(s),urgent=!!u.stop||!u.enabled||!u.available||u.pressureBarAbsolute===null;
  if(next.pending>EPS&&next.input&&JSON.stringify(next.input)!==JSON.stringify(u)){
-  if(urgent)next.pending=0;else throw Error('Change controller measurements/permissions only at an accepted cadence boundary.');
+  if(urgent){if(!u.stop)next.pending=0;}else throw Error('Change controller measurements/permissions only at an accepted cadence boundary.');
+ }
+ // A stop may occur within already-requested sub-cadence physical time.
+ // Reconcile only that accepted remainder using its original held observation.
+ if(u.stop&&Math.abs(u.stop.seconds-next.time)>EPS){
+  const remainder=u.stop.seconds-next.time;
+  if(remainder<0||remainder>next.pending+EPS||!next.input)throw Error('Stop time is outside requested controller time.');
+  tick(next,next.input,remainder);next.pending=0;
  }
  next.input=copy(u);next.measuredPressure=u.pressureBarAbsolute;
  if(next.sensedPressure===null&&u.pressureBarAbsolute!==null)next.sensedPressure=u.pressureBarAbsolute;
@@ -74,6 +81,24 @@ function advance(s,seconds,input={}){
  if(u.stop)next.pending=0;
  else {const total=next.pending+seconds,ticks=Math.floor((total+EPS)/CADENCE);next.pending=total;for(let i=0;i<ticks;i++)tick(next,u);next.pending=Math.max(0,total-ticks*CADENCE);if(next.pending<EPS)next.pending=0;}
  Object.assign(s,next);return record(s);
+}
+// Coupled solver path: consume only committed physical time, including fractional stops.
+// Call on a detached trial or after acceptance; never on a rejected plant predictor.
+function advanceAccepted(s,seconds,input={}){
+ if(!Number.isFinite(seconds)||seconds<0||seconds>CADENCE+EPS)throw Error('Accepted controller interval must be 0–0.1 seconds.');
+ if(s.pending>EPS)throw Error('Do not mix pending standalone cadence with accepted plant time.');
+ const u=validateInput(input),next=copy(s);
+ if(u.stop&&Math.abs(u.stop.seconds-next.time)>EPS)throw Error('Model stop must match the accepted controller clock.');
+ next.input=copy(u);next.measuredPressure=u.pressureBarAbsolute;
+ if(next.sensedPressure===null&&u.pressureBarAbsolute!==null)next.sensedPressure=u.pressureBarAbsolute;
+ gate(next,u);
+ if(!u.stop&&seconds>0){tick(next,u,seconds);next.pending=0;}
+ Object.assign(s,next);return record(s);
+}
+function nextBoundary(s){
+ if(s.running||!s.input?.enabled||!s.input?.demand||!s.input?.available||s.input.pressureBarAbsolute===null||s.stop)return Infinity;
+ const at=s.startDemandAt===null?s.lastSwitch+s.settings.minOff:s.startDemandAt+s.settings.startDelay;
+ return at>s.time+EPS?at-s.time:Infinity;
 }
 function update(s,patch){
  object(patch,'Controller settings');const changedMode='mode' in patch&&patch.mode!==s.settings.mode,nextPatch={...patch};
@@ -88,5 +113,5 @@ function update(s,patch){
  s.pending=0;s.startDemandAt=null;return record(s);
 }
 function record(s){return copy({schemaVersion:s.schemaVersion,profile:{id:s.profile.id,revision:s.profile.revision,compressors:s.profile.equipment.compressors},settings:s.settings,seconds:s.time,pendingSeconds:s.pending,mode:s.settings.mode,running:s.running,actualSpeed:s.speed,requestedSpeed:s.command,rawCommand:s.rawCommand,measuredPressureBarAbsolute:s.measuredPressure,sensedPressureBarAbsolute:s.sensedPressure,targetBarAbsolute:s.settings.suctionTarget,errorBar:errorFor(s),integral:s.integral,reason:s.reason,limitedBy:s.limitedBy,starts:s.starts,minimumOnRemaining:s.running?Math.max(0,s.settings.minOn-(s.time-s.lastSwitch)):0,minimumOffRemaining:!s.running?Math.max(0,s.settings.minOff-(s.time-s.lastSwitch)):0,startDelayRemaining:s.startDemandAt===null?null:Math.max(0,s.settings.startDelay-(s.time-s.startDemandAt)),stop:s.stop,lastStop:s.lastStop});}
-const api={DEFAULTS,CADENCE,normalize,create,advance,update,record};if(typeof module!=='undefined'&&module.exports)module.exports=api;else root.AmmoniaCapacity=api;
+const api={DEFAULTS,CADENCE,normalize,create,advance,advanceAccepted,nextBoundary,update,record};if(typeof module!=='undefined'&&module.exports)module.exports=api;else root.AmmoniaCapacity=api;
 })(typeof globalThis!=='undefined'?globalThis:this);

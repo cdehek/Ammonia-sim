@@ -3,6 +3,7 @@
 'use strict';
 const names=['receiver','evaporator','condenser'];
 function createStorage(engine,profiles,numerics={}){
+ const capacity=typeof module!=='undefined'&&module.exports?require('./capacity-controller'):root.AmmoniaCapacity;
  const history=typeof module!=='undefined'&&module.exports?require('./storage-history'):root.AmmoniaHistory;
  const valves=(typeof module!=='undefined'&&module.exports?require('./valve-engine'):root.AmmoniaValves).createValves(engine);
  const initializer=(typeof module!=='undefined'&&module.exports?require('./inventory-initialization'):root.AmmoniaInventory).createInitializer(engine,profiles);
@@ -19,7 +20,7 @@ function createStorage(engine,profiles,numerics={}){
   return c;
  }
  function recover(raw){const states={};for(const key of Object.keys(raw.vessels)){const v=raw.vessels[key];states[key]=engine.stateMVU(v.massKg,v.volumeM3,v.internalEnergyKJ,v.guess);}return states;}
- function create(profile,roomConfig={},operations={}){
+ function create(profile,roomConfig={},operations={},capacitySettings=null){
   const clean=profiles.normalize(profile),preview=initializer.preview(clean);
   if(!preview.ready)throw Error(preview.message);
   const room={initial:15,thermalMass:30,leakUA:.1,gain:2,ambient:25,...roomConfig};
@@ -34,7 +35,12 @@ function createStorage(engine,profiles,numerics={}){
    vessels.outlet={massKg:mass,volumeM3:volume,internalEnergyKJ:energy,guess:v.guess};v.massKg-=mass;v.volumeM3-=volume;v.internalEnergyKJ-=energy;
   }
   const s={profile:clean,roomConfig:room,initialRoomConfig:{...room},operations:ops,controller:{opening:0,sensor:0,integral:0},gravityEnergyKJ:0,time:0,pending:0,T:room.initial,vessels,states:null,initialMassKg:preview.totalMassKg,initialEnergyKJ:preview.totalInternalEnergyKJ,externalHeatKJ:0,fluidWorkKJ:0,electricalKWh:0,evaporatorHeatKJ:0,fault:null,rows:[],acceptedSteps:0,rejectedSteps:0};
-  s.states=recover(s);if(s.states.outlet)s.controller.sensor=Math.max(0,s.states.outlet.T-engine.sat(s.states.outlet.p).T);s.rows.push(record(s));s.history=history.create(s.rows[0],s.profile,s.initialRoomConfig,observeCompressor(s));return s;
+  s.states=recover(s);if(capacitySettings!==null){
+   if(!capacitySettings||typeof capacitySettings!=='object'||Array.isArray(capacitySettings)||(Object.getPrototypeOf(capacitySettings)!==Object.prototype&&Object.getPrototypeOf(capacitySettings)!==null))throw Error('Capacity settings must be a plain object.');
+   if(ops.circuit!=='circulating')throw Error('Managed capacity requires the circulating circuit.');
+   s.capacity=capacity.create(clean,{manualSpeed:ops.speed,...capacitySettings},{running:ops.compressorOn,speed:ops.speed});
+   capacity.advanceAccepted(s.capacity,0,capacityInput(s));
+  }if(s.states.outlet)s.controller.sensor=Math.max(0,s.states.outlet.T-engine.sat(s.states.outlet.p).T);s.rows.push(record(s));s.history=history.create(s.rows[0],s.profile,s.initialRoomConfig,observeCompressor(s));return s;
  }
  function phaseOutlet(state,phase){
   if(phase==='bulk')return state;
@@ -56,9 +62,11 @@ function createStorage(engine,profiles,numerics={}){
   }
   return {rates,fluidWork};
  }
+ function capacityInput(s){return {pressureBarAbsolute:(s.states.outlet||s.states.evaporator).p,enabled:s.operations.compressorOn,stop:s.fault};}
+ function effective(s){return s.capacity?{running:s.capacity.running,speed:s.capacity.speed}:{running:s.operations.compressorOn,speed:s.operations.speed};}
  function compressor(s,states,checkTrips=true){
-  if(!s.operations.compressorOn)return null;
-  const low=states.outlet||states.evaporator,high=states.condenser,c=s.profile.equipment,speed=s.operations.speed;
+  const actual=effective(s);if(!actual.running)return null;
+  const low=states.outlet||states.evaporator,high=states.condenser,c=s.profile.equipment,speed=actual.speed;
   const readings={room:s.T,pressure:low.p,condensing:high.p,discharge:null,speed,stages:c.compressors};
   if(checkTrips&&high.p>=c.highTrip)throw stop('equipment','High discharge pressure',readings);
   if(checkTrips&&low.p<=c.lowTrip)throw stop('equipment','Low suction pressure',readings);
@@ -125,8 +133,9 @@ function createStorage(engine,profiles,numerics={}){
   const kind=error.faultKind||'domain',low=s.states.outlet||s.states.evaporator;
   // A rejected predictor may carry trial readings. Fault evidence always describes
   // the committed state at the recorded timestamp; retain trial evidence separately.
-  const actual={room:s.T,pressure:low.p,condensing:s.states.condenser.p,discharge:null,speed:s.operations.speed,stages:s.profile.equipment.compressors};
+  const actual={room:s.T,pressure:low.p,condensing:s.states.condenser.p,discharge:null,speed:effective(s).speed,stages:s.profile.equipment.compressors};
   s.fault={kind,message:error.message,seconds:s.time,readings:kind==='equipment'&&error.readings?{...error.readings}:actual,attemptedReadings:kind!=='equipment'&&error.readings?{...error.readings}:null,limits:{...s.profile.equipment}};s.pending=0;
+  if(s.capacity)capacity.advanceAccepted(s.capacity,0,capacityInput(s));
   history.sample(s.history,record(s),observeCompressor(s),'stop');history.event(s.history,s.time,'stop',{fault:s.fault});
  }
 
@@ -142,7 +151,7 @@ function createStorage(engine,profiles,numerics={}){
    let remaining=maxStep,dt=maxStep;
    while(remaining>1e-10&&!s.fault){
     if(++budget>200000){latch(s,stop('solver','Storage integration exceeded its step budget.'));break;}
-    dt=Math.min(dt,remaining);let a,euler,b,heun;
+    dt=Math.min(dt,remaining,s.capacity?capacity.CADENCE:Infinity,s.capacity?capacity.nextBoundary(s.capacity):Infinity);let a,euler,b,heun;
     try{
      a=derivatives(s,s.states,transfers,true,dt);euler=projected(s,a,dt);b=derivatives(euler,euler.states,transfers,false,dt);heun=projected(s,a,dt,b);
      const error=errorEstimate(euler,heun);
@@ -155,6 +164,9 @@ function createStorage(engine,profiles,numerics={}){
     }
     if(a.hydraulic&&b.hydraulic){s.lastFlows={};for(const key of ['feed','drain','vapor']){const left=a.hydraulic[key],right=b.hydraulic[key];s.lastFlows[key]={...right,massFlow:(left.massFlow+right.massFlow)/2,requestedMassFlow:((left.requestedMassFlow??left.massFlow)+(right.requestedMassFlow??right.massFlow))/2,phaseLimited:!!(left.phaseLimited||right.phaseLimited)};}s.flowInterval={from:s.time,to:s.time+dt};}
     s.vessels=heun.vessels;s.states=heun.states;s.T=heun.T;s.controller=heun.controller;s.time+=dt;s.acceptedSteps++;remaining-=dt;
+    // The plant used the previous delivered speed over this interval. Observe the
+    // accepted endpoint only; rejected trials cannot consume sensor/actuator time.
+    if(s.capacity){const pressure=(s.states.outlet||s.states.evaporator).p;capacity.advanceAccepted(s.capacity,dt,{pressureBarAbsolute:pressure,enabled:s.operations.compressorOn});}
     s.externalHeatKJ+=dt*(a.externalHeat+b.externalHeat)/2;s.fluidWorkKJ+=dt*(a.fluidWork+b.fluidWork)/2;
     s.gravityEnergyKJ+=dt*(a.gravityWork+b.gravityWork)/2;
     s.electricalKWh+=dt*(a.electrical+b.electrical)/2/3600;s.evaporatorHeatKJ+=dt*(a.heat.evaporator+(a.heat.outlet||0)+b.heat.evaporator+(b.heat.outlet||0))/2;
@@ -171,7 +183,7 @@ function createStorage(engine,profiles,numerics={}){
   const keys=Object.keys(s.vessels),totalMassKg=keys.reduce((sum,key)=>sum+s.vessels[key].massKg,0),totalEnergyKJ=keys.reduce((sum,key)=>sum+s.vessels[key].internalEnergyKJ,0),roomEnergyKJ=s.roomConfig.thermalMass*1000*(s.T-s.roomConfig.initial);
   const vessels={};for(const key of keys){const v=s.states[key];vessels[key]={massKg:s.vessels[key].massKg,internalEnergyKJ:s.vessels[key].internalEnergyKJ,p:v.p,T:v.T,phase:v.phase,x:v.x===null?(v.phase.includes('liquid')?0:1):v.x,liquidVolumeFraction:v.liquidVolumeFraction};}
   let flows=null;try{const h=hydraulics(s,s.states);if(h){const publicFlow=key=>{const {transfer,...value}=s.lastFlows?.[key]||h[key];return value;};flows={feed:publicFlow('feed'),drain:publicFlow('drain'),vapor:publicFlow('vapor'),superheat:h.superheat,command:h.control.command,interval:s.flowInterval||null};}}catch(error){flows={error:error.message};}
-  return {seconds:s.time,roomBoundary:{ambient:s.roomConfig.ambient,gain:s.roomConfig.gain,leakUA:s.roomConfig.leakUA},controller:{...s.controller},flows,gravityEnergyKJ:s.gravityEnergyKJ,T:s.T,totalMassKg,totalEnergyKJ,roomEnergyKJ,massResidualKg:totalMassKg-s.initialMassKg,energyResidualKJ:totalEnergyKJ-s.initialEnergyKJ+roomEnergyKJ-s.externalHeatKJ-s.fluidWorkKJ,electricalKWh:s.electricalKWh,fluidWorkKJ:s.fluidWorkKJ,externalHeatKJ:s.externalHeatKJ,evaporatorHeatKJ:s.evaporatorHeatKJ,operations:{...s.operations},vessels,fault:s.fault,acceptedSteps:s.acceptedSteps,rejectedSteps:s.rejectedSteps};
+  return {...(s.capacity?{capacity:capacity.record(s.capacity)}:{}),seconds:s.time,roomBoundary:{ambient:s.roomConfig.ambient,gain:s.roomConfig.gain,leakUA:s.roomConfig.leakUA},controller:{...s.controller},flows,gravityEnergyKJ:s.gravityEnergyKJ,T:s.T,totalMassKg,totalEnergyKJ,roomEnergyKJ,massResidualKg:totalMassKg-s.initialMassKg,energyResidualKJ:totalEnergyKJ-s.initialEnergyKJ+roomEnergyKJ-s.externalHeatKJ-s.fluidWorkKJ,electricalKWh:s.electricalKWh,fluidWorkKJ:s.fluidWorkKJ,externalHeatKJ:s.externalHeatKJ,evaporatorHeatKJ:s.evaporatorHeatKJ,operations:{...s.operations},vessels,fault:s.fault,acceptedSteps:s.acceptedSteps,rejectedSteps:s.rejectedSteps};
  }
  function validateRoomBoundary(current,patch={}){
   for(const key of Object.keys(patch))if(!['ambient','gain','leakUA'].includes(key))throw Error('Reinitialize storage to change initial room temperature or thermal mass.');
@@ -182,16 +194,30 @@ function createStorage(engine,profiles,numerics={}){
  function update(s,operations,roomBoundary={}){
   const next=validateOperations({...s.operations,...operations}),room=validateRoomBoundary(s.roomConfig,roomBoundary);
   if(next.circuit!==s.operations.circuit)throw Error('Reinitialize storage to change circuit geometry.');
+  const managed=s.capacity?JSON.parse(JSON.stringify(s.capacity)):null;
+  if(managed&&next.speed!==s.operations.speed)capacity.update(managed,{manualSpeed:next.speed});
+  if(managed)capacity.advanceAccepted(managed,0,{pressureBarAbsolute:(s.states.outlet||s.states.evaporator).p,enabled:next.compressorOn,stop:s.fault});
   const before={operations:{...s.operations},roomBoundary:{ambient:s.roomConfig.ambient,gain:s.roomConfig.gain,leakUA:s.roomConfig.leakUA}},after={operations:next,roomBoundary:{ambient:room.ambient,gain:room.gain,leakUA:room.leakUA}},changed=history.changes(before,after);
   if(changed.length)history.sample(s.history,record(s),observeCompressor(s),'before-change');
   if(next.valveMode!==s.operations.valveMode&&next.valveMode==='auto')s.controller.integral=s.controller.opening-next.kp*(s.controller.sensor-next.superheatTarget);
-  s.operations=next;s.roomConfig=room;s.lastFlows=null;s.flowInterval=null;
+  s.operations=next;s.roomConfig=room;if(managed)s.capacity=managed;s.lastFlows=null;s.flowInterval=null;
   // Keep an applied control snapshot even when exporting immediately before a step.
   s.rows.push(record(s));if(s.rows.length>7200)s.rows.shift();
   if(changed.length){history.sample(s.history,record(s),observeCompressor(s),'after-change');history.event(s.history,s.time,'controls',{changes:changed});}
  }
 
- function clearFault(s){const old=s.fault;s.fault=null;s.pending=0;if(old){history.sample(s.history,record(s),observeCompressor(s),'stop-cleared');history.event(s.history,s.time,'clear',{fault:old});}}
+ function updateCapacity(s,patch){
+  if(!s.capacity)throw Error('Enable managed capacity explicitly when initializing the plant.');
+  const next=JSON.parse(JSON.stringify(s.capacity)),before=capacity.record(s.capacity);
+  capacity.update(next,patch);const after=capacity.record(next);
+  if(JSON.stringify(before.settings)===JSON.stringify(after.settings))return after;
+  history.sample(s.history,record(s),observeCompressor(s),'before-capacity-change');
+  s.capacity=next;
+  history.sample(s.history,record(s),observeCompressor(s),'after-capacity-change');
+  history.event(s.history,s.time,'capacity-settings',{before:before.settings,after:after.settings});
+  return after;
+ }
+ function clearFault(s){const old=s.fault;s.fault=null;s.pending=0;if(s.capacity)capacity.advanceAccepted(s.capacity,0,capacityInput(s));if(old){history.sample(s.history,record(s),observeCompressor(s),'stop-cleared');history.event(s.history,s.time,'clear',{fault:old});}}
  function logPlayback(s,type,details={}){if(!['start','pause','step','speed'].includes(type))throw Error('Invalid playback event.');history.sample(s.history,record(s),observeCompressor(s),type);return history.event(s.history,s.time,type,details);}
  // Read-only current-state compressor demand for displays. No trial state or
  // extrapolation; a latched stop inhibits demand until the user clears it.
@@ -200,7 +226,7 @@ function createStorage(engine,profiles,numerics={}){
   try{return {inhibited:false,...(compressor(s,s.states)||{massFlow:0,electrical:0,fluidWork:0,dischargeTemperature:null})};}
   catch(error){return {inhibited:true,error:error.message};}
  }
- return {create,advance,record,update,clearFault,phaseOutlet,portRates,validateOperations,validateRoomBoundary,hydraulics,observeCompressor,logPlayback};
+ return {create,advance,record,update,clearFault,phaseOutlet,portRates,validateOperations,validateRoomBoundary,hydraulics,observeCompressor,logPlayback,updateCapacity};
 }
 const api={createStorage};if(typeof module!=='undefined'&&module.exports)module.exports=api;else root.AmmoniaStorage=api;
 })(typeof globalThis!=='undefined'?globalThis:this);

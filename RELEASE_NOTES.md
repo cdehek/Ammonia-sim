@@ -1,3 +1,11 @@
+# Ammonia Lab v0.5.5 stage 2 · opt-in plant capacity feedback
+
+- Coupled suction PI and delivered compressor speed to conservative circulating physics; accepted adaptive steps alone advance controller time.
+- Exact fractional stop/rest timestamps and start deadlines; independent equipment, domain and solver stops retain original evidence and inhibit output.
+- Preserved legacy manual/default/bank/training behavior. Managed single-compressor capacity is explicit at initialization; full UI arrives in stage 3.
+- Separate user settings, requested/actual speed and measured/sensed/target pressure in detached history and managed CSV. Smooth controller updates create no user-action events.
+- Added coupled conservation, load/feed interaction, switching, fault/recovery, batching/refinement and bundled iPad browser checks. Generic equipment/control assumptions remain uncalibrated.
+
 # Ammonia Lab v0.5.5 stage 1
 
 Adds a standalone, single-compressor capacity-controller foundation: manual/automatic suction PI, absolute-pressure targets and deadband, speed bounds, sensor/actuator/ramp response, start/minimum run/rest timing, mode tracking and anti-windup against delivered capacity. Operator disable, missing signals, unavailable equipment and original model stops inhibit output with priority over ordinary demand holds. Validation is atomic, no-op edits preserve timing, and accepted cadence prevents batching-dependent results.
