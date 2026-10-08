@@ -110,7 +110,11 @@ function update(s,patch){
  if(JSON.stringify(c)===JSON.stringify(s.settings))return record(s);
  if(s.running&&(s.speed<c.minSpeed||s.speed>c.maxSpeed))throw Error('Stop the controller before setting speed limits that exclude its actual speed.');
  s.settings=c;
- if(changedMode){s.command=s.speed;s.rawCommand=s.speed;s.integral=s.speed-c.kp*errorFor(s);s.track=true;}
+ if(changedMode){
+  s.command=s.speed;s.rawCommand=s.speed;s.integral=s.speed-c.kp*errorFor(s);s.track=true;
+  // Refresh normal operating telemetry only; do not reevaluate gates or consume time.
+  if(s.running&&['Running','Manual capacity','Automatic suction PI'].includes(s.reason))s.reason=c.mode==='auto'?'Automatic suction PI':'Manual capacity';
+ }
  // No elapsed time is invented, and unapplied sub-cadence time is discarded at an edit boundary.
  s.pending=0;s.startDemandAt=null;return record(s);
 }

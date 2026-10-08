@@ -8,6 +8,32 @@ const sensor=ready({mode:'auto',sensorSeconds:2});C.advance(sensor,1,input(2.5))
 // Extended saturation cannot accumulate a hidden unbounded integral.
 const saturated=ready({mode:'auto',ki:.02,actuatorSeconds:1});C.advance(saturated,1,input(2.5));C.advance(saturated,1200,input(8));assert(saturated.command===1&&saturated.speed<=1);assert(Math.abs(saturated.integral)<5);C.advance(saturated,1200,input(.5));assert(saturated.command===.2&&saturated.speed>=.2);assert(Math.abs(saturated.integral)<5);C.advance(saturated,30,input(3));assert(saturated.speed>.2&&saturated.command>.2,'Reverse error recovers from saturation without a long windup hold');
 const switched=ready();C.advance(switched,2,input(3));const oldSpeed=switched.speed;C.update(switched,{mode:'auto'});near(switched.speed,oldSpeed);C.advance(switched,.1,input(3));near(switched.speed,oldSpeed);C.advance(switched,5,input(3));const automaticSpeed=switched.speed;C.update(switched,{mode:'manual'});near(switched.settings.manualSpeed,automaticSpeed);near(switched.speed,automaticSpeed);C.advance(switched,.1,input(3));near(switched.speed,automaticSpeed);
+// Accepted mode edits must return correct telemetry immediately, without a clock tick.
+for(const [from,to,reason]of [['manual','auto','Automatic suction PI'],['auto','manual','Manual capacity']]){
+ const state=ready({mode:from,manualSpeed:.85});C.advance(state,2,input(3));
+ const prior=C.record(state),physical=JSON.parse(JSON.stringify(state));
+ const returned=C.update(state,{mode:to});
+ assert.equal(returned.mode,to);assert.equal(returned.reason,reason);assert.deepEqual(returned,C.record(state));
+ // The pre-existing bumpless transition still rebases request/integral to delivered speed.
+ assert.equal(returned.actualSpeed,prior.actualSpeed);assert.equal(returned.requestedSpeed,prior.actualSpeed);assert.equal(returned.rawCommand,prior.actualSpeed);
+ near(returned.integral,prior.actualSpeed-state.settings.kp*returned.errorBar);assert.equal(state.track,true);
+ if(to==='manual')assert.equal(returned.settings.manualSpeed,prior.actualSpeed);
+ for(const key of ['time','pending','speed','running','lastSwitch','startDemandAt','starts','input','measuredPressure','sensedPressure','limitedBy','stop','lastStop','profile'])assert.deepEqual(state[key],physical[key],from+'→'+to+' preserves '+key);
+ for(const key of ['seconds','pendingSeconds','lastSwitchSeconds','minimumOnRemaining','minimumOffRemaining','startDelayRemaining'])assert.deepEqual(returned[key],prior[key]);
+ returned.reason='Changed detached record';assert.equal(C.record(state).reason,reason);
+ const unchanged=JSON.stringify(state);assert.equal(C.update(state,{mode:to}).reason,reason);assert.equal(JSON.stringify(state),unchanged,'No-op mode edits remain pure');
+}
+// Mode labels cannot override an active run hold or an off-state inhibit/delay.
+for(const [from,to]of [['manual','auto'],['auto','manual']])for(const kind of ['initial','hold','rest','delay','disabled','stop']){
+ const state=kind==='rest'||kind==='delay'?C.create(P.DEFAULT,{mode:from,minOff:kind==='delay'?0:90,startDelay:3}):ready({mode:from});
+ if(kind==='hold')C.advanceAccepted(state,0,{...input(2.5),demand:false});
+ if(kind==='rest'||kind==='delay')C.advanceAccepted(state,0,input(2.5));
+ if(kind==='disabled')C.advanceAccepted(state,0,{...input(2.5),enabled:false});
+ if(kind==='stop')C.advanceAccepted(state,0,{...input(2.5),stop:{kind:'equipment',message:'Original stop',seconds:0}});
+ const before=C.record(state),after=C.update(state,{mode:to});assert.equal(after.mode,to);
+ assert.equal(after.reason,kind==='initial'?(to==='auto'?'Automatic suction PI':'Manual capacity'):before.reason);
+ assert.equal(after.seconds,before.seconds);assert.equal(after.actualSpeed,before.actualSpeed);assert.equal(after.running,before.running);assert.equal(after.minimumOnRemaining,before.minimumOnRemaining);assert.equal(after.minimumOffRemaining,before.minimumOffRemaining);assert.deepEqual(after.stop,before.stop);
+}
 // Rest/run delays are accepted simulated time; initial off age is never invented.
 const timers=C.create(P.DEFAULT,{minOff:2,startDelay:1,minOn:2});C.advance(timers,2,input(2.5));assert(!timers.running);assert.equal(timers.reason,'Start delay');C.advance(timers,1,input(2.5));assert(timers.running);near(timers.lastSwitch,3);assert.equal(timers.starts,1);near(timers.speed,.2);
 C.advance(timers,1,{...input(2.5),demand:false});assert(timers.running);assert.equal(timers.reason,'Minimum on time');C.advance(timers,1,{...input(2.5),demand:false});assert(!timers.running);near(timers.lastSwitch,5);C.advance(timers,3,input(2.5));assert(timers.running);assert.equal(timers.starts,2);
