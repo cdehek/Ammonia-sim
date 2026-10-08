@@ -1,3 +1,13 @@
+# Ammonia Lab v0.5.0 stage 2
+
+Connected trends now share simulated time, an exact observation cursor and selectable time windows. Pressure, temperature, actual/sensed/target superheat, command/actual valve opening, liquid volume fraction and compressor electrical demand can be inspected independently or together. Curve visibility controls, follow/pinned inspection, touch and keyboard navigation work offline on tablet/mobile layouts.
+
+Nominal one-second observation sampling runs at accepted model boundaries, independent of playback/batching. Exact-time before/after applied changes, stop/clear snapshots and playback actions preserve causal order. Invalid/no-op updates do not create control-change events, and clearing retains original stop evidence. Long plots preserve bucket extrema/gap boundaries while inspection/export retains exact observations.
+
+History is bounded to 7,201 observations and 2,000 events, with visible retained ranges/removal counts. Reset/equipment changes start a new run. A separate SI history CSV includes applied profile, initial room, per-observation controls/boundaries and original fault snapshots; existing storage CSV/profile schemas remain unchanged. See [TRENDS_HISTORY.md](TRENDS_HISTORY.md) for interpretation and retention.
+
+The new numerical history suite verifies batching invariance, model agreement, rejected-update atomicity, fault evidence and retention. Chromium/WebKit history suites cover controls, units, event inspection, CSV, reset, tablet/mobile and offline behavior. Training scenarios remain stage 3; v0.6.0 equipment calibration remains on [ROADMAP.md](ROADMAP.md).
+
 # Ammonia Lab v0.5.0 stage 1
 
 Live plant now shows the connected refrigerant circuit as a live schematic. Vessel fills, pressure, temperature, phase, valve opening and supported flow direction follow the storage model's accepted state. Equipment inspection works through touch and keyboard controls. Compressor current-state demand supplies discharge temperature and electrical demand independently of condenser bulk temperature. Off/latched-stop demand is suppressed; animation pauses with playback and respects reduced motion.

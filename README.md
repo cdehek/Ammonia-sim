@@ -1,8 +1,14 @@
-# Ammonia Lab v0.5.0 stage 1
+# Ammonia Lab v0.5.0 stage 2
 
 Open `index.html` in Chrome, Edge, Firefox or Safari. The file is self-contained and works offline. HTML previews can disable JavaScript; the startup notice remains visible when controls cannot initialize.
 
 Display units default to **psig and Fahrenheit** on startup and Reset. Room temperatures and thermostat deadband follow the selected temperature units. SI units remain explicitly labeled in numerical reference data and CSV exports.
+
+## v0.5.0 stage 2 · trends and event history
+
+The connected circuit now has synchronized pressure, temperature, superheat, valve, level and electrical-demand charts. Follow the newest observation or pin an exact sample with the slider, Previous/Next or a chart tap. View/window selectors and curve checkboxes control the display. Events record accepted adjustments, playback actions and original stop/clear evidence; inspecting an event selects its observation. **History CSV · SI** exports the applied profile, inputs, observations and events.
+
+Sampling follows simulated time rather than browser refreshes. No-op Apply and rejected changes do not create control-change events. History is bounded to 7,201 observations and 2,000 events; retained ranges/removal counters are explicit. Reset or equipment changes start a new history. See [TRENDS_HISTORY.md](TRENDS_HISTORY.md) for timing, export and retention details.
 
 ## v0.5.0 stage 1 · live schematic
 
