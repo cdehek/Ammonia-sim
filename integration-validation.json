@@ -1,0 +1,286 @@
+{
+  "version": "0.4.5",
+  "passed": true,
+  "scope": "Numerical and accounting verification; generic equipment models, not measured plant validation.",
+  "reportPrecision": "Operating readings: 0.001 SI; case residuals: 1e-9 kg / 1e-7 kJ. Maximum residuals and refinement differences are upper bounds rounded up to two significant digits. Assertions use full precision.",
+  "scenarios": [
+    {
+      "name": "Automatic circulating startup",
+      "seconds": 120,
+      "fault": null,
+      "message": null,
+      "roomC": 14.496,
+      "suctionBar": 4.616,
+      "superheatK": 5.338,
+      "massResidualKg": 0,
+      "energyResidualKJ": 0
+    },
+    {
+      "name": "Higher room load",
+      "seconds": 120,
+      "fault": null,
+      "message": null,
+      "roomC": 14.55,
+      "suctionBar": 4.622,
+      "superheatK": 5.34,
+      "massResidualKg": 0,
+      "energyResidualKJ": 0
+    },
+    {
+      "name": "Manual full feed",
+      "seconds": 120,
+      "fault": null,
+      "message": null,
+      "roomC": 14.539,
+      "suctionBar": 4.738,
+      "superheatK": 4.994,
+      "massResidualKg": 0,
+      "energyResidualKJ": 0
+    },
+    {
+      "name": "Condenser drain disabled",
+      "seconds": 120,
+      "fault": null,
+      "message": null,
+      "roomC": 14.496,
+      "suctionBar": 4.614,
+      "superheatK": 5.343,
+      "massResidualKg": 0,
+      "energyResidualKJ": 0
+    },
+    {
+      "name": "Full compressor speed",
+      "seconds": 120,
+      "fault": null,
+      "message": null,
+      "roomC": 14.405,
+      "suctionBar": 4.045,
+      "superheatK": 6.606,
+      "massResidualKg": 0,
+      "energyResidualKJ": 0
+    },
+    {
+      "name": "Shutdown with retained pressure",
+      "seconds": 80,
+      "fault": null,
+      "message": null,
+      "roomC": 14.725,
+      "suctionBar": 7.216,
+      "superheatK": 0,
+      "massResidualKg": 0,
+      "energyResidualKJ": 0
+    },
+    {
+      "name": "Wet restart domain boundary",
+      "seconds": 80,
+      "fault": "domain",
+      "message": "Wet compressor suction: the resolved outlet is not dry vapor.",
+      "roomC": 14.725,
+      "suctionBar": 7.216,
+      "superheatK": 0,
+      "massResidualKg": 0,
+      "energyResidualKJ": 0
+    },
+    {
+      "name": "Domain stop recovery with compressor off",
+      "seconds": 81,
+      "fault": null,
+      "message": null,
+      "roomC": 14.725,
+      "suctionBar": 7.216,
+      "superheatK": 0,
+      "massResidualKg": 0,
+      "energyResidualKJ": 0
+    },
+    {
+      "name": "High-pressure trip",
+      "seconds": 0,
+      "fault": "equipment",
+      "message": "High discharge pressure",
+      "roomC": 15,
+      "suctionBar": 2.5,
+      "superheatK": 5,
+      "massResidualKg": 0,
+      "energyResidualKJ": 0
+    },
+    {
+      "name": "High-pressure trip recovery",
+      "seconds": 1,
+      "fault": null,
+      "message": null,
+      "roomC": 14.991,
+      "suctionBar": 3.584,
+      "superheatK": 23.487,
+      "massResidualKg": 0,
+      "energyResidualKJ": 0
+    },
+    {
+      "name": "Low-pressure trip",
+      "seconds": 0,
+      "fault": "equipment",
+      "message": "Low suction pressure",
+      "roomC": 15,
+      "suctionBar": 2.5,
+      "superheatK": 5,
+      "massResidualKg": 0,
+      "energyResidualKJ": 0
+    },
+    {
+      "name": "Low-pressure trip recovery",
+      "seconds": 1,
+      "fault": null,
+      "message": null,
+      "roomC": 14.991,
+      "suctionBar": 3.584,
+      "superheatK": 23.487,
+      "massResidualKg": 0,
+      "energyResidualKJ": 0
+    },
+    {
+      "name": "Discharge-temperature trip",
+      "seconds": 0,
+      "fault": "equipment",
+      "message": "High discharge temperature",
+      "roomC": 15,
+      "suctionBar": 2.5,
+      "superheatK": 5,
+      "massResidualKg": 0,
+      "energyResidualKJ": 0
+    },
+    {
+      "name": "Discharge-temperature trip recovery",
+      "seconds": 1,
+      "fault": null,
+      "message": null,
+      "roomC": 14.991,
+      "suctionBar": 3.584,
+      "superheatK": 23.487,
+      "massResidualKg": 0,
+      "energyResidualKJ": 0
+    },
+    {
+      "name": "Feed shutoff reaches thermal trip",
+      "seconds": 51.731,
+      "fault": "equipment",
+      "message": "High discharge temperature",
+      "roomC": 14.77,
+      "suctionBar": 2.251,
+      "superheatK": 26.893,
+      "massResidualKg": 0,
+      "energyResidualKJ": 0
+    },
+    {
+      "name": "Vapor-only liquid sources",
+      "seconds": 1,
+      "fault": null,
+      "message": null,
+      "roomC": 14.991,
+      "suctionBar": 3.584,
+      "superheatK": 23.478,
+      "massResidualKg": 0,
+      "energyResidualKJ": 0
+    },
+    {
+      "name": "Custom fixed-efficiency equipment",
+      "seconds": 20,
+      "fault": null,
+      "message": null,
+      "roomC": 14.923,
+      "suctionBar": 5.418,
+      "superheatK": 4.145,
+      "massResidualKg": 0,
+      "energyResidualKJ": 0
+    },
+    {
+      "name": "Compressed-liquid property boundary",
+      "seconds": 4.189,
+      "fault": "domain",
+      "message": "Stored mass/energy state lies outside the bounded ammonia property grid (0.3–35 bar absolute, 0–250 K superheat, up to 30 K subcooling).",
+      "roomC": 15,
+      "suctionBar": 2.5,
+      "superheatK": null,
+      "massResidualKg": 0,
+      "energyResidualKJ": 0
+    },
+    {
+      "name": "Explicit integration tolerance limit",
+      "seconds": 0,
+      "fault": "solver",
+      "message": "Storage integration could not meet its error tolerance.",
+      "roomC": 15,
+      "suctionBar": 2.5,
+      "superheatK": 5,
+      "massResidualKg": 0,
+      "energyResidualKJ": 0
+    },
+    {
+      "name": "Hot condenser phase exhaustion · step 0.1 s",
+      "seconds": 64.525,
+      "fault": "equipment",
+      "message": "High discharge temperature",
+      "roomC": 14.726,
+      "suctionBar": 3.377,
+      "superheatK": 16.557,
+      "massResidualKg": 0,
+      "energyResidualKJ": 0
+    },
+    {
+      "name": "Hot condenser phase exhaustion · step 0.05 s",
+      "seconds": 64.525,
+      "fault": "equipment",
+      "message": "High discharge temperature",
+      "roomC": 14.726,
+      "suctionBar": 3.378,
+      "superheatK": 16.556,
+      "massResidualKg": 0,
+      "energyResidualKJ": 0
+    },
+    {
+      "name": "Hot condenser phase exhaustion · step 0.025 s",
+      "seconds": 64.525,
+      "fault": "equipment",
+      "message": "High discharge temperature",
+      "roomC": 14.726,
+      "suctionBar": 3.378,
+      "superheatK": 16.555,
+      "massResidualKg": 0,
+      "energyResidualKJ": 0
+    },
+    {
+      "name": "Receiver starvation reaches thermal trip",
+      "seconds": 59.619,
+      "fault": "equipment",
+      "message": "High discharge temperature",
+      "roomC": 14.738,
+      "suctionBar": 2.248,
+      "superheatK": 26.886,
+      "massResidualKg": 0,
+      "energyResidualKJ": 0
+    },
+    {
+      "name": "Applied ambient / room boundaries",
+      "seconds": 121,
+      "fault": null,
+      "message": null,
+      "roomC": 14.492,
+      "suctionBar": 4.62,
+      "superheatK": 5.341,
+      "massResidualKg": 0,
+      "energyResidualKJ": 0
+    }
+  ],
+  "checks": {
+    "faultBatching": true,
+    "acceptedStateFaultEvidence": true,
+    "unavailableLiquid": true,
+    "infeasibleGeometry": true,
+    "playbackBatching": true
+  },
+  "refinement": {
+    "outletPressureBar": 0.000016,
+    "roomK": 2.2e-10,
+    "electricalRelative": 4.3e-9
+  },
+  "maxMassResidualKg": 2e-13,
+  "maxEnergyResidualKJ": 2.6e-9
+}

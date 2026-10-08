@@ -1,0 +1,74 @@
+{
+  "source": "CoolProp 7.2.0 HEOS::Ammonia direct saturated Dmass/Umass",
+  "cases": [
+    {
+      "suctionPressure": 2.5,
+      "dischargePressure": 12,
+      "liquidFractions": {
+        "receiver": 0.3,
+        "evaporator": 0.1,
+        "condenser": 0.1
+      },
+      "vessels": {
+        "receiver": {
+          "massKg": 46.169724617535586,
+          "internalEnergyKJ": 24265.75041390077
+        },
+        "evaporator": {
+          "massKg": 5.403638813265111,
+          "internalEnergyKJ": 1705.2573579294226
+        },
+        "condenser": {
+          "massKg": 8.131237765852402,
+          "internalEnergyKJ": 5001.095561718945
+        }
+      }
+    },
+    {
+      "suctionPressure": 0.35,
+      "dischargePressure": 3,
+      "liquidFractions": {
+        "receiver": 0,
+        "evaporator": 0.2,
+        "condenser": 1
+      },
+      "vessels": {
+        "receiver": {
+          "massKg": 0.6158025156555377,
+          "internalEnergyKJ": 908.3748575675194
+        },
+        "evaporator": {
+          "massKg": 11.297015490667999,
+          "internalEnergyKJ": 1260.7302014628763
+        },
+        "condenser": {
+          "massKg": 78.11806893997901,
+          "internalEnergyKJ": 23658.091181191223
+        }
+      }
+    },
+    {
+      "suctionPressure": 8,
+      "dischargePressure": 30,
+      "liquidFractions": {
+        "receiver": 0.8,
+        "evaporator": 0.01,
+        "condenser": 0.4
+      },
+      "vessels": {
+        "receiver": {
+          "massKg": 108.10668096731946,
+          "internalEnergyKJ": 72589.0730847117
+        },
+        "evaporator": {
+          "massKg": 0.9871238222651841,
+          "internalEnergyKJ": 952.6694866776625
+        },
+        "condenser": {
+          "massKg": 27.368469517159483,
+          "internalEnergyKJ": 19564.56598068242
+        }
+      }
+    }
+  ]
+}

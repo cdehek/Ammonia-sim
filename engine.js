@@ -18,13 +18,68 @@ function createEngine(data){
  function statePX(p,x){if(x<0||x>1)throw Error('Vapor quality must be between zero and one.');const a=sat(p);return {p,T:a.T,h:lerp(a.hf,a.hg,x),s:lerp(a.sf,a.sg,x),rho:1/((1-x)/a.rhof+x/a.rhog),x,phase:x===0?'Saturated liquid':x===1?'Saturated vapor':'Liquid + vapor'};}
  function inverse(p,target,key){const a=sat(p),f=key==='h'?a.hf:a.sf,g=key==='h'?a.hg:a.sg;
   if(target>=f-eps&&target<=g+eps)return statePX(p,Math.max(0,Math.min(1,(target-f)/(g-f))));
-  const kind=target>g?'vapor':'liquid',col=key==='h'?0:1,max=kind==='vapor'?250:30;
-  if(kind==='liquid')throw Error('Inverse subcooled-liquid state is outside this cycle solver.');
+  const kind=target>g?'vapor':'liquid',col=key==='h'?0:1,max=kind==='vapor'?data.sh[data.sh.length-1]:branchLimit(p,'liquid');
+  if(kind==='liquid'){
+   if(branch(p,max,kind)[col]>target+eps)throw Error('Subcooled liquid exceeds the bounded property table.');
+   let low=0,high=max;for(let i=0;i<38;i++){const mid=(low+high)/2;if(branch(p,mid,kind)[col]>target)low=mid;else high=mid;}
+   const result=statePT(p,a.T-(low+high)/2,'liquid');result[key]=target;return result;
+  }
   if(branch(p,max,kind)[col]<target-eps)throw Error('Compressor discharge exceeds the property table (250 K superheat). Use a lower ratio or higher efficiency.');
   let low=0,high=max;for(let i=0;i<38;i++){const mid=(low+high)/2;if(branch(p,mid,kind)[col]<target)low=mid;else high=mid;}
   const result=statePT(p,a.T+(low+high)/2);result[key]=target;return result;
  }
  const ph=(p,h)=>inverse(p,h,'h'),ps=(p,s)=>inverse(p,s,'s');
+ // Invert the same bounded EOS grid at fixed density; never extrapolate a stored state.
+ function propertyError(kind,message){const e=new Error(message);e.faultKind=kind;return e;}
+ function branchLimit(p,kind){
+  if(kind==='vapor')return data.sh[data.sh.length-1];
+  const [i]=pBracket(p);let j=data.sc.length-1;
+  while(j>0&&(!data.liquid[i][j]||!data.liquid[i+1][j]))j--;
+  return j===data.sc.length-1?data.sc[j]:Math.max(0,data.sc[j]-1e-7);
+ }
+ function atDensity(p,rho){
+  const a=sat(p);let state;
+  if(rho>=a.rhog&&rho<=a.rhof){const x=(1/rho-1/a.rhof)/(1/a.rhog-1/a.rhof);state=statePX(p,x);}
+  else{
+   const kind=rho>a.rhof?'liquid':'vapor',max=branchLimit(p,kind),edge=branch(p,max,kind)[2];
+   if(kind==='liquid'?rho>edge:rho<edge)return null;
+   let lo=0,hi=max;
+   for(let i=0;i<32;i++){const mid=(lo+hi)/2,r=branch(p,mid,kind)[2];if(kind==='liquid'?r<rho:r>rho)lo=mid;else hi=mid;}
+   const offset=(lo+hi)/2;state=statePT(p,a.T+(kind==='liquid'?-offset:offset),kind==='liquid'?'liquid':undefined);
+  }
+  return {...state,u:state.h-p*100/state.rho};
+ }
+ function stateDU(rho,u,guess){
+  if(!Number.isFinite(rho)||rho<=0||!Number.isFinite(u))throw propertyError('domain','Stored density must be positive and internal energy finite.');
+  const min=data.p[0],max=data.p[data.p.length-1],tol=1e-7;
+  const evaluate=p=>{const state=atDensity(p,rho);return state?{state,error:state.u-u}:null;};
+  const finish=a=>({...a.state,densityResidual:(a.state.rho-rho)/rho,energyResidual:a.error});
+  // Warm-start Newton iteration for short time steps; bounded bracketing is the fallback.
+  let p=Number.isFinite(guess)?Math.max(min,Math.min(max,guess)):Math.sqrt(min*max);
+  for(let i=0;i<10;i++){
+   const a=evaluate(p);if(!a)break;if(Math.abs(a.error)<tol)return finish(a);
+   const delta=Math.max(1e-5,p*1e-4),q=p+delta<=max?p+delta:p-delta,b=evaluate(q);
+   if(!b)break;const slope=(b.error-a.error)/(q-p);if(!Number.isFinite(slope)||slope<=1e-9)break;
+   const next=Math.max(min,Math.min(max,p-Math.max(-p*.5,Math.min(p*.5,a.error/slope))));
+   if(Math.abs(next-p)<1e-12)break;p=next;
+  }
+  let previous=null,bracketPair=null;
+  for(const p of data.p){const a=evaluate(p);if(!a){previous=null;continue;}if(Math.abs(a.error)<tol)return finish(a);if(previous&&previous.a.error*a.error<0){bracketPair=[previous,{p,a}];break;}previous={p,a};}
+  if(!bracketPair)throw propertyError('domain','Stored mass/energy state lies outside the bounded ammonia property grid (0.3–35 bar absolute, 0–250 K superheat, up to 30 K subcooling).');
+  let [left,right]=bracketPair;
+  for(let i=0;i<48;i++){
+   const p=(left.p+right.p)/2,a=evaluate(p);if(!a)throw propertyError('solver','Stored-state property bracket crosses an unsupported region.');
+   if(Math.abs(a.error)<tol)return finish(a);if(left.a.error*a.error<=0)right={p,a};else left={p,a};
+  }
+  throw propertyError('solver','Stored-state property inversion did not converge.');
+ }
+ function stateMVU(massKg,volumeM3,internalEnergyKJ,guess){
+  if(!Number.isFinite(massKg)||massKg<=0||!Number.isFinite(volumeM3)||volumeM3<=0||!Number.isFinite(internalEnergyKJ))throw propertyError('domain','Stored mass and volume must be positive, and energy finite.');
+  const state=stateDU(massKg/volumeM3,internalEnergyKJ/massKg,guess);
+  const liquidVolumeFraction=state.x===null?(state.phase.includes('liquid')?1:0):(1-state.x)*(massKg/volumeM3)/sat(state.p).rhof;
+  return {...state,massKg,volumeM3,internalEnergyKJ,liquidVolumeFraction};
+ }
+
  const defaults={system:'dx',pressure:2.5,condensing:12,highMode:'pressure',ambient:25,approach:10,evapSH:5,lineSH:2,subcool:3,suctionDrop:0,liquidDrop:0,etaIs:75,etaMotor:92,flowMode:'mass',massFlow:.1,load:100,displacement:180,etaVol:75,evapUA:12,condUA:25,spaceTemp:0,dischargeLimit:150,ratioLimit:8};
  function solve(inputs){const c={...defaults,...inputs};const finiteKeys=Object.keys(defaults).filter(k=>typeof defaults[k]==='number');for(const k of finiteKeys)if(!Number.isFinite(c[k]))throw Error('Enter a finite number for '+k+'.');
   const bounds={pressure:[.35,8],condensing:[3,30],ambient:[-20,50],approach:[3,25],evapSH:[0,20],lineSH:[0,20],subcool:[0,20],suctionDrop:[0,.5],liquidDrop:[0,1],etaIs:[40,100],etaMotor:[50,100],massFlow:[.001,5],load:[1,5000],displacement:[1,10000],etaVol:[20,100],evapUA:[.1,1000],condUA:[.1,2000],spaceTemp:[-50,30],dischargeLimit:[80,250],ratioLimit:[2,20]};
@@ -108,7 +163,7 @@ function createEngine(data){
   if(t<duration-1e-7)throw Error('Simulation exceeded its time-resolution limit.');
   return {rows,firstSetpoint,energy,finalT:T,assumptions:'Fixed cycle pressures and efficiencies; ideal proportional flow/power modulation; UA-limited cooling; lumped thermal mass; thermostat control. Not refrigerant-inventory or startup dynamics.'};
  }
- return {sat,satP,statePT,statePX,ph,ps,solve,roomSimulation,defaults};
+ return {sat,satP,statePT,statePX,ph,ps,stateDU,stateMVU,solve,roomSimulation,defaults};
 }
 if(typeof module!=='undefined'&&module.exports)module.exports={createEngine};else root.AmmoniaEngine={createEngine};
 })(typeof globalThis!=='undefined'?globalThis:this);
