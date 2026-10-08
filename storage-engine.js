@@ -3,6 +3,7 @@
 'use strict';
 const names=['receiver','evaporator','condenser'];
 function createStorage(engine,profiles,numerics={}){
+ const history=typeof module!=='undefined'&&module.exports?require('./storage-history'):root.AmmoniaHistory;
  const valves=(typeof module!=='undefined'&&module.exports?require('./valve-engine'):root.AmmoniaValves).createValves(engine);
  const initializer=(typeof module!=='undefined'&&module.exports?require('./inventory-initialization'):root.AmmoniaInventory).createInitializer(engine,profiles);
  const maxStep=numerics.maxStep??.1,minStep=numerics.minStep??.00001,tolerance=numerics.tolerance??1e-5;
@@ -33,7 +34,7 @@ function createStorage(engine,profiles,numerics={}){
    vessels.outlet={massKg:mass,volumeM3:volume,internalEnergyKJ:energy,guess:v.guess};v.massKg-=mass;v.volumeM3-=volume;v.internalEnergyKJ-=energy;
   }
   const s={profile:clean,roomConfig:room,initialRoomConfig:{...room},operations:ops,controller:{opening:0,sensor:0,integral:0},gravityEnergyKJ:0,time:0,pending:0,T:room.initial,vessels,states:null,initialMassKg:preview.totalMassKg,initialEnergyKJ:preview.totalInternalEnergyKJ,externalHeatKJ:0,fluidWorkKJ:0,electricalKWh:0,evaporatorHeatKJ:0,fault:null,rows:[],acceptedSteps:0,rejectedSteps:0};
-  s.states=recover(s);if(s.states.outlet)s.controller.sensor=Math.max(0,s.states.outlet.T-engine.sat(s.states.outlet.p).T);s.rows.push(record(s));return s;
+  s.states=recover(s);if(s.states.outlet)s.controller.sensor=Math.max(0,s.states.outlet.T-engine.sat(s.states.outlet.p).T);s.rows.push(record(s));s.history=history.create(s.rows[0],s.profile,s.initialRoomConfig,observeCompressor(s));return s;
  }
  function phaseOutlet(state,phase){
   if(phase==='bulk')return state;
@@ -126,11 +127,15 @@ function createStorage(engine,profiles,numerics={}){
   // the committed state at the recorded timestamp; retain trial evidence separately.
   const actual={room:s.T,pressure:low.p,condensing:s.states.condenser.p,discharge:null,speed:s.operations.speed,stages:s.profile.equipment.compressors};
   s.fault={kind,message:error.message,seconds:s.time,readings:kind==='equipment'&&error.readings?{...error.readings}:actual,attemptedReadings:kind!=='equipment'&&error.readings?{...error.readings}:null,limits:{...s.profile.equipment}};s.pending=0;
+  history.sample(s.history,record(s),observeCompressor(s),'stop');history.event(s.history,s.time,'stop',{fault:s.fault});
  }
 
- function advance(s,seconds,transfers=[]){
+ function advance(s,seconds,transfers=[],continueRun=null){
   if(!Number.isFinite(seconds)||seconds<=0||seconds>3600)throw Error('Advance storage by greater than zero and at most 3600 seconds.');
+  if(continueRun!==null&&typeof continueRun!=='function')throw Error('Invalid accepted-boundary observer.');
   if(s.fault)return record(s);
+  // External lesson stops discard unused playback without changing the accepted physics.
+  if(continueRun&&continueRun(s)===false){s.pending=0;return record(s);}
   s.pending+=seconds;let budget=0;
   // Fixed outer intervals make playback chunking invariant; substeps adapt inside each interval.
   while(s.pending>=maxStep-1e-10&&!s.fault){
@@ -156,7 +161,9 @@ function createStorage(engine,profiles,numerics={}){
     try{compressor(s,s.states);}catch(error){if(!error.faultKind&&/property table|property domain|superheat/.test(error.message))error.faultKind='domain';if(!error.faultKind)throw error;latch(s,error);}
     dt=Math.min(maxStep,dt*2);
    }
-   if(!s.fault)s.pending=Math.max(0,s.pending-maxStep);
+   if(!s.fault){s.pending=Math.max(0,s.pending-maxStep);if(history.due(s.history,s.time))history.periodic(s.history,record(s),observeCompressor(s));}
+   // Observe only committed outer endpoints (including a latched stop), never predictors.
+   if(continueRun&&continueRun(s)===false){s.pending=0;break;}
   }
   const row=record(s);if(s.rows[s.rows.length-1].seconds===s.time)s.rows[s.rows.length-1]=row;else s.rows.push(row);if(s.rows.length>7200)s.rows.shift();return row;
  }
@@ -175,14 +182,25 @@ function createStorage(engine,profiles,numerics={}){
  function update(s,operations,roomBoundary={}){
   const next=validateOperations({...s.operations,...operations}),room=validateRoomBoundary(s.roomConfig,roomBoundary);
   if(next.circuit!==s.operations.circuit)throw Error('Reinitialize storage to change circuit geometry.');
+  const before={operations:{...s.operations},roomBoundary:{ambient:s.roomConfig.ambient,gain:s.roomConfig.gain,leakUA:s.roomConfig.leakUA}},after={operations:next,roomBoundary:{ambient:room.ambient,gain:room.gain,leakUA:room.leakUA}},changed=history.changes(before,after);
+  if(changed.length)history.sample(s.history,record(s),observeCompressor(s),'before-change');
   if(next.valveMode!==s.operations.valveMode&&next.valveMode==='auto')s.controller.integral=s.controller.opening-next.kp*(s.controller.sensor-next.superheatTarget);
   s.operations=next;s.roomConfig=room;s.lastFlows=null;s.flowInterval=null;
   // Keep an applied control snapshot even when exporting immediately before a step.
   s.rows.push(record(s));if(s.rows.length>7200)s.rows.shift();
+  if(changed.length){history.sample(s.history,record(s),observeCompressor(s),'after-change');history.event(s.history,s.time,'controls',{changes:changed});}
  }
 
- function clearFault(s){s.fault=null;s.pending=0;}
- return {create,advance,record,update,clearFault,phaseOutlet,portRates,validateOperations,validateRoomBoundary,hydraulics};
+ function clearFault(s){const old=s.fault;s.fault=null;s.pending=0;if(old){history.sample(s.history,record(s),observeCompressor(s),'stop-cleared');history.event(s.history,s.time,'clear',{fault:old});}}
+ function logPlayback(s,type,details={}){if(!['start','pause','step','speed'].includes(type))throw Error('Invalid playback event.');history.sample(s.history,record(s),observeCompressor(s),type);return history.event(s.history,s.time,type,details);}
+ // Read-only current-state compressor demand for displays. No trial state or
+ // extrapolation; a latched stop inhibits demand until the user clears it.
+ function observeCompressor(s){
+  if(s.fault)return {inhibited:true,error:s.fault.message};
+  try{return {inhibited:false,...(compressor(s,s.states)||{massFlow:0,electrical:0,fluidWork:0,dischargeTemperature:null})};}
+  catch(error){return {inhibited:true,error:error.message};}
+ }
+ return {create,advance,record,update,clearFault,phaseOutlet,portRates,validateOperations,validateRoomBoundary,hydraulics,observeCompressor,logPlayback};
 }
 const api={createStorage};if(typeof module!=='undefined'&&module.exports)module.exports=api;else root.AmmoniaStorage=api;
 })(typeof globalThis!=='undefined'?globalThis:this);

@@ -1,8 +1,32 @@
-# Ammonia Lab v0.4.5
+# Ammonia Lab v0.5.0
 
 Open `index.html` in Chrome, Edge, Firefox or Safari. The file is self-contained and works offline. HTML previews can disable JavaScript; the startup notice remains visible when controls cannot initialize.
 
 Display units default to **psig and Fahrenheit** on startup and Reset. Room temperatures and thermostat deadband follow the selected temperature units. SI units remain explicitly labeled in numerical reference data and CSV exports.
+
+## v0.5.0 · visualization and training release
+
+Live plant combines the connected schematic, synchronized trends/event history and five guided Default exercises. Training pauses at the first accepted model boundary where every objective and reflection is satisfied, including fast playback; unused playback time is discarded. The selected lesson preview is labeled separately from the current or retained attempt. Export and Reset retained attempt always refer to that retained evidence until a new lesson is loaded.
+
+See [RELEASE_CHECKS.md](RELEASE_CHECKS.md) for final acceptance coverage and a desktop/iPad demonstration checklist. Numerical agreement and browser checks verify the supported model; manufacturer/measured equipment calibration remains v0.6.0.
+
+## v0.5.0 stage 3 · guided training
+
+Select **Live plant → Guided exercises** with Default equipment active. Choose startup, room load, hot condenser air, restricted feed or superheat target response, then **Load/reset exercise**. Each lesson loads a fixed, repeatable connected-circuit setup. Follow the brief, apply its disturbance, advance or play simulated time, inspect measured objectives and answer the reflection. Hints and the debrief explain the supported model response.
+
+Completion requires measured evidence and a correct reflection. Unexpected stops or edits outside the recipe interrupt the attempt. The hot-air lesson deliberately observes a computed discharge-temperature trip, then verifies off-state continuation after restoring inputs and clearing it. Completed attempts pause automatically and retain their evidence for JSON export. Loading/resetting replaces the connected run; saved custom profiles remain intact. See [TRAINING_SCENARIOS.md](TRAINING_SCENARIOS.md) for recipes, grading, evidence and limits.
+
+## v0.5.0 stage 2 · trends and event history
+
+The connected circuit now has synchronized pressure, temperature, superheat, valve, level and electrical-demand charts. Follow the newest observation or pin an exact sample with the slider, Previous/Next or a chart tap. View/window selectors and curve checkboxes control the display. Events record accepted adjustments, playback actions and original stop/clear evidence; inspecting an event selects its observation. **History CSV · SI** exports the applied profile, inputs, observations and events.
+
+Sampling follows simulated time rather than browser refreshes. No-op Apply and rejected changes do not create control-change events. History is bounded to 7,201 observations and 2,000 events; retained ranges/removal counters are explicit. Reset or equipment changes start a new history. See [TRENDS_HISTORY.md](TRENDS_HISTORY.md) for timing, export and retention details.
+
+## v0.5.0 stage 1 · live schematic
+
+The **Live plant** connected circuit now has a live schematic with modeled vessel fills, pressures, temperatures, compressor status/discharge temperature, feed-valve opening and directional flow. Tap equipment or select its inspection button for details. Start/stop, unit changes and active profile changes update the display. The diagram scrolls within its card on small screens; animation can be disabled and respects reduced-motion preferences.
+
+Readings use the connected model, independently of the reference cycle. Port-flow intervals and compressor current-state demand are explicitly distinguished. See [LIVE_SCHEMATIC.md](LIVE_SCHEMATIC.md) for timing and display boundaries, and [ROADMAP.md](ROADMAP.md) for the staged v0.5.0 work, v0.5.5 suction control and v0.6.0 equipment calibration.
 
 ## v0.4.5 · connected refrigerant simulation
 

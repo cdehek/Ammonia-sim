@@ -1,3 +1,41 @@
+# Ammonia Lab v0.5.0
+
+Live plant now combines an accepted-state equipment schematic, synchronized trends/event history and five guided Default exercises with measured objectives, reflections, hints and exportable debrief evidence.
+
+Stage 4 fixes fast-playback overshoot: exercise grading observes committed outer integration boundaries within a request, stops at completion and discards unused time. A short restriction lesson therefore completes at 40 s instead of continuing into a later starvation trip. Missing reflections still allow the modeled trip to occur. A non-stopping observer produces identical physical states and history to a run without it; the integration equations are unchanged.
+
+The selected lesson preview and current/retained attempt now have separate labels. Selecting another lesson preserves the original objectives, reflection, debrief and report under the retained-attempt heading. Reset/export buttons identify the retained attempt. Loading another lesson explicitly replaces it. Exported completion evidence remains unchanged after subsequent free exploration and stops.
+
+Final release checks cover all five recipes; 1×/10×/60× browser playback; large/fractional advancement; exact completion/fault timing; discarded pending time; original trip evidence; wrong controls/reflections; report freezing; selected/retained content; Default/custom profile guards; units; two hours of actual sealed-storage advancement through the production history-retention limit; mobile layouts; offline operation and source/bundle consistency. The suite comprises ten numerical suites, thirteen Chromium suites and four WebKit suites. WebKit uses iPad emulation, not physical hardware. See [RELEASE_CHECKS.md](RELEASE_CHECKS.md).
+
+Connected automatic suction capacity control remains v0.5.5; manufacturer/measured calibration remains v0.6.0. Default equipment and training outcomes remain illustrative supported-model behavior.
+
+# Ammonia Lab v0.5.0 stage 3
+
+Five guided exercises now load repeatable Default connected-circuit setups: startup, increased room load, hot condenser air, short feed restriction and superheat target response. Disturbances use the existing model controls and boundaries. Objectives grade accepted observations, sustained superheat bands and original fault evidence; a correct reflection is also required. Hints, reset/end controls, debrief and full SI JSON evidence are available offline.
+
+Exercises pause on completion or interruption. Unplanned changes, custom equipment, unexpected stops and missing retained observations cannot silently earn completion. The hot-air exercise requires restored off-state inputs and ten simulated seconds after clearing; clearing alone does not qualify. Exported finished evidence stays frozen during subsequent exploration. Loading replaces the connected run without editing saved profiles.
+
+No integration equations changed. History observations additionally retain accepted feed/drain flow and its interval for grading/export. Verification covers ten numerical suites, thirteen Chromium suites and four WebKit suites in CI, including all five outcomes, negative paths, conservation, read-only grading, batching, units, keyboard/touch controls, responsive layouts and offline HTML. WebKit uses an iPad configuration, not physical hardware. See [TRAINING_SCENARIOS.md](TRAINING_SCENARIOS.md); stage 4 release polish is next, with calibration still reserved for v0.6.0.
+
+# Ammonia Lab v0.5.0 stage 2
+
+Connected trends now share simulated time, an exact observation cursor and selectable time windows. Pressure, temperature, actual/sensed/target superheat, command/actual valve opening, liquid volume fraction and compressor electrical demand can be inspected independently or together. Curve visibility controls, follow/pinned inspection, touch and keyboard navigation work offline on tablet/mobile layouts.
+
+Nominal one-second observation sampling runs at accepted model boundaries, independent of playback/batching. Exact-time before/after applied changes, stop/clear snapshots and playback actions preserve causal order. Invalid/no-op updates do not create control-change events, and clearing retains original stop evidence. Long plots preserve bucket extrema/gap boundaries while inspection/export retains exact observations.
+
+History is bounded to 7,201 observations and 2,000 events, with visible retained ranges/removal counts. Reset/equipment changes start a new run. A separate SI history CSV includes applied profile, initial room, per-observation controls/boundaries and original fault snapshots; existing storage CSV/profile schemas remain unchanged. See [TRENDS_HISTORY.md](TRENDS_HISTORY.md) for interpretation and retention.
+
+The new numerical history suite verifies batching invariance, model agreement, rejected-update atomicity, fault evidence and retention. Chromium/WebKit history suites cover controls, units, event inspection, CSV, reset, tablet/mobile and offline behavior. Training scenarios remain stage 3; v0.6.0 equipment calibration remains on [ROADMAP.md](ROADMAP.md).
+
+# Ammonia Lab v0.5.0 stage 1
+
+Live plant now shows the connected refrigerant circuit as a live schematic. Vessel fills, pressure, temperature, phase, valve opening and supported flow direction follow the storage model's accepted state. Equipment inspection works through touch and keyboard controls. Compressor current-state demand supplies discharge temperature and electrical demand independently of condenser bulk temperature. Off/latched-stop demand is suppressed; animation pauses with playback and respects reduced motion.
+
+The display labels accepted port-flow intervals and distinguishes them from current-state compressor demand. Isolated storage uses its actual evaporator suction path; profile changes clear stale readings. Tablet/mobile scrolling and offline standalone operation are covered by the new schematic browser suite in Chromium and WebKit CI. A numerical telemetry suite verifies energy consistency, observational purity and identical trajectories with/without display sampling. No integration equations, equipment profile schemas or saved profile keys changed.
+
+Trend/event improvements and training scenarios are subsequent v0.5.0 stages. Connected automatic suction capacity control is planned for v0.5.5; manufacturer/measured equipment calibration is reserved for v0.6.0. See [LIVE_SCHEMATIC.md](LIVE_SCHEMATIC.md) and [ROADMAP.md](ROADMAP.md).
+
 # Ammonia Lab v0.4.5
 
 This release integrates equipment inventory, conservative storage dynamics, pressure-driven valve flow and outlet superheat control. It keeps the existing reference-cycle calculator and quasi-steady room/control model separate from the connected refrigerant model.
