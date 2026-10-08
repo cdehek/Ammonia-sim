@@ -174,8 +174,8 @@ function createStorage(engine,profiles,numerics={}){
     s.externalHeatKJ+=dt*(a.externalHeat+b.externalHeat)/2;s.fluidWorkKJ+=dt*(a.fluidWork+b.fluidWork)/2;
     s.gravityEnergyKJ+=dt*(a.gravityWork+b.gravityWork)/2;
     s.electricalKWh+=dt*(a.electrical+b.electrical)/2/3600;s.evaporatorHeatKJ+=dt*(a.heat.evaporator+(a.heat.outlet||0)+b.heat.evaporator+(b.heat.outlet||0))/2;
-    // An endpoint demand shutdown cannot hide a trip crossed while this interval ran.
-    const endpointCompressor=wasRunning&&!s.capacity.running?{running:true,speed:intervalSpeed}:undefined;
+    // Check running intervals at their delivered speed, before endpoint output changes.
+    const endpointCompressor=wasRunning?{running:true,speed:intervalSpeed}:undefined;
     try{compressor(s,s.states,true,endpointCompressor);}catch(error){if(!error.faultKind&&/property table|property domain|superheat/.test(error.message))error.faultKind='domain';if(!error.faultKind)throw error;latch(s,error);}
     if(s.capacity&&!s.fault&&wasRunning!==s.capacity.running){history.sample(s.history,record(s),observeCompressor(s),'capacity-state');history.event(s.history,s.time,'capacity-state',{running:s.capacity.running,reason:s.capacity.reason,lastSwitchSeconds:s.capacity.lastSwitch});}
     dt=Math.min(maxStep,dt*2);

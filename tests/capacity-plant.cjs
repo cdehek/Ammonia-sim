@@ -38,6 +38,15 @@ for(const chunk of [.05,.1,1]){
  assert(s.history.events.some(e=>e.type==='stop'));assert(!s.history.events.some(e=>e.type==='capacity-state'),'Trip wins over an ordinary demand-stop event');const frozen=JSON.stringify(s);m.advance(s,10);assert.equal(JSON.stringify(s),frozen);
 }
 // Off intervals do not invent trips, but an endpoint start must still check protection.
+// Isolate one accepted interval: newly commanded speed must neither hide nor invent a trip.
+const speedModel=make({maxStep:.1,minStep:.1,tolerance:1}),speedProfile=P.copy(P.DEFAULT);speedProfile.equipment.dischargeTrip=140.6;
+for(const [speed,request,trip]of [[.2,1,true],[.3,.2,false]]){
+ const o={...ops,speed},legacy=speedModel.create(speedProfile,{},o),managed=speedModel.create(speedProfile,{},o,{actuatorSeconds:.05,rampPerSecond:1});
+ speedModel.updateCapacity(managed,{manualSpeed:request});speedModel.advance(legacy,.1);speedModel.advance(managed,.1);
+ assert.equal(managed.acceptedSteps,1);assert.equal(managed.time,.1);assert.equal(!!managed.fault,trip);assert.deepEqual(managed.fault,legacy.fault);assert.deepEqual(managed.vessels,legacy.vessels);assert.equal(managed.electricalKWh,legacy.electricalKWh);valid(speedModel,managed);
+ if(trip){assert.equal(managed.fault.message,'High discharge temperature');assert.equal(managed.fault.readings.speed,speed);assert(managed.fault.readings.discharge>=speedProfile.equipment.dischargeTrip);assert.equal(managed.capacity.speed,0);}
+ else{assert(managed.capacity.speed<speed);const nextOutput=speedModel.observeCompressor(managed);assert(nextOutput.inhibited,'Next output would cross the limit, but did not drive this interval');assert.equal(managed.capacity.running,true);speedModel.advance(managed,.1);assert.equal(managed.fault?.message,'High discharge temperature');assert.equal(managed.time,.1,'New output receives protection before the next physical interval');}
+}
 const offProfile=P.copy(P.DEFAULT);offProfile.equipment.lowTrip=2.7;
 const offAtLimit=m.create(offProfile,{}, {...ops,compressorOn:false},{suctionTarget:3,minOff:0,startDelay:.1});m.advance(offAtLimit,.1);assert(offAtLimit.states.outlet.p<offProfile.equipment.lowTrip);assert(!offAtLimit.fault);assert.equal(offAtLimit.electricalKWh,0);
 const startingAtLimit=m.create(offProfile,{}, {...ops,compressorOn:false},{suctionTarget:3,minOff:0,startDelay:.1});m.update(startingAtLimit,{compressorOn:true});m.advance(startingAtLimit,.1);assert.equal(startingAtLimit.fault?.message,'Low suction pressure');assert(Math.abs(startingAtLimit.time-.1)<1e-9);assert.equal(startingAtLimit.electricalKWh,0);valid(m,startingAtLimit);
