@@ -65,3 +65,36 @@ jobs:
         with:
           name: three-section-dx-temporal-browser-performance
           path: /tmp/dx-fv-browser-performance.json
+      - name: Approved three/five-section browser comparison
+        run: node experiments/dx-fv/spatial-browser.cjs /tmp/dx-fv-spatial-browser.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: three-five-section-dx-spatial-browser
+          path: /tmp/dx-fv-spatial-browser.json
+  spatial-resolution:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: npm ci
+      - name: Mesh contracts, temporal refinement and spatial comparison
+        run: node experiments/dx-fv/spatial-test.cjs /tmp/dx-fv-spatial-results.json
+      - name: Install independent thermodynamic reference pathway
+        run: python -m pip install CoolProp==7.2.0 numpy==2.5.3 scipy==1.16.2
+      - name: Regenerate independent three/five-section reference
+        run: python experiments/dx-fv/generate_spatial_reference.py /tmp/dx-fv-spatial-reference.json
+      - name: Mesh comparison against freshly generated direct-EOS reference
+        run: DX_FV_SPATIAL_REFERENCE_PATH=/tmp/dx-fv-spatial-reference.json node experiments/dx-fv/spatial-test.cjs /tmp/dx-fv-spatial-live-results.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: three-five-section-dx-spatial-verification
+          path: |
+            /tmp/dx-fv-spatial-results.json
+            /tmp/dx-fv-spatial-reference.json
+            /tmp/dx-fv-spatial-live-results.json
