@@ -1,0 +1,1974 @@
+{
+  "sectionCount": 3,
+  "selectedMethod": "tr-bdf2",
+  "referenceMethod": "tr-bdf2 adaptive 1e-8 with trapezoid cross-check",
+  "scenarios": [
+    {
+      "name": "stiff startup",
+      "samples": [
+        0.05,
+        0.2,
+        0.6,
+        1
+      ],
+      "reference": {
+        "seconds": 0.9999999999999991,
+        "events": [
+          {
+            "section": 2,
+            "boundary": "vapor",
+            "direction": "cooling",
+            "seconds": 0.6039973889351063,
+            "bracketStartSeconds": 0.6039868635036008,
+            "bracketEndSeconds": 0.6039990174923469
+          }
+        ],
+        "massResidualKg": 8.529396806900014e-13,
+        "energyResidualKJ": 2.5164365036189906e-10,
+        "steps": 1004,
+        "rejected": 129,
+        "accuracyRejected": 129,
+        "eventRejected": 0,
+        "calls": 61361,
+        "minStep": 1.1189456263883736e-05,
+        "maxStep": 0.005087957322338341,
+        "elapsedMS": 2741.9001690000005
+      },
+      "crossCheckErrors": {
+        "pressureBar": 2.7479637232374898e-08,
+        "enthalpyKJkg": 6.58143615055451e-05,
+        "temperatureK": 2.5245567213616482e-05,
+        "eventSeconds": 2.5415130788797313e-07
+      },
+      "comparisons": [
+        {
+          "method": "backward-euler",
+          "relativeTolerance": 0.0001,
+          "errors": {
+            "pressureBar": 9.965441798476249e-05,
+            "enthalpyKJkg": 0.8502927308129529,
+            "temperatureK": 0.32231222834439066,
+            "eventSeconds": 0.0024910252458161253
+          },
+          "seconds": 0.9999999999999998,
+          "massResidualKg": 3.436981602100708e-13,
+          "energyResidualKJ": 2.192276360446499e-10,
+          "steps": 216,
+          "rejected": 3,
+          "accuracyRejected": 3,
+          "eventRejected": 0,
+          "calls": 7235,
+          "minStep": 9.517543763977801e-05,
+          "maxStep": 0.017265458608987334,
+          "elapsedMS": 315.8899880000008
+        },
+        {
+          "method": "backward-euler",
+          "relativeTolerance": 1e-05,
+          "errors": {
+            "pressureBar": 3.084617136162038e-05,
+            "enthalpyKJkg": 0.2754131864071496,
+            "temperatureK": 0.10720825524760969,
+            "eventSeconds": 0.0008005103061682339
+          },
+          "seconds": 0.9999999999999998,
+          "massResidualKg": 2.1106163691775315e-12,
+          "energyResidualKJ": 9.328461336721716e-10,
+          "steps": 646,
+          "rejected": 10,
+          "accuracyRejected": 10,
+          "eventRejected": 0,
+          "calls": 18898,
+          "minStep": 8.422861238198652e-05,
+          "maxStep": 0.0054600732836911055,
+          "elapsedMS": 838.7751509999998
+        },
+        {
+          "method": "backward-euler",
+          "relativeTolerance": 1e-06,
+          "errors": {
+            "pressureBar": 9.409323946218962e-06,
+            "enthalpyKJkg": 0.08788742510932934,
+            "temperatureK": 0.034040390825328615,
+            "eventSeconds": 0.000256142122784242
+          },
+          "seconds": 0.9999999999999988,
+          "massResidualKg": 8.105655903423159e-13,
+          "energyResidualKJ": 1.214978562202873e-09,
+          "steps": 2028,
+          "rejected": 13,
+          "accuracyRejected": 13,
+          "eventRejected": 0,
+          "calls": 48987,
+          "minStep": 2.5751470516052865e-05,
+          "maxStep": 0.0017262554973407967,
+          "elapsedMS": 1567.4744360000004
+        },
+        {
+          "method": "trapezoid",
+          "relativeTolerance": 0.0001,
+          "errors": {
+            "pressureBar": 1.5045706215133237e-05,
+            "enthalpyKJkg": 0.15630994543744237,
+            "temperatureK": 0.05997738255255136,
+            "eventSeconds": 0.0005914796236922149
+          },
+          "seconds": 0.9999999999999998,
+          "massResidualKg": 1.4875470646935618e-13,
+          "energyResidualKJ": 5.4777626878887986e-11,
+          "steps": 56,
+          "rejected": 5,
+          "accuracyRejected": 3,
+          "eventRejected": 2,
+          "calls": 2392,
+          "minStep": 0.0013148728056954703,
+          "maxStep": 0.06538439809349376,
+          "elapsedMS": 99.67339100000027
+        },
+        {
+          "method": "trapezoid",
+          "relativeTolerance": 1e-05,
+          "errors": {
+            "pressureBar": 5.191545770166783e-06,
+            "enthalpyKJkg": 0.03427146267290482,
+            "temperatureK": 0.013141533389554816,
+            "eventSeconds": 0.00016461851781890413
+          },
+          "seconds": 1.0000000000000002,
+          "massResidualKg": 3.914490259715464e-13,
+          "energyResidualKJ": 1.5316420354238858e-10,
+          "steps": 108,
+          "rejected": 11,
+          "accuracyRejected": 10,
+          "eventRejected": 1,
+          "calls": 4364,
+          "minStep": 0.0004639526024402785,
+          "maxStep": 0.03544987149139696,
+          "elapsedMS": 183.01918399999886
+        },
+        {
+          "method": "trapezoid",
+          "relativeTolerance": 1e-06,
+          "errors": {
+            "pressureBar": 2.239652919566737e-06,
+            "enthalpyKJkg": 0.0064345626096837805,
+            "temperatureK": 0.0024752379710006878,
+            "eventSeconds": 3.1164756120638515e-05
+          },
+          "seconds": 1.0000000000000002,
+          "massResidualKg": 4.3800206517286e-13,
+          "energyResidualKJ": 2.0187657101544687e-10,
+          "steps": 222,
+          "rejected": 19,
+          "accuracyRejected": 19,
+          "eventRejected": 0,
+          "calls": 8367,
+          "minStep": 0.00011084160459286924,
+          "maxStep": 0.01806011040951926,
+          "elapsedMS": 365.34793399999944
+        },
+        {
+          "method": "tr-bdf2",
+          "relativeTolerance": 0.0001,
+          "errors": {
+            "pressureBar": 1.4719299332721647e-05,
+            "enthalpyKJkg": 0.1262219776110669,
+            "temperatureK": 0.0484316019047375,
+            "eventSeconds": 0.0005047104078141906
+          },
+          "seconds": 0.9999999999999998,
+          "massResidualKg": 1.54078572817129e-13,
+          "energyResidualKJ": 2.4408253196384067e-11,
+          "steps": 46,
+          "rejected": 6,
+          "accuracyRejected": 4,
+          "eventRejected": 2,
+          "calls": 3914,
+          "minStep": 0.001818259769541912,
+          "maxStep": 0.08363137474931762,
+          "elapsedMS": 163.816773999999
+        },
+        {
+          "method": "tr-bdf2",
+          "relativeTolerance": 1e-05,
+          "errors": {
+            "pressureBar": 4.273970659607329e-06,
+            "enthalpyKJkg": 0.026891916934118854,
+            "temperatureK": 0.010310040472423232,
+            "eventSeconds": 0.00010794546454462317
+          },
+          "seconds": 1,
+          "massResidualKg": 3.431851157420507e-13,
+          "energyResidualKJ": 7.77464204126943e-11,
+          "steps": 82,
+          "rejected": 13,
+          "accuracyRejected": 12,
+          "eventRejected": 1,
+          "calls": 7067,
+          "minStep": 0.0006148074031814462,
+          "maxStep": 0.04458025810900778,
+          "elapsedMS": 280.9816460000002
+        },
+        {
+          "method": "tr-bdf2",
+          "relativeTolerance": 1e-06,
+          "errors": {
+            "pressureBar": 1.1032536471056176e-06,
+            "enthalpyKJkg": 0.005909455150231224,
+            "temperatureK": 0.002268431884000499,
+            "eventSeconds": 2.8037625340537886e-05
+          },
+          "seconds": 1,
+          "massResidualKg": 2.2093416505997165e-12,
+          "energyResidualKJ": 8.083702041083995e-10,
+          "steps": 166,
+          "rejected": 12,
+          "accuracyRejected": 12,
+          "eventRejected": 0,
+          "calls": 11646,
+          "minStep": 0.00023209942311340202,
+          "maxStep": 0.021693454478349285,
+          "elapsedMS": 488.8419990000002
+        }
+      ]
+    },
+    {
+      "name": "cold wet startup",
+      "samples": [
+        1,
+        5,
+        20,
+        60
+      ],
+      "reference": {
+        "seconds": 59.99999999999565,
+        "events": [
+          {
+            "section": 2,
+            "boundary": "vapor",
+            "direction": "heating",
+            "seconds": 1.9853744965246696,
+            "bracketStartSeconds": 1.9853688127404934,
+            "bracketEndSeconds": 1.9854062978884992
+          }
+        ],
+        "massResidualKg": 5.89244070203776e-10,
+        "energyResidualKJ": 4.0005122414754624e-07,
+        "steps": 7162,
+        "rejected": 104,
+        "accuracyRejected": 104,
+        "eventRejected": 0,
+        "calls": 153493,
+        "minStep": 2.3428217503607173e-05,
+        "maxStep": 0.01,
+        "elapsedMS": 6800.754653
+      },
+      "crossCheckErrors": {
+        "pressureBar": 1.0084425738909886e-08,
+        "enthalpyKJkg": 0.00017274108813580824,
+        "temperatureK": 2.6771572692041445e-06,
+        "eventSeconds": 5.177854771609702e-07
+      },
+      "comparisons": [
+        {
+          "method": "backward-euler",
+          "relativeTolerance": 0.0001,
+          "errors": {
+            "pressureBar": 0.00023424933264859504,
+            "enthalpyKJkg": 4.158280788072034,
+            "temperatureK": 0.02002455718683649,
+            "eventSeconds": 0.015825243683323276
+          },
+          "seconds": 60,
+          "massResidualKg": 1.0235881586773132e-11,
+          "energyResidualKJ": 8.431479514570128e-09,
+          "steps": 670,
+          "rejected": 9,
+          "accuracyRejected": 7,
+          "eventRejected": 2,
+          "calls": 16707,
+          "minStep": 0.00044876182006470125,
+          "maxStep": 0.25,
+          "elapsedMS": 566.2714430000015
+        },
+        {
+          "method": "backward-euler",
+          "relativeTolerance": 1e-05,
+          "errors": {
+            "pressureBar": 7.343856871155907e-05,
+            "enthalpyKJkg": 1.3087646224337277,
+            "temperatureK": 0.0069118748085088555,
+            "eventSeconds": 0.004981040719262753
+          },
+          "seconds": 60,
+          "massResidualKg": 3.2932274962593766e-11,
+          "energyResidualKJ": 1.3425053069227033e-08,
+          "steps": 1636,
+          "rejected": 9,
+          "accuracyRejected": 9,
+          "eventRejected": 0,
+          "calls": 42522,
+          "minStep": 0.00011454362157046089,
+          "maxStep": 0.25,
+          "elapsedMS": 1175.4807250000013
+        },
+        {
+          "method": "backward-euler",
+          "relativeTolerance": 1e-06,
+          "errors": {
+            "pressureBar": 2.3300060030706504e-05,
+            "enthalpyKJkg": 0.4157206593627052,
+            "temperatureK": 0.0022164278158172124,
+            "eventSeconds": 0.0015848529938085054
+          },
+          "seconds": 60,
+          "massResidualKg": 2.633203377566673e-11,
+          "energyResidualKJ": 1.2744763466798759e-08,
+          "steps": 4686,
+          "rejected": 12,
+          "accuracyRejected": 12,
+          "eventRejected": 0,
+          "calls": 104433,
+          "minStep": 3.391933807811798e-05,
+          "maxStep": 0.25,
+          "elapsedMS": 2332.8067580000024
+        },
+        {
+          "method": "trapezoid",
+          "relativeTolerance": 0.0001,
+          "errors": {
+            "pressureBar": 2.1011029896822464e-05,
+            "enthalpyKJkg": 0.36145024659253977,
+            "temperatureK": 0.0027784722187220723,
+            "eventSeconds": 0.0018837285432997675
+          },
+          "seconds": 60,
+          "massResidualKg": 5.8834187521839e-13,
+          "energyResidualKJ": 9.482548080086417e-11,
+          "steps": 330,
+          "rejected": 10,
+          "accuracyRejected": 5,
+          "eventRejected": 5,
+          "calls": 9600,
+          "minStep": 0.001665647163210005,
+          "maxStep": 0.25,
+          "elapsedMS": 272.392527
+        },
+        {
+          "method": "trapezoid",
+          "relativeTolerance": 1e-05,
+          "errors": {
+            "pressureBar": 4.68941534670364e-06,
+            "enthalpyKJkg": 0.0805034960676494,
+            "temperatureK": 0.0012874940448242,
+            "eventSeconds": 0.00045757581201399944
+          },
+          "seconds": 60,
+          "massResidualKg": 3.4053315722815114e-13,
+          "energyResidualKJ": -7.042721961170173e-11,
+          "steps": 406,
+          "rejected": 11,
+          "accuracyRejected": 10,
+          "eventRejected": 1,
+          "calls": 12044,
+          "minStep": 0.000583096055258911,
+          "maxStep": 0.25,
+          "elapsedMS": 330.3678199999995
+        },
+        {
+          "method": "trapezoid",
+          "relativeTolerance": 1e-06,
+          "errors": {
+            "pressureBar": 9.93294870799133e-07,
+            "enthalpyKJkg": 0.017008847090437484,
+            "temperatureK": 0.0002946992459342823,
+            "eventSeconds": 9.36535695166274e-05
+          },
+          "seconds": 60,
+          "massResidualKg": 4.4153569689342476e-13,
+          "energyResidualKJ": -1.2113261504964612e-09,
+          "steps": 614,
+          "rejected": 13,
+          "accuracyRejected": 13,
+          "eventRejected": 0,
+          "calls": 17666,
+          "minStep": 0.00021218213449367764,
+          "maxStep": 0.25,
+          "elapsedMS": 457.5530349999972
+        },
+        {
+          "method": "tr-bdf2",
+          "relativeTolerance": 0.0001,
+          "errors": {
+            "pressureBar": 1.6900842048084286e-05,
+            "enthalpyKJkg": 0.2896503149881937,
+            "temperatureK": 0.001687521047315954,
+            "eventSeconds": 0.001515626124644287
+          },
+          "seconds": 60,
+          "massResidualKg": 6.018845144506457e-12,
+          "energyResidualKJ": 4.980202916726739e-09,
+          "steps": 308,
+          "rejected": 10,
+          "accuracyRejected": 6,
+          "eventRejected": 4,
+          "calls": 8577,
+          "minStep": 0.002,
+          "maxStep": 0.25,
+          "elapsedMS": 223.7838369999954
+        },
+        {
+          "method": "tr-bdf2",
+          "relativeTolerance": 1e-05,
+          "errors": {
+            "pressureBar": 3.6351172134629905e-06,
+            "enthalpyKJkg": 0.0625019591718683,
+            "temperatureK": 0.0007218348642723527,
+            "eventSeconds": 0.00037664305157836253
+          },
+          "seconds": 60,
+          "massResidualKg": 1.457377274416416e-11,
+          "energyResidualKJ": 9.358270602888297e-09,
+          "steps": 374,
+          "rejected": 14,
+          "accuracyRejected": 12,
+          "eventRejected": 2,
+          "calls": 13792,
+          "minStep": 0.0007795384986573171,
+          "maxStep": 0.25,
+          "elapsedMS": 361.50236200000654
+        },
+        {
+          "method": "tr-bdf2",
+          "relativeTolerance": 1e-06,
+          "errors": {
+            "pressureBar": 7.6819341643386e-07,
+            "enthalpyKJkg": 0.013178269614400051,
+            "temperatureK": 0.0001978746044244417,
+            "eventSeconds": 7.198465472546545e-05
+          },
+          "seconds": 60,
+          "massResidualKg": 1.53646609324376e-11,
+          "energyResidualKJ": 7.230680054703953e-09,
+          "steps": 540,
+          "rejected": 11,
+          "accuracyRejected": 11,
+          "eventRejected": 0,
+          "calls": 21944,
+          "minStep": 0.00030877460724333433,
+          "maxStep": 0.25,
+          "elapsedMS": 520.5599810000058
+        }
+      ]
+    },
+    {
+      "name": "heat loss and restoration",
+      "samples": [
+        0.1,
+        0.5,
+        2,
+        5,
+        5.1,
+        5.5,
+        7,
+        10
+      ],
+      "reference": {
+        "seconds": 9.999999999999945,
+        "events": [
+          {
+            "section": 2,
+            "boundary": "vapor",
+            "direction": "cooling",
+            "seconds": 0.38296903580550584,
+            "bracketStartSeconds": 0.38296336747971693,
+            "bracketEndSeconds": 0.3830096494790735
+          },
+          {
+            "section": 2,
+            "boundary": "vapor",
+            "direction": "heating",
+            "seconds": 6.096443515684005,
+            "bracketStartSeconds": 6.096434518973536,
+            "bracketEndSeconds": 6.096454624050873
+          }
+        ],
+        "massResidualKg": 4.222443263990512e-12,
+        "energyResidualKJ": 6.453511891546526e-10,
+        "steps": 2406,
+        "rejected": 205,
+        "accuracyRejected": 205,
+        "eventRejected": 0,
+        "calls": 130113,
+        "minStep": 1.7729430309491042e-05,
+        "maxStep": 0.01,
+        "elapsedMS": 3862.8003030000036
+      },
+      "crossCheckErrors": {
+        "pressureBar": 1.905038349292454e-09,
+        "enthalpyKJkg": 9.111569693232013e-05,
+        "temperatureK": 3.160247077715894e-05,
+        "eventSeconds": 3.676250948103643e-07
+      },
+      "comparisons": [
+        {
+          "method": "backward-euler",
+          "relativeTolerance": 0.0001,
+          "errors": {
+            "pressureBar": 2.3533510955076054e-05,
+            "enthalpyKJkg": 1.2895538217876492,
+            "temperatureK": 0.4193046134462328,
+            "eventSeconds": 0.011928156765097953
+          },
+          "seconds": 10.000000000000002,
+          "massResidualKg": 1.6452126946432635e-12,
+          "energyResidualKJ": 6.495536886141906e-10,
+          "steps": 406,
+          "rejected": 16,
+          "accuracyRejected": 12,
+          "eventRejected": 4,
+          "calls": 13934,
+          "minStep": 0.0005975774093492712,
+          "maxStep": 0.25,
+          "elapsedMS": 322.50046000000293
+        },
+        {
+          "method": "backward-euler",
+          "relativeTolerance": 1e-05,
+          "errors": {
+            "pressureBar": 7.551524249915786e-06,
+            "enthalpyKJkg": 0.41353972427623376,
+            "temperatureK": 0.13327450121228068,
+            "eventSeconds": 0.0038318349037922417
+          },
+          "seconds": 10.000000000000007,
+          "massResidualKg": 6.5049694029852265e-12,
+          "energyResidualKJ": 2.6738224551126066e-09,
+          "steps": 1268,
+          "rejected": 21,
+          "accuracyRejected": 21,
+          "eventRejected": 0,
+          "calls": 34598,
+          "minStep": 7.556422712956668e-05,
+          "maxStep": 0.15784596877051435,
+          "elapsedMS": 819.2135699999999
+        },
+        {
+          "method": "backward-euler",
+          "relativeTolerance": 1e-06,
+          "errors": {
+            "pressureBar": 2.3926503374127606e-06,
+            "enthalpyKJkg": 0.1309475268449205,
+            "temperatureK": 0.04219102510992201,
+            "eventSeconds": 0.0012180999408961668
+          },
+          "seconds": 10,
+          "massResidualKg": 5.130631157945816e-13,
+          "energyResidualKJ": 5.835878169602182e-10,
+          "steps": 3960,
+          "rejected": 31,
+          "accuracyRejected": 31,
+          "eventRejected": 0,
+          "calls": 94472,
+          "minStep": 1.9139518169060856e-05,
+          "maxStep": 0.07812057132505601,
+          "elapsedMS": 2225.547488999997
+        },
+        {
+          "method": "trapezoid",
+          "relativeTolerance": 0.0001,
+          "errors": {
+            "pressureBar": 1.717151409463824e-05,
+            "enthalpyKJkg": 0.16851028645442057,
+            "temperatureK": 0.046185293381888926,
+            "eventSeconds": 0.0008158048164963461
+          },
+          "seconds": 10,
+          "massResidualKg": 1.1053360463307536e-13,
+          "energyResidualKJ": 8.988082500493988e-11,
+          "steps": 172,
+          "rejected": 20,
+          "accuracyRejected": 11,
+          "eventRejected": 9,
+          "calls": 7220,
+          "minStep": 0.00101665375984963,
+          "maxStep": 0.25,
+          "elapsedMS": 172.84058699999878
+        },
+        {
+          "method": "trapezoid",
+          "relativeTolerance": 1e-05,
+          "errors": {
+            "pressureBar": 7.884734360530388e-06,
+            "enthalpyKJkg": 0.03918149516516678,
+            "temperatureK": 0.012952770091921195,
+            "eventSeconds": 0.000246809986490959
+          },
+          "seconds": 10.000000000000002,
+          "massResidualKg": 9.40024113077722e-13,
+          "energyResidualKJ": 3.581519525397425e-10,
+          "steps": 250,
+          "rejected": 26,
+          "accuracyRejected": 24,
+          "eventRejected": 2,
+          "calls": 9587,
+          "minStep": 0.0002845887330984747,
+          "maxStep": 0.25,
+          "elapsedMS": 233.39143799999874
+        },
+        {
+          "method": "trapezoid",
+          "relativeTolerance": 1e-06,
+          "errors": {
+            "pressureBar": 4.409986349429573e-07,
+            "enthalpyKJkg": 0.008792232767973474,
+            "temperatureK": 0.0031115927837674917,
+            "eventSeconds": 4.935165023933763e-05
+          },
+          "seconds": 10,
+          "massResidualKg": 1.5457740960580164e-12,
+          "energyResidualKJ": 7.78457825978407e-10,
+          "steps": 498,
+          "rejected": 24,
+          "accuracyRejected": 24,
+          "eventRejected": 0,
+          "calls": 16096,
+          "minStep": 7.160638468647548e-05,
+          "maxStep": 0.16685914033809707,
+          "elapsedMS": 415.5235479999974
+        },
+        {
+          "method": "tr-bdf2",
+          "relativeTolerance": 0.0001,
+          "errors": {
+            "pressureBar": 2.2557752696883426e-06,
+            "enthalpyKJkg": 0.12917237050714903,
+            "temperatureK": 0.04030534897000848,
+            "eventSeconds": 0.0007431762264351605
+          },
+          "seconds": 10,
+          "massResidualKg": 3.634699755888006e-13,
+          "energyResidualKJ": 7.524225686950103e-11,
+          "steps": 126,
+          "rejected": 11,
+          "accuracyRejected": 6,
+          "eventRejected": 5,
+          "calls": 9404,
+          "minStep": 0.002,
+          "maxStep": 0.25,
+          "elapsedMS": 235.4936579999994
+        },
+        {
+          "method": "tr-bdf2",
+          "relativeTolerance": 1e-05,
+          "errors": {
+            "pressureBar": 5.15660111055638e-07,
+            "enthalpyKJkg": 0.029570332174216674,
+            "temperatureK": 0.009222100124514299,
+            "eventSeconds": 0.0001870675923658638
+          },
+          "seconds": 10.000000000000002,
+          "massResidualKg": 1.4318858027598476e-12,
+          "energyResidualKJ": 5.08770747753573e-10,
+          "steps": 216,
+          "rejected": 34,
+          "accuracyRejected": 32,
+          "eventRejected": 2,
+          "calls": 17314,
+          "minStep": 0.000397232474717551,
+          "maxStep": 0.25,
+          "elapsedMS": 411.76269299999694
+        },
+        {
+          "method": "tr-bdf2",
+          "relativeTolerance": 1e-06,
+          "errors": {
+            "pressureBar": 1.0299312305228625e-06,
+            "enthalpyKJkg": 0.006722882566009503,
+            "temperatureK": 0.002234868302029014,
+            "eventSeconds": 4.1231835533395156e-05
+          },
+          "seconds": 10.000000000000002,
+          "massResidualKg": 8.426229374820717e-12,
+          "energyResidualKJ": 2.6517162909911463e-09,
+          "steps": 398,
+          "rejected": 19,
+          "accuracyRejected": 19,
+          "eventRejected": 0,
+          "calls": 24112,
+          "minStep": 0.00014138304362398097,
+          "maxStep": 0.18481032686038512,
+          "elapsedMS": 878.0204850000009
+        }
+      ]
+    },
+    {
+      "name": "feed increase and decrease",
+      "samples": [
+        0.1,
+        0.5,
+        2,
+        5,
+        5.1,
+        5.5,
+        7,
+        10
+      ],
+      "reference": {
+        "seconds": 9.999999999999943,
+        "events": [
+          {
+            "section": 2,
+            "boundary": "vapor",
+            "direction": "cooling",
+            "seconds": 0.3558389226351185,
+            "bracketStartSeconds": 0.3558306426976578,
+            "bracketEndSeconds": 0.3558461570707282
+          },
+          {
+            "section": 2,
+            "boundary": "vapor",
+            "direction": "heating",
+            "seconds": 5.929366106720731,
+            "bracketStartSeconds": 5.929345724998555,
+            "bracketEndSeconds": 5.929372315847764
+          }
+        ],
+        "massResidualKg": 3.18231273028346e-12,
+        "energyResidualKJ": -1.1033202129695496e-11,
+        "steps": 2314,
+        "rejected": 213,
+        "accuracyRejected": 213,
+        "eventRejected": 0,
+        "calls": 124082,
+        "minStep": 1.3950767492880886e-05,
+        "maxStep": 0.01,
+        "elapsedMS": 5095.527301000002
+      },
+      "crossCheckErrors": {
+        "pressureBar": 2.0606241157850036e-09,
+        "enthalpyKJkg": 6.43584478439152e-05,
+        "temperatureK": 2.4502089409850214e-05,
+        "eventSeconds": 3.979285040367486e-08
+      },
+      "comparisons": [
+        {
+          "method": "backward-euler",
+          "relativeTolerance": 0.0001,
+          "errors": {
+            "pressureBar": 1.968503592530979e-05,
+            "enthalpyKJkg": 0.7910714585248115,
+            "temperatureK": 0.33699259444640717,
+            "eventSeconds": 0.009882512614278305
+          },
+          "seconds": 10,
+          "massResidualKg": 2.622380164541931e-12,
+          "energyResidualKJ": 9.116511434648089e-10,
+          "steps": 362,
+          "rejected": 19,
+          "accuracyRejected": 12,
+          "eventRejected": 7,
+          "calls": 12414,
+          "minStep": 0.0012391129723904031,
+          "maxStep": 0.25,
+          "elapsedMS": 273.827025999999
+        },
+        {
+          "method": "backward-euler",
+          "relativeTolerance": 1e-05,
+          "errors": {
+            "pressureBar": 6.339378364916826e-06,
+            "enthalpyKJkg": 0.2526575763206438,
+            "temperatureK": 0.10763091687610427,
+            "eventSeconds": 0.0032149931938620924
+          },
+          "seconds": 9.999999999999993,
+          "massResidualKg": 2.826709786935754e-12,
+          "energyResidualKJ": 1.4659195662902746e-09,
+          "steps": 1074,
+          "rejected": 19,
+          "accuracyRejected": 19,
+          "eventRejected": 0,
+          "calls": 29049,
+          "minStep": 0.00013085004321875156,
+          "maxStep": 0.25,
+          "elapsedMS": 658.2334869999977
+        },
+        {
+          "method": "backward-euler",
+          "relativeTolerance": 1e-06,
+          "errors": {
+            "pressureBar": 2.020118166523588e-06,
+            "enthalpyKJkg": 0.07996382834585347,
+            "temperatureK": 0.03406420464966686,
+            "eventSeconds": 0.0010200731750149572
+          },
+          "seconds": 10.000000000000009,
+          "massResidualKg": 3.8981212975848446e-13,
+          "energyResidualKJ": 5.352348494969128e-10,
+          "steps": 3366,
+          "rejected": 29,
+          "accuracyRejected": 29,
+          "eventRejected": 0,
+          "calls": 81100,
+          "minStep": 1.5207789615769192e-05,
+          "maxStep": 0.18429040887129033,
+          "elapsedMS": 1818.3128300000026
+        },
+        {
+          "method": "trapezoid",
+          "relativeTolerance": 0.0001,
+          "errors": {
+            "pressureBar": 2.0456705219551452e-05,
+            "enthalpyKJkg": 0.09812403885894128,
+            "temperatureK": 0.040199588216260906,
+            "eventSeconds": 0.00038814366034589654
+          },
+          "seconds": 10,
+          "massResidualKg": 2.763222784028937e-13,
+          "energyResidualKJ": 1.9897633540821857e-10,
+          "steps": 160,
+          "rejected": 18,
+          "accuracyRejected": 8,
+          "eventRejected": 10,
+          "calls": 6373,
+          "minStep": 0.002,
+          "maxStep": 0.25,
+          "elapsedMS": 146.14396100000158
+        },
+        {
+          "method": "trapezoid",
+          "relativeTolerance": 1e-05,
+          "errors": {
+            "pressureBar": 4.12430794094476e-06,
+            "enthalpyKJkg": 0.02654040841753158,
+            "temperatureK": 0.011004275525372975,
+            "eventSeconds": 0.00014166522105441004
+          },
+          "seconds": 10.000000000000002,
+          "massResidualKg": 1.055679243279648e-12,
+          "energyResidualKJ": 4.057607028151722e-10,
+          "steps": 220,
+          "rejected": 28,
+          "accuracyRejected": 27,
+          "eventRejected": 1,
+          "calls": 8699,
+          "minStep": 0.0008422364670665843,
+          "maxStep": 0.25,
+          "elapsedMS": 200.4137400000036
+        },
+        {
+          "method": "trapezoid",
+          "relativeTolerance": 1e-06,
+          "errors": {
+            "pressureBar": 1.1583265249193175e-06,
+            "enthalpyKJkg": 0.005751247710804819,
+            "temperatureK": 0.0021657074249858965,
+            "eventSeconds": 2.4041871599322917e-05
+          },
+          "seconds": 9.999999999999995,
+          "massResidualKg": 1.9584599769096944e-12,
+          "energyResidualKJ": 8.428700515317189e-10,
+          "steps": 464,
+          "rejected": 33,
+          "accuracyRejected": 33,
+          "eventRejected": 0,
+          "calls": 15604,
+          "minStep": 0.00024072499006392363,
+          "maxStep": 0.25,
+          "elapsedMS": 367.55449800000497
+        },
+        {
+          "method": "tr-bdf2",
+          "relativeTolerance": 0.0001,
+          "errors": {
+            "pressureBar": 2.1128458098651492e-06,
+            "enthalpyKJkg": 0.07417973680344403,
+            "temperatureK": 0.03160048689099426,
+            "eventSeconds": 0.00030182429874425765
+          },
+          "seconds": 10,
+          "massResidualKg": 7.339890853343326e-13,
+          "energyResidualKJ": 2.6549418219445897e-10,
+          "steps": 128,
+          "rejected": 7,
+          "accuracyRejected": 1,
+          "eventRejected": 6,
+          "calls": 8483,
+          "minStep": 0.001696475206255231,
+          "maxStep": 0.25,
+          "elapsedMS": 191.7371490000005
+        },
+        {
+          "method": "tr-bdf2",
+          "relativeTolerance": 1e-05,
+          "errors": {
+            "pressureBar": 9.125857816094651e-07,
+            "enthalpyKJkg": 0.01909914918519462,
+            "temperatureK": 0.0079001625154973,
+            "eventSeconds": 0.00014122092620461046
+          },
+          "seconds": 10.000000000000002,
+          "massResidualKg": 9.029222061316879e-13,
+          "energyResidualKJ": 2.5912111345505195e-10,
+          "steps": 190,
+          "rejected": 33,
+          "accuracyRejected": 30,
+          "eventRejected": 3,
+          "calls": 15291,
+          "minStep": 0.0009420677437189415,
+          "maxStep": 0.25,
+          "elapsedMS": 344.5865229999981
+        },
+        {
+          "method": "tr-bdf2",
+          "relativeTolerance": 1e-06,
+          "errors": {
+            "pressureBar": 5.536748264312052e-07,
+            "enthalpyKJkg": 0.0044273525336393504,
+            "temperatureK": 0.0017601938998481614,
+            "eventSeconds": 3.8828828792247805e-05
+          },
+          "seconds": 9.999999999999998,
+          "massResidualKg": 4.6135630498701174e-12,
+          "energyResidualKJ": 1.4029843953267118e-09,
+          "steps": 362,
+          "rejected": 30,
+          "accuracyRejected": 30,
+          "eventRejected": 0,
+          "calls": 23023,
+          "minStep": 0.0002623421815931737,
+          "maxStep": 0.25,
+          "elapsedMS": 520.5786290000033
+        }
+      ]
+    },
+    {
+      "name": "feed isolation",
+      "samples": [
+        0.01,
+        0.05,
+        0.2,
+        1,
+        2
+      ],
+      "reference": {
+        "seconds": 2.0000000000000004,
+        "events": [],
+        "massResidualKg": -5.463671507409396e-13,
+        "energyResidualKJ": -9.292939265326261e-10,
+        "steps": 344,
+        "rejected": 8,
+        "accuracyRejected": 8,
+        "eventRejected": 0,
+        "calls": 9276,
+        "minStep": 1.790491904772879e-05,
+        "maxStep": 0.01,
+        "elapsedMS": 328.3487219999952
+      },
+      "crossCheckErrors": {
+        "pressureBar": 1.8269830093231576e-12,
+        "enthalpyKJkg": 1.0938218338196748e-05,
+        "temperatureK": 5.820737172257395e-07,
+        "eventSeconds": 0
+      },
+      "comparisons": [
+        {
+          "method": "backward-euler",
+          "relativeTolerance": 0.0001,
+          "errors": {
+            "pressureBar": 4.155816579753946e-09,
+            "enthalpyKJkg": 0.0028673634560618666,
+            "temperatureK": 0.0011047814041837967,
+            "eventSeconds": 0
+          },
+          "seconds": 2,
+          "massResidualKg": 3.3239714149549404e-13,
+          "energyResidualKJ": 5.625691926192111e-10,
+          "steps": 58,
+          "rejected": 4,
+          "accuracyRejected": 4,
+          "eventRejected": 0,
+          "calls": 1720,
+          "minStep": 5.154264844098072e-05,
+          "maxStep": 0.25,
+          "elapsedMS": 51.77944800000114
+        },
+        {
+          "method": "backward-euler",
+          "relativeTolerance": 1e-05,
+          "errors": {
+            "pressureBar": 7.047695760320494e-12,
+            "enthalpyKJkg": 0.0008505296618750435,
+            "temperatureK": 0.0003504101188092079,
+            "eventSeconds": 0
+          },
+          "seconds": 2,
+          "massResidualKg": 4.318380979954732e-13,
+          "energyResidualKJ": 7.3075558798541e-10,
+          "steps": 114,
+          "rejected": 3,
+          "accuracyRejected": 3,
+          "eventRejected": 0,
+          "calls": 2984,
+          "minStep": 3.832224977040141e-05,
+          "maxStep": 0.25,
+          "elapsedMS": 89.447702999998
+        },
+        {
+          "method": "backward-euler",
+          "relativeTolerance": 1e-06,
+          "errors": {
+            "pressureBar": 1.0884626533425035e-12,
+            "enthalpyKJkg": 0.0002787333005471737,
+            "temperatureK": 0.00011542579285617194,
+            "eventSeconds": 0
+          },
+          "seconds": 2,
+          "massResidualKg": 3.471956270119196e-13,
+          "energyResidualKJ": 5.879461986713075e-10,
+          "steps": 264,
+          "rejected": 3,
+          "accuracyRejected": 3,
+          "eventRejected": 0,
+          "calls": 6282,
+          "minStep": 1.0763203827993599e-05,
+          "maxStep": 0.25,
+          "elapsedMS": 187.48606799999834
+        },
+        {
+          "method": "trapezoid",
+          "relativeTolerance": 0.0001,
+          "errors": {
+            "pressureBar": 3.0691710271923967e-05,
+            "enthalpyKJkg": 9.806581015559004,
+            "temperatureK": 4.166190762447265,
+            "eventSeconds": 0
+          },
+          "seconds": 2,
+          "massResidualKg": 1.1880855796246072e-13,
+          "energyResidualKJ": 2.0189108024259994e-10,
+          "steps": 48,
+          "rejected": 6,
+          "accuracyRejected": 6,
+          "eventRejected": 0,
+          "calls": 4323,
+          "minStep": 0.000506036813824211,
+          "maxStep": 0.2033509345902298,
+          "elapsedMS": 121.80654700000014
+        },
+        {
+          "method": "trapezoid",
+          "relativeTolerance": 1e-05,
+          "errors": {
+            "pressureBar": 1.7874753677205035e-08,
+            "enthalpyKJkg": 0.15594015116562332,
+            "temperatureK": 0.06645909768113967,
+            "eventSeconds": 0
+          },
+          "seconds": 1.9999999999999996,
+          "massResidualKg": 1.0289541435689817e-13,
+          "energyResidualKJ": 1.806161123441008e-10,
+          "steps": 54,
+          "rejected": 7,
+          "accuracyRejected": 7,
+          "eventRejected": 0,
+          "calls": 4262,
+          "minStep": 0.00017827128898193368,
+          "maxStep": 0.23127549127427566,
+          "elapsedMS": 123.66502900000341
+        },
+        {
+          "method": "trapezoid",
+          "relativeTolerance": 1e-06,
+          "errors": {
+            "pressureBar": 4.847118262318872e-10,
+            "enthalpyKJkg": 0.0013697514671093813,
+            "temperatureK": 0.0005837660130900701,
+            "eventSeconds": 0
+          },
+          "seconds": 2,
+          "massResidualKg": -6.026070213573792e-14,
+          "energyResidualKJ": -1.0747840117897312e-10,
+          "steps": 80,
+          "rejected": 5,
+          "accuracyRejected": 5,
+          "eventRejected": 0,
+          "calls": 3995,
+          "minStep": 6.198868291250315e-05,
+          "maxStep": 0.25,
+          "elapsedMS": 138.1763540000029
+        },
+        {
+          "method": "tr-bdf2",
+          "relativeTolerance": 0.0001,
+          "errors": {
+            "pressureBar": 1.1829258150797273e-07,
+            "enthalpyKJkg": 0.06970192687299459,
+            "temperatureK": 0.029705814086725013,
+            "eventSeconds": 0
+          },
+          "seconds": 2,
+          "massResidualKg": 1.09694249668911e-13,
+          "energyResidualKJ": 1.8592052897226097e-10,
+          "steps": 30,
+          "rejected": 2,
+          "accuracyRejected": 2,
+          "eventRejected": 0,
+          "calls": 2367,
+          "minStep": 0.000988313540138822,
+          "maxStep": 0.25,
+          "elapsedMS": 71.43240399999922
+        },
+        {
+          "method": "tr-bdf2",
+          "relativeTolerance": 1e-05,
+          "errors": {
+            "pressureBar": 1.6933431101762153e-08,
+            "enthalpyKJkg": 0.01666248393485148,
+            "temperatureK": 0.007101276423721714,
+            "eventSeconds": 0
+          },
+          "seconds": 2,
+          "massResidualKg": 7.007344330440743e-14,
+          "energyResidualKJ": 1.19982933310947e-10,
+          "steps": 42,
+          "rejected": 5,
+          "accuracyRejected": 5,
+          "eventRejected": 0,
+          "calls": 3361,
+          "minStep": 0.00024038536952043928,
+          "maxStep": 0.25,
+          "elapsedMS": 96.99820299999556
+        },
+        {
+          "method": "tr-bdf2",
+          "relativeTolerance": 1e-06,
+          "errors": {
+            "pressureBar": 1.6853185513809876e-12,
+            "enthalpyKJkg": 0.00022453564679381088,
+            "temperatureK": 9.569339858472858e-05,
+            "eventSeconds": 0
+          },
+          "seconds": 2,
+          "massResidualKg": -3.3345586491692614e-14,
+          "energyResidualKJ": -5.7463693525772186e-11,
+          "steps": 60,
+          "rejected": 5,
+          "accuracyRejected": 5,
+          "eventRejected": 0,
+          "calls": 3604,
+          "minStep": 9.220055291085597e-05,
+          "maxStep": 0.25,
+          "elapsedMS": 107.38749000000098
+        }
+      ]
+    },
+    {
+      "name": "sealed boiling and condensation",
+      "samples": [
+        1,
+        5,
+        10,
+        11,
+        15,
+        20
+      ],
+      "reference": {
+        "seconds": 20.00000000000062,
+        "events": [
+          {
+            "section": 0,
+            "boundary": "vapor",
+            "direction": "heating",
+            "seconds": 0.38167782717318455,
+            "bracketStartSeconds": 0.3816500000000001,
+            "bracketEndSeconds": 0.3817000000000001
+          },
+          {
+            "section": 1,
+            "boundary": "vapor",
+            "direction": "heating",
+            "seconds": 0.38167782717318455,
+            "bracketStartSeconds": 0.3816500000000001,
+            "bracketEndSeconds": 0.3817000000000001
+          },
+          {
+            "section": 2,
+            "boundary": "vapor",
+            "direction": "heating",
+            "seconds": 0.38167782717318455,
+            "bracketStartSeconds": 0.3816500000000001,
+            "bracketEndSeconds": 0.3817000000000001
+          },
+          {
+            "section": 0,
+            "boundary": "vapor",
+            "direction": "cooling",
+            "seconds": 19.61832217314021,
+            "bracketStartSeconds": 19.61830000000027,
+            "bracketEndSeconds": 19.618350000000273
+          },
+          {
+            "section": 1,
+            "boundary": "vapor",
+            "direction": "cooling",
+            "seconds": 19.61832217314021,
+            "bracketStartSeconds": 19.61830000000027,
+            "bracketEndSeconds": 19.618350000000273
+          },
+          {
+            "section": 2,
+            "boundary": "vapor",
+            "direction": "cooling",
+            "seconds": 19.61832217314021,
+            "bracketStartSeconds": 19.61830000000027,
+            "bracketEndSeconds": 19.618350000000273
+          }
+        ],
+        "massResidualKg": 3.079168864328352e-13,
+        "energyResidualKJ": 5.283607960870906e-10,
+        "steps": 2078,
+        "rejected": 9,
+        "accuracyRejected": 0,
+        "eventRejected": 9,
+        "calls": 95944,
+        "minStep": 5e-05,
+        "maxStep": 0.01,
+        "elapsedMS": 5430.789427999996
+      },
+      "crossCheckErrors": {
+        "pressureBar": 7.471498975064605e-10,
+        "enthalpyKJkg": 6.386017048498616e-09,
+        "temperatureK": 3.3652725051069865e-09,
+        "eventSeconds": 1.2082423950232624e-10
+      },
+      "comparisons": [
+        {
+          "method": "backward-euler",
+          "relativeTolerance": 0.0001,
+          "errors": {
+            "pressureBar": 4.876268278053431e-10,
+            "enthalpyKJkg": 1.0758867574622855e-08,
+            "temperatureK": 2.1963444396533305e-09,
+            "eventSeconds": 3.23793958802443e-05
+          },
+          "seconds": 19.999999999999986,
+          "massResidualKg": -3.0333721645625644e-13,
+          "energyResidualKJ": -4.6298549716272674e-10,
+          "steps": 156,
+          "rejected": 8,
+          "accuracyRejected": 0,
+          "eventRejected": 8,
+          "calls": 5068,
+          "minStep": 0.002,
+          "maxStep": 0.25,
+          "elapsedMS": 245.5743050000019
+        },
+        {
+          "method": "backward-euler",
+          "relativeTolerance": 1e-05,
+          "errors": {
+            "pressureBar": 4.876268278053431e-10,
+            "enthalpyKJkg": 1.0758867574622855e-08,
+            "temperatureK": 2.1963444396533305e-09,
+            "eventSeconds": 3.23793958802443e-05
+          },
+          "seconds": 19.999999999999986,
+          "massResidualKg": -3.0333721645625644e-13,
+          "energyResidualKJ": -4.6298549716272674e-10,
+          "steps": 156,
+          "rejected": 8,
+          "accuracyRejected": 0,
+          "eventRejected": 8,
+          "calls": 5068,
+          "minStep": 0.002,
+          "maxStep": 0.25,
+          "elapsedMS": 258.0054139999993
+        },
+        {
+          "method": "backward-euler",
+          "relativeTolerance": 1e-06,
+          "errors": {
+            "pressureBar": 4.876268278053431e-10,
+            "enthalpyKJkg": 1.0758867574622855e-08,
+            "temperatureK": 2.1963444396533305e-09,
+            "eventSeconds": 3.23793958802443e-05
+          },
+          "seconds": 19.999999999999986,
+          "massResidualKg": -3.0333721645625644e-13,
+          "energyResidualKJ": -4.6298549716272674e-10,
+          "steps": 156,
+          "rejected": 8,
+          "accuracyRejected": 0,
+          "eventRejected": 8,
+          "calls": 5068,
+          "minStep": 0.002,
+          "maxStep": 0.25,
+          "elapsedMS": 245.92601599999762
+        },
+        {
+          "method": "trapezoid",
+          "relativeTolerance": 0.0001,
+          "errors": {
+            "pressureBar": 4.876268278053431e-10,
+            "enthalpyKJkg": 1.0758867574622855e-08,
+            "temperatureK": 2.1963444396533305e-09,
+            "eventSeconds": 3.23793958802443e-05
+          },
+          "seconds": 19.999999999999986,
+          "massResidualKg": -3.0333721645625644e-13,
+          "energyResidualKJ": -4.6298549716272674e-10,
+          "steps": 156,
+          "rejected": 8,
+          "accuracyRejected": 0,
+          "eventRejected": 8,
+          "calls": 5068,
+          "minStep": 0.002,
+          "maxStep": 0.25,
+          "elapsedMS": 249.24611799999548
+        },
+        {
+          "method": "trapezoid",
+          "relativeTolerance": 1e-05,
+          "errors": {
+            "pressureBar": 4.876268278053431e-10,
+            "enthalpyKJkg": 1.0758867574622855e-08,
+            "temperatureK": 2.1963444396533305e-09,
+            "eventSeconds": 3.23793958802443e-05
+          },
+          "seconds": 19.999999999999986,
+          "massResidualKg": -3.0333721645625644e-13,
+          "energyResidualKJ": -4.6298549716272674e-10,
+          "steps": 156,
+          "rejected": 8,
+          "accuracyRejected": 0,
+          "eventRejected": 8,
+          "calls": 5068,
+          "minStep": 0.002,
+          "maxStep": 0.25,
+          "elapsedMS": 249.2897709999961
+        },
+        {
+          "method": "trapezoid",
+          "relativeTolerance": 1e-06,
+          "errors": {
+            "pressureBar": 4.876268278053431e-10,
+            "enthalpyKJkg": 1.0758867574622855e-08,
+            "temperatureK": 2.1963444396533305e-09,
+            "eventSeconds": 3.23793958802443e-05
+          },
+          "seconds": 19.999999999999986,
+          "massResidualKg": -3.0333721645625644e-13,
+          "energyResidualKJ": -4.6298549716272674e-10,
+          "steps": 156,
+          "rejected": 8,
+          "accuracyRejected": 0,
+          "eventRejected": 8,
+          "calls": 5068,
+          "minStep": 0.002,
+          "maxStep": 0.25,
+          "elapsedMS": 247.57885299999907
+        },
+        {
+          "method": "tr-bdf2",
+          "relativeTolerance": 0.0001,
+          "errors": {
+            "pressureBar": 2.837250434595262e-10,
+            "enthalpyKJkg": 4.375669959699735e-08,
+            "temperatureK": 1.2779253211192554e-09,
+            "eventSeconds": 3.2380745199844796e-05
+          },
+          "seconds": 19.999999999999986,
+          "massResidualKg": 2.3175905639050143e-15,
+          "energyResidualKJ": 4.658341906660368e-10,
+          "steps": 156,
+          "rejected": 8,
+          "accuracyRejected": 0,
+          "eventRejected": 8,
+          "calls": 9828,
+          "minStep": 0.002,
+          "maxStep": 0.25,
+          "elapsedMS": 477.17876100000285
+        },
+        {
+          "method": "tr-bdf2",
+          "relativeTolerance": 1e-05,
+          "errors": {
+            "pressureBar": 2.837250434595262e-10,
+            "enthalpyKJkg": 4.375669959699735e-08,
+            "temperatureK": 1.2779253211192554e-09,
+            "eventSeconds": 3.2380745199844796e-05
+          },
+          "seconds": 19.999999999999986,
+          "massResidualKg": 2.3175905639050143e-15,
+          "energyResidualKJ": 4.658341906660368e-10,
+          "steps": 156,
+          "rejected": 8,
+          "accuracyRejected": 0,
+          "eventRejected": 8,
+          "calls": 9828,
+          "minStep": 0.002,
+          "maxStep": 0.25,
+          "elapsedMS": 480.0975870000111
+        },
+        {
+          "method": "tr-bdf2",
+          "relativeTolerance": 1e-06,
+          "errors": {
+            "pressureBar": 2.837250434595262e-10,
+            "enthalpyKJkg": 4.375669959699735e-08,
+            "temperatureK": 1.2779253211192554e-09,
+            "eventSeconds": 3.2380745199844796e-05
+          },
+          "seconds": 19.999999999999986,
+          "massResidualKg": 2.3175905639050143e-15,
+          "energyResidualKJ": 4.658341906660368e-10,
+          "steps": 156,
+          "rejected": 8,
+          "accuracyRejected": 0,
+          "eventRejected": 8,
+          "calls": 9828,
+          "minStep": 0.002,
+          "maxStep": 0.25,
+          "elapsedMS": 469.16669500000717
+        }
+      ]
+    },
+    {
+      "name": "initial liquid-full transport",
+      "samples": [
+        0.001,
+        0.01,
+        0.1,
+        1,
+        10
+      ],
+      "reference": {
+        "seconds": 9.99999999999998,
+        "events": [
+          {
+            "section": 0,
+            "boundary": "liquid",
+            "direction": "heating",
+            "seconds": 3.907759073558821e-05,
+            "bracketStartSeconds": 3.899589818391873e-05,
+            "bracketEndSeconds": 3.907759077491717e-05
+          },
+          {
+            "section": 1,
+            "boundary": "liquid",
+            "direction": "heating",
+            "seconds": 0.5480975535132123,
+            "bracketStartSeconds": 0.5480476446026741,
+            "bracketEndSeconds": 0.5480976446026741
+          },
+          {
+            "section": 2,
+            "boundary": "liquid",
+            "direction": "heating",
+            "seconds": 1.41309585217251,
+            "bracketStartSeconds": 1.4130458639794483,
+            "bracketEndSeconds": 1.4130958639794484
+          }
+        ],
+        "massResidualKg": 9.695688696353955e-10,
+        "energyResidualKJ": 3.0714204513060395e-07,
+        "steps": 2096,
+        "rejected": 51,
+        "accuracyRejected": 44,
+        "eventRejected": 7,
+        "calls": 121238,
+        "minStep": 7.290647927792565e-08,
+        "maxStep": 0.01,
+        "elapsedMS": 3541.984142999994
+      },
+      "crossCheckErrors": {
+        "pressureBar": 6.416882136761615e-09,
+        "enthalpyKJkg": 6.204826900102489e-05,
+        "temperatureK": 4.544302356634944e-08,
+        "eventSeconds": 1.6823223053186176e-05
+      },
+      "comparisons": [
+        {
+          "method": "backward-euler",
+          "relativeTolerance": 0.0001,
+          "errors": {
+            "pressureBar": 0.0005126969062234643,
+            "enthalpyKJkg": 0.9242861839684338,
+            "temperatureK": 0.0036516338375767177,
+            "eventSeconds": 0.003998310067166888
+          },
+          "seconds": 10.000000000000002,
+          "massResidualKg": -9.471534667682135e-12,
+          "energyResidualKJ": -3.1752733775647357e-09,
+          "steps": 848,
+          "rejected": 24,
+          "accuracyRejected": 20,
+          "eventRejected": 4,
+          "calls": 30194,
+          "minStep": 5.079740834856488e-07,
+          "maxStep": 0.04547913546760444,
+          "elapsedMS": 862.8720730000059
+        },
+        {
+          "method": "backward-euler",
+          "relativeTolerance": 1e-05,
+          "errors": {
+            "pressureBar": 0.00017858012323745953,
+            "enthalpyKJkg": 0.29116815368558946,
+            "temperatureK": 0.0012718608054909097,
+            "eventSeconds": 0.0015507438633425297
+          },
+          "seconds": 10.000000000000002,
+          "massResidualKg": 6.460143531228368e-11,
+          "energyResidualKJ": 2.0111997400817927e-08,
+          "steps": 2640,
+          "rejected": 13,
+          "accuracyRejected": 10,
+          "eventRejected": 3,
+          "calls": 83136,
+          "minStep": 1.031268025909747e-07,
+          "maxStep": 0.014182079370418705,
+          "elapsedMS": 2213.319559999989
+        },
+        {
+          "method": "backward-euler",
+          "relativeTolerance": 1e-06,
+          "errors": {
+            "pressureBar": 5.771444013147331e-05,
+            "enthalpyKJkg": 0.09196913490836778,
+            "temperatureK": 0.000411039630370702,
+            "eventSeconds": 0.0005259108954187575
+          },
+          "seconds": 9.999999999999986,
+          "massResidualKg": 3.1592173321826067e-10,
+          "energyResidualKJ": 9.806274192669662e-08,
+          "steps": 8240,
+          "rejected": 14,
+          "accuracyRejected": 13,
+          "eventRejected": 0,
+          "calls": 191863,
+          "minStep": 2.5243353838862997e-08,
+          "maxStep": 0.00475836498373448,
+          "elapsedMS": 5201.447444999998
+        },
+        {
+          "method": "trapezoid",
+          "relativeTolerance": 0.0001,
+          "errors": {
+            "pressureBar": 1.2419892597925752e-05,
+            "enthalpyKJkg": 0.09774686934360943,
+            "temperatureK": 8.845305536731018e-05,
+            "eventSeconds": 0.0017987361831677262
+          },
+          "seconds": 10.000000000000004,
+          "massResidualKg": 3.5596636749346544e-11,
+          "energyResidualKJ": 1.1145857570227236e-08,
+          "steps": 204,
+          "rejected": 19,
+          "accuracyRejected": 13,
+          "eventRejected": 6,
+          "calls": 9725,
+          "minStep": 2.389129362259641e-06,
+          "maxStep": 0.18142623387799095,
+          "elapsedMS": 354.12372800000594
+        },
+        {
+          "method": "trapezoid",
+          "relativeTolerance": 1e-05,
+          "errors": {
+            "pressureBar": 2.7208016835089666e-06,
+            "enthalpyKJkg": 0.02180085068812332,
+            "temperatureK": 1.9377264556474927e-05,
+            "eventSeconds": 0.0005831112287573159
+          },
+          "seconds": 9.999999999999996,
+          "massResidualKg": 5.446532114206093e-11,
+          "energyResidualKJ": 1.728426468616817e-08,
+          "steps": 352,
+          "rejected": 30,
+          "accuracyRejected": 24,
+          "eventRejected": 5,
+          "calls": 14949,
+          "minStep": 3.2140422440291793e-07,
+          "maxStep": 0.09366961741615464,
+          "elapsedMS": 563.7374239999917
+        },
+        {
+          "method": "trapezoid",
+          "relativeTolerance": 1e-06,
+          "errors": {
+            "pressureBar": 5.921401848851815e-07,
+            "enthalpyKJkg": 0.004748849999486993,
+            "temperatureK": 4.029072708355841e-06,
+            "eventSeconds": 0.0018010759199675874
+          },
+          "seconds": 10.00000000000001,
+          "massResidualKg": 5.047495754695319e-11,
+          "energyResidualKJ": 1.592150056239916e-08,
+          "steps": 684,
+          "rejected": 45,
+          "accuracyRejected": 43,
+          "eventRejected": 2,
+          "calls": 26433,
+          "minStep": 1.0225719697656564e-07,
+          "maxStep": 0.04552447599998613,
+          "elapsedMS": 985.0404370000033
+        },
+        {
+          "method": "tr-bdf2",
+          "relativeTolerance": 0.0001,
+          "errors": {
+            "pressureBar": 8.074359593379654e-06,
+            "enthalpyKJkg": 0.07921686657903138,
+            "temperatureK": 5.750470059062707e-05,
+            "eventSeconds": 0.0016687653839444483
+          },
+          "seconds": 10.000000000000002,
+          "massResidualKg": 4.0426995084885675e-11,
+          "energyResidualKJ": 1.277692263101926e-08,
+          "steps": 168,
+          "rejected": 23,
+          "accuracyRejected": 16,
+          "eventRejected": 7,
+          "calls": 16066,
+          "minStep": 3.272413866728671e-06,
+          "maxStep": 0.23361539925218464,
+          "elapsedMS": 603.4071649999969
+        },
+        {
+          "method": "tr-bdf2",
+          "relativeTolerance": 1e-05,
+          "errors": {
+            "pressureBar": 2.151728077492976e-06,
+            "enthalpyKJkg": 0.017274357337328183,
+            "temperatureK": 1.532438315443585e-05,
+            "eventSeconds": 0.001715750130603988
+          },
+          "seconds": 10.000000000000002,
+          "massResidualKg": 2.841304969081193e-11,
+          "energyResidualKJ": 8.997403710964136e-09,
+          "steps": 292,
+          "rejected": 26,
+          "accuracyRejected": 20,
+          "eventRejected": 6,
+          "calls": 23281,
+          "minStep": 7.173374848239383e-07,
+          "maxStep": 0.11320421391274814,
+          "elapsedMS": 862.7579439999972
+        },
+        {
+          "method": "tr-bdf2",
+          "relativeTolerance": 1e-06,
+          "errors": {
+            "pressureBar": 4.5874085197183945e-07,
+            "enthalpyKJkg": 0.0036263986185076647,
+            "temperatureK": 3.2671053098454195e-06,
+            "eventSeconds": 0.0009755939519056067
+          },
+          "seconds": 9.999999999999995,
+          "massResidualKg": 1.4277912185889363e-11,
+          "energyResidualKJ": 4.252342478139326e-09,
+          "steps": 552,
+          "rejected": 30,
+          "accuracyRejected": 25,
+          "eventRejected": 5,
+          "calls": 38920,
+          "minStep": 1.848863958932752e-07,
+          "maxStep": 0.0575513619928257,
+          "elapsedMS": 1334.0563720000064
+        }
+      ]
+    }
+  ],
+  "refinement": [
+    {
+      "method": "backward-euler",
+      "rows": [
+        {
+          "step": 0.00625,
+          "h": 1480.178317508984,
+          "eventSeconds": 0.6002871855648152,
+          "calls": 4073,
+          "elapsedMS": 177.716948
+        },
+        {
+          "step": 0.003125,
+          "h": 1480.016042311123,
+          "eventSeconds": 0.6021979754549182,
+          "calls": 7488,
+          "elapsedMS": 304.4364469999998
+        },
+        {
+          "step": 0.0015625,
+          "h": 1479.944825486974,
+          "eventSeconds": 0.6030433861063654,
+          "calls": 14276,
+          "elapsedMS": 599.513524
+        },
+        {
+          "step": 0.00078125,
+          "h": 1479.9124811843853,
+          "eventSeconds": 0.6035482224371433,
+          "calls": 24842,
+          "elapsedMS": 1012.774296
+        }
+      ],
+      "observedOrders": [
+        1.1881525086970182,
+        1.138706495894688
+      ]
+    },
+    {
+      "method": "trapezoid",
+      "rows": [
+        {
+          "step": 0.00625,
+          "h": 1479.9685362936154,
+          "eventSeconds": 0.6045671378282564,
+          "calls": 3163,
+          "elapsedMS": 131.28736600000002
+        },
+        {
+          "step": 0.003125,
+          "h": 1479.905323864729,
+          "eventSeconds": 0.604231437582625,
+          "calls": 5899,
+          "elapsedMS": 243.18511200000012
+        },
+        {
+          "step": 0.0015625,
+          "h": 1479.888467826158,
+          "eventSeconds": 0.6040989814994133,
+          "calls": 11252,
+          "elapsedMS": 471.9412970000003
+        },
+        {
+          "step": 0.00078125,
+          "h": 1479.8841473326354,
+          "eventSeconds": 0.6040205976348082,
+          "calls": 20663,
+          "elapsedMS": 849.7291210000003
+        }
+      ],
+      "observedOrders": [
+        1.9069427297807804,
+        1.9639974970662664
+      ]
+    },
+    {
+      "method": "tr-bdf2",
+      "rows": [
+        {
+          "step": 0.00625,
+          "h": 1479.9275272667983,
+          "eventSeconds": 0.6044449655270229,
+          "calls": 5913,
+          "elapsedMS": 236.7980520000001
+        },
+        {
+          "step": 0.003125,
+          "h": 1479.8941718363208,
+          "eventSeconds": 0.604185827776693,
+          "calls": 11140,
+          "elapsedMS": 446.1376140000002
+        },
+        {
+          "step": 0.0015625,
+          "h": 1479.8855635625566,
+          "eventSeconds": 0.6040849120507303,
+          "calls": 20558,
+          "elapsedMS": 848.0638739999995
+        },
+        {
+          "step": 0.00078125,
+          "h": 1479.8834078443629,
+          "eventSeconds": 0.6040173886799798,
+          "calls": 38960,
+          "elapsedMS": 1537.3050009999997
+        }
+      ],
+      "observedOrders": [
+        1.9541257955518334,
+        1.9975553657286829
+      ]
+    }
+  ],
+  "independentReference": {
+    "source": "CoolProp 7.2.0 direct D/U EOS; SciPy 1.16.2 Radau conserved M/U continuous-time startup",
+    "errors": {
+      "pressureBar": 5.443235329138929e-08,
+      "enthalpyKJkg": 0.0018598033859689167,
+      "temperatureK": 0.00016102095007930473,
+      "eventSeconds": 4.714945688322203e-06
+    }
+  },
+  "failures": [
+    {
+      "kind": "accuracy",
+      "message": "Temporal error/event tolerance cannot be met above the minimum step.",
+      "seconds": 0,
+      "attemptedStepSeconds": 0.5,
+      "error": 38501743.966402344
+    },
+    {
+      "kind": "solver",
+      "message": "Implicit nonlinear iteration did not converge.",
+      "seconds": 0,
+      "attemptedStepSeconds": 0.5
+    },
+    {
+      "kind": "domain",
+      "message": "Stored mass/energy state lies outside the bounded ammonia property grid (0.3\u201335 bar absolute, 0\u2013250 K superheat, up to 30 K subcooling).",
+      "seconds": 0.16072806685894853,
+      "attemptedStepSeconds": 1.2774248680194927e-09,
+      "numericalCause": "Implicit line search could not reduce the conservative residual.",
+      "domainEvidence": "Local conservative M/U transport direction leaves the bounded EOS at the exhausted step."
+    }
+  ],
+  "performance": [
+    {
+      "name": "one-hour dry",
+      "seconds": 3600.000000000002,
+      "sections": [
+        {
+          "p": 3.533058345774111,
+          "h": 901.0265440103595,
+          "T": -5.097566696292558
+        },
+        {
+          "p": 3.5271547711523192,
+          "h": 1302.053088022945,
+          "T": -5.140462736923735
+        },
+        {
+          "p": 3.5171845613332096,
+          "h": 1703.0796320484983,
+          "T": 36.32750170290022
+        }
+      ],
+      "terminal": {
+        "p": 3.5171845613332096,
+        "h": 1703.0796320484983,
+        "T": 36.32750170290022,
+        "phase": "Superheated vapor",
+        "quality": null,
+        "wet": false,
+        "superheatK": 41.54057239065878
+      },
+      "events": [],
+      "massResidualKg": -3.5370320944870786e-10,
+      "energyResidualKJ": -9.345152041095872e-08,
+      "steps": 14598,
+      "rejected": 7,
+      "accuracyRejected": 7,
+      "eventRejected": 0,
+      "calls": 57984,
+      "minStep": 0.00028844323977974103,
+      "maxStep": 0.25,
+      "elapsedMS": 4144.040020999993
+    },
+    {
+      "name": "one-hour wet",
+      "seconds": 3599.9999999999964,
+      "sections": [
+        {
+          "p": 3.523243584519747,
+          "h": 764.584730210951,
+          "T": -5.168921419328928
+        },
+        {
+          "p": 3.518609834954968,
+          "h": 1029.169460431032,
+          "T": -5.202678548112399
+        },
+        {
+          "p": 3.511231967373549,
+          "h": 1293.7541906647998,
+          "T": -5.2565185819451266
+        }
+      ],
+      "terminal": {
+        "p": 3.511231967373549,
+        "h": 1293.7541906647998,
+        "T": -5.2565185819451266,
+        "phase": "Liquid + vapor",
+        "quality": 0.759530565385584,
+        "wet": true,
+        "superheatK": 0
+      },
+      "events": [
+        {
+          "section": 2,
+          "boundary": "vapor",
+          "direction": "cooling",
+          "seconds": 0.6040329016868221,
+          "bracketStartSeconds": 0.6038710464640821,
+          "bracketEndSeconds": 0.6042902082432319
+        }
+      ],
+      "massResidualKg": -2.3809581771450095e-09,
+      "energyResidualKJ": -7.654607618867715e-07,
+      "steps": 14616,
+      "rejected": 10,
+      "accuracyRejected": 10,
+      "eventRejected": 0,
+      "calls": 109352,
+      "minStep": 0.0002518450028616056,
+      "maxStep": 0.25,
+      "elapsedMS": 3145.670603999999
+    }
+  ],
+  "eventRefinement": {
+    "exactSealedBoilingSeconds": 0.38167930510145887,
+    "rows": [
+      {
+        "eventStepSeconds": 0.008,
+        "seconds": 0.38147544397718985,
+        "errorSeconds": 0.00020386112426901137
+      },
+      {
+        "eventStepSeconds": 0.002,
+        "seconds": 0.3816454477782075,
+        "errorSeconds": 3.385732325134061e-05
+      },
+      {
+        "eventStepSeconds": 0.0005,
+        "seconds": 0.38166566973752264,
+        "errorSeconds": 1.363536393622633e-05
+      }
+    ]
+  },
+  "coarseTrapezoid": {
+    "events": [
+      {
+        "section": 2,
+        "boundary": "vapor",
+        "direction": "cooling",
+        "seconds": 0.0444816180862408,
+        "bracketStartSeconds": 0,
+        "bracketEndSeconds": 0.05
+      },
+      {
+        "section": 2,
+        "boundary": "vapor",
+        "direction": "heating",
+        "seconds": 0.1618704420937939,
+        "bracketStartSeconds": 0.15000000000000002,
+        "bracketEndSeconds": 0.2
+      },
+      {
+        "section": 2,
+        "boundary": "vapor",
+        "direction": "cooling",
+        "seconds": 0.6098459481383135,
+        "bracketStartSeconds": 0.6,
+        "bracketEndSeconds": 0.65
+      }
+    ],
+    "terminalEnthalpy": 1500.0850873031889
+  },
+  "passed": true,
+  "snapshotNote": "Local verification snapshot; full per-sample trajectories and fresh-reference results are uploaded by the experimental workflow. Timing is observational."
+}

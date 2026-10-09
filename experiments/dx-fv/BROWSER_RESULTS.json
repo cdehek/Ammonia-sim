@@ -1,0 +1,81 @@
+{
+  "sectionCount": 3,
+  "kind": "Synthetic desktop headless browser; not physical iPad",
+  "browsers": [
+    {
+      "name": "chromium",
+      "version": "151.0.7922.34",
+      "rows": [
+        {
+          "name": "startup",
+          "seconds": 1,
+          "elapsedMS": 703,
+          "terminal": {
+            "p": 3.509464687465602,
+            "h": 1479.8871408936159,
+            "T": -5.2694321126879995,
+            "phase": "Liquid + vapor",
+            "quality": 0.9049481654429795,
+            "wet": true,
+            "superheatK": 0
+          },
+          "massResidualKg": 2.2567473063894727e-12,
+          "energyResidualKJ": 6.821627707154221e-10,
+          "calls": 11473,
+          "steps": 164,
+          "rejected": 10,
+          "stop": null
+        },
+        {
+          "name": "one-hour dry",
+          "seconds": 3600,
+          "elapsedMS": 7372.300000000745,
+          "terminal": {
+            "p": 3.5171845613332096,
+            "h": 1703.0796320484983,
+            "T": 36.32750170290022,
+            "phase": "Superheated vapor",
+            "quality": null,
+            "wet": false,
+            "superheatK": 41.54057239065878
+          },
+          "massResidualKg": -3.536435915293826e-10,
+          "energyResidualKJ": -9.341604767509892e-08,
+          "calls": 57977,
+          "steps": 14598,
+          "rejected": 7,
+          "stop": null
+        },
+        {
+          "name": "one-hour wet",
+          "seconds": 3600,
+          "elapsedMS": 5664.300000000745,
+          "terminal": {
+            "p": 3.511231967373549,
+            "h": 1293.7541906648712,
+            "T": -5.2565185819451266,
+            "phase": "Liquid + vapor",
+            "quality": 0.7595305653856396,
+            "wet": true,
+            "superheatK": 0
+          },
+          "massResidualKg": -2.3830445863154415e-09,
+          "energyResidualKJ": -7.642560317933089e-07,
+          "calls": 109282,
+          "steps": 14616,
+          "rejected": 10,
+          "stop": null
+        },
+        {
+          "name": "cold startup in 0.1 s batches",
+          "seconds": 5.000000000000001,
+          "elapsedMS": 1186.8999999985099,
+          "longestSynchronousCallMS": 142.59999999776483,
+          "stop": null
+        }
+      ]
+    }
+  ],
+  "passed": true,
+  "snapshotNote": "Local Chromium measurement during concurrent verification. Hosted CI separately runs both Chromium and WebKit. This is not an iPad measurement."
+}

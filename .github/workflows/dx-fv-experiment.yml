@@ -23,11 +23,17 @@ jobs:
       - name: Isolated three-section prototype against frozen references
         run: node experiments/dx-fv/test.cjs /tmp/dx-fv-results.json
       - name: Install independent thermodynamic reference pathway
-        run: python -m pip install CoolProp==7.2.0 numpy==2.5.3
+        run: python -m pip install CoolProp==7.2.0 numpy==2.5.3 scipy==1.16.2
       - name: Regenerate direct-EOS and independent steady/transient references
         run: python experiments/dx-fv/generate_reference.py /tmp/dx-fv-reference.json
       - name: Prototype against freshly generated direct-EOS references
         run: DX_FV_REFERENCE_PATH=/tmp/dx-fv-reference.json node experiments/dx-fv/test.cjs /tmp/dx-fv-live-reference-results.json
+      - name: Three-section adaptive temporal accuracy and conservation
+        run: node experiments/dx-fv/time-test.cjs /tmp/dx-fv-time-results.json
+      - name: Regenerate independent continuous-time direct-EOS reference
+        run: python experiments/dx-fv/generate_time_reference.py /tmp/dx-fv-time-reference.json
+      - name: Temporal accuracy against freshly generated Radau reference
+        run: DX_FV_TIME_REFERENCE_PATH=/tmp/dx-fv-time-reference.json node experiments/dx-fv/time-test.cjs /tmp/dx-fv-time-live-results.json
       - name: Existing standalone source/build consistency
         run: |
           python tools/build.py /tmp/ammonia-fv-build
@@ -39,3 +45,23 @@ jobs:
             /tmp/dx-fv-results.json
             /tmp/dx-fv-reference.json
             /tmp/dx-fv-live-reference-results.json
+            /tmp/dx-fv-time-results.json
+            /tmp/dx-fv-time-reference.json
+            /tmp/dx-fv-time-live-results.json
+  browser-performance:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - run: npm ci
+      - name: Install browser engines and system dependencies
+        run: npx playwright install --with-deps chromium webkit
+      - name: Isolated Chromium and WebKit numerical execution and performance
+        run: node experiments/dx-fv/browser-benchmark.cjs /tmp/dx-fv-browser-performance.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: three-section-dx-temporal-browser-performance
+          path: /tmp/dx-fv-browser-performance.json

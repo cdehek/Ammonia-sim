@@ -15,3 +15,9 @@ These are operational restore baselines, with the connected DX phase-selection l
 To inspect a baseline in a separate checkout: `git switch --detach <full-commit>`. Do not force-reset main or PR #3. Prototype files are under `experiments/dx-fv/`; deleting that directory in a disposable checkout removes the experiment without replacing application files.
 
 Stages 4 and later, five-section validation, production integration, profile/UI migration and merging require separate explicit approval. This stage exercises three sections only.
+
+## Validated Stage 3 prototype restore point
+
+Commit `f7b19adb67587d88195d53cee6081c8b014fb9ed` freezes the validated three-section prototype and its original backward-Euler tests/references. Hosted verification: https://github.com/cdehek/Ammonia-sim/actions/runs/37996731094 . The numerical time-accuracy stage is a fast-forward descendant on the same experimental branch; this commit remains retrievable. No production or release-candidate ref is moved.
+
+The currently authorized follow-up is isolated three-section temporal accuracy only. Spatial refinement, equipment calibration, circuit/UI integration and merges still require explicit approval.
