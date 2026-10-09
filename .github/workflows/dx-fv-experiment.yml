@@ -1,0 +1,41 @@
+name: Verify isolated DX finite-volume prototype
+on:
+  push:
+    branches: [experimental/dx-fv-stage-3]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  prototype:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: npm ci
+      - name: Existing numerical regression suites
+        run: npm test
+      - name: Isolated three-section prototype against frozen references
+        run: node experiments/dx-fv/test.cjs /tmp/dx-fv-results.json
+      - name: Install independent thermodynamic reference pathway
+        run: python -m pip install CoolProp==7.2.0 numpy==2.5.3
+      - name: Regenerate direct-EOS and independent steady/transient references
+        run: python experiments/dx-fv/generate_reference.py /tmp/dx-fv-reference.json
+      - name: Prototype against freshly generated direct-EOS references
+        run: DX_FV_REFERENCE_PATH=/tmp/dx-fv-reference.json node experiments/dx-fv/test.cjs /tmp/dx-fv-live-reference-results.json
+      - name: Existing standalone source/build consistency
+        run: |
+          python tools/build.py /tmp/ammonia-fv-build
+          git diff --exit-code -- index.html validation.json integration-validation.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: three-section-dx-fv-verification
+          path: |
+            /tmp/dx-fv-results.json
+            /tmp/dx-fv-reference.json
+            /tmp/dx-fv-live-reference-results.json

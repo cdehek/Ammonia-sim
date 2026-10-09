@@ -1,0 +1,1066 @@
+{
+  "schemaVersion": 1,
+  "sectionCount": 3,
+  "source": "CoolProp 7.2.0 HEOS::Ammonia; direct P/H states and independent steady shooting",
+  "cases": [
+    {
+      "name": "Direct-EOS steady heat 4/4/4",
+      "seconds": 120,
+      "sections": [
+        {
+          "p": 3.5232435845201406,
+          "h": 764.5847302089828,
+          "T": -5.168921419326064,
+          "quality": 0.3459229785685539,
+          "liquidVolumeFraction": 0.00832612887357364,
+          "phase": "Liquid + vapor",
+          "massKg": 0.00821832145386325
+        },
+        {
+          "p": 3.51860983495534,
+          "h": 1029.1694604217587,
+          "T": -5.202678548109682,
+          "quality": 0.5527300232505552,
+          "liquidVolumeFraction": 0.003575652541193215,
+          "phase": "Liquid + vapor",
+          "massKg": 0.005161605713172387
+        },
+        {
+          "p": 3.511231967373829,
+          "h": 1293.754190640132,
+          "T": -5.256518581943082,
+          "quality": 0.7595305653663108,
+          "liquidVolumeFraction": 0.0013991071508881233,
+          "phase": "Liquid + vapor",
+          "massKg": 0.003756979309490275
+        }
+      ],
+      "terminal": {
+        "p": 3.511231967373829,
+        "h": 1293.754190640132,
+        "T": -5.256518581943082,
+        "phase": "Liquid + vapor",
+        "quality": 0.7595305653663108,
+        "wet": true,
+        "superheatK": 0
+      },
+      "flowKgS": 0.015118030420212099,
+      "massResidualKg": -3.033096083321363e-11,
+      "energyResidualKJ": -9.725633631774144e-9,
+      "sectionResiduals": [
+        {
+          "massKg": -5.591305196617213e-12,
+          "energyKJ": -1.7432739696232602e-9
+        },
+        {
+          "massKg": -1.0463185873277325e-11,
+          "energyKJ": -3.4153799788327888e-9
+        },
+        {
+          "massKg": -1.4297452111122766e-11,
+          "energyKJ": -4.56429916084744e-9
+        }
+      ],
+      "acceptedSteps": 240,
+      "rejectedSteps": 0,
+      "iterations": 37,
+      "stop": null
+    },
+    {
+      "name": "Direct-EOS steady heat 6/6/6",
+      "seconds": 120,
+      "sections": [
+        {
+          "p": 3.533058345774156,
+          "h": 901.0265440094765,
+          "T": -5.097566696292234,
+          "quality": 0.4523639523496275,
+          "liquidVolumeFraction": 0.005361667667977889,
+          "phase": "Liquid + vapor",
+          "massKg": 0.006319934039180081
+        },
+        {
+          "p": 3.5271547711523397,
+          "h": 1302.0530880189526,
+          "T": -5.1404627369235865,
+          "quality": 0.7658360382965463,
+          "liquidVolumeFraction": 0.0013573757365003534,
+          "phase": "Liquid + vapor",
+          "massKg": 0.003742168207280997
+        },
+        {
+          "p": 3.5171845613331603,
+          "h": 1703.0796320484978,
+          "T": 36.327501702899866,
+          "quality": null,
+          "liquidVolumeFraction": 0,
+          "phase": "Superheated vapor",
+          "massKg": 0.002405403521261132
+        }
+      ],
+      "terminal": {
+        "p": 3.5171845613331603,
+        "h": 1703.0796320484978,
+        "T": 36.327501702899866,
+        "phase": "Superheated vapor",
+        "quality": null,
+        "wet": false,
+        "superheatK": 41.54057239065878
+      },
+      "flowKgS": 0.014961603139811661,
+      "massResidualKg": -2.1227334126572295e-12,
+      "energyResidualKJ": -3.626253075594832e-9,
+      "sectionResiduals": [
+        {
+          "massKg": -4.241051954068098e-14,
+          "energyKJ": -3.183231456205249e-11
+        },
+        {
+          "massKg": 2.1316282072803006e-14,
+          "energyKJ": 6.366462912410498e-12
+        },
+        {
+          "massKg": -2.1020962748252714e-12,
+          "energyKJ": -3.6156961868982762e-9
+        }
+      ],
+      "acceptedSteps": 240,
+      "rejectedSteps": 0,
+      "iterations": 252,
+      "stop": null
+    },
+    {
+      "name": "Direct-EOS steady heat 2/4/12",
+      "seconds": 120,
+      "sections": [
+        {
+          "p": 3.5264165225313793,
+          "h": 632.7348064802131,
+          "T": -5.145831984700552,
+          "quality": 0.24283285880874342,
+          "liquidVolumeFraction": 0.013668541527051891,
+          "phase": "Liquid + vapor",
+          "massKg": 0.011654094340233736
+        },
+        {
+          "p": 3.5231702587313727,
+          "h": 898.2044194406396,
+          "T": -5.169455256063441,
+          "quality": 0.45032940356572315,
+          "liquidVolumeFraction": 0.005390642097712374,
+          "phase": "Liquid + vapor",
+          "massKg": 0.006331510928520458
+        },
+        {
+          "p": 3.5171950239089624,
+          "h": 1694.6132583803756,
+          "T": 32.70659606705565,
+          "quality": null,
+          "liquidVolumeFraction": 0,
+          "phase": "Superheated vapor",
+          "massKg": 0.0024378830124553623
+        }
+      ],
+      "terminal": {
+        "p": 3.5171950239089624,
+        "h": 1694.6132583803756,
+        "T": 32.70659606705565,
+        "phase": "Superheated vapor",
+        "quality": null,
+        "wet": false,
+        "superheatK": 37.919590453384444
+      },
+      "flowKgS": 0.01506763789419575,
+      "massResidualKg": -1.7990461551042891e-12,
+      "energyResidualKJ": -3.0795739291988866e-9,
+      "sectionResiduals": [
+        {
+          "massKg": -1.3655743202889425e-13,
+          "energyKJ": -7.73070496506989e-11
+        },
+        {
+          "massKg": 1.7541523789077473e-13,
+          "energyKJ": 1.2255441106390208e-10
+        },
+        {
+          "massKg": -1.8409718194334346e-12,
+          "energyKJ": -3.1332092476077378e-9
+        }
+      ],
+      "acceptedSteps": 240,
+      "rejectedSteps": 0,
+      "iterations": 258,
+      "stop": null
+    },
+    {
+      "name": "Cold wet startup to dry terminal",
+      "seconds": 120,
+      "sections": [
+        {
+          "p": 3.533058345774156,
+          "h": 901.0265440094761,
+          "T": -5.097566696292234,
+          "quality": 0.45236395234962723,
+          "liquidVolumeFraction": 0.005361667667977895,
+          "phase": "Liquid + vapor",
+          "massKg": 0.006319934039180085
+        },
+        {
+          "p": 3.5271547711523397,
+          "h": 1302.0530880189522,
+          "T": -5.1404627369235865,
+          "quality": 0.765836038296546,
+          "liquidVolumeFraction": 0.001357375736500356,
+          "phase": "Liquid + vapor",
+          "massKg": 0.003742168207280999
+        },
+        {
+          "p": 3.5171845613331603,
+          "h": 1703.0796320484978,
+          "T": 36.327501702899866,
+          "quality": null,
+          "liquidVolumeFraction": 0,
+          "phase": "Superheated vapor",
+          "massKg": 0.002405403521261132
+        }
+      ],
+      "terminal": {
+        "p": 3.5171845613331603,
+        "h": 1703.0796320484978,
+        "T": 36.327501702899866,
+        "phase": "Superheated vapor",
+        "quality": null,
+        "wet": false,
+        "superheatK": 41.54057239065878
+      },
+      "flowKgS": 0.014961603139811661,
+      "massResidualKg": -1.9493573422124655e-12,
+      "energyResidualKJ": -3.32400418301404e-9,
+      "sectionResiduals": [
+        {
+          "massKg": -7.394085344003543e-14,
+          "energyKJ": -5.661604518536478e-11
+        },
+        {
+          "massKg": 2.8199664825478976e-14,
+          "energyKJ": 2.2737367544323206e-12
+        },
+        {
+          "massKg": -1.9027002196025933e-12,
+          "energyKJ": -3.2837306207511574e-9
+        }
+      ],
+      "acceptedSteps": 240,
+      "rejectedSteps": 0,
+      "iterations": 314,
+      "stop": null
+    },
+    {
+      "name": "Heat reduction exposes wet terminal",
+      "seconds": 240,
+      "sections": [
+        {
+          "p": 3.5232435845201233,
+          "h": 764.584730209049,
+          "T": -5.168921419326189,
+          "quality": 0.345922978568606,
+          "liquidVolumeFraction": 0.008326128873571703,
+          "phase": "Liquid + vapor",
+          "massKg": 0.00821832145386199
+        },
+        {
+          "p": 3.5186098349553236,
+          "h": 1029.169460422135,
+          "T": -5.202678548109802,
+          "quality": 0.5527300232508494,
+          "liquidVolumeFraction": 0.0035756525411889603,
+          "phase": "Liquid + vapor",
+          "massKg": 0.005161605713169639
+        },
+        {
+          "p": 3.511231967373816,
+          "h": 1293.7541906412703,
+          "T": -5.2565185819431735,
+          "quality": 0.7595305653672001,
+          "liquidVolumeFraction": 0.001399107150881316,
+          "phase": "Liquid + vapor",
+          "massKg": 0.0037569793094858897
+        }
+      ],
+      "terminal": {
+        "p": 3.511231967373816,
+        "h": 1293.7541906412703,
+        "T": -5.2565185819431735,
+        "phase": "Liquid + vapor",
+        "quality": 0.7595305653672001,
+        "wet": true,
+        "superheatK": 0
+      },
+      "flowKgS": 0.015118030420212373,
+      "massResidualKg": -3.1750262141638785e-11,
+      "energyResidualKJ": -1.2876814281526094e-8,
+      "sectionResiduals": [
+        {
+          "massKg": -5.4782844927103724e-12,
+          "energyKJ": -1.7630554793868214e-9
+        },
+        {
+          "massKg": -1.0135892125617829e-11,
+          "energyKJ": -3.2887328416109085e-9
+        },
+        {
+          "massKg": -1.616573541696198e-11,
+          "energyKJ": -7.833477866370231e-9
+        }
+      ],
+      "acceptedSteps": 480,
+      "rejectedSteps": 0,
+      "iterations": 422,
+      "stop": null
+    },
+    {
+      "name": "Heat restoration recovers dry terminal",
+      "seconds": 360,
+      "sections": [
+        {
+          "p": 3.533058345774156,
+          "h": 901.0265440094761,
+          "T": -5.097566696292234,
+          "quality": 0.45236395234962723,
+          "liquidVolumeFraction": 0.005361667667977895,
+          "phase": "Liquid + vapor",
+          "massKg": 0.006319934039180085
+        },
+        {
+          "p": 3.5271547711523397,
+          "h": 1302.0530880189526,
+          "T": -5.1404627369235865,
+          "quality": 0.7658360382965462,
+          "liquidVolumeFraction": 0.0013573757365003543,
+          "phase": "Liquid + vapor",
+          "massKg": 0.003742168207280998
+        },
+        {
+          "p": 3.5171845613331603,
+          "h": 1703.0796320484978,
+          "T": 36.327501702899866,
+          "quality": null,
+          "liquidVolumeFraction": 0,
+          "phase": "Superheated vapor",
+          "massKg": 0.002405403521261132
+        }
+      ],
+      "terminal": {
+        "p": 3.5171845613331603,
+        "h": 1703.0796320484978,
+        "T": 36.327501702899866,
+        "phase": "Superheated vapor",
+        "quality": null,
+        "wet": false,
+        "superheatK": 41.54057239065878
+      },
+      "flowKgS": 0.014961603139811661,
+      "massResidualKg": -3.385099145436499e-11,
+      "energyResidualKJ": -1.6454430706858147e-8,
+      "sectionResiduals": [
+        {
+          "massKg": -5.496048061104375e-12,
+          "energyKJ": -1.735315890982747e-9
+        },
+        {
+          "massKg": -1.013766848245723e-11,
+          "energyKJ": -3.347849997226149e-9
+        },
+        {
+          "massKg": -1.815880779076906e-11,
+          "energyKJ": -1.1314114090055227e-8
+        }
+      ],
+      "acceptedSteps": 720,
+      "rejectedSteps": 0,
+      "iterations": 723,
+      "stop": null
+    },
+    {
+      "name": "Feed isolation with physical redistribution",
+      "seconds": 122,
+      "sections": [
+        {
+          "p": 3.5000000000000013,
+          "h": 900.5034057887551,
+          "T": -5.338456342986378,
+          "quality": 0.4525266793927776,
+          "liquidVolumeFraction": 0.0053083971126516565,
+          "phase": "Liquid + vapor",
+          "massKg": 0.006262125122397647
+        },
+        {
+          "p": 3.5,
+          "h": 1295.2285350583848,
+          "T": -5.338456342986389,
+          "quality": 0.7608088881767351,
+          "liquidVolumeFraction": 0.0013849170517703556,
+          "phase": "Liquid + vapor",
+          "massKg": 0.0037393836233505975
+        },
+        {
+          "p": 3.5,
+          "h": 1692.361721553869,
+          "T": 31.703541514172613,
+          "quality": null,
+          "liquidVolumeFraction": 0,
+          "phase": "Superheated vapor",
+          "massKg": 0.0024346916308875307
+        }
+      ],
+      "terminal": {
+        "p": 3.5,
+        "h": 1692.361721553869,
+        "T": 31.703541514172613,
+        "phase": "Superheated vapor",
+        "quality": null,
+        "wet": false,
+        "superheatK": 37.041997857159004
+      },
+      "flowKgS": 0,
+      "massResidualKg": -1.9215757660734877e-12,
+      "energyResidualKJ": -3.2863840537800115e-9,
+      "sectionResiduals": [
+        {
+          "massKg": 1.9340085088970227e-13,
+          "energyKJ": 2.212345862062648e-10
+        },
+        {
+          "massKg": -2.1316282072803006e-13,
+          "energyKJ": -2.423803380224854e-10
+        },
+        {
+          "massKg": -1.902034085787818e-12,
+          "energyKJ": -3.2796378945931792e-9
+        }
+      ],
+      "acceptedSteps": 250,
+      "rejectedSteps": 7,
+      "iterations": 389,
+      "stop": null
+    },
+    {
+      "name": "Increased feed pressure",
+      "seconds": 480,
+      "sections": [
+        {
+          "p": 3.5266827653031685,
+          "h": 736.65068303375,
+          "T": -5.14389548386376,
+          "quality": 0.3240284067034578,
+          "liquidVolumeFraction": 0.009187231658037816,
+          "phase": "Liquid + vapor",
+          "massKg": 0.008774100216385474
+        },
+        {
+          "p": 3.52127585502584,
+          "h": 973.3013660717309,
+          "T": -5.183251013633628,
+          "quality": 0.5090377372186564,
+          "liquidVolumeFraction": 0.004262120957961595,
+          "phase": "Liquid + vapor",
+          "massKg": 0.005604791232732397
+        },
+        {
+          "p": 3.512811530367945,
+          "h": 1209.9520491162255,
+          "T": -5.244982200006142,
+          "quality": 0.694046436713278,
+          "liquidVolumeFraction": 0.0019478682375869514,
+          "phase": "Liquid + vapor",
+          "massKg": 0.004110942374421421
+        }
+      ],
+      "terminal": {
+        "p": 3.512811530367945,
+        "h": 1209.9520491162255,
+        "T": -5.244982200006142,
+        "phase": "Liquid + vapor",
+        "quality": 0.694046436713278,
+        "wet": true,
+        "superheatK": 0
+      },
+      "flowKgS": 0.01690254998950123,
+      "massResidualKg": -7.239076005305378e-11,
+      "energyResidualKJ": -2.8835220433620634e-8,
+      "sectionResiduals": [
+        {
+          "massKg": -1.2081002864761103e-11,
+          "energyKJ": -3.778950485866517e-9
+        },
+        {
+          "massKg": -2.326228099036598e-11,
+          "energyKJ": -7.663402357138693e-9
+        },
+        {
+          "massKg": -3.702993467413762e-11,
+          "energyKJ": -1.7280399333685637e-8
+        }
+      ],
+      "acceptedSteps": 960,
+      "rejectedSteps": 0,
+      "iterations": 828,
+      "stop": null
+    },
+    {
+      "name": "Initially liquid-full sections transport mixture",
+      "seconds": 10,
+      "sections": [
+        {
+          "p": 3.5115341728977114,
+          "h": 561.217430486797,
+          "T": -5.254311014134542,
+          "quality": 0.18728324746921748,
+          "liquidVolumeFraction": 0.01884344470195539,
+          "phase": "Liquid + vapor",
+          "massKg": 0.014971551497633736
+        },
+        {
+          "p": 3.508840273153631,
+          "h": 610.0970121937793,
+          "T": -5.273996268636061,
+          "quality": 0.22552575264315397,
+          "liquidVolumeFraction": 0.01495939409155063,
+          "phase": "Liquid + vapor",
+          "massKg": 0.012472986670914062
+        },
+        {
+          "p": 3.505264220445082,
+          "h": 639.267882900453,
+          "T": -5.300069911358896,
+          "quality": 0.24838841819227916,
+          "liquidVolumeFraction": 0.013191741522579398,
+          "phase": "Liquid + vapor",
+          "massKg": 0.011334321315904094
+        }
+      ],
+      "terminal": {
+        "p": 3.505264220445082,
+        "h": 639.267882900453,
+        "T": -5.300069911358896,
+        "phase": "Liquid + vapor",
+        "quality": 0.24838841819227916,
+        "wet": true,
+        "superheatK": 0
+      },
+      "flowKgS": 0.01530256290020467,
+      "massResidualKg": -1.745270594710746e-13,
+      "energyResidualKJ": -6.082245818106458e-11,
+      "sectionResiduals": [
+        {
+          "massKg": 5.390132784555135e-13,
+          "energyKJ": 1.4711076801177114e-10
+        },
+        {
+          "massKg": -7.751577157932843e-13,
+          "energyKJ": -2.3243273972184397e-10
+        },
+        {
+          "massKg": 6.217248937900877e-14,
+          "energyKJ": 2.3987922759260982e-11
+        }
+      ],
+      "acceptedSteps": 20,
+      "rejectedSteps": 0,
+      "iterations": 120,
+      "stop": null
+    },
+    {
+      "name": "Sealed boiling and condensation",
+      "seconds": 20,
+      "sections": [
+        {
+          "p": 3.9999999999348734,
+          "h": 1592.7224747349128,
+          "T": -1.8724330808505898,
+          "quality": 0.9900000000049076,
+          "liquidVolumeFraction": 0.000050920885355689024,
+          "phase": "Liquid + vapor",
+          "massKg": 0.0032649306353930447
+        },
+        {
+          "p": 3.9999999999348734,
+          "h": 1592.7224747349128,
+          "T": -1.8724330808505898,
+          "quality": 0.9900000000049076,
+          "liquidVolumeFraction": 0.000050920885355689024,
+          "phase": "Liquid + vapor",
+          "massKg": 0.0032649306353930447
+        },
+        {
+          "p": 3.9999999999348734,
+          "h": 1592.7224747349128,
+          "T": -1.8724330808505898,
+          "quality": 0.9900000000049076,
+          "liquidVolumeFraction": 0.000050920885355689024,
+          "phase": "Liquid + vapor",
+          "massKg": 0.0032649306353930447
+        }
+      ],
+      "terminal": {
+        "p": 3.9999999999348734,
+        "h": 1592.7224747349128,
+        "T": -1.8724330808505898,
+        "phase": "Liquid + vapor",
+        "quality": 0.9900000000049076,
+        "wet": true,
+        "superheatK": 0
+      },
+      "flowKgS": 0,
+      "massResidualKg": -1.993214621132111e-13,
+      "energyResidualKJ": -2.4174273693944315e-10,
+      "sectionResiduals": [
+        {
+          "massKg": -6.64403428107807e-14,
+          "energyKJ": -8.058077816119891e-11
+        },
+        {
+          "massKg": -6.64403428107807e-14,
+          "energyKJ": -8.058077816119891e-11
+        },
+        {
+          "massKg": -6.64403428107807e-14,
+          "energyKJ": -8.058077816119891e-11
+        }
+      ],
+      "acceptedSteps": 40,
+      "rejectedSteps": 0,
+      "iterations": 122,
+      "stop": null
+    },
+    {
+      "name": "Steady refinement 0.5",
+      "seconds": 120,
+      "sections": [
+        {
+          "p": 3.533058345774156,
+          "h": 901.0265440094765,
+          "T": -5.097566696292234,
+          "quality": 0.4523639523496275,
+          "liquidVolumeFraction": 0.005361667667977889,
+          "phase": "Liquid + vapor",
+          "massKg": 0.006319934039180081
+        },
+        {
+          "p": 3.5271547711523397,
+          "h": 1302.0530880189526,
+          "T": -5.1404627369235865,
+          "quality": 0.7658360382965463,
+          "liquidVolumeFraction": 0.0013573757365003534,
+          "phase": "Liquid + vapor",
+          "massKg": 0.003742168207280997
+        },
+        {
+          "p": 3.5171845613331603,
+          "h": 1703.0796320484978,
+          "T": 36.327501702899866,
+          "quality": null,
+          "liquidVolumeFraction": 0,
+          "phase": "Superheated vapor",
+          "massKg": 0.002405403521261132
+        }
+      ],
+      "terminal": {
+        "p": 3.5171845613331603,
+        "h": 1703.0796320484978,
+        "T": 36.327501702899866,
+        "phase": "Superheated vapor",
+        "quality": null,
+        "wet": false,
+        "superheatK": 41.54057239065878
+      },
+      "flowKgS": 0.014961603139811661,
+      "massResidualKg": -1.9304479889625803e-12,
+      "energyResidualKJ": -3.30146399107889e-9,
+      "sectionResiduals": [
+        {
+          "massKg": 4.285460875053104e-14,
+          "energyKJ": 4.4792614062316716e-11
+        },
+        {
+          "massKg": -5.861977570020827e-14,
+          "energyKJ": -6.411937647499144e-11
+        },
+        {
+          "massKg": -1.91491267287347e-12,
+          "energyKJ": -3.2964635465759784e-9
+        }
+      ],
+      "acceptedSteps": 240,
+      "rejectedSteps": 0,
+      "iterations": 297,
+      "stop": null
+    },
+    {
+      "name": "Steady refinement 0.25",
+      "seconds": 120,
+      "sections": [
+        {
+          "p": 3.533058345774024,
+          "h": 901.0265440120788,
+          "T": -5.097566696293191,
+          "quality": 0.4523639523516635,
+          "liquidVolumeFraction": 0.0053616676679338615,
+          "phase": "Liquid + vapor",
+          "massKg": 0.006319934039151693
+        },
+        {
+          "p": 3.527154771152234,
+          "h": 1302.053088030703,
+          "T": -5.140462736924356,
+          "quality": 0.7658360383057297,
+          "liquidVolumeFraction": 0.001357375736430899,
+          "phase": "Liquid + vapor",
+          "massKg": 0.003742168207236279
+        },
+        {
+          "p": 3.5171845613331736,
+          "h": 1703.0796320484978,
+          "T": 36.32750170289995,
+          "quality": null,
+          "liquidVolumeFraction": 0,
+          "phase": "Superheated vapor",
+          "massKg": 0.0024054035211886825
+        }
+      ],
+      "terminal": {
+        "p": 3.5171845613331736,
+        "h": 1703.0796320484978,
+        "T": 36.32750170289995,
+        "phase": "Superheated vapor",
+        "quality": null,
+        "wet": false,
+        "superheatK": 41.54057239065878
+      },
+      "flowKgS": 0.014961603139813772,
+      "massResidualKg": -2.6059736400046996e-11,
+      "energyResidualKJ": -1.189906662091289e-8,
+      "sectionResiduals": [
+        {
+          "massKg": -7.600142737373972e-12,
+          "energyKJ": -2.5402187020517886e-9
+        },
+        {
+          "massKg": -1.2229772750060874e-11,
+          "energyKJ": -4.1245584725402296e-9
+        },
+        {
+          "massKg": -6.2521099408741065e-12,
+          "energyKJ": -5.196852725930512e-9
+        }
+      ],
+      "acceptedSteps": 480,
+      "rejectedSteps": 0,
+      "iterations": 135,
+      "stop": null
+    },
+    {
+      "name": "Steady refinement 0.125",
+      "seconds": 120,
+      "sections": [
+        {
+          "p": 3.533058345774002,
+          "h": 901.0265440121661,
+          "T": -5.097566696293351,
+          "quality": 0.45236395235173205,
+          "liquidVolumeFraction": 0.0053616676679323514,
+          "phase": "Liquid + vapor",
+          "massKg": 0.00631993403915071
+        },
+        {
+          "p": 3.5271547711522153,
+          "h": 1302.053088031208,
+          "T": -5.140462736924486,
+          "quality": 0.7658360383061243,
+          "liquidVolumeFraction": 0.0013573757364279077,
+          "phase": "Liquid + vapor",
+          "massKg": 0.003742168207234343
+        },
+        {
+          "p": 3.517184561333164,
+          "h": 1703.0796320484978,
+          "T": 36.32750170289989,
+          "quality": null,
+          "liquidVolumeFraction": 0,
+          "phase": "Superheated vapor",
+          "massKg": 0.002405403521188677
+        }
+      ],
+      "terminal": {
+        "p": 3.517184561333164,
+        "h": 1703.0796320484978,
+        "T": 36.32750170289989,
+        "phase": "Superheated vapor",
+        "quality": null,
+        "wet": false,
+        "superheatK": 41.54057239065878
+      },
+      "flowKgS": 0.01496160313981413,
+      "massResidualKg": -2.6910011545477897e-11,
+      "energyResidualKJ": -1.2902877433162985e-8,
+      "sectionResiduals": [
+        {
+          "massKg": -8.349543278995952e-12,
+          "energyKJ": -3.034301698789932e-9
+        },
+        {
+          "massKg": -1.287481232736809e-11,
+          "energyKJ": -4.40741132479161e-9
+        },
+        {
+          "massKg": -5.714317907745681e-12,
+          "energyKJ": -5.521997081814334e-9
+        }
+      ],
+      "acceptedSteps": 960,
+      "rejectedSteps": 0,
+      "iterations": 222,
+      "stop": null
+    },
+    {
+      "name": "Unsupported startup enthalpy is a domain stop",
+      "seconds": 0.5460662841796875,
+      "sections": [
+        {
+          "p": 3.524618503938964,
+          "h": 779.8000232481679,
+          "T": -5.158913594052939,
+          "quality": 0.35778532049941686,
+          "liquidVolumeFraction": 0.00791047356660818,
+          "phase": "Liquid + vapor",
+          "massKg": 0.007952105586209119
+        },
+        {
+          "p": 3.5223186336036267,
+          "h": 1230.1674790220125,
+          "T": -5.1756561912924335,
+          "quality": 0.7097222926683757,
+          "liquidVolumeFraction": 0.0018123763219448218,
+          "phase": "Liquid + vapor",
+          "massKg": 0.004030970716579892
+        },
+        {
+          "p": 3.518363349121361,
+          "h": 2196.5423279092383,
+          "T": 244.78480219762562,
+          "quality": null,
+          "liquidVolumeFraction": 0,
+          "phase": "Superheated vapor",
+          "massKg": 0.0013979400950216994
+        }
+      ],
+      "terminal": {
+        "p": 3.518363349121361,
+        "h": 2196.5423279092383,
+        "T": 244.78480219762562,
+        "phase": "Superheated vapor",
+        "quality": null,
+        "wet": false,
+        "superheatK": 249.98927765409462
+      },
+      "flowKgS": 0.015096214635143724,
+      "massResidualKg": -2.7662117388360663e-14,
+      "energyResidualKJ": -9.064082817644703e-12,
+      "sectionResiduals": [
+        {
+          "massKg": -3.978501555979008e-14,
+          "energyKJ": -1.7567280963248777e-11
+        },
+        {
+          "massKg": 6.312658729079601e-15,
+          "energyKJ": 5.508482558980177e-12
+        },
+        {
+          "massKg": 5.809588921046327e-15,
+          "energyKJ": 2.9913849175500218e-12
+        }
+      ],
+      "acceptedSteps": 9,
+      "rejectedSteps": 24,
+      "iterations": 36,
+      "stop": {
+        "kind": "domain",
+        "message": "Section enthalpy exceeds the bounded property table (250 K superheat).",
+        "seconds": 0.5460662841796875,
+        "attemptedStepSeconds": 0.0000152587890625
+      }
+    },
+    {
+      "name": "One-hour isolated three-section operation",
+      "seconds": 3600,
+      "sections": [
+        {
+          "p": 3.533058345774156,
+          "h": 901.0265440094765,
+          "T": -5.097566696292234,
+          "quality": 0.4523639523496275,
+          "liquidVolumeFraction": 0.005361667667977889,
+          "phase": "Liquid + vapor",
+          "massKg": 0.006319934039180081
+        },
+        {
+          "p": 3.5271547711523397,
+          "h": 1302.0530880189526,
+          "T": -5.1404627369235865,
+          "quality": 0.7658360382965463,
+          "liquidVolumeFraction": 0.0013573757365003534,
+          "phase": "Liquid + vapor",
+          "massKg": 0.003742168207280997
+        },
+        {
+          "p": 3.5171845613331603,
+          "h": 1703.0796320484978,
+          "T": 36.327501702899866,
+          "quality": null,
+          "liquidVolumeFraction": 0,
+          "phase": "Superheated vapor",
+          "massKg": 0.002405403521261132
+        }
+      ],
+      "terminal": {
+        "p": 3.5171845613331603,
+        "h": 1703.0796320484978,
+        "T": 36.327501702899866,
+        "phase": "Superheated vapor",
+        "quality": null,
+        "wet": false,
+        "superheatK": 41.54057239065878
+      },
+      "flowKgS": 0.014961603139811661,
+      "massResidualKg": -6.682645322525493e-11,
+      "energyResidualKJ": -1.140531917798171e-7,
+      "sectionResiduals": [
+        {
+          "massKg": 1.6342482922482304e-13,
+          "energyKJ": 3.67435859516263e-9
+        },
+        {
+          "massKg": -2.0818902157770935e-12,
+          "energyKJ": 1.1496013030409813e-9
+        },
+        {
+          "massKg": -5.4868110055394936e-11,
+          "energyKJ": -1.1011434253305197e-7
+        }
+      ],
+      "acceptedSteps": 7200,
+      "rejectedSteps": 0,
+      "iterations": 7257,
+      "stop": null,
+      "elapsedMS": 3269.0217730000004
+    },
+    {
+      "name": "One-hour wet isolated operation without fabricated dry vapor",
+      "seconds": 3600,
+      "sections": [
+        {
+          "p": 3.5232435845201855,
+          "h": 764.5847302087298,
+          "T": -5.168921419325733,
+          "quality": 0.34592297856835547,
+          "liquidVolumeFraction": 0.008326128873580994,
+          "phase": "Liquid + vapor",
+          "massKg": 0.008218321453868005
+        },
+        {
+          "p": 3.518609834955383,
+          "h": 1029.1694604206436,
+          "T": -5.202678548109368,
+          "quality": 0.5527300232496832,
+          "liquidVolumeFraction": 0.0035756525412058253,
+          "phase": "Liquid + vapor",
+          "massKg": 0.005161605713180522
+        },
+        {
+          "p": 3.511231967373861,
+          "h": 1293.7541906373283,
+          "T": -5.256518581942848,
+          "quality": 0.7595305653641203,
+          "liquidVolumeFraction": 0.0013991071509048924,
+          "phase": "Liquid + vapor",
+          "massKg": 0.0037569793095010794
+        }
+      ],
+      "terminal": {
+        "p": 3.511231967373861,
+        "h": 1293.7541906373283,
+        "T": -5.256518581942848,
+        "phase": "Liquid + vapor",
+        "quality": 0.7595305653641203,
+        "wet": true,
+        "superheatK": 0
+      },
+      "flowKgS": 0.015118030420211388,
+      "massResidualKg": -8.290709412397956e-10,
+      "energyResidualKJ": -2.65468908189348e-7,
+      "sectionResiduals": [
+        {
+          "massKg": -1.5268142306013033e-10,
+          "energyKJ": -5.064794095233083e-8
+        },
+        {
+          "massKg": -2.9108804255884024e-10,
+          "energyKJ": -1.0042276699095964e-7
+        },
+        {
+          "massKg": -3.8184566619747784e-10,
+          "energyKJ": -1.1401425581425428e-7
+        }
+      ],
+      "acceptedSteps": 7200,
+      "rejectedSteps": 0,
+      "iterations": 115,
+      "stop": null
+    }
+  ],
+  "referenceErrors": {
+    "temperatureK": 0.006255588597291251,
+    "densityRelative": 0.0005658119290956609,
+    "recoveryPressureBar": 0.015781657533465276,
+    "recoveryTemperatureK": 0.004493074977062861
+  },
+  "steadyErrors": {
+    "flowRelative": 0.0000039331177055235145,
+    "pressureBar": 9.168790482405598e-8,
+    "enthalpyKJkg": 0.004731833733103485,
+    "temperatureK": 0.0017619805976991643
+  },
+  "refinement": [
+    {
+      "step": 0.2,
+      "terminalPressure": 3.509383342388877,
+      "terminalEnthalpy": 1490.5160846651836,
+      "terminalQuality": 0.9132516315583892
+    },
+    {
+      "step": 0.1,
+      "terminalPressure": 3.5094179673106596,
+      "terminalEnthalpy": 1485.95601583408,
+      "terminalQuality": 0.9096892533031894
+    },
+    {
+      "step": 0.05,
+      "terminalPressure": 3.5094406479517564,
+      "terminalEnthalpy": 1483.0001136359137,
+      "terminalQuality": 0.9073800639136127
+    },
+    {
+      "step": 0.025,
+      "terminalPressure": 3.50945329806095,
+      "terminalEnthalpy": 1481.3618597467184,
+      "terminalQuality": 0.9061002370285706
+    }
+  ],
+  "transientReferenceErrors": {
+    "pressureBar": 5.896499910562625e-8,
+    "enthalpyKJkg": 0.0023637904525912745,
+    "temperatureK": 0.0001606668223823604
+  },
+  "passed": true,
+  "checks": "Three-section only: direct EOS, independent steady shooting, mixture flux, reverse/check/closed flow, cold startup, heat/feed disturbances, wet/dry transitions, liquid-full transport, sealed boiling/condensation, per-section/global ledgers, atomic edits, rejection rollback, domain/solver distinction, transient/steady timestep refinement and one-hour operation."
+}
