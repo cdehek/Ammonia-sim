@@ -26,3 +26,7 @@ Each run retains at most **7,201 observations** and **2,000 events**, with remov
 ## Verification
 
 `tests/history.cjs` verifies fixed simulated-time sampling, batching invariance, accepted-state agreement, same-time control ordering, atomic invalid-input rejection, no-op suppression, exact fault/clear evidence, retention, SI conversion/export, absent-phase gaps and peak-preserving plot reduction. `tests/history-ui.cjs` exercises follow/pinned inspection, curve selection, chart/event controls, applied changes, fault clearing, units, keyboard/touch interaction, CSV, reset, tablet/mobile layout and offline operation. CI runs the browser suite in Chromium and WebKit with an iPad device configuration; this is not a physical iPad hardware test.
+
+## v0.5.5 stage 3 capacity observations
+
+Managed runs expose suction target/measured/sensed pressure and requested/actual speed as separate curves. Targets convert as absolute pressures; speed is a fraction converted to percent. The initial view is Suction control for managed histories and Pressures for legacy histories; All trends remains available. Capacity-setting edits appear in Applied changes and show converted before/after values. Raw SI settings/evidence remain in CSV. Automatic control ticks create no user action events.

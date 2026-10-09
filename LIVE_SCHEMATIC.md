@@ -16,3 +16,7 @@ This is a display layer, not additional physics or a plant piping drawing. Pipe,
 ## Verification
 
 `tests/schematic.cjs` verifies observational purity, identical trajectories with/without display sampling, compressor energy-consistent discharge temperature and off/stop suppression. `tests/schematic-ui.cjs` checks model/display agreement, unit invariance, levels, keyboard/touch inspection, animation, shutdown pressures, blocked drain, valve lag, trips, equipment resets, isolated mode, reduced motion, tablet/mobile layout and standalone offline operation. CI runs this browser suite in Chromium and WebKit with an iPad device configuration.
+
+## v0.5.5 stage 3 status and layout
+
+Compressor ON/OFF is the model state, independently of playback Running/Paused. Managed records show requested/actual speed and a mode/limit explanation in component inspection. Full-width Live plant displays the complete schematic on tablets; narrow phones keep diagram scrolling. The reference sidebar is available through Show reference calculator and shared unit selectors stay outside it.

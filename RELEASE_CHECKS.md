@@ -1,34 +1,40 @@
-# v0.5.0 release acceptance
+# v0.5.5 release acceptance
 
 ## Automated coverage
 
 | Area | Evidence |
 |---|---|
-| Physics and accounting | Property/cycle references, profile/initialization/storage/valve suites and 24 integrated operating/fault/recovery cases; conservative charge and combined room/refrigerant energy, domain/solver limits and timestep refinement. |
-| Display consistency | Schematic/current compressor telemetry and history match accepted model states, retain flow intervals, distinguish unavailable/off-state readings and convert SI without mutating it. |
-| Guided exercises | All five Default recipes; sustained superheat objectives, correct/incorrect reflections, real disturbances, expected and unexpected trips, restore/clear continuation, incompatible controls and profile guards. |
-| Completion timing | Browser 1×, 10× and 60× playback; numerical fractional and 15/60/75/300 s requests. Feed restriction stops at 40 s when complete; no extra pending time leaks into later exploration. Without the reflection, its modeled temperature trip still stops the attempt. |
-| Observation purity | A non-stopping accepted-boundary observer yields identical states, controller, counters, history and energy to ordinary advancement. Integration equations remain unchanged. |
-| Evidence lifecycle | Exact completion time matches final exported state; selected preview does not relabel the retained attempt; reset clears answers; later free exploration and a trip do not mutate the completed JSON report. |
-| Retention and exports | Two hours plus five seconds of actual sealed storage advances through the default 7,201-observation bound, with five dropped samples, retained range and conservative state. SI history/storage CSV and training JSON retain controls, profiles, boundary conditions and original faults. |
-| Browser operation | Thirteen Chromium suites; four WebKit suites with iPad configuration. Tabs, keyboard/touch controls, units, older-browser compatibility, background pause, tablet/mobile widths and network-blocked standalone HTML. |
-| Build | Rebuild from checked-in source; CI rejects drift in index.html and both existing validation reports. No external browser assets or runtime APIs required. |
+| Physics and accounting | Existing property/cycle, initialization/storage/valve and 24 integrated operating/fault/recovery cases remain required. Managed tests retain charge and combined room/refrigerant energy checks; conservation does not establish measured plant accuracy. |
+| Capacity dynamics | Controller direction/deadband, sensor/actuator/ramp limits, high/low saturation recovery, tracking anti-windup and manual/automatic transitions. Coupled .1/.05/.025 s refinement, accepted-only updates, ten-minute simultaneous suction/feed PI with load changes and mode switches. |
+| Demand and timers | Managed ordinary demand is separate from immediate master inhibition. Fractional 7.525 s demand-stop boundary is tested at three timesteps; start/rest, cancellation/fresh delay, no-demand initialization, independent trip priority and frozen clocks/evidence. Legacy/bank behavior is preserved. |
+| Atomic edits and display | Combined room/feed/capacity edits reject without partial changes. Excluding actual speed requires a stop-first edit; no-op and SI-preserving unit conversion do not create setting events. Actual compressor state is separate from playback; readings/trends/exports match accepted snapshots. |
+| Guided exercises | Five preserved legacy recipes plus three managed recipes: sequential rest/start delay, minimum-run demand hold, and suction-target response. Exact controller settings, master/demand controls and model basis are guarded. Incorrect reflections, incompatible edits, unexpected trips and missing observations cannot earn completion. |
+| Completion and evidence | Numerical .25/2.5/15/75/300 s managed requests and browser 1×/10×/60× playback complete at accepted boundaries with no leaked pending time. Capacity starts/stops have exact linked history observations. Frozen JSON contains initial settings, applied actions, final controller and original trips. Later exploration cannot alter finished reports. |
+| Retention and exports | Existing two-hour-plus-five-second sealed run covers the 7,201-observation production bound. History/storage CSV retain SI snapshots; managed storage adds run demand. Column alignment, original fault evidence and frozen JSON are checked. |
+| Browser operation | Required: 16 Chromium suites and 7 WebKit suites. Includes iPad viewport/touch emulation, all tabs, units, keyboard, background pause, desktop/tablet/phone layout, older-browser compatibility and network-blocked standalone operation. |
+| Build | Required: 13 numerical suites and a deterministic source rebuild. CI rejects drift in index.html and the two existing validation reports. The standalone HTML requires no runtime assets or APIs. |
 
-Run `npm test`, `npm run build`, `npm run test:browser` and `npm run test:webkit`. Playwright browser installation instructions are in README.md. The training completion hook is optional; ordinary free exploration uses the unchanged advancement path. Training grading remains read-only, and pausing alters only scheduling/pending playback time.
+Run `npm test`, `npm run build`, `npm run test:browser` and `npm run test:webkit`. Browser installation instructions are in README.md. The new focused suites are `tests/capacity-release.cjs` and `tests/capacity-release-ui.cjs`; the existing controller, coupled model, training and release suites remain enabled.
+
+Training grading is read-only. A non-stopping accepted-boundary observer yields identical physical/controller state, counters, histories and energy to unobserved advancement. Lesson completion changes only scheduling and discards unused requested time.
 
 ## Demonstration checklist
 
-1. Open the final standalone HTML or, after merge/deployment, the GitHub Pages site in a full browser. Confirm the header says v0.5.0 and the startup notice disappears. Defaults should be Fahrenheit/psig.
-2. Open Live plant with Default active. Load DX startup, submit the reflection and advance/play until its measured objectives complete. Inspect the schematic and trends.
-3. Select Room load increase without loading. Confirm Selected lesson previews the new brief while Retained attempt still identifies DX startup. Export its JSON before loading the next setup.
-4. Load Restricted liquid feed, answer its reflection, apply the disturbance and play at 60×. Completion should pause at 40.0 s with no trip. Reset it without answering and repeat; the temperature trip should remain a stop, not a successful lesson.
-5. Load Hot condenser air; observe and inspect the computed discharge-temperature trip, restore off-state inputs, clear and advance ten seconds. Confirm the original fault survives in exported evidence.
-6. Try a custom active profile, return to Default, switch display units and inspect charts with touch/keyboard. On a physical iPad, check Firefox/Safari controls, scrolling and the Files/share download workflow. Browser emulation does not replace this physical-device check.
+1. Open the final standalone HTML, or Pages after merge/deployment, in a full browser. Confirm v0.5.5, Fahrenheit/psig defaults and disappearance of the startup notice.
+2. In Live plant, initialize the DX automatic-feed/manual-compressor example. Select automatic suction PI, reset explicitly, edit the suction target and Apply. Compare target/measured/sensed pressure and requested/actual speed; playback pause is separate from compressor state.
+3. Load **Managed compressor startup**, answer its reflection and apply its Enable action before advancing. Observe 3 s rest, 2 s start delay, exact start at 5 s and completion at 10 s. These are shortened lesson assumptions.
+4. Load **Minimum-run demand hold**, answer and remove demand. Master permission stays enabled; actual compression continues until 7.5 s, then drops to zero. Completion pauses at 10 s. Inspect Capacity transitions and export the exact-time evidence.
+5. Load **Automatic suction target response**, answer and raise the target. The actual 120 s warmup is retained; completion pauses at 150 s when the measured short response is met. This does not claim steady tracking or calibrated tuning.
+6. Reset a managed lesson, alter its target/gain/mode and Apply. Confirm interruption. Unit changes alone should keep the lesson active. Select another lesson after completion and confirm the retained attempt/export stays labeled correctly.
+7. Demonstrate a modeled trip, restore off-state controls, Apply and clear. Inspect original trip evidence and remaining rest time; clearing alone does not correct operating inputs or establish a real restart procedure.
+8. Verify legacy lessons and manual bank profiles still work. On a physical iPad, check Firefox/Safari touch controls, scrolling and the Files/share download workflow. Browser emulation does not replace this device check.
 
 ## Release boundaries
 
-Default compressor curves, valve coefficients and heat-transfer assumptions are illustrative. Numerical conservation/property agreement do not establish measured plant accuracy. Connected compressor speed remains manual; automatic suction capacity control is planned for v0.5.5. Oil, entrainment, defrost, multistage behavior and manufacturer/measured calibration remain outside this release; calibration is reserved for v0.6.0.
+This release adds a managed single-compressor speed controller using illustrative response and tuning assumptions. It uses resolved suction pressure to request compressor capacity; it never assigns refrigerant pressure or inventory. Ordinary demand is an explicit external input, not a newly modeled room thermostat. Initial enabled/demanded equipment is a running snapshot with zero run age; initial off equipment has zero rest age. Rotor acceleration through 0–20%, coast-down, unloaders and oil interlocks are not modeled.
 
-Attempt state is not persisted across reload. Export it before leaving. History is bounded with explicit removal counters. Custom equipment is available for free exploration, while guided recipes require Default. The reference cycle and quasi-steady room model remain separate from the connected circuit.
+Default compressor curves, valve coefficients and heat-transfer assumptions are illustrative. Manufacturer/measured calibration remains v0.6.0. Managed banks/sequencing, oil, entrainment, defrost, multistage behavior and real interlocks remain outside this release. Independent model trips remain active, but completion/recovery is supported-model behavior, not measured equipment qualification.
 
-GitHub Pages changes only after the release PR is merged and its deployment completes. This checklist documents release acceptance and known scope; it does not claim physical iPad or manufacturer validation.
+Attempts are not persisted across reload; export before leaving. Histories are bounded with removal counters. Custom equipment is supported for free exploration; guided recipes require Default. The reference cycle and quasi-steady room model remain separate from the connected circuit. Profile schemas and browser storage keys are unchanged.
+
+The candidate is prepared on PR #3. GitHub Pages changes only after approval, merge and successful deployment. Automated browser coverage does not claim physical iPad or manufacturer validation.

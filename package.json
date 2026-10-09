@@ -1,12 +1,12 @@
 {
   "name": "ammonia-lab",
-  "version": "0.5.0",
+  "version": "0.5.5",
   "private": true,
   "scripts": {
     "build": "python3 tools/build.py",
-    "test": "node tests/physics.cjs && node tests/dynamic.cjs && node tests/profiles.cjs && node tests/initialization.cjs && node tests/storage.cjs && node tests/valves.cjs && node tests/integration.cjs && node tests/schematic.cjs && node tests/history.cjs && node tests/training.cjs",
+    "test": "node tests/physics.cjs && node tests/dynamic.cjs && node tests/profiles.cjs && node tests/initialization.cjs && node tests/storage.cjs && node tests/valves.cjs && node tests/integration.cjs && node tests/schematic.cjs && node tests/history.cjs && node tests/training.cjs && node tests/capacity.cjs && node tests/capacity-plant.cjs && node tests/capacity-release.cjs",
     "test:browser": "node tests/run-browser.cjs",
-    "test:webkit": "TEST_BROWSER=webkit node tests/run-browser.cjs release-ui.cjs schematic-ui.cjs history-ui.cjs training-ui.cjs"
+    "test:webkit": "TEST_BROWSER=webkit node tests/run-browser.cjs release-ui.cjs schematic-ui.cjs history-ui.cjs training-ui.cjs capacity-ui.cjs capacity-controls-ui.cjs capacity-release-ui.cjs"
   },
   "devDependencies": {"playwright": "1.62.1"}
 }

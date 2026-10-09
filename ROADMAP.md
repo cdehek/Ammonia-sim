@@ -9,7 +9,14 @@
 
 ## v0.5.5 · connected compressor capacity control
 
-Automatic suction-pressure control, compressor speed limits and response delays, and interactions with feed-valve control. Connected speed remains manual until this work is implemented. Evaluate sequencing against the supported compressor-bank model.
+1. **Controller foundation** (implemented): independent single-compressor manual/automatic suction PI, speed limits, sensor/actuator/ramp response, run/rest/start timing, tracking anti-windup and external-stop priority. See [CAPACITY_CONTROL.md](CAPACITY_CONTROL.md).
+2. **Connect to the model** (implemented): integrate at accepted control boundaries, retain conservative accounting and independent protection; validate startup/load response and feed-valve interaction.
+3. **Controls and visualization** (implemented): user modes/setpoint/limits, target/actual pressure and requested/actual capacity trends, clear limiting reasons. Evaluate bank sequencing separately before implementing it.
+4. **Verification and release polish** (implemented): integrated dynamics, trips/recovery, mode switching, refinement, appropriate training, browsers/offline and final release checks.
+
+Stage 3 exposes explicit managed capacity controls, pressure/capacity trends and limit explanations. Existing default/manual runs and five legacy training recipes retain their behavior; tablet layout, control grouping, model labels, compressor status, touch targets and event presentation have been improved. Existing manual multi-compressor profiles and saved schemas remain unchanged.
+
+Stage 4 adds managed-only external run demand, exact accepted start/demand-stop evidence, explicit initialization/range-edit guidance and three measured capacity lessons. Release acceptance includes coupled sustained dynamics, saturation recovery, demand/master priority, trips, recipe guards, frozen exports and browser/offline paths. This release is a review candidate until its PR is approved and merged.
 
 ## v0.6.0 · equipment calibration
 

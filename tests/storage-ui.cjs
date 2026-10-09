@@ -4,7 +4,7 @@ const {chromium}=require('playwright'),{launchOptions}=require('./browser-helper
  const browser=await chromium.launch(launchOptions);
  try{
   const page=await browser.newPage({acceptDownloads:true,viewport:{width:1280,height:950}}),errors=[];page.on('pageerror',e=>errors.push(e.message));
-  await page.clock.install();await page.goto(process.env.TEST_URL);await page.locator('#tab-live').click();await page.locator('#storage-initialize').click();
+  await page.clock.install();await page.goto(process.env.TEST_URL);await page.locator('#tab-live').click();await page.locator('#storage-configuration summary').first().click();await page.locator('#storage-advanced summary').click();await page.locator('#storage-initialize').click();
   assert(await page.locator('#storage-error').isHidden());assert.match(await page.locator('#storage-status').textContent(),/Default revision 3/);
   assert.match(await page.locator('#storage-states').textContent(),/psig/);assert.match(await page.locator('#storage-states').textContent(),/°F/);
   const initial=await page.locator('#storage-states').textContent();await page.locator('#storage-step').click();assert.equal(await page.locator('#storage-clock').textContent(),'10.0 s simulated');assert.equal(await page.locator('#storage-states').textContent(),initial);

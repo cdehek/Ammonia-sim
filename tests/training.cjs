@@ -3,7 +3,7 @@ function load(id){const recipe=T.setup(id),s=m.create(P.DEFAULT,recipe.room,reci
 function perturb(a,s){const d=T.EXERCISES[a.exercise];m.update(s,d.operations,d.boundary);T.injected(a,s);T.observe(a,s);}
 function advance(a,s,time){m.advance(s,time);T.observe(a,s);}
 const reports=[];
-for(const id of Object.keys(T.EXERCISES)){
+for(const id of Object.keys(T.EXERCISES).filter(id=>!T.EXERCISES[id].initialCapacity)){
  const {s,a}=load(id);assert(!s.fault);const unchanged=JSON.stringify({v:s.vessels,c:s.controller,T:s.T,time:s.time});T.observe(a,s);assert.equal(JSON.stringify({v:s.vessels,c:s.controller,T:s.T,time:s.time}),unchanged,'Grading is read-only');
  assert.equal(T.answer(a,1,s.time),false);assert(!a.goals[a.goals.length-1].met);T.answer(a,0,s.time);
  if(id!=='startup')perturb(a,s);

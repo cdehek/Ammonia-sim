@@ -1,8 +1,23 @@
-# Ammonia Lab v0.5.0
+# Ammonia Lab v0.5.5
 
 Open `index.html` in Chrome, Edge, Firefox or Safari. The file is self-contained and works offline. HTML previews can disable JavaScript; the startup notice remains visible when controls cannot initialize.
 
 Display units default to **psig and Fahrenheit** on startup and Reset. Room temperatures and thermostat deadband follow the selected temperature units. SI units remain explicitly labeled in numerical reference data and CSV exports.
+
+## v0.5.5 · connected capacity control and training
+
+In **Live plant**, initialize the **DX · automatic feed / manual compressor** example, choose **Automatic suction pressure PI**, then **Initialize / reset storage**. Set the suction target in your selected pressure units (psig by default) and choose **Apply operating controls**. Advance or play to observe pressure feedback, requested/actual speed and independent plant protection. The feed valve has its own superheat control mode.
+
+**Legacy manual** preserves immediate manual/bank behavior. **Managed manual** adds speed response and run/rest timing; **Automatic suction pressure PI** computes capacity from sensed suction pressure. Managed modes require a circulating circuit and one compressor. Switching legacy/managed resets the run explicitly; managed manual/automatic can switch live without a speed jump. Targets must remain inside profile trip limits. A target can remain out of reach at a capacity limit.
+
+The live workspace hides the independent reference calculator until requested, keeps shared units available, prioritizes the schematic and capacity controls, and folds room/feed settings, diagnostics, advanced tuning and training into disclosures. Playback controls remain reachable while scrolling. Compressor ON/OFF reflects the modeled state; playback Running/Paused is separate. Buttons/selects have 44px minimum heights, with enlarged checkbox labels and history cursor.
+
+Trends default to suction control for managed runs and pressure for legacy runs. Select **Compressor capacity**, **Suction control**, or **All trends** to compare signals. Applied-changes history includes capacity edits with converted pressure/percentage descriptions. History and storage CSV retain SI settings and separate requested/actual output. Rejected combined edits are atomic; no-op/unit-only edits create no settings events. Training offers five preserved legacy recipes and three measured managed-capacity lessons.
+**Enable compressor** is master permission and inhibits immediately when cleared. **Run demand** represents an external cooling request in managed mode; removing it honors minimum run time. This release does not add a room thermostat or compressor-bank sequencing. Both changes require Apply. Initializing with enable and demand checked creates an already-running snapshot; initialize disabled, then enable/Apply to exercise rest and start delay. Live range edits must include the applied manual request; disable/Apply with existing limits before setting a range that excludes actual speed. The status note flags reset-required modes and pending mode changes.
+
+Managed startup, minimum-run hold and automatic suction target response load fixed verified Default setups. Apply their lesson action before playback. Shortened timing assumptions are labeled; target response does not require or claim steady tracking. Capacity transitions have a dedicated history filter. Export completed JSON before reloading; later exploration cannot rewrite it. See [TRAINING_SCENARIOS.md](TRAINING_SCENARIOS.md) and [RELEASE_CHECKS.md](RELEASE_CHECKS.md).
+
+Settings are explicitly illustrative assumptions within the existing speed envelope and profile pressure limits. No manufacturer motor response or plant-calibrated gains are claimed. See [CAPACITY_CONTROL.md](CAPACITY_CONTROL.md) for the contract, timings, tests and staged plan. GitHub Pages retains the approved v0.5.0 baseline until this new release is merged.
 
 ## v0.5.0 · visualization and training release
 

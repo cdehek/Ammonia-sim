@@ -1,3 +1,38 @@
+# Ammonia Lab v0.5.5 · stage 4 release candidate
+
+- Completed managed single-compressor manual/automatic suction capacity control while preserving legacy manual/bank behavior and Fahrenheit/psig defaults.
+- Connected ordinary run demand separately from master permission. Demand withdrawal honors minimum run; master disable and independent stops inhibit immediately. Fractional demand-stop deadlines are accepted plant boundaries with exact history evidence.
+- Added initialization and pending-mode guidance, visible stop-first instructions for excluding speed limits, a Capacity transitions filter, and demand/controller snapshots in SI exports.
+- Added three measured Default lessons: delayed managed startup, minimum-run demand hold, and automatic suction target response. Fixed controller/input guards prevent incompatible edits from earning completion. Timing lessons label shortened assumptions; reports freeze on completion.
+- Release checks cover sustained coupled operation, high/low saturation recovery, demand cancellation/restart, trips/clear evidence, mode switching, timestep refinement, batching, conservation, grading and frozen exports. Required regression: 13 numerical suites, 16 Chromium suites, 7 WebKit suites, source/bundle consistency and offline/older-browser operation.
+- Manufacturer/measured calibration remains v0.6.0. Managed capacity still requires one compressor; connected bank sequencing, oil, defrost and rotor start/coast-down physics remain outside scope.
+- Prepared on PR #3; the deployed v0.5.0 baseline changes only after approval, merge and Pages deployment.
+
+# Ammonia Lab v0.5.5 stage 3
+
+- Added connected legacy/managed manual/automatic capacity selection, suction targets, running-speed bounds and illustrative response/timing settings. Legacy remains default; managed control requires one compressor and explicit initialization.
+- Added applied target/requested/actual capacity readings, true compressor state separate from playback, limiting reasons and remaining timers. Managed mode switching tracks actual speed.
+- Added suction target/measured/sensed and requested/actual capacity trends, converted capacity-edit details/filtering and SI snapshots in both CSV routes. Combined form edits validate atomically.
+- Incorporated all six UI review fixes: full-width tablet workspace with collapsible reference calculator; schematic/controls first with folded training/settings/diagnostics; distinct capacity/feed/model wording; actual compressor status/speed; enlarged touch targets/text; capacity trend/event presentation.
+- Preserved Fahrenheit/psig defaults, legacy banks, fixed training recipes, offline bundling and older-browser compatibility. Pressure draft formatting retains SI precision across unit changes.
+- Added a managed-controls Chromium/WebKit suite and transactional numerical checks. Required regression is twelve numerical suites, fifteen Chromium suites and six WebKit suites. Stage 4 remains training/integrated release polish; v0.6.0 remains equipment calibration.
+
+# Ammonia Lab v0.5.5 stage 2 · opt-in plant capacity feedback
+
+- Coupled suction PI and delivered compressor speed to conservative circulating physics; accepted adaptive steps alone advance controller time.
+- Exact fractional stop/rest timestamps and start deadlines; independent equipment, domain and solver stops retain original evidence and inhibit output.
+- Preserved legacy manual/default/bank/training behavior. Managed single-compressor capacity is explicit at initialization; full UI arrives in stage 3.
+- Separate user settings, requested/actual speed and measured/sensed/target pressure in detached history and managed CSV. Smooth controller updates create no user-action events.
+- Added coupled conservation, load/feed interaction, switching, fault/recovery, batching/refinement and bundled iPad browser checks. Generic equipment/control assumptions remain uncalibrated.
+
+# Ammonia Lab v0.5.5 stage 1
+
+Adds a standalone, single-compressor capacity-controller foundation: manual/automatic suction PI, absolute-pressure targets and deadband, speed bounds, sensor/actuator/ramp response, start/minimum run/rest timing, mode tracking and anti-windup against delivered capacity. Operator disable, missing signals, unavailable equipment and original model stops inhibit output with priority over ordinary demand holds. Validation is atomic, no-op edits preserve timing, and accepted cadence prevents batching-dependent results.
+
+The module is bundled but not connected to storage integration or user controls yet. No refrigerant equations, valve controls, saved profile schemas or existing manual bank behavior change. Controller response assumptions remain illustrative; targets respect profile pressure limits. Stage 2 must validate the actual coupled loop and preserve independent protection. See [CAPACITY_CONTROL.md](CAPACITY_CONTROL.md).
+
+New numerical and Chromium/WebKit foundation suites cover response, limits, saturation recovery, switching, timers, stops, invalid/no-op inputs, batching, detached SI evidence, single-compressor scope, offline/older-browser execution and unchanged plant trajectories/readings. Required regression now comprises eleven numerical suites, fourteen Chromium suites and five WebKit suites with iPad emulation.
+
 # Ammonia Lab v0.5.0
 
 Live plant now combines an accepted-state equipment schematic, synchronized trends/event history and five guided Default exercises with measured objectives, reflections, hints and exportable debrief evidence.
