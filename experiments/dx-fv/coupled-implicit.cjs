@@ -40,12 +40,17 @@ function coupledNewton(evaluate, initial, variables, settings, work) {
             try {
               const next = counted(probe);
               const sameBranch=variable.section === undefined || region(value.states[variable.section]) === region(next.states[variable.section]);
-              if(recorded)work.diagnostics.push({type:'derivative',solveId,iteration,column:k,kind:variable.kind,epsilon,step,shrink,outcome:sameBranch?'used':'branch-rejected'});
+              // Copy evaluated data only: observation adds no residual/property calls.
+              if(recorded)work.diagnostics.push({type:'derivative',solveId,iteration,column:k,kind:variable.kind,epsilon,step,shrink,
+                originalCoordinate:x[k],perturbedCoordinate:probe[k],actualPerturbation:probe[k]-x[k],
+                residual:[...next.residual],outcome:sameBranch?'used':'branch-rejected'});
               if (sameBranch) {
                 candidate = next; break;
               }
             } catch (cause) {
-              if(recorded)work.diagnostics.push({type:'derivative',solveId,iteration,column:k,kind:variable.kind,epsilon,step,shrink,outcome:'probe-failed',message:cause.message,faultKind:cause.faultKind||'solver'});
+              if(recorded)work.diagnostics.push({type:'derivative',solveId,iteration,column:k,kind:variable.kind,epsilon,step,shrink,
+                originalCoordinate:x[k],perturbedCoordinate:probe[k],actualPerturbation:probe[k]-x[k],
+                outcome:'probe-failed',message:cause.message,faultKind:cause.faultKind||'solver'});
               lastCause = cause;
             }
           }
