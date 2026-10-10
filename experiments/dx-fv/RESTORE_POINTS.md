@@ -33,3 +33,11 @@ The current authorization permits isolated **three-versus-five-section** compari
 Commit `7bf0c326414a7d8b7e51f553a273a0041fe1e827` preserves the qualified three-versus-five comparison and all earlier baselines. Hosted verification: https://github.com/cdehek/Ammonia-sim/actions/runs/38003601163 . The approved nine-section stage is its fast-forward descendant on the same experimental branch.
 
 Current authorization covers isolated **3/5/9-section** spatial comparison and unchanged-physics diagnostics only. No 17-or-finer integrated mesh, wall/equipment physics, calibration, Live Plant/UI/production/PR #3 changes or merges are authorized. Earlier three/five-only restrictions describe their frozen stages.
+
+## Completed three/five/nine spatial-validation milestone
+
+Commit **`c105584311ca4a539c8410bf02ae0519b2bc8448`** preserves the completed controlled spatial study, independent temporal/EOS qualification, warm-domain evidence and browser/cost verification. Its parent is `7bf0c326414a7d8b7e51f553a273a0041fe1e827`. Hosted verification: https://github.com/cdehek/Ammonia-sim/actions/runs/38009179503 — all four experimental jobs passed.
+
+The user reviewed and accepted **five sections as provisional working baseline and nine as higher-resolution comparison; neither is proven spatially converged**. This milestone is retained unchanged as an ancestor of the documentation transition. No main or PR #3 ref is moved.
+
+The current authorization is **documentation only**: [DEVELOPMENT_HANDOFF.md](DEVELOPMENT_HANDOFF.md) and [WALL_AIR_THERMAL_DESIGN_PROPOSAL.md](WALL_AIR_THERMAL_DESIGN_PROPOSAL.md). Thermal implementation, finer meshes, equipment calibration, circuit/UI/profile integration and merges require explicit approval. Earlier authorization statements in this file describe their historical stages and are superseded by this current boundary.
