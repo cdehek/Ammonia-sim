@@ -1,0 +1,278 @@
+{
+  "kind": "Synthetic desktop headless Chromium/WebKit; no device/main-thread integration claim",
+  "browsers": [
+    {
+      "name": "chromium",
+      "version": "151.0.7922.34",
+      "rows": [
+        {
+          "sections": 5,
+          "repeat": 0,
+          "elapsedMS": 17.59999999962747,
+          "longestAdvanceMS": 5.2000000001862645,
+          "linearSolves": 300,
+          "fluxEvaluations": 450,
+          "energyResidualKJ": 2.1316282072803006e-14,
+          "maxNodeResidualKJ": 1.4210854715202004e-14,
+          "stop": null
+        },
+        {
+          "sections": 5,
+          "repeat": 1,
+          "elapsedMS": 13.900000000372529,
+          "longestAdvanceMS": 3.2000000001862645,
+          "linearSolves": 300,
+          "fluxEvaluations": 450,
+          "energyResidualKJ": 2.1316282072803006e-14,
+          "maxNodeResidualKJ": 1.4210854715202004e-14,
+          "stop": null
+        },
+        {
+          "sections": 5,
+          "repeat": 2,
+          "elapsedMS": 46.90000000037253,
+          "longestAdvanceMS": 40.09999999962747,
+          "linearSolves": 300,
+          "fluxEvaluations": 450,
+          "energyResidualKJ": 2.1316282072803006e-14,
+          "maxNodeResidualKJ": 1.4210854715202004e-14,
+          "stop": null
+        },
+        {
+          "sections": 9,
+          "repeat": 0,
+          "elapsedMS": 51.90000000037253,
+          "longestAdvanceMS": 33.40000000037253,
+          "linearSolves": 300,
+          "fluxEvaluations": 450,
+          "energyResidualKJ": -7.105427357601002e-15,
+          "maxNodeResidualKJ": 2.1316282072803006e-14,
+          "stop": null
+        },
+        {
+          "sections": 9,
+          "repeat": 1,
+          "elapsedMS": 22.600000000558794,
+          "longestAdvanceMS": 6.3999999994412065,
+          "linearSolves": 300,
+          "fluxEvaluations": 450,
+          "energyResidualKJ": -7.105427357601002e-15,
+          "maxNodeResidualKJ": 2.1316282072803006e-14,
+          "stop": null
+        },
+        {
+          "sections": 9,
+          "repeat": 2,
+          "elapsedMS": 22.40000000037253,
+          "longestAdvanceMS": 4.199999999254942,
+          "linearSolves": 300,
+          "fluxEvaluations": 450,
+          "energyResidualKJ": -7.105427357601002e-15,
+          "maxNodeResidualKJ": 2.1316282072803006e-14,
+          "stop": null
+        }
+      ],
+      "verification": [
+        {
+          "sections": 5,
+          "referenceTraceIdentical": true,
+          "referenceTemperaturesIdentical": true,
+          "exactLoadKJ": 75,
+          "scheduledTimes": [
+            15,
+            30
+          ],
+          "equilibriumK": [
+            282.7312471906226,
+            282.7312471906226,
+            282.7312471906226,
+            282.7312471906226,
+            282.7312471906226,
+            282.7312471906226,
+            282.7312471906226,
+            282.7312471906226,
+            282.7312471906226,
+            282.7312471906226,
+            282.7312471906226
+          ],
+          "closedResidualKJ": 2.1316282072803006e-14
+        },
+        {
+          "sections": 9,
+          "referenceTraceIdentical": true,
+          "referenceTemperaturesIdentical": true,
+          "exactLoadKJ": 75,
+          "scheduledTimes": [
+            15,
+            30
+          ],
+          "equilibriumK": [
+            282.7312471906226,
+            282.7312471906226,
+            282.7312471906226,
+            282.7312471906226,
+            282.7312471906226,
+            282.7312471906226,
+            282.7312471906226,
+            282.7312471906226,
+            282.7312471906226,
+            282.7312471906226,
+            282.7312471906226,
+            282.7312471906226,
+            282.7312471906226,
+            282.7312471906226,
+            282.7312471906226,
+            282.7312471906226,
+            282.7312471906226,
+            282.7312471906226,
+            282.7312471906226
+          ],
+          "closedResidualKJ": -2.1316282072803006e-14
+        }
+      ],
+      "domain": {
+        "kind": "domain",
+        "seconds": 460.30979999899864,
+        "energyResidualKJ": 0
+      },
+      "sampledChromiumHeapBytes": 10000000
+    },
+    {
+      "name": "webkit",
+      "version": "26.5",
+      "rows": [
+        {
+          "sections": 5,
+          "repeat": 0,
+          "elapsedMS": 29,
+          "longestAdvanceMS": 10,
+          "linearSolves": 300,
+          "fluxEvaluations": 450,
+          "energyResidualKJ": 2.1316282072803006e-14,
+          "maxNodeResidualKJ": 1.4210854715202004e-14,
+          "stop": null
+        },
+        {
+          "sections": 5,
+          "repeat": 1,
+          "elapsedMS": 19,
+          "longestAdvanceMS": 6,
+          "linearSolves": 300,
+          "fluxEvaluations": 450,
+          "energyResidualKJ": 2.1316282072803006e-14,
+          "maxNodeResidualKJ": 1.4210854715202004e-14,
+          "stop": null
+        },
+        {
+          "sections": 5,
+          "repeat": 2,
+          "elapsedMS": 47,
+          "longestAdvanceMS": 37,
+          "linearSolves": 300,
+          "fluxEvaluations": 450,
+          "energyResidualKJ": 2.1316282072803006e-14,
+          "maxNodeResidualKJ": 1.4210854715202004e-14,
+          "stop": null
+        },
+        {
+          "sections": 9,
+          "repeat": 0,
+          "elapsedMS": 47,
+          "longestAdvanceMS": 28,
+          "linearSolves": 300,
+          "fluxEvaluations": 450,
+          "energyResidualKJ": -7.105427357601002e-15,
+          "maxNodeResidualKJ": 2.1316282072803006e-14,
+          "stop": null
+        },
+        {
+          "sections": 9,
+          "repeat": 1,
+          "elapsedMS": 13,
+          "longestAdvanceMS": 2,
+          "linearSolves": 300,
+          "fluxEvaluations": 450,
+          "energyResidualKJ": -7.105427357601002e-15,
+          "maxNodeResidualKJ": 2.1316282072803006e-14,
+          "stop": null
+        },
+        {
+          "sections": 9,
+          "repeat": 2,
+          "elapsedMS": 10,
+          "longestAdvanceMS": 1,
+          "linearSolves": 300,
+          "fluxEvaluations": 450,
+          "energyResidualKJ": -7.105427357601002e-15,
+          "maxNodeResidualKJ": 2.1316282072803006e-14,
+          "stop": null
+        }
+      ],
+      "verification": [
+        {
+          "sections": 5,
+          "referenceTraceIdentical": true,
+          "referenceTemperaturesIdentical": true,
+          "exactLoadKJ": 75,
+          "scheduledTimes": [
+            15,
+            30
+          ],
+          "equilibriumK": [
+            282.7312471906226,
+            282.7312471906226,
+            282.7312471906226,
+            282.7312471906226,
+            282.7312471906226,
+            282.7312471906226,
+            282.7312471906226,
+            282.7312471906226,
+            282.7312471906226,
+            282.7312471906226,
+            282.7312471906226
+          ],
+          "closedResidualKJ": 2.1316282072803006e-14
+        },
+        {
+          "sections": 9,
+          "referenceTraceIdentical": true,
+          "referenceTemperaturesIdentical": true,
+          "exactLoadKJ": 75,
+          "scheduledTimes": [
+            15,
+            30
+          ],
+          "equilibriumK": [
+            282.7312471906226,
+            282.7312471906226,
+            282.7312471906226,
+            282.7312471906226,
+            282.7312471906226,
+            282.7312471906226,
+            282.7312471906226,
+            282.7312471906226,
+            282.7312471906226,
+            282.7312471906226,
+            282.7312471906226,
+            282.7312471906226,
+            282.7312471906226,
+            282.7312471906226,
+            282.7312471906226,
+            282.7312471906226,
+            282.7312471906226,
+            282.7312471906226,
+            282.7312471906226
+          ],
+          "closedResidualKJ": -2.1316282072803006e-14
+        }
+      ],
+      "domain": {
+        "kind": "domain",
+        "seconds": 460.30979999899864,
+        "energyResidualKJ": 0
+      },
+      "sampledChromiumHeapBytes": null
+    }
+  ],
+  "passed": true
+}

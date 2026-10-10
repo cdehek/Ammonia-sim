@@ -1,0 +1,132 @@
+{
+  "checkedAtUTC": "2026-10-10T03:20:33.815359+00:00",
+  "startingCommit": "5d92e8bd3e4a2ce2e1fdb39c7e4318c22b156654",
+  "preservedSpatialMilestone": "c105584311ca4a539c8410bf02ae0519b2bc8448",
+  "legacyNumericalSuites": {
+    "command": "npm test",
+    "suiteCount": 13,
+    "exitCode": 0
+  },
+  "applicationBrowserSuites": [
+    {
+      "command": "npm run test:browser",
+      "engine": "Chromium",
+      "suiteCount": 16,
+      "exitCode": 0
+    },
+    {
+      "command": "npm run test:webkit",
+      "engine": "WebKit",
+      "suiteCount": 7,
+      "exitCode": 0,
+      "note": "Unchanged full suite passed on repeat; initial concurrent run failed training-ui.cjs:34 pause-button assertion."
+    }
+  ],
+  "historicalReports": [
+    {
+      "report": "stage1-dx-browser-results.json",
+      "passed": true,
+      "sha256": "1a130da8c216e434d0c89f940515ff67e68295f3f940dc7708703aab66e53bb8"
+    },
+    {
+      "report": "stage1-dx-fresh-results.json",
+      "passed": true,
+      "sha256": "aaea9b3e1ddf4306f83e7a10e2c1933ed68869d6b552b2ee3f470978c7ef46a3"
+    },
+    {
+      "report": "stage1-dx-results.json",
+      "passed": true,
+      "sha256": "de7c3f642c754cfd171b9f73069d0d5367c8cff73f8b7e88725f34a6d03b3ee4"
+    },
+    {
+      "report": "stage1-resolution-browser-results.json",
+      "passed": true,
+      "sha256": "53aa1af213e06a98cf410aaabda73632402c06d41cd49e80433bcb0130d11c07"
+    },
+    {
+      "report": "stage1-resolution-cost-results.json",
+      "passed": true,
+      "sha256": "44ca5bd549ee370d482ca1c992721325a4091c722205c4ceb5e3d59a29f2133c"
+    },
+    {
+      "report": "stage1-resolution-fresh-results.json",
+      "passed": true,
+      "sha256": "8b0a30a12f0d052746078274398d83d2291f482a01050b959de45ac4c819bcd0"
+    },
+    {
+      "report": "stage1-resolution-results.json",
+      "passed": true,
+      "sha256": "50927f3b19abaa7d3819b443cc3d2cc21e0b8762cd95cf89f1cef66cdba10d7d"
+    },
+    {
+      "report": "stage1-spatial-browser-results.json",
+      "passed": true,
+      "sha256": "de423806f849cd90b517e9f8a07f85c84a7eb1818ebea2468b0c1c6e69423fcd"
+    },
+    {
+      "report": "stage1-spatial-fresh-results.json",
+      "passed": true,
+      "sha256": "7d48db6475c2e81700ef7ad9c90cf35b9ba4cd9849adfef8b27602367829d878"
+    },
+    {
+      "report": "stage1-spatial-results.json",
+      "passed": true,
+      "sha256": "d02c846291b6498f48a8fe78339110250818ae44838d2517a7c2a34831a050f2"
+    },
+    {
+      "report": "stage1-time-fresh-results.json",
+      "passed": true,
+      "sha256": "11e9187f65732b3814de869027b07eb9f7805fd99ad8f64679fae202548d1719"
+    },
+    {
+      "report": "stage1-time-results.json",
+      "passed": true,
+      "sha256": "fb08b87687900dcb2410637bff3e26105d08a3e74b63ffd44d6e89a0b1c60797"
+    },
+    {
+      "report": "stage1-warm-results.json",
+      "passed": true,
+      "sha256": "124c7e1469cf40534b5c75c9f89b1f4660ab70b301ec1f6f4a130c711605c9d2"
+    }
+  ],
+  "build": {
+    "command": "python tools/build.py /tmp/ammonia-stage1-build",
+    "exitCode": 0,
+    "generatedTrackedFilesUnchanged": true
+  },
+  "thermalFreshReference": {
+    "versions": {
+      "python": "3.12",
+      "numpy": "2.5.3",
+      "scipy": "1.16.2",
+      "CoolPropForLegacy": "7.2.0"
+    },
+    "freshAndFrozenSemanticallyIdentical": true,
+    "freshAndFrozenTestResultsIdentical": true
+  },
+  "scope": {
+    "trackedChangesOutsideExperiments": [],
+    "historicalScientificReferencesUnchanged": true,
+    "applicationImportsThermalNetwork": false,
+    "refrigerantCoupling": false,
+    "newThermalTestsInExistingCI": false
+  },
+  "environmentNotes": [
+    "npm ci succeeded with writable /tmp cache and unchanged lockfile.",
+    "Rootless Debian browser dependencies were unpacked under /tmp and linked into temporary WebKit bundle library directories.",
+    "PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS=1 bypassed the system-library-cache packaging check only; actual Chromium/WebKit engines and unchanged test assertions ran.",
+    "Initial sandbox disallowed local browser test server; network-enabled execution resolved it.",
+    "A generated initialization-profile.json download from the unchanged Chromium test was removed; no file changes outside experiments remain.",
+    "Timing is observational on a shared host; there are no physical-device or coupled-model performance claims."
+  ],
+  "passed": true,
+  "thermalSourceSHA256": {
+    "thermal-network.cjs": "77e634aacc11521ea93423284afa80d5bc78564b33377ab3bd26d111979e6f63",
+    "thermal-geometry.cjs": "f7db3d7f656cf4008ae5c4c91291534c8477a020d885d1f67181b3e1bb58bc77",
+    "thermal-test.cjs": "111a8a57ed8da4c961fa619124ed424bb552795a14df229c8a4a2bd87d76c78b",
+    "thermal-cost.cjs": "dcf26ff126b9d80db189a3987a0f553f90df276723ceddd2da3e32f95122a1c5",
+    "thermal-browser.cjs": "0230fd5369bde156a134764710e3462c0c0a5a1fa29aaea40fc8187e7735bfad",
+    "generate_thermal_reference.py": "d64da5dc825f082fbac90756ea16e50a818dea26487f480a09495296084a7edc",
+    "thermal-reference.json": "39ab1bfefea38f747e69fbcab061715513de9edbb6a31120ebef26288aa85516"
+  }
+}

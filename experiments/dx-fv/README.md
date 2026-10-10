@@ -1,5 +1,7 @@
 # Isolated conservative DX finite-volume prototype — roadmap stages 1–3
 
+The authorized standalone tube/fin/air thermal Stage 1 is documented in [THERMAL_STAGE_1.md](THERMAL_STAGE_1.md), with separate thermal references, numerical tests and cost reports. It has no refrigerant coupling and changes no existing DX physics. The earlier handoff and authorization statements below describe their frozen stages; any next refrigerant-coupling stage still requires explicit approval.
+
 For the current project transition and approval boundary, read [DEVELOPMENT_HANDOFF.md](DEVELOPMENT_HANDOFF.md) and the unimplemented [wall/air thermal design proposal](WALL_AIR_THERMAL_DESIGN_PROPOSAL.md). The completed spatial milestone is `c105584311ca4a539c8410bf02ae0519b2bc8448`; five sections is the provisional baseline and nine the comparison. Neither is proven converged. Current authorization is documentation only; historical stage restrictions below describe those frozen stages.
 
 The subsequent approved **three-section numerical time-accuracy stage** is documented in [TIME_ACCURACY.md](TIME_ACCURACY.md), including conservative adaptive TR-BDF2, comparisons, event timing, browser cost and remaining limitations. The results below retain the original Stage 3 baseline.

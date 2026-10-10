@@ -41,3 +41,11 @@ Commit **`c105584311ca4a539c8410bf02ae0519b2bc8448`** preserves the completed co
 The user reviewed and accepted **five sections as provisional working baseline and nine as higher-resolution comparison; neither is proven spatially converged**. This milestone is retained unchanged as an ancestor of the documentation transition. No main or PR #3 ref is moved.
 
 The current authorization is **documentation only**: [DEVELOPMENT_HANDOFF.md](DEVELOPMENT_HANDOFF.md) and [WALL_AIR_THERMAL_DESIGN_PROPOSAL.md](WALL_AIR_THERMAL_DESIGN_PROPOSAL.md). Thermal implementation, finer meshes, equipment calibration, circuit/UI/profile integration and merges require explicit approval. Earlier authorization statements in this file describe their historical stages and are superseded by this current boundary.
+
+## Standalone thermal Stage 1 delivery
+
+The user subsequently explicitly authorized standalone tube/fin/air Stage 1, starting at documentation handoff `5d92e8bd3e4a2ce2e1fdb39c7e4318c22b156654`. The Stage 1 delivery commit preserves that handoff, `c105584311ca4a539c8410bf02ae0519b2bc8448` and all earlier milestones as unchanged ancestors. Its final SHA is reported in the delivery message (a commit cannot contain its own SHA).
+
+See [THERMAL_STAGE_1.md](THERMAL_STAGE_1.md), `THERMAL_RESULTS.json`, `THERMAL_REGRESSION_RESULTS.json`, `THERMAL_COST_RESULTS.json` and `THERMAL_BROWSER_RESULTS.json` for the approved contract, independent qualification and regression evidence. Stage 1 has no refrigerant coupling or existing DX transport changes. Main, PR #3, production, application/UI and profiles remain unchanged. Earlier authorization statements above describe historical gates.
+
+Authorization ends at standalone Stage 1 delivery. Refrigerant coupling, transport changes, finer meshes, new correlations, axial conduction, ventilation, calibration, circuit/UI/profile integration and merges still require separate explicit approval. The existing CI workflow remains unchanged; new thermal checks are explicitly run using the documented commands.
