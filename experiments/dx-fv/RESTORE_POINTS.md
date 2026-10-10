@@ -1,6 +1,12 @@
-# Stage 1 restore points — frozen before prototype development
+# Ammonia Lab experimental restore points — through accepted Stage 2A-CI
 
 Repository: `cdehek/Ammonia-sim`. Experimental branch: `experimental/dx-fv-stage-3`.
+
+**Latest formally accepted research restore:** `adbab1d5587471105a351f3467e0bb812effb148`, with all four hosted jobs passing at https://github.com/cdehek/Ammonia-sim/actions/runs/38069836624 . The user accepted Stage 2A's numerical qualification and documented limitations. Current authorization is documentation/handoff only; no efficiency work, reference/table change, Stage 2B or integration is approved. [DEVELOPMENT_HANDOFF.md](DEVELOPMENT_HANDOFF.md) contains the complete current state, reproduction commands and next approval gate. The new handoff SHA is reported in delivery because it cannot be embedded in its own commit.
+
+All entries below are chronological milestone snapshots. Their earlier “current authorization,” “pending acceptance” and missing-CI statements describe those stages at delivery and are superseded by the current handoff. Preserve their exact SHAs, source, evidence and frozen references; never reset or rewrite a live branch. The application baselines remain protected.
+
+## Protected application baselines
 
 | Restore point | Full commit | Meaning |
 | --- | --- | --- |
@@ -62,6 +68,12 @@ The current authorization ends at **Stage 2A initial five-section delivery**. St
 
 ## Preserved Stage 2A candidate and targeted Stage 2A-R
 
-The initial coupled candidate is **`aa9514b0338b6021d9afc4b9f47f88ebdde765da`**, with all four established hosted jobs passing at https://github.com/cdehek/Ammonia-sim/actions/runs/38032522287 . The independent source review identified the exact thermal-boundary stop-classification defect, a nonlinear cost risk and a restricted reference-domain mismatch. Core architecture is provisionally accepted; Stage 2A milestone acceptance remains pending.
+The initial coupled candidate is **`aa9514b0338b6021d9afc4b9f47f88ebdde765da`**, with all four established hosted jobs passing at https://github.com/cdehek/Ammonia-sim/actions/runs/38032522287 . The independent source review identified the exact thermal-boundary stop-classification defect, a nonlinear cost risk and a restricted reference-domain mismatch. At that review, core architecture was provisionally accepted and final milestone acceptance was pending.
 
-The user subsequently authorized only the classification correction, unchanged-solver diagnostics, reference-domain investigation and qualification described in [COUPLED_STAGE_2A_R.md](COUPLED_STAGE_2A_R.md). The new corrective restore SHA and hosted run are reported in delivery; the candidate and every prior restore commit remain unchanged ancestors. No performance remedy, reference replacement, workflow change, Stage 2B work or integration is authorized.
+The accepted corrective restore is **`563ce0fdf99a10991e474121ef9719753f059d9d`**, with all four then-established hosted jobs passing at https://github.com/cdehek/Ammonia-sim/actions/runs/38068586549 . [COUPLED_STAGE_2A_R.md](COUPLED_STAGE_2A_R.md) preserves the classification correction, unchanged-solver diagnostics and reference-domain investigation. New corrective/coupled suites were locally qualified at that milestone, before their hosted coverage was added. No efficiency remedy or reference replacement occurred; the candidate and every earlier restore remain unchanged ancestors.
+
+## Accepted Stage 2A-CI and formal Stage 2A milestone
+
+Workflow-only commit **`adbab1d5587471105a351f3467e0bb812effb148`** adds repeatable hosted frozen/fresh coupled qualification, direct-EOS regeneration, candidate fetch for shallow-checkout domain regressions, both independent accounting audits, controls/rollback and Chromium/WebKit. Hosted run https://github.com/cdehek/Ammonia-sim/actions/runs/38069836624 passed all four jobs and all twelve added steps; all original verification steps remain unchanged. Ten artifacts were uploaded, including dedicated coupled numerical/browser evidence. No model, property, solver, fixture or frozen-reference changes were made.
+
+The user formally approved Stage 2A at this restore as a **numerically qualified isolated five-section coupled research milestone**, not physically validated/manufacturer-calibrated equipment or an application integration. Newton reversal cost, the 1e-12 K closure/property-resolution gap, runtime/EOS domain mismatch, wet cold/warm outlets, provisional resolution and lack of interactive/device qualification remain limitations. Stage 2B, numerical optimization, new dry-fixture boundaries, calibration/integration and merges require separate explicit approval. This subsequent handoff preserves every restore above and changes documentation only.
