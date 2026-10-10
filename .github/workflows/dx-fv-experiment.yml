@@ -69,6 +69,12 @@ jobs:
         with:
           name: three-section-dx-temporal-browser-performance
           path: /tmp/dx-fv-browser-performance.json
+      - name: Approved three/five/nine-section browser comparison
+        run: node experiments/dx-fv/resolution-browser.cjs /tmp/dx-fv-resolution-browser.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: three-five-nine-dx-browser
+          path: /tmp/dx-fv-resolution-browser.json
       - name: Approved three/five-section browser comparison
         run: node experiments/dx-fv/spatial-browser.cjs /tmp/dx-fv-spatial-browser.json
       - uses: actions/upload-artifact@v4
@@ -102,3 +108,38 @@ jobs:
             /tmp/dx-fv-spatial-results.json
             /tmp/dx-fv-spatial-reference.json
             /tmp/dx-fv-spatial-live-results.json
+  nine-section-resolution:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: npm ci
+      - name: Three/five/nine contracts, time refinement and extended spatial comparison
+        run: node experiments/dx-fv/resolution-test.cjs /tmp/dx-fv-resolution-results.json
+      - name: Fresh-process numerical cost and memory
+        run: node experiments/dx-fv/resolution-cost.cjs /tmp/dx-fv-resolution-cost.json
+      - name: Warm-domain source sensitivity and independent frozen references
+        run: node experiments/dx-fv/warm-domain-test.cjs /tmp/dx-fv-warm-domain.json
+      - name: Install independent reference dependencies
+        run: python -m pip install CoolProp==7.2.0 numpy==2.5.3 scipy==1.16.2
+      - name: Regenerate independent three/five/nine steady, startup and heat-source references
+        run: python experiments/dx-fv/generate_spatial_reference.py /tmp/dx-fv-resolution-reference.json 3,5,9
+      - name: Replay qualified evidence against fresh independent references
+        run: node experiments/dx-fv/resolution-reference-check.cjs /tmp/dx-fv-resolution-results.json /tmp/dx-fv-warm-domain.json /tmp/dx-fv-resolution-reference.json /tmp/dx-fv-resolution-live-results.json
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: three-five-nine-dx-resolution-verification
+          path: |
+            /tmp/dx-fv-resolution-results.json
+            /tmp/dx-fv-resolution-results.json.failure.json
+            /tmp/dx-fv-resolution-cost.json
+            /tmp/dx-fv-warm-domain.json
+            /tmp/dx-fv-resolution-reference.json
+            /tmp/dx-fv-resolution-live-results.json

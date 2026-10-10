@@ -1,4 +1,4 @@
-"""Direct-EOS discrete steady and continuous-time references for ONLY 3/5 cells.
+"""Direct-EOS discrete steady and continuous-time references for approved 3/5 or 3/5/9 cells.
 No JS solver or embedded table; same CoolProp EOS source, not plant calibration.
 """
 import json
@@ -17,6 +17,8 @@ eos = AbstractState('HEOS', 'Ammonia')
 D, volume, viscosity, friction = .02, .003, 1e-5, .02
 area = math.pi*D*D/4
 fallbacks = 0
+meshes = tuple(map(int, sys.argv[2].split(','))) if len(sys.argv)>2 else (3, 5)
+assert meshes in ((3, 5), (3, 5, 9)), 'Only the approved comparison meshes may be integrated'
 
 def ph(p, h):
     eos.update(HmassP_INPUTS, h*1000, p*1e5)
@@ -45,7 +47,7 @@ def sat(p, quality):
     return dict(h=eos.hmass()/1000, T=eos.T()-273.15)
 
 def geometry(n):
-    assert n in (3, 5)
+    assert n in meshes
     length = volume/area/n
     return [(length/2, 1000)] + [(length, 0)]*(n-1) + [(length/2, 2)]
 
@@ -70,7 +72,7 @@ def steady(n, total, profile):
     flow = brentq(lambda m: shoot(m)['outletPressure']-3.5, .012, .02, xtol=1e-14)
     return dict(sectionCount=n, totalHeatKW=total, heatProfile=profile, **shoot(flow))
 
-def startup(n, tolerance):
+def startup(n, tolerance, total_heat=12.):
     cell_volume, faces = volume/n, geometry(n)
     state = ph(3.65, 1650.)
     initial = np.tile([state['rho']*cell_volume, state['rho']*cell_volume*state['u']], n)
@@ -89,7 +91,7 @@ def startup(n, tolerance):
             flow = math.copysign(2*abs(dp)/(a+math.sqrt(a*a+4*b*abs(dp))), dp)
             fluxes.append([flow, flow*donor['h']])
         rates = np.array(fluxes[:-1])-np.array(fluxes[1:])
-        rates[:, 1] += 12/n
+        rates[:, 1] += total_heat/n
         return rates.reshape(2*n)
     def wet_event(t, y):
         terminal = states(y)[-1]
@@ -112,11 +114,13 @@ def startup(n, tolerance):
 out = dict(source='CoolProp 7.2.0 HEOS::Ammonia; independent steady shooting and SciPy 1.16.2 Radau M/U startup',
            geometry=dict(totalVolumeM3=volume, diameterM=D, tubeLengthM=volume/area, viscosityPaS=viscosity, darcyF=friction, inletMinorK=1000, outletMinorK=2),
            steady=[], startup=[])
-for n in (3, 5):
+for n in meshes:
     for total, profile in [(12., 'uniform'), (18., 'uniform'), (18., 'graded')]:
         out['steady'].append(steady(n, total, profile))
     out['startup'].append(dict(sectionCount=n, initial=dict(p=3.65, h=1650.), totalHeatKW=12,
                               runs=[startup(n, tolerance) for tolerance in (1e-8, 1e-10)]))
+if meshes == (3, 5, 9):
+    out['heatSensitivity'] = [dict(sectionCount=n, totalHeatKW=q, runs=[startup(n, tolerance, q) for tolerance in (1e-8, 1e-10)]) for q in (0., 6.) for n in meshes]
 out['boundaryFlashFallbacks'] = fallbacks
 target = Path(sys.argv[1]) if len(sys.argv)>1 else Path(__file__).with_name('spatial-reference.json')
 target.write_text(json.dumps(out, indent=2)+'\n')

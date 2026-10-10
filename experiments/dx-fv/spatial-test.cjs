@@ -24,7 +24,7 @@ const invariants=configurations.map(c=>{const totalLength=c.connections.reduce((
  return {sectionCount:c.sectionCount,cellVolumeM3:geometry.totalVolumeM3/c.sectionCount,cellLengthM:physicalLength/c.sectionCount,totalLengthM:totalLength,totalMinorK,homogeneousLinearResistance:linear,homogeneousQuadraticResistance:quadratic};
 });
 near(invariants[0].homogeneousLinearResistance,invariants[1].homogeneousLinearResistance,1e-8);near(invariants[0].homogeneousQuadraticResistance,invariants[1].homogeneousQuadraticResistance,1e-6);report.contracts.geometry=invariants;
-for(const n of [4,9,15])assert.throws(()=>fixture(n),/approved/); // validation only: no integrated finer model is created.
+for(const n of [4,17,33])assert.throws(()=>fixture(n),/approved/); // validation only: no integrated finer model is created.
 // For each mesh, independently compare 1e-6 / 1e-7 / 1e-8 tolerance and smaller
 // maximum steps/event brackets. Also isolate a maximum-step refinement at 1e-7.
 const meshRuns=new Map();

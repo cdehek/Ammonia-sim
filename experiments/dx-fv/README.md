@@ -4,6 +4,8 @@ The subsequent approved **three-section numerical time-accuracy stage** is docum
 
 The approved **three-versus-five-section comparison** is documented in [SPATIAL_RESOLUTION.md](SPATIAL_RESOLUTION.md). It independently qualifies time accuracy on both meshes, compares conserved inventory and phase timing, and records the five-section warm-start domain limitation. Three-section-only statements below describe the original Stage 3 baseline.
 
+The approved **3/5/9-section comparison** is documented in [NINE_SECTION_COMPARISON.md](NINE_SECTION_COMPARISON.md), including separate temporal qualification, supported-interval convergence evidence, heat-source domain diagnostics and cost/memory measurements. No finer mesh or circuit integration is included.
+
 Experimental branch: `experimental/dx-fv-stage-3`. This is a Node-testable component, not a replacement for Live plant, a new UI, or a complete refrigeration circuit. Production, PR #3, the existing connected model, equipment schemas, controls, training and generated standalone HTML are unchanged. See [RESTORE_POINTS.md](RESTORE_POINTS.md).
 
 The architecture derives its arrays, faces, residuals and solver dimension from `sectionCount`. The default is three; the supported configuration range is bounded for input validation. **Only three sections are instantiated and validated in this stage.** Five-section or finer experiments require a subsequent approval. No spatial-accuracy claim is made yet.

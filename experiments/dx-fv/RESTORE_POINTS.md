@@ -27,3 +27,9 @@ The currently authorized follow-up is isolated three-section temporal accuracy o
 Commit `3e2cdbf1c8e1c9c42268a72bda5b0d05cf54f0f5` preserves conservative adaptive TR-BDF2, its three-section temporal comparisons and all verified baseline files. Hosted verification: https://github.com/cdehek/Ammonia-sim/actions/runs/38000900498 . The approved spatial-comparison work is a fast-forward descendant on the same experimental branch.
 
 The current authorization permits isolated **three-versus-five-section** comparisons only. No finer integrated mesh, equipment calibration, Live Plant/UI integration, production/PR #3 changes or merges are authorized. Earlier three-section-only notes describe the frozen prior stages.
+
+## Validated three/five-section restore point
+
+Commit `7bf0c326414a7d8b7e51f553a273a0041fe1e827` preserves the qualified three-versus-five comparison and all earlier baselines. Hosted verification: https://github.com/cdehek/Ammonia-sim/actions/runs/38003601163 . The approved nine-section stage is its fast-forward descendant on the same experimental branch.
+
+Current authorization covers isolated **3/5/9-section** spatial comparison and unchanged-physics diagnostics only. No 17-or-finer integrated mesh, wall/equipment physics, calibration, Live Plant/UI/production/PR #3 changes or merges are authorized. Earlier three/five-only restrictions describe their frozen stages.

@@ -1,10 +1,10 @@
 'use strict';
 const {normalize}=require('./evaporator.cjs');
 const geometry=Object.freeze({totalVolumeM3:.003,diameterM:.02,viscosityPaS:1e-5,darcyF:.02,inletMinorK:1000,outletMinorK:2});
-// Comparisons are explicitly limited to the two approved meshes. The component
+// Comparisons are explicitly limited to the three approved meshes. The component
 // itself stays configurable; a finer integrated mesh requires another approval.
 function heatInputs(n,total,profile='uniform'){
- if(![3,5].includes(n))throw Error('Only three/five sections are approved for this comparison.');
+ if(![3,5,9].includes(n))throw Error('Only three/five/nine sections are approved for this comparison.');
  if(!Number.isFinite(total)||!['uniform','graded'].includes(profile))throw Error('Invalid distributed heat fixture.');
  return Array.from({length:n},(_,i)=>{const a=i/n,b=(i+1)/n;return total*(profile==='uniform'?b-a:.5*(b-a)+.5*(b*b-a*a));});
 }
