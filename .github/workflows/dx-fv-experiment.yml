@@ -94,6 +94,76 @@ jobs:
             /tmp/dx-thermal-frozen.log
             /tmp/dx-thermal-reference.log
             /tmp/dx-thermal-fresh.log
+      - name: Record coupled numerical runtime and dependencies
+        run: |
+          set -euo pipefail
+          python - <<'PY' 2>&1 | tee /tmp/dx-coupled-numerical-runtime.log
+          import importlib.metadata, json, platform, subprocess
+          report = {
+              "commit": subprocess.check_output(["git", "rev-parse", "HEAD"], text=True).strip(),
+              "preservedCandidate": "aa9514b0338b6021d9afc4b9f47f88ebdde765da",
+              "node": subprocess.check_output(["node", "--version"], text=True).strip(),
+              "npm": subprocess.check_output(["npm", "--version"], text=True).strip(),
+              "python": platform.python_version(),
+              "platform": platform.platform(),
+              "dependencies": {name: importlib.metadata.version(name) for name in ["numpy", "scipy", "CoolProp"]},
+          }
+          with open("/tmp/dx-coupled-numerical-runtime.json", "w") as output:
+              json.dump(report, output, indent=2)
+              output.write("\n")
+          print(json.dumps(report))
+          PY
+      - name: Fetch preserved coupled candidate for shallow-checkout domain regression
+        run: |
+          set -euo pipefail
+          {
+            candidate=aa9514b0338b6021d9afc4b9f47f88ebdde765da
+            tested_head=$(git rev-parse HEAD)
+            # Fetch only this immutable object; do not update refs or FETCH_HEAD.
+            git fetch --no-tags --depth=1 --no-write-fetch-head origin "$candidate"
+            git cat-file -e "$candidate^{commit}"
+            git show "$candidate:experiments/dx-fv/coupled-model.cjs" > /dev/null
+            git show "$candidate:experiments/dx-fv/coupled-implicit.cjs" > /dev/null
+            test "$(git rev-parse HEAD)" = "$tested_head"
+            git diff --exit-code
+            echo "Preserved candidate $candidate available; tested HEAD $tested_head unchanged."
+          } 2>&1 | tee /tmp/dx-coupled-candidate-fetch.log
+      - name: Coupled numerical qualification against frozen references
+        run: |
+          set -euo pipefail
+          node experiments/dx-fv/coupled-test.cjs /tmp/dx-coupled-frozen-results.json 2>&1 | tee /tmp/dx-coupled-frozen.log
+      - name: Regenerate independent direct-EOS coupled reference
+        run: |
+          set -euo pipefail
+          python experiments/dx-fv/generate_coupled_reference.py /tmp/dx-coupled-fresh-reference.json 2>&1 | tee /tmp/dx-coupled-reference.log
+      - name: Coupled numerical qualification against fresh direct-EOS reference
+        run: |
+          set -euo pipefail
+          DX_COUPLED_REFERENCE_PATH=/tmp/dx-coupled-fresh-reference.json node experiments/dx-fv/coupled-test.cjs /tmp/dx-coupled-fresh-results.json 2>&1 | tee /tmp/dx-coupled-fresh.log
+      - name: Coupled thermal-domain classification and atomic rollback regressions
+        run: |
+          set -euo pipefail
+          node experiments/dx-fv/coupled-domain-test.cjs /tmp/dx-coupled-domain-results.json 2>&1 | tee /tmp/dx-coupled-domain.log
+      - name: Independent coupled conservation accounting for frozen and fresh qualification
+        run: |
+          set -euo pipefail
+          python experiments/dx-fv/audit_coupled_results.py /tmp/dx-coupled-frozen-results.json /tmp/dx-coupled-frozen-audit.json 2>&1 | tee /tmp/dx-coupled-frozen-audit.log
+          python experiments/dx-fv/audit_coupled_results.py /tmp/dx-coupled-fresh-results.json /tmp/dx-coupled-fresh-audit.json 2>&1 | tee /tmp/dx-coupled-fresh-audit.log
+      - name: Coupled adaptive-control and mixed-patch rollback verification
+        run: |
+          set -euo pipefail
+          node experiments/dx-fv/coupled-controls.cjs /tmp/dx-coupled-control-results.json 2>&1 | tee /tmp/dx-coupled-controls.log
+      - name: Archive coupled numerical qualification and failure evidence
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: coupled-five-section-numerical-verification
+          if-no-files-found: warn
+          path: |
+            experiments/dx-fv/coupled-reference.json
+            experiments/dx-fv/coupled-domain-reference.json
+            /tmp/dx-coupled-*.json*
+            /tmp/dx-coupled-*.log
   browser-performance:
     runs-on: ubuntu-latest
     steps:
@@ -158,6 +228,36 @@ jobs:
             /tmp/dx-thermal-browser-runtime.json
             /tmp/dx-thermal-browser-runtime.log
             /tmp/dx-thermal-browser.log
+      - name: Record coupled browser runtime and dependencies
+        run: |
+          set -euo pipefail
+          node - <<'JS' 2>&1 | tee /tmp/dx-coupled-browser-runtime.log
+          const fs = require('node:fs'), {execFileSync} = require('node:child_process');
+          const report = {
+            commit: execFileSync('git', ['rev-parse', 'HEAD'], {encoding: 'utf8'}).trim(),
+            node: process.version,
+            npm: execFileSync('npm', ['--version'], {encoding: 'utf8'}).trim(),
+            platform: process.platform,
+            architecture: process.arch,
+            dependencies: {playwright: require('playwright/package.json').version},
+          };
+          fs.writeFileSync('/tmp/dx-coupled-browser-runtime.json', JSON.stringify(report, null, 2) + '\n');
+          console.log(JSON.stringify(report));
+          JS
+      - name: Coupled Chromium and WebKit numerical verification
+        run: |
+          set -euo pipefail
+          node experiments/dx-fv/coupled-browser.cjs /tmp/dx-coupled-browser-results.json 2>&1 | tee /tmp/dx-coupled-browser.log
+      - name: Archive coupled browser qualification and failure evidence
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: coupled-five-section-browser-verification
+          if-no-files-found: warn
+          path: |
+            experiments/dx-fv/coupled-reference.json
+            /tmp/dx-coupled-browser*.json*
+            /tmp/dx-coupled-browser*.log
   spatial-resolution:
     runs-on: ubuntu-latest
     steps:
