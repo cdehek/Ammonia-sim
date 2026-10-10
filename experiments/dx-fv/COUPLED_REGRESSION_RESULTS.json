@@ -1,0 +1,65 @@
+{
+  "stage": "2A",
+  "startingCommit": "dd0ca33cc834e2056ebede756f8cf59ed1157a07",
+  "runtime": {
+    "node": "22.23.3",
+    "python": "3.12.14",
+    "CoolProp": "7.2.0",
+    "numpy": "2.5.3",
+    "scipy": "1.16.2",
+    "playwright": "1.62.1"
+  },
+  "newQualification": {
+    "frozenNumericalPassed": true,
+    "freshNumericalPassed": true,
+    "operatingCases": 5,
+    "additionalChecks": 10,
+    "intentionalFailureScenarios": 7,
+    "frozenFreshResultsIdenticalExceptElapsedMS": true,
+    "bothIndependentReferenceRegenerationsIdentical": true,
+    "pythonAccountingAuditPassed": true,
+    "adaptiveControlAuditPassed": true,
+    "chromiumPassed": true,
+    "webkitPassed": true
+  },
+  "existingRegression": {
+    "command": "npm test",
+    "node": "22.23.3",
+    "suiteCount": 13,
+    "passed": true,
+    "logSHA256": "11ce5a0da98067f7208c80747889ec441c6d43fb1cfa5a0bba1574d71846765a",
+    "hostedQualification": "Run unchanged experimental workflow against the delivery commit; exact run URL/outcome is recorded in the delivery, because the commit cannot contain its own SHA."
+  },
+  "preservation": {
+    "baselineBlobFilesVerifiedUnchanged": 134,
+    "changedBaselineFiles": [
+      "experiments/dx-fv/README.md",
+      "experiments/dx-fv/RESTORE_POINTS.md"
+    ],
+    "earlierMilestones": {
+      "f3bd30a216e1165bad675dafd4ad6726af8567c8": "unchanged ancestor",
+      "c105584311ca4a539c8410bf02ae0519b2bc8448": "unchanged ancestor",
+      "5d92e8bd3e4a2ce2e1fdb39c7e4318c22b156654": "unchanged ancestor"
+    },
+    "existingWorkflowUnchanged": true,
+    "allExistingScientificCodeTestsAndReferencesUnchanged": true
+  },
+  "independentReview": {
+    "numericalReference": "Independent Python direct-EOS conserved RHS / SciPy Radau; refined and freshly regenerated",
+    "conservationAudit": "Independent Python standard-library accounting reconstruction without solver imports",
+    "separateSourceReviewer": "Pending explicit user authorization for delegation; no separate source review claimed"
+  },
+  "newSourceReferenceSHA256": {
+    "audit_coupled_results.py": "670b70b357fa62cde4f9ef56b0cebcbdba1639c482bfbe1f706360935045b9c3",
+    "coupled-browser.cjs": "97ddf0be3f4bab55c66a659ed1dbbe544f4e60a07669461c8a08b6081f9cb8b1",
+    "coupled-controls.cjs": "742f6fe48e251daa34e7e3c8a6662f576b9df4c4fdec01cbf86f57f3633b67e9",
+    "coupled-domain-reference.json": "f21c8f99cd0909303b068c5531724b5c260d8fe10cd6273fb443f15ec8d907cb",
+    "coupled-fixtures.cjs": "0033737237d0e910fe555b7cde36e706c2c41c68564b041f56babfe9f18a1df9",
+    "coupled-implicit.cjs": "c732c2becdae8b76b5d862fe5fa756fded34101683489496ec8add4089b920ec",
+    "coupled-model.cjs": "4af01b7bd8ed0fd95b6351488a31c3395962a43d590a3af78bf8cf8a89a32804",
+    "coupled-reference.json": "f455a712e7fbedbb17b4cc65a792f7898d793bd18132fabc471871fc6000ce3b",
+    "coupled-test.cjs": "2b047bca580043845308136e402ef3cc86256508e3a9b5023ba83e86e0cd99c8",
+    "generate_coupled_domain_reference.py": "853980c644a17fa12413cbcab65304699a9b7fa3778a0d20c34f4c12609222bb",
+    "generate_coupled_reference.py": "c9e29a5d19f2929961f6f7af457a21d3fc866790ae752546c311be0e7693ecb3"
+  }
+}

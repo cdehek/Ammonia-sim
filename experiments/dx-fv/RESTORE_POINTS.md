@@ -49,3 +49,13 @@ The user subsequently explicitly authorized standalone tube/fin/air Stage 1, sta
 See [THERMAL_STAGE_1.md](THERMAL_STAGE_1.md), `THERMAL_RESULTS.json`, `THERMAL_REGRESSION_RESULTS.json`, `THERMAL_COST_RESULTS.json` and `THERMAL_BROWSER_RESULTS.json` for the approved contract, independent qualification and regression evidence. Stage 1 has no refrigerant coupling or existing DX transport changes. Main, PR #3, production, application/UI and profiles remain unchanged. Earlier authorization statements above describe historical gates.
 
 Authorization ends at standalone Stage 1 delivery. Refrigerant coupling, transport changes, finer meshes, new correlations, axial conduction, ventilation, calibration, circuit/UI/profile integration and merges still require separate explicit approval. The existing CI workflow remains unchanged; new thermal checks are explicitly run using the documented commands.
+
+## Accepted standalone thermal and CI restore commits
+
+The accepted standalone Stage 1 restore is **`f3bd30a216e1165bad675dafd4ad6726af8567c8`**. Its accepted workflow-only CI qualification is **`dd0ca33cc834e2056ebede756f8cf59ed1157a07`**; hosted qualification: https://github.com/cdehek/Ammonia-sim/actions/runs/38023736238 . All four jobs passed, including frozen/fresh thermal references and standalone Chromium/WebKit. Both commits and every earlier restore point remain unchanged ancestors.
+
+## Initial coupled five-section Stage 2A
+
+The user subsequently explicitly authorized Stage 2A, beginning at `dd0ca33cc834e2056ebede756f8cf59ed1157a07`. This isolated milestone adds a new coupled factory, typed nonlinear solver and independent qualification under this directory, while preserving prescribed-heat physics and standalone thermal code/tests/references unchanged. Its exact restore SHA and hosted regression run are reported in the delivery message; a commit cannot contain its own SHA. See [COUPLED_STAGE_2A.md](COUPLED_STAGE_2A.md) and its separate coupled evidence files.
+
+The current authorization ends at **Stage 2A initial five-section delivery**. Stage 2B nine-section coupled comparisons, extensive operating qualification, performance-based integration decisions, dry-fixture boundary adoption, circuit/UI/controller/profile/production integration and merges remain unapproved. Older scope statements above describe their historical milestones.

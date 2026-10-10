@@ -108,3 +108,11 @@ Recommended next work, pending explicit approval:
 4. Only after those decisions, approve coupling to receiver/valve/compressor and requalify Default, control gains, diagnostics, profiles, schematics and training.
 
 No later integration stage or merge is authorized by these prototype results.
+
+## Initial five-section coupled thermal Stage 2A
+
+The subsequent user-authorized Stage 2A is a separate five-section tube/fin/finite-air coupled model, documented in [COUPLED_STAGE_2A.md](COUPLED_STAGE_2A.md). It starts at accepted standalone thermal CI restore `dd0ca33cc834e2056ebede756f8cf59ed1157a07`, preserving standalone restore `f3bd30a216e1165bad675dafd4ad6726af8567c8` and every prior scientific milestone/reference.
+
+`coupled-model.cjs` and `coupled-implicit.cjs` implement joint conservative adaptive TR-BDF2 with effective uncalibrated constant total `G_tr=0.60 kW/K`. The original prescribed-heat evaporator, transport/property/solver modules, standalone thermal network and all their tests/references remain unchanged. New independent direct-EOS references, temperature-coordinate energy audit, rollback/domain verification and blank-page browser verification are separate files. Development failures are retained in `COUPLED_DEVELOPMENT_FAILURES.json`.
+
+Cold/warm starts use the user-confirmed metal/air temperatures and 1 kW external air load. Actual wetness, quality and superheat remain visible; no sustained dry outlet is promised or manufactured. Stage 2A ends at the initial five-section prototype. Nine-section coupled comparison, extensive operating qualification, new boundaries for a dry fixture and any integration require separate review/approval. Production, main, PR #3, Live Plant, UI, profiles and controls remain protected.
