@@ -48,6 +48,52 @@ jobs:
             /tmp/dx-fv-time-results.json
             /tmp/dx-fv-time-reference.json
             /tmp/dx-fv-time-live-results.json
+      - name: Record standalone thermal numerical runtime and dependencies
+        run: |
+          set -euo pipefail
+          python - <<'PY' 2>&1 | tee /tmp/dx-thermal-numerical-runtime.log
+          import importlib.metadata, json, platform, subprocess
+          report = {
+              "commit": subprocess.check_output(["git", "rev-parse", "HEAD"], text=True).strip(),
+              "node": subprocess.check_output(["node", "--version"], text=True).strip(),
+              "npm": subprocess.check_output(["npm", "--version"], text=True).strip(),
+              "python": platform.python_version(),
+              "platform": platform.platform(),
+              "dependencies": {name: importlib.metadata.version(name) for name in ["numpy", "scipy", "CoolProp"]},
+          }
+          with open("/tmp/dx-thermal-numerical-runtime.json", "w") as output:
+              json.dump(report, output, indent=2)
+              output.write("\n")
+          print(json.dumps(report))
+          PY
+      - name: Standalone thermal numerical verification against frozen references
+        run: |
+          set -euo pipefail
+          node experiments/dx-fv/thermal-test.cjs /tmp/dx-thermal-frozen-results.json 2>&1 | tee /tmp/dx-thermal-frozen.log
+      - name: Regenerate independent thermal matrix-exponential reference
+        run: |
+          set -euo pipefail
+          python experiments/dx-fv/generate_thermal_reference.py /tmp/dx-thermal-fresh-reference.json 2>&1 | tee /tmp/dx-thermal-reference.log
+      - name: Standalone thermal numerical verification against fresh references
+        run: |
+          set -euo pipefail
+          DX_THERMAL_REFERENCE_PATH=/tmp/dx-thermal-fresh-reference.json node experiments/dx-fv/thermal-test.cjs /tmp/dx-thermal-fresh-results.json 2>&1 | tee /tmp/dx-thermal-fresh.log
+      - name: Archive standalone thermal numerical qualification and failure logs
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: standalone-thermal-numerical-verification
+          if-no-files-found: warn
+          path: |
+            experiments/dx-fv/thermal-reference.json
+            /tmp/dx-thermal-frozen-results.json
+            /tmp/dx-thermal-fresh-reference.json
+            /tmp/dx-thermal-fresh-results.json
+            /tmp/dx-thermal-numerical-runtime.json
+            /tmp/dx-thermal-numerical-runtime.log
+            /tmp/dx-thermal-frozen.log
+            /tmp/dx-thermal-reference.log
+            /tmp/dx-thermal-fresh.log
   browser-performance:
     runs-on: ubuntu-latest
     steps:
@@ -81,6 +127,37 @@ jobs:
         with:
           name: three-five-section-dx-spatial-browser
           path: /tmp/dx-fv-spatial-browser.json
+      - name: Record standalone thermal browser runtime and dependencies
+        run: |
+          set -euo pipefail
+          node - <<'JS' 2>&1 | tee /tmp/dx-thermal-browser-runtime.log
+          const fs = require('node:fs'), {execFileSync} = require('node:child_process');
+          const report = {
+            commit: execFileSync('git', ['rev-parse', 'HEAD'], {encoding: 'utf8'}).trim(),
+            node: process.version,
+            npm: execFileSync('npm', ['--version'], {encoding: 'utf8'}).trim(),
+            platform: process.platform,
+            architecture: process.arch,
+            dependencies: {playwright: require('playwright/package.json').version},
+          };
+          fs.writeFileSync('/tmp/dx-thermal-browser-runtime.json', JSON.stringify(report, null, 2) + '\n');
+          console.log(JSON.stringify(report));
+          JS
+      - name: Standalone thermal Chromium and WebKit verification
+        run: |
+          set -euo pipefail
+          node experiments/dx-fv/thermal-browser.cjs /tmp/dx-thermal-browser-results.json 2>&1 | tee /tmp/dx-thermal-browser.log
+      - name: Archive standalone thermal browser qualification and failure logs
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: standalone-thermal-browser-verification
+          if-no-files-found: warn
+          path: |
+            /tmp/dx-thermal-browser-results.json
+            /tmp/dx-thermal-browser-runtime.json
+            /tmp/dx-thermal-browser-runtime.log
+            /tmp/dx-thermal-browser.log
   spatial-resolution:
     runs-on: ubuntu-latest
     steps:
