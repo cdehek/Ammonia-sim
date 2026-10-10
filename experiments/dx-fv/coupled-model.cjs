@@ -13,9 +13,34 @@ const sum = a => a.reduce((s,v) => s+v,0);
 const positive = (v,label) => { if (!Number.isFinite(v) || v<=0) throw Error(`Positive ${label} required.`); };
 const fields = (o,allowed) => { if (!o || typeof o!=='object' || Array.isArray(o) || Object.keys(o).some(k=>!allowed.includes(k))) throw Error('Unsupported coupled configuration/patch field.'); };
 
+// A1: derivatives of the unchanged stage residual at fixed PH, not new balances.
+// Columns are thermal-energy increments (kJ); rows retain their original scales.
+function exactThermalColumns(spec, dt, weight, scales) {
+  const nodes=spec.thermal.nodes,ix=new Map(nodes.map((n,i)=>[n.id,i]));
+  const rate=Array.from({length:11},()=>Array(11).fill(0));
+  for(const link of spec.thermal.links){
+    const from=ix.get(link.from),to=ix.get(link.to),g=link.conductanceKWK;
+    rate[from][from]-=g/nodes[from].capacityKJK;
+    rate[from][to]+=g/nodes[to].capacityKJK;
+    rate[to][from]+=g/nodes[from].capacityKJK;
+    rate[to][to]-=g/nodes[to].capacityKJK;
+  }
+  for(let i=0;i<5;i++){
+    const tube=ix.get(`tube-${i}`);
+    rate[tube][tube]-=spec.conductancesKWK[i]/nodes[tube].capacityKJK;
+  }
+  const tau=dt*weight;
+  return nodes.map((node,k)=>Array.from({length:21},(_,row)=>{
+    if(row>=10)return ((row-10===k?1:0)-tau*rate[row-10][k])/scales[row];
+    if(row%2===0)return 0;
+    const section=(row-1)/2;
+    return node.id===`tube-${section}`?-tau*spec.conductancesKWK[section]/node.capacityKJK/scales[row]:0;
+  }));
+}
 function createCoupledModel(engine, options={}, observeAttempt=null) {
   if(observeAttempt!==null&&typeof observeAttempt!=='function')throw Error('Optional diagnostic observer must be a function.');
-  fields(options,['method','adaptive','maxStep','minStep','relativeTolerance','massAbsoluteKg','energyAbsoluteKJ','pressureAbsoluteBar','enthalpyAbsoluteKJkg','eventStepSeconds','temperatureAbsoluteK','temperatureScaleK','nonlinearTolerance','thermalResidualK','maxIterations','maxAttempts','trace']);
+  fields(options,['method','adaptive','maxStep','minStep','relativeTolerance','massAbsoluteKg','energyAbsoluteKJ','pressureAbsoluteBar','enthalpyAbsoluteKJkg','eventStepSeconds','temperatureAbsoluteK','temperatureScaleK','nonlinearTolerance','thermalResidualK','maxIterations','maxAttempts','trace','thermalJacobian']);
+  if(options.thermalJacobian!==undefined&&!['finite-difference','exact'].includes(options.thermalJacobian))throw Error('Invalid experimental thermal Jacobian selection.');
   const settings = {...Time.adaptiveDefaults,temperatureAbsoluteK:1e-4,temperatureScaleK:50,
     nonlinearTolerance:1e-11,thermalResidualK:1e-12,maxIterations:30,maxAttempts:100000,trace:false,...options};
   for (const key of ['maxStep','minStep','relativeTolerance','massAbsoluteKg','energyAbsoluteKJ','pressureAbsoluteBar','enthalpyAbsoluteKJkg','eventStepSeconds','temperatureAbsoluteK','temperatureScaleK','nonlinearTolerance','thermalResidualK']) positive(settings[key],key);
@@ -113,6 +138,8 @@ function createCoupledModel(engine, options={}, observeAttempt=null) {
     // A thermal-column probe leaves PH unchanged. Cache exact PH pairs within
     // this stage only; never reuse properties across changed coordinates/stages.
     const properties=new Map();
+    const exactColumns=settings.thermalJacobian==='exact'?exactThermalColumns(s.spec,dt,weight,
+      fluidScales.concat(s.spec.thermal.nodes.map(n=>n.capacityKJK*settings.thermalResidualK/settings.nonlinearTolerance))):null;
     const solved=coupledNewton(x=>{
       const states=s.cells.map((_,i)=>{
         const key=`${x[2*i]}:${x[2*i+1]}`;
@@ -127,7 +154,7 @@ function createCoupledModel(engine, options={}, observeAttempt=null) {
         // 50 K scale is not a license to leave tiny exchanges unresolved forever.
         .concat(energies.map((_,i)=>(x[10+i]-dt*integratedRate.thermalRates[i])/(s.spec.thermal.nodes[i].capacityKJK*settings.thermalResidualK/settings.nonlinearTolerance)));
       return {residual,states,cells,energies,endpoint,integratedRate};
-    },initial,variables,settings,work);
+    },initial,variables,settings,work,exactColumns);
     const recovered=solved.value.cells.map(recover);
     recovered.forEach((v,i)=>{
       const ph=solved.value.states[i];
@@ -287,4 +314,4 @@ function createCoupledModel(engine, options={}, observeAttempt=null) {
   }
   return {create,trial,advance,update,record,settings};
 }
-module.exports={createCoupledModel};
+module.exports={createCoupledModel,exactThermalColumns};

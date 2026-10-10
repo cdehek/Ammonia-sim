@@ -4,7 +4,7 @@ const {solveLinear} = require('./implicit.cjs');
 const norm = r => Math.max(...r.map(Math.abs));
 const region = s => s.x === null ? (s.phase.includes('liquid') ? 'liquid' : 'vapor') : 'mixture';
 
-function coupledNewton(evaluate, initial, variables, settings, work) {
+function coupledNewton(evaluate, initial, variables, settings, work, exactThermal=null) {
   if (variables.length !== initial.length) throw Error('One type is required per coupled variable.');
   const counted = x => { work.evaluations++; return evaluate(x); };
   const recorded=!!work.diagnostics;
@@ -28,6 +28,13 @@ function coupledNewton(evaluate, initial, variables, settings, work) {
       const jacobian = Array.from({length:x.length}, () => Array(x.length));
       for (let k = 0; k < x.length; k++) {
         const variable = variables[k];
+        // A1 opt-in only: PH probes and every Newton/acceptance rule stay unchanged.
+        if (exactThermal && variable.kind === 'thermal-energy') {
+          const column=exactThermal[k-10];
+          for (let i=0;i<x.length;i++) jacobian[i][k]=column[i];
+          if(recorded)work.diagnostics.push({type:'exact-thermal-column',solveId,iteration,column:k,values:[...column]});
+          continue;
+        }
         const epsilon = variable.kind === 'pressure' ? 1e-7*Math.max(1,Math.abs(x[k]))
           : variable.kind === 'enthalpy' ? 1e-8*Math.max(1,Math.abs(x[k]))
           : variable.kind === 'thermal-energy' ? variable.capacityKJK*1e-6 : NaN;
