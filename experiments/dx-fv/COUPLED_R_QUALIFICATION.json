@@ -1,0 +1,117 @@
+{
+  "stage": "2A-R",
+  "preservedCandidate": "aa9514b0338b6021d9afc4b9f47f88ebdde765da",
+  "runtime": {
+    "node": "22.23.3",
+    "python": "3.12.14",
+    "CoolProp": "7.2.0",
+    "numpy": "2.5.3",
+    "scipy": "1.16.2",
+    "playwright": "1.62.1"
+  },
+  "localVerificationPassed": {
+    "COUPLED_R_DOMAIN_RESULTS.json": true,
+    "COUPLED_R_DIAGNOSTICS.json": true,
+    "COUPLED_R_DIAGNOSTIC_AUDIT.json": true,
+    "COUPLED_R_PROPERTY_RESULTS.json": true,
+    "COUPLED_R_REFERENCE_DOMAIN.json": true,
+    "COUPLED_R_BROWSER_RESULTS.json": true,
+    "COUPLED_R_CONTROL_RESULTS.json": true,
+    "COUPLED_R_AUDIT_RESULTS.json": true,
+    "COUPLED_R_RESULTS.json": true
+  },
+  "numerical": {
+    "frozenPassed": true,
+    "freshPassed": true,
+    "frozenFreshIdenticalExceptElapsedMS": true,
+    "operatingCases": 5,
+    "additionalChecks": 10,
+    "intentionalFailureScenarios": 7,
+    "operatingCasesAndConservationMaximaMatchCandidate": true,
+    "unchangedAcceptanceLimits": {
+      "massKg": 1e-08,
+      "energyKJ": 1e-06,
+      "nominalTemperatureK": 0.01,
+      "tightTemperatureK": 0.001,
+      "pressureBar": 5e-05,
+      "enthalpyKJkg": 0.05,
+      "eventSeconds": 0.001
+    },
+    "conservation": {
+      "massKg": 1.9423686270503282e-10,
+      "sectionMassKg": 9.398326561438353e-11,
+      "refrigerantKJ": 6.048392720003903e-08,
+      "thermalKJ": 1.3210410543251783e-10,
+      "combinedKJ": 6.051928380657046e-08,
+      "sectionEnergyKJ": 3.3749039118902147e-08,
+      "nodeEnergyKJ": 3.262044856455759e-09
+    }
+  },
+  "classification": {
+    "boundaryCases": 27,
+    "solverProbeChecks": 10,
+    "minStepsSeconds": [
+      1e-09,
+      1e-05,
+      0.5
+    ],
+    "thermalLimitsK": [
+      200,
+      400
+    ],
+    "completeAcceptedRollback": true
+  },
+  "diagnostics": {
+    "failedNewtonHistories": 2552,
+    "independentlyAudited": true,
+    "candidateCorrectedObservedDecisionsExactlyMatch": true,
+    "noToleranceOrSolverOptimization": true,
+    "failedHistorySHA256": "c1ca2203fcf6026d2da70d5331c1bb5ac49ffe74a29997ce2cf8bdbcfe3a30fc"
+  },
+  "references": {
+    "bothRegenerationsMatchFrozenExactly": true,
+    "EOSRecoveryFallbacks": 0,
+    "frozenFilesUnchanged": true,
+    "runtimeDomainInvestigationOnly": true
+  },
+  "preservation": {
+    "identicalCandidateFiles": 150,
+    "modifiedCandidateFiles": [
+      "experiments/dx-fv/README.md",
+      "experiments/dx-fv/RESTORE_POINTS.md",
+      "experiments/dx-fv/coupled-implicit.cjs",
+      "experiments/dx-fv/coupled-model.cjs"
+    ],
+    "allChangesWithinExperimentalDirectory": true,
+    "protectedApplicationAndScientificFilesUnchanged": true,
+    "workflowUnchanged": true
+  },
+  "historicalRegressionQualification": "Run the unchanged four-job hosted workflow on the corrective restore SHA; exact URL/outcome is recorded in delivery. New coupled suites remain locally invoked, not hosted CI.",
+  "environmentSetupLimitations": [
+    "Runtime Node22/reference dependencies and relocated browser libraries are temporary under /tmp.",
+    "System-cache Playwright preflight skipped only for relocated libraries; real Chromium/WebKit engines and all assertions executed.",
+    "Sandbox child-process/browser-launch setup failures resolved by supported execution permissions; no numerical failure suppressed."
+  ],
+  "sourceAndEvidenceSHA256": {
+    "COUPLED_R_AUDIT_RESULTS.json": "e8de2f5c736e3e7423f177500f47c9379592d872625d4504ae1f4a73486e57ea",
+    "COUPLED_R_BROWSER_RESULTS.json": "d46cf816c735a3e04144deed7016626207c84e75701687ede4a6f0a8303f62bd",
+    "COUPLED_R_CONTROL_RESULTS.json": "b24309d0470fa90b3158a8427e0879f6c87ceb3295bc1f6f059aca3e1d9a433e",
+    "COUPLED_R_DIAGNOSTICS.json": "8e46495cbf4c6c398383976c9e66c5f2f0a6230085beef08f2d286a4d801de55",
+    "COUPLED_R_DIAGNOSTIC_AUDIT.json": "d36624fcd7e67d5bafaf282546e1bbbc41e63a385166da2e20ace50187e9344c",
+    "COUPLED_R_DOMAIN_RESULTS.json": "b4c0f88a9a63726b5ebe1abf39084d5bc573d066dc97b009cb8519af0850beb4",
+    "COUPLED_R_FAILED_NEWTON.jsonl.gz": "c1ca2203fcf6026d2da70d5331c1bb5ac49ffe74a29997ce2cf8bdbcfe3a30fc",
+    "COUPLED_R_PROPERTY_RESULTS.json": "541192fffad8111e4d1bd3817c2ed1638d99fc33b2726dc91c61de2a514866cc",
+    "COUPLED_R_REFERENCE_DOMAIN.json": "ce2b024774e54178fb22484d097b3d4b5e5bce53948d5536f3463dfbf3167679",
+    "COUPLED_R_RESULTS.json": "211bc7e5aa240387a76346dddc5aedf38d9024f66eaf400ec2e9406e26a240a1",
+    "COUPLED_STAGE_2A_R.md": "4fc50d77a79ba4c60ec9a395c606585a58f9aa4b2cb1809b8667bb9876fa5c50",
+    "audit_coupled_diagnostics.py": "e31653d22a5ca3c21668a18e334821f8c15651fb1b7c3b18e1982945cdf301b0",
+    "coupled-candidate.cjs": "ac5c61869cde12bbdc543c5b40800e9e72b2efc287ff8335d5300cd2eee329ff",
+    "coupled-diagnostics.cjs": "9c4f8329840d9f49fc3a58e524901d7e9ef2c102f06114e4f4878c7c747bc12d",
+    "coupled-domain-test.cjs": "f961c443de112d38d187f5412a2e7b89017dccd7cd11c30b706fb5048f6a06ce",
+    "coupled-implicit.cjs": "d091a2ddf73f240c889074665c57309fd20fb0da969e6d62df47273e5e7e0412",
+    "coupled-model.cjs": "bfbd37da78ff3942036693a9aef3ff043a50c6195a1b676e03277c6f9f2ea189",
+    "coupled-property-diagnostics.cjs": "a6260269a8cb4c7dc53bdd2c5dbdd365e1ea9a88403745978bef84a872089826",
+    "coupled-runtime-support.cjs": "1f82185d06d5a7639eb31ba5d66edecce85f9066f3a2175e8f174fc2bb043531",
+    "investigate_coupled_domain.py": "ef416621084fd29370c25e678680f1d72869a074057c90f310693ca0200d4881"
+  }
+}

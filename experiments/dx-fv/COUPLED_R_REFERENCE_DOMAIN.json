@@ -1,0 +1,208 @@
+{
+  "stage": "2A-R",
+  "CoolProp": "7.2.0",
+  "node": "v22.23.3",
+  "points": [
+    {
+      "p": 0.32,
+      "h": 19.69252839286862,
+      "temperatureK": 200.05,
+      "rho": 728.6204390801564,
+      "u": 19.64860977861674,
+      "directEOSSaturationK": 219.14335554358667,
+      "nominalReferenceMargin": 0.020000000000000018,
+      "runtimePressureBracketBar": [
+        0.3183890254214986,
+        0.3247658590779584
+      ],
+      "runtimeLiquidMaxSubcoolK": 18.9999999,
+      "runtime": {
+        "p": 0.32,
+        "h": 19.69252839286862,
+        "physicalTemperatureK": 200.05,
+        "ph": {
+          "supported": false,
+          "message": "Subcooled liquid exceeds the bounded property table.",
+          "kind": "domain"
+        },
+        "directEOSInventoryRecovery": {
+          "supported": false,
+          "message": "Stored mass/energy state lies outside the bounded ammonia property grid (0.3\u201335 bar absolute, 0\u2013250 K superheat, up to 30 K subcooling).",
+          "kind": "domain"
+        }
+      }
+    },
+    {
+      "p": 0.3,
+      "h": 19.690650524478812,
+      "temperatureK": 200.05,
+      "rho": 728.6196993571465,
+      "u": 19.649476781817107,
+      "directEOSSaturationK": 218.10399083633845,
+      "nominalReferenceMargin": 0.0,
+      "runtimePressureBracketBar": [
+        0.3,
+        0.30600853027017927
+      ],
+      "runtimeLiquidMaxSubcoolK": 17.9999999,
+      "runtime": {
+        "p": 0.3,
+        "h": 19.690650524478812,
+        "physicalTemperatureK": 200.05,
+        "ph": {
+          "supported": false,
+          "message": "Subcooled liquid exceeds the bounded property table.",
+          "kind": "domain"
+        },
+        "directEOSInventoryRecovery": {
+          "supported": false,
+          "message": "Stored mass/energy state lies outside the bounded ammonia property grid (0.3\u201335 bar absolute, 0\u2013250 K superheat, up to 30 K subcooling).",
+          "kind": "domain"
+        }
+      }
+    },
+    {
+      "p": 0.5,
+      "h": 19.709429335358397,
+      "temperatureK": 200.05,
+      "rho": 728.6270963361844,
+      "u": 19.64080712757643,
+      "directEOSSaturationK": 226.65405638848168,
+      "nominalReferenceMargin": 0.2,
+      "runtimePressureBracketBar": [
+        0.4925249232154343,
+        0.5023894262486265
+      ],
+      "runtimeLiquidMaxSubcoolK": 25.9999999,
+      "runtime": {
+        "p": 0.5,
+        "h": 19.709429335358397,
+        "physicalTemperatureK": 200.05,
+        "ph": {
+          "supported": false,
+          "message": "Subcooled liquid exceeds the bounded property table.",
+          "kind": "domain"
+        },
+        "directEOSInventoryRecovery": {
+          "supported": false,
+          "message": "Stored mass/energy state lies outside the bounded ammonia property grid (0.3\u201335 bar absolute, 0\u2013250 K superheat, up to 30 K subcooling).",
+          "kind": "domain"
+        }
+      }
+    },
+    {
+      "p": 3.5,
+      "h": 195.3519118593506,
+      "temperatureK": 240.0,
+      "rho": 681.5567620874017,
+      "u": 194.8383816305129,
+      "directEOSSaturationK": 267.8114351963939,
+      "nominalReferenceMargin": 2.1885648036060843,
+      "runtimePressureBracketBar": [
+        3.438994524959201,
+        3.507872200633196
+      ],
+      "runtimeLiquidMaxSubcoolK": 30,
+      "runtime": {
+        "p": 3.5,
+        "h": 195.3519118593506,
+        "physicalTemperatureK": 240,
+        "ph": {
+          "supported": true,
+          "temperatureK": 239.99992292595044,
+          "phase": "Subcooled liquid"
+        },
+        "tableInventoryRecovery": {
+          "supported": true,
+          "consistentWithStage": true,
+          "pressureDifferenceBar": 0,
+          "enthalpyDifferenceKJkg": -6.566040156030795e-09,
+          "temperatureDifferenceK": -1.4733814168721437e-09
+        },
+        "directEOSInventoryRecovery": {
+          "supported": true,
+          "p": 3.5077922186992243,
+          "h": 195.3530552427088,
+          "temperatureK": 240.00006217844543
+        }
+      }
+    },
+    {
+      "p": 3.5,
+      "h": 317.3701114940098,
+      "temperatureK": 267.0,
+      "rho": 646.924574984375,
+      "u": 316.82909015443914,
+      "directEOSSaturationK": 267.8114351963939,
+      "nominalReferenceMargin": 3.2,
+      "runtimePressureBracketBar": [
+        3.438994524959201,
+        3.507872200633196
+      ],
+      "runtimeLiquidMaxSubcoolK": 30,
+      "runtime": {
+        "p": 3.5,
+        "h": 317.3701114940098,
+        "physicalTemperatureK": 267,
+        "ph": {
+          "supported": true,
+          "temperatureK": 266.99990317558905,
+          "phase": "Subcooled liquid"
+        },
+        "tableInventoryRecovery": {
+          "supported": true,
+          "consistentWithStage": true,
+          "pressureDifferenceBar": 0,
+          "enthalpyDifferenceKJkg": -1.3249064068077132e-09,
+          "temperatureDifferenceK": -2.7284841053187847e-10
+        },
+        "directEOSInventoryRecovery": {
+          "supported": true,
+          "p": 3.5085381926908887,
+          "h": 317.3714313441369,
+          "temperatureK": 267.0000986219514
+        }
+      }
+    },
+    {
+      "p": 3.5,
+      "h": 1627.9336851488986,
+      "temperatureK": 278.15,
+      "rho": 2.714933139691314,
+      "u": 1499.0170665835526,
+      "directEOSSaturationK": 267.8114351963939,
+      "nominalReferenceMargin": 3.2,
+      "runtimePressureBracketBar": [
+        3.438994524959201,
+        3.507872200633196
+      ],
+      "runtimeLiquidMaxSubcoolK": 30,
+      "runtime": {
+        "p": 3.5,
+        "h": 1627.9336851488986,
+        "physicalTemperatureK": 278.15,
+        "ph": {
+          "supported": true,
+          "temperatureK": 278.15113328690705,
+          "phase": "Superheated vapor"
+        },
+        "tableInventoryRecovery": {
+          "supported": true,
+          "consistentWithStage": true,
+          "pressureDifferenceBar": 0,
+          "enthalpyDifferenceKJkg": 3.413924787309952e-08,
+          "temperatureDifferenceK": 1.4097167877480388e-08
+        },
+        "directEOSInventoryRecovery": {
+          "supported": true,
+          "p": 3.4999759836865545,
+          "h": 1627.9328005542052,
+          "temperatureK": 278.150694362278
+        }
+      }
+    }
+  ],
+  "passed": true,
+  "interpretation": "Direct-EOS physical support, nominal reference envelope and actual table availability are distinct. PH availability, table-inventory recovery and EOS-inventory recovery are reported separately; a failed inversion does not alone establish a physical trajectory exit.",
+  "proposedFutureTest": "Batch reference samples and safeguarded boundary brackets through the unchanged runtime PH and M/U/V probes in a separate qualification check. Keep independent EOS integration/refinement intact. To terminate references at matching interpolation limits, independently reproduce the table generation pressure brackets and missing-liquid mask, cross-check against this authoritative runtime probe, and bracket the continuous boundary; require separate approval before changing frozen references."
+}

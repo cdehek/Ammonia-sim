@@ -1,0 +1,1555 @@
+{
+  "stage": "2A-R",
+  "runtime": "v22.23.3",
+  "passed": true,
+  "PH": {
+    "iterations": 38,
+    "maxVaporSearchWidthK": 250,
+    "quantizationWidthK": 9.094947017729282e-10,
+    "maxLiquidSearchWidthK": 30,
+    "liquidQuantizationWidthK": 1.0913936421275139e-10,
+    "measuredAnalyticInverseErrorK": 4.5483972144211293e-10
+  },
+  "canonicalRecovery": {
+    "densityOffsetIterations": 32,
+    "maxVaporOffsetQuantizationWidthK": 5.820766091346741e-8,
+    "maxLiquidOffsetQuantizationWidthK": 6.984919309616089e-9,
+    "specificEnergyStoppingToleranceKJkg": 1e-7,
+    "warmPressureIterations": 10,
+    "fallbackPressureBisections": 48,
+    "maxTemperatureDifferenceK": 2.864908310584724e-8,
+    "rows": [
+      {
+        "p": 3.5,
+        "h": 500,
+        "phase": "Liquid + vapor",
+        "pressureDifferenceBar": 0,
+        "enthalpyDifferenceKJkg": 0,
+        "temperatureDifferenceK": 0,
+        "densityResidual": 0,
+        "specificEnergyResidualKJkg": 0
+      },
+      {
+        "p": 3.65,
+        "h": 1650,
+        "phase": "Superheated vapor",
+        "pressureDifferenceBar": 0,
+        "enthalpyDifferenceKJkg": 1.7860202206065878e-8,
+        "temperatureDifferenceK": 7.73070496506989e-9,
+        "densityResidual": -3.244632910836815e-11,
+        "specificEnergyResidualKJkg": 1.3512817531591281e-8
+      },
+      {
+        "p": 3.5,
+        "h": 301.0873806932271,
+        "phase": "Subcooled liquid",
+        "pressureDifferenceBar": 0,
+        "enthalpyDifferenceKJkg": -3.342222498758929e-9,
+        "temperatureDifferenceK": -7.09405867382884e-10,
+        "densityResidual": 1.4395962700513368e-12,
+        "specificEnergyResidualKJkg": -3.3414835343137383e-9
+      },
+      {
+        "p": 3.438290544968353,
+        "h": 1616.1417690971082,
+        "phase": "Superheated vapor",
+        "pressureDifferenceBar": 0,
+        "enthalpyDifferenceKJkg": -1.606008481758181e-8,
+        "temperatureDifferenceK": -5.9117155615240335e-9,
+        "densityResidual": 2.753310841775219e-11,
+        "specificEnergyResidualKJkg": -1.2585132935782894e-8
+      },
+      {
+        "p": 3.438290544968353,
+        "h": 1616.1417690971082,
+        "phase": "Superheated vapor",
+        "pressureDifferenceBar": 0,
+        "enthalpyDifferenceKJkg": -1.606008481758181e-8,
+        "temperatureDifferenceK": -5.9117155615240335e-9,
+        "densityResidual": 2.753310841775219e-11,
+        "specificEnergyResidualKJkg": -1.2585132935782894e-8
+      },
+      {
+        "p": 3.4382905449721064,
+        "h": 1616.1417690964452,
+        "phase": "Superheated vapor",
+        "pressureDifferenceBar": 0,
+        "enthalpyDifferenceKJkg": -1.5362502381321974e-8,
+        "temperatureDifferenceK": -5.9117155615240335e-9,
+        "densityResidual": 2.7533108417723846e-11,
+        "specificEnergyResidualKJkg": -1.1887550499523059e-8
+      },
+      {
+        "p": 3.438290544890087,
+        "h": 1616.1417690988994,
+        "phase": "Superheated vapor",
+        "pressureDifferenceBar": 0,
+        "enthalpyDifferenceKJkg": -1.857074494182598e-8,
+        "temperatureDifferenceK": -6.821210263296962e-9,
+        "densityResidual": 3.176900887052156e-11,
+        "specificEnergyResidualKJkg": -1.4561010175384581e-8
+      },
+      {
+        "p": 3.4382905449721064,
+        "h": 1616.1417690964452,
+        "phase": "Superheated vapor",
+        "pressureDifferenceBar": 0,
+        "enthalpyDifferenceKJkg": -1.5362502381321974e-8,
+        "temperatureDifferenceK": -5.9117155615240335e-9,
+        "densityResidual": 2.7533108417723846e-11,
+        "specificEnergyResidualKJkg": -1.1887550499523059e-8
+      },
+      {
+        "p": 3.4380627842487215,
+        "h": 1616.1054415512785,
+        "phase": "Superheated vapor",
+        "pressureDifferenceBar": 0,
+        "enthalpyDifferenceKJkg": 3.946252036257647e-8,
+        "temperatureDifferenceK": 1.5006662579253316e-8,
+        "densityResidual": -6.989194992410399e-11,
+        "specificEnergyResidualKJkg": 3.0641785997431725e-8
+      },
+      {
+        "p": 3.4380627842487215,
+        "h": 1616.1054415512785,
+        "phase": "Superheated vapor",
+        "pressureDifferenceBar": 0,
+        "enthalpyDifferenceKJkg": 3.946252036257647e-8,
+        "temperatureDifferenceK": 1.5006662579253316e-8,
+        "densityResidual": -6.989194992410399e-11,
+        "specificEnergyResidualKJkg": 3.0641785997431725e-8
+      },
+      {
+        "p": 3.438062784247568,
+        "h": 1616.1054415514093,
+        "phase": "Superheated vapor",
+        "pressureDifferenceBar": 0,
+        "enthalpyDifferenceKJkg": 3.932109393645078e-8,
+        "temperatureDifferenceK": 1.5006662579253316e-8,
+        "densityResidual": -6.989211293742038e-11,
+        "specificEnergyResidualKJkg": 3.050058694498148e-8
+      },
+      {
+        "p": 3.438062784168797,
+        "h": 1616.1054415529825,
+        "phase": "Superheated vapor",
+        "pressureDifferenceBar": 0,
+        "enthalpyDifferenceKJkg": 3.702371031977236e-8,
+        "temperatureDifferenceK": 1.4097167877480388e-8,
+        "densityResidual": -6.565604947386141e-11,
+        "specificEnergyResidualKJkg": 2.87377588392701e-8
+      },
+      {
+        "p": 3.438062784247568,
+        "h": 1616.1054415514093,
+        "phase": "Superheated vapor",
+        "pressureDifferenceBar": 0,
+        "enthalpyDifferenceKJkg": 3.932109393645078e-8,
+        "temperatureDifferenceK": 1.5006662579253316e-8,
+        "densityResidual": -6.989211293742038e-11,
+        "specificEnergyResidualKJkg": 3.050058694498148e-8
+      },
+      {
+        "p": 3.438173687389041,
+        "h": 1616.123130718446,
+        "phase": "Superheated vapor",
+        "pressureDifferenceBar": 0,
+        "enthalpyDifferenceKJkg": -6.050390766176861e-8,
+        "temperatureDifferenceK": -2.4101609596982598e-8,
+        "densityResidual": 1.1225013937763063e-10,
+        "specificEnergyResidualKJkg": -4.6337390813278034e-8
+      },
+      {
+        "p": 3.438173687389041,
+        "h": 1616.123130718446,
+        "phase": "Superheated vapor",
+        "pressureDifferenceBar": 0,
+        "enthalpyDifferenceKJkg": -6.050390766176861e-8,
+        "temperatureDifferenceK": -2.4101609596982598e-8,
+        "densityResidual": 1.1225013937763063e-10,
+        "specificEnergyResidualKJkg": -4.6337390813278034e-8
+      },
+      {
+        "p": 3.438173687390241,
+        "h": 1616.1231307183077,
+        "phase": "Superheated vapor",
+        "pressureDifferenceBar": 0,
+        "enthalpyDifferenceKJkg": -6.035475053067785e-8,
+        "temperatureDifferenceK": -2.319211489520967e-8,
+        "densityResidual": 1.0801472796504541e-10,
+        "specificEnergyResidualKJkg": -4.672278919315431e-8
+      },
+      {
+        "p": 3.438173687314962,
+        "h": 1616.1231307195205,
+        "phase": "Superheated vapor",
+        "pressureDifferenceBar": 0,
+        "enthalpyDifferenceKJkg": -6.22594598098658e-8,
+        "temperatureDifferenceK": -2.4101609596982598e-8,
+        "densityResidual": 1.1225030239320561e-10,
+        "specificEnergyResidualKJkg": -4.809294296137523e-8
+      },
+      {
+        "p": 3.438173687390241,
+        "h": 1616.1231307183077,
+        "phase": "Superheated vapor",
+        "pressureDifferenceBar": 0,
+        "enthalpyDifferenceKJkg": -6.035475053067785e-8,
+        "temperatureDifferenceK": -2.319211489520967e-8,
+        "densityResidual": 1.0801472796504541e-10,
+        "specificEnergyResidualKJkg": -4.672278919315431e-8
+      },
+      {
+        "p": 3.4385921327048288,
+        "h": 1616.1898688082094,
+        "phase": "Superheated vapor",
+        "pressureDifferenceBar": 0,
+        "enthalpyDifferenceKJkg": 1.6249487089226022e-8,
+        "temperatureDifferenceK": 5.9117155615240335e-9,
+        "densityResidual": -2.753327143106528e-11,
+        "specificEnergyResidualKJkg": 1.2774307833751664e-8
+      },
+      {
+        "p": 3.4385921327048288,
+        "h": 1616.1898688082094,
+        "phase": "Superheated vapor",
+        "pressureDifferenceBar": 0,
+        "enthalpyDifferenceKJkg": 1.6249487089226022e-8,
+        "temperatureDifferenceK": 5.9117155615240335e-9,
+        "densityResidual": -2.753327143106528e-11,
+        "specificEnergyResidualKJkg": 1.2774307833751664e-8
+      },
+      {
+        "p": 3.4385921327041586,
+        "h": 1616.1898688084161,
+        "phase": "Superheated vapor",
+        "pressureDifferenceBar": 0,
+        "enthalpyDifferenceKJkg": 1.6036665329011157e-8,
+        "temperatureDifferenceK": 5.9117155615240335e-9,
+        "densityResidual": -2.753327143107034e-11,
+        "specificEnergyResidualKJkg": 1.2561486073536798e-8
+      },
+      {
+        "p": 3.4385921326064284,
+        "h": 1616.189868808206,
+        "phase": "Superheated vapor",
+        "pressureDifferenceBar": 0,
+        "enthalpyDifferenceKJkg": 1.5348405213444494e-8,
+        "temperatureDifferenceK": 5.9117155615240335e-9,
+        "densityResidual": -2.7533108418513978e-11,
+        "specificEnergyResidualKJkg": 1.1873225957970135e-8
+      },
+      {
+        "p": 3.4385921327041586,
+        "h": 1616.1898688084161,
+        "phase": "Superheated vapor",
+        "pressureDifferenceBar": 0,
+        "enthalpyDifferenceKJkg": 1.6036665329011157e-8,
+        "temperatureDifferenceK": 5.9117155615240335e-9,
+        "densityResidual": -2.753327143107034e-11,
+        "specificEnergyResidualKJkg": 1.2561486073536798e-8
+      },
+      {
+        "p": 3.438437903514581,
+        "h": 1616.1652715063753,
+        "phase": "Superheated vapor",
+        "pressureDifferenceBar": 0,
+        "enthalpyDifferenceKJkg": -5.339120434655342e-8,
+        "temperatureDifferenceK": -2.0463630789890885e-8,
+        "densityResidual": 9.530735263541259e-11,
+        "specificEnergyResidualKJkg": -4.136200004722923e-8
+      },
+      {
+        "p": 3.438437903514581,
+        "h": 1616.1652715063753,
+        "phase": "Superheated vapor",
+        "pressureDifferenceBar": 0,
+        "enthalpyDifferenceKJkg": -5.339120434655342e-8,
+        "temperatureDifferenceK": -2.0463630789890885e-8,
+        "densityResidual": 9.530735263541259e-11,
+        "specificEnergyResidualKJkg": -4.136200004722923e-8
+      },
+      {
+        "p": 3.438437903515725,
+        "h": 1616.1652715062119,
+        "phase": "Superheated vapor",
+        "pressureDifferenceBar": 0,
+        "enthalpyDifferenceKJkg": -5.321703611116391e-8,
+        "temperatureDifferenceK": -2.0463630789890885e-8,
+        "densityResidual": 9.530735263538268e-11,
+        "specificEnergyResidualKJkg": -4.1187831811839715e-8
+      },
+      {
+        "p": 3.4384379034167907,
+        "h": 1616.165271506213,
+        "phase": "Superheated vapor",
+        "pressureDifferenceBar": 0,
+        "enthalpyDifferenceKJkg": -5.4127895054989494e-8,
+        "temperatureDifferenceK": -2.1373125491663814e-8,
+        "densityResidual": 9.954309007714953e-11,
+        "specificEnergyResidualKJkg": -4.156390787102282e-8
+      },
+      {
+        "p": 3.438437903515725,
+        "h": 1616.1652715062119,
+        "phase": "Superheated vapor",
+        "pressureDifferenceBar": 0,
+        "enthalpyDifferenceKJkg": -5.321703611116391e-8,
+        "temperatureDifferenceK": -2.0463630789890885e-8,
+        "densityResidual": 9.530735263538268e-11,
+        "specificEnergyResidualKJkg": -4.1187831811839715e-8
+      },
+      {
+        "p": 3.438569355686712,
+        "h": 1616.18623626402,
+        "phase": "Superheated vapor",
+        "pressureDifferenceBar": 0,
+        "enthalpyDifferenceKJkg": 9.12427822186146e-9,
+        "temperatureDifferenceK": 3.183231456205249e-9,
+        "densityResidual": -1.4825570075148994e-11,
+        "specificEnergyResidualKJkg": 7.252765499288216e-9
+      },
+      {
+        "p": 3.438569355686712,
+        "h": 1616.18623626402,
+        "phase": "Superheated vapor",
+        "pressureDifferenceBar": 0,
+        "enthalpyDifferenceKJkg": 9.12427822186146e-9,
+        "temperatureDifferenceK": 3.183231456205249e-9,
+        "densityResidual": -1.4825570075148994e-11,
+        "specificEnergyResidualKJkg": 7.252765499288216e-9
+      },
+      {
+        "p": 3.4385693556868833,
+        "h": 1616.1862362638606,
+        "phase": "Superheated vapor",
+        "pressureDifferenceBar": 0,
+        "enthalpyDifferenceKJkg": 9.285258784075268e-9,
+        "temperatureDifferenceK": 3.183231456205249e-9,
+        "densityResidual": -1.48255700751483e-11,
+        "specificEnergyResidualKJkg": 7.413973435177468e-9
+      },
+      {
+        "p": 3.438569355569432,
+        "h": 1616.186236264921,
+        "phase": "Superheated vapor",
+        "pressureDifferenceBar": 0,
+        "enthalpyDifferenceKJkg": 7.144990377128124e-9,
+        "temperatureDifferenceK": 3.183231456205249e-9,
+        "densityResidual": -1.4825570075625828e-11,
+        "specificEnergyResidualKJkg": 5.273705028230324e-9
+      },
+      {
+        "p": 3.4385693556868833,
+        "h": 1616.1862362638606,
+        "phase": "Superheated vapor",
+        "pressureDifferenceBar": 0,
+        "enthalpyDifferenceKJkg": 9.285258784075268e-9,
+        "temperatureDifferenceK": 3.183231456205249e-9,
+        "densityResidual": -1.48255700751483e-11,
+        "specificEnergyResidualKJkg": 7.413973435177468e-9
+      },
+      {
+        "p": 3.438546426804945,
+        "h": 1616.1825794805807,
+        "phase": "Superheated vapor",
+        "pressureDifferenceBar": 0,
+        "enthalpyDifferenceKJkg": -3.003287929459475e-8,
+        "temperatureDifferenceK": -1.1368683772161603e-8,
+        "densityResidual": 5.294867414237151e-11,
+        "specificEnergyResidualKJkg": -2.334968485229183e-8
+      },
+      {
+        "p": 3.438546426804945,
+        "h": 1616.1825794805807,
+        "phase": "Superheated vapor",
+        "pressureDifferenceBar": 0,
+        "enthalpyDifferenceKJkg": -3.003287929459475e-8,
+        "temperatureDifferenceK": -1.1368683772161603e-8,
+        "densityResidual": 5.294867414237151e-11,
+        "specificEnergyResidualKJkg": -2.334968485229183e-8
+      },
+      {
+        "p": 3.4385464267960146,
+        "h": 1616.1825794806434,
+        "phase": "Superheated vapor",
+        "pressureDifferenceBar": 0,
+        "enthalpyDifferenceKJkg": -3.017771632585209e-8,
+        "temperatureDifferenceK": -1.1368683772161603e-8,
+        "densityResidual": 5.294851112920689e-11,
+        "specificEnergyResidualKJkg": -2.3494749257224612e-8
+      },
+      {
+        "p": 3.4385464266849444,
+        "h": 1616.182579481133,
+        "phase": "Superheated vapor",
+        "pressureDifferenceBar": 0,
+        "enthalpyDifferenceKJkg": -3.168838702549692e-8,
+        "temperatureDifferenceK": -1.2278178473934531e-8,
+        "densityResidual": 5.718473760971141e-11,
+        "specificEnergyResidualKJkg": -2.447040969855152e-8
+      },
+      {
+        "p": 3.4385464267960146,
+        "h": 1616.1825794806434,
+        "phase": "Superheated vapor",
+        "pressureDifferenceBar": 0,
+        "enthalpyDifferenceKJkg": -3.017771632585209e-8,
+        "temperatureDifferenceK": -1.1368683772161603e-8,
+        "densityResidual": 5.294851112920689e-11,
+        "specificEnergyResidualKJkg": -2.3494749257224612e-8
+      },
+      {
+        "p": 3.4387769738097864,
+        "h": 1616.219347024045,
+        "phase": "Superheated vapor",
+        "pressureDifferenceBar": 0,
+        "enthalpyDifferenceKJkg": 5.77442733629141e-8,
+        "temperatureDifferenceK": 2.2282620193436742e-8,
+        "densityResidual": -1.0377964257873114e-10,
+        "specificEnergyResidualKJkg": 4.464436642592773e-8
+      },
+      {
+        "p": 3.4387769738097864,
+        "h": 1616.219347024045,
+        "phase": "Superheated vapor",
+        "pressureDifferenceBar": 0,
+        "enthalpyDifferenceKJkg": 5.77442733629141e-8,
+        "temperatureDifferenceK": 2.2282620193436742e-8,
+        "densityResidual": -1.0377964257873114e-10,
+        "specificEnergyResidualKJkg": 4.464436642592773e-8
+      },
+      {
+        "p": 3.4387769738102625,
+        "h": 1616.219347024078,
+        "phase": "Superheated vapor",
+        "pressureDifferenceBar": 0,
+        "enthalpyDifferenceKJkg": 5.7715851653483696e-8,
+        "temperatureDifferenceK": 2.2282620193436742e-8,
+        "densityResidual": -1.0377996860530613e-10,
+        "specificEnergyResidualKJkg": 4.4615944716497324e-8
+      },
+      {
+        "p": 3.438776973686978,
+        "h": 1616.2193470249472,
+        "phase": "Superheated vapor",
+        "pressureDifferenceBar": 0,
+        "enthalpyDifferenceKJkg": 5.5712916946504265e-8,
+        "temperatureDifferenceK": 2.1373125491663814e-8,
+        "densityResidual": -9.95439051438776e-11,
+        "specificEnergyResidualKJkg": 4.314733814680949e-8
+      },
+      {
+        "p": 3.4387769738102625,
+        "h": 1616.219347024078,
+        "phase": "Superheated vapor",
+        "pressureDifferenceBar": 0,
+        "enthalpyDifferenceKJkg": 5.7715851653483696e-8,
+        "temperatureDifferenceK": 2.2282620193436742e-8,
+        "densityResidual": -1.0377996860530613e-10,
+        "specificEnergyResidualKJkg": 4.4615944716497324e-8
+      },
+      {
+        "p": 3.439410368045252,
+        "h": 1616.3203621502146,
+        "phase": "Superheated vapor",
+        "pressureDifferenceBar": 0,
+        "enthalpyDifferenceKJkg": -7.329617801588029e-9,
+        "temperatureDifferenceK": -3.183231456205249e-9,
+        "densityResidual": 1.4825570075107254e-11,
+        "specificEnergyResidualKJkg": -5.457650331663899e-9
+      },
+      {
+        "p": 3.439410368045252,
+        "h": 1616.3203621502146,
+        "phase": "Superheated vapor",
+        "pressureDifferenceBar": 0,
+        "enthalpyDifferenceKJkg": -7.329617801588029e-9,
+        "temperatureDifferenceK": -3.183231456205249e-9,
+        "densityResidual": 1.4825570075107254e-11,
+        "specificEnergyResidualKJkg": -5.457650331663899e-9
+      },
+      {
+        "p": 3.4394103680451495,
+        "h": 1616.3203621502869,
+        "phase": "Superheated vapor",
+        "pressureDifferenceBar": 0,
+        "enthalpyDifferenceKJkg": -7.402832125080749e-9,
+        "temperatureDifferenceK": -3.183231456205249e-9,
+        "densityResidual": 1.482605911499052e-11,
+        "specificEnergyResidualKJkg": -5.531092028832063e-9
+      },
+      {
+        "p": 3.439410367924917,
+        "h": 1616.3203621510656,
+        "phase": "Superheated vapor",
+        "pressureDifferenceBar": 0,
+        "enthalpyDifferenceKJkg": -9.285940905101597e-9,
+        "temperatureDifferenceK": -4.092726157978177e-9,
+        "densityResidual": 1.9061959567629747e-11,
+        "specificEnergyResidualKJkg": -6.879190550534986e-9
+      },
+      {
+        "p": 3.4394103680451495,
+        "h": 1616.3203621502869,
+        "phase": "Superheated vapor",
+        "pressureDifferenceBar": 0,
+        "enthalpyDifferenceKJkg": -7.402832125080749e-9,
+        "temperatureDifferenceK": -3.183231456205249e-9,
+        "densityResidual": 1.482605911499052e-11,
+        "specificEnergyResidualKJkg": -5.531092028832063e-9
+      },
+      {
+        "p": 3.4393557096079608,
+        "h": 1616.311645162022,
+        "phase": "Superheated vapor",
+        "pressureDifferenceBar": 0,
+        "enthalpyDifferenceKJkg": -5.124411472934298e-8,
+        "temperatureDifferenceK": -2.0463630789890885e-8,
+        "densityResidual": 9.530833071492193e-11,
+        "specificEnergyResidualKJkg": -3.921149982488714e-8
+      },
+      {
+        "p": 3.4393557096079608,
+        "h": 1616.311645162022,
+        "phase": "Superheated vapor",
+        "pressureDifferenceBar": 0,
+        "enthalpyDifferenceKJkg": -5.124411472934298e-8,
+        "temperatureDifferenceK": -2.0463630789890885e-8,
+        "densityResidual": 9.530833071492193e-11,
+        "specificEnergyResidualKJkg": -3.921149982488714e-8
+      },
+      {
+        "p": 3.4393557096104406,
+        "h": 1616.3116451618794,
+        "phase": "Superheated vapor",
+        "pressureDifferenceBar": 0,
+        "enthalpyDifferenceKJkg": -5.107881406729575e-8,
+        "temperatureDifferenceK": -2.0463630789890885e-8,
+        "densityResidual": 9.530865674144569e-11,
+        "specificEnergyResidualKJkg": -3.904619916283991e-8
+      },
+      {
+        "p": 3.439355709484578,
+        "h": 1616.3116451630374,
+        "phase": "Superheated vapor",
+        "pressureDifferenceBar": 0,
+        "enthalpyDifferenceKJkg": -5.339302333595697e-8,
+        "temperatureDifferenceK": -2.0463630789890885e-8,
+        "densityResidual": 9.530865674473551e-11,
+        "specificEnergyResidualKJkg": -4.1360181057825685e-8
+      },
+      {
+        "p": 3.4393557096104406,
+        "h": 1616.3116451618794,
+        "phase": "Superheated vapor",
+        "pressureDifferenceBar": 0,
+        "enthalpyDifferenceKJkg": -5.107881406729575e-8,
+        "temperatureDifferenceK": -2.0463630789890885e-8,
+        "densityResidual": 9.530865674144569e-11,
+        "specificEnergyResidualKJkg": -3.904619916283991e-8
+      },
+      {
+        "p": 3.4395168170725805,
+        "h": 1616.3373384192423,
+        "phase": "Superheated vapor",
+        "pressureDifferenceBar": 0,
+        "enthalpyDifferenceKJkg": 6.512550498882774e-8,
+        "temperatureDifferenceK": 2.5920599000528455e-8,
+        "densityResidual": -1.207242224657599e-10,
+        "specificEnergyResidualKJkg": 4.988351065549068e-8
+      },
+      {
+        "p": 3.4395168170725805,
+        "h": 1616.3373384192423,
+        "phase": "Superheated vapor",
+        "pressureDifferenceBar": 0,
+        "enthalpyDifferenceKJkg": 6.512550498882774e-8,
+        "temperatureDifferenceK": 2.5920599000528455e-8,
+        "densityResidual": -1.207242224657599e-10,
+        "specificEnergyResidualKJkg": 4.988351065549068e-8
+      },
+      {
+        "p": 3.4395168170732866,
+        "h": 1616.337338419374,
+        "phase": "Superheated vapor",
+        "pressureDifferenceBar": 0,
+        "enthalpyDifferenceKJkg": 6.500044946733397e-8,
+        "temperatureDifferenceK": 2.5920599000528455e-8,
+        "densityResidual": -1.2072405945244223e-10,
+        "specificEnergyResidualKJkg": 4.975822776032146e-8
+      },
+      {
+        "p": 3.4395168169393315,
+        "h": 1616.3373384203385,
+        "phase": "Superheated vapor",
+        "pressureDifferenceBar": 0,
+        "enthalpyDifferenceKJkg": 6.2805384004605e-8,
+        "temperatureDifferenceK": 2.5011104298755527e-8,
+        "densityResidual": -1.1648848503189735e-10,
+        "specificEnergyResidualKJkg": 4.8098172555910423e-8
+      },
+      {
+        "p": 3.4395168170732866,
+        "h": 1616.337338419374,
+        "phase": "Superheated vapor",
+        "pressureDifferenceBar": 0,
+        "enthalpyDifferenceKJkg": 6.500044946733397e-8,
+        "temperatureDifferenceK": 2.5920599000528455e-8,
+        "densityResidual": -1.2072405945244223e-10,
+        "specificEnergyResidualKJkg": 4.975822776032146e-8
+      },
+      {
+        "p": 3.4396814842563157,
+        "h": 1616.363598320552,
+        "phase": "Superheated vapor",
+        "pressureDifferenceBar": 0,
+        "enthalpyDifferenceKJkg": -1.8570972315501422e-8,
+        "temperatureDifferenceK": -6.821210263296962e-9,
+        "densityResidual": 3.1769986949134386e-11,
+        "specificEnergyResidualKJkg": -1.4559645933331922e-8
+      },
+      {
+        "p": 3.4396814842563157,
+        "h": 1616.363598320552,
+        "phase": "Superheated vapor",
+        "pressureDifferenceBar": 0,
+        "enthalpyDifferenceKJkg": -1.8570972315501422e-8,
+        "temperatureDifferenceK": -6.821210263296962e-9,
+        "densityResidual": 3.1769986949134386e-11,
+        "specificEnergyResidualKJkg": -1.4559645933331922e-8
+      },
+      {
+        "p": 3.4396814842388332,
+        "h": 1616.3635983203183,
+        "phase": "Superheated vapor",
+        "pressureDifferenceBar": 0,
+        "enthalpyDifferenceKJkg": -1.84977579920087e-8,
+        "temperatureDifferenceK": -6.821210263296962e-9,
+        "densityResidual": 3.1769660922698125e-11,
+        "specificEnergyResidualKJkg": -1.4486658983514644e-8
+      },
+      {
+        "p": 3.4396814841203738,
+        "h": 1616.3635983216257,
+        "phase": "Superheated vapor",
+        "pressureDifferenceBar": 0,
+        "enthalpyDifferenceKJkg": -2.0893367036478594e-8,
+        "temperatureDifferenceK": -8.640199666842818e-9,
+        "densityResidual": 4.0241624841497185e-11,
+        "specificEnergyResidualKJkg": -1.581247488502413e-8
+      },
+      {
+        "p": 3.4396814842388332,
+        "h": 1616.3635983203183,
+        "phase": "Superheated vapor",
+        "pressureDifferenceBar": 0,
+        "enthalpyDifferenceKJkg": -1.84977579920087e-8,
+        "temperatureDifferenceK": -6.821210263296962e-9,
+        "densityResidual": 3.1769660922698125e-11,
+        "specificEnergyResidualKJkg": -1.4486658983514644e-8
+      },
+      {
+        "p": 3.441135608723186,
+        "h": 1616.5967208358065,
+        "phase": "Superheated vapor",
+        "pressureDifferenceBar": 0,
+        "enthalpyDifferenceKJkg": 6.703885446768254e-8,
+        "temperatureDifferenceK": 2.6830093702301383e-8,
+        "densityResidual": -1.2291300196781772e-10,
+        "specificEnergyResidualKJkg": 5.1513097787392326e-8
+      },
+      {
+        "p": 3.441135608723186,
+        "h": 1616.5967208358065,
+        "phase": "Superheated vapor",
+        "pressureDifferenceBar": 0,
+        "enthalpyDifferenceKJkg": 6.703885446768254e-8,
+        "temperatureDifferenceK": 2.6830093702301383e-8,
+        "densityResidual": -1.2291300196781772e-10,
+        "specificEnergyResidualKJkg": 5.1513097787392326e-8
+      },
+      {
+        "p": 3.4411356086758174,
+        "h": 1616.5967208351417,
+        "phase": "Superheated vapor",
+        "pressureDifferenceBar": 0,
+        "enthalpyDifferenceKJkg": 6.726827450620476e-8,
+        "temperatureDifferenceK": 2.6830093702301383e-8,
+        "densityResidual": -1.229130019694136e-10,
+        "specificEnergyResidualKJkg": 5.174274519958999e-8
+      },
+      {
+        "p": 3.441135608551865,
+        "h": 1616.5967208368027,
+        "phase": "Superheated vapor",
+        "pressureDifferenceBar": 0,
+        "enthalpyDifferenceKJkg": 6.44683950667968e-8,
+        "temperatureDifferenceK": 2.5920599000528455e-8,
+        "densityResidual": -1.1874638217206034e-10,
+        "specificEnergyResidualKJkg": 4.946900844515767e-8
+      },
+      {
+        "p": 3.4411356086758174,
+        "h": 1616.5967208351417,
+        "phase": "Superheated vapor",
+        "pressureDifferenceBar": 0,
+        "enthalpyDifferenceKJkg": 6.726827450620476e-8,
+        "temperatureDifferenceK": 2.6830093702301383e-8,
+        "densityResidual": -1.229130019694136e-10,
+        "specificEnergyResidualKJkg": 5.174274519958999e-8
+      },
+      {
+        "p": 3.4404614481534503,
+        "h": 1616.4884021819305,
+        "phase": "Superheated vapor",
+        "pressureDifferenceBar": 0,
+        "enthalpyDifferenceKJkg": -6.892560122651048e-8,
+        "temperatureDifferenceK": -2.6830093702301383e-8,
+        "densityResidual": 1.2291186087465926e-10,
+        "specificEnergyResidualKJkg": -5.340302777767647e-8
+      },
+      {
+        "p": 3.4404614481534503,
+        "h": 1616.4884021819305,
+        "phase": "Superheated vapor",
+        "pressureDifferenceBar": 0,
+        "enthalpyDifferenceKJkg": -6.892560122651048e-8,
+        "temperatureDifferenceK": -2.6830093702301383e-8,
+        "densityResidual": 1.2291186087465926e-10,
+        "specificEnergyResidualKJkg": -5.340302777767647e-8
+      },
+      {
+        "p": 3.4404614481009745,
+        "h": 1616.4884021816827,
+        "phase": "Superheated vapor",
+        "pressureDifferenceBar": 0,
+        "enthalpyDifferenceKJkg": -6.916002348589245e-8,
+        "temperatureDifferenceK": -2.773958840407431e-8,
+        "densityResidual": 1.2707848067884205e-10,
+        "specificEnergyResidualKJkg": -5.3111307352082804e-8
+      },
+      {
+        "p": 3.440461447977891,
+        "h": 1616.4884021827659,
+        "phase": "Superheated vapor",
+        "pressureDifferenceBar": 0,
+        "enthalpyDifferenceKJkg": -7.137418833735865e-8,
+        "temperatureDifferenceK": -2.773958840407431e-8,
+        "densityResidual": 1.2707831766983589e-10,
+        "specificEnergyResidualKJkg": -5.5325244829873554e-8
+      },
+      {
+        "p": 3.4404614481009745,
+        "h": 1616.4884021816827,
+        "phase": "Superheated vapor",
+        "pressureDifferenceBar": 0,
+        "enthalpyDifferenceKJkg": -6.916002348589245e-8,
+        "temperatureDifferenceK": -2.773958840407431e-8,
+        "densityResidual": 1.2707848067884205e-10,
+        "specificEnergyResidualKJkg": -5.3111307352082804e-8
+      },
+      {
+        "p": 3.440697094311322,
+        "h": 1616.5262659470548,
+        "phase": "Superheated vapor",
+        "pressureDifferenceBar": 0,
+        "enthalpyDifferenceKJkg": 4.604771675076336e-9,
+        "temperatureDifferenceK": 2.2737367544323206e-9,
+        "densityResidual": -1.041622347796104e-11,
+        "specificEnergyResidualKJkg": 3.289414962637238e-9
+      },
+      {
+        "p": 3.440697094311322,
+        "h": 1616.5262659470548,
+        "phase": "Superheated vapor",
+        "pressureDifferenceBar": 0,
+        "enthalpyDifferenceKJkg": 4.604771675076336e-9,
+        "temperatureDifferenceK": 2.2737367544323206e-9,
+        "densityResidual": -1.041622347796104e-11,
+        "specificEnergyResidualKJkg": 3.289414962637238e-9
+      },
+      {
+        "p": 3.4406970942741677,
+        "h": 1616.5262659473444,
+        "phase": "Superheated vapor",
+        "pressureDifferenceBar": 0,
+        "enthalpyDifferenceKJkg": 3.973809725721367e-9,
+        "temperatureDifferenceK": 1.3642420526593924e-9,
+        "densityResidual": -6.249766689525175e-12,
+        "specificEnergyResidualKJkg": 3.1845956982579082e-9
+      },
+      {
+        "p": 3.440697094148481,
+        "h": 1616.526265948651,
+        "phase": "Superheated vapor",
+        "pressureDifferenceBar": 0,
+        "enthalpyDifferenceKJkg": 1.5122623153729364e-9,
+        "temperatureDifferenceK": 4.547473508864641e-10,
+        "densityResidual": -2.0833099010202803e-12,
+        "specificEnergyResidualKJkg": 1.2489635992096737e-9
+      },
+      {
+        "p": 3.4406970942741677,
+        "h": 1616.5262659473444,
+        "phase": "Superheated vapor",
+        "pressureDifferenceBar": 0,
+        "enthalpyDifferenceKJkg": 3.973809725721367e-9,
+        "temperatureDifferenceK": 1.3642420526593924e-9,
+        "densityResidual": -6.249766689525175e-12,
+        "specificEnergyResidualKJkg": 3.1845956982579082e-9
+      },
+      {
+        "p": 3.4411364670280715,
+        "h": 1616.5968587296643,
+        "phase": "Superheated vapor",
+        "pressureDifferenceBar": 0,
+        "enthalpyDifferenceKJkg": 2.9389639166765846e-8,
+        "temperatureDifferenceK": 1.1368683772161603e-8,
+        "densityResidual": -5.2081932456514027e-11,
+        "specificEnergyResidualKJkg": 2.2811263988842256e-8
+      },
+      {
+        "p": 3.4411364670280715,
+        "h": 1616.5968587296643,
+        "phase": "Superheated vapor",
+        "pressureDifferenceBar": 0,
+        "enthalpyDifferenceKJkg": 2.9389639166765846e-8,
+        "temperatureDifferenceK": 1.1368683772161603e-8,
+        "densityResidual": -5.2081932456514027e-11,
+        "specificEnergyResidualKJkg": 2.2811263988842256e-8
+      },
+      {
+        "p": 3.441136466990978,
+        "h": 1616.5968587310838,
+        "phase": "Superheated vapor",
+        "pressureDifferenceBar": 0,
+        "enthalpyDifferenceKJkg": 2.7629312171484344e-8,
+        "temperatureDifferenceK": 1.0459189070388675e-8,
+        "densityResidual": -4.791531265536202e-11,
+        "specificEnergyResidualKJkg": 2.157685230486095e-8
+      },
+      {
+        "p": 3.4411364668667073,
+        "h": 1616.5968587323591,
+        "phase": "Superheated vapor",
+        "pressureDifferenceBar": 0,
+        "enthalpyDifferenceKJkg": 2.52118752541719e-8,
+        "temperatureDifferenceK": 9.549694368615746e-9,
+        "densityResidual": -4.374852984184164e-11,
+        "specificEnergyResidualKJkg": 1.968578544619959e-8
+      },
+      {
+        "p": 3.441136466990978,
+        "h": 1616.5968587310838,
+        "phase": "Superheated vapor",
+        "pressureDifferenceBar": 0,
+        "enthalpyDifferenceKJkg": 2.7629312171484344e-8,
+        "temperatureDifferenceK": 1.0459189070388675e-8,
+        "densityResidual": -4.791531265536202e-11,
+        "specificEnergyResidualKJkg": 2.157685230486095e-8
+      },
+      {
+        "p": 3.441178268322226,
+        "h": 1616.6035744283633,
+        "phase": "Superheated vapor",
+        "pressureDifferenceBar": 0,
+        "enthalpyDifferenceKJkg": -4.374669515527785e-8,
+        "temperatureDifferenceK": -1.77351466845721e-8,
+        "densityResidual": 8.124761901649041e-11,
+        "specificEnergyResidualKJkg": -3.348372956679668e-8
+      },
+      {
+        "p": 3.441178268322226,
+        "h": 1616.6035744283633,
+        "phase": "Superheated vapor",
+        "pressureDifferenceBar": 0,
+        "enthalpyDifferenceKJkg": -4.374669515527785e-8,
+        "temperatureDifferenceK": -1.77351466845721e-8,
+        "densityResidual": 8.124761901649041e-11,
+        "specificEnergyResidualKJkg": -3.348372956679668e-8
+      },
+      {
+        "p": 3.4411782682843035,
+        "h": 1616.6035744277845,
+        "phase": "Superheated vapor",
+        "pressureDifferenceBar": 0,
+        "enthalpyDifferenceKJkg": -4.3516365622053854e-8,
+        "temperatureDifferenceK": -1.6825651982799172e-8,
+        "densityResidual": 7.708116222841146e-11,
+        "specificEnergyResidualKJkg": -3.3779997465899214e-8
+      },
+      {
+        "p": 3.4411782681592467,
+        "h": 1616.6035744291426,
+        "phase": "Superheated vapor",
+        "pressureDifferenceBar": 0,
+        "enthalpyDifferenceKJkg": -4.6023615141166374e-8,
+        "temperatureDifferenceK": -1.77351466845721e-8,
+        "densityResidual": 8.12476190201199e-11,
+        "specificEnergyResidualKJkg": -3.576064955268521e-8
+      },
+      {
+        "p": 3.4411782682843035,
+        "h": 1616.6035744277845,
+        "phase": "Superheated vapor",
+        "pressureDifferenceBar": 0,
+        "enthalpyDifferenceKJkg": -4.3516365622053854e-8,
+        "temperatureDifferenceK": -1.6825651982799172e-8,
+        "densityResidual": 7.708116222841146e-11,
+        "specificEnergyResidualKJkg": -3.3779997465899214e-8
+      },
+      {
+        "p": 3.4414229383046577,
+        "h": 1616.6428811411536,
+        "phase": "Superheated vapor",
+        "pressureDifferenceBar": 0,
+        "enthalpyDifferenceKJkg": 2.1713503883802332e-8,
+        "temperatureDifferenceK": 8.640199666842818e-9,
+        "densityResidual": -3.958207305117879e-11,
+        "specificEnergyResidualKJkg": 1.6713329387130216e-8
+      },
+      {
+        "p": 3.4414229383046577,
+        "h": 1616.6428811411536,
+        "phase": "Superheated vapor",
+        "pressureDifferenceBar": 0,
+        "enthalpyDifferenceKJkg": 2.1713503883802332e-8,
+        "temperatureDifferenceK": 8.640199666842818e-9,
+        "densityResidual": -3.958207305117879e-11,
+        "specificEnergyResidualKJkg": 1.6713329387130216e-8
+      },
+      {
+        "p": 3.4414229382754264,
+        "h": 1616.6428811414798,
+        "phase": "Superheated vapor",
+        "pressureDifferenceBar": 0,
+        "enthalpyDifferenceKJkg": 2.1118466975167394e-8,
+        "temperatureDifferenceK": 8.640199666842818e-9,
+        "densityResidual": -3.9582073051495905e-11,
+        "specificEnergyResidualKJkg": 1.6118292478495277e-8
+      },
+      {
+        "p": 3.4414229381492127,
+        "h": 1616.6428811430187,
+        "phase": "Superheated vapor",
+        "pressureDifferenceBar": 0,
+        "enthalpyDifferenceKJkg": 1.841954144765623e-8,
+        "temperatureDifferenceK": 7.73070496506989e-9,
+        "densityResidual": -3.5415453250977265e-11,
+        "specificEnergyResidualKJkg": 1.3945509635959752e-8
+      },
+      {
+        "p": 3.4414229382754264,
+        "h": 1616.6428811414798,
+        "phase": "Superheated vapor",
+        "pressureDifferenceBar": 0,
+        "enthalpyDifferenceKJkg": 2.1118466975167394e-8,
+        "temperatureDifferenceK": 8.640199666842818e-9,
+        "densityResidual": -3.9582073051495905e-11,
+        "specificEnergyResidualKJkg": 1.6118292478495277e-8
+      },
+      {
+        "p": 3.441669826651095,
+        "h": 1616.6825418279973,
+        "phase": "Superheated vapor",
+        "pressureDifferenceBar": 0,
+        "enthalpyDifferenceKJkg": 1.8021864889306016e-8,
+        "temperatureDifferenceK": 6.821210263296962e-9,
+        "densityResidual": -3.1248996460834634e-11,
+        "specificEnergyResidualKJkg": 1.4074203136260621e-8
+      },
+      {
+        "p": 3.441669826651095,
+        "h": 1616.6825418279973,
+        "phase": "Superheated vapor",
+        "pressureDifferenceBar": 0,
+        "enthalpyDifferenceKJkg": 1.8021864889306016e-8,
+        "temperatureDifferenceK": 6.821210263296962e-9,
+        "densityResidual": -3.1248996460834634e-11,
+        "specificEnergyResidualKJkg": 1.4074203136260621e-8
+      },
+      {
+        "p": 3.441669826616305,
+        "h": 1616.6825418269632,
+        "phase": "Superheated vapor",
+        "pressureDifferenceBar": 0,
+        "enthalpyDifferenceKJkg": 1.873627297754865e-8,
+        "temperatureDifferenceK": 7.73070496506989e-9,
+        "densityResidual": -3.5415616262892973e-11,
+        "specificEnergyResidualKJkg": 1.4262241165852174e-8
+      },
+      {
+        "p": 3.441669826488372,
+        "h": 1616.6825418284063,
+        "phase": "Superheated vapor",
+        "pressureDifferenceBar": 0,
+        "enthalpyDifferenceKJkg": 1.611715561011806e-8,
+        "temperatureDifferenceK": 5.9117155615240335e-9,
+        "densityResidual": -2.708253967358127e-11,
+        "specificEnergyResidualKJkg": 1.2695409168372862e-8
+      },
+      {
+        "p": 3.441669826616305,
+        "h": 1616.6825418269632,
+        "phase": "Superheated vapor",
+        "pressureDifferenceBar": 0,
+        "enthalpyDifferenceKJkg": 1.873627297754865e-8,
+        "temperatureDifferenceK": 7.73070496506989e-9,
+        "densityResidual": -3.5415616262892973e-11,
+        "specificEnergyResidualKJkg": 1.4262241165852174e-8
+      },
+      {
+        "p": 3.4419185891380644,
+        "h": 1616.7225011323517,
+        "phase": "Superheated vapor",
+        "pressureDifferenceBar": 0,
+        "enthalpyDifferenceKJkg": -1.491616785642691e-8,
+        "temperatureDifferenceK": -5.9117155615240335e-9,
+        "densityResidual": 2.7082865698769735e-11,
+        "specificEnergyResidualKJkg": -1.149442141468171e-8
+      },
+      {
+        "p": 3.4419185891380644,
+        "h": 1616.7225011323517,
+        "phase": "Superheated vapor",
+        "pressureDifferenceBar": 0,
+        "enthalpyDifferenceKJkg": -1.491616785642691e-8,
+        "temperatureDifferenceK": -5.9117155615240335e-9,
+        "densityResidual": 2.7082865698769735e-11,
+        "specificEnergyResidualKJkg": -1.149442141468171e-8
+      },
+      {
+        "p": 3.441918589114247,
+        "h": 1616.7225011333067,
+        "phase": "Superheated vapor",
+        "pressureDifferenceBar": 0,
+        "enthalpyDifferenceKJkg": -1.6090098142740317e-8,
+        "temperatureDifferenceK": -5.9117155615240335e-9,
+        "densityResidual": 2.7082865698946503e-11,
+        "specificEnergyResidualKJkg": -1.266857907467056e-8
+      },
+      {
+        "p": 3.4419185889680937,
+        "h": 1616.7225011342935,
+        "phase": "Superheated vapor",
+        "pressureDifferenceBar": 0,
+        "enthalpyDifferenceKJkg": -1.8420450942358002e-8,
+        "temperatureDifferenceK": -7.73070496506989e-9,
+        "densityResidual": 3.5416105304426485e-11,
+        "specificEnergyResidualKJkg": -1.3945737009635195e-8
+      },
+      {
+        "p": 3.441918589114247,
+        "h": 1616.7225011333067,
+        "phase": "Superheated vapor",
+        "pressureDifferenceBar": 0,
+        "enthalpyDifferenceKJkg": -1.6090098142740317e-8,
+        "temperatureDifferenceK": -5.9117155615240335e-9,
+        "densityResidual": 2.7082865698946503e-11,
+        "specificEnergyResidualKJkg": -1.266857907467056e-8
+      },
+      {
+        "p": 3.442377189344646,
+        "h": 1616.7961607280708,
+        "phase": "Superheated vapor",
+        "pressureDifferenceBar": 0,
+        "enthalpyDifferenceKJkg": -4.761454874824267e-8,
+        "temperatureDifferenceK": -1.864464138634503e-8,
+        "densityResidual": 8.541554292464383e-11,
+        "specificEnergyResidualKJkg": -3.682157512230333e-8
+      },
+      {
+        "p": 3.442377189344646,
+        "h": 1616.7961607280708,
+        "phase": "Superheated vapor",
+        "pressureDifferenceBar": 0,
+        "enthalpyDifferenceKJkg": -4.761454874824267e-8,
+        "temperatureDifferenceK": -1.864464138634503e-8,
+        "densityResidual": 8.541554292464383e-11,
+        "specificEnergyResidualKJkg": -3.682157512230333e-8
+      },
+      {
+        "p": 3.4423771893062014,
+        "h": 1616.7961607267625,
+        "phase": "Superheated vapor",
+        "pressureDifferenceBar": 0,
+        "enthalpyDifferenceKJkg": -4.665980668505654e-8,
+        "temperatureDifferenceK": -1.864464138634503e-8,
+        "densityResidual": 8.541537991224929e-11,
+        "specificEnergyResidualKJkg": -3.58668330591172e-8
+      },
+      {
+        "p": 3.4423771891601804,
+        "h": 1616.7961607294164,
+        "phase": "Superheated vapor",
+        "pressureDifferenceBar": 0,
+        "enthalpyDifferenceKJkg": -5.0656126404646784e-8,
+        "temperatureDifferenceK": -1.9554136088117957e-8,
+        "densityResidual": 8.958216273139547e-11,
+        "specificEnergyResidualKJkg": -3.933655534638092e-8
+      },
+      {
+        "p": 3.4423771893062014,
+        "h": 1616.7961607267625,
+        "phase": "Superheated vapor",
+        "pressureDifferenceBar": 0,
+        "enthalpyDifferenceKJkg": -4.665980668505654e-8,
+        "temperatureDifferenceK": -1.864464138634503e-8,
+        "densityResidual": 8.541537991224929e-11,
+        "specificEnergyResidualKJkg": -3.58668330591172e-8
+      },
+      {
+        "p": 3.4426295985796798,
+        "h": 1616.8366987125937,
+        "phase": "Superheated vapor",
+        "pressureDifferenceBar": 0,
+        "enthalpyDifferenceKJkg": -3.914374246960506e-8,
+        "temperatureDifferenceK": -1.5006662579253316e-8,
+        "densityResidual": 6.874922673010593e-11,
+        "specificEnergyResidualKJkg": -3.045579433091916e-8
+      },
+      {
+        "p": 3.4426295985796798,
+        "h": 1616.8366987125937,
+        "phase": "Superheated vapor",
+        "pressureDifferenceBar": 0,
+        "enthalpyDifferenceKJkg": -3.914374246960506e-8,
+        "temperatureDifferenceK": -1.5006662579253316e-8,
+        "densityResidual": 6.874922673010593e-11,
+        "specificEnergyResidualKJkg": -3.045579433091916e-8
+      },
+      {
+        "p": 3.442629598518913,
+        "h": 1616.8366987124766,
+        "phase": "Superheated vapor",
+        "pressureDifferenceBar": 0,
+        "enthalpyDifferenceKJkg": -3.9585302147315815e-8,
+        "temperatureDifferenceK": -1.5916157281026244e-8,
+        "densityResidual": 7.29160095467426e-11,
+        "specificEnergyResidualKJkg": -3.037075657630339e-8
+      },
+      {
+        "p": 3.442629598372721,
+        "h": 1616.8366987143074,
+        "phase": "Superheated vapor",
+        "pressureDifferenceBar": 0,
+        "enthalpyDifferenceKJkg": -4.2760120777529664e-8,
+        "temperatureDifferenceK": -1.6825651982799172e-8,
+        "densityResidual": 7.708230332547391e-11,
+        "specificEnergyResidualKJkg": -3.301920514786616e-8
+      },
+      {
+        "p": 3.442629598518913,
+        "h": 1616.8366987124766,
+        "phase": "Superheated vapor",
+        "pressureDifferenceBar": 0,
+        "enthalpyDifferenceKJkg": -3.9585302147315815e-8,
+        "temperatureDifferenceK": -1.5916157281026244e-8,
+        "densityResidual": 7.29160095467426e-11,
+        "specificEnergyResidualKJkg": -3.037075657630339e-8
+      },
+      {
+        "p": 3.442377264060881,
+        "h": 1616.7961727258073,
+        "phase": "Superheated vapor",
+        "pressureDifferenceBar": 0,
+        "enthalpyDifferenceKJkg": -1.1512838682392612e-8,
+        "temperatureDifferenceK": -4.092726157978177e-9,
+        "densityResidual": 1.8749626094927774e-11,
+        "specificEnergyResidualKJkg": -9.143604984274134e-9
+      },
+      {
+        "p": 3.442377264060881,
+        "h": 1616.7961727258073,
+        "phase": "Superheated vapor",
+        "pressureDifferenceBar": 0,
+        "enthalpyDifferenceKJkg": -1.1512838682392612e-8,
+        "temperatureDifferenceK": -4.092726157978177e-9,
+        "densityResidual": 1.8749626094927774e-11,
+        "specificEnergyResidualKJkg": -9.143604984274134e-9
+      },
+      {
+        "p": 3.4423772640003665,
+        "h": 1616.7961727254904,
+        "phase": "Superheated vapor",
+        "pressureDifferenceBar": 0,
+        "enthalpyDifferenceKJkg": -1.1752035788958892e-8,
+        "temperatureDifferenceK": -5.002220859751105e-9,
+        "densityResidual": 2.291640891052464e-11,
+        "specificEnergyResidualKJkg": -8.856204658513889e-9
+      },
+      {
+        "p": 3.4423772638513346,
+        "h": 1616.7961727274626,
+        "phase": "Superheated vapor",
+        "pressureDifferenceBar": 0,
+        "enthalpyDifferenceKJkg": -1.5094428817974404e-8,
+        "temperatureDifferenceK": -5.9117155615240335e-9,
+        "densityResidual": 2.7083028713656964e-11,
+        "specificEnergyResidualKJkg": -1.1672455002553761e-8
+      },
+      {
+        "p": 3.4423772640003665,
+        "h": 1616.7961727254904,
+        "phase": "Superheated vapor",
+        "pressureDifferenceBar": 0,
+        "enthalpyDifferenceKJkg": -1.1752035788958892e-8,
+        "temperatureDifferenceK": -5.002220859751105e-9,
+        "densityResidual": 2.291640891052464e-11,
+        "specificEnergyResidualKJkg": -8.856204658513889e-9
+      },
+      {
+        "p": 3.4427996008986557,
+        "h": 1616.8640003761927,
+        "phase": "Superheated vapor",
+        "pressureDifferenceBar": 0,
+        "enthalpyDifferenceKJkg": 5.991978468955494e-8,
+        "temperatureDifferenceK": 2.4101609596982598e-8,
+        "densityResidual": -1.104159137880555e-10,
+        "specificEnergyResidualKJkg": 4.596563485392835e-8
+      },
+      {
+        "p": 3.4427996008986557,
+        "h": 1616.8640003761927,
+        "phase": "Superheated vapor",
+        "pressureDifferenceBar": 0,
+        "enthalpyDifferenceKJkg": 5.991978468955494e-8,
+        "temperatureDifferenceK": 2.4101609596982598e-8,
+        "densityResidual": -1.104159137880555e-10,
+        "specificEnergyResidualKJkg": 4.596563485392835e-8
+      },
+      {
+        "p": 3.442799600838805,
+        "h": 1616.8640003756952,
+        "phase": "Superheated vapor",
+        "pressureDifferenceBar": 0,
+        "enthalpyDifferenceKJkg": 5.986703399685211e-8,
+        "temperatureDifferenceK": 2.4101609596982598e-8,
+        "densityResidual": -1.104157507765717e-10,
+        "specificEnergyResidualKJkg": 4.591288416122552e-8
+      },
+      {
+        "p": 3.442799600681485,
+        "h": 1616.8640003774954,
+        "phase": "Superheated vapor",
+        "pressureDifferenceBar": 0,
+        "enthalpyDifferenceKJkg": 5.6620365285198204e-8,
+        "temperatureDifferenceK": 2.2282620193436742e-8,
+        "densityResidual": -1.0208234816475552e-10,
+        "specificEnergyResidualKJkg": 4.3719637687900104e-8
+      },
+      {
+        "p": 3.442799600838805,
+        "h": 1616.8640003756952,
+        "phase": "Superheated vapor",
+        "pressureDifferenceBar": 0,
+        "enthalpyDifferenceKJkg": 5.986703399685211e-8,
+        "temperatureDifferenceK": 2.4101609596982598e-8,
+        "densityResidual": -1.104157507765717e-10,
+        "specificEnergyResidualKJkg": 4.591288416122552e-8
+      },
+      {
+        "p": 3.4430531543868885,
+        "h": 1616.904717880209,
+        "phase": "Superheated vapor",
+        "pressureDifferenceBar": 0,
+        "enthalpyDifferenceKJkg": -7.221160558401607e-8,
+        "temperatureDifferenceK": -2.864908310584724e-8,
+        "densityResidual": 1.3124917581072508e-10,
+        "specificEnergyResidualKJkg": -5.5623559092055075e-8
+      },
+      {
+        "p": 3.4430531543868885,
+        "h": 1616.904717880209,
+        "phase": "Superheated vapor",
+        "pressureDifferenceBar": 0,
+        "enthalpyDifferenceKJkg": -7.221160558401607e-8,
+        "temperatureDifferenceK": -2.864908310584724e-8,
+        "densityResidual": 1.3124917581072508e-10,
+        "specificEnergyResidualKJkg": -5.5623559092055075e-8
+      },
+      {
+        "p": 3.4430531543474,
+        "h": 1616.9047178813178,
+        "phase": "Superheated vapor",
+        "pressureDifferenceBar": 0,
+        "enthalpyDifferenceKJkg": 7.368294063780922e-8,
+        "temperatureDifferenceK": 2.864908310584724e-8,
+        "densityResidual": -1.312491758126917e-10,
+        "specificEnergyResidualKJkg": 5.709512151952367e-8
+      },
+      {
+        "p": 3.443053154186868,
+        "h": 1616.904717882899,
+        "phase": "Superheated vapor",
+        "pressureDifferenceBar": 0,
+        "enthalpyDifferenceKJkg": 7.062567419779953e-8,
+        "temperatureDifferenceK": 2.773958840407431e-8,
+        "densityResidual": -1.2708271903021478e-10,
+        "specificEnergyResidualKJkg": 5.45644525118405e-8
+      },
+      {
+        "p": 3.4430531543474,
+        "h": 1616.9047178813178,
+        "phase": "Superheated vapor",
+        "pressureDifferenceBar": 0,
+        "enthalpyDifferenceKJkg": 7.368294063780922e-8,
+        "temperatureDifferenceK": 2.864908310584724e-8,
+        "densityResidual": -1.312491758126917e-10,
+        "specificEnergyResidualKJkg": 5.709512151952367e-8
+      },
+      {
+        "p": 3.4433070844702884,
+        "h": 1616.9454933033485,
+        "phase": "Superheated vapor",
+        "pressureDifferenceBar": 0,
+        "enthalpyDifferenceKJkg": -5.825631888001226e-8,
+        "temperatureDifferenceK": -2.319211489520967e-8,
+        "densityResidual": 1.0624962001274733e-10,
+        "specificEnergyResidualKJkg": -4.4826947487308644e-8
+      },
+      {
+        "p": 3.4433070844702884,
+        "h": 1616.9454933033485,
+        "phase": "Superheated vapor",
+        "pressureDifferenceBar": 0,
+        "enthalpyDifferenceKJkg": -5.825631888001226e-8,
+        "temperatureDifferenceK": -2.319211489520967e-8,
+        "densityResidual": 1.0624962001274733e-10,
+        "specificEnergyResidualKJkg": -4.4826947487308644e-8
+      },
+      {
+        "p": 3.443307084417116,
+        "h": 1616.9454933048587,
+        "phase": "Superheated vapor",
+        "pressureDifferenceBar": 0,
+        "enthalpyDifferenceKJkg": -6.02556156081846e-8,
+        "temperatureDifferenceK": -2.4101609596982598e-8,
+        "densityResidual": 1.1041640282992462e-10,
+        "specificEnergyResidualKJkg": -4.6299419409479015e-8
+      },
+      {
+        "p": 3.4433070842493367,
+        "h": 1616.9454933052311,
+        "phase": "Superheated vapor",
+        "pressureDifferenceBar": 0,
+        "enthalpyDifferenceKJkg": -6.217078407644294e-8,
+        "temperatureDifferenceK": -2.5011104298755527e-8,
+        "densityResidual": 1.1458302263756085e-10,
+        "specificEnergyResidualKJkg": -4.768844519276172e-8
+      },
+      {
+        "p": 3.443307084417116,
+        "h": 1616.9454933048587,
+        "phase": "Superheated vapor",
+        "pressureDifferenceBar": 0,
+        "enthalpyDifferenceKJkg": -6.02556156081846e-8,
+        "temperatureDifferenceK": -2.4101609596982598e-8,
+        "densityResidual": 1.1041640282992462e-10,
+        "specificEnergyResidualKJkg": -4.6299419409479015e-8
+      },
+      {
+        "p": 3.4437716319622322,
+        "h": 1617.0200825010795,
+        "phase": "Superheated vapor",
+        "pressureDifferenceBar": 0,
+        "enthalpyDifferenceKJkg": 6.447453415603377e-8,
+        "temperatureDifferenceK": 2.5920599000528455e-8,
+        "densityResidual": -1.1875062051129825e-10,
+        "specificEnergyResidualKJkg": 4.9463096729596145e-8
+      },
+      {
+        "p": 3.4437716319622322,
+        "h": 1617.0200825010795,
+        "phase": "Superheated vapor",
+        "pressureDifferenceBar": 0,
+        "enthalpyDifferenceKJkg": 6.447453415603377e-8,
+        "temperatureDifferenceK": 2.5920599000528455e-8,
+        "densityResidual": -1.1875062051129825e-10,
+        "specificEnergyResidualKJkg": 4.9463096729596145e-8
+      },
+      {
+        "p": 3.443771631909818,
+        "h": 1617.0200825008124,
+        "phase": "Superheated vapor",
+        "pressureDifferenceBar": 0,
+        "enthalpyDifferenceKJkg": 6.425966603273991e-8,
+        "temperatureDifferenceK": 2.5011104298755527e-8,
+        "densityResidual": -1.1458383769830992e-10,
+        "specificEnergyResidualKJkg": 4.9774826038628817e-8
+      },
+      {
+        "p": 3.443771631755588,
+        "h": 1617.0200825032937,
+        "phase": "Superheated vapor",
+        "pressureDifferenceBar": 0,
+        "enthalpyDifferenceKJkg": 6.03597527515376e-8,
+        "temperatureDifferenceK": 2.4101609596982598e-8,
+        "densityResidual": -1.1041705488824626e-10,
+        "specificEnergyResidualKJkg": 4.640173756342847e-8
+      },
+      {
+        "p": 3.443771631909818,
+        "h": 1617.0200825008124,
+        "phase": "Superheated vapor",
+        "pressureDifferenceBar": 0,
+        "enthalpyDifferenceKJkg": 6.425966603273991e-8,
+        "temperatureDifferenceK": 2.5011104298755527e-8,
+        "densityResidual": -1.1458383769830992e-10,
+        "specificEnergyResidualKJkg": 4.9774826038628817e-8
+      },
+      {
+        "p": 3.4440255377161773,
+        "h": 1617.0608467848554,
+        "phase": "Superheated vapor",
+        "pressureDifferenceBar": 0,
+        "enthalpyDifferenceKJkg": -6.272557584452443e-8,
+        "temperatureDifferenceK": -2.5011104298755527e-8,
+        "densityResidual": 1.145840007097983e-10,
+        "specificEnergyResidualKJkg": -4.823982635571156e-8
+      },
+      {
+        "p": 3.4440255377161773,
+        "h": 1617.0608467848554,
+        "phase": "Superheated vapor",
+        "pressureDifferenceBar": 0,
+        "enthalpyDifferenceKJkg": -6.272557584452443e-8,
+        "temperatureDifferenceK": -2.5011104298755527e-8,
+        "densityResidual": 1.145840007097983e-10,
+        "specificEnergyResidualKJkg": -4.823982635571156e-8
+      },
+      {
+        "p": 3.4440255376749596,
+        "h": 1617.060846786226,
+        "phase": "Superheated vapor",
+        "pressureDifferenceBar": 0,
+        "enthalpyDifferenceKJkg": -6.44752162770601e-8,
+        "temperatureDifferenceK": -2.5920599000528455e-8,
+        "densityResidual": 1.1875062051346143e-10,
+        "specificEnergyResidualKJkg": -4.9462414608569816e-8
+      },
+      {
+        "p": 3.4440255375059667,
+        "h": 1617.060846787584,
+        "phase": "Superheated vapor",
+        "pressureDifferenceBar": 0,
+        "enthalpyDifferenceKJkg": -6.738764568581246e-8,
+        "temperatureDifferenceK": -2.6830093702301383e-8,
+        "densityResidual": 1.2291707730826022e-10,
+        "specificEnergyResidualKJkg": -5.184847395867109e-8
+      },
+      {
+        "p": 3.4440255376749596,
+        "h": 1617.060846786226,
+        "phase": "Superheated vapor",
+        "pressureDifferenceBar": 0,
+        "enthalpyDifferenceKJkg": -6.44752162770601e-8,
+        "temperatureDifferenceK": -2.5920599000528455e-8,
+        "densityResidual": 1.1875062051346143e-10,
+        "specificEnergyResidualKJkg": -4.9462414608569816e-8
+      },
+      {
+        "p": 3.444069100168511,
+        "h": 1617.0678404323146,
+        "phase": "Superheated vapor",
+        "pressureDifferenceBar": 0,
+        "enthalpyDifferenceKJkg": -6.376194505719468e-8,
+        "temperatureDifferenceK": -2.5011104298755527e-8,
+        "densityResidual": 1.1458416372318526e-10,
+        "specificEnergyResidualKJkg": -4.927619556838181e-8
+      },
+      {
+        "p": 3.444069100168511,
+        "h": 1617.0678404323146,
+        "phase": "Superheated vapor",
+        "pressureDifferenceBar": 0,
+        "enthalpyDifferenceKJkg": -6.376194505719468e-8,
+        "temperatureDifferenceK": -2.5011104298755527e-8,
+        "densityResidual": 1.1458416372318526e-10,
+        "specificEnergyResidualKJkg": -4.927619556838181e-8
+      },
+      {
+        "p": 3.444069100119775,
+        "h": 1617.067840431448,
+        "phase": "Superheated vapor",
+        "pressureDifferenceBar": 0,
+        "enthalpyDifferenceKJkg": -6.334357749437913e-8,
+        "temperatureDifferenceK": -2.5011104298755527e-8,
+        "densityResidual": 1.1458400071142028e-10,
+        "specificEnergyResidualKJkg": -4.885760063189082e-8
+      },
+      {
+        "p": 3.44406909997272,
+        "h": 1617.06784043353,
+        "phase": "Superheated vapor",
+        "pressureDifferenceBar": 0,
+        "enthalpyDifferenceKJkg": -6.677805686194915e-8,
+        "temperatureDifferenceK": -2.6830093702301383e-8,
+        "densityResidual": 1.2291740333446273e-10,
+        "specificEnergyResidualKJkg": -5.12384303874569e-8
+      },
+      {
+        "p": 3.444069100119775,
+        "h": 1617.067840431448,
+        "phase": "Superheated vapor",
+        "pressureDifferenceBar": 0,
+        "enthalpyDifferenceKJkg": -6.334357749437913e-8,
+        "temperatureDifferenceK": -2.5011104298755527e-8,
+        "densityResidual": 1.1458400071142028e-10,
+        "specificEnergyResidualKJkg": -4.885760063189082e-8
+      },
+      {
+        "p": 3.444322577972282,
+        "h": 1617.108533021249,
+        "phase": "Superheated vapor",
+        "pressureDifferenceBar": 0,
+        "enthalpyDifferenceKJkg": -5.8185605666949414e-8,
+        "temperatureDifferenceK": -2.319211489520967e-8,
+        "densityResidual": 1.0625125014611186e-10,
+        "specificEnergyResidualKJkg": -4.475214154808782e-8
+      },
+      {
+        "p": 3.444322577972282,
+        "h": 1617.108533021249,
+        "phase": "Superheated vapor",
+        "pressureDifferenceBar": 0,
+        "enthalpyDifferenceKJkg": -5.8185605666949414e-8,
+        "temperatureDifferenceK": -2.319211489520967e-8,
+        "densityResidual": 1.0625125014611186e-10,
+        "specificEnergyResidualKJkg": -4.475214154808782e-8
+      },
+      {
+        "p": 3.444322577917006,
+        "h": 1617.10853302198,
+        "phase": "Superheated vapor",
+        "pressureDifferenceBar": 0,
+        "enthalpyDifferenceKJkg": -5.9425246945465915e-8,
+        "temperatureDifferenceK": -2.319211489520967e-8,
+        "densityResidual": 1.0625125014772014e-10,
+        "specificEnergyResidualKJkg": -4.5992010200279765e-8
+      },
+      {
+        "p": 3.4443225777930544,
+        "h": 1617.1085330235878,
+        "phase": "Superheated vapor",
+        "pressureDifferenceBar": 0,
+        "enthalpyDifferenceKJkg": -6.217305781319737e-8,
+        "temperatureDifferenceK": -2.5011104298755527e-8,
+        "densityResidual": 1.1458448975635298e-10,
+        "specificEnergyResidualKJkg": -4.768548933498096e-8
+      },
+      {
+        "p": 3.444322577917006,
+        "h": 1617.10853302198,
+        "phase": "Superheated vapor",
+        "pressureDifferenceBar": 0,
+        "enthalpyDifferenceKJkg": -5.9425246945465915e-8,
+        "temperatureDifferenceK": -2.319211489520967e-8,
+        "densityResidual": 1.0625125014772014e-10,
+        "specificEnergyResidualKJkg": -4.5992010200279765e-8
+      }
+    ]
+  },
+  "interpretation": "The PH 38-step inversion is evaluated inside failed Newton residuals. Canonical M/U/V recovery occurs after stage convergence and has distinct density-offset/energy inversion tolerances; these failures happen before that acceptance recovery. Quantization widths are resolution estimates, not universal error bounds or a proof that 1e-12 K thermal closure is impossible."
+}

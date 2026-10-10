@@ -13,7 +13,8 @@ const sum = a => a.reduce((s,v) => s+v,0);
 const positive = (v,label) => { if (!Number.isFinite(v) || v<=0) throw Error(`Positive ${label} required.`); };
 const fields = (o,allowed) => { if (!o || typeof o!=='object' || Array.isArray(o) || Object.keys(o).some(k=>!allowed.includes(k))) throw Error('Unsupported coupled configuration/patch field.'); };
 
-function createCoupledModel(engine, options={}) {
+function createCoupledModel(engine, options={}, observeAttempt=null) {
+  if(observeAttempt!==null&&typeof observeAttempt!=='function')throw Error('Optional diagnostic observer must be a function.');
   fields(options,['method','adaptive','maxStep','minStep','relativeTolerance','massAbsoluteKg','energyAbsoluteKJ','pressureAbsoluteBar','enthalpyAbsoluteKJkg','eventStepSeconds','temperatureAbsoluteK','temperatureScaleK','nonlinearTolerance','thermalResidualK','maxIterations','maxAttempts','trace']);
   const settings = {...Time.adaptiveDefaults,temperatureAbsoluteK:1e-4,temperatureScaleK:50,
     nonlinearTolerance:1e-11,thermalResidualK:1e-12,maxIterations:30,maxAttempts:100000,trace:false,...options};
@@ -105,6 +106,10 @@ function createCoupledModel(engine, options={}) {
     const fluidScales=s.cells.flatMap(c=>[Math.max(.01,c.massKg),Math.max(1,Math.abs(c.internalEnergyKJ))]);
     const variables=s.cells.flatMap((_,section)=>[{kind:'pressure',section},{kind:'enthalpy',section}]).concat(s.spec.thermal.nodes.map(n=>({kind:'thermal-energy',capacityKJK:n.capacityKJK})));
     const initial=guess.states.flatMap(v=>[v.p,v.h]).concat(guess.energies.map((e,i)=>e-s.energies[i]));
+    if(work.diagnostics)work.diagnosticContext={startSeconds:s.seconds,stageSeconds:dt,stageWeight:weight,
+      labels:s.cells.flatMap((_,i)=>[`refrigerant-${i}:mass`,`refrigerant-${i}:energy`]).concat(s.spec.thermal.nodes.map(n=>n.id+':energy')),
+      physicalScales:fluidScales.concat(s.spec.thermal.nodes.map(n=>n.capacityKJK*settings.thermalResidualK/settings.nonlinearTolerance)),
+      thermalCapacitiesKJK:s.spec.thermal.nodes.map(n=>n.capacityKJK)};
     // A thermal-column probe leaves PH unchanged. Cache exact PH pairs within
     // this stage only; never reuse properties across changed coordinates/stages.
     const properties=new Map();
@@ -171,6 +176,18 @@ function createCoupledModel(engine, options={}) {
   }
   function domainEvidence(s,dt,cause) {
     const evidence={originalCause:cause.message,nonlinearResidual:cause.nonlinearResidual??null,trial:cause.evidence||cause.domainCause?.evidence||null,confirmed:false};
+    // An exact boundary with an outward derivative already establishes that
+    // no positive interval is supported. Recheck that proof at the accepted
+    // state independently of the retry floor; arbitrary PH probes do not qualify.
+    if(cause.evidence?.source==='thermal'&&cause.evidence.stage==='initial-direction') {
+      const t=temperatures(s.spec,s.energies,'exact-boundary-confirmation');
+      const r=evaluate(s.spec,s.cells.map(coordinates),s.energies);
+      const i=s.spec.thermal.nodes.findIndex(n=>n.id===cause.evidence.node);
+      if(i>=0&&((t[i]===s.spec.thermal.domainK[0]&&r.thermalRates[i]<0)||(t[i]===s.spec.thermal.domainK[1]&&r.thermalRates[i]>0))) {
+        return {...evidence,confirmed:true,source:'thermal',node:s.spec.thermal.nodes[i].id,
+          confirmation:'exact-boundary-outward-direction',temperatureK:t[i],rateKS:r.thermalRates[i]/s.spec.thermal.nodes[i].capacityKJK};
+      }
+    }
     // A branch-aware Newton failure need not encounter an unsupported PH probe.
     // At exhausted small intervals independently test the conserved direction,
     // regardless of the numerical failure label; evidence alone decides domain.
@@ -195,7 +212,10 @@ function createCoupledModel(engine, options={}) {
       if(event&&event.seconds===s.seconds){applyBoundary(s,event.patch,true);s.scheduleIndex++;dt=s.nextStepSeconds;continue;}
       const boundary=Math.min(target,event?.seconds??Infinity),remaining=boundary-s.seconds;dt=Math.min(dt,remaining);
       if(++attempts>settings.maxAttempts){s.stop={kind:'solver',seconds:s.seconds,message:'Coupled attempt budget exhausted.',evidence:{maxAttempts:settings.maxAttempts}};break;}
-      const work={evaluations:0,iterations:0,linearSolves:0};let pieces,error=0,reason=null;
+      const work={evaluations:0,iterations:0,linearSolves:0};
+      if(observeAttempt)work.diagnostics=[];
+      const diagnosticStartSeconds=s.seconds,diagnosticTrialSeconds=dt;
+      let pieces,error=0,reason=null,diagnosticFailure=null;
       try {
         const coarse=trial(s,dt,work);pieces=[[coarse,dt]];
         if(settings.adaptive){
@@ -206,6 +226,7 @@ function createCoupledModel(engine, options={}) {
           if(error>1)reason='accuracy';else if(crossings.length&&dt/2>settings.eventStepSeconds)reason='event';
         }
       } catch(cause) {
+        diagnosticFailure={kind:cause.faultKind||'solver',message:cause.message};
         s.rejectedSteps++;if(cause.faultKind==='domain'||cause.domainCause)s.domainRejectedSteps++;
         if(settings.trace)s.rejectionTrace.push({seconds:s.seconds,trialSeconds:dt,kind:cause.faultKind||'solver',message:cause.message,nonlinearResidual:cause.nonlinearResidual??null,evidence:clone(cause.evidence||cause.domainCause||{})});
         const next=dt/2;
@@ -214,7 +235,14 @@ function createCoupledModel(engine, options={}) {
           s.stop={kind:evidence.confirmed?'domain':'solver',seconds:s.seconds,attemptedStepSeconds:dt,message:cause.message,evidence};break;
         }
         dt=next;continue;
-      } finally {s.attemptedResidualEvaluations+=work.evaluations;s.attemptedIterations+=work.iterations;s.attemptedLinearSolves+=work.linearSolves;}
+      } finally {
+        s.attemptedResidualEvaluations+=work.evaluations;s.attemptedIterations+=work.iterations;s.attemptedLinearSolves+=work.linearSolves;
+        // Detached diagnostic data cannot change candidates or numerical settings.
+        // Observer errors propagate outside the solver rather than becoming probes.
+        if(observeAttempt)observeAttempt({startSeconds:diagnosticStartSeconds,trialSeconds:diagnosticTrialSeconds,failure:diagnosticFailure,
+          temporalError:error,rejectionReason:reason,evaluations:work.evaluations,iterations:work.iterations,
+          linearSolves:work.linearSolves,events:work.diagnostics});
+      }
       if(reason){
         s.rejectedSteps++;if(reason==='accuracy')s.accuracyRejectedSteps++;else s.eventRejectedSteps++;
         if(settings.trace)s.rejectionTrace.push({seconds:s.seconds,trialSeconds:dt,kind:reason,error});
