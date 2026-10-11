@@ -37,15 +37,41 @@ function exactThermalColumns(spec, dt, weight, scales) {
     return node.id===`tube-${section}`?-tau*spec.conductancesKWK[section]/node.capacityKJK/scales[row]:0;
   }));
 }
+// A2 proposal memory only: no physical boundary, acceptance or retry decisions.
+function createGrowthHistory() {
+  return {ceilingSeconds:null,pendingFailure:false,successes:0,lastFailedSeconds:null,lastRecoverySeconds:null,
+    nonlinearFailures:0,limitedProposals:0,releases:0,resets:{}};
+}
+function resetGrowth(history, reason) {
+  history.ceilingSeconds=null;history.pendingFailure=false;history.successes=0;
+  history.lastFailedSeconds=null;history.lastRecoverySeconds=null;
+  history.resets[reason]=(history.resets[reason]||0)+1;
+}
+function noteNonlinearFailure(history, dt) {
+  history.pendingFailure=true;history.successes=0;history.lastFailedSeconds=dt;history.nonlinearFailures++;
+}
+function recoveredGrowth(history, dt, proposal, maxStep) {
+  if(history.pendingFailure){
+    history.ceilingSeconds=dt;history.lastRecoverySeconds=dt;history.pendingFailure=false;history.successes=0;
+  }else if(history.ceilingSeconds!==null&&dt>=history.ceilingSeconds*(1-1e-12)){
+    // Output/event clipping and temporally limited small steps do not earn growth.
+    if(++history.successes===4){history.ceilingSeconds=Math.min(maxStep,1.25*history.ceilingSeconds);history.successes=0;history.releases++;}
+  }
+  if(history.ceilingSeconds===maxStep){resetGrowth(history,'normal-growth');return proposal;}
+  if(history.ceilingSeconds!==null&&proposal>history.ceilingSeconds){history.limitedProposals++;return history.ceilingSeconds;}
+  return proposal;
+}
 function createCoupledModel(engine, options={}, observeAttempt=null) {
   if(observeAttempt!==null&&typeof observeAttempt!=='function')throw Error('Optional diagnostic observer must be a function.');
-  fields(options,['method','adaptive','maxStep','minStep','relativeTolerance','massAbsoluteKg','energyAbsoluteKJ','pressureAbsoluteBar','enthalpyAbsoluteKJkg','eventStepSeconds','temperatureAbsoluteK','temperatureScaleK','nonlinearTolerance','thermalResidualK','maxIterations','maxAttempts','trace','thermalJacobian']);
+  fields(options,['method','adaptive','maxStep','minStep','relativeTolerance','massAbsoluteKg','energyAbsoluteKJ','pressureAbsoluteBar','enthalpyAbsoluteKJkg','eventStepSeconds','temperatureAbsoluteK','temperatureScaleK','nonlinearTolerance','thermalResidualK','maxIterations','maxAttempts','trace','thermalJacobian','timestepGrowth']);
   if(options.thermalJacobian!==undefined&&!['finite-difference','exact'].includes(options.thermalJacobian))throw Error('Invalid experimental thermal Jacobian selection.');
+  if(options.timestepGrowth!==undefined&&!['original','failure-aware'].includes(options.timestepGrowth))throw Error('Invalid experimental timestep growth selection.');
   const settings = {...Time.adaptiveDefaults,temperatureAbsoluteK:1e-4,temperatureScaleK:50,
     nonlinearTolerance:1e-11,thermalResidualK:1e-12,maxIterations:30,maxAttempts:100000,trace:false,...options};
   for (const key of ['maxStep','minStep','relativeTolerance','massAbsoluteKg','energyAbsoluteKJ','pressureAbsoluteBar','enthalpyAbsoluteKJkg','eventStepSeconds','temperatureAbsoluteK','temperatureScaleK','nonlinearTolerance','thermalResidualK']) positive(settings[key],key);
   if (settings.maxStep<settings.minStep || !['tr-bdf2','backward-euler'].includes(settings.method) || typeof settings.adaptive!=='boolean' || typeof settings.trace!=='boolean' || !Number.isInteger(settings.maxIterations) || settings.maxIterations<1 || !Number.isInteger(settings.maxAttempts) || settings.maxAttempts<1) throw Error('Invalid coupled numerical settings.');
   const thermo = createThermodynamics(engine), order = settings.method==='tr-bdf2' ? 2 : 1;
+  const failureAware=settings.adaptive&&settings.timestepGrowth==='failure-aware';
   function fluidCall(fn, section, stage) {
     try { return fn(); } catch (cause) {
       cause.evidence = {...cause.evidence,source:'refrigerant',section,stage}; throw cause;
@@ -105,7 +131,8 @@ function createCoupledModel(engine, options={}, observeAttempt=null) {
     return {model:'isolated-five-section-coupled-dx-stage2a',spec,cells,energies,initialCells:clone(cells),initialEnergies:[...energies],seconds:0,scheduleIndex:0,
       ledger:{faces:fluid.connections.map(()=>({massKg:0,energyKJ:0})),tubeRefrigerantKJ:Array(5).fill(0),thermalLinksKJ:thermal.links.map(()=>0),thermalNodesKJ:energies.map(()=>0),airLoadKJ:0,boundaryMassKg:0,boundaryEnthalpyKJ:0},
       acceptedSteps:0,rejectedSteps:0,accuracyRejectedSteps:0,eventRejectedSteps:0,domainRejectedSteps:0,attemptedResidualEvaluations:0,attemptedIterations:0,attemptedLinearSolves:0,
-      nextStepSeconds:settings.maxStep,minAcceptedStepSeconds:null,maxAcceptedStepSeconds:0,lastTimeError:null,lastResidual:null,events:[],boundaryEvents:[],trace:[],rejectionTrace:[],stop:null};
+      nextStepSeconds:settings.maxStep,minAcceptedStepSeconds:null,maxAcceptedStepSeconds:0,lastTimeError:null,lastResidual:null,events:[],boundaryEvents:[],trace:[],rejectionTrace:[],stop:null,
+      ...(failureAware?{growthHistory:createGrowthHistory()}: {})};
   }
   function evaluate(spec, states, energies) {
     const t=temperatures(spec,energies,'rate'),ix=new Map(spec.thermal.nodes.map((n,i)=>[n.id,i]));
@@ -199,6 +226,7 @@ function createCoupledModel(engine, options={}, observeAttempt=null) {
   function applyBoundary(s,patch,scheduled) {
     const next=patchSpec(s.spec,patch);
     s.spec=next;s.nextStepSeconds=Math.min(.05,settings.maxStep);
+    if(failureAware)resetGrowth(s.growthHistory,scheduled?'scheduled-boundary':'manual-boundary');
     s.boundaryEvents.push({seconds:s.seconds,scheduled,patch:clone(patch)});
   }
   function domainEvidence(s,dt,cause) {
@@ -254,6 +282,12 @@ function createCoupledModel(engine, options={}, observeAttempt=null) {
         }
       } catch(cause) {
         diagnosticFailure={kind:cause.faultKind||'solver',message:cause.message};
+        if(failureAware){
+          // Learn only actual Newton nonconvergence without a domain-probe cause.
+          // Recovery/property/other errors retain their original retry/stop rules.
+          if(cause.faultKind==='solver'&&Number.isFinite(cause.nonlinearResidual)&&!cause.domainCause)noteNonlinearFailure(s.growthHistory,dt);
+          else resetGrowth(s.growthHistory,cause.faultKind==='domain'||cause.domainCause?'domain-rejection':'other-failure');
+        }
         s.rejectedSteps++;if(cause.faultKind==='domain'||cause.domainCause)s.domainRejectedSteps++;
         if(settings.trace)s.rejectionTrace.push({seconds:s.seconds,trialSeconds:dt,kind:cause.faultKind||'solver',message:cause.message,nonlinearResidual:cause.nonlinearResidual??null,evidence:clone(cause.evidence||cause.domainCause||{})});
         const next=dt/2;
@@ -271,13 +305,14 @@ function createCoupledModel(engine, options={}, observeAttempt=null) {
           linearSolves:work.linearSolves,events:work.diagnostics});
       }
       if(reason){
+        if(failureAware){if(reason==='event')resetGrowth(s.growthHistory,'event-refinement');else s.growthHistory.successes=0;}
         s.rejectedSteps++;if(reason==='accuracy')s.accuracyRejectedSteps++;else s.eventRejectedSteps++;
         if(settings.trace)s.rejectionTrace.push({seconds:s.seconds,trialSeconds:dt,kind:reason,error});
         const next=reason==='event'?Math.min(dt/2,2*settings.eventStepSeconds):dt*Time.factor(error,order,false);
         if(next<settings.minStep||s.seconds+next===s.seconds){s.stop={kind:'accuracy',seconds:s.seconds,attemptedStepSeconds:dt,message:'Coupled temporal tolerance cannot be met above minimum step.',evidence:{error,reason}};break;}
         dt=next;continue;
       }
-      const start=s.seconds;let offset=0;
+      const start=s.seconds,eventCount=s.events.length;let offset=0;
       // Prepare both halves against detached ledgers/events. Even an unexpected
       // exception while preparing the second half cannot install the first half.
       const accepted={...s,ledger:clone(s.ledger),events:[...s.events]};
@@ -285,7 +320,12 @@ function createCoupledModel(engine, options={}, observeAttempt=null) {
       Object.assign(s,accepted);
       s.seconds=dt===remaining?boundary:start+dt;s.lastTimeError=error;
       if(settings.trace)s.trace.push({startSeconds:start,endSeconds:s.seconds,trialSeconds:dt,error});
-      dt=Math.min(settings.maxStep,settings.adaptive?dt*Time.factor(error,order,true):settings.maxStep);s.nextStepSeconds=dt;
+      const proposal=Math.min(settings.maxStep,settings.adaptive?dt*Time.factor(error,order,true):settings.maxStep);
+      if(failureAware){
+        if(s.events.length>eventCount){resetGrowth(s.growthHistory,'phase-event');dt=proposal;}
+        else dt=recoveredGrowth(s.growthHistory,dt,proposal,settings.maxStep);
+      }else dt=proposal;
+      s.nextStepSeconds=dt;
     }
     if(!s.stop){const e=s.spec.schedule[s.scheduleIndex];if(e&&e.seconds===s.seconds){applyBoundary(s,e.patch,true);s.scheduleIndex++;}}
     return record(s);
@@ -310,8 +350,9 @@ function createCoupledModel(engine, options={}, observeAttempt=null) {
       energyReferenceK:s.spec.thermal.energyReferenceK,acceptedSteps:s.acceptedSteps,rejectedSteps:s.rejectedSteps,accuracyRejectedSteps:s.accuracyRejectedSteps,eventRejectedSteps:s.eventRejectedSteps,domainRejectedSteps:s.domainRejectedSteps,
       attemptedResidualEvaluations:s.attemptedResidualEvaluations,attemptedIterations:s.attemptedIterations,attemptedLinearSolves:s.attemptedLinearSolves,
       minAcceptedStepSeconds:s.minAcceptedStepSeconds,maxAcceptedStepSeconds:s.maxAcceptedStepSeconds,lastTimeError:s.lastTimeError,lastResidual:s.lastResidual,
-      events:s.events,boundaryEvents:s.boundaryEvents,trace:s.trace,rejectionTrace:s.rejectionTrace,stop:s.stop});
+      events:s.events,boundaryEvents:s.boundaryEvents,trace:s.trace,rejectionTrace:s.rejectionTrace,stop:s.stop,
+      ...(failureAware?{growthHistory:s.growthHistory}: {})});
   }
   return {create,trial,advance,update,record,settings};
 }
-module.exports={createCoupledModel,exactThermalColumns};
+module.exports={createCoupledModel,exactThermalColumns,createGrowthHistory,resetGrowth,noteNonlinearFailure,recoveredGrowth};
