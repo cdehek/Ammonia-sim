@@ -1,0 +1,17 @@
+{
+  "candidateSHA256": "fe646584649da33f7467a430dd15cf28c46b06c2a1532c4a6e171c89dcfc8808",
+  "codeSHA256": {
+    "validate.py": "249e19f35a3a04bc981a29673189793160ec1e4f7484992e776441c626f89a51",
+    "certify.py": "664bace2ecefc0b22d525a08b7744596ec5898cedabf4f3f8f83fcbcba7682da",
+    "model.py": "de0e66b91998889e429484888e9f191583b7911ab5e7d587ddd0474cf3b136c0",
+    "fit.py": "a21977e6098aa4fd2d670886fc7056a7ae228c5fe7a4e163c854cc5e9505b46a"
+  },
+  "validationStartUnix": 1791833469.673373,
+  "holdoutDesign": "Each cell: pressure fractions .07,.25,.5,.75,.93; offsets 1e-6,.001,.01,.1,.25,.5,.75,.99,1,1.25,1.5,1.75,1.999999 as supported; row interfaces and boundaries; both saved high PH states and low inventories.",
+  "fitNotRetunedAfterEOS": true,
+  "limits": {
+    "pressurePaStrict": 10,
+    "temperatureKStrict": 0.01,
+    "enthalpyKJkgStrict": 0.05
+  }
+}

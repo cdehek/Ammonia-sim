@@ -1,0 +1,68 @@
+{
+  "candidateSHA256": "fe646584649da33f7467a430dd15cf28c46b06c2a1532c4a6e171c89dcfc8808",
+  "summary": {
+    "low": {
+      "holdoutCount": 211,
+      "recoverySuccess": 178,
+      "recoveryFailures": 33,
+      "maxRecoveryErrors": {
+        "pressurePa": 331.2790667583498,
+        "T": 3.8635508843753996e-05,
+        "h": 0.00046818695071237926
+      },
+      "maxPTerrors": {
+        "h": 1.2813586636184482e-07,
+        "rho": 9.204498940107442e-05,
+        "u": 1.2227755519234051e-07,
+        "s": 1.9282117569296986e-09,
+        "cp": 8.606315926584784e-07,
+        "cv": 2.3431125890697104,
+        "kappa": 3.725209567134651e-05
+      },
+      "pressureGatePass": false,
+      "temperatureGatePass": true,
+      "enthalpyGatePass": true,
+      "sampledStabilityFailures": 0,
+      "maxCondition": 10026854.34321886
+    },
+    "high": {
+      "holdoutCount": 53,
+      "recoverySuccess": 30,
+      "recoveryFailures": 23,
+      "maxRecoveryErrors": {
+        "pressurePa": 6017.647660874559,
+        "T": 0.002694984072547868,
+        "h": 0.011365653291022682
+      },
+      "maxPTerrors": {
+        "h": 0.000845216629272727,
+        "rho": 0.008612132617145107,
+        "u": 0.0007798932754212728,
+        "s": 2.4536011284936876e-06,
+        "cp": 0.003477262422301841,
+        "cv": 1.8155740559207856,
+        "kappa": 0.00016353216313078978
+      },
+      "pressureGatePass": false,
+      "temperatureGatePass": true,
+      "enthalpyGatePass": true,
+      "sampledStabilityFailures": 0,
+      "maxCondition": 2661.4076782007214
+    }
+  },
+  "classification": "Chosen construction rejected",
+  "qualified": false,
+  "versions": {
+    "Python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "CoolProp": "7.2.0",
+    "mpmath": "1.3.0"
+  },
+  "strictLimits": {
+    "pressurePaStrict": 10,
+    "temperatureKStrict": 0.01,
+    "enthalpyKJkgStrict": 0.05
+  },
+  "noCoupledTrajectoryQualification": true
+}

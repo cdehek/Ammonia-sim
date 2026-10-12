@@ -1,0 +1,214 @@
+{
+  "low": {
+    "stabilityCertified": true,
+    "uniqueCanonicalRecoveryOnImage": true,
+    "method": "exact rational Bernstein bounds on a padded enclosing rectangle or 64x8 physical boxes covering the curved liquid patch",
+    "curvedCoverBoxes": 512,
+    "coarseEnclosingRectangleBounds": {
+      "g": [
+        -5.876454231645392,
+        -4.499773707915136
+      ],
+      "gp": [
+        0.14083958026927917,
+        0.14153063753391787
+      ],
+      "gt": [
+        -0.4943033572147478,
+        -0.4347523512511838
+      ],
+      "gpp": [
+        -1.1408972270747814e-05,
+        2.0474551270284122e-05
+      ],
+      "gpt": [
+        0.00023152966982201975,
+        0.0002353372702504405
+      ],
+      "gtt": [
+        -0.020244235454649023,
+        -0.02002269139625154
+      ],
+      "det": [
+        -4.6512920984065884e-07,
+        1.7036188898806006e-07
+      ]
+    },
+    "certifiedDomain": {
+      "pressure": [
+        0.29999999999999993,
+        0.3183890254214986
+      ],
+      "subcooling": [
+        0,
+        2
+      ]
+    },
+    "polynomialBounds": {
+      "g": [
+        -5.8738922875767825,
+        -4.502323143793835
+      ],
+      "gp": [
+        0.1408395869052764,
+        0.141530631091811
+      ],
+      "gt": [
+        -0.49429910080727263,
+        -0.43475654588264384
+      ],
+      "gpp": [
+        -1.098778022808465e-05,
+        -2.9413321346821296e-06
+      ],
+      "gpt": [
+        0.00023189135774663827,
+        0.00023533727025042684
+      ],
+      "gtt": [
+        -0.020244235454649057,
+        -0.020022691396251506
+      ],
+      "det": [
+        4.113281413130469e-09,
+        1.6691231409466414e-07
+      ]
+    },
+    "binary64EvaluationAbsoluteBounds": {
+      "g": 8.963899505722057e-14,
+      "gp": 1.582955852975466e-15,
+      "gt": 6.487725973322437e-15,
+      "gpp": 2.4467695986164773e-18,
+      "gpt": 2.713738173313785e-18,
+      "gtt": 2.285018560949341e-16,
+      "det": 5.3320995601913774e-20
+    },
+    "saturationSlopeBounds": [
+      50.81417824309355,
+      53.390438829890634
+    ],
+    "saturationTBounds": [
+      218.10399084,
+      219.06166673000004
+    ],
+    "rectangleContainsLiquidDomain": true,
+    "positiveMargins": {
+      "volume": 0.001408395869052764,
+      "kappa": 2.0782300707569704e-05,
+      "cp": 4.326983518087682,
+      "cv": 0.08089864471019172,
+      "hessianDeterminant": 4.113281413130469e-09,
+      "canonicalJacobianAbsolute": 0.004437622182908975,
+      "isochoricUP": 0.0037771175295761602,
+      "boundaryVolumeSlopeTimes100": 0.011772381005342567
+    },
+    "noExistenceClaimOutsideCanonicalImage": true,
+    "seconds": 20.208885640000005
+  },
+  "high": {
+    "stabilityCertified": true,
+    "uniqueCanonicalRecoveryOnImage": true,
+    "method": "exact rational Bernstein bounds on a padded enclosing rectangle or 64x8 physical boxes covering the curved liquid patch",
+    "curvedCoverBoxes": 0,
+    "coarseEnclosingRectangleBounds": {
+      "g": [
+        -197.28634275528273,
+        -192.38100019869236
+      ],
+      "gp": [
+        0.1884345801684859,
+        0.18988115477152528
+      ],
+      "gt": [
+        -2.586256919224009,
+        -2.556180864623277
+      ],
+      "gpp": [
+        -0.00010085386052773199,
+        -4.301118607051296e-05
+      ],
+      "gpt": [
+        0.000733851871503815,
+        0.0007712991441510127
+      ],
+      "gtt": [
+        -0.015929155143267537,
+        -0.015884036805193267
+      ],
+      "det": [
+        1.1691359175013952e-07,
+        1.0115998663141716e-06
+      ]
+    },
+    "certifiedDomain": {
+      "pressure": [
+        32.33098463554795,
+        32.978523635039224
+      ],
+      "subcooling": [
+        0,
+        1
+      ]
+    },
+    "polynomialBounds": {
+      "g": [
+        -197.28634275528273,
+        -192.38100019869236
+      ],
+      "gp": [
+        0.1884345801684859,
+        0.18988115477152528
+      ],
+      "gt": [
+        -2.586256919224009,
+        -2.556180864623277
+      ],
+      "gpp": [
+        -0.00010085386052773199,
+        -4.301118607051296e-05
+      ],
+      "gpt": [
+        0.000733851871503815,
+        0.0007712991441510127
+      ],
+      "gtt": [
+        -0.015929155143267537,
+        -0.015884036805193267
+      ],
+      "det": [
+        1.1691359175013952e-07,
+        1.0115998663141716e-06
+      ]
+    },
+    "binary64EvaluationAbsoluteBounds": {
+      "g": 2.3911167874061035e-12,
+      "gp": 2.1689592290881373e-15,
+      "gt": 2.994424033112796e-14,
+      "gpp": 3.575986154791832e-18,
+      "gpt": 9.777220265166183e-18,
+      "gtt": 1.7860412189210941e-16,
+      "det": 9.005767679423787e-20
+    },
+    "saturationSlopeBounds": [
+      1.3185467828900108,
+      1.3382442347246195
+    ],
+    "saturationTBounds": [
+      342.09709942999996,
+      342.9572504300001
+    ],
+    "rectangleContainsLiquidDomain": true,
+    "positiveMargins": {
+      "volume": 0.0018843458016848593,
+      "kappa": 0.0002265163497781874,
+      "cp": 5.417998881490788,
+      "cv": 0.3954125982014362,
+      "hessianDeterminant": 1.1691359175013952e-07,
+      "canonicalJacobianAbsolute": 0.11060615640061185,
+      "isochoricUP": 0.05170352817363931,
+      "boundaryVolumeSlopeTimes100": 0.000866764163761437
+    },
+    "noExistenceClaimOutsideCanonicalImage": true,
+    "seconds": 0.19982168300003877
+  }
+}

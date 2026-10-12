@@ -1,0 +1,50 @@
+{
+  "rows": [
+    {
+      "name": "saved-high-initial",
+      "originalInventory": {
+        "rho": 527.776812296707,
+        "u": 680.5928019010911
+      },
+      "independentRecovery": {
+        "pressureInterval": [
+          32.576216827165986,
+          32.97852363503923
+        ],
+        "energyEndpointResiduals": [
+          0.001349493190600348,
+          0.07055906510013217
+        ],
+        "status": "outside-energy-image"
+      }
+    },
+    {
+      "name": "saved-high-endpoint",
+      "originalInventory": {
+        "rho": 527.776812303384,
+        "u": 680.6302266057721
+      },
+      "independentRecovery": {
+        "pressureInterval": [
+          32.57621682459776,
+          32.97852363503923
+        ],
+        "energyEndpointResiduals": [
+          -0.03607522937961583,
+          0.03313434327002634
+        ],
+        "status": "unique-in-domain",
+        "state": {
+          "rho": 527.776812303384,
+          "u": 680.6302266057721,
+          "h": 686.8412504736345,
+          "T": 342.4405848236538,
+          "p": 32.780343781206504
+        },
+        "energyResidual": -1.2154326714572542e-63,
+        "densityResidual": -1.2154326714572542e-63,
+        "subcoolingK": 0.2547670948226415
+      }
+    }
+  ]
+}

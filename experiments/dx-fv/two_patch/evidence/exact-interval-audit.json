@@ -1,0 +1,280 @@
+{
+  "arithmetic": "fractions.Fraction; exact for exported binary64 model and decimal source rounding intervals",
+  "rows": [
+    {
+      "patch": "low",
+      "row": 0,
+      "z": 0,
+      "phase": "liquid",
+      "deviations": {
+        "T": 2.850162893382159e-14,
+        "h": 4.9000126649782614e-08,
+        "s": 2.2551000828781066e-08,
+        "rho": -4.8999712178958735e-08
+      },
+      "exactRationalIntervalsPass": true
+    },
+    {
+      "patch": "low",
+      "row": 0,
+      "z": 1,
+      "phase": "liquid",
+      "deviations": {
+        "T": 2.850162893382159e-14,
+        "h": -3.4498824201829906e-08,
+        "s": -1.43193140654013e-08,
+        "rho": 4.8998721105214364e-08
+      },
+      "exactRationalIntervalsPass": true
+    },
+    {
+      "patch": "low",
+      "row": 0,
+      "z": 2,
+      "phase": "liquid",
+      "deviations": {
+        "T": 2.850162893382159e-14,
+        "h": -2.4642052355446973e-09,
+        "s": 1.2515248252320677e-08,
+        "rho": -4.899688714594949e-08
+      },
+      "exactRationalIntervalsPass": true
+    },
+    {
+      "patch": "low",
+      "row": 0,
+      "phase": "vapor-boundary",
+      "deviations": {
+        "h": 2.385280940339984e-10,
+        "s": 2.0877651303412126e-08,
+        "rho": 9.712089830973997e-12
+      },
+      "exactRationalIntervalsPass": true
+    },
+    {
+      "patch": "low",
+      "row": 1,
+      "z": 0,
+      "phase": "liquid",
+      "deviations": {
+        "T": 7.92729871665499e-15,
+        "h": 3.7352470409115564e-08,
+        "s": 4.309931323141351e-08,
+        "rho": 4.8999641851251664e-08
+      },
+      "exactRationalIntervalsPass": true
+    },
+    {
+      "patch": "low",
+      "row": 1,
+      "z": 1,
+      "phase": "liquid",
+      "deviations": {
+        "T": 7.92729871665499e-15,
+        "h": -4.899984961867661e-08,
+        "s": -1.3013467897081252e-09,
+        "rho": -3.329800473082256e-08
+      },
+      "exactRationalIntervalsPass": true
+    },
+    {
+      "patch": "low",
+      "row": 1,
+      "z": 2,
+      "phase": "liquid",
+      "deviations": {
+        "T": 7.92729871665499e-15,
+        "h": 4.900013246419077e-08,
+        "s": 4.8957055646427064e-08,
+        "rho": 4.899838539334326e-08
+      },
+      "exactRationalIntervalsPass": true
+    },
+    {
+      "patch": "low",
+      "row": 1,
+      "phase": "vapor-boundary",
+      "deviations": {
+        "h": -2.6857039144502473e-10,
+        "s": -1.0949066172056212e-08,
+        "rho": 7.652411082799367e-12
+      },
+      "exactRationalIntervalsPass": true
+    },
+    {
+      "patch": "low",
+      "row": 2,
+      "z": 0,
+      "phase": "liquid",
+      "deviations": {
+        "T": -6.076429453671951e-15,
+        "h": 4.9000142005422746e-08,
+        "s": -3.9606977720226624e-08,
+        "rho": -4.899815291479762e-08
+      },
+      "exactRationalIntervalsPass": true
+    },
+    {
+      "patch": "low",
+      "row": 2,
+      "z": 1,
+      "phase": "liquid",
+      "deviations": {
+        "T": -6.076429453671951e-15,
+        "h": 8.471655212799489e-09,
+        "s": 1.6244900869564082e-08,
+        "rho": -4.899930046124321e-08
+      },
+      "exactRationalIntervalsPass": true
+    },
+    {
+      "patch": "low",
+      "row": 2,
+      "z": 2,
+      "phase": "liquid",
+      "deviations": {
+        "T": -6.076429453671951e-15,
+        "h": 4.6415589130585734e-08,
+        "s": -4.2888403404702415e-09,
+        "rho": 4.899922126332605e-08
+      },
+      "exactRationalIntervalsPass": true
+    },
+    {
+      "patch": "low",
+      "row": 2,
+      "phase": "vapor-boundary",
+      "deviations": {
+        "h": 7.540224434362761e-10,
+        "s": 3.8306090684125636e-08,
+        "rho": 9.98372691665458e-12
+      },
+      "exactRationalIntervalsPass": true
+    },
+    {
+      "patch": "low",
+      "row": 3,
+      "z": 0,
+      "phase": "liquid",
+      "deviations": {
+        "T": 1.8819543193445518e-14,
+        "h": -4.8999844750357985e-08,
+        "s": 3.3185835249674794e-08,
+        "rho": 4.899837170007797e-08
+      },
+      "exactRationalIntervalsPass": true
+    },
+    {
+      "patch": "low",
+      "row": 3,
+      "z": 1,
+      "phase": "liquid",
+      "deviations": {
+        "T": 1.8819543193445518e-14,
+        "h": 4.670142688161902e-09,
+        "s": -2.3360262808252047e-09,
+        "rho": -4.899928575055115e-08
+      },
+      "exactRationalIntervalsPass": true
+    },
+    {
+      "patch": "low",
+      "row": 3,
+      "z": 2,
+      "phase": "liquid",
+      "deviations": {
+        "T": 1.8819543193445518e-14,
+        "h": 4.9000130957256184e-08,
+        "s": 1.268977381142403e-08,
+        "rho": 4.8998812343752725e-08
+      },
+      "exactRationalIntervalsPass": true
+    },
+    {
+      "patch": "low",
+      "row": 3,
+      "phase": "vapor-boundary",
+      "deviations": {
+        "h": -2.248594064230994e-09,
+        "s": -3.960210445261689e-08,
+        "rho": -9.86091999191953e-12
+      },
+      "exactRationalIntervalsPass": true
+    },
+    {
+      "patch": "high",
+      "row": 236,
+      "z": 0,
+      "phase": "liquid",
+      "deviations": {
+        "T": -7.721487024638062e-15,
+        "h": 4.900001319734623e-08,
+        "s": -1.7050104202147606e-08,
+        "rho": -4.900020603409511e-08
+      },
+      "exactRationalIntervalsPass": true
+    },
+    {
+      "patch": "high",
+      "row": 236,
+      "z": 1,
+      "phase": "liquid",
+      "deviations": {
+        "T": -7.721487024638062e-15,
+        "h": -4.900008173433825e-08,
+        "s": -2.277714168847623e-08,
+        "rho": 4.899996976664214e-08
+      },
+      "exactRationalIntervalsPass": true
+    },
+    {
+      "patch": "high",
+      "row": 236,
+      "phase": "vapor-boundary",
+      "deviations": {
+        "h": -9.58796983294598e-09,
+        "s": -3.013394481682038e-08,
+        "rho": 1.399439704067201e-09
+      },
+      "exactRationalIntervalsPass": true
+    },
+    {
+      "patch": "high",
+      "row": 237,
+      "z": 0,
+      "phase": "liquid",
+      "deviations": {
+        "T": 2.262755731313519e-14,
+        "h": -4.899999314844987e-08,
+        "s": 8.69962020364691e-09,
+        "rho": 4.8999999152620354e-08
+      },
+      "exactRationalIntervalsPass": true
+    },
+    {
+      "patch": "high",
+      "row": 237,
+      "z": 1,
+      "phase": "liquid",
+      "deviations": {
+        "T": 2.262755731313519e-14,
+        "h": 4.900000124786709e-08,
+        "s": 2.3516055885216138e-08,
+        "rho": -4.900018407562452e-08
+      },
+      "exactRationalIntervalsPass": true
+    },
+    {
+      "patch": "high",
+      "row": 237,
+      "phase": "vapor-boundary",
+      "deviations": {
+        "h": 1.5827444040406773e-08,
+        "s": 3.302256175300699e-08,
+        "rho": -1.5989615640056827e-09
+      },
+      "exactRationalIntervalsPass": true
+    }
+  ],
+  "allPass": true
+}
