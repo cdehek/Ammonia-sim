@@ -1,0 +1,873 @@
+{
+  "schemaVersion": 1,
+  "status": "UNQUALIFIED WIP RESEARCH PRESERVATION; not a completed milestone",
+  "repository": "cdehek/Ammonia-sim",
+  "wipBranch": "wip/dx-fv-stage2b-property-research-20261012",
+  "acceptedBranch": "experimental/dx-fv-stage-3",
+  "acceptedA2SHA": "be9eb35a4ddf5098e685182f8104685127c6a6ee",
+  "acceptedCI": {
+    "conclusion": "success",
+    "head_branch": "experimental/dx-fv-stage-3",
+    "head_sha": "be9eb35a4ddf5098e685182f8104685127c6a6ee",
+    "html_url": "https://github.com/cdehek/Ammonia-sim/actions/runs/38109562003",
+    "id": 38109562003,
+    "status": "completed"
+  },
+  "acceptedCIJobs": [
+    {
+      "conclusion": "success",
+      "name": "nine-section-resolution",
+      "status": "completed"
+    },
+    {
+      "conclusion": "success",
+      "name": "prototype",
+      "status": "completed"
+    },
+    {
+      "conclusion": "success",
+      "name": "spatial-resolution",
+      "status": "completed"
+    },
+    {
+      "conclusion": "success",
+      "name": "browser-performance",
+      "status": "completed"
+    }
+  ],
+  "protectedRefsBefore": {
+    "refs/heads/experimental/dx-fv-stage-3": "be9eb35a4ddf5098e685182f8104685127c6a6ee",
+    "refs/heads/main": "0473d32f62db992fde0f581d116e1bd0c8e7d8ed",
+    "refs/pull/3/head": "d4422425750a1d3c4e432cc103ac42ead40b7cc6",
+    "refs/pull/3/merge": "f440560fccfa45421ec2bf679bac32df10df63ae"
+  },
+  "pr3Before": {
+    "base": {
+      "ref": "main",
+      "sha": "0473d32f62db992fde0f581d116e1bd0c8e7d8ed"
+    },
+    "head": {
+      "ref": "v0.5.5-stage-1",
+      "sha": "d4422425750a1d3c4e432cc103ac42ead40b7cc6"
+    },
+    "merge_commit_sha": "f440560fccfa45421ec2bf679bac32df10df63ae",
+    "number": 3,
+    "state": "open"
+  },
+  "workingTreeBefore": [
+    " M experiments/dx-fv/coupled-implicit.cjs",
+    " M experiments/dx-fv/coupled-model.cjs",
+    " M experiments/dx-fv/coupled-test.cjs",
+    "?? experiments/dx-fv/COUPLED_STAGE_2B.md",
+    "?? experiments/dx-fv/JOINT_PROPERTY_CONSISTENCY.md",
+    "?? experiments/dx-fv/PCHIP_TRAJECTORY_INVESTIGATION.md",
+    "?? experiments/dx-fv/PHASE_EVENT_INVESTIGATION.md",
+    "?? experiments/dx-fv/SATURATION_INTERPOLATION_EXPERIMENT.md",
+    "?? experiments/dx-fv/STATIC_PROPERTY_RECONSTRUCTION.md",
+    "?? experiments/dx-fv/audit_coupled_stage2b.py",
+    "?? experiments/dx-fv/audit_joint_properties.py",
+    "?? experiments/dx-fv/audit_pchip_trajectories.py",
+    "?? experiments/dx-fv/audit_phase_event_investigation.py",
+    "?? experiments/dx-fv/audit_saturation_experiment.py",
+    "?? experiments/dx-fv/audit_saturation_properties.py",
+    "?? experiments/dx-fv/audit_static_properties.py",
+    "?? experiments/dx-fv/coupled-stage2b-reference.json",
+    "?? experiments/dx-fv/coupled-stage2b.cjs",
+    "?? experiments/dx-fv/generate_coupled_stage2b_reference.py",
+    "?? experiments/dx-fv/joint-property-diagnostics.cjs",
+    "?? experiments/dx-fv/joint_property_analysis.py",
+    "?? experiments/dx-fv/joint_property_conditioning.py",
+    "?? experiments/dx-fv/pchip-trajectories.cjs",
+    "?? experiments/dx-fv/pchip_trajectory_reference.py",
+    "?? experiments/dx-fv/phase-event-investigation.cjs",
+    "?? experiments/dx-fv/phase_event_reference_diagnostics.py",
+    "?? experiments/dx-fv/phase_event_table_comparator.py",
+    "?? experiments/dx-fv/saturation-interpolation-test.cjs",
+    "?? experiments/dx-fv/saturation-temperature.cjs",
+    "?? experiments/dx-fv/static_property_diagnostics.py",
+    "?? experiments/dx-fv/static_property_qualification.py",
+    "?? experiments/dx-fv/static_property_reconstruction.py"
+  ],
+  "preexistingFilesPreserved": 211,
+  "originalResearchPaths": [
+    "experiments/dx-fv/coupled-implicit.cjs",
+    "experiments/dx-fv/coupled-model.cjs",
+    "experiments/dx-fv/coupled-test.cjs",
+    "experiments/dx-fv/COUPLED_STAGE_2B.md",
+    "experiments/dx-fv/JOINT_PROPERTY_CONSISTENCY.md",
+    "experiments/dx-fv/PCHIP_TRAJECTORY_INVESTIGATION.md",
+    "experiments/dx-fv/PHASE_EVENT_INVESTIGATION.md",
+    "experiments/dx-fv/SATURATION_INTERPOLATION_EXPERIMENT.md",
+    "experiments/dx-fv/STATIC_PROPERTY_RECONSTRUCTION.md",
+    "experiments/dx-fv/audit_coupled_stage2b.py",
+    "experiments/dx-fv/audit_joint_properties.py",
+    "experiments/dx-fv/audit_pchip_trajectories.py",
+    "experiments/dx-fv/audit_phase_event_investigation.py",
+    "experiments/dx-fv/audit_saturation_experiment.py",
+    "experiments/dx-fv/audit_saturation_properties.py",
+    "experiments/dx-fv/audit_static_properties.py",
+    "experiments/dx-fv/coupled-stage2b-reference.json",
+    "experiments/dx-fv/coupled-stage2b.cjs",
+    "experiments/dx-fv/generate_coupled_stage2b_reference.py",
+    "experiments/dx-fv/joint-property-diagnostics.cjs",
+    "experiments/dx-fv/joint_property_analysis.py",
+    "experiments/dx-fv/joint_property_conditioning.py",
+    "experiments/dx-fv/pchip-trajectories.cjs",
+    "experiments/dx-fv/pchip_trajectory_reference.py",
+    "experiments/dx-fv/phase-event-investigation.cjs",
+    "experiments/dx-fv/phase_event_reference_diagnostics.py",
+    "experiments/dx-fv/phase_event_table_comparator.py",
+    "experiments/dx-fv/saturation-interpolation-test.cjs",
+    "experiments/dx-fv/saturation-temperature.cjs",
+    "experiments/dx-fv/static_property_diagnostics.py",
+    "experiments/dx-fv/static_property_qualification.py",
+    "experiments/dx-fv/static_property_reconstruction.py"
+  ],
+  "originalResearchSHA256": {
+    "experiments/dx-fv/coupled-implicit.cjs": "5922e686dd64ac048e27987a58c7b0abe6e8ad2d70072de3654207d589cf6ee8",
+    "experiments/dx-fv/coupled-model.cjs": "cb0bd09ce70691c6e60ff342823c75ef91c4e0a8a5c45c384780420adf7d715b",
+    "experiments/dx-fv/coupled-test.cjs": "2424c9bb2d42804272463fd8a004a961250fc23d9a983505862200b554377ab3",
+    "experiments/dx-fv/COUPLED_STAGE_2B.md": "24f98950a9dd925c5ba1351b1bb755210759ebd90fca709823a2aae2eb954e2f",
+    "experiments/dx-fv/JOINT_PROPERTY_CONSISTENCY.md": "c2d2940e025a5409b2e12a2f09832dd840965a23046c2e74ec61e9f5f770bbf0",
+    "experiments/dx-fv/PCHIP_TRAJECTORY_INVESTIGATION.md": "8ee9643cfc3227154a6fd7cc4e682c8166d389c70d04f225803c51f74f5d889b",
+    "experiments/dx-fv/PHASE_EVENT_INVESTIGATION.md": "8181aa19cb8f422e99fb01eabb4d5262dd986cb089b47c2dd5b5b609b1b43a96",
+    "experiments/dx-fv/SATURATION_INTERPOLATION_EXPERIMENT.md": "971d86694e364b8b185033d9504d4fbc3eb311049a0c2c32faac944bf4344dc4",
+    "experiments/dx-fv/STATIC_PROPERTY_RECONSTRUCTION.md": "015ccea33def6c707506127c7cf0d15e4d38baf84bed42f71f38afd9af5f6b9d",
+    "experiments/dx-fv/audit_coupled_stage2b.py": "79b7fea176ad125892045bfb21ff3e95c52da6588857fe3d8d01639a240700a9",
+    "experiments/dx-fv/audit_joint_properties.py": "89aa12f4a3b1b54bd8ca33d959ba375aada70bae515162c2714a26a3b6010de6",
+    "experiments/dx-fv/audit_pchip_trajectories.py": "aca448c97ed81243020eead2ee38afe7ce2dddc9fc0928fb53686068bba86f01",
+    "experiments/dx-fv/audit_phase_event_investigation.py": "bff09e577372d85c7a81cf339659f07d9e78bcbd240c2964fa59025ad2250351",
+    "experiments/dx-fv/audit_saturation_experiment.py": "9581257891be9799d4a5d8ac3d09e3b3073b51fc5356917531cf659994bb7492",
+    "experiments/dx-fv/audit_saturation_properties.py": "950a8cc023385edaddcdc2e516c93c8dfb06591c81e2e40a31fb5a975913e939",
+    "experiments/dx-fv/audit_static_properties.py": "879a255657a2ae928c16daa818e0c94e37ede142c0a2b72cbc07a883a7b5d975",
+    "experiments/dx-fv/coupled-stage2b-reference.json": "aea169071ae03da085c26fae38dee5ae6962b4c7a84964c5eec098817737587b",
+    "experiments/dx-fv/coupled-stage2b.cjs": "5b1983743e8070203d81210b0fa0e4d95d8da0fec5e2c58faa4223e1bbd7e3dd",
+    "experiments/dx-fv/generate_coupled_stage2b_reference.py": "87c212b41352b9cfce5d106a4d106e68c09be88842b3e21ba9d9189ca5d799f5",
+    "experiments/dx-fv/joint-property-diagnostics.cjs": "beaf82f32d4a168a966dc345c0b0e4d79f8eca8524abca41a99e8eece0c8e993",
+    "experiments/dx-fv/joint_property_analysis.py": "ba971fc5406a034a721e34568748a2b7a2d341ab59a313db8259b35a9f8b4e94",
+    "experiments/dx-fv/joint_property_conditioning.py": "157443574a3dcb8c611e84938f04c749cb29ffda2533488f03db1a650c53a821",
+    "experiments/dx-fv/pchip-trajectories.cjs": "7df1303ee14bedd196f277410fd26ae85b6cc83ccc697256205d92b83acc1dab",
+    "experiments/dx-fv/pchip_trajectory_reference.py": "47ff3d2db0572e2773119eaba3e2c1eb9b815aa945f3b8529a566d5bcef71c89",
+    "experiments/dx-fv/phase-event-investigation.cjs": "0b801cda6c9a19df7b9dfa8a47639039f29a98f917ca3b64a5f0a349b55808b3",
+    "experiments/dx-fv/phase_event_reference_diagnostics.py": "3f2ea07680865232dcb764a40573204949840e30a4874f27b479127b1f54a99f",
+    "experiments/dx-fv/phase_event_table_comparator.py": "19793a5b8934d2724d94a5f887bdf80a4aff4b717938277fcd96143a423813f7",
+    "experiments/dx-fv/saturation-interpolation-test.cjs": "d1927c6c7cec768919441be1f16fa831249ac6795e7c554ff67614d0d9b6b529",
+    "experiments/dx-fv/saturation-temperature.cjs": "8c6763c492f3c52e3d3d18079fa3aa5000f84de5e6a0bddc04cd835b711f494e",
+    "experiments/dx-fv/static_property_diagnostics.py": "db2b8e4f7ba6c28654829081b13900dd2228b750edddc3568a55c020bd36e723",
+    "experiments/dx-fv/static_property_qualification.py": "eb910f9594355ab163d7d52c7f80676ed4c96996c38abed5b33c29d4cf41ac53",
+    "experiments/dx-fv/static_property_reconstruction.py": "7e6e69a1addca862c5e20c2ea45d59cf45d1c2c85c1f1a619d78aa4f085ca36f"
+  },
+  "protectedPropertySHA256": {
+    "engine.js": "23bb186115cbc7dea6d3115e501de93ef80867b168a54b554192d08c98752fc5",
+    "properties.json": "b67ac977338f3b7b62d0bf3d590514083814e620fa922504d05e7510938ede6e",
+    "tools/generate_properties.py": "d3c33406f62c5e021535212effea1fe303af26430f5a03d258ab9c671dd287db"
+  },
+  "staticEvidence": {
+    "counts": {
+      "knots": 7234,
+      "interior": 30006,
+      "PH": 77
+    },
+    "versions": {
+      "Python": "3.12.14",
+      "NumPy": "2.5.3",
+      "SciPy": "1.16.2",
+      "CoolProp": "7.2.0",
+      "platform": "Linux-6.18.44-x86_64-with-glibc2.41"
+    },
+    "knotStats": {
+      "joint-pchip": {
+        "T": {
+          "count": 7234,
+          "maximumAbsolute": 1.1368683772161603e-13,
+          "rms": 3.241400368626874e-14,
+          "minimum": -1.1368683772161603e-13,
+          "maximum": 5.684341886080802e-14
+        },
+        "h": {
+          "count": 7234,
+          "maximumAbsolute": 1.1368683772161603e-13,
+          "rms": 7.525670745758622e-15,
+          "minimum": -1.1368683772161603e-13,
+          "maximum": 1.1368683772161603e-13
+        },
+        "s": {
+          "count": 7234,
+          "maximumAbsolute": 4.440892098500626e-16,
+          "rms": 2.8123865188988105e-17,
+          "minimum": -4.440892098500626e-16,
+          "maximum": 4.440892098500626e-16
+        },
+        "rho": {
+          "count": 7234,
+          "maximumAbsolute": 9.094947017729282e-13,
+          "rms": 1.8137249084680904e-13,
+          "minimum": -9.094947017729282e-13,
+          "maximum": 9.094947017729282e-13
+        }
+      },
+      "gibbs-bicubic": {
+        "T": {
+          "count": 7234,
+          "maximumAbsolute": 1.1368683772161603e-13,
+          "rms": 3.241400368626874e-14,
+          "minimum": -1.1368683772161603e-13,
+          "maximum": 5.684341886080802e-14
+        },
+        "h": {
+          "count": 7234,
+          "maximumAbsolute": 2.2737367544323206e-13,
+          "rms": 8.239725287254558e-15,
+          "minimum": -2.2737367544323206e-13,
+          "maximum": 0.0
+        },
+        "s": {
+          "count": 7234,
+          "maximumAbsolute": 4.440892098500626e-16,
+          "rms": 2.907112348277191e-17,
+          "minimum": -4.440892098500626e-16,
+          "maximum": 0.0
+        },
+        "rho": {
+          "count": 7234,
+          "maximumAbsolute": 2.660272002685815e-11,
+          "rms": 3.5344215949704898e-12,
+          "minimum": -2.2509993868879974e-11,
+          "maximum": 2.660272002685815e-11
+        }
+      },
+      "gibbs-biquintic": {
+        "T": {
+          "count": 7234,
+          "maximumAbsolute": 1.1368683772161603e-13,
+          "rms": 3.241400368626874e-14,
+          "minimum": -1.1368683772161603e-13,
+          "maximum": 5.684341886080802e-14
+        },
+        "h": {
+          "count": 7234,
+          "maximumAbsolute": 2.2737367544323206e-13,
+          "rms": 8.239725287254558e-15,
+          "minimum": -2.2737367544323206e-13,
+          "maximum": 0.0
+        },
+        "s": {
+          "count": 7234,
+          "maximumAbsolute": 4.440892098500626e-16,
+          "rms": 2.907112348277191e-17,
+          "minimum": -4.440892098500626e-16,
+          "maximum": 0.0
+        },
+        "rho": {
+          "count": 7234,
+          "maximumAbsolute": 2.660272002685815e-11,
+          "rms": 3.5660544250537484e-12,
+          "minimum": -2.2509993868879974e-11,
+          "maximum": 2.660272002685815e-11
+        }
+      },
+      "gibbs-rounded-projection": {
+        "T": {
+          "count": 7234,
+          "maximumAbsolute": 1.1368683772161603e-13,
+          "rms": 3.241400368626874e-14,
+          "minimum": -1.1368683772161603e-13,
+          "maximum": 5.684341886080802e-14
+        },
+        "h": {
+          "count": 7234,
+          "maximumAbsolute": 2.2737367544323206e-13,
+          "rms": 2.9709045665793494e-14,
+          "minimum": -2.2737367544323206e-13,
+          "maximum": 2.2737367544323206e-13
+        },
+        "s": {
+          "count": 7234,
+          "maximumAbsolute": 5.000000014021566e-08,
+          "rms": 2.8712262405478596e-08,
+          "minimum": -5.000000002919336e-08,
+          "maximum": 5.000000014021566e-08
+        },
+        "rho": {
+          "count": 7234,
+          "maximumAbsolute": 3.353761712787673e-11,
+          "rms": 3.759677535757412e-12,
+          "minimum": -3.353761712787673e-11,
+          "maximum": 3.126388037344441e-11
+        }
+      }
+    },
+    "interiorSummary": {
+      "joint-pchip": {
+        "errors": {
+          "h": {
+            "count": 30006,
+            "maximumAbsolute": 0.00011504304870868509,
+            "rms": 4.396026162961761e-06,
+            "minimum": -2.0194909666315652e-05,
+            "maximum": 0.00011504304870868509
+          },
+          "rho": {
+            "count": 30006,
+            "maximumAbsolute": 0.00011925439162041584,
+            "rms": 4.225759754013274e-06,
+            "minimum": -0.00011925439162041584,
+            "maximum": 1.9624290302999725e-05
+          },
+          "u": {
+            "count": 30006,
+            "maximumAbsolute": 0.00011351049431596039,
+            "rms": 4.35880806065115e-06,
+            "minimum": -2.003844554110401e-05,
+            "maximum": 0.00011351049431596039
+          },
+          "s": {
+            "count": 30006,
+            "maximumAbsolute": 3.2339406974557505e-07,
+            "rms": 2.860636506449335e-08,
+            "minimum": -1.1900686565369245e-07,
+            "maximum": 3.2339406974557505e-07
+          }
+        },
+        "kappa": {
+          "count": 30006,
+          "maximumAbsolute": 0.0004169900061446912,
+          "rms": 0.0001262017620235853,
+          "minimum": 4.979915237373028e-05,
+          "maximum": 0.0004169900061446912
+        },
+        "cp": {
+          "count": 30006,
+          "maximumAbsolute": 5.537436687461636,
+          "rms": 4.589895857849853,
+          "minimum": 4.318702008420178,
+          "maximum": 5.537436687461636
+        },
+        "cv": {
+          "count": 0
+        },
+        "maxwell": {
+          "count": 30006,
+          "maximumAbsolute": 0.0023682067925186456,
+          "rms": 6.368934986463373e-05,
+          "minimum": -0.0023682067925186456,
+          "maximum": 0.0011420306378029793
+        },
+        "condition": {
+          "count": 0
+        },
+        "unstableCount": 0,
+        "failureCount": 0
+      },
+      "gibbs-bicubic": {
+        "errors": {
+          "h": {
+            "count": 30006,
+            "maximumAbsolute": 0.010941325717681138,
+            "rms": 0.002659117541105519,
+            "minimum": -0.010941325717681138,
+            "maximum": 0.010806831021682228
+          },
+          "rho": {
+            "count": 30006,
+            "maximumAbsolute": 22.853430350464237,
+            "rms": 2.298026051011908,
+            "minimum": -18.734162088413314,
+            "maximum": 22.853430350464237
+          },
+          "u": {
+            "count": 30006,
+            "maximumAbsolute": 0.0107236973643694,
+            "rms": 0.002428647892625359,
+            "minimum": -0.0105271378689622,
+            "maximum": 0.0107236973643694
+          },
+          "s": {
+            "count": 30006,
+            "maximumAbsolute": 3.511637936615131e-05,
+            "rms": 9.850005702574566e-06,
+            "minimum": -3.511637936615131e-05,
+            "maximum": 3.185307271769133e-05
+          }
+        },
+        "kappa": {
+          "count": 30006,
+          "maximumAbsolute": 12.236229017150492,
+          "rms": 0.9121999773582519,
+          "minimum": -12.236229017150492,
+          "maximum": 11.63199790990253
+        },
+        "cp": {
+          "count": 30006,
+          "maximumAbsolute": 5.57688206880546,
+          "rms": 4.589915591723871,
+          "minimum": 4.312833393458483,
+          "maximum": 5.57688206880546
+        },
+        "cv": {
+          "count": 30006,
+          "maximumAbsolute": 6040.358558432142,
+          "rms": 36.66986152841532,
+          "minimum": -881.7018963018453,
+          "maximum": 6040.358558432142
+        },
+        "maxwell": {
+          "count": 30006,
+          "maximumAbsolute": 6.661338147750939e-16,
+          "rms": 3.683650411889817e-17,
+          "minimum": -4.440892098500626e-16,
+          "maximum": 6.661338147750939e-16
+        },
+        "condition": {
+          "count": 30006,
+          "maximumAbsolute": 459202.58323493565,
+          "rms": 5075.578327314313,
+          "minimum": 3.424028148348441,
+          "maximum": 459202.58323493565
+        },
+        "unstableCount": 14760,
+        "failureCount": 0
+      },
+      "gibbs-biquintic": {
+        "errors": {
+          "h": {
+            "count": 30006,
+            "maximumAbsolute": 0.013433342483097022,
+            "rms": 0.002636597365147594,
+            "minimum": -0.013433342483097022,
+            "maximum": 0.010685040128123546
+          },
+          "rho": {
+            "count": 30006,
+            "maximumAbsolute": 28.796385370277108,
+            "rms": 2.383965459766951,
+            "minimum": -23.234140903499906,
+            "maximum": 28.796385370277108
+          },
+          "u": {
+            "count": 30006,
+            "maximumAbsolute": 0.011773125385843741,
+            "rms": 0.002412422937053195,
+            "minimum": -0.011773125385843741,
+            "maximum": 0.010629155765514042
+          },
+          "s": {
+            "count": 30006,
+            "maximumAbsolute": 4.3908998020647516e-05,
+            "rms": 9.763767322218639e-06,
+            "minimum": -4.3908998020647516e-05,
+            "maximum": 3.742671578388368e-05
+          }
+        },
+        "kappa": {
+          "count": 30006,
+          "maximumAbsolute": 20.922164708811028,
+          "rms": 1.6737956662621751,
+          "minimum": -20.922164708811028,
+          "maximum": 19.77309937001804
+        },
+        "cp": {
+          "count": 30006,
+          "maximumAbsolute": 5.563550695199566,
+          "rms": 4.589927820762746,
+          "minimum": 4.30553002312616,
+          "maximum": 5.563550695199566
+        },
+        "cv": {
+          "count": 30006,
+          "maximumAbsolute": 786.9654761513351,
+          "rms": 9.333697138481758,
+          "minimum": -460.2556548222562,
+          "maximum": 786.9654761513351
+        },
+        "maxwell": {
+          "count": 30006,
+          "maximumAbsolute": 8.881784197001252e-16,
+          "rms": 4.204440115678455e-17,
+          "minimum": -4.440892098500626e-16,
+          "maximum": 8.881784197001252e-16
+        },
+        "condition": {
+          "count": 30006,
+          "maximumAbsolute": 17898941.888044048,
+          "rms": 104540.21627807576,
+          "minimum": 1.9390184542968913,
+          "maximum": 17898941.888044048
+        },
+        "unstableCount": 14731,
+        "failureCount": 0
+      },
+      "gibbs-rounded-projection": {
+        "errors": {
+          "h": {
+            "count": 30006,
+            "maximumAbsolute": 2.6997713121090783e-05,
+            "rms": 3.854557488529091e-06,
+            "minimum": -2.6997713121090783e-05,
+            "maximum": 2.353681679778674e-05
+          },
+          "rho": {
+            "count": 30006,
+            "maximumAbsolute": 0.04087050266332426,
+            "rms": 0.002152871778091404,
+            "minimum": -0.04087050266332426,
+            "maximum": 0.03118200835422158
+          },
+          "u": {
+            "count": 30006,
+            "maximumAbsolute": 2.4095631346199298e-05,
+            "rms": 3.647543624179644e-06,
+            "minimum": -2.4095631346199298e-05,
+            "maximum": 2.13799671655579e-05
+          },
+          "s": {
+            "count": 30006,
+            "maximumAbsolute": 1.0632979985381041e-07,
+            "rms": 1.4514035922438608e-08,
+            "minimum": -1.0632979985381041e-07,
+            "maximum": 9.812059731384437e-08
+          }
+        },
+        "kappa": {
+          "count": 30006,
+          "maximumAbsolute": 0.027331310645930307,
+          "rms": 0.0015905210819252516,
+          "minimum": -0.025101921199724906,
+          "maximum": 0.027331310645930307
+        },
+        "cp": {
+          "count": 30006,
+          "maximumAbsolute": 5.537874308163616,
+          "rms": 4.589898871797979,
+          "minimum": 4.318687223404221,
+          "maximum": 5.537874308163616
+        },
+        "cv": {
+          "count": 30006,
+          "maximumAbsolute": 1874.2383770431588,
+          "rms": 18.087430158160874,
+          "minimum": -911.227982782435,
+          "maximum": 1874.2383770431588
+        },
+        "maxwell": {
+          "count": 30006,
+          "maximumAbsolute": 1.1102230246251565e-16,
+          "rms": 1.511848837470037e-17,
+          "minimum": -9.71445146547012e-17,
+          "maximum": 1.1102230246251565e-16
+        },
+        "condition": {
+          "count": 30006,
+          "maximumAbsolute": 143272804.80162588,
+          "rms": 1350484.0126318245,
+          "minimum": 479.6682244625603,
+          "maximum": 143272804.80162588
+        },
+        "unstableCount": 6784,
+        "failureCount": 0
+      }
+    },
+    "saturationCoordinateErrorK": {
+      "count": 30006,
+      "maximumAbsolute": 7.188447170847212e-09,
+      "rms": 2.6306299523757517e-09,
+      "minimum": -5.846459316671826e-09,
+      "maximum": 7.188447170847212e-09
+    },
+    "evidenceAuditPassed": true,
+    "scientificCandidateQualified": false,
+    "rootCounts": {
+      "original-inventory": {
+        "joint-pchip": {
+          "validatedRoots": 1,
+          "rejectedBrackets": 0
+        },
+        "gibbs-bicubic": {
+          "validatedRoots": 13,
+          "rejectedBrackets": 69
+        },
+        "gibbs-biquintic": {
+          "validatedRoots": 12,
+          "rejectedBrackets": 85
+        },
+        "gibbs-rounded-projection": {
+          "validatedRoots": 9,
+          "rejectedBrackets": 0
+        }
+      },
+      "direct-EOS-inventory": {
+        "joint-pchip": {
+          "validatedRoots": 1,
+          "rejectedBrackets": 0
+        },
+        "gibbs-bicubic": {
+          "validatedRoots": 12,
+          "rejectedBrackets": 70
+        },
+        "gibbs-biquintic": {
+          "validatedRoots": 12,
+          "rejectedBrackets": 83
+        },
+        "gibbs-rounded-projection": {
+          "validatedRoots": 9,
+          "rejectedBrackets": 0
+        }
+      }
+    },
+    "EOSChecks": [
+      {
+        "p": 0.3029893712344606,
+        "z": 1.0,
+        "EOS": {
+          "rho": 708.671061495596,
+          "kappa": 5.92314989032402e-05,
+          "maxwell": -1.3877787807814457e-17
+        },
+        "candidates": {
+          "joint-pchip": {
+            "rho": 708.671062107643,
+            "kappa": 5.9887319138360545e-05,
+            "cp": 4.379300098130073,
+            "maxwell": 0.0003718253399466742
+          },
+          "gibbs-bicubic": {
+            "rho": 705.1219949924451,
+            "kappa": -0.9628309087512078,
+            "cp": 4.368477656063715,
+            "maxwell": -1.1102230246251565e-16,
+            "cv": 4.3776256893088
+          },
+          "gibbs-biquintic": {
+            "rho": 704.2381099480257,
+            "kappa": 0.03164600360178974,
+            "cp": 4.379361397548994,
+            "maxwell": -1.3877787807814457e-17,
+            "cv": 4.3761124815088275
+          },
+          "gibbs-rounded-projection": {
+            "rho": 708.6778595310918,
+            "kappa": -0.00023810646642278364,
+            "cp": 4.379299912062966,
+            "maxwell": 0.0,
+            "cv": 4.731552467533148
+          }
+        }
+      },
+      {
+        "p": 1.0,
+        "z": 0.1,
+        "EOS": {
+          "rho": 682.0793940624374,
+          "kappa": 7.41472775810244e-05,
+          "maxwell": 2.7755575615628914e-17
+        },
+        "candidates": {
+          "joint-pchip": {
+            "rho": 682.0793918656841,
+            "kappa": 7.363729874964472e-05,
+            "cp": 4.463954224718108,
+            "maxwell": 2.7509108002185534e-05
+          },
+          "gibbs-bicubic": {
+            "rho": 679.5642402112546,
+            "kappa": 0.9117669354886556,
+            "cp": 4.480607280043932,
+            "maxwell": -5.551115123125783e-17,
+            "cv": 4.469708306668908
+          },
+          "gibbs-biquintic": {
+            "rho": 678.983761966941,
+            "kappa": 1.3523837444293627,
+            "cp": 4.480296520331508,
+            "maxwell": -5.551115123125783e-17,
+            "cv": 4.475485717016632
+          },
+          "gibbs-rounded-projection": {
+            "rho": 682.0777460984383,
+            "kappa": 0.000447734653469126,
+            "cp": 4.463944847487756,
+            "maxwell": 0.0,
+            "cv": 4.210227127612829
+          }
+        }
+      },
+      {
+        "p": 3.5,
+        "z": 10.0,
+        "EOS": {
+          "rho": 659.0488448511625,
+          "kappa": 9.131732557726752e-05,
+          "maxwell": -1.3877787807814457e-17
+        },
+        "candidates": {
+          "joint-pchip": {
+            "rho": 659.0488448759272,
+            "kappa": 9.138834496213328e-05,
+            "cp": 4.536140624946142,
+            "maxwell": -5.278275766675e-05
+          },
+          "gibbs-bicubic": {
+            "rho": 659.344206603922,
+            "kappa": -0.036507269530954574,
+            "cp": 4.545831128403519,
+            "maxwell": 0.0,
+            "cv": 4.561152184329903
+          },
+          "gibbs-biquintic": {
+            "rho": 659.1970597476104,
+            "kappa": -0.04987844385057923,
+            "cp": 4.53613250297825,
+            "maxwell": 1.3877787807814457e-17,
+            "cv": 4.53917447387528
+          },
+          "gibbs-rounded-projection": {
+            "rho": 659.0488445377702,
+            "kappa": 9.43584598052214e-05,
+            "cp": 4.536132933110582,
+            "maxwell": 1.3877787807814457e-17,
+            "cv": 2.925764498731621
+          }
+        }
+      },
+      {
+        "p": 32.65314902038559,
+        "z": 0.1,
+        "EOS": {
+          "rho": 527.7815600666742,
+          "kappa": 0.0003847032584961303,
+          "maxwell": -1.3877787807814457e-17
+        },
+        "candidates": {
+          "joint-pchip": {
+            "rho": 527.7815219732255,
+            "kappa": 0.00038395559287520716,
+            "cp": 5.451942424201505,
+            "maxwell": 0.00030050302363238135
+          },
+          "gibbs-bicubic": {
+            "rho": 527.7234406395409,
+            "kappa": 0.00012563350851613078,
+            "cp": 5.4470549206588625,
+            "maxwell": -2.7755575615628914e-17,
+            "cv": -2.219010875256923
+          },
+          "gibbs-biquintic": {
+            "rho": 527.7151187224158,
+            "kappa": 0.00019684836941215187,
+            "cp": 5.447622450506893,
+            "maxwell": -5.551115123125783e-17,
+            "cv": 0.4720127949536659
+          },
+          "gibbs-rounded-projection": {
+            "rho": 527.7814950954681,
+            "kappa": 0.00038621492266494777,
+            "cp": 5.452262959086029,
+            "maxwell": 0.0,
+            "cv": 2.7568658739549314
+          }
+        }
+      }
+    ],
+    "pressureConstitutiveErrors": {
+      "joint-pchip": {
+        "count": 77,
+        "maximumAbsoluteBar": 0.0004716469427350489
+      },
+      "gibbs-bicubic": {
+        "count": 77,
+        "maximumAbsoluteBar": 351.95244183417026
+      },
+      "gibbs-biquintic": {
+        "count": 77,
+        "maximumAbsoluteBar": 445.74726718516064
+      },
+      "gibbs-rounded-projection": {
+        "count": 77,
+        "maximumAbsoluteBar": 1.201422012003359
+      }
+    },
+    "prototypePerformance": {
+      "original": {
+        "meanSeconds": 0.019640606600114553,
+        "standardDeviationSeconds": 0.005656778743109205,
+        "minimumSeconds": 0.013645832000293012,
+        "maximumSeconds": 0.026106781000635237,
+        "evaluationsPerRound": 300
+      },
+      "joint-pchip": {
+        "meanSeconds": 0.30190290600021397,
+        "standardDeviationSeconds": 0.08344712480386084,
+        "minimumSeconds": 0.168717822999497,
+        "maximumSeconds": 0.3976416790001167,
+        "evaluationsPerRound": 300
+      },
+      "gibbs-rounded-projection": {
+        "meanSeconds": 0.010681943600138766,
+        "standardDeviationSeconds": 0.0027344980158922646,
+        "minimumSeconds": 0.008955414999945788,
+        "maximumSeconds": 0.015342027000770031,
+        "evaluationsPerRound": 300
+      }
+    },
+    "interpolationArrayMemory": {
+      "joint-pchip": {
+        "retainedInterpolationArrayBytes": 865104,
+        "excludes": "Python object/dictionary overhead and shared frozen arrays"
+      },
+      "gibbs-bicubic": {
+        "retainedInterpolationArrayBytes": 891392,
+        "excludes": "Python object/dictionary overhead and shared frozen arrays"
+      },
+      "gibbs-biquintic": {
+        "retainedInterpolationArrayBytes": 2005632,
+        "excludes": "Python object/dictionary overhead and shared frozen arrays"
+      },
+      "gibbs-rounded-projection": {
+        "retainedInterpolationArrayBytes": 2005632,
+        "excludes": "Python object/dictionary overhead and shared frozen arrays"
+      }
+    }
+  },
+  "jointEvidence": {
+    "evidenceAuditPassed": true,
+    "candidateQualified": false,
+    "legacyExactlyReproduced": true,
+    "propertyRequests": 138,
+    "completedPropertyComparisons": 124,
+    "unsupportedOrNonlocalConditions": 14,
+    "maximumMainProbeInversionErrorBar": 1.0854677157112746e-09,
+    "maximumFrozenKnotGibbsMismatchKJkg": 2.1025885644121445e-05,
+    "shortReferenceConvergence": {
+      "p": 5.6132876125047915e-12,
+      "h": 1.0345502232667059e-11,
+      "T": 3.410605131648481e-13,
+      "thermalK": 5.684341886080801e-13
+    },
+    "acceptedFixtureCoverage": {
+      "pressureMinimumBar": 3.4376536321917612,
+      "pressureMaximumBar": 3.579425651301869,
+      "liquidStates": 0,
+      "twoPhaseStates": 198,
+      "vaporStates": 52,
+      "minimumWetQuality": 0.13994887887642013
+    }
+  },
+  "availableFullArchives": [
+    {
+      "path": "/workspace/ammonia-joint-property-investigation.tar.gz",
+      "bytes": 781330,
+      "sha256": "ba2ecf1582f76a1a3f1bf7a49f151ee04f2de43c203addcc4b335a4bf8a046ad"
+    },
+    {
+      "path": "/workspace/ammonia-static-property-reconstruction.tar.gz",
+      "bytes": 22236644,
+      "sha256": "3dab83358ac2924ef44e07a80da15c25795c9dfcefb93cb76147c1dcffb3c62a"
+    }
+  ],
+  "evidenceAvailability": {
+    "jointAndStaticRawEvidence": "Present in /workspace, full archives retained unchanged",
+    "earlierStage2BPhaseSaturationTrajectoryRawQueues": "Original /tmp directories/archives not present in this environment. Preserved reports/source/reference and later saved numerical inputs remain available; historical runs were not rerun in preservation.",
+    "auditProvenance": "Some scripts pin original branch/HEAD and pre-addition source manifests. Preserve guards; use documented disposable overlay replay for faithful execution."
+  },
+  "scope": "Preservation, handoff and review packaging only. No algorithm, physics, tolerance, default or workflow changes."
+}

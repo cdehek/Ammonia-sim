@@ -1,5 +1,6 @@
 'use strict';
-// Stage 2A: five cells only. Historical fluid and Stage 1 thermal factories stay untouched.
+// Isolated coupled research: five cells by default, nine explicitly selected.
+// Historical fluid and Stage 1 thermal factories stay untouched.
 const C = require('./conservation.cjs');
 const {connectionFlow} = require('./hydraulics.cjs');
 const {createThermodynamics} = require('./thermodynamics.cjs');
@@ -17,7 +18,8 @@ const fields = (o,allowed) => { if (!o || typeof o!=='object' || Array.isArray(o
 // Columns are thermal-energy increments (kJ); rows retain their original scales.
 function exactThermalColumns(spec, dt, weight, scales) {
   const nodes=spec.thermal.nodes,ix=new Map(nodes.map((n,i)=>[n.id,i]));
-  const rate=Array.from({length:11},()=>Array(11).fill(0));
+  const fluidCount=2*spec.fluid.sectionCount,dimension=fluidCount+nodes.length;
+  const rate=Array.from({length:nodes.length},()=>Array(nodes.length).fill(0));
   for(const link of spec.thermal.links){
     const from=ix.get(link.from),to=ix.get(link.to),g=link.conductanceKWK;
     rate[from][from]-=g/nodes[from].capacityKJK;
@@ -25,13 +27,13 @@ function exactThermalColumns(spec, dt, weight, scales) {
     rate[to][from]+=g/nodes[from].capacityKJK;
     rate[to][to]-=g/nodes[to].capacityKJK;
   }
-  for(let i=0;i<5;i++){
+  for(let i=0;i<spec.fluid.sectionCount;i++){
     const tube=ix.get(`tube-${i}`);
     rate[tube][tube]-=spec.conductancesKWK[i]/nodes[tube].capacityKJK;
   }
   const tau=dt*weight;
-  return nodes.map((node,k)=>Array.from({length:21},(_,row)=>{
-    if(row>=10)return ((row-10===k?1:0)-tau*rate[row-10][k])/scales[row];
+  return nodes.map((node,k)=>Array.from({length:dimension},(_,row)=>{
+    if(row>=fluidCount)return ((row-fluidCount===k?1:0)-tau*rate[row-fluidCount][k])/scales[row];
     if(row%2===0)return 0;
     const section=(row-1)/2;
     return node.id===`tube-${section}`?-tau*spec.conductancesKWK[section]/node.capacityKJK/scales[row]:0;
@@ -101,18 +103,20 @@ function createCoupledModel(engine, options={}, observeAttempt=null) {
     return next;
   }
   function create(config={}) {
-    fields(config,['sectionCount','initial','inlet','outlet','thermal','refrigerantConductanceKWK','sealed','schedule']);
-    if ((config.sectionCount??5)!==5) throw Error('Stage 2A permits five refrigerant sections only.');
+    fields(config,['sectionCount','initial','initialProfile','inlet','outlet','thermal','refrigerantConductanceKWK','sealed','schedule']);
+    const count=config.sectionCount??5;
+    if (![5,9].includes(count)) throw Error('Coupled research permits five or nine refrigerant sections only.');
+    if(config.initial!==undefined&&config.initialProfile!==undefined)throw Error('Select PH cell states or a physical inventory profile, not both.');
     if (config.sealed!==undefined && typeof config.sealed!=='boolean') throw Error('Boolean sealed fixture flag required.');
-    const fluid = fixture(5,{totalHeatKW:0});
+    const fluid = fixture(count,{totalHeatKW:0});
     if (config.initial!==undefined) fluid.initial=clone(config.initial);
-    if (!Array.isArray(fluid.initial) || fluid.initial.length!==5) throw Error('Five initial PH states required.');
+    if (!Array.isArray(fluid.initial) || fluid.initial.length!==count) throw Error('One initial PH state per section required.');
     for (const key of ['inlet','outlet']) if (config[key]!==undefined) { fields(config[key],['p','h']); fluid[key]=clone(config[key]); }
     if (config.sealed) fluid.connections=fluid.connections.map(f=>({...f,closed:true}));
     // Only finite-air topology is authorized; geometry/material closures stay Stage 1 defaults.
     const input = config.thermal||{};
     fields(input,['tubeProfileK','finProfileK','airInitialK','airLoadKW','energyReferenceK','domainK']);
-    const thermal = normalizeThermal(createThermalConfig({sectionCount:5,tubeProfileK:273.15,finProfileK:273.15,airInitialK:278.15,airLoadKW:1,...input}));
+    const thermal = normalizeThermal(createThermalConfig({sectionCount:count,tubeProfileK:273.15,finProfileK:273.15,airInitialK:278.15,airLoadKW:1,...input}));
     const conductance = config.refrigerantConductanceKWK??.60;
     if (![0,.60].includes(conductance)) throw Error('Only approved 0.60 kW/K or zero-exchange verification is supported.');
     const spec = {fluid,thermal,conductancesKWK:fluid.volumeFractions.map(v=>v*conductance),
@@ -124,12 +128,38 @@ function createCoupledModel(engine, options={}, observeAttempt=null) {
       if (!Number.isFinite(event.seconds) || event.seconds<=previous) throw Error('Strictly increasing positive schedule times required.');
       patchSpec(spec,event.patch); previous=event.seconds;
     }
-    const cells=fluid.initial.map((v,i)=>{fields(v,['p','h']);return fluidCall(()=>thermo.initialize(v.p,v.h,fluid.totalVolumeM3*fluid.volumeFractions[i]),i,'initial');});
+    let cells;
+    if(config.initialProfile!==undefined){
+      // Integrate piecewise physical density and internal-energy density, never
+      // interpolate PH/quality at new cell centers. Pressure is only a root guess.
+      if(!Array.isArray(config.initialProfile)||!config.initialProfile.length)throw Error('A contiguous physical PH profile is required.');
+      let end=0;
+      const bins=config.initialProfile.map((bin,i)=>{
+        fields(bin,['left','right','p','h']);
+        if(bin.left!==end||!Number.isFinite(bin.right)||bin.right<=bin.left||bin.right>1)throw Error('Initial profile must cover [0,1] contiguously.');
+        end=bin.right;
+        return {...bin,inventory:fluidCall(()=>C.inventory(thermo.ph(bin.p,bin.h),fluid.totalVolumeM3),i,'initial-profile')};
+      });
+      if(end!==1)throw Error('Initial profile must cover the whole physical length.');
+      cells=fluid.volumeFractions.map((fraction,i)=>{
+        const left=i/count,right=(i+1)/count;
+        const overlaps=bins.map(bin=>Math.max(0,Math.min(right,bin.right)-Math.max(left,bin.left)));
+        const cell={massKg:sum(bins.map((bin,j)=>overlaps[j]*bin.inventory.massKg)),
+          internalEnergyKJ:sum(bins.map((bin,j)=>overlaps[j]*bin.inventory.internalEnergyKJ)),
+          volumeM3:fluid.totalVolumeM3*fraction,pressureGuess:sum(bins.map((bin,j)=>overlaps[j]*bin.p))/fraction};
+        cell.pressureGuess=recover(cell,i).p;
+        return cell;
+      });
+      // Retain recovered PH as configuration provenance; canonical inventory is
+      // the integrated M/U above and is never reinitialized from these PH values.
+      fluid.initial=cells.map((cell,i)=>{const v=recover(cell,i);return {p:v.p,h:v.h};});
+      spec.initialProfile=clone(config.initialProfile);
+    }else cells=fluid.initial.map((v,i)=>{fields(v,['p','h']);return fluidCall(()=>thermo.initialize(v.p,v.h,fluid.totalVolumeM3*fluid.volumeFractions[i]),i,'initial');});
     for (const key of ['inlet','outlet']) thermo.ph(fluid[key].p,fluid[key].h);
     const energies=thermal.nodes.map(n=>n.capacityKJK*(n.initialK-ANCHOR_K));
     temperatures(spec,energies,'initial'); cells.forEach(recover);
-    return {model:'isolated-five-section-coupled-dx-stage2a',spec,cells,energies,initialCells:clone(cells),initialEnergies:[...energies],seconds:0,scheduleIndex:0,
-      ledger:{faces:fluid.connections.map(()=>({massKg:0,energyKJ:0})),tubeRefrigerantKJ:Array(5).fill(0),thermalLinksKJ:thermal.links.map(()=>0),thermalNodesKJ:energies.map(()=>0),airLoadKJ:0,boundaryMassKg:0,boundaryEnthalpyKJ:0},
+    return {model:count===5?'isolated-five-section-coupled-dx-stage2a':'isolated-nine-section-coupled-dx-stage2b',spec,cells,energies,initialCells:clone(cells),initialEnergies:[...energies],seconds:0,scheduleIndex:0,
+      ledger:{faces:fluid.connections.map(()=>({massKg:0,energyKJ:0})),tubeRefrigerantKJ:Array(count).fill(0),thermalLinksKJ:thermal.links.map(()=>0),thermalNodesKJ:energies.map(()=>0),airLoadKJ:0,boundaryMassKg:0,boundaryEnthalpyKJ:0},
       acceptedSteps:0,rejectedSteps:0,accuracyRejectedSteps:0,eventRejectedSteps:0,domainRejectedSteps:0,attemptedResidualEvaluations:0,attemptedIterations:0,attemptedLinearSolves:0,
       nextStepSeconds:settings.maxStep,minAcceptedStepSeconds:null,maxAcceptedStepSeconds:0,lastTimeError:null,lastResidual:null,events:[],boundaryEvents:[],trace:[],rejectionTrace:[],stop:null,
       ...(failureAware?{growthHistory:createGrowthHistory()}: {})};
@@ -155,6 +185,7 @@ function createCoupledModel(engine, options={}, observeAttempt=null) {
       links:array('links'),tubeRefrigerant:array('tubeRefrigerant'),thermalRates:array('thermalRates'),airLoad:sum(terms.map(([w,v])=>w*v.airLoad))};
   }
   function solveStage(s, dt, known, weight, guess, work) {
+    const fluidCount=2*s.cells.length;
     const fluidScales=s.cells.flatMap(c=>[Math.max(.01,c.massKg),Math.max(1,Math.abs(c.internalEnergyKJ))]);
     const variables=s.cells.flatMap((_,section)=>[{kind:'pressure',section},{kind:'enthalpy',section}]).concat(s.spec.thermal.nodes.map(n=>({kind:'thermal-energy',capacityKJK:n.capacityKJK})));
     const initial=guess.states.flatMap(v=>[v.p,v.h]).concat(guess.energies.map((e,i)=>e-s.energies[i]));
@@ -174,12 +205,12 @@ function createCoupledModel(engine, options={}, observeAttempt=null) {
         return properties.get(key);
       });
       const cells=states.map((v,i)=>({...C.inventory(v,s.cells[i].volumeM3),volumeM3:s.cells[i].volumeM3,pressureGuess:v.p}));
-      const energies=s.energies.map((e,i)=>e+x[10+i]);
+      const energies=s.energies.map((e,i)=>e+x[fluidCount+i]);
       const endpoint=evaluate(s.spec,states,energies),integratedRate=blend([...known,[weight,endpoint]]),rates=C.assemble(integratedRate.faces,integratedRate.tubeRefrigerant);
       const residual=cells.flatMap((c,i)=>[(c.massKg-s.cells[i].massKg-dt*rates[i].massKgS)/fluidScales[2*i],(c.internalEnergyKJ-s.cells[i].internalEnergyKJ-dt*rates[i].energyKW)/fluidScales[2*i+1]])
         // Nonlinear thermal closure has its own absolute K budget. The adaptive
         // 50 K scale is not a license to leave tiny exchanges unresolved forever.
-        .concat(energies.map((_,i)=>(x[10+i]-dt*integratedRate.thermalRates[i])/(s.spec.thermal.nodes[i].capacityKJK*settings.thermalResidualK/settings.nonlinearTolerance)));
+        .concat(energies.map((_,i)=>(x[fluidCount+i]-dt*integratedRate.thermalRates[i])/(s.spec.thermal.nodes[i].capacityKJK*settings.thermalResidualK/settings.nonlinearTolerance)));
       return {residual,states,cells,energies,endpoint,integratedRate};
     },initial,variables,settings,work,exactColumns);
     const recovered=solved.value.cells.map(recover);
@@ -344,7 +375,7 @@ function createCoupledModel(engine, options={}, observeAttempt=null) {
     let outlet;
     try {outlet={supported:true,...diagnostic(thermo.ph(s.spec.fluid.outlet.p,current.faces.at(-1).massKgS>=0?last.h:s.spec.fluid.outlet.h))};}
     catch(cause){outlet={supported:false,message:cause.message};}
-    return clone({model:s.model,seconds:s.seconds,sectionCount:5,sections,nodes,terminal:diagnostic(last),outlet,totals,sectionResiduals,
+    return clone({model:s.model,seconds:s.seconds,sectionCount:s.cells.length,sections,nodes,terminal:diagnostic(last),outlet,totals,sectionResiduals,
       massResidualKg,refrigerantEnergyResidualKJ,thermalEnergyResidualKJ,combinedEnergyResidualKJ:refrigerantEnergyResidualKJ+thermalEnergyResidualKJ,
       ledger:s.ledger,fluxes:current,settings,conductancesKWK:s.spec.conductancesKWK,conductanceDescription:s.spec.conductanceDescription,
       energyReferenceK:s.spec.thermal.energyReferenceK,acceptedSteps:s.acceptedSteps,rejectedSteps:s.rejectedSteps,accuracyRejectedSteps:s.accuracyRejectedSteps,eventRejectedSteps:s.eventRejectedSteps,domainRejectedSteps:s.domainRejectedSteps,

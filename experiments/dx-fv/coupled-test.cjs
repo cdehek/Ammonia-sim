@@ -201,7 +201,7 @@ function verification(){
     const m=createCoupledModel(engine),s=m.create(fixture('warm'));s.cells[4]={...s.cells[4],internalEnergyKJ:1e6};
     const before=JSON.stringify(s);assert.throws(()=>m.trial(s,.001));assert.equal(JSON.stringify(s),before);report.checks.push({name:'Unsupported refrigerant trial leaves state untouched',passed:true});
   }
-  for(const f of [()=>createCoupledModel(engine,{temperatureAbsoluteK:0}),()=>createCoupledModel(engine).create({sectionCount:9}),()=>createCoupledModel(engine).create({refrigerantConductanceKWK:1}),()=>createCoupledModel(engine).create({thermal:{airReservoirK:300}}),()=>createCoupledModel(engine).create({thermal:{domainK:[200,450]}}),()=>createCoupledModel(engine).create({schedule:[{seconds:1,patch:{heatKW:[1,1,1,1,1]}}]})])assert.throws(f);
+  for(const f of [()=>createCoupledModel(engine,{temperatureAbsoluteK:0}),()=>createCoupledModel(engine).create({sectionCount:17}),()=>createCoupledModel(engine).create({refrigerantConductanceKWK:1}),()=>createCoupledModel(engine).create({thermal:{airReservoirK:300}}),()=>createCoupledModel(engine).create({thermal:{domainK:[200,450]}}),()=>createCoupledModel(engine).create({schedule:[{seconds:1,patch:{heatKW:[1,1,1,1,1]}}]})])assert.throws(f);
   report.checks.push({name:'Stage 2A mesh/closure/domain/scope guards',passed:true});
   report.passed=true;
 }

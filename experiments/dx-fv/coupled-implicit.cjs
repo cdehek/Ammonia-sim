@@ -6,12 +6,13 @@ const region = s => s.x === null ? (s.phase.includes('liquid') ? 'liquid' : 'vap
 
 function coupledNewton(evaluate, initial, variables, settings, work, exactThermal=null) {
   if (variables.length !== initial.length) throw Error('One type is required per coupled variable.');
+  const fluidCount=variables.findIndex(v=>v.kind==='thermal-energy');
   const counted = x => { work.evaluations++; return evaluate(x); };
   const recorded=!!work.diagnostics;
   const solveId=recorded?(work.diagnosticSolveCount=(work.diagnosticSolveCount||0)+1):null;
   let x = [...initial], value, lastIteration=null;
   const recordIteration=(iteration,status)=>{
-    const residual=[...value.residual],fluid=Math.max(...residual.slice(0,10).map(Math.abs)),thermal=Math.max(...residual.slice(10).map(Math.abs));
+    const residual=[...value.residual],fluid=Math.max(...residual.slice(0,fluidCount).map(Math.abs)),thermal=Math.max(...residual.slice(fluidCount).map(Math.abs));
     const dominant=residual.reduce((best,v,i)=>Math.abs(v)>Math.abs(residual[best])?i:best,0);
     return {type:'iteration',solveId,iteration,status,residual,fluidNorm:fluid,thermalNorm:thermal,dominantIndex:dominant,
       states:value.states.map(s=>({p:s.p,h:s.h,T:s.T,phase:s.phase,x:s.x})),context:iteration===0?work.diagnosticContext:undefined};
@@ -30,7 +31,7 @@ function coupledNewton(evaluate, initial, variables, settings, work, exactTherma
         const variable = variables[k];
         // A1 opt-in only: PH probes and every Newton/acceptance rule stay unchanged.
         if (exactThermal && variable.kind === 'thermal-energy') {
-          const column=exactThermal[k-10];
+          const column=exactThermal[k-fluidCount];
           for (let i=0;i<x.length;i++) jacobian[i][k]=column[i];
           if(recorded)work.diagnostics.push({type:'exact-thermal-column',solveId,iteration,column:k,values:[...column]});
           continue;
