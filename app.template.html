@@ -182,6 +182,199 @@ select,.top>.unit-row select,.history select,.control select,.live-toolbar selec
  background-position:calc(100% - 15px) 50%,calc(100% - 10px) 50%;background-size:5px 5px;background-repeat:no-repeat;padding-right:28px!important;
 }
 @media(min-width:951px){.live-workspace main{padding-top:4px}#storage-lab>.plant-heading{margin-bottom:6px}}
+
+/* Industrial presentation pass: retain all layout, dimensions and touch targets. */
+.live-workspace{background:radial-gradient(ellipse at 45% 0,#242827 0,#101312 68%)}
+.live-workspace .top{background:linear-gradient(180deg,#1f2322,#171a19);border-bottom-color:#434d4a;box-shadow:0 1px 0 #0a0b0b}
+.live-workspace .top .brand{color:#f2f3f3}
+.live-workspace .top .tabs button{color:#c1c7c6}
+.live-workspace .top .tabs button[aria-selected=true]{background:linear-gradient(180deg,#323a38,#282d2c);color:#a8dac8;box-shadow:inset 0 -2px #68b397,inset 0 1px #616c6966}
+.live-workspace .btn,.live-workspace .plant-nav a{background:linear-gradient(180deg,#323937,#242928);border-color:#4b5452;box-shadow:inset 0 1px 0 #a6b0ad14,0 1px 2px #0004}
+.live-workspace .btn:hover:not(:disabled),.live-workspace .plant-nav a:hover{background:linear-gradient(180deg,#3e4644,#313736);border-color:#949f9c}
+.live-workspace .btn.primary,.live-workspace .playback-panel #storage-example{background:linear-gradient(180deg,#3b4341,#2a302e);border-color:#616d6a;color:#eaecec}
+.live-workspace .control input:not([type=checkbox]),.live-workspace select{box-shadow:inset 0 2px 4px #0005,inset 0 -1px #7e8c8810;border-color:#4e5755}
+.live-workspace .control input:focus,.live-workspace select:focus{border-color:#8ac4af}
+.live-workspace .operating-summary .metric{position:relative;background:linear-gradient(160deg,#2c3231 0,#1f2423 55%,#181c1b 100%);border-color:#434c4a;border-top-color:#646f6c;box-shadow:inset 0 1px #bac1bf10,0 3px 6px #0003}
+.live-workspace .operating-summary label{text-transform:uppercase;font-size:10px;letter-spacing:.65px;color:#c4cac9;font-weight:600}
+.live-workspace .operating-summary strong{font-family:ui-monospace,SFMono-Regular,Consolas,"Liberation Mono",monospace;font-variant-numeric:tabular-nums slashed-zero;font-weight:600;letter-spacing:-.8px;text-shadow:0 1px 1px #0008;color:#ebeeed}
+.live-workspace .operating-summary .readout-unit{font-family:system-ui,-apple-system,Arial,sans-serif;letter-spacing:0;color:#b8bfbd}
+.live-workspace .operating-summary small{color:#b6bebc}
+.live-workspace .operating-summary [data-summary=suction],.live-workspace .operating-summary [data-summary=superheat],.live-workspace .operating-summary [data-summary=feed]{border-top-color:#768480}
+.live-workspace .operating-summary [data-summary=suction] strong,.live-workspace .operating-summary [data-summary=superheat] strong,.live-workspace .operating-summary [data-summary=feed] strong{color:#8bccb4}
+.live-workspace .operating-summary [data-summary=discharge]{border-top-color:#bd8c67}
+.live-workspace .operating-summary [data-summary=discharge] strong{color:#efbb94}
+.live-workspace .operating-summary [data-summary=compressor] strong{font-family:system-ui,-apple-system,Arial,sans-serif;font-size:20px!important;text-transform:uppercase;letter-spacing:.25px}
+.live-workspace .operating-summary [data-summary=compressor][data-state=running]{border-top-color:#838f8c}
+.live-workspace .operating-summary [data-summary=compressor][data-state=running] strong{color:#8addbd}
+.live-workspace .operating-summary [data-summary=compressor][data-state=off] strong,.live-workspace .operating-summary [data-summary=compressor][data-state=paused] strong{color:#d0d4d3}
+.live-workspace .operating-summary [data-summary=compressor][data-state=unavailable] strong{font-size:16px!important;color:#d0d4d3}
+.live-workspace .operating-summary [data-summary=compressor][data-state=stopped]{border-top-color:#a09b94}
+.live-workspace:has(#storage-alarm[data-severity=equipment]) .operating-summary [data-summary=compressor][data-state=stopped]{border-top-color:#d8757c}
+.live-workspace:has(#storage-alarm[data-severity=equipment]) .operating-summary [data-summary=compressor][data-state=stopped] strong{color:#ffb0b5}
+.live-workspace:has(#storage-alarm[data-severity=model]) .operating-summary [data-summary=compressor][data-state=stopped] strong{color:#eac387}
+#storage-playback{position:relative;text-transform:uppercase;letter-spacing:.4px;font-size:10px;font-weight:700;color:#cbd0cf;box-shadow:0 0 0 3px #2f3534;border-radius:2px;background:#2f3534}
+#storage-playback[data-state=running]{color:#a1e5ca;background:#282d2c;box-shadow:0 0 0 3px #282d2c}
+#storage-playback[data-state=ready]{color:#b4bbb9}
+#storage-playback[data-state=stopped]{color:#f0cc91;background:#493b28;box-shadow:0 0 0 3px #493b28}
+.live-workspace:has(#storage-alarm[data-severity=equipment]) #storage-playback[data-state=stopped]{color:#ffc0c4;background:#502c34;box-shadow:0 0 0 3px #502c34}
+.live-workspace .alarm-region{background:linear-gradient(90deg,#242827,#1b1e1d);border-color:#47504e;border-left-color:#7c8a86;box-shadow:inset 0 1px #b1bab80a}
+.live-workspace .alarm-heading h3{text-transform:uppercase;letter-spacing:.4px;font-size:11px;color:#c6ccca}
+.live-workspace .alarm-region[data-severity=equipment]{background:linear-gradient(90deg,#39252c,#241d24);border-color:#a85e69;border-left-color:#ef858e}
+.live-workspace .alarm-region[data-severity=model]{background:linear-gradient(90deg,#352d22,#221f1b);border-color:#907749;border-left-color:#d3ac68}
+.live-workspace #storage-schematic.schematic,.live-workspace .control-main,.live-workspace .control-advanced,.live-workspace .history{background:linear-gradient(150deg,#272c2b,#1a1d1c 70%);border-color:#4d5553;box-shadow:inset 0 1px #bec5c314,0 5px 14px #0003}
+.live-workspace .schematic-heading h3,.live-workspace .control-heading h3{color:#e7e9e9;letter-spacing:.35px}
+.live-workspace .schematic-scroll{background-color:#141616;background-image:linear-gradient(#8b979404 1px,transparent 1px),linear-gradient(90deg,#8b979404 1px,transparent 1px),radial-gradient(ellipse at 50% 40%,#212625,#121414 85%);background-size:24px 24px,24px 24px,100% 100%;box-shadow:inset 0 0 0 1px #818f8b12}
+.live-workspace .schematic-title{fill:#ebeded;letter-spacing:.2px}
+.live-workspace .schematic-value{fill:#96d2bc;font-variant-numeric:tabular-nums slashed-zero;text-shadow:0 1px 1px #0008}
+.live-workspace .schematic-value.secondary{fill:#dbdfde}
+.live-workspace .schematic-caption{fill:#bec5c3}
+.live-workspace .schematic-equipment .machine-body{stroke:#9ca7a4}
+.live-workspace .schematic-equipment.selected .machine-body{stroke:#86c7af}
+.live-workspace:has(#storage-alarm[data-severity=equipment]) .schematic-stopped [data-inspect=compressor] .machine-body{stroke:#e38b91}
+.live-workspace:has(#storage-alarm[data-severity=equipment]) .schematic-stopped [data-reading=compressor-status]{fill:#ffb0b5}
+.live-workspace:has(#storage-alarm[data-severity=model]) .schematic-stopped [data-inspect=compressor] .machine-body{fill:url(#schematic-machine);stroke:#b5a792}
+.live-workspace:has(#storage-alarm[data-severity=model]) .schematic-stopped #schematic-status{color:#eac387}
+.live-workspace:has(#storage-alarm[data-severity=model]) .schematic-stopped [data-reading=compressor-status]{fill:#eac387}
+.live-workspace .schematic-select .btn[aria-pressed=true]{background:linear-gradient(180deg,#3e4644,#2c3231);border-color:#788783;box-shadow:inset 0 -2px #83c3ab,inset 0 1px #9ea8a633}
+.live-workspace .schematic-detail,.live-workspace .history-chart{background:linear-gradient(180deg,#1a1e1d,#161818);border-color:#464f4d;box-shadow:inset 0 1px #0005}
+.live-workspace .schematic-detail dt{color:#b6bebc}
+.live-workspace .schematic-detail dd,.live-workspace .history-legend strong{color:#e8ebea;font-variant-numeric:tabular-nums slashed-zero}
+.live-workspace #storage-form fieldset{background:#15171733;border-color:#4a5250}
+.live-workspace #storage-form legend{color:#d3d7d6;font-weight:650;letter-spacing:.35px}
+.live-workspace #storage-draft{background:#17362d;border-color:#436b5c;color:#b8e2cc;box-shadow:inset 3px 0 #739d89}
+.live-workspace #storage-form[data-dirty=true] #storage-draft{background:#3c3120;color:#efd09b;border-color:#866d43;box-shadow:inset 3px 0 #d2a967}
+.live-workspace .history-axis{fill:#c1c7c6}
+.live-workspace .history-plot [data-curve]{stroke-linecap:round;stroke-linejoin:round}
+.live-workspace .plant-nav{background:#171b1af7;border-top-color:#57625f}
+.live-workspace .plant-nav a:first-child{border-color:#5c6764;color:#95cfba;background:linear-gradient(180deg,#2c3331,#242928)}
+@media print{.live-workspace .operating-summary strong,.live-workspace .schematic-value{text-shadow:none}}
+
+
+/* HMI uplift: same screen foundation, dimensional equipment and retained telemetry. */
+.live-workspace #tab-live{position:relative}
+.live-workspace #tab-live::after{content:'';position:absolute;top:5px;right:5px;width:5px;height:5px;border-radius:1px;background:#8d9895}
+.live-workspace:has(#storage-playback[data-state=running]) #tab-live::after{background:#73e4ad}
+.live-workspace:has(#storage-alarm[data-severity=equipment]) #tab-live::after{background:#ff8394}
+.live-workspace:has(#storage-alarm[data-severity=model]) #tab-live::after{background:#f3c568}
+
+.live-workspace{--ink:#edeeee;--muted:#b2bab8;--teal:#6abfa0;--blue:#81c9af;--orange:#eec16e;--red:#f5848f;background:radial-gradient(ellipse at 50% -15%,#282e2c 0,#0f1111 60%,#0a0c0b 100%)}
+.live-workspace .top{background:linear-gradient(180deg,#1f2423,#0e1110);border-bottom:1px solid #48514f;box-shadow:0 4px 14px #0005}
+.live-workspace .top .tabs button{border-radius:4px}
+.live-workspace .top .tabs button[aria-selected=true]{background:linear-gradient(180deg,#343c3a,#232827);color:#b7e0d1;box-shadow:inset 0 -2px #6abfa0,inset 0 1px #a9dac822,0 0 0 1px #3a6455}
+.live-workspace #storage-lab>.plant-heading{background:linear-gradient(90deg,#272d2b44,#10121200);border-radius:3px;box-shadow:inset 3px 0 #64706d;outline:1px solid #5d686522}
+.live-workspace .plant-heading>div:first-child{padding-left:10px}
+.live-workspace .plant-heading h2{font-weight:700;color:#f4f6f5;letter-spacing:.2px}
+.live-workspace:has(#storage-playback[data-state=running]) #storage-lab>.plant-heading{box-shadow:inset 3px 0 #5acd9f}
+.live-workspace:has(#storage-alarm[data-severity=equipment]) #storage-lab>.plant-heading{box-shadow:inset 3px 0 #f5848f}
+.live-workspace:has(#storage-alarm[data-severity=model]) #storage-lab>.plant-heading{box-shadow:inset 3px 0 #eec16e}
+.live-workspace .plant-clock strong{color:#f0f1f1;font-variant-numeric:tabular-nums slashed-zero}
+#storage-playback{font-size:10px;letter-spacing:.5px;color:#cfd4d3;background:#323937;box-shadow:0 0 0 3px #323937}
+#storage-playback[data-state=running]{color:#9af0c1;background:#124232;box-shadow:0 0 0 3px #124232}
+#storage-playback[data-state=stopped]{color:#ffd989;background:#493820;box-shadow:0 0 0 3px #493820}
+.live-workspace:has(#storage-alarm[data-severity=equipment]) #storage-playback[data-state=stopped]{color:#ffd0d5;background:#582431;box-shadow:0 0 0 3px #582431}
+.live-workspace .operating-summary .metric{--signal:#74b29b;padding-left:10px;padding-right:10px;border-radius:4px;background:linear-gradient(140deg,#292e2d,#191c1b 48%,#111313);border-color:#46504d;border-top-color:var(--signal);box-shadow:inset 0 1px #b7dfd017,0 4px 10px #0005}
+.live-workspace .operating-summary [data-summary=suction],.live-workspace .operating-summary [data-summary=superheat],.live-workspace .operating-summary [data-summary=feed]{--signal:#6abfa0}
+.live-workspace .operating-summary [data-summary=discharge]{--signal:#eec16e;border-top-color:var(--signal)}
+.live-workspace .operating-summary label{color:#bac1bf;font-weight:650;letter-spacing:.7px}
+.live-workspace .instrument-band{display:flex;align-items:center;justify-content:space-between;gap:2px;background:linear-gradient(90deg,#0a0b0b55,transparent);box-shadow:inset 0 -1px #707c7912;min-width:0}
+.live-workspace .instrument-band strong{white-space:nowrap;min-width:0;font-weight:700;color:#ebeded}
+.live-workspace .instrument-band .readout-unit{font-size:10px;letter-spacing:0;color:#b9c1bf;font-weight:500}
+.live-workspace .operating-summary [data-summary=suction] strong,.live-workspace .operating-summary [data-summary=superheat] strong,.live-workspace .operating-summary [data-summary=feed] strong{color:#82caaf}
+.live-workspace .operating-summary [data-summary=discharge] strong{color:#ffd078}
+.instrument-trace{width:26px;height:23px;flex:0 0 26px;overflow:visible;color:var(--signal);opacity:.9}
+.instrument-trace .trace-baseline{fill:none;stroke:#7d8a87;stroke-width:.6;opacity:.5}
+.instrument-trace .trace-curve{fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.instrument-trace circle{fill:currentColor}
+.instrument-no-trace{color:#7d8a87;font-size:12px}
+.instrument-state-mark{width:5px;height:20px;flex:0 0 5px;background:#788582;box-shadow:0 0 0 3px #0b0c0c}
+.live-workspace .operating-summary [data-summary=compressor]{--signal:#788582}
+.live-workspace .operating-summary [data-summary=compressor][data-state=running]{--signal:#65d69f}
+.live-workspace .operating-summary [data-summary=compressor][data-state=running] strong{color:#8df0b9}
+.live-workspace .operating-summary [data-summary=compressor][data-state=running] .instrument-state-mark{background:#65d69f}
+.live-workspace .operating-summary [data-summary=compressor][data-state=off] .instrument-state-mark{background:#5b6563}
+.live-workspace:has(#storage-alarm[data-severity=equipment]) .operating-summary [data-summary=compressor][data-state=stopped]{--signal:#f5848f}
+.live-workspace:has(#storage-alarm[data-severity=equipment]) .operating-summary [data-summary=compressor][data-state=stopped] .instrument-state-mark{background:#f5848f}
+.live-workspace:has(#storage-alarm[data-severity=model]) .operating-summary [data-summary=compressor][data-state=stopped]{--signal:#eec16e}
+.live-workspace:has(#storage-alarm[data-severity=model]) .operating-summary [data-summary=compressor][data-state=stopped] .instrument-state-mark{background:#eec16e}
+.live-workspace .alarm-region{border-radius:3px;background:linear-gradient(90deg,#232726,#161818);border-color:#525c59;border-left-color:#74817e}
+.live-workspace .alarm-heading h3{color:#cfd4d3;font-weight:700;letter-spacing:.6px}
+.live-workspace .alarm-region[data-severity=equipment]{background:linear-gradient(90deg,#4b202d,#21131e);border-color:#b6556a;border-left-color:#ff8394;box-shadow:inset 0 1px #ff9eaa16}
+.live-workspace .alarm-region[data-severity=equipment] #storage-alarm-summary{color:#ffc3ca;font-weight:650}
+.live-workspace .alarm-region[data-severity=model]{background:linear-gradient(90deg,#40331d,#1c1914);border-color:#b28a43;border-left-color:#f3c568}
+.live-workspace .alarm-region[data-severity=model] #storage-alarm-summary{color:#ffdc8b;font-weight:650}
+.live-workspace #storage-schematic.schematic{background:linear-gradient(155deg,#262c2a,#151817 65%);border-color:#505957;border-radius:5px;box-shadow:inset 0 1px #b1decd20,0 6px 18px #0006}
+.live-workspace .schematic-heading{background:linear-gradient(90deg,#363e3c55,transparent);box-shadow:inset 3px 0 #61ba99;border-radius:2px}
+.live-workspace .schematic-heading>div{padding-left:8px}
+.live-workspace .schematic-heading h3{color:#f2f3f3;text-transform:uppercase;font-size:13px;letter-spacing:.65px}
+.live-workspace .schematic-heading .schematic-scope{text-transform:none;letter-spacing:0}
+.live-workspace .schematic-scroll{background-color:#0b0c0c;background-image:linear-gradient(#85928f07 1px,transparent 1px),linear-gradient(90deg,#85928f07 1px,transparent 1px),radial-gradient(ellipse at 50% 10%,#272d2b,#0c0d0d 80%);background-size:30px 30px,30px 30px,100% 100%;box-shadow:inset 0 0 0 1px #6b787522,inset 0 10px 30px #0003}
+.live-workspace .machine-surface{filter:url(#schematic-depth)}
+.live-workspace .schematic-title{fill:#e8eaea;font-weight:650}
+.live-workspace .schematic-value{fill:#87cbb2;font-weight:700}
+.live-workspace .schematic-value.secondary{fill:#d1d6d5}
+.live-workspace:has([data-summary=compressor][data-state=running]) [data-reading=compressor-status]{fill:#8df0b9}
+.live-workspace:has([data-summary=compressor][data-state=paused]) [data-reading=compressor-status]{fill:#d2d7d6}
+.live-workspace:has([data-summary=compressor][data-state=off]) [data-reading=compressor-status]{fill:#939f9c}
+.live-workspace:has([data-summary=compressor][data-state=unavailable]) [data-reading=compressor-status]{fill:#d2d7d6}
+.live-workspace .schematic-caption{fill:#b7bfbd}
+.live-workspace [data-inspect=condenser] [data-reading=condenser-pressure],.live-workspace [data-inspect=receiver] [data-reading=receiver-pressure]{fill:#f5cb77}
+.live-workspace [data-inspect=evaporator] [data-reading=evaporator-pressure],.live-workspace [data-inspect=outlet] [data-reading=outlet-pressure]{fill:#96d2bc}
+.live-workspace .schematic-equipment .machine-body{stroke:#929d9a;stroke-width:1.3}
+.live-workspace .schematic-equipment.selected .machine-body{stroke:#89ccb4;stroke-width:2}
+.live-workspace .process-port.port-inactive{opacity:.65}
+.live-workspace .schematic-select .btn{background:linear-gradient(180deg,#2e3433,#1d201f);border-color:#4f5956}
+.live-workspace .schematic-select .btn[aria-pressed=true]{background:linear-gradient(180deg,#3f4846,#262c2a);border-color:#6ead96;color:#dadedd;box-shadow:inset 0 -2px #72c2a5}
+.live-workspace .control-main,.live-workspace .control-advanced{background:linear-gradient(160deg,#292f2d,#171a19);border-color:#5d6865;border-radius:5px;box-shadow:inset 0 1px #b0d7c91a,0 5px 14px #0005}
+.live-workspace .control-heading{box-shadow:inset 3px 0 #6bba9d;background:linear-gradient(90deg,#414a4844,transparent);border-radius:2px}
+.live-workspace .control-heading h3{padding-left:8px;text-transform:uppercase;font-size:13px;letter-spacing:.7px}
+.live-workspace #storage-form fieldset{background:linear-gradient(180deg,#13151555,#24282733);border-color:#535c5a;border-radius:4px}
+.live-workspace #storage-form legend{color:#a7d1c2;letter-spacing:.5px;text-transform:uppercase;font-size:11px}
+.live-workspace .control input:not([type=checkbox]),.live-workspace select{background-color:#0e1110;border-color:#586360;color:#e5e7e7;border-radius:3px;box-shadow:inset 0 2px 5px #0008,inset 0 -1px #7d8b8722;font-variant-numeric:tabular-nums}
+.live-workspace .control input[type=number]{font-family:ui-monospace,SFMono-Regular,Consolas,"Liberation Mono",monospace;color:#b5e0d0;font-weight:600}
+.live-workspace input[type=checkbox]{accent-color:#65bd9d}
+.live-workspace .btn{border-radius:4px;background:linear-gradient(180deg,#363d3b,#212524);border-color:#5e6a67;box-shadow:inset 0 1px #a7b1ae26,0 2px 3px #0004}
+.live-workspace .btn:hover:not(:disabled){background:linear-gradient(180deg,#444e4b,#2e3433);border-color:#81b9a4}
+.live-workspace .btn.primary,.live-workspace .playback-panel #storage-example{background:linear-gradient(180deg,#39413f,#242928);border-color:#4e937a;color:#e0e4e3;box-shadow:inset 0 1px #96d2bc22,0 2px 3px #0005}
+.live-workspace #storage-start:not(:disabled){border-color:#427e68;color:#a7edc3;background:linear-gradient(180deg,#2a2f2e,#1f2322)}
+.live-workspace #storage-pause:not(:disabled){border-color:#b3914d;color:#ffe0a0;background:linear-gradient(180deg,#3a3327,#252a29)}
+.live-workspace #storage-form .apply{border-color:#6db59b;font-weight:700}
+.live-workspace #storage-draft{background:#262b2a;color:#c3cac8;border-color:#586360;box-shadow:inset 3px 0 #7b8985}
+.live-workspace #storage-form[data-applied=true][data-dirty=false] #storage-draft{background:#102a23;color:#b3d9c1;border-color:#3c7158;box-shadow:inset 3px 0 #61b58a}
+.live-workspace #storage-form[data-dirty=true] #storage-draft{background:#44351f;color:#ffdc8b;border-color:#b78d45;box-shadow:inset 3px 0 #f1c169}
+.live-workspace .schematic-detail,.live-workspace .history-chart{background:linear-gradient(180deg,#1d201f,#111413);border-color:#4e5855}
+.live-workspace .schematic-detail dd{font-variant-numeric:tabular-nums;color:#eceeed;font-weight:550}
+.live-workspace .history{background:linear-gradient(150deg,#2c3331,#171a19);border-color:#596461;box-shadow:inset 0 1px #97d1bc21}
+.live-workspace .history-chart h4{color:#ccd1d0;text-transform:uppercase;font-size:12px;letter-spacing:.6px}
+.live-workspace .history-plot [data-curve]{stroke-width:2.5}
+.live-workspace .plant-nav{background:linear-gradient(180deg,#212524f7,#141616f7);border-top-color:#626d6a}
+.live-workspace .plant-nav a{background:linear-gradient(180deg,#2e3433,#1e2322);border-color:#535d5a;border-radius:4px}
+.live-workspace .plant-nav a:first-child{background:linear-gradient(180deg,#383f3d,#242a28);border-color:#6d7a77;color:#a2d7c4}
+@media(min-width:1280px){.live-workspace .instrument-band strong{font-size:28px!important;letter-spacing:-1px}.instrument-trace{width:58px;height:27px;flex-basis:58px}.live-workspace .operating-summary [data-summary=compressor] .instrument-band strong{font-size:20px!important}}
+@media(max-width:600px){.instrument-trace{width:32px;flex-basis:32px}.live-workspace .instrument-band strong{font-size:21px!important}.live-workspace .operating-summary [data-summary=compressor][data-state=unavailable] strong{font-size:15px!important}}
+@media print{.live-workspace .machine-surface{filter:none}.instrument-trace{color:#3a4341}}
+
+
+/* Approved HMI palette refinement: colors only, no sizing or structure changes. */
+.live-workspace{--ink:#e7ece9;--muted:#aebbb5;--teal:#83d4b7;--blue:#93cfb9;--orange:#dfb474;--red:#f5848f}
+.live-workspace .card,.live-workspace .sidebar,.live-workspace .model-notes{background:#171d1b;border-color:#47534e}
+.live-workspace .sidebar-head{background:#26302c}
+.live-workspace .model-notes summary{color:#c9d6cf}
+.live-workspace .schematic-caption,.live-workspace .history-axis{fill:#b3c3bb}
+.live-workspace .schematic-scope,.live-workspace .simulator-label{color:#acbbb3}
+.live-workspace .brand-icon{stroke:#91cdb5}
+.live-workspace .top .mark{background:#1b2c25;border-color:#4b7060;color:#91cdb5}
+.live-workspace .schematic-scroll::before{color:#b1d2c3;background:#22342c}
+.live-workspace .history-plot path[stroke="#d8e1dd"]{stroke:#35433c}
+.live-workspace .history-plot [data-cursor]{stroke:#b8d7c7}
+.live-workspace .schematic-select .btn[aria-pressed=true]{color:#c7e7d8}
+.live-workspace .plant-nav a:first-child{color:#a0dbc0}
+.live-workspace .operating-summary [data-summary=discharge] strong{color:#e9bd79}
+.live-workspace [data-inspect=condenser] [data-reading=condenser-pressure],.live-workspace [data-inspect=receiver] [data-reading=receiver-pressure]{fill:#e3b779}
+
+
+.live-workspace select{background-color:#111815;background-image:linear-gradient(45deg,transparent 50%,#adc5b8 50%),linear-gradient(135deg,#adc5b8 50%,transparent 50%)}
+.live-workspace .btn.primary,.live-workspace .playback-panel #storage-example{background:linear-gradient(180deg,#28594c,#193c32);border-color:#629d80;color:#d2ebdc;box-shadow:inset 0 1px #95cdb322,0 2px 3px #0005}
+
 </style></head><body><main>
 <header class="top"><div class="brand"><span class="mark" aria-hidden="true"><svg viewBox="0 0 24 24" class="brand-icon"><path d="M12 2L21 7V17L12 22L3 17V7Z"/><path d="M7 16L12 6L17 16M9 13H15"/></svg></span>AMMONIA / LAB <span class="version">v0.5.0</span></div><nav class="tabs" role="tablist" aria-label="Simulation views"><button role="tab" id="tab-cycle" aria-controls="view-cycle" aria-selected="true" data-tab="cycle">Cycle overview</button><button role="tab" id="tab-thermo" aria-controls="view-thermo" aria-selected="false" data-tab="thermo" tabindex="-1">Thermodynamics</button><button role="tab" id="tab-room" aria-controls="view-room" aria-selected="false" data-tab="room" tabindex="-1">Room cooling</button><button role="tab" id="tab-live" aria-controls="view-live" aria-selected="false" data-tab="live" tabindex="-1">Live plant</button><button role="tab" id="tab-scenarios" aria-controls="view-scenarios" aria-selected="false" data-tab="scenarios" tabindex="-1">Scenarios</button><button role="tab" id="tab-validation" aria-controls="view-validation" aria-selected="false" data-tab="validation" tabindex="-1">Model &amp; validation</button></nav><div class="unit-row"><span>Display units</span><select id="pressure-unit" aria-label="Pressure units"><option value="bara">bar(a)</option><option value="barg">bar(g)</option><option value="psia">psia</option><option value="psig" selected>psig</option></select><select id="temperature-unit" aria-label="Temperature units"><option value="C">°C</option><option value="F" selected>°F</option></select></div></header>
 <section class="hero"><div><h1>Explore the physics of cooling.</h1><p>A real-fluid ammonia cycle, from suction pressure to cooling duty.<br>Compare operating points, inspect the thermodynamics, or run a live plant.</p></div><div class="engine-badge"><strong>NH₃ / R-717 · HEOS property model</strong><br>Single-stage · live room & controls · works offline<br>CoolProp 7.2.0 · bounded property interpolation</div></section>

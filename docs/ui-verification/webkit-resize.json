@@ -1,0 +1,89 @@
+{
+  "browser": "Playwright 1.62.1 WebKit",
+  "results": [
+    {
+      "version": "committed",
+      "sha256": "e31efb34e0d34d2f44efe6db37daedacc873521e4bf4f8e6bc1545fcfbd4338a",
+      "original": {
+        "code": 0,
+        "output": "Skipping host requirements validation logic because `PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS` env variable is set.\nPASS: webkit illustrated component set, exact dynamic receiver fill, full iPad landscape circuit, keyboard inspection, supported flow animation/arrows, full-width adaptive trends and pinned samples, blocked/isolated/stopped paths, modeled bank count, reduced motion, portrait/mobile scroll communication, touch targets and offline SVG.\n"
+      },
+      "geometry": {
+        "before": {
+          "viewport": 1024,
+          "plotWidth": 741,
+          "viewBoxWidth": 741,
+          "pinned": "Pinned inspection; playback can continue · 0.0000 s · Before manual advance · sample #2"
+        },
+        "immediate": {
+          "viewport": 1440,
+          "plotWidth": 1157,
+          "viewBoxWidth": 1157,
+          "pinned": "Pinned inspection; playback can continue · 0.0000 s · Before manual advance · sample #2"
+        },
+        "settled": {
+          "viewport": 1440,
+          "plotWidth": 1157,
+          "viewBoxWidth": 1157,
+          "pinned": "Pinned inspection; playback can continue · 0.0000 s · Before manual advance · sample #2"
+        }
+      }
+    },
+    {
+      "version": "approved-pre-palette",
+      "sha256": "5a7ae1ffab5792ad45e629d7c58d2ca0c117c3e7d764626c85ba95060fbb7efc",
+      "original": {
+        "code": 1,
+        "output": "Skipping host requirements validation logic because `PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS` env variable is set.\nAssertionError [ERR_ASSERTION]: Chart geometry expands at desktop width\n    at /workspace/Ammonia-sim/tests/visual-pass2-ui.cjs:22:230\n    at runNextTicks (node:internal/process/task_queues:65:5)\n    at process.processImmediate (node:internal/timers:502:9) {\n  generatedMessage: false,\n  code: 'ERR_ASSERTION',\n  actual: false,\n  expected: true,\n  operator: '==',\n  diff: 'simple'\n}\n"
+      },
+      "geometry": {
+        "before": {
+          "viewport": 1024,
+          "plotWidth": 741,
+          "viewBoxWidth": 741,
+          "pinned": "Pinned inspection; playback can continue · 0.0000 s · Before manual advance · sample #2"
+        },
+        "immediate": {
+          "viewport": 1440,
+          "plotWidth": 1157,
+          "viewBoxWidth": 1157,
+          "pinned": "Pinned inspection; playback can continue · 0.0000 s · Before manual advance · sample #2"
+        },
+        "settled": {
+          "viewport": 1440,
+          "plotWidth": 1157,
+          "viewBoxWidth": 1157,
+          "pinned": "Pinned inspection; playback can continue · 0.0000 s · Before manual advance · sample #2"
+        }
+      }
+    },
+    {
+      "version": "current",
+      "sha256": "15bc108cebe4c3346490c0db9433aabd6e19190d96397933d7867c4afe2dd5c4",
+      "original": {
+        "code": 1,
+        "output": "Skipping host requirements validation logic because `PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS` env variable is set.\nAssertionError [ERR_ASSERTION]: Chart geometry expands at desktop width\n    at /workspace/Ammonia-sim/tests/visual-pass2-ui.cjs:22:230\n    at runNextTicks (node:internal/process/task_queues:65:5)\n    at process.processImmediate (node:internal/timers:502:9) {\n  generatedMessage: false,\n  code: 'ERR_ASSERTION',\n  actual: false,\n  expected: true,\n  operator: '==',\n  diff: 'simple'\n}\n"
+      },
+      "geometry": {
+        "before": {
+          "viewport": 1024,
+          "plotWidth": 741,
+          "viewBoxWidth": 741,
+          "pinned": "Pinned inspection; playback can continue · 0.0000 s · Before manual advance · sample #2"
+        },
+        "immediate": {
+          "viewport": 1440,
+          "plotWidth": 1157,
+          "viewBoxWidth": 1157,
+          "pinned": "Pinned inspection; playback can continue · 0.0000 s · Before manual advance · sample #2"
+        },
+        "settled": {
+          "viewport": 1440,
+          "plotWidth": 1157,
+          "viewBoxWidth": 1157,
+          "pinned": "Pinned inspection; playback can continue · 0.0000 s · Before manual advance · sample #2"
+        }
+      }
+    }
+  ]
+}

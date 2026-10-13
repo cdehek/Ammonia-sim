@@ -6,7 +6,7 @@
     "build": "python3 tools/build.py",
     "test": "node tests/physics.cjs && node tests/dynamic.cjs && node tests/profiles.cjs && node tests/initialization.cjs && node tests/storage.cjs && node tests/valves.cjs && node tests/integration.cjs && node tests/schematic.cjs && node tests/history.cjs && node tests/training.cjs",
     "test:browser": "node tests/run-browser.cjs",
-    "test:webkit": "TEST_BROWSER=webkit node tests/run-browser.cjs release-ui.cjs schematic-ui.cjs history-ui.cjs training-ui.cjs visual-pass2-ui.cjs"
+    "test:webkit": "TEST_BROWSER=webkit node tests/run-browser.cjs release-ui.cjs schematic-ui.cjs history-ui.cjs training-ui.cjs visual-pass2-ui.cjs industrial-styling-ui.cjs hmi-uplift-ui.cjs"
   },
   "devDependencies": {"playwright": "1.62.1"}
 }

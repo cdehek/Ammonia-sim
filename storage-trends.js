@@ -4,7 +4,7 @@
 const esc=x=>String(x).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const groups={pressure:'Pressures',temperature:'Temperatures',superheat:'Outlet superheat',valve:'Feed valve',level:'Liquid volume',power:'Compressor electrical demand'};
 const last=a=>a&&a[a.length-1];
-const colors=['#56cec3','#eda873','#69bce4','#a4a8e4','#d3bd77','#df94ac'];
+const colors=['#83c9aa','#d8aa74','#a1b7ad','#b3aca0','#cfbf83','#cd9ca4'];
 const reasons={initialize:'Initialized',periodic:'Periodic observation','before-change':'Before applied change','after-change':'After applied change',stop:'Stop detected','stop-cleared':'After stop cleared',start:'Playback started',pause:'Playback paused',step:'Before manual advance',speed:'Playback speed changed'};
 // Preserve first/last/extrema and gap boundaries in each time bucket. Exact
 // observations remain available through the cursor and CSV, independently.
@@ -72,10 +72,12 @@ function create(container){
  function buildCards(list){
   const chosen=$('storage-trend-group').value,keys=chosen==='all'?Object.keys(groups):[chosen],key=keys.map(group=>group+':'+series(group,units,list).map(d=>d.key).join(',')).join('|')+'|'+units.p+'|'+units.T;
   if(cardsKey===key)return;cardsKey=key;cards.clear();$('storage-trend-charts').innerHTML='';
+  resizeObserver?.disconnect();resizeObserver?.observe(container);
   for(const group of keys){
    const definitions=series(group,units,list),card=document.createElement('section');card.className='history-chart';card.dataset.group=group;
    card.innerHTML='<h4>'+groups[group]+'</h4><div class="history-plot svg-scroll" data-plot="'+group+'"></div><div class="history-legend">'+definitions.map(d=>'<label><input type="checkbox" data-series="'+group+':'+d.key+'" '+(hidden.has(group+':'+d.key)?'':'checked')+'><i style="background:'+d.color+'"></i>'+esc(d.label)+' <strong data-value="'+d.key+'">—</strong></label>').join('')+'</div>';
    $('storage-trend-charts').append(card);cards.set(group,card);
+   resizeObserver?.observe(card.querySelector('.history-plot'));
   }
  }
  function drawChart(group,card,list,selected){
@@ -117,9 +119,16 @@ function create(container){
  $('storage-events').addEventListener('click',e=>{const button=e.target.closest('[data-event]');if(!button)return;selectedEvent=Number(button.dataset.event);const event=h.events.find(e=>e.id===selectedEvent);$('storage-trend-follow').checked=false;frozenEnd=event.seconds;pinnedId=event.sampleId;render();});
  $('storage-history-export').addEventListener('click',()=>{if(!h)return;const url=URL.createObjectURL(new Blob([root.AmmoniaHistory.csv(h)],{type:'text/csv'})),a=document.createElement('a');a.href=url;a.download='ammonia-history-v050-stage2.csv';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);});
  // Width changes alter only plot geometry, never retained samples or cursor state.
- let observedWidth=container.clientWidth;
- if(typeof ResizeObserver!=='undefined')new ResizeObserver(()=>{const width=container.clientWidth;if(width!==observedWidth){observedWidth=width;requestAnimationFrame(render);}}).observe(container);
- else window.addEventListener('resize',render);
+ let observedWidths='';
+ const resizeCharts=()=>{const widths=[container.clientWidth,...[...cards.values()].map(card=>card.querySelector('.history-plot').clientWidth)].join('|');if(widths!==observedWidths){observedWidths=widths;render();}};
+ // Window resize handles viewport changes immediately; the observer also covers
+ // container-only changes. The shared width guard prevents duplicate redraws.
+ // Queue observer writes outside delivery without adding a frame of delay.
+ // The width guard makes viewport and observer notifications share one redraw.
+ let resizeTimer=null;
+ const resizeObserver=typeof ResizeObserver!=='undefined'?new ResizeObserver(()=>{if(resizeTimer===null)resizeTimer=setTimeout(()=>{resizeTimer=null;resizeCharts();},0);}):null;
+ resizeObserver?.observe(container);
+ window.addEventListener('resize',resizeCharts);
  render();
  return {update(history,displayUnits){if(history!==h){pinnedId=null;frozenEnd=null;selectedEvent=null;signature='';cardsKey='';$('storage-trend-follow').checked=true;}h=history;units={...displayUnits};render();}};
 }

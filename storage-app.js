@@ -8,6 +8,21 @@
  const f=(v,n=3)=>Number.isFinite(v)?v.toFixed(n):'—',temp=v=>Number.isFinite(v)?(units.T==='F'?v*1.8+32:v):NaN;
  const pressure=v=>Number.isFinite(v)?(v-(units.p.endsWith('g')?1.01325:0))*(units.p.startsWith('psi')?14.503773773:1):NaN,pl=()=>({bara:'bar(a)',barg:'bar(g)',psia:'psia',psig:'psig'})[units.p];
  // Display projection only: these functions never write simulator state.
+ function microtrend(key,connected){
+  const source=state?.history.samples||[],end=source[source.length-1]?.seconds;
+  const samples=source.filter(s=>s.seconds>=end-60),definitions={suction:['pressure',connected?'outlet':'evaporator'],discharge:['pressure','condenser'],room:['temperature','room'],superheat:['superheat','actualSuperheat'],feed:['valve','opening']};
+  const [group,seriesKey]=definitions[key]||[];
+  if(!group)return '<span class="instrument-state-mark" aria-hidden="true"></span>';
+  const definition=AmmoniaTrends.series(group,units,samples).find(d=>d.key===seriesKey),values=definition?samples.map(s=>definition.read(s)).filter(Number.isFinite):[];
+  if(!values.length)return '<span class="instrument-no-trace" aria-hidden="true">—</span>';
+  const low=Math.min(...values),high=Math.max(...values),span=high-low,start=samples[0].seconds;
+  const x=s=>2+(s.seconds-start)/Math.max(1,end-start)*60,y=v=>span>0?22-(v-low)/span*18:13;
+  // Extrema/gap-preserving reduction uses the same read-only helper as full trends.
+  const points=AmmoniaTrends.envelope(samples,definition,16);let path='',gap=true;
+  for(const sample of points){const value=definition.read(sample);if(value===null){gap=true;continue;}path+=(gap?'M':'L')+x(sample).toFixed(3)+' '+y(value).toFixed(3);gap=false;}
+  const latest=samples[samples.length-1],value=definition.read(latest),label='Retained '+definition.label+' samples · '+f(start,1)+'–'+f(end,1)+' simulated seconds · range '+f(low,2)+'–'+f(high,2)+' '+definition.unit+'. Independently scaled; gaps are unavailable. Straight segments join observations.';
+  return '<svg class="instrument-trace" viewBox="0 0 64 26" role="img" aria-label="'+esc(label)+'" data-microtrend="'+key+'" data-from="'+start+'" data-to="'+end+'" data-min="'+low+'" data-max="'+high+'" data-sample-ids="'+points.map(s=>s.id).join(',')+'"><title>'+esc(label)+'</title><path d="M2 24H62" class="trace-baseline"/><path d="'+path+'" class="trace-curve"/>'+(Number.isFinite(value)?'<circle cx="'+x(latest).toFixed(3)+'" cy="'+y(value).toFixed(3)+'" r="2"/>':'')+'</svg>';
+ }
  function renderDraft(){
   let dirty=false,message='Initialize to apply these settings.';
   if(state){
@@ -17,7 +32,7 @@
     message=dirty?'Draft changes · not applied to the connected run.':'Applied · controls match the connected run.';
    }catch{dirty=true;message='Draft incomplete or invalid · applied run settings retained.';}
   }
-  $('storage-form').dataset.dirty=String(dirty);$('storage-draft').textContent=message;
+  $('storage-form').dataset.dirty=String(dirty);$('storage-form').dataset.applied=String(!!state);$('storage-draft').textContent=message;
  }
  function renderDashboard(r=null,c=null){
   const connected=!!r?.vessels.outlet,flows=r?.flows&&!r.flows.error?r.flows:null,o=state?.operations;
@@ -30,12 +45,16 @@
    ['Actual superheat',f(flows?.superheat*(units.T==='F'?1.8:1),2),units.T==='F'?'°F Δ':'K',!state?'Not initialized':!connected?'Unavailable · isolated circuit':flows?.interval?'Accepted flow interval':'Current outlet state','superheat'],
    ['Feed valve',connected?f(r.controller.opening*100,2):'—','%',!state?'Not initialized':connected?'Actual opening · '+o.valveMode:'Unavailable · isolated circuit','feed']
   ];
-  $('storage-overview').innerHTML=cards.map(([label,value,unit,note,key])=>'<div class="metric" data-summary="'+key+'"><label>'+esc(label)+'</label><strong>'+esc(value)+' <span class="readout-unit">'+esc(unit)+'</span></strong><small>'+esc(note)+'</small></div>').join('');
+  $('storage-overview').innerHTML=cards.map(([label,value,unit,note,key])=>'<div class="metric" data-summary="'+key+'"><label>'+esc(label)+'</label><div class="instrument-band"><strong>'+esc(value)+' <span class="readout-unit">'+esc(unit)+'</span></strong>'+microtrend(key,connected)+'</div><small>'+esc(note)+'</small></div>').join('');
   $('storage-mode').textContent=!state?'Connected circuit · not initialized':(connected?'Circulating DX':'Isolated storage')+' · '+(o.thermalMode==='air'?'room / ambient exchange':'sealed test boundaries')+' · '+state.profile.name+' r'+state.profile.revision;
   $('storage-playback').textContent=!state?'Ready':state.fault?'Stopped':running?'Running · '+$('storage-speed').value+'×':'Paused';
+  // Styling hooks project existing states; they do not change playback or fault handling.
+  $('storage-playback').dataset.state=!state?'ready':state.fault?'stopped':running?'running':'paused';
+  $('storage-overview').querySelector('[data-summary="compressor"]').dataset.state=compressor.toLowerCase();
   const fault=state?.fault;
   $('storage-alarm').dataset.severity=!state?'idle':fault?(fault.kind==='equipment'?'equipment':'model'):'normal';
   $('storage-alarm-summary').textContent=!state?'Not initialized · no connected run to assess.':!fault?'No active modeled trip or stop.':fault.kind==='equipment'?'EQUIPMENT TRIP · '+fault.message: (fault.kind==='solver'?'NUMERICAL / SOLVER STOP':'MODEL-DOMAIN STOP')+' · '+fault.message+' · no equipment trip asserted.';
+  $('tab-live').title='Connected playback: '+$('storage-playback').textContent+' · compressor: '+compressor+' · '+$('storage-alarm-summary').textContent;
   if(!state)$('storage-status').textContent='Initialize the DX example or choose circuit settings and initialize storage.';
   $('storage-applied').textContent=!state?'No applied connected controls yet.':'Applied: compressor '+(o.compressorOn?'enabled':'disabled')+' at '+f(o.speed*100,0)+'% · feed '+o.valveMode+(o.valveMode==='manual'?' command '+f(o.manualOpening*100,1)+'%':'')+' · ambient '+f(temp(state.roomConfig.ambient),1)+' °'+units.T+' · room gain '+f(state.roomConfig.gain,1)+' kW.';
   renderDraft();
