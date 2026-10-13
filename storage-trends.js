@@ -4,7 +4,7 @@
 const esc=x=>String(x).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const groups={pressure:'Pressures',temperature:'Temperatures',superheat:'Outlet superheat',valve:'Feed valve',level:'Liquid volume',power:'Compressor electrical demand'};
 const last=a=>a&&a[a.length-1];
-const colors=['#28796f','#dc713e','#3389ac','#8356ac','#986b22','#b24a60'];
+const colors=['#56cec3','#eda873','#69bce4','#a4a8e4','#d3bd77','#df94ac'];
 const reasons={initialize:'Initialized',periodic:'Periodic observation','before-change':'Before applied change','after-change':'After applied change',stop:'Stop detected','stop-cleared':'After stop cleared',start:'Playback started',pause:'Playback paused',step:'Before manual advance',speed:'Playback speed changed'};
 // Preserve first/last/extrema and gap boundaries in each time bucket. Exact
 // observations remain available through the cursor and CSV, independently.
@@ -85,14 +85,15 @@ function create(container){
   const pad=Math.max((high-low)*.08,group==='valve'||group==='level'?1:.1);low-=pad;high+=pad;
   if(group==='valve'||group==='level'){low=0;high=100;}
   if(group==='superheat'||group==='power'||group==='pressure'&&!units.p.endsWith('g'))low=Math.max(0,low);
-  const x=t=>60+(t-start)/span*550,y=v=>190-(v-low)/(high-low)*145;
-  let svg='<svg viewBox="0 0 640 240" role="img" aria-label="'+groups[group]+' from '+f(start,3)+' to '+f(end,3)+' simulated seconds"><text x="60" y="20" class="history-axis">'+esc(definitions[0]?.unit||'No available readings')+'</text>';
-  for(let i=0;i<=3;i++){const value=low+(high-low)*i/3,yy=y(value);svg+='<path d="M60 '+yy+'H610" stroke="#d8e1dd" fill="none"/><text x="54" y="'+(yy+4)+'" text-anchor="end" class="history-axis">'+f(value)+'</text>';}
+  const width=Math.max(640,Math.round(card.querySelector('[data-plot]').clientWidth||640)),right=width-24,plotWidth=right-60;
+  const x=t=>60+(t-start)/span*plotWidth,y=v=>190-(v-low)/(high-low)*145;
+  let svg='<svg viewBox="0 0 '+width+' 240" role="img" aria-label="'+groups[group]+' from '+f(start,3)+' to '+f(end,3)+' simulated seconds"><text x="60" y="20" class="history-axis">'+esc(definitions[0]?.unit||'No available readings')+'</text>';
+  for(let i=0;i<=3;i++){const value=low+(high-low)*i/3,yy=y(value);svg+='<path d="M60 '+yy+'H'+right+'" stroke="#d8e1dd" fill="none"/><text x="54" y="'+(yy+4)+'" text-anchor="end" class="history-axis">'+f(value)+'</text>';}
   const events=(h?.events||[]).filter(e=>e.seconds>=start-1e-8&&e.seconds<=end+1e-8).slice(-100);
-  for(const e of events)svg+='<path data-marker="'+e.id+'" d="M'+x(e.seconds)+' 36V190" stroke="'+(e.type==='stop'?'#a9422a':e.type==='controls'?'#dc713e':'#a9b9b5')+'" stroke-dasharray="3 4" opacity=".7"><title>'+esc(eventName(e))+' · '+f(e.seconds,4)+' s</title></path>';
+  for(const e of events)svg+='<path data-marker="'+e.id+'" d="M'+x(e.seconds)+' 36V190" stroke="'+(e.type==='stop'?(e.details.fault?.kind==='equipment'?'#ed939b':'#e0bb77'):e.type==='controls'?'#d2a578':'#a9c0cd')+'" stroke-dasharray="3 4" opacity=".7"><title>'+esc(eventName(e))+' · '+f(e.seconds,4)+' s</title></path>';
   for(const d of shown){let path='',previous=null;for(const s of envelope(list,d)){const v=d.read(s);if(v===null){previous=null;continue;}path+=(previous===null?'M':d.step?'H':'L')+x(s.seconds)+(previous!==null&&d.step?'V':' ')+y(v);previous=v;}svg+='<path data-curve="'+d.key+'" d="'+path+'" fill="none" stroke="'+d.color+'" stroke-width="2"/>';}
   if(selected)svg+='<path data-cursor="'+selected.id+'" d="M'+x(selected.seconds)+' 30V195" stroke="#17343e" stroke-width="1.5"/>';
-  svg+='<path d="M60 35V190H610" stroke="#657b83" fill="none"/><text x="60" y="220" class="history-axis">'+f(start,1)+' s</text><text x="610" y="220" text-anchor="end" class="history-axis">'+f(end,1)+' s</text>'+(values.length?'':'<text x="100" y="112" class="history-axis">No available or selected readings</text>')+'</svg>';
+  svg+='<path d="M60 35V190H'+right+'" stroke="#657b83" fill="none"/><text x="60" y="220" class="history-axis">'+f(start,1)+' s</text><text x="'+right+'" y="220" text-anchor="end" class="history-axis">'+f(end,1)+' s</text>'+(values.length?'':'<text x="100" y="112" class="history-axis">No available or selected readings</text>')+'</svg>';
   card.querySelector('[data-plot]').innerHTML=svg;
   for(const d of definitions){const value=card.querySelector('[data-value="'+d.key+'"]');if(value)value.textContent=f(selected?d.read(selected):null)+' '+d.unit;}
  }
@@ -112,9 +113,13 @@ function create(container){
  $('storage-trend-prev').addEventListener('click',()=>{const list=points();selectSample(list.indexOf(inspected(list))-1);});
  $('storage-trend-next').addEventListener('click',()=>{const list=points();selectSample(list.indexOf(inspected(list))+1);});
  $('storage-trend-charts').addEventListener('change',e=>{const key=e.target.dataset.series;if(!key)return;if(e.target.checked)hidden.delete(key);else hidden.add(key);render();});
- $('storage-trend-charts').addEventListener('click',e=>{const svg=e.target.closest('svg');if(!svg)return;const list=points();if(!list.length)return;const rect=svg.getBoundingClientRect(),fraction=Math.max(0,Math.min(1,((e.clientX-rect.left)/rect.width*640-60)/550)),time=list[0].seconds+fraction*Math.max(1,last(list).seconds-list[0].seconds);let index=0;list.forEach((s,i)=>{if(Math.abs(s.seconds-time)<=Math.abs(list[index].seconds-time))index=i;});selectSample(index);});
+ $('storage-trend-charts').addEventListener('click',e=>{const svg=e.target.closest('svg');if(!svg)return;const list=points();if(!list.length)return;const rect=svg.getBoundingClientRect(),fraction=Math.max(0,Math.min(1,((e.clientX-rect.left)/rect.width*svg.viewBox.baseVal.width-60)/(svg.viewBox.baseVal.width-84))),time=list[0].seconds+fraction*Math.max(1,last(list).seconds-list[0].seconds);let index=0;list.forEach((s,i)=>{if(Math.abs(s.seconds-time)<=Math.abs(list[index].seconds-time))index=i;});selectSample(index);});
  $('storage-events').addEventListener('click',e=>{const button=e.target.closest('[data-event]');if(!button)return;selectedEvent=Number(button.dataset.event);const event=h.events.find(e=>e.id===selectedEvent);$('storage-trend-follow').checked=false;frozenEnd=event.seconds;pinnedId=event.sampleId;render();});
  $('storage-history-export').addEventListener('click',()=>{if(!h)return;const url=URL.createObjectURL(new Blob([root.AmmoniaHistory.csv(h)],{type:'text/csv'})),a=document.createElement('a');a.href=url;a.download='ammonia-history-v050-stage2.csv';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);});
+ // Width changes alter only plot geometry, never retained samples or cursor state.
+ let observedWidth=container.clientWidth;
+ if(typeof ResizeObserver!=='undefined')new ResizeObserver(()=>{const width=container.clientWidth;if(width!==observedWidth){observedWidth=width;requestAnimationFrame(render);}}).observe(container);
+ else window.addEventListener('resize',render);
  render();
  return {update(history,displayUnits){if(history!==h){pinnedId=null;frozenEnd=null;selectedEvent=null;signature='';cardsKey='';$('storage-trend-follow').checked=true;}h=history;units={...displayUnits};render();}};
 }

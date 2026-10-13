@@ -45,7 +45,7 @@
  document.querySelector('.plant-nav').addEventListener('click',e=>{
   const link=e.target.closest('a');if(!link)return;
   const target=$(link.getAttribute('href').slice(1));if(!target)return;
-  e.preventDefault();target.setAttribute('tabindex','-1');target.focus({preventScroll:true});target.scrollIntoView({block:'start'});
+  e.preventDefault();target.setAttribute('tabindex','-1');target.focus({preventScroll:true});(target.id==='storage-form'?$('storage-control-panel'):target).scrollIntoView({block:'start'});
  });
 
  function operations(){const o={thermalMode:$('storage-thermalMode').value,compressorOn:$('storage-compressorOn').checked,circuit:$('storage-circuit').value,valveMode:$('storage-valveMode').value,drainEnabled:$('storage-drainEnabled').checked};for(const key of ['receiverHeat','evaporatorHeat','condenserHeat']){if(!$('storage-'+key).value.trim())throw Error('Fill in storage heat rates.');o[key]=Number($('storage-'+key).value);}if(!$('storage-compressorSpeed').value.trim())throw Error('Fill in compressor speed.');o.speed=Number($('storage-compressorSpeed').value)/100;for(const key of ['manualOpening','superheatTarget','kp','ki']){const el=$('storage-'+key);if(!el.value.trim())throw Error('Fill in valve operating controls.');o[key]=Number(el.value);}o.manualOpening/=100;o.superheatTarget/=units.T==='F'?1.8:1;return model.validateOperations(o);}
@@ -59,7 +59,7 @@
   $('storage-start').disabled=running;$('storage-export').disabled=!state;
   training?.update(state);
   if(!state){renderDashboard();schematic.update(null,units,false);trends.update(null,units);$('storage-clock').textContent='0.0 s simulated';$('storage-metrics').innerHTML='';$('storage-states').innerHTML='';$('storage-balance').innerHTML='';$('storage-flows').innerHTML='';$('storage-flow-window').textContent='';return;}
-  const r=model.record(state);renderDashboard(r,model.observeCompressor(state));schematic.update({...r,profileLabel:state.profile.name+' revision '+state.profile.revision,compressor:model.observeCompressor(state)},units,running);$('storage-clock').textContent=f(state.time,1)+' s simulated';
+  const r=model.record(state);renderDashboard(r,model.observeCompressor(state));schematic.update({...r,compressorCount:state.profile.equipment.compressors,profileLabel:state.profile.name+' revision '+state.profile.revision,compressor:model.observeCompressor(state)},units,running);$('storage-clock').textContent=f(state.time,1)+' s simulated';
   const status=state.fault?{equipment:'TRIPPED',solver:'SOLVER LIMIT',domain:'MODEL LIMIT'}[state.fault.kind]:running?'Running':'Paused';
   $('storage-status').textContent=status+' · '+state.profile.name+' revision '+state.profile.revision+(state.fault?' · '+state.fault.message+' · detected at '+f(state.fault.seconds,3)+' s. Correct controls and clear the stop, or reinitialize storage.':' · '+state.operations.thermalMode+' boundaries · '+state.operations.circuit+' circuit.');
   if(state.fault?.readings){const v=state.fault.readings;$('storage-status').textContent+=' Captured suction / discharge '+f(pressure(v.pressure),2)+' / '+f(pressure(v.condensing),2)+' '+pl()+', discharge temperature '+f(temp(v.discharge),2)+' °'+units.T+'.';}
