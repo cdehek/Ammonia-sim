@@ -1,0 +1,122 @@
+
+> ammonia-lab@0.5.0 test
+> node tests/physics.cjs && node tests/dynamic.cjs && node tests/profiles.cjs && node tests/initialization.cjs && node tests/storage.cjs && node tests/valves.cjs && node tests/integration.cjs && node tests/schematic.cjs && node tests/history.cjs && node tests/training.cjs
+
+{
+  "version": "0.2.0",
+  "engine": "CoolProp 7.2.0 HEOS Ammonia",
+  "counts": {
+    "singlePhaseStates": 560,
+    "saturationStates": 160,
+    "cycles": 159,
+    "outOfDomainCyclesRejected": 1,
+    "manufacturerCorrelationPoints": 17
+  },
+  "maxErrors": {
+    "temperatureK": 0.00045129006931432514,
+    "enthalpyPercent": 0.001116492100835145,
+    "entropyPercent": 0.0012717008088045207,
+    "densityPercent": 0.0046145106158969424,
+    "dischargeK": 0.007023464887879527,
+    "cycleCoolingPercent": 0.0011031956792550265,
+    "cycleElectricalPercent": 0.004658465548437922,
+    "cycleCOPPercent": 0.004030982914268131,
+    "energyResidualKW": 1.2789769243681803e-13,
+    "manufacturerFitK": 0.13968869912681647
+  },
+  "manufacturerSource": "https://assets.danfoss.com/documents/latest/493262/AM187286420404en-000702.pdf",
+  "notes": [
+    "Interpolation errors versus direct CoolProp at seeded unseen states; not total physical uncertainty.",
+    "Manufacturer comparison is agreement with a controller-fit correlation, not independent calorimetric validation.",
+    "NIST fluid data endpoint returned HTTP 403; no claim of direct NIST table validation."
+  ],
+  "defaultResult": {
+    "Q": 112.64036904179562,
+    "COP": 3.316153969917859,
+    "electrical": 33.967171025109465,
+    "dischargeTemperature": 139.44235631418164
+  },
+  "transient": {
+    "firstSetpointMinutes": 68.87770396112231,
+    "finalTemperatureC": 0.6574589188968929
+  }
+}
+{
+  "passed": true,
+  "coupledCases": 18,
+  "baseQ": 133.19343114740124,
+  "weakEvapQ": 75.16172003860608,
+  "weakCondPressure": 15.053909870242952,
+  "basePressure": 11.863599081478824,
+  "eightHourStarts": 2,
+  "roomEnergyResidualKJ": -0.0000019702711142599583,
+  "stepRefinementTemperatureK": 0.0002795288091448356,
+  "stepRefinementElectricityPercent": 0.0003521102146075705
+}
+PASS: immutable Default, schema/types/ranges, revisions, import IDs, malformed storage, operating-setting isolation, unused volumes, Default physics parity, and applied fixed-efficiency specifications.
+PASS: schema migration, initialization modes, charge feasibility, phase/volume/mass/energy consistency, boundary fills, validation and isolation from live physics.
+{
+  "passed": true,
+  "directPropertyStates": 90,
+  "maxErrors": {
+    "liquidPressureBar": 0.02615610253803169,
+    "vaporPressureBar": 0.00015098399092039472,
+    "mixturePressureBar": 0.00011023641025964537,
+    "temperatureK": 0.002608115360917651
+  },
+  "massResidualKg": -7.105427357601002e-15,
+  "energyResidualKJ": -4.274625098332763e-11,
+  "refinementPressureBar": 0.000001115554852049172
+}
+{
+  "passed": true,
+  "connectedSeconds": 600.0000000000745,
+  "superheatK": 5.016496143070981,
+  "massResidualKg": 1.0658141036401503e-13,
+  "energyResidualKJ": 4.18367562815547e-10,
+  "refinementOutletPressureBar": 0.0000073438867929098706
+}
+{
+  "passed": true,
+  "scenarios": 24,
+  "refinement": {
+    "outletPressureBar": 0.000015632768924689344,
+    "roomK": 2.1393375959632976e-10,
+    "electricalRelative": 4.2017263002236405e-9
+  },
+  "maxMassResidualKg": 2e-13,
+  "maxEnergyResidualKJ": 2.6e-9
+}
+PASS: read-only compressor telemetry, energy-consistent discharge temperature, unchanged trajectories, off/latched-stop demand.
+PASS: fixed simulated-time sampling, batching invariance, model agreement, same-time changes, atomic rejection, no-op Apply, exact stop/clear evidence, two-hour production-bound retention, SI conversion/export, unavailable gaps and extrema-preserving plots.
+{
+  "passed": true,
+  "exercises": [
+    {
+      "id": "startup",
+      "seconds": 60.00000000000058,
+      "goals": 3
+    },
+    {
+      "id": "load",
+      "seconds": 60.00000000000059,
+      "goals": 3
+    },
+    {
+      "id": "hot",
+      "seconds": 75.12500000000752,
+      "goals": 4
+    },
+    {
+      "id": "restriction",
+      "seconds": 40.00000000000004,
+      "goals": 3
+    },
+    {
+      "id": "tuning",
+      "seconds": 180.00000000000378,
+      "goals": 3
+    }
+  ],
+  "checks": "Measured objectives, correct/incorrect reflections, warmup, real disturbances, conserved balances, exact trip evidence, clearing vs continuation, wrong-control interruption, starvation failure, read-only grading, accepted-boundary completion, pending-time discard, missing reflection, frozen evidence and batching."
+}

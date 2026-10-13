@@ -7,6 +7,47 @@
  let state=null,running=false,timer=null,last=0,units={p:'psig',T:'F'},training=null;
  const f=(v,n=3)=>Number.isFinite(v)?v.toFixed(n):'—',temp=v=>Number.isFinite(v)?(units.T==='F'?v*1.8+32:v):NaN;
  const pressure=v=>Number.isFinite(v)?(v-(units.p.endsWith('g')?1.01325:0))*(units.p.startsWith('psi')?14.503773773:1):NaN,pl=()=>({bara:'bar(a)',barg:'bar(g)',psia:'psia',psig:'psig'})[units.p];
+ // Display projection only: these functions never write simulator state.
+ function renderDraft(){
+  let dirty=false,message='Initialize to apply these settings.';
+  if(state){
+   try{
+    const o=operations(),b=roomBoundary(),different=(a,v)=>typeof v==='number'?Math.abs(a-v)>1e-8:a!==v;
+    dirty=Object.entries(o).some(([k,v])=>different(state.operations[k],v))||Object.entries(b).some(([k,v])=>different(state.roomConfig[k],v));
+    message=dirty?'Draft changes · not applied to the connected run.':'Applied · controls match the connected run.';
+   }catch{dirty=true;message='Draft incomplete or invalid · applied run settings retained.';}
+  }
+  $('storage-form').dataset.dirty=String(dirty);$('storage-draft').textContent=message;
+ }
+ function renderDashboard(r=null,c=null){
+  const connected=!!r?.vessels.outlet,flows=r?.flows&&!r.flows.error?r.flows:null,o=state?.operations;
+  const compressor=!state?'—':state.fault?'Stopped':!o.compressorOn?'Off':c?.inhibited?'Unavailable':running?'Running':'Paused';
+  const cards=[
+   ['Suction pressure',f(pressure((r?.vessels.outlet||r?.vessels.evaporator)?.p),2),pl(),!state?'Not initialized':connected?'Resolved outlet volume':'Evaporator vapor boundary','suction'],
+   ['Discharge pressure',f(pressure(r?.vessels.condenser?.p),2),pl(),state?'Condenser bulk pressure':'Not initialized','discharge'],
+   ['Compressor',compressor,'',state?f(o.speed*100,0)+'% speed setting · '+(o.compressorOn?'enabled':'disabled'):'No connected run','compressor'],
+   ['Room temperature',f(temp(r?.T),2),'°'+units.T,state?'Connected room state':'Not initialized','room'],
+   ['Actual superheat',f(flows?.superheat*(units.T==='F'?1.8:1),2),units.T==='F'?'°F Δ':'K',!state?'Not initialized':!connected?'Unavailable · isolated circuit':flows?.interval?'Accepted flow interval':'Current outlet state','superheat'],
+   ['Feed valve',connected?f(r.controller.opening*100,2):'—','%',!state?'Not initialized':connected?'Actual opening · '+o.valveMode:'Unavailable · isolated circuit','feed']
+  ];
+  $('storage-overview').innerHTML=cards.map(([label,value,unit,note,key])=>'<div class="metric" data-summary="'+key+'"><label>'+esc(label)+'</label><strong>'+esc(value)+' <span class="readout-unit">'+esc(unit)+'</span></strong><small>'+esc(note)+'</small></div>').join('');
+  $('storage-mode').textContent=!state?'Connected circuit · not initialized':(connected?'Circulating DX':'Isolated storage')+' · '+(o.thermalMode==='air'?'room / ambient exchange':'sealed test boundaries')+' · '+state.profile.name+' r'+state.profile.revision;
+  $('storage-playback').textContent=!state?'Ready':state.fault?'Stopped':running?'Running · '+$('storage-speed').value+'×':'Paused';
+  const fault=state?.fault;
+  $('storage-alarm').dataset.severity=!state?'idle':fault?(fault.kind==='equipment'?'equipment':'model'):'normal';
+  $('storage-alarm-summary').textContent=!state?'Not initialized · no connected run to assess.':!fault?'No active modeled trip or stop.':fault.kind==='equipment'?'EQUIPMENT TRIP · '+fault.message: (fault.kind==='solver'?'NUMERICAL / SOLVER STOP':'MODEL-DOMAIN STOP')+' · '+fault.message+' · no equipment trip asserted.';
+  if(!state)$('storage-status').textContent='Initialize the DX example or choose circuit settings and initialize storage.';
+  $('storage-applied').textContent=!state?'No applied connected controls yet.':'Applied: compressor '+(o.compressorOn?'enabled':'disabled')+' at '+f(o.speed*100,0)+'% · feed '+o.valveMode+(o.valveMode==='manual'?' command '+f(o.manualOpening*100,1)+'%':'')+' · ambient '+f(temp(state.roomConfig.ambient),1)+' °'+units.T+' · room gain '+f(state.roomConfig.gain,1)+' kW.';
+  renderDraft();
+ }
+ $('storage-form').addEventListener('input',renderDraft);
+ $('storage-form').addEventListener('change',renderDraft);
+ document.querySelector('.plant-nav').addEventListener('click',e=>{
+  const link=e.target.closest('a');if(!link)return;
+  const target=$(link.getAttribute('href').slice(1));if(!target)return;
+  e.preventDefault();target.setAttribute('tabindex','-1');target.focus({preventScroll:true});target.scrollIntoView({block:'start'});
+ });
+
  function operations(){const o={thermalMode:$('storage-thermalMode').value,compressorOn:$('storage-compressorOn').checked,circuit:$('storage-circuit').value,valveMode:$('storage-valveMode').value,drainEnabled:$('storage-drainEnabled').checked};for(const key of ['receiverHeat','evaporatorHeat','condenserHeat']){if(!$('storage-'+key).value.trim())throw Error('Fill in storage heat rates.');o[key]=Number($('storage-'+key).value);}if(!$('storage-compressorSpeed').value.trim())throw Error('Fill in compressor speed.');o.speed=Number($('storage-compressorSpeed').value)/100;for(const key of ['manualOpening','superheatTarget','kp','ki']){const el=$('storage-'+key);if(!el.value.trim())throw Error('Fill in valve operating controls.');o[key]=Number(el.value);}o.manualOpening/=100;o.superheatTarget/=units.T==='F'?1.8:1;return model.validateOperations(o);}
  function roomBoundary(){const c={};for(const key of ['ambient','gain','leakUA']){const el=$('storage-'+key);if(!el.value.trim())throw Error('Fill in room/condenser boundaries.');c[key]=Number(el.value);}if(units.T==='F')c.ambient=(c.ambient-32)/1.8;return c;}
  function showError(e){$('storage-error').textContent=e.message;$('storage-error').hidden=false;}
@@ -17,8 +58,8 @@
  function render(){
   $('storage-start').disabled=running;$('storage-export').disabled=!state;
   training?.update(state);
-  if(!state){schematic.update(null,units,false);trends.update(null,units);$('storage-clock').textContent='0.0 s simulated';$('storage-metrics').innerHTML='';$('storage-states').innerHTML='';$('storage-balance').innerHTML='';$('storage-flows').innerHTML='';$('storage-flow-window').textContent='';return;}
-  const r=model.record(state);schematic.update({...r,profileLabel:state.profile.name+' revision '+state.profile.revision,compressor:model.observeCompressor(state)},units,running);$('storage-clock').textContent=f(state.time,1)+' s simulated';
+  if(!state){renderDashboard();schematic.update(null,units,false);trends.update(null,units);$('storage-clock').textContent='0.0 s simulated';$('storage-metrics').innerHTML='';$('storage-states').innerHTML='';$('storage-balance').innerHTML='';$('storage-flows').innerHTML='';$('storage-flow-window').textContent='';return;}
+  const r=model.record(state);renderDashboard(r,model.observeCompressor(state));schematic.update({...r,profileLabel:state.profile.name+' revision '+state.profile.revision,compressor:model.observeCompressor(state)},units,running);$('storage-clock').textContent=f(state.time,1)+' s simulated';
   const status=state.fault?{equipment:'TRIPPED',solver:'SOLVER LIMIT',domain:'MODEL LIMIT'}[state.fault.kind]:running?'Running':'Paused';
   $('storage-status').textContent=status+' · '+state.profile.name+' revision '+state.profile.revision+(state.fault?' · '+state.fault.message+' · detected at '+f(state.fault.seconds,3)+' s. Correct controls and clear the stop, or reinitialize storage.':' · '+state.operations.thermalMode+' boundaries · '+state.operations.circuit+' circuit.');
   if(state.fault?.readings){const v=state.fault.readings;$('storage-status').textContent+=' Captured suction / discharge '+f(pressure(v.pressure),2)+' / '+f(pressure(v.condensing),2)+' '+pl()+', discharge temperature '+f(temp(v.discharge),2)+' °'+units.T+'.';}

@@ -87,7 +87,14 @@
  function pause(){running=false;clearInterval(timer);timer=null;$('live-pause').disabled=true;$('live-start').disabled=false;$('live-start').textContent=state.time?'Resume':'Start';render();}
  function advance(seconds){model.step(state,seconds);if(state.fault)pause();render();}
  function start(){try{if(state.fault)throw Error(state.fault.kind==='equipment'?'Reset the trip before resuming.':'Clear the model stop after correcting inputs, or reset the plant.');const c=read();if(state.time===0)state=model.create(c);else model.update(state,c);clearError();if(state.T< -40||state.T>50)throw Error('Reset the plant with an initial room temperature inside the model domain.');document.dispatchEvent(new CustomEvent('ammonia-run-live'));running=true;$('live-pause').disabled=false;$('live-start').disabled=true;last=performance.now();timer=setInterval(()=>{try{const now=performance.now(),elapsed=Math.min(1,(now-last)/1000);last=now;advance(elapsed*Number($('live-speed').value));}catch(e){pause();error(e);}},250);render();}catch(e){error(e);}}
+ function renderRoomDraft(){
+  let dirty=false;
+  try{const c=read();dirty=Object.entries(c).some(([k,v])=>typeof v==='number'?Math.abs(v-state.config[k])>1e-6:typeof v==='string'||typeof v==='boolean'?v!==state.config[k]:false);}catch{dirty=true;}
+  $('live-draft').textContent=dirty?'Draft changes · not applied to the independent room model. Start or Apply uses these inputs; Advance uses drafts only before the first step.':'Applied · controls match the independent room model.';
+ }
+ $('live-form').addEventListener('input',renderRoomDraft);$('live-form').addEventListener('change',renderRoomDraft);
  function render(){
+  renderRoomDraft();
   const row=model.record(state),r=state.point&&state.point.r,clock=Math.floor(state.time),h=Math.floor(clock/3600),m=Math.floor(clock%3600/60),s=clock%60;
   $('live-clock').textContent=[h,m,s].map(x=>String(x).padStart(2,'0')).join(':')+' simulated';
   $('live-status').textContent=(state.fault?({equipment:'TRIPPED',solver:'SOLVER LIMIT',domain:'MODEL LIMIT'}[state.fault.kind]):running?'Running':state.time?'Paused':'Ready')+' · '+state.reason+' · '+state.starts+' compressor start'+(state.starts===1?'':'s');

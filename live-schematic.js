@@ -27,13 +27,13 @@ function create(container){
   $('schematic-status').textContent=r?f(r.seconds,1)+' s · '+(r.fault?'Stopped · '+r.fault.message:running?'Running':'Paused')+' · '+(connected?'Circulating DX':'Isolated storage'):'Initialize storage to see model readings.';
   $('schematic-flow-note').textContent=!r?'No simulation values yet.':(flows?.interval?'Feed/drain/vapor arrows: accepted average flow over '+f(flows.interval.from,4)+'–'+f(flows.interval.to,4)+' s.':'Feed/drain/vapor arrows: current-state demand.')+' Compressor flow and discharge temperature: current-state demand; unavailable during a stop. Paused arrows are static.';
   let svg='<svg viewBox="0 0 960 620" role="img" aria-labelledby="schematic-svg-title schematic-svg-desc" class="'+(moving?'':'schematic-still')+'" style="--schematic-delay:-'+(performance.now()/1000).toFixed(4)+'s"><title id="schematic-svg-title">Connected ammonia circuit at '+f(r?.seconds||0,1)+' simulated seconds</title><desc id="schematic-svg-desc">'+esc(compressorStatus)+'. Flow follows outlet to compressor, condenser, receiver, feed valve, evaporator core and outlet. Readings and equipment details are also available below the diagram.</desc><defs>';
-  for(const color of ['#dc713e','#28796f','#3389ac','#8356ac'])svg+='<marker id="schematic-arrow-'+color.slice(1)+'" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="4" markerHeight="4" orient="auto"><path d="M0 0L10 5L0 10Z" fill="'+color+'"/></marker>';
+  for(const color of ['#dc713e','#51d3ca','#61c9ea','#87aee0'])svg+='<marker id="schematic-arrow-'+color.slice(1)+'" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="4" markerHeight="4" orient="auto"><path d="M0 0L10 5L0 10Z" fill="'+color+'"/></marker>';
   svg+='</defs><text x="35" y="25" class="schematic-caption">'+esc(r?.profileLabel||'Active equipment')+' · modeled circuit, no piping holdup</text>';
   svg+=pipe('discharge','M310 135H690','#dc713e',c?.massFlow,!r);
-  svg+=pipe('drain','M785 200V415','#28796f',flows?.drain.massFlow,!connected);
-  svg+=pipe('feed','M690 480H530M470 480H310','#3389ac',flows?.feed.massFlow,!connected);
-  svg+=pipe('vapor','M215 415V390','#8356ac',flows?.vapor.massFlow,!connected);
-  svg+=pipe('suction',connected?'M215 260V205':'M120 415H70V135H120','#8356ac',c?.massFlow,!r);
+  svg+=pipe('drain','M785 200V415','#51d3ca',flows?.drain.massFlow,!connected);
+  svg+=pipe('feed','M690 480H530M470 480H310','#61c9ea',flows?.feed.massFlow,!connected);
+  svg+=pipe('vapor','M215 415V390','#87aee0',flows?.vapor.massFlow,!connected);
+  svg+=pipe('suction',connected?'M215 260V205':'M120 415H70V135H120','#87aee0',c?.massFlow,!r);
   svg+='<text x="420" y="111" class="schematic-caption">Hot-gas discharge</text><text x="805" y="307" class="schematic-caption">Condenser drain</text><text x="420" y="540" class="schematic-caption" data-reading="feed-flow">Feed: '+(flows?f(flows.feed.massFlow,5)+' kg/s':'isolated')+'</text><text x="805" y="330" class="schematic-caption" data-reading="drain-flow">'+(flows?f(flows.drain.massFlow,5)+' kg/s':'isolated')+'</text>';
   svg+=vessel('condenser',690,70)+vessel('receiver',690,415)+vessel('evaporator',120,415)+vessel('outlet',120,260,190,130);
   if(!connected)svg+='<text x="140" y="404" class="schematic-caption">Outlet inactive in isolated mode</text>';
