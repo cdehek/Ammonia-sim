@@ -1,0 +1,445 @@
+{
+  "classification": "Official 8.0.0 shipped PH interface remains incompatible with demonstrated unchanged small-probe requirements; no migration authorized. Internal stopping-rule attribution strongly supported, final WASM branch/bracket uninstrumented.",
+  "comparisons": [
+    {
+      "file": "native-8.0.0.json",
+      "rows": 365,
+      "errors": 0,
+      "saved": {
+        "analytic": 6.616841348556083e-07,
+        "finite": 6.616460268560331e-07,
+        "ratio": 0.9999424075664388
+      },
+      "basePResidual": 4.1745806811377406e-08,
+      "perturbedPResidual": 7.70887709222734e-08,
+      "baseHResidual": -4.511093720793724e-10,
+      "perturbedHResidual": 7.130438461899757e-10,
+      "nearbyStates": 57,
+      "pressureRatiosMoreThan1PercentFromUnity": 9,
+      "enthalpyRatiosMoreThan1PercentFromUnity": 5,
+      "countCaution": "1% is a descriptive diagnostic threshold, not an added or altered solver acceptance contract. 57 source liquid states include the exact saved point."
+    },
+    {
+      "file": "chromium-8.0.0.json",
+      "rows": 365,
+      "errors": 0,
+      "saved": {
+        "analytic": 6.616841348556086e-07,
+        "finite": 1.3359704098547809e-05,
+        "ratio": 20.190455528245568
+      },
+      "basePResidual": 3.3374817576259375e-08,
+      "perturbedPResidual": -5.269648681860417e-07,
+      "baseHResidual": -1.1641532182693481e-09,
+      "perturbedHResidual": -0.0004745790647575632,
+      "nearbyStates": 57,
+      "pressureRatiosMoreThan1PercentFromUnity": 8,
+      "enthalpyRatiosMoreThan1PercentFromUnity": 4,
+      "countCaution": "1% is a descriptive diagnostic threshold, not an added or altered solver acceptance contract. 57 source liquid states include the exact saved point."
+    },
+    {
+      "file": "webkit-8.0.0.json",
+      "rows": 365,
+      "errors": 0,
+      "saved": {
+        "analytic": 6.616841348556086e-07,
+        "finite": 1.3359704098547809e-05,
+        "ratio": 20.190455528245568
+      },
+      "basePResidual": 3.3374817576259375e-08,
+      "perturbedPResidual": -5.269648681860417e-07,
+      "baseHResidual": -1.1641532182693481e-09,
+      "perturbedHResidual": -0.0004745790647575632,
+      "nearbyStates": 57,
+      "pressureRatiosMoreThan1PercentFromUnity": 8,
+      "enthalpyRatiosMoreThan1PercentFromUnity": 4,
+      "countCaution": "1% is a descriptive diagnostic threshold, not an added or altered solver acceptance contract. 57 source liquid states include the exact saved point."
+    },
+    {
+      "file": "native-7.2.0.json",
+      "rows": 365,
+      "errors": 0,
+      "saved": {
+        "analytic": 6.616841348556096e-07,
+        "finite": 6.616915015911218e-07,
+        "ratio": 1.0000111333113855
+      },
+      "basePResidual": 2.169908839277923e-07,
+      "perturbedPResidual": 1.1881638783961535e-07,
+      "baseHResidual": 1.0040821507573128e-09,
+      "perturbedHResidual": 9.167706593871117e-10,
+      "nearbyStates": 57,
+      "pressureRatiosMoreThan1PercentFromUnity": 0,
+      "enthalpyRatiosMoreThan1PercentFromUnity": 0,
+      "countCaution": "1% is a descriptive diagnostic threshold, not an added or altered solver acceptance contract. 57 source liquid states include the exact saved point."
+    },
+    {
+      "file": "chromium-7.2.0.json",
+      "rows": 274,
+      "errors": 0,
+      "saved": {
+        "analytic": 6.616841348556099e-07,
+        "finite": 6.616801329073496e-07,
+        "ratio": 0.9999939518751478
+      },
+      "basePResidual": 7.509515853598714e-08,
+      "perturbedPResidual": -6.907393981236964e-07,
+      "baseHResidual": 1.1641532182693481e-10,
+      "perturbedHResidual": -2.3137545213103294e-09,
+      "nearbyStates": 57,
+      "pressureRatiosMoreThan1PercentFromUnity": 0,
+      "enthalpyRatiosMoreThan1PercentFromUnity": 0,
+      "countCaution": "1% is a descriptive diagnostic threshold, not an added or altered solver acceptance contract. 57 source liquid states include the exact saved point."
+    },
+    {
+      "file": "webkit-7.2.0.json",
+      "rows": 274,
+      "errors": 0,
+      "saved": {
+        "analytic": 6.616841348556099e-07,
+        "finite": 6.616801329073496e-07,
+        "ratio": 0.9999939518751478
+      },
+      "basePResidual": 7.509515853598714e-08,
+      "perturbedPResidual": -6.907393981236964e-07,
+      "baseHResidual": 1.1641532182693481e-10,
+      "perturbedHResidual": -2.3137545213103294e-09,
+      "nearbyStates": 57,
+      "pressureRatiosMoreThan1PercentFromUnity": 0,
+      "enthalpyRatiosMoreThan1PercentFromUnity": 0,
+      "countCaution": "1% is a descriptive diagnostic threshold, not an added or altered solver acceptance contract. 57 source liquid states include the exact saved point."
+    },
+    {
+      "file": "native-8.0.0-cached-path.json",
+      "rows": 117,
+      "errors": 0,
+      "saved": {
+        "analytic": 6.616841348556083e-07,
+        "finite": 6.616460268560331e-07,
+        "ratio": 0.9999424075664388
+      },
+      "basePResidual": 4.1745806811377406e-08,
+      "perturbedPResidual": 7.70887709222734e-08,
+      "baseHResidual": -4.511093720793724e-10,
+      "perturbedHResidual": 7.130438461899757e-10,
+      "nearbyStates": 0,
+      "pressureRatiosMoreThan1PercentFromUnity": 0,
+      "enthalpyRatiosMoreThan1PercentFromUnity": 0,
+      "countCaution": "1% is a descriptive diagnostic threshold, not an added or altered solver acceptance contract. 57 source liquid states include the exact saved point."
+    },
+    {
+      "file": "native-8.0.0-no-super.json",
+      "rows": 117,
+      "errors": 0,
+      "saved": {
+        "analytic": 6.616841348556105e-07,
+        "finite": 6.617028702748939e-07,
+        "ratio": 1.0000283147476212
+      },
+      "basePResidual": 2.754204615484923e-07,
+      "perturbedPResidual": -3.975947038270533e-08,
+      "baseHResidual": 1.8044374883174896e-09,
+      "perturbedHResidual": 1.4551915228366852e-11,
+      "nearbyStates": 0,
+      "pressureRatiosMoreThan1PercentFromUnity": 0,
+      "enthalpyRatiosMoreThan1PercentFromUnity": 0,
+      "countCaution": "1% is a descriptive diagnostic threshold, not an added or altered solver acceptance contract. 57 source liquid states include the exact saved point."
+    }
+  ],
+  "staticSynthetic": [
+    {
+      "browser": "chromium",
+      "version": "8.0.0",
+      "cases": 16,
+      "converged": 14,
+      "failures": [
+        {
+          "n": 5,
+          "target": "saved-base",
+          "accounting": "input-h",
+          "error": "Coupled line search did not reduce the conservative residual.",
+          "nonlinearResidual": 4.4720612025138264e-11
+        },
+        {
+          "n": 9,
+          "target": "saved-H-plus",
+          "accounting": "input-h",
+          "error": "Coupled line search did not reduce the conservative residual.",
+          "nonlinearResidual": 6.715194443152548e-10
+        }
+      ],
+      "elapsedMSMin": 7.400000000372529,
+      "elapsedMSMax": 110.20000000018626,
+      "newtonIterationsMax": 14
+    },
+    {
+      "browser": "chromium",
+      "version": "7.2.0",
+      "cases": 16,
+      "converged": 16,
+      "failures": [],
+      "elapsedMSMin": 742,
+      "elapsedMSMax": 2626.2000000001863,
+      "newtonIterationsMax": 1
+    },
+    {
+      "browser": "webkit",
+      "version": "8.0.0",
+      "cases": 16,
+      "converged": 14,
+      "failures": [
+        {
+          "n": 5,
+          "target": "saved-base",
+          "accounting": "input-h",
+          "error": "Coupled line search did not reduce the conservative residual.",
+          "nonlinearResidual": 4.4720612025138264e-11
+        },
+        {
+          "n": 9,
+          "target": "saved-H-plus",
+          "accounting": "input-h",
+          "error": "Coupled line search did not reduce the conservative residual.",
+          "nonlinearResidual": 6.715194443152548e-10
+        }
+      ],
+      "elapsedMSMin": 7,
+      "elapsedMSMax": 159,
+      "newtonIterationsMax": 14
+    },
+    {
+      "browser": "webkit",
+      "version": "7.2.0",
+      "cases": 16,
+      "converged": 16,
+      "failures": [],
+      "elapsedMSMin": 924,
+      "elapsedMSMax": 3015,
+      "newtonIterationsMax": 1
+    }
+  ],
+  "ipad": [
+    {
+      "desktopBrowser": "chromium",
+      "actualPhysicalIPad": false,
+      "requestedVersion": "8.0.0",
+      "mode": "online",
+      "startupMS": 2151.7000000001863,
+      "linearMemory": 56360960,
+      "workerMaxTimerGapMS": 52.89999999944121,
+      "errors": [],
+      "throughput": [
+        {
+          "mode": "PH",
+          "callsPerSecond": 36226.0,
+          "failures": 0
+        },
+        {
+          "mode": "DU",
+          "callsPerSecond": 43178.0,
+          "failures": 0
+        }
+      ],
+      "stress": {
+        "stackBefore": 5706944,
+        "memoryBefore": 56360960,
+        "errors": [
+          "Aborted(Assertion failed: exception_header->referenceCount > 0, at: /emsdk/emscripten/system/lib/libcxxabi/src/cxa_exception_emscripten.cpp,149,__cxa_decrement_exception_refcount)",
+          "Aborted(Assertion failed: exception_header->referenceCount > 0, at: /emsdk/emscripten/system/lib/libcxxabi/src/cxa_exception_emscripten.cpp,149,__cxa_decrement_exception_refcount)",
+          "Aborted(Assertion failed: exception_header->referenceCount > 0, at: /emsdk/emscripten/system/lib/libcxxabi/src/cxa_exception_emscripten.cpp,149,__cxa_decrement_exception_refcount)",
+          "Aborted(Assertion failed: exception_header->referenceCount > 0, at: /emsdk/emscripten/system/lib/libcxxabi/src/cxa_exception_emscripten.cpp,149,__cxa_decrement_exception_refcount)",
+          "Aborted(Assertion failed: exception_header->referenceCount > 0, at: /emsdk/emscripten/system/lib/libcxxabi/src/cxa_exception_emscripten.cpp,149,__cxa_decrement_exception_refcount)"
+        ],
+        "validAfterError": 5,
+        "stackAfter": 5706944,
+        "memoryAfter": 56360960
+      }
+    },
+    {
+      "desktopBrowser": "chromium",
+      "actualPhysicalIPad": false,
+      "requestedVersion": "7.2.0",
+      "mode": "online",
+      "startupMS": 1817.2999999998137,
+      "linearMemory": 97910784,
+      "workerMaxTimerGapMS": 212.59999999962747,
+      "errors": [],
+      "throughput": [
+        {
+          "mode": "PH",
+          "callsPerSecond": 138.86172501471907,
+          "failures": 0
+        },
+        {
+          "mode": "DU",
+          "callsPerSecond": 344.5999471877899,
+          "failures": 0
+        }
+      ],
+      "stress": {
+        "stackBefore": 4432960,
+        "memoryBefore": 97910784,
+        "errors": [
+          "EOS returned a nonfinite property",
+          "EOS returned a nonfinite property",
+          "EOS returned a nonfinite property",
+          "EOS returned a nonfinite property",
+          "EOS returned a nonfinite property"
+        ],
+        "validAfterError": 5,
+        "stackAfter": 4432960,
+        "memoryAfter": 97910784
+      }
+    },
+    {
+      "desktopBrowser": "chromium",
+      "actualPhysicalIPad": false,
+      "requestedVersion": "8.0.0",
+      "mode": "origin-disabled-fresh-page",
+      "startupMS": 2297,
+      "linearMemory": 56360960,
+      "workerMaxTimerGapMS": 51.09999999962747,
+      "errors": [],
+      "throughput": [
+        {
+          "mode": "PH",
+          "callsPerSecond": 36760.0,
+          "failures": 0
+        },
+        {
+          "mode": "DU",
+          "callsPerSecond": 43357.10952601545,
+          "failures": 0
+        }
+      ],
+      "stress": {
+        "stackBefore": 5706944,
+        "memoryBefore": 56360960,
+        "errors": [
+          "Aborted(Assertion failed: exception_header->referenceCount > 0, at: /emsdk/emscripten/system/lib/libcxxabi/src/cxa_exception_emscripten.cpp,149,__cxa_decrement_exception_refcount)",
+          "Aborted(Assertion failed: exception_header->referenceCount > 0, at: /emsdk/emscripten/system/lib/libcxxabi/src/cxa_exception_emscripten.cpp,149,__cxa_decrement_exception_refcount)",
+          "Aborted(Assertion failed: exception_header->referenceCount > 0, at: /emsdk/emscripten/system/lib/libcxxabi/src/cxa_exception_emscripten.cpp,149,__cxa_decrement_exception_refcount)",
+          "Aborted(Assertion failed: exception_header->referenceCount > 0, at: /emsdk/emscripten/system/lib/libcxxabi/src/cxa_exception_emscripten.cpp,149,__cxa_decrement_exception_refcount)",
+          "Aborted(Assertion failed: exception_header->referenceCount > 0, at: /emsdk/emscripten/system/lib/libcxxabi/src/cxa_exception_emscripten.cpp,149,__cxa_decrement_exception_refcount)"
+        ],
+        "validAfterError": 5,
+        "stackAfter": 5706944,
+        "memoryAfter": 56360960
+      }
+    },
+    {
+      "desktopBrowser": "webkit",
+      "actualPhysicalIPad": false,
+      "requestedVersion": "8.0.0",
+      "mode": "online",
+      "startupMS": 2347,
+      "linearMemory": 56360960,
+      "workerMaxTimerGapMS": 56,
+      "errors": [],
+      "throughput": [
+        {
+          "mode": "PH",
+          "callsPerSecond": 34434.0,
+          "failures": 0
+        },
+        {
+          "mode": "DU",
+          "callsPerSecond": 42258.0,
+          "failures": 0
+        }
+      ],
+      "stress": {
+        "stackBefore": 5706944,
+        "memoryBefore": 56360960,
+        "errors": [
+          "Aborted(Assertion failed: exception_header->referenceCount > 0, at: /emsdk/emscripten/system/lib/libcxxabi/src/cxa_exception_emscripten.cpp,149,__cxa_decrement_exception_refcount)",
+          "Aborted(Assertion failed: exception_header->referenceCount > 0, at: /emsdk/emscripten/system/lib/libcxxabi/src/cxa_exception_emscripten.cpp,149,__cxa_decrement_exception_refcount)",
+          "Aborted(Assertion failed: exception_header->referenceCount > 0, at: /emsdk/emscripten/system/lib/libcxxabi/src/cxa_exception_emscripten.cpp,149,__cxa_decrement_exception_refcount)",
+          "Aborted(Assertion failed: exception_header->referenceCount > 0, at: /emsdk/emscripten/system/lib/libcxxabi/src/cxa_exception_emscripten.cpp,149,__cxa_decrement_exception_refcount)",
+          "Aborted(Assertion failed: exception_header->referenceCount > 0, at: /emsdk/emscripten/system/lib/libcxxabi/src/cxa_exception_emscripten.cpp,149,__cxa_decrement_exception_refcount)"
+        ],
+        "validAfterError": 5,
+        "stackAfter": 5706944,
+        "memoryAfter": 56360960
+      }
+    },
+    {
+      "desktopBrowser": "webkit",
+      "actualPhysicalIPad": false,
+      "requestedVersion": "7.2.0",
+      "mode": "online",
+      "startupMS": 2104,
+      "linearMemory": 97910784,
+      "workerMaxTimerGapMS": 153,
+      "errors": [],
+      "throughput": [
+        {
+          "mode": "PH",
+          "callsPerSecond": 116.37080867850098,
+          "failures": 0
+        },
+        {
+          "mode": "DU",
+          "callsPerSecond": 239.13043478260872,
+          "failures": 0
+        }
+      ],
+      "stress": {
+        "stackBefore": 4432960,
+        "memoryBefore": 97910784,
+        "errors": [
+          "EOS returned a nonfinite property",
+          "EOS returned a nonfinite property",
+          "EOS returned a nonfinite property",
+          "EOS returned a nonfinite property",
+          "EOS returned a nonfinite property"
+        ],
+        "validAfterError": 5,
+        "stackAfter": 4432960,
+        "memoryAfter": 97910784
+      }
+    },
+    {
+      "desktopBrowser": "webkit",
+      "actualPhysicalIPad": false,
+      "requestedVersion": "8.0.0",
+      "mode": "origin-disabled-fresh-page",
+      "startupMS": 2176,
+      "linearMemory": 56360960,
+      "workerMaxTimerGapMS": 54,
+      "errors": [],
+      "throughput": [
+        {
+          "mode": "PH",
+          "callsPerSecond": 36976.0,
+          "failures": 0
+        },
+        {
+          "mode": "DU",
+          "callsPerSecond": 42126.0,
+          "failures": 0
+        }
+      ],
+      "stress": {
+        "stackBefore": 5706944,
+        "memoryBefore": 56360960,
+        "errors": [
+          "Aborted(Assertion failed: exception_header->referenceCount > 0, at: /emsdk/emscripten/system/lib/libcxxabi/src/cxa_exception_emscripten.cpp,149,__cxa_decrement_exception_refcount)",
+          "Aborted(Assertion failed: exception_header->referenceCount > 0, at: /emsdk/emscripten/system/lib/libcxxabi/src/cxa_exception_emscripten.cpp,149,__cxa_decrement_exception_refcount)",
+          "Aborted(Assertion failed: exception_header->referenceCount > 0, at: /emsdk/emscripten/system/lib/libcxxabi/src/cxa_exception_emscripten.cpp,149,__cxa_decrement_exception_refcount)",
+          "Aborted(Assertion failed: exception_header->referenceCount > 0, at: /emsdk/emscripten/system/lib/libcxxabi/src/cxa_exception_emscripten.cpp,149,__cxa_decrement_exception_refcount)",
+          "Aborted(Assertion failed: exception_header->referenceCount > 0, at: /emsdk/emscripten/system/lib/libcxxabi/src/cxa_exception_emscripten.cpp,149,__cxa_decrement_exception_refcount)"
+        ],
+        "validAfterError": 5,
+        "stackAfter": 5706944,
+        "memoryAfter": 56360960
+      }
+    }
+  ],
+  "matching8DirectEOSCrossCheck": {
+    "states": 222,
+    "maxPressurePa": 2.5098415790125728e-08,
+    "maxEnthalpyJkg": 2.9103830456733704e-11,
+    "note": "Independent native build at identical returned D/T coordinates; formulation agreement, not experimental ammonia validation."
+  }
+}

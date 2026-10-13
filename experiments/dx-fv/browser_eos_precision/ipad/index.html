@@ -1,0 +1,8 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Ammonia EOS precision — experimental iPad test</title>
+<style>body{font:17px system-ui;max-width:900px;margin:auto;padding:20px;background:#f3f5f7;color:#172738}button,input,select{font:inherit;padding:8px;margin:5px}pre{white-space:pre-wrap;overflow-wrap:anywhere;background:white;padding:12px}label{display:block}</style>
+<h1>Ammonia EOS precision test</h1><p>Experimental and unqualified. Runs pinned official CoolProp locally in a worker. No simulator, server calculations or data upload. Desktop WebKit is not physical iPad validation.</p>
+<label>Device model <input id="device" placeholder="e.g. iPad Air M2"></label><label>iPadOS/Safari version <input id="os" placeholder="Record from Settings"></label>
+<label>Backend <select id="version"><option>8.0.0</option><option>7.2.0</option></select></label>
+<button id="offline">Prepare offline assets</button><button id="run">Run bounded tests</button><button id="export">Export evidence JSON</button>
+<p id="status" role="status">Ready. Use HTTPS or localhost; file URLs are unsupported.</p><p>While the worker runs, type here to check responsiveness: <input aria-label="Responsiveness typing test"></p>
+<pre id="results"></pre><script type="module" src="app.mjs"></script></html>

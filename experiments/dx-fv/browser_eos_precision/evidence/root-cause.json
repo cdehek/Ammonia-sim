@@ -1,0 +1,131 @@
+{
+  "mechanism": "Input-dependent caloric PH residual becomes density error through the EOS derivative, contaminating the unchanged finite difference. No unstable EOS branch is required.",
+  "inputs": [
+    30298.937123458254,
+    94523.34612321304
+  ],
+  "inputBits": [
+    "40dd96bbf9d4ab61",
+    "40f713b589b87e86"
+  ],
+  "perturbedInputBits": [
+    "40dd96bc9dabb59e",
+    "40f713b589b87e86"
+  ],
+  "acceptedStepPa": 0.01,
+  "actualBinary64StepPa": 0.00999999999839929,
+  "analyticRhoPAtH": 6.616841348556086e-07,
+  "finiteRhoPAtH": 1.3359704098547809e-05,
+  "ratio": 20.190455528245568,
+  "base": {
+    "p": 30298.93712311608,
+    "h": 94523.34612321186,
+    "rho": 708.6710614955963,
+    "T": 217.26293725549874,
+    "u": 94480.5915382297,
+    "Q": -1,
+    "pEOS": 30298.93712349163,
+    "hEOS": 94523.34612321187,
+    "cp": 4379.299738250342,
+    "cv": 2964.2657342378143,
+    "kappa": 5.923149890323998e-10,
+    "rhoP": 6.616841348556086e-07,
+    "rhoH": -0.00026756503093981944,
+    "hp": 0.0009041825906341237,
+    "rhoT": -1.1717474699596961,
+    "pResidual": 3.3374817576259375e-08,
+    "hResidual": -1.1641532182693481e-09,
+    "workIdentity": -5.4001247917767614e-12
+  },
+  "perturbed": {
+    "p": 30298.9471239244,
+    "h": 94523.34564863467,
+    "rho": 708.6710616291933,
+    "T": 217.26293714506562,
+    "u": 94480.5910495485,
+    "Q": -1,
+    "pEOS": 30298.947122931288,
+    "hEOS": 94523.34564863397,
+    "cp": 4379.299737801508,
+    "cv": 2964.2657343560063,
+    "kappa": 5.923149883827572e-10,
+    "rhoP": 6.616841345255376e-07,
+    "rhoH": -0.00026756503091056457,
+    "hp": 0.0009041825909242662,
+    "rhoT": -1.1717474697114878,
+    "pResidual": -5.269648681860417e-07,
+    "hResidual": -0.0004745790647575632,
+    "workIdentity": 2.1884716261411086e-12
+  },
+  "densityPhysicalIncrement": 6.6168413485560864e-09,
+  "densityArtefactObserved": 1.26980199636922e-07,
+  "densityArtefactPredicted": 1.269800798906759e-07,
+  "attributionRelativeResidual": -9.430308539094781e-07,
+  "caloricTemperatureErrorEstimateK": -1.0836844449335469e-07,
+  "decimal60ExactDifferenceOfBinary64Outputs": "1.335970409854780882596969604492187500E-7",
+  "decimal60Finite": "0.0000133597040985478085478649880626684673140885648845069132005119",
+  "densityULP": 1.1368683772161603e-13,
+  "twoULPDensityFDRepresentationalScale": 2.2737367544323206e-11,
+  "representationCaution": "This is the representation scale for two density outputs, not a certificate that an EOS evaluation is correctly rounded. Close positive binary64 density subtraction is exact by Sterbenz; input-evaluation errors remain.",
+  "sourceStoppingRules": {
+    "oldBits": 44,
+    "currentBits": 30,
+    "oldRelativeBracketTolerance": 1.1368683772161603e-13,
+    "currentRelativeBracketTolerance": 1.862645149230957e-09,
+    "relaxationFactor": 16384,
+    "possibleCurrentBracketWidthK": 4.046837561866245e-07,
+    "possibleMidpointCaloricErrorJkg": 0.000886115733771125,
+    "limitations": "Envelope implied by pinned source and Boost header, not an observed final WASM bracket. Internal iteration/bracket instrumentation is not exported. The source comment 2^(1-30)=9.31e-10 is arithmetically incorrect; Boost actually computes 1.862645149230957e-9."
+  },
+  "backendInterfaceResolution": "None demonstrated. Public phase-imposed PropsSI, molar inputs and state lifecycle changes retain the failure. Native-only configuration experiments change which nearby inputs fail, without curing all probes.",
+  "scaledInventoryContamination": [
+    {
+      "sections": 5,
+      "volumeM3": 0.0006000000000000001,
+      "massKg": 0.4252026368973578,
+      "energyKJ": 40.17339665767746,
+      "densityArtefactMassKg": 7.618804793440555e-11,
+      "scaledMassResidual": 1.7918056315534337e-10,
+      "scaledInputEnthalpyEnergyResidual": 1.7926164637560958e-10,
+      "nonlinearTolerance": 1e-11,
+      "inventoryAnalyticJacobianPHbarKJkg": [
+        [
+          9.336971280570913e-05,
+          -0.0003775588499058277
+        ],
+        [
+          -0.0014001137262327806,
+          0.010206454663847866
+        ]
+      ],
+      "determinant": 4.243484125141545e-07,
+      "condition2": 250.4583649153932,
+      "conditionWithRelativeCoordinateScaling": 23235.987537017565,
+      "note": "Local liquid inventory Jacobian only. Does not prove global inversion uniqueness or full coupled conditioning."
+    },
+    {
+      "sections": 9,
+      "volumeM3": 0.0003333333333333333,
+      "massKg": 0.23622368716519876,
+      "energyKJ": 22.318553698709696,
+      "densityArtefactMassKg": 4.232669329689197e-11,
+      "scaledMassResidual": 1.7918056315534337e-10,
+      "scaledInputEnthalpyEnergyResidual": 1.7926164637560958e-10,
+      "nonlinearTolerance": 1e-11,
+      "inventoryAnalyticJacobianPHbarKJkg": [
+        [
+          9.336971280570914e-05,
+          -0.0003775588499058277
+        ],
+        [
+          -0.0014001137262327809,
+          0.010206454663847866
+        ]
+      ],
+      "determinant": 4.243484125141545e-07,
+      "condition2": 250.45836491539313,
+      "conditionWithRelativeCoordinateScaling": 23235.98753701756,
+      "note": "Local liquid inventory Jacobian only. Does not prove global inversion uniqueness or full coupled conditioning."
+    }
+  ]
+}

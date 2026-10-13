@@ -1,0 +1,26 @@
+{
+  "status": "PASS: research deliverables verified; EOS backend remains unqualified",
+  "auditOutput": "Verified without overwriting existing audit\nPASS \u2014 complete isolated diagnostic/preparation evidence, NOT backend qualification 110 checks\n",
+  "auditScriptSHA256": "b64510bb6cf4e3e8267d22732f0a704450958c96baf2cae96445efed737fa90d",
+  "remoteProtectedRefsMatch": {
+    "refs/heads/experimental/dx-fv-stage-3": "be9eb35a4ddf5098e685182f8104685127c6a6ee",
+    "refs/heads/main": "0473d32f62db992fde0f581d116e1bd0c8e7d8ed",
+    "refs/heads/research/browser-eos-feasibility-20261012": "f17623f61592bd897200206692ec002088f0a605",
+    "refs/heads/research/gibbs-two-patch-feasibility-20261012": "458a3b3c07dbf2171248e4cf237ed99c582a65b2",
+    "refs/heads/wip/dx-fv-stage2b-property-research-20261012": "5318173b49719e263c2adda214a222a9c0533a47",
+    "refs/pull/3/head": "d4422425750a1d3c4e432cc103ac42ead40b7cc6",
+    "refs/pull/3/merge": "f440560fccfa45421ec2bf679bac32df10df63ae"
+  },
+  "packageRebuildByteIdentical": true,
+  "finalZIPBytes": 8871386,
+  "finalZIPSHA256": "300c7588487580563856177f36768f6f0cd50f2e12cea487759530ad2999f874",
+  "authoredWhitespaceCheck": "Passed with only byte-preserved upstream Boost header excluded; its upstream whitespace warnings were retained and documented.",
+  "nativeDerivativeRows": 964,
+  "desktopBrowserDerivativeRows": 1278,
+  "syntheticClosures": 64,
+  "physicalIPadTested": false,
+  "noProductionChanges": true,
+  "noCoupledTrajectoryRuns": true,
+  "noPublishing": true,
+  "recommendation": "Separate approval for traceable backend flash-precision build; collect physical-device results using prepared package."
+}
