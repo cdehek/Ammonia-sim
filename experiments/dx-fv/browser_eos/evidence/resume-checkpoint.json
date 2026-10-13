@@ -1,0 +1,47 @@
+{
+  "resumedUTC": "2026-10-13T13:39:16.301598+00:00",
+  "branch": "research/browser-eos-feasibility-20261012",
+  "parent": "458a3b3c07dbf2171248e4cf237ed99c582a65b2",
+  "preservedTrackedFiles": 250,
+  "priorResearchFilesUnchanged": true,
+  "filesAtInterruption": {
+    "eos.mjs": "632b63932a27f4d4b9508d50375378925faaec0f4b1f98a5f2d3cdcf87ab9abf",
+    "reference.py": "2611b9262a34079061c7b3cae93d51114680b2d589808c431cb2cabb92f09687",
+    "index.html": "81395e32541d2da4b800c6487617250ecd86ca216f0ecd61ad3c44a38c418941",
+    "inputs.json": "518062ed73f5753633fcb54604e38328da072ecbf2ebe63587fb71e549327cac",
+    "worker.mjs": "0700a39fa07abbcc4132a656811fa54084a716f5482c4a29b3137f2f5b64c15f",
+    "sw.js": "0a5dde7edef7c8abc37a6e2de33ffe54bb2a32cff373ca36dcf50126c588ab9f",
+    "evidence/python-8.0.0.json": "2898a1d353b2c65e3ea747113bbb02754ecfd9b80ac971e8c6afb99b40b7b6ea",
+    "evidence/assets.json": "e7b64d2065b60a9d4c7d86d57df1cb04b2621d32d5ad59102142f8ead1528aef",
+    "evidence/python-7.2.0.json": "32daffc3c37228176089e237accf1ba6cec03abdb25218ff123e8f8cfe2796c9",
+    "evidence/preservation.json": "63b780dcdf509533cb349ee0cde344106ba6054582da8b1cee21ed19437818f4",
+    "upstream/javascript_builder-7.2.yml": "90e1665da4387356819d76a717cd853fa20496622ca7535a737364fba4408fcb",
+    "upstream/CMakeLists-7.2.txt": "ed11a612ed3886498043cb3e1335cb5f42b24a60a16f25d0f2aded542fc8be6b",
+    "upstream/javascript_builder-8.0.yml": "0c7ee27a07a2e168da06bf69eaf63c286abd5092fa084eac745bf36ff3152e3f",
+    "upstream/interface-7.2.cxx": "0bf6dd58579bf5ef647b5639e344e9f329fc5581cbf160ee22c826be3fd51701",
+    "upstream/CMakeLists-8.0.txt": "2e31d239bd8ded3ea2e3546e35765a86a75e3b575f13737b4f01f1f7ec9952a0",
+    "upstream/interface-8.0.cxx": "71db8d272a371e64987c481fc02dbce8185f2154373ae1436e0672e4f9b244bc",
+    "vendor/7.2.0/coolprop.wasm": "cb77d0381fbe639bffb65a3e8fa44ff8e2a110f21c18125c89a9b336135bd194",
+    "vendor/7.2.0/coolprop.js": "8a4993ac260a98c4a7053c9f42bbb58bc0fb2ebd3411c8d13df7bbb1fc511b2b",
+    "vendor/7.2.0/LICENSE": "9bf835333ef602af4cb19338b9f9d43671e174fa029b00280e9bdba6ea4719b2",
+    "vendor/8.0.0/coolprop.wasm": "28a83d839ab69c7e6ea480298955ce223b6507dc6ffb83349dd31f1540867307",
+    "vendor/8.0.0/coolprop.js": "ebd02f5721abc10fee3e6560b0d96c1a17b8ae1f01bc144a4f9a1af8cf1e3217",
+    "vendor/8.0.0/LICENSE": "9bf835333ef602af4cb19338b9f9d43671e174fa029b00280e9bdba6ea4719b2"
+  },
+  "completed": [
+    "Official 7.2.0 and 8.0.0 JS/WASM downloaded, vendored unchanged and hashed",
+    "Official source interfaces, CMake files, build workflows and MIT licenses preserved",
+    "612-request inputs seeded from Python 7.2.0",
+    "Python 7.2.0 and Python 8.0.0 independent reference entry-path runs completed",
+    "Isolated loader, exact cache, worker, HTML and research-scoped service worker implemented but not benchmarked",
+    "Chromium 151.0.7922.34 and desktop WebKit 26.5 smoke launch succeeded in prior turn"
+  ],
+  "unfinished": [
+    "Browser accuracy and performance evidence",
+    "Table and solver-pattern comparison",
+    "Memory, sustained work, worker and offline/deployment tests",
+    "License dependency notices and architecture analysis",
+    "Reports, final audit, commit and push"
+  ],
+  "noCompletedExperimentRegenerated": true
+}

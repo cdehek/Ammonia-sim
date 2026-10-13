@@ -1,0 +1,183 @@
+{
+  "browser": "chromium",
+  "version": "151.0.7922.34",
+  "environment": {
+    "node": "v24.19.0",
+    "playwright": "1.62.1",
+    "platform": "linux",
+    "arch": "x64",
+    "cpu": "AMD EPYC 9V74 80-Core Processor",
+    "logicalCPUs": 3,
+    "totalRAMBytes": 10452496384,
+    "testedOnPhysicalIPad": false,
+    "noCoupledRuns": true
+  },
+  "rounds": [
+    {
+      "init": {
+        "totalMS": 2062.399999999907,
+        "importMS": 6.2999999998137355,
+        "fetchMS": 28.4000000001397,
+        "compileInstantiateMS": 22.699999999953434,
+        "runtimeMS": 60.39999999990687,
+        "firstFactoryMS": 1967.3000000000466,
+        "initialLinearMemoryBytes": 22544384,
+        "readyLinearMemoryBytes": 56360960,
+        "wasmBytes": 9196512,
+        "mime": "application/wasm",
+        "streaming": true,
+        "logs": []
+      },
+      "linearMemory": 56360960,
+      "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/151.0.7922.34 Safari/537.36",
+      "crossOriginIsolated": false,
+      "processMemory": {
+        "processes": [
+          {
+            "pid": 1224,
+            "ppid": 1212,
+            "rssKiB": 96108
+          },
+          {
+            "pid": 1226,
+            "ppid": 1224,
+            "rssKiB": 38092
+          },
+          {
+            "pid": 1227,
+            "ppid": 1224,
+            "rssKiB": 38388
+          },
+          {
+            "pid": 1242,
+            "ppid": 1226,
+            "rssKiB": 60440
+          },
+          {
+            "pid": 1254,
+            "ppid": 1224,
+            "rssKiB": 67548
+          },
+          {
+            "pid": 1267,
+            "ppid": 1227,
+            "rssKiB": 218748
+          }
+        ],
+        "summedRSSKiB": 519324,
+        "caution": "Summed process RSS double-counts shared pages; not exclusive memory or iPad usage."
+      }
+    },
+    {
+      "init": {
+        "totalMS": 2086.1999999999534,
+        "importMS": 7.100000000093132,
+        "fetchMS": 28.699999999953434,
+        "compileInstantiateMS": 21.800000000046566,
+        "runtimeMS": 58.60000000009313,
+        "firstFactoryMS": 1991.7999999998137,
+        "initialLinearMemoryBytes": 22544384,
+        "readyLinearMemoryBytes": 56360960,
+        "wasmBytes": 9196512,
+        "mime": "application/wasm",
+        "streaming": true,
+        "logs": []
+      },
+      "linearMemory": 56360960,
+      "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/151.0.7922.34 Safari/537.36",
+      "crossOriginIsolated": false,
+      "processMemory": {
+        "processes": [
+          {
+            "pid": 1224,
+            "ppid": 1212,
+            "rssKiB": 97392
+          },
+          {
+            "pid": 1226,
+            "ppid": 1224,
+            "rssKiB": 38092
+          },
+          {
+            "pid": 1227,
+            "ppid": 1224,
+            "rssKiB": 38516
+          },
+          {
+            "pid": 1242,
+            "ppid": 1226,
+            "rssKiB": 61376
+          },
+          {
+            "pid": 1254,
+            "ppid": 1224,
+            "rssKiB": 69016
+          },
+          {
+            "pid": 1286,
+            "ppid": 1227,
+            "rssKiB": 219272
+          }
+        ],
+        "summedRSSKiB": 523664,
+        "caution": "Summed process RSS double-counts shared pages; not exclusive memory or iPad usage."
+      }
+    },
+    {
+      "init": {
+        "totalMS": 2030.3999999999069,
+        "importMS": 7.5,
+        "fetchMS": 36,
+        "compileInstantiateMS": 22,
+        "runtimeMS": 58.199999999953434,
+        "firstFactoryMS": 1928.6999999999534,
+        "initialLinearMemoryBytes": 22544384,
+        "readyLinearMemoryBytes": 56360960,
+        "wasmBytes": 9196512,
+        "mime": "application/wasm",
+        "streaming": true,
+        "logs": []
+      },
+      "linearMemory": 56360960,
+      "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/151.0.7922.34 Safari/537.36",
+      "crossOriginIsolated": false,
+      "processMemory": {
+        "processes": [
+          {
+            "pid": 1224,
+            "ppid": 1212,
+            "rssKiB": 97880
+          },
+          {
+            "pid": 1226,
+            "ppid": 1224,
+            "rssKiB": 38092
+          },
+          {
+            "pid": 1227,
+            "ppid": 1224,
+            "rssKiB": 38516
+          },
+          {
+            "pid": 1242,
+            "ppid": 1226,
+            "rssKiB": 61476
+          },
+          {
+            "pid": 1254,
+            "ppid": 1224,
+            "rssKiB": 69088
+          },
+          {
+            "pid": 1296,
+            "ppid": 1227,
+            "rssKiB": 219544
+          }
+        ],
+        "summedRSSKiB": 524596,
+        "caution": "Summed process RSS double-counts shared pages; not exclusive memory or iPad usage."
+      }
+    }
+  ],
+  "transfer": "Loopback uncompressed assets; fresh contexts, shared browser compiler/OS caches possible. No WAN latency claim."
+}

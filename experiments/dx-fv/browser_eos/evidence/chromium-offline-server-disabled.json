@@ -1,0 +1,82 @@
+{
+  "browser": "chromium",
+  "version": "151.0.7922.34",
+  "environment": {
+    "node": "v24.19.0",
+    "playwright": "1.62.1",
+    "platform": "linux",
+    "arch": "x64",
+    "cpu": "AMD EPYC 9V74 80-Core Processor",
+    "logicalCPUs": 3,
+    "totalRAMBytes": 10452496384,
+    "testedOnPhysicalIPad": false,
+    "noCoupledRuns": true
+  },
+  "mimeFallback": {
+    "init": {
+      "totalMS": 2014.3000000000466,
+      "importMS": 6.100000000093132,
+      "fetchMS": 27.899999999906868,
+      "compileInstantiateMS": 17.9000000001397,
+      "runtimeMS": 51.199999999953434,
+      "firstFactoryMS": 1929.1000000000931,
+      "initialLinearMemoryBytes": 22544384,
+      "readyLinearMemoryBytes": 56360960,
+      "wasmBytes": 9196512,
+      "mime": "application/octet-stream",
+      "streaming": false,
+      "logs": []
+    },
+    "state": {
+      "p": 30174.790361846546,
+      "T": 217.2629228853553,
+      "h": 94523.17094071119,
+      "s": 458.16706902202463,
+      "rho": 708.6710262223568,
+      "u": 94480.59153609988,
+      "Q": 10000
+    }
+  },
+  "missingAssetError": "WASM asset unavailable: HTTP 404",
+  "serviceWorkerScope": "http://127.0.0.1:35661/Ammonia-sim/experiments/dx-fv/browser_eos/",
+  "cachedURLs": [
+    "/Ammonia-sim/experiments/dx-fv/browser_eos/",
+    "/Ammonia-sim/experiments/dx-fv/browser_eos/index.html",
+    "/Ammonia-sim/experiments/dx-fv/browser_eos/eos.mjs",
+    "/Ammonia-sim/experiments/dx-fv/browser_eos/worker.mjs",
+    "/Ammonia-sim/experiments/dx-fv/browser_eos/vendor/8.0.0/coolprop.js",
+    "/Ammonia-sim/experiments/dx-fv/browser_eos/vendor/8.0.0/coolprop.wasm"
+  ],
+  "offline": {
+    "init": {
+      "totalMS": 2005.5,
+      "importMS": 5.5,
+      "fetchMS": 25.5,
+      "compileInstantiateMS": 25.299999999813735,
+      "runtimeMS": 36,
+      "firstFactoryMS": 1938.5,
+      "initialLinearMemoryBytes": 22544384,
+      "readyLinearMemoryBytes": 56360960,
+      "wasmBytes": 9196512,
+      "mime": "application/wasm",
+      "streaming": true,
+      "logs": []
+    },
+    "state": {
+      "p": 30174.790361846546,
+      "T": 217.2629228853553,
+      "h": 94523.17094071119,
+      "s": 458.16706902202463,
+      "rho": 708.6710262223568,
+      "u": 94480.59153609988,
+      "Q": 10000
+    },
+    "online": true
+  },
+  "offlineVerification": {
+    "serverUnavailableDuringReloadAndEOSLoad": true,
+    "HTTPRequestsRejectedByServer": 0,
+    "networkEmulationUsed": false,
+    "navigatorOnLineIsNotAnOfflineProof": true
+  }
+}

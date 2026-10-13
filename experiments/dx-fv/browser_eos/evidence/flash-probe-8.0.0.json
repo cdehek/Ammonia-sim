@@ -1,0 +1,430 @@
+{
+  "version": "8.0.0",
+  "git": "ae81610e7d23efc57f9d051c8e70a4d66e87537f",
+  "pPa": 30298.937123446063,
+  "hJkg": 94523.34612321304,
+  "unchangedSolverPressureStepPa": 0.01,
+  "rows": [
+    {
+      "implementation": "reused-state",
+      "pressureStepPa": 0.003,
+      "base": {
+        "p": 30298.93712345521,
+        "T": 217.26293714713148,
+        "rho": 708.6710616225752,
+        "h": 94523.34564863889
+      },
+      "perturbed": {
+        "p": 30298.940123096065,
+        "T": 217.26293714651166,
+        "rho": 708.6710616245607,
+        "h": 94523.34564863722
+      },
+      "analyticRhoPAtH": 6.616841345530063e-07,
+      "finiteRhoPAtH": 6.618468736026747e-07,
+      "baseHResidualJkg": -0.000474574146210216,
+      "perturbedHResidualJkg": -0.00047457581968046725
+    },
+    {
+      "implementation": "reused-state",
+      "pressureStepPa": 0.01,
+      "base": {
+        "p": 30298.93712345521,
+        "T": 217.26293714713148,
+        "rho": 708.6710616225752,
+        "h": 94523.34564863889
+      },
+      "perturbed": {
+        "p": 30298.947123415313,
+        "T": 217.2629371450655,
+        "rho": 708.6710616291936,
+        "h": 94523.3456486336
+      },
+      "analyticRhoPAtH": 6.616841345530063e-07,
+      "finiteRhoPAtH": 6.618392944801599e-07,
+      "baseHResidualJkg": -0.000474574146210216,
+      "perturbedHResidualJkg": -0.0004745794285554439
+    },
+    {
+      "implementation": "reused-state",
+      "pressureStepPa": 0.03,
+      "base": {
+        "p": 30298.93712345521,
+        "T": 217.26293714713148,
+        "rho": 708.6710616225752,
+        "h": 94523.34564863889
+      },
+      "perturbed": {
+        "p": 30298.96712318874,
+        "T": 217.26293724930508,
+        "rho": 708.6710615154464,
+        "h": 94523.34612321331
+      },
+      "analyticRhoPAtH": 6.616841345530063e-07,
+      "finiteRhoPAtH": -3.5709604162548203e-06,
+      "baseHResidualJkg": -0.000474574146210216,
+      "perturbedHResidualJkg": 2.764863893389702e-10
+    },
+    {
+      "implementation": "reused-state",
+      "pressureStepPa": 0.1,
+      "base": {
+        "p": 30298.93712345521,
+        "T": 217.26293714713148,
+        "rho": 708.6710616225752,
+        "h": 94523.34564863889
+      },
+      "perturbed": {
+        "p": 30299.03712331924,
+        "T": 217.26293723485225,
+        "rho": 708.6710615617641,
+        "h": 94523.34612321331
+      },
+      "analyticRhoPAtH": 6.616841345530063e-07,
+      "finiteRhoPAtH": -6.081108949729241e-07,
+      "baseHResidualJkg": -0.000474574146210216,
+      "perturbedHResidualJkg": 2.764863893389702e-10
+    },
+    {
+      "implementation": "reused-state",
+      "pressureStepPa": 0.3,
+      "base": {
+        "p": 30298.93712345521,
+        "T": 217.26293714713148,
+        "rho": 708.6710616225752,
+        "h": 94523.34564863889
+      },
+      "perturbed": {
+        "p": 30299.237123277046,
+        "T": 217.2629370851573,
+        "rho": 708.6710618211205,
+        "h": 94523.34564849053
+      },
+      "analyticRhoPAtH": 6.616841345530063e-07,
+      "finiteRhoPAtH": 6.618176939809928e-07,
+      "baseHResidualJkg": -0.000474574146210216,
+      "perturbedHResidualJkg": -0.0004747225029859692
+    },
+    {
+      "implementation": "reused-state",
+      "pressureStepPa": 1.0,
+      "base": {
+        "p": 30298.93712345521,
+        "T": 217.26293714713148,
+        "rho": 708.6710616225752,
+        "h": 94523.34564863889
+      },
+      "perturbed": {
+        "p": 30299.937122977713,
+        "T": 217.26293704903168,
+        "rho": 708.67106215728,
+        "h": 94523.34612321267
+      },
+      "analyticRhoPAtH": 6.616841345530063e-07,
+      "finiteRhoPAtH": 5.347047817849671e-07,
+      "baseHResidualJkg": -0.000474574146210216,
+      "perturbedHResidualJkg": -3.637978807091713e-10
+    },
+    {
+      "implementation": "reused-state",
+      "pressureStepPa": 3.0,
+      "base": {
+        "p": 30298.93712345521,
+        "T": 217.26293714713148,
+        "rho": 708.6710616225752,
+        "h": 94523.34564863889
+      },
+      "perturbed": {
+        "p": 30301.937122558975,
+        "T": 217.2629366360968,
+        "rho": 708.6710634806486,
+        "h": 94523.34612321151
+      },
+      "analyticRhoPAtH": 6.616841345530063e-07,
+      "finiteRhoPAtH": 6.193578201418859e-07,
+      "baseHResidualJkg": -0.000474574146210216,
+      "perturbedHResidualJkg": -1.5279510989785194e-09
+    },
+    {
+      "implementation": "fresh-state",
+      "pressureStepPa": 0.003,
+      "base": {
+        "p": 30298.93712345521,
+        "T": 217.26293714713148,
+        "rho": 708.6710616225752,
+        "h": 94523.34564863889
+      },
+      "perturbed": {
+        "p": 30298.940123096065,
+        "T": 217.26293714651166,
+        "rho": 708.6710616245607,
+        "h": 94523.34564863722
+      },
+      "analyticRhoPAtH": 6.616841345530063e-07,
+      "finiteRhoPAtH": 6.618468736026747e-07,
+      "baseHResidualJkg": -0.000474574146210216,
+      "perturbedHResidualJkg": -0.00047457581968046725
+    },
+    {
+      "implementation": "fresh-state",
+      "pressureStepPa": 0.01,
+      "base": {
+        "p": 30298.93712345521,
+        "T": 217.26293714713148,
+        "rho": 708.6710616225752,
+        "h": 94523.34564863889
+      },
+      "perturbed": {
+        "p": 30298.947123415313,
+        "T": 217.2629371450655,
+        "rho": 708.6710616291936,
+        "h": 94523.3456486336
+      },
+      "analyticRhoPAtH": 6.616841345530063e-07,
+      "finiteRhoPAtH": 6.618392944801599e-07,
+      "baseHResidualJkg": -0.000474574146210216,
+      "perturbedHResidualJkg": -0.0004745794285554439
+    },
+    {
+      "implementation": "fresh-state",
+      "pressureStepPa": 0.03,
+      "base": {
+        "p": 30298.93712345521,
+        "T": 217.26293714713148,
+        "rho": 708.6710616225752,
+        "h": 94523.34564863889
+      },
+      "perturbed": {
+        "p": 30298.96712318874,
+        "T": 217.26293724930508,
+        "rho": 708.6710615154464,
+        "h": 94523.34612321331
+      },
+      "analyticRhoPAtH": 6.616841345530063e-07,
+      "finiteRhoPAtH": -3.5709604162548203e-06,
+      "baseHResidualJkg": -0.000474574146210216,
+      "perturbedHResidualJkg": 2.764863893389702e-10
+    },
+    {
+      "implementation": "fresh-state",
+      "pressureStepPa": 0.1,
+      "base": {
+        "p": 30298.93712345521,
+        "T": 217.26293714713148,
+        "rho": 708.6710616225752,
+        "h": 94523.34564863889
+      },
+      "perturbed": {
+        "p": 30299.03712331924,
+        "T": 217.26293723485225,
+        "rho": 708.6710615617641,
+        "h": 94523.34612321331
+      },
+      "analyticRhoPAtH": 6.616841345530063e-07,
+      "finiteRhoPAtH": -6.081108949729241e-07,
+      "baseHResidualJkg": -0.000474574146210216,
+      "perturbedHResidualJkg": 2.764863893389702e-10
+    },
+    {
+      "implementation": "fresh-state",
+      "pressureStepPa": 0.3,
+      "base": {
+        "p": 30298.93712345521,
+        "T": 217.26293714713148,
+        "rho": 708.6710616225752,
+        "h": 94523.34564863889
+      },
+      "perturbed": {
+        "p": 30299.237123277046,
+        "T": 217.2629370851573,
+        "rho": 708.6710618211205,
+        "h": 94523.34564849053
+      },
+      "analyticRhoPAtH": 6.616841345530063e-07,
+      "finiteRhoPAtH": 6.618176939809928e-07,
+      "baseHResidualJkg": -0.000474574146210216,
+      "perturbedHResidualJkg": -0.0004747225029859692
+    },
+    {
+      "implementation": "fresh-state",
+      "pressureStepPa": 1.0,
+      "base": {
+        "p": 30298.93712345521,
+        "T": 217.26293714713148,
+        "rho": 708.6710616225752,
+        "h": 94523.34564863889
+      },
+      "perturbed": {
+        "p": 30299.937122977713,
+        "T": 217.26293704903168,
+        "rho": 708.67106215728,
+        "h": 94523.34612321267
+      },
+      "analyticRhoPAtH": 6.616841345530063e-07,
+      "finiteRhoPAtH": 5.347047817849671e-07,
+      "baseHResidualJkg": -0.000474574146210216,
+      "perturbedHResidualJkg": -3.637978807091713e-10
+    },
+    {
+      "implementation": "fresh-state",
+      "pressureStepPa": 3.0,
+      "base": {
+        "p": 30298.93712345521,
+        "T": 217.26293714713148,
+        "rho": 708.6710616225752,
+        "h": 94523.34564863889
+      },
+      "perturbed": {
+        "p": 30301.937122558975,
+        "T": 217.2629366360968,
+        "rho": 708.6710634806486,
+        "h": 94523.34612321151
+      },
+      "analyticRhoPAtH": 6.616841345530063e-07,
+      "finiteRhoPAtH": 6.193578201418859e-07,
+      "baseHResidualJkg": -0.000474574146210216,
+      "perturbedHResidualJkg": -1.5279510989785194e-09
+    },
+    {
+      "implementation": "high-level",
+      "pressureStepPa": 0.003,
+      "base": {
+        "p": 30298.937123446063,
+        "T": 217.26293714713148,
+        "rho": 708.6710616225752,
+        "h": 94523.34612321304
+      },
+      "perturbed": {
+        "p": 30298.940123446064,
+        "T": 217.26293714651166,
+        "rho": 708.6710616245607,
+        "h": 94523.34612321304
+      },
+      "analyticRhoPAtH": 6.616841345530063e-07,
+      "finiteRhoPAtH": 6.618468736026747e-07,
+      "baseHResidualJkg": 0.0,
+      "perturbedHResidualJkg": 0.0
+    },
+    {
+      "implementation": "high-level",
+      "pressureStepPa": 0.01,
+      "base": {
+        "p": 30298.937123446063,
+        "T": 217.26293714713148,
+        "rho": 708.6710616225752,
+        "h": 94523.34612321304
+      },
+      "perturbed": {
+        "p": 30298.94712344606,
+        "T": 217.2629371450655,
+        "rho": 708.6710616291936,
+        "h": 94523.34612321304
+      },
+      "analyticRhoPAtH": 6.616841345530063e-07,
+      "finiteRhoPAtH": 6.618392944801599e-07,
+      "baseHResidualJkg": 0.0,
+      "perturbedHResidualJkg": 0.0
+    },
+    {
+      "implementation": "high-level",
+      "pressureStepPa": 0.03,
+      "base": {
+        "p": 30298.937123446063,
+        "T": 217.26293714713148,
+        "rho": 708.6710616225752,
+        "h": 94523.34612321304
+      },
+      "perturbed": {
+        "p": 30298.967123446062,
+        "T": 217.26293724930508,
+        "rho": 708.6710615154464,
+        "h": 94523.34612321304
+      },
+      "analyticRhoPAtH": 6.616841345530063e-07,
+      "finiteRhoPAtH": -3.5709604162548203e-06,
+      "baseHResidualJkg": 0.0,
+      "perturbedHResidualJkg": 0.0
+    },
+    {
+      "implementation": "high-level",
+      "pressureStepPa": 0.1,
+      "base": {
+        "p": 30298.937123446063,
+        "T": 217.26293714713148,
+        "rho": 708.6710616225752,
+        "h": 94523.34612321304
+      },
+      "perturbed": {
+        "p": 30299.03712344606,
+        "T": 217.26293723485225,
+        "rho": 708.6710615617641,
+        "h": 94523.34612321304
+      },
+      "analyticRhoPAtH": 6.616841345530063e-07,
+      "finiteRhoPAtH": -6.081108949729241e-07,
+      "baseHResidualJkg": 0.0,
+      "perturbedHResidualJkg": 0.0
+    },
+    {
+      "implementation": "high-level",
+      "pressureStepPa": 0.3,
+      "base": {
+        "p": 30298.937123446063,
+        "T": 217.26293714713148,
+        "rho": 708.6710616225752,
+        "h": 94523.34612321304
+      },
+      "perturbed": {
+        "p": 30299.237123446062,
+        "T": 217.2629370851573,
+        "rho": 708.6710618211205,
+        "h": 94523.34612321304
+      },
+      "analyticRhoPAtH": 6.616841345530063e-07,
+      "finiteRhoPAtH": 6.618176939809928e-07,
+      "baseHResidualJkg": 0.0,
+      "perturbedHResidualJkg": 0.0
+    },
+    {
+      "implementation": "high-level",
+      "pressureStepPa": 1.0,
+      "base": {
+        "p": 30298.937123446063,
+        "T": 217.26293714713148,
+        "rho": 708.6710616225752,
+        "h": 94523.34612321304
+      },
+      "perturbed": {
+        "p": 30299.937123446063,
+        "T": 217.26293704903168,
+        "rho": 708.67106215728,
+        "h": 94523.34612321304
+      },
+      "analyticRhoPAtH": 6.616841345530063e-07,
+      "finiteRhoPAtH": 5.347047817849671e-07,
+      "baseHResidualJkg": 0.0,
+      "perturbedHResidualJkg": 0.0
+    },
+    {
+      "implementation": "high-level",
+      "pressureStepPa": 3.0,
+      "base": {
+        "p": 30298.937123446063,
+        "T": 217.26293714713148,
+        "rho": 708.6710616225752,
+        "h": 94523.34612321304
+      },
+      "perturbed": {
+        "p": 30301.937123446063,
+        "T": 217.2629366360968,
+        "rho": 708.6710634806486,
+        "h": 94523.34612321304
+      },
+      "analyticRhoPAtH": 6.616841345530063e-07,
+      "finiteRhoPAtH": 6.193578201418859e-07,
+      "baseHResidualJkg": 0.0,
+      "perturbedHResidualJkg": 0.0
+    }
+  ],
+  "conclusion": "diagnostic only; do not enlarge finite-difference steps or alter scientific tolerances without authorization"
+}

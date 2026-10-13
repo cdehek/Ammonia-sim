@@ -1,0 +1,96 @@
+{
+  "browser": "webkit",
+  "version": "26.5",
+  "environment": {
+    "node": "v24.19.0",
+    "playwright": "1.62.1",
+    "platform": "linux",
+    "arch": "x64",
+    "cpu": "AMD EPYC 9V74 80-Core Processor",
+    "logicalCPUs": 3,
+    "totalRAMBytes": 10452496384,
+    "testedOnPhysicalIPad": false,
+    "noCoupledRuns": true
+  },
+  "init": {
+    "totalMS": 1920,
+    "importMS": 8,
+    "fetchMS": 80,
+    "compileInstantiateMS": 31,
+    "runtimeMS": 126,
+    "firstFactoryMS": 1706,
+    "initialLinearMemoryBytes": 21233664,
+    "readyLinearMemoryBytes": 97910784,
+    "wasmBytes": 6967191,
+    "mime": "application/wasm",
+    "streaming": true,
+    "logs": []
+  },
+  "timings": [
+    {
+      "group": "PH-liquid",
+      "round": 0,
+      "calls": 17,
+      "elapsedMS": 156,
+      "checksum": 11002.015021466188
+    },
+    {
+      "group": "PH-liquid",
+      "round": 1,
+      "calls": 18,
+      "elapsedMS": 153,
+      "checksum": 11649.192375670082
+    },
+    {
+      "group": "PH-liquid",
+      "round": 2,
+      "calls": 18,
+      "elapsedMS": 150,
+      "checksum": 11649.192375670082
+    },
+    {
+      "group": "DU-liquid",
+      "round": 0,
+      "calls": 38,
+      "elapsedMS": 152,
+      "checksum": 26929.498996449558
+    },
+    {
+      "group": "DU-liquid",
+      "round": 1,
+      "calls": 38,
+      "elapsedMS": 152,
+      "checksum": 26929.498996449558
+    },
+    {
+      "group": "DU-liquid",
+      "round": 2,
+      "calls": 41,
+      "elapsedMS": 153,
+      "checksum": 29055.51207511663
+    },
+    {
+      "group": "SAT",
+      "round": 0,
+      "calls": 16,
+      "elapsedMS": 157,
+      "checksum": 10333.357132775254
+    },
+    {
+      "group": "SAT",
+      "round": 1,
+      "calls": 17,
+      "elapsedMS": 153,
+      "checksum": 10979.191953573707
+    },
+    {
+      "group": "SAT",
+      "round": 2,
+      "calls": 17,
+      "elapsedMS": 151,
+      "checksum": 10979.191953573707
+    }
+  ],
+  "linearMemoryFinal": 97910784,
+  "scope": "Official 7.2.0 scalar PropsSI fallback, seven result fields; selected historical/representative inputs. No AbstractState binding enhancement built."
+}

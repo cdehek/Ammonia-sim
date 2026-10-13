@@ -1,0 +1,70 @@
+// Isolated browser research only. SI mass-based values; no production imports.
+export async function loadEOS(version='8.0.0', options={}) {
+  const start=performance.now(),logs=[];
+  const {default:factory}=await import(`./vendor/${version}/coolprop.js`);
+  const jsReady=performance.now();let memory,fetchMS=0,compileInstantiateMS=0,mime,streaming=false;
+  const response=await fetch(new URL(`./vendor/${version}/coolprop.wasm${options.badMime?'?mime=bad':''}`,import.meta.url));
+  if(!response.ok)throw Error(`WASM asset unavailable: HTTP ${response.status}`);
+  mime=response.headers.get('content-type');const bytes=await response.arrayBuffer();fetchMS=performance.now()-jsReady;
+  let failInstantiation;
+  const failed=new Promise((_,reject)=>{failInstantiation=reject;});
+  const module=await Promise.race([factory({printErr:v=>logs.push(String(v)),instantiateWasm(imports,done){
+    const t=performance.now();
+    (async()=>{
+      let result;
+      if(!options.noStreaming&&mime?.split(';')[0]==='application/wasm'){
+        // Fetch timing is separated; this still tests browser streaming compiler
+        // support on an equivalent local response. Download/compile overlap is
+        // deliberately not claimed by this instrumented loader.
+        try{result=await WebAssembly.instantiateStreaming(new Response(bytes,{headers:{'Content-Type':mime}}),imports);streaming=true;}
+        catch(e){logs.push('Streaming compile failed; ArrayBuffer fallback: '+String(e));}
+      }
+      if(!result)result=await WebAssembly.instantiate(bytes,imports);
+      memory=Object.values(result.instance.exports).find(v=>v instanceof WebAssembly.Memory);
+      compileInstantiateMS=performance.now()-t;done(result.instance,result.module);
+    })().catch(failInstantiation);return {};
+  }}),failed]);
+  const initialized=performance.now(),beforeFactory=memory.buffer.byteLength;
+  const state=module.factory('HEOS','Ammonia');const ready=performance.now();
+  const capabilities={version:module.get_global_param_string('version'),git:module.get_global_param_string('gitrevision'),
+    exports:Object.keys(module).filter(k=>!k.startsWith('_')),inputPairs:Object.keys(module.input_pairs),stateMethods:Object.getOwnPropertyNames(Object.getPrototypeOf(state)),
+    sharedMemory:typeof SharedArrayBuffer!=='undefined'&&memory.buffer instanceof SharedArrayBuffer};
+  const init={totalMS:ready-start,importMS:jsReady-start,fetchMS,compileInstantiateMS,runtimeMS:initialized-jsReady-fetchMS,
+    firstFactoryMS:ready-initialized,initialLinearMemoryBytes:beforeFactory,readyLinearMemoryBytes:memory.buffer.byteLength,wasmBytes:bytes.byteLength,mime,streaming,logs};
+  function decodeError(e){return e?.message||String(e);}
+  function high(request,extras=false){
+    const {mode,args:[a,b]}=request;
+    const keys={PH:['P','Hmass'],DU:['Dmass','Umass'],PQ:['P','Q'],PT:['P','T'],PTliquid:['P','T|liquid']}[mode];
+    if(!keys)throw Error('Unsupported research input pair');
+    const fields={p:'P',T:'T',h:'Hmass',s:'Smass',rho:'Dmass',u:'Umass',Q:'Q'};const out={};
+    for(const [key,value]of Object.entries(fields))out[key]=module.PropsSI(value,keys[0],a,keys[1],b,'HEOS::Ammonia');
+    if(extras&&!(out.Q>0&&out.Q<1))for(const [key,value]of Object.entries({cp:'Cpmass',cv:'Cvmass',kappa:'ISOTHERMAL_COMPRESSIBILITY',rhoP:'d(Dmass)/d(P)|T',rhoT:'d(Dmass)/d(T)|P',hp:'d(Hmass)/d(P)|T'}))out[key]=module.PropsSI(value,keys[0],a,keys[1],b,'HEOS::Ammonia');
+    return out;
+  }
+  function evaluate(request,{highLevel=false,extras=false}={}){
+    try{
+      let out;
+      if(!request.args.every(Number.isFinite))throw Error('Nonfinite state input');
+      if(highLevel||!state.hmass||request.mode==='PTliquid')out=high(request,extras);
+      else{
+        const [a,b]=request.args;const pairs={PH:['HmassP_INPUTS',b,a],DU:['DmassUmass_INPUTS',a,b],PQ:['PQ_INPUTS',a,b],PT:['PT_INPUTS',a,b]};
+        const pair=pairs[request.mode];if(!pair)throw Error('Unsupported research input pair');
+        state.update(module.input_pairs[pair[0]],pair[1],pair[2]);
+        out={p:state.p(),T:state.T(),h:state.hmass(),s:state.smass(),rho:state.rhomass(),u:state.umass(),Q:state.Q()};
+        if(extras&&!(out.Q>0&&out.Q<1)){
+          const k=module.parameters;
+          Object.assign(out,{cp:state.cpmass(),cv:state.cvmass(),kappa:state.isothermal_compressibility(),rhoP:state.first_partial_deriv(k.iDmass,k.iP,k.iT),rhoT:state.first_partial_deriv(k.iDmass,k.iT,k.iP),hp:state.first_partial_deriv(k.iHmass,k.iP,k.iT)});
+        }
+      }
+      if(!Object.values(out).every(Number.isFinite))throw Error('EOS returned a nonfinite property');
+      return out;
+    }catch(e){throw new Error(decodeError(e));}
+  }
+  return {module,state,capabilities,init,evaluate,memory:()=>memory.buffer.byteLength,dispose:()=>state.delete()};
+}
+export function exactCache(eos,limit=1024){
+  const cache=new Map();let hits=0,misses=0;
+  return {evaluate(request){const key=request.mode+':'+request.args.join(':');if(cache.has(key)){hits++;return cache.get(key);}misses++;
+    const result=Object.freeze(eos.evaluate(request));if(cache.size>=limit)cache.delete(cache.keys().next().value);cache.set(key,result);return result;},
+    clear(){cache.clear();hits=0;misses=0;},stats(){return {hits,misses,size:cache.size,limit};}};
+}

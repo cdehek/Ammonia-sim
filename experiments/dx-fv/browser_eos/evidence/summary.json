@@ -1,0 +1,2255 @@
+{
+  "experimental": true,
+  "qualifiedPropertyEngine": false,
+  "testedOnPhysicalIPad": false,
+  "browsers": {
+    "chromium": {
+      "version": "151.0.7922.34",
+      "accuracy": {
+        "7.2.0": {
+          "requests": 612,
+          "successfulRows": 598,
+          "errors": 14,
+          "failureBehaviorMatchesPython": true,
+          "maxMatchingPythonDifferencesSI": {
+            "p": 0.009291952475905418,
+            "T": 6.252776074688882e-13,
+            "h": 0.00011922256089746952,
+            "s": 1.432454155292362e-11,
+            "rho": 2.4878090698621236e-09,
+            "u": 2.5331974029541016e-07
+          },
+          "staticValueGatesPass": true,
+          "maxWorkIdentityJkg": 0.00011922240082640201,
+          "maxMaxwell": 2.949029909160572e-15,
+          "stress": {
+            "nativeErrors": 100,
+            "subsequentValidUpdates": 100,
+            "stackBefore": 4432960,
+            "stackAfter": 4432960,
+            "linearMemoryBefore": 97910784,
+            "linearMemoryAfter": 97910784
+          },
+          "linearMemoryFinal": 97910784,
+          "capabilities": {
+            "version": "7.2.0",
+            "git": "98b3523d5daa98454618d381d2ae53f7471d216b",
+            "exports": [
+              "printErr",
+              "instantiateWasm",
+              "incrementExceptionRefcount",
+              "decrementExceptionRefcount",
+              "getExceptionMessage",
+              "calledRun",
+              "F2K",
+              "Props1SI",
+              "PropsSI",
+              "get_global_param_string",
+              "get_fluid_param_string",
+              "apply_simple_mixing_rule",
+              "get_mixture_binary_pair_data",
+              "add_fluids_as_JSON",
+              "input_pairs",
+              "HAPropsSI",
+              "VectorDouble",
+              "VectorString",
+              "factory",
+              "AbstractState"
+            ],
+            "inputPairs": [
+              "values",
+              "argCount",
+              "PT_INPUTS"
+            ],
+            "stateMethods": [
+              "constructor",
+              "gas_constant",
+              "update",
+              "p",
+              "rhomass",
+              "viscosity",
+              "set_mole_fractions",
+              "build_phase_envelope",
+              "get_phase_envelope_data"
+            ],
+            "phaseImpositionAvailable": false,
+            "referenceSetterAvailable": false,
+            "exceptionCleanupAvailable": true,
+            "sharedMemory": false
+          }
+        },
+        "8.0.0": {
+          "requests": 612,
+          "successfulRows": 600,
+          "errors": 12,
+          "failureBehaviorMatchesPython": true,
+          "maxMatchingPythonDifferencesSI": {
+            "p": 0.0005391469458118081,
+            "T": 1.085256826627301e-07,
+            "h": 0.00047520085354335606,
+            "s": 2.1888146761739335e-06,
+            "rho": 1.2713110209006118e-07,
+            "u": 0.0004751925589516759
+          },
+          "staticValueGatesPass": true,
+          "maxWorkIdentityJkg": 0.00038530625170096755,
+          "maxMaxwell": 2.9802549317281546e-15,
+          "stress": {
+            "nativeErrors": 100,
+            "subsequentValidUpdates": 100,
+            "stackBefore": 5706944,
+            "stackAfter": 5706944,
+            "linearMemoryBefore": 56360960,
+            "linearMemoryAfter": 56360960
+          },
+          "linearMemoryFinal": 56360960,
+          "capabilities": {
+            "version": "8.0.0",
+            "git": "ae81610e7d23efc57f9d051c8e70a4d66e87537f",
+            "exports": [
+              "printErr",
+              "instantiateWasm",
+              "incrementExceptionRefcount",
+              "decrementExceptionRefcount",
+              "getExceptionMessage",
+              "calledRun",
+              "F2K",
+              "Props1SI",
+              "PropsSI",
+              "get_global_param_string",
+              "get_fluid_param_string",
+              "apply_simple_mixing_rule",
+              "get_mixture_binary_pair_data",
+              "add_fluids_as_JSON",
+              "parameters",
+              "input_pairs",
+              "phases",
+              "backend_families",
+              "HAPropsSI",
+              "factory",
+              "AbstractState"
+            ],
+            "inputPairs": [
+              "values",
+              "argCount",
+              "QT_INPUTS",
+              "QmassT_INPUTS",
+              "PQ_INPUTS",
+              "PQmass_INPUTS",
+              "QSmolar_INPUTS",
+              "QmassSmolar_INPUTS",
+              "QSmass_INPUTS",
+              "QmassSmass_INPUTS",
+              "HmolarQ_INPUTS",
+              "HmolarQmass_INPUTS",
+              "HmassQ_INPUTS",
+              "HmassQmass_INPUTS",
+              "DmolarQ_INPUTS",
+              "DmolarQmass_INPUTS",
+              "DmassQ_INPUTS",
+              "DmassQmass_INPUTS",
+              "PT_INPUTS",
+              "DmassT_INPUTS",
+              "DmolarT_INPUTS",
+              "HmolarT_INPUTS",
+              "HmassT_INPUTS",
+              "SmolarT_INPUTS",
+              "SmassT_INPUTS",
+              "TUmolar_INPUTS",
+              "TUmass_INPUTS",
+              "DmassP_INPUTS",
+              "DmolarP_INPUTS",
+              "HmassP_INPUTS",
+              "HmolarP_INPUTS",
+              "PSmass_INPUTS",
+              "PSmolar_INPUTS",
+              "PUmass_INPUTS",
+              "PUmolar_INPUTS",
+              "HmassSmass_INPUTS",
+              "HmolarSmolar_INPUTS",
+              "SmassUmass_INPUTS",
+              "SmolarUmolar_INPUTS",
+              "DmassHmass_INPUTS",
+              "DmolarHmolar_INPUTS",
+              "DmassSmass_INPUTS",
+              "DmolarSmolar_INPUTS",
+              "DmassUmass_INPUTS",
+              "DmolarUmolar_INPUTS"
+            ],
+            "stateMethods": [
+              "constructor",
+              "backend_name",
+              "using_mole_fractions",
+              "using_mass_fractions",
+              "using_volu_fractions",
+              "set_mass_fractions",
+              "set_volu_fractions",
+              "set_mole_fractions",
+              "mole_fractions_liquid",
+              "mole_fractions_vapor",
+              "get_mole_fractions",
+              "get_mass_fractions",
+              "update",
+              "T",
+              "rhomolar",
+              "rhomass",
+              "p",
+              "Q",
+              "tau",
+              "delta",
+              "molar_mass",
+              "acentric_factor",
+              "gas_constant",
+              "Bvirial",
+              "Cvirial",
+              "compressibility_factor",
+              "hmolar",
+              "hmass",
+              "smolar",
+              "smass",
+              "umolar",
+              "umass",
+              "cpmolar",
+              "cpmass",
+              "cvmolar",
+              "cvmass",
+              "gibbsmolar",
+              "gibbsmass",
+              "helmholtzmolar",
+              "helmholtzmass",
+              "speed_sound",
+              "isothermal_compressibility",
+              "isobaric_expansion_coefficient",
+              "isentropic_expansion_coefficient",
+              "viscosity",
+              "conductivity",
+              "surface_tension",
+              "Prandtl",
+              "keyed_output",
+              "trivial_keyed_output",
+              "saturated_liquid_keyed_output",
+              "saturated_vapor_keyed_output",
+              "first_partial_deriv",
+              "second_partial_deriv",
+              "first_saturation_deriv",
+              "second_saturation_deriv",
+              "first_two_phase_deriv",
+              "second_two_phase_deriv",
+              "first_two_phase_deriv_splined",
+              "build_phase_envelope",
+              "get_phase_envelope_data",
+              "melting_line",
+              "saturation_ancillary",
+              "T_critical",
+              "p_critical",
+              "rhomolar_critical",
+              "rhomass_critical",
+              "T_reducing",
+              "rhomolar_reducing",
+              "rhomass_reducing",
+              "p_triple",
+              "Ttriple",
+              "Tmin",
+              "Tmax",
+              "pmax",
+              "dipole_moment"
+            ],
+            "phaseImpositionAvailable": false,
+            "referenceSetterAvailable": false,
+            "exceptionCleanupAvailable": true,
+            "sharedMemory": false
+          }
+        }
+      },
+      "initializationMS": {
+        "mean": 2059.666666666589,
+        "minimum": 2030.3999999999069,
+        "maximum": 2086.1999999999534,
+        "firstFactoryMean": 1962.5999999999378
+      },
+      "microsecondsPerState": {
+        "DU-liquid": {
+          "table": {
+            "mean": 133.69545979580627,
+            "sd": 12.604203399296795,
+            "calls": 2724,
+            "failedCalls": 0
+          },
+          "state8": {
+            "mean": 26.706399704291744,
+            "sd": 4.716432478690042,
+            "calls": 13752,
+            "failedCalls": 0
+          },
+          "high-level8": {
+            "mean": 1507.142857142118,
+            "sd": 81.77973569180325,
+            "calls": 252,
+            "failedCalls": 0
+          }
+        },
+        "DU-two-phase": {
+          "table": {
+            "mean": 64.23962747019574,
+            "sd": 3.7724453491925676,
+            "calls": 5628,
+            "failedCalls": 0
+          },
+          "state8": {
+            "mean": 25.8667477254355,
+            "sd": 1.4518532995463447,
+            "calls": 13956,
+            "failedCalls": 0
+          },
+          "high-level8": {
+            "mean": 1296.1033950617284,
+            "sd": 97.97194485699038,
+            "calls": 300,
+            "failedCalls": 0
+          }
+        },
+        "DU-vapor": {
+          "table": {
+            "mean": 163.4763016090291,
+            "sd": 6.377420829056712,
+            "calls": 2220,
+            "failedCalls": 370
+          },
+          "state8": {
+            "mean": 22.241471381613355,
+            "sd": 0.8958245632066137,
+            "calls": 16212,
+            "failedCalls": 0
+          },
+          "high-level8": {
+            "mean": 1209.2592592601216,
+            "sd": 23.12962221660099,
+            "calls": 324,
+            "failedCalls": 0
+          }
+        },
+        "PH-liquid": {
+          "table": {
+            "mean": 9.659465722584427,
+            "sd": 0.6692321060909978,
+            "calls": 37392,
+            "failedCalls": 0
+          },
+          "state8": {
+            "mean": 84.55258414470953,
+            "sd": 32.60624299792213,
+            "calls": 4656,
+            "failedCalls": 0
+          },
+          "high-level8": {
+            "mean": 1641.9312169315865,
+            "sd": 144.67338244131363,
+            "calls": 240,
+            "failedCalls": 0
+          }
+        },
+        "PH-two-phase": {
+          "table": {
+            "mean": 4.494283609657942,
+            "sd": 0.11403868029554406,
+            "calls": 80136,
+            "failedCalls": 0
+          },
+          "state8": {
+            "mean": 5.322118514730652,
+            "sd": 0.15485087510012968,
+            "calls": 67680,
+            "failedCalls": 0
+          },
+          "high-level8": {
+            "mean": 1098.580246913336,
+            "sd": 65.46449087629713,
+            "calls": 348,
+            "failedCalls": 0
+          }
+        },
+        "PH-vapor": {
+          "table": {
+            "mean": 10.174442572904818,
+            "sd": 0.18283324292778644,
+            "calls": 35400,
+            "failedCalls": 0
+          },
+          "state8": {
+            "mean": 76.01524504304354,
+            "sd": 1.7294061500470554,
+            "calls": 4752,
+            "failedCalls": 0
+          },
+          "high-level8": {
+            "mean": 1461.5079365071974,
+            "sd": 31.324080747810225,
+            "calls": 252,
+            "failedCalls": 0
+          }
+        },
+        "PT-liquid": {
+          "table": {
+            "mean": 0.3820809212729943,
+            "sd": 0.023128554521133587,
+            "calls": 944448,
+            "failedCalls": 0
+          },
+          "state8": {
+            "mean": 9.287317660291237,
+            "sd": 0.5337475427314639,
+            "calls": 38856,
+            "failedCalls": 0
+          },
+          "high-level8": {
+            "mean": 1129.3209876547521,
+            "sd": 8.603308558428141,
+            "calls": 324,
+            "failedCalls": 0
+          }
+        },
+        "PT-vapor": {
+          "table": {
+            "mean": 0.4676606949327705,
+            "sd": 0.028452274316177608,
+            "calls": 771720,
+            "failedCalls": 0
+          },
+          "state8": {
+            "mean": 10.998963541544434,
+            "sd": 0.1774896348298418,
+            "calls": 32736,
+            "failedCalls": 0
+          },
+          "high-level8": {
+            "mean": 1145.70987654252,
+            "sd": 87.23088801230327,
+            "calls": 348,
+            "failedCalls": 0
+          }
+        },
+        "SAT": {
+          "table": {
+            "mean": 0.27706955454105253,
+            "sd": 0.05377395395497765,
+            "calls": 1330221,
+            "failedCalls": 0
+          },
+          "state8": {
+            "mean": 6.262367761386209,
+            "sd": 0.3930033619407046,
+            "calls": 57642,
+            "failedCalls": 0
+          },
+          "high-level8": {
+            "mean": 1275.237044777758,
+            "sd": 192.89487856578108,
+            "calls": 294,
+            "failedCalls": 0
+          }
+        }
+      },
+      "interiorPatternMS": {
+        "5": {
+          "liquid": {
+            "table": {
+              "mean": 2.113333333345751,
+              "sd": 0.490747728784297,
+              "logicalCallsPerPattern": 147,
+              "actualCache": {
+                "hits": 0,
+                "misses": 0,
+                "size": 0,
+                "limit": 1024
+              }
+            },
+            "state8": {
+              "mean": 6.946666666679084,
+              "sd": 4.1888463010047765,
+              "logicalCallsPerPattern": 147,
+              "actualCache": {
+                "hits": 0,
+                "misses": 0,
+                "size": 0,
+                "limit": 1024
+              }
+            },
+            "cached-state8": {
+              "mean": 1.7266666666449357,
+              "sd": 0.2829016319071413,
+              "logicalCallsPerPattern": 147,
+              "actualCache": {
+                "hits": 98,
+                "misses": 49,
+                "size": 49,
+                "limit": 1024
+              }
+            }
+          },
+          "vapor": {
+            "table": {
+              "mean": 1.2400000000062088,
+              "sd": 0.22715633383037093,
+              "logicalCallsPerPattern": 147,
+              "actualCache": {
+                "hits": 0,
+                "misses": 0,
+                "size": 0,
+                "limit": 1024
+              }
+            },
+            "state8": {
+              "mean": 5.849999999984478,
+              "sd": 0.11532562593701727,
+              "logicalCallsPerPattern": 147,
+              "actualCache": {
+                "hits": 0,
+                "misses": 0,
+                "size": 0,
+                "limit": 1024
+              }
+            },
+            "cached-state8": {
+              "mean": 2.1,
+              "sd": 0.026457513135286385,
+              "logicalCallsPerPattern": 147,
+              "actualCache": {
+                "hits": 98,
+                "misses": 49,
+                "size": 49,
+                "limit": 1024
+              }
+            }
+          },
+          "two-phase": {
+            "table": {
+              "mean": 0.07333333333954216,
+              "sd": 0.0057735027107157335,
+              "logicalCallsPerPattern": 147,
+              "actualCache": {
+                "hits": 0,
+                "misses": 0,
+                "size": 0,
+                "limit": 1024
+              }
+            },
+            "state8": {
+              "mean": 1.0100000000093132,
+              "sd": 0.07999999998137358,
+              "logicalCallsPerPattern": 147,
+              "actualCache": {
+                "hits": 0,
+                "misses": 0,
+                "size": 0,
+                "limit": 1024
+              }
+            },
+            "cached-state8": {
+              "mean": 0.4266666666604579,
+              "sd": 0.04509249752547512,
+              "logicalCallsPerPattern": 147,
+              "actualCache": {
+                "hits": 103,
+                "misses": 44,
+                "size": 44,
+                "limit": 1024
+              }
+            }
+          }
+        },
+        "9": {
+          "liquid": {
+            "table": {
+              "mean": 3.836666666669771,
+              "sd": 0.10503967507155841,
+              "logicalCallsPerPattern": 255,
+              "actualCache": {
+                "hits": 0,
+                "misses": 0,
+                "size": 0,
+                "limit": 1024
+              }
+            },
+            "state8": {
+              "mean": 7.526666666660458,
+              "sd": 0.13279056190285993,
+              "logicalCallsPerPattern": 255,
+              "actualCache": {
+                "hits": 0,
+                "misses": 0,
+                "size": 0,
+                "limit": 1024
+              }
+            },
+            "cached-state8": {
+              "mean": 2.7433333333271244,
+              "sd": 0.057735026932404905,
+              "logicalCallsPerPattern": 255,
+              "actualCache": {
+                "hits": 170,
+                "misses": 85,
+                "size": 85,
+                "limit": 1024
+              }
+            }
+          },
+          "vapor": {
+            "table": {
+              "mean": 2.0333333333488555,
+              "sd": 0.249064917911941,
+              "logicalCallsPerPattern": 255,
+              "actualCache": {
+                "hits": 0,
+                "misses": 0,
+                "size": 0,
+                "limit": 1024
+              }
+            },
+            "state8": {
+              "mean": 11.193333333327125,
+              "sd": 1.1344749152547378,
+              "logicalCallsPerPattern": 255,
+              "actualCache": {
+                "hits": 0,
+                "misses": 0,
+                "size": 0,
+                "limit": 1024
+              }
+            },
+            "cached-state8": {
+              "mean": 3.579999999996896,
+              "sd": 0.12529964086290324,
+              "logicalCallsPerPattern": 255,
+              "actualCache": {
+                "hits": 170,
+                "misses": 85,
+                "size": 85,
+                "limit": 1024
+              }
+            }
+          },
+          "two-phase": {
+            "table": {
+              "mean": 0.1333333333178113,
+              "sd": 0.0351188458291409,
+              "logicalCallsPerPattern": 255,
+              "actualCache": {
+                "hits": 0,
+                "misses": 0,
+                "size": 0,
+                "limit": 1024
+              }
+            },
+            "state8": {
+              "mean": 1.9299999999968955,
+              "sd": 0.40853396432178113,
+              "logicalCallsPerPattern": 255,
+              "actualCache": {
+                "hits": 0,
+                "misses": 0,
+                "size": 0,
+                "limit": 1024
+              }
+            },
+            "cached-state8": {
+              "mean": 0.786666666669771,
+              "sd": 0.1026320287877278,
+              "logicalCallsPerPattern": 255,
+              "actualCache": {
+                "hits": 179,
+                "misses": 76,
+                "size": 76,
+                "limit": 1024
+              }
+            }
+          }
+        }
+      },
+      "legacy7MillisecondsPerState": {
+        "PH-liquid": 8.227067669180443,
+        "DU-liquid": 3.172381587928565,
+        "SAT": 7.670000000003104
+      },
+      "sustained": [
+        {
+          "epoch": 0,
+          "calls": 38160,
+          "elapsedMS": 1500.0999999998603,
+          "linearMemoryBytes": 56360960,
+          "checksum": 10043602.356944019
+        },
+        {
+          "epoch": 1,
+          "calls": 42120,
+          "elapsedMS": 1500.9000000001397,
+          "linearMemoryBytes": 56360960,
+          "checksum": 11085862.978890743
+        },
+        {
+          "epoch": 2,
+          "calls": 41544,
+          "elapsedMS": 1500,
+          "linearMemoryBytes": 56360960,
+          "checksum": 10934261.43388031
+        }
+      ],
+      "cacheEquivalentOnTestedRequests": true,
+      "memory": {
+        "linearBytes": 56360960,
+        "summedBaselineProcessRSSKiB": 400632,
+        "summedFinalProcessRSSKiB": 540796,
+        "chromiumHeap": {
+          "usedSize": 8468756,
+          "totalSize": 31383552,
+          "embedderHeapUsedSize": 552192,
+          "backingStorageSize": 9373348
+        },
+        "processRSSIsNotExclusiveMemory": true
+      },
+      "worker": {
+        "startupRoundtripMS": 2001.5,
+        "mainThreadTicks": 90,
+        "mainThreadElapsedMS": 1800.7000000001863,
+        "calls": 42540,
+        "computationMS": 1800.3000000000466
+      },
+      "offline": {
+        "reloadAndFreshEOSRecoveryPass": true,
+        "verification": {
+          "serverUnavailableDuringReloadAndEOSLoad": true,
+          "HTTPRequestsRejectedByServer": 0,
+          "networkEmulationUsed": false,
+          "navigatorOnLineIsNotAnOfflineProof": true
+        },
+        "badMIMEFallbackPass": true,
+        "missingAssetError": "WASM asset unavailable: HTTP 404"
+      },
+      "acceptedAccountingRecovery": {
+        "requests": 189,
+        "successes": 189,
+        "maxErrorsSI": {
+          "p": 0.013919870369136333,
+          "T": 3.0560300956494757e-07,
+          "h": 0.0005880137905478477,
+          "rho": 4.0813574742060155e-11,
+          "u": 1.0337680578231812e-07
+        }
+      },
+      "finiteDifferenceCompatibility": [
+        {
+          "id": "p0.3029893712344606-liquid-z1.0-PH",
+          "pressureProbePa": 0.01,
+          "enthalpyProbeJkg": 0.0009452334612321304,
+          "analytical": {
+            "rhoPAtH": 6.616841348556091e-07,
+            "rhoHAtP": -0.00026756503093981965
+          },
+          "finite": {
+            "rhoPAtH": 1.3359704098547809e-05,
+            "rhoHAtP": -0.000267565225863158
+          },
+          "relativeErrors": {
+            "rhoPAtH": 19.19045552824555,
+            "rhoHAtP": 7.285082719378601e-07
+          }
+        },
+        {
+          "id": "p3.5-vapor-z25.0-PH",
+          "pressureProbePa": 0.03499999999994915,
+          "enthalpyProbeJkg": 0.016638149757839397,
+          "analytical": {
+            "rhoPAtH": 7.307538506621087e-06,
+            "rhoHAtP": -4.2871329676449375e-06
+          },
+          "finite": {
+            "rhoPAtH": 7.307538434692426e-06,
+            "rhoHAtP": -4.28713298311086e-06
+          },
+          "relativeErrors": {
+            "rhoPAtH": -9.843076623834965e-09,
+            "rhoHAtP": 3.607521164290462e-09
+          }
+        },
+        {
+          "id": "p32.65314902038559-liquid-z0.1-PH",
+          "pressureProbePa": 0.32653149007103044,
+          "enthalpyProbeJkg": 0.006867735049533222,
+          "analytical": {
+            "rhoPAtH": 1.7577000414753803e-06,
+            "rhoHAtP": -0.00038764745363614245
+          },
+          "finite": {
+            "rhoPAtH": 1.7576326882722575e-06,
+            "rhoHAtP": -0.0003876475753685143
+          },
+          "relativeErrors": {
+            "rhoPAtH": -3.831894039568911e-05,
+            "rhoHAtP": 3.1402856050776743e-07
+          }
+        }
+      ],
+      "historical": [
+        {
+          "id": "historical-low-original-inventory",
+          "mode": "DU",
+          "state": {
+            "p": 30174.790361846546,
+            "T": 217.2629228853553,
+            "h": 94523.17094071119,
+            "s": 458.16706902202463,
+            "rho": 708.6710262223568,
+            "u": 94480.59153609988,
+            "Q": 10000,
+            "cp": 4379.299996012012,
+            "cv": 2964.26568729205,
+            "kappa": 5.923152935653596e-10,
+            "rhoP": 4.197566869381598e-07,
+            "rhoT": -1.1717478486077262,
+            "hp": 0.0009041824801289575
+          },
+          "errors": {
+            "p": 0,
+            "T": 0,
+            "h": 0,
+            "s": 0,
+            "rho": 0,
+            "u": 0,
+            "Q": 0,
+            "cp": 0,
+            "cv": 0,
+            "kappa": 0,
+            "rhoP": 0,
+            "rhoT": 0,
+            "hp": 0
+          },
+          "workIdentityJkg": -1.2576606422953773e-11,
+          "maxwellResidual": -2.168404344971009e-19,
+          "referenceError": null
+        },
+        {
+          "id": "saved-high-initial-PH",
+          "mode": "PH",
+          "state": {
+            "p": 3265314.900729634,
+            "T": 342.4277780438519,
+            "h": 686779.7256650563,
+            "s": 2577.588517246936,
+            "rho": 527.7791486143282,
+            "u": 680592.8292920351,
+            "Q": -1,
+            "cp": 5452.249610983949,
+            "cv": 2747.6415997741715,
+            "kappa": 3.84715771907969e-09,
+            "rhoP": 2.03044962556092e-06,
+            "rhoT": -2.113566949055248,
+            "hp": -0.0007035157127341896
+          },
+          "errors": {
+            "p": 5.4016709327697754e-08,
+            "T": 5.684341886080802e-14,
+            "h": 1.5133991837501526e-09,
+            "s": 5.002220859751105e-12,
+            "rho": -9.094947017729282e-13,
+            "u": 1.3969838619232178e-09,
+            "Q": 0,
+            "cp": 1.1823431123048067e-11,
+            "cv": 4.547473508864641e-13,
+            "kappa": 5.293955920339377e-23,
+            "rhoP": 2.498747194400186e-20,
+            "rhoT": -1.4210854715202004e-14,
+            "hp": -2.3201926491189795e-17
+          },
+          "workIdentityJkg": -7.795661076670513e-07,
+          "maxwellResidual": 6.505213034913027e-19,
+          "referenceError": null
+        },
+        {
+          "id": "saved-high-initial-original-DU",
+          "mode": "DU",
+          "state": {
+            "p": 3263031.6866785553,
+            "T": 342.42668996864955,
+            "h": 686775.399564825,
+            "s": 2577.5885172116577,
+            "rho": 527.776812296707,
+            "u": 680592.8019010912,
+            "Q": 10000,
+            "cp": 5452.337157940285,
+            "cv": 2747.646869781638,
+            "kappa": 3.847390750000379e-09,
+            "rhoP": 2.030563625695037e-06,
+            "rhoT": -2.113652432285773,
+            "hp": -0.0007036271594038215
+          },
+          "errors": {
+            "p": 0,
+            "T": 0,
+            "h": 0,
+            "s": 0,
+            "rho": 0,
+            "u": 0,
+            "Q": 0,
+            "cp": 0,
+            "cv": 0,
+            "kappa": 0,
+            "rhoP": 0,
+            "rhoT": 0,
+            "hp": 0
+          },
+          "workIdentityJkg": -1.5916157281026244e-10,
+          "maxwellResidual": 1.0842021724855044e-19,
+          "referenceError": null
+        },
+        {
+          "id": "saved-high-endpoint-PH",
+          "mode": "PH",
+          "state": {
+            "p": 3280473.731018341,
+            "T": 342.4418659937437,
+            "h": 686845.8724282985,
+            "s": 2577.697807740655,
+            "rho": 527.7801516429745,
+            "u": 680630.2659518737,
+            "Q": -1,
+            "cp": 5451.873637582207,
+            "cv": 2747.6097259249054,
+            "kappa": 3.84636373750422e-09,
+            "rhoP": 2.0300344366540158e-06,
+            "rhoT": -2.1131769505627336,
+            "hp": -0.0007031368825381331
+          },
+          "errors": {
+            "p": -6.835907697677612e-07,
+            "T": -5.934452929068357e-11,
+            "h": -3.237510100007057e-07,
+            "s": -9.422365110367537e-10,
+            "rho": 1.263060767087154e-10,
+            "u": -3.206077963113785e-07,
+            "Q": 0,
+            "cp": -1.7580532585270703e-09,
+            "cv": -2.5920599000528455e-11,
+            "kappa": -6.510738601404881e-21,
+            "rhoP": -2.950215755286728e-18,
+            "rhoT": 1.5232259897857148e-12,
+            "hp": 3.113503378726623e-15
+          },
+          "workIdentityJkg": -4.429579348652624e-06,
+          "maxwellResidual": 6.505213034913027e-19,
+          "referenceError": null
+        },
+        {
+          "id": "saved-high-endpoint-original-DU",
+          "mode": "DU",
+          "state": {
+            "p": 3277209.845911512,
+            "T": 342.4403106836193,
+            "h": 686839.6881992223,
+            "s": 2577.6978076419828,
+            "rho": 527.776812303384,
+            "u": 680630.2266057722,
+            "Q": 10000,
+            "cp": 5451.998727484839,
+            "cv": 2747.6172545473705,
+            "kappa": 3.846696690861072e-09,
+            "rhoP": 2.030197317400632e-06,
+            "rhoT": -2.113299086599654,
+            "hp": -0.0007032961204429381
+          },
+          "errors": {
+            "p": 0,
+            "T": 0,
+            "h": 0,
+            "s": 0,
+            "rho": 0,
+            "u": 0,
+            "Q": 0,
+            "cp": 0,
+            "cv": 0,
+            "kappa": 0,
+            "rhoP": 0,
+            "rhoT": 0,
+            "hp": 0
+          },
+          "workIdentityJkg": -1.77351466845721e-10,
+          "maxwellResidual": -6.505213034913027e-19,
+          "referenceError": null
+        }
+      ]
+    },
+    "webkit": {
+      "version": "26.5",
+      "accuracy": {
+        "7.2.0": {
+          "requests": 612,
+          "successfulRows": 598,
+          "errors": 14,
+          "failureBehaviorMatchesPython": true,
+          "maxMatchingPythonDifferencesSI": {
+            "p": 0.009291952475905418,
+            "T": 6.252776074688882e-13,
+            "h": 0.00011922256089746952,
+            "s": 1.432454155292362e-11,
+            "rho": 2.4878090698621236e-09,
+            "u": 2.5331974029541016e-07
+          },
+          "staticValueGatesPass": true,
+          "maxWorkIdentityJkg": 0.00011922240082640201,
+          "maxMaxwell": 2.949029909160572e-15,
+          "stress": {
+            "nativeErrors": 100,
+            "subsequentValidUpdates": 100,
+            "stackBefore": 4432960,
+            "stackAfter": 4432960,
+            "linearMemoryBefore": 97910784,
+            "linearMemoryAfter": 97910784
+          },
+          "linearMemoryFinal": 97910784,
+          "capabilities": {
+            "version": "7.2.0",
+            "git": "98b3523d5daa98454618d381d2ae53f7471d216b",
+            "exports": [
+              "printErr",
+              "instantiateWasm",
+              "incrementExceptionRefcount",
+              "decrementExceptionRefcount",
+              "getExceptionMessage",
+              "calledRun",
+              "F2K",
+              "Props1SI",
+              "PropsSI",
+              "get_global_param_string",
+              "get_fluid_param_string",
+              "apply_simple_mixing_rule",
+              "get_mixture_binary_pair_data",
+              "add_fluids_as_JSON",
+              "input_pairs",
+              "HAPropsSI",
+              "VectorDouble",
+              "VectorString",
+              "factory",
+              "AbstractState"
+            ],
+            "inputPairs": [
+              "values",
+              "argCount",
+              "PT_INPUTS"
+            ],
+            "stateMethods": [
+              "constructor",
+              "gas_constant",
+              "update",
+              "p",
+              "rhomass",
+              "viscosity",
+              "set_mole_fractions",
+              "build_phase_envelope",
+              "get_phase_envelope_data"
+            ],
+            "phaseImpositionAvailable": false,
+            "referenceSetterAvailable": false,
+            "exceptionCleanupAvailable": true,
+            "sharedMemory": false
+          }
+        },
+        "8.0.0": {
+          "requests": 612,
+          "successfulRows": 600,
+          "errors": 12,
+          "failureBehaviorMatchesPython": true,
+          "maxMatchingPythonDifferencesSI": {
+            "p": 0.0005391469458118081,
+            "T": 1.085256826627301e-07,
+            "h": 0.00047520085354335606,
+            "s": 2.1888146761739335e-06,
+            "rho": 1.2713110209006118e-07,
+            "u": 0.0004751925589516759
+          },
+          "staticValueGatesPass": true,
+          "maxWorkIdentityJkg": 0.00038530625170096755,
+          "maxMaxwell": 2.9802549317281546e-15,
+          "stress": {
+            "nativeErrors": 100,
+            "subsequentValidUpdates": 100,
+            "stackBefore": 5706944,
+            "stackAfter": 5706944,
+            "linearMemoryBefore": 56360960,
+            "linearMemoryAfter": 56360960
+          },
+          "linearMemoryFinal": 56360960,
+          "capabilities": {
+            "version": "8.0.0",
+            "git": "ae81610e7d23efc57f9d051c8e70a4d66e87537f",
+            "exports": [
+              "printErr",
+              "instantiateWasm",
+              "incrementExceptionRefcount",
+              "decrementExceptionRefcount",
+              "getExceptionMessage",
+              "calledRun",
+              "F2K",
+              "Props1SI",
+              "PropsSI",
+              "get_global_param_string",
+              "get_fluid_param_string",
+              "apply_simple_mixing_rule",
+              "get_mixture_binary_pair_data",
+              "add_fluids_as_JSON",
+              "parameters",
+              "input_pairs",
+              "phases",
+              "backend_families",
+              "HAPropsSI",
+              "factory",
+              "AbstractState"
+            ],
+            "inputPairs": [
+              "values",
+              "argCount",
+              "QT_INPUTS",
+              "QmassT_INPUTS",
+              "PQ_INPUTS",
+              "PQmass_INPUTS",
+              "QSmolar_INPUTS",
+              "QmassSmolar_INPUTS",
+              "QSmass_INPUTS",
+              "QmassSmass_INPUTS",
+              "HmolarQ_INPUTS",
+              "HmolarQmass_INPUTS",
+              "HmassQ_INPUTS",
+              "HmassQmass_INPUTS",
+              "DmolarQ_INPUTS",
+              "DmolarQmass_INPUTS",
+              "DmassQ_INPUTS",
+              "DmassQmass_INPUTS",
+              "PT_INPUTS",
+              "DmassT_INPUTS",
+              "DmolarT_INPUTS",
+              "HmolarT_INPUTS",
+              "HmassT_INPUTS",
+              "SmolarT_INPUTS",
+              "SmassT_INPUTS",
+              "TUmolar_INPUTS",
+              "TUmass_INPUTS",
+              "DmassP_INPUTS",
+              "DmolarP_INPUTS",
+              "HmassP_INPUTS",
+              "HmolarP_INPUTS",
+              "PSmass_INPUTS",
+              "PSmolar_INPUTS",
+              "PUmass_INPUTS",
+              "PUmolar_INPUTS",
+              "HmassSmass_INPUTS",
+              "HmolarSmolar_INPUTS",
+              "SmassUmass_INPUTS",
+              "SmolarUmolar_INPUTS",
+              "DmassHmass_INPUTS",
+              "DmolarHmolar_INPUTS",
+              "DmassSmass_INPUTS",
+              "DmolarSmolar_INPUTS",
+              "DmassUmass_INPUTS",
+              "DmolarUmolar_INPUTS"
+            ],
+            "stateMethods": [
+              "constructor",
+              "backend_name",
+              "using_mole_fractions",
+              "using_mass_fractions",
+              "using_volu_fractions",
+              "set_mass_fractions",
+              "set_volu_fractions",
+              "set_mole_fractions",
+              "mole_fractions_liquid",
+              "mole_fractions_vapor",
+              "get_mole_fractions",
+              "get_mass_fractions",
+              "update",
+              "T",
+              "rhomolar",
+              "rhomass",
+              "p",
+              "Q",
+              "tau",
+              "delta",
+              "molar_mass",
+              "acentric_factor",
+              "gas_constant",
+              "Bvirial",
+              "Cvirial",
+              "compressibility_factor",
+              "hmolar",
+              "hmass",
+              "smolar",
+              "smass",
+              "umolar",
+              "umass",
+              "cpmolar",
+              "cpmass",
+              "cvmolar",
+              "cvmass",
+              "gibbsmolar",
+              "gibbsmass",
+              "helmholtzmolar",
+              "helmholtzmass",
+              "speed_sound",
+              "isothermal_compressibility",
+              "isobaric_expansion_coefficient",
+              "isentropic_expansion_coefficient",
+              "viscosity",
+              "conductivity",
+              "surface_tension",
+              "Prandtl",
+              "keyed_output",
+              "trivial_keyed_output",
+              "saturated_liquid_keyed_output",
+              "saturated_vapor_keyed_output",
+              "first_partial_deriv",
+              "second_partial_deriv",
+              "first_saturation_deriv",
+              "second_saturation_deriv",
+              "first_two_phase_deriv",
+              "second_two_phase_deriv",
+              "first_two_phase_deriv_splined",
+              "build_phase_envelope",
+              "get_phase_envelope_data",
+              "melting_line",
+              "saturation_ancillary",
+              "T_critical",
+              "p_critical",
+              "rhomolar_critical",
+              "rhomass_critical",
+              "T_reducing",
+              "rhomolar_reducing",
+              "rhomass_reducing",
+              "p_triple",
+              "Ttriple",
+              "Tmin",
+              "Tmax",
+              "pmax",
+              "dipole_moment"
+            ],
+            "phaseImpositionAvailable": false,
+            "referenceSetterAvailable": false,
+            "exceptionCleanupAvailable": true,
+            "sharedMemory": false
+          }
+        }
+      },
+      "initializationMS": {
+        "mean": 2361.3333333333335,
+        "minimum": 2050,
+        "maximum": 2563,
+        "firstFactoryMean": 2142.3333333333335
+      },
+      "microsecondsPerState": {
+        "DU-liquid": {
+          "table": {
+            "mean": 137.133970053885,
+            "sd": 13.713463272787072,
+            "calls": 2652,
+            "failedCalls": 0
+          },
+          "state8": {
+            "mean": 21.72738501645178,
+            "sd": 0.8010747974137622,
+            "calls": 16584,
+            "failedCalls": 0
+          },
+          "high-level8": {
+            "mean": 1881.4814814814815,
+            "sd": 142.76084349783724,
+            "calls": 204,
+            "failedCalls": 0
+          }
+        },
+        "DU-two-phase": {
+          "table": {
+            "mean": 59.840026460287824,
+            "sd": 2.6927664616047062,
+            "calls": 6024,
+            "failedCalls": 0
+          },
+          "state8": {
+            "mean": 24.60476474813872,
+            "sd": 1.1452820946241977,
+            "calls": 14652,
+            "failedCalls": 0
+          },
+          "high-level8": {
+            "mean": 1750.0,
+            "sd": 50.077101048111054,
+            "calls": 216,
+            "failedCalls": 0
+          }
+        },
+        "DU-vapor": {
+          "table": {
+            "mean": 153.139397835637,
+            "sd": 10.53186363757996,
+            "calls": 2364,
+            "failedCalls": 394
+          },
+          "state8": {
+            "mean": 21.356955419897368,
+            "sd": 0.788769027849917,
+            "calls": 16872,
+            "failedCalls": 0
+          },
+          "high-level8": {
+            "mean": 1680.5555555555557,
+            "sd": 24.05626121623432,
+            "calls": 216,
+            "failedCalls": 0
+          }
+        },
+        "PH-liquid": {
+          "table": {
+            "mean": 11.487398478277363,
+            "sd": 0.8118872140058245,
+            "calls": 31440,
+            "failedCalls": 0
+          },
+          "state8": {
+            "mean": 101.95627958785853,
+            "sd": 39.46402668663224,
+            "calls": 3924,
+            "failedCalls": 0
+          },
+          "high-level8": {
+            "mean": 2315.277777777778,
+            "sd": 232.89890113125944,
+            "calls": 168,
+            "failedCalls": 0
+          }
+        },
+        "PH-two-phase": {
+          "table": {
+            "mean": 4.262430993230849,
+            "sd": 0.10410871015068976,
+            "calls": 84492,
+            "failedCalls": 0
+          },
+          "state8": {
+            "mean": 5.594236320635214,
+            "sd": 0.38500375061864206,
+            "calls": 64548,
+            "failedCalls": 0
+          },
+          "high-level8": {
+            "mean": 1611.111111111111,
+            "sd": 6.8732174903527,
+            "calls": 252,
+            "failedCalls": 0
+          }
+        },
+        "PH-vapor": {
+          "table": {
+            "mean": 10.420025614027931,
+            "sd": 0.9074903092297121,
+            "calls": 34716,
+            "failedCalls": 0
+          },
+          "state8": {
+            "mean": 79.375,
+            "sd": 1.0825317547305484,
+            "calls": 4536,
+            "failedCalls": 0
+          },
+          "high-level8": {
+            "mean": 2079.6296296296296,
+            "sd": 94.49889497905967,
+            "calls": 192,
+            "failedCalls": 0
+          }
+        },
+        "PT-liquid": {
+          "table": {
+            "mean": 0.40488197755530325,
+            "sd": 0.0254308923921583,
+            "calls": 891468,
+            "failedCalls": 0
+          },
+          "state8": {
+            "mean": 9.70974259850577,
+            "sd": 0.3570905215149856,
+            "calls": 37212,
+            "failedCalls": 0
+          },
+          "high-level8": {
+            "mean": 1716.2698412698412,
+            "sd": 121.51866664906805,
+            "calls": 228,
+            "failedCalls": 0
+          }
+        },
+        "PT-vapor": {
+          "table": {
+            "mean": 0.48808726888042225,
+            "sd": 0.10889677720047246,
+            "calls": 761604,
+            "failedCalls": 0
+          },
+          "state8": {
+            "mean": 12.338286437566902,
+            "sd": 0.5818891829322596,
+            "calls": 29220,
+            "failedCalls": 0
+          },
+          "high-level8": {
+            "mean": 1828.7037037037037,
+            "sd": 133.45866023518136,
+            "calls": 216,
+            "failedCalls": 0
+          }
+        },
+        "SAT": {
+          "table": {
+            "mean": 0.17008370092239644,
+            "sd": 0.01044760614325563,
+            "calls": 2122134,
+            "failedCalls": 0
+          },
+          "state8": {
+            "mean": 5.4940421063840725,
+            "sd": 0.33495910925731853,
+            "calls": 65694,
+            "failedCalls": 0
+          },
+          "high-level8": {
+            "mean": 1584.6153846153845,
+            "sd": 13.323467750529835,
+            "calls": 231,
+            "failedCalls": 0
+          }
+        }
+      },
+      "interiorPatternMS": {
+        "5": {
+          "liquid": {
+            "table": {
+              "mean": 4.166666666666666,
+              "sd": 2.9938826518975876,
+              "logicalCallsPerPattern": 147,
+              "actualCache": {
+                "hits": 0,
+                "misses": 0,
+                "size": 0,
+                "limit": 1024
+              }
+            },
+            "state8": {
+              "mean": 9.766666666666667,
+              "sd": 5.253887449625595,
+              "logicalCallsPerPattern": 147,
+              "actualCache": {
+                "hits": 0,
+                "misses": 0,
+                "size": 0,
+                "limit": 1024
+              }
+            },
+            "cached-state8": {
+              "mean": 2.066666666666667,
+              "sd": 0.5686240703077328,
+              "logicalCallsPerPattern": 147,
+              "actualCache": {
+                "hits": 98,
+                "misses": 49,
+                "size": 49,
+                "limit": 1024
+              }
+            }
+          },
+          "vapor": {
+            "table": {
+              "mean": 1.4666666666666668,
+              "sd": 0.1527525231651947,
+              "logicalCallsPerPattern": 147,
+              "actualCache": {
+                "hits": 0,
+                "misses": 0,
+                "size": 0,
+                "limit": 1024
+              }
+            },
+            "state8": {
+              "mean": 6.333333333333333,
+              "sd": 0.1527525231651946,
+              "logicalCallsPerPattern": 147,
+              "actualCache": {
+                "hits": 0,
+                "misses": 0,
+                "size": 0,
+                "limit": 1024
+              }
+            },
+            "cached-state8": {
+              "mean": 2.033333333333333,
+              "sd": 0.05773502691896263,
+              "logicalCallsPerPattern": 147,
+              "actualCache": {
+                "hits": 98,
+                "misses": 49,
+                "size": 49,
+                "limit": 1024
+              }
+            }
+          },
+          "two-phase": {
+            "table": {
+              "mean": 0.13333333333333333,
+              "sd": 0.05773502691896258,
+              "logicalCallsPerPattern": 147,
+              "actualCache": {
+                "hits": 0,
+                "misses": 0,
+                "size": 0,
+                "limit": 1024
+              }
+            },
+            "state8": {
+              "mean": 1.0,
+              "sd": 0.10000000000000003,
+              "logicalCallsPerPattern": 147,
+              "actualCache": {
+                "hits": 0,
+                "misses": 0,
+                "size": 0,
+                "limit": 1024
+              }
+            },
+            "cached-state8": {
+              "mean": 0.4,
+              "sd": 0.0,
+              "logicalCallsPerPattern": 147,
+              "actualCache": {
+                "hits": 103,
+                "misses": 44,
+                "size": 44,
+                "limit": 1024
+              }
+            }
+          }
+        },
+        "9": {
+          "liquid": {
+            "table": {
+              "mean": 4.7,
+              "sd": 1.1135528725660044,
+              "logicalCallsPerPattern": 255,
+              "actualCache": {
+                "hits": 0,
+                "misses": 0,
+                "size": 0,
+                "limit": 1024
+              }
+            },
+            "state8": {
+              "mean": 8.2,
+              "sd": 0.6557438524302004,
+              "logicalCallsPerPattern": 255,
+              "actualCache": {
+                "hits": 0,
+                "misses": 0,
+                "size": 0,
+                "limit": 1024
+              }
+            },
+            "cached-state8": {
+              "mean": 2.8,
+              "sd": 0.09999999999999987,
+              "logicalCallsPerPattern": 255,
+              "actualCache": {
+                "hits": 170,
+                "misses": 85,
+                "size": 85,
+                "limit": 1024
+              }
+            }
+          },
+          "vapor": {
+            "table": {
+              "mean": 2.5,
+              "sd": 0.6000000000000001,
+              "logicalCallsPerPattern": 255,
+              "actualCache": {
+                "hits": 0,
+                "misses": 0,
+                "size": 0,
+                "limit": 1024
+              }
+            },
+            "state8": {
+              "mean": 12.633333333333333,
+              "sd": 1.1503622617824936,
+              "logicalCallsPerPattern": 255,
+              "actualCache": {
+                "hits": 0,
+                "misses": 0,
+                "size": 0,
+                "limit": 1024
+              }
+            },
+            "cached-state8": {
+              "mean": 4.066666666666666,
+              "sd": 0.8144527815247077,
+              "logicalCallsPerPattern": 255,
+              "actualCache": {
+                "hits": 170,
+                "misses": 85,
+                "size": 85,
+                "limit": 1024
+              }
+            }
+          },
+          "two-phase": {
+            "table": {
+              "mean": 0.13333333333333333,
+              "sd": 0.05773502691896258,
+              "logicalCallsPerPattern": 255,
+              "actualCache": {
+                "hits": 0,
+                "misses": 0,
+                "size": 0,
+                "limit": 1024
+              }
+            },
+            "state8": {
+              "mean": 2.1666666666666665,
+              "sd": 0.3055050463303894,
+              "logicalCallsPerPattern": 255,
+              "actualCache": {
+                "hits": 0,
+                "misses": 0,
+                "size": 0,
+                "limit": 1024
+              }
+            },
+            "cached-state8": {
+              "mean": 1.0,
+              "sd": 0.2645751311064591,
+              "logicalCallsPerPattern": 255,
+              "actualCache": {
+                "hits": 179,
+                "misses": 76,
+                "size": 76,
+                "limit": 1024
+              }
+            }
+          }
+        }
+      },
+      "legacy7MillisecondsPerState": {
+        "PH-liquid": 8.669934640522875,
+        "DU-liquid": 3.910569105691057,
+        "SAT": 9.231617647058824
+      },
+      "sustained": [
+        {
+          "epoch": 0,
+          "calls": 43416,
+          "elapsedMS": 1501,
+          "linearMemoryBytes": 56360960,
+          "checksum": 11426966.455164216
+        },
+        {
+          "epoch": 1,
+          "calls": 43704,
+          "elapsedMS": 1502,
+          "linearMemoryBytes": 56360960,
+          "checksum": 11502767.227669433
+        },
+        {
+          "epoch": 2,
+          "calls": 41256,
+          "elapsedMS": 1501,
+          "linearMemoryBytes": 56360960,
+          "checksum": 10858460.661375094
+        }
+      ],
+      "cacheEquivalentOnTestedRequests": true,
+      "memory": {
+        "linearBytes": 56360960,
+        "summedBaselineProcessRSSKiB": 369672,
+        "summedFinalProcessRSSKiB": 720124,
+        "chromiumHeap": null,
+        "processRSSIsNotExclusiveMemory": true
+      },
+      "worker": {
+        "startupRoundtripMS": 2164,
+        "mainThreadTicks": 75,
+        "mainThreadElapsedMS": 1801,
+        "calls": 36708,
+        "computationMS": 1800
+      },
+      "offline": {
+        "reloadAndFreshEOSRecoveryPass": true,
+        "verification": {
+          "serverUnavailableDuringReloadAndEOSLoad": true,
+          "HTTPRequestsRejectedByServer": 6,
+          "networkEmulationUsed": false,
+          "navigatorOnLineIsNotAnOfflineProof": true
+        },
+        "badMIMEFallbackPass": true,
+        "missingAssetError": "WASM asset unavailable: HTTP 404"
+      },
+      "acceptedAccountingRecovery": {
+        "requests": 189,
+        "successes": 189,
+        "maxErrorsSI": {
+          "p": 0.013919870369136333,
+          "T": 3.0560300956494757e-07,
+          "h": 0.0005880137905478477,
+          "rho": 4.0813574742060155e-11,
+          "u": 1.0337680578231812e-07
+        }
+      },
+      "finiteDifferenceCompatibility": [
+        {
+          "id": "p0.3029893712344606-liquid-z1.0-PH",
+          "pressureProbePa": 0.01,
+          "enthalpyProbeJkg": 0.0009452334612321304,
+          "analytical": {
+            "rhoPAtH": 6.616841348556091e-07,
+            "rhoHAtP": -0.00026756503093981965
+          },
+          "finite": {
+            "rhoPAtH": 1.3359704098547809e-05,
+            "rhoHAtP": -0.000267565225863158
+          },
+          "relativeErrors": {
+            "rhoPAtH": 19.19045552824555,
+            "rhoHAtP": 7.285082719378601e-07
+          }
+        },
+        {
+          "id": "p3.5-vapor-z25.0-PH",
+          "pressureProbePa": 0.03499999999994915,
+          "enthalpyProbeJkg": 0.016638149757839397,
+          "analytical": {
+            "rhoPAtH": 7.307538506621087e-06,
+            "rhoHAtP": -4.2871329676449375e-06
+          },
+          "finite": {
+            "rhoPAtH": 7.307538434692426e-06,
+            "rhoHAtP": -4.28713298311086e-06
+          },
+          "relativeErrors": {
+            "rhoPAtH": -9.843076623834965e-09,
+            "rhoHAtP": 3.607521164290462e-09
+          }
+        },
+        {
+          "id": "p32.65314902038559-liquid-z0.1-PH",
+          "pressureProbePa": 0.32653149007103044,
+          "enthalpyProbeJkg": 0.006867735049533222,
+          "analytical": {
+            "rhoPAtH": 1.7577000414753803e-06,
+            "rhoHAtP": -0.00038764745363614245
+          },
+          "finite": {
+            "rhoPAtH": 1.7576326882722575e-06,
+            "rhoHAtP": -0.0003876475753685143
+          },
+          "relativeErrors": {
+            "rhoPAtH": -3.831894039568911e-05,
+            "rhoHAtP": 3.1402856050776743e-07
+          }
+        }
+      ],
+      "historical": [
+        {
+          "id": "historical-low-original-inventory",
+          "mode": "DU",
+          "state": {
+            "p": 30174.790361846546,
+            "T": 217.2629228853553,
+            "h": 94523.17094071119,
+            "s": 458.16706902202463,
+            "rho": 708.6710262223568,
+            "u": 94480.59153609988,
+            "Q": 10000,
+            "cp": 4379.299996012012,
+            "cv": 2964.26568729205,
+            "kappa": 5.923152935653596e-10,
+            "rhoP": 4.197566869381598e-07,
+            "rhoT": -1.1717478486077262,
+            "hp": 0.0009041824801289575
+          },
+          "errors": {
+            "p": 0,
+            "T": 0,
+            "h": 0,
+            "s": 0,
+            "rho": 0,
+            "u": 0,
+            "Q": 0,
+            "cp": 0,
+            "cv": 0,
+            "kappa": 0,
+            "rhoP": 0,
+            "rhoT": 0,
+            "hp": 0
+          },
+          "workIdentityJkg": -1.2576606422953773e-11,
+          "maxwellResidual": -2.168404344971009e-19,
+          "referenceError": null
+        },
+        {
+          "id": "saved-high-initial-PH",
+          "mode": "PH",
+          "state": {
+            "p": 3265314.900729634,
+            "T": 342.4277780438519,
+            "h": 686779.7256650563,
+            "s": 2577.588517246936,
+            "rho": 527.7791486143282,
+            "u": 680592.8292920351,
+            "Q": -1,
+            "cp": 5452.249610983949,
+            "cv": 2747.6415997741715,
+            "kappa": 3.84715771907969e-09,
+            "rhoP": 2.03044962556092e-06,
+            "rhoT": -2.113566949055248,
+            "hp": -0.0007035157127341896
+          },
+          "errors": {
+            "p": 5.4016709327697754e-08,
+            "T": 5.684341886080802e-14,
+            "h": 1.5133991837501526e-09,
+            "s": 5.002220859751105e-12,
+            "rho": -9.094947017729282e-13,
+            "u": 1.3969838619232178e-09,
+            "Q": 0,
+            "cp": 1.1823431123048067e-11,
+            "cv": 4.547473508864641e-13,
+            "kappa": 5.293955920339377e-23,
+            "rhoP": 2.498747194400186e-20,
+            "rhoT": -1.4210854715202004e-14,
+            "hp": -2.3201926491189795e-17
+          },
+          "workIdentityJkg": -7.795661076670513e-07,
+          "maxwellResidual": 6.505213034913027e-19,
+          "referenceError": null
+        },
+        {
+          "id": "saved-high-initial-original-DU",
+          "mode": "DU",
+          "state": {
+            "p": 3263031.6866785553,
+            "T": 342.42668996864955,
+            "h": 686775.399564825,
+            "s": 2577.5885172116577,
+            "rho": 527.776812296707,
+            "u": 680592.8019010912,
+            "Q": 10000,
+            "cp": 5452.337157940285,
+            "cv": 2747.646869781638,
+            "kappa": 3.847390750000379e-09,
+            "rhoP": 2.030563625695037e-06,
+            "rhoT": -2.113652432285773,
+            "hp": -0.0007036271594038215
+          },
+          "errors": {
+            "p": 0,
+            "T": 0,
+            "h": 0,
+            "s": 0,
+            "rho": 0,
+            "u": 0,
+            "Q": 0,
+            "cp": 0,
+            "cv": 0,
+            "kappa": 0,
+            "rhoP": 0,
+            "rhoT": 0,
+            "hp": 0
+          },
+          "workIdentityJkg": -1.5916157281026244e-10,
+          "maxwellResidual": 1.0842021724855044e-19,
+          "referenceError": null
+        },
+        {
+          "id": "saved-high-endpoint-PH",
+          "mode": "PH",
+          "state": {
+            "p": 3280473.731018341,
+            "T": 342.4418659937437,
+            "h": 686845.8724282985,
+            "s": 2577.697807740655,
+            "rho": 527.7801516429745,
+            "u": 680630.2659518737,
+            "Q": -1,
+            "cp": 5451.873637582207,
+            "cv": 2747.6097259249054,
+            "kappa": 3.84636373750422e-09,
+            "rhoP": 2.0300344366540158e-06,
+            "rhoT": -2.1131769505627336,
+            "hp": -0.0007031368825381331
+          },
+          "errors": {
+            "p": -6.835907697677612e-07,
+            "T": -5.934452929068357e-11,
+            "h": -3.237510100007057e-07,
+            "s": -9.422365110367537e-10,
+            "rho": 1.263060767087154e-10,
+            "u": -3.206077963113785e-07,
+            "Q": 0,
+            "cp": -1.7580532585270703e-09,
+            "cv": -2.5920599000528455e-11,
+            "kappa": -6.510738601404881e-21,
+            "rhoP": -2.950215755286728e-18,
+            "rhoT": 1.5232259897857148e-12,
+            "hp": 3.113503378726623e-15
+          },
+          "workIdentityJkg": -4.429579348652624e-06,
+          "maxwellResidual": 6.505213034913027e-19,
+          "referenceError": null
+        },
+        {
+          "id": "saved-high-endpoint-original-DU",
+          "mode": "DU",
+          "state": {
+            "p": 3277209.845911512,
+            "T": 342.4403106836193,
+            "h": 686839.6881992223,
+            "s": 2577.6978076419828,
+            "rho": 527.776812303384,
+            "u": 680630.2266057722,
+            "Q": 10000,
+            "cp": 5451.998727484839,
+            "cv": 2747.6172545473705,
+            "kappa": 3.846696690861072e-09,
+            "rhoP": 2.030197317400632e-06,
+            "rhoT": -2.113299086599654,
+            "hp": -0.0007032961204429381
+          },
+          "errors": {
+            "p": 0,
+            "T": 0,
+            "h": 0,
+            "s": 0,
+            "rho": 0,
+            "u": 0,
+            "Q": 0,
+            "cp": 0,
+            "cv": 0,
+            "kappa": 0,
+            "rhoP": 0,
+            "rhoT": 0,
+            "hp": 0
+          },
+          "workIdentityJkg": -1.77351466845721e-10,
+          "maxwellResidual": -6.505213034913027e-19,
+          "referenceError": null
+        }
+      ]
+    }
+  },
+  "versionDifferences": {
+    "comparableSuccessfulStates": 597,
+    "maxDifferencesSI": {
+      "p": 0.009283424355089664,
+      "T": 2.854487206604972e-07,
+      "h": 0.0014126671012490988,
+      "s": 4.483472821448231e-06,
+      "rho": 4.788656724485918e-07,
+      "u": 0.0014051228063181043
+    },
+    "rawQualitySentinelChanges": [
+      {
+        "id": "p0.3-Q0.0-DU",
+        "Q7": 10000.0,
+        "Q8": 5.679406774499413e-20
+      },
+      {
+        "id": "p0.3-Q1.0-DU",
+        "Q7": 10000.0,
+        "Q8": 0.9999999999999999
+      },
+      {
+        "id": "p0.3029893712344606-Q0.0-DU",
+        "Q7": 10000.0,
+        "Q8": 5.732318959914795e-20
+      },
+      {
+        "id": "p0.3029893712344606-Q1.0-DU",
+        "Q7": 10000.0,
+        "Q8": 0.9999999999999998
+      },
+      {
+        "id": "p0.3183890254214986-Q0.0-DU",
+        "Q7": 10000.0,
+        "Q8": 0.0
+      },
+      {
+        "id": "p0.3183890254214986-Q1.0-DU",
+        "Q7": 10000.0,
+        "Q8": 0.9999999999999998
+      },
+      {
+        "id": "p3.5-Q0.0-DU",
+        "Q7": 10000.0,
+        "Q8": 1.1385699504523076e-18
+      },
+      {
+        "id": "p8.0-Q0.0-DU",
+        "Q7": 10000.0,
+        "Q8": 0.0
+      },
+      {
+        "id": "p16.0-Q0.0-DU",
+        "Q7": 10000.0,
+        "Q8": 0.0
+      },
+      {
+        "id": "p32.33098463554795-Q0.0-DU",
+        "Q7": 10000.0,
+        "Q8": 0.0
+      },
+      {
+        "id": "p32.65314902038559-Q1.0-DU",
+        "Q7": 10000.0,
+        "Q8": 1.0
+      },
+      {
+        "id": "p32.80473738460169-Q1.0-DU",
+        "Q7": 10000.0,
+        "Q8": 1.0
+      },
+      {
+        "id": "p35.0-Q1.0-DU",
+        "Q7": 10000.0,
+        "Q8": 1.0
+      }
+    ],
+    "failedIn7SuccessfulIn8": [
+      "p32.65314902038559-Q0.0-DU",
+      "p32.80473738460169-Q0.0-DU"
+    ]
+  },
+  "longDurationProjections": {
+    "noLongCoupledRuns": true,
+    "assumptions": "Historical accepted five-section cold/warm iterations per simulated second held constant. Nine-section rates assumed equal only for a what-if cost comparison. One timed pattern includes final canonical recovery, which may overcount per-iteration cost; failed trials/line searches could undercount.",
+    "historicalFiveIterationsPerSimSecond": {
+      "cold": 38.625,
+      "warm": 65.39166666666667
+    },
+    "costs": [
+      {
+        "browser": "chromium",
+        "sections": 5,
+        "method": "table",
+        "propertyOnlyWallSecondsPerSimulatedHour": [
+          10.197000000863337,
+          497.4998000029232
+        ],
+        "sixHourScenarioWallSeconds": [
+          61.18200000518002,
+          2984.9988000175395
+        ],
+        "notDevicePerformanceOrFullSimulationPrediction": true
+      },
+      {
+        "browser": "chromium",
+        "sections": 5,
+        "method": "state8",
+        "propertyOnlyWallSecondsPerSimulatedHour": [
+          140.440500001295,
+          1635.3148000029232
+        ],
+        "sixHourScenarioWallSeconds": [
+          842.64300000777,
+          9811.88880001754
+        ],
+        "notDevicePerformanceOrFullSimulationPrediction": true
+      },
+      {
+        "browser": "chromium",
+        "sections": 5,
+        "method": "cached-state8",
+        "propertyOnlyWallSecondsPerSimulatedHour": [
+          59.32799999913667,
+          494.361
+        ],
+        "sixHourScenarioWallSeconds": [
+          355.96799999482005,
+          2966.166
+        ],
+        "notDevicePerformanceOrFullSimulationPrediction": true
+      },
+      {
+        "browser": "chromium",
+        "sections": 9,
+        "method": "table",
+        "propertyOnlyWallSecondsPerSimulatedHour": [
+          18.53999999784166,
+          903.1897000007308
+        ],
+        "sixHourScenarioWallSeconds": [
+          111.23999998704997,
+          5419.138200004385
+        ],
+        "notDevicePerformanceOrFullSimulationPrediction": true
+      },
+      {
+        "browser": "chromium",
+        "sections": 9,
+        "method": "state8",
+        "propertyOnlyWallSecondsPerSimulatedHour": [
+          268.3664999995683,
+          2635.022599998538
+        ],
+        "sixHourScenarioWallSeconds": [
+          1610.1989999974098,
+          15810.13559999123
+        ],
+        "notDevicePerformanceOrFullSimulationPrediction": true
+      },
+      {
+        "browser": "chromium",
+        "sections": 9,
+        "method": "cached-state8",
+        "propertyOnlyWallSecondsPerSimulatedHour": [
+          109.38600000043166,
+          842.7677999992693
+        ],
+        "sixHourScenarioWallSeconds": [
+          656.31600000259,
+          5056.606799995616
+        ],
+        "notDevicePerformanceOrFullSimulationPrediction": true
+      },
+      {
+        "browser": "webkit",
+        "sections": 5,
+        "method": "table",
+        "propertyOnlyWallSecondsPerSimulatedHour": [
+          18.54,
+          980.8749999999999
+        ],
+        "sixHourScenarioWallSeconds": [
+          111.24,
+          5885.249999999999
+        ],
+        "notDevicePerformanceOrFullSimulationPrediction": true
+      },
+      {
+        "browser": "webkit",
+        "sections": 5,
+        "method": "state8",
+        "propertyOnlyWallSecondsPerSimulatedHour": [
+          139.05,
+          2299.171
+        ],
+        "sixHourScenarioWallSeconds": [
+          834.3000000000001,
+          13795.025999999998
+        ],
+        "notDevicePerformanceOrFullSimulationPrediction": true
+      },
+      {
+        "browser": "webkit",
+        "sections": 5,
+        "method": "cached-state8",
+        "propertyOnlyWallSecondsPerSimulatedHour": [
+          55.62,
+          486.51400000000007
+        ],
+        "sixHourScenarioWallSeconds": [
+          333.71999999999997,
+          2919.0840000000003
+        ],
+        "notDevicePerformanceOrFullSimulationPrediction": true
+      },
+      {
+        "browser": "webkit",
+        "sections": 9,
+        "method": "table",
+        "propertyOnlyWallSecondsPerSimulatedHour": [
+          18.54,
+          1106.427
+        ],
+        "sixHourScenarioWallSeconds": [
+          111.24,
+          6638.562
+        ],
+        "notDevicePerformanceOrFullSimulationPrediction": true
+      },
+      {
+        "browser": "webkit",
+        "sections": 9,
+        "method": "state8",
+        "propertyOnlyWallSecondsPerSimulatedHour": [
+          301.275,
+          2974.013
+        ],
+        "sixHourScenarioWallSeconds": [
+          1807.6499999999999,
+          17844.078
+        ],
+        "notDevicePerformanceOrFullSimulationPrediction": true
+      },
+      {
+        "browser": "webkit",
+        "sections": 9,
+        "method": "cached-state8",
+        "propertyOnlyWallSecondsPerSimulatedHour": [
+          139.05,
+          957.334
+        ],
+        "sixHourScenarioWallSeconds": [
+          834.3000000000001,
+          5744.004
+        ],
+        "notDevicePerformanceOrFullSimulationPrediction": true
+      }
+    ],
+    "historicalStressCase": {
+      "name": "heat-reversal",
+      "simulatedIntervalSeconds": 60,
+      "NewtonIterationsPerSimSecond": 701.2166666666667,
+      "extraRejectedLineSearchEvaluations": 298993,
+      "failedNewtonAttempts": 921,
+      "warning": "Holding this pathological short-run rate constant is not a prediction, but shows how existing nonlinear failures can dominate long-duration costs."
+    },
+    "stressCosts": [
+      {
+        "browser": "chromium",
+        "sections": 5,
+        "propertyOnlyWallSecondsPerSimulatedHour": 5301.198,
+        "excludesExtraRejectedLineSearchCost": true
+      },
+      {
+        "browser": "chromium",
+        "sections": 9,
+        "propertyOnlyWallSecondsPerSimulatedHour": 9037.280399992163,
+        "excludesExtraRejectedLineSearchCost": true
+      },
+      {
+        "browser": "webkit",
+        "sections": 5,
+        "propertyOnlyWallSecondsPerSimulatedHour": 5132.906,
+        "excludesExtraRejectedLineSearchCost": true
+      },
+      {
+        "browser": "webkit",
+        "sections": 9,
+        "propertyOnlyWallSecondsPerSimulatedHour": 10265.812,
+        "excludesExtraRejectedLineSearchCost": true
+      }
+    ]
+  },
+  "classification": "Desktop browser EOS architecture conditionally feasible; migration blocked pending flash-precision/unchanged-solver compatibility and physical iPad validation.",
+  "recommendation": "Persistent official 8.0.0 HEOS::Ammonia in one Web Worker with exact bounded memoization; do not adopt or integrate. Investigate observed low-pressure PH flash convergence sensitivity under unchanged solver budgets before migration.",
+  "codeHashes": {
+    "audit.py": "acc9dbfe61e43deee900bb80de70b6bac363b680d8fb984542d832e006c23d6c",
+    "flash_probe.py": "c5cc8b3c32e545f026fe35f69958343dc07243bf7a8e6ecadd93671ce51e7cb9",
+    "eos.mjs": "387268598a12e28148aa27bb0c2a410435468021fa3d29ec7973d61ab18488a5",
+    "fetch_notices.py": "f787ee4ae8316f8c63d6c660bc93a0e55272ba014301456f6c012d5494c6854a",
+    "reference.py": "2611b9262a34079061c7b3cae93d51114680b2d589808c431cb2cabb92f09687",
+    "analyze.py": "90c4dbe2fc0356dda5038be9e15979fecc2238554a3bed912da3593bc5766c41",
+    "worker.mjs": "2cfe8b57bcf0af1c63bf07fcca07726ecd50f6765b604598081fdf359d43af44",
+    "benchmark.cjs": "ee2ea6fbe55b8ae4f43e20035f2950eaadec3d81e6ddb54640084c9a11a29676",
+    "sw.js": "0a5dde7edef7c8abc37a6e2de33ffe54bb2a32cff373ca36dcf50126c588ab9f"
+  }
+}

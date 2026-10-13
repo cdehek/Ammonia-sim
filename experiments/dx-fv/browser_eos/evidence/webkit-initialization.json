@@ -1,0 +1,138 @@
+{
+  "browser": "webkit",
+  "version": "26.5",
+  "environment": {
+    "node": "v24.19.0",
+    "playwright": "1.62.1",
+    "platform": "linux",
+    "arch": "x64",
+    "cpu": "AMD EPYC 9V74 80-Core Processor",
+    "logicalCPUs": 3,
+    "totalRAMBytes": 10452496384,
+    "testedOnPhysicalIPad": false,
+    "noCoupledRuns": true
+  },
+  "rounds": [
+    {
+      "init": {
+        "totalMS": 2563,
+        "importMS": 5,
+        "fetchMS": 91,
+        "compileInstantiateMS": 34,
+        "runtimeMS": 113,
+        "firstFactoryMS": 2354,
+        "initialLinearMemoryBytes": 22544384,
+        "readyLinearMemoryBytes": 56360960,
+        "wasmBytes": 9196512,
+        "mime": "application/wasm",
+        "streaming": true,
+        "logs": []
+      },
+      "linearMemory": 56360960,
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.5 Safari/605.1.15",
+      "crossOriginIsolated": false,
+      "processMemory": {
+        "processes": [
+          {
+            "pid": 1340,
+            "ppid": 1212,
+            "rssKiB": 96328
+          },
+          {
+            "pid": 1354,
+            "ppid": 1340,
+            "rssKiB": 57084
+          },
+          {
+            "pid": 1356,
+            "ppid": 1340,
+            "rssKiB": 330508
+          }
+        ],
+        "summedRSSKiB": 483920,
+        "caution": "Summed process RSS double-counts shared pages; not exclusive memory or iPad usage."
+      }
+    },
+    {
+      "init": {
+        "totalMS": 2050,
+        "importMS": 6,
+        "fetchMS": 69,
+        "compileInstantiateMS": 66,
+        "runtimeMS": 121,
+        "firstFactoryMS": 1854,
+        "initialLinearMemoryBytes": 22544384,
+        "readyLinearMemoryBytes": 56360960,
+        "wasmBytes": 9196512,
+        "mime": "application/wasm",
+        "streaming": true,
+        "logs": []
+      },
+      "linearMemory": 56360960,
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.5 Safari/605.1.15",
+      "crossOriginIsolated": false,
+      "processMemory": {
+        "processes": [
+          {
+            "pid": 1340,
+            "ppid": 1212,
+            "rssKiB": 100384
+          },
+          {
+            "pid": 1399,
+            "ppid": 1340,
+            "rssKiB": 56460
+          },
+          {
+            "pid": 1401,
+            "ppid": 1340,
+            "rssKiB": 331756
+          }
+        ],
+        "summedRSSKiB": 488600,
+        "caution": "Summed process RSS double-counts shared pages; not exclusive memory or iPad usage."
+      }
+    },
+    {
+      "init": {
+        "totalMS": 2471,
+        "importMS": 6,
+        "fetchMS": 144,
+        "compileInstantiateMS": 58,
+        "runtimeMS": 102,
+        "firstFactoryMS": 2219,
+        "initialLinearMemoryBytes": 22544384,
+        "readyLinearMemoryBytes": 56360960,
+        "wasmBytes": 9196512,
+        "mime": "application/wasm",
+        "streaming": true,
+        "logs": []
+      },
+      "linearMemory": 56360960,
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.5 Safari/605.1.15",
+      "crossOriginIsolated": false,
+      "processMemory": {
+        "processes": [
+          {
+            "pid": 1340,
+            "ppid": 1212,
+            "rssKiB": 99920
+          },
+          {
+            "pid": 1447,
+            "ppid": 1340,
+            "rssKiB": 56856
+          },
+          {
+            "pid": 1451,
+            "ppid": 1340,
+            "rssKiB": 331292
+          }
+        ],
+        "summedRSSKiB": 488068,
+        "caution": "Summed process RSS double-counts shared pages; not exclusive memory or iPad usage."
+      }
+    }
+  ],
+  "transfer": "Loopback uncompressed assets; fresh contexts, shared browser compiler/OS caches possible. No WAN latency claim."
+}

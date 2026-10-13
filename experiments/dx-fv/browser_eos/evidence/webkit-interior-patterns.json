@@ -1,0 +1,990 @@
+{
+  "browser": "webkit",
+  "version": "26.5",
+  "environment": {
+    "node": "v24.19.0",
+    "playwright": "1.62.1",
+    "platform": "linux",
+    "arch": "x64",
+    "cpu": "AMD EPYC 9V74 80-Core Processor",
+    "logicalCPUs": 3,
+    "totalRAMBytes": 10452496384,
+    "testedOnPhysicalIPad": false,
+    "noCoupledRuns": true
+  },
+  "rounds": [
+    {
+      "n": 5,
+      "region": "liquid",
+      "round": 0,
+      "method": "state8",
+      "repeats": 10,
+      "elapsedMS": 158,
+      "calls": 147,
+      "cache": {
+        "hits": 0,
+        "misses": 0,
+        "size": 0,
+        "limit": 1024
+      },
+      "residualEvaluations": 23,
+      "checksum": 60694.79426211465,
+      "seedID": "p32.65314902038559-liquid-z0.1"
+    },
+    {
+      "n": 5,
+      "region": "liquid",
+      "round": 0,
+      "method": "cached-state8",
+      "repeats": 10,
+      "elapsedMS": 27,
+      "calls": 147,
+      "cache": {
+        "hits": 98,
+        "misses": 49,
+        "size": 49,
+        "limit": 1024
+      },
+      "residualEvaluations": 23,
+      "checksum": 60694.79426211465,
+      "seedID": "p32.65314902038559-liquid-z0.1"
+    },
+    {
+      "n": 5,
+      "region": "liquid",
+      "round": 0,
+      "method": "table",
+      "repeats": 10,
+      "elapsedMS": 76,
+      "calls": 147,
+      "cache": {
+        "hits": 0,
+        "misses": 0,
+        "size": 0,
+        "limit": 1024
+      },
+      "residualEvaluations": 23,
+      "checksum": 60694.524517664155,
+      "seedID": "p32.65314902038559-liquid-z0.1"
+    },
+    {
+      "n": 5,
+      "region": "liquid",
+      "round": 1,
+      "method": "table",
+      "repeats": 10,
+      "elapsedMS": 28,
+      "calls": 147,
+      "cache": {
+        "hits": 0,
+        "misses": 0,
+        "size": 0,
+        "limit": 1024
+      },
+      "residualEvaluations": 23,
+      "checksum": 60694.524517664155,
+      "seedID": "p32.65314902038559-liquid-z0.1"
+    },
+    {
+      "n": 5,
+      "region": "liquid",
+      "round": 1,
+      "method": "cached-state8",
+      "repeats": 10,
+      "elapsedMS": 19,
+      "calls": 147,
+      "cache": {
+        "hits": 98,
+        "misses": 49,
+        "size": 49,
+        "limit": 1024
+      },
+      "residualEvaluations": 23,
+      "checksum": 60694.79426211465,
+      "seedID": "p32.65314902038559-liquid-z0.1"
+    },
+    {
+      "n": 5,
+      "region": "liquid",
+      "round": 1,
+      "method": "state8",
+      "repeats": 10,
+      "elapsedMS": 62,
+      "calls": 147,
+      "cache": {
+        "hits": 0,
+        "misses": 0,
+        "size": 0,
+        "limit": 1024
+      },
+      "residualEvaluations": 23,
+      "checksum": 60694.79426211465,
+      "seedID": "p32.65314902038559-liquid-z0.1"
+    },
+    {
+      "n": 5,
+      "region": "liquid",
+      "round": 2,
+      "method": "state8",
+      "repeats": 10,
+      "elapsedMS": 73,
+      "calls": 147,
+      "cache": {
+        "hits": 0,
+        "misses": 0,
+        "size": 0,
+        "limit": 1024
+      },
+      "residualEvaluations": 23,
+      "checksum": 60694.79426211465,
+      "seedID": "p32.65314902038559-liquid-z0.1"
+    },
+    {
+      "n": 5,
+      "region": "liquid",
+      "round": 2,
+      "method": "cached-state8",
+      "repeats": 10,
+      "elapsedMS": 16,
+      "calls": 147,
+      "cache": {
+        "hits": 98,
+        "misses": 49,
+        "size": 49,
+        "limit": 1024
+      },
+      "residualEvaluations": 23,
+      "checksum": 60694.79426211465,
+      "seedID": "p32.65314902038559-liquid-z0.1"
+    },
+    {
+      "n": 5,
+      "region": "liquid",
+      "round": 2,
+      "method": "table",
+      "repeats": 10,
+      "elapsedMS": 21,
+      "calls": 147,
+      "cache": {
+        "hits": 0,
+        "misses": 0,
+        "size": 0,
+        "limit": 1024
+      },
+      "residualEvaluations": 23,
+      "checksum": 60694.524517664155,
+      "seedID": "p32.65314902038559-liquid-z0.1"
+    },
+    {
+      "n": 5,
+      "region": "vapor",
+      "round": 0,
+      "method": "state8",
+      "repeats": 10,
+      "elapsedMS": 65,
+      "calls": 147,
+      "cache": {
+        "hits": 0,
+        "misses": 0,
+        "size": 0,
+        "limit": 1024
+      },
+      "residualEvaluations": 23,
+      "checksum": 293.42980761893864,
+      "seedID": "p3.5-vapor-z25.0"
+    },
+    {
+      "n": 5,
+      "region": "vapor",
+      "round": 0,
+      "method": "cached-state8",
+      "repeats": 10,
+      "elapsedMS": 20,
+      "calls": 147,
+      "cache": {
+        "hits": 98,
+        "misses": 49,
+        "size": 49,
+        "limit": 1024
+      },
+      "residualEvaluations": 23,
+      "checksum": 293.42980761893864,
+      "seedID": "p3.5-vapor-z25.0"
+    },
+    {
+      "n": 5,
+      "region": "vapor",
+      "round": 0,
+      "method": "table",
+      "repeats": 10,
+      "elapsedMS": 15,
+      "calls": 147,
+      "cache": {
+        "hits": 0,
+        "misses": 0,
+        "size": 0,
+        "limit": 1024
+      },
+      "residualEvaluations": 23,
+      "checksum": 293.4322198934474,
+      "seedID": "p3.5-vapor-z25.0"
+    },
+    {
+      "n": 5,
+      "region": "vapor",
+      "round": 1,
+      "method": "table",
+      "repeats": 10,
+      "elapsedMS": 16,
+      "calls": 147,
+      "cache": {
+        "hits": 0,
+        "misses": 0,
+        "size": 0,
+        "limit": 1024
+      },
+      "residualEvaluations": 23,
+      "checksum": 293.4322198934474,
+      "seedID": "p3.5-vapor-z25.0"
+    },
+    {
+      "n": 5,
+      "region": "vapor",
+      "round": 1,
+      "method": "cached-state8",
+      "repeats": 10,
+      "elapsedMS": 20,
+      "calls": 147,
+      "cache": {
+        "hits": 98,
+        "misses": 49,
+        "size": 49,
+        "limit": 1024
+      },
+      "residualEvaluations": 23,
+      "checksum": 293.42980761893864,
+      "seedID": "p3.5-vapor-z25.0"
+    },
+    {
+      "n": 5,
+      "region": "vapor",
+      "round": 1,
+      "method": "state8",
+      "repeats": 10,
+      "elapsedMS": 63,
+      "calls": 147,
+      "cache": {
+        "hits": 0,
+        "misses": 0,
+        "size": 0,
+        "limit": 1024
+      },
+      "residualEvaluations": 23,
+      "checksum": 293.42980761893864,
+      "seedID": "p3.5-vapor-z25.0"
+    },
+    {
+      "n": 5,
+      "region": "vapor",
+      "round": 2,
+      "method": "state8",
+      "repeats": 10,
+      "elapsedMS": 62,
+      "calls": 147,
+      "cache": {
+        "hits": 0,
+        "misses": 0,
+        "size": 0,
+        "limit": 1024
+      },
+      "residualEvaluations": 23,
+      "checksum": 293.42980761893864,
+      "seedID": "p3.5-vapor-z25.0"
+    },
+    {
+      "n": 5,
+      "region": "vapor",
+      "round": 2,
+      "method": "cached-state8",
+      "repeats": 10,
+      "elapsedMS": 21,
+      "calls": 147,
+      "cache": {
+        "hits": 98,
+        "misses": 49,
+        "size": 49,
+        "limit": 1024
+      },
+      "residualEvaluations": 23,
+      "checksum": 293.42980761893864,
+      "seedID": "p3.5-vapor-z25.0"
+    },
+    {
+      "n": 5,
+      "region": "vapor",
+      "round": 2,
+      "method": "table",
+      "repeats": 10,
+      "elapsedMS": 13,
+      "calls": 147,
+      "cache": {
+        "hits": 0,
+        "misses": 0,
+        "size": 0,
+        "limit": 1024
+      },
+      "residualEvaluations": 23,
+      "checksum": 293.4322198934474,
+      "seedID": "p3.5-vapor-z25.0"
+    },
+    {
+      "n": 5,
+      "region": "two-phase",
+      "round": 0,
+      "method": "state8",
+      "repeats": 10,
+      "elapsedMS": 11,
+      "calls": 147,
+      "cache": {
+        "hits": 0,
+        "misses": 0,
+        "size": 0,
+        "limit": 1024
+      },
+      "residualEvaluations": 23,
+      "checksum": 1609.8231233344877,
+      "seedID": "p3.5-Q0.2"
+    },
+    {
+      "n": 5,
+      "region": "two-phase",
+      "round": 0,
+      "method": "cached-state8",
+      "repeats": 10,
+      "elapsedMS": 4,
+      "calls": 147,
+      "cache": {
+        "hits": 103,
+        "misses": 44,
+        "size": 44,
+        "limit": 1024
+      },
+      "residualEvaluations": 23,
+      "checksum": 1609.8231233344877,
+      "seedID": "p3.5-Q0.2"
+    },
+    {
+      "n": 5,
+      "region": "two-phase",
+      "round": 0,
+      "method": "table",
+      "repeats": 10,
+      "elapsedMS": 2,
+      "calls": 147,
+      "cache": {
+        "hits": 0,
+        "misses": 0,
+        "size": 0,
+        "limit": 1024
+      },
+      "residualEvaluations": 23,
+      "checksum": 1609.8262368612443,
+      "seedID": "p3.5-Q0.2"
+    },
+    {
+      "n": 5,
+      "region": "two-phase",
+      "round": 1,
+      "method": "table",
+      "repeats": 10,
+      "elapsedMS": 1,
+      "calls": 147,
+      "cache": {
+        "hits": 0,
+        "misses": 0,
+        "size": 0,
+        "limit": 1024
+      },
+      "residualEvaluations": 23,
+      "checksum": 1609.8262368612443,
+      "seedID": "p3.5-Q0.2"
+    },
+    {
+      "n": 5,
+      "region": "two-phase",
+      "round": 1,
+      "method": "cached-state8",
+      "repeats": 10,
+      "elapsedMS": 4,
+      "calls": 147,
+      "cache": {
+        "hits": 103,
+        "misses": 44,
+        "size": 44,
+        "limit": 1024
+      },
+      "residualEvaluations": 23,
+      "checksum": 1609.8231233344877,
+      "seedID": "p3.5-Q0.2"
+    },
+    {
+      "n": 5,
+      "region": "two-phase",
+      "round": 1,
+      "method": "state8",
+      "repeats": 10,
+      "elapsedMS": 9,
+      "calls": 147,
+      "cache": {
+        "hits": 0,
+        "misses": 0,
+        "size": 0,
+        "limit": 1024
+      },
+      "residualEvaluations": 23,
+      "checksum": 1609.8231233344877,
+      "seedID": "p3.5-Q0.2"
+    },
+    {
+      "n": 5,
+      "region": "two-phase",
+      "round": 2,
+      "method": "state8",
+      "repeats": 10,
+      "elapsedMS": 10,
+      "calls": 147,
+      "cache": {
+        "hits": 0,
+        "misses": 0,
+        "size": 0,
+        "limit": 1024
+      },
+      "residualEvaluations": 23,
+      "checksum": 1609.8231233344877,
+      "seedID": "p3.5-Q0.2"
+    },
+    {
+      "n": 5,
+      "region": "two-phase",
+      "round": 2,
+      "method": "cached-state8",
+      "repeats": 10,
+      "elapsedMS": 4,
+      "calls": 147,
+      "cache": {
+        "hits": 103,
+        "misses": 44,
+        "size": 44,
+        "limit": 1024
+      },
+      "residualEvaluations": 23,
+      "checksum": 1609.8231233344877,
+      "seedID": "p3.5-Q0.2"
+    },
+    {
+      "n": 5,
+      "region": "two-phase",
+      "round": 2,
+      "method": "table",
+      "repeats": 10,
+      "elapsedMS": 1,
+      "calls": 147,
+      "cache": {
+        "hits": 0,
+        "misses": 0,
+        "size": 0,
+        "limit": 1024
+      },
+      "residualEvaluations": 23,
+      "checksum": 1609.8262368612443,
+      "seedID": "p3.5-Q0.2"
+    },
+    {
+      "n": 9,
+      "region": "liquid",
+      "round": 0,
+      "method": "state8",
+      "repeats": 10,
+      "elapsedMS": 89,
+      "calls": 255,
+      "cache": {
+        "hits": 0,
+        "misses": 0,
+        "size": 0,
+        "limit": 1024
+      },
+      "residualEvaluations": 39,
+      "checksum": 185250.80795003366,
+      "seedID": "p32.65314902038559-liquid-z0.1"
+    },
+    {
+      "n": 9,
+      "region": "liquid",
+      "round": 0,
+      "method": "cached-state8",
+      "repeats": 10,
+      "elapsedMS": 29,
+      "calls": 255,
+      "cache": {
+        "hits": 170,
+        "misses": 85,
+        "size": 85,
+        "limit": 1024
+      },
+      "residualEvaluations": 39,
+      "checksum": 185250.80795003366,
+      "seedID": "p32.65314902038559-liquid-z0.1"
+    },
+    {
+      "n": 9,
+      "region": "liquid",
+      "round": 0,
+      "method": "table",
+      "repeats": 10,
+      "elapsedMS": 59,
+      "calls": 255,
+      "cache": {
+        "hits": 0,
+        "misses": 0,
+        "size": 0,
+        "limit": 1024
+      },
+      "residualEvaluations": 39,
+      "checksum": 185249.98496681525,
+      "seedID": "p32.65314902038559-liquid-z0.1"
+    },
+    {
+      "n": 9,
+      "region": "liquid",
+      "round": 1,
+      "method": "table",
+      "repeats": 10,
+      "elapsedMS": 37,
+      "calls": 255,
+      "cache": {
+        "hits": 0,
+        "misses": 0,
+        "size": 0,
+        "limit": 1024
+      },
+      "residualEvaluations": 39,
+      "checksum": 185249.98496681525,
+      "seedID": "p32.65314902038559-liquid-z0.1"
+    },
+    {
+      "n": 9,
+      "region": "liquid",
+      "round": 1,
+      "method": "cached-state8",
+      "repeats": 10,
+      "elapsedMS": 27,
+      "calls": 255,
+      "cache": {
+        "hits": 170,
+        "misses": 85,
+        "size": 85,
+        "limit": 1024
+      },
+      "residualEvaluations": 39,
+      "checksum": 185250.80795003366,
+      "seedID": "p32.65314902038559-liquid-z0.1"
+    },
+    {
+      "n": 9,
+      "region": "liquid",
+      "round": 1,
+      "method": "state8",
+      "repeats": 10,
+      "elapsedMS": 76,
+      "calls": 255,
+      "cache": {
+        "hits": 0,
+        "misses": 0,
+        "size": 0,
+        "limit": 1024
+      },
+      "residualEvaluations": 39,
+      "checksum": 185250.80795003366,
+      "seedID": "p32.65314902038559-liquid-z0.1"
+    },
+    {
+      "n": 9,
+      "region": "liquid",
+      "round": 2,
+      "method": "state8",
+      "repeats": 10,
+      "elapsedMS": 81,
+      "calls": 255,
+      "cache": {
+        "hits": 0,
+        "misses": 0,
+        "size": 0,
+        "limit": 1024
+      },
+      "residualEvaluations": 39,
+      "checksum": 185250.80795003366,
+      "seedID": "p32.65314902038559-liquid-z0.1"
+    },
+    {
+      "n": 9,
+      "region": "liquid",
+      "round": 2,
+      "method": "cached-state8",
+      "repeats": 10,
+      "elapsedMS": 28,
+      "calls": 255,
+      "cache": {
+        "hits": 170,
+        "misses": 85,
+        "size": 85,
+        "limit": 1024
+      },
+      "residualEvaluations": 39,
+      "checksum": 185250.80795003366,
+      "seedID": "p32.65314902038559-liquid-z0.1"
+    },
+    {
+      "n": 9,
+      "region": "liquid",
+      "round": 2,
+      "method": "table",
+      "repeats": 10,
+      "elapsedMS": 45,
+      "calls": 255,
+      "cache": {
+        "hits": 0,
+        "misses": 0,
+        "size": 0,
+        "limit": 1024
+      },
+      "residualEvaluations": 39,
+      "checksum": 185249.98496681525,
+      "seedID": "p32.65314902038559-liquid-z0.1"
+    },
+    {
+      "n": 9,
+      "region": "vapor",
+      "round": 0,
+      "method": "state8",
+      "repeats": 10,
+      "elapsedMS": 115,
+      "calls": 255,
+      "cache": {
+        "hits": 0,
+        "misses": 0,
+        "size": 0,
+        "limit": 1024
+      },
+      "residualEvaluations": 39,
+      "checksum": 895.6470873868145,
+      "seedID": "p3.5-vapor-z25.0"
+    },
+    {
+      "n": 9,
+      "region": "vapor",
+      "round": 0,
+      "method": "cached-state8",
+      "repeats": 10,
+      "elapsedMS": 35,
+      "calls": 255,
+      "cache": {
+        "hits": 170,
+        "misses": 85,
+        "size": 85,
+        "limit": 1024
+      },
+      "residualEvaluations": 39,
+      "checksum": 895.6470873868145,
+      "seedID": "p3.5-vapor-z25.0"
+    },
+    {
+      "n": 9,
+      "region": "vapor",
+      "round": 0,
+      "method": "table",
+      "repeats": 10,
+      "elapsedMS": 31,
+      "calls": 255,
+      "cache": {
+        "hits": 0,
+        "misses": 0,
+        "size": 0,
+        "limit": 1024
+      },
+      "residualEvaluations": 39,
+      "checksum": 895.6544467845963,
+      "seedID": "p3.5-vapor-z25.0"
+    },
+    {
+      "n": 9,
+      "region": "vapor",
+      "round": 1,
+      "method": "table",
+      "repeats": 10,
+      "elapsedMS": 25,
+      "calls": 255,
+      "cache": {
+        "hits": 0,
+        "misses": 0,
+        "size": 0,
+        "limit": 1024
+      },
+      "residualEvaluations": 39,
+      "checksum": 895.6544467845963,
+      "seedID": "p3.5-vapor-z25.0"
+    },
+    {
+      "n": 9,
+      "region": "vapor",
+      "round": 1,
+      "method": "cached-state8",
+      "repeats": 10,
+      "elapsedMS": 50,
+      "calls": 255,
+      "cache": {
+        "hits": 170,
+        "misses": 85,
+        "size": 85,
+        "limit": 1024
+      },
+      "residualEvaluations": 39,
+      "checksum": 895.6470873868145,
+      "seedID": "p3.5-vapor-z25.0"
+    },
+    {
+      "n": 9,
+      "region": "vapor",
+      "round": 1,
+      "method": "state8",
+      "repeats": 10,
+      "elapsedMS": 138,
+      "calls": 255,
+      "cache": {
+        "hits": 0,
+        "misses": 0,
+        "size": 0,
+        "limit": 1024
+      },
+      "residualEvaluations": 39,
+      "checksum": 895.6470873868145,
+      "seedID": "p3.5-vapor-z25.0"
+    },
+    {
+      "n": 9,
+      "region": "vapor",
+      "round": 2,
+      "method": "state8",
+      "repeats": 10,
+      "elapsedMS": 126,
+      "calls": 255,
+      "cache": {
+        "hits": 0,
+        "misses": 0,
+        "size": 0,
+        "limit": 1024
+      },
+      "residualEvaluations": 39,
+      "checksum": 895.6470873868145,
+      "seedID": "p3.5-vapor-z25.0"
+    },
+    {
+      "n": 9,
+      "region": "vapor",
+      "round": 2,
+      "method": "cached-state8",
+      "repeats": 10,
+      "elapsedMS": 37,
+      "calls": 255,
+      "cache": {
+        "hits": 170,
+        "misses": 85,
+        "size": 85,
+        "limit": 1024
+      },
+      "residualEvaluations": 39,
+      "checksum": 895.6470873868145,
+      "seedID": "p3.5-vapor-z25.0"
+    },
+    {
+      "n": 9,
+      "region": "vapor",
+      "round": 2,
+      "method": "table",
+      "repeats": 10,
+      "elapsedMS": 19,
+      "calls": 255,
+      "cache": {
+        "hits": 0,
+        "misses": 0,
+        "size": 0,
+        "limit": 1024
+      },
+      "residualEvaluations": 39,
+      "checksum": 895.6544467845963,
+      "seedID": "p3.5-vapor-z25.0"
+    },
+    {
+      "n": 9,
+      "region": "two-phase",
+      "round": 0,
+      "method": "state8",
+      "repeats": 10,
+      "elapsedMS": 19,
+      "calls": 255,
+      "cache": {
+        "hits": 0,
+        "misses": 0,
+        "size": 0,
+        "limit": 1024
+      },
+      "residualEvaluations": 39,
+      "checksum": 4913.790106121441,
+      "seedID": "p3.5-Q0.2"
+    },
+    {
+      "n": 9,
+      "region": "two-phase",
+      "round": 0,
+      "method": "cached-state8",
+      "repeats": 10,
+      "elapsedMS": 9,
+      "calls": 255,
+      "cache": {
+        "hits": 179,
+        "misses": 76,
+        "size": 76,
+        "limit": 1024
+      },
+      "residualEvaluations": 39,
+      "checksum": 4913.790106121441,
+      "seedID": "p3.5-Q0.2"
+    },
+    {
+      "n": 9,
+      "region": "two-phase",
+      "round": 0,
+      "method": "table",
+      "repeats": 10,
+      "elapsedMS": 1,
+      "calls": 255,
+      "cache": {
+        "hits": 0,
+        "misses": 0,
+        "size": 0,
+        "limit": 1024
+      },
+      "residualEvaluations": 39,
+      "checksum": 4913.799392492359,
+      "seedID": "p3.5-Q0.2"
+    },
+    {
+      "n": 9,
+      "region": "two-phase",
+      "round": 1,
+      "method": "table",
+      "repeats": 10,
+      "elapsedMS": 1,
+      "calls": 255,
+      "cache": {
+        "hits": 0,
+        "misses": 0,
+        "size": 0,
+        "limit": 1024
+      },
+      "residualEvaluations": 39,
+      "checksum": 4913.799392492359,
+      "seedID": "p3.5-Q0.2"
+    },
+    {
+      "n": 9,
+      "region": "two-phase",
+      "round": 1,
+      "method": "cached-state8",
+      "repeats": 10,
+      "elapsedMS": 8,
+      "calls": 255,
+      "cache": {
+        "hits": 179,
+        "misses": 76,
+        "size": 76,
+        "limit": 1024
+      },
+      "residualEvaluations": 39,
+      "checksum": 4913.790106121441,
+      "seedID": "p3.5-Q0.2"
+    },
+    {
+      "n": 9,
+      "region": "two-phase",
+      "round": 1,
+      "method": "state8",
+      "repeats": 10,
+      "elapsedMS": 25,
+      "calls": 255,
+      "cache": {
+        "hits": 0,
+        "misses": 0,
+        "size": 0,
+        "limit": 1024
+      },
+      "residualEvaluations": 39,
+      "checksum": 4913.790106121441,
+      "seedID": "p3.5-Q0.2"
+    },
+    {
+      "n": 9,
+      "region": "two-phase",
+      "round": 2,
+      "method": "state8",
+      "repeats": 10,
+      "elapsedMS": 21,
+      "calls": 255,
+      "cache": {
+        "hits": 0,
+        "misses": 0,
+        "size": 0,
+        "limit": 1024
+      },
+      "residualEvaluations": 39,
+      "checksum": 4913.790106121441,
+      "seedID": "p3.5-Q0.2"
+    },
+    {
+      "n": 9,
+      "region": "two-phase",
+      "round": 2,
+      "method": "cached-state8",
+      "repeats": 10,
+      "elapsedMS": 13,
+      "calls": 255,
+      "cache": {
+        "hits": 179,
+        "misses": 76,
+        "size": 76,
+        "limit": 1024
+      },
+      "residualEvaluations": 39,
+      "checksum": 4913.790106121441,
+      "seedID": "p3.5-Q0.2"
+    },
+    {
+      "n": 9,
+      "region": "two-phase",
+      "round": 2,
+      "method": "table",
+      "repeats": 10,
+      "elapsedMS": 2,
+      "calls": 255,
+      "cache": {
+        "hits": 0,
+        "misses": 0,
+        "size": 0,
+        "limit": 1024
+      },
+      "residualEvaluations": 39,
+      "checksum": 4913.799392492359,
+      "seedID": "p3.5-Q0.2"
+    }
+  ],
+  "meaning": "Interior liquid 0.1 K subcooling, vapor 25 K superheat, Q=0.2; independent boundary PH pairs; original stage cache represented; 10 iteration patterns per timing round. No coupled run."
+}

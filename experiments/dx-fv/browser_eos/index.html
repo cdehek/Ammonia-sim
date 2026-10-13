@@ -1,0 +1,19 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ammonia EOS browser research</title>
+<style>body{font:16px system-ui;max-width:850px;margin:3rem auto;padding:0 1rem;background:#f3f5f7;color:#152d3b}button{padding:.8rem 1.2rem;margin:.5rem .5rem .5rem 0}pre{white-space:pre-wrap;overflow-wrap:anywhere;background:white;padding:1rem;border:1px solid #ccd7df}small{display:block}</style>
+<h1>Ammonia EOS browser research</h1><p>Experimental feasibility prototype. No property engine migration or coupled simulation qualification.</p>
+<p>Official CoolProp 8.0.0 runs locally in a Web Worker. No thermodynamic data is sent to a server.</p>
+<button id="run">Run local historical inventory check</button><button id="offline">Prepare this research page for offline use</button>
+<small>First startup downloads the bundled EOS assets. Offline storage can be removed by your browser. This page does not measure or certify an iPad unless run on an actual iPad.</small>
+<pre id="result">Ready. Use an HTTP(S) server; opening the HTML as a file is unsupported.</pre>
+<script type="module">
+import {loadEOS,exactCache} from './eos.mjs';
+window.lab={loadEOS,exactCache};
+const result=document.querySelector('#result');
+document.querySelector('#run').onclick=async()=>{
+ const worker=new Worker('./worker.mjs',{type:'module'});let next=0,pending=new Map();worker.onmessage=({data})=>{const q=pending.get(data.id);pending.delete(data.id);data.error?q.reject(Error(data.error)):q.resolve(data.result)};
+ const call=data=>new Promise((resolve,reject)=>{const id=++next;pending.set(id,{resolve,reject});worker.postMessage({id,...data})});
+ try{result.textContent='Loading local EOS…';const start=performance.now();const init=await call({command:'init',version:'8.0.0'});const r=await call({command:'batch',requests:[{mode:'DU',args:[708.6710262223568,94480.59153610271]}]});result.textContent=JSON.stringify({browser:navigator.userAgent,elapsedMS:performance.now()-start,init,recovery:r},null,2);}catch(e){result.textContent='Failed: '+e.message;}finally{worker.terminate();}
+};
+document.querySelector('#offline').onclick=async()=>{try{await navigator.serviceWorker.register('./sw.js',{scope:'./'});await navigator.serviceWorker.ready;result.textContent='Research assets cached. Reload once while online, then this research page can open offline while the cache is retained.';}catch(e){result.textContent='Offline preparation failed: '+e.message;}};
+</script></html>

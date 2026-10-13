@@ -1,0 +1,76 @@
+{
+  "browser": "chromium",
+  "version": "151.0.7922.34",
+  "environment": {
+    "node": "v24.19.0",
+    "playwright": "1.62.1",
+    "platform": "linux",
+    "arch": "x64",
+    "cpu": "AMD EPYC 9V74 80-Core Processor",
+    "logicalCPUs": 3,
+    "totalRAMBytes": 10452496384,
+    "testedOnPhysicalIPad": false,
+    "noCoupledRuns": true
+  },
+  "mimeFallback": {
+    "init": {
+      "totalMS": 2028.3999999999069,
+      "importMS": 5.699999999953434,
+      "fetchMS": 28.199999999953434,
+      "compileInstantiateMS": 13.300000000046566,
+      "runtimeMS": 52.4000000001397,
+      "firstFactoryMS": 1942.0999999998603,
+      "initialLinearMemoryBytes": 22544384,
+      "readyLinearMemoryBytes": 56360960,
+      "wasmBytes": 9196512,
+      "mime": "application/octet-stream",
+      "streaming": false,
+      "logs": []
+    },
+    "state": {
+      "p": 30174.790361846546,
+      "T": 217.2629228853553,
+      "h": 94523.17094071119,
+      "s": 458.16706902202463,
+      "rho": 708.6710262223568,
+      "u": 94480.59153609988,
+      "Q": 10000
+    }
+  },
+  "missingAssetError": "WASM asset unavailable: HTTP 404",
+  "serviceWorkerScope": "http://127.0.0.1:36201/Ammonia-sim/experiments/dx-fv/browser_eos/",
+  "cachedURLs": [
+    "/Ammonia-sim/experiments/dx-fv/browser_eos/",
+    "/Ammonia-sim/experiments/dx-fv/browser_eos/index.html",
+    "/Ammonia-sim/experiments/dx-fv/browser_eos/eos.mjs",
+    "/Ammonia-sim/experiments/dx-fv/browser_eos/worker.mjs",
+    "/Ammonia-sim/experiments/dx-fv/browser_eos/vendor/8.0.0/coolprop.js",
+    "/Ammonia-sim/experiments/dx-fv/browser_eos/vendor/8.0.0/coolprop.wasm"
+  ],
+  "offline": {
+    "init": {
+      "totalMS": 1937.3000000000466,
+      "importMS": 4.899999999906868,
+      "fetchMS": 24.4000000001397,
+      "compileInstantiateMS": 19,
+      "runtimeMS": 28.399999999906868,
+      "firstFactoryMS": 1879.6000000000931,
+      "initialLinearMemoryBytes": 22544384,
+      "readyLinearMemoryBytes": 56360960,
+      "wasmBytes": 9196512,
+      "mime": "application/wasm",
+      "streaming": true,
+      "logs": []
+    },
+    "state": {
+      "p": 30174.790361846546,
+      "T": 217.2629228853553,
+      "h": 94523.17094071119,
+      "s": 458.16706902202463,
+      "rho": 708.6710262223568,
+      "u": 94480.59153609988,
+      "Q": 10000
+    },
+    "online": true
+  }
+}

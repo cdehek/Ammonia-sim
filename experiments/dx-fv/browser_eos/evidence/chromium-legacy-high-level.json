@@ -1,0 +1,96 @@
+{
+  "browser": "chromium",
+  "version": "151.0.7922.34",
+  "environment": {
+    "node": "v24.19.0",
+    "playwright": "1.62.1",
+    "platform": "linux",
+    "arch": "x64",
+    "cpu": "AMD EPYC 9V74 80-Core Processor",
+    "logicalCPUs": 3,
+    "totalRAMBytes": 10452496384,
+    "testedOnPhysicalIPad": false,
+    "noCoupledRuns": true
+  },
+  "init": {
+    "totalMS": 1636.1000000000931,
+    "importMS": 8.5,
+    "fetchMS": 21.100000000093132,
+    "compileInstantiateMS": 17.5,
+    "runtimeMS": 65.79999999981374,
+    "firstFactoryMS": 1540.7000000001863,
+    "initialLinearMemoryBytes": 21233664,
+    "readyLinearMemoryBytes": 97910784,
+    "wasmBytes": 6967191,
+    "mime": "application/wasm",
+    "streaming": true,
+    "logs": []
+  },
+  "timings": [
+    {
+      "group": "PH-liquid",
+      "round": 0,
+      "calls": 17,
+      "elapsedMS": 156.39999999990687,
+      "checksum": 11002.015021466188
+    },
+    {
+      "group": "PH-liquid",
+      "round": 1,
+      "calls": 19,
+      "elapsedMS": 156.8000000002794,
+      "checksum": 12296.369729873975
+    },
+    {
+      "group": "PH-liquid",
+      "round": 2,
+      "calls": 21,
+      "elapsedMS": 151.8000000002794,
+      "checksum": 13590.724438281763
+    },
+    {
+      "group": "DU-liquid",
+      "round": 0,
+      "calls": 43,
+      "elapsedMS": 150.60000000009313,
+      "checksum": 30472.854127561342
+    },
+    {
+      "group": "DU-liquid",
+      "round": 1,
+      "calls": 48,
+      "elapsedMS": 152.5,
+      "checksum": 34016.20925867312
+    },
+    {
+      "group": "DU-liquid",
+      "round": 2,
+      "calls": 53,
+      "elapsedMS": 150.39999999990687,
+      "checksum": 37559.56438978491
+    },
+    {
+      "group": "SAT",
+      "round": 0,
+      "calls": 20,
+      "elapsedMS": 151,
+      "checksum": 12916.696415969065
+    },
+    {
+      "group": "SAT",
+      "round": 1,
+      "calls": 20,
+      "elapsedMS": 155.3000000002794,
+      "checksum": 12916.696415969065
+    },
+    {
+      "group": "SAT",
+      "round": 2,
+      "calls": 20,
+      "elapsedMS": 153.89999999990687,
+      "checksum": 12916.696415969065
+    }
+  ],
+  "linearMemoryFinal": 97910784,
+  "scope": "Official 7.2.0 scalar PropsSI fallback, seven result fields; selected historical/representative inputs. No AbstractState binding enhancement built."
+}

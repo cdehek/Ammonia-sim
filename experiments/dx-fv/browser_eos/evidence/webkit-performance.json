@@ -1,0 +1,1917 @@
+{
+  "browser": "webkit",
+  "version": "26.5",
+  "environment": {
+    "node": "v24.19.0",
+    "playwright": "1.62.1",
+    "platform": "linux",
+    "arch": "x64",
+    "cpu": "AMD EPYC 9V74 80-Core Processor",
+    "logicalCPUs": 3,
+    "totalRAMBytes": 10452496384,
+    "testedOnPhysicalIPad": false,
+    "noCoupledRuns": true
+  },
+  "baselineProcessMemory": {
+    "processes": [
+      {
+        "pid": 1340,
+        "ppid": 1212,
+        "rssKiB": 101544
+      },
+      {
+        "pid": 1494,
+        "ppid": 1340,
+        "rssKiB": 55716
+      },
+      {
+        "pid": 1498,
+        "ppid": 1340,
+        "rssKiB": 212412
+      }
+    ],
+    "summedRSSKiB": 369672,
+    "caution": "Summed process RSS double-counts shared pages; not exclusive memory or iPad usage."
+  },
+  "init": {
+    "totalMS": 2292,
+    "importMS": 24,
+    "fetchMS": 62,
+    "compileInstantiateMS": 36,
+    "runtimeMS": 70,
+    "firstFactoryMS": 2136,
+    "initialLinearMemoryBytes": 22544384,
+    "readyLinearMemoryBytes": 56360960,
+    "wasmBytes": 9196512,
+    "mime": "application/wasm",
+    "streaming": true,
+    "logs": []
+  },
+  "timings": [
+    {
+      "group": "PH-liquid",
+      "method": "state8",
+      "round": 0,
+      "calls": 840,
+      "failures": 0,
+      "elapsedMS": 121,
+      "checksum": 518718.95438284735
+    },
+    {
+      "group": "PH-liquid",
+      "method": "high-level8",
+      "round": 0,
+      "calls": 48,
+      "failures": 0,
+      "elapsedMS": 123,
+      "checksum": 29641.083107591177
+    },
+    {
+      "group": "PH-liquid",
+      "method": "table",
+      "round": 0,
+      "calls": 9672,
+      "failures": 0,
+      "elapsedMS": 120,
+      "checksum": 5972673.2392889075
+    },
+    {
+      "group": "PH-liquid",
+      "method": "table",
+      "round": 1,
+      "calls": 10728,
+      "failures": 0,
+      "elapsedMS": 120,
+      "checksum": 6624776.520997871
+    },
+    {
+      "group": "PH-liquid",
+      "method": "high-level8",
+      "round": 1,
+      "calls": 60,
+      "failures": 0,
+      "elapsedMS": 126,
+      "checksum": 37051.35388448897
+    },
+    {
+      "group": "PH-liquid",
+      "method": "state8",
+      "round": 1,
+      "calls": 1824,
+      "failures": 0,
+      "elapsedMS": 120,
+      "checksum": 1126361.15808847
+    },
+    {
+      "group": "PH-liquid",
+      "method": "state8",
+      "round": 2,
+      "calls": 1260,
+      "failures": 0,
+      "elapsedMS": 121,
+      "checksum": 778078.4315742739
+    },
+    {
+      "group": "PH-liquid",
+      "method": "high-level8",
+      "round": 2,
+      "calls": 60,
+      "failures": 0,
+      "elapsedMS": 137,
+      "checksum": 37051.35388448897
+    },
+    {
+      "group": "PH-liquid",
+      "method": "table",
+      "round": 2,
+      "calls": 11040,
+      "failures": 0,
+      "elapsedMS": 120,
+      "checksum": 6817443.39968461
+    },
+    {
+      "group": "DU-liquid",
+      "method": "state8",
+      "round": 0,
+      "calls": 5328,
+      "failures": 0,
+      "elapsedMS": 120,
+      "checksum": 3290160.2249434586
+    },
+    {
+      "group": "DU-liquid",
+      "method": "high-level8",
+      "round": 0,
+      "calls": 72,
+      "failures": 0,
+      "elapsedMS": 134,
+      "checksum": 44461.62466139896
+    },
+    {
+      "group": "DU-liquid",
+      "method": "table",
+      "round": 0,
+      "calls": 840,
+      "failures": 0,
+      "elapsedMS": 120,
+      "checksum": 518718.9543805859
+    },
+    {
+      "group": "DU-liquid",
+      "method": "table",
+      "round": 1,
+      "calls": 816,
+      "failures": 0,
+      "elapsedMS": 120,
+      "checksum": 503898.41282685497
+    },
+    {
+      "group": "DU-liquid",
+      "method": "high-level8",
+      "round": 1,
+      "calls": 60,
+      "failures": 0,
+      "elapsedMS": 122,
+      "checksum": 37051.35388449913
+    },
+    {
+      "group": "DU-liquid",
+      "method": "state8",
+      "round": 1,
+      "calls": 5520,
+      "failures": 0,
+      "elapsedMS": 120,
+      "checksum": 3408724.5573738585
+    },
+    {
+      "group": "DU-liquid",
+      "method": "state8",
+      "round": 2,
+      "calls": 5736,
+      "failures": 0,
+      "elapsedMS": 120,
+      "checksum": 3542109.4313580585
+    },
+    {
+      "group": "DU-liquid",
+      "method": "high-level8",
+      "round": 2,
+      "calls": 72,
+      "failures": 0,
+      "elapsedMS": 126,
+      "checksum": 44461.62466139896
+    },
+    {
+      "group": "DU-liquid",
+      "method": "table",
+      "round": 2,
+      "calls": 996,
+      "failures": 0,
+      "elapsedMS": 121,
+      "checksum": 615052.4744798378
+    },
+    {
+      "group": "PT-liquid",
+      "method": "state8",
+      "round": 0,
+      "calls": 12324,
+      "failures": 0,
+      "elapsedMS": 121,
+      "checksum": 7610348.0878731
+    },
+    {
+      "group": "PT-liquid",
+      "method": "high-level8",
+      "round": 0,
+      "calls": 72,
+      "failures": 0,
+      "elapsedMS": 133,
+      "checksum": 44461.62466138122
+    },
+    {
+      "group": "PT-liquid",
+      "method": "table",
+      "round": 0,
+      "calls": 277920,
+      "failures": 0,
+      "elapsedMS": 120,
+      "checksum": 171621662.34454978
+    },
+    {
+      "group": "PT-liquid",
+      "method": "table",
+      "round": 1,
+      "calls": 298776,
+      "failures": 0,
+      "elapsedMS": 120,
+      "checksum": 184500697.28218043
+    },
+    {
+      "group": "PT-liquid",
+      "method": "high-level8",
+      "round": 1,
+      "calls": 72,
+      "failures": 0,
+      "elapsedMS": 122,
+      "checksum": 44461.62466138122
+    },
+    {
+      "group": "PT-liquid",
+      "method": "state8",
+      "round": 1,
+      "calls": 12888,
+      "failures": 0,
+      "elapsedMS": 120,
+      "checksum": 7958630.814387247
+    },
+    {
+      "group": "PT-liquid",
+      "method": "state8",
+      "round": 2,
+      "calls": 12000,
+      "failures": 0,
+      "elapsedMS": 120,
+      "checksum": 7410270.776896888
+    },
+    {
+      "group": "PT-liquid",
+      "method": "high-level8",
+      "round": 2,
+      "calls": 84,
+      "failures": 0,
+      "elapsedMS": 135,
+      "checksum": 51871.89543827809
+    },
+    {
+      "group": "PT-liquid",
+      "method": "table",
+      "round": 2,
+      "calls": 314772,
+      "failures": 0,
+      "elapsedMS": 120,
+      "checksum": 194378576.2073022
+    },
+    {
+      "group": "PH-vapor",
+      "method": "state8",
+      "round": 0,
+      "calls": 1500,
+      "failures": 0,
+      "elapsedMS": 120,
+      "checksum": 11104.588206848826
+    },
+    {
+      "group": "PH-vapor",
+      "method": "high-level8",
+      "round": 0,
+      "calls": 60,
+      "failures": 0,
+      "elapsedMS": 127,
+      "checksum": 444.1835282739559
+    },
+    {
+      "group": "PH-vapor",
+      "method": "table",
+      "round": 0,
+      "calls": 10464,
+      "failures": 0,
+      "elapsedMS": 120,
+      "checksum": 77466.46914208103
+    },
+    {
+      "group": "PH-vapor",
+      "method": "table",
+      "round": 1,
+      "calls": 12120,
+      "failures": 0,
+      "elapsedMS": 120,
+      "checksum": 89726.07090997857
+    },
+    {
+      "group": "PH-vapor",
+      "method": "high-level8",
+      "round": 1,
+      "calls": 72,
+      "failures": 0,
+      "elapsedMS": 142,
+      "checksum": 533.0202339287471
+    },
+    {
+      "group": "PH-vapor",
+      "method": "state8",
+      "round": 1,
+      "calls": 1536,
+      "failures": 0,
+      "elapsedMS": 120,
+      "checksum": 11371.098323813203
+    },
+    {
+      "group": "PH-vapor",
+      "method": "state8",
+      "round": 2,
+      "calls": 1500,
+      "failures": 0,
+      "elapsedMS": 120,
+      "checksum": 11104.588206848826
+    },
+    {
+      "group": "PH-vapor",
+      "method": "high-level8",
+      "round": 2,
+      "calls": 60,
+      "failures": 0,
+      "elapsedMS": 129,
+      "checksum": 444.1835282739559
+    },
+    {
+      "group": "PH-vapor",
+      "method": "table",
+      "round": 2,
+      "calls": 12132,
+      "failures": 0,
+      "elapsedMS": 120,
+      "checksum": 89814.90860394885
+    },
+    {
+      "group": "DU-vapor",
+      "method": "state8",
+      "round": 0,
+      "calls": 5520,
+      "failures": 0,
+      "elapsedMS": 120,
+      "checksum": 40864.884615090494
+    },
+    {
+      "group": "DU-vapor",
+      "method": "high-level8",
+      "round": 0,
+      "calls": 72,
+      "failures": 0,
+      "elapsedMS": 120,
+      "checksum": 533.0202341098566
+    },
+    {
+      "group": "DU-vapor",
+      "method": "table",
+      "round": 0,
+      "calls": 732,
+      "failures": 122,
+      "elapsedMS": 121,
+      "checksum": 5147.759899539328
+    },
+    {
+      "group": "DU-vapor",
+      "method": "table",
+      "round": 1,
+      "calls": 816,
+      "failures": 136,
+      "elapsedMS": 120,
+      "checksum": 5738.4864453881
+    },
+    {
+      "group": "DU-vapor",
+      "method": "high-level8",
+      "round": 1,
+      "calls": 72,
+      "failures": 0,
+      "elapsedMS": 123,
+      "checksum": 533.0202341098566
+    },
+    {
+      "group": "DU-vapor",
+      "method": "state8",
+      "round": 1,
+      "calls": 5868,
+      "failures": 0,
+      "elapsedMS": 120,
+      "checksum": 43441.14907995497
+    },
+    {
+      "group": "DU-vapor",
+      "method": "state8",
+      "round": 2,
+      "calls": 5484,
+      "failures": 0,
+      "elapsedMS": 120,
+      "checksum": 40598.37449803555
+    },
+    {
+      "group": "DU-vapor",
+      "method": "high-level8",
+      "round": 2,
+      "calls": 72,
+      "failures": 0,
+      "elapsedMS": 120,
+      "checksum": 533.0202341098566
+    },
+    {
+      "group": "DU-vapor",
+      "method": "table",
+      "round": 2,
+      "calls": 816,
+      "failures": 136,
+      "elapsedMS": 120,
+      "checksum": 5738.4864453881
+    },
+    {
+      "group": "PT-vapor",
+      "method": "state8",
+      "round": 0,
+      "calls": 10116,
+      "failures": 0,
+      "elapsedMS": 120,
+      "checksum": 74889.34286701727
+    },
+    {
+      "group": "PT-vapor",
+      "method": "high-level8",
+      "round": 0,
+      "calls": 72,
+      "failures": 0,
+      "elapsedMS": 142,
+      "checksum": 533.0202339289676
+    },
+    {
+      "group": "PT-vapor",
+      "method": "table",
+      "round": 0,
+      "calls": 197916,
+      "failures": 0,
+      "elapsedMS": 120,
+      "checksum": 1465245.2781113153
+    },
+    {
+      "group": "PT-vapor",
+      "method": "table",
+      "round": 1,
+      "calls": 257484,
+      "failures": 0,
+      "elapsedMS": 120,
+      "checksum": 1906249.1925307186
+    },
+    {
+      "group": "PT-vapor",
+      "method": "high-level8",
+      "round": 1,
+      "calls": 72,
+      "failures": 0,
+      "elapsedMS": 130,
+      "checksum": 533.0202339289676
+    },
+    {
+      "group": "PT-vapor",
+      "method": "state8",
+      "round": 1,
+      "calls": 9240,
+      "failures": 0,
+      "elapsedMS": 120,
+      "checksum": 68404.26335421571
+    },
+    {
+      "group": "PT-vapor",
+      "method": "state8",
+      "round": 2,
+      "calls": 9864,
+      "failures": 0,
+      "elapsedMS": 120,
+      "checksum": 73023.77204826614
+    },
+    {
+      "group": "PT-vapor",
+      "method": "high-level8",
+      "round": 2,
+      "calls": 72,
+      "failures": 0,
+      "elapsedMS": 123,
+      "checksum": 533.0202339289676
+    },
+    {
+      "group": "PT-vapor",
+      "method": "table",
+      "round": 2,
+      "calls": 306204,
+      "failures": 0,
+      "elapsedMS": 120,
+      "checksum": 2266941.3546088873
+    },
+    {
+      "group": "PH-two-phase",
+      "method": "state8",
+      "round": 0,
+      "calls": 19872,
+      "failures": 0,
+      "elapsedMS": 120,
+      "checksum": 3272237.917449406
+    },
+    {
+      "group": "PH-two-phase",
+      "method": "high-level8",
+      "round": 0,
+      "calls": 84,
+      "failures": 0,
+      "elapsedMS": 135,
+      "checksum": 13831.923564097144
+    },
+    {
+      "group": "PH-two-phase",
+      "method": "table",
+      "round": 0,
+      "calls": 27384,
+      "failures": 0,
+      "elapsedMS": 120,
+      "checksum": 4509213.589099715
+    },
+    {
+      "group": "PH-two-phase",
+      "method": "table",
+      "round": 1,
+      "calls": 28620,
+      "failures": 0,
+      "elapsedMS": 120,
+      "checksum": 4712740.758108285
+    },
+    {
+      "group": "PH-two-phase",
+      "method": "high-level8",
+      "round": 1,
+      "calls": 84,
+      "failures": 0,
+      "elapsedMS": 135,
+      "checksum": 13831.923564097144
+    },
+    {
+      "group": "PH-two-phase",
+      "method": "state8",
+      "round": 1,
+      "calls": 22296,
+      "failures": 0,
+      "elapsedMS": 120,
+      "checksum": 3671387.711727685
+    },
+    {
+      "group": "PH-two-phase",
+      "method": "state8",
+      "round": 2,
+      "calls": 22380,
+      "failures": 0,
+      "elapsedMS": 120,
+      "checksum": 3685219.6352917836
+    },
+    {
+      "group": "PH-two-phase",
+      "method": "high-level8",
+      "round": 2,
+      "calls": 84,
+      "failures": 0,
+      "elapsedMS": 136,
+      "checksum": 13831.923564097144
+    },
+    {
+      "group": "PH-two-phase",
+      "method": "table",
+      "round": 2,
+      "calls": 28488,
+      "failures": 0,
+      "elapsedMS": 120,
+      "checksum": 4691004.846854943
+    },
+    {
+      "group": "DU-two-phase",
+      "method": "state8",
+      "round": 0,
+      "calls": 4632,
+      "failures": 0,
+      "elapsedMS": 120,
+      "checksum": 762731.7851059269
+    },
+    {
+      "group": "DU-two-phase",
+      "method": "high-level8",
+      "round": 0,
+      "calls": 72,
+      "failures": 0,
+      "elapsedMS": 130,
+      "checksum": 11855.934483512117
+    },
+    {
+      "group": "DU-two-phase",
+      "method": "table",
+      "round": 0,
+      "calls": 2040,
+      "failures": 0,
+      "elapsedMS": 120,
+      "checksum": 335918.14370051277
+    },
+    {
+      "group": "DU-two-phase",
+      "method": "table",
+      "round": 1,
+      "calls": 1908,
+      "failures": 0,
+      "elapsedMS": 120,
+      "checksum": 314182.26381400845
+    },
+    {
+      "group": "DU-two-phase",
+      "method": "high-level8",
+      "round": 1,
+      "calls": 72,
+      "failures": 0,
+      "elapsedMS": 123,
+      "checksum": 11855.934483512117
+    },
+    {
+      "group": "DU-two-phase",
+      "method": "state8",
+      "round": 1,
+      "calls": 5052,
+      "failures": 0,
+      "elapsedMS": 120,
+      "checksum": 831891.4029264086
+    },
+    {
+      "group": "DU-two-phase",
+      "method": "state8",
+      "round": 2,
+      "calls": 4968,
+      "failures": 0,
+      "elapsedMS": 120,
+      "checksum": 818059.4793623122
+    },
+    {
+      "group": "DU-two-phase",
+      "method": "high-level8",
+      "round": 2,
+      "calls": 72,
+      "failures": 0,
+      "elapsedMS": 125,
+      "checksum": 11855.934483512117
+    },
+    {
+      "group": "DU-two-phase",
+      "method": "table",
+      "round": 2,
+      "calls": 2076,
+      "failures": 0,
+      "elapsedMS": 120,
+      "checksum": 341846.1109422867
+    },
+    {
+      "group": "SAT",
+      "method": "state8",
+      "round": 0,
+      "calls": 20979,
+      "failures": 0,
+      "elapsedMS": 120,
+      "checksum": 12495916.554929527
+    },
+    {
+      "group": "SAT",
+      "method": "high-level8",
+      "round": 0,
+      "calls": 78,
+      "failures": 0,
+      "elapsedMS": 123,
+      "checksum": 46459.864211094064
+    },
+    {
+      "group": "SAT",
+      "method": "table",
+      "round": 0,
+      "calls": 678255,
+      "failures": 0,
+      "elapsedMS": 120,
+      "checksum": 403994328.2970514
+    },
+    {
+      "group": "SAT",
+      "method": "table",
+      "round": 1,
+      "calls": 759216,
+      "failures": 0,
+      "elapsedMS": 120,
+      "checksum": 452217761.6864806
+    },
+    {
+      "group": "SAT",
+      "method": "high-level8",
+      "round": 1,
+      "calls": 75,
+      "failures": 0,
+      "elapsedMS": 120,
+      "checksum": 44672.946356821216
+    },
+    {
+      "group": "SAT",
+      "method": "state8",
+      "round": 1,
+      "calls": 23487,
+      "failures": 0,
+      "elapsedMS": 120,
+      "checksum": 13989779.881100776
+    },
+    {
+      "group": "SAT",
+      "method": "state8",
+      "round": 2,
+      "calls": 21228,
+      "failures": 0,
+      "elapsedMS": 120,
+      "checksum": 12644230.736834088
+    },
+    {
+      "group": "SAT",
+      "method": "high-level8",
+      "round": 2,
+      "calls": 78,
+      "failures": 0,
+      "elapsedMS": 123,
+      "checksum": 46459.864211094064
+    },
+    {
+      "group": "SAT",
+      "method": "table",
+      "round": 2,
+      "calls": 684663,
+      "failures": 0,
+      "elapsedMS": 120,
+      "checksum": 407811175.43529654
+    }
+  ],
+  "patterns": [
+    {
+      "n": 5,
+      "region": "liquid",
+      "round": 0,
+      "method": "table",
+      "elapsedMS": 3,
+      "calls": 147,
+      "stageHits": 95,
+      "cache": {
+        "hits": 0,
+        "misses": 0,
+        "size": 0,
+        "limit": 1024
+      },
+      "checksum": 60670.561779583026,
+      "residualEvaluations": 23
+    },
+    {
+      "n": 5,
+      "region": "liquid",
+      "round": 0,
+      "method": "state8",
+      "elapsedMS": 5,
+      "calls": 147,
+      "stageHits": 95,
+      "cache": {
+        "hits": 0,
+        "misses": 0,
+        "size": 0,
+        "limit": 1024
+      },
+      "checksum": 60670.71699933429,
+      "residualEvaluations": 23
+    },
+    {
+      "n": 5,
+      "region": "liquid",
+      "round": 0,
+      "method": "cached-state8",
+      "elapsedMS": 2,
+      "calls": 147,
+      "stageHits": 95,
+      "cache": {
+        "hits": 102,
+        "misses": 45,
+        "size": 45,
+        "limit": 1024
+      },
+      "checksum": 60670.71699933429,
+      "residualEvaluations": 23
+    },
+    {
+      "n": 5,
+      "region": "liquid",
+      "round": 1,
+      "method": "table",
+      "elapsedMS": 2,
+      "calls": 147,
+      "stageHits": 95,
+      "cache": {
+        "hits": 0,
+        "misses": 0,
+        "size": 0,
+        "limit": 1024
+      },
+      "checksum": 60670.561779583026,
+      "residualEvaluations": 23
+    },
+    {
+      "n": 5,
+      "region": "liquid",
+      "round": 1,
+      "method": "state8",
+      "elapsedMS": 4,
+      "calls": 147,
+      "stageHits": 95,
+      "cache": {
+        "hits": 0,
+        "misses": 0,
+        "size": 0,
+        "limit": 1024
+      },
+      "checksum": 60670.71699933429,
+      "residualEvaluations": 23
+    },
+    {
+      "n": 5,
+      "region": "liquid",
+      "round": 1,
+      "method": "cached-state8",
+      "elapsedMS": 2,
+      "calls": 147,
+      "stageHits": 95,
+      "cache": {
+        "hits": 102,
+        "misses": 45,
+        "size": 45,
+        "limit": 1024
+      },
+      "checksum": 60670.71699933429,
+      "residualEvaluations": 23
+    },
+    {
+      "n": 5,
+      "region": "liquid",
+      "round": 2,
+      "method": "table",
+      "elapsedMS": 1,
+      "calls": 147,
+      "stageHits": 95,
+      "cache": {
+        "hits": 0,
+        "misses": 0,
+        "size": 0,
+        "limit": 1024
+      },
+      "checksum": 60670.561779583026,
+      "residualEvaluations": 23
+    },
+    {
+      "n": 5,
+      "region": "liquid",
+      "round": 2,
+      "method": "state8",
+      "elapsedMS": 5,
+      "calls": 147,
+      "stageHits": 95,
+      "cache": {
+        "hits": 0,
+        "misses": 0,
+        "size": 0,
+        "limit": 1024
+      },
+      "checksum": 60670.71699933429,
+      "residualEvaluations": 23
+    },
+    {
+      "n": 5,
+      "region": "liquid",
+      "round": 2,
+      "method": "cached-state8",
+      "elapsedMS": 2,
+      "calls": 147,
+      "stageHits": 95,
+      "cache": {
+        "hits": 102,
+        "misses": 45,
+        "size": 45,
+        "limit": 1024
+      },
+      "checksum": 60670.71699933429,
+      "residualEvaluations": 23
+    },
+    {
+      "n": 5,
+      "region": "vapor",
+      "round": 0,
+      "method": "table",
+      "elapsedMS": 1,
+      "calls": 147,
+      "stageHits": 95,
+      "cache": {
+        "hits": 0,
+        "misses": 0,
+        "size": 0,
+        "limit": 1024
+      },
+      "checksum": 327.63958245897004,
+      "residualEvaluations": 23
+    },
+    {
+      "n": 5,
+      "region": "vapor",
+      "round": 0,
+      "method": "state8",
+      "elapsedMS": 6,
+      "calls": 147,
+      "stageHits": 95,
+      "cache": {
+        "hits": 0,
+        "misses": 0,
+        "size": 0,
+        "limit": 1024
+      },
+      "checksum": 327.63951025321853,
+      "residualEvaluations": 23
+    },
+    {
+      "n": 5,
+      "region": "vapor",
+      "round": 0,
+      "method": "cached-state8",
+      "elapsedMS": 1,
+      "calls": 147,
+      "stageHits": 95,
+      "cache": {
+        "hits": 102,
+        "misses": 45,
+        "size": 45,
+        "limit": 1024
+      },
+      "checksum": 327.63951025321853,
+      "residualEvaluations": 23
+    },
+    {
+      "n": 5,
+      "region": "vapor",
+      "round": 1,
+      "method": "table",
+      "elapsedMS": 1,
+      "calls": 147,
+      "stageHits": 95,
+      "cache": {
+        "hits": 0,
+        "misses": 0,
+        "size": 0,
+        "limit": 1024
+      },
+      "checksum": 327.63958245897004,
+      "residualEvaluations": 23
+    },
+    {
+      "n": 5,
+      "region": "vapor",
+      "round": 1,
+      "method": "state8",
+      "elapsedMS": 6,
+      "calls": 147,
+      "stageHits": 95,
+      "cache": {
+        "hits": 0,
+        "misses": 0,
+        "size": 0,
+        "limit": 1024
+      },
+      "checksum": 327.63951025321853,
+      "residualEvaluations": 23
+    },
+    {
+      "n": 5,
+      "region": "vapor",
+      "round": 1,
+      "method": "cached-state8",
+      "elapsedMS": 2,
+      "calls": 147,
+      "stageHits": 95,
+      "cache": {
+        "hits": 102,
+        "misses": 45,
+        "size": 45,
+        "limit": 1024
+      },
+      "checksum": 327.63951025321853,
+      "residualEvaluations": 23
+    },
+    {
+      "n": 5,
+      "region": "vapor",
+      "round": 2,
+      "method": "table",
+      "elapsedMS": 1,
+      "calls": 147,
+      "stageHits": 95,
+      "cache": {
+        "hits": 0,
+        "misses": 0,
+        "size": 0,
+        "limit": 1024
+      },
+      "checksum": 327.63958245897004,
+      "residualEvaluations": 23
+    },
+    {
+      "n": 5,
+      "region": "vapor",
+      "round": 2,
+      "method": "state8",
+      "elapsedMS": 6,
+      "calls": 147,
+      "stageHits": 95,
+      "cache": {
+        "hits": 0,
+        "misses": 0,
+        "size": 0,
+        "limit": 1024
+      },
+      "checksum": 327.63951025321853,
+      "residualEvaluations": 23
+    },
+    {
+      "n": 5,
+      "region": "vapor",
+      "round": 2,
+      "method": "cached-state8",
+      "elapsedMS": 2,
+      "calls": 147,
+      "stageHits": 95,
+      "cache": {
+        "hits": 102,
+        "misses": 45,
+        "size": 45,
+        "limit": 1024
+      },
+      "checksum": 327.63951025321853,
+      "residualEvaluations": 23
+    },
+    {
+      "n": 5,
+      "region": "two-phase",
+      "round": 0,
+      "method": "table",
+      "elapsedMS": 1,
+      "calls": 147,
+      "stageHits": 95,
+      "cache": {
+        "hits": 0,
+        "misses": 0,
+        "size": 0,
+        "limit": 1024
+      },
+      "checksum": 74270.92986286122,
+      "residualEvaluations": 23
+    },
+    {
+      "n": 5,
+      "region": "two-phase",
+      "round": 0,
+      "method": "state8",
+      "elapsedMS": 3,
+      "calls": 147,
+      "stageHits": 95,
+      "cache": {
+        "hits": 0,
+        "misses": 0,
+        "size": 0,
+        "limit": 1024
+      },
+      "checksum": 74270.90741729,
+      "residualEvaluations": 23
+    },
+    {
+      "n": 5,
+      "region": "two-phase",
+      "round": 0,
+      "method": "cached-state8",
+      "elapsedMS": 2,
+      "calls": 147,
+      "stageHits": 95,
+      "cache": {
+        "hits": 103,
+        "misses": 44,
+        "size": 44,
+        "limit": 1024
+      },
+      "checksum": 74270.90741729,
+      "residualEvaluations": 23
+    },
+    {
+      "n": 5,
+      "region": "two-phase",
+      "round": 1,
+      "method": "table",
+      "elapsedMS": 1,
+      "calls": 147,
+      "stageHits": 95,
+      "cache": {
+        "hits": 0,
+        "misses": 0,
+        "size": 0,
+        "limit": 1024
+      },
+      "checksum": 74270.92986286122,
+      "residualEvaluations": 23
+    },
+    {
+      "n": 5,
+      "region": "two-phase",
+      "round": 1,
+      "method": "state8",
+      "elapsedMS": 3,
+      "calls": 147,
+      "stageHits": 95,
+      "cache": {
+        "hits": 0,
+        "misses": 0,
+        "size": 0,
+        "limit": 1024
+      },
+      "checksum": 74270.90741729,
+      "residualEvaluations": 23
+    },
+    {
+      "n": 5,
+      "region": "two-phase",
+      "round": 1,
+      "method": "cached-state8",
+      "elapsedMS": 1,
+      "calls": 147,
+      "stageHits": 95,
+      "cache": {
+        "hits": 103,
+        "misses": 44,
+        "size": 44,
+        "limit": 1024
+      },
+      "checksum": 74270.90741729,
+      "residualEvaluations": 23
+    },
+    {
+      "n": 5,
+      "region": "two-phase",
+      "round": 2,
+      "method": "table",
+      "elapsedMS": 1,
+      "calls": 147,
+      "stageHits": 95,
+      "cache": {
+        "hits": 0,
+        "misses": 0,
+        "size": 0,
+        "limit": 1024
+      },
+      "checksum": 74270.92986286122,
+      "residualEvaluations": 23
+    },
+    {
+      "n": 5,
+      "region": "two-phase",
+      "round": 2,
+      "method": "state8",
+      "elapsedMS": 4,
+      "calls": 147,
+      "stageHits": 95,
+      "cache": {
+        "hits": 0,
+        "misses": 0,
+        "size": 0,
+        "limit": 1024
+      },
+      "checksum": 74270.90741729,
+      "residualEvaluations": 23
+    },
+    {
+      "n": 5,
+      "region": "two-phase",
+      "round": 2,
+      "method": "cached-state8",
+      "elapsedMS": 1,
+      "calls": 147,
+      "stageHits": 95,
+      "cache": {
+        "hits": 103,
+        "misses": 44,
+        "size": 44,
+        "limit": 1024
+      },
+      "checksum": 74270.90741729,
+      "residualEvaluations": 23
+    },
+    {
+      "n": 9,
+      "region": "liquid",
+      "round": 0,
+      "method": "table",
+      "elapsedMS": 3,
+      "calls": 255,
+      "stageHits": 315,
+      "cache": {
+        "hits": 0,
+        "misses": 0,
+        "size": 0,
+        "limit": 1024
+      },
+      "checksum": 185176.84644377595,
+      "residualEvaluations": 39
+    },
+    {
+      "n": 9,
+      "region": "liquid",
+      "round": 0,
+      "method": "state8",
+      "elapsedMS": 8,
+      "calls": 255,
+      "stageHits": 315,
+      "cache": {
+        "hits": 0,
+        "misses": 0,
+        "size": 0,
+        "limit": 1024
+      },
+      "checksum": 185177.3197938246,
+      "residualEvaluations": 39
+    },
+    {
+      "n": 9,
+      "region": "liquid",
+      "round": 0,
+      "method": "cached-state8",
+      "elapsedMS": 4,
+      "calls": 255,
+      "stageHits": 315,
+      "cache": {
+        "hits": 174,
+        "misses": 81,
+        "size": 81,
+        "limit": 1024
+      },
+      "checksum": 185177.3197938246,
+      "residualEvaluations": 39
+    },
+    {
+      "n": 9,
+      "region": "liquid",
+      "round": 1,
+      "method": "table",
+      "elapsedMS": 3,
+      "calls": 255,
+      "stageHits": 315,
+      "cache": {
+        "hits": 0,
+        "misses": 0,
+        "size": 0,
+        "limit": 1024
+      },
+      "checksum": 185176.84644377595,
+      "residualEvaluations": 39
+    },
+    {
+      "n": 9,
+      "region": "liquid",
+      "round": 1,
+      "method": "state8",
+      "elapsedMS": 8,
+      "calls": 255,
+      "stageHits": 315,
+      "cache": {
+        "hits": 0,
+        "misses": 0,
+        "size": 0,
+        "limit": 1024
+      },
+      "checksum": 185177.3197938246,
+      "residualEvaluations": 39
+    },
+    {
+      "n": 9,
+      "region": "liquid",
+      "round": 1,
+      "method": "cached-state8",
+      "elapsedMS": 2,
+      "calls": 255,
+      "stageHits": 315,
+      "cache": {
+        "hits": 174,
+        "misses": 81,
+        "size": 81,
+        "limit": 1024
+      },
+      "checksum": 185177.3197938246,
+      "residualEvaluations": 39
+    },
+    {
+      "n": 9,
+      "region": "liquid",
+      "round": 2,
+      "method": "table",
+      "elapsedMS": 4,
+      "calls": 255,
+      "stageHits": 315,
+      "cache": {
+        "hits": 0,
+        "misses": 0,
+        "size": 0,
+        "limit": 1024
+      },
+      "checksum": 185176.84644377595,
+      "residualEvaluations": 39
+    },
+    {
+      "n": 9,
+      "region": "liquid",
+      "round": 2,
+      "method": "state8",
+      "elapsedMS": 7,
+      "calls": 255,
+      "stageHits": 315,
+      "cache": {
+        "hits": 0,
+        "misses": 0,
+        "size": 0,
+        "limit": 1024
+      },
+      "checksum": 185177.3197938246,
+      "residualEvaluations": 39
+    },
+    {
+      "n": 9,
+      "region": "liquid",
+      "round": 2,
+      "method": "cached-state8",
+      "elapsedMS": 2,
+      "calls": 255,
+      "stageHits": 315,
+      "cache": {
+        "hits": 174,
+        "misses": 81,
+        "size": 81,
+        "limit": 1024
+      },
+      "checksum": 185177.3197938246,
+      "residualEvaluations": 39
+    },
+    {
+      "n": 9,
+      "region": "vapor",
+      "round": 0,
+      "method": "table",
+      "elapsedMS": 2,
+      "calls": 255,
+      "stageHits": 315,
+      "cache": {
+        "hits": 0,
+        "misses": 0,
+        "size": 0,
+        "limit": 1024
+      },
+      "checksum": 1000.066386025461,
+      "residualEvaluations": 39
+    },
+    {
+      "n": 9,
+      "region": "vapor",
+      "round": 0,
+      "method": "state8",
+      "elapsedMS": 10,
+      "calls": 255,
+      "stageHits": 315,
+      "cache": {
+        "hits": 0,
+        "misses": 0,
+        "size": 0,
+        "limit": 1024
+      },
+      "checksum": 1000.0661674684233,
+      "residualEvaluations": 39
+    },
+    {
+      "n": 9,
+      "region": "vapor",
+      "round": 0,
+      "method": "cached-state8",
+      "elapsedMS": 3,
+      "calls": 255,
+      "stageHits": 315,
+      "cache": {
+        "hits": 174,
+        "misses": 81,
+        "size": 81,
+        "limit": 1024
+      },
+      "checksum": 1000.0661674684233,
+      "residualEvaluations": 39
+    },
+    {
+      "n": 9,
+      "region": "vapor",
+      "round": 1,
+      "method": "table",
+      "elapsedMS": 1,
+      "calls": 255,
+      "stageHits": 315,
+      "cache": {
+        "hits": 0,
+        "misses": 0,
+        "size": 0,
+        "limit": 1024
+      },
+      "checksum": 1000.066386025461,
+      "residualEvaluations": 39
+    },
+    {
+      "n": 9,
+      "region": "vapor",
+      "round": 1,
+      "method": "state8",
+      "elapsedMS": 10,
+      "calls": 255,
+      "stageHits": 315,
+      "cache": {
+        "hits": 0,
+        "misses": 0,
+        "size": 0,
+        "limit": 1024
+      },
+      "checksum": 1000.0661674684233,
+      "residualEvaluations": 39
+    },
+    {
+      "n": 9,
+      "region": "vapor",
+      "round": 1,
+      "method": "cached-state8",
+      "elapsedMS": 3,
+      "calls": 255,
+      "stageHits": 315,
+      "cache": {
+        "hits": 174,
+        "misses": 81,
+        "size": 81,
+        "limit": 1024
+      },
+      "checksum": 1000.0661674684233,
+      "residualEvaluations": 39
+    },
+    {
+      "n": 9,
+      "region": "vapor",
+      "round": 2,
+      "method": "table",
+      "elapsedMS": 2,
+      "calls": 255,
+      "stageHits": 315,
+      "cache": {
+        "hits": 0,
+        "misses": 0,
+        "size": 0,
+        "limit": 1024
+      },
+      "checksum": 1000.066386025461,
+      "residualEvaluations": 39
+    },
+    {
+      "n": 9,
+      "region": "vapor",
+      "round": 2,
+      "method": "state8",
+      "elapsedMS": 10,
+      "calls": 255,
+      "stageHits": 315,
+      "cache": {
+        "hits": 0,
+        "misses": 0,
+        "size": 0,
+        "limit": 1024
+      },
+      "checksum": 1000.0661674684233,
+      "residualEvaluations": 39
+    },
+    {
+      "n": 9,
+      "region": "vapor",
+      "round": 2,
+      "method": "cached-state8",
+      "elapsedMS": 3,
+      "calls": 255,
+      "stageHits": 315,
+      "cache": {
+        "hits": 174,
+        "misses": 81,
+        "size": 81,
+        "limit": 1024
+      },
+      "checksum": 1000.0661674684233,
+      "residualEvaluations": 39
+    },
+    {
+      "n": 9,
+      "region": "two-phase",
+      "round": 0,
+      "method": "table",
+      "elapsedMS": 2,
+      "calls": 255,
+      "stageHits": 315,
+      "cache": {
+        "hits": 0,
+        "misses": 0,
+        "size": 0,
+        "limit": 1024
+      },
+      "checksum": 226687.59415910963,
+      "residualEvaluations": 39
+    },
+    {
+      "n": 9,
+      "region": "two-phase",
+      "round": 0,
+      "method": "state8",
+      "elapsedMS": 5,
+      "calls": 255,
+      "stageHits": 315,
+      "cache": {
+        "hits": 0,
+        "misses": 0,
+        "size": 0,
+        "limit": 1024
+      },
+      "checksum": 226687.56658658912,
+      "residualEvaluations": 39
+    },
+    {
+      "n": 9,
+      "region": "two-phase",
+      "round": 0,
+      "method": "cached-state8",
+      "elapsedMS": 2,
+      "calls": 255,
+      "stageHits": 315,
+      "cache": {
+        "hits": 175,
+        "misses": 80,
+        "size": 80,
+        "limit": 1024
+      },
+      "checksum": 226687.56658658912,
+      "residualEvaluations": 39
+    },
+    {
+      "n": 9,
+      "region": "two-phase",
+      "round": 1,
+      "method": "table",
+      "elapsedMS": 2,
+      "calls": 255,
+      "stageHits": 315,
+      "cache": {
+        "hits": 0,
+        "misses": 0,
+        "size": 0,
+        "limit": 1024
+      },
+      "checksum": 226687.59415910963,
+      "residualEvaluations": 39
+    },
+    {
+      "n": 9,
+      "region": "two-phase",
+      "round": 1,
+      "method": "state8",
+      "elapsedMS": 6,
+      "calls": 255,
+      "stageHits": 315,
+      "cache": {
+        "hits": 0,
+        "misses": 0,
+        "size": 0,
+        "limit": 1024
+      },
+      "checksum": 226687.56658658912,
+      "residualEvaluations": 39
+    },
+    {
+      "n": 9,
+      "region": "two-phase",
+      "round": 1,
+      "method": "cached-state8",
+      "elapsedMS": 2,
+      "calls": 255,
+      "stageHits": 315,
+      "cache": {
+        "hits": 175,
+        "misses": 80,
+        "size": 80,
+        "limit": 1024
+      },
+      "checksum": 226687.56658658912,
+      "residualEvaluations": 39
+    },
+    {
+      "n": 9,
+      "region": "two-phase",
+      "round": 2,
+      "method": "table",
+      "elapsedMS": 2,
+      "calls": 255,
+      "stageHits": 315,
+      "cache": {
+        "hits": 0,
+        "misses": 0,
+        "size": 0,
+        "limit": 1024
+      },
+      "checksum": 226687.59415910963,
+      "residualEvaluations": 39
+    },
+    {
+      "n": 9,
+      "region": "two-phase",
+      "round": 2,
+      "method": "state8",
+      "elapsedMS": 5,
+      "calls": 255,
+      "stageHits": 315,
+      "cache": {
+        "hits": 0,
+        "misses": 0,
+        "size": 0,
+        "limit": 1024
+      },
+      "checksum": 226687.56658658912,
+      "residualEvaluations": 39
+    },
+    {
+      "n": 9,
+      "region": "two-phase",
+      "round": 2,
+      "method": "cached-state8",
+      "elapsedMS": 3,
+      "calls": 255,
+      "stageHits": 315,
+      "cache": {
+        "hits": 175,
+        "misses": 80,
+        "size": 80,
+        "limit": 1024
+      },
+      "checksum": 226687.56658658912,
+      "residualEvaluations": 39
+    }
+  ],
+  "cacheProof": {
+    "rows": [
+      {
+        "id": "p0.3-liquid-z0.001-PH",
+        "maxDifference": 0
+      },
+      {
+        "id": "p0.3-liquid-z0.1-PH",
+        "maxDifference": 0
+      },
+      {
+        "id": "p0.3-liquid-z1.0-PH",
+        "maxDifference": 0
+      },
+      {
+        "id": "p0.3-liquid-z5.0-PH",
+        "maxDifference": 0
+      },
+      {
+        "id": "p0.3-liquid-z15.0-PH",
+        "maxDifference": 0
+      },
+      {
+        "id": "p0.3029893712344606-liquid-z0.001-PH",
+        "maxDifference": 0
+      },
+      {
+        "id": "p0.3029893712344606-liquid-z0.1-PH",
+        "maxDifference": 0
+      },
+      {
+        "id": "p0.3029893712344606-liquid-z1.0-PH",
+        "maxDifference": 0
+      },
+      {
+        "id": "p0.3029893712344606-liquid-z5.0-PH",
+        "maxDifference": 0
+      },
+      {
+        "id": "p0.3029893712344606-liquid-z15.0-PH",
+        "maxDifference": 0
+      },
+      {
+        "id": "p0.3183890254214986-liquid-z0.001-PH",
+        "maxDifference": 0
+      },
+      {
+        "id": "p0.3183890254214986-liquid-z0.1-PH",
+        "maxDifference": 0
+      },
+      {
+        "id": "p0.3183890254214986-liquid-z1.0-PH",
+        "maxDifference": 0
+      },
+      {
+        "id": "p0.3183890254214986-liquid-z5.0-PH",
+        "maxDifference": 0
+      },
+      {
+        "id": "p0.3183890254214986-liquid-z15.0-PH",
+        "maxDifference": 0
+      },
+      {
+        "id": "p1.0-liquid-z0.001-PH",
+        "maxDifference": 0
+      },
+      {
+        "id": "p1.0-liquid-z0.1-PH",
+        "maxDifference": 0
+      },
+      {
+        "id": "p1.0-liquid-z1.0-PH",
+        "maxDifference": 0
+      },
+      {
+        "id": "p1.0-liquid-z5.0-PH",
+        "maxDifference": 0
+      },
+      {
+        "id": "p1.0-liquid-z15.0-PH",
+        "maxDifference": 0
+      },
+      {
+        "id": "p0.3-liquid-z0.001-PH",
+        "maxDifference": 0
+      },
+      {
+        "id": "p0.3-liquid-z0.1-PH",
+        "maxDifference": 0
+      },
+      {
+        "id": "p0.3-liquid-z1.0-PH",
+        "maxDifference": 0
+      },
+      {
+        "id": "p0.3-liquid-z5.0-PH",
+        "maxDifference": 0
+      },
+      {
+        "id": "p0.3-liquid-z15.0-PH",
+        "maxDifference": 0
+      },
+      {
+        "id": "p0.3029893712344606-liquid-z0.001-PH",
+        "maxDifference": 0
+      },
+      {
+        "id": "p0.3029893712344606-liquid-z0.1-PH",
+        "maxDifference": 0
+      },
+      {
+        "id": "p0.3029893712344606-liquid-z1.0-PH",
+        "maxDifference": 0
+      },
+      {
+        "id": "p0.3029893712344606-liquid-z5.0-PH",
+        "maxDifference": 0
+      },
+      {
+        "id": "p0.3029893712344606-liquid-z15.0-PH",
+        "maxDifference": 0
+      },
+      {
+        "id": "p0.3183890254214986-liquid-z0.001-PH",
+        "maxDifference": 0
+      },
+      {
+        "id": "p0.3183890254214986-liquid-z0.1-PH",
+        "maxDifference": 0
+      },
+      {
+        "id": "p0.3183890254214986-liquid-z1.0-PH",
+        "maxDifference": 0
+      },
+      {
+        "id": "p0.3183890254214986-liquid-z5.0-PH",
+        "maxDifference": 0
+      },
+      {
+        "id": "p0.3183890254214986-liquid-z15.0-PH",
+        "maxDifference": 0
+      },
+      {
+        "id": "p1.0-liquid-z0.001-PH",
+        "maxDifference": 0
+      },
+      {
+        "id": "p1.0-liquid-z0.1-PH",
+        "maxDifference": 0
+      },
+      {
+        "id": "p1.0-liquid-z1.0-PH",
+        "maxDifference": 0
+      },
+      {
+        "id": "p1.0-liquid-z5.0-PH",
+        "maxDifference": 0
+      },
+      {
+        "id": "p1.0-liquid-z15.0-PH",
+        "maxDifference": 0
+      }
+    ],
+    "stats": {
+      "hits": 20,
+      "misses": 20,
+      "size": 20,
+      "limit": 1024
+    }
+  },
+  "sustained": [
+    {
+      "epoch": 0,
+      "calls": 43416,
+      "elapsedMS": 1501,
+      "linearMemoryBytes": 56360960,
+      "checksum": 11426966.455164216
+    },
+    {
+      "epoch": 1,
+      "calls": 43704,
+      "elapsedMS": 1502,
+      "linearMemoryBytes": 56360960,
+      "checksum": 11502767.227669433
+    },
+    {
+      "epoch": 2,
+      "calls": 41256,
+      "elapsedMS": 1501,
+      "linearMemoryBytes": 56360960,
+      "checksum": 10858460.661375094
+    }
+  ],
+  "linearMemoryFinal": 56360960,
+  "tableInputsHashMeaning": "Unchanged frozen table; identical SI request coordinates and result fields; failures counted, not made successful.",
+  "finalProcessMemory": {
+    "processes": [
+      {
+        "pid": 1340,
+        "ppid": 1212,
+        "rssKiB": 102388
+      },
+      {
+        "pid": 1494,
+        "ppid": 1340,
+        "rssKiB": 56600
+      },
+      {
+        "pid": 1498,
+        "ppid": 1340,
+        "rssKiB": 561136
+      }
+    ],
+    "summedRSSKiB": 720124,
+    "caution": "Summed process RSS double-counts shared pages; not exclusive memory or iPad usage."
+  }
+}
