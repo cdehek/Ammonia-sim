@@ -1,0 +1,696 @@
+2026-10-14T14:12:57.015Z pw:api => browserType.launch started
+Skipping host requirements validation logic because `PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS` env variable is set.
+2026-10-14T14:12:57.681Z pw:api <= browserType.launch succeeded
+2026-10-14T14:12:57.682Z pw:api => browser.newPage started
+2026-10-14T14:12:58.701Z pw:api <= browser.newPage succeeded
+2026-10-14T14:12:58.702Z pw:api => page.goto started
+2026-10-14T14:12:58.703Z pw:api navigating to "http://127.0.0.1:43839/", waiting until "load"
+2026-10-14T14:12:58.816Z pw:api   "commit" event fired
+2026-10-14T14:12:58.816Z pw:api   navigated to "http://127.0.0.1:43839/"
+2026-10-14T14:13:00.668Z pw:api   "load" event fired
+2026-10-14T14:13:00.669Z pw:api <= page.goto succeeded
+2026-10-14T14:13:00.670Z pw:api => locator.click started
+2026-10-14T14:13:00.672Z pw:api   "domcontentloaded" event fired
+2026-10-14T14:13:00.683Z pw:api waiting for locator('#storage-example')
+2026-10-14T14:13:00.974Z pw:api   locator resolved to <button class="btn" id="storage-example">Initialize auto DX</button>
+2026-10-14T14:13:00.999Z pw:api attempting click action
+2026-10-14T14:13:00.999Z pw:api   waiting for element to be visible, enabled and stable
+2026-10-14T14:13:01.119Z pw:api   "networkidle" event fired
+2026-10-14T14:13:04.911Z pw:api   element is visible, enabled and stable
+2026-10-14T14:13:04.912Z pw:api   scrolling into view if needed
+2026-10-14T14:13:04.923Z pw:api   done scrolling
+2026-10-14T14:13:04.978Z pw:api   performing click action
+2026-10-14T14:13:05.575Z pw:api   click action done
+2026-10-14T14:13:05.575Z pw:api   waiting for scheduled navigations to finish
+2026-10-14T14:13:05.575Z pw:api   navigations have finished
+2026-10-14T14:13:05.579Z pw:api <= locator.click succeeded
+2026-10-14T14:13:05.580Z pw:api => locator.click started
+2026-10-14T14:13:05.580Z pw:api waiting for locator('#storage-step')
+2026-10-14T14:13:05.666Z pw:api   locator resolved to <button class="btn" id="storage-step">+10 s</button>
+2026-10-14T14:13:05.673Z pw:api attempting click action
+2026-10-14T14:13:05.673Z pw:api   waiting for element to be visible, enabled and stable
+2026-10-14T14:13:08.504Z pw:api   element is visible, enabled and stable
+2026-10-14T14:13:08.504Z pw:api   scrolling into view if needed
+2026-10-14T14:13:08.529Z pw:api   done scrolling
+2026-10-14T14:13:08.598Z pw:api   performing click action
+2026-10-14T14:13:12.090Z pw:api   click action done
+2026-10-14T14:13:12.091Z pw:api   waiting for scheduled navigations to finish
+2026-10-14T14:13:12.091Z pw:api   navigations have finished
+2026-10-14T14:13:12.091Z pw:api <= locator.click succeeded
+2026-10-14T14:13:12.097Z pw:api => locator.selectOption started
+2026-10-14T14:13:12.102Z pw:api waiting for locator('#storage-trend-group')
+2026-10-14T14:13:12.138Z pw:api   locator resolved to <select id="storage-trend-group">…</select>
+2026-10-14T14:13:12.164Z pw:api attempting select option action
+2026-10-14T14:13:12.173Z pw:api   waiting for element to be visible and enabled
+2026-10-14T14:13:12.231Z pw:api   selected specified option(s)
+2026-10-14T14:13:12.232Z pw:api <= locator.selectOption succeeded
+2026-10-14T14:13:12.232Z pw:api => locator.click started
+2026-10-14T14:13:12.268Z pw:api waiting for locator('.plant-nav a[href="#storage-trends"]')
+2026-10-14T14:13:12.315Z pw:api   locator resolved to <a href="#storage-trends">Trends & history</a>
+2026-10-14T14:13:12.321Z pw:api attempting click action
+2026-10-14T14:13:12.322Z pw:api   waiting for element to be visible, enabled and stable
+2026-10-14T14:13:17.113Z pw:api   element is visible, enabled and stable
+2026-10-14T14:13:17.117Z pw:api   scrolling into view if needed
+2026-10-14T14:13:17.133Z pw:api   done scrolling
+2026-10-14T14:13:17.169Z pw:api   performing click action
+2026-10-14T14:13:17.191Z pw:api   click action done
+2026-10-14T14:13:17.191Z pw:api   waiting for scheduled navigations to finish
+2026-10-14T14:13:17.191Z pw:api   navigations have finished
+2026-10-14T14:13:17.192Z pw:api <= locator.click succeeded
+2026-10-14T14:13:17.195Z pw:api => page.evaluate started
+2026-10-14T14:13:17.219Z pw:api <= page.evaluate succeeded
+2026-10-14T14:13:17.223Z pw:api => page.setViewportSize started
+2026-10-14T14:13:17.515Z pw:api <= page.setViewportSize succeeded
+2026-10-14T14:13:17.518Z pw:api => page.waitForTimeout started
+2026-10-14T14:13:17.870Z pw:api <= page.waitForTimeout succeeded
+2026-10-14T14:13:17.871Z pw:api => page.evaluate started
+2026-10-14T14:13:17.884Z pw:api <= page.evaluate succeeded
+2026-10-14T14:13:17.884Z pw:api => page.waitForTimeout started
+2026-10-14T14:13:18.922Z pw:api <= page.waitForTimeout succeeded
+2026-10-14T14:13:18.931Z pw:api => page.evaluate started
+2026-10-14T14:13:19.501Z pw:api <= page.evaluate succeeded
+2026-10-14T14:13:19.596Z pw:api => page.setViewportSize started
+2026-10-14T14:13:19.804Z pw:api <= page.setViewportSize succeeded
+2026-10-14T14:13:19.804Z pw:api => page.waitForTimeout started
+2026-10-14T14:13:20.164Z pw:api <= page.waitForTimeout succeeded
+2026-10-14T14:13:20.164Z pw:api => page.evaluate started
+2026-10-14T14:13:20.182Z pw:api <= page.evaluate succeeded
+2026-10-14T14:13:20.182Z pw:api => page.waitForTimeout started
+2026-10-14T14:13:21.194Z pw:api <= page.waitForTimeout succeeded
+2026-10-14T14:13:21.215Z pw:api => page.evaluate started
+2026-10-14T14:13:21.363Z pw:api <= page.evaluate succeeded
+2026-10-14T14:13:21.364Z pw:api => page.setViewportSize started
+2026-10-14T14:13:22.278Z pw:api <= page.setViewportSize succeeded
+2026-10-14T14:13:22.279Z pw:api => page.waitForTimeout started
+2026-10-14T14:13:22.631Z pw:api <= page.waitForTimeout succeeded
+2026-10-14T14:13:22.632Z pw:api => page.evaluate started
+2026-10-14T14:13:22.640Z pw:api <= page.evaluate succeeded
+2026-10-14T14:13:22.641Z pw:api => page.waitForTimeout started
+2026-10-14T14:13:23.667Z pw:api <= page.waitForTimeout succeeded
+2026-10-14T14:13:23.668Z pw:api => page.evaluate started
+2026-10-14T14:13:23.673Z pw:api <= page.evaluate succeeded
+2026-10-14T14:13:23.674Z pw:api => locator.selectOption started
+2026-10-14T14:13:23.674Z pw:api waiting for locator('#storage-trend-group')
+2026-10-14T14:13:23.683Z pw:api   locator resolved to <select id="storage-trend-group">…</select>
+2026-10-14T14:13:23.695Z pw:api attempting select option action
+2026-10-14T14:13:23.696Z pw:api   waiting for element to be visible and enabled
+2026-10-14T14:13:23.722Z pw:api   selected specified option(s)
+2026-10-14T14:13:23.722Z pw:api <= locator.selectOption succeeded
+2026-10-14T14:13:23.722Z pw:api => locator.selectOption started
+2026-10-14T14:13:23.723Z pw:api waiting for locator('#storage-trend-group')
+2026-10-14T14:13:23.728Z pw:api   locator resolved to <select id="storage-trend-group">…</select>
+2026-10-14T14:13:23.766Z pw:api attempting select option action
+2026-10-14T14:13:23.766Z pw:api   waiting for element to be visible and enabled
+2026-10-14T14:13:23.777Z pw:api   selected specified option(s)
+2026-10-14T14:13:23.778Z pw:api <= locator.selectOption succeeded
+2026-10-14T14:13:23.778Z pw:api => page.waitForTimeout started
+2026-10-14T14:13:24.163Z pw:api <= page.waitForTimeout succeeded
+2026-10-14T14:13:24.164Z pw:api => page.evaluate started
+2026-10-14T14:13:24.166Z pw:api <= page.evaluate succeeded
+2026-10-14T14:13:24.174Z pw:api => page.close started
+2026-10-14T14:13:24.182Z pw:api <= page.close succeeded
+2026-10-14T14:13:24.183Z pw:api => browser.newPage started
+2026-10-14T14:13:25.374Z pw:api <= browser.newPage succeeded
+2026-10-14T14:13:25.374Z pw:api => page.goto started
+2026-10-14T14:13:25.374Z pw:api navigating to "http://127.0.0.1:43839/", waiting until "load"
+2026-10-14T14:13:25.402Z pw:api   "commit" event fired
+2026-10-14T14:13:25.402Z pw:api   navigated to "http://127.0.0.1:43839/"
+2026-10-14T14:13:26.972Z pw:api   "load" event fired
+2026-10-14T14:13:26.973Z pw:api   "domcontentloaded" event fired
+2026-10-14T14:13:26.974Z pw:api <= page.goto succeeded
+2026-10-14T14:13:26.975Z pw:api => locator.click started
+2026-10-14T14:13:26.978Z pw:api waiting for locator('#storage-example')
+2026-10-14T14:13:27.081Z pw:api   locator resolved to <button class="btn" id="storage-example">Initialize auto DX</button>
+2026-10-14T14:13:27.085Z pw:api attempting click action
+2026-10-14T14:13:27.085Z pw:api   waiting for element to be visible, enabled and stable
+2026-10-14T14:13:27.471Z pw:api   "networkidle" event fired
+2026-10-14T14:13:28.515Z pw:api   element is visible, enabled and stable
+2026-10-14T14:13:28.516Z pw:api   scrolling into view if needed
+2026-10-14T14:13:28.525Z pw:api   done scrolling
+2026-10-14T14:13:28.536Z pw:api   performing click action
+2026-10-14T14:13:29.476Z pw:api   click action done
+2026-10-14T14:13:29.477Z pw:api   waiting for scheduled navigations to finish
+2026-10-14T14:13:29.477Z pw:api   navigations have finished
+2026-10-14T14:13:29.477Z pw:api <= locator.click succeeded
+2026-10-14T14:13:29.478Z pw:api => locator.click started
+2026-10-14T14:13:29.478Z pw:api waiting for locator('#storage-step')
+2026-10-14T14:13:29.498Z pw:api   locator resolved to <button class="btn" id="storage-step">+10 s</button>
+2026-10-14T14:13:29.502Z pw:api attempting click action
+2026-10-14T14:13:29.502Z pw:api   waiting for element to be visible, enabled and stable
+2026-10-14T14:13:30.437Z pw:api   element is visible, enabled and stable
+2026-10-14T14:13:30.437Z pw:api   scrolling into view if needed
+2026-10-14T14:13:30.476Z pw:api   done scrolling
+2026-10-14T14:13:30.494Z pw:api   performing click action
+2026-10-14T14:13:31.801Z pw:api   click action done
+2026-10-14T14:13:31.802Z pw:api   waiting for scheduled navigations to finish
+2026-10-14T14:13:31.802Z pw:api   navigations have finished
+2026-10-14T14:13:31.803Z pw:api <= locator.click succeeded
+2026-10-14T14:13:31.804Z pw:api => locator.selectOption started
+2026-10-14T14:13:31.805Z pw:api waiting for locator('#storage-trend-group')
+2026-10-14T14:13:31.819Z pw:api   locator resolved to <select id="storage-trend-group">…</select>
+2026-10-14T14:13:31.824Z pw:api attempting select option action
+2026-10-14T14:13:31.825Z pw:api   waiting for element to be visible and enabled
+2026-10-14T14:13:31.868Z pw:api   selected specified option(s)
+2026-10-14T14:13:31.868Z pw:api <= locator.selectOption succeeded
+2026-10-14T14:13:31.868Z pw:api => locator.click started
+2026-10-14T14:13:31.869Z pw:api waiting for locator('.plant-nav a[href="#storage-trends"]')
+2026-10-14T14:13:31.886Z pw:api   locator resolved to <a href="#storage-trends">Trends & history</a>
+2026-10-14T14:13:31.887Z pw:api attempting click action
+2026-10-14T14:13:31.888Z pw:api   waiting for element to be visible, enabled and stable
+2026-10-14T14:13:33.827Z pw:api   element is visible, enabled and stable
+2026-10-14T14:13:33.827Z pw:api   scrolling into view if needed
+2026-10-14T14:13:33.842Z pw:api   done scrolling
+2026-10-14T14:13:33.852Z pw:api   performing click action
+2026-10-14T14:13:33.875Z pw:api   click action done
+2026-10-14T14:13:33.875Z pw:api   waiting for scheduled navigations to finish
+2026-10-14T14:13:33.875Z pw:api   navigations have finished
+2026-10-14T14:13:33.875Z pw:api <= locator.click succeeded
+2026-10-14T14:13:33.875Z pw:api => page.evaluate started
+2026-10-14T14:13:33.890Z pw:api <= page.evaluate succeeded
+2026-10-14T14:13:33.890Z pw:api => page.setViewportSize started
+2026-10-14T14:13:34.072Z pw:api <= page.setViewportSize succeeded
+2026-10-14T14:13:34.073Z pw:api => page.waitForTimeout started
+2026-10-14T14:13:34.424Z pw:api <= page.waitForTimeout succeeded
+2026-10-14T14:13:34.424Z pw:api => page.evaluate started
+2026-10-14T14:13:34.430Z pw:api <= page.evaluate succeeded
+2026-10-14T14:13:34.430Z pw:api => page.waitForTimeout started
+2026-10-14T14:13:35.432Z pw:api <= page.waitForTimeout succeeded
+2026-10-14T14:13:35.432Z pw:api => page.evaluate started
+2026-10-14T14:13:35.463Z pw:api <= page.evaluate succeeded
+2026-10-14T14:13:35.463Z pw:api => page.setViewportSize started
+2026-10-14T14:13:35.614Z pw:api <= page.setViewportSize succeeded
+2026-10-14T14:13:35.614Z pw:api => page.waitForTimeout started
+2026-10-14T14:13:35.966Z pw:api <= page.waitForTimeout succeeded
+2026-10-14T14:13:35.966Z pw:api => page.evaluate started
+2026-10-14T14:13:35.970Z pw:api <= page.evaluate succeeded
+2026-10-14T14:13:35.970Z pw:api => page.waitForTimeout started
+2026-10-14T14:13:36.974Z pw:api <= page.waitForTimeout succeeded
+2026-10-14T14:13:36.974Z pw:api => page.evaluate started
+2026-10-14T14:13:36.983Z pw:api <= page.evaluate succeeded
+2026-10-14T14:13:36.984Z pw:api => page.setViewportSize started
+2026-10-14T14:13:37.265Z pw:api <= page.setViewportSize succeeded
+2026-10-14T14:13:37.266Z pw:api => page.waitForTimeout started
+2026-10-14T14:13:37.617Z pw:api <= page.waitForTimeout succeeded
+2026-10-14T14:13:37.619Z pw:api => page.evaluate started
+2026-10-14T14:13:37.623Z pw:api <= page.evaluate succeeded
+2026-10-14T14:13:37.623Z pw:api => page.waitForTimeout started
+2026-10-14T14:13:38.627Z pw:api <= page.waitForTimeout succeeded
+2026-10-14T14:13:38.628Z pw:api => page.evaluate started
+2026-10-14T14:13:38.636Z pw:api <= page.evaluate succeeded
+2026-10-14T14:13:38.637Z pw:api => locator.selectOption started
+2026-10-14T14:13:38.641Z pw:api waiting for locator('#storage-trend-group')
+2026-10-14T14:13:38.669Z pw:api   locator resolved to <select id="storage-trend-group">…</select>
+2026-10-14T14:13:38.677Z pw:api attempting select option action
+2026-10-14T14:13:38.677Z pw:api   waiting for element to be visible and enabled
+2026-10-14T14:13:38.688Z pw:api   selected specified option(s)
+2026-10-14T14:13:38.689Z pw:api <= locator.selectOption succeeded
+2026-10-14T14:13:38.689Z pw:api => locator.selectOption started
+2026-10-14T14:13:38.691Z pw:api waiting for locator('#storage-trend-group')
+2026-10-14T14:13:38.717Z pw:api   locator resolved to <select id="storage-trend-group">…</select>
+2026-10-14T14:13:38.722Z pw:api attempting select option action
+2026-10-14T14:13:38.722Z pw:api   waiting for element to be visible and enabled
+2026-10-14T14:13:38.763Z pw:api   selected specified option(s)
+2026-10-14T14:13:38.764Z pw:api <= locator.selectOption succeeded
+2026-10-14T14:13:38.764Z pw:api => page.waitForTimeout started
+2026-10-14T14:13:39.117Z pw:api <= page.waitForTimeout succeeded
+2026-10-14T14:13:39.118Z pw:api => page.evaluate started
+2026-10-14T14:13:39.124Z pw:api <= page.evaluate succeeded
+2026-10-14T14:13:39.126Z pw:api => page.close started
+2026-10-14T14:13:39.133Z pw:api <= page.close succeeded
+2026-10-14T14:13:39.133Z pw:api => browser.close started
+2026-10-14T14:13:39.598Z pw:api <= browser.close succeeded
+2026-10-14T14:13:39.601Z pw:api => browserType.launch started
+Skipping host requirements validation logic because `PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS` env variable is set.
+2026-10-14T14:13:39.790Z pw:api <= browserType.launch succeeded
+2026-10-14T14:13:39.790Z pw:api => browser.newPage started
+2026-10-14T14:13:40.578Z pw:api <= browser.newPage succeeded
+2026-10-14T14:13:40.578Z pw:api => page.goto started
+2026-10-14T14:13:40.584Z pw:api navigating to "http://127.0.0.1:42541/", waiting until "load"
+2026-10-14T14:13:40.628Z pw:api   "commit" event fired
+2026-10-14T14:13:40.628Z pw:api   navigated to "http://127.0.0.1:42541/"
+2026-10-14T14:13:41.491Z pw:api   "load" event fired
+2026-10-14T14:13:41.493Z pw:api <= page.goto succeeded
+2026-10-14T14:13:41.493Z pw:api => locator.click started
+2026-10-14T14:13:41.498Z pw:api waiting for locator('#storage-example')
+2026-10-14T14:13:41.502Z pw:api   "domcontentloaded" event fired
+2026-10-14T14:13:41.572Z pw:api   locator resolved to <button class="btn" id="storage-example">Initialize auto DX</button>
+2026-10-14T14:13:41.575Z pw:api attempting click action
+2026-10-14T14:13:41.575Z pw:api   waiting for element to be visible, enabled and stable
+2026-10-14T14:13:41.989Z pw:api   "networkidle" event fired
+2026-10-14T14:13:43.294Z pw:api   element is visible, enabled and stable
+2026-10-14T14:13:43.294Z pw:api   scrolling into view if needed
+2026-10-14T14:13:43.299Z pw:api   done scrolling
+2026-10-14T14:13:43.329Z pw:api   performing click action
+2026-10-14T14:13:43.718Z pw:api   click action done
+2026-10-14T14:13:43.718Z pw:api   waiting for scheduled navigations to finish
+2026-10-14T14:13:43.718Z pw:api   navigations have finished
+2026-10-14T14:13:43.719Z pw:api <= locator.click succeeded
+2026-10-14T14:13:43.719Z pw:api => locator.click started
+2026-10-14T14:13:43.719Z pw:api waiting for locator('#storage-step')
+2026-10-14T14:13:43.736Z pw:api   locator resolved to <button class="btn" id="storage-step">+10 s</button>
+2026-10-14T14:13:43.739Z pw:api attempting click action
+2026-10-14T14:13:43.740Z pw:api   waiting for element to be visible, enabled and stable
+2026-10-14T14:13:45.474Z pw:api   element is visible, enabled and stable
+2026-10-14T14:13:45.474Z pw:api   scrolling into view if needed
+2026-10-14T14:13:45.485Z pw:api   done scrolling
+2026-10-14T14:13:45.493Z pw:api   performing click action
+2026-10-14T14:13:46.986Z pw:api   click action done
+2026-10-14T14:13:46.986Z pw:api   waiting for scheduled navigations to finish
+2026-10-14T14:13:46.986Z pw:api   navigations have finished
+2026-10-14T14:13:46.986Z pw:api <= locator.click succeeded
+2026-10-14T14:13:46.986Z pw:api => locator.selectOption started
+2026-10-14T14:13:46.987Z pw:api waiting for locator('#storage-trend-group')
+2026-10-14T14:13:47.012Z pw:api   locator resolved to <select id="storage-trend-group">…</select>
+2026-10-14T14:13:47.018Z pw:api attempting select option action
+2026-10-14T14:13:47.018Z pw:api   waiting for element to be visible and enabled
+2026-10-14T14:13:47.080Z pw:api   selected specified option(s)
+2026-10-14T14:13:47.082Z pw:api <= locator.selectOption succeeded
+2026-10-14T14:13:47.083Z pw:api => locator.click started
+2026-10-14T14:13:47.083Z pw:api waiting for locator('.plant-nav a[href="#storage-trends"]')
+2026-10-14T14:13:47.097Z pw:api   locator resolved to <a href="#storage-trends">Trends & history</a>
+2026-10-14T14:13:47.106Z pw:api attempting click action
+2026-10-14T14:13:47.106Z pw:api   waiting for element to be visible, enabled and stable
+2026-10-14T14:13:49.305Z pw:api   element is visible, enabled and stable
+2026-10-14T14:13:49.305Z pw:api   scrolling into view if needed
+2026-10-14T14:13:49.323Z pw:api   done scrolling
+2026-10-14T14:13:49.343Z pw:api   performing click action
+2026-10-14T14:13:49.366Z pw:api   click action done
+2026-10-14T14:13:49.366Z pw:api   waiting for scheduled navigations to finish
+2026-10-14T14:13:49.366Z pw:api   navigations have finished
+2026-10-14T14:13:49.367Z pw:api <= locator.click succeeded
+2026-10-14T14:13:49.368Z pw:api => page.evaluate started
+2026-10-14T14:13:49.386Z pw:api <= page.evaluate succeeded
+2026-10-14T14:13:49.386Z pw:api => page.setViewportSize started
+2026-10-14T14:13:49.928Z pw:api <= page.setViewportSize succeeded
+2026-10-14T14:13:49.929Z pw:api => page.waitForTimeout started
+2026-10-14T14:13:50.284Z pw:api <= page.waitForTimeout succeeded
+2026-10-14T14:13:50.318Z pw:api => page.evaluate started
+2026-10-14T14:13:50.365Z pw:api <= page.evaluate succeeded
+2026-10-14T14:13:50.371Z pw:api => page.waitForTimeout started
+2026-10-14T14:13:51.377Z pw:api <= page.waitForTimeout succeeded
+2026-10-14T14:13:51.379Z pw:api => page.evaluate started
+2026-10-14T14:13:51.420Z pw:api <= page.evaluate succeeded
+2026-10-14T14:13:51.422Z pw:api => page.setViewportSize started
+2026-10-14T14:13:51.688Z pw:api <= page.setViewportSize succeeded
+2026-10-14T14:13:51.688Z pw:api => page.waitForTimeout started
+2026-10-14T14:13:52.039Z pw:api <= page.waitForTimeout succeeded
+2026-10-14T14:13:52.039Z pw:api => page.evaluate started
+2026-10-14T14:13:52.071Z pw:api <= page.evaluate succeeded
+2026-10-14T14:13:52.071Z pw:api => page.waitForTimeout started
+2026-10-14T14:13:53.073Z pw:api <= page.waitForTimeout succeeded
+2026-10-14T14:13:53.073Z pw:api => page.evaluate started
+2026-10-14T14:13:53.082Z pw:api <= page.evaluate succeeded
+2026-10-14T14:13:53.082Z pw:api => page.setViewportSize started
+2026-10-14T14:13:53.237Z pw:api <= page.setViewportSize succeeded
+2026-10-14T14:13:53.237Z pw:api => page.waitForTimeout started
+2026-10-14T14:13:53.588Z pw:api <= page.waitForTimeout succeeded
+2026-10-14T14:13:53.589Z pw:api => page.evaluate started
+2026-10-14T14:13:53.597Z pw:api <= page.evaluate succeeded
+2026-10-14T14:13:53.597Z pw:api => page.waitForTimeout started
+2026-10-14T14:13:54.603Z pw:api <= page.waitForTimeout succeeded
+2026-10-14T14:13:54.604Z pw:api => page.evaluate started
+2026-10-14T14:13:54.627Z pw:api <= page.evaluate succeeded
+2026-10-14T14:13:54.628Z pw:api => locator.selectOption started
+2026-10-14T14:13:54.629Z pw:api waiting for locator('#storage-trend-group')
+2026-10-14T14:13:54.697Z pw:api   locator resolved to <select id="storage-trend-group">…</select>
+2026-10-14T14:13:54.706Z pw:api attempting select option action
+2026-10-14T14:13:54.707Z pw:api   waiting for element to be visible and enabled
+2026-10-14T14:13:54.770Z pw:api   selected specified option(s)
+2026-10-14T14:13:54.772Z pw:api <= locator.selectOption succeeded
+2026-10-14T14:13:54.773Z pw:api => locator.selectOption started
+2026-10-14T14:13:54.774Z pw:api waiting for locator('#storage-trend-group')
+2026-10-14T14:13:54.785Z pw:api   locator resolved to <select id="storage-trend-group">…</select>
+2026-10-14T14:13:54.791Z pw:api attempting select option action
+2026-10-14T14:13:54.792Z pw:api   waiting for element to be visible and enabled
+2026-10-14T14:13:54.812Z pw:api   selected specified option(s)
+2026-10-14T14:13:54.818Z pw:api <= locator.selectOption succeeded
+2026-10-14T14:13:54.820Z pw:api => page.waitForTimeout started
+2026-10-14T14:13:55.171Z pw:api <= page.waitForTimeout succeeded
+2026-10-14T14:13:55.171Z pw:api => page.evaluate started
+2026-10-14T14:13:55.184Z pw:api <= page.evaluate succeeded
+2026-10-14T14:13:55.196Z pw:api => page.close started
+2026-10-14T14:13:55.204Z pw:api <= page.close succeeded
+2026-10-14T14:13:55.204Z pw:api => browser.newPage started
+2026-10-14T14:13:56.800Z pw:api <= browser.newPage succeeded
+2026-10-14T14:13:56.802Z pw:api => page.goto started
+2026-10-14T14:13:56.803Z pw:api navigating to "http://127.0.0.1:42541/", waiting until "load"
+2026-10-14T14:13:56.901Z pw:api   "commit" event fired
+2026-10-14T14:13:56.901Z pw:api   navigated to "http://127.0.0.1:42541/"
+2026-10-14T14:13:59.068Z pw:api   "load" event fired
+2026-10-14T14:13:59.071Z pw:api   "domcontentloaded" event fired
+2026-10-14T14:13:59.071Z pw:api <= page.goto succeeded
+2026-10-14T14:13:59.075Z pw:api => locator.click started
+2026-10-14T14:13:59.076Z pw:api waiting for locator('#storage-example')
+2026-10-14T14:13:59.229Z pw:api   locator resolved to <button class="btn" id="storage-example">Initialize auto DX</button>
+2026-10-14T14:13:59.234Z pw:api attempting click action
+2026-10-14T14:13:59.235Z pw:api   waiting for element to be visible, enabled and stable
+2026-10-14T14:13:59.570Z pw:api   "networkidle" event fired
+2026-10-14T14:14:01.581Z pw:api   element is visible, enabled and stable
+2026-10-14T14:14:01.581Z pw:api   scrolling into view if needed
+2026-10-14T14:14:01.589Z pw:api   done scrolling
+2026-10-14T14:14:01.596Z pw:api   performing click action
+2026-10-14T14:14:02.033Z pw:api   click action done
+2026-10-14T14:14:02.033Z pw:api   waiting for scheduled navigations to finish
+2026-10-14T14:14:02.034Z pw:api   navigations have finished
+2026-10-14T14:14:02.034Z pw:api <= locator.click succeeded
+2026-10-14T14:14:02.034Z pw:api => locator.click started
+2026-10-14T14:14:02.035Z pw:api waiting for locator('#storage-step')
+2026-10-14T14:14:02.091Z pw:api   locator resolved to <button class="btn" id="storage-step">+10 s</button>
+2026-10-14T14:14:02.094Z pw:api attempting click action
+2026-10-14T14:14:02.094Z pw:api   waiting for element to be visible, enabled and stable
+2026-10-14T14:14:03.456Z pw:api   element is visible, enabled and stable
+2026-10-14T14:14:03.460Z pw:api   scrolling into view if needed
+2026-10-14T14:14:03.473Z pw:api   done scrolling
+2026-10-14T14:14:03.490Z pw:api   performing click action
+2026-10-14T14:14:04.833Z pw:api   click action done
+2026-10-14T14:14:04.834Z pw:api   waiting for scheduled navigations to finish
+2026-10-14T14:14:04.834Z pw:api   navigations have finished
+2026-10-14T14:14:04.835Z pw:api <= locator.click succeeded
+2026-10-14T14:14:04.835Z pw:api => locator.selectOption started
+2026-10-14T14:14:04.836Z pw:api waiting for locator('#storage-trend-group')
+2026-10-14T14:14:04.875Z pw:api   locator resolved to <select id="storage-trend-group">…</select>
+2026-10-14T14:14:04.882Z pw:api attempting select option action
+2026-10-14T14:14:04.882Z pw:api   waiting for element to be visible and enabled
+2026-10-14T14:14:04.921Z pw:api   selected specified option(s)
+2026-10-14T14:14:04.923Z pw:api <= locator.selectOption succeeded
+2026-10-14T14:14:04.923Z pw:api => locator.click started
+2026-10-14T14:14:04.925Z pw:api waiting for locator('.plant-nav a[href="#storage-trends"]')
+2026-10-14T14:14:04.976Z pw:api   locator resolved to <a href="#storage-trends">Trends & history</a>
+2026-10-14T14:14:04.984Z pw:api attempting click action
+2026-10-14T14:14:04.985Z pw:api   waiting for element to be visible, enabled and stable
+2026-10-14T14:14:06.741Z pw:api   element is visible, enabled and stable
+2026-10-14T14:14:06.742Z pw:api   scrolling into view if needed
+2026-10-14T14:14:06.763Z pw:api   done scrolling
+2026-10-14T14:14:06.777Z pw:api   performing click action
+2026-10-14T14:14:06.804Z pw:api   click action done
+2026-10-14T14:14:06.804Z pw:api   waiting for scheduled navigations to finish
+2026-10-14T14:14:06.804Z pw:api   navigations have finished
+2026-10-14T14:14:06.805Z pw:api <= locator.click succeeded
+2026-10-14T14:14:06.805Z pw:api => page.evaluate started
+2026-10-14T14:14:06.827Z pw:api <= page.evaluate succeeded
+2026-10-14T14:14:06.827Z pw:api => page.setViewportSize started
+2026-10-14T14:14:07.214Z pw:api <= page.setViewportSize succeeded
+2026-10-14T14:14:07.214Z pw:api => page.waitForTimeout started
+2026-10-14T14:14:07.628Z pw:api <= page.waitForTimeout succeeded
+2026-10-14T14:14:07.636Z pw:api => page.evaluate started
+2026-10-14T14:14:07.700Z pw:api <= page.evaluate succeeded
+2026-10-14T14:14:07.703Z pw:api => page.waitForTimeout started
+2026-10-14T14:14:08.707Z pw:api <= page.waitForTimeout succeeded
+2026-10-14T14:14:08.707Z pw:api => page.evaluate started
+2026-10-14T14:14:08.716Z pw:api <= page.evaluate succeeded
+2026-10-14T14:14:08.717Z pw:api => page.setViewportSize started
+2026-10-14T14:14:08.834Z pw:api <= page.setViewportSize succeeded
+2026-10-14T14:14:08.836Z pw:api => page.waitForTimeout started
+2026-10-14T14:14:09.189Z pw:api <= page.waitForTimeout succeeded
+2026-10-14T14:14:09.189Z pw:api => page.evaluate started
+2026-10-14T14:14:09.195Z pw:api <= page.evaluate succeeded
+2026-10-14T14:14:09.196Z pw:api => page.waitForTimeout started
+2026-10-14T14:14:10.328Z pw:api <= page.waitForTimeout succeeded
+2026-10-14T14:14:10.601Z pw:api => page.evaluate started
+2026-10-14T14:14:10.721Z pw:api <= page.evaluate succeeded
+2026-10-14T14:14:10.722Z pw:api => page.setViewportSize started
+2026-10-14T14:14:10.997Z pw:api <= page.setViewportSize succeeded
+2026-10-14T14:14:11.000Z pw:api => page.waitForTimeout started
+2026-10-14T14:14:11.366Z pw:api <= page.waitForTimeout succeeded
+2026-10-14T14:14:11.366Z pw:api => page.evaluate started
+2026-10-14T14:14:11.391Z pw:api <= page.evaluate succeeded
+2026-10-14T14:14:11.392Z pw:api => page.waitForTimeout started
+2026-10-14T14:14:12.394Z pw:api <= page.waitForTimeout succeeded
+2026-10-14T14:14:12.395Z pw:api => page.evaluate started
+2026-10-14T14:14:12.402Z pw:api <= page.evaluate succeeded
+2026-10-14T14:14:12.402Z pw:api => locator.selectOption started
+2026-10-14T14:14:12.403Z pw:api waiting for locator('#storage-trend-group')
+2026-10-14T14:14:12.421Z pw:api   locator resolved to <select id="storage-trend-group">…</select>
+2026-10-14T14:14:12.422Z pw:api attempting select option action
+2026-10-14T14:14:12.423Z pw:api   waiting for element to be visible and enabled
+2026-10-14T14:14:12.468Z pw:api   selected specified option(s)
+2026-10-14T14:14:12.468Z pw:api <= locator.selectOption succeeded
+2026-10-14T14:14:12.468Z pw:api => locator.selectOption started
+2026-10-14T14:14:12.468Z pw:api waiting for locator('#storage-trend-group')
+2026-10-14T14:14:12.494Z pw:api   locator resolved to <select id="storage-trend-group">…</select>
+2026-10-14T14:14:12.499Z pw:api attempting select option action
+2026-10-14T14:14:12.499Z pw:api   waiting for element to be visible and enabled
+2026-10-14T14:14:12.524Z pw:api   selected specified option(s)
+2026-10-14T14:14:12.530Z pw:api <= locator.selectOption succeeded
+2026-10-14T14:14:12.532Z pw:api => page.waitForTimeout started
+2026-10-14T14:14:12.988Z pw:api <= page.waitForTimeout succeeded
+2026-10-14T14:14:13.017Z pw:api => page.evaluate started
+2026-10-14T14:14:13.066Z pw:api <= page.evaluate succeeded
+2026-10-14T14:14:13.071Z pw:api => page.close started
+2026-10-14T14:14:13.074Z pw:api <= page.close succeeded
+2026-10-14T14:14:13.075Z pw:api => browser.close started
+2026-10-14T14:14:13.311Z pw:api <= browser.close succeeded
+[
+  {
+    "artifact": "exact-approved-baseline",
+    "motion": "no-preference",
+    "sha256": "2924babd0e2c6fb37c71a9473a83f68644a154c6354a1c834513c570386f5420",
+    "geometry": [
+      {
+        "phase": "initial",
+        "viewport": 1024,
+        "plot": 741,
+        "svg": 741,
+        "clock": "10.0 s simulated"
+      },
+      {
+        "phase": "350ms",
+        "viewport": 768,
+        "plot": 682,
+        "svg": 741,
+        "clock": "10.0 s simulated"
+      },
+      {
+        "phase": "1350ms",
+        "viewport": 768,
+        "plot": 682,
+        "svg": 682,
+        "clock": "10.0 s simulated"
+      },
+      {
+        "phase": "350ms",
+        "viewport": 1024,
+        "plot": 741,
+        "svg": 682,
+        "clock": "10.0 s simulated"
+      },
+      {
+        "phase": "1350ms",
+        "viewport": 1024,
+        "plot": 741,
+        "svg": 682,
+        "clock": "10.0 s simulated"
+      },
+      {
+        "phase": "350ms",
+        "viewport": 1440,
+        "plot": 1157,
+        "svg": 682,
+        "clock": "10.0 s simulated"
+      },
+      {
+        "phase": "1350ms",
+        "viewport": 1440,
+        "plot": 1157,
+        "svg": 682,
+        "clock": "10.0 s simulated"
+      },
+      {
+        "phase": "after-existing-group-selection",
+        "viewport": 1440,
+        "plot": 1157,
+        "svg": 1157,
+        "clock": "10.0 s simulated"
+      }
+    ]
+  },
+  {
+    "artifact": "exact-approved-baseline",
+    "motion": "reduce",
+    "sha256": "2924babd0e2c6fb37c71a9473a83f68644a154c6354a1c834513c570386f5420",
+    "geometry": [
+      {
+        "phase": "initial",
+        "viewport": 1024,
+        "plot": 741,
+        "svg": 741,
+        "clock": "10.0 s simulated"
+      },
+      {
+        "phase": "350ms",
+        "viewport": 768,
+        "plot": 682,
+        "svg": 741,
+        "clock": "10.0 s simulated"
+      },
+      {
+        "phase": "1350ms",
+        "viewport": 768,
+        "plot": 682,
+        "svg": 682,
+        "clock": "10.0 s simulated"
+      },
+      {
+        "phase": "350ms",
+        "viewport": 1024,
+        "plot": 741,
+        "svg": 682,
+        "clock": "10.0 s simulated"
+      },
+      {
+        "phase": "1350ms",
+        "viewport": 1024,
+        "plot": 741,
+        "svg": 741,
+        "clock": "10.0 s simulated"
+      },
+      {
+        "phase": "350ms",
+        "viewport": 1440,
+        "plot": 1157,
+        "svg": 741,
+        "clock": "10.0 s simulated"
+      },
+      {
+        "phase": "1350ms",
+        "viewport": 1440,
+        "plot": 1157,
+        "svg": 1157,
+        "clock": "10.0 s simulated"
+      },
+      {
+        "phase": "after-existing-group-selection",
+        "viewport": 1440,
+        "plot": 1157,
+        "svg": 1157,
+        "clock": "10.0 s simulated"
+      }
+    ]
+  },
+  {
+    "artifact": "candidate",
+    "motion": "no-preference",
+    "sha256": "2924babd0e2c6fb37c71a9473a83f68644a154c6354a1c834513c570386f5420",
+    "geometry": [
+      {
+        "phase": "initial",
+        "viewport": 1024,
+        "plot": 741,
+        "svg": 741,
+        "clock": "10.0 s simulated"
+      },
+      {
+        "phase": "350ms",
+        "viewport": 768,
+        "plot": 682,
+        "svg": 741,
+        "clock": "10.0 s simulated"
+      },
+      {
+        "phase": "1350ms",
+        "viewport": 768,
+        "plot": 682,
+        "svg": 741,
+        "clock": "10.0 s simulated"
+      },
+      {
+        "phase": "350ms",
+        "viewport": 1024,
+        "plot": 741,
+        "svg": 741,
+        "clock": "10.0 s simulated"
+      },
+      {
+        "phase": "1350ms",
+        "viewport": 1024,
+        "plot": 741,
+        "svg": 741,
+        "clock": "10.0 s simulated"
+      },
+      {
+        "phase": "350ms",
+        "viewport": 1440,
+        "plot": 1157,
+        "svg": 1157,
+        "clock": "10.0 s simulated"
+      },
+      {
+        "phase": "1350ms",
+        "viewport": 1440,
+        "plot": 1157,
+        "svg": 1157,
+        "clock": "10.0 s simulated"
+      },
+      {
+        "phase": "after-existing-group-selection",
+        "viewport": 1440,
+        "plot": 1157,
+        "svg": 1157,
+        "clock": "10.0 s simulated"
+      }
+    ]
+  },
+  {
+    "artifact": "candidate",
+    "motion": "reduce",
+    "sha256": "2924babd0e2c6fb37c71a9473a83f68644a154c6354a1c834513c570386f5420",
+    "geometry": [
+      {
+        "phase": "initial",
+        "viewport": 1024,
+        "plot": 741,
+        "svg": 741,
+        "clock": "10.0 s simulated"
+      },
+      {
+        "phase": "350ms",
+        "viewport": 768,
+        "plot": 682,
+        "svg": 741,
+        "clock": "10.0 s simulated"
+      },
+      {
+        "phase": "1350ms",
+        "viewport": 768,
+        "plot": 682,
+        "svg": 682,
+        "clock": "10.0 s simulated"
+      },
+      {
+        "phase": "350ms",
+        "viewport": 1024,
+        "plot": 741,
+        "svg": 682,
+        "clock": "10.0 s simulated"
+      },
+      {
+        "phase": "1350ms",
+        "viewport": 1024,
+        "plot": 741,
+        "svg": 682,
+        "clock": "10.0 s simulated"
+      },
+      {
+        "phase": "350ms",
+        "viewport": 1440,
+        "plot": 1157,
+        "svg": 1157,
+        "clock": "10.0 s simulated"
+      },
+      {
+        "phase": "1350ms",
+        "viewport": 1440,
+        "plot": 1157,
+        "svg": 1157,
+        "clock": "10.0 s simulated"
+      },
+      {
+        "phase": "after-existing-group-selection",
+        "viewport": 1440,
+        "plot": 1157,
+        "svg": 1157,
+        "clock": "10.0 s simulated"
+      }
+    ]
+  }
+]

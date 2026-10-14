@@ -1,0 +1,37 @@
+Skipping host requirements validation logic because `PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS` env variable is set.
+2026-10-14T14:10:22.317Z pw:browser <launching> /workspace/playwright-browsers/webkit-2336/pw_run.sh --inspector-pipe --headless --no-startup-window
+2026-10-14T14:10:22.329Z pw:browser <launched> pid=10730
+2026-10-14T14:10:23.085Z pw:browser [pid=10730][err] Fontconfig error: No writable cache directories
+2026-10-14T14:10:24.613Z pw:browser [pid=10730][err] 
+2026-10-14T14:10:24.615Z pw:browser [pid=10730][err] ** (MiniBrowser:10736): CRITICAL **: 14:10:24.611: WebKitWebView is-controlled-by-automation set but automation is not allowed in the context, falling back to default session.
+2026-10-14T14:10:25.275Z pw:browser [pid=10730][err] 
+2026-10-14T14:10:25.276Z pw:browser [pid=10730][err] (process:10753): dconf-CRITICAL **: 14:10:25.273: unable to create directory '/home/agent/.cache/dconf': Read-only file system.  dconf will not work properly.
+2026-10-14T14:10:25.276Z pw:browser [pid=10730][err] 
+2026-10-14T14:10:25.276Z pw:browser [pid=10730][err] (process:10753): dconf-CRITICAL **: 14:10:25.273: unable to create directory '/home/agent/.cache/dconf': Read-only file system.  dconf will not work properly.
+2026-10-14T14:10:25.276Z pw:browser [pid=10730][err] 
+2026-10-14T14:10:25.276Z pw:browser [pid=10730][err] (process:10753): dconf-CRITICAL **: 14:10:25.273: unable to create directory '/home/agent/.cache/dconf': Read-only file system.  dconf will not work properly.
+2026-10-14T14:10:25.276Z pw:browser [pid=10730][err] 
+2026-10-14T14:10:25.276Z pw:browser [pid=10730][err] (process:10753): dconf-CRITICAL **: 14:10:25.273: unable to create directory '/home/agent/.cache/dconf': Read-only file system.  dconf will not work properly.
+2026-10-14T14:10:25.276Z pw:browser [pid=10730][err] 
+2026-10-14T14:10:25.276Z pw:browser [pid=10730][err] (process:10753): dconf-CRITICAL **: 14:10:25.273: unable to create directory '/home/agent/.cache/dconf': Read-only file system.  dconf will not work properly.
+2026-10-14T14:10:25.286Z pw:browser [pid=10730][err] 
+2026-10-14T14:10:25.286Z pw:browser [pid=10730][err] (process:10753): dconf-CRITICAL **: 14:10:25.276: unable to create directory '/home/agent/.cache/dconf': Read-only file system.  dconf will not work properly.
+2026-10-14T14:10:25.286Z pw:browser [pid=10730][err] 
+2026-10-14T14:10:25.286Z pw:browser [pid=10730][err] (process:10753): dconf-CRITICAL **: 14:10:25.276: unable to create directory '/home/agent/.cache/dconf': Read-only file system.  dconf will not work properly.
+2026-10-14T14:10:25.286Z pw:browser [pid=10730][err] 
+2026-10-14T14:10:25.286Z pw:browser [pid=10730][err] (process:10753): dconf-CRITICAL **: 14:10:25.276: unable to create directory '/home/agent/.cache/dconf': Read-only file system.  dconf will not work properly.
+2026-10-14T14:10:25.286Z pw:browser [pid=10730][err] 
+2026-10-14T14:10:25.286Z pw:browser [pid=10730][err] (process:10753): dconf-CRITICAL **: 14:10:25.276: unable to create directory '/home/agent/.cache/dconf': Read-only file system.  dconf will not work properly.
+2026-10-14T14:10:25.286Z pw:browser [pid=10730][err] 
+2026-10-14T14:10:25.286Z pw:browser [pid=10730][err] (process:10753): dconf-CRITICAL **: 14:10:25.276: unable to create directory '/home/agent/.cache/dconf': Read-only file system.  dconf will not work properly.
+2026-10-14T14:10:25.803Z pw:browser [pid=10730][err] Failed to create /home/agent/.cache/mesa_shader_cache for shader cache (Read-only file system)---disabling.
+2026-10-14T14:10:25.809Z pw:browser [pid=10730][err] Failed to create /home/agent/.cache/mesa_shader_cache_db for shader cache (Read-only file system)---disabling.
+2026-10-14T14:10:26.688Z pw:browser [pid=10730][err] Fontconfig error: No writable cache directories
+initial rAF
+rotated rAF
+CLICK PASS
+2026-10-14T14:10:27.973Z pw:browser [pid=10730] <gracefully close start>
+2026-10-14T14:10:28.626Z pw:browser [pid=10730] <process did exit: exitCode=0, signal=null>
+2026-10-14T14:10:28.629Z pw:browser [pid=10730] starting temporary directories cleanup
+2026-10-14T14:10:28.668Z pw:browser [pid=10730] finished temporary directories cleanup
+2026-10-14T14:10:28.668Z pw:browser [pid=10730] <gracefully close end>

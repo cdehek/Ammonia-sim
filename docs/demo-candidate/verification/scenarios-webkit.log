@@ -1,0 +1,13 @@
+Skipping host requirements validation logic because `PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS` env variable is set.
+AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+
+682 !== 741
+
+    at /workspace/ammonia-git/docs/demo-candidate/verify-demo.cjs:27:483 {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: 682,
+  expected: 741,
+  operator: 'strictEqual',
+  diff: 'simple'
+}

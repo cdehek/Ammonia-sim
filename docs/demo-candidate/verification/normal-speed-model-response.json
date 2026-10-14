@@ -1,0 +1,234 @@
+{
+  "passed": true,
+  "description": "Identical initialization and same simulated endpoint; only speed 70→80% after 10 s differs.",
+  "unchanged": {
+    "seconds": 20.00000000000023,
+    "roomBoundary": {
+      "ambient": 25,
+      "gain": 2,
+      "leakUA": 0.1
+    },
+    "controller": {
+      "opening": 0.18154028683658344,
+      "sensor": 5.751796798589448,
+      "integral": 0.15676903644901177
+    },
+    "flows": {
+      "feed": {
+        "massFlow": 0.016896350228530727,
+        "status": "flashing / capped",
+        "choked": true,
+        "availablePa": 706027.2780648434,
+        "effectivePa": 100648.31549417798,
+        "gravityEnthalpy": 0,
+        "requestedMassFlow": 0.016896350228530727,
+        "phaseLimited": false
+      },
+      "drain": {
+        "massFlow": 0.02314502404576993,
+        "status": "liquid flow",
+        "choked": false,
+        "availablePa": 1127.0890887051428,
+        "effectivePa": 1127.0890887051428,
+        "gravityEnthalpy": 0.0196133,
+        "requestedMassFlow": 0.02314502404576993,
+        "phaseLimited": false
+      },
+      "vapor": {
+        "massFlow": 0.10637906342237302,
+        "status": "vapor flow",
+        "choked": false,
+        "requestedMassFlow": 0.10637906342237302,
+        "phaseLimited": false
+      },
+      "superheat": 5.745940638007596,
+      "command": 0.18684090839258968,
+      "interval": {
+        "from": 19.90000000000023,
+        "to": 20.00000000000023
+      }
+    },
+    "gravityEnergyKJ": 0.0030539793990584773,
+    "T": 14.899908813654584,
+    "totalMassKg": 59.704591788861514,
+    "totalEnergyKJ": 31713.94916858769,
+    "roomEnergyKJ": -3002.7355903624907,
+    "massResidualKg": 9.237055564881302e-14,
+    "energyResidualKJ": 1.2653345038415864e-10,
+    "electricalKWh": 0.1127744771334643,
+    "fluidWorkKJ": 375.0142782808506,
+    "externalHeatKJ": -2635.912315158615,
+    "evaporatorHeatKJ": 3062.8466269445694,
+    "operations": {
+      "thermalMode": "air",
+      "receiverHeat": 0,
+      "evaporatorHeat": 0,
+      "condenserHeat": 0,
+      "compressorOn": true,
+      "speed": 0.7,
+      "circuit": "circulating",
+      "valveMode": "auto",
+      "manualOpening": 0.25,
+      "superheatTarget": 5,
+      "kp": 0.04,
+      "ki": 0.004,
+      "drainEnabled": true
+    },
+    "vessels": {
+      "receiver": {
+        "massKg": 46.01713252182094,
+        "internalEnergyKJ": 24190.494436503155,
+        "p": 11.995948850865638,
+        "T": 30.943116025540718,
+        "phase": "Liquid + vapor",
+        "x": 0.03541241378810537,
+        "liquidVolumeFraction": 0.2989505949158838
+      },
+      "evaporator": {
+        "massKg": 3.6712740825970958,
+        "internalEnergyKJ": 1608.2776078290083,
+        "p": 4.9356770935473975,
+        "T": 3.79208720231564,
+        "phase": "Liquid + vapor",
+        "x": 0.06727970552107557,
+        "liquidVolumeFraction": 0.07949706059886236
+      },
+      "condenser": {
+        "massKg": 9.97368740978193,
+        "internalEnergyKJ": 5851.585610270549,
+        "p": 11.890643751025618,
+        "T": 30.645254679369106,
+        "phase": "Liquid + vapor",
+        "x": 0.09689827132480591,
+        "liquidVolumeFraction": 0.1262856362477133
+      },
+      "outlet": {
+        "massKg": 0.04249777466154962,
+        "internalEnergyKJ": 63.591513984979144,
+        "p": 4.53499479490227,
+        "T": 7.224642550997444,
+        "phase": "Superheated vapor",
+        "x": 1,
+        "liquidVolumeFraction": 0
+      }
+    },
+    "fault": null,
+    "acceptedSteps": 1083,
+    "rejectedSteps": 1054
+  },
+  "changed": {
+    "seconds": 20.00000000000019,
+    "roomBoundary": {
+      "ambient": 25,
+      "gain": 2,
+      "leakUA": 0.1
+    },
+    "controller": {
+      "opening": 0.20826141082447971,
+      "sensor": 6.262098511480809,
+      "integral": 0.1686614096454319
+    },
+    "flows": {
+      "feed": {
+        "massFlow": 0.02075862576180497,
+        "status": "flashing / capped",
+        "choked": true,
+        "availablePa": 722225.970242345,
+        "effectivePa": 100811.87745802403,
+        "gravityEnthalpy": 0,
+        "requestedMassFlow": 0.02075862576180497,
+        "phaseLimited": false
+      },
+      "drain": {
+        "massFlow": 0.0835144910262648,
+        "status": "liquid flow",
+        "choked": false,
+        "availablePa": 14681.609915742118,
+        "effectivePa": 14681.609915742118,
+        "gravityEnthalpy": 0.0196133,
+        "requestedMassFlow": 0.0835144910262648,
+        "phaseLimited": false
+      },
+      "vapor": {
+        "massFlow": 0.11437832241441521,
+        "status": "vapor flow",
+        "choked": false,
+        "requestedMassFlow": 0.11437832241441521,
+        "phaseLimited": false
+      },
+      "superheat": 6.270363664953038,
+      "command": 0.21914535010466424,
+      "interval": {
+        "from": 19.900000000000187,
+        "to": 20.00000000000019
+      }
+    },
+    "gravityEnergyKJ": 0.014507772273984369,
+    "T": 14.897097022899537,
+    "totalMassKg": 59.70459178886142,
+    "totalEnergyKJ": 31740.07527417013,
+    "roomEnergyKJ": -3087.089313013891,
+    "massResidualKg": 0,
+    "energyResidualKJ": 3.057039066334255e-10,
+    "electricalKWh": 0.12113683344956398,
+    "fluidWorkKJ": 403.65939726006616,
+    "externalHeatKJ": -2722.7850512069704,
+    "evaporatorHeatKJ": 3147.201564757058,
+    "operations": {
+      "thermalMode": "air",
+      "receiverHeat": 0,
+      "evaporatorHeat": 0,
+      "condenserHeat": 0,
+      "compressorOn": true,
+      "speed": 0.8,
+      "circuit": "circulating",
+      "valveMode": "auto",
+      "manualOpening": 0.25,
+      "superheatTarget": 5,
+      "kp": 0.04,
+      "ki": 0.004,
+      "drainEnabled": true
+    },
+    "vessels": {
+      "receiver": {
+        "massKg": 46.58648782137585,
+        "internalEnergyKJ": 24470.914561939877,
+        "p": 12.010413136978809,
+        "T": 30.984017161213153,
+        "phase": "Liquid + vapor",
+        "x": 0.03482555582033845,
+        "liquidVolumeFraction": 0.30286582621148866
+      },
+      "evaporator": {
+        "massKg": 3.601084308127403,
+        "internalEnergyKJ": 1562.3344643253104,
+        "p": 4.788154280508082,
+        "T": 2.958068327178616,
+        "phase": "Liquid + vapor",
+        "x": 0.06675727068556764,
+        "liquidVolumeFraction": 0.07787967602026731
+      },
+      "condenser": {
+        "massKg": 9.476742265218643,
+        "internalEnergyKJ": 5646.566986447848,
+        "p": 12.040780612893784,
+        "T": 31.069728237884874,
+        "phase": "Liquid + vapor",
+        "x": 0.10408682883458947,
+        "liquidVolumeFraction": 0.11916953395439256
+      },
+      "outlet": {
+        "massKg": 0.040277394139519626,
+        "internalEnergyKJ": 60.259261457092606,
+        "p": 4.296245960922379,
+        "T": 6.2940302771432854,
+        "phase": "Superheated vapor",
+        "x": 1,
+        "liquidVolumeFraction": 0
+      }
+    },
+    "fault": null,
+    "acceptedSteps": 1196,
+    "rejectedSteps": 1186
+  }
+}

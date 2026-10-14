@@ -1,0 +1,35 @@
+{
+  "baseline": "99af25e3b68798919ede19a5c0805775d5828eab",
+  "releaseBranch": "release/demo-candidate-20261014",
+  "readiness": "BLOCKED for physical iPad coworker qualification",
+  "applicationUnchanged": true,
+  "productionHTMLSha256": "2924babd0e2c6fb37c71a9473a83f68644a154c6354a1c834513c570386f5420",
+  "numerical": {
+    "suites": 11,
+    "allPassed": true
+  },
+  "pinnedChromium": {
+    "suites": 19,
+    "passLines": 19,
+    "exitCode": 0
+  },
+  "webkit": {
+    "definedSuites": 9,
+    "allExercised": true,
+    "initialAndContinuationPassed": 5,
+    "initialAndContinuationFailed": 4,
+    "isolatedRepeatExitCode": 1,
+    "isolatedRepeatPassesBeforeFailure": 4,
+    "isolatedRepeatFailure": "training-ui.cjs:34 pause-disabled assertion",
+    "fullSuitePassed": false
+  },
+  "exactByteResizeComparisonOriginalAssertions": [
+    "PASS",
+    "PASS"
+  ],
+  "nativeResizeGeometryMismatchRecorded": true,
+  "offlineChromiumFile": true,
+  "offlineWebkitBytes": true,
+  "webkitFileNavigation": "FAILED: internal error",
+  "physicalIPad": "NOT TESTED; user acceptance pending"
+}

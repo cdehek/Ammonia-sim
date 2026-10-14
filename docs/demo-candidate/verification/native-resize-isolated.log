@@ -1,0 +1,35 @@
+2026-10-14T14:11:24.609Z pw:api => browserType.launch started
+Skipping host requirements validation logic because `PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS` env variable is set.
+2026-10-14T14:11:27.689Z pw:api <= browserType.launch succeeded
+2026-10-14T14:11:27.690Z pw:api => browser.newPage started
+2026-10-14T14:11:31.326Z pw:api <= browser.newPage succeeded
+2026-10-14T14:11:31.327Z pw:api => page.goto started
+2026-10-14T14:11:31.367Z pw:api navigating to "http://127.0.0.1:36817/", waiting until "load"
+2026-10-14T14:11:31.518Z pw:api   "commit" event fired
+2026-10-14T14:11:31.519Z pw:api   navigated to "http://127.0.0.1:36817/"
+2026-10-14T14:11:37.986Z pw:api   "networkidle" event fired
+2026-10-14T14:11:38.218Z pw:api   "load" event fired
+2026-10-14T14:11:38.222Z pw:api   "domcontentloaded" event fired
+2026-10-14T14:11:38.222Z pw:api <= page.goto succeeded
+2026-10-14T14:11:38.266Z pw:api => locator.click started
+2026-10-14T14:11:38.374Z pw:api waiting for locator('#storage-example')
+2026-10-14T14:11:38.809Z pw:api   locator resolved to <button class="btn" id="storage-example">Initialize auto DX</button>
+2026-10-14T14:11:38.881Z pw:api attempting click action
+2026-10-14T14:11:38.895Z pw:api   waiting for element to be visible, enabled and stable
+2026-10-14T14:12:08.286Z pw:api <= locator.click failed
+locator.click: Timeout 30000ms exceeded.
+Call log:
+[2m  - waiting for locator('#storage-example')[22m
+[2m    - locator resolved to <button class="btn" id="storage-example">Initialize auto DX</button>[22m
+[2m  - attempting click action[22m
+[2m    - waiting for element to be visible, enabled and stable[22m
+
+    at [stdin]:1:421 {
+  log: [
+    "  - waiting for locator('#storage-example')",
+    '    - locator resolved to <button class="btn" id="storage-example">Initialize auto DX</button>',
+    '  - attempting click action',
+    '    - waiting for element to be visible, enabled and stable'
+  ],
+  name: 'TimeoutError'
+}

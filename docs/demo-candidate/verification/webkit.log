@@ -1,0 +1,31 @@
+
+> ammonia-lab@0.5.0 test:webkit
+> TEST_BROWSER=webkit node tests/run-browser.cjs focus-mode-ui.cjs release-ui.cjs schematic-ui.cjs history-ui.cjs training-ui.cjs visual-pass2-ui.cjs industrial-styling-ui.cjs hmi-uplift-ui.cjs operator-assist-ui.cjs
+
+Skipping host requirements validation logic because `PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS` env variable is set.
+PASS: webkit focus startup, hidden retained workspaces, URL/build restoration, existing validation route and keyboard return, all seven Live Plant sections, controls/schematic/trends/exercises/profiles/CSV exports, desktop/iPad layouts and standalone offline startup.
+Skipping host requirements validation logic because `PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS` env variable is set.
+locator.click: Timeout 30000ms exceeded.
+Call log:
+[2m  - waiting for locator('#tab-validation')[22m
+[2m    - locator resolved to <button role="tab" tabindex="-1" id="tab-validation" aria-selected="false" data-tab="validation" aria-controls="view-validation">Model & validation</button>[22m
+[2m  - attempting click action[22m
+[2m    - waiting for element to be visible, enabled and stable[22m
+
+    at /workspace/ammonia-git/tests/release-ui.cjs:9:105 {
+  log: [
+    "  - waiting for locator('#tab-validation')",
+    '    - locator resolved to <button role="tab" tabindex="-1" id="tab-validation" aria-selected="false" data-tab="validation" aria-controls="view-validation">Model & validation</button>',
+    '  - attempting click action',
+    '    - waiting for element to be visible, enabled and stable'
+  ],
+  name: 'TimeoutError'
+}
+Error: release-ui.cjs failed
+    at /workspace/ammonia-git/tests/run-browser.cjs:8:22
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+npm notice
+npm notice New major version of npm available! 11.9.0 -> 12.2.0
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.0
+npm notice To update run: npm install -g npm@12.2.0
+npm notice

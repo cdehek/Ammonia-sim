@@ -1,0 +1,17 @@
+Skipping host requirements validation logic because `PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS` env variable is set.
+locator.click: Target page, context or browser has been closed
+Call log:
+[2m  - waiting for locator('#training-advance')[22m
+[2m    - locator resolved to <button class="btn" type="button" id="training-advance">Advance 10 seconds</button>[22m
+[2m  - attempting click action[22m
+[2m    - waiting for element to be visible, enabled and stable[22m
+
+    at click (/workspace/ammonia-git/docs/demo-candidate/verify-demo.cjs:14:39)
+    at /workspace/ammonia-git/docs/demo-candidate/verify-demo.cjs:33:148 {
+  log: [
+    "  - waiting for locator('#training-advance')",
+    '    - locator resolved to <button class="btn" type="button" id="training-advance">Advance 10 seconds</button>',
+    '  - attempting click action',
+    '    - waiting for element to be visible, enabled and stable'
+  ]
+}

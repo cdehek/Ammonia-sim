@@ -1,0 +1,44 @@
+// Release audit: existing UI actions only; no state injection or physics changes.
+const assert=require('node:assert/strict'),fs=require('fs'),path=require('path'),http=require('http');
+const {chromium,webkit,devices}=require('playwright');
+const root=process.cwd(),out=process.env.AUDIT_OUTPUT_ROOT||path.join(root,'docs/demo-candidate'),which=process.env.TEST_BROWSER||'chromium',label=process.env.AUDIT_LABEL||which;
+fs.mkdirSync(path.join(out,'screenshots'),{recursive:true});fs.mkdirSync(path.join(out,'verification'),{recursive:true});
+(async()=>{
+ const server=http.createServer((req,res)=>{res.setHeader('Content-Type','text/html; charset=utf-8');res.end(fs.readFileSync('index.html'));});
+ await new Promise(r=>server.listen(0,'127.0.0.1',r));const browser=await ({chromium,webkit}[which]).launch({headless:true,...(which==='chromium'?{args:['--no-sandbox']}: {})});
+ const results={browser:which,errors:[],scenarios:{}};
+ try{
+ const page=await browser.newPage({...devices['iPad (gen 7)'],viewport:{width:1024,height:768},acceptDownloads:true,reducedMotion:'reduce'});
+ page.on('pageerror',e=>results.errors.push(e.message));await page.goto('http://127.0.0.1:'+server.address().port);
+ assert(await page.locator('#view-live').isVisible());assert(await page.locator('#startup-notice').isHidden());
+ const click=id=>page.locator('#'+id).click();
+ async function download(id,name){const pending=page.waitForEvent('download');await click(id);const d=await pending;await d.saveAs(path.join(out,'verification',label+'-'+name));return fs.readFileSync(path.join(out,'verification',label+'-'+name),'utf8');}
+ async function shot(name){await page.evaluate(()=>scrollTo(0,0));await page.screenshot({path:path.join(out,'screenshots',label+'-'+name+'.png'),animations:'disabled'});}
+ async function state(){return {clock:await page.locator('#storage-clock').textContent(),overview:await page.locator('#storage-overview').textContent(),assist:await page.locator('#operator-assist').textContent(),status:await page.locator('#storage-status').textContent()};}
+ await click('storage-example');await click('operator-assist-toggle');assert.match(await page.locator('#operator-assist').textContent(),/PLAYBACK PAUSED/);
+ await page.locator('#storage-speed').selectOption('1');await click('storage-start');await page.waitForTimeout(500);assert.match(await page.locator('#operator-assist').textContent(),/OPERATING/);await click('storage-pause');await click('storage-example');await click('storage-step');
+ const normalBefore=await state();await download('storage-history-export','normal-before.csv');
+ await page.locator('#storage-compressorSpeed').fill('80');assert.match(await page.locator('#operator-assist').textContent(),/Unapplied draft/);await page.locator('#storage-form button[type="submit"]').click();await click('storage-step');
+ const normalAfter=await state();assert.match(normalAfter.assist,/80.00 %/);await download('storage-history-export','normal-after.csv');await shot('normal-landscape');
+ const csv=await download('storage-export','presentation-before.csv');
+ await page.locator('#temperature-unit').selectOption('C');await page.locator('#pressure-unit').selectOption('bara');
+ for(const key of ['compressor','condenser','receiver','evaporator','outlet','feed']){await page.locator('[data-component="'+key+'"]').focus();await page.keyboard.press('Enter');assert(await page.locator('#schematic-detail').isVisible());}
+ await page.locator('#storage-trend-group').selectOption('pressure');
+ const geometry=[],resizeFailures=[];for(const viewport of [{width:768,height:1024},{width:1024,height:768},{width:1440,height:1000},{width:1024,height:768}]){await page.setViewportSize(viewport);await page.waitForTimeout(350);assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));const g=await page.evaluate(()=>({viewport:innerWidth,plot:document.querySelector('.history-plot').clientWidth,svg:document.querySelector('.history-plot svg').viewBox.baseVal.width}));geometry.push(g);if(g.plot!==g.svg){resizeFailures.push(g);await page.locator('#storage-trends').screenshot({path:path.join(out,'screenshots',label+'-resize-'+g.viewport+'.png'),animations:'disabled'});}}
+ assert.equal(await download('storage-export','presentation-after.csv'),csv);results.scenarios.A={before:normalBefore,after:normalAfter,nativeResize:geometry,presentationSIExportIdentical:true};
+ await page.setViewportSize({width:768,height:1024});await shot('normal-portrait');await page.setViewportSize({width:1024,height:768});await page.locator('#temperature-unit').selectOption('F');await page.locator('#pressure-unit').selectOption('psig');
+ async function load(id,reflect){await page.locator('#training-select').selectOption(id);await click('training-load');if(reflect){await page.locator('#training-answer').selectOption('0');await click('training-check');}await click('training-disturbance');}
+ await load('restriction',true);await click('training-advance');assert.match(await page.locator('#training-status').textContent(),/Objectives completed/);assert.equal(await page.locator('#storage-clock').textContent(),'40.0 s simulated');
+ results.scenarios.B={correct:JSON.parse(await download('training-export','restriction-correct.json'))};await shot('restriction-completed');
+ await click('training-reset');await click('training-disturbance');for(let i=0;i<12&&await page.locator('#training-advance').isEnabled();i++)await click('training-advance');assert.match(await page.locator('#training-status').textContent(),/Stopped before completion/);assert.match(await page.locator('#storage-status').textContent(),/High discharge temperature/);results.scenarios.B.missing=JSON.parse(await download('training-export','restriction-missing.json'));
+ await load('hot',true);for(let i=0;i<12&&await page.locator('#training-advance').isEnabled();i++){await click('training-advance');if(/TRIPPED/.test(await page.locator('#storage-status').textContent()))break;}
+ const trip=JSON.parse(await download('training-export','hot-trip.json'));const fault=trip.attempt.expectedFault;assert.equal(fault.message,'High discharge temperature');assert(fault.readings.discharge>=fault.limits.dischargeTrip);const assist=await page.locator('#operator-assist').textContent();assert.match(assist,/EQUIPMENT TRIP.*High discharge temperature/s);assert.match(assist,/Recorded triggering comparison/);await shot('hot-trip-assist');
+ await click('training-restore');await click('training-clear');await click('training-advance');assert.match(await page.locator('#training-status').textContent(),/Objectives completed/);const recovered=JSON.parse(await download('training-export','hot-recovered.json'));assert.deepEqual(recovered.attempt.expectedFault,fault);assert(recovered.history.events.some(e=>e.type==='stop'));assert(recovered.history.events.some(e=>e.type==='clear'));assert.equal(recovered.final.fault,null);results.scenarios.C={fault,assist,retainedAfterRecovery:true};await download('storage-history-export','hot-recovered-history.csv');
+ // Preserve completed scenario evidence even if this host blocks file navigation.
+ results.resizeFailures=resizeFailures;fs.writeFileSync(path.join(out,'verification',label+'-scenario-audit.json'),JSON.stringify({...results,offline:{status:'not yet tested'}},null,2)+'\n');
+ // Standalone local bytes, actual offline context, no HTTP assets or storage dependency.
+ const offline=await browser.newPage({...devices['iPad (gen 7)'],acceptDownloads:true,reducedMotion:'reduce'});await offline.context().setOffline(true);const requests=[];offline.on('request',r=>{if(/^https?:/.test(r.url()))requests.push(r.url());});offline.on('pageerror',e=>results.errors.push(e.message));
+ await offline.goto('file://'+path.join(root,'index.html'));assert(await offline.locator('#view-live').isVisible());await offline.locator('#storage-example').tap();await offline.locator('#storage-step').tap();await offline.locator('#operator-assist-toggle').tap();assert.match(await offline.locator('#operator-assist').textContent(),/PLAYBACK PAUSED/);assert.equal(await offline.locator('#storage-clock').textContent(),'10.0 s simulated');assert.deepEqual(requests,[]);results.offline={method:'file:// standalone HTML in offline browser context',networkRequests:requests};assert.deepEqual(results.errors,[]);
+ results.resizeFailures=resizeFailures;fs.writeFileSync(path.join(out,'verification',label+'-scenario-audit.json'),JSON.stringify(results,null,2)+'\n');console.log('PASS: '+label+' scenarios A/B/C, correct/missing reflections, real trip and retained recovery evidence, immutable SI export, keyboard, touch and standalone file:// offline startup.');assert.deepEqual(resizeFailures,[],'All native resize geometries must match after 350 ms');console.log('PASS: native landscape/portrait chart resizing.');
+ }finally{await browser.close();await new Promise(r=>server.close(r));}
+})().catch(e=>{console.error(e);process.exitCode=1;});

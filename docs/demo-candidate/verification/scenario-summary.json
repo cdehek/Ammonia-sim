@@ -1,0 +1,90 @@
+{
+  "chromium": {
+    "restrictionCorrect": {
+      "status": "completed",
+      "seconds": 40.00000000000004
+    },
+    "restrictionMissing": {
+      "status": "stopped",
+      "seconds": 56.73750000000059
+    },
+    "hotFault": {
+      "kind": "equipment",
+      "message": "High discharge temperature",
+      "seconds": 65.1249999999996,
+      "readings": {
+        "room": 14.718127473542316,
+        "pressure": 3.3648504305108555,
+        "condensing": 17.63264605366225,
+        "discharge": 170.1596973958875,
+        "speed": 0.7,
+        "stages": 1
+      },
+      "attemptedReadings": null,
+      "limits": {
+        "compressors": 1,
+        "displacement": 180,
+        "evapUA": 12,
+        "condUA": 25,
+        "highTrip": 24,
+        "lowTrip": 0.4,
+        "dischargeTrip": 170,
+        "performanceMode": "example",
+        "etaVol": 75,
+        "etaIs": 75,
+        "etaMotor": 92
+      }
+    },
+    "afterRecovery": {
+      "status": "completed",
+      "seconds": 75.12500000000749,
+      "fault": null,
+      "originalFaultRetained": true
+    },
+    "SIExportIdentical": true
+  },
+  "webkit-native-1x": {
+    "restrictionCorrect": {
+      "status": "completed",
+      "seconds": 40.00000000000004
+    },
+    "restrictionMissing": {
+      "status": "stopped",
+      "seconds": 56.73750000000059
+    },
+    "hotFault": {
+      "kind": "equipment",
+      "message": "High discharge temperature",
+      "seconds": 65.1249999999996,
+      "readings": {
+        "room": 14.718127473541774,
+        "pressure": 3.36485043023655,
+        "condensing": 17.632646053698586,
+        "discharge": 170.15969731501912,
+        "speed": 0.7,
+        "stages": 1
+      },
+      "attemptedReadings": null,
+      "limits": {
+        "compressors": 1,
+        "displacement": 180,
+        "evapUA": 12,
+        "condUA": 25,
+        "highTrip": 24,
+        "lowTrip": 0.4,
+        "dischargeTrip": 170,
+        "performanceMode": "example",
+        "etaVol": 75,
+        "etaIs": 75,
+        "etaMotor": 92
+      }
+    },
+    "afterRecovery": {
+      "status": "completed",
+      "seconds": 75.12500000000749,
+      "fault": null,
+      "originalFaultRetained": true
+    },
+    "SIExportIdentical": true
+  }
+}

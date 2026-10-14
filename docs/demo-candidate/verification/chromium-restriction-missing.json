@@ -1,0 +1,4419 @@
+{
+  "attempt": {
+    "schemaVersion": 1,
+    "appVersion": "0.5.0",
+    "exercise": "restriction",
+    "status": "stopped",
+    "startedAt": 30.000000000000373,
+    "lastSampleId": 65,
+    "profile": {
+      "schema": "ammonia-equipment-profile",
+      "schemaVersion": 3,
+      "id": "default",
+      "name": "Default",
+      "description": "Built-in example equipment. Duplicate it to create your own specifications.",
+      "sourceKind": "example",
+      "source": "Ammonia Lab example curves; see DYNAMIC_MODEL.md.",
+      "arrangement": "single-stage-dx",
+      "revision": 3,
+      "createdAt": "2026-10-07T00:00:00.000Z",
+      "updatedAt": "2026-10-07T00:00:00.000Z",
+      "equipment": {
+        "compressors": 1,
+        "displacement": 180,
+        "evapUA": 12,
+        "condUA": 25,
+        "highTrip": 24,
+        "lowTrip": 0.4,
+        "dischargeTrip": 170,
+        "performanceMode": "example",
+        "etaVol": 75,
+        "etaIs": 75,
+        "etaMotor": 92
+      },
+      "inventory": {
+        "volumes": {
+          "receiver": 0.25,
+          "evaporator": 0.08,
+          "condenser": 0.12
+        },
+        "initialization": {
+          "mode": "levels",
+          "chargeKg": null,
+          "suctionPressure": 2.5,
+          "dischargePressure": 12,
+          "liquidFractions": {
+            "receiver": 0.3,
+            "evaporator": 0.1,
+            "condenser": 0.1
+          }
+        }
+      },
+      "connections": {
+        "feedAreaM2": 0.00002,
+        "feedRecovery": 0.8,
+        "openingExponent": 1.5,
+        "actuatorSeconds": 2,
+        "sensorSeconds": 2,
+        "drainAreaM2": 0.00002,
+        "drainRecovery": 0.9,
+        "drainHeightM": 2,
+        "outletVolumeFraction": 0.15,
+        "outletUAFraction": 0.015,
+        "vaporAreaM2": 0.0002,
+        "outletInitialSuperheatK": 5
+      }
+    },
+    "initialRoom": {
+      "initial": 15,
+      "thermalMass": 30,
+      "leakUA": 0.1,
+      "gain": 2,
+      "ambient": 25
+    },
+    "baseline": {
+      "id": 31,
+      "seconds": 30.000000000000373,
+      "reason": "periodic",
+      "pressures": {
+        "receiver": 11.996546535339304,
+        "evaporator": 4.935940622846378,
+        "condenser": 11.891263672198892,
+        "outlet": 4.535159316400708
+      },
+      "temperatures": {
+        "room": 14.856773808336904,
+        "ambient": 25,
+        "receiver": 30.94480709410039,
+        "evaporator": 3.7935614967205677,
+        "condenser": 30.647015803339123,
+        "outlet": 7.2083982061522
+      },
+      "levels": {
+        "receiver": 0.29924156978206323,
+        "evaporator": 0.059068198748793155,
+        "condenser": 0.13813511208190926,
+        "outlet": 0
+      },
+      "roomBoundary": {
+        "ambient": 25,
+        "gain": 2,
+        "leakUA": 0.1
+      },
+      "operations": {
+        "thermalMode": "air",
+        "receiverHeat": 0,
+        "evaporatorHeat": 0,
+        "condenserHeat": 0,
+        "compressorOn": true,
+        "speed": 0.7,
+        "circuit": "circulating",
+        "valveMode": "auto",
+        "manualOpening": 0.25,
+        "superheatTarget": 5,
+        "kp": 0.04,
+        "ki": 0.004,
+        "drainEnabled": true
+      },
+      "actualSuperheat": 5.72871629265137,
+      "sensedSuperheat": 5.732557243203287,
+      "targetSuperheat": 5,
+      "opening": 0.20999836869682975,
+      "command": 0.2157384393314281,
+      "speedSetting": 0.7,
+      "electricalDemand": 20.611412986584043,
+      "dischargeTemperature": 92.10115860324203,
+      "faultKind": null,
+      "feedMassFlow": 0.021023325964408736,
+      "drainMassFlow": 0.023170782935259794,
+      "flowInterval": {
+        "from": 29.90000000000037,
+        "to": 30.000000000000373
+      }
+    },
+    "goals": [
+      {
+        "label": "Observe actual opening remain above the new 2% command immediately after application.",
+        "met": true,
+        "evidence": {
+          "seconds": 30.000000000000373,
+          "sampleId": 34,
+          "command": 0.02,
+          "opening": 0.20999836869682975
+        }
+      },
+      {
+        "label": "After 10 s, observe feed below half its baseline with actual opening below 4%, without a stop.",
+        "met": true,
+        "evidence": {
+          "seconds": 40.00000000000004,
+          "sampleId": 46,
+          "feedKgS": 0.0006797840182130419,
+          "baselineFeedKgS": 0.021023325964408736
+        }
+      },
+      {
+        "label": "Answer the reflection correctly.",
+        "met": false,
+        "evidence": null
+      }
+    ],
+    "injectedAt": 30.000000000000373,
+    "holdStart": null,
+    "expectedFault": null,
+    "restored": false,
+    "quizAttempts": [],
+    "actions": [
+      {
+        "type": "disturbance",
+        "seconds": 30.000000000000373,
+        "operations": {
+          "thermalMode": "air",
+          "receiverHeat": 0,
+          "evaporatorHeat": 0,
+          "condenserHeat": 0,
+          "compressorOn": true,
+          "speed": 0.7,
+          "circuit": "circulating",
+          "valveMode": "manual",
+          "manualOpening": 0.02,
+          "superheatTarget": 5,
+          "kp": 0.04,
+          "ki": 0.004,
+          "drainEnabled": true
+        },
+        "roomBoundary": {
+          "ambient": 25,
+          "gain": 2,
+          "leakUA": 0.1
+        }
+      }
+    ],
+    "endedAt": 56.73750000000059,
+    "reason": "High discharge temperature"
+  },
+  "history": {
+    "schemaVersion": 1,
+    "profile": {
+      "schema": "ammonia-equipment-profile",
+      "schemaVersion": 3,
+      "id": "default",
+      "name": "Default",
+      "description": "Built-in example equipment. Duplicate it to create your own specifications.",
+      "sourceKind": "example",
+      "source": "Ammonia Lab example curves; see DYNAMIC_MODEL.md.",
+      "arrangement": "single-stage-dx",
+      "revision": 3,
+      "createdAt": "2026-10-07T00:00:00.000Z",
+      "updatedAt": "2026-10-07T00:00:00.000Z",
+      "equipment": {
+        "compressors": 1,
+        "displacement": 180,
+        "evapUA": 12,
+        "condUA": 25,
+        "highTrip": 24,
+        "lowTrip": 0.4,
+        "dischargeTrip": 170,
+        "performanceMode": "example",
+        "etaVol": 75,
+        "etaIs": 75,
+        "etaMotor": 92
+      },
+      "inventory": {
+        "volumes": {
+          "receiver": 0.25,
+          "evaporator": 0.08,
+          "condenser": 0.12
+        },
+        "initialization": {
+          "mode": "levels",
+          "chargeKg": null,
+          "suctionPressure": 2.5,
+          "dischargePressure": 12,
+          "liquidFractions": {
+            "receiver": 0.3,
+            "evaporator": 0.1,
+            "condenser": 0.1
+          }
+        }
+      },
+      "connections": {
+        "feedAreaM2": 0.00002,
+        "feedRecovery": 0.8,
+        "openingExponent": 1.5,
+        "actuatorSeconds": 2,
+        "sensorSeconds": 2,
+        "drainAreaM2": 0.00002,
+        "drainRecovery": 0.9,
+        "drainHeightM": 2,
+        "outletVolumeFraction": 0.15,
+        "outletUAFraction": 0.015,
+        "vaporAreaM2": 0.0002,
+        "outletInitialSuperheatK": 5
+      }
+    },
+    "initialRoom": {
+      "initial": 15,
+      "thermalMass": 30,
+      "leakUA": 0.1,
+      "gain": 2,
+      "ambient": 25
+    },
+    "limits": {
+      "samples": 7201,
+      "events": 2000,
+      "cadenceSeconds": 1
+    },
+    "samples": [
+      {
+        "id": 1,
+        "seconds": 0,
+        "reason": "initialize",
+        "pressures": {
+          "receiver": 12,
+          "evaporator": 2.5016117058092586,
+          "condenser": 12,
+          "outlet": 2.5
+        },
+        "temperatures": {
+          "room": 15,
+          "ambient": 25,
+          "receiver": 30.9545765625688,
+          "evaporator": -13.630435164683467,
+          "condenser": 30.9545765625688,
+          "outlet": -8.645763965674732
+        },
+        "levels": {
+          "receiver": 0.3,
+          "evaporator": 0.11766191741721692,
+          "condenser": 0.09999999999999998,
+          "outlet": 0
+        },
+        "roomBoundary": {
+          "ambient": 25,
+          "gain": 2,
+          "leakUA": 0.1
+        },
+        "operations": {
+          "thermalMode": "air",
+          "receiverHeat": 0,
+          "evaporatorHeat": 0,
+          "condenserHeat": 0,
+          "compressorOn": true,
+          "speed": 0.7,
+          "circuit": "circulating",
+          "valveMode": "auto",
+          "manualOpening": 0.25,
+          "superheatTarget": 5,
+          "kp": 0.04,
+          "ki": 0.004,
+          "drainEnabled": true
+        },
+        "actualSuperheat": 4.999999975552782,
+        "sensedSuperheat": 4.999999975552782,
+        "targetSuperheat": 5,
+        "opening": 0,
+        "command": 0,
+        "speedSetting": 0.7,
+        "electricalDemand": 18.01260921981839,
+        "dischargeTemperature": 132.4091089344864,
+        "faultKind": null,
+        "feedMassFlow": 0,
+        "drainMassFlow": 0.07439249935559329,
+        "flowInterval": null
+      },
+      {
+        "id": 2,
+        "seconds": 0.9999999999999988,
+        "reason": "periodic",
+        "pressures": {
+          "receiver": 12.000351955500106,
+          "evaporator": 3.3276130335533667,
+          "condenser": 11.711271636491828,
+          "outlet": 3.053847257764794
+        },
+        "temperatures": {
+          "room": 14.990263009344563,
+          "ambient": 25,
+          "receiver": 30.95557204776703,
+          "evaporator": -6.623492514486065,
+          "condenser": 30.132442186770884,
+          "outlet": 5.990944537691606
+        },
+        "levels": {
+          "receiver": 0.3001019277801077,
+          "evaporator": 0.1170536960091465,
+          "condenser": 0.10073855696755753,
+          "outlet": 0
+        },
+        "roomBoundary": {
+          "ambient": 25,
+          "gain": 2,
+          "leakUA": 0.1
+        },
+        "operations": {
+          "thermalMode": "air",
+          "receiverHeat": 0,
+          "evaporatorHeat": 0,
+          "condenserHeat": 0,
+          "compressorOn": true,
+          "speed": 0.7,
+          "circuit": "circulating",
+          "valveMode": "auto",
+          "manualOpening": 0.25,
+          "superheatTarget": 5,
+          "kp": 0.04,
+          "ki": 0.004,
+          "drainEnabled": true
+        },
+        "actualSuperheat": 14.767617831239477,
+        "sensedSuperheat": 8.859847683684789,
+        "targetSuperheat": 5,
+        "opening": 0.032926678041842156,
+        "command": 0.16178790937936444,
+        "speedSetting": 0.7,
+        "electricalDemand": 19.069300929303846,
+        "dischargeTemperature": 129.6585774290567,
+        "faultKind": null,
+        "feedMassFlow": 0.0012949159782203977,
+        "drainMassFlow": 0,
+        "flowInterval": {
+          "from": 0.9937499999999988,
+          "to": 0.9999999999999988
+        }
+      },
+      {
+        "id": 3,
+        "seconds": 2.000000000000013,
+        "reason": "periodic",
+        "pressures": {
+          "receiver": 12.000253323553823,
+          "evaporator": 3.9057422699218947,
+          "condenser": 11.606880176916285,
+          "outlet": 3.583803239547347
+        },
+        "temperatures": {
+          "room": 14.982676421946925,
+          "ambient": 25,
+          "receiver": 30.955293076118014,
+          "evaporator": -2.4987500205288735,
+          "condenser": 29.83141030221233,
+          "outlet": 6.279156758935602
+        },
+        "levels": {
+          "receiver": 0.3000743818905151,
+          "evaporator": 0.11571430672875811,
+          "condenser": 0.10183783491640108,
+          "outlet": 0
+        },
+        "roomBoundary": {
+          "ambient": 25,
+          "gain": 2,
+          "leakUA": 0.1
+        },
+        "operations": {
+          "thermalMode": "air",
+          "receiverHeat": 0,
+          "evaporatorHeat": 0,
+          "condenserHeat": 0,
+          "compressorOn": true,
+          "speed": 0.7,
+          "circuit": "circulating",
+          "valveMode": "auto",
+          "manualOpening": 0.25,
+          "superheatTarget": 5,
+          "kp": 0.04,
+          "ki": 0.004,
+          "drainEnabled": true
+        },
+        "actualSuperheat": 11.010760121280327,
+        "sensedSuperheat": 10.31969919694396,
+        "targetSuperheat": 5,
+        "opening": 0.10333897428102604,
+        "command": 0.2394037085156161,
+        "speedSetting": 0.7,
+        "electricalDemand": 19.719721663990345,
+        "dischargeTemperature": 112.38047978598772,
+        "faultKind": null,
+        "feedMassFlow": 0.0072437347615395475,
+        "drainMassFlow": 0,
+        "flowInterval": {
+          "from": 1.9937500000000128,
+          "to": 2.000000000000013
+        }
+      },
+      {
+        "id": 4,
+        "seconds": 3.000000000000027,
+        "reason": "periodic",
+        "pressures": {
+          "receiver": 11.999987805537211,
+          "evaporator": 4.293191626884843,
+          "condenser": 11.597546543622729,
+          "outlet": 3.9401571364214707
+        },
+        "temperatures": {
+          "room": 14.97637243181535,
+          "ambient": 25,
+          "receiver": 30.954542070732774,
+          "evaporator": 0.004621442935519693,
+          "condenser": 29.804363329322303,
+          "outlet": 6.580572814984698
+        },
+        "levels": {
+          "receiver": 0.3000002353756005,
+          "evaporator": 0.11409430082030408,
+          "condenser": 0.10306537175232379,
+          "outlet": 0
+        },
+        "roomBoundary": {
+          "ambient": 25,
+          "gain": 2,
+          "leakUA": 0.1
+        },
+        "operations": {
+          "thermalMode": "air",
+          "receiverHeat": 0,
+          "evaporatorHeat": 0,
+          "condenserHeat": 0,
+          "compressorOn": true,
+          "speed": 0.7,
+          "circuit": "circulating",
+          "valveMode": "auto",
+          "manualOpening": 0.25,
+          "superheatTarget": 5,
+          "kp": 0.04,
+          "ki": 0.004,
+          "drainEnabled": true
+        },
+        "actualSuperheat": 8.849423291394487,
+        "sensedSuperheat": 10.092329429248311,
+        "targetSuperheat": 5,
+        "opening": 0.16070763870964747,
+        "command": 0.2514503088075263,
+        "speedSetting": 0.7,
+        "electricalDemand": 19.988892597726384,
+        "dischargeTemperature": 103.02074195219619,
+        "faultKind": null,
+        "feedMassFlow": 0.014054196782396066,
+        "drainMassFlow": 0,
+        "flowInterval": {
+          "from": 2.987500000000027,
+          "to": 3.000000000000027
+        }
+      },
+      {
+        "id": 5,
+        "seconds": 4.000000000000029,
+        "reason": "periodic",
+        "pressures": {
+          "receiver": 11.999578203317459,
+          "evaporator": 4.544209130478944,
+          "condenser": 11.630519191475738,
+          "outlet": 4.171579845692987
+        },
+        "temperatures": {
+          "room": 14.970851062155281,
+          "ambient": 25,
+          "receiver": 30.9533834972766,
+          "evaporator": 1.5336579306769178,
+          "condenser": 29.89981418396652,
+          "outlet": 6.828019019273924
+        },
+        "levels": {
+          "receiver": 0.2998858737462065,
+          "evaporator": 0.11235381113781369,
+          "condenser": 0.10438736487224996,
+          "outlet": 0
+        },
+        "roomBoundary": {
+          "ambient": 25,
+          "gain": 2,
+          "leakUA": 0.1
+        },
+        "operations": {
+          "thermalMode": "air",
+          "receiverHeat": 0,
+          "evaporatorHeat": 0,
+          "condenserHeat": 0,
+          "compressorOn": true,
+          "speed": 0.7,
+          "circuit": "circulating",
+          "valveMode": "auto",
+          "manualOpening": 0.25,
+          "superheatTarget": 5,
+          "kp": 0.04,
+          "ki": 0.004,
+          "drainEnabled": true
+        },
+        "actualSuperheat": 7.589419343275949,
+        "sensedSuperheat": 9.31305438221433,
+        "targetSuperheat": 5,
+        "opening": 0.1941982198576693,
+        "command": 0.23916803522355215,
+        "speedSetting": 0.7,
+        "electricalDemand": 20.134659567866162,
+        "dischargeTemperature": 97.86062003978529,
+        "faultKind": null,
+        "feedMassFlow": 0.01867741573113986,
+        "drainMassFlow": 0,
+        "flowInterval": {
+          "from": 3.975000000000029,
+          "to": 4.000000000000029
+        }
+      },
+      {
+        "id": 6,
+        "seconds": 5.0000000000000435,
+        "reason": "periodic",
+        "pressures": {
+          "receiver": 11.99908744337719,
+          "evaporator": 4.702724734461926,
+          "condenser": 11.677683150734607,
+          "outlet": 4.318068043163538
+        },
+        "temperatures": {
+          "room": 14.965808476911642,
+          "ambient": 25,
+          "receiver": 30.951995314438893,
+          "evaporator": 2.465825554754291,
+          "condenser": 30.035877427716496,
+          "outlet": 7.000019255480706
+        },
+        "levels": {
+          "receiver": 0.2997488857270979,
+          "evaporator": 0.11053886519786651,
+          "condenser": 0.1057755332724962,
+          "outlet": 0
+        },
+        "roomBoundary": {
+          "ambient": 25,
+          "gain": 2,
+          "leakUA": 0.1
+        },
+        "operations": {
+          "thermalMode": "air",
+          "receiverHeat": 0,
+          "evaporatorHeat": 0,
+          "condenserHeat": 0,
+          "compressorOn": true,
+          "speed": 0.7,
+          "circuit": "circulating",
+          "valveMode": "auto",
+          "manualOpening": 0.25,
+          "superheatTarget": 5,
+          "kp": 0.04,
+          "ki": 0.004,
+          "drainEnabled": true
+        },
+        "actualSuperheat": 6.840674643171951,
+        "sensedSuperheat": 8.462881654361032,
+        "targetSuperheat": 5,
+        "opening": 0.2079953401154341,
+        "command": 0.22069505755839403,
+        "speedSetting": 0.7,
+        "electricalDemand": 20.239396583412738,
+        "dischargeTemperature": 95.00823534811296,
+        "faultKind": null,
+        "feedMassFlow": 0.020735412707270928,
+        "drainMassFlow": 0,
+        "flowInterval": {
+          "from": 4.975000000000043,
+          "to": 5.0000000000000435
+        }
+      },
+      {
+        "id": 7,
+        "seconds": 6.000000000000058,
+        "reason": "periodic",
+        "pressures": {
+          "receiver": 11.998571233942798,
+          "evaporator": 4.80065339484332,
+          "condenser": 11.72511750264064,
+          "outlet": 4.408802210486909
+        },
+        "temperatures": {
+          "room": 14.961057547475697,
+          "ambient": 25,
+          "receiver": 30.950535082892333,
+          "evaporator": 3.0294255205592227,
+          "condenser": 30.172167582357226,
+          "outlet": 7.108793583815078
+        },
+        "levels": {
+          "receiver": 0.299604832764247,
+          "evaporator": 0.10865880505744419,
+          "condenser": 0.10720868683084984,
+          "outlet": 0
+        },
+        "roomBoundary": {
+          "ambient": 25,
+          "gain": 2,
+          "leakUA": 0.1
+        },
+        "operations": {
+          "thermalMode": "air",
+          "receiverHeat": 0,
+          "evaporatorHeat": 0,
+          "condenserHeat": 0,
+          "compressorOn": true,
+          "speed": 0.7,
+          "circuit": "circulating",
+          "valveMode": "auto",
+          "manualOpening": 0.25,
+          "superheatTarget": 5,
+          "kp": 0.04,
+          "ki": 0.004,
+          "drainEnabled": true
+        },
+        "actualSuperheat": 6.391347764292732,
+        "sensedSuperheat": 7.721412760857986,
+        "targetSuperheat": 5,
+        "opening": 0.2092013430129434,
+        "command": 0.2033557171879894,
+        "speedSetting": 0.7,
+        "electricalDemand": 20.326220203511895,
+        "dischargeTemperature": 93.45962322687032,
+        "faultKind": null,
+        "feedMassFlow": 0.020932908531839697,
+        "drainMassFlow": 0,
+        "flowInterval": {
+          "from": 5.975000000000057,
+          "to": 6.000000000000058
+        }
+      },
+      {
+        "id": 8,
+        "seconds": 7.000000000000072,
+        "reason": "periodic",
+        "pressures": {
+          "receiver": 11.998064113371253,
+          "evaporator": 4.859803419882649,
+          "condenser": 11.76675204370293,
+          "outlet": 4.463763600941389
+        },
+        "temperatures": {
+          "room": 14.956482651392653,
+          "ambient": 25,
+          "receiver": 30.94910050036414,
+          "evaporator": 3.3656601462001134,
+          "condenser": 30.29143709366383,
+          "outlet": 7.173111307278381
+        },
+        "levels": {
+          "receiver": 0.2994633549566082,
+          "evaporator": 0.1067180890646724,
+          "condenser": 0.10867180536895844,
+          "outlet": 0
+        },
+        "roomBoundary": {
+          "ambient": 25,
+          "gain": 2,
+          "leakUA": 0.1
+        },
+        "operations": {
+          "thermalMode": "air",
+          "receiverHeat": 0,
+          "evaporatorHeat": 0,
+          "condenserHeat": 0,
+          "compressorOn": true,
+          "speed": 0.7,
+          "circuit": "circulating",
+          "valveMode": "auto",
+          "manualOpening": 0.25,
+          "superheatTarget": 5,
+          "kp": 0.04,
+          "ki": 0.004,
+          "drainEnabled": true
+        },
+        "actualSuperheat": 6.122085527749732,
+        "sensedSuperheat": 7.1361887570632625,
+        "targetSuperheat": 5,
+        "opening": 0.20384149827222128,
+        "command": 0.18960908804817564,
+        "speedSetting": 0.7,
+        "electricalDemand": 20.39771322317792,
+        "dischargeTemperature": 92.64401888779378,
+        "faultKind": null,
+        "feedMassFlow": 0.02014098364708823,
+        "drainMassFlow": 0,
+        "flowInterval": {
+          "from": 6.975000000000072,
+          "to": 7.000000000000072
+        }
+      },
+      {
+        "id": 9,
+        "seconds": 8.000000000000085,
+        "reason": "periodic",
+        "pressures": {
+          "receiver": 11.99758185514966,
+          "evaporator": 4.894725898083783,
+          "condenser": 11.800618199948465,
+          "outlet": 4.496321532256574
+        },
+        "temperatures": {
+          "room": 14.952012640902092,
+          "ambient": 25,
+          "receiver": 30.947736194155272,
+          "evaporator": 3.562508634248036,
+          "condenser": 30.388522784300427,
+          "outlet": 7.209838629669447
+        },
+        "levels": {
+          "receiver": 0.29932884900654483,
+          "evaporator": 0.10472374960067812,
+          "condenser": 0.1101546493339161,
+          "outlet": 0
+        },
+        "roomBoundary": {
+          "ambient": 25,
+          "gain": 2,
+          "leakUA": 0.1
+        },
+        "operations": {
+          "thermalMode": "air",
+          "receiverHeat": 0,
+          "evaporatorHeat": 0,
+          "condenserHeat": 0,
+          "compressorOn": true,
+          "speed": 0.7,
+          "circuit": "circulating",
+          "valveMode": "auto",
+          "manualOpening": 0.25,
+          "superheatTarget": 5,
+          "kp": 0.04,
+          "ki": 0.004,
+          "drainEnabled": true
+        },
+        "actualSuperheat": 5.962492694379762,
+        "sensedSuperheat": 6.700406934432066,
+        "targetSuperheat": 5,
+        "opening": 0.1960289122652638,
+        "command": 0.1798048889763296,
+        "speedSetting": 0.7,
+        "electricalDemand": 20.45550414709726,
+        "dischargeTemperature": 92.24019088994666,
+        "faultKind": null,
+        "feedMassFlow": 0.0189960645495105,
+        "drainMassFlow": 0,
+        "flowInterval": {
+          "from": 7.975000000000086,
+          "to": 8.000000000000085
+        }
+      },
+      {
+        "id": 10,
+        "seconds": 9.0000000000001,
+        "reason": "periodic",
+        "pressures": {
+          "receiver": 11.99712802645818,
+          "evaporator": 4.914782965265793,
+          "condenser": 11.826999086056826,
+          "outlet": 4.515099482903813
+        },
+        "temperatures": {
+          "room": 14.94760410357791,
+          "ambient": 25,
+          "receiver": 30.946452264864547,
+          "evaporator": 3.674945364598563,
+          "condenser": 30.463957242286963,
+          "outlet": 7.229233703281826
+        },
+        "levels": {
+          "receiver": 0.2992023040749134,
+          "evaporator": 0.1026855411735019,
+          "condenser": 0.11164995965891215,
+          "outlet": 0
+        },
+        "roomBoundary": {
+          "ambient": 25,
+          "gain": 2,
+          "leakUA": 0.1
+        },
+        "operations": {
+          "thermalMode": "air",
+          "receiverHeat": 0,
+          "evaporatorHeat": 0,
+          "condenserHeat": 0,
+          "compressorOn": true,
+          "speed": 0.7,
+          "circuit": "circulating",
+          "valveMode": "auto",
+          "manualOpening": 0.25,
+          "superheatTarget": 5,
+          "kp": 0.04,
+          "ki": 0.004,
+          "drainEnabled": true
+        },
+        "actualSuperheat": 5.869304499356076,
+        "sensedSuperheat": 6.3885744799542135,
+        "targetSuperheat": 5,
+        "opening": 0.18819422013943388,
+        "command": 0.1734730786480255,
+        "speedSetting": 0.7,
+        "electricalDemand": 20.50051761684326,
+        "dischargeTemperature": 92.06106162352208,
+        "faultKind": null,
+        "feedMassFlow": 0.017867509458794614,
+        "drainMassFlow": 0,
+        "flowInterval": {
+          "from": 8.9750000000001,
+          "to": 9.0000000000001
+        }
+      },
+      {
+        "id": 11,
+        "seconds": 10.000000000000114,
+        "reason": "periodic",
+        "pressures": {
+          "receiver": 11.996699734627763,
+          "evaporator": 4.925876013152901,
+          "condenser": 11.846893058680694,
+          "outlet": 4.5255379309774675
+        },
+        "temperatures": {
+          "room": 14.943230963403451,
+          "ambient": 25,
+          "receiver": 30.945240537503494,
+          "evaporator": 3.737199833016138,
+          "condenser": 30.520731582500538,
+          "outlet": 7.237973814118323
+        },
+        "levels": {
+          "receiver": 0.29908290806345017,
+          "evaporator": 0.10061403704810622,
+          "condenser": 0.11315310673180441,
+          "outlet": 0
+        },
+        "roomBoundary": {
+          "ambient": 25,
+          "gain": 2,
+          "leakUA": 0.1
+        },
+        "operations": {
+          "thermalMode": "air",
+          "receiverHeat": 0,
+          "evaporatorHeat": 0,
+          "condenserHeat": 0,
+          "compressorOn": true,
+          "speed": 0.7,
+          "circuit": "circulating",
+          "valveMode": "auto",
+          "manualOpening": 0.25,
+          "superheatTarget": 5,
+          "kp": 0.04,
+          "ki": 0.004,
+          "drainEnabled": true
+        },
+        "actualSuperheat": 5.815663171233609,
+        "sensedSuperheat": 6.171842300475044,
+        "targetSuperheat": 5,
+        "opening": 0.18156206169611103,
+        "command": 0.16989743293167153,
+        "speedSetting": 0.7,
+        "electricalDemand": 20.534609547808092,
+        "dischargeTemperature": 92.00094500892149,
+        "faultKind": null,
+        "feedMassFlow": 0.01692877713976401,
+        "drainMassFlow": 0,
+        "flowInterval": {
+          "from": 9.975000000000113,
+          "to": 10.000000000000114
+        }
+      },
+      {
+        "id": 12,
+        "seconds": 11.000000000000128,
+        "reason": "periodic",
+        "pressures": {
+          "receiver": 11.996291436095131,
+          "evaporator": 4.931755655731419,
+          "condenser": 11.861539661411532,
+          "outlet": 4.531112754413838
+        },
+        "temperatures": {
+          "room": 14.938877840511225,
+          "ambient": 25,
+          "receiver": 30.944085335094293,
+          "evaporator": 3.7701397143524558,
+          "condenser": 30.562469834270065,
+          "outlet": 7.241089863790261
+        },
+        "levels": {
+          "receiver": 0.29896911118145153,
+          "evaporator": 0.09851875922797147,
+          "condenser": 0.11466108823733984,
+          "outlet": 0
+        },
+        "roomBoundary": {
+          "ambient": 25,
+          "gain": 2,
+          "leakUA": 0.1
+        },
+        "operations": {
+          "thermalMode": "air",
+          "receiverHeat": 0,
+          "evaporatorHeat": 0,
+          "condenserHeat": 0,
+          "compressorOn": true,
+          "speed": 0.7,
+          "circuit": "circulating",
+          "valveMode": "auto",
+          "manualOpening": 0.25,
+          "superheatTarget": 5,
+          "kp": 0.04,
+          "ki": 0.004,
+          "drainEnabled": true
+        },
+        "actualSuperheat": 5.785522313090041,
+        "sensedSuperheat": 6.024705400470178,
+        "targetSuperheat": 5,
+        "opening": 0.17659330952725835,
+        "command": 0.16838555869578833,
+        "speedSetting": 0.7,
+        "electricalDemand": 20.559829926294146,
+        "dischargeTemperature": 91.99886876179623,
+        "faultKind": null,
+        "feedMassFlow": 0.01623557428410479,
+        "drainMassFlow": 0,
+        "flowInterval": {
+          "from": 10.975000000000128,
+          "to": 11.000000000000128
+        }
+      },
+      {
+        "id": 13,
+        "seconds": 12.000000000000142,
+        "reason": "periodic",
+        "pressures": {
+          "receiver": 11.995897067239067,
+          "evaporator": 4.934667330069032,
+          "condenser": 11.872127683425367,
+          "outlet": 4.533907085587793
+        },
+        "temperatures": {
+          "room": 14.934535863412195,
+          "ambient": 25,
+          "receiver": 30.942969506704806,
+          "evaporator": 3.78643742940364,
+          "condenser": 30.592610313679778,
+          "outlet": 7.2411558941601015
+        },
+        "levels": {
+          "receiver": 0.2988592204341276,
+          "evaporator": 0.09640791191132772,
+          "condenser": 0.11617200044886045,
+          "outlet": 0
+        },
+        "roomBoundary": {
+          "ambient": 25,
+          "gain": 2,
+          "leakUA": 0.1
+        },
+        "operations": {
+          "thermalMode": "air",
+          "receiverHeat": 0,
+          "evaporatorHeat": 0,
+          "condenserHeat": 0,
+          "compressorOn": true,
+          "speed": 0.7,
+          "circuit": "circulating",
+          "valveMode": "auto",
+          "manualOpening": 0.25,
+          "superheatTarget": 5,
+          "kp": 0.04,
+          "ki": 0.004,
+          "drainEnabled": true
+        },
+        "actualSuperheat": 5.768934002844617,
+        "sensedSuperheat": 5.926738294634898,
+        "targetSuperheat": 5,
+        "opening": 0.17331745306116816,
+        "command": 0.16835615971275084,
+        "speedSetting": 0.7,
+        "electricalDemand": 20.578136424366335,
+        "dischargeTemperature": 92.02162608236077,
+        "faultKind": null,
+        "feedMassFlow": 0.015787184422368192,
+        "drainMassFlow": 0,
+        "flowInterval": {
+          "from": 11.950000000000141,
+          "to": 12.000000000000142
+        }
+      },
+      {
+        "id": 14,
+        "seconds": 13.000000000000156,
+        "reason": "periodic",
+        "pressures": {
+          "receiver": 11.995521177246303,
+          "evaporator": 4.935952050912585,
+          "condenser": 11.879632531750193,
+          "outlet": 4.535167478103342
+        },
+        "temperatures": {
+          "room": 14.930200071309825,
+          "ambient": 25,
+          "receiver": 30.94190592831923,
+          "evaporator": 3.7936254283777333,
+          "condenser": 30.61395777700316,
+          "outlet": 7.239717548857168
+        },
+        "levels": {
+          "receiver": 0.298754766416659,
+          "evaporator": 0.0942880850654967,
+          "condenser": 0.11767827451394632,
+          "outlet": 0
+        },
+        "roomBoundary": {
+          "ambient": 25,
+          "gain": 2,
+          "leakUA": 0.1
+        },
+        "operations": {
+          "thermalMode": "air",
+          "receiverHeat": 0,
+          "evaporatorHeat": 0,
+          "condenserHeat": 0,
+          "compressorOn": true,
+          "speed": 0.7,
+          "circuit": "circulating",
+          "valveMode": "auto",
+          "manualOpening": 0.25,
+          "superheatTarget": 5,
+          "kp": 0.04,
+          "ki": 0.004,
+          "drainEnabled": true
+        },
+        "actualSuperheat": 5.7599870197009295,
+        "sensedSuperheat": 5.862564072116275,
+        "targetSuperheat": 5,
+        "opening": 0.17155146216410802,
+        "command": 0.16935856576743044,
+        "speedSetting": 0.7,
+        "electricalDemand": 20.59115340351771,
+        "dischargeTemperature": 92.05157699903656,
+        "faultKind": null,
+        "feedMassFlow": 0.015541582213107058,
+        "drainMassFlow": 0.005037254975413276,
+        "flowInterval": {
+          "from": 12.950000000000156,
+          "to": 13.000000000000156
+        }
+      },
+      {
+        "id": 15,
+        "seconds": 14.00000000000017,
+        "reason": "periodic",
+        "pressures": {
+          "receiver": 11.995409226850127,
+          "evaporator": 4.936387989925246,
+          "condenser": 11.884029827628797,
+          "outlet": 4.535614878014632
+        },
+        "temperatures": {
+          "room": 14.92586780636148,
+          "ambient": 25,
+          "receiver": 30.941589158931674,
+          "evaporator": 3.79606407723282,
+          "condenser": 30.626459574585393,
+          "outlet": 7.237577219729473
+        },
+        "levels": {
+          "receiver": 0.29873048896637777,
+          "evaporator": 0.09216437006714098,
+          "condenser": 0.11902181419297864,
+          "outlet": 0
+        },
+        "roomBoundary": {
+          "ambient": 25,
+          "gain": 2,
+          "leakUA": 0.1
+        },
+        "operations": {
+          "thermalMode": "air",
+          "receiverHeat": 0,
+          "evaporatorHeat": 0,
+          "condenserHeat": 0,
+          "compressorOn": true,
+          "speed": 0.7,
+          "circuit": "circulating",
+          "valveMode": "auto",
+          "manualOpening": 0.25,
+          "superheatTarget": 5,
+          "kp": 0.04,
+          "ki": 0.004,
+          "drainEnabled": true
+        },
+        "actualSuperheat": 5.755181860877201,
+        "sensedSuperheat": 5.821085651814572,
+        "targetSuperheat": 5,
+        "opening": 0.17103292922734392,
+        "command": 0.17106060145786994,
+        "speedSetting": 0.7,
+        "electricalDemand": 20.598795198067172,
+        "dischargeTemperature": 92.07374669346632,
+        "faultKind": null,
+        "feedMassFlow": 0.01546732146936524,
+        "drainMassFlow": 0.015599278553455869,
+        "flowInterval": {
+          "from": 13.95000000000017,
+          "to": 14.00000000000017
+        }
+      },
+      {
+        "id": 16,
+        "seconds": 15.000000000000178,
+        "reason": "periodic",
+        "pressures": {
+          "receiver": 11.995428613466277,
+          "evaporator": 4.936414012105184,
+          "condenser": 11.8866812201082,
+          "outlet": 4.535665154145291
+        },
+        "temperatures": {
+          "room": 14.921537724661096,
+          "ambient": 25,
+          "receiver": 30.941644014568,
+          "evaporator": 3.796209638855209,
+          "condenser": 30.633995420179648,
+          "outlet": 7.235228910870365
+        },
+        "levels": {
+          "receiver": 0.29874582797443167,
+          "evaporator": 0.09004060028831443,
+          "condenser": 0.12028386304773996,
+          "outlet": 0
+        },
+        "roomBoundary": {
+          "ambient": 25,
+          "gain": 2,
+          "leakUA": 0.1
+        },
+        "operations": {
+          "thermalMode": "air",
+          "receiverHeat": 0,
+          "evaporatorHeat": 0,
+          "condenserHeat": 0,
+          "compressorOn": true,
+          "speed": 0.7,
+          "circuit": "circulating",
+          "valveMode": "auto",
+          "manualOpening": 0.25,
+          "superheatTarget": 5,
+          "kp": 0.04,
+          "ki": 0.004,
+          "drainEnabled": true
+        },
+        "actualSuperheat": 5.752534110797569,
+        "sensedSuperheat": 5.794546752702134,
+        "targetSuperheat": 5,
+        "opening": 0.1714933597682516,
+        "command": 0.17322629539536513,
+        "speedSetting": 0.7,
+        "electricalDemand": 20.603413873180823,
+        "dischargeTemperature": 92.09049357580102,
+        "faultKind": null,
+        "feedMassFlow": 0.015523991379885787,
+        "drainMassFlow": 0.019173199161774637,
+        "flowInterval": {
+          "from": 14.900000000000178,
+          "to": 15.000000000000178
+        }
+      },
+      {
+        "id": 17,
+        "seconds": 16.000000000000174,
+        "reason": "periodic",
+        "pressures": {
+          "receiver": 11.995504540028561,
+          "evaporator": 4.936271118401191,
+          "condenser": 11.888325897464203,
+          "outlet": 4.535547423055237
+        },
+        "temperatures": {
+          "room": 14.917209214576497,
+          "ambient": 25,
+          "receiver": 30.941858852645392,
+          "evaporator": 3.7954103174432947,
+          "condenser": 30.638669113383646,
+          "outlet": 7.2328933525744
+        },
+        "levels": {
+          "receiver": 0.2987781547776737,
+          "evaporator": 0.08791961648858952,
+          "condenser": 0.12150933143558709,
+          "outlet": 0
+        },
+        "roomBoundary": {
+          "ambient": 25,
+          "gain": 2,
+          "leakUA": 0.1
+        },
+        "operations": {
+          "thermalMode": "air",
+          "receiverHeat": 0,
+          "evaporatorHeat": 0,
+          "condenserHeat": 0,
+          "compressorOn": true,
+          "speed": 0.7,
+          "circuit": "circulating",
+          "valveMode": "auto",
+          "manualOpening": 0.25,
+          "superheatTarget": 5,
+          "kp": 0.04,
+          "ki": 0.004,
+          "drainEnabled": true
+        },
+        "actualSuperheat": 5.750899756094441,
+        "sensedSuperheat": 5.777652718960163,
+        "targetSuperheat": 5,
+        "opening": 0.1726931918731315,
+        "command": 0.17569234517703564,
+        "speedSetting": 0.7,
+        "electricalDemand": 20.606286098123576,
+        "dischargeTemperature": 92.10295447450945,
+        "faultKind": null,
+        "feedMassFlow": 0.015682983861459686,
+        "drainMassFlow": 0.021073405584645856,
+        "flowInterval": {
+          "from": 15.900000000000174,
+          "to": 16.000000000000174
+        }
+      },
+      {
+        "id": 18,
+        "seconds": 17.00000000000019,
+        "reason": "periodic",
+        "pressures": {
+          "receiver": 11.995607333578972,
+          "evaporator": 4.93608365902836,
+          "condenser": 11.889351012018402,
+          "outlet": 4.535380132384809
+        },
+        "temperatures": {
+          "room": 14.912882056455404,
+          "ambient": 25,
+          "receiver": 30.942149710068147,
+          "evaporator": 3.7943616686896378,
+          "condenser": 30.64158186277777,
+          "outlet": 7.230655372575878
+        },
+        "levels": {
+          "receiver": 0.29881859251698456,
+          "evaporator": 0.08580348819328235,
+          "condenser": 0.12271521989669443,
+          "outlet": 0
+        },
+        "roomBoundary": {
+          "ambient": 25,
+          "gain": 2,
+          "leakUA": 0.1
+        },
+        "operations": {
+          "thermalMode": "air",
+          "receiverHeat": 0,
+          "evaporatorHeat": 0,
+          "condenserHeat": 0,
+          "compressorOn": true,
+          "speed": 0.7,
+          "circuit": "circulating",
+          "valveMode": "auto",
+          "manualOpening": 0.25,
+          "superheatTarget": 5,
+          "kp": 0.04,
+          "ki": 0.004,
+          "drainEnabled": true
+        },
+        "actualSuperheat": 5.749658186687157,
+        "sensedSuperheat": 5.766861893396289,
+        "targetSuperheat": 5,
+        "opening": 0.17443451515088906,
+        "command": 0.1783481203369595,
+        "speedSetting": 0.7,
+        "electricalDemand": 20.608080700464598,
+        "dischargeTemperature": 92.11171520935235,
+        "faultKind": null,
+        "feedMassFlow": 0.01591784586789119,
+        "drainMassFlow": 0.02211546709149367,
+        "flowInterval": {
+          "from": 16.900000000000187,
+          "to": 17.00000000000019
+        }
+      },
+      {
+        "id": 19,
+        "seconds": 18.000000000000203,
+        "reason": "periodic",
+        "pressures": {
+          "receiver": 11.995721151350924,
+          "evaporator": 4.935909997688335,
+          "condenser": 11.889990622618514,
+          "outlet": 4.5352187153417525
+        },
+        "temperatures": {
+          "room": 14.908556225403194,
+          "ambient": 25,
+          "receiver": 30.942471757947494,
+          "evaporator": 3.79339017067033,
+          "condenser": 30.64339911818052,
+          "outlet": 7.228521900176388
+        },
+        "levels": {
+          "receiver": 0.29886243667244194,
+          "evaporator": 0.08369370063252421,
+          "condenser": 0.12391029281077692,
+          "outlet": 0
+        },
+        "roomBoundary": {
+          "ambient": 25,
+          "gain": 2,
+          "leakUA": 0.1
+        },
+        "operations": {
+          "thermalMode": "air",
+          "receiverHeat": 0,
+          "evaporatorHeat": 0,
+          "condenserHeat": 0,
+          "compressorOn": true,
+          "speed": 0.7,
+          "circuit": "circulating",
+          "valveMode": "auto",
+          "manualOpening": 0.25,
+          "superheatTarget": 5,
+          "kp": 0.04,
+          "ki": 0.004,
+          "drainEnabled": true
+        },
+        "actualSuperheat": 5.748486175434664,
+        "sensedSuperheat": 5.759857064755572,
+        "targetSuperheat": 5,
+        "opening": 0.17656231332507777,
+        "command": 0.18112036933020748,
+        "speedSetting": 0.7,
+        "electricalDemand": 20.609202914293313,
+        "dischargeTemperature": 92.11742478466505,
+        "faultKind": null,
+        "feedMassFlow": 0.016208030571003857,
+        "drainMassFlow": 0.022689109955785127,
+        "flowInterval": {
+          "from": 17.9000000000002,
+          "to": 18.000000000000203
+        }
+      },
+      {
+        "id": 20,
+        "seconds": 19.000000000000217,
+        "reason": "periodic",
+        "pressures": {
+          "receiver": 11.995836811458492,
+          "evaporator": 4.935773131895488,
+          "condenser": 11.890390941199934,
+          "outlet": 4.535082956893889
+        },
+        "temperatures": {
+          "room": 14.904231781698323,
+          "ambient": 25,
+          "receiver": 30.94279901559323,
+          "evaporator": 3.792624490587317,
+          "condenser": 30.644536449693668,
+          "outlet": 7.226436576236378
+        },
+        "levels": {
+          "receiver": 0.2989069738577184,
+          "evaporator": 0.08159131032084067,
+          "condenser": 0.12509948121830072,
+          "outlet": 0
+        },
+        "roomBoundary": {
+          "ambient": 25,
+          "gain": 2,
+          "leakUA": 0.1
+        },
+        "operations": {
+          "thermalMode": "air",
+          "receiverHeat": 0,
+          "evaporatorHeat": 0,
+          "condenserHeat": 0,
+          "compressorOn": true,
+          "speed": 0.7,
+          "circuit": "circulating",
+          "valveMode": "auto",
+          "manualOpening": 0.25,
+          "superheatTarget": 5,
+          "kp": 0.04,
+          "ki": 0.004,
+          "drainEnabled": true
+        },
+        "actualSuperheat": 5.747209506807849,
+        "sensedSuperheat": 5.755149625731381,
+        "targetSuperheat": 5,
+        "opening": 0.17895952001228244,
+        "command": 0.18396148291641484,
+        "speedSetting": 0.7,
+        "electricalDemand": 20.609906633443966,
+        "dischargeTemperature": 92.12073207413019,
+        "faultKind": null,
+        "feedMassFlow": 0.016538013515056377,
+        "drainMassFlow": 0.02299457555176073,
+        "flowInterval": {
+          "from": 18.900000000000215,
+          "to": 19.000000000000217
+        }
+      },
+      {
+        "id": 21,
+        "seconds": 20.00000000000023,
+        "reason": "periodic",
+        "pressures": {
+          "receiver": 11.995948850865668,
+          "evaporator": 4.935677093547396,
+          "condenser": 11.89064375102569,
+          "outlet": 4.534994794902273
+        },
+        "temperatures": {
+          "room": 14.899908813654584,
+          "ambient": 25,
+          "receiver": 30.94311602554081,
+          "evaporator": 3.792087202315634,
+          "condenser": 30.64525467936932,
+          "outlet": 7.224642550997462
+        },
+        "levels": {
+          "receiver": 0.298950594915884,
+          "evaporator": 0.07949706059886238,
+          "condenser": 0.12628563624771272,
+          "outlet": 0
+        },
+        "roomBoundary": {
+          "ambient": 25,
+          "gain": 2,
+          "leakUA": 0.1
+        },
+        "operations": {
+          "thermalMode": "air",
+          "receiverHeat": 0,
+          "evaporatorHeat": 0,
+          "condenserHeat": 0,
+          "compressorOn": true,
+          "speed": 0.7,
+          "circuit": "circulating",
+          "valveMode": "auto",
+          "manualOpening": 0.25,
+          "superheatTarget": 5,
+          "kp": 0.04,
+          "ki": 0.004,
+          "drainEnabled": true
+        },
+        "actualSuperheat": 5.745940638007596,
+        "sensedSuperheat": 5.751796798589448,
+        "targetSuperheat": 5,
+        "opening": 0.18154028683658344,
+        "command": 0.18684090839258968,
+        "speedSetting": 0.7,
+        "electricalDemand": 20.610350860738844,
+        "dischargeTemperature": 92.12221759173502,
+        "faultKind": null,
+        "feedMassFlow": 0.01689635022853076,
+        "drainMassFlow": 0.023145024045817246,
+        "flowInterval": {
+          "from": 19.90000000000023,
+          "to": 20.00000000000023
+        }
+      },
+      {
+        "id": 22,
+        "seconds": 21.000000000000245,
+        "reason": "periodic",
+        "pressures": {
+          "receiver": 11.9960540176619,
+          "evaporator": 4.935620164261559,
+          "condenser": 11.89080674620031,
+          "outlet": 4.5349224928554595
+        },
+        "temperatures": {
+          "room": 14.895587409794347,
+          "ambient": 25,
+          "receiver": 30.943413587082542,
+          "evaporator": 3.791768705463161,
+          "condenser": 30.645717738604386,
+          "outlet": 7.22264293092252
+        },
+        "levels": {
+          "receiver": 0.29899234429788196,
+          "evaporator": 0.07741147918016648,
+          "condenser": 0.12747040211894,
+          "outlet": 0
+        },
+        "roomBoundary": {
+          "ambient": 25,
+          "gain": 2,
+          "leakUA": 0.1
+        },
+        "operations": {
+          "thermalMode": "air",
+          "receiverHeat": 0,
+          "evaporatorHeat": 0,
+          "condenserHeat": 0,
+          "compressorOn": true,
+          "speed": 0.7,
+          "circuit": "circulating",
+          "valveMode": "auto",
+          "manualOpening": 0.25,
+          "superheatTarget": 5,
+          "kp": 0.04,
+          "ki": 0.004,
+          "drainEnabled": true
+        },
+        "actualSuperheat": 5.7443717087153345,
+        "sensedSuperheat": 5.749226399379565,
+        "targetSuperheat": 5,
+        "opening": 0.1842431769626591,
+        "command": 0.1897399299553812,
+        "speedSetting": 0.7,
+        "electricalDemand": 20.610637603763628,
+        "dischargeTemperature": 92.12235625239987,
+        "faultKind": null,
+        "feedMassFlow": 0.017274782123356733,
+        "drainMassFlow": 0.023207232632991757,
+        "flowInterval": {
+          "from": 20.900000000000244,
+          "to": 21.000000000000245
+        }
+      },
+      {
+        "id": 23,
+        "seconds": 22.00000000000026,
+        "reason": "periodic",
+        "pressures": {
+          "receiver": 11.996150408428905,
+          "evaporator": 4.9355940138454475,
+          "condenser": 11.890915395426717,
+          "outlet": 4.534899951212415
+        },
+        "temperatures": {
+          "room": 14.891267647436877,
+          "ambient": 25,
+          "receiver": 30.943686315218304,
+          "evaporator": 3.7916224029898675,
+          "condenser": 30.64602640082776,
+          "outlet": 7.221049677830279
+        },
+        "levels": {
+          "receiver": 0.2990316639275136,
+          "evaporator": 0.07533492940296758,
+          "condenser": 0.12865470057338535,
+          "outlet": 0
+        },
+        "roomBoundary": {
+          "ambient": 25,
+          "gain": 2,
+          "leakUA": 0.1
+        },
+        "operations": {
+          "thermalMode": "air",
+          "receiverHeat": 0,
+          "evaporatorHeat": 0,
+          "condenserHeat": 0,
+          "compressorOn": true,
+          "speed": 0.7,
+          "circuit": "circulating",
+          "valveMode": "auto",
+          "manualOpening": 0.25,
+          "superheatTarget": 5,
+          "kp": 0.04,
+          "ki": 0.004,
+          "drainEnabled": true
+        },
+        "actualSuperheat": 5.7429127336945385,
+        "sensedSuperheat": 5.747078654234001,
+        "targetSuperheat": 5,
+        "opening": 0.18702511267940006,
+        "command": 0.19264650958673146,
+        "speedSetting": 0.7,
+        "electricalDemand": 20.6108272153195,
+        "dischargeTemperature": 92.12152441372419,
+        "faultKind": null,
+        "feedMassFlow": 0.017667452104351368,
+        "drainMassFlow": 0.023221369324184248,
+        "flowInterval": {
+          "from": 21.900000000000258,
+          "to": 22.00000000000026
+        }
+      },
+      {
+        "id": 24,
+        "seconds": 23.000000000000274,
+        "reason": "periodic",
+        "pressures": {
+          "receiver": 11.996236950507072,
+          "evaporator": 4.935593309169046,
+          "condenser": 11.89099173520612,
+          "outlet": 4.534897650570826
+        },
+        "temperatures": {
+          "room": 14.886949589214959,
+          "ambient": 25,
+          "receiver": 30.943931175596703,
+          "evaporator": 3.791618460560021,
+          "condenser": 30.646243273267018,
+          "outlet": 7.219463958827263
+        },
+        "levels": {
+          "receiver": 0.29906824014393385,
+          "evaporator": 0.07326767474400579,
+          "condenser": 0.1298390178244083,
+          "outlet": 0
+        },
+        "roomBoundary": {
+          "ambient": 25,
+          "gain": 2,
+          "leakUA": 0.1
+        },
+        "operations": {
+          "thermalMode": "air",
+          "receiverHeat": 0,
+          "evaporatorHeat": 0,
+          "condenserHeat": 0,
+          "compressorOn": true,
+          "speed": 0.7,
+          "circuit": "circulating",
+          "valveMode": "auto",
+          "manualOpening": 0.25,
+          "superheatTarget": 5,
+          "kp": 0.04,
+          "ki": 0.004,
+          "drainEnabled": true
+        },
+        "actualSuperheat": 5.7413407193962485,
+        "sensedSuperheat": 5.745153528186433,
+        "targetSuperheat": 5,
+        "opening": 0.1898564484215135,
+        "command": 0.19555390626990293,
+        "speedSetting": 0.7,
+        "electricalDemand": 20.610959455392862,
+        "dischargeTemperature": 92.11999955469683,
+        "faultKind": null,
+        "feedMassFlow": 0.018070277515345873,
+        "drainMassFlow": 0.023211614303685332,
+        "flowInterval": {
+          "from": 22.900000000000272,
+          "to": 23.000000000000274
+        }
+      },
+      {
+        "id": 25,
+        "seconds": 24.000000000000288,
+        "reason": "periodic",
+        "pressures": {
+          "receiver": 11.996313081062045,
+          "evaporator": 4.935612166117702,
+          "condenser": 11.891048996938594,
+          "outlet": 4.534911315647336
+        },
+        "temperatures": {
+          "room": 14.882633283859425,
+          "ambient": 25,
+          "receiver": 30.944146576364787,
+          "evaporator": 3.791723958715294,
+          "condenser": 30.64640594627878,
+          "outlet": 7.217888304604902
+        },
+        "levels": {
+          "receiver": 0.29910190909909157,
+          "evaporator": 0.07120990159678965,
+          "condenser": 0.1310235768967949,
+          "outlet": 0
+        },
+        "roomBoundary": {
+          "ambient": 25,
+          "gain": 2,
+          "leakUA": 0.1
+        },
+        "operations": {
+          "thermalMode": "air",
+          "receiverHeat": 0,
+          "evaporatorHeat": 0,
+          "condenserHeat": 0,
+          "compressorOn": true,
+          "speed": 0.7,
+          "circuit": "circulating",
+          "valveMode": "auto",
+          "manualOpening": 0.25,
+          "superheatTarget": 5,
+          "kp": 0.04,
+          "ki": 0.004,
+          "drainEnabled": true
+        },
+        "actualSuperheat": 5.739683663705364,
+        "sensedSuperheat": 5.74333328159356,
+        "targetSuperheat": 5,
+        "opening": 0.19271712157296894,
+        "command": 0.19845804034324757,
+        "speedSetting": 0.7,
+        "electricalDemand": 20.611057608178573,
+        "dischargeTemperature": 92.11798466274291,
+        "faultKind": null,
+        "feedMassFlow": 0.018480451367210247,
+        "drainMassFlow": 0.023192442717836905,
+        "flowInterval": {
+          "from": 23.900000000000286,
+          "to": 24.000000000000288
+        }
+      },
+      {
+        "id": 26,
+        "seconds": 25.000000000000302,
+        "reason": "periodic",
+        "pressures": {
+          "receiver": 11.996378547330709,
+          "evaporator": 4.935646694436022,
+          "condenser": 11.891095136893357,
+          "outlet": 4.534922483446789
+        },
+        "temperatures": {
+          "room": 14.878318768341872,
+          "ambient": 25,
+          "receiver": 30.944331802931657,
+          "evaporator": 3.7919171317600853,
+          "condenser": 30.64653702322051,
+          "outlet": 7.216084268475168
+        },
+        "levels": {
+          "receiver": 0.2991325979795439,
+          "evaporator": 0.0691617481522795,
+          "condenser": 0.13220844428959208,
+          "outlet": 0
+        },
+        "roomBoundary": {
+          "ambient": 25,
+          "gain": 2,
+          "leakUA": 0.1
+        },
+        "operations": {
+          "thermalMode": "air",
+          "receiverHeat": 0,
+          "evaporatorHeat": 0,
+          "condenserHeat": 0,
+          "compressorOn": true,
+          "speed": 0.7,
+          "circuit": "circulating",
+          "valveMode": "auto",
+          "manualOpening": 0.25,
+          "superheatTarget": 5,
+          "kp": 0.04,
+          "ki": 0.004,
+          "drainEnabled": true
+        },
+        "actualSuperheat": 5.737813102314249,
+        "sensedSuperheat": 5.741556995453772,
+        "targetSuperheat": 5,
+        "opening": 0.1955937643513307,
+        "command": 0.2013567497894116,
+        "speedSetting": 0.7,
+        "electricalDemand": 20.611136387654298,
+        "dischargeTemperature": 92.11562211985313,
+        "faultKind": null,
+        "feedMassFlow": 0.01889606872774953,
+        "drainMassFlow": 0.023172380822438682,
+        "flowInterval": {
+          "from": 24.9000000000003,
+          "to": 25.000000000000302
+        }
+      },
+      {
+        "id": 27,
+        "seconds": 26.000000000000316,
+        "reason": "periodic",
+        "pressures": {
+          "receiver": 11.996433282791692,
+          "evaporator": 4.935691321702036,
+          "condenser": 11.891134538581381,
+          "outlet": 4.534962498497745
+        },
+        "temperatures": {
+          "room": 14.874006070516003,
+          "ambient": 25,
+          "receiver": 30.944486667580854,
+          "evaporator": 3.7921668026432465,
+          "condenser": 30.64664895731787,
+          "outlet": 7.21460306134034
+        },
+        "levels": {
+          "receiver": 0.29916028861443994,
+          "evaporator": 0.06712331304281206,
+          "condenser": 0.13339359389434985,
+          "outlet": 0
+        },
+        "roomBoundary": {
+          "ambient": 25,
+          "gain": 2,
+          "leakUA": 0.1
+        },
+        "operations": {
+          "thermalMode": "air",
+          "receiverHeat": 0,
+          "evaporatorHeat": 0,
+          "condenserHeat": 0,
+          "compressorOn": true,
+          "speed": 0.7,
+          "circuit": "circulating",
+          "valveMode": "auto",
+          "manualOpening": 0.25,
+          "superheatTarget": 5,
+          "kp": 0.04,
+          "ki": 0.004,
+          "drainEnabled": true
+        },
+        "actualSuperheat": 5.736093531595543,
+        "sensedSuperheat": 5.739782720753024,
+        "targetSuperheat": 5,
+        "opening": 0.19847761203842554,
+        "command": 0.20424844379800725,
+        "speedSetting": 0.7,
+        "electricalDemand": 20.611202064053,
+        "dischargeTemperature": 92.11301393082996,
+        "faultKind": null,
+        "feedMassFlow": 0.019315849979435973,
+        "drainMassFlow": 0.023156353073254365,
+        "flowInterval": {
+          "from": 25.900000000000315,
+          "to": 26.000000000000316
+        }
+      },
+      {
+        "id": 28,
+        "seconds": 27.00000000000033,
+        "reason": "periodic",
+        "pressures": {
+          "receiver": 11.99647732959565,
+          "evaporator": 4.935744588412638,
+          "condenser": 11.891169944173845,
+          "outlet": 4.535008306559972
+        },
+        "temperatures": {
+          "room": 14.869695211278616,
+          "ambient": 25,
+          "receiver": 30.944611289985353,
+          "evaporator": 3.79246480464921,
+          "condenser": 30.646749538809846,
+          "outlet": 7.213106941408113
+        },
+        "levels": {
+          "receiver": 0.29918499469444904,
+          "evaporator": 0.0650946793461102,
+          "condenser": 0.1345789482601346,
+          "outlet": 0
+        },
+        "roomBoundary": {
+          "ambient": 25,
+          "gain": 2,
+          "leakUA": 0.1
+        },
+        "operations": {
+          "thermalMode": "air",
+          "receiverHeat": 0,
+          "evaporatorHeat": 0,
+          "condenserHeat": 0,
+          "compressorOn": true,
+          "speed": 0.7,
+          "circuit": "circulating",
+          "valveMode": "auto",
+          "manualOpening": 0.25,
+          "superheatTarget": 5,
+          "kp": 0.04,
+          "ki": 0.004,
+          "drainEnabled": true
+        },
+        "actualSuperheat": 5.734324542572722,
+        "sensedSuperheat": 5.737999673670573,
+        "targetSuperheat": 5,
+        "opening": 0.2013629887146102,
+        "command": 0.20713268045250602,
+        "speedSetting": 0.7,
+        "electricalDemand": 20.611260455866272,
+        "dischargeTemperature": 92.11022565974434,
+        "faultKind": null,
+        "feedMassFlow": 0.01973894322601672,
+        "drainMassFlow": 0.023147085221793026,
+        "flowInterval": {
+          "from": 26.90000000000033,
+          "to": 27.00000000000033
+        }
+      },
+      {
+        "id": 29,
+        "seconds": 28.000000000000345,
+        "reason": "periodic",
+        "pressures": {
+          "receiver": 11.996510792195846,
+          "evaporator": 4.935804584264346,
+          "condenser": 11.891202802061073,
+          "outlet": 4.535058870878037
+        },
+        "temperatures": {
+          "room": 14.865386206596071,
+          "ambient": 25,
+          "receiver": 30.94470596600837,
+          "evaporator": 3.7928004491600213,
+          "condenser": 30.6468428824204,
+          "outlet": 7.211603701835923
+        },
+        "levels": {
+          "receiver": 0.2992067481661266,
+          "evaporator": 0.06307591269175515,
+          "condenser": 0.1357644010365281,
+          "outlet": 0
+        },
+        "roomBoundary": {
+          "ambient": 25,
+          "gain": 2,
+          "leakUA": 0.1
+        },
+        "operations": {
+          "thermalMode": "air",
+          "receiverHeat": 0,
+          "evaporatorHeat": 0,
+          "condenserHeat": 0,
+          "compressorOn": true,
+          "speed": 0.7,
+          "circuit": "circulating",
+          "valveMode": "auto",
+          "manualOpening": 0.25,
+          "superheatTarget": 5,
+          "kp": 0.04,
+          "ki": 0.004,
+          "drainEnabled": true
+        },
+        "actualSuperheat": 5.732520105084404,
+        "sensedSuperheat": 5.7362012999478535,
+        "targetSuperheat": 5,
+        "opening": 0.20424627840871698,
+        "command": 0.210009145545524,
+        "speedSetting": 0.7,
+        "electricalDemand": 20.611314144902174,
+        "dischargeTemperature": 92.1073024186129,
+        "faultKind": null,
+        "feedMassFlow": 0.02016478325234705,
+        "drainMassFlow": 0.023146016341589713,
+        "flowInterval": {
+          "from": 27.900000000000343,
+          "to": 28.000000000000345
+        }
+      },
+      {
+        "id": 30,
+        "seconds": 29.00000000000036,
+        "reason": "periodic",
+        "pressures": {
+          "receiver": 11.996533808814885,
+          "evaporator": 4.935870998435944,
+          "condenser": 11.8912339857305,
+          "outlet": 4.53509689490015
+        },
+        "temperatures": {
+          "room": 14.861079068908445,
+          "ambient": 25,
+          "receiver": 30.944771086973613,
+          "evaporator": 3.7931719959595345,
+          "condenser": 30.646931469627372,
+          "outlet": 7.209831871194314
+        },
+        "levels": {
+          "receiver": 0.29922559086222145,
+          "evaporator": 0.061067070826420856,
+          "condenser": 0.13694983163242067,
+          "outlet": 0
+        },
+        "roomBoundary": {
+          "ambient": 25,
+          "gain": 2,
+          "leakUA": 0.1
+        },
+        "operations": {
+          "thermalMode": "air",
+          "receiverHeat": 0,
+          "evaporatorHeat": 0,
+          "condenserHeat": 0,
+          "compressorOn": true,
+          "speed": 0.7,
+          "circuit": "circulating",
+          "valveMode": "auto",
+          "manualOpening": 0.25,
+          "superheatTarget": 5,
+          "kp": 0.04,
+          "ki": 0.004,
+          "drainEnabled": true
+        },
+        "actualSuperheat": 5.730521777877584,
+        "sensedSuperheat": 5.734390011752887,
+        "targetSuperheat": 5,
+        "opening": 0.20712520489110947,
+        "command": 0.21287786807049472,
+        "speedSetting": 0.7,
+        "electricalDemand": 20.61136543270756,
+        "dischargeTemperature": 92.10427284961908,
+        "faultKind": null,
+        "feedMassFlow": 0.020592994738413455,
+        "drainMassFlow": 0.023153826364495943,
+        "flowInterval": {
+          "from": 28.900000000000357,
+          "to": 29.00000000000036
+        }
+      },
+      {
+        "id": 31,
+        "seconds": 30.000000000000373,
+        "reason": "periodic",
+        "pressures": {
+          "receiver": 11.996546535339304,
+          "evaporator": 4.935940622846378,
+          "condenser": 11.891263672198892,
+          "outlet": 4.535159316400708
+        },
+        "temperatures": {
+          "room": 14.856773808336904,
+          "ambient": 25,
+          "receiver": 30.94480709410039,
+          "evaporator": 3.7935614967205677,
+          "condenser": 30.647015803339123,
+          "outlet": 7.2083982061522
+        },
+        "levels": {
+          "receiver": 0.29924156978206323,
+          "evaporator": 0.059068198748793155,
+          "condenser": 0.13813511208190926,
+          "outlet": 0
+        },
+        "roomBoundary": {
+          "ambient": 25,
+          "gain": 2,
+          "leakUA": 0.1
+        },
+        "operations": {
+          "thermalMode": "air",
+          "receiverHeat": 0,
+          "evaporatorHeat": 0,
+          "condenserHeat": 0,
+          "compressorOn": true,
+          "speed": 0.7,
+          "circuit": "circulating",
+          "valveMode": "auto",
+          "manualOpening": 0.25,
+          "superheatTarget": 5,
+          "kp": 0.04,
+          "ki": 0.004,
+          "drainEnabled": true
+        },
+        "actualSuperheat": 5.72871629265137,
+        "sensedSuperheat": 5.732557243203287,
+        "targetSuperheat": 5,
+        "opening": 0.20999836869682975,
+        "command": 0.2157384393314281,
+        "speedSetting": 0.7,
+        "electricalDemand": 20.611412986584043,
+        "dischargeTemperature": 92.10115860324203,
+        "faultKind": null,
+        "feedMassFlow": 0.021023325964408736,
+        "drainMassFlow": 0.023170782935259794,
+        "flowInterval": {
+          "from": 29.90000000000037,
+          "to": 30.000000000000373
+        }
+      },
+      {
+        "id": 32,
+        "seconds": 30.000000000000373,
+        "reason": "training",
+        "pressures": {
+          "receiver": 11.996546535339304,
+          "evaporator": 4.935940622846378,
+          "condenser": 11.891263672198892,
+          "outlet": 4.535159316400708
+        },
+        "temperatures": {
+          "room": 14.856773808336904,
+          "ambient": 25,
+          "receiver": 30.94480709410039,
+          "evaporator": 3.7935614967205677,
+          "condenser": 30.647015803339123,
+          "outlet": 7.2083982061522
+        },
+        "levels": {
+          "receiver": 0.29924156978206323,
+          "evaporator": 0.059068198748793155,
+          "condenser": 0.13813511208190926,
+          "outlet": 0
+        },
+        "roomBoundary": {
+          "ambient": 25,
+          "gain": 2,
+          "leakUA": 0.1
+        },
+        "operations": {
+          "thermalMode": "air",
+          "receiverHeat": 0,
+          "evaporatorHeat": 0,
+          "condenserHeat": 0,
+          "compressorOn": true,
+          "speed": 0.7,
+          "circuit": "circulating",
+          "valveMode": "auto",
+          "manualOpening": 0.25,
+          "superheatTarget": 5,
+          "kp": 0.04,
+          "ki": 0.004,
+          "drainEnabled": true
+        },
+        "actualSuperheat": 5.72871629265137,
+        "sensedSuperheat": 5.732557243203287,
+        "targetSuperheat": 5,
+        "opening": 0.20999836869682975,
+        "command": 0.2157384393314281,
+        "speedSetting": 0.7,
+        "electricalDemand": 20.611412986584043,
+        "dischargeTemperature": 92.10115860324203,
+        "faultKind": null,
+        "feedMassFlow": 0.021023325964408736,
+        "drainMassFlow": 0.023170782935259794,
+        "flowInterval": {
+          "from": 29.90000000000037,
+          "to": 30.000000000000373
+        }
+      },
+      {
+        "id": 33,
+        "seconds": 30.000000000000373,
+        "reason": "before-change",
+        "pressures": {
+          "receiver": 11.996546535339304,
+          "evaporator": 4.935940622846378,
+          "condenser": 11.891263672198892,
+          "outlet": 4.535159316400708
+        },
+        "temperatures": {
+          "room": 14.856773808336904,
+          "ambient": 25,
+          "receiver": 30.94480709410039,
+          "evaporator": 3.7935614967205677,
+          "condenser": 30.647015803339123,
+          "outlet": 7.2083982061522
+        },
+        "levels": {
+          "receiver": 0.29924156978206323,
+          "evaporator": 0.059068198748793155,
+          "condenser": 0.13813511208190926,
+          "outlet": 0
+        },
+        "roomBoundary": {
+          "ambient": 25,
+          "gain": 2,
+          "leakUA": 0.1
+        },
+        "operations": {
+          "thermalMode": "air",
+          "receiverHeat": 0,
+          "evaporatorHeat": 0,
+          "condenserHeat": 0,
+          "compressorOn": true,
+          "speed": 0.7,
+          "circuit": "circulating",
+          "valveMode": "auto",
+          "manualOpening": 0.25,
+          "superheatTarget": 5,
+          "kp": 0.04,
+          "ki": 0.004,
+          "drainEnabled": true
+        },
+        "actualSuperheat": 5.72871629265137,
+        "sensedSuperheat": 5.732557243203287,
+        "targetSuperheat": 5,
+        "opening": 0.20999836869682975,
+        "command": 0.2157384393314281,
+        "speedSetting": 0.7,
+        "electricalDemand": 20.611412986584043,
+        "dischargeTemperature": 92.10115860324203,
+        "faultKind": null,
+        "feedMassFlow": 0.021023325964408736,
+        "drainMassFlow": 0.023170782935259794,
+        "flowInterval": {
+          "from": 29.90000000000037,
+          "to": 30.000000000000373
+        }
+      },
+      {
+        "id": 34,
+        "seconds": 30.000000000000373,
+        "reason": "after-change",
+        "pressures": {
+          "receiver": 11.996546535339304,
+          "evaporator": 4.935940622846378,
+          "condenser": 11.891263672198892,
+          "outlet": 4.535159316400708
+        },
+        "temperatures": {
+          "room": 14.856773808336904,
+          "ambient": 25,
+          "receiver": 30.94480709410039,
+          "evaporator": 3.7935614967205677,
+          "condenser": 30.647015803339123,
+          "outlet": 7.2083982061522
+        },
+        "levels": {
+          "receiver": 0.29924156978206323,
+          "evaporator": 0.059068198748793155,
+          "condenser": 0.13813511208190926,
+          "outlet": 0
+        },
+        "roomBoundary": {
+          "ambient": 25,
+          "gain": 2,
+          "leakUA": 0.1
+        },
+        "operations": {
+          "thermalMode": "air",
+          "receiverHeat": 0,
+          "evaporatorHeat": 0,
+          "condenserHeat": 0,
+          "compressorOn": true,
+          "speed": 0.7,
+          "circuit": "circulating",
+          "valveMode": "manual",
+          "manualOpening": 0.02,
+          "superheatTarget": 5,
+          "kp": 0.04,
+          "ki": 0.004,
+          "drainEnabled": true
+        },
+        "actualSuperheat": 5.72871629265137,
+        "sensedSuperheat": 5.732557243203287,
+        "targetSuperheat": 5,
+        "opening": 0.20999836869682975,
+        "command": 0.02,
+        "speedSetting": 0.7,
+        "electricalDemand": 20.611412986584043,
+        "dischargeTemperature": 92.10115860324203,
+        "faultKind": null,
+        "feedMassFlow": 0.02104488931010604,
+        "drainMassFlow": 0.023171982751726907,
+        "flowInterval": null
+      },
+      {
+        "id": 35,
+        "seconds": 30.000000000000373,
+        "reason": "training",
+        "pressures": {
+          "receiver": 11.996546535339304,
+          "evaporator": 4.935940622846378,
+          "condenser": 11.891263672198892,
+          "outlet": 4.535159316400708
+        },
+        "temperatures": {
+          "room": 14.856773808336904,
+          "ambient": 25,
+          "receiver": 30.94480709410039,
+          "evaporator": 3.7935614967205677,
+          "condenser": 30.647015803339123,
+          "outlet": 7.2083982061522
+        },
+        "levels": {
+          "receiver": 0.29924156978206323,
+          "evaporator": 0.059068198748793155,
+          "condenser": 0.13813511208190926,
+          "outlet": 0
+        },
+        "roomBoundary": {
+          "ambient": 25,
+          "gain": 2,
+          "leakUA": 0.1
+        },
+        "operations": {
+          "thermalMode": "air",
+          "receiverHeat": 0,
+          "evaporatorHeat": 0,
+          "condenserHeat": 0,
+          "compressorOn": true,
+          "speed": 0.7,
+          "circuit": "circulating",
+          "valveMode": "manual",
+          "manualOpening": 0.02,
+          "superheatTarget": 5,
+          "kp": 0.04,
+          "ki": 0.004,
+          "drainEnabled": true
+        },
+        "actualSuperheat": 5.72871629265137,
+        "sensedSuperheat": 5.732557243203287,
+        "targetSuperheat": 5,
+        "opening": 0.20999836869682975,
+        "command": 0.02,
+        "speedSetting": 0.7,
+        "electricalDemand": 20.611412986584043,
+        "dischargeTemperature": 92.10115860324203,
+        "faultKind": null,
+        "feedMassFlow": 0.02104488931010604,
+        "drainMassFlow": 0.023171982751726907,
+        "flowInterval": null
+      },
+      {
+        "id": 36,
+        "seconds": 30.000000000000373,
+        "reason": "step",
+        "pressures": {
+          "receiver": 11.996546535339304,
+          "evaporator": 4.935940622846378,
+          "condenser": 11.891263672198892,
+          "outlet": 4.535159316400708
+        },
+        "temperatures": {
+          "room": 14.856773808336904,
+          "ambient": 25,
+          "receiver": 30.94480709410039,
+          "evaporator": 3.7935614967205677,
+          "condenser": 30.647015803339123,
+          "outlet": 7.2083982061522
+        },
+        "levels": {
+          "receiver": 0.29924156978206323,
+          "evaporator": 0.059068198748793155,
+          "condenser": 0.13813511208190926,
+          "outlet": 0
+        },
+        "roomBoundary": {
+          "ambient": 25,
+          "gain": 2,
+          "leakUA": 0.1
+        },
+        "operations": {
+          "thermalMode": "air",
+          "receiverHeat": 0,
+          "evaporatorHeat": 0,
+          "condenserHeat": 0,
+          "compressorOn": true,
+          "speed": 0.7,
+          "circuit": "circulating",
+          "valveMode": "manual",
+          "manualOpening": 0.02,
+          "superheatTarget": 5,
+          "kp": 0.04,
+          "ki": 0.004,
+          "drainEnabled": true
+        },
+        "actualSuperheat": 5.72871629265137,
+        "sensedSuperheat": 5.732557243203287,
+        "targetSuperheat": 5,
+        "opening": 0.20999836869682975,
+        "command": 0.02,
+        "speedSetting": 0.7,
+        "electricalDemand": 20.611412986584043,
+        "dischargeTemperature": 92.10115860324203,
+        "faultKind": null,
+        "feedMassFlow": 0.02104488931010604,
+        "drainMassFlow": 0.023171982751726907,
+        "flowInterval": null
+      },
+      {
+        "id": 37,
+        "seconds": 31.000000000000316,
+        "reason": "periodic",
+        "pressures": {
+          "receiver": 11.99669247593686,
+          "evaporator": 4.931047159524865,
+          "condenser": 11.891122722329795,
+          "outlet": 4.531163146221857
+        },
+        "temperatures": {
+          "room": 14.852466260935808,
+          "ambient": 25,
+          "receiver": 30.945220000772668,
+          "evaporator": 3.7661725442824174,
+          "condenser": 30.646615389214887,
+          "outlet": 7.180832962620256
+        },
+        "levels": {
+          "receiver": 0.29929466684937744,
+          "evaporator": 0.056945207016165386,
+          "condenser": 0.13932101960677631,
+          "outlet": 0
+        },
+        "roomBoundary": {
+          "ambient": 25,
+          "gain": 2,
+          "leakUA": 0.1
+        },
+        "operations": {
+          "thermalMode": "air",
+          "receiverHeat": 0,
+          "evaporatorHeat": 0,
+          "condenserHeat": 0,
+          "compressorOn": true,
+          "speed": 0.7,
+          "circuit": "circulating",
+          "valveMode": "manual",
+          "manualOpening": 0.02,
+          "superheatTarget": 5,
+          "kp": 0.04,
+          "ki": 0.004,
+          "drainEnabled": true
+        },
+        "actualSuperheat": 5.72496498352848,
+        "sensedSuperheat": 5.729711215398133,
+        "targetSuperheat": 5,
+        "opening": 0.1352404403568684,
+        "command": 0.02,
+        "speedSetting": 0.7,
+        "electricalDemand": 20.61135703544355,
+        "dischargeTemperature": 92.15029257113262,
+        "faultKind": null,
+        "feedMassFlow": 0.010963531930227227,
+        "drainMassFlow": 0.022884793294819517,
+        "flowInterval": {
+          "from": 30.975000000000318,
+          "to": 31.000000000000316
+        }
+      },
+      {
+        "id": 38,
+        "seconds": 32.00000000000026,
+        "reason": "periodic",
+        "pressures": {
+          "receiver": 11.997000792169324,
+          "evaporator": 4.923093219977009,
+          "condenser": 11.890352034617946,
+          "outlet": 4.524041406992206
+        },
+        "temperatures": {
+          "room": 14.848144716169855,
+          "ambient": 25,
+          "receiver": 30.946092296908873,
+          "evaporator": 3.721595909974716,
+          "condenser": 30.644425915206085,
+          "outlet": 7.155601142299413
+        },
+        "levels": {
+          "receiver": 0.29939275250958375,
+          "evaporator": 0.05465871659944811,
+          "condenser": 0.14051496199352553,
+          "outlet": 0
+        },
+        "roomBoundary": {
+          "ambient": 25,
+          "gain": 2,
+          "leakUA": 0.1
+        },
+        "operations": {
+          "thermalMode": "air",
+          "receiverHeat": 0,
+          "evaporatorHeat": 0,
+          "condenserHeat": 0,
+          "compressorOn": true,
+          "speed": 0.7,
+          "circuit": "circulating",
+          "valveMode": "manual",
+          "manualOpening": 0.02,
+          "superheatTarget": 5,
+          "kp": 0.04,
+          "ki": 0.004,
+          "drainEnabled": true
+        },
+        "actualSuperheat": 5.742225068388507,
+        "sensedSuperheat": 5.731100855763829,
+        "targetSuperheat": 5,
+        "opening": 0.0898977790116227,
+        "command": 0.02,
+        "speedSetting": 0.7,
+        "electricalDemand": 20.610315826682907,
+        "dischargeTemperature": 92.26679723159512,
+        "faultKind": null,
+        "feedMassFlow": 0.00593769862228412,
+        "drainMassFlow": 0.02174561798420198,
+        "flowInterval": {
+          "from": 31.97500000000026,
+          "to": 32.00000000000026
+        }
+      },
+      {
+        "id": 39,
+        "seconds": 33.000000000000206,
+        "reason": "periodic",
+        "pressures": {
+          "receiver": 11.99736243822712,
+          "evaporator": 4.916327348930108,
+          "condenser": 11.889112603297741,
+          "outlet": 4.517871628473363
+        },
+        "temperatures": {
+          "room": 14.843808206195687,
+          "ambient": 25,
+          "receiver": 30.94711544657617,
+          "evaporator": 3.6836208997285427,
+          "condenser": 30.640904473232865,
+          "outlet": 7.1401561816273365
+        },
+        "levels": {
+          "receiver": 0.2995050619907617,
+          "evaporator": 0.052292372454722916,
+          "condenser": 0.1417279742486688,
+          "outlet": 0
+        },
+        "roomBoundary": {
+          "ambient": 25,
+          "gain": 2,
+          "leakUA": 0.1
+        },
+        "operations": {
+          "thermalMode": "air",
+          "receiverHeat": 0,
+          "evaporatorHeat": 0,
+          "condenserHeat": 0,
+          "compressorOn": true,
+          "speed": 0.7,
+          "circuit": "circulating",
+          "valveMode": "manual",
+          "manualOpening": 0.02,
+          "superheatTarget": 5,
+          "kp": 0.04,
+          "ki": 0.004,
+          "drainEnabled": true
+        },
+        "actualSuperheat": 5.763646244304255,
+        "sensedSuperheat": 5.740121818678703,
+        "targetSuperheat": 5,
+        "opening": 0.06239570324122292,
+        "command": 0.02,
+        "speedSetting": 0.7,
+        "electricalDemand": 20.608372340981045,
+        "dischargeTemperature": 92.37220306512717,
+        "faultKind": null,
+        "feedMassFlow": 0.0034303358161669635,
+        "drainMassFlow": 0.019924326627032342,
+        "flowInterval": {
+          "from": 32.97500000000021,
+          "to": 33.000000000000206
+        }
+      },
+      {
+        "id": 40,
+        "seconds": 34.00000000000015,
+        "reason": "periodic",
+        "pressures": {
+          "receiver": 11.997721937746885,
+          "evaporator": 4.911452286810177,
+          "condenser": 11.887745893947315,
+          "outlet": 4.513392002169111
+        },
+        "temperatures": {
+          "room": 14.83946051648374,
+          "ambient": 25,
+          "receiver": 30.948132492805858,
+          "evaporator": 3.656293836174936,
+          "condenser": 30.637020986414637,
+          "outlet": 7.130259079483132
+        },
+        "levels": {
+          "receiver": 0.2996158477752591,
+          "evaporator": 0.04988615957124412,
+          "condenser": 0.14296787134371275,
+          "outlet": 0
+        },
+        "roomBoundary": {
+          "ambient": 25,
+          "gain": 2,
+          "leakUA": 0.1
+        },
+        "operations": {
+          "thermalMode": "air",
+          "receiverHeat": 0,
+          "evaporatorHeat": 0,
+          "condenserHeat": 0,
+          "compressorOn": true,
+          "speed": 0.7,
+          "circuit": "circulating",
+          "valveMode": "manual",
+          "manualOpening": 0.02,
+          "superheatTarget": 5,
+          "kp": 0.04,
+          "ki": 0.004,
+          "drainEnabled": true
+        },
+        "actualSuperheat": 5.780547711765394,
+        "sensedSuperheat": 5.753166613336249,
+        "targetSuperheat": 5,
+        "opening": 0.04571504251201121,
+        "command": 0.02,
+        "speedSetting": 0.7,
+        "electricalDemand": 20.60612403401797,
+        "dischargeTemperature": 92.44694671768251,
+        "faultKind": null,
+        "feedMassFlow": 0.002160276842007089,
+        "drainMassFlow": 0.017774617576379995,
+        "flowInterval": {
+          "from": 33.95000000000015,
+          "to": 34.00000000000015
+        }
+      },
+      {
+        "id": 41,
+        "seconds": 35.00000000000009,
+        "reason": "periodic",
+        "pressures": {
+          "receiver": 11.998053065628493,
+          "evaporator": 4.908146172332473,
+          "condenser": 11.886488819483416,
+          "outlet": 4.510342441217874
+        },
+        "temperatures": {
+          "room": 14.83510559422851,
+          "ambient": 25,
+          "receiver": 30.949069246966296,
+          "evaporator": 3.6377817370930816,
+          "condenser": 30.63344863148863,
+          "outlet": 7.123444609246848
+        },
+        "levels": {
+          "receiver": 0.299717630416655,
+          "evaporator": 0.04745949774679588,
+          "condenser": 0.14423832119033786,
+          "outlet": 0
+        },
+        "roomBoundary": {
+          "ambient": 25,
+          "gain": 2,
+          "leakUA": 0.1
+        },
+        "operations": {
+          "thermalMode": "air",
+          "receiverHeat": 0,
+          "evaporatorHeat": 0,
+          "condenserHeat": 0,
+          "compressorOn": true,
+          "speed": 0.7,
+          "circuit": "circulating",
+          "valveMode": "manual",
+          "manualOpening": 0.02,
+          "superheatTarget": 5,
+          "kp": 0.04,
+          "ki": 0.004,
+          "drainEnabled": true
+        },
+        "actualSuperheat": 5.79199191997759,
+        "sensedSuperheat": 5.766543360098911,
+        "targetSuperheat": 5,
+        "opening": 0.03559778944675492,
+        "command": 0.02,
+        "speedSetting": 0.7,
+        "electricalDemand": 20.604015052798353,
+        "dischargeTemperature": 92.49517989674182,
+        "faultKind": null,
+        "feedMassFlow": 0.0014809952771064048,
+        "drainMassFlow": 0.015498729157517262,
+        "flowInterval": {
+          "from": 34.950000000000095,
+          "to": 35.00000000000009
+        }
+      },
+      {
+        "id": 42,
+        "seconds": 36.000000000000036,
+        "reason": "periodic",
+        "pressures": {
+          "receiver": 11.998345192410707,
+          "evaporator": 4.905922795097509,
+          "condenser": 11.88545129720941,
+          "outlet": 4.508289441071412
+        },
+        "temperatures": {
+          "room": 14.830746378649549,
+          "ambient": 25,
+          "receiver": 30.94989564633136,
+          "evaporator": 3.6253252509915628,
+          "condenser": 30.63049991550291,
+          "outlet": 7.118292784650216
+        },
+        "levels": {
+          "receiver": 0.29980738103913745,
+          "evaporator": 0.045022053048621336,
+          "condenser": 0.14553984369661085,
+          "outlet": 0
+        },
+        "roomBoundary": {
+          "ambient": 25,
+          "gain": 2,
+          "leakUA": 0.1
+        },
+        "operations": {
+          "thermalMode": "air",
+          "receiverHeat": 0,
+          "evaporatorHeat": 0,
+          "condenserHeat": 0,
+          "compressorOn": true,
+          "speed": 0.7,
+          "circuit": "circulating",
+          "valveMode": "manual",
+          "manualOpening": 0.02,
+          "superheatTarget": 5,
+          "kp": 0.04,
+          "ki": 0.004,
+          "drainEnabled": true
+        },
+        "actualSuperheat": 5.7991390058305115,
+        "sensedSuperheat": 5.778195470874419,
+        "targetSuperheat": 5,
+        "opening": 0.029461039604024016,
+        "command": 0.02,
+        "speedSetting": 0.7,
+        "electricalDemand": 20.602258865180467,
+        "dischargeTemperature": 92.52537823994065,
+        "faultKind": null,
+        "feedMassFlow": 0.001112621358983054,
+        "drainMassFlow": 0.01329258179232916,
+        "flowInterval": {
+          "from": 35.95000000000004,
+          "to": 36.000000000000036
+        }
+      },
+      {
+        "id": 43,
+        "seconds": 37.00000000000002,
+        "reason": "periodic",
+        "pressures": {
+          "receiver": 11.99859581694099,
+          "evaporator": 4.904382191234751,
+          "condenser": 11.884655227554942,
+          "outlet": 4.506864838480495
+        },
+        "temperatures": {
+          "room": 14.826384799313423,
+          "ambient": 25,
+          "receiver": 30.950604623668774,
+          "evaporator": 3.6166906958314478,
+          "condenser": 30.62823725141573,
+          "outlet": 7.1139849584337975
+        },
+        "levels": {
+          "receiver": 0.2998844164205764,
+          "evaporator": 0.04257879858864213,
+          "condenser": 0.14687096869465255,
+          "outlet": 0
+        },
+        "roomBoundary": {
+          "ambient": 25,
+          "gain": 2,
+          "leakUA": 0.1
+        },
+        "operations": {
+          "thermalMode": "air",
+          "receiverHeat": 0,
+          "evaporatorHeat": 0,
+          "condenserHeat": 0,
+          "compressorOn": true,
+          "speed": 0.7,
+          "circuit": "circulating",
+          "valveMode": "manual",
+          "manualOpening": 0.02,
+          "superheatTarget": 5,
+          "kp": 0.04,
+          "ki": 0.004,
+          "drainEnabled": true
+        },
+        "actualSuperheat": 5.803368840133771,
+        "sensedSuperheat": 5.787418166090167,
+        "targetSuperheat": 5,
+        "opening": 0.025739277209823677,
+        "command": 0.02,
+        "speedSetting": 0.7,
+        "electricalDemand": 20.600906106585036,
+        "dischargeTemperature": 92.54473082520565,
+        "faultKind": null,
+        "feedMassFlow": 0.0009107220224975215,
+        "drainMassFlow": 0.011300555280963197,
+        "flowInterval": {
+          "from": 36.90000000000002,
+          "to": 37.00000000000002
+        }
+      },
+      {
+        "id": 44,
+        "seconds": 38.000000000000036,
+        "reason": "periodic",
+        "pressures": {
+          "receiver": 11.998806519860645,
+          "evaporator": 4.9032518864342975,
+          "condenser": 11.884076123277687,
+          "outlet": 4.505807662694455
+        },
+        "temperatures": {
+          "room": 14.822022044293673,
+          "ambient": 25,
+          "receiver": 30.951200657596637,
+          "evaporator": 3.610354000724203,
+          "condenser": 30.626591171510984,
+          "outlet": 7.109950067032652
+        },
+        "levels": {
+          "receiver": 0.2999492454729701,
+          "evaporator": 0.0401323870565957,
+          "condenser": 0.14822913733526238,
+          "outlet": 0
+        },
+        "roomBoundary": {
+          "ambient": 25,
+          "gain": 2,
+          "leakUA": 0.1
+        },
+        "operations": {
+          "thermalMode": "air",
+          "receiverHeat": 0,
+          "evaporatorHeat": 0,
+          "condenserHeat": 0,
+          "compressorOn": true,
+          "speed": 0.7,
+          "circuit": "circulating",
+          "valveMode": "manual",
+          "manualOpening": 0.02,
+          "superheatTarget": 5,
+          "kp": 0.04,
+          "ki": 0.004,
+          "drainEnabled": true
+        },
+        "actualSuperheat": 5.805671360576525,
+        "sensedSuperheat": 5.794279135618354,
+        "targetSuperheat": 5,
+        "opening": 0.023481800631126027,
+        "command": 0.02,
+        "speedSetting": 0.7,
+        "electricalDemand": 20.599921101360593,
+        "dischargeTemperature": 92.55803740754173,
+        "faultKind": null,
+        "feedMassFlow": 0.0007913722256539272,
+        "drainMassFlow": 0.00946615191555963,
+        "flowInterval": {
+          "from": 37.900000000000034,
+          "to": 38.000000000000036
+        }
+      },
+      {
+        "id": 45,
+        "seconds": 39.00000000000004,
+        "reason": "periodic",
+        "pressures": {
+          "receiver": 11.998980723812906,
+          "evaporator": 4.902359275794783,
+          "condenser": 11.883671391064057,
+          "outlet": 4.504986163825023
+        },
+        "temperatures": {
+          "room": 14.81765881594539,
+          "ambient": 25,
+          "receiver": 30.95169343577315,
+          "evaporator": 3.6053488301321113,
+          "condenser": 30.625440689348835,
+          "outlet": 7.106394640326506
+        },
+        "levels": {
+          "receiver": 0.30000291938128143,
+          "evaporator": 0.03768427873427814,
+          "condenser": 0.14961135606233705,
+          "outlet": 0
+        },
+        "roomBoundary": {
+          "ambient": 25,
+          "gain": 2,
+          "leakUA": 0.1
+        },
+        "operations": {
+          "thermalMode": "air",
+          "receiverHeat": 0,
+          "evaporatorHeat": 0,
+          "condenserHeat": 0,
+          "compressorOn": true,
+          "speed": 0.7,
+          "circuit": "circulating",
+          "valveMode": "manual",
+          "manualOpening": 0.02,
+          "superheatTarget": 5,
+          "kp": 0.04,
+          "ki": 0.004,
+          "drainEnabled": true
+        },
+        "actualSuperheat": 5.807041568914428,
+        "sensedSuperheat": 5.799161674012242,
+        "targetSuperheat": 5,
+        "opening": 0.02211224119482054,
+        "command": 0.02,
+        "speedSetting": 0.7,
+        "electricalDemand": 20.599233223523424,
+        "dischargeTemperature": 92.56816312354502,
+        "faultKind": null,
+        "feedMassFlow": 0.0007217387530733689,
+        "drainMassFlow": 0.007851971834663149,
+        "flowInterval": {
+          "from": 38.90000000000004,
+          "to": 39.00000000000004
+        }
+      },
+      {
+        "id": 46,
+        "seconds": 40.00000000000004,
+        "reason": "periodic",
+        "pressures": {
+          "receiver": 11.999122427208126,
+          "evaporator": 4.901602304388375,
+          "condenser": 11.883396814660008,
+          "outlet": 4.504310937913168
+        },
+        "temperatures": {
+          "room": 14.813295520067548,
+          "ambient": 25,
+          "receiver": 30.952094272956167,
+          "evaporator": 3.6011035205449726,
+          "condenser": 30.624660162686403,
+          "outlet": 7.10328047856299
+        },
+        "levels": {
+          "receiver": 0.3000466596115856,
+          "evaporator": 0.03523530432540103,
+          "condenser": 0.15101463613358984,
+          "outlet": 0
+        },
+        "roomBoundary": {
+          "ambient": 25,
+          "gain": 2,
+          "leakUA": 0.1
+        },
+        "operations": {
+          "thermalMode": "air",
+          "receiverHeat": 0,
+          "evaporatorHeat": 0,
+          "condenserHeat": 0,
+          "compressorOn": true,
+          "speed": 0.7,
+          "circuit": "circulating",
+          "valveMode": "manual",
+          "manualOpening": 0.02,
+          "superheatTarget": 5,
+          "kp": 0.04,
+          "ki": 0.004,
+          "drainEnabled": true
+        },
+        "actualSuperheat": 5.807976674987003,
+        "sensedSuperheat": 5.802524143665743,
+        "targetSuperheat": 5,
+        "opening": 0.021281374355182785,
+        "command": 0.02,
+        "speedSetting": 0.7,
+        "electricalDemand": 20.598767760915685,
+        "dischargeTemperature": 92.57668627839135,
+        "faultKind": null,
+        "feedMassFlow": 0.0006797840182130419,
+        "drainMassFlow": 0.006413429494336988,
+        "flowInterval": {
+          "from": 39.950000000000045,
+          "to": 40.00000000000004
+        }
+      },
+      {
+        "id": 47,
+        "seconds": 40.00000000000004,
+        "reason": "step",
+        "pressures": {
+          "receiver": 11.999122427208126,
+          "evaporator": 4.901602304388375,
+          "condenser": 11.883396814660008,
+          "outlet": 4.504310937913168
+        },
+        "temperatures": {
+          "room": 14.813295520067548,
+          "ambient": 25,
+          "receiver": 30.952094272956167,
+          "evaporator": 3.6011035205449726,
+          "condenser": 30.624660162686403,
+          "outlet": 7.10328047856299
+        },
+        "levels": {
+          "receiver": 0.3000466596115856,
+          "evaporator": 0.03523530432540103,
+          "condenser": 0.15101463613358984,
+          "outlet": 0
+        },
+        "roomBoundary": {
+          "ambient": 25,
+          "gain": 2,
+          "leakUA": 0.1
+        },
+        "operations": {
+          "thermalMode": "air",
+          "receiverHeat": 0,
+          "evaporatorHeat": 0,
+          "condenserHeat": 0,
+          "compressorOn": true,
+          "speed": 0.7,
+          "circuit": "circulating",
+          "valveMode": "manual",
+          "manualOpening": 0.02,
+          "superheatTarget": 5,
+          "kp": 0.04,
+          "ki": 0.004,
+          "drainEnabled": true
+        },
+        "actualSuperheat": 5.807976674987003,
+        "sensedSuperheat": 5.802524143665743,
+        "targetSuperheat": 5,
+        "opening": 0.021281374355182785,
+        "command": 0.02,
+        "speedSetting": 0.7,
+        "electricalDemand": 20.598767760915685,
+        "dischargeTemperature": 92.57668627839135,
+        "faultKind": null,
+        "feedMassFlow": 0.0006790174993369803,
+        "drainMassFlow": 0.006381048966262101,
+        "flowInterval": null
+      },
+      {
+        "id": 48,
+        "seconds": 41.00000000000005,
+        "reason": "periodic",
+        "pressures": {
+          "receiver": 11.999235507492473,
+          "evaporator": 4.9009248209122855,
+          "condenser": 11.883214127958551,
+          "outlet": 4.503691846119985
+        },
+        "temperatures": {
+          "room": 14.808932388513778,
+          "ambient": 25,
+          "receiver": 30.952414140390108,
+          "evaporator": 3.597303445734548,
+          "condenser": 30.62414083698077,
+          "outlet": 7.099974179985356
+        },
+        "levels": {
+          "receiver": 0.30008164934677833,
+          "evaporator": 0.03278595037343813,
+          "condenser": 0.1524362614450201,
+          "outlet": 0
+        },
+        "roomBoundary": {
+          "ambient": 25,
+          "gain": 2,
+          "leakUA": 0.1
+        },
+        "operations": {
+          "thermalMode": "air",
+          "receiverHeat": 0,
+          "evaporatorHeat": 0,
+          "condenserHeat": 0,
+          "compressorOn": true,
+          "speed": 0.7,
+          "circuit": "circulating",
+          "valveMode": "manual",
+          "manualOpening": 0.02,
+          "superheatTarget": 5,
+          "kp": 0.04,
+          "ki": 0.004,
+          "drainEnabled": true
+        },
+        "actualSuperheat": 5.808383546536788,
+        "sensedSuperheat": 5.804788020044337,
+        "targetSuperheat": 5,
+        "opening": 0.020777348270549417,
+        "command": 0.02,
+        "speedSetting": 0.7,
+        "electricalDemand": 20.59845992145631,
+        "dischargeTemperature": 92.5844313464133,
+        "faultKind": null,
+        "feedMassFlow": 0.0006559601974048183,
+        "drainMassFlow": 0.005219559615643405,
+        "flowInterval": {
+          "from": 40.90000000000005,
+          "to": 41.00000000000005
+        }
+      },
+      {
+        "id": 49,
+        "seconds": 42.00000000000006,
+        "reason": "periodic",
+        "pressures": {
+          "receiver": 11.999323336253761,
+          "evaporator": 4.90029183326933,
+          "condenser": 11.883093027352768,
+          "outlet": 4.503114026071632
+        },
+        "temperatures": {
+          "room": 14.804569553386163,
+          "ambient": 25,
+          "receiver": 30.952662577378653,
+          "evaporator": 3.5937524779314196,
+          "condenser": 30.623796578417146,
+          "outlet": 7.096708263886912
+        },
+        "levels": {
+          "receiver": 0.30010891805923756,
+          "evaporator": 0.030336501693982054,
+          "condenser": 0.15387394191493334,
+          "outlet": 0
+        },
+        "roomBoundary": {
+          "ambient": 25,
+          "gain": 2,
+          "leakUA": 0.1
+        },
+        "operations": {
+          "thermalMode": "air",
+          "receiverHeat": 0,
+          "evaporatorHeat": 0,
+          "condenserHeat": 0,
+          "compressorOn": true,
+          "speed": 0.7,
+          "circuit": "circulating",
+          "valveMode": "manual",
+          "manualOpening": 0.02,
+          "superheatTarget": 5,
+          "kp": 0.04,
+          "ki": 0.004,
+          "drainEnabled": true
+        },
+        "actualSuperheat": 5.80858372268267,
+        "sensedSuperheat": 5.806278544624749,
+        "targetSuperheat": 5,
+        "opening": 0.02047157985586497,
+        "command": 0.02,
+        "speedSetting": 0.7,
+        "electricalDemand": 20.59825760460382,
+        "dischargeTemperature": 92.5918069170771,
+        "faultKind": null,
+        "feedMassFlow": 0.0006411912863531696,
+        "drainMassFlow": 0.004140084344361018,
+        "flowInterval": {
+          "from": 41.900000000000055,
+          "to": 42.00000000000006
+        }
+      },
+      {
+        "id": 50,
+        "seconds": 43.000000000000064,
+        "reason": "periodic",
+        "pressures": {
+          "receiver": 11.999388573956042,
+          "evaporator": 4.899684244524756,
+          "condenser": 11.883011595241271,
+          "outlet": 4.502559406085387
+        },
+        "temperatures": {
+          "room": 14.800207089685085,
+          "ambient": 25,
+          "receiver": 30.952847110949257,
+          "evaporator": 3.590343562742929,
+          "condenser": 30.623565085432823,
+          "outlet": 7.093460024627703
+        },
+        "levels": {
+          "receiver": 0.30012927803800377,
+          "evaporator": 0.027887129336282606,
+          "condenser": 0.1553259004480173,
+          "outlet": 0
+        },
+        "roomBoundary": {
+          "ambient": 25,
+          "gain": 2,
+          "leakUA": 0.1
+        },
+        "operations": {
+          "thermalMode": "air",
+          "receiverHeat": 0,
+          "evaporatorHeat": 0,
+          "condenserHeat": 0,
+          "compressorOn": true,
+          "speed": 0.7,
+          "circuit": "circulating",
+          "valveMode": "manual",
+          "manualOpening": 0.02,
+          "superheatTarget": 5,
+          "kp": 0.04,
+          "ki": 0.004,
+          "drainEnabled": true
+        },
+        "actualSuperheat": 5.808662826893851,
+        "sensedSuperheat": 5.807240499507727,
+        "targetSuperheat": 5,
+        "opening": 0.020286084846243297,
+        "command": 0.02,
+        "speedSetting": 0.7,
+        "electricalDemand": 20.598123190144026,
+        "dischargeTemperature": 92.59900853511547,
+        "faultKind": null,
+        "feedMassFlow": 0.0006322868828555078,
+        "drainMassFlow": 0.0031691811810405997,
+        "flowInterval": {
+          "from": 42.90000000000006,
+          "to": 43.000000000000064
+        }
+      },
+      {
+        "id": 51,
+        "seconds": 44.00000000000007,
+        "reason": "periodic",
+        "pressures": {
+          "receiver": 11.999433091423414,
+          "evaporator": 4.899091276979206,
+          "condenser": 11.882955096539149,
+          "outlet": 4.502017290368816
+        },
+        "temperatures": {
+          "room": 14.795845040097639,
+          "ambient": 25,
+          "receiver": 30.95297303398687,
+          "evaporator": 3.5870162731060433,
+          "condenser": 30.62340447153209,
+          "outlet": 7.090209339430929
+        },
+        "levels": {
+          "receiver": 0.30014330064796385,
+          "evaporator": 0.025437936234614354,
+          "condenser": 0.15679089629365683,
+          "outlet": 0
+        },
+        "roomBoundary": {
+          "ambient": 25,
+          "gain": 2,
+          "leakUA": 0.1
+        },
+        "operations": {
+          "thermalMode": "air",
+          "receiverHeat": 0,
+          "evaporatorHeat": 0,
+          "condenserHeat": 0,
+          "compressorOn": true,
+          "speed": 0.7,
+          "circuit": "circulating",
+          "valveMode": "manual",
+          "manualOpening": 0.02,
+          "superheatTarget": 5,
+          "kp": 0.04,
+          "ki": 0.004,
+          "drainEnabled": true
+        },
+        "actualSuperheat": 5.808664864161983,
+        "sensedSuperheat": 5.807848121592664,
+        "targetSuperheat": 5,
+        "opening": 0.020173553934147447,
+        "command": 0.02,
+        "speedSetting": 0.7,
+        "electricalDemand": 20.598031356298513,
+        "dischargeTemperature": 92.60612875644901,
+        "faultKind": null,
+        "feedMassFlow": 0.0006269054392203689,
+        "drainMassFlow": 0.0022688160370845584,
+        "flowInterval": {
+          "from": 43.90000000000007,
+          "to": 44.00000000000007
+        }
+      },
+      {
+        "id": 52,
+        "seconds": 45.00000000000008,
+        "reason": "periodic",
+        "pressures": {
+          "receiver": 11.999457945664242,
+          "evaporator": 4.898506826631612,
+          "condenser": 11.88291458671396,
+          "outlet": 4.50148157713294
+        },
+        "temperatures": {
+          "room": 14.791483428995631,
+          "ambient": 25,
+          "receiver": 30.95304333700814,
+          "evaporator": 3.5837363814926597,
+          "condenser": 30.623289310168108,
+          "outlet": 7.086944355971997
+        },
+        "levels": {
+          "receiver": 0.30015130869046286,
+          "evaporator": 0.02298898454601366,
+          "condenser": 0.1582682260876154,
+          "outlet": 0
+        },
+        "roomBoundary": {
+          "ambient": 25,
+          "gain": 2,
+          "leakUA": 0.1
+        },
+        "operations": {
+          "thermalMode": "air",
+          "receiverHeat": 0,
+          "evaporatorHeat": 0,
+          "condenserHeat": 0,
+          "compressorOn": true,
+          "speed": 0.7,
+          "circuit": "circulating",
+          "valveMode": "manual",
+          "manualOpening": 0.02,
+          "superheatTarget": 5,
+          "kp": 0.04,
+          "ki": 0.004,
+          "drainEnabled": true
+        },
+        "actualSuperheat": 5.808614572742954,
+        "sensedSuperheat": 5.808221658059654,
+        "targetSuperheat": 5,
+        "opening": 0.02010528683519448,
+        "command": 0.02,
+        "speedSetting": 0.7,
+        "electricalDemand": 20.597966722171243,
+        "dischargeTemperature": 92.61321561532742,
+        "faultKind": null,
+        "feedMassFlow": 0.0006236481938866971,
+        "drainMassFlow": 0.0014007231110943282,
+        "flowInterval": {
+          "from": 44.90000000000008,
+          "to": 45.00000000000008
+        }
+      },
+      {
+        "id": 53,
+        "seconds": 46.00000000000008,
+        "reason": "periodic",
+        "pressures": {
+          "receiver": 11.999463293267674,
+          "evaporator": 4.897925694602517,
+          "condenser": 11.88288577049818,
+          "outlet": 4.500966926085326
+        },
+        "temperatures": {
+          "room": 14.787122270456384,
+          "ambient": 25,
+          "receiver": 30.953058463288098,
+          "evaporator": 3.580474724007624,
+          "condenser": 30.62320739116749,
+          "outlet": 7.083950746066082
+        },
+        "levels": {
+          "receiver": 0.30015334983946523,
+          "evaporator": 0.020540310981374665,
+          "condenser": 0.15975776995963317,
+          "outlet": 0
+        },
+        "roomBoundary": {
+          "ambient": 25,
+          "gain": 2,
+          "leakUA": 0.1
+        },
+        "operations": {
+          "thermalMode": "air",
+          "receiverHeat": 0,
+          "evaporatorHeat": 0,
+          "condenserHeat": 0,
+          "compressorOn": true,
+          "speed": 0.7,
+          "circuit": "circulating",
+          "valveMode": "manual",
+          "manualOpening": 0.02,
+          "superheatTarget": 5,
+          "kp": 0.04,
+          "ki": 0.004,
+          "drainEnabled": true
+        },
+        "actualSuperheat": 5.808709625853226,
+        "sensedSuperheat": 5.808438023310442,
+        "targetSuperheat": 5,
+        "opening": 0.020063871422869403,
+        "command": 0.02,
+        "speedSetting": 0.7,
+        "electricalDemand": 20.59792175304505,
+        "dischargeTemperature": 92.62030224807367,
+        "faultKind": null,
+        "feedMassFlow": 0.0006216375595102185,
+        "drainMassFlow": 0.0004995557408377723,
+        "flowInterval": {
+          "from": 45.95000000000008,
+          "to": 46.00000000000008
+        }
+      },
+      {
+        "id": 54,
+        "seconds": 47.000000000000085,
+        "reason": "periodic",
+        "pressures": {
+          "receiver": 11.999450709758525,
+          "evaporator": 4.897348845515177,
+          "condenser": 11.882860560129073,
+          "outlet": 4.500440157020056
+        },
+        "temperatures": {
+          "room": 14.78276157234602,
+          "ambient": 25,
+          "receiver": 30.95302286944835,
+          "evaporator": 3.577236722185057,
+          "condenser": 30.623135722737715,
+          "outlet": 7.080721470481384
+        },
+        "levels": {
+          "receiver": 0.30014990602347624,
+          "evaporator": 0.018091940014660805,
+          "condenser": 0.16125851643519884,
+          "outlet": 0
+        },
+        "roomBoundary": {
+          "ambient": 25,
+          "gain": 2,
+          "leakUA": 0.1
+        },
+        "operations": {
+          "thermalMode": "air",
+          "receiverHeat": 0,
+          "evaporatorHeat": 0,
+          "condenserHeat": 0,
+          "compressorOn": true,
+          "speed": 0.7,
+          "circuit": "circulating",
+          "valveMode": "manual",
+          "manualOpening": 0.02,
+          "superheatTarget": 5,
+          "kp": 0.04,
+          "ki": 0.004,
+          "drainEnabled": true
+        },
+        "actualSuperheat": 5.808642104966566,
+        "sensedSuperheat": 5.808558498464675,
+        "targetSuperheat": 5,
+        "opening": 0.020038747724194908,
+        "command": 0.02,
+        "speedSetting": 0.7,
+        "electricalDemand": 20.59788277028254,
+        "dischargeTemperature": 92.62737481604992,
+        "faultKind": null,
+        "feedMassFlow": 0.0006204778365402219,
+        "drainMassFlow": 0,
+        "flowInterval": {
+          "from": 46.900000000000084,
+          "to": 47.000000000000085
+        }
+      },
+      {
+        "id": 55,
+        "seconds": 48.00000000000009,
+        "reason": "periodic",
+        "pressures": {
+          "receiver": 11.999435449884,
+          "evaporator": 4.896773749312809,
+          "condenser": 11.882793418149266,
+          "outlet": 4.4999125367192745
+        },
+        "temperatures": {
+          "room": 14.778401339230347,
+          "ambient": 25,
+          "receiver": 30.952979705164694,
+          "evaporator": 3.5740081800717904,
+          "condenser": 30.622944849730523,
+          "outlet": 7.077458542135612
+        },
+        "levels": {
+          "receiver": 0.30014564308293523,
+          "evaporator": 0.01564388455172196,
+          "condenser": 0.16276078396420535,
+          "outlet": 0
+        },
+        "roomBoundary": {
+          "ambient": 25,
+          "gain": 2,
+          "leakUA": 0.1
+        },
+        "operations": {
+          "thermalMode": "air",
+          "receiverHeat": 0,
+          "evaporatorHeat": 0,
+          "condenserHeat": 0,
+          "compressorOn": true,
+          "speed": 0.7,
+          "circuit": "circulating",
+          "valveMode": "manual",
+          "manualOpening": 0.02,
+          "superheatTarget": 5,
+          "kp": 0.04,
+          "ki": 0.004,
+          "drainEnabled": true
+        },
+        "actualSuperheat": 5.808546411572024,
+        "sensedSuperheat": 5.808615254087869,
+        "targetSuperheat": 5,
+        "opening": 0.020023506383024456,
+        "command": 0.02,
+        "speedSetting": 0.7,
+        "electricalDemand": 20.597771045841775,
+        "dischargeTemperature": 92.63409478400888,
+        "faultKind": null,
+        "feedMassFlow": 0.0006197519451500556,
+        "drainMassFlow": 0,
+        "flowInterval": {
+          "from": 47.90000000000009,
+          "to": 48.00000000000009
+        }
+      },
+      {
+        "id": 56,
+        "seconds": 49.0000000000001,
+        "reason": "periodic",
+        "pressures": {
+          "receiver": 11.999420203600302,
+          "evaporator": 4.896199801337824,
+          "condenser": 11.882688716832313,
+          "outlet": 4.499381028371839
+        },
+        "temperatures": {
+          "room": 14.774041573038026,
+          "ambient": 25,
+          "receiver": 30.952936579269398,
+          "evaporator": 3.570785705951395,
+          "condenser": 30.622647199887798,
+          "outlet": 7.074125740185016
+        },
+        "levels": {
+          "receiver": 0.3001413839739243,
+          "evaporator": 0.013196152565301725,
+          "condenser": 0.16426286197319623,
+          "outlet": 0
+        },
+        "roomBoundary": {
+          "ambient": 25,
+          "gain": 2,
+          "leakUA": 0.1
+        },
+        "operations": {
+          "thermalMode": "air",
+          "receiverHeat": 0,
+          "evaporatorHeat": 0,
+          "condenserHeat": 0,
+          "compressorOn": true,
+          "speed": 0.7,
+          "circuit": "circulating",
+          "valveMode": "manual",
+          "manualOpening": 0.02,
+          "superheatTarget": 5,
+          "kp": 0.04,
+          "ki": 0.004,
+          "drainEnabled": true
+        },
+        "actualSuperheat": 5.808404559502378,
+        "sensedSuperheat": 5.8086320713665005,
+        "targetSuperheat": 5,
+        "opening": 0.02001426019345324,
+        "command": 0.02,
+        "speedSetting": 0.7,
+        "electricalDemand": 20.597594177239575,
+        "dischargeTemperature": 92.6405071514262,
+        "faultKind": null,
+        "feedMassFlow": 0.0006193115256546815,
+        "drainMassFlow": 0,
+        "flowInterval": {
+          "from": 48.9000000000001,
+          "to": 49.0000000000001
+        }
+      },
+      {
+        "id": 57,
+        "seconds": 50.0000000000001,
+        "reason": "periodic",
+        "pressures": {
+          "receiver": 11.999404965516403,
+          "evaporator": 4.895623700645591,
+          "condenser": 11.88255647476228,
+          "outlet": 4.498872296366451
+        },
+        "temperatures": {
+          "room": 14.769682274589181,
+          "ambient": 25,
+          "receiver": 30.952893476513434,
+          "evaporator": 3.5675507653390643,
+          "condenser": 30.62227125214488,
+          "outlet": 7.0711577896856035
+        },
+        "levels": {
+          "receiver": 0.3001371271903584,
+          "evaporator": 0.010748748019888513,
+          "condenser": 0.16576475070110203,
+          "outlet": 0
+        },
+        "roomBoundary": {
+          "ambient": 25,
+          "gain": 2,
+          "leakUA": 0.1
+        },
+        "operations": {
+          "thermalMode": "air",
+          "receiverHeat": 0,
+          "evaporatorHeat": 0,
+          "condenserHeat": 0,
+          "compressorOn": true,
+          "speed": 0.7,
+          "circuit": "circulating",
+          "valveMode": "manual",
+          "manualOpening": 0.02,
+          "superheatTarget": 5,
+          "kp": 0.04,
+          "ki": 0.004,
+          "drainEnabled": true
+        },
+        "actualSuperheat": 5.808491172501817,
+        "sensedSuperheat": 5.808618004655845,
+        "targetSuperheat": 5,
+        "opening": 0.020008650833169876,
+        "command": 0.02,
+        "speedSetting": 0.7,
+        "electricalDemand": 20.59736931829958,
+        "dischargeTemperature": 92.64669718972439,
+        "faultKind": null,
+        "feedMassFlow": 0.0006190441942174401,
+        "drainMassFlow": 0,
+        "flowInterval": {
+          "from": 49.9000000000001,
+          "to": 50.0000000000001
+        }
+      },
+      {
+        "id": 58,
+        "seconds": 50.0000000000001,
+        "reason": "step",
+        "pressures": {
+          "receiver": 11.999404965516403,
+          "evaporator": 4.895623700645591,
+          "condenser": 11.88255647476228,
+          "outlet": 4.498872296366451
+        },
+        "temperatures": {
+          "room": 14.769682274589181,
+          "ambient": 25,
+          "receiver": 30.952893476513434,
+          "evaporator": 3.5675507653390643,
+          "condenser": 30.62227125214488,
+          "outlet": 7.0711577896856035
+        },
+        "levels": {
+          "receiver": 0.3001371271903584,
+          "evaporator": 0.010748748019888513,
+          "condenser": 0.16576475070110203,
+          "outlet": 0
+        },
+        "roomBoundary": {
+          "ambient": 25,
+          "gain": 2,
+          "leakUA": 0.1
+        },
+        "operations": {
+          "thermalMode": "air",
+          "receiverHeat": 0,
+          "evaporatorHeat": 0,
+          "condenserHeat": 0,
+          "compressorOn": true,
+          "speed": 0.7,
+          "circuit": "circulating",
+          "valveMode": "manual",
+          "manualOpening": 0.02,
+          "superheatTarget": 5,
+          "kp": 0.04,
+          "ki": 0.004,
+          "drainEnabled": true
+        },
+        "actualSuperheat": 5.808491172501817,
+        "sensedSuperheat": 5.808618004655845,
+        "targetSuperheat": 5,
+        "opening": 0.020008650833169876,
+        "command": 0.02,
+        "speedSetting": 0.7,
+        "electricalDemand": 20.59736931829958,
+        "dischargeTemperature": 92.64669718972439,
+        "faultKind": null,
+        "feedMassFlow": 0.0006190341460240197,
+        "drainMassFlow": 0,
+        "flowInterval": null
+      },
+      {
+        "id": 59,
+        "seconds": 51.00000000000011,
+        "reason": "periodic",
+        "pressures": {
+          "receiver": 11.999389732364065,
+          "evaporator": 4.895050124287467,
+          "condenser": 11.882404276119201,
+          "outlet": 4.498341768263911
+        },
+        "temperatures": {
+          "room": 14.765323443648375,
+          "ambient": 25,
+          "receiver": 30.95285038765229,
+          "evaporator": 3.5643296212545197,
+          "condenser": 30.621838565170343,
+          "outlet": 7.067838402040998
+        },
+        "levels": {
+          "receiver": 0.30013287181919956,
+          "evaporator": 0.008301674788448824,
+          "condenser": 0.1672664512218529,
+          "outlet": 0
+        },
+        "roomBoundary": {
+          "ambient": 25,
+          "gain": 2,
+          "leakUA": 0.1
+        },
+        "operations": {
+          "thermalMode": "air",
+          "receiverHeat": 0,
+          "evaporatorHeat": 0,
+          "condenserHeat": 0,
+          "compressorOn": true,
+          "speed": 0.7,
+          "circuit": "circulating",
+          "valveMode": "manual",
+          "manualOpening": 0.02,
+          "superheatTarget": 5,
+          "kp": 0.04,
+          "ki": 0.004,
+          "drainEnabled": true
+        },
+        "actualSuperheat": 5.808357585920021,
+        "sensedSuperheat": 5.808593320966457,
+        "targetSuperheat": 5,
+        "opening": 0.02000524804494191,
+        "command": 0.02,
+        "speedSetting": 0.7,
+        "electricalDemand": 20.597109859010203,
+        "dischargeTemperature": 92.65273050985738,
+        "faultKind": null,
+        "feedMassFlow": 0.0006188818482481967,
+        "drainMassFlow": 0,
+        "flowInterval": {
+          "from": 50.900000000000105,
+          "to": 51.00000000000011
+        }
+      },
+      {
+        "id": 60,
+        "seconds": 52.00000000000011,
+        "reason": "periodic",
+        "pressures": {
+          "receiver": 11.999374502159956,
+          "evaporator": 4.894474581147972,
+          "condenser": 11.882237282018899,
+          "outlet": 4.497828848732625
+        },
+        "temperatures": {
+          "room": 14.760965080386068,
+          "ambient": 25,
+          "receiver": 30.95280730707588,
+          "evaporator": 3.561097052531388,
+          "condenser": 30.621363809672747,
+          "outlet": 7.064802394973667
+        },
+        "levels": {
+          "receiver": 0.3001286173063809,
+          "evaporator": 0.005854933704334861,
+          "condenser": 0.16876796340557038,
+          "outlet": 0
+        },
+        "roomBoundary": {
+          "ambient": 25,
+          "gain": 2,
+          "leakUA": 0.1
+        },
+        "operations": {
+          "thermalMode": "air",
+          "receiverHeat": 0,
+          "evaporatorHeat": 0,
+          "condenserHeat": 0,
+          "compressorOn": true,
+          "speed": 0.7,
+          "circuit": "circulating",
+          "valveMode": "manual",
+          "manualOpening": 0.02,
+          "superheatTarget": 5,
+          "kp": 0.04,
+          "ki": 0.004,
+          "drainEnabled": true
+        },
+        "actualSuperheat": 5.808401998365298,
+        "sensedSuperheat": 5.808555022096845,
+        "targetSuperheat": 5,
+        "opening": 0.0200031836848083,
+        "command": 0.02,
+        "speedSetting": 0.7,
+        "electricalDemand": 20.59682448893233,
+        "dischargeTemperature": 92.65864571042982,
+        "faultKind": null,
+        "feedMassFlow": 0.0006187831708657984,
+        "drainMassFlow": 0,
+        "flowInterval": {
+          "from": 51.900000000000105,
+          "to": 52.00000000000011
+        }
+      },
+      {
+        "id": 61,
+        "seconds": 53.000000000000114,
+        "reason": "periodic",
+        "pressures": {
+          "receiver": 11.999359273701755,
+          "evaporator": 4.893901409091997,
+          "condenser": 11.882059579896495,
+          "outlet": 4.497296713767608
+        },
+        "temperatures": {
+          "room": 14.756607184287162,
+          "ambient": 25,
+          "receiver": 30.95276423138333,
+          "evaporator": 3.557877423329914,
+          "condenser": 30.620858604500288,
+          "outlet": 7.061457598679947
+        },
+        "levels": {
+          "receiver": 0.300124363316016,
+          "evaporator": 0.003408525950008337,
+          "condenser": 0.170269288080794,
+          "outlet": 0
+        },
+        "roomBoundary": {
+          "ambient": 25,
+          "gain": 2,
+          "leakUA": 0.1
+        },
+        "operations": {
+          "thermalMode": "air",
+          "receiverHeat": 0,
+          "evaporatorHeat": 0,
+          "condenserHeat": 0,
+          "compressorOn": true,
+          "speed": 0.7,
+          "circuit": "circulating",
+          "valveMode": "manual",
+          "manualOpening": 0.02,
+          "superheatTarget": 5,
+          "kp": 0.04,
+          "ki": 0.004,
+          "drainEnabled": true
+        },
+        "actualSuperheat": 5.808253394206986,
+        "sensedSuperheat": 5.808515428741602,
+        "targetSuperheat": 5,
+        "opening": 0.020001931388645085,
+        "command": 0.02,
+        "speedSetting": 0.7,
+        "electricalDemand": 20.59652046151333,
+        "dischargeTemperature": 92.66447929042701,
+        "faultKind": null,
+        "feedMassFlow": 0.0006187231187184603,
+        "drainMassFlow": 0,
+        "flowInterval": {
+          "from": 52.90000000000011,
+          "to": 53.000000000000114
+        }
+      },
+      {
+        "id": 62,
+        "seconds": 54.000000000000114,
+        "reason": "periodic",
+        "pressures": {
+          "receiver": 11.999344046259731,
+          "evaporator": 4.893326052251957,
+          "condenser": 11.881873846085236,
+          "outlet": 4.496782542119057
+        },
+        "temperatures": {
+          "room": 14.752249755461303,
+          "ambient": 25,
+          "receiver": 30.95272115851052,
+          "evaporator": 3.5546451424692744,
+          "condenser": 30.62033055724946,
+          "outlet": 7.058401363018333
+        },
+        "levels": {
+          "receiver": 0.3001201096442446,
+          "evaporator": 0.0009624520246492052,
+          "condenser": 0.17177042503362483,
+          "outlet": 0
+        },
+        "roomBoundary": {
+          "ambient": 25,
+          "gain": 2,
+          "leakUA": 0.1
+        },
+        "operations": {
+          "thermalMode": "air",
+          "receiverHeat": 0,
+          "evaporatorHeat": 0,
+          "condenserHeat": 0,
+          "compressorOn": true,
+          "speed": 0.7,
+          "circuit": "circulating",
+          "valveMode": "manual",
+          "manualOpening": 0.02,
+          "superheatTarget": 5,
+          "kp": 0.04,
+          "ki": 0.004,
+          "drainEnabled": true
+        },
+        "actualSuperheat": 5.808285815874115,
+        "sensedSuperheat": 5.808468339200359,
+        "targetSuperheat": 5,
+        "opening": 0.020001171661591384,
+        "command": 0.02,
+        "speedSetting": 0.7,
+        "electricalDemand": 20.59620222626656,
+        "dischargeTemperature": 92.67024778231693,
+        "faultKind": null,
+        "feedMassFlow": 0.0006186864936454626,
+        "drainMassFlow": 0,
+        "flowInterval": {
+          "from": 53.90000000000011,
+          "to": 54.000000000000114
+        }
+      },
+      {
+        "id": 63,
+        "seconds": 55.0000000000002,
+        "reason": "periodic",
+        "pressures": {
+          "receiver": 11.999328819454755,
+          "evaporator": 4.149533615934252,
+          "condenser": 11.86493501641168,
+          "outlet": 3.901355185320793
+        },
+        "temperatures": {
+          "room": 14.750109136949177,
+          "ambient": 25,
+          "receiver": 30.95267808738501,
+          "evaporator": 13.678043762103576,
+          "condenser": 30.572138178823625,
+          "outlet": 8.572011853263382
+        },
+        "levels": {
+          "receiver": 0.3001158561674966,
+          "evaporator": 0,
+          "condenser": 0.17321065928845056,
+          "outlet": 0
+        },
+        "roomBoundary": {
+          "ambient": 25,
+          "gain": 2,
+          "leakUA": 0.1
+        },
+        "operations": {
+          "thermalMode": "air",
+          "receiverHeat": 0,
+          "evaporatorHeat": 0,
+          "condenserHeat": 0,
+          "compressorOn": true,
+          "speed": 0.7,
+          "circuit": "circulating",
+          "valveMode": "manual",
+          "manualOpening": 0.02,
+          "superheatTarget": 5,
+          "kp": 0.04,
+          "ki": 0.004,
+          "drainEnabled": true
+        },
+        "actualSuperheat": 11.100214120233431,
+        "sensedSuperheat": 6.601464167526723,
+        "targetSuperheat": 5,
+        "opening": 0.020000710697178622,
+        "command": 0.02,
+        "speedSetting": 0.7,
+        "electricalDemand": 20.364629504486704,
+        "dischargeTemperature": 109.01381894390502,
+        "faultKind": null,
+        "feedMassFlow": 0.000618663282485221,
+        "drainMassFlow": 0,
+        "flowInterval": {
+          "from": 54.9937500000002,
+          "to": 55.0000000000002
+        }
+      },
+      {
+        "id": 64,
+        "seconds": 56.000000000000426,
+        "reason": "periodic",
+        "pressures": {
+          "receiver": 11.99931359289151,
+          "evaporator": 2.9877893454275166,
+          "condenser": 11.736958907766622,
+          "outlet": 2.8289537501186612
+        },
+        "temperatures": {
+          "room": 14.74982921292047,
+          "ambient": 25,
+          "receiver": 30.952635016888625,
+          "evaporator": 14.03223772441701,
+          "condenser": 30.20610474919157,
+          "outlet": 9.803554808177596
+        },
+        "levels": {
+          "receiver": 0.30011160281067706,
+          "evaporator": 0,
+          "condenser": 0.1742240580447672,
+          "outlet": 0
+        },
+        "roomBoundary": {
+          "ambient": 25,
+          "gain": 2,
+          "leakUA": 0.1
+        },
+        "operations": {
+          "thermalMode": "air",
+          "receiverHeat": 0,
+          "evaporatorHeat": 0,
+          "condenserHeat": 0,
+          "compressorOn": true,
+          "speed": 0.7,
+          "circuit": "circulating",
+          "valveMode": "manual",
+          "manualOpening": 0.02,
+          "superheatTarget": 5,
+          "kp": 0.04,
+          "ki": 0.004,
+          "drainEnabled": true
+        },
+        "actualSuperheat": 20.465628331294283,
+        "sensedSuperheat": 10.364518398408835,
+        "targetSuperheat": 5,
+        "opening": 0.020000431059980242,
+        "command": 0.02,
+        "speedSetting": 0.7,
+        "electricalDemand": 18.617535836373726,
+        "dischargeTemperature": 143.65450771770702,
+        "faultKind": null,
+        "feedMassFlow": 0.0006186497934400887,
+        "drainMassFlow": 0,
+        "flowInterval": {
+          "from": 55.993750000000425,
+          "to": 56.000000000000426
+        }
+      },
+      {
+        "id": 65,
+        "seconds": 56.73750000000059,
+        "reason": "stop",
+        "pressures": {
+          "receiver": 11.999302363394548,
+          "evaporator": 2.363665657445029,
+          "condenser": 11.596631939876403,
+          "outlet": 2.2498355466683924
+        },
+        "temperatures": {
+          "room": 14.74970204732566,
+          "ambient": 25,
+          "receiver": 30.952603252626812,
+          "evaporator": 14.205704408097239,
+          "condenser": 29.801711822596758,
+          "outlet": 10.785423647257389
+        },
+        "levels": {
+          "receiver": 0.3001084660095498,
+          "evaporator": 0,
+          "condenser": 0.17473597242846667,
+          "outlet": 0
+        },
+        "roomBoundary": {
+          "ambient": 25,
+          "gain": 2,
+          "leakUA": 0.1
+        },
+        "operations": {
+          "thermalMode": "air",
+          "receiverHeat": 0,
+          "evaporatorHeat": 0,
+          "condenserHeat": 0,
+          "compressorOn": true,
+          "speed": 0.7,
+          "circuit": "circulating",
+          "valveMode": "manual",
+          "manualOpening": 0.02,
+          "superheatTarget": 5,
+          "kp": 0.04,
+          "ki": 0.004,
+          "drainEnabled": true
+        },
+        "actualSuperheat": 26.915852184174582,
+        "sensedSuperheat": 14.551261393083506,
+        "targetSuperheat": 5,
+        "opening": 0.020000298120593625,
+        "command": 0.02,
+        "speedSetting": 0.7,
+        "electricalDemand": null,
+        "dischargeTemperature": null,
+        "faultKind": "equipment",
+        "feedMassFlow": 0.0006186432744281851,
+        "drainMassFlow": 0,
+        "flowInterval": {
+          "from": 56.725000000000584,
+          "to": 56.73750000000059
+        }
+      },
+      {
+        "id": 66,
+        "seconds": 56.73750000000059,
+        "reason": "training",
+        "pressures": {
+          "receiver": 11.999302363394548,
+          "evaporator": 2.363665657445029,
+          "condenser": 11.596631939876403,
+          "outlet": 2.2498355466683924
+        },
+        "temperatures": {
+          "room": 14.74970204732566,
+          "ambient": 25,
+          "receiver": 30.952603252626812,
+          "evaporator": 14.205704408097239,
+          "condenser": 29.801711822596758,
+          "outlet": 10.785423647257389
+        },
+        "levels": {
+          "receiver": 0.3001084660095498,
+          "evaporator": 0,
+          "condenser": 0.17473597242846667,
+          "outlet": 0
+        },
+        "roomBoundary": {
+          "ambient": 25,
+          "gain": 2,
+          "leakUA": 0.1
+        },
+        "operations": {
+          "thermalMode": "air",
+          "receiverHeat": 0,
+          "evaporatorHeat": 0,
+          "condenserHeat": 0,
+          "compressorOn": true,
+          "speed": 0.7,
+          "circuit": "circulating",
+          "valveMode": "manual",
+          "manualOpening": 0.02,
+          "superheatTarget": 5,
+          "kp": 0.04,
+          "ki": 0.004,
+          "drainEnabled": true
+        },
+        "actualSuperheat": 26.915852184174582,
+        "sensedSuperheat": 14.551261393083506,
+        "targetSuperheat": 5,
+        "opening": 0.020000298120593625,
+        "command": 0.02,
+        "speedSetting": 0.7,
+        "electricalDemand": null,
+        "dischargeTemperature": null,
+        "faultKind": "equipment",
+        "feedMassFlow": 0.0006186432744281851,
+        "drainMassFlow": 0,
+        "flowInterval": {
+          "from": 56.725000000000584,
+          "to": 56.73750000000059
+        }
+      }
+    ],
+    "events": [
+      {
+        "id": 1,
+        "seconds": 0,
+        "type": "initialize",
+        "sampleId": 1,
+        "details": {
+          "operations": {
+            "thermalMode": "air",
+            "receiverHeat": 0,
+            "evaporatorHeat": 0,
+            "condenserHeat": 0,
+            "compressorOn": true,
+            "speed": 0.7,
+            "circuit": "circulating",
+            "valveMode": "auto",
+            "manualOpening": 0.25,
+            "superheatTarget": 5,
+            "kp": 0.04,
+            "ki": 0.004,
+            "drainEnabled": true
+          },
+          "roomBoundary": {
+            "ambient": 25,
+            "gain": 2,
+            "leakUA": 0.1
+          },
+          "profileName": "Default",
+          "profileRevision": 3
+        }
+      },
+      {
+        "id": 2,
+        "seconds": 30.000000000000373,
+        "type": "training",
+        "sampleId": 32,
+        "details": {
+          "reason": "Exercise loaded",
+          "exercise": "restriction",
+          "warmupSeconds": 30
+        }
+      },
+      {
+        "id": 3,
+        "seconds": 30.000000000000373,
+        "type": "controls",
+        "sampleId": 34,
+        "details": {
+          "changes": [
+            {
+              "scope": "operations",
+              "key": "valveMode",
+              "before": "auto",
+              "after": "manual"
+            },
+            {
+              "scope": "operations",
+              "key": "manualOpening",
+              "before": 0.25,
+              "after": 0.02
+            }
+          ]
+        }
+      },
+      {
+        "id": 4,
+        "seconds": 30.000000000000373,
+        "type": "training",
+        "sampleId": 35,
+        "details": {
+          "reason": "Exercise disturbance applied",
+          "exercise": "restriction"
+        }
+      },
+      {
+        "id": 5,
+        "seconds": 30.000000000000373,
+        "type": "step",
+        "sampleId": 36,
+        "details": {
+          "requestedSeconds": 10,
+          "reason": "Advance requested: 10 simulated seconds"
+        }
+      },
+      {
+        "id": 6,
+        "seconds": 40.00000000000004,
+        "type": "step",
+        "sampleId": 47,
+        "details": {
+          "requestedSeconds": 10,
+          "reason": "Advance requested: 10 simulated seconds"
+        }
+      },
+      {
+        "id": 7,
+        "seconds": 50.0000000000001,
+        "type": "step",
+        "sampleId": 58,
+        "details": {
+          "requestedSeconds": 10,
+          "reason": "Advance requested: 10 simulated seconds"
+        }
+      },
+      {
+        "id": 8,
+        "seconds": 56.73750000000059,
+        "type": "stop",
+        "sampleId": 65,
+        "details": {
+          "fault": {
+            "kind": "equipment",
+            "message": "High discharge temperature",
+            "seconds": 56.73750000000059,
+            "readings": {
+              "room": 14.74970204732566,
+              "pressure": 2.2498355466683924,
+              "condensing": 11.596631939876403,
+              "discharge": 170.09517932917754,
+              "speed": 0.7,
+              "stages": 1
+            },
+            "attemptedReadings": null,
+            "limits": {
+              "compressors": 1,
+              "displacement": 180,
+              "evapUA": 12,
+              "condUA": 25,
+              "highTrip": 24,
+              "lowTrip": 0.4,
+              "dischargeTrip": 170,
+              "performanceMode": "example",
+              "etaVol": 75,
+              "etaIs": 75,
+              "etaMotor": 92
+            }
+          }
+        }
+      },
+      {
+        "id": 9,
+        "seconds": 56.73750000000059,
+        "type": "training",
+        "sampleId": 66,
+        "details": {
+          "reason": "High discharge temperature",
+          "exercise": "restriction",
+          "endedAt": 56.73750000000059
+        }
+      }
+    ],
+    "nextAt": 57,
+    "nextSampleId": 67,
+    "nextEventId": 10,
+    "droppedSamples": 0,
+    "droppedEvents": 0
+  },
+  "final": {
+    "seconds": 56.73750000000059,
+    "fault": {
+      "kind": "equipment",
+      "message": "High discharge temperature",
+      "seconds": 56.73750000000059,
+      "readings": {
+        "room": 14.74970204732566,
+        "pressure": 2.2498355466683924,
+        "condensing": 11.596631939876403,
+        "discharge": 170.09517932917754,
+        "speed": 0.7,
+        "stages": 1
+      },
+      "attemptedReadings": null,
+      "limits": {
+        "compressors": 1,
+        "displacement": 180,
+        "evapUA": 12,
+        "condUA": 25,
+        "highTrip": 24,
+        "lowTrip": 0.4,
+        "dischargeTrip": 170,
+        "performanceMode": "example",
+        "etaVol": 75,
+        "etaIs": 75,
+        "etaMotor": 92
+      }
+    },
+    "operations": {
+      "thermalMode": "air",
+      "receiverHeat": 0,
+      "evaporatorHeat": 0,
+      "condenserHeat": 0,
+      "compressorOn": true,
+      "speed": 0.7,
+      "circuit": "circulating",
+      "valveMode": "manual",
+      "manualOpening": 0.02,
+      "superheatTarget": 5,
+      "kp": 0.04,
+      "ki": 0.004,
+      "drainEnabled": true
+    },
+    "roomBoundary": {
+      "ambient": 25,
+      "gain": 2,
+      "leakUA": 0.1
+    }
+  },
+  "interpretation": "Training evidence for the supported Default model; not measured plant or real restart qualification."
+}

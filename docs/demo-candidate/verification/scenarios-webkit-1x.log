@@ -1,0 +1,11 @@
+Skipping host requirements validation logic because `PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS` env variable is set.
+page.goto: WebKit encountered an internal error
+Call log:
+[2m  - navigating to "file:///workspace/ammonia-git/index.html", waiting until "load"[22m
+
+    at /workspace/ammonia-git/docs/demo-candidate/verify-demo.cjs:39:16 {
+  log: [
+    '  - navigating to "file:///workspace/ammonia-git/index.html", waiting until "load"'
+  ],
+  name: 'Error'
+}

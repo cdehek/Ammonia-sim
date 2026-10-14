@@ -1,0 +1,18 @@
+AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
++ actual - expected
+
++ 'paused'
+- 'running'
+
+    at state (/workspace/ammonia-git/tests/industrial-styling-ui.cjs:9:35)
+    at async /workspace/ammonia-git/tests/industrial-styling-ui.cjs:13:77 {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: 'paused',
+  expected: 'running',
+  operator: 'strictEqual',
+  diff: 'simple'
+}
+Error: industrial-styling-ui.cjs failed
+    at /workspace/ammonia-git/tests/run-browser.cjs:8:22
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)

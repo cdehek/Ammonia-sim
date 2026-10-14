@@ -1,0 +1,20 @@
+Skipping host requirements validation logic because `PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS` env variable is set.
+locator.click: Timeout 30000ms exceeded.
+Call log:
+[2m  - waiting for locator('#storage-example')[22m
+[2m    - locator resolved to <button class="btn" id="storage-example">Initialize auto DX</button>[22m
+[2m  - attempting click action[22m
+[2m    - waiting for element to be visible, enabled and stable[22m
+
+    at /workspace/ammonia-git/tests/visual-pass2-ui.cjs:7:288 {
+  log: [
+    "  - waiting for locator('#storage-example')",
+    '    - locator resolved to <button class="btn" id="storage-example">Initialize auto DX</button>',
+    '  - attempting click action',
+    '    - waiting for element to be visible, enabled and stable'
+  ],
+  name: 'TimeoutError'
+}
+Error: visual-pass2-ui.cjs failed
+    at /workspace/ammonia-git/tests/run-browser.cjs:8:22
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)

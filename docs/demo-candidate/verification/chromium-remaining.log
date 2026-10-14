@@ -1,0 +1,15 @@
+AssertionError [ERR_ASSERTION]: The input did not match the regular expression /Connected playback: Running/. Input:
+
+'Connected playback: Paused · compressor: Paused · No active modeled trip or stop.'
+
+    at /workspace/ammonia-git/tests/hmi-uplift-ui.cjs:33:318 {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: 'Connected playback: Paused · compressor: Paused · No active modeled trip or stop.',
+  expected: /Connected playback: Running/,
+  operator: 'match',
+  diff: 'simple'
+}
+Error: hmi-uplift-ui.cjs failed
+    at /workspace/ammonia-git/tests/run-browser.cjs:8:22
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
