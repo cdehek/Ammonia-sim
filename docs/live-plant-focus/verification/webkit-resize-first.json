@@ -1,0 +1,61 @@
+{
+  "browser": "Playwright 1.62.1 WebKit",
+  "results": [
+    {
+      "version": "approved-checkpoint",
+      "sha256": "37d90ed8ba0800ee5a8ccb2b814abde278bf11eb7218674a2f157f085254c444",
+      "original": {
+        "code": 0,
+        "output": "Skipping host requirements validation logic because `PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS` env variable is set.\nPASS: webkit illustrated component set, exact dynamic receiver fill, full iPad landscape circuit, keyboard inspection, supported flow animation/arrows, full-width adaptive trends and pinned samples, blocked/isolated/stopped paths, modeled bank count, reduced motion, portrait/mobile scroll communication, touch targets and offline SVG.\n"
+      },
+      "geometry": {
+        "before": {
+          "viewport": 1024,
+          "plotWidth": 741,
+          "viewBoxWidth": 741,
+          "pinned": "Pinned inspection; playback can continue · 0.0000 s · Before manual advance · sample #2"
+        },
+        "immediate": {
+          "viewport": 1440,
+          "plotWidth": 1157,
+          "viewBoxWidth": 1157,
+          "pinned": "Pinned inspection; playback can continue · 0.0000 s · Before manual advance · sample #2"
+        },
+        "settled": {
+          "viewport": 1440,
+          "plotWidth": 1157,
+          "viewBoxWidth": 1157,
+          "pinned": "Pinned inspection; playback can continue · 0.0000 s · Before manual advance · sample #2"
+        }
+      }
+    },
+    {
+      "version": "focus-mode",
+      "sha256": "2924babd0e2c6fb37c71a9473a83f68644a154c6354a1c834513c570386f5420",
+      "original": {
+        "code": 1,
+        "output": "Skipping host requirements validation logic because `PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS` env variable is set.\nAssertionError [ERR_ASSERTION]: Chart geometry expands at desktop width\n    at /workspace/Ammonia-sim/tests/visual-pass2-ui.cjs:22:230 {\n  generatedMessage: false,\n  code: 'ERR_ASSERTION',\n  actual: false,\n  expected: true,\n  operator: '==',\n  diff: 'simple'\n}\n"
+      },
+      "geometry": {
+        "before": {
+          "viewport": 1024,
+          "plotWidth": 741,
+          "viewBoxWidth": 741,
+          "pinned": "Pinned inspection; playback can continue · 0.0000 s · Before manual advance · sample #2"
+        },
+        "immediate": {
+          "viewport": 1440,
+          "plotWidth": 1157,
+          "viewBoxWidth": 741,
+          "pinned": "Pinned inspection; playback can continue · 0.0000 s · Before manual advance · sample #2"
+        },
+        "settled": {
+          "viewport": 1440,
+          "plotWidth": 1157,
+          "viewBoxWidth": 741,
+          "pinned": "Pinned inspection; playback can continue · 0.0000 s · Before manual advance · sample #2"
+        }
+      }
+    }
+  ]
+}

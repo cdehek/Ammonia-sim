@@ -4,7 +4,7 @@ const {chromium,webkit}=require('playwright'),{launchOptions}=require('./browser
  const which=process.env.TEST_BROWSER==='webkit'?'webkit':'chromium',browser=await (which==='webkit'?webkit:chromium).launch(which==='webkit'?{headless:true}:launchOptions);
  const directory=path.resolve(__dirname,'../docs/ui-styling');fs.mkdirSync(directory,{recursive:true});
  try{
-  const page=await browser.newPage({viewport:{width:1024,height:768}}),errors=[];page.on('pageerror',e=>errors.push(e.message));await page.clock.install();await page.goto(process.env.TEST_URL);await page.locator('#tab-live').click();
+  const page=await browser.newPage({viewport:{width:1024,height:768}}),errors=[];page.on('pageerror',e=>errors.push(e.message));await page.clock.install();await page.goto(process.env.TEST_URL);await require('./browser-helpers.cjs').enterLive(page);
   const playback=page.locator('#storage-playback'),compressor=page.locator('[data-summary="compressor"]');
   const state=async(p,c)=>{assert.equal(await playback.getAttribute('data-state'),p);assert.equal(await compressor.getAttribute('data-state'),c);};
   const color=()=>playback.evaluate(el=>getComputedStyle(el).color);

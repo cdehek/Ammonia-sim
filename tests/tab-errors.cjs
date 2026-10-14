@@ -15,7 +15,7 @@ const {chromium}=require('playwright');
       const errors=[];
       page.on('pageerror',e=>errors.push(e.message));
       await page.addInitScript(()=>{Array.prototype.at=undefined;});
-      await page.goto('http://127.0.0.1:'+server.address().port);
+      await page.goto('http://127.0.0.1:'+server.address().port+'?workspace=all');
       for(let round=0;round<2;round++) for(const name of ['thermo','room','scenarios','validation','cycle']) {
         await page.locator('#tab-'+name).click();
         assert(await page.locator('#view-'+name).isVisible());

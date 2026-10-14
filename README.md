@@ -4,6 +4,10 @@ Open `index.html` in Chrome, Edge, Firefox or Safari. The file is self-contained
 
 Display units default to **psig and Fahrenheit** on startup and Reset. Room temperatures and thermostat deadband follow the selected temperature units. SI units remain explicitly labeled in numerical reference data and CSV exports.
 
+## Live Plant Focus Mode
+
+The application now opens directly into Live Plant. The previous workspaces remain available through `?workspace=all`. See [restoration instructions and model-information access](docs/live-plant-focus/README.md).
+
 ## v0.5.0 · visualization and training release
 
 Live plant combines the connected schematic, synchronized trends/event history and five guided Default exercises. Training pauses at the first accepted model boundary where every objective and reflection is satisfied, including fast playback; unused playback time is discarded. The selected lesson preview is labeled separately from the current or retained attempt. Export and Reset retained attempt always refer to that retained evidence until a new lesson is loaded.

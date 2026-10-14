@@ -4,7 +4,7 @@ const P=require('../equipment-profiles'),e=require('../engine').createEngine(req
 (async()=>{
  const browser=await (process.env.TEST_BROWSER==='webkit'?webkit:chromium).launch(process.env.TEST_BROWSER==='webkit'?{headless:true}:launchOptions);
  try{
-  const page=await browser.newPage({...devices['iPad (gen 7)']}),errors=[];page.on('pageerror',e=>errors.push(e.message));await page.clock.install();await page.goto(process.env.TEST_URL);await page.locator('#tab-live').click();
+  const page=await browser.newPage({...devices['iPad (gen 7)']}),errors=[];page.on('pageerror',e=>errors.push(e.message));await page.clock.install();await page.goto(process.env.TEST_URL);await require('./browser-helpers.cjs').enterLive(page);
   assert.match(await page.locator('#schematic-status').textContent(),/Initialize/);assert.equal(await page.locator('[data-reading="receiver-pressure"]').textContent(),'—');
   await page.locator('#storage-example').click();
   const initial=model.create(P.DEFAULT,{}, {circuit:'circulating',thermalMode:'air',compressorOn:true,speed:.7,valveMode:'auto'}),r=model.record(initial),c=model.observeCompressor(initial);
@@ -25,7 +25,7 @@ const P=require('../equipment-profiles'),e=require('../engine').createEngine(req
   await page.locator('#storage-example').click();await page.emulateMedia({reducedMotion:'reduce'});assert.equal(await page.locator('.schematic-flow').first().evaluate(el=>getComputedStyle(el).animationName),'none');
   for(const viewport of [{width:1024,height:1366},{width:768,height:1024},{width:390,height:844}]){await page.setViewportSize(viewport);assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));assert(await page.locator('[data-component="compressor"]').isVisible());}
   await page.locator('#storage-schematic').screenshot({path:path.join(__dirname,'schematic-mobile.png')});
-  const offline=await browser.newPage();await offline.route(/^https?:/,route=>route.abort());await offline.setContent(fs.readFileSync(path.resolve(__dirname,'../index.html'),'utf8'));await offline.locator('#tab-live').click();await offline.locator('#storage-example').click();await offline.locator('#storage-step').click();assert.match(await offline.locator('#schematic-status').textContent(),/^10.0 s/);assert.deepEqual(errors,[]);
+  const offline=await browser.newPage();await offline.route(/^https?:/,route=>route.abort());await offline.setContent(fs.readFileSync(path.resolve(__dirname,'../index.html'),'utf8'));await require('./browser-helpers.cjs').enterLive(offline);await offline.locator('#storage-example').click();await offline.locator('#storage-step').click();assert.match(await offline.locator('#schematic-status').textContent(),/^10.0 s/);assert.deepEqual(errors,[]);
   console.log('PASS: model/display agreement, levels, discharge temperature, units, keyboard inspection, playback/motion, off pressure, blocked drain, valve lag, trips, profile reset, isolated mode, reduced motion, tablet/mobile and offline schematic.');
  }finally{await browser.close();}
 })().catch(e=>{console.error(e);process.exitCode=1;});

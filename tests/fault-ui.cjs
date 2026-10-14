@@ -4,7 +4,7 @@ const {chromium}=require('playwright'),{launchOptions}=require('./browser-helper
  const browser=await chromium.launch(launchOptions);
  try{
   const page=await browser.newPage({acceptDownloads:true}),errors=[];page.on('pageerror',e=>errors.push(e.message));
-  await page.clock.install();await page.goto(process.env.TEST_URL);await page.locator('#tab-live').click();
+  await page.clock.install();await page.goto(process.env.TEST_URL);await require('./browser-helpers.cjs').enterLive(page);
   await page.locator('#temperature-unit').selectOption('C');await page.locator('#pressure-unit').selectOption('bara');
   async function profile(name,key,value){
    await page.locator('#profile-new').click();await page.locator('#profile-name').fill(name);

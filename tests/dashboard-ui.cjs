@@ -4,7 +4,7 @@ const profiles=require('../equipment-profiles'),engine=require('../engine').crea
 (async()=>{
  const browser=await chromium.launch(launchOptions);
  try{
-  const page=await browser.newPage({viewport:{width:1024,height:768}}),errors=[];page.on('pageerror',e=>errors.push(e.message));await page.clock.install();await page.goto(process.env.TEST_URL);await page.locator('#tab-live').click();
+  const page=await browser.newPage({viewport:{width:1024,height:768}}),errors=[];page.on('pageerror',e=>errors.push(e.message));await page.clock.install();await page.goto(process.env.TEST_URL);await require('./browser-helpers.cjs').enterLive(page);
   assert.equal(await page.locator('#storage-alarm').getAttribute('data-severity'),'idle');assert.match(await page.locator('[data-summary="suction"] strong').textContent(),/—/);
   await page.locator('#storage-example').click();await page.locator('#storage-step').click();
   const state=model.create(profiles.DEFAULT,{}, {circuit:'circulating',thermalMode:'air',compressorOn:true,speed:.7,valveMode:'auto'});model.advance(state,10);const r=model.record(state);
