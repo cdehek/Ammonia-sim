@@ -3,8 +3,10 @@
  const $=id=>document.getElementById(id),esc=x=>String(x).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
  const engine=AmmoniaEngine.createEngine(JSON.parse($('property-data').textContent)),model=AmmoniaStorage.createStorage(engine,AmmoniaProfiles);
  const schematic=AmmoniaSchematic.create($('storage-schematic'));
+ const assist=AmmoniaOperatorAssistApp.create($('operator-assist'),$('operator-assist-toggle'));
  const trends=AmmoniaTrends.create($('storage-trends'));
  let state=null,running=false,timer=null,last=0,units={p:'psig',T:'F'},training=null;
+ let assistRecord=null,assistCompressor=null;
  const f=(v,n=3)=>Number.isFinite(v)?v.toFixed(n):'—',temp=v=>Number.isFinite(v)?(units.T==='F'?v*1.8+32:v):NaN;
  const pressure=v=>Number.isFinite(v)?(v-(units.p.endsWith('g')?1.01325:0))*(units.p.startsWith('psi')?14.503773773:1):NaN,pl=()=>({bara:'bar(a)',barg:'bar(g)',psia:'psia',psig:'psig'})[units.p];
  // Display projection only: these functions never write simulator state.
@@ -33,8 +35,10 @@
    }catch{dirty=true;message='Draft incomplete or invalid · applied run settings retained.';}
   }
   $('storage-form').dataset.dirty=String(dirty);$('storage-form').dataset.applied=String(!!state);$('storage-draft').textContent=message;
+  assist.update(AmmoniaOperatorAssist.analyze({record:assistRecord,compressor:assistCompressor,running,units,draft:dirty}));
  }
  function renderDashboard(r=null,c=null){
+  assistRecord=r;assistCompressor=c;
   const connected=!!r?.vessels.outlet,flows=r?.flows&&!r.flows.error?r.flows:null,o=state?.operations;
   const compressor=!state?'—':state.fault?'Stopped':!o.compressorOn?'Off':c?.inhibited?'Unavailable':running?'Running':'Paused';
   const cards=[
