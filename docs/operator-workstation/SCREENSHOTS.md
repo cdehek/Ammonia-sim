@@ -1,0 +1,12 @@
+# Review screenshots
+
+All images are browser captures. iPad names describe viewport dimensions and touch emulation, not physical devices. The exercise images show an active Hot Condenser Air attempt after the real 30-second warmup. Assist images use the actual recorded high-discharge-temperature equipment trip.
+
+| Browser | Device | Collapsed | Exercise partial | Exercise expanded | Assist partial | Assist expanded |
+|---|---|---|---|---|---|---|
+| chromium | 1440×1000 | [View](screenshots/chromium-desktop-collapsed.png) | [View](screenshots/chromium-desktop-exercise-partial.png) | [View](screenshots/chromium-desktop-exercise-expanded.png) | [View](screenshots/chromium-desktop-assist-partial.png) | [View](screenshots/chromium-desktop-assist-expanded.png) |
+| chromium | 1024×768 | [View](screenshots/chromium-ipad-landscape-collapsed.png) | [View](screenshots/chromium-ipad-landscape-exercise-partial.png) | [View](screenshots/chromium-ipad-landscape-exercise-expanded.png) | [View](screenshots/chromium-ipad-landscape-assist-partial.png) | [View](screenshots/chromium-ipad-landscape-assist-expanded.png) |
+| chromium | 768×1024 | [View](screenshots/chromium-ipad-portrait-collapsed.png) | [View](screenshots/chromium-ipad-portrait-exercise-partial.png) | [View](screenshots/chromium-ipad-portrait-exercise-expanded.png) | [View](screenshots/chromium-ipad-portrait-assist-partial.png) | [View](screenshots/chromium-ipad-portrait-assist-expanded.png) |
+| webkit | 1440×1000 | [View](screenshots/webkit-desktop-collapsed.png) | [View](screenshots/webkit-desktop-exercise-partial.png) | [View](screenshots/webkit-desktop-exercise-expanded.png) | [View](screenshots/webkit-desktop-assist-partial.png) | [View](screenshots/webkit-desktop-assist-expanded.png) |
+| webkit | 1024×768 | [View](screenshots/webkit-ipad-landscape-collapsed.png) | [View](screenshots/webkit-ipad-landscape-exercise-partial.png) | [View](screenshots/webkit-ipad-landscape-exercise-expanded.png) | [View](screenshots/webkit-ipad-landscape-assist-partial.png) | [View](screenshots/webkit-ipad-landscape-assist-expanded.png) |
+| webkit | 768×1024 | [View](screenshots/webkit-ipad-portrait-collapsed.png) | [View](screenshots/webkit-ipad-portrait-exercise-partial.png) | [View](screenshots/webkit-ipad-portrait-exercise-expanded.png) | [View](screenshots/webkit-ipad-portrait-assist-partial.png) | [View](screenshots/webkit-ipad-portrait-assist-expanded.png) |

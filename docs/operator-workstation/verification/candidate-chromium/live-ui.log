@@ -1,0 +1,12 @@
+AssertionError [ERR_ASSERTION]: The input did not match the regular expression /60 \/ 60%/. Input:
+
+'Room temperature58.1 °FActual suction57.96 psigActual discharge155.26 psigPer-stage speed · 1 running64 / 60%Delivered cooling123.5 kWElectrical input18.5 kWOperating COP6.69Compressor electricity0.67 kWhDischarge temperature181.5 °F'
+
+    at /workspace/Ammonia-sim/tests/live-ui.cjs:15:137 {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: 'Room temperature58.1 °FActual suction57.96 psigActual discharge155.26 psigPer-stage speed · 1 running64 / 60%Delivered cooling123.5 kWElectrical input18.5 kWOperating COP6.69Compressor electricity0.67 kWhDischarge temperature181.5 °F',
+  expected: /60 \/ 60%/,
+  operator: 'match',
+  diff: 'simple'
+}

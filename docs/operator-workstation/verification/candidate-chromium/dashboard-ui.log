@@ -1,0 +1,12 @@
+AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+  assert(await page.locator('#storage-compressorSpeed').evaluate(el=>el.getBoundingClientRect().height>=44))
+
+    at /workspace/Ammonia-sim/tests/dashboard-ui.cjs:29:206 {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '==',
+  diff: 'simple'
+}

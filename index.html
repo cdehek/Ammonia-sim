@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Ammonia Lab — refrigeration simulation v0.5.0</title><meta name="description" content="An offline illustrative ammonia refrigeration simulator with a Live Plant workspace, guided exercises and Operator Assist.">
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>Ammonia Lab — refrigeration simulation v0.5.0</title><meta name="description" content="An offline illustrative ammonia refrigeration simulator with a Live Plant workspace, guided exercises and Operator Assist.">
 <style>
 :root{--ink:#17343e;--muted:#657b83;--paper:#f3f4ef;--line:#d8e1dd;--teal:#28796f;--blue:#3389ac;--orange:#dc713e;--white:#fff;--red:#a9422a}*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:Inter,system-ui,-apple-system,Arial,sans-serif;font-size:14px}button,input,select{font:inherit}button,select,summary{cursor:pointer}button,a,input,select{touch-action:manipulation}button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,summary:focus-visible{outline:3px solid #57a0b3;outline-offset:3px}button{color:var(--ink)}main{max-width:1520px;margin:auto;padding:24px 32px 30px}.top{display:flex;justify-content:space-between;align-items:center;gap:16px;padding-bottom:20px;border-bottom:1px solid var(--line)}.brand{display:flex;align-items:center;gap:11px;font-size:14px;letter-spacing:2px;font-weight:700}.mark{background:var(--ink);color:#fff;border-radius:7px;width:32px;height:32px;display:grid;place-items:center;font-size:21px;font-weight:400}.version{font-size:10px;letter-spacing:.5px;color:var(--teal);background:#e2ece5;padding:5px 7px;border-radius:4px;font-weight:600}.actions{display:flex;gap:7px;flex-wrap:wrap}.btn{background:#fff;border:1px solid #bdcfca;border-radius:6px;padding:9px 12px;font-size:11px;font-weight:600}.btn.primary{background:var(--teal);color:white;border-color:var(--teal)}.btn:disabled{opacity:.45;cursor:not-allowed}.hero{display:flex;justify-content:space-between;gap:25px;align-items:center;margin:26px 0}.hero h1{font-size:clamp(30px,3.5vw,47px);line-height:1.13;letter-spacing:-1.6px;font-weight:600;margin:0 0 10px}.hero p{margin:0;color:var(--muted);font-size:13px;line-height:1.7}.engine-badge{font-size:10px;line-height:1.9;color:var(--muted);border-left:1px solid var(--line);padding-left:25px;white-space:nowrap}.engine-badge strong{font-size:12px;color:var(--ink)}.notice{background:#fff1d9;border:1px solid #e8c791;padding:15px;border-radius:7px;margin:12px 0;font-size:12px;line-height:1.7}.layout{display:grid;grid-template-columns:295px minmax(0,1fr);gap:20px;align-items:start}.workspace{min-width:0}.sidebar{min-width:0;border:1px solid var(--line);border-radius:10px;background:#fff;overflow:hidden}.sidebar-head{padding:18px 20px;border-bottom:1px solid var(--line);background:#edf3ef}.sidebar h2{font-size:15px;margin:0 0 6px}.sidebar-head p{font-size:11px;color:var(--muted);margin:0;line-height:1.6}.controls{padding:18px}.control{margin-bottom:13px}.control label{display:block;font-size:11px;font-weight:600;margin-bottom:6px}.control input,.control select{width:100%;border:1px solid #bfd0ca;border-radius:5px;padding:8px;background:white;color:var(--ink);font-size:12px;min-width:0}.control small,.hint{display:block;font-size:10px;color:var(--muted);line-height:1.6;margin:5px 0 0}.row{display:grid;grid-template-columns:1fr 1fr;gap:11px}.unit-row{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:15px}.unit-row select{font-size:11px;padding:5px;border:1px solid var(--line);border-radius:4px;max-width:90px;background:white;color:var(--ink)}.unit-row span{font-size:10px;color:var(--muted)}input[type=range]{width:100%;accent-color:var(--teal);margin:8px 0}.range-labels{display:flex;justify-content:space-between;font-size:9px;color:var(--muted)}.apply{width:100%;margin:6px 0 9px;padding:12px!important}.preset-row{display:flex;gap:6px;flex-wrap:wrap;margin:10px 0 4px}.preset-row button{padding:6px 8px;font-size:10px;background:#f5f8f5;border:1px solid var(--line);border-radius:4px}.controls details{border-top:1px solid var(--line);padding-top:12px;margin-top:13px}.controls summary{font-size:11px;font-weight:600;margin-bottom:12px}.error{color:var(--red);font-size:11px;line-height:1.6;margin:8px 0}.draft{font-size:10px;color:var(--muted);margin:0 0 8px;min-height:16px}.tabs{display:flex;gap:4px;border-bottom:1px solid #c8d6d0;overflow-x:auto;margin-bottom:16px;padding-bottom:8px}.tabs button{border:0;border-radius:5px;background:transparent;white-space:nowrap;padding:10px 13px;font-size:11px;color:var(--muted)}.tabs button[aria-selected=true]{background:var(--ink);color:white}.metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:16px}.metric{background:white;border:1px solid var(--line);border-radius:8px;padding:15px 16px;min-width:0}.metric label{display:block;font-size:10px;color:var(--muted);margin-bottom:6px}.metric strong{display:block;font-size:26px;letter-spacing:-.7px;font-weight:500;white-space:nowrap}.metric small{display:block;font-size:9px;color:var(--muted);margin-top:6px;line-height:1.5}.metric.featured{background:#eaf4f6;border-color:#b9d5df}.card{min-width:0;background:white;border:1px solid var(--line);border-radius:9px;overflow:hidden;margin-bottom:16px}.card-head{padding:17px 20px;display:flex;justify-content:space-between;gap:15px;align-items:center}.card-head h2{font-size:13px;font-weight:600;margin:0}.card-head span{font-size:10px;color:var(--muted)}.card-body{padding:0 20px 20px}.badge{font-size:10px;color:var(--teal);display:flex;gap:6px;align-items:center}.badge::before{content:'';background:var(--teal);width:6px;height:6px;border-radius:50%}.badge.invalid{color:var(--red)}.badge.invalid::before{background:var(--red)}.svg-scroll{overflow-x:auto}svg{display:block;width:100%;height:auto}.equipment{cursor:pointer;outline:none}.equipment .shell{fill:white;stroke:#b4c8c4;stroke-width:1.8}.equipment:hover .shell,.equipment:focus .shell{stroke:var(--teal);stroke-width:3}.equipment.selected .shell{fill:#edf6f1;stroke:var(--teal);stroke-width:3}.equip-title{font-size:17px;font-weight:600;fill:var(--ink)}.caption{font-size:11px;fill:var(--muted)}.reading{font-size:13px;font-weight:600;fill:var(--ink)}.pipe{fill:none;stroke-width:7;stroke-linecap:round;stroke-linejoin:round}.particles{fill:none;stroke:white;stroke-width:2;stroke-dasharray:3 22;animation:flow 2s linear infinite}.paused .particles,.paused .rotor{animation-play-state:paused}.rotor{transform-box:fill-box;transform-origin:center;animation:rotate 6s linear infinite}@keyframes flow{to{stroke-dashoffset:-50}}@keyframes rotate{to{transform:rotate(360deg)}}.invalid-graphic{opacity:.35}.legend{display:flex;gap:15px;flex-wrap:wrap;padding:0 20px 15px;font-size:9px;color:var(--muted);align-items:center}.legend i{display:inline-block;width:16px;height:4px;margin-right:5px;vertical-align:middle;border-radius:2px}.motion{margin-left:auto;font-size:10px}.stage-tabs{display:grid;grid-template-columns:repeat(4,1fr);gap:7px;margin:0 20px 12px}.stage-tabs button{font-size:10px;padding:9px 5px;border:1px solid var(--line);background:#fafbf9;border-radius:5px}.stage-tabs button[aria-pressed=true]{background:#e9f3ee;border-color:var(--teal);color:var(--teal)}.detail{margin:0 20px 20px;padding:16px;background:#edf4f0;border-radius:6px;min-height:104px;display:flex;gap:14px}.detail-number{color:var(--teal);font-size:23px}.detail h3{font-size:13px;margin:0 0 6px}.detail p{font-size:11px;line-height:1.7;color:#4e6970;margin:0}.diagnostics{display:grid;gap:7px}.diagnostic{font-size:11px;line-height:1.65;padding:12px 14px;background:#fff5e5;border-left:3px solid #d6a458;border-radius:4px}.diagnostic.good{background:#eaf3ed;border-color:var(--teal)}.diagnostic.bad{background:#ffede7;border-color:var(--red)}.two-col{display:grid;grid-template-columns:1fr 1fr;gap:16px}.text{font-size:11px;line-height:1.8;color:var(--muted)}.text p{margin:0 0 10px}.text ul{padding-left:18px;margin:10px 0}.text a{color:var(--teal)}.mini-values{display:grid;grid-template-columns:1fr 1fr;gap:10px}.mini-values div{border-top:1px solid var(--line);padding-top:10px;font-size:10px;color:var(--muted)}.mini-values strong{display:block;font-size:15px;color:var(--ink);margin-top:5px;font-weight:500}.table-scroll{overflow-x:auto}table{width:100%;border-collapse:collapse;font-size:10px}th,td{text-align:left;padding:10px 8px;border-bottom:1px solid var(--line);white-space:nowrap}th{color:var(--muted);font-weight:500;font-size:9px}td small{color:var(--muted)}.chart{min-height:260px}.chart svg{min-width:420px}.chart-tip{font-size:10px;color:var(--muted);margin-top:10px;line-height:1.7}.energy-row{display:grid;grid-template-columns:115px 1fr 75px;gap:12px;align-items:center;margin:13px 0;font-size:10px}.energy-bar{height:17px;border-radius:3px;min-width:2px}.energy-track{background:#f0f4f1;border-radius:3px}.summary-stat{font-size:12px;color:var(--ink);line-height:1.8;margin-bottom:14px}.form-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.form-grid .control{margin:0}.status{font-size:11px;color:var(--muted);line-height:1.7;margin-top:10px}.scenario-controls{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:15px}.scenario-controls input{border:1px solid #bfd0ca;border-radius:5px;padding:9px;flex:1;min-width:150px;font-size:12px}.scenario-list{display:grid;gap:9px;margin-top:14px}.scenario-item{border:1px solid var(--line);border-radius:6px;padding:12px;display:flex;align-items:center;justify-content:space-between;gap:10px}.scenario-name{font-size:12px;font-weight:600}.scenario-meta{font-size:10px;color:var(--muted);line-height:1.7}.scenario-buttons{display:flex;gap:5px;align-items:center;flex-wrap:wrap}.scenario-buttons label{font-size:10px;color:var(--muted)}.empty{padding:35px 15px;text-align:center;font-size:12px;color:var(--muted);background:#f6f8f5;border-radius:5px}.validation-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.validation-grid div{border:1px solid var(--line);padding:15px;border-radius:6px}.validation-grid strong{display:block;font-size:23px;font-weight:500;color:var(--teal)}.validation-grid span{font-size:10px;color:var(--muted)}.source-chip{display:inline-block;font-size:10px;border:1px solid var(--line);padding:7px 10px;border-radius:5px;margin:5px 5px 5px 0;color:var(--teal)}footer{display:flex;justify-content:space-between;gap:20px;font-size:10px;color:var(--muted);line-height:1.8;border-top:1px solid var(--line);padding-top:18px;margin-top:24px}.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap}[hidden]{display:none!important}@media(min-width:1300px){.metrics{grid-template-columns:repeat(6,1fr)}.metric{padding:14px 11px}.metric strong{font-size:23px}.metric label{min-height:25px}}@media(max-width:1000px){main{padding:20px}.layout{grid-template-columns:255px minmax(0,1fr)}.controls{padding:15px}.two-col{grid-template-columns:1fr}.graphic svg{min-width:650px}.metric strong{font-size:23px}.engine-badge{display:none}.form-grid{grid-template-columns:repeat(2,1fr)}}@media(max-width:720px){main{padding:17px 12px}.top{align-items:flex-start}.brand{letter-spacing:1px;font-size:11px;gap:6px;flex-wrap:wrap}.actions{justify-content:flex-end}.actions .btn{padding:7px;font-size:9px}.layout{grid-template-columns:minmax(0,1fr)}.sidebar{max-height:none}.controls{padding:18px}.hero{margin:22px 0}.hero h1{font-size:34px}.metrics{grid-template-columns:repeat(2,1fr)}.metric strong{font-size:24px}.tabs{margin-top:3px}.tabs button{padding:10px}.card-head,.card-body{padding-left:14px;padding-right:14px}.legend,.stage-tabs{padding-left:0;padding-right:0;margin-left:12px;margin-right:12px}.detail{margin:0 12px 15px}.validation-grid{grid-template-columns:1fr 1fr}.scenario-item{align-items:flex-start;flex-direction:column}.energy-row{grid-template-columns:90px 1fr 65px;gap:6px}footer{flex-direction:column;gap:8px}.row{gap:12px}.form-grid{grid-template-columns:1fr 1fr}}@media(prefers-reduced-motion:reduce){.particles,.rotor{animation:none}}@media print{body{background:white}main{max-width:none;padding:5px}.top .actions,.controls .btn,.tabs,.motion,.preset-row,.scenario-buttons{display:none}.layout{grid-template-columns:210px 1fr}.graphic svg{min-width:0}.metrics{grid-template-columns:repeat(3,1fr)}.metric strong{font-size:20px}.card{break-inside:avoid}.particles,.rotor{animation:none}.svg-scroll{overflow:visible}.chart svg{min-width:0}.sidebar{font-size:10px}.controls{padding:12px}.hero{margin:15px 0}.hero h1{font-size:30px}*{-webkit-print-color-adjust:exact;print-color-adjust:exact}}
 [hidden]{display:none!important}.live-toolbar{margin:15px 0;align-items:center}.live-toolbar label{font-size:11px}.live-toolbar select{padding:7px;border:1px solid var(--line);border-radius:5px}.live-tuning{margin:18px 0}.live-tuning summary{margin-bottom:12px}#live-trends svg{min-width:360px}#live-metrics{margin-top:15px}#live-events{max-height:230px;overflow:auto}.control textarea{width:100%;border:1px solid #bfd0ca;border-radius:5px;padding:8px;font:inherit;resize:vertical}.control input[readonly]{background:#f0f4f1;color:var(--muted)}#profile-select{max-width:100%;padding:9px;border:1px solid var(--line);border-radius:5px}#profile-summary,#profile-active-label{overflow-wrap:anywhere}#profile-active-label{min-width:0;text-align:right}#profile-form{border-top:1px solid var(--line);margin-top:15px;padding-top:15px}
@@ -426,6 +426,109 @@ select,.top>.unit-row select,.history select,.control select,.live-toolbar selec
 #validation-return{margin-bottom:12px;min-height:44px}
 body:not(.focus-workspace) .focus-title,body:not(.focus-workspace) #validation-return,body:not(.focus-workspace) .model-information{display:none}
 @media(max-width:950px){.focus-workspace .top{gap:6px 12px}.focus-workspace .brand{flex:1}.focus-workspace .top>.unit-row{margin-left:0}.focus-workspace .model-information{order:3;padding:0;flex-basis:100%}.model-information-body{left:0;right:auto}}
+/* Bottom-rising workstation console. Schematic retains its own horizontal scale. */
+#operator-console{position:fixed;z-index:30;bottom:0;left:0;right:0;max-width:1800px;margin:auto;background:linear-gradient(160deg,#252c29,#141a18);border:1px solid #58645e;border-bottom:0;border-radius:12px 12px 0 0;box-shadow:0 -10px 32px #0006;padding:6px max(12px,env(safe-area-inset-right)) max(6px,env(safe-area-inset-bottom)) max(12px,env(safe-area-inset-left));display:flex;flex-direction:column;max-height:calc(var(--console-viewport-height,100dvh) - 160px)}
+.console-bar{display:flex;align-items:center;gap:8px;min-height:44px;flex-shrink:0}.console-spacer{flex:1}.console-task{color:#b9d3c5;font-size:12px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:40vw}
+#operator-console .btn,#operator-console a,#operator-console select,#operator-console input:not([type=checkbox]){min-height:44px}
+#operator-console input[type=checkbox]{min-width:24px;min-height:24px}
+#operator-console .plant-nav{position:static;display:flex;flex-wrap:nowrap;overflow-x:auto;max-width:none;border:0;padding:4px 0;margin:0;box-shadow:none;background:none;gap:6px;backdrop-filter:none}
+#operator-console .plant-nav a{flex:1 0 auto;padding:8px 12px;white-space:nowrap;font-size:12px;min-width:100px;background:#1c2621;border:1px solid #4b5b52;color:#d1ddd6}
+#operator-console .plant-nav a[aria-current=true]{background:#304d40;border-color:#8ab89f;box-shadow:inset 0 -2px #9ac7af}
+#console-body{min-height:0;overflow:auto;overscroll-behavior:contain;scroll-padding:12px;flex:1;padding:10px 0 0;-webkit-overflow-scrolling:touch}
+#console-body[hidden]{display:none}
+#console-title{font-size:14px;letter-spacing:.5px;color:#c1d5ca;margin:0 0 10px}
+#console-content>[hidden]{display:none!important}
+#operator-console[data-size=partial]{height:42dvh;min-height:280px}
+#operator-console[data-size=expanded]{height:calc(var(--console-viewport-height,100dvh) - 170px)}
+#operator-console .card,#operator-console .history,#operator-console .operator-assist{margin:0;border-radius:5px}
+#operator-console #storage-form{grid-template-columns:1fr 1fr;align-items:start}
+#operator-console #storage-form .control-advanced{grid-column:auto}
+#operator-console #storage-form .form-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+#operator-console #storage-form .control-main{position:static}
+#operator-console .operator-assist{box-shadow:none;scroll-margin:0}
+body.live-workspace main{padding-bottom:calc(var(--console-height,110px) + 20px)}
+body.focus-workspace main{padding:10px 16px calc(var(--console-height,110px) + 16px)}
+.focus-workspace .top{padding-bottom:8px;gap:8px}
+.focus-workspace #storage-lab>.plant-heading{position:sticky;top:0;z-index:22;background:#1a211e;margin:0;padding:8px 12px;gap:8px}
+.focus-workspace #storage-lab>.card-body{padding:10px}
+.focus-workspace .plant-heading h2{font-size:17px}.focus-workspace .plant-heading .hint{font-size:10px;margin:3px 0}
+.focus-workspace .plant-clock strong{font-size:16px}
+.focus-workspace #storage-overview{margin-bottom:6px;gap:6px}
+.focus-workspace #storage-overview .metric{padding:7px 9px}
+.focus-workspace #storage-overview small{font-size:10px}
+.focus-workspace #storage-overview strong{font-size:21px!important}
+.focus-workspace #storage-alarm{padding:7px 10px;margin:6px 0}
+.focus-workspace #storage-alarm .alarm-heading{align-items:center}
+.focus-workspace #storage-alarm h3{font-size:12px}
+.focus-workspace #storage-alarm p{margin:4px 0;font-size:11px}
+.focus-workspace #storage-status{display:none}
+.focus-workspace #storage-alarm[data-severity=equipment] #storage-status,.focus-workspace #storage-alarm[data-severity=model] #storage-status{display:block}
+.focus-workspace .plant-process .schematic{margin:6px 0;padding:10px}
+.focus-workspace .schematic-scroll{margin-top:6px}
+.focus-workspace .schematic-scroll svg{width:100%;min-width:900px}
+.focus-workspace #schematic-graphic{max-height:calc(var(--console-viewport-height,100dvh) - 375px);overflow:auto}
+.focus-workspace .model-notes summary{min-height:44px}
+.training-next{border-left:3px solid #98bea6;background:#273c30;padding:10px 14px;margin:10px 0}
+.training-next h4{margin:0 0 4px;font-size:13px;color:#d6e9dd}.training-next p{margin:4px 0;line-height:1.5}
+.training-observations{display:flex;flex-wrap:wrap;gap:6px 18px;font:12px ui-monospace,monospace;color:#cddbd2;margin:8px 0}
+#storage-training{padding:14px}
+#storage-training .training-heading h3{margin:0;font-size:17px}
+#storage-training .training-toolbar{margin:8px 0}
+#training-objectives{padding-left:24px;line-height:1.6}
+#training-objectives small{display:block;color:#b4c7bc}
+#training-status{color:#bddfc9}
+@media(max-width:950px){.focus-workspace .model-information{order:initial;flex-basis:auto;margin-left:auto}.focus-workspace .top>.unit-row{margin-left:auto}.focus-workspace #storage-overview{grid-template-columns:repeat(3,minmax(0,1fr))}#operator-console #storage-form{grid-template-columns:1fr}.console-task{max-width:30vw}#operator-console[data-size=partial]{height:44dvh}.focus-workspace #schematic-graphic{max-height:calc(var(--console-viewport-height,100dvh) - 440px)}}
+@media(max-width:600px){.console-task{display:none}.console-bar{gap:4px}#operator-console{padding-left:8px;padding-right:8px;max-height:calc(var(--console-viewport-height,100dvh) - 140px)}#operator-console[data-size=expanded]{height:calc(var(--console-viewport-height,100dvh) - 150px)}.console-bar .btn{padding:8px}.focus-workspace #storage-overview{grid-template-columns:repeat(2,minmax(0,1fr))}.focus-workspace main{padding-left:8px;padding-right:8px}.focus-workspace #schematic-graphic{max-height:none}.focus-workspace #storage-lab>.plant-heading{position:static}}
+@media(prefers-reduced-motion:no-preference){#operator-console{animation:console-arrive .16s ease-out}@keyframes console-arrive{from{transform:translateY(12px);opacity:.8}to{transform:translateY(0);opacity:1}}}
+@media print{#operator-console{position:static;height:auto!important;max-height:none}#console-body{overflow:visible}.console-bar,#console-tools{display:none}#console-content>[data-console-tool]{display:block!important}.focus-workspace #schematic-graphic{max-height:none}}
+
+#operator-console[data-size=collapsed]{display:grid;grid-template-columns:145px minmax(0,1fr);align-items:center;padding-top:4px}
+#operator-console[data-size=collapsed] .console-bar{flex-direction:column;gap:0;align-items:stretch}
+#operator-console[data-size=collapsed] .console-task{font-size:10px;max-width:140px;line-height:1.5}
+#operator-console[data-size=collapsed] .console-spacer{display:none}
+#operator-console .plant-nav #operator-assist-toggle{white-space:nowrap;flex-shrink:0}
+#storage-training .training-heading{display:none}
+.training-current{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+#training-attempt-title{font-size:16px;margin:0}
+#training-status{font-size:12px;margin:0}
+.training-library{float:right;margin:0 0 8px 12px;max-width:100%}
+.training-library summary{min-height:44px;display:flex;align-items:center;cursor:pointer;color:#b9d7c6}
+.training-library[open]{float:none;margin:0 0 12px;padding:8px 12px;border:1px solid #46574d;border-radius:5px}
+.training-library[open] summary{font-weight:600}
+#storage-training .training-next{margin:6px 0;padding:8px 12px;clear:both}
+#storage-training .training-next>.hint{font-size:11px}
+#storage-training .training-actions{display:flex;flex-wrap:wrap;gap:0 12px}
+#storage-training .training-actions .training-toolbar{margin:4px 0}
+#storage-training .training-learning{display:grid;grid-template-columns:1fr 1fr;gap:0 20px;margin-top:10px}
+#training-objectives{margin-top:8px}
+#training-hint-text{grid-column:1/-1}
+#storage-training .training-next-control{min-height:44px}
+#console-title{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);margin:0}
+body.console-visible.focus-workspace #schematic-graphic{max-height:max(110px,calc(var(--console-viewport-height,100dvh) - var(--console-height) - 335px))}
+@media(max-width:800px){#storage-training .training-learning{grid-template-columns:1fr}.training-library{float:none;margin:0 0 6px}#operator-console[data-size=collapsed]{grid-template-columns:130px minmax(0,1fr)}}
+
+#operator-console[data-size=partial]{height:38dvh;min-height:280px}
+.focus-workspace #storage-alarm[data-severity=normal],.focus-workspace #storage-alarm[data-severity=idle]{min-height:28px;padding:3px 10px}
+.focus-workspace .plant-process .schematic-heading{min-height:44px}
+.focus-workspace .plant-process #schematic-status{margin:0;font-size:10px}
+.focus-workspace .plant-process .schematic{padding:7px 9px}
+#storage-training .training-next #training-next-control{float:right;margin:0 0 0 12px}
+#storage-training .training-next>.hint{clear:both;padding-top:4px}
+
+#operator-console{max-height:calc(var(--console-viewport-height,100dvh) - var(--console-ceiling,170px))}
+#operator-console[data-size=expanded]{height:calc(var(--console-viewport-height,100dvh) - var(--console-ceiling,170px))}
+#storage-training .training-next{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:0 12px}
+#storage-training .training-next h4,#training-next-text{grid-column:1}
+#storage-training .training-next #training-next-control{grid-column:2;grid-row:1/3;float:none;margin:0;align-self:center}
+#training-purpose{margin:4px 0;font-size:11px}
+.training-guidance-note{font-size:11px!important;margin:6px 0}
+.training-current{display:block;padding-right:280px}
+#training-status{margin-top:4px}
+@media(max-width:800px){.training-current{padding-right:0}.training-next{grid-template-columns:1fr!important}#storage-training .training-next #training-next-control{grid-column:1;grid-row:auto;justify-self:end}.training-library summary{min-height:44px}}
+
+#operator-console{bottom:var(--console-keyboard-inset,0px)}
+#operator-console[data-size=partial]{min-height:min(280px,calc(var(--console-viewport-height,100dvh) - var(--console-ceiling,170px)))}
+
 </style></head><body class="focus-workspace live-workspace"><main>
 <header class="top"><div class="brand"><span class="mark" aria-hidden="true"><svg viewBox="0 0 24 24" class="brand-icon"><path d="M12 2L21 7V17L12 22L3 17V7Z"/><path d="M7 16L12 6L17 16M9 13H15"/></svg></span>Ammonia Lab <span class="focus-title" id="focus-title">/ Live Plant</span> <span class="version">v0.5.0</span></div><details id="model-information" class="model-information"><summary>Model information / limitations</summary><div class="model-information-body"><p>This is an illustrative refrigeration simulator. Equipment assumptions are not manufacturer-calibrated. Numerical validation checks model behavior and accounting; it does not establish real-plant accuracy. Do not use this simulator for actual plant safety decisions.</p><button class="btn" id="show-validation" type="button">View existing model &amp; validation details</button></div></details><nav class="tabs" role="tablist" aria-label="Simulation views" hidden><button role="tab" id="tab-cycle" aria-controls="view-cycle" aria-selected="false" data-tab="cycle" tabindex="-1">Cycle overview</button><button role="tab" id="tab-thermo" aria-controls="view-thermo" aria-selected="false" data-tab="thermo" tabindex="-1">Thermodynamics</button><button role="tab" id="tab-room" aria-controls="view-room" aria-selected="false" data-tab="room" tabindex="-1">Room cooling</button><button role="tab" id="tab-live" aria-controls="view-live" aria-selected="true" data-tab="live">Live plant</button><button role="tab" id="tab-scenarios" aria-controls="view-scenarios" aria-selected="false" data-tab="scenarios" tabindex="-1">Scenarios</button><button role="tab" id="tab-validation" aria-controls="view-validation" aria-selected="false" data-tab="validation" tabindex="-1">Model &amp; validation</button></nav><div class="unit-row"><span>Display units</span><select id="pressure-unit" aria-label="Pressure units"><option value="bara">bar(a)</option><option value="barg">bar(g)</option><option value="psia">psia</option><option value="psig" selected>psig</option></select><select id="temperature-unit" aria-label="Temperature units"><option value="C">°C</option><option value="F" selected>°F</option></select></div></header>
 <section class="hero"><div><h1>Explore the physics of cooling.</h1><p>A real-fluid ammonia cycle, from suction pressure to cooling duty.<br>Compare operating points, inspect the thermodynamics, or run a live plant.</p></div><div class="engine-badge"><strong>NH₃ / R-717 · HEOS property model</strong><br>Single-stage · live room & controls · works offline<br>CoolProp 7.2.0 · bounded property interpolation</div></section>
@@ -2182,17 +2285,74 @@ const api={EXERCISES,setup,start,injected,restored,observe,answer,finish,report}
 const esc=x=>String(x).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 function create(container,adapter){
  const T=root.AmmoniaTraining;let attempt=null,plant=null,savedReport=null,hint=false,lastStatus=null;
- container.innerHTML='<div class="training-heading"><h3>Guided exercises</h3><span class="version">Default training model</span></div><p class="text">Loading/resetting replaces the connected run with fixed Default equipment and training room conditions. Apply Default in the equipment panel first. Custom profiles remain saved. Exercises use model inputs and computed outcomes; they are not plant operating procedures.</p><div class="training-toolbar"><label for="training-select">Exercise</label><select id="training-select">'+Object.entries(T.EXERCISES).map(([id,d])=>'<option value="'+id+'">'+esc(d.name)+'</option>').join('')+'</select><button type="button" class="btn primary" id="training-load">Load exercise</button><button type="button" class="btn" id="training-reset" disabled>Reset exercise</button><button type="button" class="btn" id="training-end" disabled>End exercise</button><button type="button" class="btn" id="training-export" disabled>Export attempt · JSON</button></div><p class="error" id="training-error" role="alert" hidden></p><h4 id="training-selected-title"></h4><p id="training-description" class="text"></p><p id="training-selection-note" class="hint" hidden></p><h4 id="training-attempt-title"></h4><p id="training-status" class="status" role="status">Choose an exercise and load its setup.</p><ol id="training-objectives" class="training-objectives"></ol><div class="training-toolbar"><button type="button" class="btn primary" id="training-disturbance" hidden>Apply disturbance</button><button type="button" class="btn" id="training-restore" hidden>Restore off-state controls</button><button type="button" class="btn" id="training-hint" aria-expanded="false">Show hint</button></div><p id="training-hint-text" class="training-hint" hidden></p><fieldset id="training-reflection"><legend>Reflection</legend><p id="training-question" class="text"></p><label for="training-answer">Your answer</label><select id="training-answer"></select><button type="button" class="btn" id="training-check" disabled>Check answer</button><p id="training-feedback" class="hint" role="status"></p></fieldset><div id="training-debrief" class="training-debrief" hidden></div><div class="training-toolbar"><button type="button" class="btn" id="training-advance" disabled>Advance 10 seconds</button><button type="button" class="btn" id="training-run" disabled>Start exercise playback</button><button type="button" class="btn" id="training-clear" hidden>Clear modeled stop</button></div><p class="hint">Use the connected run controls below to start, pause or advance. Successful objectives pause playback. Reset starts a fresh attempt; export before resetting or reloading to retain evidence.</p>';
+ container.innerHTML='<div class="training-heading"><h3>Guided exercises</h3><span class="version">Default training model</span></div><p class="text">Loading/resetting replaces the connected run with fixed Default equipment and training room conditions. Apply Default in the equipment panel first. Custom profiles remain saved. Exercises use model inputs and computed outcomes; they are not plant operating procedures.</p><div class="training-toolbar"><label for="training-select">Exercise</label><select id="training-select">'+Object.entries(T.EXERCISES).map(([id,d])=>'<option value="'+id+'">'+esc(d.name)+'</option>').join('')+'</select><button type="button" class="btn primary" id="training-load">Load exercise</button><button type="button" class="btn" id="training-reset" disabled>Reset exercise</button><button type="button" class="btn" id="training-end" disabled>End exercise</button><button type="button" class="btn" id="training-export" disabled>Export attempt · JSON</button></div><p class="error" id="training-error" role="alert" hidden></p><h4 id="training-selected-title"></h4><p id="training-description" class="text"></p><p id="training-selection-note" class="hint" hidden></p><h4 id="training-attempt-title"></h4><p id="training-status" class="status" role="status">Choose an exercise and load its setup.</p><ol id="training-objectives" class="training-objectives"></ol><div class="training-toolbar"><button type="button" class="btn primary" id="training-disturbance" hidden>Apply disturbance</button><button type="button" class="btn" id="training-restore" hidden>Restore off-state controls</button><button type="button" class="btn" id="training-hint" aria-expanded="false">Show hint</button></div><p id="training-hint-text" class="training-hint" hidden></p><fieldset id="training-reflection"><legend>Reflection</legend><p id="training-question" class="text"></p><label for="training-answer">Your answer</label><select id="training-answer"></select><button type="button" class="btn" id="training-check" disabled>Check answer</button><p id="training-feedback" class="hint" role="status"></p></fieldset><div id="training-debrief" class="training-debrief" hidden></div><div class="training-toolbar"><button type="button" class="btn" id="training-advance" disabled>Advance 10 seconds</button><button type="button" class="btn" id="training-run" disabled>Start exercise playback</button><button type="button" class="btn" id="training-clear" hidden>Clear modeled stop</button></div><p class="hint">Use the connected playback controls above or the exercise actions to start, pause or advance. Successful objectives pause playback. Reset starts a fresh attempt; export before resetting or reloading to retain evidence.</p>';
  const $=id=>container.querySelector('#'+id),active=()=>attempt?.status==='active';
+ const next=document.createElement('section');next.className='training-next';next.setAttribute('aria-label','Suggested next action');
+ next.innerHTML='<h4>Suggested next action</h4><p id="training-next-text"></p><button type="button" class="btn" id="training-next-control">Go to control</button><p class="hint">This is guidance, not an extra grading sequence. The measured objectives below decide completion; supported actions may be taken in a different order.</p><div id="training-observations" class="training-observations"></div>';
+ $('training-status').before(next);
+
+ const summary=document.createElement('div');summary.className='training-current';
+ summary.append($('training-attempt-title'),$('training-status'));next.before(summary);
+ const actions=document.createElement('div');actions.className='training-actions';
+ actions.append($('training-disturbance').parentElement,$('training-advance').parentElement);
+ next.after(actions);
+ const note=next.querySelector('.hint');note.classList.add('training-guidance-note');actions.after(note,$('training-observations'));
+ const purpose=document.createElement('p');purpose.id='training-purpose';purpose.className='hint';summary.after(purpose);
+ const library=document.createElement('details');library.className='training-library';
+ library.innerHTML='<summary>Choose, load or manage an exercise</summary>';
+ const toolbar=$('training-load').parentElement;
+ library.append(toolbar,$('training-selected-title'),$('training-description'),$('training-selection-note'),container.querySelector('.training-heading + .text'));
+ container.querySelector('.training-heading').after(library);
+ const learning=document.createElement('div');learning.className='training-learning';
+ learning.append($('training-reflection'),$('training-hint-text'),$('training-objectives'));
+ actions.after(learning);
+ let nextControl='training-load',presentedAttempt=null;library.open=true;
+ $('training-next-control').addEventListener('click',()=>{const el=$(nextControl);if(el&&!el.disabled){el.focus();el.scrollIntoView({block:'nearest'});}});
+ function guidance(d){
+  const a=attempt,quiz=a?.goals[a.goals.length-1].met;
+  $('training-purpose').textContent={startup:'Watch the DX circuit establish feed and sustained superheat control.',load:'Watch the room respond to a larger heat load.',hot:'See hotter condenser air produce a measured pressure rise and discharge-temperature trip.',restriction:'Compare commanded opening, actuator lag and reduced liquid feed.',tuning:'Watch actual and sensed superheat settle around the new target.'}[a?.exercise||$('training-select').value];
+  let text,target='training-advance';
+  if(!adapter.defaultActive()){text='Open Equipment Profiles and apply Default equipment, then return here to load the exercise.';target=null;}
+  else if(!a){text='Load '+d.name+'. The established '+d.warmup+'-second warmup runs automatically before the attempt begins.';target='training-load';}
+  else if(a.status==='completed'){text='All graded objectives have recorded evidence. Review the debrief and export your attempt to keep the observations.';target='training-export';}
+  else if(a.status!=='active'){text='This attempt '+a.status+'. Review the recorded reason and export its evidence, or reset to try again.';target='training-export';}
+  else if(!quiz){text='Answer the reflection question. Use the hint or inspect the live readings if you need help. You can also observe the plant first; reflection is a required objective, not a required first step.';target='training-answer';}
+  else if(d.action&&a.injectedAt===null){text='Automatic warmup is complete. '+d.action+'. Keep the established exercise controls so the measured response can be graded.';target='training-disturbance';}
+  else if(a.exercise==='hot'&&a.expectedFault&&!a.restored){text='The engine recorded the high-discharge-temperature equipment trip. Inspect its captured evidence in Operator Assist, then restore the off-state controls here.';target='training-restore';}
+  else if(a.exercise==='hot'&&a.restored&&plant?.fault){text='Off-state controls are restored: compressor disabled, feed commanded closed and condenser air restored. Clear the modeled stop, then advance 10 simulated seconds.';target='training-clear';}
+  else if(a.exercise==='hot'&&a.restored){text='Advance simulated time with the compressor off. Recovery is graded only after the engine accepts the required 10 seconds.';}
+  else if(a.exercise==='hot'){text='Advance simulated time and watch condenser pressure and discharge temperature. Inspect the actual modeled trip when it occurs; a pressure rise alone does not complete the exercise.';}
+  else if(a.exercise==='load'){text='Advance simulated time. Watch the room-temperature response for the required 30 seconds after the 20 kW load change.';}
+  else if(a.exercise==='restriction'){text='Advance 10 simulated seconds. Compare the 2% command with actual valve opening and reduced feed flow. Longer starvation can cause a real modeled trip.';}
+  else if(a.exercise==='tuning'){text='Advance simulated time and watch actual and sensed outlet superheat. The engine needs the new band held for 20 consecutive seconds, at least 30 seconds after the change.';}
+  else {text='Advance simulated time and observe feed and compressor demand. A brief target crossing is not enough: actual and sensed superheat must remain in the required band.';}
+  if(a!==presentedAttempt){library.open=!a;presentedAttempt=a;}
+ $('training-next-text').textContent=text;nextControl=target;$('training-next-control').hidden=!target;$('training-next-control').textContent=target==='training-answer'?'Go to reflection':target==='training-export'?'Go to evidence export':'Go to '+(target==='training-load'?'Load exercise':target==='training-disturbance'?'disturbance':target==='training-restore'?'restore controls':target==='training-clear'?'clear stop':'Advance');
+  const samples=(!active()&&savedReport?savedReport.history:plant?.history)?.samples||[],p=samples[samples.length-1],f=(v,n=2)=>Number.isFinite(v)?v.toFixed(n):'unavailable';
+  $('training-observations').textContent=a&&p?(active()?'Accepted attempt readings · ':'Retained attempt readings · ')+f(p.seconds,1)+' s · condenser '+f(p.pressures.condenser)+' bar(a) · actual / sensed SH '+f(p.actualSuperheat)+' / '+f(p.sensedSuperheat)+' K · feed '+f(p.feedMassFlow,4)+' kg/s · opening '+f(p.opening*100)+'%':'';
+  document.dispatchEvent(new CustomEvent('ammonia-training-presentation',{detail:a?d.name+' · '+a.status+' · '+a.goals.filter(g=>g.met).length+'/'+a.goals.length+' objectives':''}));
+ }
+
+ function evidenceText(e){
+  const labels={feedKgS:['Feed','kg/s'],baselineFeedKgS:['Baseline feed','kg/s'],gainKW:['Room load','kW'],roomC:['Room','°C'],baselineRoomC:['Baseline room','°C'],command:['Command','fraction'],opening:['Opening','fraction'],targetK:['Target SH','K'],actualSuperheatK:['Actual SH','K'],sensedSuperheatK:['Sensed SH','K'],condenserBar:['Condenser','bar(a)'],baselineBar:['Baseline condenser','bar(a)'],ambientC:['Condenser air','°C'],holdSince:['Band held since','s']};
+  return Object.entries(e).flatMap(([key,v])=>{
+   if(labels[key]){const [label,unit]=labels[key];return label+' '+Number(v).toFixed(3)+' '+unit;}
+   if(key==='fault')return 'Equipment trip · '+v.message;
+   if(key==='compressorEnabled')return 'Compressor '+(v?'enabled':'disabled');
+   if(key==='answerIndex')return 'Correct reflection recorded';
+   if(key==='source')return v;
+   return [];
+  }).join(' · ');
+ }
  function description(){const selected=$('training-select').value,d=T.EXERCISES[selected];$('training-selected-title').textContent='Selected lesson · '+d.name;$('training-description').textContent=d.description;const different=!!attempt&&attempt.exercise!==selected;$('training-selection-note').hidden=!different;$('training-selection-note').textContent='Load exercise starts the selected lesson and replaces the retained attempt. Export the retained attempt first to keep its evidence.';}
  function render(){
-  description();const id=attempt?.exercise||$('training-select').value,d=T.EXERCISES[id];$('training-attempt-title').textContent=attempt?(active()?'Current attempt · ':'Retained attempt · ')+d.name:'Lesson objectives · '+d.name;
+  description();const id=attempt?.exercise||$('training-select').value,d=T.EXERCISES[id];guidance(d);$('training-attempt-title').textContent=attempt?(active()?'Current attempt · ':'Retained attempt · ')+d.name:'Lesson objectives · '+d.name;
   $('training-reset').textContent=attempt&&!active()?'Reset retained attempt':'Reset exercise';$('training-export').textContent=attempt&&!active()?'Export retained attempt · JSON':'Export attempt · JSON';$('training-select').disabled=active();$('training-load').disabled=!adapter.defaultActive();$('training-reset').disabled=!attempt||!adapter.defaultActive();$('training-end').disabled=!active();$('training-export').disabled=!attempt;
   $('training-advance').disabled=!active()||!!plant?.fault;$('training-run').disabled=!active()||!!plant?.fault;$('training-run').textContent=adapter.isRunning()?'Pause exercise playback':'Start exercise playback';$('training-clear').hidden=attempt?.exercise!=='hot'||!attempt.expectedFault;$('training-clear').disabled=!active()||!attempt.restored||!plant?.fault;
   $('training-check').disabled=!active();$('training-disturbance').hidden=!d.action||!attempt;$('training-disturbance').textContent=d.action||'Apply disturbance';$('training-disturbance').disabled=!active()||attempt.injectedAt!==null;
   $('training-restore').hidden=id!=='hot'||!attempt;$('training-restore').disabled=!active()||!attempt.expectedFault||attempt.restored;
   $('training-status').textContent=!adapter.defaultActive()?'Apply Default equipment before loading a supported exercise.':!attempt?'Choose an exercise and load its setup.':({active:'In progress',completed:'Objectives completed',stopped:'Stopped before completion',interrupted:'Exercise interrupted'})[attempt.status]+' · '+d.name+' · '+attempt.goals.filter(g=>g.met).length+'/'+attempt.goals.length+' objectives · began at '+attempt.startedAt.toFixed(3)+' simulated seconds'+(attempt.reason?' · '+attempt.reason:'');
-  $('training-objectives').innerHTML=attempt?attempt.goals.map(g=>'<li class="'+(g.met?'met':'')+'">'+(g.met?'✓ ':'○ ')+esc(g.label)+(g.evidence?' <small>Observed at '+g.evidence.seconds.toFixed(3)+' s</small>':'')+'</li>').join(''):d.goals.map(g=>'<li>'+esc(g)+'</li>').join('');
+  $('training-objectives').innerHTML=attempt?attempt.goals.map(g=>'<li class="'+(g.met?'met':'')+'">'+(g.met?'✓ ':'○ ')+esc(g.label)+(g.evidence?' <small>Recorded evidence · '+g.evidence.seconds.toFixed(3)+' s · '+esc(evidenceText(g.evidence))+'</small>':' <small>Awaiting graded evidence</small>')+'</li>').join(''):d.goals.map(g=>'<li>'+esc(g)+'</li>').join('');
   $('training-hint-text').textContent=d.hint;$('training-hint-text').hidden=!hint;$('training-hint').setAttribute('aria-expanded',String(hint));$('training-hint').textContent=hint?'Hide hint':'Show hint';
   $('training-question').textContent=d.question;
   if($('training-answer').dataset.exercise!==id){$('training-answer').dataset.exercise=id;$('training-answer').innerHTML='<option value="">Select an answer</option>'+d.answers.map((label,i)=>'<option value="'+i+'">'+esc(label)+'</option>').join('');$('training-feedback').textContent='';}
@@ -2278,7 +2438,8 @@ function create(container,button){
   content.innerHTML='<div class="assist-state"><span class="assist-indicator" aria-hidden="true"></span><strong>'+esc(a.status)+'</strong><span>'+(Number.isFinite(a.seconds)?a.seconds.toFixed(1)+' s accepted':'No accepted time')+'</span></div><div class="assist-columns"><div><h4>What is happening?</h4><p>'+esc(a.explanation)+'</p><p class="assist-compressor">'+esc(a.compressor)+'</p>'+(a.reason?'<div class="assist-stop"><span>Original recorded reason · '+esc(a.detected)+'</span><strong>'+esc(a.reason)+'</strong></div>':'')+'<p class="assist-observation">'+esc(a.observation||'Initialize before interpreting readings.')+'</p><h4>What should I inspect?</h4><p>'+esc(a.tip)+'</p></div><div><h4>'+(a.reason?'Captured stop evidence':'Accepted readings')+'</h4><dl class="assist-readings">'+cards(a.readings)+cards(a.evidence)+'</dl></div></div><footer><span>'+esc(a.scope)+'</span><span>'+esc(a.settings)+'</span></footer>';
   const status=a.status+(a.reason?' · '+a.reason:'');if(status!==lastStatus){announcement.textContent=status;lastStatus=status;}
  }
- function setOpen(value){open=value;container.hidden=!open;button.setAttribute('aria-expanded',String(open));if(open){render();close.focus({preventScroll:true});container.scrollIntoView({block:'start'});}else button.focus({preventScroll:true});}
+ function setOpen(value,notify=true){open=value;container.hidden=!open;button.setAttribute('aria-expanded',String(open));if(open){render();close.focus({preventScroll:true});}else if(notify)button.focus({preventScroll:true});if(notify)document.dispatchEvent(new CustomEvent('ammonia-assist-open',{detail:{open}}));}
+ document.addEventListener('ammonia-console-change',e=>setOpen(e.detail.open&&e.detail.tool==='operator-assist',false));
  button.addEventListener('click',()=>setOpen(!open));close.addEventListener('click',()=>setOpen(false));
  container.addEventListener('keydown',e=>{if(e.key==='Escape'){e.preventDefault();setOpen(false);}});
  return {update(analysis){current=analysis;render();}};
@@ -2410,5 +2571,84 @@ root.AmmoniaOperatorAssistApp={create};
   event(s,reason,details){AmmoniaHistory.sample(s.history,model.record(s),model.observeCompressor(s),'training');AmmoniaHistory.event(s.history,s.time,'training',{reason,...details});}
  });
  render();
+})();
+</script><script>/* Workstation presentation only. Move existing nodes; never clone model controls. */
+(function(){
+'use strict';
+const $=id=>document.getElementById(id),live=$('view-live');
+const consolePanel=document.createElement('section');
+consolePanel.id='operator-console';consolePanel.dataset.size='collapsed';
+consolePanel.setAttribute('aria-label','Operator Console');
+consolePanel.innerHTML='<div class="console-bar"><button class="btn" id="console-open" aria-expanded="false" aria-controls="console-body">Open console ↑</button><span id="console-task" class="console-task"></span><span class="console-spacer"></span><button class="btn" id="console-expand" aria-controls="console-body" hidden>Expand ↑</button><button class="btn" id="console-collapse" hidden>Collapse ↓</button><button class="btn" id="console-close" hidden aria-label="Close Operator Console">Close ×</button></div><div id="console-tools"></div><div id="console-body" hidden><h2 id="console-title" tabindex="-1">Guided Exercises</h2><div id="console-content"></div></div>';
+live.append(consolePanel);
+const form=$('storage-form'),process=form.querySelector('.plant-process');
+form.before(process);
+const room=document.createElement('div');
+room.append($('independent-room'),$('independent-trends'),$('live-balance').closest('.two-col'));
+const tools={
+ 'storage-training':[$('storage-training'),'Guided Exercises'],
+ 'storage-form':[form,'Plant Controls'],
+ 'storage-trends':[$('storage-trends'),'Trends & History'],
+ 'plant-diagnostics':[$('plant-diagnostics'),'Inventory'],
+ 'equipment-profiles':[$('equipment-profiles'),'Equipment Profiles'],
+ 'operator-assist':[$('operator-assist'),'Operator Assist'],
+ 'independent-room':[room,'Independent Room Model']
+};
+let selected='storage-training',size='collapsed',returnFocus=$('console-open');
+const nav=live.querySelector('.plant-nav');
+$('console-tools').append(nav);
+// Keep the existing seven section links and add the existing Assist launcher.
+nav.querySelector('[href="#storage-training"]').before(nav.querySelector('[href="#storage-form"]'));
+nav.prepend(nav.querySelector('[href="#storage-training"]'));
+nav.append($('operator-assist-toggle'));
+for(const [id,[node]] of Object.entries(tools)){node.dataset.consoleTool=id;$('console-content').append(node);}
+function render(){
+ consolePanel.dataset.size=size;
+ $('console-body').hidden=size==='collapsed';
+ $('console-open').setAttribute('aria-expanded',String(size!=='collapsed'));
+ $('console-open').textContent=size==='collapsed'?'Open console ↑':'Operator Console';
+ $('console-expand').hidden=size==='expanded'||size==='collapsed';
+ $('console-collapse').hidden=size==='collapsed';
+ $('console-collapse').textContent=size==='expanded'?'Partial height ↓':'Collapse ↓';
+ $('console-close').hidden=size==='collapsed';
+ $('console-title').textContent=tools[selected][1];
+ for(const [id,[node]] of Object.entries(tools))node.hidden=id!==selected;
+ nav.querySelectorAll('a').forEach(a=>{const active=a.hash.slice(1)===selected&&size!=='collapsed';a.setAttribute('aria-current',active?'true':'false');});
+ document.body.classList.toggle('console-visible',size!=='collapsed');
+ document.body.classList.toggle('console-expanded',size==='expanded');
+ // Assist remains the same read-only projection and keeps its own keyboard handling.
+ document.dispatchEvent(new CustomEvent('ammonia-console-change',{detail:{tool:selected,open:size!=='collapsed'}}));
+ requestAnimationFrame(measure);
+}
+function measure(){
+ const root=document.documentElement;
+ const viewport=window.visualViewport;
+ root.style.setProperty('--console-viewport-height',(viewport?.height||window.innerHeight)+'px');
+ root.style.setProperty('--console-keyboard-inset',Math.max(0,window.innerHeight-(viewport?.height||window.innerHeight)-(viewport?.offsetTop||0))+'px');
+ root.style.setProperty('--console-height',consolePanel.getBoundingClientRect().height+'px');
+ const heading=$('storage-lab').querySelector('.plant-heading');
+ root.style.setProperty('--console-ceiling',Math.max(140,heading.getBoundingClientRect().bottom+8)+'px');
+}
+function open(id,trigger){
+ if(!tools[id]){close();$('storage-lab').setAttribute('tabindex','-1');$('storage-lab').focus({preventScroll:true});$('storage-lab').scrollIntoView({block:'start'});return;}
+ returnFocus=trigger||$('console-open');selected=id;if(size==='collapsed')size='partial';render();
+ if(id!=='operator-assist')$('console-title').focus({preventScroll:true});
+}
+function close(){const restore=consolePanel.contains(document.activeElement);size='collapsed';render();if(restore)returnFocus.focus({preventScroll:true});}
+nav.addEventListener('click',e=>{const link=e.target.closest('a');if(!link)return;e.preventDefault();e.stopImmediatePropagation();const id=link.hash.slice(1);open(id,link);if(id!=='storage-lab'){const target=$(id);target.setAttribute('tabindex','-1');target.focus({preventScroll:true});}},true);
+$('console-open').addEventListener('click',()=>{if(size==='collapsed')open(selected,$('console-open'));});
+$('console-expand').addEventListener('click',()=>{size='expanded';render();$('console-collapse').focus({preventScroll:true});});
+$('console-collapse').addEventListener('click',()=>{if(size==='expanded'){size='partial';render();}else close();});
+$('console-close').addEventListener('click',close);
+consolePanel.addEventListener('keydown',e=>{if(e.key==='Escape'&&!e.defaultPrevented){e.preventDefault();if(size==='expanded'){size='partial';render();$('console-collapse').focus({preventScroll:true});}else close();}});
+document.addEventListener('ammonia-assist-open',e=>{if(e.detail.open)open('operator-assist',$('operator-assist-toggle'));else if(selected==='operator-assist'&&size!=='collapsed')close();});
+document.addEventListener('ammonia-training-presentation',e=>{$('console-task').textContent=e.detail;measure();});
+new ResizeObserver(measure).observe(consolePanel);
+new ResizeObserver(measure).observe($('storage-lab').querySelector('.plant-heading'));
+window.addEventListener('resize',measure);
+window.addEventListener('scroll',measure,{passive:true});
+window.visualViewport?.addEventListener('resize',measure);
+window.visualViewport?.addEventListener('scroll',measure);
+render();
 })();
 </script></body></html>

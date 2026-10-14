@@ -1,0 +1,28 @@
+
+> ammonia-lab@0.5.0 test:webkit
+> TEST_BROWSER=webkit node tests/run-browser.cjs focus-mode-ui.cjs release-ui.cjs schematic-ui.cjs history-ui.cjs training-ui.cjs visual-pass2-ui.cjs industrial-styling-ui.cjs hmi-uplift-ui.cjs operator-assist-ui.cjs operator-console-ui.cjs
+
+Skipping host requirements validation logic because `PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS` env variable is set.
+PASS: webkit focus startup, hidden retained workspaces, URL/build restoration, existing validation route and keyboard return, all seven Live Plant sections, controls/schematic/trends/exercises/profiles/CSV exports, desktop/iPad layouts and standalone offline startup.
+Skipping host requirements validation logic because `PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS` env variable is set.
+PASS: webkit release on iPad viewport, tab navigation, automatic DX setup, live boundaries / SI CSV, atomic rejection, background pause, trips at all speeds, fault snapshots, recovery, validation view, mobile overflow and standalone HTML with network blocked.
+Skipping host requirements validation logic because `PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS` env variable is set.
+PASS: model/display agreement, levels, discharge temperature, units, keyboard inspection, playback/motion, off pressure, blocked drain, valve lag, trips, profile reset, isolated mode, reduced motion, tablet/mobile and offline schematic.
+Skipping host requirements validation logic because `PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS` env variable is set.
+PASS: webkit synchronized history/model values, pinned/follow cursor, curve visibility, exact control events, invalid/no-op rejection, units, SI CSV, keyboard/touch inspection, reset, trip/clear evidence, unavailable isolated readings, tablet/mobile and offline history.
+Skipping host requirements validation logic because `PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS` env variable is set.
+AssertionError [ERR_ASSERTION]: The input did not match the regular expression /Pause/. Input:
+
+'Start exercise playback'
+
+    at /workspace/Ammonia-sim/tests/training-ui.cjs:34:405 {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: 'Start exercise playback',
+  expected: /Pause/,
+  operator: 'match',
+  diff: 'simple'
+}
+Error: training-ui.cjs failed
+    at /workspace/Ammonia-sim/tests/run-browser.cjs:8:22
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)

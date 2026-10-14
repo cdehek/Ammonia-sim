@@ -1,0 +1,12 @@
+AssertionError [ERR_ASSERTION]: The input did not match the regular expression /Unapplied draft controls/. Input:
+
+'Connected model / diagnostic consoleOperator Assist v0.1Close ×PLAYBACK PAUSED0.0 s acceptedWhat is happening?Playback is paused at the accepted model state. No active modeled trip or stop is recorded.Enabled at 70.00 % in applied settings; playback is paused, so the compressor is not actively advancing.Actual opening is the accepted actuator position; the command is its current target. Superheat is an outlet temperature difference, not an absolute temperature.What should I inspect?Start playback to watch accepted readings evolve, or select equipment in the schematic to inspect the current state.Accepted readingsSuction pressure21.56 psigResolved outlet volumeDischarge / condenser pressure159.35 psigCondenser bulk stateApplied compressor speed70.00 %Enabled setting · separate from playbackActual outlet superheat9.00 °F ΔCurrent outlet stateActual feed-valve opening0.00 %Accepted actuator positionFeed-valve command0.00 %Current command · autoConnected simulator only · deterministic rules · read-onlyAnalysis uses accepted readings and applied settings.PLAYBACK PAUSED'
+
+    at /workspace/Ammonia-sim/tests/operator-assist-ui.cjs:14:301 {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: 'ccepted readings evolve, or select equipment in the schematic to inspect the current state.Accepted readingsSuction pressure21.56 psigResolved outlet volumeDischarge / condenser pressure159.35 psigCondenser bulk stateApplied compressor speed70.00 %Enabled setting · separate from playbackActual outlet superheat9.00 °F ΔCurrent outlet stateActual feed-valve opening0.00 %Accepted actuator positionFeed-valve command0.00 %Current command · autoConnected simulator only · deterministic rules · read-onlyAnalysis uses accepted readings and applied settings.PLAYBACK PAUSED...',
+  expected: /Unapplied draft controls/,
+  operator: 'match',
+  diff: 'simple'
+}

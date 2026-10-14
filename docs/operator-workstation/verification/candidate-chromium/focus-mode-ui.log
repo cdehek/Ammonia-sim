@@ -1,0 +1,14 @@
+AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
++ actual - expected
+
++ 'console-open'
+- 'storage-lab'
+
+    at /workspace/Ammonia-sim/tests/focus-mode-ui.cjs:31:161 {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: 'console-open',
+  expected: 'storage-lab',
+  operator: 'strictEqual',
+  diff: 'simple'
+}
