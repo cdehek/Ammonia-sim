@@ -1,0 +1,63 @@
+{
+  "platform": "Linux-6.18.44-x86_64-with-glibc2.41",
+  "compiler": "g++ (Debian 14.2.0-19) 14.2.0\nCopyright (C) 2024 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n\n",
+  "python": "3.12.14",
+  "cmake": "3.31.6",
+  "ninja": "1.11.1.4",
+  "pythonPlaywright": "1.62.0",
+  "nativeSource": "ae81610e7d23efc57f9d051c8e70a4d66e87537f",
+  "dependencies": {
+    "boost_headers-src": {
+      "commit": "c68104660ca4bd80d0d5cb34c4eba0cf5bab3f73",
+      "matchesB1": true
+    },
+    "eigen-src": {
+      "files": 1913,
+      "sortedPathHashJSON": "8036b5c9945c802277c98f69633c6e110222090b243a2c767e85f4f0d8a202cf",
+      "B1": {
+        "files": 1913,
+        "sha256OfSortedPathHashJSON": "eee9c105f2d5efa5ddbe97c9fab539c829901f8edf42b09cf4a3f8b37a3e44a8"
+      }
+    },
+    "fmt-src": {
+      "commit": "e424e3f2e607da02742f73db84873b8084fc714c",
+      "matchesB1": true
+    },
+    "if97-src": {
+      "commit": "7aaced024a702f0985474bf293cdaae9c8d06521",
+      "matchesB1": true
+    },
+    "msgpack-c-src": {
+      "commit": "919908742b4fdbc575e77fe1a8657e70c9573c44",
+      "matchesB1": true
+    },
+    "multicomplex-src": {
+      "commit": "39bf9ca52c7882ff0788bb9087c7548ebd8fba4c",
+      "matchesB1": true
+    },
+    "nlohmann_json-src": {
+      "commit": "55f93686c01528224f448c19128836e7df245f72",
+      "matchesB1": true
+    },
+    "refprop_headers-src": {
+      "commit": "b4faab1b73911c32c4b69c526c7e92f74edb67de",
+      "matchesB1": true
+    },
+    "valijson-src": {
+      "files": 141,
+      "sortedPathHashJSON": "90daad56ab1e58f9fbb457031c1129fdc0a28bcfc434c941a0c4460ad77dbf76",
+      "B1": {
+        "files": 141,
+        "sha256OfSortedPathHashJSON": "c996adfe371babc7a57acded844961a786631f4c6c2d2b36cb5fbeaadbe17755"
+      }
+    }
+  },
+  "sysrootDebSHA256": {
+    "libmanette-0.2-0_0.2.12-1_amd64.deb": "98841a467692c46fd1870275113235691ebbfe71a3524f6b2a0fa7e9c33c6e56",
+    "libgles2_1.7.0-1+b2_amd64.deb": "e12c18aa77939d122ee1dea520ba0440b97dc19200b7396e03dff03a3ece74c1",
+    "libopengl0_1.7.0-1+b2_amd64.deb": "50ea65a1141cbf6b02e41492963656ad0ba71d257cc4066ee9756bca7a6c1ac3",
+    "libharfbuzz-icu0_10.2.0-1+deb13u1_amd64.deb": "0b45d951629e98673c0da73b2bcd0886a467d833bb3b7499892a168f247165d2",
+    "libhyphen0_2.8.8-7+b2_amd64.deb": "fa9dca7b8cf1381fd52800c44a385c5725a78a88bd705f7c39b1046a5293435e",
+    "libegl1_1.7.0-1+b2_amd64.deb": "62e7bc8ccd47a60e55aad17f83d8d474310d782eb8589bbce2ab714c31712406"
+  }
+}

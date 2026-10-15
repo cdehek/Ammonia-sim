@@ -1,0 +1,162 @@
+{
+  "upstreamCommit": "ae81610e7d23efc57f9d051c8e70a4d66e87537f",
+  "upstreamTree": "ca49b8c34df0dae93dcc7fe07e2815a10d967662",
+  "sourceStatus": "M src/Backends/Helmholtz/FlashRoutines.cpp\n M src/Backends/Helmholtz/HelmholtzEOSMixtureBackend.cpp\n M src/Solvers.cpp",
+  "diagnosticSourceStages": {
+    "30": {
+      "src/Backends/Helmholtz/HelmholtzEOSMixtureBackend.cpp": "22fdbbd706c10653ad1a4e443552ade13193c2b9842b5a3fc2ea9444162312f2",
+      "src/Backends/Helmholtz/FlashRoutines.cpp": "f7b9db82ebdc91245e8151f1238d1076cf99e35a226cf18f53e11a5437f4407e",
+      "src/Solvers.cpp": "183860408351abc9a88e16d8fc9b77dbc0142660bc59512b89c3038f225a2d5b"
+    },
+    "44": {
+      "src/Backends/Helmholtz/HelmholtzEOSMixtureBackend.cpp": "22fdbbd706c10653ad1a4e443552ade13193c2b9842b5a3fc2ea9444162312f2",
+      "src/Backends/Helmholtz/FlashRoutines.cpp": "86b8e207d0995af70020bad08561ce6ba8fb29d878f810653589a39252f85ffc",
+      "src/Solvers.cpp": "183860408351abc9a88e16d8fc9b77dbc0142660bc59512b89c3038f225a2d5b"
+    }
+  },
+  "dependencies": {
+    "boost_headers-src": {
+      "commit": "c68104660ca4bd80d0d5cb34c4eba0cf5bab3f73",
+      "fileCount": 2826,
+      "pathSHA256JSON": "9d1f3dcbd1194bd6933e0f1df549c9b968a72aaca3566c24f252a044d915a2b2"
+    },
+    "eigen-src": {
+      "commit": null,
+      "fileCount": 1913,
+      "pathSHA256JSON": "8036b5c9945c802277c98f69633c6e110222090b243a2c767e85f4f0d8a202cf"
+    },
+    "fmt-src": {
+      "commit": "e424e3f2e607da02742f73db84873b8084fc714c",
+      "fileCount": 128,
+      "pathSHA256JSON": "95600f430d27ed56d19824cf29ef69ba5d061a3ce2829c1c3153fb4d27f5a528"
+    },
+    "if97-src": {
+      "commit": "7aaced024a702f0985474bf293cdaae9c8d06521",
+      "fileCount": 98,
+      "pathSHA256JSON": "1c7205f107b1ccdb06daa69bfa4e45410d0a49aba4de26e310ab3fb76f89bbb9"
+    },
+    "msgpack-c-src": {
+      "commit": "919908742b4fdbc575e77fe1a8657e70c9573c44",
+      "fileCount": 852,
+      "pathSHA256JSON": "3ba100e92d31711310b1efb24e04d26d6d9e4c24559c755ff11495145e75c3e1"
+    },
+    "multicomplex-src": {
+      "commit": "39bf9ca52c7882ff0788bb9087c7548ebd8fba4c",
+      "fileCount": 249,
+      "pathSHA256JSON": "a4873f9d30ef7d83fe8547adc51d449c8a845f520a2e7b2add0035a447bf2549"
+    },
+    "nlohmann_json-src": {
+      "commit": "55f93686c01528224f448c19128836e7df245f72",
+      "fileCount": 1163,
+      "pathSHA256JSON": "4f08a25bb96bb16a209f5bfcff404713cd23dc4084dcfb43f0194865aa9b67cb"
+    },
+    "refprop_headers-src": {
+      "commit": "b4faab1b73911c32c4b69c526c7e92f74edb67de",
+      "fileCount": 13,
+      "pathSHA256JSON": "f2386fff7c7c8131708319fb235413110bdb7e026e88e8563155061b3bfcdc35"
+    },
+    "valijson-src": {
+      "commit": null,
+      "fileCount": 141,
+      "pathSHA256JSON": "90daad56ab1e58f9fbb457031c1129fdc0a28bcfc434c941a0c4460ad77dbf76"
+    }
+  },
+  "baselineOriginalFlashSHA256": "debf60f85d1d0955f08596e64d3a4958d7f369657cb3161a6b7625fa508cf3df",
+  "baselineHistorical44FlashSHA256": "9e6d3be44cc61c3ca5b539fa10f4587cfeef3e286dec2d267fe90933df67c0e3",
+  "inputSHA256": "4db2929433ba4f50fb09de1fb79bdcd4771d0b714846241f076056373489ab01",
+  "browserArtifacts": {
+    "experiments/dx-fv/browser_eos/vendor/8.0.0/coolprop.wasm": {
+      "bytes": 9196512,
+      "sha256": "28a83d839ab69c7e6ea480298955ce223b6507dc6ffb83349dd31f1540867307"
+    },
+    "experiments/dx-fv/browser_eos/vendor/8.0.0/coolprop.js": {
+      "bytes": 167060,
+      "sha256": "ebd02f5721abc10fee3e6560b0d96c1a17b8ae1f01bc144a4f9a1af8cf1e3217"
+    },
+    "experiments/dx-fv/browser_eos/vendor/7.2.0/coolprop.wasm": {
+      "bytes": 6967191,
+      "sha256": "cb77d0381fbe639bffb65a3e8fa44ff8e2a110f21c18125c89a9b336135bd194"
+    },
+    "experiments/dx-fv/browser_eos/vendor/7.2.0/coolprop.js": {
+      "bytes": 161185,
+      "sha256": "8a4993ac260a98c4a7053c9f42bbb58bc0fb2ebd3411c8d13df7bbb1fc511b2b"
+    },
+    "experiments/dx-fv/browser_eos_backend/vendor/build30/coolprop.wasm": {
+      "bytes": 9196512,
+      "sha256": "b1baa13a092fc30e73d3ebb974a3d56013e4d20c56da89360c5d966a3eff47d5"
+    },
+    "experiments/dx-fv/browser_eos_backend/vendor/build30/coolprop.js": {
+      "bytes": 167060,
+      "sha256": "ebd02f5721abc10fee3e6560b0d96c1a17b8ae1f01bc144a4f9a1af8cf1e3217"
+    },
+    "experiments/dx-fv/browser_eos_backend/vendor/build44/coolprop.wasm": {
+      "bytes": 9196512,
+      "sha256": "30decd700ad8b46530a8accadd051bdf7147cc7a894904e2ce83d6babfdd63ab"
+    },
+    "experiments/dx-fv/browser_eos_backend/vendor/build44/coolprop.js": {
+      "bytes": 167060,
+      "sha256": "ebd02f5721abc10fee3e6560b0d96c1a17b8ae1f01bc144a4f9a1af8cf1e3217"
+    }
+  },
+  "nativeBinaries": {
+    "libCoolProp-diag30.so": {
+      "bytes": 12917120,
+      "sha256": "26c34b06988b0c80db1be71ba6cc133bcf8855f45762b139f3c9c0c992ec0605",
+      "archive": "artifacts/libCoolProp-diag30.so.xz",
+      "archiveBytes": 4914452,
+      "archiveSHA256": "2678dd7f0e44b864b1f04f528e745a68088374150f9fdcbe53e666ae33cf6208"
+    },
+    "libCoolProp-diag44.so": {
+      "bytes": 12917120,
+      "sha256": "995f18fca99c8818f9d2e7e6c66a608395f1903a2ed090be19fd946e365734e9",
+      "archive": "artifacts/libCoolProp-diag44.so.xz",
+      "archiveBytes": 4914524,
+      "archiveSHA256": "64ff62e92ea4c26bc3cfd1e2b7745570ddc8fafc02bf02a29b23659bc7bbb1d5"
+    },
+    "libCoolProp30.so": {
+      "bytes": 12912824,
+      "sha256": "637d66e9762871e69762b9288217169ba98700c7cbd9476b06aeb0ec79d07bfa",
+      "archive": "artifacts/libCoolProp30.so.xz",
+      "archiveBytes": 4911820,
+      "archiveSHA256": "a55878bb5a55a5d91a7dd2bcdd22ab113856fa549588eb6744ddaee19599bc9e"
+    },
+    "libCoolProp44.so": {
+      "bytes": 12912824,
+      "sha256": "6082f6f56903a25d85492eaa817be88b3d37d5da81aacb91bbfd34aaa64e8e7e",
+      "archive": "artifacts/libCoolProp44.so.xz",
+      "archiveBytes": 4912324,
+      "archiveSHA256": "86392cb6e8b3ba6d6a936e6afeba0e3f383cb667f2cbd33bebfab2c76205c9f4"
+    }
+  },
+  "wheelBinaries": {
+    "/workspace/b3-runtime/lib/python3.12/site-packages/CoolProp/CoolProp.abi3.so": {
+      "bytes": 9050856,
+      "sha256": "05d85591871524e83bb23170e22ee149e1167fb3ef5deaf81b9d248283089be5"
+    },
+    "/workspace/b3-runtime/lib/python3.12/site-packages/CoolProp/State.abi3.so": {
+      "bytes": 179928,
+      "sha256": "e9bc46346285046cb750f1c66043b91601fa5f3c606324842ca673e53b0c64dc"
+    },
+    "/workspace/b3-runtime/lib/python3.12/site-packages/CoolProp/_constants.abi3.so": {
+      "bytes": 43568,
+      "sha256": "5be23cba765b2fe34feb4eec08167b656974ee3b52a762e4f47d6b47c397d7fe"
+    },
+    "/workspace/b3-runtime72/lib/python3.12/site-packages/CoolProp/_constants.cpython-312-x86_64-linux-gnu.so": {
+      "bytes": 51664,
+      "sha256": "861be6204867393f56304f290cea1cc7afe2b589c78855ac79a8bbef3bd6fd20"
+    },
+    "/workspace/b3-runtime72/lib/python3.12/site-packages/CoolProp/CoolProp.cpython-312-x86_64-linux-gnu.so": {
+      "bytes": 10503592,
+      "sha256": "cc8f3d9248c67fe9c11165d591a67768df40aee9e7e4c56106451e24f26f387c"
+    }
+  },
+  "platform": "Linux-6.18.44-x86_64-with-glibc2.41",
+  "compilerVersion": "g++ (Debian 14.2.0-19) 14.2.0\nCopyright (C) 2024 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.",
+  "compilerSHA256": "6b3696e4dcb85e1c949c732a02befa50e3983ecf94ce7e8e58d9d503b954b79d",
+  "flagsEvidence": [
+    "compile-commands.json",
+    "CMakeCache.txt"
+  ],
+  "sourceInstrumentation": "Added logging only; combined44 diff also reproduces the existing B1 expression.",
+  "native44Correction": "None in B3: exact historical B1 flash-44.patch used as the requested control."
+}

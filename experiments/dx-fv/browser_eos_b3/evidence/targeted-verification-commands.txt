@@ -1,0 +1,12 @@
+python -m py_compile experiments/dx-fv/browser_eos_b3/*.py
+node --check experiments/dx-fv/browser_eos_b3/browser.mjs
+bash -n experiments/dx-fv/browser_eos_b3/build-native.sh
+python experiments/dx-fv/browser_eos_b3/summarize.py
+python experiments/dx-fv/browser_eos_b3/provenance.py
+git diff --check
+
+Additional direct audits: all starting-file hashes, all inventory binary64 fields,
+all 25 historical fixture base/probe records for 8 browser/artifact combinations,
+all 114 captured phase decisions and threshold branches, 8 coexistence roots,
+logging/control equivalence and 22 repeated trace pairs. Results are preserved
+in final-integrity.json, summary.json, phase-decisions.json and provenance.json.
