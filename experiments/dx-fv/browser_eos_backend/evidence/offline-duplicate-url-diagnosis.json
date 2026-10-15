@@ -1,0 +1,16 @@
+[
+  {
+    "rejected": true,
+    "name": "InvalidStateError",
+    "message": "Failed to execute 'addAll' on 'Cache': Cache.addAll(): duplicate requests (http://127.0.0.1:40049/experiments/dx-fv/browser_eos_backend/index.html)",
+    "browser": "chromium",
+    "browserVersion": "151.0.7922.34"
+  },
+  {
+    "rejected": true,
+    "name": "InvalidStateError",
+    "message": "addAll cannot store several matching requests",
+    "browser": "webkit",
+    "browserVersion": "26.5"
+  }
+]

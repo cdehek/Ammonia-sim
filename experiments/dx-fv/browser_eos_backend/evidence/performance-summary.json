@@ -1,0 +1,242 @@
+[
+  {
+    "browser": "chromium",
+    "build": "official8",
+    "meanInitMS": 1963.0666666666511,
+    "PHLiquidMicroseconds": 68.7118437118366,
+    "DULiquidMicroseconds": 19.839591045310517,
+    "perGroupMicroseconds": {
+      "DU-liquid": 19.839591045310517,
+      "DU-two-phase": 24.23018949182241,
+      "DU-vapor": 21.323668751177767,
+      "PH-liquid": 68.7118437118366,
+      "PH-two-phase": 5.718206770356817,
+      "PH-vapor": 77.0876112251484
+    },
+    "peakWASMMiB": 53.75,
+    "maxTimerGapMS": 50.9000000001397,
+    "failures": 0,
+    "errorRecovery": {
+      "before": {
+        "memory": 56360960,
+        "stack": 5706944
+      },
+      "after": {
+        "memory": 56360960,
+        "stack": 5706944
+      },
+      "failures": 20,
+      "recoveries": 20
+    }
+  },
+  {
+    "browser": "chromium",
+    "build": "build30",
+    "meanInitMS": 1885.9666666667133,
+    "PHLiquidMicroseconds": 67.65587529974623,
+    "DULiquidMicroseconds": 19.35414516684267,
+    "perGroupMicroseconds": {
+      "DU-liquid": 19.35414516684267,
+      "DU-two-phase": 23.349937733499377,
+      "DU-vapor": 20.840273921890933,
+      "PH-liquid": 67.65587529974623,
+      "PH-two-phase": 5.405795012253136,
+      "PH-vapor": 79.74929378530251
+    },
+    "peakWASMMiB": 53.75,
+    "maxTimerGapMS": 50.699999999953434,
+    "failures": 0,
+    "errorRecovery": {
+      "before": {
+        "memory": 56360960,
+        "stack": 5706944
+      },
+      "after": {
+        "memory": 56360960,
+        "stack": 5706944
+      },
+      "failures": 20,
+      "recoveries": 20
+    }
+  },
+  {
+    "browser": "chromium",
+    "build": "build44",
+    "meanInitMS": 1939.833333333411,
+    "PHLiquidMicroseconds": 67.06773618541784,
+    "DULiquidMicroseconds": 19.264680705362657,
+    "perGroupMicroseconds": {
+      "DU-liquid": 19.264680705362657,
+      "DU-two-phase": 23.942389455782312,
+      "DU-vapor": 20.76646375206667,
+      "PH-liquid": 67.06773618541784,
+      "PH-two-phase": 5.326704545454545,
+      "PH-vapor": 77.92185338865032
+    },
+    "peakWASMMiB": 53.75,
+    "maxTimerGapMS": 50.5,
+    "failures": 0,
+    "errorRecovery": {
+      "before": {
+        "memory": 56360960,
+        "stack": 5706944
+      },
+      "after": {
+        "memory": 56360960,
+        "stack": 5706944
+      },
+      "failures": 20,
+      "recoveries": 20
+    }
+  },
+  {
+    "browser": "chromium",
+    "build": "official72",
+    "meanInitMS": 1594.5333333333645,
+    "PHLiquidMicroseconds": 6772.222222220283,
+    "DULiquidMicroseconds": 2782.1428571450742,
+    "perGroupMicroseconds": {
+      "DU-liquid": 2782.1428571450742,
+      "DU-two-phase": 2544.6078431377114,
+      "DU-vapor": 2470.5882352929766,
+      "PH-liquid": 6772.222222220283,
+      "PH-two-phase": 5974.074074073643,
+      "PH-vapor": 6522.222222220283
+    },
+    "peakWASMMiB": 93.375,
+    "maxTimerGapMS": 51,
+    "failures": 0,
+    "errorRecovery": {
+      "before": {
+        "memory": 97910784,
+        "stack": 4432960
+      },
+      "after": {
+        "memory": 97910784,
+        "stack": 4432960
+      },
+      "failures": 20,
+      "recoveries": 20
+    }
+  },
+  {
+    "browser": "webkit",
+    "build": "official8",
+    "meanInitMS": 2162,
+    "PHLiquidMicroseconds": 72.99741602067184,
+    "DULiquidMicroseconds": 18.046198267564964,
+    "perGroupMicroseconds": {
+      "DU-liquid": 18.046198267564964,
+      "DU-two-phase": 23.048555623847573,
+      "DU-vapor": 20.15045674368619,
+      "PH-liquid": 72.99741602067184,
+      "PH-two-phase": 5.4019014693172,
+      "PH-vapor": 79.11392405063292
+    },
+    "peakWASMMiB": 53.75,
+    "maxTimerGapMS": 59,
+    "failures": 0,
+    "errorRecovery": {
+      "before": {
+        "memory": 56360960,
+        "stack": 5706944
+      },
+      "after": {
+        "memory": 56360960,
+        "stack": 5706944
+      },
+      "failures": 20,
+      "recoveries": 20
+    }
+  },
+  {
+    "browser": "webkit",
+    "build": "build30",
+    "meanInitMS": 2123,
+    "PHLiquidMicroseconds": 75.01663339986693,
+    "DULiquidMicroseconds": 18.436578171091444,
+    "perGroupMicroseconds": {
+      "DU-liquid": 18.436578171091444,
+      "DU-two-phase": 23.68919772583702,
+      "DU-vapor": 20.21563342318059,
+      "PH-liquid": 75.01663339986693,
+      "PH-two-phase": 5.5547326322026365,
+      "PH-vapor": 80.12820512820514
+    },
+    "peakWASMMiB": 53.75,
+    "maxTimerGapMS": 61,
+    "failures": 0,
+    "errorRecovery": {
+      "before": {
+        "memory": 56360960,
+        "stack": 5706944
+      },
+      "after": {
+        "memory": 56360960,
+        "stack": 5706944
+      },
+      "failures": 20,
+      "recoveries": 20
+    }
+  },
+  {
+    "browser": "webkit",
+    "build": "build44",
+    "meanInitMS": 2049.3333333333335,
+    "PHLiquidMicroseconds": 71.15749525616698,
+    "DULiquidMicroseconds": 18.221574344023324,
+    "perGroupMicroseconds": {
+      "DU-liquid": 18.221574344023324,
+      "DU-two-phase": 23.961661341853034,
+      "DU-vapor": 19.925611052072263,
+      "PH-liquid": 71.15749525616698,
+      "PH-two-phase": 5.398790670889721,
+      "PH-vapor": 80.64516129032258
+    },
+    "peakWASMMiB": 53.75,
+    "maxTimerGapMS": 144,
+    "failures": 0,
+    "errorRecovery": {
+      "before": {
+        "memory": 56360960,
+        "stack": 5706944
+      },
+      "after": {
+        "memory": 56360960,
+        "stack": 5706944
+      },
+      "failures": 20,
+      "recoveries": 20
+    }
+  },
+  {
+    "browser": "webkit",
+    "build": "official72",
+    "meanInitMS": 1782.6666666666667,
+    "PHLiquidMicroseconds": 8069.444444444444,
+    "DULiquidMicroseconds": 3722.222222222222,
+    "perGroupMicroseconds": {
+      "DU-liquid": 3722.222222222222,
+      "DU-two-phase": 3534.722222222222,
+      "DU-vapor": 3479.1666666666665,
+      "PH-liquid": 8069.444444444444,
+      "PH-two-phase": 7180.555555555556,
+      "PH-vapor": 7722.222222222223
+    },
+    "peakWASMMiB": 93.375,
+    "maxTimerGapMS": 72,
+    "failures": 0,
+    "errorRecovery": {
+      "before": {
+        "memory": 97910784,
+        "stack": 4432960
+      },
+      "after": {
+        "memory": 97910784,
+        "stack": 4432960
+      },
+      "failures": 20,
+      "recoveries": 20
+    }
+  }
+]

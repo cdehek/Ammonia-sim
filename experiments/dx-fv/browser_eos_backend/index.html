@@ -1,0 +1,15 @@
+<!doctype html><meta charset="utf-8"><title>Ammonia B1 isolated research</title>
+<h1>Ammonia B1 — experimental and unqualified</h1>
+<p>Local research harness. No connection to Ammonia Lab or Live Plant.</p>
+<p><label>Physical device / OS / Safari / power mode: <input id="device" size="65"></label></p>
+<p><label>Backend: <select id="build"><option>official8</option><option>build30</option><option selected>build44</option><option>official72</option></select></label>
+<button id="run">Run isolated worker test</button> <button id="export" disabled>Export JSON</button>
+<button id="offline">Prepare offline assets</button></p>
+<p><label>Type here during the run to assess responsiveness: <input id="typing" size="55"></label></p>
+<pre id="status">Ready. No physical device result has been collected by preparing this artifact.</pre>
+<script type="module">
+import {loadEOS} from './loader.mjs';
+import {diagnose} from '../browser_eos_precision/diagnostic.mjs';
+window.b1={loadEOS,diagnose};
+</script>
+<script type="module" src="./app.mjs"></script>

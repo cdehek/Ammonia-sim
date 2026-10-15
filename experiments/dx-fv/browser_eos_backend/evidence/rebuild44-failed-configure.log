@@ -1,0 +1,196 @@
+-- CPM: Adding package Eigen@5.0.1 (5.0.1)
+-- Populating eigen
+-- Configuring done (0.0s)
+-- Generating done (0.0s)
+-- Build files have been written to: /workspace/b1-runtime/rebuild44/_deps/eigen-subbuild
+[1/9] Creating directories for 'eigen-populate'
+[1/9] Performing download step (download, verify and extract) for 'eigen-populate'
+-- Downloading...
+   dst='/workspace/b1-runtime/rebuild44/_deps/eigen-subbuild/eigen-populate-prefix/src/eigen-5.0.1.tar.gz'
+   timeout='none'
+   inactivity timeout='none'
+-- Using src='https://gitlab.com/libeigen/eigen/-/archive/5.0.1/eigen-5.0.1.tar.gz'
+-- Retrying...
+-- Using src='https://gitlab.com/libeigen/eigen/-/archive/5.0.1/eigen-5.0.1.tar.gz'
+-- Retry after 5 seconds (attempt #2) ...
+-- Using src='https://gitlab.com/libeigen/eigen/-/archive/5.0.1/eigen-5.0.1.tar.gz'
+-- Retry after 5 seconds (attempt #3) ...
+-- Using src='https://gitlab.com/libeigen/eigen/-/archive/5.0.1/eigen-5.0.1.tar.gz'
+-- Retry after 15 seconds (attempt #4) ...
+-- Using src='https://gitlab.com/libeigen/eigen/-/archive/5.0.1/eigen-5.0.1.tar.gz'
+-- Retry after 60 seconds (attempt #5) ...
+-- Using src='https://gitlab.com/libeigen/eigen/-/archive/5.0.1/eigen-5.0.1.tar.gz'
+CMake Error at eigen-subbuild/eigen-populate-prefix/src/eigen-populate-stamp/download-eigen-populate.cmake:163 (message):
+  Each download failed!
+
+    error: downloading 'https://gitlab.com/libeigen/eigen/-/archive/5.0.1/eigen-5.0.1.tar.gz' failed
+          status_code: 7
+          status_string: "Could not connect to server"
+          log:
+          --- LOG BEGIN ---
+          Uses proxy env variable no_proxy == 'localhost,127.0.0.1,::1'
+
+  Uses proxy env variable https_proxy == 'http://proxy:8080'
+
+  timeout on name lookup is not supported
+
+  Host proxy:8080 was resolved.
+
+  IPv6: (none)
+
+  IPv4: 172.31.0.173
+
+  Failed to connect to proxy port 8080 after 0 ms: Could not connect to
+  server
+
+  closing connection #0
+
+
+
+          --- LOG END ---
+          error: downloading 'https://gitlab.com/libeigen/eigen/-/archive/5.0.1/eigen-5.0.1.tar.gz' failed
+          status_code: 7
+          status_string: "Could not connect to server"
+          log:
+          --- LOG BEGIN ---
+          Uses proxy env variable no_proxy == 'localhost,127.0.0.1,::1'
+
+  Uses proxy env variable https_proxy == 'http://proxy:8080'
+
+  timeout on name lookup is not supported
+
+  Host proxy:8080 was resolved.
+
+  IPv6: (none)
+
+  IPv4: 172.31.0.173
+
+  Failed to connect to proxy port 8080 after 0 ms: Could not connect to
+  server
+
+  closing connection #0
+
+
+
+          --- LOG END ---
+          error: downloading 'https://gitlab.com/libeigen/eigen/-/archive/5.0.1/eigen-5.0.1.tar.gz' failed
+          status_code: 7
+          status_string: "Could not connect to server"
+          log:
+          --- LOG BEGIN ---
+          Uses proxy env variable no_proxy == 'localhost,127.0.0.1,::1'
+
+  Uses proxy env variable https_proxy == 'http://proxy:8080'
+
+  timeout on name lookup is not supported
+
+  Host proxy:8080 was resolved.
+
+  IPv6: (none)
+
+  IPv4: 172.31.0.173
+
+  Failed to connect to proxy port 8080 after 0 ms: Could not connect to
+  server
+
+  closing connection #0
+
+
+
+          --- LOG END ---
+          error: downloading 'https://gitlab.com/libeigen/eigen/-/archive/5.0.1/eigen-5.0.1.tar.gz' failed
+          status_code: 7
+          status_string: "Could not connect to server"
+          log:
+          --- LOG BEGIN ---
+          Uses proxy env variable no_proxy == 'localhost,127.0.0.1,::1'
+
+  Uses proxy env variable https_proxy == 'http://proxy:8080'
+
+  timeout on name lookup is not supported
+
+  Host proxy:8080 was resolved.
+
+  IPv6: (none)
+
+  IPv4: 172.31.0.173
+
+  Failed to connect to proxy port 8080 after 0 ms: Could not connect to
+  server
+
+  closing connection #0
+
+
+
+          --- LOG END ---
+          error: downloading 'https://gitlab.com/libeigen/eigen/-/archive/5.0.1/eigen-5.0.1.tar.gz' failed
+          status_code: 7
+          status_string: "Could not connect to server"
+          log:
+          --- LOG BEGIN ---
+          Uses proxy env variable no_proxy == 'localhost,127.0.0.1,::1'
+
+  Uses proxy env variable https_proxy == 'http://proxy:8080'
+
+  timeout on name lookup is not supported
+
+  Host proxy:8080 was resolved.
+
+  IPv6: (none)
+
+  IPv4: 172.31.0.173
+
+  Failed to connect to proxy port 8080 after 0 ms: Could not connect to
+  server
+
+  closing connection #0
+
+
+
+          --- LOG END ---
+          error: downloading 'https://gitlab.com/libeigen/eigen/-/archive/5.0.1/eigen-5.0.1.tar.gz' failed
+          status_code: 7
+          status_string: "Could not connect to server"
+          log:
+          --- LOG BEGIN ---
+          Uses proxy env variable no_proxy == 'localhost,127.0.0.1,::1'
+
+  Uses proxy env variable https_proxy == 'http://proxy:8080'
+
+  timeout on name lookup is not supported
+
+  Host proxy:8080 was resolved.
+
+  IPv6: (none)
+
+  IPv4: 172.31.0.173
+
+  Failed to connect to proxy port 8080 after 0 ms: Could not connect to
+  server
+
+  closing connection #0
+
+
+
+          --- LOG END ---
+          
+    
+
+
+FAILED: eigen-populate-prefix/src/eigen-populate-stamp/eigen-populate-download /workspace/b1-runtime/rebuild44/_deps/eigen-subbuild/eigen-populate-prefix/src/eigen-populate-stamp/eigen-populate-download 
+cd /workspace/b1-runtime/rebuild44/_deps && /workspace/b1-runtime/python/lib/python3.12/site-packages/cmake/data/bin/cmake -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P /workspace/b1-runtime/rebuild44/_deps/eigen-subbuild/eigen-populate-prefix/src/eigen-populate-stamp/download-eigen-populate.cmake && /workspace/b1-runtime/python/lib/python3.12/site-packages/cmake/data/bin/cmake -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P /workspace/b1-runtime/rebuild44/_deps/eigen-subbuild/eigen-populate-prefix/src/eigen-populate-stamp/verify-eigen-populate.cmake && /workspace/b1-runtime/python/lib/python3.12/site-packages/cmake/data/bin/cmake -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P /workspace/b1-runtime/rebuild44/_deps/eigen-subbuild/eigen-populate-prefix/src/eigen-populate-stamp/extract-eigen-populate.cmake && /workspace/b1-runtime/python/lib/python3.12/site-packages/cmake/data/bin/cmake -E touch /workspace/b1-runtime/rebuild44/_deps/eigen-subbuild/eigen-populate-prefix/src/eigen-populate-stamp/eigen-populate-download
+ninja: build stopped: subcommand failed.
+CMake Error at /workspace/b1-runtime/python/lib/python3.12/site-packages/cmake/data/share/cmake-3.31/Modules/FetchContent.cmake:1918 (message):
+  Build step for eigen failed: 1
+Call Stack (most recent call first):
+  /workspace/b1-runtime/python/lib/python3.12/site-packages/cmake/data/share/cmake-3.31/Modules/FetchContent.cmake:1609 (__FetchContent_populateSubbuild)
+  /workspace/b1-runtime/python/lib/python3.12/site-packages/cmake/data/share/cmake-3.31/Modules/FetchContent.cmake:1997 (__FetchContent_doPopulation)
+  /workspace/b1-runtime/python/lib/python3.12/site-packages/cmake/data/share/cmake-3.31/Modules/FetchContent.cmake:1978:EVAL:1 (__FetchContent_Populate)
+  /workspace/b1-runtime/python/lib/python3.12/site-packages/cmake/data/share/cmake-3.31/Modules/FetchContent.cmake:1978 (cmake_language)
+  cmake/CPM.cmake:1126 (FetchContent_Populate)
+  cmake/CPM.cmake:915 (cpm_fetch_package)
+  cmake/dependencies.cmake:18 (CPMAddPackage)
+  CMakeLists.txt:12 (include)
+
+
+-- Configuring incomplete, errors occurred!

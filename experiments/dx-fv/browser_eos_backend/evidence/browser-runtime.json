@@ -1,0 +1,23 @@
+{
+  "platform": "Linux 6b1eb05752ba 6.18.44 #1 SMP Sat Sep 26 20:02:31 UTC 2026 x86_64 GNU/Linux",
+  "cpuModel": "AMD EPYC 9V74 80-Core Processor",
+  "logicalCPUs": "3",
+  "browserInstallCommand": "PLAYWRIGHT_BROWSERS_PATH=/workspace/b1-runtime/browsers python3 -m playwright install chromium webkit",
+  "playwright": "1.62.1",
+  "browserRevisions": {
+    "chromium": 1234,
+    "webkit": 2336
+  },
+  "webkitLauncher": "#!/bin/sh\nWK_BUNDLE=/workspace/b1-runtime/browsers/webkit-2336/minibrowser-wpe\nexport WEBKIT_EXEC_PATH=\"$WK_BUNDLE/bin\"\nexport WEBKIT_INJECTED_BUNDLE_PATH=\"$WK_BUNDLE/lib\"\nexport WEBKIT_INSPECTOR_RESOURCES_PATH=\"$WK_BUNDLE/share\"\nexport LD_LIBRARY_PATH=\"/workspace/b1-runtime/sysroot/usr/lib/x86_64-linux-gnu:$WK_BUNDLE/lib:$WK_BUNDLE/sys/lib\"\nexec \"$WK_BUNDLE/bin/MiniBrowser\" \"$@\"\n",
+  "extraLocalDebs": {
+    "libegl1_1.7.0-1+b2_amd64.deb": "62e7bc8ccd47a60e55aad17f83d8d474310d782eb8589bbce2ab714c31712406",
+    "libgles2_1.7.0-1+b2_amd64.deb": "e12c18aa77939d122ee1dea520ba0440b97dc19200b7396e03dff03a3ece74c1",
+    "libharfbuzz-icu0_10.2.0-1+deb13u1_amd64.deb": "0b45d951629e98673c0da73b2bcd0886a467d833bb3b7499892a168f247165d2",
+    "libhyphen0_2.8.8-7+b2_amd64.deb": "fa9dca7b8cf1381fd52800c44a385c5725a78a88bd705f7c39b1046a5293435e",
+    "libmanette-0.2-0_0.2.12-1_amd64.deb": "98841a467692c46fd1870275113235691ebbfe71a3524f6b2a0fa7e9c33c6e56",
+    "libopengl0_1.7.0-1+b2_amd64.deb": "50ea65a1141cbf6b02e41492963656ad0ba71d257cc4066ee9756bca7a6c1ac3"
+  },
+  "systemUnmodified": true,
+  "physicalIPad": false,
+  "measurementLimit": "Linux desktop WPE WebKit is not Safari on an iPad. Local sysroot supplies missing shared libraries."
+}

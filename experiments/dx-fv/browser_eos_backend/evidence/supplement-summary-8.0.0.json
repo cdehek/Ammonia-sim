@@ -1,0 +1,200 @@
+[
+  {
+    "file": "chromium-supplement-build30.json",
+    "version": "8.0.0",
+    "git": "ae81610e7d23efc57f9d051c8e70a4d66e87537f",
+    "sourceSHA256": "c6c4c33041d032097c12e329e04b94e06ef7725d868cc04dfed27290ed25160f",
+    "errors": [],
+    "domainExclusions": [],
+    "descriptiveRatiosAbove1Percent": 24,
+    "ratioMin": 0.4579706220565351,
+    "ratioMax": 20.22635576233721,
+    "maxIndependentPResidualPa": 1.2815035006497055e-06,
+    "maxIndependentHResidualJkg": 0.0014115656958892941,
+    "maxNativeMinusWASMPPa": 2.5098415790125728e-08,
+    "maxNativeMinusWASMHJkg": 2.9103830456733704e-11,
+    "largestHResidual": {
+      "id": "p16.0-liquid-z0.1-PH",
+      "region": "liquid",
+      "method": "fresh",
+      "axis": "P",
+      "which": "perturbed",
+      "args": [
+        1600000.1574239847,
+        540786.2955376881
+      ],
+      "rho": 578.0873937598451,
+      "T": 314.09303779141754,
+      "nativePResidual": 5.2386894822120667e-08,
+      "nativeHResidual": -0.0014115656958892941,
+      "nativeMinusWASMP": 0.0,
+      "nativeMinusWASMH": 0.0
+    },
+    "caution": "Derivative agreement and absolute PH residual are separate metrics. No 1% scientific acceptance threshold is introduced."
+  },
+  {
+    "file": "chromium-supplement-build44.json",
+    "version": "8.0.0",
+    "git": "ae81610e7d23efc57f9d051c8e70a4d66e87537f",
+    "sourceSHA256": "5f231897bfa128ac2b5dffdfb814badb65576e78b126af92089af79566b6e447",
+    "errors": [],
+    "domainExclusions": [],
+    "descriptiveRatiosAbove1Percent": 0,
+    "ratioMin": 0.9994705198487785,
+    "ratioMax": 1.0004201353050612,
+    "maxIndependentPResidualPa": 1.2815035006497055e-06,
+    "maxIndependentHResidualJkg": 0.00011919159442186356,
+    "maxNativeMinusWASMPPa": 2.5098415790125728e-08,
+    "maxNativeMinusWASMHJkg": 2.9103830456733704e-11,
+    "largestHResidual": {
+      "id": "p8.0-vapor-z0.001-PH",
+      "region": "vapor",
+      "method": "fresh",
+      "axis": "P",
+      "which": "perturbed",
+      "args": [
+        800000.0781754855,
+        1624022.744737779
+      ],
+      "rho": 6.26655153570966,
+      "T": 291.01436374422644,
+      "nativePResidual": -1.1641532182693481e-10,
+      "nativeHResidual": -0.00011919159442186356,
+      "nativeMinusWASMP": 0.0,
+      "nativeMinusWASMH": 0.0
+    },
+    "caution": "Derivative agreement and absolute PH residual are separate metrics. No 1% scientific acceptance threshold is introduced."
+  },
+  {
+    "file": "chromium-supplement-official8.json",
+    "version": "8.0.0",
+    "git": "ae81610e7d23efc57f9d051c8e70a4d66e87537f",
+    "sourceSHA256": "59d79ea45117621e40016a5210e7ae3bf600c64fe30efae27b112ba3696d72b5",
+    "errors": [],
+    "domainExclusions": [],
+    "descriptiveRatiosAbove1Percent": 24,
+    "ratioMin": 0.4579706220565351,
+    "ratioMax": 20.22635576233721,
+    "maxIndependentPResidualPa": 1.2815035006497055e-06,
+    "maxIndependentHResidualJkg": 0.0014115656958892941,
+    "maxNativeMinusWASMPPa": 2.5098415790125728e-08,
+    "maxNativeMinusWASMHJkg": 2.9103830456733704e-11,
+    "largestHResidual": {
+      "id": "p16.0-liquid-z0.1-PH",
+      "region": "liquid",
+      "method": "fresh",
+      "axis": "P",
+      "which": "perturbed",
+      "args": [
+        1600000.1574239847,
+        540786.2955376881
+      ],
+      "rho": 578.0873937598451,
+      "T": 314.09303779141754,
+      "nativePResidual": 5.2386894822120667e-08,
+      "nativeHResidual": -0.0014115656958892941,
+      "nativeMinusWASMP": 0.0,
+      "nativeMinusWASMH": 0.0
+    },
+    "caution": "Derivative agreement and absolute PH residual are separate metrics. No 1% scientific acceptance threshold is introduced."
+  },
+  {
+    "file": "webkit-supplement-build30.json",
+    "version": "8.0.0",
+    "git": "ae81610e7d23efc57f9d051c8e70a4d66e87537f",
+    "sourceSHA256": "835ce4bad56d0f85e5c79f600c6ede70f954fd70d7fb996c3a3f274ade00dff2",
+    "errors": [],
+    "domainExclusions": [],
+    "descriptiveRatiosAbove1Percent": 24,
+    "ratioMin": 0.4579706220565351,
+    "ratioMax": 20.22635576233721,
+    "maxIndependentPResidualPa": 1.2815035006497055e-06,
+    "maxIndependentHResidualJkg": 0.0014115656958892941,
+    "maxNativeMinusWASMPPa": 2.5098415790125728e-08,
+    "maxNativeMinusWASMHJkg": 2.9103830456733704e-11,
+    "largestHResidual": {
+      "id": "p16.0-liquid-z0.1-PH",
+      "region": "liquid",
+      "method": "fresh",
+      "axis": "P",
+      "which": "perturbed",
+      "args": [
+        1600000.1574239847,
+        540786.2955376881
+      ],
+      "rho": 578.0873937598451,
+      "T": 314.09303779141754,
+      "nativePResidual": 5.2386894822120667e-08,
+      "nativeHResidual": -0.0014115656958892941,
+      "nativeMinusWASMP": 0.0,
+      "nativeMinusWASMH": 0.0
+    },
+    "caution": "Derivative agreement and absolute PH residual are separate metrics. No 1% scientific acceptance threshold is introduced."
+  },
+  {
+    "file": "webkit-supplement-build44.json",
+    "version": "8.0.0",
+    "git": "ae81610e7d23efc57f9d051c8e70a4d66e87537f",
+    "sourceSHA256": "888abb1235c950ba7fe1926a9b5bafe3c3905678ccc706253fd4f42876e5785c",
+    "errors": [],
+    "domainExclusions": [],
+    "descriptiveRatiosAbove1Percent": 0,
+    "ratioMin": 0.9994705198487785,
+    "ratioMax": 1.0004201353050612,
+    "maxIndependentPResidualPa": 1.2815035006497055e-06,
+    "maxIndependentHResidualJkg": 0.00011919159442186356,
+    "maxNativeMinusWASMPPa": 2.5098415790125728e-08,
+    "maxNativeMinusWASMHJkg": 2.9103830456733704e-11,
+    "largestHResidual": {
+      "id": "p8.0-vapor-z0.001-PH",
+      "region": "vapor",
+      "method": "fresh",
+      "axis": "P",
+      "which": "perturbed",
+      "args": [
+        800000.0781754855,
+        1624022.744737779
+      ],
+      "rho": 6.26655153570966,
+      "T": 291.01436374422644,
+      "nativePResidual": -1.1641532182693481e-10,
+      "nativeHResidual": -0.00011919159442186356,
+      "nativeMinusWASMP": 0.0,
+      "nativeMinusWASMH": 0.0
+    },
+    "caution": "Derivative agreement and absolute PH residual are separate metrics. No 1% scientific acceptance threshold is introduced."
+  },
+  {
+    "file": "webkit-supplement-official8.json",
+    "version": "8.0.0",
+    "git": "ae81610e7d23efc57f9d051c8e70a4d66e87537f",
+    "sourceSHA256": "127cea29a049851a7c69597fdc490307c91be1fdbe594783a930ce13e45bf01a",
+    "errors": [],
+    "domainExclusions": [],
+    "descriptiveRatiosAbove1Percent": 24,
+    "ratioMin": 0.4579706220565351,
+    "ratioMax": 20.22635576233721,
+    "maxIndependentPResidualPa": 1.2815035006497055e-06,
+    "maxIndependentHResidualJkg": 0.0014115656958892941,
+    "maxNativeMinusWASMPPa": 2.5098415790125728e-08,
+    "maxNativeMinusWASMHJkg": 2.9103830456733704e-11,
+    "largestHResidual": {
+      "id": "p16.0-liquid-z0.1-PH",
+      "region": "liquid",
+      "method": "fresh",
+      "axis": "P",
+      "which": "perturbed",
+      "args": [
+        1600000.1574239847,
+        540786.2955376881
+      ],
+      "rho": 578.0873937598451,
+      "T": 314.09303779141754,
+      "nativePResidual": 5.2386894822120667e-08,
+      "nativeHResidual": -0.0014115656958892941,
+      "nativeMinusWASMP": 0.0,
+      "nativeMinusWASMH": 0.0
+    },
+    "caution": "Derivative agreement and absolute PH residual are separate metrics. No 1% scientific acceptance threshold is introduced."
+  }
+]

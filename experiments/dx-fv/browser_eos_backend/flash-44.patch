@@ -1,0 +1,11 @@
+--- a/src/Backends/Helmholtz/FlashRoutines.cpp
++++ b/src/Backends/Helmholtz/FlashRoutines.cpp
+@@ -3168,7 +3168,7 @@
+             // (~9.3e-10 on T) keeps the worst P+X round-trip well under the 1e-6
+             // hard limit while cutting ~7% of the outer iterations.
+             // >>> 2**(1-30) == 9.31e-10
+-            auto [l, r] = toms748_solve(f, Tmin, Tmax, resid_Tmin, resid_Tmax, boost::math::tools::eps_tolerance<double>(30), max_iter);
++            auto [l, r] = toms748_solve(f, Tmin, Tmax, resid_Tmin, resid_Tmax, boost::math::tools::eps_tolerance<double>(44), max_iter);
+             // Re-evaluate at the midpoint of the final bracket so HEOS is left at
+             // the converged state (TOMS748's last probe may be at a slightly
+             // different point within the bracket).  Same discipline as the

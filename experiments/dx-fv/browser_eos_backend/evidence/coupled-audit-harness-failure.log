@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/workspace/Ammonia-sim/experiments/dx-fv/browser_eos_backend/analyze_coupled.py", line 23, in <module>
+    d=json.loads(f.read_text());groups.setdefault((d['browser'],d['case']),{})[d['relativeTolerance']]=d
+                                                   ~^^^^^^^^^^^
+KeyError: 'browser'

@@ -1,0 +1,111 @@
+{
+  "passed": true,
+  "protectedStartingFiles": 391,
+  "onlyNewResearchDirectoryChanged": true,
+  "verbatimAcceptedSources": 12,
+  "repeatCompiledArtifactHashesMatch": true,
+  "officialAndSource30MeasurementsEqual": true,
+  "enginePropertyMatricesExactlyEqual": [
+    "official8",
+    "build30",
+    "build44",
+    "official72"
+  ],
+  "matrices": [
+    {
+      "browser": "chromium",
+      "build": "official8",
+      "precisionRows": 365,
+      "syntheticConverged": 14
+    },
+    {
+      "browser": "chromium",
+      "build": "build30",
+      "precisionRows": 365,
+      "syntheticConverged": 14
+    },
+    {
+      "browser": "chromium",
+      "build": "build44",
+      "precisionRows": 365,
+      "syntheticConverged": 16
+    },
+    {
+      "browser": "chromium",
+      "build": "official72",
+      "precisionRows": 274,
+      "syntheticConverged": 16
+    },
+    {
+      "browser": "webkit",
+      "build": "official8",
+      "precisionRows": 365,
+      "syntheticConverged": 14
+    },
+    {
+      "browser": "webkit",
+      "build": "build30",
+      "precisionRows": 365,
+      "syntheticConverged": 14
+    },
+    {
+      "browser": "webkit",
+      "build": "build44",
+      "precisionRows": 365,
+      "syntheticConverged": 16
+    },
+    {
+      "browser": "webkit",
+      "build": "official72",
+      "precisionRows": 274,
+      "syntheticConverged": 16
+    }
+  ],
+  "coupledRuns": 30,
+  "temporalComparisons": 20,
+  "allConservationAndFrozenEOSChecksPass": true,
+  "performance": [
+    {
+      "browser": "chromium",
+      "build": "official8",
+      "workloadFailures": 0
+    },
+    {
+      "browser": "chromium",
+      "build": "build30",
+      "workloadFailures": 0
+    },
+    {
+      "browser": "chromium",
+      "build": "build44",
+      "workloadFailures": 0
+    },
+    {
+      "browser": "chromium",
+      "build": "official72",
+      "workloadFailures": 0
+    },
+    {
+      "browser": "webkit",
+      "build": "official8",
+      "workloadFailures": 0
+    },
+    {
+      "browser": "webkit",
+      "build": "build30",
+      "workloadFailures": 0
+    },
+    {
+      "browser": "webkit",
+      "build": "build44",
+      "workloadFailures": 0
+    },
+    {
+      "browser": "webkit",
+      "build": "official72",
+      "workloadFailures": 0
+    }
+  ],
+  "physicalIPadTested": false,
+  "qualification": "PROMISING; limited research evidence, not full A2 or device qualification."
+}

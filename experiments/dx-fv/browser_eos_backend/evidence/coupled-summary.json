@@ -1,0 +1,3332 @@
+{
+  "sourceCommit": "be9eb35a4ddf5098e685182f8104685127c6a6ee",
+  "frozenReferenceSHA256": "f455a712e7fbedbb17b4cc65a792f7898d793bd18132fabc471871fc6000ce3b",
+  "configuration": "original finite-difference thermal Jacobian and accepted opt-in failure-aware growth",
+  "runs": [
+    {
+      "file": "chromium-coupled-cold-1e-06.json",
+      "browser": "chromium",
+      "case": "cold",
+      "relativeTolerance": 1e-06,
+      "completedAllSamples": true,
+      "stop": null,
+      "harnessError": null,
+      "independentConservation": {
+        "sectionMassKg": 4.459987934524179e-12,
+        "sectionEnergyKJ": 2.3510651203650923e-09,
+        "nodeEnergyKJ": 9.947598300641403e-14,
+        "globalMassKg": 2.176696323186178e-12,
+        "globalEnergyKJ": 6.934843810313396e-10
+      },
+      "conservationPass": true,
+      "frozenDirectEOSComparison": {
+        "pressureBar": 2.629151380606487e-06,
+        "enthalpyKJkg": 0.002404070628244881,
+        "fluidTemperatureK": 1.914039256689648e-05,
+        "thermalTemperatureK": 1.1239752097935707e-05
+      },
+      "terminalEventCount": 0,
+      "referenceTerminalEventCount": 0,
+      "terminalEventErrorSeconds": 0,
+      "maxAcceptedTemporalError": 0.9131284443879037,
+      "acceptedHalfSteps": 642,
+      "rejections": 5,
+      "rejectionKinds": {
+        "accuracy": 5
+      },
+      "maxCanonicalDensityResidual": 3.5819989561770787e-16,
+      "maxCanonicalEnergyResidualKJkg": 1.0800249583553523e-12,
+      "independentNativeStateMax": {
+        "nativePMinusReportedPa": 0,
+        "nativeHMinusReportedJkg": 1.1641532182693481e-10,
+        "nativeUMinusStoredJkg": 1.0477378964424133e-09
+      },
+      "directStateExceptions": [],
+      "elapsedSeconds": 44.05961205899996,
+      "settings": {
+        "method": "tr-bdf2",
+        "adaptive": true,
+        "maxStep": 0.5,
+        "minStep": 1e-09,
+        "relativeTolerance": 1e-06,
+        "massAbsoluteKg": 1.0000000000000001e-11,
+        "energyAbsoluteKJ": 1e-08,
+        "pressureAbsoluteBar": 1e-06,
+        "enthalpyAbsoluteKJkg": 9.999999999999999e-05,
+        "eventStepSeconds": 0.002,
+        "temperatureAbsoluteK": 9.999999999999999e-05,
+        "temperatureScaleK": 50,
+        "nonlinearTolerance": 1e-11,
+        "thermalResidualK": 1e-12,
+        "maxIterations": 30,
+        "maxAttempts": 100000,
+        "trace": true,
+        "thermalJacobian": "finite-difference",
+        "timestepGrowth": "failure-aware"
+      },
+      "counts": {
+        "ph": 302321,
+        "sat": 661772,
+        "stateMVU": 14730,
+        "domainGuards": 619372
+      },
+      "initialEOSMinusTable": [
+        {
+          "p": -1.2878587085651816e-14,
+          "h": -9.094947017729282e-13,
+          "T": -0.00010846061961533593,
+          "rho": -5.708809190707598e-05
+        },
+        {
+          "p": -1.2878587085651816e-14,
+          "h": -9.094947017729282e-13,
+          "T": -0.00010846061961533593,
+          "rho": -5.708809190707598e-05
+        },
+        {
+          "p": -1.2878587085651816e-14,
+          "h": -9.094947017729282e-13,
+          "T": -0.00010846061961533593,
+          "rho": -5.708809190707598e-05
+        },
+        {
+          "p": -1.2878587085651816e-14,
+          "h": -9.094947017729282e-13,
+          "T": -0.00010846061961533593,
+          "rho": -5.708809190707598e-05
+        },
+        {
+          "p": -1.2878587085651816e-14,
+          "h": -9.094947017729282e-13,
+          "T": -0.00010846061961533593,
+          "rho": -5.708809190707598e-05
+        }
+      ],
+      "frozenDirectEOSPass": true
+    },
+    {
+      "file": "chromium-coupled-cold-1e-07.json",
+      "browser": "chromium",
+      "case": "cold",
+      "relativeTolerance": 1e-07,
+      "completedAllSamples": true,
+      "stop": null,
+      "harnessError": null,
+      "independentConservation": {
+        "sectionMassKg": 9.109157872444484e-12,
+        "sectionEnergyKJ": 3.3423148693145777e-09,
+        "nodeEnergyKJ": 7.37188088351104e-14,
+        "globalMassKg": 1.7267756668992718e-11,
+        "globalEnergyKJ": 5.433740568605572e-09
+      },
+      "conservationPass": true,
+      "frozenDirectEOSComparison": {
+        "pressureBar": 6.759701514091887e-07,
+        "enthalpyKJkg": 0.0005426322375114978,
+        "fluidTemperatureK": 4.9298698741040425e-06,
+        "thermalTemperatureK": 2.5893069164339977e-06
+      },
+      "terminalEventCount": 0,
+      "referenceTerminalEventCount": 0,
+      "terminalEventErrorSeconds": 0,
+      "maxAcceptedTemporalError": 0.948251652980614,
+      "acceptedHalfSteps": 1294,
+      "rejections": 5,
+      "rejectionKinds": {
+        "accuracy": 5
+      },
+      "maxCanonicalDensityResidual": 3.610954935099237e-16,
+      "maxCanonicalEnergyResidualKJkg": 9.094947017729282e-13,
+      "independentNativeStateMax": {
+        "nativePMinusReportedPa": 0,
+        "nativeHMinusReportedJkg": 1.1641532182693481e-10,
+        "nativeUMinusStoredJkg": 9.313225746154785e-10
+      },
+      "directStateExceptions": [],
+      "elapsedSeconds": 50.42055823599992,
+      "settings": {
+        "method": "tr-bdf2",
+        "adaptive": true,
+        "maxStep": 0.25,
+        "minStep": 1e-09,
+        "relativeTolerance": 1e-07,
+        "massAbsoluteKg": 1e-12,
+        "energyAbsoluteKJ": 1e-09,
+        "pressureAbsoluteBar": 1e-06,
+        "enthalpyAbsoluteKJkg": 9.999999999999999e-06,
+        "eventStepSeconds": 0.0005,
+        "temperatureAbsoluteK": 9.999999999999999e-06,
+        "temperatureScaleK": 50,
+        "nonlinearTolerance": 1e-11,
+        "thermalResidualK": 1e-12,
+        "maxIterations": 30,
+        "maxAttempts": 100000,
+        "trace": true,
+        "thermalJacobian": "finite-difference",
+        "timestepGrowth": "failure-aware"
+      },
+      "counts": {
+        "ph": 549812,
+        "sat": 1213804,
+        "stateMVU": 29400,
+        "domainGuards": 1129024
+      },
+      "initialEOSMinusTable": [
+        {
+          "p": -1.2878587085651816e-14,
+          "h": -9.094947017729282e-13,
+          "T": -0.00010846061961533593,
+          "rho": -5.708809190707598e-05
+        },
+        {
+          "p": -1.2878587085651816e-14,
+          "h": -9.094947017729282e-13,
+          "T": -0.00010846061961533593,
+          "rho": -5.708809190707598e-05
+        },
+        {
+          "p": -1.2878587085651816e-14,
+          "h": -9.094947017729282e-13,
+          "T": -0.00010846061961533593,
+          "rho": -5.708809190707598e-05
+        },
+        {
+          "p": -1.2878587085651816e-14,
+          "h": -9.094947017729282e-13,
+          "T": -0.00010846061961533593,
+          "rho": -5.708809190707598e-05
+        },
+        {
+          "p": -1.2878587085651816e-14,
+          "h": -9.094947017729282e-13,
+          "T": -0.00010846061961533593,
+          "rho": -5.708809190707598e-05
+        }
+      ],
+      "frozenDirectEOSPass": true
+    },
+    {
+      "file": "chromium-coupled-cold-1e-08.json",
+      "browser": "chromium",
+      "case": "cold",
+      "relativeTolerance": 1e-08,
+      "completedAllSamples": true,
+      "stop": null,
+      "harnessError": null,
+      "independentConservation": {
+        "sectionMassKg": 2.000177801164682e-12,
+        "sectionEnergyKJ": 1.0407390504951763e-09,
+        "nodeEnergyKJ": 1.3455903058456897e-13,
+        "globalMassKg": 1.6810511316300847e-12,
+        "globalEnergyKJ": 5.260485380631508e-10
+      },
+      "conservationPass": true,
+      "frozenDirectEOSComparison": {
+        "pressureBar": 1.5781753370802676e-07,
+        "enthalpyKJkg": 0.00011698697767315025,
+        "fluidTemperatureK": 1.1489221947158512e-06,
+        "thermalTemperatureK": 6.321973842204898e-07
+      },
+      "terminalEventCount": 0,
+      "referenceTerminalEventCount": 0,
+      "terminalEventErrorSeconds": 0,
+      "maxAcceptedTemporalError": 0.7354626306058244,
+      "acceptedHalfSteps": 2616,
+      "rejections": 6,
+      "rejectionKinds": {
+        "accuracy": 6
+      },
+      "maxCanonicalDensityResidual": 3.458165942666079e-16,
+      "maxCanonicalEnergyResidualKJkg": 1.1368683772161603e-12,
+      "independentNativeStateMax": {
+        "nativePMinusReportedPa": 0,
+        "nativeHMinusReportedJkg": 1.1641532182693481e-10,
+        "nativeUMinusStoredJkg": 1.1059455573558807e-09
+      },
+      "directStateExceptions": [],
+      "elapsedSeconds": 71.02751817000001,
+      "settings": {
+        "method": "tr-bdf2",
+        "adaptive": true,
+        "maxStep": 0.125,
+        "minStep": 1e-09,
+        "relativeTolerance": 1e-08,
+        "massAbsoluteKg": 1.0000000000000002e-13,
+        "energyAbsoluteKJ": 1e-10,
+        "pressureAbsoluteBar": 1e-06,
+        "enthalpyAbsoluteKJkg": 1e-06,
+        "eventStepSeconds": 0.0001,
+        "temperatureAbsoluteK": 1e-06,
+        "temperatureScaleK": 50,
+        "nonlinearTolerance": 1e-11,
+        "thermalResidualK": 1e-12,
+        "maxIterations": 30,
+        "maxAttempts": 100000,
+        "trace": true,
+        "thermalJacobian": "finite-difference",
+        "timestepGrowth": "failure-aware"
+      },
+      "counts": {
+        "ph": 1058807,
+        "sat": 2347624,
+        "stateMVU": 59190,
+        "domainGuards": 2176804
+      },
+      "initialEOSMinusTable": [
+        {
+          "p": -1.2878587085651816e-14,
+          "h": -9.094947017729282e-13,
+          "T": -0.00010846061961533593,
+          "rho": -5.708809190707598e-05
+        },
+        {
+          "p": -1.2878587085651816e-14,
+          "h": -9.094947017729282e-13,
+          "T": -0.00010846061961533593,
+          "rho": -5.708809190707598e-05
+        },
+        {
+          "p": -1.2878587085651816e-14,
+          "h": -9.094947017729282e-13,
+          "T": -0.00010846061961533593,
+          "rho": -5.708809190707598e-05
+        },
+        {
+          "p": -1.2878587085651816e-14,
+          "h": -9.094947017729282e-13,
+          "T": -0.00010846061961533593,
+          "rho": -5.708809190707598e-05
+        },
+        {
+          "p": -1.2878587085651816e-14,
+          "h": -9.094947017729282e-13,
+          "T": -0.00010846061961533593,
+          "rho": -5.708809190707598e-05
+        }
+      ],
+      "frozenDirectEOSPass": true
+    },
+    {
+      "file": "chromium-coupled-feed-step-1e-06.json",
+      "browser": "chromium",
+      "case": "feed-step",
+      "relativeTolerance": 1e-06,
+      "completedAllSamples": true,
+      "stop": null,
+      "harnessError": null,
+      "independentConservation": {
+        "sectionMassKg": 3.630651335129187e-12,
+        "sectionEnergyKJ": 1.6795098645161488e-09,
+        "nodeEnergyKJ": 8.171241461241152e-14,
+        "globalMassKg": 3.1155026475326864e-12,
+        "globalEnergyKJ": 9.012879331748991e-10
+      },
+      "conservationPass": true,
+      "frozenDirectEOSComparison": {
+        "pressureBar": 2.48699473859304e-06,
+        "enthalpyKJkg": 0.002426198057150941,
+        "fluidTemperatureK": 1.813772092873478e-05,
+        "thermalTemperatureK": 1.1469331582247833e-05
+      },
+      "terminalEventCount": 0,
+      "referenceTerminalEventCount": 0,
+      "terminalEventErrorSeconds": 0,
+      "maxAcceptedTemporalError": 0.9131284443879037,
+      "acceptedHalfSteps": 572,
+      "rejections": 13,
+      "rejectionKinds": {
+        "accuracy": 13
+      },
+      "maxCanonicalDensityResidual": 3.5819989561770787e-16,
+      "maxCanonicalEnergyResidualKJkg": 1.3073986337985843e-12,
+      "independentNativeStateMax": {
+        "nativePMinusReportedPa": 0,
+        "nativeHMinusReportedJkg": 1.1641532182693481e-10,
+        "nativeUMinusStoredJkg": 1.3387762010097504e-09
+      },
+      "directStateExceptions": [],
+      "elapsedSeconds": 18.75484964700013,
+      "settings": {
+        "method": "tr-bdf2",
+        "adaptive": true,
+        "maxStep": 0.5,
+        "minStep": 1e-09,
+        "relativeTolerance": 1e-06,
+        "massAbsoluteKg": 1.0000000000000001e-11,
+        "energyAbsoluteKJ": 1e-08,
+        "pressureAbsoluteBar": 1e-06,
+        "enthalpyAbsoluteKJkg": 9.999999999999999e-05,
+        "eventStepSeconds": 0.002,
+        "temperatureAbsoluteK": 9.999999999999999e-05,
+        "temperatureScaleK": 50,
+        "nonlinearTolerance": 1e-11,
+        "thermalResidualK": 1e-12,
+        "maxIterations": 30,
+        "maxAttempts": 100000,
+        "trace": true,
+        "thermalJacobian": "finite-difference",
+        "timestepGrowth": "failure-aware"
+      },
+      "counts": {
+        "ph": 283826,
+        "sat": 619957,
+        "stateMVU": 13535,
+        "domainGuards": 581187
+      },
+      "initialEOSMinusTable": [
+        {
+          "p": -1.2878587085651816e-14,
+          "h": -9.094947017729282e-13,
+          "T": -0.00010846061961533593,
+          "rho": -5.708809190707598e-05
+        },
+        {
+          "p": -1.2878587085651816e-14,
+          "h": -9.094947017729282e-13,
+          "T": -0.00010846061961533593,
+          "rho": -5.708809190707598e-05
+        },
+        {
+          "p": -1.2878587085651816e-14,
+          "h": -9.094947017729282e-13,
+          "T": -0.00010846061961533593,
+          "rho": -5.708809190707598e-05
+        },
+        {
+          "p": -1.2878587085651816e-14,
+          "h": -9.094947017729282e-13,
+          "T": -0.00010846061961533593,
+          "rho": -5.708809190707598e-05
+        },
+        {
+          "p": -1.2878587085651816e-14,
+          "h": -9.094947017729282e-13,
+          "T": -0.00010846061961533593,
+          "rho": -5.708809190707598e-05
+        }
+      ],
+      "frozenDirectEOSPass": true
+    },
+    {
+      "file": "chromium-coupled-feed-step-1e-07.json",
+      "browser": "chromium",
+      "case": "feed-step",
+      "relativeTolerance": 1e-07,
+      "completedAllSamples": true,
+      "stop": null,
+      "harnessError": null,
+      "independentConservation": {
+        "sectionMassKg": 8.572254017735759e-12,
+        "sectionEnergyKJ": 3.0023592501038365e-09,
+        "nodeEnergyKJ": 6.705747068735946e-14,
+        "globalMassKg": 1.7355304693378315e-11,
+        "globalEnergyKJ": 5.435410344034608e-09
+      },
+      "conservationPass": true,
+      "frozenDirectEOSComparison": {
+        "pressureBar": 6.759701514091887e-07,
+        "enthalpyKJkg": 0.0005425034028121445,
+        "fluidTemperatureK": 4.9298698741040425e-06,
+        "thermalTemperatureK": 2.5892930466397956e-06
+      },
+      "terminalEventCount": 0,
+      "referenceTerminalEventCount": 0,
+      "terminalEventErrorSeconds": 0,
+      "maxAcceptedTemporalError": 0.948251652980614,
+      "acceptedHalfSteps": 1142,
+      "rejections": 12,
+      "rejectionKinds": {
+        "accuracy": 12
+      },
+      "maxCanonicalDensityResidual": 4.1272665220395965e-16,
+      "maxCanonicalEnergyResidualKJkg": 9.094947017729282e-13,
+      "independentNativeStateMax": {
+        "nativePMinusReportedPa": 0,
+        "nativeHMinusReportedJkg": 1.1641532182693481e-10,
+        "nativeUMinusStoredJkg": 9.313225746154785e-10
+      },
+      "directStateExceptions": [],
+      "elapsedSeconds": 30.17443335600001,
+      "settings": {
+        "method": "tr-bdf2",
+        "adaptive": true,
+        "maxStep": 0.25,
+        "minStep": 1e-09,
+        "relativeTolerance": 1e-07,
+        "massAbsoluteKg": 1e-12,
+        "energyAbsoluteKJ": 1e-09,
+        "pressureAbsoluteBar": 1e-06,
+        "enthalpyAbsoluteKJkg": 9.999999999999999e-06,
+        "eventStepSeconds": 0.0005,
+        "temperatureAbsoluteK": 9.999999999999999e-06,
+        "temperatureScaleK": 50,
+        "nonlinearTolerance": 1e-11,
+        "thermalResidualK": 1e-12,
+        "maxIterations": 30,
+        "maxAttempts": 100000,
+        "trace": true,
+        "thermalJacobian": "finite-difference",
+        "timestepGrowth": "failure-aware"
+      },
+      "counts": {
+        "ph": 491894,
+        "sat": 1085813,
+        "stateMVU": 26315,
+        "domainGuards": 1010103
+      },
+      "initialEOSMinusTable": [
+        {
+          "p": -1.2878587085651816e-14,
+          "h": -9.094947017729282e-13,
+          "T": -0.00010846061961533593,
+          "rho": -5.708809190707598e-05
+        },
+        {
+          "p": -1.2878587085651816e-14,
+          "h": -9.094947017729282e-13,
+          "T": -0.00010846061961533593,
+          "rho": -5.708809190707598e-05
+        },
+        {
+          "p": -1.2878587085651816e-14,
+          "h": -9.094947017729282e-13,
+          "T": -0.00010846061961533593,
+          "rho": -5.708809190707598e-05
+        },
+        {
+          "p": -1.2878587085651816e-14,
+          "h": -9.094947017729282e-13,
+          "T": -0.00010846061961533593,
+          "rho": -5.708809190707598e-05
+        },
+        {
+          "p": -1.2878587085651816e-14,
+          "h": -9.094947017729282e-13,
+          "T": -0.00010846061961533593,
+          "rho": -5.708809190707598e-05
+        }
+      ],
+      "frozenDirectEOSPass": true
+    },
+    {
+      "file": "chromium-coupled-feed-step-1e-08.json",
+      "browser": "chromium",
+      "case": "feed-step",
+      "relativeTolerance": 1e-08,
+      "completedAllSamples": true,
+      "stop": null,
+      "harnessError": null,
+      "independentConservation": {
+        "sectionMassKg": 1.1356471318890726e-12,
+        "sectionEnergyKJ": 5.932641045092168e-10,
+        "nodeEnergyKJ": 3.375077994860476e-14,
+        "globalMassKg": 1.679007627375384e-12,
+        "globalEnergyKJ": 5.249507495364014e-10
+      },
+      "conservationPass": true,
+      "frozenDirectEOSComparison": {
+        "pressureBar": 1.5547533704918237e-07,
+        "enthalpyKJkg": 0.00011757538754864072,
+        "fluidTemperatureK": 1.1338862009324657e-06,
+        "thermalTemperatureK": 6.321847649815027e-07
+      },
+      "terminalEventCount": 0,
+      "referenceTerminalEventCount": 0,
+      "terminalEventErrorSeconds": 0,
+      "maxAcceptedTemporalError": 0.8029846891347011,
+      "acceptedHalfSteps": 2338,
+      "rejections": 12,
+      "rejectionKinds": {
+        "accuracy": 12
+      },
+      "maxCanonicalDensityResidual": 4.159897790363464e-16,
+      "maxCanonicalEnergyResidualKJkg": 1.1368683772161603e-12,
+      "independentNativeStateMax": {
+        "nativePMinusReportedPa": 0,
+        "nativeHMinusReportedJkg": 1.1641532182693481e-10,
+        "nativeUMinusStoredJkg": 1.1641532182693481e-09
+      },
+      "directStateExceptions": [],
+      "elapsedSeconds": 56.07532108400005,
+      "settings": {
+        "method": "tr-bdf2",
+        "adaptive": true,
+        "maxStep": 0.125,
+        "minStep": 1e-09,
+        "relativeTolerance": 1e-08,
+        "massAbsoluteKg": 1.0000000000000002e-13,
+        "energyAbsoluteKJ": 1e-10,
+        "pressureAbsoluteBar": 1e-06,
+        "enthalpyAbsoluteKJkg": 1e-06,
+        "eventStepSeconds": 0.0001,
+        "temperatureAbsoluteK": 1e-06,
+        "temperatureScaleK": 50,
+        "nonlinearTolerance": 1e-11,
+        "thermalResidualK": 1e-12,
+        "maxIterations": 30,
+        "maxAttempts": 100000,
+        "trace": true,
+        "thermalJacobian": "finite-difference",
+        "timestepGrowth": "failure-aware"
+      },
+      "counts": {
+        "ph": 954021,
+        "sat": 2114717,
+        "stateMVU": 53225,
+        "domainGuards": 1961267
+      },
+      "initialEOSMinusTable": [
+        {
+          "p": -1.2878587085651816e-14,
+          "h": -9.094947017729282e-13,
+          "T": -0.00010846061961533593,
+          "rho": -5.708809190707598e-05
+        },
+        {
+          "p": -1.2878587085651816e-14,
+          "h": -9.094947017729282e-13,
+          "T": -0.00010846061961533593,
+          "rho": -5.708809190707598e-05
+        },
+        {
+          "p": -1.2878587085651816e-14,
+          "h": -9.094947017729282e-13,
+          "T": -0.00010846061961533593,
+          "rho": -5.708809190707598e-05
+        },
+        {
+          "p": -1.2878587085651816e-14,
+          "h": -9.094947017729282e-13,
+          "T": -0.00010846061961533593,
+          "rho": -5.708809190707598e-05
+        },
+        {
+          "p": -1.2878587085651816e-14,
+          "h": -9.094947017729282e-13,
+          "T": -0.00010846061961533593,
+          "rho": -5.708809190707598e-05
+        }
+      ],
+      "frozenDirectEOSPass": true
+    },
+    {
+      "file": "chromium-coupled-heat-reversal-1e-06.json",
+      "browser": "chromium",
+      "case": "heat-reversal",
+      "relativeTolerance": 1e-06,
+      "completedAllSamples": true,
+      "stop": null,
+      "harnessError": null,
+      "independentConservation": {
+        "sectionMassKg": 3.891852118353967e-15,
+        "sectionEnergyKJ": 3.1903438224567537e-12,
+        "nodeEnergyKJ": 3.042899265892629e-12,
+        "globalMassKg": 1.8093382694872595e-14,
+        "globalEnergyKJ": 2.830802259268239e-11
+      },
+      "conservationPass": true,
+      "frozenDirectEOSComparison": {
+        "pressureBar": 1.2581830079572143e-05,
+        "enthalpyKJkg": 0.0020132378422204056,
+        "fluidTemperatureK": 0.0008429067434576609,
+        "thermalTemperatureK": 0.00012429929171275944
+      },
+      "terminalEventCount": 0,
+      "referenceTerminalEventCount": 0,
+      "terminalEventErrorSeconds": 0,
+      "maxAcceptedTemporalError": 0.7860449165160777,
+      "acceptedHalfSteps": 332,
+      "rejections": 1,
+      "rejectionKinds": {
+        "accuracy": 1
+      },
+      "maxCanonicalDensityResidual": 0,
+      "maxCanonicalEnergyResidualKJkg": 6.821210263296962e-13,
+      "independentNativeStateMax": {
+        "nativePMinusReportedPa": 0,
+        "nativeHMinusReportedJkg": 0,
+        "nativeUMinusStoredJkg": 6.984919309616089e-10
+      },
+      "directStateExceptions": [],
+      "elapsedSeconds": 12.616222052000012,
+      "settings": {
+        "method": "tr-bdf2",
+        "adaptive": true,
+        "maxStep": 0.5,
+        "minStep": 1e-09,
+        "relativeTolerance": 1e-06,
+        "massAbsoluteKg": 1.0000000000000001e-11,
+        "energyAbsoluteKJ": 1e-08,
+        "pressureAbsoluteBar": 1e-06,
+        "enthalpyAbsoluteKJkg": 9.999999999999999e-05,
+        "eventStepSeconds": 0.002,
+        "temperatureAbsoluteK": 9.999999999999999e-05,
+        "temperatureScaleK": 50,
+        "nonlinearTolerance": 1e-11,
+        "thermalResidualK": 1e-12,
+        "maxIterations": 30,
+        "maxAttempts": 100000,
+        "trace": true,
+        "thermalJacobian": "finite-difference",
+        "timestepGrowth": "failure-aware"
+      },
+      "counts": {
+        "ph": 116861,
+        "sat": 263092,
+        "stateMVU": 7570,
+        "domainGuards": 241292
+      },
+      "initialEOSMinusTable": [
+        {
+          "p": 1.7763568394002505e-15,
+          "h": 4.547473508864641e-13,
+          "T": -0.0012813308981201033,
+          "rho": -2.061243671080959e-05
+        },
+        {
+          "p": 1.7763568394002505e-15,
+          "h": 4.547473508864641e-13,
+          "T": -0.0012813308981201033,
+          "rho": -2.061243671080959e-05
+        },
+        {
+          "p": 1.7763568394002505e-15,
+          "h": 4.547473508864641e-13,
+          "T": -0.0012813308981201033,
+          "rho": -2.061243671080959e-05
+        },
+        {
+          "p": 1.7763568394002505e-15,
+          "h": 4.547473508864641e-13,
+          "T": -0.0012813308981201033,
+          "rho": -2.061243671080959e-05
+        },
+        {
+          "p": 1.7763568394002505e-15,
+          "h": 4.547473508864641e-13,
+          "T": -0.0012813308981201033,
+          "rho": -2.061243671080959e-05
+        }
+      ],
+      "frozenDirectEOSPass": true
+    },
+    {
+      "file": "chromium-coupled-heat-reversal-1e-07.json",
+      "browser": "chromium",
+      "case": "heat-reversal",
+      "relativeTolerance": 1e-07,
+      "completedAllSamples": true,
+      "stop": null,
+      "harnessError": null,
+      "independentConservation": {
+        "sectionMassKg": 5.5656434322370885e-15,
+        "sectionEnergyKJ": 6.396452811863185e-12,
+        "nodeEnergyKJ": 3.226752198770555e-12,
+        "globalMassKg": 2.6032995203983944e-14,
+        "globalEnergyKJ": 4.474287607081351e-11
+      },
+      "conservationPass": true,
+      "frozenDirectEOSComparison": {
+        "pressureBar": 5.130705011069381e-06,
+        "enthalpyKJkg": 0.0008209719062506338,
+        "fluidTemperatureK": 0.0003437264610397506,
+        "thermalTemperatureK": 3.286528510670905e-05
+      },
+      "terminalEventCount": 0,
+      "referenceTerminalEventCount": 0,
+      "terminalEventErrorSeconds": 0,
+      "maxAcceptedTemporalError": 0.8199473709932396,
+      "acceptedHalfSteps": 584,
+      "rejections": 1,
+      "rejectionKinds": {
+        "accuracy": 1
+      },
+      "maxCanonicalDensityResidual": 0,
+      "maxCanonicalEnergyResidualKJkg": 4.547473508864641e-13,
+      "independentNativeStateMax": {
+        "nativePMinusReportedPa": 0,
+        "nativeHMinusReportedJkg": 0,
+        "nativeUMinusStoredJkg": 4.656612873077393e-10
+      },
+      "directStateExceptions": [],
+      "elapsedSeconds": 19.45928055399986,
+      "settings": {
+        "method": "tr-bdf2",
+        "adaptive": true,
+        "maxStep": 0.25,
+        "minStep": 1e-09,
+        "relativeTolerance": 1e-07,
+        "massAbsoluteKg": 1e-12,
+        "energyAbsoluteKJ": 1e-09,
+        "pressureAbsoluteBar": 1e-06,
+        "enthalpyAbsoluteKJkg": 9.999999999999999e-06,
+        "eventStepSeconds": 0.0005,
+        "temperatureAbsoluteK": 9.999999999999999e-06,
+        "temperatureScaleK": 50,
+        "nonlinearTolerance": 1e-11,
+        "thermalResidualK": 1e-12,
+        "maxIterations": 30,
+        "maxAttempts": 100000,
+        "trace": true,
+        "thermalJacobian": "finite-difference",
+        "timestepGrowth": "failure-aware"
+      },
+      "counts": {
+        "ph": 207651,
+        "sat": 466722,
+        "stateMVU": 13240,
+        "domainGuards": 428542
+      },
+      "initialEOSMinusTable": [
+        {
+          "p": 1.7763568394002505e-15,
+          "h": 4.547473508864641e-13,
+          "T": -0.0012813308981201033,
+          "rho": -2.061243671080959e-05
+        },
+        {
+          "p": 1.7763568394002505e-15,
+          "h": 4.547473508864641e-13,
+          "T": -0.0012813308981201033,
+          "rho": -2.061243671080959e-05
+        },
+        {
+          "p": 1.7763568394002505e-15,
+          "h": 4.547473508864641e-13,
+          "T": -0.0012813308981201033,
+          "rho": -2.061243671080959e-05
+        },
+        {
+          "p": 1.7763568394002505e-15,
+          "h": 4.547473508864641e-13,
+          "T": -0.0012813308981201033,
+          "rho": -2.061243671080959e-05
+        },
+        {
+          "p": 1.7763568394002505e-15,
+          "h": 4.547473508864641e-13,
+          "T": -0.0012813308981201033,
+          "rho": -2.061243671080959e-05
+        }
+      ],
+      "frozenDirectEOSPass": true
+    },
+    {
+      "file": "chromium-coupled-heat-reversal-1e-08.json",
+      "browser": "chromium",
+      "case": "heat-reversal",
+      "relativeTolerance": 1e-08,
+      "completedAllSamples": true,
+      "stop": null,
+      "harnessError": null,
+      "independentConservation": {
+        "sectionMassKg": 7.804000501376862e-14,
+        "sectionEnergyKJ": 1.192717764830764e-10,
+        "nodeEnergyKJ": 1.1222578422120932e-11,
+        "globalMassKg": 3.8383207202896674e-13,
+        "globalEnergyKJ": 6.439329069962696e-10
+      },
+      "conservationPass": true,
+      "frozenDirectEOSComparison": {
+        "pressureBar": 1.1544565099441684e-06,
+        "enthalpyKJkg": 0.00018472633587407472,
+        "fluidTemperatureK": 7.734168110573592e-05,
+        "thermalTemperatureK": 7.556087325610861e-06
+      },
+      "terminalEventCount": 0,
+      "referenceTerminalEventCount": 0,
+      "terminalEventErrorSeconds": 0,
+      "maxAcceptedTemporalError": 0.619239853265407,
+      "acceptedHalfSteps": 1188,
+      "rejections": 2,
+      "rejectionKinds": {
+        "accuracy": 2
+      },
+      "maxCanonicalDensityResidual": 0,
+      "maxCanonicalEnergyResidualKJkg": 4.547473508864641e-13,
+      "independentNativeStateMax": {
+        "nativePMinusReportedPa": 0,
+        "nativeHMinusReportedJkg": 0,
+        "nativeUMinusStoredJkg": 4.656612873077393e-10
+      },
+      "directStateExceptions": [],
+      "elapsedSeconds": 38.69344759900014,
+      "settings": {
+        "method": "tr-bdf2",
+        "adaptive": true,
+        "maxStep": 0.125,
+        "minStep": 1e-09,
+        "relativeTolerance": 1e-08,
+        "massAbsoluteKg": 1.0000000000000002e-13,
+        "energyAbsoluteKJ": 1e-10,
+        "pressureAbsoluteBar": 1e-06,
+        "enthalpyAbsoluteKJkg": 1e-06,
+        "eventStepSeconds": 0.0001,
+        "temperatureAbsoluteK": 1e-06,
+        "temperatureScaleK": 50,
+        "nonlinearTolerance": 1e-11,
+        "thermalResidualK": 1e-12,
+        "maxIterations": 30,
+        "maxAttempts": 100000,
+        "trace": true,
+        "thermalJacobian": "finite-difference",
+        "timestepGrowth": "failure-aware"
+      },
+      "counts": {
+        "ph": 414567,
+        "sat": 933559,
+        "stateMVU": 26875,
+        "domainGuards": 856009
+      },
+      "initialEOSMinusTable": [
+        {
+          "p": 1.7763568394002505e-15,
+          "h": 4.547473508864641e-13,
+          "T": -0.0012813308981201033,
+          "rho": -2.061243671080959e-05
+        },
+        {
+          "p": 1.7763568394002505e-15,
+          "h": 4.547473508864641e-13,
+          "T": -0.0012813308981201033,
+          "rho": -2.061243671080959e-05
+        },
+        {
+          "p": 1.7763568394002505e-15,
+          "h": 4.547473508864641e-13,
+          "T": -0.0012813308981201033,
+          "rho": -2.061243671080959e-05
+        },
+        {
+          "p": 1.7763568394002505e-15,
+          "h": 4.547473508864641e-13,
+          "T": -0.0012813308981201033,
+          "rho": -2.061243671080959e-05
+        },
+        {
+          "p": 1.7763568394002505e-15,
+          "h": 4.547473508864641e-13,
+          "T": -0.0012813308981201033,
+          "rho": -2.061243671080959e-05
+        }
+      ],
+      "frozenDirectEOSPass": true
+    },
+    {
+      "file": "chromium-coupled-load-step-1e-06.json",
+      "browser": "chromium",
+      "case": "load-step",
+      "relativeTolerance": 1e-06,
+      "completedAllSamples": true,
+      "stop": null,
+      "harnessError": null,
+      "independentConservation": {
+        "sectionMassKg": 3.44102524252321e-12,
+        "sectionEnergyKJ": 1.8224568520963658e-09,
+        "nodeEnergyKJ": 4.1300296516055823e-14,
+        "globalMassKg": 1.3470266568837985e-12,
+        "globalEnergyKJ": 4.31073843287777e-10
+      },
+      "conservationPass": true,
+      "frozenDirectEOSComparison": {
+        "pressureBar": 2.48699473859304e-06,
+        "enthalpyKJkg": 0.002426198057150941,
+        "fluidTemperatureK": 1.813772092873478e-05,
+        "thermalTemperatureK": 2.2372509818069375e-05
+      },
+      "terminalEventCount": 0,
+      "referenceTerminalEventCount": 0,
+      "terminalEventErrorSeconds": 0,
+      "maxAcceptedTemporalError": 0.9131284443879037,
+      "acceptedHalfSteps": 436,
+      "rejections": 5,
+      "rejectionKinds": {
+        "accuracy": 5
+      },
+      "maxCanonicalDensityResidual": 3.870161012951532e-16,
+      "maxCanonicalEnergyResidualKJkg": 1.0800249583553523e-12,
+      "independentNativeStateMax": {
+        "nativePMinusReportedPa": 0,
+        "nativeHMinusReportedJkg": 1.1641532182693481e-10,
+        "nativeUMinusStoredJkg": 1.0477378964424133e-09
+      },
+      "directStateExceptions": [],
+      "elapsedSeconds": 15.035267921000013,
+      "settings": {
+        "method": "tr-bdf2",
+        "adaptive": true,
+        "maxStep": 0.5,
+        "minStep": 1e-09,
+        "relativeTolerance": 1e-06,
+        "massAbsoluteKg": 1.0000000000000001e-11,
+        "energyAbsoluteKJ": 1e-08,
+        "pressureAbsoluteBar": 1e-06,
+        "enthalpyAbsoluteKJkg": 9.999999999999999e-05,
+        "eventStepSeconds": 0.002,
+        "temperatureAbsoluteK": 9.999999999999999e-05,
+        "temperatureScaleK": 50,
+        "nonlinearTolerance": 1e-11,
+        "thermalResidualK": 1e-12,
+        "maxIterations": 30,
+        "maxAttempts": 100000,
+        "trace": true,
+        "thermalJacobian": "finite-difference",
+        "timestepGrowth": "failure-aware"
+      },
+      "counts": {
+        "ph": 217119,
+        "sat": 473373,
+        "stateMVU": 10105,
+        "domainGuards": 444343
+      },
+      "initialEOSMinusTable": [
+        {
+          "p": -1.2878587085651816e-14,
+          "h": -9.094947017729282e-13,
+          "T": -0.00010846061961533593,
+          "rho": -5.708809190707598e-05
+        },
+        {
+          "p": -1.2878587085651816e-14,
+          "h": -9.094947017729282e-13,
+          "T": -0.00010846061961533593,
+          "rho": -5.708809190707598e-05
+        },
+        {
+          "p": -1.2878587085651816e-14,
+          "h": -9.094947017729282e-13,
+          "T": -0.00010846061961533593,
+          "rho": -5.708809190707598e-05
+        },
+        {
+          "p": -1.2878587085651816e-14,
+          "h": -9.094947017729282e-13,
+          "T": -0.00010846061961533593,
+          "rho": -5.708809190707598e-05
+        },
+        {
+          "p": -1.2878587085651816e-14,
+          "h": -9.094947017729282e-13,
+          "T": -0.00010846061961533593,
+          "rho": -5.708809190707598e-05
+        }
+      ],
+      "frozenDirectEOSPass": true
+    },
+    {
+      "file": "chromium-coupled-load-step-1e-07.json",
+      "browser": "chromium",
+      "case": "load-step",
+      "relativeTolerance": 1e-07,
+      "completedAllSamples": true,
+      "stop": null,
+      "harnessError": null,
+      "independentConservation": {
+        "sectionMassKg": 8.72235617066508e-12,
+        "sectionEnergyKJ": 3.1227109786868823e-09,
+        "nodeEnergyKJ": 6.52811138479592e-14,
+        "globalMassKg": 1.723870698966401e-11,
+        "globalEnergyKJ": 5.427988725159594e-09
+      },
+      "conservationPass": true,
+      "frozenDirectEOSComparison": {
+        "pressureBar": 6.759701514091887e-07,
+        "enthalpyKJkg": 0.0005425034028121445,
+        "fluidTemperatureK": 4.9298698741040425e-06,
+        "thermalTemperatureK": 5.856876157395163e-06
+      },
+      "terminalEventCount": 0,
+      "referenceTerminalEventCount": 0,
+      "terminalEventErrorSeconds": 0,
+      "maxAcceptedTemporalError": 0.948251652980614,
+      "acceptedHalfSteps": 826,
+      "rejections": 5,
+      "rejectionKinds": {
+        "accuracy": 5
+      },
+      "maxCanonicalDensityResidual": 4.1272665220395965e-16,
+      "maxCanonicalEnergyResidualKJkg": 8.526512829121202e-13,
+      "independentNativeStateMax": {
+        "nativePMinusReportedPa": 0,
+        "nativeHMinusReportedJkg": 1.1641532182693481e-10,
+        "nativeUMinusStoredJkg": 8.149072527885437e-10
+      },
+      "directStateExceptions": [],
+      "elapsedSeconds": 23.642009908999853,
+      "settings": {
+        "method": "tr-bdf2",
+        "adaptive": true,
+        "maxStep": 0.25,
+        "minStep": 1e-09,
+        "relativeTolerance": 1e-07,
+        "massAbsoluteKg": 1e-12,
+        "energyAbsoluteKJ": 1e-09,
+        "pressureAbsoluteBar": 1e-06,
+        "enthalpyAbsoluteKJkg": 9.999999999999999e-06,
+        "eventStepSeconds": 0.0005,
+        "temperatureAbsoluteK": 9.999999999999999e-06,
+        "temperatureScaleK": 50,
+        "nonlinearTolerance": 1e-11,
+        "thermalResidualK": 1e-12,
+        "maxIterations": 30,
+        "maxAttempts": 100000,
+        "trace": true,
+        "thermalJacobian": "finite-difference",
+        "timestepGrowth": "failure-aware"
+      },
+      "counts": {
+        "ph": 360734,
+        "sat": 794728,
+        "stateMVU": 18880,
+        "domainGuards": 740348
+      },
+      "initialEOSMinusTable": [
+        {
+          "p": -1.2878587085651816e-14,
+          "h": -9.094947017729282e-13,
+          "T": -0.00010846061961533593,
+          "rho": -5.708809190707598e-05
+        },
+        {
+          "p": -1.2878587085651816e-14,
+          "h": -9.094947017729282e-13,
+          "T": -0.00010846061961533593,
+          "rho": -5.708809190707598e-05
+        },
+        {
+          "p": -1.2878587085651816e-14,
+          "h": -9.094947017729282e-13,
+          "T": -0.00010846061961533593,
+          "rho": -5.708809190707598e-05
+        },
+        {
+          "p": -1.2878587085651816e-14,
+          "h": -9.094947017729282e-13,
+          "T": -0.00010846061961533593,
+          "rho": -5.708809190707598e-05
+        },
+        {
+          "p": -1.2878587085651816e-14,
+          "h": -9.094947017729282e-13,
+          "T": -0.00010846061961533593,
+          "rho": -5.708809190707598e-05
+        }
+      ],
+      "frozenDirectEOSPass": true
+    },
+    {
+      "file": "chromium-coupled-load-step-1e-08.json",
+      "browser": "chromium",
+      "case": "load-step",
+      "relativeTolerance": 1e-08,
+      "completedAllSamples": true,
+      "stop": null,
+      "harnessError": null,
+      "independentConservation": {
+        "sectionMassKg": 1.4346301924206273e-12,
+        "sectionEnergyKJ": 7.525180478751281e-10,
+        "nodeEnergyKJ": 7.283063041541027e-14,
+        "globalMassKg": 1.679007627375384e-12,
+        "globalEnergyKJ": 5.249507495364014e-10
+      },
+      "conservationPass": true,
+      "frozenDirectEOSComparison": {
+        "pressureBar": 1.5547533704918237e-07,
+        "enthalpyKJkg": 0.00011757538754864072,
+        "fluidTemperatureK": 1.1338862009324657e-06,
+        "thermalTemperatureK": 1.4390867590918788e-06
+      },
+      "terminalEventCount": 0,
+      "referenceTerminalEventCount": 0,
+      "terminalEventErrorSeconds": 0,
+      "maxAcceptedTemporalError": 0.7354626306058244,
+      "acceptedHalfSteps": 1680,
+      "rejections": 6,
+      "rejectionKinds": {
+        "accuracy": 6
+      },
+      "maxCanonicalDensityResidual": 4.159897790363464e-16,
+      "maxCanonicalEnergyResidualKJkg": 8.526512829121202e-13,
+      "independentNativeStateMax": {
+        "nativePMinusReportedPa": 0,
+        "nativeHMinusReportedJkg": 1.1641532182693481e-10,
+        "nativeUMinusStoredJkg": 8.149072527885437e-10
+      },
+      "directStateExceptions": [],
+      "elapsedSeconds": 40.403339147,
+      "settings": {
+        "method": "tr-bdf2",
+        "adaptive": true,
+        "maxStep": 0.125,
+        "minStep": 1e-09,
+        "relativeTolerance": 1e-08,
+        "massAbsoluteKg": 1.0000000000000002e-13,
+        "energyAbsoluteKJ": 1e-10,
+        "pressureAbsoluteBar": 1e-06,
+        "enthalpyAbsoluteKJkg": 1e-06,
+        "eventStepSeconds": 0.0001,
+        "temperatureAbsoluteK": 1e-06,
+        "temperatureScaleK": 50,
+        "nonlinearTolerance": 1e-11,
+        "thermalResidualK": 1e-12,
+        "maxIterations": 30,
+        "maxAttempts": 100000,
+        "trace": true,
+        "thermalJacobian": "finite-difference",
+        "timestepGrowth": "failure-aware"
+      },
+      "counts": {
+        "ph": 685886,
+        "sat": 1519912,
+        "stateMVU": 38140,
+        "domainGuards": 1409912
+      },
+      "initialEOSMinusTable": [
+        {
+          "p": -1.2878587085651816e-14,
+          "h": -9.094947017729282e-13,
+          "T": -0.00010846061961533593,
+          "rho": -5.708809190707598e-05
+        },
+        {
+          "p": -1.2878587085651816e-14,
+          "h": -9.094947017729282e-13,
+          "T": -0.00010846061961533593,
+          "rho": -5.708809190707598e-05
+        },
+        {
+          "p": -1.2878587085651816e-14,
+          "h": -9.094947017729282e-13,
+          "T": -0.00010846061961533593,
+          "rho": -5.708809190707598e-05
+        },
+        {
+          "p": -1.2878587085651816e-14,
+          "h": -9.094947017729282e-13,
+          "T": -0.00010846061961533593,
+          "rho": -5.708809190707598e-05
+        },
+        {
+          "p": -1.2878587085651816e-14,
+          "h": -9.094947017729282e-13,
+          "T": -0.00010846061961533593,
+          "rho": -5.708809190707598e-05
+        }
+      ],
+      "frozenDirectEOSPass": true
+    },
+    {
+      "file": "chromium-coupled-warm-1e-06.json",
+      "browser": "chromium",
+      "case": "warm",
+      "relativeTolerance": 1e-06,
+      "completedAllSamples": true,
+      "stop": null,
+      "harnessError": null,
+      "independentConservation": {
+        "sectionMassKg": 4.175992884825064e-12,
+        "sectionEnergyKJ": 2.4104309659378487e-09,
+        "nodeEnergyKJ": 5.790923296444817e-13,
+        "globalMassKg": 4.013900323229791e-12,
+        "globalEnergyKJ": 1.2348095879133325e-09
+      },
+      "conservationPass": true,
+      "frozenDirectEOSComparison": {
+        "pressureBar": 1.7987102856054094e-06,
+        "enthalpyKJkg": 0.004531006869228804,
+        "fluidTemperatureK": 0.0006167798612182196,
+        "thermalTemperatureK": 5.2575550739675236e-05
+      },
+      "terminalEventCount": 1,
+      "referenceTerminalEventCount": 1,
+      "terminalEventErrorSeconds": 2.1944584529531852e-05,
+      "maxAcceptedTemporalError": 0.9606017566970326,
+      "acceptedHalfSteps": 906,
+      "rejections": 49,
+      "rejectionKinds": {
+        "accuracy": 48,
+        "event": 1
+      },
+      "maxCanonicalDensityResidual": 2.651219336643842e-16,
+      "maxCanonicalEnergyResidualKJkg": 9.094947017729282e-13,
+      "independentNativeStateMax": {
+        "nativePMinusReportedPa": 0,
+        "nativeHMinusReportedJkg": 2.3283064365386963e-10,
+        "nativeUMinusStoredJkg": 9.313225746154785e-10
+      },
+      "directStateExceptions": [],
+      "elapsedSeconds": 35.269947978000005,
+      "settings": {
+        "method": "tr-bdf2",
+        "adaptive": true,
+        "maxStep": 0.5,
+        "minStep": 1e-09,
+        "relativeTolerance": 1e-06,
+        "massAbsoluteKg": 1.0000000000000001e-11,
+        "energyAbsoluteKJ": 1e-08,
+        "pressureAbsoluteBar": 1e-06,
+        "enthalpyAbsoluteKJkg": 9.999999999999999e-05,
+        "eventStepSeconds": 0.002,
+        "temperatureAbsoluteK": 9.999999999999999e-05,
+        "temperatureScaleK": 50,
+        "nonlinearTolerance": 1e-11,
+        "thermalResidualK": 1e-12,
+        "maxIterations": 30,
+        "maxAttempts": 100000,
+        "trace": true,
+        "thermalJacobian": "finite-difference",
+        "timestepGrowth": "failure-aware"
+      },
+      "counts": {
+        "ph": 523910,
+        "sat": 1134870,
+        "stateMVU": 22650,
+        "domainGuards": 1070470
+      },
+      "initialEOSMinusTable": [
+        {
+          "p": 1.7763568394002505e-15,
+          "h": 4.547473508864641e-13,
+          "T": -0.0012813308981201033,
+          "rho": -2.061243671080959e-05
+        },
+        {
+          "p": 1.7763568394002505e-15,
+          "h": 4.547473508864641e-13,
+          "T": -0.0012813308981201033,
+          "rho": -2.061243671080959e-05
+        },
+        {
+          "p": 1.7763568394002505e-15,
+          "h": 4.547473508864641e-13,
+          "T": -0.0012813308981201033,
+          "rho": -2.061243671080959e-05
+        },
+        {
+          "p": 1.7763568394002505e-15,
+          "h": 4.547473508864641e-13,
+          "T": -0.0012813308981201033,
+          "rho": -2.061243671080959e-05
+        },
+        {
+          "p": 1.7763568394002505e-15,
+          "h": 4.547473508864641e-13,
+          "T": -0.0012813308981201033,
+          "rho": -2.061243671080959e-05
+        }
+      ],
+      "frozenDirectEOSPass": true
+    },
+    {
+      "file": "chromium-coupled-warm-1e-07.json",
+      "browser": "chromium",
+      "case": "warm",
+      "relativeTolerance": 1e-07,
+      "completedAllSamples": true,
+      "stop": null,
+      "harnessError": null,
+      "independentConservation": {
+        "sectionMassKg": 6.053721759990971e-12,
+        "sectionEnergyKJ": 3.343146204315417e-09,
+        "nodeEnergyKJ": 4.334310688136611e-13,
+        "globalMassKg": 9.19687936917768e-12,
+        "globalEnergyKJ": 2.844198654372576e-09
+      },
+      "conservationPass": true,
+      "frozenDirectEOSComparison": {
+        "pressureBar": 4.128036756867459e-07,
+        "enthalpyKJkg": 0.0010568170694114087,
+        "fluidTemperatureK": 0.00013780975524468886,
+        "thermalTemperatureK": 1.307405835859754e-05
+      },
+      "terminalEventCount": 1,
+      "referenceTerminalEventCount": 1,
+      "terminalEventErrorSeconds": 2.492390391850563e-06,
+      "maxAcceptedTemporalError": 0.9126555927312994,
+      "acceptedHalfSteps": 1816,
+      "rejections": 44,
+      "rejectionKinds": {
+        "accuracy": 44
+      },
+      "maxCanonicalDensityResidual": 3.7874130789801216e-16,
+      "maxCanonicalEnergyResidualKJkg": 9.094947017729282e-13,
+      "independentNativeStateMax": {
+        "nativePMinusReportedPa": 0,
+        "nativeHMinusReportedJkg": 2.3283064365386963e-10,
+        "nativeUMinusStoredJkg": 1.1641532182693481e-09
+      },
+      "directStateExceptions": [],
+      "elapsedSeconds": 56.72720833799997,
+      "settings": {
+        "method": "tr-bdf2",
+        "adaptive": true,
+        "maxStep": 0.25,
+        "minStep": 1e-09,
+        "relativeTolerance": 1e-07,
+        "massAbsoluteKg": 1e-12,
+        "energyAbsoluteKJ": 1e-09,
+        "pressureAbsoluteBar": 1e-06,
+        "enthalpyAbsoluteKJkg": 9.999999999999999e-06,
+        "eventStepSeconds": 0.0005,
+        "temperatureAbsoluteK": 9.999999999999999e-06,
+        "temperatureScaleK": 50,
+        "nonlinearTolerance": 1e-11,
+        "thermalResidualK": 1e-12,
+        "maxIterations": 30,
+        "maxAttempts": 100000,
+        "trace": true,
+        "thermalJacobian": "finite-difference",
+        "timestepGrowth": "failure-aware"
+      },
+      "counts": {
+        "ph": 879542,
+        "sat": 1924984,
+        "stateMVU": 42900,
+        "domainGuards": 1801984
+      },
+      "initialEOSMinusTable": [
+        {
+          "p": 1.7763568394002505e-15,
+          "h": 4.547473508864641e-13,
+          "T": -0.0012813308981201033,
+          "rho": -2.061243671080959e-05
+        },
+        {
+          "p": 1.7763568394002505e-15,
+          "h": 4.547473508864641e-13,
+          "T": -0.0012813308981201033,
+          "rho": -2.061243671080959e-05
+        },
+        {
+          "p": 1.7763568394002505e-15,
+          "h": 4.547473508864641e-13,
+          "T": -0.0012813308981201033,
+          "rho": -2.061243671080959e-05
+        },
+        {
+          "p": 1.7763568394002505e-15,
+          "h": 4.547473508864641e-13,
+          "T": -0.0012813308981201033,
+          "rho": -2.061243671080959e-05
+        },
+        {
+          "p": 1.7763568394002505e-15,
+          "h": 4.547473508864641e-13,
+          "T": -0.0012813308981201033,
+          "rho": -2.061243671080959e-05
+        }
+      ],
+      "frozenDirectEOSPass": true
+    },
+    {
+      "file": "chromium-coupled-warm-1e-08.json",
+      "browser": "chromium",
+      "case": "warm",
+      "relativeTolerance": 1e-08,
+      "completedAllSamples": true,
+      "stop": null,
+      "harnessError": null,
+      "independentConservation": {
+        "sectionMassKg": 3.743449994431103e-12,
+        "sectionEnergyKJ": 2.7494877485878533e-09,
+        "nodeEnergyKJ": 2.948752353404416e-13,
+        "globalMassKg": 4.242248913266522e-12,
+        "globalEnergyKJ": 1.2375558355870453e-09
+      },
+      "conservationPass": true,
+      "frozenDirectEOSComparison": {
+        "pressureBar": 1.0983751153048615e-07,
+        "enthalpyKJkg": 0.00023675741135775752,
+        "fluidTemperatureK": 3.074406157566045e-05,
+        "thermalTemperatureK": 3.198856404651451e-06
+      },
+      "terminalEventCount": 1,
+      "referenceTerminalEventCount": 1,
+      "terminalEventErrorSeconds": 7.655731548705802e-07,
+      "maxAcceptedTemporalError": 0.9908421162314773,
+      "acceptedHalfSteps": 3710,
+      "rejections": 44,
+      "rejectionKinds": {
+        "accuracy": 44
+      },
+      "maxCanonicalDensityResidual": 4.1344584259587244e-16,
+      "maxCanonicalEnergyResidualKJkg": 1.1368683772161603e-12,
+      "independentNativeStateMax": {
+        "nativePMinusReportedPa": 0,
+        "nativeHMinusReportedJkg": 2.3283064365386963e-10,
+        "nativeUMinusStoredJkg": 9.313225746154785e-10
+      },
+      "directStateExceptions": [],
+      "elapsedSeconds": 100.07123869700001,
+      "settings": {
+        "method": "tr-bdf2",
+        "adaptive": true,
+        "maxStep": 0.125,
+        "minStep": 1e-09,
+        "relativeTolerance": 1e-08,
+        "massAbsoluteKg": 1.0000000000000002e-13,
+        "energyAbsoluteKJ": 1e-10,
+        "pressureAbsoluteBar": 1e-06,
+        "enthalpyAbsoluteKJkg": 1e-06,
+        "eventStepSeconds": 0.0001,
+        "temperatureAbsoluteK": 1e-06,
+        "temperatureScaleK": 50,
+        "nonlinearTolerance": 1e-11,
+        "thermalResidualK": 1e-12,
+        "maxIterations": 30,
+        "maxAttempts": 100000,
+        "trace": true,
+        "thermalJacobian": "finite-difference",
+        "timestepGrowth": "failure-aware"
+      },
+      "counts": {
+        "ph": 1567336,
+        "sat": 3466297,
+        "stateMVU": 85515,
+        "domainGuards": 3220187
+      },
+      "initialEOSMinusTable": [
+        {
+          "p": 1.7763568394002505e-15,
+          "h": 4.547473508864641e-13,
+          "T": -0.0012813308981201033,
+          "rho": -2.061243671080959e-05
+        },
+        {
+          "p": 1.7763568394002505e-15,
+          "h": 4.547473508864641e-13,
+          "T": -0.0012813308981201033,
+          "rho": -2.061243671080959e-05
+        },
+        {
+          "p": 1.7763568394002505e-15,
+          "h": 4.547473508864641e-13,
+          "T": -0.0012813308981201033,
+          "rho": -2.061243671080959e-05
+        },
+        {
+          "p": 1.7763568394002505e-15,
+          "h": 4.547473508864641e-13,
+          "T": -0.0012813308981201033,
+          "rho": -2.061243671080959e-05
+        },
+        {
+          "p": 1.7763568394002505e-15,
+          "h": 4.547473508864641e-13,
+          "T": -0.0012813308981201033,
+          "rho": -2.061243671080959e-05
+        }
+      ],
+      "frozenDirectEOSPass": true
+    },
+    {
+      "file": "webkit-coupled-cold-1e-06.json",
+      "browser": "webkit",
+      "case": "cold",
+      "relativeTolerance": 1e-06,
+      "completedAllSamples": true,
+      "stop": null,
+      "harnessError": null,
+      "independentConservation": {
+        "sectionMassKg": 4.459987934524179e-12,
+        "sectionEnergyKJ": 2.3510651203650923e-09,
+        "nodeEnergyKJ": 9.947598300641403e-14,
+        "globalMassKg": 2.176696323186178e-12,
+        "globalEnergyKJ": 6.934843810313396e-10
+      },
+      "conservationPass": true,
+      "frozenDirectEOSComparison": {
+        "pressureBar": 2.629151380606487e-06,
+        "enthalpyKJkg": 0.002404070628244881,
+        "fluidTemperatureK": 1.914039256689648e-05,
+        "thermalTemperatureK": 1.1239752097935707e-05
+      },
+      "terminalEventCount": 0,
+      "referenceTerminalEventCount": 0,
+      "terminalEventErrorSeconds": 0,
+      "maxAcceptedTemporalError": 0.9131284443879037,
+      "acceptedHalfSteps": 642,
+      "rejections": 5,
+      "rejectionKinds": {
+        "accuracy": 5
+      },
+      "maxCanonicalDensityResidual": 3.5819989561770787e-16,
+      "maxCanonicalEnergyResidualKJkg": 1.0800249583553523e-12,
+      "independentNativeStateMax": {
+        "nativePMinusReportedPa": 0,
+        "nativeHMinusReportedJkg": 1.1641532182693481e-10,
+        "nativeUMinusStoredJkg": 1.0477378964424133e-09
+      },
+      "directStateExceptions": [],
+      "elapsedSeconds": 23.463017103999846,
+      "settings": {
+        "method": "tr-bdf2",
+        "adaptive": true,
+        "maxStep": 0.5,
+        "minStep": 1e-09,
+        "relativeTolerance": 1e-06,
+        "massAbsoluteKg": 1.0000000000000001e-11,
+        "energyAbsoluteKJ": 1e-08,
+        "pressureAbsoluteBar": 1e-06,
+        "enthalpyAbsoluteKJkg": 9.999999999999999e-05,
+        "eventStepSeconds": 0.002,
+        "temperatureAbsoluteK": 9.999999999999999e-05,
+        "temperatureScaleK": 50,
+        "nonlinearTolerance": 1e-11,
+        "thermalResidualK": 1e-12,
+        "maxIterations": 30,
+        "maxAttempts": 100000,
+        "trace": true,
+        "thermalJacobian": "finite-difference",
+        "timestepGrowth": "failure-aware"
+      },
+      "counts": {
+        "ph": 302321,
+        "sat": 661772,
+        "stateMVU": 14730,
+        "domainGuards": 619372
+      },
+      "initialEOSMinusTable": [
+        {
+          "p": -1.2878587085651816e-14,
+          "h": -9.094947017729282e-13,
+          "T": -0.00010846061961533593,
+          "rho": -5.708809190707598e-05
+        },
+        {
+          "p": -1.2878587085651816e-14,
+          "h": -9.094947017729282e-13,
+          "T": -0.00010846061961533593,
+          "rho": -5.708809190707598e-05
+        },
+        {
+          "p": -1.2878587085651816e-14,
+          "h": -9.094947017729282e-13,
+          "T": -0.00010846061961533593,
+          "rho": -5.708809190707598e-05
+        },
+        {
+          "p": -1.2878587085651816e-14,
+          "h": -9.094947017729282e-13,
+          "T": -0.00010846061961533593,
+          "rho": -5.708809190707598e-05
+        },
+        {
+          "p": -1.2878587085651816e-14,
+          "h": -9.094947017729282e-13,
+          "T": -0.00010846061961533593,
+          "rho": -5.708809190707598e-05
+        }
+      ],
+      "frozenDirectEOSPass": true
+    },
+    {
+      "file": "webkit-coupled-cold-1e-07.json",
+      "browser": "webkit",
+      "case": "cold",
+      "relativeTolerance": 1e-07,
+      "completedAllSamples": true,
+      "stop": null,
+      "harnessError": null,
+      "independentConservation": {
+        "sectionMassKg": 9.109157872444484e-12,
+        "sectionEnergyKJ": 3.3423148693145777e-09,
+        "nodeEnergyKJ": 7.37188088351104e-14,
+        "globalMassKg": 1.7267756668992718e-11,
+        "globalEnergyKJ": 5.433740568605572e-09
+      },
+      "conservationPass": true,
+      "frozenDirectEOSComparison": {
+        "pressureBar": 6.759701514091887e-07,
+        "enthalpyKJkg": 0.0005426322375114978,
+        "fluidTemperatureK": 4.9298698741040425e-06,
+        "thermalTemperatureK": 2.5893069164339977e-06
+      },
+      "terminalEventCount": 0,
+      "referenceTerminalEventCount": 0,
+      "terminalEventErrorSeconds": 0,
+      "maxAcceptedTemporalError": 0.948251652980614,
+      "acceptedHalfSteps": 1294,
+      "rejections": 5,
+      "rejectionKinds": {
+        "accuracy": 5
+      },
+      "maxCanonicalDensityResidual": 3.610954935099237e-16,
+      "maxCanonicalEnergyResidualKJkg": 9.094947017729282e-13,
+      "independentNativeStateMax": {
+        "nativePMinusReportedPa": 0,
+        "nativeHMinusReportedJkg": 1.1641532182693481e-10,
+        "nativeUMinusStoredJkg": 9.313225746154785e-10
+      },
+      "directStateExceptions": [],
+      "elapsedSeconds": 33.4392434670001,
+      "settings": {
+        "method": "tr-bdf2",
+        "adaptive": true,
+        "maxStep": 0.25,
+        "minStep": 1e-09,
+        "relativeTolerance": 1e-07,
+        "massAbsoluteKg": 1e-12,
+        "energyAbsoluteKJ": 1e-09,
+        "pressureAbsoluteBar": 1e-06,
+        "enthalpyAbsoluteKJkg": 9.999999999999999e-06,
+        "eventStepSeconds": 0.0005,
+        "temperatureAbsoluteK": 9.999999999999999e-06,
+        "temperatureScaleK": 50,
+        "nonlinearTolerance": 1e-11,
+        "thermalResidualK": 1e-12,
+        "maxIterations": 30,
+        "maxAttempts": 100000,
+        "trace": true,
+        "thermalJacobian": "finite-difference",
+        "timestepGrowth": "failure-aware"
+      },
+      "counts": {
+        "ph": 549812,
+        "sat": 1213804,
+        "stateMVU": 29400,
+        "domainGuards": 1129024
+      },
+      "initialEOSMinusTable": [
+        {
+          "p": -1.2878587085651816e-14,
+          "h": -9.094947017729282e-13,
+          "T": -0.00010846061961533593,
+          "rho": -5.708809190707598e-05
+        },
+        {
+          "p": -1.2878587085651816e-14,
+          "h": -9.094947017729282e-13,
+          "T": -0.00010846061961533593,
+          "rho": -5.708809190707598e-05
+        },
+        {
+          "p": -1.2878587085651816e-14,
+          "h": -9.094947017729282e-13,
+          "T": -0.00010846061961533593,
+          "rho": -5.708809190707598e-05
+        },
+        {
+          "p": -1.2878587085651816e-14,
+          "h": -9.094947017729282e-13,
+          "T": -0.00010846061961533593,
+          "rho": -5.708809190707598e-05
+        },
+        {
+          "p": -1.2878587085651816e-14,
+          "h": -9.094947017729282e-13,
+          "T": -0.00010846061961533593,
+          "rho": -5.708809190707598e-05
+        }
+      ],
+      "frozenDirectEOSPass": true
+    },
+    {
+      "file": "webkit-coupled-cold-1e-08.json",
+      "browser": "webkit",
+      "case": "cold",
+      "relativeTolerance": 1e-08,
+      "completedAllSamples": true,
+      "stop": null,
+      "harnessError": null,
+      "independentConservation": {
+        "sectionMassKg": 2.000177801164682e-12,
+        "sectionEnergyKJ": 1.0407390504951763e-09,
+        "nodeEnergyKJ": 1.3455903058456897e-13,
+        "globalMassKg": 1.6810511316300847e-12,
+        "globalEnergyKJ": 5.260485380631508e-10
+      },
+      "conservationPass": true,
+      "frozenDirectEOSComparison": {
+        "pressureBar": 1.5781753370802676e-07,
+        "enthalpyKJkg": 0.00011698697767315025,
+        "fluidTemperatureK": 1.1489221947158512e-06,
+        "thermalTemperatureK": 6.321973842204898e-07
+      },
+      "terminalEventCount": 0,
+      "referenceTerminalEventCount": 0,
+      "terminalEventErrorSeconds": 0,
+      "maxAcceptedTemporalError": 0.7354626306058244,
+      "acceptedHalfSteps": 2616,
+      "rejections": 6,
+      "rejectionKinds": {
+        "accuracy": 6
+      },
+      "maxCanonicalDensityResidual": 3.458165942666079e-16,
+      "maxCanonicalEnergyResidualKJkg": 1.1368683772161603e-12,
+      "independentNativeStateMax": {
+        "nativePMinusReportedPa": 0,
+        "nativeHMinusReportedJkg": 1.1641532182693481e-10,
+        "nativeUMinusStoredJkg": 1.1059455573558807e-09
+      },
+      "directStateExceptions": [],
+      "elapsedSeconds": 63.64053294099995,
+      "settings": {
+        "method": "tr-bdf2",
+        "adaptive": true,
+        "maxStep": 0.125,
+        "minStep": 1e-09,
+        "relativeTolerance": 1e-08,
+        "massAbsoluteKg": 1.0000000000000002e-13,
+        "energyAbsoluteKJ": 1e-10,
+        "pressureAbsoluteBar": 1e-06,
+        "enthalpyAbsoluteKJkg": 1e-06,
+        "eventStepSeconds": 0.0001,
+        "temperatureAbsoluteK": 1e-06,
+        "temperatureScaleK": 50,
+        "nonlinearTolerance": 1e-11,
+        "thermalResidualK": 1e-12,
+        "maxIterations": 30,
+        "maxAttempts": 100000,
+        "trace": true,
+        "thermalJacobian": "finite-difference",
+        "timestepGrowth": "failure-aware"
+      },
+      "counts": {
+        "ph": 1058807,
+        "sat": 2347624,
+        "stateMVU": 59190,
+        "domainGuards": 2176804
+      },
+      "initialEOSMinusTable": [
+        {
+          "p": -1.2878587085651816e-14,
+          "h": -9.094947017729282e-13,
+          "T": -0.00010846061961533593,
+          "rho": -5.708809190707598e-05
+        },
+        {
+          "p": -1.2878587085651816e-14,
+          "h": -9.094947017729282e-13,
+          "T": -0.00010846061961533593,
+          "rho": -5.708809190707598e-05
+        },
+        {
+          "p": -1.2878587085651816e-14,
+          "h": -9.094947017729282e-13,
+          "T": -0.00010846061961533593,
+          "rho": -5.708809190707598e-05
+        },
+        {
+          "p": -1.2878587085651816e-14,
+          "h": -9.094947017729282e-13,
+          "T": -0.00010846061961533593,
+          "rho": -5.708809190707598e-05
+        },
+        {
+          "p": -1.2878587085651816e-14,
+          "h": -9.094947017729282e-13,
+          "T": -0.00010846061961533593,
+          "rho": -5.708809190707598e-05
+        }
+      ],
+      "frozenDirectEOSPass": true
+    },
+    {
+      "file": "webkit-coupled-feed-step-1e-06.json",
+      "browser": "webkit",
+      "case": "feed-step",
+      "relativeTolerance": 1e-06,
+      "completedAllSamples": true,
+      "stop": null,
+      "harnessError": null,
+      "independentConservation": {
+        "sectionMassKg": 3.630651335129187e-12,
+        "sectionEnergyKJ": 1.6795098645161488e-09,
+        "nodeEnergyKJ": 8.171241461241152e-14,
+        "globalMassKg": 3.1155026475326864e-12,
+        "globalEnergyKJ": 9.012879331748991e-10
+      },
+      "conservationPass": true,
+      "frozenDirectEOSComparison": {
+        "pressureBar": 2.48699473859304e-06,
+        "enthalpyKJkg": 0.002426198057150941,
+        "fluidTemperatureK": 1.813772092873478e-05,
+        "thermalTemperatureK": 1.1469331582247833e-05
+      },
+      "terminalEventCount": 0,
+      "referenceTerminalEventCount": 0,
+      "terminalEventErrorSeconds": 0,
+      "maxAcceptedTemporalError": 0.9131284443879037,
+      "acceptedHalfSteps": 572,
+      "rejections": 13,
+      "rejectionKinds": {
+        "accuracy": 13
+      },
+      "maxCanonicalDensityResidual": 3.5819989561770787e-16,
+      "maxCanonicalEnergyResidualKJkg": 1.3073986337985843e-12,
+      "independentNativeStateMax": {
+        "nativePMinusReportedPa": 0,
+        "nativeHMinusReportedJkg": 1.1641532182693481e-10,
+        "nativeUMinusStoredJkg": 1.3387762010097504e-09
+      },
+      "directStateExceptions": [],
+      "elapsedSeconds": 19.252229382999985,
+      "settings": {
+        "method": "tr-bdf2",
+        "adaptive": true,
+        "maxStep": 0.5,
+        "minStep": 1e-09,
+        "relativeTolerance": 1e-06,
+        "massAbsoluteKg": 1.0000000000000001e-11,
+        "energyAbsoluteKJ": 1e-08,
+        "pressureAbsoluteBar": 1e-06,
+        "enthalpyAbsoluteKJkg": 9.999999999999999e-05,
+        "eventStepSeconds": 0.002,
+        "temperatureAbsoluteK": 9.999999999999999e-05,
+        "temperatureScaleK": 50,
+        "nonlinearTolerance": 1e-11,
+        "thermalResidualK": 1e-12,
+        "maxIterations": 30,
+        "maxAttempts": 100000,
+        "trace": true,
+        "thermalJacobian": "finite-difference",
+        "timestepGrowth": "failure-aware"
+      },
+      "counts": {
+        "ph": 283826,
+        "sat": 619957,
+        "stateMVU": 13535,
+        "domainGuards": 581187
+      },
+      "initialEOSMinusTable": [
+        {
+          "p": -1.2878587085651816e-14,
+          "h": -9.094947017729282e-13,
+          "T": -0.00010846061961533593,
+          "rho": -5.708809190707598e-05
+        },
+        {
+          "p": -1.2878587085651816e-14,
+          "h": -9.094947017729282e-13,
+          "T": -0.00010846061961533593,
+          "rho": -5.708809190707598e-05
+        },
+        {
+          "p": -1.2878587085651816e-14,
+          "h": -9.094947017729282e-13,
+          "T": -0.00010846061961533593,
+          "rho": -5.708809190707598e-05
+        },
+        {
+          "p": -1.2878587085651816e-14,
+          "h": -9.094947017729282e-13,
+          "T": -0.00010846061961533593,
+          "rho": -5.708809190707598e-05
+        },
+        {
+          "p": -1.2878587085651816e-14,
+          "h": -9.094947017729282e-13,
+          "T": -0.00010846061961533593,
+          "rho": -5.708809190707598e-05
+        }
+      ],
+      "frozenDirectEOSPass": true
+    },
+    {
+      "file": "webkit-coupled-feed-step-1e-07.json",
+      "browser": "webkit",
+      "case": "feed-step",
+      "relativeTolerance": 1e-07,
+      "completedAllSamples": true,
+      "stop": null,
+      "harnessError": null,
+      "independentConservation": {
+        "sectionMassKg": 8.572254017735759e-12,
+        "sectionEnergyKJ": 3.0023592501038365e-09,
+        "nodeEnergyKJ": 6.705747068735946e-14,
+        "globalMassKg": 1.7355304693378315e-11,
+        "globalEnergyKJ": 5.435410344034608e-09
+      },
+      "conservationPass": true,
+      "frozenDirectEOSComparison": {
+        "pressureBar": 6.759701514091887e-07,
+        "enthalpyKJkg": 0.0005425034028121445,
+        "fluidTemperatureK": 4.9298698741040425e-06,
+        "thermalTemperatureK": 2.5892930466397956e-06
+      },
+      "terminalEventCount": 0,
+      "referenceTerminalEventCount": 0,
+      "terminalEventErrorSeconds": 0,
+      "maxAcceptedTemporalError": 0.948251652980614,
+      "acceptedHalfSteps": 1142,
+      "rejections": 12,
+      "rejectionKinds": {
+        "accuracy": 12
+      },
+      "maxCanonicalDensityResidual": 4.1272665220395965e-16,
+      "maxCanonicalEnergyResidualKJkg": 9.094947017729282e-13,
+      "independentNativeStateMax": {
+        "nativePMinusReportedPa": 0,
+        "nativeHMinusReportedJkg": 1.1641532182693481e-10,
+        "nativeUMinusStoredJkg": 9.313225746154785e-10
+      },
+      "directStateExceptions": [],
+      "elapsedSeconds": 30.92035792899992,
+      "settings": {
+        "method": "tr-bdf2",
+        "adaptive": true,
+        "maxStep": 0.25,
+        "minStep": 1e-09,
+        "relativeTolerance": 1e-07,
+        "massAbsoluteKg": 1e-12,
+        "energyAbsoluteKJ": 1e-09,
+        "pressureAbsoluteBar": 1e-06,
+        "enthalpyAbsoluteKJkg": 9.999999999999999e-06,
+        "eventStepSeconds": 0.0005,
+        "temperatureAbsoluteK": 9.999999999999999e-06,
+        "temperatureScaleK": 50,
+        "nonlinearTolerance": 1e-11,
+        "thermalResidualK": 1e-12,
+        "maxIterations": 30,
+        "maxAttempts": 100000,
+        "trace": true,
+        "thermalJacobian": "finite-difference",
+        "timestepGrowth": "failure-aware"
+      },
+      "counts": {
+        "ph": 491894,
+        "sat": 1085813,
+        "stateMVU": 26315,
+        "domainGuards": 1010103
+      },
+      "initialEOSMinusTable": [
+        {
+          "p": -1.2878587085651816e-14,
+          "h": -9.094947017729282e-13,
+          "T": -0.00010846061961533593,
+          "rho": -5.708809190707598e-05
+        },
+        {
+          "p": -1.2878587085651816e-14,
+          "h": -9.094947017729282e-13,
+          "T": -0.00010846061961533593,
+          "rho": -5.708809190707598e-05
+        },
+        {
+          "p": -1.2878587085651816e-14,
+          "h": -9.094947017729282e-13,
+          "T": -0.00010846061961533593,
+          "rho": -5.708809190707598e-05
+        },
+        {
+          "p": -1.2878587085651816e-14,
+          "h": -9.094947017729282e-13,
+          "T": -0.00010846061961533593,
+          "rho": -5.708809190707598e-05
+        },
+        {
+          "p": -1.2878587085651816e-14,
+          "h": -9.094947017729282e-13,
+          "T": -0.00010846061961533593,
+          "rho": -5.708809190707598e-05
+        }
+      ],
+      "frozenDirectEOSPass": true
+    },
+    {
+      "file": "webkit-coupled-feed-step-1e-08.json",
+      "browser": "webkit",
+      "case": "feed-step",
+      "relativeTolerance": 1e-08,
+      "completedAllSamples": true,
+      "stop": null,
+      "harnessError": null,
+      "independentConservation": {
+        "sectionMassKg": 1.1356471318890726e-12,
+        "sectionEnergyKJ": 5.932641045092168e-10,
+        "nodeEnergyKJ": 3.375077994860476e-14,
+        "globalMassKg": 1.679007627375384e-12,
+        "globalEnergyKJ": 5.249507495364014e-10
+      },
+      "conservationPass": true,
+      "frozenDirectEOSComparison": {
+        "pressureBar": 1.5547533704918237e-07,
+        "enthalpyKJkg": 0.00011757538754864072,
+        "fluidTemperatureK": 1.1338862009324657e-06,
+        "thermalTemperatureK": 6.321847649815027e-07
+      },
+      "terminalEventCount": 0,
+      "referenceTerminalEventCount": 0,
+      "terminalEventErrorSeconds": 0,
+      "maxAcceptedTemporalError": 0.8029846891347011,
+      "acceptedHalfSteps": 2338,
+      "rejections": 12,
+      "rejectionKinds": {
+        "accuracy": 12
+      },
+      "maxCanonicalDensityResidual": 4.159897790363464e-16,
+      "maxCanonicalEnergyResidualKJkg": 1.1368683772161603e-12,
+      "independentNativeStateMax": {
+        "nativePMinusReportedPa": 0,
+        "nativeHMinusReportedJkg": 1.1641532182693481e-10,
+        "nativeUMinusStoredJkg": 1.1641532182693481e-09
+      },
+      "directStateExceptions": [],
+      "elapsedSeconds": 56.84487233599998,
+      "settings": {
+        "method": "tr-bdf2",
+        "adaptive": true,
+        "maxStep": 0.125,
+        "minStep": 1e-09,
+        "relativeTolerance": 1e-08,
+        "massAbsoluteKg": 1.0000000000000002e-13,
+        "energyAbsoluteKJ": 1e-10,
+        "pressureAbsoluteBar": 1e-06,
+        "enthalpyAbsoluteKJkg": 1e-06,
+        "eventStepSeconds": 0.0001,
+        "temperatureAbsoluteK": 1e-06,
+        "temperatureScaleK": 50,
+        "nonlinearTolerance": 1e-11,
+        "thermalResidualK": 1e-12,
+        "maxIterations": 30,
+        "maxAttempts": 100000,
+        "trace": true,
+        "thermalJacobian": "finite-difference",
+        "timestepGrowth": "failure-aware"
+      },
+      "counts": {
+        "ph": 954021,
+        "sat": 2114717,
+        "stateMVU": 53225,
+        "domainGuards": 1961267
+      },
+      "initialEOSMinusTable": [
+        {
+          "p": -1.2878587085651816e-14,
+          "h": -9.094947017729282e-13,
+          "T": -0.00010846061961533593,
+          "rho": -5.708809190707598e-05
+        },
+        {
+          "p": -1.2878587085651816e-14,
+          "h": -9.094947017729282e-13,
+          "T": -0.00010846061961533593,
+          "rho": -5.708809190707598e-05
+        },
+        {
+          "p": -1.2878587085651816e-14,
+          "h": -9.094947017729282e-13,
+          "T": -0.00010846061961533593,
+          "rho": -5.708809190707598e-05
+        },
+        {
+          "p": -1.2878587085651816e-14,
+          "h": -9.094947017729282e-13,
+          "T": -0.00010846061961533593,
+          "rho": -5.708809190707598e-05
+        },
+        {
+          "p": -1.2878587085651816e-14,
+          "h": -9.094947017729282e-13,
+          "T": -0.00010846061961533593,
+          "rho": -5.708809190707598e-05
+        }
+      ],
+      "frozenDirectEOSPass": true
+    },
+    {
+      "file": "webkit-coupled-heat-reversal-1e-06.json",
+      "browser": "webkit",
+      "case": "heat-reversal",
+      "relativeTolerance": 1e-06,
+      "completedAllSamples": true,
+      "stop": null,
+      "harnessError": null,
+      "independentConservation": {
+        "sectionMassKg": 3.891852118353967e-15,
+        "sectionEnergyKJ": 3.1903438224567537e-12,
+        "nodeEnergyKJ": 3.042899265892629e-12,
+        "globalMassKg": 1.8093382694872595e-14,
+        "globalEnergyKJ": 2.830802259268239e-11
+      },
+      "conservationPass": true,
+      "frozenDirectEOSComparison": {
+        "pressureBar": 1.2581830079572143e-05,
+        "enthalpyKJkg": 0.0020132378422204056,
+        "fluidTemperatureK": 0.0008429067434576609,
+        "thermalTemperatureK": 0.00012429929171275944
+      },
+      "terminalEventCount": 0,
+      "referenceTerminalEventCount": 0,
+      "terminalEventErrorSeconds": 0,
+      "maxAcceptedTemporalError": 0.7860449165160777,
+      "acceptedHalfSteps": 332,
+      "rejections": 1,
+      "rejectionKinds": {
+        "accuracy": 1
+      },
+      "maxCanonicalDensityResidual": 0,
+      "maxCanonicalEnergyResidualKJkg": 6.821210263296962e-13,
+      "independentNativeStateMax": {
+        "nativePMinusReportedPa": 0,
+        "nativeHMinusReportedJkg": 0,
+        "nativeUMinusStoredJkg": 6.984919309616089e-10
+      },
+      "directStateExceptions": [],
+      "elapsedSeconds": 13.21951008499991,
+      "settings": {
+        "method": "tr-bdf2",
+        "adaptive": true,
+        "maxStep": 0.5,
+        "minStep": 1e-09,
+        "relativeTolerance": 1e-06,
+        "massAbsoluteKg": 1.0000000000000001e-11,
+        "energyAbsoluteKJ": 1e-08,
+        "pressureAbsoluteBar": 1e-06,
+        "enthalpyAbsoluteKJkg": 9.999999999999999e-05,
+        "eventStepSeconds": 0.002,
+        "temperatureAbsoluteK": 9.999999999999999e-05,
+        "temperatureScaleK": 50,
+        "nonlinearTolerance": 1e-11,
+        "thermalResidualK": 1e-12,
+        "maxIterations": 30,
+        "maxAttempts": 100000,
+        "trace": true,
+        "thermalJacobian": "finite-difference",
+        "timestepGrowth": "failure-aware"
+      },
+      "counts": {
+        "ph": 116861,
+        "sat": 263092,
+        "stateMVU": 7570,
+        "domainGuards": 241292
+      },
+      "initialEOSMinusTable": [
+        {
+          "p": 1.7763568394002505e-15,
+          "h": 4.547473508864641e-13,
+          "T": -0.0012813308981201033,
+          "rho": -2.061243671080959e-05
+        },
+        {
+          "p": 1.7763568394002505e-15,
+          "h": 4.547473508864641e-13,
+          "T": -0.0012813308981201033,
+          "rho": -2.061243671080959e-05
+        },
+        {
+          "p": 1.7763568394002505e-15,
+          "h": 4.547473508864641e-13,
+          "T": -0.0012813308981201033,
+          "rho": -2.061243671080959e-05
+        },
+        {
+          "p": 1.7763568394002505e-15,
+          "h": 4.547473508864641e-13,
+          "T": -0.0012813308981201033,
+          "rho": -2.061243671080959e-05
+        },
+        {
+          "p": 1.7763568394002505e-15,
+          "h": 4.547473508864641e-13,
+          "T": -0.0012813308981201033,
+          "rho": -2.061243671080959e-05
+        }
+      ],
+      "frozenDirectEOSPass": true
+    },
+    {
+      "file": "webkit-coupled-heat-reversal-1e-07.json",
+      "browser": "webkit",
+      "case": "heat-reversal",
+      "relativeTolerance": 1e-07,
+      "completedAllSamples": true,
+      "stop": null,
+      "harnessError": null,
+      "independentConservation": {
+        "sectionMassKg": 5.5656434322370885e-15,
+        "sectionEnergyKJ": 6.396452811863185e-12,
+        "nodeEnergyKJ": 3.226752198770555e-12,
+        "globalMassKg": 2.6032995203983944e-14,
+        "globalEnergyKJ": 4.474287607081351e-11
+      },
+      "conservationPass": true,
+      "frozenDirectEOSComparison": {
+        "pressureBar": 5.130705011069381e-06,
+        "enthalpyKJkg": 0.0008209719062506338,
+        "fluidTemperatureK": 0.0003437264610397506,
+        "thermalTemperatureK": 3.286528510670905e-05
+      },
+      "terminalEventCount": 0,
+      "referenceTerminalEventCount": 0,
+      "terminalEventErrorSeconds": 0,
+      "maxAcceptedTemporalError": 0.8199473709932396,
+      "acceptedHalfSteps": 584,
+      "rejections": 1,
+      "rejectionKinds": {
+        "accuracy": 1
+      },
+      "maxCanonicalDensityResidual": 0,
+      "maxCanonicalEnergyResidualKJkg": 4.547473508864641e-13,
+      "independentNativeStateMax": {
+        "nativePMinusReportedPa": 0,
+        "nativeHMinusReportedJkg": 0,
+        "nativeUMinusStoredJkg": 4.656612873077393e-10
+      },
+      "directStateExceptions": [],
+      "elapsedSeconds": 19.89808453899991,
+      "settings": {
+        "method": "tr-bdf2",
+        "adaptive": true,
+        "maxStep": 0.25,
+        "minStep": 1e-09,
+        "relativeTolerance": 1e-07,
+        "massAbsoluteKg": 1e-12,
+        "energyAbsoluteKJ": 1e-09,
+        "pressureAbsoluteBar": 1e-06,
+        "enthalpyAbsoluteKJkg": 9.999999999999999e-06,
+        "eventStepSeconds": 0.0005,
+        "temperatureAbsoluteK": 9.999999999999999e-06,
+        "temperatureScaleK": 50,
+        "nonlinearTolerance": 1e-11,
+        "thermalResidualK": 1e-12,
+        "maxIterations": 30,
+        "maxAttempts": 100000,
+        "trace": true,
+        "thermalJacobian": "finite-difference",
+        "timestepGrowth": "failure-aware"
+      },
+      "counts": {
+        "ph": 207651,
+        "sat": 466722,
+        "stateMVU": 13240,
+        "domainGuards": 428542
+      },
+      "initialEOSMinusTable": [
+        {
+          "p": 1.7763568394002505e-15,
+          "h": 4.547473508864641e-13,
+          "T": -0.0012813308981201033,
+          "rho": -2.061243671080959e-05
+        },
+        {
+          "p": 1.7763568394002505e-15,
+          "h": 4.547473508864641e-13,
+          "T": -0.0012813308981201033,
+          "rho": -2.061243671080959e-05
+        },
+        {
+          "p": 1.7763568394002505e-15,
+          "h": 4.547473508864641e-13,
+          "T": -0.0012813308981201033,
+          "rho": -2.061243671080959e-05
+        },
+        {
+          "p": 1.7763568394002505e-15,
+          "h": 4.547473508864641e-13,
+          "T": -0.0012813308981201033,
+          "rho": -2.061243671080959e-05
+        },
+        {
+          "p": 1.7763568394002505e-15,
+          "h": 4.547473508864641e-13,
+          "T": -0.0012813308981201033,
+          "rho": -2.061243671080959e-05
+        }
+      ],
+      "frozenDirectEOSPass": true
+    },
+    {
+      "file": "webkit-coupled-heat-reversal-1e-08.json",
+      "browser": "webkit",
+      "case": "heat-reversal",
+      "relativeTolerance": 1e-08,
+      "completedAllSamples": true,
+      "stop": null,
+      "harnessError": null,
+      "independentConservation": {
+        "sectionMassKg": 7.804000501376862e-14,
+        "sectionEnergyKJ": 1.192717764830764e-10,
+        "nodeEnergyKJ": 1.1222578422120932e-11,
+        "globalMassKg": 3.8383207202896674e-13,
+        "globalEnergyKJ": 6.439329069962696e-10
+      },
+      "conservationPass": true,
+      "frozenDirectEOSComparison": {
+        "pressureBar": 1.1544565099441684e-06,
+        "enthalpyKJkg": 0.00018472633587407472,
+        "fluidTemperatureK": 7.734168110573592e-05,
+        "thermalTemperatureK": 7.556087325610861e-06
+      },
+      "terminalEventCount": 0,
+      "referenceTerminalEventCount": 0,
+      "terminalEventErrorSeconds": 0,
+      "maxAcceptedTemporalError": 0.619239853265407,
+      "acceptedHalfSteps": 1188,
+      "rejections": 2,
+      "rejectionKinds": {
+        "accuracy": 2
+      },
+      "maxCanonicalDensityResidual": 0,
+      "maxCanonicalEnergyResidualKJkg": 4.547473508864641e-13,
+      "independentNativeStateMax": {
+        "nativePMinusReportedPa": 0,
+        "nativeHMinusReportedJkg": 0,
+        "nativeUMinusStoredJkg": 4.656612873077393e-10
+      },
+      "directStateExceptions": [],
+      "elapsedSeconds": 36.43927505199986,
+      "settings": {
+        "method": "tr-bdf2",
+        "adaptive": true,
+        "maxStep": 0.125,
+        "minStep": 1e-09,
+        "relativeTolerance": 1e-08,
+        "massAbsoluteKg": 1.0000000000000002e-13,
+        "energyAbsoluteKJ": 1e-10,
+        "pressureAbsoluteBar": 1e-06,
+        "enthalpyAbsoluteKJkg": 1e-06,
+        "eventStepSeconds": 0.0001,
+        "temperatureAbsoluteK": 1e-06,
+        "temperatureScaleK": 50,
+        "nonlinearTolerance": 1e-11,
+        "thermalResidualK": 1e-12,
+        "maxIterations": 30,
+        "maxAttempts": 100000,
+        "trace": true,
+        "thermalJacobian": "finite-difference",
+        "timestepGrowth": "failure-aware"
+      },
+      "counts": {
+        "ph": 414567,
+        "sat": 933559,
+        "stateMVU": 26875,
+        "domainGuards": 856009
+      },
+      "initialEOSMinusTable": [
+        {
+          "p": 1.7763568394002505e-15,
+          "h": 4.547473508864641e-13,
+          "T": -0.0012813308981201033,
+          "rho": -2.061243671080959e-05
+        },
+        {
+          "p": 1.7763568394002505e-15,
+          "h": 4.547473508864641e-13,
+          "T": -0.0012813308981201033,
+          "rho": -2.061243671080959e-05
+        },
+        {
+          "p": 1.7763568394002505e-15,
+          "h": 4.547473508864641e-13,
+          "T": -0.0012813308981201033,
+          "rho": -2.061243671080959e-05
+        },
+        {
+          "p": 1.7763568394002505e-15,
+          "h": 4.547473508864641e-13,
+          "T": -0.0012813308981201033,
+          "rho": -2.061243671080959e-05
+        },
+        {
+          "p": 1.7763568394002505e-15,
+          "h": 4.547473508864641e-13,
+          "T": -0.0012813308981201033,
+          "rho": -2.061243671080959e-05
+        }
+      ],
+      "frozenDirectEOSPass": true
+    },
+    {
+      "file": "webkit-coupled-load-step-1e-06.json",
+      "browser": "webkit",
+      "case": "load-step",
+      "relativeTolerance": 1e-06,
+      "completedAllSamples": true,
+      "stop": null,
+      "harnessError": null,
+      "independentConservation": {
+        "sectionMassKg": 3.44102524252321e-12,
+        "sectionEnergyKJ": 1.8224568520963658e-09,
+        "nodeEnergyKJ": 4.1300296516055823e-14,
+        "globalMassKg": 1.3470266568837985e-12,
+        "globalEnergyKJ": 4.31073843287777e-10
+      },
+      "conservationPass": true,
+      "frozenDirectEOSComparison": {
+        "pressureBar": 2.48699473859304e-06,
+        "enthalpyKJkg": 0.002426198057150941,
+        "fluidTemperatureK": 1.813772092873478e-05,
+        "thermalTemperatureK": 2.2372509818069375e-05
+      },
+      "terminalEventCount": 0,
+      "referenceTerminalEventCount": 0,
+      "terminalEventErrorSeconds": 0,
+      "maxAcceptedTemporalError": 0.9131284443879037,
+      "acceptedHalfSteps": 436,
+      "rejections": 5,
+      "rejectionKinds": {
+        "accuracy": 5
+      },
+      "maxCanonicalDensityResidual": 3.870161012951532e-16,
+      "maxCanonicalEnergyResidualKJkg": 1.0800249583553523e-12,
+      "independentNativeStateMax": {
+        "nativePMinusReportedPa": 0,
+        "nativeHMinusReportedJkg": 1.1641532182693481e-10,
+        "nativeUMinusStoredJkg": 1.0477378964424133e-09
+      },
+      "directStateExceptions": [],
+      "elapsedSeconds": 15.49890996199997,
+      "settings": {
+        "method": "tr-bdf2",
+        "adaptive": true,
+        "maxStep": 0.5,
+        "minStep": 1e-09,
+        "relativeTolerance": 1e-06,
+        "massAbsoluteKg": 1.0000000000000001e-11,
+        "energyAbsoluteKJ": 1e-08,
+        "pressureAbsoluteBar": 1e-06,
+        "enthalpyAbsoluteKJkg": 9.999999999999999e-05,
+        "eventStepSeconds": 0.002,
+        "temperatureAbsoluteK": 9.999999999999999e-05,
+        "temperatureScaleK": 50,
+        "nonlinearTolerance": 1e-11,
+        "thermalResidualK": 1e-12,
+        "maxIterations": 30,
+        "maxAttempts": 100000,
+        "trace": true,
+        "thermalJacobian": "finite-difference",
+        "timestepGrowth": "failure-aware"
+      },
+      "counts": {
+        "ph": 217119,
+        "sat": 473373,
+        "stateMVU": 10105,
+        "domainGuards": 444343
+      },
+      "initialEOSMinusTable": [
+        {
+          "p": -1.2878587085651816e-14,
+          "h": -9.094947017729282e-13,
+          "T": -0.00010846061961533593,
+          "rho": -5.708809190707598e-05
+        },
+        {
+          "p": -1.2878587085651816e-14,
+          "h": -9.094947017729282e-13,
+          "T": -0.00010846061961533593,
+          "rho": -5.708809190707598e-05
+        },
+        {
+          "p": -1.2878587085651816e-14,
+          "h": -9.094947017729282e-13,
+          "T": -0.00010846061961533593,
+          "rho": -5.708809190707598e-05
+        },
+        {
+          "p": -1.2878587085651816e-14,
+          "h": -9.094947017729282e-13,
+          "T": -0.00010846061961533593,
+          "rho": -5.708809190707598e-05
+        },
+        {
+          "p": -1.2878587085651816e-14,
+          "h": -9.094947017729282e-13,
+          "T": -0.00010846061961533593,
+          "rho": -5.708809190707598e-05
+        }
+      ],
+      "frozenDirectEOSPass": true
+    },
+    {
+      "file": "webkit-coupled-load-step-1e-07.json",
+      "browser": "webkit",
+      "case": "load-step",
+      "relativeTolerance": 1e-07,
+      "completedAllSamples": true,
+      "stop": null,
+      "harnessError": null,
+      "independentConservation": {
+        "sectionMassKg": 8.72235617066508e-12,
+        "sectionEnergyKJ": 3.1227109786868823e-09,
+        "nodeEnergyKJ": 6.52811138479592e-14,
+        "globalMassKg": 1.723870698966401e-11,
+        "globalEnergyKJ": 5.427988725159594e-09
+      },
+      "conservationPass": true,
+      "frozenDirectEOSComparison": {
+        "pressureBar": 6.759701514091887e-07,
+        "enthalpyKJkg": 0.0005425034028121445,
+        "fluidTemperatureK": 4.9298698741040425e-06,
+        "thermalTemperatureK": 5.856876157395163e-06
+      },
+      "terminalEventCount": 0,
+      "referenceTerminalEventCount": 0,
+      "terminalEventErrorSeconds": 0,
+      "maxAcceptedTemporalError": 0.948251652980614,
+      "acceptedHalfSteps": 826,
+      "rejections": 5,
+      "rejectionKinds": {
+        "accuracy": 5
+      },
+      "maxCanonicalDensityResidual": 4.1272665220395965e-16,
+      "maxCanonicalEnergyResidualKJkg": 8.526512829121202e-13,
+      "independentNativeStateMax": {
+        "nativePMinusReportedPa": 0,
+        "nativeHMinusReportedJkg": 1.1641532182693481e-10,
+        "nativeUMinusStoredJkg": 8.149072527885437e-10
+      },
+      "directStateExceptions": [],
+      "elapsedSeconds": 23.432694457000025,
+      "settings": {
+        "method": "tr-bdf2",
+        "adaptive": true,
+        "maxStep": 0.25,
+        "minStep": 1e-09,
+        "relativeTolerance": 1e-07,
+        "massAbsoluteKg": 1e-12,
+        "energyAbsoluteKJ": 1e-09,
+        "pressureAbsoluteBar": 1e-06,
+        "enthalpyAbsoluteKJkg": 9.999999999999999e-06,
+        "eventStepSeconds": 0.0005,
+        "temperatureAbsoluteK": 9.999999999999999e-06,
+        "temperatureScaleK": 50,
+        "nonlinearTolerance": 1e-11,
+        "thermalResidualK": 1e-12,
+        "maxIterations": 30,
+        "maxAttempts": 100000,
+        "trace": true,
+        "thermalJacobian": "finite-difference",
+        "timestepGrowth": "failure-aware"
+      },
+      "counts": {
+        "ph": 360734,
+        "sat": 794728,
+        "stateMVU": 18880,
+        "domainGuards": 740348
+      },
+      "initialEOSMinusTable": [
+        {
+          "p": -1.2878587085651816e-14,
+          "h": -9.094947017729282e-13,
+          "T": -0.00010846061961533593,
+          "rho": -5.708809190707598e-05
+        },
+        {
+          "p": -1.2878587085651816e-14,
+          "h": -9.094947017729282e-13,
+          "T": -0.00010846061961533593,
+          "rho": -5.708809190707598e-05
+        },
+        {
+          "p": -1.2878587085651816e-14,
+          "h": -9.094947017729282e-13,
+          "T": -0.00010846061961533593,
+          "rho": -5.708809190707598e-05
+        },
+        {
+          "p": -1.2878587085651816e-14,
+          "h": -9.094947017729282e-13,
+          "T": -0.00010846061961533593,
+          "rho": -5.708809190707598e-05
+        },
+        {
+          "p": -1.2878587085651816e-14,
+          "h": -9.094947017729282e-13,
+          "T": -0.00010846061961533593,
+          "rho": -5.708809190707598e-05
+        }
+      ],
+      "frozenDirectEOSPass": true
+    },
+    {
+      "file": "webkit-coupled-load-step-1e-08.json",
+      "browser": "webkit",
+      "case": "load-step",
+      "relativeTolerance": 1e-08,
+      "completedAllSamples": true,
+      "stop": null,
+      "harnessError": null,
+      "independentConservation": {
+        "sectionMassKg": 1.4346301924206273e-12,
+        "sectionEnergyKJ": 7.525180478751281e-10,
+        "nodeEnergyKJ": 7.283063041541027e-14,
+        "globalMassKg": 1.679007627375384e-12,
+        "globalEnergyKJ": 5.249507495364014e-10
+      },
+      "conservationPass": true,
+      "frozenDirectEOSComparison": {
+        "pressureBar": 1.5547533704918237e-07,
+        "enthalpyKJkg": 0.00011757538754864072,
+        "fluidTemperatureK": 1.1338862009324657e-06,
+        "thermalTemperatureK": 1.4390867590918788e-06
+      },
+      "terminalEventCount": 0,
+      "referenceTerminalEventCount": 0,
+      "terminalEventErrorSeconds": 0,
+      "maxAcceptedTemporalError": 0.7354626306058244,
+      "acceptedHalfSteps": 1680,
+      "rejections": 6,
+      "rejectionKinds": {
+        "accuracy": 6
+      },
+      "maxCanonicalDensityResidual": 4.159897790363464e-16,
+      "maxCanonicalEnergyResidualKJkg": 8.526512829121202e-13,
+      "independentNativeStateMax": {
+        "nativePMinusReportedPa": 0,
+        "nativeHMinusReportedJkg": 1.1641532182693481e-10,
+        "nativeUMinusStoredJkg": 8.149072527885437e-10
+      },
+      "directStateExceptions": [],
+      "elapsedSeconds": 41.093791894000105,
+      "settings": {
+        "method": "tr-bdf2",
+        "adaptive": true,
+        "maxStep": 0.125,
+        "minStep": 1e-09,
+        "relativeTolerance": 1e-08,
+        "massAbsoluteKg": 1.0000000000000002e-13,
+        "energyAbsoluteKJ": 1e-10,
+        "pressureAbsoluteBar": 1e-06,
+        "enthalpyAbsoluteKJkg": 1e-06,
+        "eventStepSeconds": 0.0001,
+        "temperatureAbsoluteK": 1e-06,
+        "temperatureScaleK": 50,
+        "nonlinearTolerance": 1e-11,
+        "thermalResidualK": 1e-12,
+        "maxIterations": 30,
+        "maxAttempts": 100000,
+        "trace": true,
+        "thermalJacobian": "finite-difference",
+        "timestepGrowth": "failure-aware"
+      },
+      "counts": {
+        "ph": 685886,
+        "sat": 1519912,
+        "stateMVU": 38140,
+        "domainGuards": 1409912
+      },
+      "initialEOSMinusTable": [
+        {
+          "p": -1.2878587085651816e-14,
+          "h": -9.094947017729282e-13,
+          "T": -0.00010846061961533593,
+          "rho": -5.708809190707598e-05
+        },
+        {
+          "p": -1.2878587085651816e-14,
+          "h": -9.094947017729282e-13,
+          "T": -0.00010846061961533593,
+          "rho": -5.708809190707598e-05
+        },
+        {
+          "p": -1.2878587085651816e-14,
+          "h": -9.094947017729282e-13,
+          "T": -0.00010846061961533593,
+          "rho": -5.708809190707598e-05
+        },
+        {
+          "p": -1.2878587085651816e-14,
+          "h": -9.094947017729282e-13,
+          "T": -0.00010846061961533593,
+          "rho": -5.708809190707598e-05
+        },
+        {
+          "p": -1.2878587085651816e-14,
+          "h": -9.094947017729282e-13,
+          "T": -0.00010846061961533593,
+          "rho": -5.708809190707598e-05
+        }
+      ],
+      "frozenDirectEOSPass": true
+    },
+    {
+      "file": "webkit-coupled-warm-1e-06.json",
+      "browser": "webkit",
+      "case": "warm",
+      "relativeTolerance": 1e-06,
+      "completedAllSamples": true,
+      "stop": null,
+      "harnessError": null,
+      "independentConservation": {
+        "sectionMassKg": 4.175992884825064e-12,
+        "sectionEnergyKJ": 2.4104309659378487e-09,
+        "nodeEnergyKJ": 5.790923296444817e-13,
+        "globalMassKg": 4.013900323229791e-12,
+        "globalEnergyKJ": 1.2348095879133325e-09
+      },
+      "conservationPass": true,
+      "frozenDirectEOSComparison": {
+        "pressureBar": 1.7987102856054094e-06,
+        "enthalpyKJkg": 0.004531006869228804,
+        "fluidTemperatureK": 0.0006167798612182196,
+        "thermalTemperatureK": 5.2575550739675236e-05
+      },
+      "terminalEventCount": 1,
+      "referenceTerminalEventCount": 1,
+      "terminalEventErrorSeconds": 2.1944584529531852e-05,
+      "maxAcceptedTemporalError": 0.9606017566970326,
+      "acceptedHalfSteps": 906,
+      "rejections": 49,
+      "rejectionKinds": {
+        "accuracy": 48,
+        "event": 1
+      },
+      "maxCanonicalDensityResidual": 2.651219336643842e-16,
+      "maxCanonicalEnergyResidualKJkg": 9.094947017729282e-13,
+      "independentNativeStateMax": {
+        "nativePMinusReportedPa": 0,
+        "nativeHMinusReportedJkg": 2.3283064365386963e-10,
+        "nativeUMinusStoredJkg": 9.313225746154785e-10
+      },
+      "directStateExceptions": [],
+      "elapsedSeconds": 40.012051363999944,
+      "settings": {
+        "method": "tr-bdf2",
+        "adaptive": true,
+        "maxStep": 0.5,
+        "minStep": 1e-09,
+        "relativeTolerance": 1e-06,
+        "massAbsoluteKg": 1.0000000000000001e-11,
+        "energyAbsoluteKJ": 1e-08,
+        "pressureAbsoluteBar": 1e-06,
+        "enthalpyAbsoluteKJkg": 9.999999999999999e-05,
+        "eventStepSeconds": 0.002,
+        "temperatureAbsoluteK": 9.999999999999999e-05,
+        "temperatureScaleK": 50,
+        "nonlinearTolerance": 1e-11,
+        "thermalResidualK": 1e-12,
+        "maxIterations": 30,
+        "maxAttempts": 100000,
+        "trace": true,
+        "thermalJacobian": "finite-difference",
+        "timestepGrowth": "failure-aware"
+      },
+      "counts": {
+        "ph": 523910,
+        "sat": 1134870,
+        "stateMVU": 22650,
+        "domainGuards": 1070470
+      },
+      "initialEOSMinusTable": [
+        {
+          "p": 1.7763568394002505e-15,
+          "h": 4.547473508864641e-13,
+          "T": -0.0012813308981201033,
+          "rho": -2.061243671080959e-05
+        },
+        {
+          "p": 1.7763568394002505e-15,
+          "h": 4.547473508864641e-13,
+          "T": -0.0012813308981201033,
+          "rho": -2.061243671080959e-05
+        },
+        {
+          "p": 1.7763568394002505e-15,
+          "h": 4.547473508864641e-13,
+          "T": -0.0012813308981201033,
+          "rho": -2.061243671080959e-05
+        },
+        {
+          "p": 1.7763568394002505e-15,
+          "h": 4.547473508864641e-13,
+          "T": -0.0012813308981201033,
+          "rho": -2.061243671080959e-05
+        },
+        {
+          "p": 1.7763568394002505e-15,
+          "h": 4.547473508864641e-13,
+          "T": -0.0012813308981201033,
+          "rho": -2.061243671080959e-05
+        }
+      ],
+      "frozenDirectEOSPass": true
+    },
+    {
+      "file": "webkit-coupled-warm-1e-07.json",
+      "browser": "webkit",
+      "case": "warm",
+      "relativeTolerance": 1e-07,
+      "completedAllSamples": true,
+      "stop": null,
+      "harnessError": null,
+      "independentConservation": {
+        "sectionMassKg": 6.053721759990971e-12,
+        "sectionEnergyKJ": 3.343146204315417e-09,
+        "nodeEnergyKJ": 4.334310688136611e-13,
+        "globalMassKg": 9.19687936917768e-12,
+        "globalEnergyKJ": 2.844198654372576e-09
+      },
+      "conservationPass": true,
+      "frozenDirectEOSComparison": {
+        "pressureBar": 4.128036756867459e-07,
+        "enthalpyKJkg": 0.0010568170694114087,
+        "fluidTemperatureK": 0.00013780975524468886,
+        "thermalTemperatureK": 1.307405835859754e-05
+      },
+      "terminalEventCount": 1,
+      "referenceTerminalEventCount": 1,
+      "terminalEventErrorSeconds": 2.492390391850563e-06,
+      "maxAcceptedTemporalError": 0.9126555927312994,
+      "acceptedHalfSteps": 1816,
+      "rejections": 44,
+      "rejectionKinds": {
+        "accuracy": 44
+      },
+      "maxCanonicalDensityResidual": 3.7874130789801216e-16,
+      "maxCanonicalEnergyResidualKJkg": 9.094947017729282e-13,
+      "independentNativeStateMax": {
+        "nativePMinusReportedPa": 0,
+        "nativeHMinusReportedJkg": 2.3283064365386963e-10,
+        "nativeUMinusStoredJkg": 1.1641532182693481e-09
+      },
+      "directStateExceptions": [],
+      "elapsedSeconds": 57.92751709999993,
+      "settings": {
+        "method": "tr-bdf2",
+        "adaptive": true,
+        "maxStep": 0.25,
+        "minStep": 1e-09,
+        "relativeTolerance": 1e-07,
+        "massAbsoluteKg": 1e-12,
+        "energyAbsoluteKJ": 1e-09,
+        "pressureAbsoluteBar": 1e-06,
+        "enthalpyAbsoluteKJkg": 9.999999999999999e-06,
+        "eventStepSeconds": 0.0005,
+        "temperatureAbsoluteK": 9.999999999999999e-06,
+        "temperatureScaleK": 50,
+        "nonlinearTolerance": 1e-11,
+        "thermalResidualK": 1e-12,
+        "maxIterations": 30,
+        "maxAttempts": 100000,
+        "trace": true,
+        "thermalJacobian": "finite-difference",
+        "timestepGrowth": "failure-aware"
+      },
+      "counts": {
+        "ph": 879542,
+        "sat": 1924984,
+        "stateMVU": 42900,
+        "domainGuards": 1801984
+      },
+      "initialEOSMinusTable": [
+        {
+          "p": 1.7763568394002505e-15,
+          "h": 4.547473508864641e-13,
+          "T": -0.0012813308981201033,
+          "rho": -2.061243671080959e-05
+        },
+        {
+          "p": 1.7763568394002505e-15,
+          "h": 4.547473508864641e-13,
+          "T": -0.0012813308981201033,
+          "rho": -2.061243671080959e-05
+        },
+        {
+          "p": 1.7763568394002505e-15,
+          "h": 4.547473508864641e-13,
+          "T": -0.0012813308981201033,
+          "rho": -2.061243671080959e-05
+        },
+        {
+          "p": 1.7763568394002505e-15,
+          "h": 4.547473508864641e-13,
+          "T": -0.0012813308981201033,
+          "rho": -2.061243671080959e-05
+        },
+        {
+          "p": 1.7763568394002505e-15,
+          "h": 4.547473508864641e-13,
+          "T": -0.0012813308981201033,
+          "rho": -2.061243671080959e-05
+        }
+      ],
+      "frozenDirectEOSPass": true
+    },
+    {
+      "file": "webkit-coupled-warm-1e-08.json",
+      "browser": "webkit",
+      "case": "warm",
+      "relativeTolerance": 1e-08,
+      "completedAllSamples": true,
+      "stop": null,
+      "harnessError": null,
+      "independentConservation": {
+        "sectionMassKg": 3.743449994431103e-12,
+        "sectionEnergyKJ": 2.7494877485878533e-09,
+        "nodeEnergyKJ": 2.948752353404416e-13,
+        "globalMassKg": 4.242248913266522e-12,
+        "globalEnergyKJ": 1.2375558355870453e-09
+      },
+      "conservationPass": true,
+      "frozenDirectEOSComparison": {
+        "pressureBar": 1.0983751153048615e-07,
+        "enthalpyKJkg": 0.00023675741135775752,
+        "fluidTemperatureK": 3.074406157566045e-05,
+        "thermalTemperatureK": 3.198856404651451e-06
+      },
+      "terminalEventCount": 1,
+      "referenceTerminalEventCount": 1,
+      "terminalEventErrorSeconds": 7.655731548705802e-07,
+      "maxAcceptedTemporalError": 0.9908421162314773,
+      "acceptedHalfSteps": 3710,
+      "rejections": 44,
+      "rejectionKinds": {
+        "accuracy": 44
+      },
+      "maxCanonicalDensityResidual": 4.1344584259587244e-16,
+      "maxCanonicalEnergyResidualKJkg": 1.1368683772161603e-12,
+      "independentNativeStateMax": {
+        "nativePMinusReportedPa": 0,
+        "nativeHMinusReportedJkg": 2.3283064365386963e-10,
+        "nativeUMinusStoredJkg": 9.313225746154785e-10
+      },
+      "directStateExceptions": [],
+      "elapsedSeconds": 100.87478273400006,
+      "settings": {
+        "method": "tr-bdf2",
+        "adaptive": true,
+        "maxStep": 0.125,
+        "minStep": 1e-09,
+        "relativeTolerance": 1e-08,
+        "massAbsoluteKg": 1.0000000000000002e-13,
+        "energyAbsoluteKJ": 1e-10,
+        "pressureAbsoluteBar": 1e-06,
+        "enthalpyAbsoluteKJkg": 1e-06,
+        "eventStepSeconds": 0.0001,
+        "temperatureAbsoluteK": 1e-06,
+        "temperatureScaleK": 50,
+        "nonlinearTolerance": 1e-11,
+        "thermalResidualK": 1e-12,
+        "maxIterations": 30,
+        "maxAttempts": 100000,
+        "trace": true,
+        "thermalJacobian": "finite-difference",
+        "timestepGrowth": "failure-aware"
+      },
+      "counts": {
+        "ph": 1567336,
+        "sat": 3466297,
+        "stateMVU": 85515,
+        "domainGuards": 3220187
+      },
+      "initialEOSMinusTable": [
+        {
+          "p": 1.7763568394002505e-15,
+          "h": 4.547473508864641e-13,
+          "T": -0.0012813308981201033,
+          "rho": -2.061243671080959e-05
+        },
+        {
+          "p": 1.7763568394002505e-15,
+          "h": 4.547473508864641e-13,
+          "T": -0.0012813308981201033,
+          "rho": -2.061243671080959e-05
+        },
+        {
+          "p": 1.7763568394002505e-15,
+          "h": 4.547473508864641e-13,
+          "T": -0.0012813308981201033,
+          "rho": -2.061243671080959e-05
+        },
+        {
+          "p": 1.7763568394002505e-15,
+          "h": 4.547473508864641e-13,
+          "T": -0.0012813308981201033,
+          "rho": -2.061243671080959e-05
+        },
+        {
+          "p": 1.7763568394002505e-15,
+          "h": 4.547473508864641e-13,
+          "T": -0.0012813308981201033,
+          "rho": -2.061243671080959e-05
+        }
+      ],
+      "frozenDirectEOSPass": true
+    }
+  ],
+  "temporalComparisons": [
+    {
+      "browser": "chromium",
+      "case": "cold",
+      "relativeTolerance": 1e-06,
+      "errors": {
+        "pressureBar": 2.4713338468984603e-06,
+        "enthalpyKJkg": 0.0022870836505717307,
+        "fluidTemperatureK": 1.799147037218063e-05,
+        "thermalTemperatureK": 1.0672411235645995e-05
+      },
+      "eventErrorSeconds": 0,
+      "eventIdentitiesMatch": true,
+      "pass": true
+    },
+    {
+      "browser": "chromium",
+      "case": "cold",
+      "relativeTolerance": 1e-07,
+      "errors": {
+        "pressureBar": 5.204948143600063e-07,
+        "enthalpyKJkg": 0.00042564525983834756,
+        "fluidTemperatureK": 3.795983673171577e-06,
+        "thermalTemperatureK": 1.978727141249692e-06
+      },
+      "eventErrorSeconds": 0,
+      "eventIdentitiesMatch": true,
+      "pass": true
+    },
+    {
+      "browser": "chromium",
+      "case": "feed-step",
+      "relativeTolerance": 1e-06,
+      "errors": {
+        "pressureBar": 2.331519401543858e-06,
+        "enthalpyKJkg": 0.0023086226696023004,
+        "fluidTemperatureK": 1.7003834727802314e-05,
+        "thermalTemperatureK": 1.0905843680575344e-05
+      },
+      "eventErrorSeconds": 0,
+      "eventIdentitiesMatch": true,
+      "pass": true
+    },
+    {
+      "browser": "chromium",
+      "case": "feed-step",
+      "relativeTolerance": 1e-07,
+      "errors": {
+        "pressureBar": 5.204948143600063e-07,
+        "enthalpyKJkg": 0.00042492801526350377,
+        "fluidTemperatureK": 3.795983673171577e-06,
+        "thermalTemperatureK": 1.973147107037221e-06
+      },
+      "eventErrorSeconds": 0,
+      "eventIdentitiesMatch": true,
+      "pass": true
+    },
+    {
+      "browser": "chromium",
+      "case": "heat-reversal",
+      "relativeTolerance": 1e-06,
+      "errors": {
+        "pressureBar": 1.1427373574957045e-05,
+        "enthalpyKJkg": 0.0018285115072558256,
+        "fluidTemperatureK": 0.0007655650626361421,
+        "thermalTemperatureK": 0.00011691877517705507
+      },
+      "eventErrorSeconds": 0,
+      "eventIdentitiesMatch": true,
+      "pass": true
+    },
+    {
+      "browser": "chromium",
+      "case": "heat-reversal",
+      "relativeTolerance": 1e-07,
+      "errors": {
+        "pressureBar": 3.9762485011252124e-06,
+        "enthalpyKJkg": 0.000636245570376559,
+        "fluidTemperatureK": 0.00026638477993401466,
+        "thermalTemperatureK": 2.530919783794161e-05
+      },
+      "eventErrorSeconds": 0,
+      "eventIdentitiesMatch": true,
+      "pass": true
+    },
+    {
+      "browser": "chromium",
+      "case": "load-step",
+      "relativeTolerance": 1e-06,
+      "errors": {
+        "pressureBar": 2.331519401543858e-06,
+        "enthalpyKJkg": 0.0023086226696023004,
+        "fluidTemperatureK": 1.7003834727802314e-05,
+        "thermalTemperatureK": 2.0933423058977496e-05
+      },
+      "eventErrorSeconds": 0,
+      "eventIdentitiesMatch": true,
+      "pass": true
+    },
+    {
+      "browser": "chromium",
+      "case": "load-step",
+      "relativeTolerance": 1e-07,
+      "errors": {
+        "pressureBar": 5.204948143600063e-07,
+        "enthalpyKJkg": 0.00042492801526350377,
+        "fluidTemperatureK": 3.795983673171577e-06,
+        "thermalTemperatureK": 4.4177893983032845e-06
+      },
+      "eventErrorSeconds": 0,
+      "eventIdentitiesMatch": true,
+      "pass": true
+    },
+    {
+      "browser": "chromium",
+      "case": "warm",
+      "relativeTolerance": 1e-06,
+      "errors": {
+        "pressureBar": 1.6888727740749232e-06,
+        "enthalpyKJkg": 0.004294249457871047,
+        "fluidTemperatureK": 0.0005860357996425591,
+        "thermalTemperatureK": 4.9376694335023785e-05
+      },
+      "eventErrorSeconds": 2.266337965139975e-05,
+      "eventIdentitiesMatch": true,
+      "pass": true
+    },
+    {
+      "browser": "chromium",
+      "case": "warm",
+      "relativeTolerance": 1e-07,
+      "errors": {
+        "pressureBar": 3.0296616415625977e-07,
+        "enthalpyKJkg": 0.0008200596580536512,
+        "fluidTemperatureK": 0.0001070656936690284,
+        "thermalTemperatureK": 9.875201953946089e-06
+      },
+      "eventErrorSeconds": 3.945271681904394e-06,
+      "eventIdentitiesMatch": true,
+      "pass": true
+    },
+    {
+      "browser": "webkit",
+      "case": "cold",
+      "relativeTolerance": 1e-06,
+      "errors": {
+        "pressureBar": 2.4713338468984603e-06,
+        "enthalpyKJkg": 0.0022870836505717307,
+        "fluidTemperatureK": 1.799147037218063e-05,
+        "thermalTemperatureK": 1.0672411235645995e-05
+      },
+      "eventErrorSeconds": 0,
+      "eventIdentitiesMatch": true,
+      "pass": true
+    },
+    {
+      "browser": "webkit",
+      "case": "cold",
+      "relativeTolerance": 1e-07,
+      "errors": {
+        "pressureBar": 5.204948143600063e-07,
+        "enthalpyKJkg": 0.00042564525983834756,
+        "fluidTemperatureK": 3.795983673171577e-06,
+        "thermalTemperatureK": 1.978727141249692e-06
+      },
+      "eventErrorSeconds": 0,
+      "eventIdentitiesMatch": true,
+      "pass": true
+    },
+    {
+      "browser": "webkit",
+      "case": "feed-step",
+      "relativeTolerance": 1e-06,
+      "errors": {
+        "pressureBar": 2.331519401543858e-06,
+        "enthalpyKJkg": 0.0023086226696023004,
+        "fluidTemperatureK": 1.7003834727802314e-05,
+        "thermalTemperatureK": 1.0905843680575344e-05
+      },
+      "eventErrorSeconds": 0,
+      "eventIdentitiesMatch": true,
+      "pass": true
+    },
+    {
+      "browser": "webkit",
+      "case": "feed-step",
+      "relativeTolerance": 1e-07,
+      "errors": {
+        "pressureBar": 5.204948143600063e-07,
+        "enthalpyKJkg": 0.00042492801526350377,
+        "fluidTemperatureK": 3.795983673171577e-06,
+        "thermalTemperatureK": 1.973147107037221e-06
+      },
+      "eventErrorSeconds": 0,
+      "eventIdentitiesMatch": true,
+      "pass": true
+    },
+    {
+      "browser": "webkit",
+      "case": "heat-reversal",
+      "relativeTolerance": 1e-06,
+      "errors": {
+        "pressureBar": 1.1427373574957045e-05,
+        "enthalpyKJkg": 0.0018285115072558256,
+        "fluidTemperatureK": 0.0007655650626361421,
+        "thermalTemperatureK": 0.00011691877517705507
+      },
+      "eventErrorSeconds": 0,
+      "eventIdentitiesMatch": true,
+      "pass": true
+    },
+    {
+      "browser": "webkit",
+      "case": "heat-reversal",
+      "relativeTolerance": 1e-07,
+      "errors": {
+        "pressureBar": 3.9762485011252124e-06,
+        "enthalpyKJkg": 0.000636245570376559,
+        "fluidTemperatureK": 0.00026638477993401466,
+        "thermalTemperatureK": 2.530919783794161e-05
+      },
+      "eventErrorSeconds": 0,
+      "eventIdentitiesMatch": true,
+      "pass": true
+    },
+    {
+      "browser": "webkit",
+      "case": "load-step",
+      "relativeTolerance": 1e-06,
+      "errors": {
+        "pressureBar": 2.331519401543858e-06,
+        "enthalpyKJkg": 0.0023086226696023004,
+        "fluidTemperatureK": 1.7003834727802314e-05,
+        "thermalTemperatureK": 2.0933423058977496e-05
+      },
+      "eventErrorSeconds": 0,
+      "eventIdentitiesMatch": true,
+      "pass": true
+    },
+    {
+      "browser": "webkit",
+      "case": "load-step",
+      "relativeTolerance": 1e-07,
+      "errors": {
+        "pressureBar": 5.204948143600063e-07,
+        "enthalpyKJkg": 0.00042492801526350377,
+        "fluidTemperatureK": 3.795983673171577e-06,
+        "thermalTemperatureK": 4.4177893983032845e-06
+      },
+      "eventErrorSeconds": 0,
+      "eventIdentitiesMatch": true,
+      "pass": true
+    },
+    {
+      "browser": "webkit",
+      "case": "warm",
+      "relativeTolerance": 1e-06,
+      "errors": {
+        "pressureBar": 1.6888727740749232e-06,
+        "enthalpyKJkg": 0.004294249457871047,
+        "fluidTemperatureK": 0.0005860357996425591,
+        "thermalTemperatureK": 4.9376694335023785e-05
+      },
+      "eventErrorSeconds": 2.266337965139975e-05,
+      "eventIdentitiesMatch": true,
+      "pass": true
+    },
+    {
+      "browser": "webkit",
+      "case": "warm",
+      "relativeTolerance": 1e-07,
+      "errors": {
+        "pressureBar": 3.0296616415625977e-07,
+        "enthalpyKJkg": 0.0008200596580536512,
+        "fluidTemperatureK": 0.0001070656936690284,
+        "thermalTemperatureK": 9.875201953946089e-06
+      },
+      "eventErrorSeconds": 3.945271681904394e-06,
+      "eventIdentitiesMatch": true,
+      "pass": true
+    }
+  ],
+  "limits": {
+    "massKg": 1e-08,
+    "energyKJ": 1e-06,
+    "sameEOSTemporalPressureBar": 5e-05,
+    "frozenDirectEOSPressureBar": 0.0001,
+    "hKJkg": 0.05,
+    "nominalK": 0.01,
+    "tightK": 0.001,
+    "eventSeconds": 0.001
+  },
+  "qualificationLimit": "Five operating fixtures and temporal refinements only. Not the full A2 verification/domain/rollback/order suite; no multihour or physical-device qualification."
+}

@@ -1,0 +1,364 @@
+[
+  {
+    "file": "chromium-official72.json",
+    "build": "official72",
+    "browser": "chromium",
+    "rows": 274,
+    "errors": 0,
+    "primary": {
+      "id": "exact-saved",
+      "method": "high",
+      "axis": "P",
+      "step": 0.01,
+      "args": [
+        30298.937123458254,
+        94523.34612321304
+      ],
+      "inputBits": [
+        "40dd96bbf9d4ab61",
+        "40f713b589b87e86"
+      ],
+      "perturbedInputBits": [
+        "40dd96bc9dabb59e",
+        "40f713b589b87e86"
+      ],
+      "actualStep": 0.00999999999839929,
+      "base": {
+        "p": 30298.937123458254,
+        "h": 94523.34612321304,
+        "rho": 708.6710614955961,
+        "T": 217.26293725549877,
+        "u": 94480.5915382304,
+        "Q": -1,
+        "pEOS": 30298.93712353335,
+        "hEOS": 94523.34612321315,
+        "cp": 4379.299738250346,
+        "cv": 2964.265734237814,
+        "kappa": 5.923149890324016e-10,
+        "rhoP": 6.616841348556099e-07,
+        "rhoH": -0.00026756503093982,
+        "hp": 0.0009041825906341222,
+        "rhoT": -1.1717474699596995,
+        "pResidual": 7.509515853598714e-08,
+        "hResidual": 1.1641532182693481e-10,
+        "workIdentity": -8.036238341446733e-12
+      },
+      "perturbed": {
+        "p": 30298.947123458252,
+        "h": 94523.34612321304,
+        "rho": 708.6710615022129,
+        "T": 217.262937253434,
+        "u": 94480.59152411851,
+        "Q": -1,
+        "pEOS": 30298.947122767513,
+        "hEOS": 94523.34612321072,
+        "cp": 4379.299738217219,
+        "cv": 2964.2657342448997,
+        "kappa": 5.923149889898216e-10,
+        "rhoP": 6.616841348281433e-07,
+        "rhoH": -0.0002675650309334436,
+        "hp": 0.0009041825906511453,
+        "rhoT": -1.1717474699229118,
+        "pResidual": -6.907393981236964e-07,
+        "hResidual": -2.3137545213103294e-09,
+        "workIdentity": 1.3519496633307426e-09
+      },
+      "analytic": 6.616841348556099e-07,
+      "finite": 6.616801329073496e-07,
+      "ratio": 0.9999939518751478
+    },
+    "nearbyPressureDeviationsAbove1Percent": 0,
+    "nearbyEnthalpyDeviationsAbove1Percent": 0,
+    "descriptiveThresholdCaution": "1% is a descriptive count only; it is not a solver acceptance limit.",
+    "maxNormalizedProbeDensityContamination": 7.812383389928536e-15,
+    "maxNormalizedCaloricResidual": 1.1206848515467118e-12,
+    "independentMax": {
+      "nativePResidualPa": 1.3534117897506803e-06,
+      "nativeHResidualJkg": 6.034970283508301e-07,
+      "nativeMinusWASMDTPressurePa": 7.869675755500793e-08,
+      "nativeMinusWASMDTEnthalpyJkg": 1.7462298274040222e-10
+    },
+    "maxDeviationFromPolishedNative": {
+      "rho": 2.0440893422346562e-10,
+      "T": 1.21985976875294e-10
+    },
+    "referenceFailures": 0,
+    "accuracySuccesses": 598,
+    "accuracyErrors": [
+      {
+        "id": "p32.65314902038559-Q0.0-DU",
+        "mode": "DU",
+        "region": "saturation",
+        "error": "Error: EOS returned a nonfinite property"
+      },
+      {
+        "id": "p32.80473738460169-Q0.0-DU",
+        "mode": "DU",
+        "region": "saturation",
+        "error": "Error: EOS returned a nonfinite property"
+      },
+      {
+        "id": "near-saturation-30298.93712344606-0.0",
+        "mode": "PT",
+        "region": "boundary",
+        "error": "Error: EOS returned a nonfinite property"
+      },
+      {
+        "id": "near-saturation-30298.93712344606-1e-06",
+        "mode": "PT",
+        "region": "boundary",
+        "error": "Error: EOS returned a nonfinite property"
+      },
+      {
+        "id": "near-saturation-30298.93712344606--1e-06",
+        "mode": "PT",
+        "region": "boundary",
+        "error": "Error: EOS returned a nonfinite property"
+      },
+      {
+        "id": "near-saturation-350000.0-0.0",
+        "mode": "PT",
+        "region": "boundary",
+        "error": "Error: EOS returned a nonfinite property"
+      },
+      {
+        "id": "near-saturation-350000.0-1e-06",
+        "mode": "PT",
+        "region": "boundary",
+        "error": "Error: EOS returned a nonfinite property"
+      },
+      {
+        "id": "near-saturation-350000.0--1e-06",
+        "mode": "PT",
+        "region": "boundary",
+        "error": "Error: EOS returned a nonfinite property"
+      },
+      {
+        "id": "near-saturation-3280473.738460169-0.0",
+        "mode": "PT",
+        "region": "boundary",
+        "error": "Error: EOS returned a nonfinite property"
+      },
+      {
+        "id": "near-saturation-3280473.738460169-1e-06",
+        "mode": "PT",
+        "region": "boundary",
+        "error": "Error: EOS returned a nonfinite property"
+      },
+      {
+        "id": "near-saturation-3280473.738460169--1e-06",
+        "mode": "PT",
+        "region": "boundary",
+        "error": "Error: EOS returned a nonfinite property"
+      },
+      {
+        "id": "negative-P",
+        "mode": "PH",
+        "region": "invalid",
+        "error": "Error: EOS returned a nonfinite property"
+      },
+      {
+        "id": "negative-density",
+        "mode": "DU",
+        "region": "invalid",
+        "error": "Error: EOS returned a nonfinite property"
+      },
+      {
+        "id": "quality-outside",
+        "mode": "PQ",
+        "region": "invalid",
+        "error": "Error: EOS returned a nonfinite property"
+      }
+    ],
+    "accuracyMaxDifferenceFromHistoricalMatchingNative": {
+      "p": 0.009291952475905418,
+      "h": 0.00011922256089746952,
+      "T": 6.252776074688882e-13,
+      "rho": 2.4878090698621236e-09,
+      "u": 2.5331974029541016e-07
+    },
+    "accuracyFailureChanges": [],
+    "standaloneScreenPass": true
+  },
+  {
+    "file": "webkit-official72.json",
+    "build": "official72",
+    "browser": "webkit",
+    "rows": 274,
+    "errors": 0,
+    "primary": {
+      "id": "exact-saved",
+      "method": "high",
+      "axis": "P",
+      "step": 0.01,
+      "args": [
+        30298.937123458254,
+        94523.34612321304
+      ],
+      "inputBits": [
+        "40dd96bbf9d4ab61",
+        "40f713b589b87e86"
+      ],
+      "perturbedInputBits": [
+        "40dd96bc9dabb59e",
+        "40f713b589b87e86"
+      ],
+      "actualStep": 0.00999999999839929,
+      "base": {
+        "p": 30298.937123458254,
+        "h": 94523.34612321304,
+        "rho": 708.6710614955961,
+        "T": 217.26293725549877,
+        "u": 94480.5915382304,
+        "Q": -1,
+        "pEOS": 30298.93712353335,
+        "hEOS": 94523.34612321315,
+        "cp": 4379.299738250346,
+        "cv": 2964.265734237814,
+        "kappa": 5.923149890324016e-10,
+        "rhoP": 6.616841348556099e-07,
+        "rhoH": -0.00026756503093982,
+        "hp": 0.0009041825906341222,
+        "rhoT": -1.1717474699596995,
+        "pResidual": 7.509515853598714e-08,
+        "hResidual": 1.1641532182693481e-10,
+        "workIdentity": -8.036238341446733e-12
+      },
+      "perturbed": {
+        "p": 30298.947123458252,
+        "h": 94523.34612321304,
+        "rho": 708.6710615022129,
+        "T": 217.262937253434,
+        "u": 94480.59152411851,
+        "Q": -1,
+        "pEOS": 30298.947122767513,
+        "hEOS": 94523.34612321072,
+        "cp": 4379.299738217219,
+        "cv": 2964.2657342448997,
+        "kappa": 5.923149889898216e-10,
+        "rhoP": 6.616841348281433e-07,
+        "rhoH": -0.0002675650309334436,
+        "hp": 0.0009041825906511453,
+        "rhoT": -1.1717474699229118,
+        "pResidual": -6.907393981236964e-07,
+        "hResidual": -2.3137545213103294e-09,
+        "workIdentity": 1.3519496633307426e-09
+      },
+      "analytic": 6.616841348556099e-07,
+      "finite": 6.616801329073496e-07,
+      "ratio": 0.9999939518751478
+    },
+    "nearbyPressureDeviationsAbove1Percent": 0,
+    "nearbyEnthalpyDeviationsAbove1Percent": 0,
+    "descriptiveThresholdCaution": "1% is a descriptive count only; it is not a solver acceptance limit.",
+    "maxNormalizedProbeDensityContamination": 7.812383389928536e-15,
+    "maxNormalizedCaloricResidual": 1.1206848515467118e-12,
+    "independentMax": {
+      "nativePResidualPa": 1.3534117897506803e-06,
+      "nativeHResidualJkg": 6.034970283508301e-07,
+      "nativeMinusWASMDTPressurePa": 7.869675755500793e-08,
+      "nativeMinusWASMDTEnthalpyJkg": 1.7462298274040222e-10
+    },
+    "maxDeviationFromPolishedNative": {
+      "rho": 2.0440893422346562e-10,
+      "T": 1.21985976875294e-10
+    },
+    "referenceFailures": 0,
+    "accuracySuccesses": 598,
+    "accuracyErrors": [
+      {
+        "id": "p32.65314902038559-Q0.0-DU",
+        "mode": "DU",
+        "region": "saturation",
+        "error": "Error: EOS returned a nonfinite property"
+      },
+      {
+        "id": "p32.80473738460169-Q0.0-DU",
+        "mode": "DU",
+        "region": "saturation",
+        "error": "Error: EOS returned a nonfinite property"
+      },
+      {
+        "id": "near-saturation-30298.93712344606-0.0",
+        "mode": "PT",
+        "region": "boundary",
+        "error": "Error: EOS returned a nonfinite property"
+      },
+      {
+        "id": "near-saturation-30298.93712344606-1e-06",
+        "mode": "PT",
+        "region": "boundary",
+        "error": "Error: EOS returned a nonfinite property"
+      },
+      {
+        "id": "near-saturation-30298.93712344606--1e-06",
+        "mode": "PT",
+        "region": "boundary",
+        "error": "Error: EOS returned a nonfinite property"
+      },
+      {
+        "id": "near-saturation-350000.0-0.0",
+        "mode": "PT",
+        "region": "boundary",
+        "error": "Error: EOS returned a nonfinite property"
+      },
+      {
+        "id": "near-saturation-350000.0-1e-06",
+        "mode": "PT",
+        "region": "boundary",
+        "error": "Error: EOS returned a nonfinite property"
+      },
+      {
+        "id": "near-saturation-350000.0--1e-06",
+        "mode": "PT",
+        "region": "boundary",
+        "error": "Error: EOS returned a nonfinite property"
+      },
+      {
+        "id": "near-saturation-3280473.738460169-0.0",
+        "mode": "PT",
+        "region": "boundary",
+        "error": "Error: EOS returned a nonfinite property"
+      },
+      {
+        "id": "near-saturation-3280473.738460169-1e-06",
+        "mode": "PT",
+        "region": "boundary",
+        "error": "Error: EOS returned a nonfinite property"
+      },
+      {
+        "id": "near-saturation-3280473.738460169--1e-06",
+        "mode": "PT",
+        "region": "boundary",
+        "error": "Error: EOS returned a nonfinite property"
+      },
+      {
+        "id": "negative-P",
+        "mode": "PH",
+        "region": "invalid",
+        "error": "Error: EOS returned a nonfinite property"
+      },
+      {
+        "id": "negative-density",
+        "mode": "DU",
+        "region": "invalid",
+        "error": "Error: EOS returned a nonfinite property"
+      },
+      {
+        "id": "quality-outside",
+        "mode": "PQ",
+        "region": "invalid",
+        "error": "Error: EOS returned a nonfinite property"
+      }
+    ],
+    "accuracyMaxDifferenceFromHistoricalMatchingNative": {
+      "p": 0.009291952475905418,
+      "h": 0.00011922256089746952,
+      "T": 6.252776074688882e-13,
+      "rho": 2.4878090698621236e-09,
+      "u": 2.5331974029541016e-07
+    },
+    "accuracyFailureChanges": [],
+    "standaloneScreenPass": true
+  }
+]
