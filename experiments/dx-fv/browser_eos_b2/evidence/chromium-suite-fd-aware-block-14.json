@@ -1,0 +1,70 @@
+{
+  "id": "block-14",
+  "line": 205,
+  "harnessVersion": 4,
+  "assertionTextSHA256": "d6b12de2e99f7ff12e88f49ee22e283e057e3e2dda308430f6b76f44004eec79",
+  "status": "PASS",
+  "result": {
+    "stage": "2A",
+    "sectionCount": 5,
+    "startingCommit": "dd0ca33cc834e2056ebede756f8cf59ed1157a07",
+    "runtime": "browser",
+    "limits": {
+      "massKg": 1e-08,
+      "energyKJ": 1e-06,
+      "nominalTemperatureK": 0.01,
+      "tightTemperatureK": 0.001,
+      "pressureBar": 5e-05,
+      "enthalpyKJkg": 0.05,
+      "eventSeconds": 0.001
+    },
+    "conservation": {
+      "massKg": 0,
+      "sectionMassKg": 0,
+      "refrigerantKJ": 0,
+      "thermalKJ": 0,
+      "combinedKJ": 0,
+      "sectionEnergyKJ": 0,
+      "nodeEnergyKJ": 0
+    },
+    "cases": [],
+    "checks": [
+      {
+        "name": "Stage 2A mesh/closure/domain/scope guards",
+        "passed": true
+      }
+    ],
+    "failures": [],
+    "independentSource": "Independent CoolProp 7.2.0 D/U EOS and SciPy 1.16.2 Radau; conserved M/U plus tube/fin/finite-air energy and independently integrated link/face budgets",
+    "passed": true
+  },
+  "histories": [],
+  "elapsedMS": 18.5,
+  "propertyCalls": {
+    "ph": 0,
+    "sat": 0,
+    "stateMVU": 0,
+    "domainGuards": 0
+  },
+  "linearMemory": 56360960,
+  "init": {
+    "totalMS": 9273.5,
+    "importMS": 12.699999999720603,
+    "fetchMS": 256.89999999990687,
+    "compileInstantiateMS": 94,
+    "runtimeMS": 228.8000000002794,
+    "firstFactoryMS": 8775.100000000093,
+    "initialLinearMemoryBytes": 22544384,
+    "readyLinearMemoryBytes": 56360960,
+    "wasmBytes": 9196512,
+    "mime": "application/wasm",
+    "streaming": true,
+    "logs": []
+  },
+  "selected": {
+    "timestepGrowth": "failure-aware"
+  },
+  "browser": "chromium",
+  "browserVersion": "151.0.7922.34",
+  "choice": "fd-aware"
+}

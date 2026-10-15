@@ -1,0 +1,121 @@
+{
+  "id": "block-13",
+  "line": 204,
+  "harnessVersion": 4,
+  "assertionTextSHA256": "1add4047ac532bbbad26eb3dee8c2c974ef5fc94d12077b97b7c34efdf6ca527",
+  "status": "PASS",
+  "result": {
+    "stage": "2A",
+    "sectionCount": 5,
+    "startingCommit": "dd0ca33cc834e2056ebede756f8cf59ed1157a07",
+    "runtime": "browser",
+    "limits": {
+      "massKg": 1e-08,
+      "energyKJ": 1e-06,
+      "nominalTemperatureK": 0.01,
+      "tightTemperatureK": 0.001,
+      "pressureBar": 5e-05,
+      "enthalpyKJkg": 0.05,
+      "eventSeconds": 0.001
+    },
+    "conservation": {
+      "massKg": 0,
+      "sectionMassKg": 0,
+      "refrigerantKJ": 0,
+      "thermalKJ": 0,
+      "combinedKJ": 0,
+      "sectionEnergyKJ": 0,
+      "nodeEnergyKJ": 0
+    },
+    "cases": [],
+    "checks": [],
+    "failures": [],
+    "independentSource": "Independent CoolProp 7.2.0 D/U EOS and SciPy 1.16.2 Radau; conserved M/U plus tube/fin/finite-air energy and independently integrated link/face budgets",
+    "passed": true
+  },
+  "histories": [
+    {
+      "selectedOptions": {
+        "temperatureAbsoluteK": 0,
+        "timestepGrowth": "failure-aware"
+      },
+      "attempts": [],
+      "rollbackChecks": [],
+      "records": [],
+      "initialRecords": []
+    },
+    {
+      "selectedOptions": {
+        "timestepGrowth": "failure-aware"
+      },
+      "attempts": [],
+      "rollbackChecks": [],
+      "records": [],
+      "initialRecords": []
+    },
+    {
+      "selectedOptions": {
+        "timestepGrowth": "failure-aware"
+      },
+      "attempts": [],
+      "rollbackChecks": [],
+      "records": [],
+      "initialRecords": []
+    },
+    {
+      "selectedOptions": {
+        "timestepGrowth": "failure-aware"
+      },
+      "attempts": [],
+      "rollbackChecks": [],
+      "records": [],
+      "initialRecords": []
+    },
+    {
+      "selectedOptions": {
+        "timestepGrowth": "failure-aware"
+      },
+      "attempts": [],
+      "rollbackChecks": [],
+      "records": [],
+      "initialRecords": []
+    },
+    {
+      "selectedOptions": {
+        "timestepGrowth": "failure-aware"
+      },
+      "attempts": [],
+      "rollbackChecks": [],
+      "records": [],
+      "initialRecords": []
+    }
+  ],
+  "elapsedMS": 21,
+  "propertyCalls": {
+    "ph": 0,
+    "sat": 0,
+    "stateMVU": 0,
+    "domainGuards": 0
+  },
+  "linearMemory": 56360960,
+  "init": {
+    "totalMS": 5373,
+    "importMS": 55,
+    "fetchMS": 141,
+    "compileInstantiateMS": 278,
+    "runtimeMS": 460,
+    "firstFactoryMS": 4717,
+    "initialLinearMemoryBytes": 22544384,
+    "readyLinearMemoryBytes": 56360960,
+    "wasmBytes": 9196512,
+    "mime": "application/wasm",
+    "streaming": true,
+    "logs": []
+  },
+  "selected": {
+    "timestepGrowth": "failure-aware"
+  },
+  "browser": "webkit",
+  "browserVersion": "26.5",
+  "choice": "fd-aware"
+}

@@ -1,0 +1,261 @@
+{
+  "acceptedCommit": "be9eb35a4ddf5098e685182f8104685127c6a6ee",
+  "passed": true,
+  "catalogSHA256": "396f33c702c3c06f8eee57004242f23e6cc2666fd44eaedb0ba2c8e9bbccf1aa",
+  "sourceSHA256": {
+    "BROWSER_RESULTS.json": "b8524e51cc9cc3d2989bea021a836f57d28de19a806753847018ee9fb0284c91",
+    "COUPLED_AUDIT_RESULTS.json": "e8de2f5c736e3e7423f177500f47c9379592d872625d4504ae1f4a73486e57ea",
+    "COUPLED_BROWSER_RESULTS.json": "d46cf816c735a3e04144deed7016626207c84e75701687ede4a6f0a8303f62bd",
+    "COUPLED_CONTROL_RESULTS.json": "b24309d0470fa90b3158a8427e0879f6c87ceb3295bc1f6f059aca3e1d9a433e",
+    "COUPLED_DEVELOPMENT_FAILURES.json": "55beaa61ee15edf0d217a1018f6421059ed05244bd8a46680a4ec2a7bd422121",
+    "COUPLED_REGRESSION_RESULTS.json": "6d6f3fe49e67f75ca842760e32dcb24bcc00db406d52170bc95366ebba84537f",
+    "COUPLED_RESULTS.json": "58183bec5b1ea735181cb6eae1b3035957485f08269483bb31ecacdb3116c2b0",
+    "COUPLED_R_AUDIT_RESULTS.json": "e8de2f5c736e3e7423f177500f47c9379592d872625d4504ae1f4a73486e57ea",
+    "COUPLED_R_BROWSER_RESULTS.json": "d46cf816c735a3e04144deed7016626207c84e75701687ede4a6f0a8303f62bd",
+    "COUPLED_R_CONTROL_RESULTS.json": "b24309d0470fa90b3158a8427e0879f6c87ceb3295bc1f6f059aca3e1d9a433e",
+    "COUPLED_R_DIAGNOSTICS.json": "8e46495cbf4c6c398383976c9e66c5f2f0a6230085beef08f2d286a4d801de55",
+    "COUPLED_R_DIAGNOSTIC_AUDIT.json": "d36624fcd7e67d5bafaf282546e1bbbc41e63a385166da2e20ace50187e9344c",
+    "COUPLED_R_DOMAIN_RESULTS.json": "b4c0f88a9a63726b5ebe1abf39084d5bc573d066dc97b009cb8519af0850beb4",
+    "COUPLED_R_PROPERTY_RESULTS.json": "541192fffad8111e4d1bd3817c2ed1638d99fc33b2726dc91c61de2a514866cc",
+    "COUPLED_R_QUALIFICATION.json": "06994576fe394b3746a11e48b052b72765c7c5e99643ebfc72e72d56d477bd92",
+    "COUPLED_R_REFERENCE_DOMAIN.json": "ce2b024774e54178fb22484d097b3d4b5e5bce53948d5536f3463dfbf3167679",
+    "COUPLED_R_RESULTS.json": "211bc7e5aa240387a76346dddc5aedf38d9024f66eaf400ec2e9406e26a240a1",
+    "NINE_COST_RESULTS.json": "f363bb086762e5f77b2991b322cf94eeb5f0424ff3d078ed4d5c225fb4cea448",
+    "NINE_RESULTS.json": "f33e97a1ae866ff43b7f667e8d0551f0ef677d6fa95859e40adee83fac91f637",
+    "RESULTS.json": "ec4948f56a0c1bdcd469aa8c66693eb4a6c51519c72b1d334c598e70f74c1278",
+    "SPATIAL_RESULTS.json": "9fb9ac7151593c4aa2e791f5dcd00ff5d77752b95abd508c4780537157cae9bd",
+    "THERMAL_BROWSER_RESULTS.json": "ff51fe5c434eb2eef80625e63c8bd47ff5982078ef3aa1ed99512333612c94da",
+    "THERMAL_COST_RESULTS.json": "affb55e6d671e3c7c39bc9c5412f313ed53123610b2a6b646d4389b8f7328964",
+    "THERMAL_REGRESSION_RESULTS.json": "70c4b724c7e8a5ac4e0b2bcaf4b75e69aeadb49c1b3d2ef6403f782635d0d085",
+    "THERMAL_RESULTS.json": "7aa368f00dfa53a8c322bdd5f2db2360b9c8aece4ea66cc1a6f1c547eec6337b",
+    "TIME_RESULTS.json": "14558fb4500803d4666727350e4a150fde5fc0e8b681632a4a3ef6c570590827",
+    "WARM_DOMAIN_RESULTS.json": "650921a0aa4329a85fd09ac6871da917a22e73aa401eef91cf21cbadb9348466",
+    "browser-benchmark.cjs": "989b777787ce297705f5ba9c1343d2fb5b757ccba0c76eb36ddf4f7bf36a9b35",
+    "conservation.cjs": "4e8b9d335a4f74d0303c259cfaca209114431099736cea707acfccc102bad4bc",
+    "coupled-browser.cjs": "97ddf0be3f4bab55c66a659ed1dbbe544f4e60a07669461c8a08b6081f9cb8b1",
+    "coupled-candidate.cjs": "ac5c61869cde12bbdc543c5b40800e9e72b2efc287ff8335d5300cd2eee329ff",
+    "coupled-controls.cjs": "742f6fe48e251daa34e7e3c8a6662f576b9df4c4fdec01cbf86f57f3633b67e9",
+    "coupled-diagnostics.cjs": "9c4f8329840d9f49fc3a58e524901d7e9ef2c102f06114e4f4878c7c747bc12d",
+    "coupled-domain-reference.json": "f21c8f99cd0909303b068c5531724b5c260d8fe10cd6273fb443f15ec8d907cb",
+    "coupled-domain-test.cjs": "f961c443de112d38d187f5412a2e7b89017dccd7cd11c30b706fb5048f6a06ce",
+    "coupled-fixtures.cjs": "0033737237d0e910fe555b7cde36e706c2c41c68564b041f56babfe9f18a1df9",
+    "coupled-implicit.cjs": "68b2ce9d8a3c59898cd3143b092abc4b1bd8775a52ea246c817446259fec955c",
+    "coupled-model.cjs": "929be63391a11efe3769f356e12e77afb62111672349069af7cf1562f42bf91e",
+    "coupled-property-diagnostics.cjs": "a6260269a8cb4c7dc53bdd2c5dbdd365e1ea9a88403745978bef84a872089826",
+    "coupled-reference.json": "f455a712e7fbedbb17b4cc65a792f7898d793bd18132fabc471871fc6000ce3b",
+    "coupled-runtime-support.cjs": "1f82185d06d5a7639eb31ba5d66edecce85f9066f3a2175e8f174fc2bb043531",
+    "coupled-test.cjs": "2b047bca580043845308136e402ef3cc86256508e3a9b5023ba83e86e0cd99c8",
+    "evaporator.cjs": "3a2f438fab4def08928dd273321a150326516090bb3c3862711d9549b09d072c",
+    "hydraulics.cjs": "9bc1a6bce5dafbcff9c5ecf75beff956877fc9334da233b26aa00a4fadd288bf",
+    "implicit.cjs": "5bd347cd831c9504ea28ed96ee196d76de416754171a6d3922ec8a6a9d522a7a",
+    "reference.json": "1a3ded54da233675718ef05ab97f67ac63090cab2b106d3752560f5a811bdba0",
+    "resolution-browser.cjs": "1f35303836bcac275267f9808e8b4459076fc7b0801ea2310dad370873b75608",
+    "resolution-cost.cjs": "c3c4f9d6031134d876de547ddcc6b5ca5d05e323353232c5db8212756ed6d16e",
+    "resolution-observables.cjs": "7dfaba5be44d1a907c2b08160c36384013890f90ece9a370bdceb9f291fda679",
+    "resolution-reference-check.cjs": "bd62a69864a6959b9846240c7d9fa99a456e12a7409ec7b97154a40a38d4bfb3",
+    "resolution-reference.json": "aa6125e7ec91dd6c238b6f10b3f59c6d7cb592b5d3bd0d552ffec5dd4ed36753",
+    "resolution-runner.cjs": "59b07eadda1301f9f076f773a392e9728491d3ece559e14d95ac4219500bef91",
+    "resolution-test.cjs": "e1638612ac3f00d95c7a3efdee8b3b4d112b1454b418722bab579e54d00534e1",
+    "roadmap-a-diagnostics.cjs": "4516978bfd70494f150f538d7253e33b13ee11497f7970fe79f51c7a67d36d45",
+    "roadmap-a1.cjs": "c56acf65418fb851b11d0ba4a8e8f8ce4ef91bf7da527a37383906f9658c09c3",
+    "roadmap-a2.cjs": "b34d0ca0f7165b42f3b18f1e131e3bf6e7ff1d5113eff45b38bfefb19452fa26",
+    "spatial-browser.cjs": "8a7757ae806a0b8b7d9f533e3c986601e41e33295db1087c582705f9f7047221",
+    "spatial-fixtures.cjs": "952c66e126d4704f2a6a354f0de6b3bc210814bd26af6ac5503dd468e3cf451a",
+    "spatial-observables.cjs": "7300874f8860e2d72f9d1f494e979e5a638290a750c8264c660c6a56293deb37",
+    "spatial-reference.json": "85bbb43aff4ea0f206937ddeba9101032d4e121baf7d3c452a75d0b550c1d12d",
+    "spatial-runner.cjs": "8977861d51e0b924e041a8b26fb70b7aa2c1b59222553301d088bdff36fbe69f",
+    "spatial-test.cjs": "d705fc95a93040fa0273d93fbced5cb7951016e1796e90f9246242a018ac3fe8",
+    "test.cjs": "4a57407cf797e4711e31ce6988e20d97c033a09f40c51b3c9b907ffd8c981625",
+    "thermal-browser.cjs": "0230fd5369bde156a134764710e3462c0c0a5a1fa29aaea40fc8187e7735bfad",
+    "thermal-cost.cjs": "dcf26ff126b9d80db189a3987a0f553f90df276723ceddd2da3e32f95122a1c5",
+    "thermal-geometry.cjs": "f7db3d7f656cf4008ae5c4c91291534c8477a020d885d1f67181b3e1bb58bc77",
+    "thermal-network.cjs": "77e634aacc11521ea93423284afa80d5bc78564b33377ab3bd26d111979e6f63",
+    "thermal-reference.json": "39ab1bfefea38f747e69fbcab061715513de9edbb6a31120ebef26288aa85516",
+    "thermal-test.cjs": "111a8a57ed8da4c961fa619124ed424bb552795a14df229c8a4a2bd87d76c78b",
+    "thermodynamics.cjs": "8d1404243a8e22c1dfafb06c9bbe4db48a2f8858dd0c575da729857f4e0020a0",
+    "time-cases.cjs": "65d3d49e4641cb06dda1e1a2277497c86a7aa62a57e34cd0db8b2ca966bc18a6",
+    "time-control.cjs": "3ef4055e659099fdca1e9ff49d5731d3a45d32ed823439e6837332236113da6d",
+    "time-reference.json": "e335811ca843126c86425b24bcb56e15ff9c097446f18d464cf811f3762b0a75",
+    "time-test.cjs": "210568df7d7e1233837a7293202daff5997fa4fb41fa3122606f983991c2b7bf",
+    "warm-domain-test.cjs": "02f12cf4a98582407719cac6044d6372b3c623a3f93ea291d369a86cc4f73302",
+    "../../engine": "23bb186115cbc7dea6d3115e501de93ef80867b168a54b554192d08c98752fc5",
+    "../../properties.json": "b67ac977338f3b7b62d0bf3d590514083814e620fa922504d05e7510938ede6e"
+  },
+  "blocks": [
+    {
+      "id": "block-0",
+      "line": 69,
+      "sha256": "1156ae98b7001b5daa15b985203ab4165ee02556e28210e94aefa102bc69938e",
+      "verifiedCompletedFiles": [
+        "chromium-suite-fd-aware-block-0.json",
+        "webkit-suite-fd-aware-block-0.json"
+      ]
+    },
+    {
+      "id": "operating-cold",
+      "line": 81,
+      "sha256": "138ed28cb459a809e95ee27ad8c8350824ef3268352c525ed53f1441cd261c66",
+      "verifiedCompletedFiles": [
+        "webkit-suite-fd-aware-operating-cold.json",
+        "chromium-suite-fd-aware-operating-cold.json"
+      ]
+    },
+    {
+      "id": "operating-warm",
+      "line": 81,
+      "sha256": "138ed28cb459a809e95ee27ad8c8350824ef3268352c525ed53f1441cd261c66",
+      "verifiedCompletedFiles": [
+        "chromium-suite-fd-aware-operating-warm.json",
+        "webkit-suite-fd-aware-operating-warm.json"
+      ]
+    },
+    {
+      "id": "operating-load-step",
+      "line": 81,
+      "sha256": "138ed28cb459a809e95ee27ad8c8350824ef3268352c525ed53f1441cd261c66",
+      "verifiedCompletedFiles": [
+        "webkit-suite-fd-aware-operating-load-step.json",
+        "chromium-suite-fd-aware-operating-load-step.json"
+      ]
+    },
+    {
+      "id": "operating-feed-step",
+      "line": 81,
+      "sha256": "138ed28cb459a809e95ee27ad8c8350824ef3268352c525ed53f1441cd261c66",
+      "verifiedCompletedFiles": [
+        "webkit-suite-fd-aware-operating-feed-step.json",
+        "chromium-suite-fd-aware-operating-feed-step.json"
+      ]
+    },
+    {
+      "id": "operating-heat-reversal",
+      "line": 81,
+      "sha256": "138ed28cb459a809e95ee27ad8c8350824ef3268352c525ed53f1441cd261c66",
+      "verifiedCompletedFiles": [
+        "webkit-suite-fd-aware-operating-heat-reversal.json",
+        "chromium-suite-fd-aware-operating-heat-reversal.json"
+      ]
+    },
+    {
+      "id": "block-2",
+      "line": 119,
+      "sha256": "5137e8017901fea7824c3b7067fb366c5dfccaffe804b6fec13e5d8fde1b5f5c",
+      "verifiedCompletedFiles": [
+        "chromium-suite-fd-aware-block-2.json",
+        "webkit-suite-fd-aware-block-2.json"
+      ]
+    },
+    {
+      "id": "block-3",
+      "line": 130,
+      "sha256": "f4694cc8a374fa09d897072d22b92295ff93557097df7dbac6c75c1acb3ce326",
+      "verifiedCompletedFiles": [
+        "chromium-suite-fd-aware-block-3.json",
+        "webkit-suite-fd-aware-block-3.json"
+      ]
+    },
+    {
+      "id": "block-4",
+      "line": 135,
+      "sha256": "a1c6355b044e16df5e94a77f123d0840a5faf12638810f73993fe4c2be35304a",
+      "verifiedCompletedFiles": [
+        "chromium-suite-fd-aware-block-4.json",
+        "webkit-suite-fd-aware-block-4.json"
+      ]
+    },
+    {
+      "id": "block-5",
+      "line": 144,
+      "sha256": "d158af84bbdd51e041b0be313add202bb7ae308ce6541beffa3258f56254f2c6",
+      "verifiedCompletedFiles": [
+        "webkit-suite-fd-aware-block-5.json",
+        "chromium-suite-fd-aware-block-5.json"
+      ]
+    },
+    {
+      "id": "block-6",
+      "line": 149,
+      "sha256": "fd11c1e0d7fcec8fc0b7be9c8a4353478928b9905dfe8511df251f61cfe4b910",
+      "verifiedCompletedFiles": [
+        "webkit-suite-fd-aware-block-6.json",
+        "chromium-suite-fd-aware-block-6.json"
+      ]
+    },
+    {
+      "id": "block-7",
+      "line": 155,
+      "sha256": "e8ebdd33dabd6ff03a7b6e69da6d448d55b22eca255c9676e757614515f18f5a",
+      "verifiedCompletedFiles": [
+        "chromium-suite-fd-aware-block-7.json",
+        "webkit-suite-fd-aware-block-7.json"
+      ]
+    },
+    {
+      "id": "block-8",
+      "line": 165,
+      "sha256": "d708aa0b9a4e8cb1a0385d23f7e54c26cb34a928f458690a71ac4e427ad5aae6",
+      "verifiedCompletedFiles": [
+        "chromium-suite-fd-aware-block-8.json",
+        "webkit-suite-fd-aware-block-8.json"
+      ]
+    },
+    {
+      "id": "block-9",
+      "line": 175,
+      "sha256": "51c8cbbb4c406cf837ba481a3573d1bf5ca64153443d90a1cb1bb3541b10ba45",
+      "verifiedCompletedFiles": [
+        "chromium-suite-fd-aware-block-9.json",
+        "webkit-suite-fd-aware-block-9.json"
+      ]
+    },
+    {
+      "id": "block-10",
+      "line": 183,
+      "sha256": "9bdf291bc38abb114b946c0befc04c00d8b18167deda728aeb49ab4bde83cf7a",
+      "verifiedCompletedFiles": [
+        "webkit-suite-fd-aware-block-10.json",
+        "chromium-suite-fd-aware-block-10.json"
+      ]
+    },
+    {
+      "id": "block-11",
+      "line": 189,
+      "sha256": "22c9bcf21f1edfdf375462e5d7ad1df019ceb423b0a14a82c4aef6b0ae27224d",
+      "verifiedCompletedFiles": [
+        "webkit-suite-fd-aware-block-11.json",
+        "chromium-suite-fd-aware-block-11.json"
+      ]
+    },
+    {
+      "id": "block-12",
+      "line": 200,
+      "sha256": "c1d52b000815b452fb349b5323223e46936e6c319162c839333ac698e3ca8e8b",
+      "verifiedCompletedFiles": [
+        "webkit-suite-fd-aware-block-12.json",
+        "chromium-suite-fd-aware-block-12.json"
+      ]
+    },
+    {
+      "id": "block-13",
+      "line": 204,
+      "sha256": "1add4047ac532bbbad26eb3dee8c2c974ef5fc94d12077b97b7c34efdf6ca527",
+      "verifiedCompletedFiles": [
+        "chromium-suite-fd-aware-block-13.json",
+        "webkit-suite-fd-aware-block-13.json"
+      ]
+    },
+    {
+      "id": "block-14",
+      "line": 205,
+      "sha256": "d6b12de2e99f7ff12e88f49ee22e283e057e3e2dda308430f6b76f44004eec79",
+      "verifiedCompletedFiles": [
+        "webkit-suite-fd-aware-block-14.json",
+        "chromium-suite-fd-aware-block-14.json"
+      ]
+    }
+  ],
+  "prefixSHA256": "077d8c8dda39efd247a44c2824afea909fd641fea3a4b853d73a7a9807af6195",
+  "setupSHA256": "8554b84193deea92dbac343e93e3ff6e0b0b7b26ea0ff7acc86d0ef80e3c95e4",
+  "domainAssertionSHA256": "4b8ea839e308f44175e0f185c23b0f889a990a388298f21598aaa710945c9a81",
+  "meaning": "All supplied source/data strings match accepted Git bytes; completed browser blocks match the exact accepted assertion hashes. Catalog selectors/instrumentation remain isolated harness code."
+}

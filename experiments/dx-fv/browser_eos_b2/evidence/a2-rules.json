@@ -1,0 +1,60 @@
+{
+  "stage": "A2",
+  "startingCommit": "c2de1f0808048f6be6f3e912cd0fcffa9a646cf0",
+  "runtime": "v22.23.3",
+  "mode": "rules",
+  "phaseChecks": [
+    {
+      "choice": "fd-aware",
+      "seededHistoryEntries": 1,
+      "actualNonlinearFailures": 0,
+      "observedPostEventResets": 5,
+      "differences": {
+        "pressureBar": 0,
+        "enthalpyKJkg": 0,
+        "fluidTemperatureK": 0,
+        "thermalTemperatureK": 0,
+        "massKg": 0,
+        "fluidEnergyKJ": 0,
+        "linkIntegralKJ": 0,
+        "eventSeconds": 0
+      }
+    },
+    {
+      "choice": "exact-aware",
+      "seededHistoryEntries": 1,
+      "actualNonlinearFailures": 0,
+      "observedPostEventResets": 5,
+      "differences": {
+        "pressureBar": 0,
+        "enthalpyKJkg": 0,
+        "fluidTemperatureK": 0,
+        "thermalTemperatureK": 0,
+        "massKg": 0,
+        "fluidEnergyKJ": 0,
+        "linkIntegralKJ": 0,
+        "eventSeconds": 0
+      }
+    }
+  ],
+  "history": {
+    "ceilingSeconds": null,
+    "pendingFailure": false,
+    "successes": 0,
+    "lastFailedSeconds": null,
+    "lastRecoverySeconds": null,
+    "nonlinearFailures": 7,
+    "limitedProposals": 38,
+    "releases": 8,
+    "resets": {
+      "normal-growth": 1,
+      "manual-boundary": 1,
+      "scheduled-boundary": 1,
+      "phase-event": 1,
+      "event-refinement": 1,
+      "domain-rejection": 1,
+      "other-failure": 1
+    }
+  },
+  "passed": true
+}

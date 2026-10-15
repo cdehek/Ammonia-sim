@@ -1,0 +1,85 @@
+{
+  "kind": "coupled-test",
+  "choice": "fd-aware",
+  "build": "build44",
+  "runtime": "v22.23.3",
+  "acceptedCommit": "be9eb35a4ddf5098e685182f8104685127c6a6ee",
+  "sourceSHA256": "2b047bca580043845308136e402ef3cc86256508e3a9b5023ba83e86e0cd99c8",
+  "selected": {
+    "timestepGrowth": "failure-aware"
+  },
+  "init": {
+    "totalMS": 3203.985287,
+    "importMS": 5.387018000000012,
+    "fetchMS": 120.51776899999999,
+    "compileInstantiateMS": 47.54865700000005,
+    "runtimeMS": 108.96687300000002,
+    "firstFactoryMS": 2969.1136269999997,
+    "initialLinearMemoryBytes": 22544384,
+    "readyLinearMemoryBytes": 56360960,
+    "wasmBytes": 9196512,
+    "mime": "application/wasm",
+    "streaming": true,
+    "logs": []
+  },
+  "blocks": [
+    {
+      "id": "block-0",
+      "line": 69,
+      "assertionTextSHA256": "1156ae98b7001b5daa15b985203ab4165ee02556e28210e94aefa102bc69938e",
+      "status": "PASS",
+      "result": {
+        "stage": "2A",
+        "sectionCount": 5,
+        "startingCommit": "dd0ca33cc834e2056ebede756f8cf59ed1157a07",
+        "runtime": "v22.23.3",
+        "limits": {
+          "massKg": 1e-08,
+          "energyKJ": 1e-06,
+          "nominalTemperatureK": 0.01,
+          "tightTemperatureK": 0.001,
+          "pressureBar": 5e-05,
+          "enthalpyKJkg": 0.05,
+          "eventSeconds": 0.001
+        },
+        "conservation": {
+          "massKg": 0,
+          "sectionMassKg": 0,
+          "refrigerantKJ": 0,
+          "thermalKJ": 0,
+          "combinedKJ": 0,
+          "sectionEnergyKJ": 0,
+          "nodeEnergyKJ": 0
+        },
+        "cases": [],
+        "checks": [
+          {
+            "name": "Five-section physical allocation and no added prescribed heat",
+            "totalConductanceKWK": 0.6
+          }
+        ],
+        "failures": [],
+        "independentSource": "Independent CoolProp 7.2.0 D/U EOS and SciPy 1.16.2 Radau; conserved M/U plus tube/fin/finite-air energy and independently integrated link/face budgets",
+        "passed": true
+      },
+      "elapsedMS": 55.78530499999988,
+      "propertyCalls": {
+        "ph": 22,
+        "sat": 89,
+        "stateMVU": 15,
+        "domainGuards": 59
+      },
+      "linearMemory": 56360960
+    },
+    {
+      "id": "operating-cold",
+      "line": 81,
+      "assertionTextSHA256": "138ed28cb459a809e95ee27ad8c8350824ef3268352c525ed53f1441cd261c66",
+      "status": "INCOMPLETE",
+      "reason": "Redundant Node-WASM full-suite execution stopped to prioritize the directly applicable Chromium/WebKit scientific runs; no result claimed.",
+      "observedWallBudgetSeconds": 850
+    }
+  ],
+  "completed": false,
+  "interrupted": true
+}

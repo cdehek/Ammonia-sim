@@ -1,0 +1,803 @@
+{
+  "assessment": "BLOCKED",
+  "coreAssertionGroups": [
+    {
+      "browser": "chromium",
+      "configuration": "FD thermal / failure-aware growth",
+      "id": "block-0",
+      "name": "Five-section allocation, defaults and scope",
+      "status": "PASS",
+      "file": "chromium-suite-fd-aware-block-0.json",
+      "failure": null,
+      "reason": null
+    },
+    {
+      "browser": "chromium",
+      "configuration": "FD thermal / failure-aware growth",
+      "id": "operating-cold",
+      "name": "Cold startup: three regimes, temporal/direct EOS and cap refinement",
+      "status": "PASS",
+      "file": "chromium-suite-fd-aware-operating-cold.json",
+      "failure": null,
+      "reason": null
+    },
+    {
+      "browser": "chromium",
+      "configuration": "FD thermal / failure-aware growth",
+      "id": "operating-warm",
+      "name": "Warm startup: three regimes, events and cap refinement",
+      "status": "PASS",
+      "file": "chromium-suite-fd-aware-operating-warm.json",
+      "failure": null,
+      "reason": null
+    },
+    {
+      "browser": "chromium",
+      "configuration": "FD thermal / failure-aware growth",
+      "id": "operating-load-step",
+      "name": "Load disturbance: three regimes, exact schedule and cap refinement",
+      "status": "PASS",
+      "file": "chromium-suite-fd-aware-operating-load-step.json",
+      "failure": null,
+      "reason": null
+    },
+    {
+      "browser": "chromium",
+      "configuration": "FD thermal / failure-aware growth",
+      "id": "operating-feed-step",
+      "name": "Feed disturbance: three regimes, exact schedule and cap refinement",
+      "status": "PASS",
+      "file": "chromium-suite-fd-aware-operating-feed-step.json",
+      "failure": null,
+      "reason": null
+    },
+    {
+      "browser": "chromium",
+      "configuration": "FD thermal / failure-aware growth",
+      "id": "operating-heat-reversal",
+      "name": "Sealed heat reversal: three regimes, signed heat and cap refinement",
+      "status": "PASS",
+      "file": "chromium-suite-fd-aware-operating-heat-reversal.json",
+      "failure": null,
+      "reason": null
+    },
+    {
+      "browser": "chromium",
+      "configuration": "FD thermal / failure-aware growth",
+      "id": "block-2",
+      "name": "Zero-exchange thermal300s and refrigerant equivalence",
+      "status": "PASS",
+      "file": "chromium-suite-fd-aware-block-2.json",
+      "failure": null,
+      "reason": null
+    },
+    {
+      "browser": "chromium",
+      "configuration": "FD thermal / failure-aware growth",
+      "id": "block-3",
+      "name": "Sealed isothermal equilibrium",
+      "status": "PASS",
+      "file": "chromium-suite-fd-aware-block-3.json",
+      "failure": null,
+      "reason": null
+    },
+    {
+      "browser": "chromium",
+      "configuration": "FD thermal / failure-aware growth",
+      "id": "block-4",
+      "name": "Fixed-step TR-BDF2 and backward-Euler order",
+      "status": "PASS",
+      "file": "chromium-suite-fd-aware-block-4.json",
+      "failure": null,
+      "reason": null
+    },
+    {
+      "browser": "chromium",
+      "configuration": "FD thermal / failure-aware growth",
+      "id": "block-5",
+      "name": "Exact thermal energy-reference/state/timestep invariance",
+      "status": "PASS",
+      "file": "chromium-suite-fd-aware-block-5.json",
+      "failure": null,
+      "reason": null
+    },
+    {
+      "browser": "chromium",
+      "configuration": "FD thermal / failure-aware growth",
+      "id": "block-6",
+      "name": "Pure trial, atomic mixed patch and exact scheduled boundaries",
+      "status": "PASS",
+      "file": "chromium-suite-fd-aware-block-6.json",
+      "failure": null,
+      "reason": null
+    },
+    {
+      "browser": "chromium",
+      "configuration": "FD thermal / failure-aware growth",
+      "id": "block-7",
+      "name": "Second-half injected recovery failure and exact rollback",
+      "status": "PASS",
+      "file": "chromium-suite-fd-aware-block-7.json",
+      "failure": null,
+      "reason": null
+    },
+    {
+      "browser": "chromium",
+      "configuration": "FD thermal / failure-aware growth",
+      "id": "block-8",
+      "name": "Forced solver/accuracy/domain stops, frozen stopped state",
+      "status": "PASS",
+      "file": "chromium-suite-fd-aware-block-8.json",
+      "failure": null,
+      "reason": null
+    },
+    {
+      "browser": "chromium",
+      "configuration": "FD thermal / failure-aware growth",
+      "id": "block-9",
+      "name": "Forced failures after prior accepted state/ledger",
+      "status": "PASS",
+      "file": "chromium-suite-fd-aware-block-9.json",
+      "failure": null,
+      "reason": null
+    },
+    {
+      "browser": "chromium",
+      "configuration": "FD thermal / failure-aware growth",
+      "id": "block-10",
+      "name": "Confirmed refrigerant-domain stop with exact rollback",
+      "status": "PASS",
+      "file": "chromium-suite-fd-aware-block-10.json",
+      "failure": null,
+      "reason": null
+    },
+    {
+      "browser": "chromium",
+      "configuration": "FD thermal / failure-aware growth",
+      "id": "block-11",
+      "name": "Thermal-domain-clock refinement against independent reference",
+      "status": "PASS",
+      "file": "chromium-suite-fd-aware-block-11.json",
+      "failure": null,
+      "reason": null
+    },
+    {
+      "browser": "chromium",
+      "configuration": "FD thermal / failure-aware growth",
+      "id": "block-12",
+      "name": "Unsupported refrigerant trial leaves state untouched",
+      "status": "PASS",
+      "file": "chromium-suite-fd-aware-block-12.json",
+      "failure": null,
+      "reason": null
+    },
+    {
+      "browser": "chromium",
+      "configuration": "FD thermal / failure-aware growth",
+      "id": "block-13",
+      "name": "Original mesh, closure, domain and scope guards",
+      "status": "PASS",
+      "file": "chromium-suite-fd-aware-block-13.json",
+      "failure": null,
+      "reason": null
+    },
+    {
+      "browser": "webkit",
+      "configuration": "FD thermal / failure-aware growth",
+      "id": "block-0",
+      "name": "Five-section allocation, defaults and scope",
+      "status": "PASS",
+      "file": "webkit-suite-fd-aware-block-0.json",
+      "failure": null,
+      "reason": null
+    },
+    {
+      "browser": "webkit",
+      "configuration": "FD thermal / failure-aware growth",
+      "id": "operating-cold",
+      "name": "Cold startup: three regimes, temporal/direct EOS and cap refinement",
+      "status": "PASS",
+      "file": "webkit-suite-fd-aware-operating-cold.json",
+      "failure": null,
+      "reason": null
+    },
+    {
+      "browser": "webkit",
+      "configuration": "FD thermal / failure-aware growth",
+      "id": "operating-warm",
+      "name": "Warm startup: three regimes, events and cap refinement",
+      "status": "PASS",
+      "file": "webkit-suite-fd-aware-operating-warm.json",
+      "failure": null,
+      "reason": null
+    },
+    {
+      "browser": "webkit",
+      "configuration": "FD thermal / failure-aware growth",
+      "id": "operating-load-step",
+      "name": "Load disturbance: three regimes, exact schedule and cap refinement",
+      "status": "PASS",
+      "file": "webkit-suite-fd-aware-operating-load-step.json",
+      "failure": null,
+      "reason": null
+    },
+    {
+      "browser": "webkit",
+      "configuration": "FD thermal / failure-aware growth",
+      "id": "operating-feed-step",
+      "name": "Feed disturbance: three regimes, exact schedule and cap refinement",
+      "status": "PASS",
+      "file": "webkit-suite-fd-aware-operating-feed-step.json",
+      "failure": null,
+      "reason": null
+    },
+    {
+      "browser": "webkit",
+      "configuration": "FD thermal / failure-aware growth",
+      "id": "operating-heat-reversal",
+      "name": "Sealed heat reversal: three regimes, signed heat and cap refinement",
+      "status": "PASS",
+      "file": "webkit-suite-fd-aware-operating-heat-reversal.json",
+      "failure": null,
+      "reason": null
+    },
+    {
+      "browser": "webkit",
+      "configuration": "FD thermal / failure-aware growth",
+      "id": "block-2",
+      "name": "Zero-exchange thermal300s and refrigerant equivalence",
+      "status": "PASS",
+      "file": "webkit-suite-fd-aware-block-2.json",
+      "failure": null,
+      "reason": null
+    },
+    {
+      "browser": "webkit",
+      "configuration": "FD thermal / failure-aware growth",
+      "id": "block-3",
+      "name": "Sealed isothermal equilibrium",
+      "status": "PASS",
+      "file": "webkit-suite-fd-aware-block-3.json",
+      "failure": null,
+      "reason": null
+    },
+    {
+      "browser": "webkit",
+      "configuration": "FD thermal / failure-aware growth",
+      "id": "block-4",
+      "name": "Fixed-step TR-BDF2 and backward-Euler order",
+      "status": "PASS",
+      "file": "webkit-suite-fd-aware-block-4.json",
+      "failure": null,
+      "reason": null
+    },
+    {
+      "browser": "webkit",
+      "configuration": "FD thermal / failure-aware growth",
+      "id": "block-5",
+      "name": "Exact thermal energy-reference/state/timestep invariance",
+      "status": "PASS",
+      "file": "webkit-suite-fd-aware-block-5.json",
+      "failure": null,
+      "reason": null
+    },
+    {
+      "browser": "webkit",
+      "configuration": "FD thermal / failure-aware growth",
+      "id": "block-6",
+      "name": "Pure trial, atomic mixed patch and exact scheduled boundaries",
+      "status": "PASS",
+      "file": "webkit-suite-fd-aware-block-6.json",
+      "failure": null,
+      "reason": null
+    },
+    {
+      "browser": "webkit",
+      "configuration": "FD thermal / failure-aware growth",
+      "id": "block-7",
+      "name": "Second-half injected recovery failure and exact rollback",
+      "status": "PASS",
+      "file": "webkit-suite-fd-aware-block-7.json",
+      "failure": null,
+      "reason": null
+    },
+    {
+      "browser": "webkit",
+      "configuration": "FD thermal / failure-aware growth",
+      "id": "block-8",
+      "name": "Forced solver/accuracy/domain stops, frozen stopped state",
+      "status": "PASS",
+      "file": "webkit-suite-fd-aware-block-8.json",
+      "failure": null,
+      "reason": null
+    },
+    {
+      "browser": "webkit",
+      "configuration": "FD thermal / failure-aware growth",
+      "id": "block-9",
+      "name": "Forced failures after prior accepted state/ledger",
+      "status": "PASS",
+      "file": "webkit-suite-fd-aware-block-9.json",
+      "failure": null,
+      "reason": null
+    },
+    {
+      "browser": "webkit",
+      "configuration": "FD thermal / failure-aware growth",
+      "id": "block-10",
+      "name": "Confirmed refrigerant-domain stop with exact rollback",
+      "status": "PASS",
+      "file": "webkit-suite-fd-aware-block-10.json",
+      "failure": null,
+      "reason": null
+    },
+    {
+      "browser": "webkit",
+      "configuration": "FD thermal / failure-aware growth",
+      "id": "block-11",
+      "name": "Thermal-domain-clock refinement against independent reference",
+      "status": "PASS",
+      "file": "webkit-suite-fd-aware-block-11.json",
+      "failure": null,
+      "reason": null
+    },
+    {
+      "browser": "webkit",
+      "configuration": "FD thermal / failure-aware growth",
+      "id": "block-12",
+      "name": "Unsupported refrigerant trial leaves state untouched",
+      "status": "PASS",
+      "file": "webkit-suite-fd-aware-block-12.json",
+      "failure": null,
+      "reason": null
+    },
+    {
+      "browser": "webkit",
+      "configuration": "FD thermal / failure-aware growth",
+      "id": "block-13",
+      "name": "Original mesh, closure, domain and scope guards",
+      "status": "PASS",
+      "file": "webkit-suite-fd-aware-block-13.json",
+      "failure": null,
+      "reason": null
+    }
+  ],
+  "domainWithIsolatedPTMapping": [
+    {
+      "runtime": "node",
+      "choice": "fd-aware",
+      "status": "PASS",
+      "cases": 36,
+      "file": "a2-domain-pt-fd-aware.json",
+      "failure": null
+    },
+    {
+      "runtime": "node",
+      "choice": "exact-aware",
+      "status": "PASS",
+      "cases": 36,
+      "file": "a2-domain-pt-exact-aware.json",
+      "failure": null
+    },
+    {
+      "runtime": "chromium",
+      "choice": "fd-aware",
+      "status": "PASS",
+      "cases": 36,
+      "file": "chromium-domain-pt-fd-aware.json",
+      "failure": null
+    },
+    {
+      "runtime": "chromium",
+      "choice": "exact-aware",
+      "status": "PASS",
+      "cases": 36,
+      "file": "chromium-domain-pt-exact-aware.json",
+      "failure": null
+    },
+    {
+      "runtime": "webkit",
+      "choice": "fd-aware",
+      "status": "PASS",
+      "cases": 36,
+      "file": "webkit-domain-pt-fd-aware.json",
+      "failure": null
+    },
+    {
+      "runtime": "webkit",
+      "choice": "exact-aware",
+      "status": "PASS",
+      "cases": 36,
+      "file": "webkit-domain-pt-exact-aware.json",
+      "failure": null
+    }
+  ],
+  "otherAcceptedInventory": [
+    {
+      "name": "Original B1 adapter domain suite, FD/failure-aware",
+      "status": "BLOCKED",
+      "detail": "33 completed cases, then3 statePT interface cases blocked; raw failure retained."
+    },
+    {
+      "name": "Original B1 adapter domain suite, exact/failure-aware",
+      "status": "BLOCKED",
+      "detail": "33 completed cases, then3 statePT interface cases blocked; raw failure retained."
+    },
+    {
+      "name": "A2 rules, resets, history and phase controls",
+      "status": "PASS",
+      "detail": "Unchanged accepted rules mode; FD-aware and exact-aware selections."
+    },
+    {
+      "name": "Original coupled-controls, Node22 FD-aware",
+      "status": "PASS",
+      "detail": "All5 nominal fixture trace/error/event checks plus valid-first atomic patch rollback."
+    },
+    {
+      "name": "Original coupled-test full other3 configurations in both engines",
+      "status": "NOT RUN",
+      "detail": "Baseline FD/original, exact/original and exact/failure-aware full operating/order/control matrices remain open. Domain/rules results above do not replace them."
+    },
+    {
+      "name": "Original coupled-controls other3 configurations",
+      "status": "NOT RUN",
+      "detail": "No full controls-mode result for baseline/exact/exact-aware."
+    },
+    {
+      "name": "Original coupled-browser command/all4 selections",
+      "status": "NOT RUN",
+      "detail": "The unmodified coupled-test assertions execute directly in browsers above; the separate original smoke-command matrix was not executed and is not counted."
+    },
+    {
+      "name": "Original coupled-domain-test legacy predecessor/bitwise path",
+      "status": "NOT RUN",
+      "detail": "A2 approved domain assertion body is executed above; the distinct predecessor comparison remains unexecuted."
+    },
+    {
+      "name": "Fresh independent trajectory generator and fresh-reference suite/all4 selections",
+      "status": "NOT RUN",
+      "detail": "Frozen direct-EOS comparisons run in completed cases; fresh NumPy2.5.3/SciPy1.16.2/CoolProp7.2 trajectory regeneration and suite reruns remain open."
+    },
+    {
+      "name": "A2 baseline ancestor byte-identical replay mode",
+      "status": "NOT RUN",
+      "detail": "No ancestor four-path EOS-backed trajectory replay."
+    },
+    {
+      "name": "A2 compare full5fixtures x3regimes x4configurations",
+      "status": "NOT RUN",
+      "detail": "The selected FD-aware complete core attempt is separate; no full four-path matrix claimed."
+    },
+    {
+      "name": "A2 observed mode and complete phase-diagnosis deterministic replays",
+      "status": "NOT RUN",
+      "detail": "Detached histories and rules are scoped results; these distinct full original commands remain open."
+    },
+    {
+      "name": "A2 original four-path5-block Node performance qualification",
+      "status": "NOT RUN",
+      "detail": "B2 matched30/44 browser/property and short coupled cost are reported separately."
+    },
+    {
+      "name": "Exploratory adaptive backward-Euler methods diagnostic",
+      "status": "NOT RUN (outside accepted gate)",
+      "detail": "Retained historical limitation is not relabeled passed; established fixed-step BE order runs above."
+    },
+    {
+      "name": "B1 static16-case synthetic closures per browser/build",
+      "status": "NOT RUN in B2",
+      "detail": "B1 results/artifacts preserved; the new8-case canonical screen is a different experiment."
+    },
+    {
+      "name": "New moderate/long operating endurance, repeated transitions, hour-scale runs",
+      "status": "NOT RUN",
+      "detail": "Gated off by the demonstrated valid-liquid canonical/coupled failure."
+    },
+    {
+      "name": "Physical Safari/iPad scientific and performance qualification",
+      "status": "NOT RUN",
+      "detail": "No actual device available; Linux desktop WebKit is separate evidence."
+    },
+    {
+      "name": "Production property migration, Live Plant, hosting/deployment",
+      "status": "NOT RUN / not authorized",
+      "detail": "No merge, application integration, hosting or Cloudflare changes."
+    },
+    {
+      "name": "Redundant Node-WASM complete coupled-test attempt",
+      "status": "INCOMPLETE",
+      "detail": "Stopped cold block to prioritize browser campaign; no completed operating result counted."
+    },
+    {
+      "name": "Fresh same-table auxiliary full verification",
+      "status": "INCOMPLETE / not a backend qualification claim",
+      "detail": "Fresh operating reference groups are retained individually; auxiliary table-only repeat scope is separate from B2 EOS qualification."
+    }
+  ],
+  "additionalCanonicalRegression": [
+    {
+      "browser": "chromium",
+      "build": "build30",
+      "status": "FAIL",
+      "passCases": [
+        "approach-350000.0-liquid-0.0"
+      ],
+      "failedCases": [
+        {
+          "id": "approach-30298.937123458254-liquid-1e-05",
+          "differences": {
+            "pressureBar": 0.00042448368449654605,
+            "enthalpyKJkg": 5.9997834839009556e-05,
+            "temperatureK": 4.9542173599093076e-06
+          },
+          "error": null
+        },
+        {
+          "id": "approach-30298.937123458254-liquid-0.001",
+          "differences": {
+            "pressureBar": 0.042450870788693695,
+            "enthalpyKJkg": 0.006000126959932572,
+            "temperatureK": 0.0004954472173039903
+          },
+          "error": null
+        },
+        {
+          "id": "approach-350000.0-liquid-1e-05",
+          "differences": {
+            "pressureBar": 2.73586520393998e-05,
+            "enthalpyKJkg": 4.236168990701117e-06,
+            "temperatureK": 5.134103275850066e-07
+          },
+          "error": null
+        },
+        {
+          "id": "approach-350000.0-liquid-0.001",
+          "differences": {
+            "pressureBar": 0.0027357863002070992,
+            "enthalpyKJkg": 0.0004236045704146818,
+            "temperatureK": 5.133950241997809e-05
+          },
+          "error": null
+        },
+        {
+          "id": "approach-799999.9981754856-liquid-1e-05",
+          "differences": {
+            "pressureBar": 9.539834565863714e-06,
+            "enthalpyKJkg": 1.554953030336037e-06,
+            "temperatureK": 2.2889184947416652e-07
+          },
+          "error": null
+        },
+        {
+          "id": "approach-799999.9981754856-liquid-0.001",
+          "differences": {
+            "pressureBar": 0.0009540903116436183,
+            "enthalpyKJkg": 0.00015551264601754156,
+            "temperatureK": 2.289172584823973e-05
+          },
+          "error": null
+        },
+        {
+          "id": "approach-3500000.0-liquid-1e-05",
+          "differences": null,
+          "error": "Error: State outside the validated property domain."
+        }
+      ],
+      "file": "chromium-boundary-build30.json"
+    },
+    {
+      "browser": "chromium",
+      "build": "build44",
+      "status": "FAIL",
+      "passCases": [
+        "approach-350000.0-liquid-0.0"
+      ],
+      "failedCases": [
+        {
+          "id": "approach-30298.937123458254-liquid-1e-05",
+          "differences": {
+            "pressureBar": 0.00042448368449654605,
+            "enthalpyKJkg": 5.9997834839009556e-05,
+            "temperatureK": 4.9542173599093076e-06
+          },
+          "error": null
+        },
+        {
+          "id": "approach-30298.937123458254-liquid-0.001",
+          "differences": {
+            "pressureBar": 0.042450870788693695,
+            "enthalpyKJkg": 0.006000126959932572,
+            "temperatureK": 0.0004954472173039903
+          },
+          "error": null
+        },
+        {
+          "id": "approach-350000.0-liquid-1e-05",
+          "differences": {
+            "pressureBar": 2.73586520393998e-05,
+            "enthalpyKJkg": 4.236168990701117e-06,
+            "temperatureK": 5.134103275850066e-07
+          },
+          "error": null
+        },
+        {
+          "id": "approach-350000.0-liquid-0.001",
+          "differences": {
+            "pressureBar": 0.0027357863002070992,
+            "enthalpyKJkg": 0.0004236045704146818,
+            "temperatureK": 5.133950241997809e-05
+          },
+          "error": null
+        },
+        {
+          "id": "approach-799999.9981754856-liquid-1e-05",
+          "differences": {
+            "pressureBar": 9.539834565863714e-06,
+            "enthalpyKJkg": 1.554953030336037e-06,
+            "temperatureK": 2.2889184947416652e-07
+          },
+          "error": null
+        },
+        {
+          "id": "approach-799999.9981754856-liquid-0.001",
+          "differences": {
+            "pressureBar": 0.0009540903116436183,
+            "enthalpyKJkg": 0.00015551264601754156,
+            "temperatureK": 2.289172584823973e-05
+          },
+          "error": null
+        },
+        {
+          "id": "approach-3500000.0-liquid-1e-05",
+          "differences": null,
+          "error": "Error: State outside the validated property domain."
+        }
+      ],
+      "file": "chromium-boundary-build44.json"
+    },
+    {
+      "browser": "webkit",
+      "build": "build30",
+      "status": "FAIL",
+      "passCases": [
+        "approach-350000.0-liquid-0.0"
+      ],
+      "failedCases": [
+        {
+          "id": "approach-30298.937123458254-liquid-1e-05",
+          "differences": {
+            "pressureBar": 0.00042448368449654605,
+            "enthalpyKJkg": 5.9997834839009556e-05,
+            "temperatureK": 4.9542173599093076e-06
+          },
+          "error": null
+        },
+        {
+          "id": "approach-30298.937123458254-liquid-0.001",
+          "differences": {
+            "pressureBar": 0.042450870788693695,
+            "enthalpyKJkg": 0.006000126959932572,
+            "temperatureK": 0.0004954472173039903
+          },
+          "error": null
+        },
+        {
+          "id": "approach-350000.0-liquid-1e-05",
+          "differences": {
+            "pressureBar": 2.73586520393998e-05,
+            "enthalpyKJkg": 4.236168990701117e-06,
+            "temperatureK": 5.134103275850066e-07
+          },
+          "error": null
+        },
+        {
+          "id": "approach-350000.0-liquid-0.001",
+          "differences": {
+            "pressureBar": 0.0027357863002070992,
+            "enthalpyKJkg": 0.0004236045704146818,
+            "temperatureK": 5.133950241997809e-05
+          },
+          "error": null
+        },
+        {
+          "id": "approach-799999.9981754856-liquid-1e-05",
+          "differences": {
+            "pressureBar": 9.539834565863714e-06,
+            "enthalpyKJkg": 1.554953030336037e-06,
+            "temperatureK": 2.2889184947416652e-07
+          },
+          "error": null
+        },
+        {
+          "id": "approach-799999.9981754856-liquid-0.001",
+          "differences": {
+            "pressureBar": 0.0009540903116436183,
+            "enthalpyKJkg": 0.00015551264601754156,
+            "temperatureK": 2.289172584823973e-05
+          },
+          "error": null
+        },
+        {
+          "id": "approach-3500000.0-liquid-1e-05",
+          "differences": null,
+          "error": "Error: State outside the validated property domain."
+        }
+      ],
+      "file": "webkit-boundary-build30.json"
+    },
+    {
+      "browser": "webkit",
+      "build": "build44",
+      "status": "FAIL",
+      "passCases": [
+        "approach-350000.0-liquid-0.0"
+      ],
+      "failedCases": [
+        {
+          "id": "approach-30298.937123458254-liquid-1e-05",
+          "differences": {
+            "pressureBar": 0.00042448368449654605,
+            "enthalpyKJkg": 5.9997834839009556e-05,
+            "temperatureK": 4.9542173599093076e-06
+          },
+          "error": null
+        },
+        {
+          "id": "approach-30298.937123458254-liquid-0.001",
+          "differences": {
+            "pressureBar": 0.042450870788693695,
+            "enthalpyKJkg": 0.006000126959932572,
+            "temperatureK": 0.0004954472173039903
+          },
+          "error": null
+        },
+        {
+          "id": "approach-350000.0-liquid-1e-05",
+          "differences": {
+            "pressureBar": 2.73586520393998e-05,
+            "enthalpyKJkg": 4.236168990701117e-06,
+            "temperatureK": 5.134103275850066e-07
+          },
+          "error": null
+        },
+        {
+          "id": "approach-350000.0-liquid-0.001",
+          "differences": {
+            "pressureBar": 0.0027357863002070992,
+            "enthalpyKJkg": 0.0004236045704146818,
+            "temperatureK": 5.133950241997809e-05
+          },
+          "error": null
+        },
+        {
+          "id": "approach-799999.9981754856-liquid-1e-05",
+          "differences": {
+            "pressureBar": 9.539834565863714e-06,
+            "enthalpyKJkg": 1.554953030336037e-06,
+            "temperatureK": 2.2889184947416652e-07
+          },
+          "error": null
+        },
+        {
+          "id": "approach-799999.9981754856-liquid-0.001",
+          "differences": {
+            "pressureBar": 0.0009540903116436183,
+            "enthalpyKJkg": 0.00015551264601754156,
+            "temperatureK": 2.289172584823973e-05
+          },
+          "error": null
+        },
+        {
+          "id": "approach-3500000.0-liquid-1e-05",
+          "differences": null,
+          "error": "Error: State outside the validated property domain."
+        }
+      ],
+      "file": "webkit-boundary-build44.json"
+    }
+  ],
+  "markerStatementsExcluded": [
+    "block-14"
+  ],
+  "noFailedAssertionSuppressed": true
+}

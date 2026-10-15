@@ -1,0 +1,47 @@
+{
+  "reason": "Initial diagnostic omitted homogeneous supercritical-gas enum 2 from analytic derivative checks. Full matrix rerun with phases 0,1,2,3,5; critical point excluded. No EOS, input, probe, tolerance or physical output changed.",
+  "comparisons": [
+    {
+      "file": "chromium-phase-official8.json",
+      "physicalOutputSnapshotsExactlyUnchanged": true,
+      "newPhase2DerivativeSnapshots": 80
+    },
+    {
+      "file": "chromium-phase-build30.json",
+      "physicalOutputSnapshotsExactlyUnchanged": true,
+      "newPhase2DerivativeSnapshots": 80
+    },
+    {
+      "file": "chromium-phase-build44.json",
+      "physicalOutputSnapshotsExactlyUnchanged": true,
+      "newPhase2DerivativeSnapshots": 80
+    },
+    {
+      "file": "chromium-phase-official72.json",
+      "physicalOutputSnapshotsExactlyUnchanged": true,
+      "newPhase2DerivativeSnapshots": 80
+    },
+    {
+      "file": "webkit-phase-official8.json",
+      "physicalOutputSnapshotsExactlyUnchanged": true,
+      "newPhase2DerivativeSnapshots": 80
+    },
+    {
+      "file": "webkit-phase-build30.json",
+      "physicalOutputSnapshotsExactlyUnchanged": true,
+      "newPhase2DerivativeSnapshots": 80
+    },
+    {
+      "file": "webkit-phase-build44.json",
+      "physicalOutputSnapshotsExactlyUnchanged": true,
+      "newPhase2DerivativeSnapshots": 80
+    },
+    {
+      "file": "webkit-phase-official72.json",
+      "physicalOutputSnapshotsExactlyUnchanged": true,
+      "newPhase2DerivativeSnapshots": 80
+    }
+  ],
+  "archived": "phase-v1",
+  "B1FilesChanged": false
+}

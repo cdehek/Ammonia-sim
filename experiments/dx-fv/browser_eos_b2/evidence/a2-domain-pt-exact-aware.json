@@ -1,0 +1,861 @@
+{
+  "stage": "A2",
+  "startingCommit": "31f641dfb81722dfb3b7cfdb8be14856fe70052e",
+  "runtime": "v22.23.3",
+  "mode": "domain",
+  "cases": [
+    {
+      "minStep": 1e-9,
+      "limit": 200,
+      "direction": "outward",
+      "seconds": 0,
+      "stop": {
+        "kind": "domain",
+        "seconds": 0,
+        "attemptedStepSeconds": 1.862645149230957e-9,
+        "message": "Thermal trajectory points outward at the supported boundary.",
+        "evidence": {
+          "originalCause": "Thermal trajectory points outward at the supported boundary.",
+          "nonlinearResidual": null,
+          "trial": {
+            "source": "thermal",
+            "node": "air",
+            "stage": "initial-direction",
+            "temperatureK": 200,
+            "rateKS": -0.23212627669452182
+          },
+          "confirmed": true,
+          "source": "thermal",
+          "node": "air",
+          "confirmation": "exact-boundary-outward-direction",
+          "temperatureK": 200,
+          "rateKS": -0.23212627669452182
+        }
+      }
+    },
+    {
+      "minStep": 1e-9,
+      "limit": 200,
+      "direction": "inward",
+      "seconds": 0.5,
+      "stop": null
+    },
+    {
+      "minStep": 1e-9,
+      "limit": 200,
+      "direction": "zero",
+      "seconds": 0.5,
+      "stop": null
+    },
+    {
+      "minStep": 1e-9,
+      "limit": 400,
+      "direction": "outward",
+      "seconds": 0,
+      "stop": {
+        "kind": "domain",
+        "seconds": 0,
+        "attemptedStepSeconds": 1.862645149230957e-9,
+        "message": "Thermal trajectory points outward at the supported boundary.",
+        "evidence": {
+          "originalCause": "Thermal trajectory points outward at the supported boundary.",
+          "nonlinearResidual": null,
+          "trial": {
+            "source": "thermal",
+            "node": "air",
+            "stage": "initial-direction",
+            "temperatureK": 400,
+            "rateKS": 0.23212627669452182
+          },
+          "confirmed": true,
+          "source": "thermal",
+          "node": "air",
+          "confirmation": "exact-boundary-outward-direction",
+          "temperatureK": 400,
+          "rateKS": 0.23212627669452182
+        }
+      }
+    },
+    {
+      "minStep": 1e-9,
+      "limit": 400,
+      "direction": "inward",
+      "seconds": 0.5,
+      "stop": null
+    },
+    {
+      "minStep": 1e-9,
+      "limit": 400,
+      "direction": "zero",
+      "seconds": 0.5,
+      "stop": null
+    },
+    {
+      "minStep": 0.00001,
+      "limit": 200,
+      "direction": "outward",
+      "seconds": 0,
+      "stop": {
+        "kind": "domain",
+        "seconds": 0,
+        "attemptedStepSeconds": 0.0000152587890625,
+        "message": "Thermal trajectory points outward at the supported boundary.",
+        "evidence": {
+          "originalCause": "Thermal trajectory points outward at the supported boundary.",
+          "nonlinearResidual": null,
+          "trial": {
+            "source": "thermal",
+            "node": "air",
+            "stage": "initial-direction",
+            "temperatureK": 200,
+            "rateKS": -0.23212627669452182
+          },
+          "confirmed": true,
+          "source": "thermal",
+          "node": "air",
+          "confirmation": "exact-boundary-outward-direction",
+          "temperatureK": 200,
+          "rateKS": -0.23212627669452182
+        }
+      }
+    },
+    {
+      "minStep": 0.00001,
+      "limit": 200,
+      "direction": "inward",
+      "seconds": 0.5,
+      "stop": null
+    },
+    {
+      "minStep": 0.00001,
+      "limit": 200,
+      "direction": "zero",
+      "seconds": 0.5,
+      "stop": null
+    },
+    {
+      "minStep": 0.00001,
+      "limit": 400,
+      "direction": "outward",
+      "seconds": 0,
+      "stop": {
+        "kind": "domain",
+        "seconds": 0,
+        "attemptedStepSeconds": 0.0000152587890625,
+        "message": "Thermal trajectory points outward at the supported boundary.",
+        "evidence": {
+          "originalCause": "Thermal trajectory points outward at the supported boundary.",
+          "nonlinearResidual": null,
+          "trial": {
+            "source": "thermal",
+            "node": "air",
+            "stage": "initial-direction",
+            "temperatureK": 400,
+            "rateKS": 0.23212627669452182
+          },
+          "confirmed": true,
+          "source": "thermal",
+          "node": "air",
+          "confirmation": "exact-boundary-outward-direction",
+          "temperatureK": 400,
+          "rateKS": 0.23212627669452182
+        }
+      }
+    },
+    {
+      "minStep": 0.00001,
+      "limit": 400,
+      "direction": "inward",
+      "seconds": 0.5,
+      "stop": null
+    },
+    {
+      "minStep": 0.00001,
+      "limit": 400,
+      "direction": "zero",
+      "seconds": 0.5,
+      "stop": null
+    },
+    {
+      "minStep": 0.5,
+      "limit": 200,
+      "direction": "outward",
+      "seconds": 0,
+      "stop": {
+        "kind": "domain",
+        "seconds": 0,
+        "attemptedStepSeconds": 0.5,
+        "message": "Thermal trajectory points outward at the supported boundary.",
+        "evidence": {
+          "originalCause": "Thermal trajectory points outward at the supported boundary.",
+          "nonlinearResidual": null,
+          "trial": {
+            "source": "thermal",
+            "node": "air",
+            "stage": "initial-direction",
+            "temperatureK": 200,
+            "rateKS": -0.23212627669452182
+          },
+          "confirmed": true,
+          "source": "thermal",
+          "node": "air",
+          "confirmation": "exact-boundary-outward-direction",
+          "temperatureK": 200,
+          "rateKS": -0.23212627669452182
+        }
+      }
+    },
+    {
+      "minStep": 0.5,
+      "limit": 200,
+      "direction": "inward",
+      "seconds": 0.5,
+      "stop": null
+    },
+    {
+      "minStep": 0.5,
+      "limit": 200,
+      "direction": "zero",
+      "seconds": 0.5,
+      "stop": null
+    },
+    {
+      "minStep": 0.5,
+      "limit": 400,
+      "direction": "outward",
+      "seconds": 0,
+      "stop": {
+        "kind": "domain",
+        "seconds": 0,
+        "attemptedStepSeconds": 0.5,
+        "message": "Thermal trajectory points outward at the supported boundary.",
+        "evidence": {
+          "originalCause": "Thermal trajectory points outward at the supported boundary.",
+          "nonlinearResidual": null,
+          "trial": {
+            "source": "thermal",
+            "node": "air",
+            "stage": "initial-direction",
+            "temperatureK": 400,
+            "rateKS": 0.23212627669452182
+          },
+          "confirmed": true,
+          "source": "thermal",
+          "node": "air",
+          "confirmation": "exact-boundary-outward-direction",
+          "temperatureK": 400,
+          "rateKS": 0.23212627669452182
+        }
+      }
+    },
+    {
+      "minStep": 0.5,
+      "limit": 400,
+      "direction": "inward",
+      "seconds": 0.5,
+      "stop": null
+    },
+    {
+      "minStep": 0.5,
+      "limit": 400,
+      "direction": "zero",
+      "seconds": 0.5,
+      "stop": null
+    },
+    {
+      "minStep": 1e-9,
+      "limit": 200,
+      "priorHistory": true,
+      "stop": {
+        "kind": "domain",
+        "seconds": 0.01,
+        "attemptedStepSeconds": 1.1920928955078125e-9,
+        "message": "Thermal trajectory points outward at the supported boundary.",
+        "evidence": {
+          "originalCause": "Thermal trajectory points outward at the supported boundary.",
+          "nonlinearResidual": null,
+          "trial": {
+            "source": "thermal",
+            "node": "air",
+            "stage": "initial-direction",
+            "temperatureK": 200,
+            "rateKS": -0.23212627669452182
+          },
+          "confirmed": true,
+          "source": "thermal",
+          "node": "air",
+          "confirmation": "exact-boundary-outward-direction",
+          "temperatureK": 200,
+          "rateKS": -0.23212627669452182
+        }
+      }
+    },
+    {
+      "minStep": 1e-9,
+      "limit": 400,
+      "priorHistory": true,
+      "stop": {
+        "kind": "domain",
+        "seconds": 0.01,
+        "attemptedStepSeconds": 1.1920928955078125e-9,
+        "message": "Thermal trajectory points outward at the supported boundary.",
+        "evidence": {
+          "originalCause": "Thermal trajectory points outward at the supported boundary.",
+          "nonlinearResidual": null,
+          "trial": {
+            "source": "thermal",
+            "node": "air",
+            "stage": "initial-direction",
+            "temperatureK": 400,
+            "rateKS": 0.23212627669452182
+          },
+          "confirmed": true,
+          "source": "thermal",
+          "node": "air",
+          "confirmation": "exact-boundary-outward-direction",
+          "temperatureK": 400,
+          "rateKS": 0.23212627669452182
+        }
+      }
+    },
+    {
+      "minStep": 0.00001,
+      "limit": 200,
+      "priorHistory": true,
+      "stop": {
+        "kind": "domain",
+        "seconds": 0.01,
+        "attemptedStepSeconds": 0.00001953125,
+        "message": "Thermal trajectory points outward at the supported boundary.",
+        "evidence": {
+          "originalCause": "Thermal trajectory points outward at the supported boundary.",
+          "nonlinearResidual": null,
+          "trial": {
+            "source": "thermal",
+            "node": "air",
+            "stage": "initial-direction",
+            "temperatureK": 200,
+            "rateKS": -0.23212627669452182
+          },
+          "confirmed": true,
+          "source": "thermal",
+          "node": "air",
+          "confirmation": "exact-boundary-outward-direction",
+          "temperatureK": 200,
+          "rateKS": -0.23212627669452182
+        }
+      }
+    },
+    {
+      "minStep": 0.00001,
+      "limit": 400,
+      "priorHistory": true,
+      "stop": {
+        "kind": "domain",
+        "seconds": 0.01,
+        "attemptedStepSeconds": 0.00001953125,
+        "message": "Thermal trajectory points outward at the supported boundary.",
+        "evidence": {
+          "originalCause": "Thermal trajectory points outward at the supported boundary.",
+          "nonlinearResidual": null,
+          "trial": {
+            "source": "thermal",
+            "node": "air",
+            "stage": "initial-direction",
+            "temperatureK": 400,
+            "rateKS": 0.23212627669452182
+          },
+          "confirmed": true,
+          "source": "thermal",
+          "node": "air",
+          "confirmation": "exact-boundary-outward-direction",
+          "temperatureK": 400,
+          "rateKS": 0.23212627669452182
+        }
+      }
+    },
+    {
+      "minStep": 0.5,
+      "limit": 200,
+      "priorHistory": true,
+      "stop": {
+        "kind": "domain",
+        "seconds": 0.01,
+        "attemptedStepSeconds": 0.01,
+        "message": "Thermal trajectory points outward at the supported boundary.",
+        "evidence": {
+          "originalCause": "Thermal trajectory points outward at the supported boundary.",
+          "nonlinearResidual": null,
+          "trial": {
+            "source": "thermal",
+            "node": "air",
+            "stage": "initial-direction",
+            "temperatureK": 200,
+            "rateKS": -0.23212627669452182
+          },
+          "confirmed": true,
+          "source": "thermal",
+          "node": "air",
+          "confirmation": "exact-boundary-outward-direction",
+          "temperatureK": 200,
+          "rateKS": -0.23212627669452182
+        }
+      }
+    },
+    {
+      "minStep": 0.5,
+      "limit": 400,
+      "priorHistory": true,
+      "stop": {
+        "kind": "domain",
+        "seconds": 0.01,
+        "attemptedStepSeconds": 0.01,
+        "message": "Thermal trajectory points outward at the supported boundary.",
+        "evidence": {
+          "originalCause": "Thermal trajectory points outward at the supported boundary.",
+          "nonlinearResidual": null,
+          "trial": {
+            "source": "thermal",
+            "node": "air",
+            "stage": "initial-direction",
+            "temperatureK": 400,
+            "rateKS": 0.23212627669452182
+          },
+          "confirmed": true,
+          "source": "thermal",
+          "node": "air",
+          "confirmation": "exact-boundary-outward-direction",
+          "temperatureK": 400,
+          "rateKS": 0.23212627669452182
+        }
+      }
+    },
+    {
+      "kind": "solver",
+      "minStep": 1e-9,
+      "probeOnly": true,
+      "stop": {
+        "kind": "solver",
+        "seconds": 0.001,
+        "attemptedStepSeconds": 1.862645149230957e-9,
+        "message": "Injected probe failure",
+        "evidence": {
+          "originalCause": "Injected probe failure",
+          "nonlinearResidual": null,
+          "trial": null,
+          "confirmed": false,
+          "thermalDirection": [
+            {
+              "node": "tube-0",
+              "temperatureK": 293.14907542270987,
+              "rateKS": -1.160954596837059
+            },
+            {
+              "node": "fin-0",
+              "temperatureK": 293.1499998247954,
+              "rateKS": -0.0003873660706919241
+            },
+            {
+              "node": "tube-1",
+              "temperatureK": 293.1493037694122,
+              "rateKS": -0.7097141377880589
+            },
+            {
+              "node": "fin-1",
+              "temperatureK": 293.14999986100077,
+              "rateKS": -0.0002798323334212058
+            },
+            {
+              "node": "tube-2",
+              "temperatureK": 293.1493023542101,
+              "rateKS": -0.7131851622023402
+            },
+            {
+              "node": "fin-2",
+              "temperatureK": 293.14999986082415,
+              "rateKS": -0.0002804988171803063
+            },
+            {
+              "node": "tube-3",
+              "temperatureK": 293.1492897777242,
+              "rateKS": -0.7346779579506536
+            },
+            {
+              "node": "fin-3",
+              "temperatureK": 293.1499998587332,
+              "rateKS": -0.00028642130923569844
+            },
+            {
+              "node": "tube-4",
+              "temperatureK": 293.14924314549273,
+              "rateKS": -0.7963273770687385
+            },
+            {
+              "node": "fin-4",
+              "temperatureK": 293.149999849731,
+              "rateKS": -0.00030838041388736814
+            },
+            {
+              "node": "air",
+              "temperatureK": 293.15023209872373,
+              "rateKS": 0.348134120653083
+            }
+          ],
+          "refrigerantDirection": []
+        }
+      }
+    },
+    {
+      "kind": "solver",
+      "minStep": 0.00001,
+      "probeOnly": true,
+      "stop": {
+        "kind": "solver",
+        "seconds": 0.001,
+        "attemptedStepSeconds": 0.0000152587890625,
+        "message": "Injected probe failure",
+        "evidence": {
+          "originalCause": "Injected probe failure",
+          "nonlinearResidual": null,
+          "trial": null,
+          "confirmed": false
+        }
+      }
+    },
+    {
+      "kind": "solver",
+      "minStep": 0.5,
+      "probeOnly": true,
+      "stop": {
+        "kind": "solver",
+        "seconds": 0.001,
+        "attemptedStepSeconds": 0.5,
+        "message": "Injected probe failure",
+        "evidence": {
+          "originalCause": "Injected probe failure",
+          "nonlinearResidual": null,
+          "trial": null,
+          "confirmed": false
+        }
+      }
+    },
+    {
+      "kind": "domain",
+      "minStep": 1e-9,
+      "probeOnly": true,
+      "stop": {
+        "kind": "solver",
+        "seconds": 0.001,
+        "attemptedStepSeconds": 1.862645149230957e-9,
+        "message": "Injected probe failure",
+        "evidence": {
+          "originalCause": "Injected probe failure",
+          "nonlinearResidual": null,
+          "trial": null,
+          "confirmed": false,
+          "thermalDirection": [
+            {
+              "node": "tube-0",
+              "temperatureK": 293.14907542270987,
+              "rateKS": -1.160954596837059
+            },
+            {
+              "node": "fin-0",
+              "temperatureK": 293.1499998247954,
+              "rateKS": -0.0003873660706919241
+            },
+            {
+              "node": "tube-1",
+              "temperatureK": 293.1493037694122,
+              "rateKS": -0.7097141377880589
+            },
+            {
+              "node": "fin-1",
+              "temperatureK": 293.14999986100077,
+              "rateKS": -0.0002798323334212058
+            },
+            {
+              "node": "tube-2",
+              "temperatureK": 293.1493023542101,
+              "rateKS": -0.7131851622023402
+            },
+            {
+              "node": "fin-2",
+              "temperatureK": 293.14999986082415,
+              "rateKS": -0.0002804988171803063
+            },
+            {
+              "node": "tube-3",
+              "temperatureK": 293.1492897777242,
+              "rateKS": -0.7346779579506536
+            },
+            {
+              "node": "fin-3",
+              "temperatureK": 293.1499998587332,
+              "rateKS": -0.00028642130923569844
+            },
+            {
+              "node": "tube-4",
+              "temperatureK": 293.14924314549273,
+              "rateKS": -0.7963273770687385
+            },
+            {
+              "node": "fin-4",
+              "temperatureK": 293.149999849731,
+              "rateKS": -0.00030838041388736814
+            },
+            {
+              "node": "air",
+              "temperatureK": 293.15023209872373,
+              "rateKS": 0.348134120653083
+            }
+          ],
+          "refrigerantDirection": []
+        }
+      }
+    },
+    {
+      "kind": "domain",
+      "minStep": 0.00001,
+      "probeOnly": true,
+      "stop": {
+        "kind": "solver",
+        "seconds": 0.001,
+        "attemptedStepSeconds": 0.0000152587890625,
+        "message": "Injected probe failure",
+        "evidence": {
+          "originalCause": "Injected probe failure",
+          "nonlinearResidual": null,
+          "trial": null,
+          "confirmed": false
+        }
+      }
+    },
+    {
+      "kind": "domain",
+      "minStep": 0.5,
+      "probeOnly": true,
+      "stop": {
+        "kind": "solver",
+        "seconds": 0.001,
+        "attemptedStepSeconds": 0.5,
+        "message": "Injected probe failure",
+        "evidence": {
+          "originalCause": "Injected probe failure",
+          "nonlinearResidual": null,
+          "trial": null,
+          "confirmed": false
+        }
+      }
+    },
+    {
+      "kind": "false-boundary-proof",
+      "minStep": 1e-9,
+      "probeOnly": true,
+      "stop": {
+        "kind": "solver",
+        "seconds": 0.001,
+        "attemptedStepSeconds": 1.862645149230957e-9,
+        "message": "Injected probe failure",
+        "evidence": {
+          "originalCause": "Injected probe failure",
+          "nonlinearResidual": null,
+          "trial": {
+            "source": "thermal",
+            "stage": "initial-direction",
+            "node": "air",
+            "temperatureK": 400,
+            "rateKS": 1
+          },
+          "confirmed": false,
+          "thermalDirection": [
+            {
+              "node": "tube-0",
+              "temperatureK": 293.14907542270987,
+              "rateKS": -1.160954596837059
+            },
+            {
+              "node": "fin-0",
+              "temperatureK": 293.1499998247954,
+              "rateKS": -0.0003873660706919241
+            },
+            {
+              "node": "tube-1",
+              "temperatureK": 293.1493037694122,
+              "rateKS": -0.7097141377880589
+            },
+            {
+              "node": "fin-1",
+              "temperatureK": 293.14999986100077,
+              "rateKS": -0.0002798323334212058
+            },
+            {
+              "node": "tube-2",
+              "temperatureK": 293.1493023542101,
+              "rateKS": -0.7131851622023402
+            },
+            {
+              "node": "fin-2",
+              "temperatureK": 293.14999986082415,
+              "rateKS": -0.0002804988171803063
+            },
+            {
+              "node": "tube-3",
+              "temperatureK": 293.1492897777242,
+              "rateKS": -0.7346779579506536
+            },
+            {
+              "node": "fin-3",
+              "temperatureK": 293.1499998587332,
+              "rateKS": -0.00028642130923569844
+            },
+            {
+              "node": "tube-4",
+              "temperatureK": 293.14924314549273,
+              "rateKS": -0.7963273770687385
+            },
+            {
+              "node": "fin-4",
+              "temperatureK": 293.149999849731,
+              "rateKS": -0.00030838041388736814
+            },
+            {
+              "node": "air",
+              "temperatureK": 293.15023209872373,
+              "rateKS": 0.348134120653083
+            }
+          ],
+          "refrigerantDirection": []
+        }
+      }
+    },
+    {
+      "kind": "false-boundary-proof",
+      "minStep": 0.00001,
+      "probeOnly": true,
+      "stop": {
+        "kind": "solver",
+        "seconds": 0.001,
+        "attemptedStepSeconds": 0.0000152587890625,
+        "message": "Injected probe failure",
+        "evidence": {
+          "originalCause": "Injected probe failure",
+          "nonlinearResidual": null,
+          "trial": {
+            "source": "thermal",
+            "stage": "initial-direction",
+            "node": "air",
+            "temperatureK": 400,
+            "rateKS": 1
+          },
+          "confirmed": false
+        }
+      }
+    },
+    {
+      "kind": "false-boundary-proof",
+      "minStep": 0.5,
+      "probeOnly": true,
+      "stop": {
+        "kind": "solver",
+        "seconds": 0.001,
+        "attemptedStepSeconds": 0.5,
+        "message": "Injected probe failure",
+        "evidence": {
+          "originalCause": "Injected probe failure",
+          "nonlinearResidual": null,
+          "trial": {
+            "source": "thermal",
+            "stage": "initial-direction",
+            "node": "air",
+            "temperatureK": 400,
+            "rateKS": 1
+          },
+          "confirmed": false
+        }
+      }
+    },
+    {
+      "minStep": 1e-9,
+      "signedExchange": true,
+      "stop": {
+        "kind": "domain",
+        "seconds": 0,
+        "attemptedStepSeconds": 1.862645149230957e-9,
+        "message": "Thermal trajectory points outward at the supported boundary.",
+        "evidence": {
+          "originalCause": "Thermal trajectory points outward at the supported boundary.",
+          "nonlinearResidual": null,
+          "trial": {
+            "source": "thermal",
+            "node": "tube-0",
+            "stage": "initial-direction",
+            "temperatureK": 400,
+            "rateKS": 6.159987187226642
+          },
+          "confirmed": true,
+          "source": "thermal",
+          "node": "tube-0",
+          "confirmation": "exact-boundary-outward-direction",
+          "temperatureK": 400,
+          "rateKS": 6.159987187226642
+        }
+      }
+    },
+    {
+      "minStep": 0.00001,
+      "signedExchange": true,
+      "stop": {
+        "kind": "domain",
+        "seconds": 0,
+        "attemptedStepSeconds": 0.0000152587890625,
+        "message": "Thermal trajectory points outward at the supported boundary.",
+        "evidence": {
+          "originalCause": "Thermal trajectory points outward at the supported boundary.",
+          "nonlinearResidual": null,
+          "trial": {
+            "source": "thermal",
+            "node": "tube-0",
+            "stage": "initial-direction",
+            "temperatureK": 400,
+            "rateKS": 6.159987187226642
+          },
+          "confirmed": true,
+          "source": "thermal",
+          "node": "tube-0",
+          "confirmation": "exact-boundary-outward-direction",
+          "temperatureK": 400,
+          "rateKS": 6.159987187226642
+        }
+      }
+    },
+    {
+      "minStep": 0.5,
+      "signedExchange": true,
+      "stop": {
+        "kind": "domain",
+        "seconds": 0,
+        "attemptedStepSeconds": 0.5,
+        "message": "Thermal trajectory points outward at the supported boundary.",
+        "evidence": {
+          "originalCause": "Thermal trajectory points outward at the supported boundary.",
+          "nonlinearResidual": null,
+          "trial": {
+            "source": "thermal",
+            "node": "tube-0",
+            "stage": "initial-direction",
+            "temperatureK": 400,
+            "rateKS": 6.159987187226642
+          },
+          "confirmed": true,
+          "source": "thermal",
+          "node": "tube-0",
+          "confirmation": "exact-boundary-outward-direction",
+          "temperatureK": 400,
+          "rateKS": 6.159987187226642
+        }
+      }
+    }
+  ],
+  "passed": true
+}

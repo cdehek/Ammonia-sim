@@ -1,0 +1,50 @@
+{
+  "platform": "Linux-6.18.44-x86_64-with-glibc2.41",
+  "python": "3.12.14",
+  "node": "v22.23.3",
+  "cpuMax": "200000 100000",
+  "memoryMaxBytes": "8589934592",
+  "playwright": "1.62.0",
+  "browserRevisions": {
+    "chromium": 1234,
+    "webkit": 2336
+  },
+  "B1PlaywrightReported": "1.62.1",
+  "B1PlaywrightPinUnavailableInPackageIndex": true,
+  "physicalIPad": false,
+  "webkitLocalLauncher": "#!/bin/sh\nWK_BUNDLE=/workspace/b2-runtime/browsers/webkit-2336/minibrowser-wpe\nexport WEBKIT_EXEC_PATH=\"$WK_BUNDLE/bin\"\nexport WEBKIT_INJECTED_BUNDLE_PATH=\"$WK_BUNDLE/lib\"\nexport WEBKIT_INSPECTOR_RESOURCES_PATH=\"$WK_BUNDLE/share\"\nexport LD_LIBRARY_PATH=\"/workspace/b2-runtime/sysroot/usr/lib/x86_64-linux-gnu:$WK_BUNDLE/lib:$WK_BUNDLE/sys/lib\"\nexec \"$WK_BUNDLE/bin/MiniBrowser\" \"$@\"\n",
+  "localDebSHA256": {
+    "libmanette-0.2-0_0.2.12-1_amd64.deb": "98841a467692c46fd1870275113235691ebbfe71a3524f6b2a0fa7e9c33c6e56",
+    "libgles2_1.7.0-1+b2_amd64.deb": "e12c18aa77939d122ee1dea520ba0440b97dc19200b7396e03dff03a3ece74c1",
+    "libharfbuzz-icu0_10.2.0-1+deb13u1_amd64.deb": "0b45d951629e98673c0da73b2bcd0886a467d833bb3b7499892a168f247165d2",
+    "libhyphen0_2.8.8-7+b2_amd64.deb": "fa9dca7b8cf1381fd52800c44a385c5725a78a88bd705f7c39b1046a5293435e"
+  },
+  "selectedPackages": {
+    "CoolProp": "8.0.0",
+    "numpy": "2.3.5",
+    "scipy": "1.16.2",
+    "playwright": "1.62.0"
+  },
+  "sourceSnapshots": {
+    "Solvers.cpp": {
+      "sha256": "f35b49f818a96153819b7ca7a16e9b8a436a356b3a1ab3036580b89e95e7b5c1",
+      "sourceCommit": "ae81610e7d23efc57f9d051c8e70a4d66e87537f",
+      "unmodified": true
+    },
+    "HelmholtzEOSMixtureBackend.cpp": {
+      "sha256": "526a59c5797cdf3b0620e195e9149141de559711fe09a998035d3ab0d81ab65d",
+      "sourceCommit": "ae81610e7d23efc57f9d051c8e70a4d66e87537f",
+      "unmodified": true
+    },
+    "Solvers.h": {
+      "sha256": "f9e4535c2a5d1499cf33eb6095f68a9258b12533c47cfae47b59ede94d45f596",
+      "sourceCommit": "ae81610e7d23efc57f9d051c8e70a4d66e87537f",
+      "unmodified": true
+    },
+    "HelmholtzEOSMixtureBackend.h": {
+      "sha256": "93088d1c7850778020d388844d513bec93a630a29daea80ffbbec0764eb68fbd",
+      "sourceCommit": "ae81610e7d23efc57f9d051c8e70a4d66e87537f",
+      "unmodified": true
+    }
+  }
+}

@@ -1,0 +1,1100 @@
+{
+  "standalone": [
+    {
+      "file": "chromium-performance-build30.json",
+      "browser": "chromium",
+      "build": "build30",
+      "workerOK": true,
+      "initializationMS": {
+        "median": 2759.199999999255,
+        "minimum": 2634.800000000745,
+        "maximum": 4221.199999999255,
+        "samples": 3
+      },
+      "groups": {
+        "PH-liquid": {
+          "microsecondsPerState": {
+            "median": 165.8991228078345,
+            "minimum": 101.00806451662974,
+            "maximum": 349.9999999982753,
+            "samples": 3
+          },
+          "calls": 2832,
+          "failures": 0
+        },
+        "PH-vapor": {
+          "microsecondsPerState": {
+            "median": 146.0271317822238,
+            "minimum": 87.76223776093521,
+            "maximum": 153.11244979919678,
+            "samples": 3
+          },
+          "calls": 3744,
+          "failures": 0
+        },
+        "PH-two-phase": {
+          "microsecondsPerState": {
+            "median": 7.457962413488875,
+            "minimum": 7.305669199298656,
+            "maximum": 14.101841412792636,
+            "samples": 3
+          },
+          "calls": 51396,
+          "failures": 0
+        },
+        "DU-liquid": {
+          "microsecondsPerState": {
+            "median": 50.46480743691899,
+            "minimum": 32.299741602067186,
+            "maximum": 279.0780141817551,
+            "samples": 3
+          },
+          "calls": 8220,
+          "failures": 0
+        },
+        "DU-vapor": {
+          "microsecondsPerState": {
+            "median": 41.69444444382356,
+            "minimum": 23.452157598499063,
+            "maximum": 48.88250319332379,
+            "samples": 3
+          },
+          "calls": 13128,
+          "failures": 0
+        },
+        "DU-two-phase": {
+          "microsecondsPerState": {
+            "median": 53.375527426422316,
+            "minimum": 51.68732782292177,
+            "maximum": 54.861111111655745,
+            "samples": 3
+          },
+          "calls": 8484,
+          "failures": 0
+        }
+      },
+      "peakObservedLinearMemoryMiB": 53.75,
+      "pageMaxTimerGapMS": 52.80000000074506,
+      "workerJSHeap": null,
+      "pageCDPHeap": {
+        "usedSize": 2161212,
+        "totalSize": 3600384,
+        "embedderHeapUsedSize": 1507216,
+        "backingStorageSize": 15044
+      },
+      "errorRecovery": {
+        "before": {
+          "memory": 56360960,
+          "stack": 5706944
+        },
+        "after": {
+          "memory": 56360960,
+          "stack": 5706944
+        },
+        "failures": 20,
+        "recoveries": 20
+      },
+      "sustained": [
+        {
+          "epoch": 0,
+          "calls": 6552,
+          "failures": 0,
+          "elapsedMS": 505.5,
+          "linearMemory": 56360960
+        },
+        {
+          "epoch": 1,
+          "calls": 7056,
+          "failures": 0,
+          "elapsedMS": 504.8999999985099,
+          "linearMemory": 56360960
+        },
+        {
+          "epoch": 2,
+          "calls": 6480,
+          "failures": 0,
+          "elapsedMS": 504.80000000074506,
+          "linearMemory": 56360960
+        }
+      ]
+    },
+    {
+      "file": "chromium-performance-build44.json",
+      "browser": "chromium",
+      "build": "build44",
+      "workerOK": true,
+      "initializationMS": {
+        "median": 2844.699999999255,
+        "minimum": 2437.89999999851,
+        "maximum": 4210.599999997765,
+        "samples": 3
+      },
+      "groups": {
+        "PH-liquid": {
+          "microsecondsPerState": {
+            "median": 151.50602409488945,
+            "minimum": 87.15277777648427,
+            "maximum": 232.2530864197531,
+            "samples": 3
+          },
+          "calls": 3372,
+          "failures": 0
+        },
+        "PH-vapor": {
+          "microsecondsPerState": {
+            "median": 184.7826086956522,
+            "minimum": 86.49425287356321,
+            "maximum": 212.9943502835382,
+            "samples": 3
+          },
+          "calls": 3276,
+          "failures": 0
+        },
+        "PH-two-phase": {
+          "microsecondsPerState": {
+            "median": 14.934289127837514,
+            "minimum": 6.634819532908705,
+            "maximum": 19.054878048780488,
+            "samples": 3
+          },
+          "calls": 40524,
+          "failures": 0
+        },
+        "DU-liquid": {
+          "microsecondsPerState": {
+            "median": 36.68132942362906,
+            "minimum": 25.826446280991735,
+            "maximum": 84.04166666635622,
+            "samples": 3
+          },
+          "calls": 12300,
+          "failures": 0
+        },
+        "DU-vapor": {
+          "microsecondsPerState": {
+            "median": 29.547228727265786,
+            "minimum": 23.035604665667606,
+            "maximum": 60.17628205098355,
+            "samples": 3
+          },
+          "calls": 14136,
+          "failures": 0
+        },
+        "DU-two-phase": {
+          "microsecondsPerState": {
+            "median": 59.888357256481235,
+            "minimum": 30.52845528440141,
+            "maximum": 80.39529914529915,
+            "samples": 3
+          },
+          "calls": 9300,
+          "failures": 0
+        }
+      },
+      "peakObservedLinearMemoryMiB": 53.75,
+      "pageMaxTimerGapMS": 115.19999999925494,
+      "workerJSHeap": null,
+      "pageCDPHeap": {
+        "usedSize": 2122244,
+        "totalSize": 3338240,
+        "embedderHeapUsedSize": 1504656,
+        "backingStorageSize": 15044
+      },
+      "errorRecovery": {
+        "before": {
+          "memory": 56360960,
+          "stack": 5706944
+        },
+        "after": {
+          "memory": 56360960,
+          "stack": 5706944
+        },
+        "failures": 20,
+        "recoveries": 20
+      },
+      "sustained": [
+        {
+          "epoch": 0,
+          "calls": 11304,
+          "failures": 0,
+          "elapsedMS": 500.5,
+          "linearMemory": 56360960
+        },
+        {
+          "epoch": 1,
+          "calls": 11808,
+          "failures": 0,
+          "elapsedMS": 501.3999999985099,
+          "linearMemory": 56360960
+        },
+        {
+          "epoch": 2,
+          "calls": 11664,
+          "failures": 0,
+          "elapsedMS": 500.19999999925494,
+          "linearMemory": 56360960
+        }
+      ]
+    },
+    {
+      "file": "webkit-performance-build30.json",
+      "browser": "webkit",
+      "build": "build30",
+      "workerOK": true,
+      "initializationMS": {
+        "median": 3326,
+        "minimum": 3179,
+        "maximum": 4796,
+        "samples": 3
+      },
+      "groups": {
+        "PH-liquid": {
+          "microsecondsPerState": {
+            "median": 93.90547263681592,
+            "minimum": 89.92805755395683,
+            "maximum": 4194.444444444444,
+            "samples": 3
+          },
+          "calls": 3312,
+          "failures": 0
+        },
+        "PH-vapor": {
+          "microsecondsPerState": {
+            "median": 142.04545454545453,
+            "minimum": 89.92805755395683,
+            "maximum": 337.3015873015873,
+            "samples": 3
+          },
+          "calls": 3228,
+          "failures": 0
+        },
+        "PH-two-phase": {
+          "microsecondsPerState": {
+            "median": 12.26692836113837,
+            "minimum": 8.896797153024911,
+            "maximum": 16.4257555847569,
+            "samples": 3
+          },
+          "calls": 38220,
+          "failures": 0
+        },
+        "DU-liquid": {
+          "microsecondsPerState": {
+            "median": 39.80891719745223,
+            "minimum": 25.78551912568306,
+            "maximum": 513.3333333333334,
+            "samples": 3
+          },
+          "calls": 9924,
+          "failures": 0
+        },
+        "DU-vapor": {
+          "microsecondsPerState": {
+            "median": 46.2962962962963,
+            "minimum": 42.225950782997764,
+            "maximum": 46.96969696969697,
+            "samples": 3
+          },
+          "calls": 10116,
+          "failures": 0
+        },
+        "DU-two-phase": {
+          "microsecondsPerState": {
+            "median": 34.15300546448088,
+            "minimum": 28.60411899313501,
+            "maximum": 52.083333333333336,
+            "samples": 3
+          },
+          "calls": 12516,
+          "failures": 0
+        }
+      },
+      "peakObservedLinearMemoryMiB": 53.75,
+      "pageMaxTimerGapMS": 246,
+      "workerJSHeap": null,
+      "pageCDPHeap": null,
+      "errorRecovery": {
+        "before": {
+          "memory": 56360960,
+          "stack": 5706944
+        },
+        "after": {
+          "memory": 56360960,
+          "stack": 5706944
+        },
+        "failures": 20,
+        "recoveries": 20
+      },
+      "sustained": [
+        {
+          "epoch": 0,
+          "calls": 8928,
+          "failures": 0,
+          "elapsedMS": 502,
+          "linearMemory": 56360960
+        },
+        {
+          "epoch": 1,
+          "calls": 8640,
+          "failures": 0,
+          "elapsedMS": 502,
+          "linearMemory": 56360960
+        },
+        {
+          "epoch": 2,
+          "calls": 10368,
+          "failures": 0,
+          "elapsedMS": 500,
+          "linearMemory": 56360960
+        }
+      ]
+    },
+    {
+      "file": "webkit-performance-build44.json",
+      "browser": "webkit",
+      "build": "build44",
+      "workerOK": true,
+      "initializationMS": {
+        "median": 3786,
+        "minimum": 3095,
+        "maximum": 4683,
+        "samples": 3
+      },
+      "groups": {
+        "PH-liquid": {
+          "microsecondsPerState": {
+            "median": 176.80180180180182,
+            "minimum": 108.69565217391305,
+            "maximum": 3250.0,
+            "samples": 3
+          },
+          "calls": 2316,
+          "failures": 0
+        },
+        "PH-vapor": {
+          "microsecondsPerState": {
+            "median": 211.864406779661,
+            "minimum": 198.4126984126984,
+            "maximum": 245.09803921568627,
+            "samples": 3
+          },
+          "calls": 2076,
+          "failures": 0
+        },
+        "PH-two-phase": {
+          "microsecondsPerState": {
+            "median": 9.873617693522906,
+            "minimum": 7.730364873222016,
+            "maximum": 15.320580942260007,
+            "samples": 3
+          },
+          "calls": 45888,
+          "failures": 0
+        },
+        "DU-liquid": {
+          "microsecondsPerState": {
+            "median": 37.81094527363184,
+            "minimum": 22.768670309653917,
+            "maximum": 513.3333333333334,
+            "samples": 3
+          },
+          "calls": 10908,
+          "failures": 0
+        },
+        "DU-vapor": {
+          "microsecondsPerState": {
+            "median": 49.800796812749006,
+            "minimum": 48.262548262548265,
+            "maximum": 82.25806451612904,
+            "samples": 3
+          },
+          "calls": 7980,
+          "failures": 0
+        },
+        "DU-two-phase": {
+          "microsecondsPerState": {
+            "median": 35.31073446327684,
+            "minimum": 30.864197530864196,
+            "maximum": 48.828125,
+            "samples": 3
+          },
+          "calls": 12180,
+          "failures": 0
+        }
+      },
+      "peakObservedLinearMemoryMiB": 53.75,
+      "pageMaxTimerGapMS": 226,
+      "workerJSHeap": null,
+      "pageCDPHeap": null,
+      "errorRecovery": {
+        "before": {
+          "memory": 56360960,
+          "stack": 5706944
+        },
+        "after": {
+          "memory": 56360960,
+          "stack": 5706944
+        },
+        "failures": 20,
+        "recoveries": 20
+      },
+      "sustained": [
+        {
+          "epoch": 0,
+          "calls": 8352,
+          "failures": 0,
+          "elapsedMS": 505,
+          "linearMemory": 56360960
+        },
+        {
+          "epoch": 1,
+          "calls": 8064,
+          "failures": 0,
+          "elapsedMS": 501,
+          "linearMemory": 56360960
+        },
+        {
+          "epoch": 2,
+          "calls": 6696,
+          "failures": 0,
+          "elapsedMS": 500,
+          "linearMemory": 56360960
+        }
+      ]
+    }
+  ],
+  "coupled": [
+    {
+      "file": "chromium-coupled-cost-build30.json",
+      "browser": "chromium",
+      "build": "build30",
+      "error": null,
+      "failedRows": [],
+      "missingCases": [],
+      "initializationMS": 3268.099999997765,
+      "pageMaxTimerGapMS": 117.80000000074506,
+      "peakObservedLinearMemoryMiB": 53.75,
+      "workerJSHeap": null,
+      "pageCDPHeapAfterWorker": {
+        "usedSize": 11350276,
+        "totalSize": 12308480,
+        "embedderHeapUsedSize": 825704,
+        "backingStorageSize": 40
+      },
+      "cases": {
+        "cold": {
+          "elapsedMS": {
+            "median": 2052.300000000745,
+            "minimum": 1919.6000000014901,
+            "maximum": 2122.2000000029802,
+            "samples": 3
+          },
+          "allTargetsReached": true,
+          "repeatedWorkExactlyMatches": true,
+          "work": {
+            "propertyCalls": {
+              "ph": 33256,
+              "sat": 72022,
+              "stateMVU": 1450,
+              "domainGuards": 67962
+            },
+            "acceptedHalfSteps": 52,
+            "rejectedSteps": 6,
+            "accuracyRejected": 6,
+            "eventRejected": 0,
+            "domainRejected": 0,
+            "iterations": 519,
+            "residualEvaluations": 11610,
+            "linearSolves": 519
+          },
+          "stops": [
+            null,
+            null,
+            null
+          ]
+        },
+        "warm": {
+          "elapsedMS": {
+            "median": 10044.599999997765,
+            "minimum": 9777.599999997765,
+            "maximum": 10069.10000000149,
+            "samples": 3
+          },
+          "allTargetsReached": true,
+          "repeatedWorkExactlyMatches": true,
+          "work": {
+            "propertyCalls": {
+              "ph": 118843,
+              "sat": 254641,
+              "stateMVU": 4465,
+              "domainGuards": 242151
+            },
+            "acceptedHalfSteps": 158,
+            "rejectedSteps": 20,
+            "accuracyRejected": 20,
+            "eventRejected": 0,
+            "domainRejected": 0,
+            "iterations": 1868,
+            "residualEvaluations": 41721,
+            "linearSolves": 1868
+          },
+          "stops": [
+            null,
+            null,
+            null
+          ]
+        },
+        "heat-reversal": {
+          "elapsedMS": {
+            "median": 1813.7000000029802,
+            "minimum": 1798.0999999977648,
+            "maximum": 2119.699999999255,
+            "samples": 3
+          },
+          "allTargetsReached": true,
+          "repeatedWorkExactlyMatches": true,
+          "work": {
+            "propertyCalls": {
+              "ph": 21844,
+              "sat": 49083,
+              "stateMVU": 1405,
+              "domainGuards": 45093
+            },
+            "acceptedHalfSteps": 56,
+            "rejectedSteps": 3,
+            "accuracyRejected": 3,
+            "eventRejected": 0,
+            "domainRejected": 0,
+            "iterations": 372,
+            "residualEvaluations": 8370,
+            "linearSolves": 372
+          },
+          "stops": [
+            null,
+            null,
+            null
+          ]
+        }
+      },
+      "scope": "Matched 0.2 s original cold/warm/reversal physical fixtures; one warmup plus three repeats. Timed model create/advance/record, adapter and table support guard; excludes WASM init, source transfer and JSON output."
+    },
+    {
+      "file": "chromium-coupled-cost-build44.json",
+      "browser": "chromium",
+      "build": "build44",
+      "error": null,
+      "failedRows": [],
+      "missingCases": [],
+      "initializationMS": 2848.400000002235,
+      "pageMaxTimerGapMS": 54,
+      "peakObservedLinearMemoryMiB": 53.75,
+      "workerJSHeap": null,
+      "pageCDPHeapAfterWorker": {
+        "usedSize": 11346600,
+        "totalSize": 12308480,
+        "embedderHeapUsedSize": 827704,
+        "backingStorageSize": 40
+      },
+      "cases": {
+        "cold": {
+          "elapsedMS": {
+            "median": 1998.800000000745,
+            "minimum": 1965.1000000014901,
+            "maximum": 2103.800000000745,
+            "samples": 3
+          },
+          "allTargetsReached": true,
+          "repeatedWorkExactlyMatches": true,
+          "work": {
+            "propertyCalls": {
+              "ph": 33256,
+              "sat": 72022,
+              "stateMVU": 1450,
+              "domainGuards": 67962
+            },
+            "acceptedHalfSteps": 52,
+            "rejectedSteps": 6,
+            "accuracyRejected": 6,
+            "eventRejected": 0,
+            "domainRejected": 0,
+            "iterations": 519,
+            "residualEvaluations": 11610,
+            "linearSolves": 519
+          },
+          "stops": [
+            null,
+            null,
+            null
+          ]
+        },
+        "warm": {
+          "elapsedMS": {
+            "median": 9944.099999997765,
+            "minimum": 9686.199999999255,
+            "maximum": 9986.5,
+            "samples": 3
+          },
+          "allTargetsReached": true,
+          "repeatedWorkExactlyMatches": true,
+          "work": {
+            "propertyCalls": {
+              "ph": 115891,
+              "sat": 248737,
+              "stateMVU": 4465,
+              "domainGuards": 236247
+            },
+            "acceptedHalfSteps": 158,
+            "rejectedSteps": 20,
+            "accuracyRejected": 20,
+            "eventRejected": 0,
+            "domainRejected": 0,
+            "iterations": 1820,
+            "residualEvaluations": 40645,
+            "linearSolves": 1820
+          },
+          "stops": [
+            null,
+            null,
+            null
+          ]
+        },
+        "heat-reversal": {
+          "elapsedMS": {
+            "median": 1763.699999999255,
+            "minimum": 1734.5999999977648,
+            "maximum": 1811.7999999970198,
+            "samples": 3
+          },
+          "allTargetsReached": true,
+          "repeatedWorkExactlyMatches": true,
+          "work": {
+            "propertyCalls": {
+              "ph": 20639,
+              "sat": 46673,
+              "stateMVU": 1405,
+              "domainGuards": 42683
+            },
+            "acceptedHalfSteps": 56,
+            "rejectedSteps": 3,
+            "accuracyRejected": 3,
+            "eventRejected": 0,
+            "domainRejected": 0,
+            "iterations": 370,
+            "residualEvaluations": 8326,
+            "linearSolves": 370
+          },
+          "stops": [
+            null,
+            null,
+            null
+          ]
+        }
+      },
+      "scope": "Matched 0.2 s original cold/warm/reversal physical fixtures; one warmup plus three repeats. Timed model create/advance/record, adapter and table support guard; excludes WASM init, source transfer and JSON output."
+    },
+    {
+      "file": "webkit-coupled-cost-build30.json",
+      "browser": "webkit",
+      "build": "build30",
+      "error": null,
+      "failedRows": [],
+      "missingCases": [],
+      "initializationMS": 2673,
+      "pageMaxTimerGapMS": 219,
+      "peakObservedLinearMemoryMiB": 53.75,
+      "workerJSHeap": null,
+      "pageCDPHeapAfterWorker": null,
+      "cases": {
+        "cold": {
+          "elapsedMS": {
+            "median": 1869,
+            "minimum": 1861,
+            "maximum": 1882,
+            "samples": 3
+          },
+          "allTargetsReached": true,
+          "repeatedWorkExactlyMatches": true,
+          "work": {
+            "propertyCalls": {
+              "ph": 33256,
+              "sat": 72022,
+              "stateMVU": 1450,
+              "domainGuards": 67962
+            },
+            "acceptedHalfSteps": 52,
+            "rejectedSteps": 6,
+            "accuracyRejected": 6,
+            "eventRejected": 0,
+            "domainRejected": 0,
+            "iterations": 519,
+            "residualEvaluations": 11610,
+            "linearSolves": 519
+          },
+          "stops": [
+            null,
+            null,
+            null
+          ]
+        },
+        "warm": {
+          "elapsedMS": {
+            "median": 9380,
+            "minimum": 9260,
+            "maximum": 9481,
+            "samples": 3
+          },
+          "allTargetsReached": true,
+          "repeatedWorkExactlyMatches": true,
+          "work": {
+            "propertyCalls": {
+              "ph": 118843,
+              "sat": 254641,
+              "stateMVU": 4465,
+              "domainGuards": 242151
+            },
+            "acceptedHalfSteps": 158,
+            "rejectedSteps": 20,
+            "accuracyRejected": 20,
+            "eventRejected": 0,
+            "domainRejected": 0,
+            "iterations": 1868,
+            "residualEvaluations": 41721,
+            "linearSolves": 1868
+          },
+          "stops": [
+            null,
+            null,
+            null
+          ]
+        },
+        "heat-reversal": {
+          "elapsedMS": {
+            "median": 1779,
+            "minimum": 1768,
+            "maximum": 1785,
+            "samples": 3
+          },
+          "allTargetsReached": true,
+          "repeatedWorkExactlyMatches": true,
+          "work": {
+            "propertyCalls": {
+              "ph": 21844,
+              "sat": 49083,
+              "stateMVU": 1405,
+              "domainGuards": 45093
+            },
+            "acceptedHalfSteps": 56,
+            "rejectedSteps": 3,
+            "accuracyRejected": 3,
+            "eventRejected": 0,
+            "domainRejected": 0,
+            "iterations": 372,
+            "residualEvaluations": 8370,
+            "linearSolves": 372
+          },
+          "stops": [
+            null,
+            null,
+            null
+          ]
+        }
+      },
+      "scope": "Matched 0.2 s original cold/warm/reversal physical fixtures; one warmup plus three repeats. Timed model create/advance/record, adapter and table support guard; excludes WASM init, source transfer and JSON output."
+    },
+    {
+      "file": "webkit-coupled-cost-build44.json",
+      "browser": "webkit",
+      "build": "build44",
+      "error": null,
+      "failedRows": [],
+      "missingCases": [],
+      "initializationMS": 2635,
+      "pageMaxTimerGapMS": 165,
+      "peakObservedLinearMemoryMiB": 53.75,
+      "workerJSHeap": null,
+      "pageCDPHeapAfterWorker": null,
+      "cases": {
+        "cold": {
+          "elapsedMS": {
+            "median": 2559,
+            "minimum": 2297,
+            "maximum": 3129,
+            "samples": 3
+          },
+          "allTargetsReached": true,
+          "repeatedWorkExactlyMatches": true,
+          "work": {
+            "propertyCalls": {
+              "ph": 33256,
+              "sat": 72022,
+              "stateMVU": 1450,
+              "domainGuards": 67962
+            },
+            "acceptedHalfSteps": 52,
+            "rejectedSteps": 6,
+            "accuracyRejected": 6,
+            "eventRejected": 0,
+            "domainRejected": 0,
+            "iterations": 519,
+            "residualEvaluations": 11610,
+            "linearSolves": 519
+          },
+          "stops": [
+            null,
+            null,
+            null
+          ]
+        },
+        "warm": {
+          "elapsedMS": {
+            "median": 13808,
+            "minimum": 11657,
+            "maximum": 15320,
+            "samples": 3
+          },
+          "allTargetsReached": true,
+          "repeatedWorkExactlyMatches": true,
+          "work": {
+            "propertyCalls": {
+              "ph": 115891,
+              "sat": 248737,
+              "stateMVU": 4465,
+              "domainGuards": 236247
+            },
+            "acceptedHalfSteps": 158,
+            "rejectedSteps": 20,
+            "accuracyRejected": 20,
+            "eventRejected": 0,
+            "domainRejected": 0,
+            "iterations": 1820,
+            "residualEvaluations": 40645,
+            "linearSolves": 1820
+          },
+          "stops": [
+            null,
+            null,
+            null
+          ]
+        },
+        "heat-reversal": {
+          "elapsedMS": {
+            "median": 1923,
+            "minimum": 1827,
+            "maximum": 2360,
+            "samples": 3
+          },
+          "allTargetsReached": true,
+          "repeatedWorkExactlyMatches": true,
+          "work": {
+            "propertyCalls": {
+              "ph": 20639,
+              "sat": 46673,
+              "stateMVU": 1405,
+              "domainGuards": 42683
+            },
+            "acceptedHalfSteps": 56,
+            "rejectedSteps": 3,
+            "accuracyRejected": 3,
+            "eventRejected": 0,
+            "domainRejected": 0,
+            "iterations": 370,
+            "residualEvaluations": 8326,
+            "linearSolves": 370
+          },
+          "stops": [
+            null,
+            null,
+            null
+          ]
+        }
+      },
+      "scope": "Matched 0.2 s original cold/warm/reversal physical fixtures; one warmup plus three repeats. Timed model create/advance/record, adapter and table support guard; excludes WASM init, source transfer and JSON output."
+    }
+  ],
+  "offline": {
+    "offline-context.json": [
+      {
+        "browser": "chromium",
+        "error": null,
+        "blockedOriginRequests": 5,
+        "builds": [
+          {
+            "build": "official8",
+            "ok": true,
+            "error": null,
+            "contextOffline": true,
+            "originDisabled": true
+          },
+          {
+            "build": "build30",
+            "ok": true,
+            "error": null,
+            "contextOffline": true,
+            "originDisabled": true
+          },
+          {
+            "build": "build44",
+            "ok": true,
+            "error": null,
+            "contextOffline": true,
+            "originDisabled": true
+          },
+          {
+            "build": "official72",
+            "ok": true,
+            "error": null,
+            "contextOffline": true,
+            "originDisabled": true
+          }
+        ]
+      },
+      {
+        "browser": "webkit",
+        "error": null,
+        "blockedOriginRequests": 5,
+        "builds": [
+          {
+            "build": "official8",
+            "ok": false,
+            "error": "Page.goto: WebKit encountered an internal error\nCall log:\n  - navigating to \"http://127.0.0.1:38143/experiments/dx-fv/browser_eos_backend/\", waiting until \"load\"\n",
+            "contextOffline": null,
+            "originDisabled": null
+          },
+          {
+            "build": "build30",
+            "ok": false,
+            "error": "Page.goto: WebKit encountered an internal error\nCall log:\n  - navigating to \"http://127.0.0.1:38143/experiments/dx-fv/browser_eos_backend/\", waiting until \"load\"\n",
+            "contextOffline": null,
+            "originDisabled": null
+          },
+          {
+            "build": "build44",
+            "ok": false,
+            "error": "Page.goto: WebKit encountered an internal error\nCall log:\n  - navigating to \"http://127.0.0.1:38143/experiments/dx-fv/browser_eos_backend/\", waiting until \"load\"\n",
+            "contextOffline": null,
+            "originDisabled": null
+          },
+          {
+            "build": "official72",
+            "ok": false,
+            "error": "Page.goto: WebKit encountered an internal error\nCall log:\n  - navigating to \"http://127.0.0.1:38143/experiments/dx-fv/browser_eos_backend/\", waiting until \"load\"\n",
+            "contextOffline": null,
+            "originDisabled": null
+          }
+        ]
+      }
+    ],
+    "offline-origin-only.json": [
+      {
+        "browser": "chromium",
+        "error": null,
+        "blockedOriginRequests": 4,
+        "builds": [
+          {
+            "build": "official8",
+            "ok": true,
+            "error": null,
+            "contextOffline": false,
+            "originDisabled": true
+          },
+          {
+            "build": "build30",
+            "ok": true,
+            "error": null,
+            "contextOffline": false,
+            "originDisabled": true
+          },
+          {
+            "build": "build44",
+            "ok": true,
+            "error": null,
+            "contextOffline": false,
+            "originDisabled": true
+          },
+          {
+            "build": "official72",
+            "ok": true,
+            "error": null,
+            "contextOffline": false,
+            "originDisabled": true
+          }
+        ]
+      },
+      {
+        "browser": "webkit",
+        "error": null,
+        "blockedOriginRequests": 8,
+        "builds": [
+          {
+            "build": "official8",
+            "ok": true,
+            "error": null,
+            "contextOffline": false,
+            "originDisabled": true
+          },
+          {
+            "build": "build30",
+            "ok": true,
+            "error": null,
+            "contextOffline": false,
+            "originDisabled": true
+          },
+          {
+            "build": "build44",
+            "ok": true,
+            "error": null,
+            "contextOffline": false,
+            "originDisabled": true
+          },
+          {
+            "build": "official72",
+            "ok": true,
+            "error": null,
+            "contextOffline": false,
+            "originDisabled": true
+          }
+        ]
+      }
+    ]
+  },
+  "physicalIPad": false,
+  "memoryScope": "WASM linear memory, worker-exposed JavaScript heap and page CDP heap are separate; total browser/device memory not measured.",
+  "matchedRatios": [
+    {
+      "browser": "chromium",
+      "case": "cold",
+      "ratio44Over30": 0.9739316864006331,
+      "comparableCompletedTargets": true
+    },
+    {
+      "browser": "chromium",
+      "case": "warm",
+      "ratio44Over30": 0.9899946239770601,
+      "comparableCompletedTargets": true
+    },
+    {
+      "browser": "chromium",
+      "case": "heat-reversal",
+      "ratio44Over30": 0.9724320449888939,
+      "comparableCompletedTargets": true
+    },
+    {
+      "browser": "webkit",
+      "case": "cold",
+      "ratio44Over30": 1.3691813804173354,
+      "comparableCompletedTargets": true
+    },
+    {
+      "browser": "webkit",
+      "case": "warm",
+      "ratio44Over30": 1.4720682302771855,
+      "comparableCompletedTargets": true
+    },
+    {
+      "browser": "webkit",
+      "case": "heat-reversal",
+      "ratio44Over30": 1.0809443507588532,
+      "comparableCompletedTargets": true
+    }
+  ]
+}

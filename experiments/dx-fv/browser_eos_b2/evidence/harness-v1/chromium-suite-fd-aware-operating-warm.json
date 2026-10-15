@@ -1,0 +1,68 @@
+{
+  "id": "operating-warm",
+  "line": 81,
+  "assertionTextSHA256": "138ed28cb459a809e95ee27ad8c8350824ef3268352c525ed53f1441cd261c66",
+  "status": "FAIL",
+  "result": {
+    "stage": "2A",
+    "sectionCount": 5,
+    "startingCommit": "dd0ca33cc834e2056ebede756f8cf59ed1157a07",
+    "runtime": "browser",
+    "limits": {
+      "massKg": 1e-08,
+      "energyKJ": 1e-06,
+      "nominalTemperatureK": 0.01,
+      "tightTemperatureK": 0.001,
+      "pressureBar": 5e-05,
+      "enthalpyKJkg": 0.05,
+      "eventSeconds": 0.001
+    },
+    "conservation": {
+      "massKg": 0,
+      "sectionMassKg": 0,
+      "refrigerantKJ": 0,
+      "thermalKJ": 0,
+      "combinedKJ": 0,
+      "sectionEnergyKJ": 0,
+      "nodeEnergyKJ": 0
+    },
+    "cases": [],
+    "checks": [],
+    "failures": [],
+    "passed": false,
+    "failure": {
+      "activeCase": null,
+      "message": "Cannot read properties of undefined (reading 'equal')",
+      "stack": "TypeError: Cannot read properties of undefined (reading 'equal')\n    at eval (eval at execute (http://127.0.0.1:44331/experiments/dx-fv/browser_eos_b2/browser-suite.mjs:28:3), <anonymous>:71:10)\n    at execute (http://127.0.0.1:44331/experiments/dx-fv/browser_eos_b2/browser-suite.mjs:28:53)\n    at async <anonymous>:337:30",
+      "lastAcceptedRecord": null
+    }
+  },
+  "elapsedMS": 9,
+  "propertyCalls": {
+    "ph": 0,
+    "sat": 0,
+    "stateMVU": 0,
+    "domainGuards": 0
+  },
+  "linearMemory": 56360960,
+  "init": {
+    "totalMS": 8670.299999999988,
+    "importMS": 57.29999999998836,
+    "fetchMS": 209.90000000002328,
+    "compileInstantiateMS": 169,
+    "runtimeMS": 391.29999999998836,
+    "firstFactoryMS": 8011.799999999988,
+    "initialLinearMemoryBytes": 22544384,
+    "readyLinearMemoryBytes": 56360960,
+    "wasmBytes": 9196512,
+    "mime": "application/wasm",
+    "streaming": true,
+    "logs": []
+  },
+  "selected": {
+    "timestepGrowth": "failure-aware"
+  },
+  "browser": "chromium",
+  "browserVersion": "151.0.7922.34",
+  "choice": "fd-aware"
+}

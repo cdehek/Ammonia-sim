@@ -1,0 +1,80 @@
+{
+  "id": "block-12",
+  "line": 200,
+  "harnessVersion": 4,
+  "assertionTextSHA256": "c1d52b000815b452fb349b5323223e46936e6c319162c839333ac698e3ca8e8b",
+  "status": "PASS",
+  "result": {
+    "stage": "2A",
+    "sectionCount": 5,
+    "startingCommit": "dd0ca33cc834e2056ebede756f8cf59ed1157a07",
+    "runtime": "browser",
+    "limits": {
+      "massKg": 1e-08,
+      "energyKJ": 1e-06,
+      "nominalTemperatureK": 0.01,
+      "tightTemperatureK": 0.001,
+      "pressureBar": 5e-05,
+      "enthalpyKJkg": 0.05,
+      "eventSeconds": 0.001
+    },
+    "conservation": {
+      "massKg": 0,
+      "sectionMassKg": 0,
+      "refrigerantKJ": 0,
+      "thermalKJ": 0,
+      "combinedKJ": 0,
+      "sectionEnergyKJ": 0,
+      "nodeEnergyKJ": 0
+    },
+    "cases": [],
+    "checks": [
+      {
+        "name": "Unsupported refrigerant trial leaves state untouched",
+        "passed": true
+      }
+    ],
+    "failures": [],
+    "independentSource": "Independent CoolProp 7.2.0 D/U EOS and SciPy 1.16.2 Radau; conserved M/U plus tube/fin/finite-air energy and independently integrated link/face budgets",
+    "passed": true
+  },
+  "histories": [
+    {
+      "selectedOptions": {
+        "timestepGrowth": "failure-aware"
+      },
+      "attempts": [],
+      "rollbackChecks": [],
+      "records": [],
+      "initialRecords": []
+    }
+  ],
+  "elapsedMS": 799.6999999997206,
+  "propertyCalls": {
+    "ph": 12,
+    "sat": 37,
+    "stateMVU": 5,
+    "domainGuards": 28
+  },
+  "linearMemory": 56360960,
+  "init": {
+    "totalMS": 11982.700000000186,
+    "importMS": 57,
+    "fetchMS": 120.70000000018626,
+    "compileInstantiateMS": 96.10000000009313,
+    "runtimeMS": 269.29999999981374,
+    "firstFactoryMS": 11535.700000000186,
+    "initialLinearMemoryBytes": 22544384,
+    "readyLinearMemoryBytes": 56360960,
+    "wasmBytes": 9196512,
+    "mime": "application/wasm",
+    "streaming": true,
+    "logs": []
+  },
+  "selected": {
+    "timestepGrowth": "failure-aware"
+  },
+  "browser": "chromium",
+  "browserVersion": "151.0.7922.34",
+  "choice": "fd-aware"
+}

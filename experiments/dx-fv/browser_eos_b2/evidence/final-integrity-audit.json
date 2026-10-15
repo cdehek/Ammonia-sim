@@ -1,0 +1,89 @@
+{
+  "integrityPass": true,
+  "qualification": "BLOCKED",
+  "backendScientificPass": false,
+  "protectedB1Files": 609,
+  "onlyB2Additions": true,
+  "acceptedDependencySnapshots": 12,
+  "acceptedSuiteSourceCopies": 8,
+  "source30MatchesOfficial8": true,
+  "browserPhaseMatricesExactlyEqual": true,
+  "canonicalRegression": [
+    {
+      "browser": "chromium",
+      "pass": 1,
+      "fail": 7
+    },
+    {
+      "browser": "webkit",
+      "pass": 1,
+      "fail": 7
+    }
+  ],
+  "independentStableLiquidRoots": 8,
+  "completedOperatingAudits": 10,
+  "historyAudits": 96,
+  "physicalIPadTested": false,
+  "rootGuardAndTableMatchAccepted": true,
+  "selectedCoreGroupsPassed": 36,
+  "domainCasesPassedWithExplicitPTMapping": 216,
+  "contractHistoryConservationAudits": 80,
+  "rollbackChecks": 892,
+  "unexecutedSuitePaths": [
+    "Original coupled-test full other3 configurations in both engines",
+    "Original coupled-controls other3 configurations",
+    "Original coupled-browser command/all4 selections",
+    "Original coupled-domain-test legacy predecessor/bitwise path",
+    "Fresh independent trajectory generator and fresh-reference suite/all4 selections",
+    "A2 baseline ancestor byte-identical replay mode",
+    "A2 compare full5fixtures x3regimes x4configurations",
+    "A2 observed mode and complete phase-diagnosis deterministic replays",
+    "A2 original four-path5-block Node performance qualification",
+    "Exploratory adaptive backward-Euler methods diagnostic",
+    "B1 static16-case synthetic closures per browser/build",
+    "New moderate/long operating endurance, repeated transitions, hour-scale runs",
+    "Physical Safari/iPad scientific and performance qualification",
+    "Production property migration, Live Plant, hosting/deployment"
+  ],
+  "allRequiredScientificSuiteComplete": false,
+  "exactBinary64PhaseInputsVerified": 9440,
+  "catalogSourceDataStringsVerified": 77,
+  "independentTerminalStates": 30,
+  "matchedPropertyMeasurements": 4,
+  "matchedCoupledMeasurements": 4,
+  "offlineOutcomes": {
+    "offline-context.json": [
+      {
+        "browser": "chromium",
+        "completed": 4,
+        "attempted": 4,
+        "errors": []
+      },
+      {
+        "browser": "webkit",
+        "completed": 0,
+        "attempted": 4,
+        "errors": [
+          "Page.goto: WebKit encountered an internal error\nCall log:\n  - navigating to \"http://127.0.0.1:38143/experiments/dx-fv/browser_eos_backend/\", waiting until \"load\"\n",
+          "Page.goto: WebKit encountered an internal error\nCall log:\n  - navigating to \"http://127.0.0.1:38143/experiments/dx-fv/browser_eos_backend/\", waiting until \"load\"\n",
+          "Page.goto: WebKit encountered an internal error\nCall log:\n  - navigating to \"http://127.0.0.1:38143/experiments/dx-fv/browser_eos_backend/\", waiting until \"load\"\n",
+          "Page.goto: WebKit encountered an internal error\nCall log:\n  - navigating to \"http://127.0.0.1:38143/experiments/dx-fv/browser_eos_backend/\", waiting until \"load\"\n"
+        ]
+      }
+    ],
+    "offline-origin-only.json": [
+      {
+        "browser": "chromium",
+        "completed": 4,
+        "attempted": 4,
+        "errors": []
+      },
+      {
+        "browser": "webkit",
+        "completed": 4,
+        "attempted": 4,
+        "errors": []
+      }
+    ]
+  }
+}
