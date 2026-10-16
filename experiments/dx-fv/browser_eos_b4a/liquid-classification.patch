@@ -1,0 +1,26 @@
+diff --git a/src/Backends/Helmholtz/HelmholtzEOSMixtureBackend.cpp b/src/Backends/Helmholtz/HelmholtzEOSMixtureBackend.cpp
+index 65aa98b8..843d5e39 100644
+--- a/src/Backends/Helmholtz/HelmholtzEOSMixtureBackend.cpp
++++ b/src/Backends/Helmholtz/HelmholtzEOSMixtureBackend.cpp
+@@ -1836,7 +1836,9 @@ void HelmholtzEOSMixtureBackend::p_phase_determination_pure_or_pseudopure(int ot
+                         throw ValueError(format("bad input for other"));
+                 }
+                 // Start off by setting variables based on assumption that the state is two-phase
+-                if (Q < -1e-9) {
++                // Resolve negative caloric quality by the existing bounded liquid flash.
++                // Saturation uncertainty does not permit extrapolating mixture volume.
++                if (Q < -1e-9 || (Q < 0 && (other == iHmolar || other == iSmolar || other == iUmolar))) {
+                     this->_phase = iphase_liquid;
+                     SatL->clear();
+                     SatV->clear();
+@@ -2076,7 +2078,9 @@ void HelmholtzEOSMixtureBackend::p_phase_determination_pure_or_pseudopure(int ot
+             _rhoVmolar = HEOS.SatV->rhomolar();
+ 
+             //
+-            if (Q < -1e-9) {
++            // Resolve negative caloric quality by the existing bounded liquid flash.
++            // Saturation uncertainty does not permit extrapolating mixture volume.
++            if (Q < -1e-9 || (Q < 0 && (other == iHmolar || other == iSmolar || other == iUmolar))) {
+                 this->_phase = iphase_liquid;
+                 _Q = -1000;
+                 return;

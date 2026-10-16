@@ -1,0 +1,188 @@
+{
+  "start": "4e1295be9493d8bce4ca35ee0cf61accb7465226",
+  "branch": "research/browser-eos-b4a-liquid-phase-repair-20261015",
+  "upstreamCommit": "ae81610e7d23efc57f9d051c8e70a4d66e87537f",
+  "upstreamTree": "ca49b8c34df0dae93dcc7fe07e2815a10d967662",
+  "patchSHA256": "67eb377174cda509980b5c17b3283abcda9fb9e7f0f265c23a29b58cbd724572",
+  "B1patchSHA256": "6234d4f9fd0ea9b88eec2a178b7d7b8e00a54aa63a928a54bb65057984a126ef",
+  "algorithmSHA256": "6239e10fcc7e0dcc4f7e2e35351d3ba47867ebc17de481fe33b7bf8a16a0cfac",
+  "versions": {
+    "platform": "Linux-6.18.44-x86_64-with-glibc2.41",
+    "python": "3.12.14",
+    "compiler": "g++ (Debian 14.2.0-19) 14.2.0\nCopyright (C) 2024 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.",
+    "compilerSHA256": "6b3696e4dcb85e1c949c732a02befa50e3983ecf94ce7e8e58d9d503b954b79d",
+    "cmake": "cmake version 4.4.4\n\nCMake suite maintained and supported by Kitware (kitware.com/cmake).",
+    "ninja": "1.13.2.git.kitware.jobserver-pipe-1",
+    "emsdkCommit": "389a68bc35dcff7ebae4614e1615099dafda00d1",
+    "emcc": "emcc (Emscripten gcc/clang-like replacement + linker emulating GNU ld) 4.0.12 (6f625bd62ee64f4f8cd11476774741b961e4a2d5)\nCopyright (C) 2025 the Emscripten authors (see AUTHORS.txt)\nThis is free and open source software under the MIT license.\nThere is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.",
+    "clang": "clang version 22.0.0git (https:/github.com/llvm/llvm-project 7f93487862d98bf1c168babba87daf6224d8a46f)\nTarget: x86_64-unknown-linux-gnu\nThread model: posix\nInstalledDir: /workspace/emsdk-b4a/upstream/bin",
+    "SDKNode": "v22.16.0",
+    "packages": {
+      "CoolProp": "8.0.0",
+      "numpy": "2.5.4",
+      "playwright": "1.62.0",
+      "cmake": "4.4.4",
+      "ninja": "1.13.2"
+    }
+  },
+  "dependencyEvidence": "dependency-verification.json",
+  "artifacts": {
+    "artifacts/libCoolProp-control44.so.xz": {
+      "bytes": 4606184,
+      "sha256": "3bd638522b01a55c4dd9b1384ee65624e073cd0e47e72e949f8428f8272a96f6"
+    },
+    "artifacts/libCoolProp-diagnostic44.so.xz": {
+      "bytes": 4607312,
+      "sha256": "8b51516a966ae37f9e9e472fc8477b89cd6153f5a9ddde2b1274b735f5e3e882"
+    },
+    "artifacts/libCoolProp-liquid44.so.xz": {
+      "bytes": 4607584,
+      "sha256": "9d6e9e60356e9ef47a61bee113a2a5f90aa4d79269fe8e60f15e1d53b5da0759"
+    },
+    "vendor/LICENSE-CoolProp.txt": {
+      "bytes": 1103,
+      "sha256": "9bf835333ef602af4cb19338b9f9d43671e174fa029b00280e9bdba6ea4719b2"
+    },
+    "vendor/THIRD_PARTY-B1.md": {
+      "bytes": 2134,
+      "sha256": "08d17dda6b0ef439e8e29c0680e95b1aff984f0ba93b22bb0de280b21a5769c3"
+    },
+    "vendor/control44/coolprop.js": {
+      "bytes": 167060,
+      "sha256": "ebd02f5721abc10fee3e6560b0d96c1a17b8ae1f01bc144a4f9a1af8cf1e3217"
+    },
+    "vendor/control44/coolprop.wasm": {
+      "bytes": 9196519,
+      "sha256": "eff473068c5f9950a37cdffef013a931b291c606bf7768d21b0c4fe8c1d82126"
+    },
+    "vendor/liquid44/coolprop.js": {
+      "bytes": 167060,
+      "sha256": "ebd02f5721abc10fee3e6560b0d96c1a17b8ae1f01bc144a4f9a1af8cf1e3217"
+    },
+    "vendor/liquid44/coolprop.wasm": {
+      "bytes": 9196595,
+      "sha256": "25dceb87d7845e52c53a2599b959fc7d1e7739f09660ca3c92b2e3b298ab0306"
+    },
+    "vendor/notices/Boost-1.0.txt": {
+      "bytes": 1338,
+      "sha256": "c9bff75738922193e67fa726fa225535870d2aa1059f91452c411736284ad566"
+    },
+    "vendor/notices/Eigen-7.2-MPL2.txt": {
+      "bytes": 16726,
+      "sha256": "fab3dd6bdab226f1c08630b1dd917e11fcb4ec5e1e020e2c16f83a0a13863e85"
+    },
+    "vendor/notices/Eigen-8.0-MPL2.txt": {
+      "bytes": 16727,
+      "sha256": "66a3107d5ad6a058aab753eaac2047ccb2ed0e39465dd0fe5844da3e300d5172"
+    },
+    "vendor/notices/IF97-MIT.txt": {
+      "bytes": 1054,
+      "sha256": "e22c3d30ef8d88ab468d9ea20392ca1df22fa3fd0a92dc3e996d89cf3cfdbd03"
+    },
+    "vendor/notices/LLVM-Apache.txt": {
+      "bytes": 16703,
+      "sha256": "539dd7aed86e8a4f12cbdd0e6c50c189c7d74847e4fecc64ce2c6ee3a01da38b"
+    },
+    "vendor/notices/REFPROP-headers.txt": {
+      "bytes": 1068,
+      "sha256": "f21f633c596509e89b2baedfd657c8f1b8018954b06576590971684b210e91f8"
+    },
+    "vendor/notices/compiler-rt-4.0.12.txt": {
+      "bytes": 16708,
+      "sha256": "1a8f1058753f1ba890de984e48f0242a3a5c29a6a8f2ed9fd813f36985387e8d"
+    },
+    "vendor/notices/emscripten-4.0.12.txt": {
+      "bytes": 5093,
+      "sha256": "620a78084fc7ca97c0b5dea9abf891f3ffcadfdbf305276f099c9c4e12fc1d86"
+    },
+    "vendor/notices/emscripten-MIT-NCSA.txt": {
+      "bytes": 5093,
+      "sha256": "620a78084fc7ca97c0b5dea9abf891f3ffcadfdbf305276f099c9c4e12fc1d86"
+    },
+    "vendor/notices/fmt-7.2.txt": {
+      "bytes": 1431,
+      "sha256": "07580f2a3b35709ce703d523f447b242f6dfec7582a8c0df102c7fa2849375f8"
+    },
+    "vendor/notices/fmt-8.0-MIT.txt": {
+      "bytes": 1431,
+      "sha256": "07580f2a3b35709ce703d523f447b242f6dfec7582a8c0df102c7fa2849375f8"
+    },
+    "vendor/notices/incbin-UNLICENSE.txt": {
+      "bytes": 1211,
+      "sha256": "7e12e5df4bae12cb21581ba157ced20e1986a0508dd10d0e8a4ab9a4cf94e85c"
+    },
+    "vendor/notices/libcxx-4.0.12.txt": {
+      "bytes": 16703,
+      "sha256": "539dd7aed86e8a4f12cbdd0e6c50c189c7d74847e4fecc64ce2c6ee3a01da38b"
+    },
+    "vendor/notices/libcxxabi-4.0.12.txt": {
+      "bytes": 16706,
+      "sha256": "e2b35be49f7284a45b7baca8fc7b3ab7440e7902392b2528a457816b5bb2a15c"
+    },
+    "vendor/notices/libunwind-4.0.12.txt": {
+      "bytes": 16706,
+      "sha256": "b5efebcaca80879234098e52d1725e6d9eb8fb96a19fce625d39184b705f7b6d"
+    },
+    "vendor/notices/miniz-MIT.txt": {
+      "bytes": 1162,
+      "sha256": "6f20fa7672b00e2e975c291df737cf227addf3ad32e36fef3fe0f416e4664d3d"
+    },
+    "vendor/notices/msgpack-Boost.txt": {
+      "bytes": 200,
+      "sha256": "664550b43996452a5a2c7471bb0ff77185a58c69ccafa60f983dc4c162e1ee22"
+    },
+    "vendor/notices/musl-4.0.12.txt": {
+      "bytes": 6204,
+      "sha256": "f9bc4423732350eb0b3f7ed7e91d530298476f8fec0c6c427a1c04ade22655af"
+    },
+    "vendor/notices/musl-MIT.txt": {
+      "bytes": 6204,
+      "sha256": "f9bc4423732350eb0b3f7ed7e91d530298476f8fec0c6c427a1c04ade22655af"
+    },
+    "vendor/notices/nlohmann-json-MIT.txt": {
+      "bytes": 1076,
+      "sha256": "46a65cffd1ea955132d95a8dd921640714a8d6b537d2e4e482d31145ae95b603"
+    },
+    "vendor/notices/rapidjson-MIT.txt": {
+      "bytes": 5152,
+      "sha256": "a140e5d46fe734a1c78f1a3c3ef207871dd75648be71fdda8e309b23ab8b1f32"
+    },
+    "vendor/notices/valijson-BSD.txt": {
+      "bytes": 1346,
+      "sha256": "61b5766db38eaa3f320c366357956d7743424bfbf90fd78f5943866ba237589e"
+    }
+  },
+  "nativeUncompressed": {
+    "libCoolProp-control44.so": {
+      "bytes": 12912824,
+      "sha256": "e5812fbadaa45e7ae766081c87ca8e13f6fff96bf925a1105a53eb82641b3728"
+    },
+    "libCoolProp-liquid44.so": {
+      "bytes": 12912824,
+      "sha256": "7a31ae229a6f62bc3f53b570759f631b29c393f743826a6de08ce9d1b87e36de"
+    },
+    "libCoolProp-diagnostic44.so": {
+      "bytes": 12912984,
+      "sha256": "4ca12059489d7c57d214ec8e1d039a3daeceae50f0892aaa7a8574098e22ba4d"
+    }
+  },
+  "browserExtraDebs": {
+    "libmanette-0.2-0_0.2.12-1_amd64.deb": "98841a467692c46fd1870275113235691ebbfe71a3524f6b2a0fa7e9c33c6e56",
+    "libhyphen0_2.8.8-7+b2_amd64.deb": "fa9dca7b8cf1381fd52800c44a385c5725a78a88bd705f7c39b1046a5293435e",
+    "libharfbuzz-icu0_10.2.0-1+deb13u1_amd64.deb": "0b45d951629e98673c0da73b2bcd0886a467d833bb3b7499892a168f247165d2",
+    "libopengl0_1.7.0-1+b2_amd64.deb": "50ea65a1141cbf6b02e41492963656ad0ba71d257cc4066ee9756bca7a6c1ac3",
+    "libegl1_1.7.0-1+b2_amd64.deb": "62e7bc8ccd47a60e55aad17f83d8d474310d782eb8589bbce2ab714c31712406",
+    "libgles2_1.7.0-1+b2_amd64.deb": "e12c18aa77939d122ee1dea520ba0440b97dc19200b7396e03dff03a3ece74c1"
+  },
+  "originalTrackedFiles": 939,
+  "changedOriginalFiles": [],
+  "inputB3SHA256": "4db2929433ba4f50fb09de1fb79bdcd4771d0b714846241f076056373489ab01",
+  "acceptedA2Verification": "accepted-a2-verification.json",
+  "sourceStages": [
+    "source-stage-control44.json",
+    "source-stage-liquid44.json",
+    "source-stage-diagnostic44.json"
+  ],
+  "fullQualification": false,
+  "physicalIPad": false
+}

@@ -1,0 +1,3468 @@
+{
+  "classification": "FOCUSED REPAIR PASS",
+  "fullQualification": false,
+  "regressions": {
+    "chromium": {
+      "B1Unchanged": true,
+      "vaporUnchanged": true,
+      "physicalGasAndCoexistenceBasesUnchanged": 41,
+      "comparisons": [
+        {
+          "id": "B1-vapor-regression",
+          "baseEqual": true,
+          "probesEqual": true
+        },
+        {
+          "id": "approach-30298.937123458254-liquid-0.0",
+          "baseEqual": true,
+          "probesEqual": false
+        },
+        {
+          "id": "approach-30298.937123458254-liquid-0.001",
+          "baseEqual": false,
+          "probesEqual": false
+        },
+        {
+          "id": "approach-30298.937123458254-liquid-0.01",
+          "baseEqual": true,
+          "probesEqual": true
+        },
+        {
+          "id": "approach-30298.937123458254-vapor-0.0",
+          "baseEqual": true,
+          "probesEqual": true
+        },
+        {
+          "id": "approach-30298.937123458254-vapor-0.001",
+          "baseEqual": true,
+          "probesEqual": true
+        },
+        {
+          "id": "approach-30298.937123458254-vapor-0.01",
+          "baseEqual": true,
+          "probesEqual": true
+        },
+        {
+          "id": "approach-350000.0-liquid-0.0",
+          "baseEqual": false,
+          "probesEqual": false
+        },
+        {
+          "id": "approach-350000.0-liquid-0.001",
+          "baseEqual": false,
+          "probesEqual": false
+        },
+        {
+          "id": "approach-350000.0-liquid-0.01",
+          "baseEqual": true,
+          "probesEqual": true
+        },
+        {
+          "id": "approach-350000.0-vapor-0.0",
+          "baseEqual": true,
+          "probesEqual": true
+        },
+        {
+          "id": "approach-350000.0-vapor-0.001",
+          "baseEqual": true,
+          "probesEqual": true
+        },
+        {
+          "id": "approach-350000.0-vapor-0.01",
+          "baseEqual": true,
+          "probesEqual": true
+        },
+        {
+          "id": "approach-799999.9981754856-liquid-0.0",
+          "baseEqual": true,
+          "probesEqual": true
+        },
+        {
+          "id": "approach-799999.9981754856-liquid-0.001",
+          "baseEqual": false,
+          "probesEqual": false
+        },
+        {
+          "id": "approach-799999.9981754856-liquid-0.01",
+          "baseEqual": true,
+          "probesEqual": true
+        },
+        {
+          "id": "approach-799999.9981754856-vapor-0.0",
+          "baseEqual": true,
+          "probesEqual": true
+        },
+        {
+          "id": "approach-799999.9981754856-vapor-0.001",
+          "baseEqual": true,
+          "probesEqual": true
+        },
+        {
+          "id": "approach-799999.9981754856-vapor-0.01",
+          "baseEqual": true,
+          "probesEqual": true
+        },
+        {
+          "id": "approach-3500000.0-liquid-0.0",
+          "baseEqual": true,
+          "probesEqual": true
+        },
+        {
+          "id": "approach-3500000.0-liquid-0.001",
+          "baseEqual": true,
+          "probesEqual": true
+        },
+        {
+          "id": "approach-3500000.0-liquid-0.01",
+          "baseEqual": true,
+          "probesEqual": true
+        },
+        {
+          "id": "approach-3500000.0-vapor-0.0",
+          "baseEqual": true,
+          "probesEqual": true
+        },
+        {
+          "id": "approach-3500000.0-vapor-0.001",
+          "baseEqual": true,
+          "probesEqual": true
+        },
+        {
+          "id": "approach-3500000.0-vapor-0.01",
+          "baseEqual": true,
+          "probesEqual": true
+        },
+        {
+          "id": "diagnostic-quality-band-30298.937123458254-hf--1.01e-09",
+          "baseEqual": true,
+          "probesEqual": false
+        },
+        {
+          "id": "diagnostic-quality-band-30298.937123458254-hf--9.9e-10",
+          "baseEqual": false,
+          "probesEqual": false
+        },
+        {
+          "id": "diagnostic-quality-band-30298.937123458254-hf-9.9e-10",
+          "baseEqual": true,
+          "probesEqual": true
+        },
+        {
+          "id": "diagnostic-quality-band-30298.937123458254-hf-1.01e-09",
+          "baseEqual": true,
+          "probesEqual": true
+        },
+        {
+          "id": "diagnostic-quality-band-30298.937123458254-hg--1.01e-09",
+          "baseEqual": true,
+          "probesEqual": true
+        },
+        {
+          "id": "diagnostic-quality-band-30298.937123458254-hg--9.9e-10",
+          "baseEqual": true,
+          "probesEqual": true
+        },
+        {
+          "id": "diagnostic-quality-band-30298.937123458254-hg-9.9e-10",
+          "baseEqual": true,
+          "probesEqual": true
+        },
+        {
+          "id": "diagnostic-quality-band-30298.937123458254-hg-1.01e-09",
+          "baseEqual": true,
+          "probesEqual": true
+        },
+        {
+          "id": "diagnostic-quality-band-350000.0-hf--1.01e-09",
+          "baseEqual": true,
+          "probesEqual": true
+        },
+        {
+          "id": "diagnostic-quality-band-350000.0-hf--9.9e-10",
+          "baseEqual": false,
+          "probesEqual": false
+        },
+        {
+          "id": "diagnostic-quality-band-350000.0-hf-9.9e-10",
+          "baseEqual": true,
+          "probesEqual": true
+        },
+        {
+          "id": "diagnostic-quality-band-350000.0-hf-1.01e-09",
+          "baseEqual": true,
+          "probesEqual": true
+        },
+        {
+          "id": "diagnostic-quality-band-350000.0-hg--1.01e-09",
+          "baseEqual": true,
+          "probesEqual": true
+        },
+        {
+          "id": "diagnostic-quality-band-350000.0-hg--9.9e-10",
+          "baseEqual": true,
+          "probesEqual": true
+        },
+        {
+          "id": "diagnostic-quality-band-350000.0-hg-9.9e-10",
+          "baseEqual": true,
+          "probesEqual": true
+        },
+        {
+          "id": "diagnostic-quality-band-350000.0-hg-1.01e-09",
+          "baseEqual": true,
+          "probesEqual": true
+        },
+        {
+          "id": "diagnostic-quality-band-799999.9981754856-hf--1.01e-09",
+          "baseEqual": true,
+          "probesEqual": true
+        },
+        {
+          "id": "diagnostic-quality-band-799999.9981754856-hf--9.9e-10",
+          "baseEqual": false,
+          "probesEqual": false
+        },
+        {
+          "id": "diagnostic-quality-band-799999.9981754856-hf-9.9e-10",
+          "baseEqual": true,
+          "probesEqual": true
+        },
+        {
+          "id": "diagnostic-quality-band-799999.9981754856-hf-1.01e-09",
+          "baseEqual": true,
+          "probesEqual": true
+        },
+        {
+          "id": "diagnostic-quality-band-799999.9981754856-hg--1.01e-09",
+          "baseEqual": true,
+          "probesEqual": true
+        },
+        {
+          "id": "diagnostic-quality-band-799999.9981754856-hg--9.9e-10",
+          "baseEqual": true,
+          "probesEqual": true
+        },
+        {
+          "id": "diagnostic-quality-band-799999.9981754856-hg-9.9e-10",
+          "baseEqual": true,
+          "probesEqual": true
+        },
+        {
+          "id": "diagnostic-quality-band-799999.9981754856-hg-1.01e-09",
+          "baseEqual": true,
+          "probesEqual": true
+        },
+        {
+          "id": "diagnostic-quality-band-3500000.0-hf--1.01e-09",
+          "baseEqual": true,
+          "probesEqual": true
+        },
+        {
+          "id": "diagnostic-quality-band-3500000.0-hf--9.9e-10",
+          "baseEqual": false,
+          "probesEqual": false
+        },
+        {
+          "id": "diagnostic-quality-band-3500000.0-hf-9.9e-10",
+          "baseEqual": true,
+          "probesEqual": true
+        },
+        {
+          "id": "diagnostic-quality-band-3500000.0-hf-1.01e-09",
+          "baseEqual": true,
+          "probesEqual": true
+        },
+        {
+          "id": "diagnostic-quality-band-3500000.0-hg--1.01e-09",
+          "baseEqual": true,
+          "probesEqual": true
+        },
+        {
+          "id": "diagnostic-quality-band-3500000.0-hg--9.9e-10",
+          "baseEqual": true,
+          "probesEqual": true
+        },
+        {
+          "id": "diagnostic-quality-band-3500000.0-hg-9.9e-10",
+          "baseEqual": true,
+          "probesEqual": true
+        },
+        {
+          "id": "diagnostic-quality-band-3500000.0-hg-1.01e-09",
+          "baseEqual": true,
+          "probesEqual": true
+        },
+        {
+          "id": "B1-liquid-precision",
+          "baseEqual": true,
+          "probesEqual": true
+        },
+        {
+          "id": "focused-30298.937123458254-stable-liquid",
+          "baseEqual": true,
+          "probesEqual": true
+        },
+        {
+          "id": "focused-30298.937123458254-mixture",
+          "baseEqual": true,
+          "probesEqual": true
+        },
+        {
+          "id": "focused-30298.937123458254-stable-vapor",
+          "baseEqual": true,
+          "probesEqual": true
+        },
+        {
+          "id": "ULP-30298.937123458254-hf--1",
+          "baseEqual": true,
+          "probesEqual": false
+        },
+        {
+          "id": "ULP-30298.937123458254-hf-1",
+          "baseEqual": true,
+          "probesEqual": false
+        },
+        {
+          "id": "ULP-30298.937123458254-hg--1",
+          "baseEqual": true,
+          "probesEqual": true
+        },
+        {
+          "id": "ULP-30298.937123458254-hg-1",
+          "baseEqual": true,
+          "probesEqual": true
+        },
+        {
+          "id": "focused-350000.0-stable-liquid",
+          "baseEqual": true,
+          "probesEqual": true
+        },
+        {
+          "id": "focused-350000.0-mixture",
+          "baseEqual": true,
+          "probesEqual": true
+        },
+        {
+          "id": "focused-350000.0-stable-vapor",
+          "baseEqual": true,
+          "probesEqual": true
+        },
+        {
+          "id": "ULP-350000.0-hf--1",
+          "baseEqual": false,
+          "probesEqual": false
+        },
+        {
+          "id": "ULP-350000.0-hf-1",
+          "baseEqual": false,
+          "probesEqual": false
+        },
+        {
+          "id": "ULP-350000.0-hg--1",
+          "baseEqual": true,
+          "probesEqual": true
+        },
+        {
+          "id": "ULP-350000.0-hg-1",
+          "baseEqual": true,
+          "probesEqual": true
+        },
+        {
+          "id": "focused-799999.9981754856-stable-liquid",
+          "baseEqual": true,
+          "probesEqual": true
+        },
+        {
+          "id": "focused-799999.9981754856-mixture",
+          "baseEqual": true,
+          "probesEqual": true
+        },
+        {
+          "id": "focused-799999.9981754856-stable-vapor",
+          "baseEqual": true,
+          "probesEqual": true
+        },
+        {
+          "id": "ULP-799999.9981754856-hf--1",
+          "baseEqual": true,
+          "probesEqual": true
+        },
+        {
+          "id": "ULP-799999.9981754856-hf-1",
+          "baseEqual": true,
+          "probesEqual": true
+        },
+        {
+          "id": "ULP-799999.9981754856-hg--1",
+          "baseEqual": true,
+          "probesEqual": true
+        },
+        {
+          "id": "ULP-799999.9981754856-hg-1",
+          "baseEqual": true,
+          "probesEqual": true
+        },
+        {
+          "id": "focused-3500000.0-stable-liquid",
+          "baseEqual": true,
+          "probesEqual": true
+        },
+        {
+          "id": "focused-3500000.0-mixture",
+          "baseEqual": true,
+          "probesEqual": true
+        },
+        {
+          "id": "focused-3500000.0-stable-vapor",
+          "baseEqual": true,
+          "probesEqual": true
+        },
+        {
+          "id": "ULP-3500000.0-hf--1",
+          "baseEqual": true,
+          "probesEqual": true
+        },
+        {
+          "id": "ULP-3500000.0-hf-1",
+          "baseEqual": true,
+          "probesEqual": true
+        },
+        {
+          "id": "ULP-3500000.0-hg--1",
+          "baseEqual": true,
+          "probesEqual": true
+        },
+        {
+          "id": "ULP-3500000.0-hg-1",
+          "baseEqual": true,
+          "probesEqual": true
+        }
+      ],
+      "endpointSummary": [
+        {
+          "id": "approach-30298.937123458254-liquid-0.0",
+          "args": [
+            30298.937123458254,
+            98904.56498938335
+          ],
+          "phase": 6,
+          "Q": 3.7331218097100785e-16,
+          "rho": 707.4983263194724,
+          "T": 218.26293725550536,
+          "canonical": {
+            "p": 1.0550138540565968e-09,
+            "h": 3.4051481634378433e-09,
+            "T": 6.536993168992922e-13
+          },
+          "canonicalPass": true,
+          "adapterError": null
+        },
+        {
+          "id": "approach-30298.937123458254-vapor-0.0",
+          "args": [
+            30298.937123458254,
+            1529444.8878290523
+          ],
+          "phase": 6,
+          "Q": 1,
+          "rho": 0.28801899212112975,
+          "T": 218.26293725550536,
+          "canonical": {
+            "p": -1.080843503586948e-08,
+            "h": -4.78699803352356e-07,
+            "T": -5.6274984672199935e-12
+          },
+          "canonicalPass": true,
+          "adapterError": null
+        },
+        {
+          "id": "approach-350000.0-liquid-0.0",
+          "args": [
+            350000,
+            321086.8171927678
+          ],
+          "phase": 0,
+          "Q": -1,
+          "rho": 645.8348207984532,
+          "T": 267.81143519639386,
+          "canonical": {
+            "p": 4.132743924856186e-09,
+            "h": 1.1641532182693481e-09,
+            "T": 5.115907697472721e-13
+          },
+          "canonicalPass": true,
+          "adapterError": null
+        },
+        {
+          "id": "approach-350000.0-vapor-0.0",
+          "args": [
+            350000,
+            1601489.3520557072
+          ],
+          "phase": 6,
+          "Q": 1,
+          "rho": 2.8489008963230256,
+          "T": 267.8114351963941,
+          "canonical": {
+            "p": -9.837094694375992e-09,
+            "h": -3.562308847904205e-08,
+            "T": -7.389644451905042e-13
+          },
+          "canonicalPass": true,
+          "adapterError": null
+        },
+        {
+          "id": "approach-799999.9981754856-liquid-0.0",
+          "args": [
+            799999.9981754856,
+            429181.30692029034
+          ],
+          "phase": 6,
+          "Q": 9.386039446918358e-16,
+          "rho": 613.5129566643677,
+          "T": 291.0133614355037,
+          "canonical": {
+            "p": -1.8172431737184525e-07,
+            "h": -3.387685865163803e-08,
+            "T": -6.934897101018578e-12
+          },
+          "canonicalPass": true,
+          "adapterError": null
+        },
+        {
+          "id": "approach-799999.9981754856-vapor-0.0",
+          "args": [
+            799999.9981754856,
+            1624019.7421341157
+          ],
+          "phase": 6,
+          "Q": 1,
+          "rho": 6.266584039429461,
+          "T": 291.0133614355037,
+          "canonical": {
+            "p": -1.0360963642597198e-08,
+            "h": -1.3504177331924438e-08,
+            "T": -3.410605131648481e-13
+          },
+          "canonicalPass": true,
+          "adapterError": null
+        },
+        {
+          "id": "approach-3500000.0-liquid-0.0",
+          "args": [
+            3500000,
+            703826.5654298478
+          ],
+          "phase": 6,
+          "Q": 4.6224922684564965e-16,
+          "rho": 521.5319007055003,
+          "T": 345.56367359935143,
+          "canonical": {
+            "p": -9.266659617424011e-08,
+            "h": -5.9371814131736755e-09,
+            "T": -1.0800249583553523e-12
+          },
+          "canonicalPass": true,
+          "adapterError": null
+        },
+        {
+          "id": "approach-3500000.0-vapor-0.0",
+          "args": [
+            3500000,
+            1628069.3277690788
+          ],
+          "phase": 6,
+          "Q": 0.9999999999999998,
+          "rho": 28.051377447197364,
+          "T": 345.56367359935143,
+          "canonical": {
+            "p": -2.561137080192566e-08,
+            "h": -5.122274160385132e-09,
+            "T": -2.2737367544323206e-13
+          },
+          "canonicalPass": true,
+          "adapterError": null
+        },
+        {
+          "id": "ULP-30298.937123458254-hf--1",
+          "args": [
+            30298.937123458254,
+            98904.56498938333
+          ],
+          "phase": 6,
+          "Q": 3.5464657192245746e-16,
+          "rho": 707.4983263195049,
+          "T": 218.26293725550536,
+          "canonical": {
+            "p": 1.0550138540565968e-09,
+            "h": 3.3905962482094765e-09,
+            "T": 6.536993168992922e-13
+          },
+          "canonicalPass": true,
+          "adapterError": null
+        },
+        {
+          "id": "ULP-30298.937123458254-hf-1",
+          "args": [
+            30298.937123458254,
+            98904.56498938336
+          ],
+          "phase": 6,
+          "Q": 3.8264498549528305e-16,
+          "rho": 707.4983263194563,
+          "T": 218.26293725550536,
+          "canonical": {
+            "p": 1.0550138540565968e-09,
+            "h": 3.4051481634378433e-09,
+            "T": 6.536993168992922e-13
+          },
+          "canonicalPass": true,
+          "adapterError": null
+        },
+        {
+          "id": "ULP-30298.937123458254-hg--1",
+          "args": [
+            30298.937123458254,
+            1529444.887829052
+          ],
+          "phase": 6,
+          "Q": 0.9999999999999999,
+          "rho": 0.2880189921211298,
+          "T": 218.26293725550536,
+          "canonical": {
+            "p": -1.080843503586948e-08,
+            "h": -4.791654646396637e-07,
+            "T": -5.6274984672199935e-12
+          },
+          "canonicalPass": true,
+          "adapterError": null
+        },
+        {
+          "id": "ULP-30298.937123458254-hg-1",
+          "args": [
+            30298.937123458254,
+            1529444.8878290525
+          ],
+          "phase": 6,
+          "Q": 1.0000000000000002,
+          "rho": 0.2880189921211297,
+          "T": 218.26293725550536,
+          "canonical": {
+            "p": -1.080843503586948e-08,
+            "h": -4.78699803352356e-07,
+            "T": -5.6274984672199935e-12
+          },
+          "canonicalPass": true,
+          "adapterError": null
+        },
+        {
+          "id": "ULP-350000.0-hf--1",
+          "args": [
+            350000,
+            321086.81719276775
+          ],
+          "phase": 0,
+          "Q": -1,
+          "rho": 645.8348207984718,
+          "T": 267.81143519638,
+          "canonical": {
+            "p": 2.6659108698368073e-08,
+            "h": 9.66247171163559e-09,
+            "T": 1.602984411874786e-11
+          },
+          "canonicalPass": true,
+          "adapterError": null
+        },
+        {
+          "id": "ULP-350000.0-hf-1",
+          "args": [
+            350000,
+            321086.81719276786
+          ],
+          "phase": 0,
+          "Q": -1,
+          "rho": 645.834820798453,
+          "T": 267.811435196394,
+          "canonical": {
+            "p": 4.132743924856186e-09,
+            "h": 1.1059455573558807e-09,
+            "T": 3.979039320256561e-13
+          },
+          "canonicalPass": true,
+          "adapterError": null
+        },
+        {
+          "id": "ULP-350000.0-hg--1",
+          "args": [
+            350000,
+            1601489.352055707
+          ],
+          "phase": 6,
+          "Q": 0.9999999999999998,
+          "rho": 2.848900896323026,
+          "T": 267.8114351963941,
+          "canonical": {
+            "p": -1.0593794286251068e-08,
+            "h": -3.864988684654236e-08,
+            "T": -7.958078640513122e-13
+          },
+          "canonicalPass": true,
+          "adapterError": null
+        },
+        {
+          "id": "ULP-350000.0-hg-1",
+          "args": [
+            350000,
+            1601489.3520557075
+          ],
+          "phase": 6,
+          "Q": 1.0000000000000002,
+          "rho": 2.848900896323025,
+          "T": 267.8114351963941,
+          "canonical": {
+            "p": -9.022187441587448e-09,
+            "h": -3.282912075519562e-08,
+            "T": -6.821210263296962e-13
+          },
+          "canonicalPass": true,
+          "adapterError": null
+        },
+        {
+          "id": "ULP-799999.9981754856-hf--1",
+          "args": [
+            799999.9981754856,
+            429181.3069202903
+          ],
+          "phase": 6,
+          "Q": 8.939085187541293e-16,
+          "rho": 613.5129566643704,
+          "T": 291.0133614355037,
+          "canonical": {
+            "p": -1.7136335372924805e-07,
+            "h": -3.149034455418587e-08,
+            "T": -6.536993168992922e-12
+          },
+          "canonicalPass": true,
+          "adapterError": null
+        },
+        {
+          "id": "ULP-799999.9981754856-hf-1",
+          "args": [
+            799999.9981754856,
+            429181.3069202904
+          ],
+          "phase": 6,
+          "Q": 9.832993706295423e-16,
+          "rho": 613.5129566643652,
+          "T": 291.0133614355037,
+          "canonical": {
+            "p": -1.905718818306923e-07,
+            "h": -3.3527612686157227e-08,
+            "T": -7.275957614183426e-12
+          },
+          "canonicalPass": true,
+          "adapterError": null
+        },
+        {
+          "id": "ULP-799999.9981754856-hg--1",
+          "args": [
+            799999.9981754856,
+            1624019.7421341154
+          ],
+          "phase": 6,
+          "Q": 0.9999999999999997,
+          "rho": 6.266584039429464,
+          "T": 291.0133614355037,
+          "canonical": {
+            "p": -1.1874362826347351e-08,
+            "h": -1.5366822481155396e-08,
+            "T": -3.979039320256561e-13
+          },
+          "canonicalPass": true,
+          "adapterError": null
+        },
+        {
+          "id": "ULP-799999.9981754856-hg-1",
+          "args": [
+            799999.9981754856,
+            1624019.742134116
+          ],
+          "phase": 6,
+          "Q": 1,
+          "rho": 6.266584039429461,
+          "T": 291.0133614355037,
+          "canonical": {
+            "p": -1.0360963642597198e-08,
+            "h": -1.3737007975578308e-08,
+            "T": -3.410605131648481e-13
+          },
+          "canonicalPass": true,
+          "adapterError": null
+        },
+        {
+          "id": "ULP-3500000.0-hf--1",
+          "args": [
+            3500000,
+            703826.5654298477
+          ],
+          "phase": 6,
+          "Q": 3.4668692013423724e-16,
+          "rho": 521.5319007055014,
+          "T": 345.56367359935143,
+          "canonical": {
+            "p": -6.984919309616089e-08,
+            "h": -4.540197551250458e-09,
+            "T": -7.958078640513122e-13
+          },
+          "canonicalPass": true,
+          "adapterError": null
+        },
+        {
+          "id": "ULP-3500000.0-hf-1",
+          "args": [
+            3500000,
+            703826.5654298479
+          ],
+          "phase": 6,
+          "Q": 5.778115335570621e-16,
+          "rho": 521.5319007054992,
+          "T": 345.56367359935143,
+          "canonical": {
+            "p": -1.150183379650116e-07,
+            "h": -7.450580596923828e-09,
+            "T": -1.3642420526593924e-12
+          },
+          "canonicalPass": true,
+          "adapterError": null
+        },
+        {
+          "id": "ULP-3500000.0-hg--1",
+          "args": [
+            3500000,
+            1628069.3277690785
+          ],
+          "phase": 6,
+          "Q": 0.9999999999999996,
+          "rho": 28.051377447197368,
+          "T": 345.56367359935143,
+          "canonical": {
+            "p": -2.561137080192566e-08,
+            "h": -5.122274160385132e-09,
+            "T": -2.2737367544323206e-13
+          },
+          "canonicalPass": true,
+          "adapterError": null
+        },
+        {
+          "id": "ULP-3500000.0-hg-1",
+          "args": [
+            3500000,
+            1628069.327769079
+          ],
+          "phase": 6,
+          "Q": 1,
+          "rho": 28.051377447197357,
+          "T": 345.56367359935143,
+          "canonical": {
+            "p": -1.6298145055770874e-08,
+            "h": -2.7939677238464355e-09,
+            "T": -1.1368683772161603e-13
+          },
+          "canonicalPass": true,
+          "adapterError": null
+        }
+      ],
+      "adapterGuardFailureIdentitiesUnchanged": [
+        "approach-3500000.0-liquid-0.001",
+        "approach-3500000.0-liquid-0.01",
+        "approach-3500000.0-vapor-0.001",
+        "approach-3500000.0-vapor-0.01",
+        "diagnostic-quality-band-3500000.0-hf--1.01e-09",
+        "diagnostic-quality-band-3500000.0-hf--9.9e-10",
+        "diagnostic-quality-band-3500000.0-hg-9.9e-10",
+        "focused-3500000.0-stable-liquid",
+        "focused-3500000.0-stable-vapor"
+      ],
+      "invalidUpperBand": [
+        {
+          "id": "approach-30298.937123458254-vapor-0.001",
+          "Q": 1.0000000006990364
+        },
+        {
+          "id": "approach-350000.0-vapor-0.001",
+          "Q": 1.0000000007810044
+        },
+        {
+          "id": "approach-799999.9981754856-vapor-0.001",
+          "Q": 1.0000000008369332
+        },
+        {
+          "id": "diagnostic-quality-band-30298.937123458254-hg-9.9e-10",
+          "Q": 1.00000000099
+        },
+        {
+          "id": "diagnostic-quality-band-350000.0-hg-9.9e-10",
+          "Q": 1.0000000009899999
+        },
+        {
+          "id": "diagnostic-quality-band-799999.9981754856-hg-9.9e-10",
+          "Q": 1.00000000099
+        },
+        {
+          "id": "diagnostic-quality-band-3500000.0-hg-9.9e-10",
+          "Q": 1.0000000009899999
+        },
+        {
+          "id": "ULP-30298.937123458254-hg-1",
+          "Q": 1.0000000000000002
+        },
+        {
+          "id": "ULP-350000.0-hg-1",
+          "Q": 1.0000000000000002
+        }
+      ]
+    },
+    "webkit": {
+      "B1Unchanged": true,
+      "vaporUnchanged": true,
+      "physicalGasAndCoexistenceBasesUnchanged": 41,
+      "comparisons": [
+        {
+          "id": "B1-vapor-regression",
+          "baseEqual": true,
+          "probesEqual": true
+        },
+        {
+          "id": "approach-30298.937123458254-liquid-0.0",
+          "baseEqual": true,
+          "probesEqual": false
+        },
+        {
+          "id": "approach-30298.937123458254-liquid-0.001",
+          "baseEqual": false,
+          "probesEqual": false
+        },
+        {
+          "id": "approach-30298.937123458254-liquid-0.01",
+          "baseEqual": true,
+          "probesEqual": true
+        },
+        {
+          "id": "approach-30298.937123458254-vapor-0.0",
+          "baseEqual": true,
+          "probesEqual": true
+        },
+        {
+          "id": "approach-30298.937123458254-vapor-0.001",
+          "baseEqual": true,
+          "probesEqual": true
+        },
+        {
+          "id": "approach-30298.937123458254-vapor-0.01",
+          "baseEqual": true,
+          "probesEqual": true
+        },
+        {
+          "id": "approach-350000.0-liquid-0.0",
+          "baseEqual": false,
+          "probesEqual": false
+        },
+        {
+          "id": "approach-350000.0-liquid-0.001",
+          "baseEqual": false,
+          "probesEqual": false
+        },
+        {
+          "id": "approach-350000.0-liquid-0.01",
+          "baseEqual": true,
+          "probesEqual": true
+        },
+        {
+          "id": "approach-350000.0-vapor-0.0",
+          "baseEqual": true,
+          "probesEqual": true
+        },
+        {
+          "id": "approach-350000.0-vapor-0.001",
+          "baseEqual": true,
+          "probesEqual": true
+        },
+        {
+          "id": "approach-350000.0-vapor-0.01",
+          "baseEqual": true,
+          "probesEqual": true
+        },
+        {
+          "id": "approach-799999.9981754856-liquid-0.0",
+          "baseEqual": true,
+          "probesEqual": true
+        },
+        {
+          "id": "approach-799999.9981754856-liquid-0.001",
+          "baseEqual": false,
+          "probesEqual": false
+        },
+        {
+          "id": "approach-799999.9981754856-liquid-0.01",
+          "baseEqual": true,
+          "probesEqual": true
+        },
+        {
+          "id": "approach-799999.9981754856-vapor-0.0",
+          "baseEqual": true,
+          "probesEqual": true
+        },
+        {
+          "id": "approach-799999.9981754856-vapor-0.001",
+          "baseEqual": true,
+          "probesEqual": true
+        },
+        {
+          "id": "approach-799999.9981754856-vapor-0.01",
+          "baseEqual": true,
+          "probesEqual": true
+        },
+        {
+          "id": "approach-3500000.0-liquid-0.0",
+          "baseEqual": true,
+          "probesEqual": true
+        },
+        {
+          "id": "approach-3500000.0-liquid-0.001",
+          "baseEqual": true,
+          "probesEqual": true
+        },
+        {
+          "id": "approach-3500000.0-liquid-0.01",
+          "baseEqual": true,
+          "probesEqual": true
+        },
+        {
+          "id": "approach-3500000.0-vapor-0.0",
+          "baseEqual": true,
+          "probesEqual": true
+        },
+        {
+          "id": "approach-3500000.0-vapor-0.001",
+          "baseEqual": true,
+          "probesEqual": true
+        },
+        {
+          "id": "approach-3500000.0-vapor-0.01",
+          "baseEqual": true,
+          "probesEqual": true
+        },
+        {
+          "id": "diagnostic-quality-band-30298.937123458254-hf--1.01e-09",
+          "baseEqual": true,
+          "probesEqual": false
+        },
+        {
+          "id": "diagnostic-quality-band-30298.937123458254-hf--9.9e-10",
+          "baseEqual": false,
+          "probesEqual": false
+        },
+        {
+          "id": "diagnostic-quality-band-30298.937123458254-hf-9.9e-10",
+          "baseEqual": true,
+          "probesEqual": true
+        },
+        {
+          "id": "diagnostic-quality-band-30298.937123458254-hf-1.01e-09",
+          "baseEqual": true,
+          "probesEqual": true
+        },
+        {
+          "id": "diagnostic-quality-band-30298.937123458254-hg--1.01e-09",
+          "baseEqual": true,
+          "probesEqual": true
+        },
+        {
+          "id": "diagnostic-quality-band-30298.937123458254-hg--9.9e-10",
+          "baseEqual": true,
+          "probesEqual": true
+        },
+        {
+          "id": "diagnostic-quality-band-30298.937123458254-hg-9.9e-10",
+          "baseEqual": true,
+          "probesEqual": true
+        },
+        {
+          "id": "diagnostic-quality-band-30298.937123458254-hg-1.01e-09",
+          "baseEqual": true,
+          "probesEqual": true
+        },
+        {
+          "id": "diagnostic-quality-band-350000.0-hf--1.01e-09",
+          "baseEqual": true,
+          "probesEqual": true
+        },
+        {
+          "id": "diagnostic-quality-band-350000.0-hf--9.9e-10",
+          "baseEqual": false,
+          "probesEqual": false
+        },
+        {
+          "id": "diagnostic-quality-band-350000.0-hf-9.9e-10",
+          "baseEqual": true,
+          "probesEqual": true
+        },
+        {
+          "id": "diagnostic-quality-band-350000.0-hf-1.01e-09",
+          "baseEqual": true,
+          "probesEqual": true
+        },
+        {
+          "id": "diagnostic-quality-band-350000.0-hg--1.01e-09",
+          "baseEqual": true,
+          "probesEqual": true
+        },
+        {
+          "id": "diagnostic-quality-band-350000.0-hg--9.9e-10",
+          "baseEqual": true,
+          "probesEqual": true
+        },
+        {
+          "id": "diagnostic-quality-band-350000.0-hg-9.9e-10",
+          "baseEqual": true,
+          "probesEqual": true
+        },
+        {
+          "id": "diagnostic-quality-band-350000.0-hg-1.01e-09",
+          "baseEqual": true,
+          "probesEqual": true
+        },
+        {
+          "id": "diagnostic-quality-band-799999.9981754856-hf--1.01e-09",
+          "baseEqual": true,
+          "probesEqual": true
+        },
+        {
+          "id": "diagnostic-quality-band-799999.9981754856-hf--9.9e-10",
+          "baseEqual": false,
+          "probesEqual": false
+        },
+        {
+          "id": "diagnostic-quality-band-799999.9981754856-hf-9.9e-10",
+          "baseEqual": true,
+          "probesEqual": true
+        },
+        {
+          "id": "diagnostic-quality-band-799999.9981754856-hf-1.01e-09",
+          "baseEqual": true,
+          "probesEqual": true
+        },
+        {
+          "id": "diagnostic-quality-band-799999.9981754856-hg--1.01e-09",
+          "baseEqual": true,
+          "probesEqual": true
+        },
+        {
+          "id": "diagnostic-quality-band-799999.9981754856-hg--9.9e-10",
+          "baseEqual": true,
+          "probesEqual": true
+        },
+        {
+          "id": "diagnostic-quality-band-799999.9981754856-hg-9.9e-10",
+          "baseEqual": true,
+          "probesEqual": true
+        },
+        {
+          "id": "diagnostic-quality-band-799999.9981754856-hg-1.01e-09",
+          "baseEqual": true,
+          "probesEqual": true
+        },
+        {
+          "id": "diagnostic-quality-band-3500000.0-hf--1.01e-09",
+          "baseEqual": true,
+          "probesEqual": true
+        },
+        {
+          "id": "diagnostic-quality-band-3500000.0-hf--9.9e-10",
+          "baseEqual": false,
+          "probesEqual": false
+        },
+        {
+          "id": "diagnostic-quality-band-3500000.0-hf-9.9e-10",
+          "baseEqual": true,
+          "probesEqual": true
+        },
+        {
+          "id": "diagnostic-quality-band-3500000.0-hf-1.01e-09",
+          "baseEqual": true,
+          "probesEqual": true
+        },
+        {
+          "id": "diagnostic-quality-band-3500000.0-hg--1.01e-09",
+          "baseEqual": true,
+          "probesEqual": true
+        },
+        {
+          "id": "diagnostic-quality-band-3500000.0-hg--9.9e-10",
+          "baseEqual": true,
+          "probesEqual": true
+        },
+        {
+          "id": "diagnostic-quality-band-3500000.0-hg-9.9e-10",
+          "baseEqual": true,
+          "probesEqual": true
+        },
+        {
+          "id": "diagnostic-quality-band-3500000.0-hg-1.01e-09",
+          "baseEqual": true,
+          "probesEqual": true
+        },
+        {
+          "id": "B1-liquid-precision",
+          "baseEqual": true,
+          "probesEqual": true
+        },
+        {
+          "id": "focused-30298.937123458254-stable-liquid",
+          "baseEqual": true,
+          "probesEqual": true
+        },
+        {
+          "id": "focused-30298.937123458254-mixture",
+          "baseEqual": true,
+          "probesEqual": true
+        },
+        {
+          "id": "focused-30298.937123458254-stable-vapor",
+          "baseEqual": true,
+          "probesEqual": true
+        },
+        {
+          "id": "ULP-30298.937123458254-hf--1",
+          "baseEqual": true,
+          "probesEqual": false
+        },
+        {
+          "id": "ULP-30298.937123458254-hf-1",
+          "baseEqual": true,
+          "probesEqual": false
+        },
+        {
+          "id": "ULP-30298.937123458254-hg--1",
+          "baseEqual": true,
+          "probesEqual": true
+        },
+        {
+          "id": "ULP-30298.937123458254-hg-1",
+          "baseEqual": true,
+          "probesEqual": true
+        },
+        {
+          "id": "focused-350000.0-stable-liquid",
+          "baseEqual": true,
+          "probesEqual": true
+        },
+        {
+          "id": "focused-350000.0-mixture",
+          "baseEqual": true,
+          "probesEqual": true
+        },
+        {
+          "id": "focused-350000.0-stable-vapor",
+          "baseEqual": true,
+          "probesEqual": true
+        },
+        {
+          "id": "ULP-350000.0-hf--1",
+          "baseEqual": false,
+          "probesEqual": false
+        },
+        {
+          "id": "ULP-350000.0-hf-1",
+          "baseEqual": false,
+          "probesEqual": false
+        },
+        {
+          "id": "ULP-350000.0-hg--1",
+          "baseEqual": true,
+          "probesEqual": true
+        },
+        {
+          "id": "ULP-350000.0-hg-1",
+          "baseEqual": true,
+          "probesEqual": true
+        },
+        {
+          "id": "focused-799999.9981754856-stable-liquid",
+          "baseEqual": true,
+          "probesEqual": true
+        },
+        {
+          "id": "focused-799999.9981754856-mixture",
+          "baseEqual": true,
+          "probesEqual": true
+        },
+        {
+          "id": "focused-799999.9981754856-stable-vapor",
+          "baseEqual": true,
+          "probesEqual": true
+        },
+        {
+          "id": "ULP-799999.9981754856-hf--1",
+          "baseEqual": true,
+          "probesEqual": true
+        },
+        {
+          "id": "ULP-799999.9981754856-hf-1",
+          "baseEqual": true,
+          "probesEqual": true
+        },
+        {
+          "id": "ULP-799999.9981754856-hg--1",
+          "baseEqual": true,
+          "probesEqual": true
+        },
+        {
+          "id": "ULP-799999.9981754856-hg-1",
+          "baseEqual": true,
+          "probesEqual": true
+        },
+        {
+          "id": "focused-3500000.0-stable-liquid",
+          "baseEqual": true,
+          "probesEqual": true
+        },
+        {
+          "id": "focused-3500000.0-mixture",
+          "baseEqual": true,
+          "probesEqual": true
+        },
+        {
+          "id": "focused-3500000.0-stable-vapor",
+          "baseEqual": true,
+          "probesEqual": true
+        },
+        {
+          "id": "ULP-3500000.0-hf--1",
+          "baseEqual": true,
+          "probesEqual": true
+        },
+        {
+          "id": "ULP-3500000.0-hf-1",
+          "baseEqual": true,
+          "probesEqual": true
+        },
+        {
+          "id": "ULP-3500000.0-hg--1",
+          "baseEqual": true,
+          "probesEqual": true
+        },
+        {
+          "id": "ULP-3500000.0-hg-1",
+          "baseEqual": true,
+          "probesEqual": true
+        }
+      ],
+      "endpointSummary": [
+        {
+          "id": "approach-30298.937123458254-liquid-0.0",
+          "args": [
+            30298.937123458254,
+            98904.56498938335
+          ],
+          "phase": 6,
+          "Q": 3.7331218097100785e-16,
+          "rho": 707.4983263194724,
+          "T": 218.26293725550536,
+          "canonical": {
+            "p": 1.0550138540565968e-09,
+            "h": 3.4051481634378433e-09,
+            "T": 6.536993168992922e-13
+          },
+          "canonicalPass": true,
+          "adapterError": null
+        },
+        {
+          "id": "approach-30298.937123458254-vapor-0.0",
+          "args": [
+            30298.937123458254,
+            1529444.8878290523
+          ],
+          "phase": 6,
+          "Q": 1,
+          "rho": 0.28801899212112975,
+          "T": 218.26293725550536,
+          "canonical": {
+            "p": -1.080843503586948e-08,
+            "h": -4.78699803352356e-07,
+            "T": -5.6274984672199935e-12
+          },
+          "canonicalPass": true,
+          "adapterError": null
+        },
+        {
+          "id": "approach-350000.0-liquid-0.0",
+          "args": [
+            350000,
+            321086.8171927678
+          ],
+          "phase": 0,
+          "Q": -1,
+          "rho": 645.8348207984532,
+          "T": 267.81143519639386,
+          "canonical": {
+            "p": 4.132743924856186e-09,
+            "h": 1.1641532182693481e-09,
+            "T": 5.115907697472721e-13
+          },
+          "canonicalPass": true,
+          "adapterError": null
+        },
+        {
+          "id": "approach-350000.0-vapor-0.0",
+          "args": [
+            350000,
+            1601489.3520557072
+          ],
+          "phase": 6,
+          "Q": 1,
+          "rho": 2.8489008963230256,
+          "T": 267.8114351963941,
+          "canonical": {
+            "p": -9.837094694375992e-09,
+            "h": -3.562308847904205e-08,
+            "T": -7.389644451905042e-13
+          },
+          "canonicalPass": true,
+          "adapterError": null
+        },
+        {
+          "id": "approach-799999.9981754856-liquid-0.0",
+          "args": [
+            799999.9981754856,
+            429181.30692029034
+          ],
+          "phase": 6,
+          "Q": 9.386039446918358e-16,
+          "rho": 613.5129566643677,
+          "T": 291.0133614355037,
+          "canonical": {
+            "p": -1.8172431737184525e-07,
+            "h": -3.387685865163803e-08,
+            "T": -6.934897101018578e-12
+          },
+          "canonicalPass": true,
+          "adapterError": null
+        },
+        {
+          "id": "approach-799999.9981754856-vapor-0.0",
+          "args": [
+            799999.9981754856,
+            1624019.7421341157
+          ],
+          "phase": 6,
+          "Q": 1,
+          "rho": 6.266584039429461,
+          "T": 291.0133614355037,
+          "canonical": {
+            "p": -1.0360963642597198e-08,
+            "h": -1.3504177331924438e-08,
+            "T": -3.410605131648481e-13
+          },
+          "canonicalPass": true,
+          "adapterError": null
+        },
+        {
+          "id": "approach-3500000.0-liquid-0.0",
+          "args": [
+            3500000,
+            703826.5654298478
+          ],
+          "phase": 6,
+          "Q": 4.6224922684564965e-16,
+          "rho": 521.5319007055003,
+          "T": 345.56367359935143,
+          "canonical": {
+            "p": -9.266659617424011e-08,
+            "h": -5.9371814131736755e-09,
+            "T": -1.0800249583553523e-12
+          },
+          "canonicalPass": true,
+          "adapterError": null
+        },
+        {
+          "id": "approach-3500000.0-vapor-0.0",
+          "args": [
+            3500000,
+            1628069.3277690788
+          ],
+          "phase": 6,
+          "Q": 0.9999999999999998,
+          "rho": 28.051377447197364,
+          "T": 345.56367359935143,
+          "canonical": {
+            "p": -2.561137080192566e-08,
+            "h": -5.122274160385132e-09,
+            "T": -2.2737367544323206e-13
+          },
+          "canonicalPass": true,
+          "adapterError": null
+        },
+        {
+          "id": "ULP-30298.937123458254-hf--1",
+          "args": [
+            30298.937123458254,
+            98904.56498938333
+          ],
+          "phase": 6,
+          "Q": 3.5464657192245746e-16,
+          "rho": 707.4983263195049,
+          "T": 218.26293725550536,
+          "canonical": {
+            "p": 1.0550138540565968e-09,
+            "h": 3.3905962482094765e-09,
+            "T": 6.536993168992922e-13
+          },
+          "canonicalPass": true,
+          "adapterError": null
+        },
+        {
+          "id": "ULP-30298.937123458254-hf-1",
+          "args": [
+            30298.937123458254,
+            98904.56498938336
+          ],
+          "phase": 6,
+          "Q": 3.8264498549528305e-16,
+          "rho": 707.4983263194563,
+          "T": 218.26293725550536,
+          "canonical": {
+            "p": 1.0550138540565968e-09,
+            "h": 3.4051481634378433e-09,
+            "T": 6.536993168992922e-13
+          },
+          "canonicalPass": true,
+          "adapterError": null
+        },
+        {
+          "id": "ULP-30298.937123458254-hg--1",
+          "args": [
+            30298.937123458254,
+            1529444.887829052
+          ],
+          "phase": 6,
+          "Q": 0.9999999999999999,
+          "rho": 0.2880189921211298,
+          "T": 218.26293725550536,
+          "canonical": {
+            "p": -1.080843503586948e-08,
+            "h": -4.791654646396637e-07,
+            "T": -5.6274984672199935e-12
+          },
+          "canonicalPass": true,
+          "adapterError": null
+        },
+        {
+          "id": "ULP-30298.937123458254-hg-1",
+          "args": [
+            30298.937123458254,
+            1529444.8878290525
+          ],
+          "phase": 6,
+          "Q": 1.0000000000000002,
+          "rho": 0.2880189921211297,
+          "T": 218.26293725550536,
+          "canonical": {
+            "p": -1.080843503586948e-08,
+            "h": -4.78699803352356e-07,
+            "T": -5.6274984672199935e-12
+          },
+          "canonicalPass": true,
+          "adapterError": null
+        },
+        {
+          "id": "ULP-350000.0-hf--1",
+          "args": [
+            350000,
+            321086.81719276775
+          ],
+          "phase": 0,
+          "Q": -1,
+          "rho": 645.8348207984718,
+          "T": 267.81143519638,
+          "canonical": {
+            "p": 2.6659108698368073e-08,
+            "h": 9.66247171163559e-09,
+            "T": 1.602984411874786e-11
+          },
+          "canonicalPass": true,
+          "adapterError": null
+        },
+        {
+          "id": "ULP-350000.0-hf-1",
+          "args": [
+            350000,
+            321086.81719276786
+          ],
+          "phase": 0,
+          "Q": -1,
+          "rho": 645.834820798453,
+          "T": 267.811435196394,
+          "canonical": {
+            "p": 4.132743924856186e-09,
+            "h": 1.1059455573558807e-09,
+            "T": 3.979039320256561e-13
+          },
+          "canonicalPass": true,
+          "adapterError": null
+        },
+        {
+          "id": "ULP-350000.0-hg--1",
+          "args": [
+            350000,
+            1601489.352055707
+          ],
+          "phase": 6,
+          "Q": 0.9999999999999998,
+          "rho": 2.848900896323026,
+          "T": 267.8114351963941,
+          "canonical": {
+            "p": -1.0593794286251068e-08,
+            "h": -3.864988684654236e-08,
+            "T": -7.958078640513122e-13
+          },
+          "canonicalPass": true,
+          "adapterError": null
+        },
+        {
+          "id": "ULP-350000.0-hg-1",
+          "args": [
+            350000,
+            1601489.3520557075
+          ],
+          "phase": 6,
+          "Q": 1.0000000000000002,
+          "rho": 2.848900896323025,
+          "T": 267.8114351963941,
+          "canonical": {
+            "p": -9.022187441587448e-09,
+            "h": -3.282912075519562e-08,
+            "T": -6.821210263296962e-13
+          },
+          "canonicalPass": true,
+          "adapterError": null
+        },
+        {
+          "id": "ULP-799999.9981754856-hf--1",
+          "args": [
+            799999.9981754856,
+            429181.3069202903
+          ],
+          "phase": 6,
+          "Q": 8.939085187541293e-16,
+          "rho": 613.5129566643704,
+          "T": 291.0133614355037,
+          "canonical": {
+            "p": -1.7136335372924805e-07,
+            "h": -3.149034455418587e-08,
+            "T": -6.536993168992922e-12
+          },
+          "canonicalPass": true,
+          "adapterError": null
+        },
+        {
+          "id": "ULP-799999.9981754856-hf-1",
+          "args": [
+            799999.9981754856,
+            429181.3069202904
+          ],
+          "phase": 6,
+          "Q": 9.832993706295423e-16,
+          "rho": 613.5129566643652,
+          "T": 291.0133614355037,
+          "canonical": {
+            "p": -1.905718818306923e-07,
+            "h": -3.3527612686157227e-08,
+            "T": -7.275957614183426e-12
+          },
+          "canonicalPass": true,
+          "adapterError": null
+        },
+        {
+          "id": "ULP-799999.9981754856-hg--1",
+          "args": [
+            799999.9981754856,
+            1624019.7421341154
+          ],
+          "phase": 6,
+          "Q": 0.9999999999999997,
+          "rho": 6.266584039429464,
+          "T": 291.0133614355037,
+          "canonical": {
+            "p": -1.1874362826347351e-08,
+            "h": -1.5366822481155396e-08,
+            "T": -3.979039320256561e-13
+          },
+          "canonicalPass": true,
+          "adapterError": null
+        },
+        {
+          "id": "ULP-799999.9981754856-hg-1",
+          "args": [
+            799999.9981754856,
+            1624019.742134116
+          ],
+          "phase": 6,
+          "Q": 1,
+          "rho": 6.266584039429461,
+          "T": 291.0133614355037,
+          "canonical": {
+            "p": -1.0360963642597198e-08,
+            "h": -1.3737007975578308e-08,
+            "T": -3.410605131648481e-13
+          },
+          "canonicalPass": true,
+          "adapterError": null
+        },
+        {
+          "id": "ULP-3500000.0-hf--1",
+          "args": [
+            3500000,
+            703826.5654298477
+          ],
+          "phase": 6,
+          "Q": 3.4668692013423724e-16,
+          "rho": 521.5319007055014,
+          "T": 345.56367359935143,
+          "canonical": {
+            "p": -6.984919309616089e-08,
+            "h": -4.540197551250458e-09,
+            "T": -7.958078640513122e-13
+          },
+          "canonicalPass": true,
+          "adapterError": null
+        },
+        {
+          "id": "ULP-3500000.0-hf-1",
+          "args": [
+            3500000,
+            703826.5654298479
+          ],
+          "phase": 6,
+          "Q": 5.778115335570621e-16,
+          "rho": 521.5319007054992,
+          "T": 345.56367359935143,
+          "canonical": {
+            "p": -1.150183379650116e-07,
+            "h": -7.450580596923828e-09,
+            "T": -1.3642420526593924e-12
+          },
+          "canonicalPass": true,
+          "adapterError": null
+        },
+        {
+          "id": "ULP-3500000.0-hg--1",
+          "args": [
+            3500000,
+            1628069.3277690785
+          ],
+          "phase": 6,
+          "Q": 0.9999999999999996,
+          "rho": 28.051377447197368,
+          "T": 345.56367359935143,
+          "canonical": {
+            "p": -2.561137080192566e-08,
+            "h": -5.122274160385132e-09,
+            "T": -2.2737367544323206e-13
+          },
+          "canonicalPass": true,
+          "adapterError": null
+        },
+        {
+          "id": "ULP-3500000.0-hg-1",
+          "args": [
+            3500000,
+            1628069.327769079
+          ],
+          "phase": 6,
+          "Q": 1,
+          "rho": 28.051377447197357,
+          "T": 345.56367359935143,
+          "canonical": {
+            "p": -1.6298145055770874e-08,
+            "h": -2.7939677238464355e-09,
+            "T": -1.1368683772161603e-13
+          },
+          "canonicalPass": true,
+          "adapterError": null
+        }
+      ],
+      "adapterGuardFailureIdentitiesUnchanged": [
+        "approach-3500000.0-liquid-0.001",
+        "approach-3500000.0-liquid-0.01",
+        "approach-3500000.0-vapor-0.001",
+        "approach-3500000.0-vapor-0.01",
+        "diagnostic-quality-band-3500000.0-hf--1.01e-09",
+        "diagnostic-quality-band-3500000.0-hf--9.9e-10",
+        "diagnostic-quality-band-3500000.0-hg-9.9e-10",
+        "focused-3500000.0-stable-liquid",
+        "focused-3500000.0-stable-vapor"
+      ],
+      "invalidUpperBand": [
+        {
+          "id": "approach-30298.937123458254-vapor-0.001",
+          "Q": 1.0000000006990364
+        },
+        {
+          "id": "approach-350000.0-vapor-0.001",
+          "Q": 1.0000000007810044
+        },
+        {
+          "id": "approach-799999.9981754856-vapor-0.001",
+          "Q": 1.0000000008369332
+        },
+        {
+          "id": "diagnostic-quality-band-30298.937123458254-hg-9.9e-10",
+          "Q": 1.00000000099
+        },
+        {
+          "id": "diagnostic-quality-band-350000.0-hg-9.9e-10",
+          "Q": 1.0000000009899999
+        },
+        {
+          "id": "diagnostic-quality-band-799999.9981754856-hg-9.9e-10",
+          "Q": 1.00000000099
+        },
+        {
+          "id": "diagnostic-quality-band-3500000.0-hg-9.9e-10",
+          "Q": 1.0000000009899999
+        },
+        {
+          "id": "ULP-30298.937123458254-hg-1",
+          "Q": 1.0000000000000002
+        },
+        {
+          "id": "ULP-350000.0-hg-1",
+          "Q": 1.0000000000000002
+        }
+      ]
+    },
+    "native": {
+      "B1AndVaporRowsUnchanged": [
+        "B1-vapor-regression",
+        "B1-liquid-precision"
+      ],
+      "independentRoots": 42,
+      "allConverged": true,
+      "sharedCaloricCallers": [
+        {
+          "pair": "PSmass_INPUTS",
+          "p": 30298.937123458254,
+          "physicalPhase": "liquid",
+          "backendPhase": 0.0,
+          "residuals": {
+            "p": -6.434856913983822e-08,
+            "h": -1.2514647096395493e-09
+          },
+          "canonicalPass": true
+        },
+        {
+          "pair": "PUmass_INPUTS",
+          "p": 30298.937123458254,
+          "physicalPhase": "liquid",
+          "backendPhase": 0.0,
+          "residuals": {
+            "p": 6.120171747170389e-08,
+            "h": -7.566995918750763e-10
+          },
+          "canonicalPass": true
+        },
+        {
+          "pair": "PSmass_INPUTS",
+          "p": 30298.937123458254,
+          "physicalPhase": "mixture",
+          "backendPhase": 6.0,
+          "residuals": {
+            "p": -2.3283064365386963e-10,
+            "h": -2.3283064365386963e-10
+          },
+          "canonicalPass": true
+        },
+        {
+          "pair": "PUmass_INPUTS",
+          "p": 30298.937123458254,
+          "physicalPhase": "mixture",
+          "backendPhase": 6.0,
+          "residuals": {
+            "p": -2.3283064365386963e-10,
+            "h": 0.0
+          },
+          "canonicalPass": true
+        },
+        {
+          "pair": "PSmass_INPUTS",
+          "p": 30298.937123458254,
+          "physicalPhase": "vapor",
+          "backendPhase": 5.0,
+          "residuals": {
+            "p": 0.0,
+            "h": 2.3283064365386963e-10
+          },
+          "canonicalPass": true
+        },
+        {
+          "pair": "PUmass_INPUTS",
+          "p": 30298.937123458254,
+          "physicalPhase": "vapor",
+          "backendPhase": 5.0,
+          "residuals": {
+            "p": 0.0,
+            "h": 4.656612873077393e-10
+          },
+          "canonicalPass": true
+        },
+        {
+          "pair": "PSmass_INPUTS",
+          "p": 350000.0,
+          "physicalPhase": "liquid",
+          "backendPhase": 0.0,
+          "residuals": {
+            "p": -8.680508472025394e-07,
+            "h": -7.566995918750763e-10
+          },
+          "canonicalPass": true
+        },
+        {
+          "pair": "PUmass_INPUTS",
+          "p": 350000.0,
+          "physicalPhase": "liquid",
+          "backendPhase": 0.0,
+          "residuals": {
+            "p": 5.197362042963505e-07,
+            "h": 2.3283064365386963e-10
+          },
+          "canonicalPass": true
+        },
+        {
+          "pair": "PSmass_INPUTS",
+          "p": 350000.0,
+          "physicalPhase": "mixture",
+          "backendPhase": 6.0,
+          "residuals": {
+            "p": -2.0372681319713593e-09,
+            "h": 0.0
+          },
+          "canonicalPass": true
+        },
+        {
+          "pair": "PUmass_INPUTS",
+          "p": 350000.0,
+          "physicalPhase": "mixture",
+          "backendPhase": 6.0,
+          "residuals": {
+            "p": -2.0372681319713593e-09,
+            "h": 0.0
+          },
+          "canonicalPass": true
+        },
+        {
+          "pair": "PSmass_INPUTS",
+          "p": 350000.0,
+          "physicalPhase": "vapor",
+          "backendPhase": 5.0,
+          "residuals": {
+            "p": -5.820766091346741e-11,
+            "h": 4.656612873077393e-10
+          },
+          "canonicalPass": true
+        },
+        {
+          "pair": "PUmass_INPUTS",
+          "p": 350000.0,
+          "physicalPhase": "vapor",
+          "backendPhase": 5.0,
+          "residuals": {
+            "p": 5.820766091346741e-11,
+            "h": 4.656612873077393e-10
+          },
+          "canonicalPass": true
+        },
+        {
+          "pair": "PSmass_INPUTS",
+          "p": 799999.9981754856,
+          "physicalPhase": "liquid",
+          "backendPhase": 0.0,
+          "residuals": {
+            "p": 3.584427759051323e-07,
+            "h": -2.3283064365386963e-10
+          },
+          "canonicalPass": true
+        },
+        {
+          "pair": "PUmass_INPUTS",
+          "p": 799999.9981754856,
+          "physicalPhase": "liquid",
+          "backendPhase": 0.0,
+          "residuals": {
+            "p": 1.2631062418222427e-07,
+            "h": 2.9103830456733704e-10
+          },
+          "canonicalPass": true
+        },
+        {
+          "pair": "PSmass_INPUTS",
+          "p": 799999.9981754856,
+          "physicalPhase": "mixture",
+          "backendPhase": 6.0,
+          "residuals": {
+            "p": 7.450580596923828e-09,
+            "h": 0.0
+          },
+          "canonicalPass": true
+        },
+        {
+          "pair": "PUmass_INPUTS",
+          "p": 799999.9981754856,
+          "physicalPhase": "mixture",
+          "backendPhase": 6.0,
+          "residuals": {
+            "p": 7.450580596923828e-09,
+            "h": 1.1641532182693481e-10
+          },
+          "canonicalPass": true
+        },
+        {
+          "pair": "PSmass_INPUTS",
+          "p": 799999.9981754856,
+          "physicalPhase": "vapor",
+          "backendPhase": 5.0,
+          "residuals": {
+            "p": 0.0,
+            "h": -6.984919309616089e-10
+          },
+          "canonicalPass": true
+        },
+        {
+          "pair": "PUmass_INPUTS",
+          "p": 799999.9981754856,
+          "physicalPhase": "vapor",
+          "backendPhase": 5.0,
+          "residuals": {
+            "p": 2.3283064365386963e-10,
+            "h": -2.3283064365386963e-10
+          },
+          "canonicalPass": true
+        },
+        {
+          "pair": "PSmass_INPUTS",
+          "p": 3500000.0,
+          "physicalPhase": "liquid",
+          "backendPhase": 0.0,
+          "residuals": {
+            "p": -3.641471266746521e-07,
+            "h": 3.4924596548080444e-10
+          },
+          "canonicalPass": true
+        },
+        {
+          "pair": "PUmass_INPUTS",
+          "p": 3500000.0,
+          "physicalPhase": "liquid",
+          "backendPhase": 0.0,
+          "residuals": {
+            "p": 5.802139639854431e-07,
+            "h": -2.8742942959070206e-07
+          },
+          "canonicalPass": true
+        },
+        {
+          "pair": "PSmass_INPUTS",
+          "p": 3500000.0,
+          "physicalPhase": "mixture",
+          "backendPhase": 6.0,
+          "residuals": {
+            "p": -2.7939677238464355e-09,
+            "h": 0.0
+          },
+          "canonicalPass": true
+        },
+        {
+          "pair": "PUmass_INPUTS",
+          "p": 3500000.0,
+          "physicalPhase": "mixture",
+          "backendPhase": 6.0,
+          "residuals": {
+            "p": -2.7939677238464355e-09,
+            "h": 2.3283064365386963e-10
+          },
+          "canonicalPass": true
+        },
+        {
+          "pair": "PSmass_INPUTS",
+          "p": 3500000.0,
+          "physicalPhase": "vapor",
+          "backendPhase": 5.0,
+          "residuals": {
+            "p": 4.656612873077393e-10,
+            "h": 2.3283064365386963e-10
+          },
+          "canonicalPass": true
+        },
+        {
+          "pair": "PUmass_INPUTS",
+          "p": 3500000.0,
+          "physicalPhase": "vapor",
+          "backendPhase": 5.0,
+          "residuals": {
+            "p": 4.656612873077393e-10,
+            "h": 6.984919309616089e-10
+          },
+          "canonicalPass": true
+        }
+      ],
+      "domainCasesUnchanged": 10
+    }
+  },
+  "A2": {
+    "chromium": {
+      "zero": {
+        "passed": true,
+        "exactTrialStatePreserved": true,
+        "work": {
+          "evaluations": 2,
+          "iterations": 0,
+          "linearSolves": 0,
+          "diagnostics": [
+            {
+              "type": "iteration",
+              "solveId": 1,
+              "iteration": 0,
+              "status": "converged",
+              "residual": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "fluidNorm": 0,
+              "thermalNorm": 0,
+              "dominantIndex": 0,
+              "states": [
+                {
+                  "p": 0.3029893712345825,
+                  "h": 98.90456398938336,
+                  "T": -54.88706297264116,
+                  "phase": "Subcooled liquid",
+                  "x": null
+                },
+                {
+                  "p": 0.3029893712345825,
+                  "h": 98.90456398938336,
+                  "T": -54.88706297264116,
+                  "phase": "Subcooled liquid",
+                  "x": null
+                },
+                {
+                  "p": 0.3029893712345825,
+                  "h": 98.90456398938336,
+                  "T": -54.88706297264116,
+                  "phase": "Subcooled liquid",
+                  "x": null
+                },
+                {
+                  "p": 0.3029893712345825,
+                  "h": 98.90456398938336,
+                  "T": -54.88706297264116,
+                  "phase": "Subcooled liquid",
+                  "x": null
+                },
+                {
+                  "p": 0.3029893712345825,
+                  "h": 98.90456398938336,
+                  "T": -54.88706297264116,
+                  "phase": "Subcooled liquid",
+                  "x": null
+                }
+              ],
+              "context": {
+                "startSeconds": 0,
+                "stageSeconds": 0.0005857864376269049,
+                "stageWeight": 0.5,
+                "labels": [
+                  "refrigerant-0:mass",
+                  "refrigerant-0:energy",
+                  "refrigerant-1:mass",
+                  "refrigerant-1:energy",
+                  "refrigerant-2:mass",
+                  "refrigerant-2:energy",
+                  "refrigerant-3:mass",
+                  "refrigerant-3:energy",
+                  "refrigerant-4:mass",
+                  "refrigerant-4:energy",
+                  "tube-0:energy",
+                  "fin-0:energy",
+                  "tube-1:energy",
+                  "fin-1:energy",
+                  "tube-2:energy",
+                  "fin-2:energy",
+                  "tube-3:energy",
+                  "fin-3:energy",
+                  "tube-4:energy",
+                  "fin-4:energy",
+                  "air:energy"
+                ],
+                "physicalScales": [
+                  0.4244989959527424,
+                  41.96670874636292,
+                  0.4244989959527424,
+                  41.96670874636292,
+                  0.4244989959527424,
+                  41.96670874636292,
+                  0.4244989959527424,
+                  41.96670874636292,
+                  0.4244989959527424,
+                  41.96670874636292,
+                  0.09740280000000001,
+                  0.08492017487761112,
+                  0.09740280000000001,
+                  0.08492017487761112,
+                  0.09740279999999997,
+                  0.08492017487761111,
+                  0.09740280000000004,
+                  0.08492017487761115,
+                  0.09740279999999997,
+                  0.08492017487761111,
+                  0.4308
+                ],
+                "thermalCapacitiesKJK": [
+                  0.9740280000000001,
+                  0.8492017487761112,
+                  0.9740280000000001,
+                  0.8492017487761112,
+                  0.9740279999999998,
+                  0.849201748776111,
+                  0.9740280000000003,
+                  0.8492017487761115,
+                  0.9740279999999998,
+                  0.849201748776111,
+                  4.308
+                ]
+              }
+            },
+            {
+              "type": "iteration",
+              "solveId": 2,
+              "iteration": 0,
+              "status": "converged",
+              "residual": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "fluidNorm": 0,
+              "thermalNorm": 0,
+              "dominantIndex": 0,
+              "states": [
+                {
+                  "p": 0.3029893712345825,
+                  "h": 98.90456398938336,
+                  "T": -54.88706297264116,
+                  "phase": "Subcooled liquid",
+                  "x": null
+                },
+                {
+                  "p": 0.3029893712345825,
+                  "h": 98.90456398938336,
+                  "T": -54.88706297264116,
+                  "phase": "Subcooled liquid",
+                  "x": null
+                },
+                {
+                  "p": 0.3029893712345825,
+                  "h": 98.90456398938336,
+                  "T": -54.88706297264116,
+                  "phase": "Subcooled liquid",
+                  "x": null
+                },
+                {
+                  "p": 0.3029893712345825,
+                  "h": 98.90456398938336,
+                  "T": -54.88706297264116,
+                  "phase": "Subcooled liquid",
+                  "x": null
+                },
+                {
+                  "p": 0.3029893712345825,
+                  "h": 98.90456398938336,
+                  "T": -54.88706297264116,
+                  "phase": "Subcooled liquid",
+                  "x": null
+                }
+              ],
+              "context": {
+                "startSeconds": 0,
+                "stageSeconds": 0.001,
+                "stageWeight": 0.29289321881345254,
+                "labels": [
+                  "refrigerant-0:mass",
+                  "refrigerant-0:energy",
+                  "refrigerant-1:mass",
+                  "refrigerant-1:energy",
+                  "refrigerant-2:mass",
+                  "refrigerant-2:energy",
+                  "refrigerant-3:mass",
+                  "refrigerant-3:energy",
+                  "refrigerant-4:mass",
+                  "refrigerant-4:energy",
+                  "tube-0:energy",
+                  "fin-0:energy",
+                  "tube-1:energy",
+                  "fin-1:energy",
+                  "tube-2:energy",
+                  "fin-2:energy",
+                  "tube-3:energy",
+                  "fin-3:energy",
+                  "tube-4:energy",
+                  "fin-4:energy",
+                  "air:energy"
+                ],
+                "physicalScales": [
+                  0.4244989959527424,
+                  41.96670874636292,
+                  0.4244989959527424,
+                  41.96670874636292,
+                  0.4244989959527424,
+                  41.96670874636292,
+                  0.4244989959527424,
+                  41.96670874636292,
+                  0.4244989959527424,
+                  41.96670874636292,
+                  0.09740280000000001,
+                  0.08492017487761112,
+                  0.09740280000000001,
+                  0.08492017487761112,
+                  0.09740279999999997,
+                  0.08492017487761111,
+                  0.09740280000000004,
+                  0.08492017487761115,
+                  0.09740279999999997,
+                  0.08492017487761111,
+                  0.4308
+                ],
+                "thermalCapacitiesKJK": [
+                  0.9740280000000001,
+                  0.8492017487761112,
+                  0.9740280000000001,
+                  0.8492017487761112,
+                  0.9740279999999998,
+                  0.849201748776111,
+                  0.9740280000000003,
+                  0.8492017487761115,
+                  0.9740279999999998,
+                  0.849201748776111,
+                  4.308
+                ]
+              }
+            }
+          ],
+          "diagnosticContext": {
+            "startSeconds": 0,
+            "stageSeconds": 0.001,
+            "stageWeight": 0.29289321881345254,
+            "labels": [
+              "refrigerant-0:mass",
+              "refrigerant-0:energy",
+              "refrigerant-1:mass",
+              "refrigerant-1:energy",
+              "refrigerant-2:mass",
+              "refrigerant-2:energy",
+              "refrigerant-3:mass",
+              "refrigerant-3:energy",
+              "refrigerant-4:mass",
+              "refrigerant-4:energy",
+              "tube-0:energy",
+              "fin-0:energy",
+              "tube-1:energy",
+              "fin-1:energy",
+              "tube-2:energy",
+              "fin-2:energy",
+              "tube-3:energy",
+              "fin-3:energy",
+              "tube-4:energy",
+              "fin-4:energy",
+              "air:energy"
+            ],
+            "physicalScales": [
+              0.4244989959527424,
+              41.96670874636292,
+              0.4244989959527424,
+              41.96670874636292,
+              0.4244989959527424,
+              41.96670874636292,
+              0.4244989959527424,
+              41.96670874636292,
+              0.4244989959527424,
+              41.96670874636292,
+              0.09740280000000001,
+              0.08492017487761112,
+              0.09740280000000001,
+              0.08492017487761112,
+              0.09740279999999997,
+              0.08492017487761111,
+              0.09740280000000004,
+              0.08492017487761115,
+              0.09740279999999997,
+              0.08492017487761111,
+              0.4308
+            ],
+            "thermalCapacitiesKJK": [
+              0.9740280000000001,
+              0.8492017487761112,
+              0.9740280000000001,
+              0.8492017487761112,
+              0.9740279999999998,
+              0.849201748776111,
+              0.9740280000000003,
+              0.8492017487761115,
+              0.9740279999999998,
+              0.849201748776111,
+              4.308
+            ]
+          },
+          "diagnosticSolveCount": 2
+        }
+      },
+      "cold": {
+        "passed": true,
+        "samples": [
+          0.01,
+          0.05,
+          0.2
+        ],
+        "conservation": {
+          "massKg": 1.3016436886670313e-12,
+          "sectionMassKg": 4.588586455245292e-13,
+          "refrigerantKJ": 4.1577996601205314e-10,
+          "thermalKJ": 7.91033905045424e-15,
+          "combinedKJ": 4.157738597854177e-10,
+          "sectionEnergyKJ": 2.025330181343321e-10,
+          "nodeEnergyKJ": 7.854827899222983e-15
+        },
+        "elapsedSeconds": 5.366999709000083
+      },
+      "warm": {
+        "passed": true,
+        "samples": [
+          0.01,
+          0.05,
+          0.2
+        ],
+        "conservation": {
+          "massKg": 4.1638068860871957e-13,
+          "sectionMassKg": 4.387193733301764e-13,
+          "refrigerantKJ": 1.3531908926722735e-10,
+          "thermalKJ": 9.459100169806334e-14,
+          "combinedKJ": 1.352244982655293e-10,
+          "sectionEnergyKJ": 1.5541445907985008e-10,
+          "nodeEnergyKJ": 8.977540932875172e-14
+        },
+        "elapsedSeconds": 13.465488024000024
+      },
+      "feed-step": {
+        "passed": true,
+        "samples": [
+          0.01,
+          0.2,
+          1,
+          5,
+          15,
+          15.01
+        ],
+        "conservation": {
+          "massKg": 1.3470301263307505e-12,
+          "sectionMassKg": 1.1936424071379292e-12,
+          "refrigerantKJ": 4.310809487151346e-10,
+          "thermalKJ": 2.1316282072803006e-14,
+          "combinedKJ": 4.310720669309376e-10,
+          "sectionEnergyKJ": 6.136446906168658e-10,
+          "nodeEnergyKJ": 2.3092638912203256e-14
+        },
+        "elapsedSeconds": 11.335844072999862
+      },
+      "heat-reversal": {
+        "passed": true,
+        "samples": [
+          0.01,
+          0.05,
+          0.2
+        ],
+        "conservation": {
+          "massKg": 6.3803129446426965e-15,
+          "sectionMassKg": 1.345278055620014e-15,
+          "refrigerantKJ": 6.89526213903946e-12,
+          "thermalKJ": 4.528766250899707e-12,
+          "combinedKJ": 1.1424028389939167e-11,
+          "sectionEnergyKJ": 1.520519821163191e-12,
+          "nodeEnergyKJ": 9.521064492368225e-13
+        },
+        "elapsedSeconds": 5.273977799000022
+      }
+    },
+    "webkit": {
+      "zero": {
+        "passed": true,
+        "exactTrialStatePreserved": true,
+        "work": {
+          "evaluations": 2,
+          "iterations": 0,
+          "linearSolves": 0,
+          "diagnostics": [
+            {
+              "type": "iteration",
+              "solveId": 1,
+              "iteration": 0,
+              "status": "converged",
+              "residual": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "fluidNorm": 0,
+              "thermalNorm": 0,
+              "dominantIndex": 0,
+              "states": [
+                {
+                  "p": 0.3029893712345825,
+                  "h": 98.90456398938336,
+                  "T": -54.88706297264116,
+                  "phase": "Subcooled liquid",
+                  "x": null
+                },
+                {
+                  "p": 0.3029893712345825,
+                  "h": 98.90456398938336,
+                  "T": -54.88706297264116,
+                  "phase": "Subcooled liquid",
+                  "x": null
+                },
+                {
+                  "p": 0.3029893712345825,
+                  "h": 98.90456398938336,
+                  "T": -54.88706297264116,
+                  "phase": "Subcooled liquid",
+                  "x": null
+                },
+                {
+                  "p": 0.3029893712345825,
+                  "h": 98.90456398938336,
+                  "T": -54.88706297264116,
+                  "phase": "Subcooled liquid",
+                  "x": null
+                },
+                {
+                  "p": 0.3029893712345825,
+                  "h": 98.90456398938336,
+                  "T": -54.88706297264116,
+                  "phase": "Subcooled liquid",
+                  "x": null
+                }
+              ],
+              "context": {
+                "startSeconds": 0,
+                "stageSeconds": 0.0005857864376269049,
+                "stageWeight": 0.5,
+                "labels": [
+                  "refrigerant-0:mass",
+                  "refrigerant-0:energy",
+                  "refrigerant-1:mass",
+                  "refrigerant-1:energy",
+                  "refrigerant-2:mass",
+                  "refrigerant-2:energy",
+                  "refrigerant-3:mass",
+                  "refrigerant-3:energy",
+                  "refrigerant-4:mass",
+                  "refrigerant-4:energy",
+                  "tube-0:energy",
+                  "fin-0:energy",
+                  "tube-1:energy",
+                  "fin-1:energy",
+                  "tube-2:energy",
+                  "fin-2:energy",
+                  "tube-3:energy",
+                  "fin-3:energy",
+                  "tube-4:energy",
+                  "fin-4:energy",
+                  "air:energy"
+                ],
+                "physicalScales": [
+                  0.4244989959527424,
+                  41.96670874636292,
+                  0.4244989959527424,
+                  41.96670874636292,
+                  0.4244989959527424,
+                  41.96670874636292,
+                  0.4244989959527424,
+                  41.96670874636292,
+                  0.4244989959527424,
+                  41.96670874636292,
+                  0.09740280000000001,
+                  0.08492017487761112,
+                  0.09740280000000001,
+                  0.08492017487761112,
+                  0.09740279999999997,
+                  0.08492017487761111,
+                  0.09740280000000004,
+                  0.08492017487761115,
+                  0.09740279999999997,
+                  0.08492017487761111,
+                  0.4308
+                ],
+                "thermalCapacitiesKJK": [
+                  0.9740280000000001,
+                  0.8492017487761112,
+                  0.9740280000000001,
+                  0.8492017487761112,
+                  0.9740279999999998,
+                  0.849201748776111,
+                  0.9740280000000003,
+                  0.8492017487761115,
+                  0.9740279999999998,
+                  0.849201748776111,
+                  4.308
+                ]
+              }
+            },
+            {
+              "type": "iteration",
+              "solveId": 2,
+              "iteration": 0,
+              "status": "converged",
+              "residual": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "fluidNorm": 0,
+              "thermalNorm": 0,
+              "dominantIndex": 0,
+              "states": [
+                {
+                  "p": 0.3029893712345825,
+                  "h": 98.90456398938336,
+                  "T": -54.88706297264116,
+                  "phase": "Subcooled liquid",
+                  "x": null
+                },
+                {
+                  "p": 0.3029893712345825,
+                  "h": 98.90456398938336,
+                  "T": -54.88706297264116,
+                  "phase": "Subcooled liquid",
+                  "x": null
+                },
+                {
+                  "p": 0.3029893712345825,
+                  "h": 98.90456398938336,
+                  "T": -54.88706297264116,
+                  "phase": "Subcooled liquid",
+                  "x": null
+                },
+                {
+                  "p": 0.3029893712345825,
+                  "h": 98.90456398938336,
+                  "T": -54.88706297264116,
+                  "phase": "Subcooled liquid",
+                  "x": null
+                },
+                {
+                  "p": 0.3029893712345825,
+                  "h": 98.90456398938336,
+                  "T": -54.88706297264116,
+                  "phase": "Subcooled liquid",
+                  "x": null
+                }
+              ],
+              "context": {
+                "startSeconds": 0,
+                "stageSeconds": 0.001,
+                "stageWeight": 0.29289321881345254,
+                "labels": [
+                  "refrigerant-0:mass",
+                  "refrigerant-0:energy",
+                  "refrigerant-1:mass",
+                  "refrigerant-1:energy",
+                  "refrigerant-2:mass",
+                  "refrigerant-2:energy",
+                  "refrigerant-3:mass",
+                  "refrigerant-3:energy",
+                  "refrigerant-4:mass",
+                  "refrigerant-4:energy",
+                  "tube-0:energy",
+                  "fin-0:energy",
+                  "tube-1:energy",
+                  "fin-1:energy",
+                  "tube-2:energy",
+                  "fin-2:energy",
+                  "tube-3:energy",
+                  "fin-3:energy",
+                  "tube-4:energy",
+                  "fin-4:energy",
+                  "air:energy"
+                ],
+                "physicalScales": [
+                  0.4244989959527424,
+                  41.96670874636292,
+                  0.4244989959527424,
+                  41.96670874636292,
+                  0.4244989959527424,
+                  41.96670874636292,
+                  0.4244989959527424,
+                  41.96670874636292,
+                  0.4244989959527424,
+                  41.96670874636292,
+                  0.09740280000000001,
+                  0.08492017487761112,
+                  0.09740280000000001,
+                  0.08492017487761112,
+                  0.09740279999999997,
+                  0.08492017487761111,
+                  0.09740280000000004,
+                  0.08492017487761115,
+                  0.09740279999999997,
+                  0.08492017487761111,
+                  0.4308
+                ],
+                "thermalCapacitiesKJK": [
+                  0.9740280000000001,
+                  0.8492017487761112,
+                  0.9740280000000001,
+                  0.8492017487761112,
+                  0.9740279999999998,
+                  0.849201748776111,
+                  0.9740280000000003,
+                  0.8492017487761115,
+                  0.9740279999999998,
+                  0.849201748776111,
+                  4.308
+                ]
+              }
+            }
+          ],
+          "diagnosticContext": {
+            "startSeconds": 0,
+            "stageSeconds": 0.001,
+            "stageWeight": 0.29289321881345254,
+            "labels": [
+              "refrigerant-0:mass",
+              "refrigerant-0:energy",
+              "refrigerant-1:mass",
+              "refrigerant-1:energy",
+              "refrigerant-2:mass",
+              "refrigerant-2:energy",
+              "refrigerant-3:mass",
+              "refrigerant-3:energy",
+              "refrigerant-4:mass",
+              "refrigerant-4:energy",
+              "tube-0:energy",
+              "fin-0:energy",
+              "tube-1:energy",
+              "fin-1:energy",
+              "tube-2:energy",
+              "fin-2:energy",
+              "tube-3:energy",
+              "fin-3:energy",
+              "tube-4:energy",
+              "fin-4:energy",
+              "air:energy"
+            ],
+            "physicalScales": [
+              0.4244989959527424,
+              41.96670874636292,
+              0.4244989959527424,
+              41.96670874636292,
+              0.4244989959527424,
+              41.96670874636292,
+              0.4244989959527424,
+              41.96670874636292,
+              0.4244989959527424,
+              41.96670874636292,
+              0.09740280000000001,
+              0.08492017487761112,
+              0.09740280000000001,
+              0.08492017487761112,
+              0.09740279999999997,
+              0.08492017487761111,
+              0.09740280000000004,
+              0.08492017487761115,
+              0.09740279999999997,
+              0.08492017487761111,
+              0.4308
+            ],
+            "thermalCapacitiesKJK": [
+              0.9740280000000001,
+              0.8492017487761112,
+              0.9740280000000001,
+              0.8492017487761112,
+              0.9740279999999998,
+              0.849201748776111,
+              0.9740280000000003,
+              0.8492017487761115,
+              0.9740279999999998,
+              0.849201748776111,
+              4.308
+            ]
+          },
+          "diagnosticSolveCount": 2
+        }
+      },
+      "cold": {
+        "passed": true,
+        "samples": [
+          0.01,
+          0.05,
+          0.2
+        ],
+        "conservation": {
+          "massKg": 1.3016436886670313e-12,
+          "sectionMassKg": 4.588586455245292e-13,
+          "refrigerantKJ": 4.1577996601205314e-10,
+          "thermalKJ": 7.91033905045424e-15,
+          "combinedKJ": 4.157738597854177e-10,
+          "sectionEnergyKJ": 2.025330181343321e-10,
+          "nodeEnergyKJ": 7.854827899222983e-15
+        },
+        "elapsedSeconds": 5.842969477999986
+      },
+      "warm": {
+        "passed": true,
+        "samples": [
+          0.01,
+          0.05,
+          0.2
+        ],
+        "conservation": {
+          "massKg": 4.1638068860871957e-13,
+          "sectionMassKg": 4.387193733301764e-13,
+          "refrigerantKJ": 1.3531908926722735e-10,
+          "thermalKJ": 9.459100169806334e-14,
+          "combinedKJ": 1.352244982655293e-10,
+          "sectionEnergyKJ": 1.5541445907985008e-10,
+          "nodeEnergyKJ": 8.977540932875172e-14
+        },
+        "elapsedSeconds": 14.991408059999912
+      },
+      "feed-step": {
+        "passed": true,
+        "samples": [
+          0.01,
+          0.2,
+          1,
+          5,
+          15,
+          15.01
+        ],
+        "conservation": {
+          "massKg": 1.3470301263307505e-12,
+          "sectionMassKg": 1.1936424071379292e-12,
+          "refrigerantKJ": 4.310809487151346e-10,
+          "thermalKJ": 2.1316282072803006e-14,
+          "combinedKJ": 4.310720669309376e-10,
+          "sectionEnergyKJ": 6.136446906168658e-10,
+          "nodeEnergyKJ": 2.3092638912203256e-14
+        },
+        "elapsedSeconds": 12.628036226999939
+      },
+      "heat-reversal": {
+        "passed": true,
+        "samples": [
+          0.01,
+          0.05,
+          0.2
+        ],
+        "conservation": {
+          "massKg": 6.3803129446426965e-15,
+          "sectionMassKg": 1.345278055620014e-15,
+          "refrigerantKJ": 6.89526213903946e-12,
+          "thermalKJ": 4.528766250899707e-12,
+          "combinedKJ": 1.1424028389939167e-11,
+          "sectionEnergyKJ": 1.520519821163191e-12,
+          "nodeEnergyKJ": 9.521064492368225e-13
+        },
+        "elapsedSeconds": 5.343143353999949
+      }
+    }
+  },
+  "performance": {
+    "native": {
+      "control44": {
+        "groups": {
+          "B1": {
+            "medianMicrosecondsPerCall": 82.58648000264657,
+            "roundMicrosecondsPerCall": [
+              82.58648000264657,
+              86.55684000586916,
+              71.33436000003712
+            ]
+          },
+          "boundary": {
+            "medianMicrosecondsPerCall": 30.177597193055828,
+            "roundMicrosecondsPerCall": [
+              30.177597193055828,
+              27.194413333314802,
+              34.72365614039805
+            ]
+          },
+          "primary": {
+            "medianMicrosecondsPerCall": 5.434559998320765,
+            "roundMicrosecondsPerCall": [
+              45.90459999235463,
+              5.405320007412229,
+              5.434559998320765
+            ]
+          }
+        },
+        "init": null,
+        "maxRSSKiB": 127172,
+        "memoryBytes": null,
+        "jsHeap": null
+      },
+      "liquid44": {
+        "groups": {
+          "B1": {
+            "medianMicrosecondsPerCall": 62.17464000656037,
+            "roundMicrosecondsPerCall": [
+              64.38716000047862,
+              62.17464000656037,
+              61.14947999776632
+            ]
+          },
+          "boundary": {
+            "medianMicrosecondsPerCall": 30.065906666685915,
+            "roundMicrosecondsPerCall": [
+              30.434095438466645,
+              29.763248421020986,
+              30.065906666685915
+            ]
+          },
+          "primary": {
+            "medianMicrosecondsPerCall": 55.0030400063406,
+            "roundMicrosecondsPerCall": [
+              93.02856000431348,
+              55.0030400063406,
+              52.7436399988801
+            ]
+          }
+        },
+        "init": null,
+        "maxRSSKiB": 127104,
+        "memoryBytes": null,
+        "jsHeap": null
+      },
+      "repairOverControl": {
+        "B1": 0.7528428382535243,
+        "boundary": 0.996298892663475,
+        "primary": 10.120973919385579
+      }
+    },
+    "chromium": {
+      "control44": {
+        "groups": {
+          "B1": {
+            "medianMicrosecondsPerCall": 61.53846153846154,
+            "roundMicrosecondsPerCall": [
+              62.421972534332085,
+              61.53846153846154,
+              61.387354205033766
+            ]
+          },
+          "boundary": {
+            "medianMicrosecondsPerCall": 24.759080800639058,
+            "roundMicrosecondsPerCall": [
+              28.789186079913804,
+              24.759080800639058,
+              24.366471734892787
+            ]
+          },
+          "primary": {
+            "medianMicrosecondsPerCall": 5.62271577171774,
+            "roundMicrosecondsPerCall": [
+              7.885191610156126,
+              5.62271577171774,
+              5.518459246178467
+            ]
+          }
+        },
+        "init": {
+          "totalMS": 1948.6999999999534,
+          "importMS": 7.5,
+          "fetchMS": 35,
+          "compileInstantiateMS": 20.699999999953434,
+          "runtimeMS": 52.39999999990687,
+          "firstFactoryMS": 1853.8000000000466,
+          "initialLinearMemoryBytes": 22544384,
+          "readyLinearMemoryBytes": 56360960,
+          "wasmBytes": 9196519,
+          "mime": "application/wasm",
+          "streaming": true,
+          "logs": []
+        },
+        "maxRSSKiB": null,
+        "memoryBytes": 56360960,
+        "jsHeap": {
+          "usedJSHeapSize": 56800000,
+          "totalJSHeapSize": 76600000
+        }
+      },
+      "liquid44": {
+        "groups": {
+          "B1": {
+            "medianMicrosecondsPerCall": 68.44626967830253,
+            "roundMicrosecondsPerCall": [
+              68.44626967830253,
+              71.68458781362007,
+              67.0690811535882
+            ]
+          },
+          "boundary": {
+            "medianMicrosecondsPerCall": 35.71929824554868,
+            "roundMicrosecondsPerCall": [
+              39.72709551662366,
+              34.07557354925776,
+              35.71929824554868
+            ]
+          },
+          "primary": {
+            "medianMicrosecondsPerCall": 68.11989100817439,
+            "roundMicrosecondsPerCall": [
+              101.9367991845056,
+              68.11989100817439,
+              66.8002672010688
+            ]
+          }
+        },
+        "init": {
+          "totalMS": 2055,
+          "importMS": 6,
+          "fetchMS": 36.299999999813735,
+          "compileInstantiateMS": 22.899999999906868,
+          "runtimeMS": 59.5,
+          "firstFactoryMS": 1953.2000000001863,
+          "initialLinearMemoryBytes": 22544384,
+          "readyLinearMemoryBytes": 56360960,
+          "wasmBytes": 9196595,
+          "mime": "application/wasm",
+          "streaming": true,
+          "logs": []
+        },
+        "maxRSSKiB": null,
+        "memoryBytes": 56360960,
+        "jsHeap": {
+          "usedJSHeapSize": 44700000,
+          "totalJSHeapSize": 76600000
+        }
+      },
+      "repairOverControl": {
+        "B1": 1.1122518822724161,
+        "boundary": 1.4426746506932813,
+        "primary": 12.115122615803815
+      }
+    },
+    "webkit": {
+      "control44": {
+        "groups": {
+          "B1": {
+            "medianMicrosecondsPerCall": 71.73601147776183,
+            "roundMicrosecondsPerCall": [
+              76.39419404125286,
+              71.73601147776183,
+              69.88120195667365
+            ]
+          },
+          "boundary": {
+            "medianMicrosecondsPerCall": 29.53216374269006,
+            "roundMicrosecondsPerCall": [
+              53.69484316852738,
+              29.53216374269006,
+              27.8473962684489
+            ]
+          },
+          "primary": {
+            "medianMicrosecondsPerCall": 6.234802668495542,
+            "roundMicrosecondsPerCall": [
+              10.594342621040365,
+              6.182380216383308,
+              6.234802668495542
+            ]
+          }
+        },
+        "init": {
+          "totalMS": 2065,
+          "importMS": 10,
+          "fetchMS": 87,
+          "compileInstantiateMS": 47,
+          "runtimeMS": 104,
+          "firstFactoryMS": 1864,
+          "initialLinearMemoryBytes": 22544384,
+          "readyLinearMemoryBytes": 56360960,
+          "wasmBytes": 9196519,
+          "mime": "application/wasm",
+          "streaming": true,
+          "logs": []
+        },
+        "maxRSSKiB": null,
+        "memoryBytes": 56360960,
+        "jsHeap": null
+      },
+      "liquid44": {
+        "groups": {
+          "B1": {
+            "medianMicrosecondsPerCall": 70.2247191011236,
+            "roundMicrosecondsPerCall": [
+              70.2247191011236,
+              71.27583749109051,
+              65.57377049180327
+            ]
+          },
+          "boundary": {
+            "medianMicrosecondsPerCall": 35.43859649122807,
+            "roundMicrosecondsPerCall": [
+              50.6265664160401,
+              35.43859649122807,
+              32.81351526965562
+            ]
+          },
+          "primary": {
+            "medianMicrosecondsPerCall": 61.12469437652812,
+            "roundMicrosecondsPerCall": [
+              94.7867298578199,
+              60.53268765133172,
+              61.12469437652812
+            ]
+          }
+        },
+        "init": {
+          "totalMS": 1994,
+          "importMS": 11,
+          "fetchMS": 53,
+          "compileInstantiateMS": 40,
+          "runtimeMS": 89,
+          "firstFactoryMS": 1841,
+          "initialLinearMemoryBytes": 22544384,
+          "readyLinearMemoryBytes": 56360960,
+          "wasmBytes": 9196595,
+          "mime": "application/wasm",
+          "streaming": true,
+          "logs": []
+        },
+        "maxRSSKiB": null,
+        "memoryBytes": 56360960,
+        "jsHeap": null
+      },
+      "repairOverControl": {
+        "B1": 0.978932584269663,
+        "boundary": 1.2,
+        "primary": 9.803789731051346
+      }
+    }
+  },
+  "limitations": {
+    "fullVLE35bar": [
+      {
+        "id": "approach-3500000.0-liquid-0.0",
+        "inventory": "C",
+        "inputEqual": true,
+        "outputEqual": true,
+        "error": "Error: Input vapor quality [Q] must be between 0 and 1"
+      },
+      {
+        "id": "approach-3500000.0-liquid-0.001",
+        "inventory": "A",
+        "inputEqual": true,
+        "outputEqual": true,
+        "error": "Error: Input vapor quality [Q] must be between 0 and 1"
+      },
+      {
+        "id": "approach-3500000.0-liquid-0.001",
+        "inventory": "C",
+        "inputEqual": true,
+        "outputEqual": true,
+        "error": "Error: Input vapor quality [Q] must be between 0 and 1"
+      },
+      {
+        "id": "approach-3500000.0-liquid-0.01",
+        "inventory": "A",
+        "inputEqual": true,
+        "outputEqual": true,
+        "error": null
+      },
+      {
+        "id": "approach-3500000.0-liquid-0.01",
+        "inventory": "C",
+        "inputEqual": true,
+        "outputEqual": true,
+        "error": null
+      },
+      {
+        "id": "approach-3500000.0-vapor-0.0",
+        "inventory": "C",
+        "inputEqual": true,
+        "outputEqual": true,
+        "error": "Error: Input vapor quality [Q] must be between 0 and 1"
+      },
+      {
+        "id": "approach-3500000.0-vapor-0.001",
+        "inventory": "A",
+        "inputEqual": true,
+        "outputEqual": true,
+        "error": null
+      },
+      {
+        "id": "approach-3500000.0-vapor-0.001",
+        "inventory": "C",
+        "inputEqual": true,
+        "outputEqual": true,
+        "error": null
+      },
+      {
+        "id": "approach-3500000.0-vapor-0.01",
+        "inventory": "A",
+        "inputEqual": true,
+        "outputEqual": true,
+        "error": null
+      },
+      {
+        "id": "approach-3500000.0-vapor-0.01",
+        "inventory": "C",
+        "inputEqual": true,
+        "outputEqual": true,
+        "error": null
+      },
+      {
+        "id": "diagnostic-quality-band-3500000.0-hf--1.01e-09",
+        "inventory": "A",
+        "inputEqual": true,
+        "outputEqual": true,
+        "error": "Error: Input vapor quality [Q] must be between 0 and 1"
+      },
+      {
+        "id": "diagnostic-quality-band-3500000.0-hf--1.01e-09",
+        "inventory": "C",
+        "inputEqual": true,
+        "outputEqual": true,
+        "error": "Error: Input vapor quality [Q] must be between 0 and 1"
+      },
+      {
+        "id": "diagnostic-quality-band-3500000.0-hf--9.9e-10",
+        "inventory": "A",
+        "inputEqual": true,
+        "outputEqual": true,
+        "error": "Error: Input vapor quality [Q] must be between 0 and 1"
+      },
+      {
+        "id": "diagnostic-quality-band-3500000.0-hf--9.9e-10",
+        "inventory": "C",
+        "inputEqual": true,
+        "outputEqual": true,
+        "error": "Error: Input vapor quality [Q] must be between 0 and 1"
+      },
+      {
+        "id": "diagnostic-quality-band-3500000.0-hf-9.9e-10",
+        "inventory": "C",
+        "inputEqual": true,
+        "outputEqual": true,
+        "error": null
+      },
+      {
+        "id": "diagnostic-quality-band-3500000.0-hf-1.01e-09",
+        "inventory": "C",
+        "inputEqual": true,
+        "outputEqual": true,
+        "error": null
+      },
+      {
+        "id": "diagnostic-quality-band-3500000.0-hg--1.01e-09",
+        "inventory": "C",
+        "inputEqual": true,
+        "outputEqual": true,
+        "error": null
+      },
+      {
+        "id": "diagnostic-quality-band-3500000.0-hg--9.9e-10",
+        "inventory": "C",
+        "inputEqual": true,
+        "outputEqual": true,
+        "error": null
+      },
+      {
+        "id": "diagnostic-quality-band-3500000.0-hg-9.9e-10",
+        "inventory": "A",
+        "inputEqual": true,
+        "outputEqual": true,
+        "error": null
+      },
+      {
+        "id": "diagnostic-quality-band-3500000.0-hg-9.9e-10",
+        "inventory": "C",
+        "inputEqual": true,
+        "outputEqual": true,
+        "error": null
+      },
+      {
+        "id": "diagnostic-quality-band-3500000.0-hg-1.01e-09",
+        "inventory": "A",
+        "inputEqual": true,
+        "outputEqual": true,
+        "error": null
+      },
+      {
+        "id": "diagnostic-quality-band-3500000.0-hg-1.01e-09",
+        "inventory": "C",
+        "inputEqual": true,
+        "outputEqual": true,
+        "error": null
+      },
+      {
+        "id": "focused-3500000.0-stable-liquid",
+        "inventory": "A",
+        "inputEqual": true,
+        "outputEqual": true,
+        "error": null
+      },
+      {
+        "id": "focused-3500000.0-stable-liquid",
+        "inventory": "C",
+        "inputEqual": true,
+        "outputEqual": true,
+        "error": null
+      },
+      {
+        "id": "focused-3500000.0-mixture",
+        "inventory": "C",
+        "inputEqual": true,
+        "outputEqual": true,
+        "error": null
+      },
+      {
+        "id": "focused-3500000.0-stable-vapor",
+        "inventory": "A",
+        "inputEqual": true,
+        "outputEqual": true,
+        "error": null
+      },
+      {
+        "id": "focused-3500000.0-stable-vapor",
+        "inventory": "C",
+        "inputEqual": true,
+        "outputEqual": true,
+        "error": null
+      },
+      {
+        "id": "ULP-3500000.0-hf--1",
+        "inventory": "C",
+        "inputEqual": true,
+        "outputEqual": true,
+        "error": "Error: Input vapor quality [Q] must be between 0 and 1"
+      },
+      {
+        "id": "ULP-3500000.0-hf-1",
+        "inventory": "C",
+        "inputEqual": true,
+        "outputEqual": true,
+        "error": "Error: Input vapor quality [Q] must be between 0 and 1"
+      },
+      {
+        "id": "ULP-3500000.0-hg--1",
+        "inventory": "C",
+        "inputEqual": true,
+        "outputEqual": true,
+        "error": "Error: Input vapor quality [Q] must be between 0 and 1"
+      },
+      {
+        "id": "ULP-3500000.0-hg-1",
+        "inventory": "C",
+        "inputEqual": true,
+        "outputEqual": true,
+        "error": "Error: Input vapor quality [Q] must be between 0 and 1"
+      }
+    ],
+    "native72": "Historical B3 three 35-bar DU exceptions are preserved unchanged; no claim of a fresh 7.2 campaign.",
+    "vapor": "UNRESOLVED, unchanged failure",
+    "upperQuality": "UNRESOLVED, unchanged invalid extrapolation",
+    "A2": "Limited selected fixtures only; full matrix, temporal refinement and frozen-reference qualification pending",
+    "physicalIPad": false
+  },
+  "preservation": {
+    "originalTrackedFiles": 939,
+    "changed": [],
+    "controlToRepairModifiedSource": [
+      "src/Backends/Helmholtz/HelmholtzEOSMixtureBackend.cpp"
+    ],
+    "B1FlashSHA256": "9e6d3be44cc61c3ca5b539fa10f4587cfeef3e286dec2d267fe90933df67c0e3"
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "init": {
+    "totalMS": 1994,
+    "importMS": 11,
+    "fetchMS": 53,
+    "compileInstantiateMS": 40,
+    "runtimeMS": 89,
+    "firstFactoryMS": 1841,
+    "initialLinearMemoryBytes": 22544384,
+    "readyLinearMemoryBytes": 56360960,
+    "wasmBytes": 9196595,
+    "mime": "application/wasm",
+    "streaming": true,
+    "logs": []
+  },
+  "rows": [
+    {
+      "round": 0,
+      "group": "primary",
+      "calls": 1055,
+      "elapsedMS": 100,
+      "errors": [],
+      "checksum": 746410.7345502515,
+      "memoryBytes": 56360960
+    },
+    {
+      "round": 0,
+      "group": "boundary",
+      "calls": 1995,
+      "elapsedMS": 101,
+      "errors": [],
+      "checksum": 619048.2502733384,
+      "memoryBytes": 56360960
+    },
+    {
+      "round": 0,
+      "group": "B1",
+      "calls": 1424,
+      "elapsedMS": 100,
+      "errors": [],
+      "checksum": 1009147.5915697062,
+      "memoryBytes": 56360960
+    },
+    {
+      "round": 1,
+      "group": "primary",
+      "calls": 1652,
+      "elapsedMS": 100,
+      "errors": [],
+      "checksum": 1168787.2355232614,
+      "memoryBytes": 56360960
+    },
+    {
+      "round": 1,
+      "group": "boundary",
+      "calls": 2850,
+      "elapsedMS": 101,
+      "errors": [],
+      "checksum": 884354.6432476296,
+      "memoryBytes": 56360960
+    },
+    {
+      "round": 1,
+      "group": "B1",
+      "calls": 1403,
+      "elapsedMS": 100,
+      "errors": [],
+      "checksum": 994265.4992782996,
+      "memoryBytes": 56360960
+    },
+    {
+      "round": 2,
+      "group": "primary",
+      "calls": 1636,
+      "elapsedMS": 100,
+      "errors": [],
+      "checksum": 1157467.262297854,
+      "memoryBytes": 56360960
+    },
+    {
+      "round": 2,
+      "group": "boundary",
+      "calls": 3078,
+      "elapsedMS": 101,
+      "errors": [],
+      "checksum": 955103.0147074406,
+      "memoryBytes": 56360960
+    },
+    {
+      "round": 2,
+      "group": "B1",
+      "calls": 1525,
+      "elapsedMS": 100,
+      "errors": [],
+      "checksum": 1080723.368780757,
+      "memoryBytes": 56360960
+    }
+  ],
+  "memoryBytes": 56360960,
+  "jsHeap": null,
+  "browser": "webkit",
+  "browserVersion": "26.5",
+  "build": "liquid44",
+  "elapsedSeconds": 5.683043967000003,
+  "physicalIPad": false
+}

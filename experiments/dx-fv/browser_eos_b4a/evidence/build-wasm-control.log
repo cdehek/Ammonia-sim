@@ -1,0 +1,104 @@
+[1/69] cd /workspace/b4a-wasm-build && /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3 /workspace/coolprop-b4a/dev/generate_headers.py
+git version 2.52.0
+cpversion.h is up to date
+version written to hidden file: /workspace/coolprop-b4a/.version for use in builders that don't use git repo
+git is accessible at the command line
+git revision is ae81610e7d23efc57f9d051c8e70a4d66e87537f
+gitrevision.h is up to date
+fluids JSON need packaging because source list has changed
+incomp JSON need packaging
+all_fluids_CBOR.h is up to date
+all_incompressibles_JSON.h is up to date
+/workspace/coolprop-b4a/include/mixture_departure_functions_JSON.h is up to date based on file times
+/workspace/coolprop-b4a/include/mixture_binary_pairs_JSON.h is up to date based on file times
+/workspace/coolprop-b4a/include/predefined_mixtures_JSON.h is up to date based on file times
+/workspace/coolprop-b4a/include/all_cubics_JSON.h is up to date based on file times
+/workspace/coolprop-b4a/include/cubic_fluids_schema_JSON.h is up to date based on file times
+/workspace/coolprop-b4a/include/pcsaft_fluids_schema_JSON.h is up to date based on file times
+/workspace/coolprop-b4a/include/all_pcsaft_JSON.h is up to date based on file times
+/workspace/coolprop-b4a/include/mixture_binary_pairs_pcsaft_JSON.h is up to date based on file times
+[2/69] Building CXX object CMakeFiles/coolprop.dir/src/CPfilepaths.cpp.o
+[3/69] Building CXX object CMakeFiles/coolprop.dir/src/CPnumerics.cpp.o
+[4/69] Building CXX object CMakeFiles/coolprop.dir/src/AbstractState.cpp.o
+[5/69] Building CXX object CMakeFiles/coolprop.dir/src/CPstrings.cpp.o
+[6/69] Building CXX object CMakeFiles/coolprop.dir/src/Configuration.cpp.o
+[7/69] Building CXX object CMakeFiles/coolprop.dir/src/CoolPropPlot.cpp.o
+[8/69] Building CXX object CMakeFiles/coolprop.dir/src/CoolPropTools.cpp.o
+[9/69] Building CXX object CMakeFiles/coolprop.dir/src/CoolProp.cpp.o
+[10/69] Building CXX object CMakeFiles/coolprop.dir/src/FactoryOptions.cpp.o
+[11/69] Building CXX object CMakeFiles/coolprop.dir/src/DataStructures.cpp.o
+[12/69] Building CXX object CMakeFiles/coolprop.dir/src/Helmholtz.cpp.o
+[13/69] Building CXX object CMakeFiles/coolprop.dir/src/Ice.cpp.o
+[14/69] Building CXX object CMakeFiles/coolprop.dir/src/MatrixMath.cpp.o
+[15/69] Building CXX object CMakeFiles/coolprop.dir/src/ODEIntegrators.cpp.o
+[16/69] Building CXX object CMakeFiles/coolprop.dir/src/HumidAirProp.cpp.o
+[17/69] Building CXX object CMakeFiles/coolprop.dir/src/PolyMath.cpp.o
+[18/69] Building CXX object CMakeFiles/coolprop.dir/src/SchemaValidation.cpp.o
+[19/69] Building CXX object CMakeFiles/coolprop.dir/src/SpeedTest.cpp.o
+[20/69] Building CXX object CMakeFiles/coolprop.dir/src/Solvers.cpp.o
+[21/69] Building CXX object CMakeFiles/coolprop.dir/src/superancillary.cpp.o
+[22/69] Building CXX object CMakeFiles/coolprop.dir/src/Region/CubicSplineCurve.cpp.o
+[23/69] Building CXX object CMakeFiles/coolprop.dir/src/Region/PiecewiseChebyshevCurve.cpp.o
+[24/69] Building CXX object CMakeFiles/coolprop.dir/src/Region/Region.cpp.o
+[25/69] Building CXX object CMakeFiles/coolprop.dir/src/Region/RegionAtlas.cpp.o
+[26/69] Building CXX object CMakeFiles/coolprop.dir/src/SVD/SVDBuilder.cpp.o
+[27/69] Building CXX object CMakeFiles/coolprop.dir/src/Region/SuperancillaryBoundaryCurve.cpp.o
+[28/69] Building CXX object CMakeFiles/coolprop.dir/src/Region/SuperancillaryTemperatureBoundaryCurve.cpp.o
+[29/69] Building CXX object CMakeFiles/coolprop.dir/src/SBTL/SVDSurfaceFactory.cpp.o
+/workspace/coolprop-b4a/src/SBTL/SVDSurfaceFactory.cpp:95:48: warning: captured structured bindings are a C++20 extension [-Wc++20-extensions]
+   95 |         const auto ab = region.from_normalized(xi_grid[j], xn_grid[i]);
+      |                                                ^
+/workspace/coolprop-b4a/src/SBTL/SVDSurfaceFactory.cpp:78:26: note: 'xi_grid' declared here
+   78 |     const auto [xn_grid, xi_grid] = make_grid_axes(NT, NR);
+      |                          ^
+/workspace/coolprop-b4a/src/SBTL/SVDSurfaceFactory.cpp:95:60: warning: captured structured bindings are a C++20 extension [-Wc++20-extensions]
+   95 |         const auto ab = region.from_normalized(xi_grid[j], xn_grid[i]);
+      |                                                            ^
+/workspace/coolprop-b4a/src/SBTL/SVDSurfaceFactory.cpp:78:17: note: 'xn_grid' declared here
+   78 |     const auto [xn_grid, xi_grid] = make_grid_axes(NT, NR);
+      |                 ^
+2 warnings generated.
+[30/69] Building CXX object CMakeFiles/coolprop.dir/src/SBTL/SVDSurface.cpp.o
+[31/69] Building CXX object CMakeFiles/coolprop.dir/src/SBTL/SatBoundaryFactory.cpp.o
+[32/69] Building CXX object CMakeFiles/coolprop.dir/src/SBTL/SaturationSurrogate.cpp.o
+[33/69] Building CXX object CMakeFiles/coolprop.dir/src/SBTL/SVDSurfaceSerializer.cpp.o
+[34/69] Building CXX object CMakeFiles/coolprop.dir/src/SBTL/SurfacePresets.cpp.o
+[35/69] Building C object CMakeFiles/coolprop.dir/externals/miniz-3.1.1/miniz.c.o
+/workspace/coolprop-b4a/externals/miniz-3.1.1/miniz.c:3203:9: warning: Using fopen, ftello, fseeko, stat() etc. path for file I/O - this path may not support large files. [-W#pragma-messages]
+ 3203 | #pragma message("Using fopen, ftello, fseeko, stat() etc. path for file I/O - this path may not support large files.")
+      |         ^
+1 warning generated.
+[36/69] Building CXX object CMakeFiles/coolprop.dir/src/Backends/Cubics/CubicBackend.cpp.o
+[37/69] Building CXX object CMakeFiles/coolprop.dir/src/Backends/SVDSBTL/SVDSBTLBackend.cpp.o
+[38/69] Building CXX object CMakeFiles/coolprop.dir/src/Backends/Cubics/GeneralizedCubic.cpp.o
+[39/69] Building CXX object CMakeFiles/coolprop.dir/src/Backends/Cubics/CubicsLibrary.cpp.o
+[40/69] Building CXX object CMakeFiles/coolprop.dir/src/Backends/Cubics/UNIFAC.cpp.o
+[41/69] Building CXX object CMakeFiles/coolprop.dir/src/Backends/Cubics/UNIFACLibrary.cpp.o
+[42/69] Building CXX object CMakeFiles/coolprop.dir/src/Backends/IF97/IF97Backend.cpp.o
+[43/69] Building CXX object CMakeFiles/coolprop.dir/src/Backends/Cubics/VTPRBackend.cpp.o
+[44/69] Building CXX object CMakeFiles/coolprop.dir/src/Backends/Helmholtz/Fluids/Ancillaries.cpp.o
+[45/69] Building CXX object CMakeFiles/coolprop.dir/src/Backends/Helmholtz/FlashRoutines.cpp.o
+[46/69] Building CXX object CMakeFiles/coolprop.dir/src/Backends/Helmholtz/HelmholtzEOSBackend.cpp.o
+[47/69] Building CXX object CMakeFiles/coolprop.dir/src/Backends/Helmholtz/Fluids/FluidLibrary.cpp.o
+[48/69] Building CXX object CMakeFiles/coolprop.dir/src/Backends/Helmholtz/HelmholtzEOSMixtureBackend.cpp.o
+[49/69] Building CXX object CMakeFiles/coolprop.dir/src/Backends/Helmholtz/MeltingCaloric.cpp.o
+[50/69] Building CXX object CMakeFiles/coolprop.dir/src/Backends/Helmholtz/MixtureDerivatives.cpp.o
+[51/69] Building CXX object CMakeFiles/coolprop.dir/src/Backends/Helmholtz/PhaseEnvelopeRoutines.cpp.o
+[52/69] Building CXX object CMakeFiles/coolprop.dir/src/Backends/Helmholtz/MixtureParameters.cpp.o
+[53/69] Building CXX object CMakeFiles/coolprop.dir/src/Backends/Helmholtz/ReducingFunctions.cpp.o
+[54/69] Building CXX object CMakeFiles/coolprop.dir/src/Backends/Helmholtz/TransportRoutines.cpp.o
+[55/69] Building CXX object CMakeFiles/coolprop.dir/src/Backends/REFPROP/REFPROPBackend.cpp.o
+[56/69] Building CXX object CMakeFiles/coolprop.dir/src/Backends/Helmholtz/VLERoutines.cpp.o
+[57/69] Building CXX object CMakeFiles/coolprop.dir/src/Backends/Incompressible/IncompressibleBackend.cpp.o
+[58/69] Building CXX object CMakeFiles/coolprop.dir/src/Backends/REFPROP/REFPROPMixtureBackend.cpp.o
+[59/69] Building CXX object CMakeFiles/coolprop.dir/src/Backends/Incompressible/IncompressibleFluid.cpp.o
+[60/69] Building CXX object CMakeFiles/coolprop.dir/src/Backends/Incompressible/IncompressibleLibrary.cpp.o
+[61/69] Building CXX object CMakeFiles/coolprop.dir/src/Backends/Tabular/BicubicBackend.cpp.o
+[62/69] Building CXX object CMakeFiles/coolprop.dir/src/Backends/Tabular/TTSEBackend.cpp.o
+[63/69] Building CXX object CMakeFiles/coolprop.dir/src/Backends/Tabular/TabularBackends.cpp.o
+[64/69] Building CXX object CMakeFiles/coolprop.dir/src/Backends/PCSAFT/PCSAFTFluid.cpp.o
+[65/69] Building CXX object CMakeFiles/coolprop.dir/src/Backends/PCSAFT/PCSAFTBackend.cpp.o
+[66/69] Building CXX object CMakeFiles/coolprop.dir/src/CoolPropLib.cpp.o
+[67/69] Building CXX object CMakeFiles/coolprop.dir/src/Backends/PCSAFT/PCSAFTLibrary.cpp.o
+[68/69] Building CXX object CMakeFiles/coolprop.dir/src/emscripten_interface.cxx.o
+[69/69] Linking CXX executable coolprop.js

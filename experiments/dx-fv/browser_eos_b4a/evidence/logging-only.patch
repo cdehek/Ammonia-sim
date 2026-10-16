@@ -1,0 +1,70 @@
+--- a/src/Backends/Helmholtz/HelmholtzEOSMixtureBackend.cpp
++++ b/src/Backends/Helmholtz/HelmholtzEOSMixtureBackend.cpp
+@@ -1,3 +1,14 @@
++
++// B4A diagnostics only. No additional thermodynamic evaluation.
++#include <cstdio>
++#include <cstdlib>
++#include <cstdarg>
++static void b4atrace(const char* event, const char* fmt, ...) {
++    if (!std::getenv("B4A_TRACE")) return;
++    std::fprintf(stderr, "{\"event\":\"%s\",", event);
++    va_list args; va_start(args, fmt); std::vfprintf(stderr, fmt, args); va_end(args);
++    std::fprintf(stderr, "}\n");
++}
+ /*
+  * AbstractBackend.cpp
+  *
+@@ -1836,6 +1847,8 @@
+                         throw ValueError(format("bad input for other"));
+                 }
+                 // Start off by setting variables based on assumption that the state is two-phase
++                b4atrace("superanc_quality", "\"other\":%d,\"p\":%.17g,\"value\":%.17g,\"Q\":%.17g,\"liquid_dispatch\":%d", other, double(_p), double(value), double(Q), Q < -1e-9 || (Q < 0 && (other == iHmolar || other == iSmolar || other == iUmolar)));
++
+                 // Resolve negative caloric quality by the existing bounded liquid flash.
+                 // Saturation uncertainty does not permit extrapolating mixture volume.
+                 if (Q < -1e-9 || (Q < 0 && (other == iHmolar || other == iSmolar || other == iUmolar))) {
+@@ -2070,6 +2083,8 @@
+                     throw ValueError(format("bad input for other"));
+             }
+             // TODO: Check the speed penalty of these calls
++            b4atrace("vle_quality", "\"other\":%d,\"p\":%.17g,\"value\":%.17g,\"Q\":%.17g,\"liquid_dispatch\":%d", other, double(_p), double(value), double(Q), Q < -1e-9 || (Q < 0 && (other == iHmolar || other == iSmolar || other == iUmolar)));
++
+             // Update the states
+             if (this->SatL) this->SatL->update(DmolarT_INPUTS, HEOS.SatL->rhomolar(), HEOS.SatL->T());
+             if (this->SatV) this->SatV->update(DmolarT_INPUTS, HEOS.SatV->rhomolar(), HEOS.SatV->T());
+--- a/src/Backends/Helmholtz/FlashRoutines.cpp
++++ b/src/Backends/Helmholtz/FlashRoutines.cpp
+@@ -1,3 +1,14 @@
++
++// B4A diagnostics only. No additional thermodynamic evaluation.
++#include <cstdio>
++#include <cstdlib>
++#include <cstdarg>
++static void b4atrace(const char* event, const char* fmt, ...) {
++    if (!std::getenv("B4A_TRACE")) return;
++    std::fprintf(stderr, "{\"event\":\"%s\",", event);
++    va_list args; va_start(args, fmt); std::vfprintf(stderr, fmt, args); va_end(args);
++    std::fprintf(stderr, "}\n");
++}
+ #include "VLERoutines.h"
+ #include "FlashRoutines.h"
+ 
+@@ -2980,6 +2991,8 @@
+             }
+         }
+         double call(double T) override {
++            b4atrace("homogeneous_eval", "\"other\":%d,\"T\":%.17g", int(other), T);
++
+             // Direct-path WARM branch only: cold probes go through master's
+             // update(PT_INPUTS) so the SRK seed + Householder4 + basin-recovery
+             // (iphase_liquid/gas retries inside solver_rho_Tp) are byte-identical
+@@ -3348,6 +3361,8 @@
+ 
+         // Find the phase, while updating all internal variables possible
+         HEOS.p_phase_determination_pure_or_pseudopure(other, value, saturation_called);
++        b4atrace("HSU_dispatch", "\"other\":%d,\"p\":%.17g,\"value\":%.17g,\"phase\":%d,\"homogeneous\":%d", int(other), double(HEOS._p), double(value), int(HEOS._phase), HEOS.isHomogeneousPhase());
++
+ 
+         if (HEOS.isHomogeneousPhase()) {
+             // Now we use the single-phase solver to find T,rho given P,Y using a

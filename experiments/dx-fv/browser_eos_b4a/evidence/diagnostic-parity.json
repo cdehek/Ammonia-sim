@@ -1,0 +1,143 @@
+{
+  "rowsEqual": {
+    "native-diagnostic44-off.json": true,
+    "native-diagnostic44-on.json": true,
+    "native-diagnostic44-full-vle.json": true
+  },
+  "traces": {
+    "trace-superanc.jsonl": {
+      "primaryQuality": {
+        "event": "superanc_quality",
+        "other": 26,
+        "p": 30298.937123458254,
+        "value": 1684.3961551124728,
+        "Q": -6.990365783288272e-10,
+        "liquid_dispatch": 1
+      },
+      "primaryDispatch": {
+        "event": "HSU_dispatch",
+        "other": 26,
+        "p": 30298.937123458254,
+        "value": 1684.3961551124728,
+        "phase": 0,
+        "homogeneous": 1
+      },
+      "primaryHomogeneousEvaluations": 6,
+      "primaryHomogeneousTrace": [
+        {
+          "event": "HSU_dispatch",
+          "other": 26,
+          "p": 30298.937123458254,
+          "value": 1684.3961551124728,
+          "phase": 0,
+          "homogeneous": 1
+        },
+        {
+          "event": "homogeneous_eval",
+          "other": 26,
+          "T": 195.494
+        },
+        {
+          "event": "homogeneous_eval",
+          "other": 26,
+          "T": 218.26293725550534
+        },
+        {
+          "event": "homogeneous_eval",
+          "other": 26,
+          "T": 218.26293702518188
+        },
+        {
+          "event": "homogeneous_eval",
+          "other": 26,
+          "T": 218.2629370273588
+        },
+        {
+          "event": "homogeneous_eval",
+          "other": 26,
+          "T": 218.26293702735902
+        },
+        {
+          "event": "homogeneous_eval",
+          "other": 26,
+          "T": 218.2629370273589
+        },
+        {
+          "event": "superanc_quality",
+          "other": 26,
+          "p": 30298.947123458252,
+          "value": 1684.3961551124728,
+          "Q": -1.692967775696156e-08,
+          "liquid_dispatch": 1
+        }
+      ]
+    },
+    "trace-full-vle.jsonl": {
+      "primaryQuality": {
+        "event": "vle_quality",
+        "other": 26,
+        "p": 30298.937123458254,
+        "value": 1684.3961551124728,
+        "Q": -6.991925014940802e-10,
+        "liquid_dispatch": 1
+      },
+      "primaryDispatch": {
+        "event": "HSU_dispatch",
+        "other": 26,
+        "p": 30298.937123458254,
+        "value": 1684.3961551124728,
+        "phase": 0,
+        "homogeneous": 1
+      },
+      "primaryHomogeneousEvaluations": 6,
+      "primaryHomogeneousTrace": [
+        {
+          "event": "HSU_dispatch",
+          "other": 26,
+          "p": 30298.937123458254,
+          "value": 1684.3961551124728,
+          "phase": 0,
+          "homogeneous": 1
+        },
+        {
+          "event": "homogeneous_eval",
+          "other": 26,
+          "T": 195.494
+        },
+        {
+          "event": "homogeneous_eval",
+          "other": 26,
+          "T": 218.26293725555706
+        },
+        {
+          "event": "homogeneous_eval",
+          "other": 26,
+          "T": 218.2629370251814
+        },
+        {
+          "event": "homogeneous_eval",
+          "other": 26,
+          "T": 218.26293702735887
+        },
+        {
+          "event": "homogeneous_eval",
+          "other": 26,
+          "T": 218.2629370273588
+        },
+        {
+          "event": "homogeneous_eval",
+          "other": 26,
+          "T": 218.26293702735882
+        },
+        {
+          "event": "vle_quality",
+          "other": 26,
+          "p": 30298.947123458252,
+          "value": 1684.3961551124728,
+          "Q": -1.692984858461903e-08,
+          "liquid_dispatch": 1
+        }
+      ]
+    }
+  }
+}

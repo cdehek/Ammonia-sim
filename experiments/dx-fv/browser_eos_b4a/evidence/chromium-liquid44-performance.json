@@ -1,0 +1,109 @@
+{
+  "init": {
+    "totalMS": 2055,
+    "importMS": 6,
+    "fetchMS": 36.299999999813735,
+    "compileInstantiateMS": 22.899999999906868,
+    "runtimeMS": 59.5,
+    "firstFactoryMS": 1953.2000000001863,
+    "initialLinearMemoryBytes": 22544384,
+    "readyLinearMemoryBytes": 56360960,
+    "wasmBytes": 9196595,
+    "mime": "application/wasm",
+    "streaming": true,
+    "logs": []
+  },
+  "rows": [
+    {
+      "round": 0,
+      "group": "primary",
+      "calls": 981,
+      "elapsedMS": 100,
+      "errors": [],
+      "checksum": 694055.8583827427,
+      "memoryBytes": 56360960
+    },
+    {
+      "round": 0,
+      "group": "boundary",
+      "calls": 2565,
+      "elapsedMS": 101.9000000001397,
+      "errors": [],
+      "checksum": 795919.1789228659,
+      "memoryBytes": 56360960
+    },
+    {
+      "round": 0,
+      "group": "B1",
+      "calls": 1461,
+      "elapsedMS": 100,
+      "errors": [],
+      "checksum": 1035368.4208450416,
+      "memoryBytes": 56360960
+    },
+    {
+      "round": 1,
+      "group": "primary",
+      "calls": 1468,
+      "elapsedMS": 100,
+      "errors": [],
+      "checksum": 1038607.5434310775,
+      "memoryBytes": 56360960
+    },
+    {
+      "round": 1,
+      "group": "boundary",
+      "calls": 2964,
+      "elapsedMS": 101,
+      "errors": [],
+      "checksum": 919728.8289775351,
+      "memoryBytes": 56360960
+    },
+    {
+      "round": 1,
+      "group": "B1",
+      "calls": 1395,
+      "elapsedMS": 100,
+      "errors": [],
+      "checksum": 988596.1307863352,
+      "memoryBytes": 56360960
+    },
+    {
+      "round": 2,
+      "group": "primary",
+      "calls": 1497,
+      "elapsedMS": 100,
+      "errors": [],
+      "checksum": 1059124.9949021281,
+      "memoryBytes": 56360960
+    },
+    {
+      "round": 2,
+      "group": "boundary",
+      "calls": 2850,
+      "elapsedMS": 101.79999999981374,
+      "errors": [],
+      "checksum": 884354.6432476296,
+      "memoryBytes": 56360960
+    },
+    {
+      "round": 2,
+      "group": "B1",
+      "calls": 1491,
+      "elapsedMS": 100,
+      "errors": [],
+      "checksum": 1056628.5526899083,
+      "memoryBytes": 56360960
+    }
+  ],
+  "memoryBytes": 56360960,
+  "jsHeap": {
+    "usedJSHeapSize": 44700000,
+    "totalJSHeapSize": 76600000
+  },
+  "browser": "chromium",
+  "browserVersion": "151.0.7922.34",
+  "build": "liquid44",
+  "elapsedSeconds": 5.678088424999942,
+  "physicalIPad": false
+}

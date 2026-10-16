@@ -1,0 +1,35 @@
+[
+  {
+    "action": "Initial git clone without network capability",
+    "outcome": "Proxy connection unavailable in network sandbox; succeeded with supported network capability"
+  },
+  {
+    "action": "Initial native configure",
+    "outcome": "C API EXTERNC export flag omitted. Build interrupted at Ninja with SIGINT before any scientific measurements; corrected configuration and full rebuild used for deliverables",
+    "evidence": [
+      "build-native-initial-interrupted.log",
+      "configure-native-initial.log",
+      "configure-native.log"
+    ]
+  },
+  {
+    "action": "Default WebKit launcher",
+    "outcome": "Host missing optional GTK4 and required libraries. WPE WebKit with isolated sysroot verified. No host package installation."
+  },
+  {
+    "action": "First dependency-verification command",
+    "outcome": "KeyError for archive dependencies lacking commit in B1 schema; corrected verifier used explicit B3 schema including null commit. All nine content digests matched; no source substitution."
+  },
+  {
+    "action": "Initial patch generator",
+    "outcome": "Python literal-brace formatting exception occurred before source write. The following stage capture was consequently a duplicate source44 control; retained as source-stage-liquid44-generator-failure.json. Generator corrected and actual repair source stage captured separately. No repaired measurement used that stage."
+  },
+  {
+    "action": "Post-analysis endpoint continuity selector",
+    "outcome": "Integer JSON pressure formatted differently from historical ID text; selector raised StopIteration after the complete primary budget ledger had been written. Selector corrected to match exact numerical pressure and endpoint tags; existing primary ledger verified identical, endpoint audit rerun. No measurement or input changed."
+  },
+  {
+    "action": "Final metadata manifest serialization",
+    "outcome": "A relative Git path was compared with an absolute report directory, raising ValueError after source patch reconstructions had passed. Corrected to resolve paths before relativizing; no numerical output changed."
+  }
+]
