@@ -1,68 +1,139 @@
-[
-  {
-    "file": "gate-a-chromium-0.json",
-    "engine": "chromium",
-    "version": "154.0.8037.57",
-    "replica": 0,
-    "secondaryAssertions": 6,
-    "primaryRefusals": [
-      "Saturation pressure [30298.9 Pa] corresponding to T [218.263 K] is within 1e-4 % of given p [30298.9 Pa]",
-      "Saturation pressure [30298.9 Pa] corresponding to T [218.263 K] is within 1e-4 % of given p [30298.9 Pa]",
-      "Saturation pressure [30298.9 Pa] corresponding to T [218.263 K] is within 1e-4 % of given p [30298.9 Pa]",
-      "Saturation pressure [350000 Pa] corresponding to T [267.811 K] is within 1e-4 % of given p [350000 Pa]",
-      "Saturation pressure [350000 Pa] corresponding to T [267.811 K] is within 1e-4 % of given p [350000 Pa]",
-      "Saturation pressure [350000 Pa] corresponding to T [267.811 K] is within 1e-4 % of given p [350000 Pa]"
-    ],
-    "originalControlDiagnosticExact": true,
-    "stateDeleted": true,
-    "temporaryStatesDeleted": true,
-    "stackBefore": 5706944,
-    "stackAfter": 5701088,
-    "stackDriftAttribution": "Two direct freshPT calls in unchanged lifecycle bypass loader stack restore/cleanup; each consumes 2928 bytes. Evaluate paths individually restore to entry.",
-    "subsequentPHReturned": true
-  },
-  {
-    "file": "gate-a-chromium-1.json",
-    "engine": "chromium",
-    "version": "154.0.8037.57",
-    "replica": 1,
-    "secondaryAssertions": 6,
-    "primaryRefusals": [
-      "Saturation pressure [30298.9 Pa] corresponding to T [218.263 K] is within 1e-4 % of given p [30298.9 Pa]",
-      "Saturation pressure [30298.9 Pa] corresponding to T [218.263 K] is within 1e-4 % of given p [30298.9 Pa]",
-      "Saturation pressure [30298.9 Pa] corresponding to T [218.263 K] is within 1e-4 % of given p [30298.9 Pa]",
-      "Saturation pressure [350000 Pa] corresponding to T [267.811 K] is within 1e-4 % of given p [350000 Pa]",
-      "Saturation pressure [350000 Pa] corresponding to T [267.811 K] is within 1e-4 % of given p [350000 Pa]",
-      "Saturation pressure [350000 Pa] corresponding to T [267.811 K] is within 1e-4 % of given p [350000 Pa]"
-    ],
-    "originalControlDiagnosticExact": true,
-    "stateDeleted": true,
-    "temporaryStatesDeleted": true,
-    "stackBefore": 5706944,
-    "stackAfter": 5701088,
-    "stackDriftAttribution": "Two direct freshPT calls in unchanged lifecycle bypass loader stack restore/cleanup; each consumes 2928 bytes. Evaluate paths individually restore to entry.",
-    "subsequentPHReturned": true
-  },
-  {
-    "file": "gate-a-webkit-0.json",
-    "engine": "webkit",
-    "version": "26.5",
-    "replica": 0,
-    "secondaryAssertions": 6,
-    "primaryRefusals": [
-      "Saturation pressure [30298.9 Pa] corresponding to T [218.263 K] is within 1e-4 % of given p [30298.9 Pa]",
-      "Saturation pressure [30298.9 Pa] corresponding to T [218.263 K] is within 1e-4 % of given p [30298.9 Pa]",
-      "Saturation pressure [30298.9 Pa] corresponding to T [218.263 K] is within 1e-4 % of given p [30298.9 Pa]",
-      "Saturation pressure [350000 Pa] corresponding to T [267.811 K] is within 1e-4 % of given p [350000 Pa]",
-      "Saturation pressure [350000 Pa] corresponding to T [267.811 K] is within 1e-4 % of given p [350000 Pa]",
-      "Saturation pressure [350000 Pa] corresponding to T [267.811 K] is within 1e-4 % of given p [350000 Pa]"
-    ],
-    "originalControlDiagnosticExact": true,
-    "stateDeleted": true,
-    "temporaryStatesDeleted": true,
-    "stackBefore": 5706944,
-    "stackAfter": 5701088,
-    "stackDriftAttribution": "Two direct freshPT calls in unchanged lifecycle bypass loader stack restore/cleanup; each consumes 2928 bytes. Evaluate paths individually restore to entry.",
-    "subsequentPHReturned": true
-  }
-]
+{
+  "decision": "ROOT CAUSE CONFIRMED",
+  "instances": [
+    {
+      "file": "gate-a-chromium-0.json",
+      "engine": "chromium",
+      "version": "154.0.8037.57",
+      "replica": 0,
+      "secondaryAssertions": 6,
+      "primaryRefusals": [
+        "Saturation pressure [30298.9 Pa] corresponding to T [218.263 K] is within 1e-4 % of given p [30298.9 Pa]",
+        "Saturation pressure [30298.9 Pa] corresponding to T [218.263 K] is within 1e-4 % of given p [30298.9 Pa]",
+        "Saturation pressure [30298.9 Pa] corresponding to T [218.263 K] is within 1e-4 % of given p [30298.9 Pa]",
+        "Saturation pressure [350000 Pa] corresponding to T [267.811 K] is within 1e-4 % of given p [350000 Pa]",
+        "Saturation pressure [350000 Pa] corresponding to T [267.811 K] is within 1e-4 % of given p [350000 Pa]",
+        "Saturation pressure [350000 Pa] corresponding to T [267.811 K] is within 1e-4 % of given p [350000 Pa]"
+      ],
+      "controlDiagnosticRowsExact": true,
+      "liveReferenceCounts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "before": {
+        "stack": 5706944,
+        "memory": 56360960
+      },
+      "after": {
+        "stack": 5701088,
+        "memory": 56360960
+      },
+      "allCreatedStatesDeleted": true
+    },
+    {
+      "file": "gate-a-chromium-1.json",
+      "engine": "chromium",
+      "version": "154.0.8037.57",
+      "replica": 1,
+      "secondaryAssertions": 6,
+      "primaryRefusals": [
+        "Saturation pressure [30298.9 Pa] corresponding to T [218.263 K] is within 1e-4 % of given p [30298.9 Pa]",
+        "Saturation pressure [30298.9 Pa] corresponding to T [218.263 K] is within 1e-4 % of given p [30298.9 Pa]",
+        "Saturation pressure [30298.9 Pa] corresponding to T [218.263 K] is within 1e-4 % of given p [30298.9 Pa]",
+        "Saturation pressure [350000 Pa] corresponding to T [267.811 K] is within 1e-4 % of given p [350000 Pa]",
+        "Saturation pressure [350000 Pa] corresponding to T [267.811 K] is within 1e-4 % of given p [350000 Pa]",
+        "Saturation pressure [350000 Pa] corresponding to T [267.811 K] is within 1e-4 % of given p [350000 Pa]"
+      ],
+      "controlDiagnosticRowsExact": true,
+      "liveReferenceCounts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "before": {
+        "stack": 5706944,
+        "memory": 56360960
+      },
+      "after": {
+        "stack": 5701088,
+        "memory": 56360960
+      },
+      "allCreatedStatesDeleted": true
+    },
+    {
+      "file": "gate-a-webkit-0.json",
+      "engine": "webkit",
+      "version": "26.5",
+      "replica": 0,
+      "secondaryAssertions": 6,
+      "primaryRefusals": [
+        "Saturation pressure [30298.9 Pa] corresponding to T [218.263 K] is within 1e-4 % of given p [30298.9 Pa]",
+        "Saturation pressure [30298.9 Pa] corresponding to T [218.263 K] is within 1e-4 % of given p [30298.9 Pa]",
+        "Saturation pressure [30298.9 Pa] corresponding to T [218.263 K] is within 1e-4 % of given p [30298.9 Pa]",
+        "Saturation pressure [350000 Pa] corresponding to T [267.811 K] is within 1e-4 % of given p [350000 Pa]",
+        "Saturation pressure [350000 Pa] corresponding to T [267.811 K] is within 1e-4 % of given p [350000 Pa]",
+        "Saturation pressure [350000 Pa] corresponding to T [267.811 K] is within 1e-4 % of given p [350000 Pa]"
+      ],
+      "controlDiagnosticRowsExact": true,
+      "liveReferenceCounts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "before": {
+        "stack": 5706944,
+        "memory": 56360960
+      },
+      "after": {
+        "stack": 5701088,
+        "memory": 56360960
+      },
+      "allCreatedStatesDeleted": true
+    },
+    {
+      "file": "gate-a-webkit-1.json",
+      "engine": "webkit",
+      "version": "26.5",
+      "replica": 1,
+      "secondaryAssertions": 6,
+      "primaryRefusals": [
+        "Saturation pressure [30298.9 Pa] corresponding to T [218.263 K] is within 1e-4 % of given p [30298.9 Pa]",
+        "Saturation pressure [30298.9 Pa] corresponding to T [218.263 K] is within 1e-4 % of given p [30298.9 Pa]",
+        "Saturation pressure [30298.9 Pa] corresponding to T [218.263 K] is within 1e-4 % of given p [30298.9 Pa]",
+        "Saturation pressure [350000 Pa] corresponding to T [267.811 K] is within 1e-4 % of given p [350000 Pa]",
+        "Saturation pressure [350000 Pa] corresponding to T [267.811 K] is within 1e-4 % of given p [350000 Pa]",
+        "Saturation pressure [350000 Pa] corresponding to T [267.811 K] is within 1e-4 % of given p [350000 Pa]"
+      ],
+      "controlDiagnosticRowsExact": true,
+      "liveReferenceCounts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "before": {
+        "stack": 5706944,
+        "memory": 56360960
+      },
+      "after": {
+        "stack": 5701088,
+        "memory": 56360960
+      },
+      "allCreatedStatesDeleted": true
+    }
+  ],
+  "gateBFunctionalFilesPresent": false,
+  "summaryIncident": "Initial file glob also matched its own summary and asserted on count before overwriting; all four actual runs were already complete. Explicit four-file audit below succeeds."
+}
