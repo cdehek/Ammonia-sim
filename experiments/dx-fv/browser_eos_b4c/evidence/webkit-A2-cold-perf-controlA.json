@@ -1,0 +1,2378 @@
+{
+  "case": "cold",
+  "initial": {
+    "model": "isolated-five-section-coupled-dx-stage2a",
+    "seconds": 0,
+    "sectionCount": 5,
+    "sections": [
+      {
+        "p": 3.499999999999987,
+        "h": 499.9999999999991,
+        "T": -5.338564803606005,
+        "s": 2.0610968857546794,
+        "rho": 19.84926256023845,
+        "u": 482.36710311338675,
+        "x": 0.13973198110419463,
+        "phase": "Liquid + vapor",
+        "massKg": 0.011909557536143072,
+        "volumeM3": 0.0006000000000000001,
+        "internalEnergyKJ": 5.744778768071536,
+        "densityResidual": 0,
+        "energyResidual": 1.1368683772161603e-13,
+        "liquidVolumeFraction": 0.026439710633948368,
+        "superheatK": 0,
+        "wet": true
+      },
+      {
+        "p": 3.499999999999987,
+        "h": 499.9999999999991,
+        "T": -5.338564803606005,
+        "s": 2.0610968857546794,
+        "rho": 19.84926256023845,
+        "u": 482.36710311338675,
+        "x": 0.13973198110419463,
+        "phase": "Liquid + vapor",
+        "massKg": 0.011909557536143072,
+        "volumeM3": 0.0006000000000000001,
+        "internalEnergyKJ": 5.744778768071536,
+        "densityResidual": 0,
+        "energyResidual": 1.1368683772161603e-13,
+        "liquidVolumeFraction": 0.026439710633948368,
+        "superheatK": 0,
+        "wet": true
+      },
+      {
+        "p": 3.499999999999987,
+        "h": 499.9999999999991,
+        "T": -5.338564803606005,
+        "s": 2.0610968857546794,
+        "rho": 19.84926256023845,
+        "u": 482.36710311338675,
+        "x": 0.13973198110419463,
+        "phase": "Liquid + vapor",
+        "massKg": 0.011909557536143072,
+        "volumeM3": 0.0006000000000000001,
+        "internalEnergyKJ": 5.744778768071536,
+        "densityResidual": 0,
+        "energyResidual": 1.1368683772161603e-13,
+        "liquidVolumeFraction": 0.026439710633948368,
+        "superheatK": 0,
+        "wet": true
+      },
+      {
+        "p": 3.499999999999987,
+        "h": 499.9999999999991,
+        "T": -5.338564803606005,
+        "s": 2.0610968857546794,
+        "rho": 19.84926256023845,
+        "u": 482.36710311338675,
+        "x": 0.13973198110419463,
+        "phase": "Liquid + vapor",
+        "massKg": 0.011909557536143072,
+        "volumeM3": 0.0006000000000000001,
+        "internalEnergyKJ": 5.744778768071536,
+        "densityResidual": 0,
+        "energyResidual": 1.1368683772161603e-13,
+        "liquidVolumeFraction": 0.026439710633948368,
+        "superheatK": 0,
+        "wet": true
+      },
+      {
+        "p": 3.499999999999987,
+        "h": 499.9999999999991,
+        "T": -5.338564803606005,
+        "s": 2.0610968857546794,
+        "rho": 19.84926256023845,
+        "u": 482.36710311338675,
+        "x": 0.13973198110419463,
+        "phase": "Liquid + vapor",
+        "massKg": 0.011909557536143072,
+        "volumeM3": 0.0006000000000000001,
+        "internalEnergyKJ": 5.744778768071536,
+        "densityResidual": 0,
+        "energyResidual": 1.1368683772161603e-13,
+        "liquidVolumeFraction": 0.026439710633948368,
+        "superheatK": 0,
+        "wet": true
+      }
+    ],
+    "nodes": [
+      {
+        "id": "tube-0",
+        "capacityKJK": 0.9740280000000001,
+        "temperatureK": 273.15,
+        "energyKJ": 0,
+        "energyChangeKJ": 0,
+        "residualKJ": 0
+      },
+      {
+        "id": "fin-0",
+        "capacityKJK": 0.8492017487761112,
+        "temperatureK": 273.15,
+        "energyKJ": 0,
+        "energyChangeKJ": 0,
+        "residualKJ": 0
+      },
+      {
+        "id": "tube-1",
+        "capacityKJK": 0.9740280000000001,
+        "temperatureK": 273.15,
+        "energyKJ": 0,
+        "energyChangeKJ": 0,
+        "residualKJ": 0
+      },
+      {
+        "id": "fin-1",
+        "capacityKJK": 0.8492017487761112,
+        "temperatureK": 273.15,
+        "energyKJ": 0,
+        "energyChangeKJ": 0,
+        "residualKJ": 0
+      },
+      {
+        "id": "tube-2",
+        "capacityKJK": 0.9740279999999998,
+        "temperatureK": 273.15,
+        "energyKJ": 0,
+        "energyChangeKJ": 0,
+        "residualKJ": 0
+      },
+      {
+        "id": "fin-2",
+        "capacityKJK": 0.849201748776111,
+        "temperatureK": 273.15,
+        "energyKJ": 0,
+        "energyChangeKJ": 0,
+        "residualKJ": 0
+      },
+      {
+        "id": "tube-3",
+        "capacityKJK": 0.9740280000000003,
+        "temperatureK": 273.15,
+        "energyKJ": 0,
+        "energyChangeKJ": 0,
+        "residualKJ": 0
+      },
+      {
+        "id": "fin-3",
+        "capacityKJK": 0.8492017487761115,
+        "temperatureK": 273.15,
+        "energyKJ": 0,
+        "energyChangeKJ": 0,
+        "residualKJ": 0
+      },
+      {
+        "id": "tube-4",
+        "capacityKJK": 0.9740279999999998,
+        "temperatureK": 273.15,
+        "energyKJ": 0,
+        "energyChangeKJ": 0,
+        "residualKJ": 0
+      },
+      {
+        "id": "fin-4",
+        "capacityKJK": 0.849201748776111,
+        "temperatureK": 273.15,
+        "energyKJ": 0,
+        "energyChangeKJ": 0,
+        "residualKJ": 0
+      },
+      {
+        "id": "air",
+        "capacityKJK": 4.308,
+        "temperatureK": 278.15,
+        "energyKJ": 21.54,
+        "energyChangeKJ": 0,
+        "residualKJ": 0
+      }
+    ],
+    "terminal": {
+      "p": 3.499999999999987,
+      "h": 499.9999999999991,
+      "temperatureK": 267.811435196394,
+      "phase": "Liquid + vapor",
+      "quality": 0.13973198110419463,
+      "wet": true,
+      "superheatK": 0
+    },
+    "outlet": {
+      "supported": true,
+      "p": 3.5,
+      "h": 499.9999999999991,
+      "temperatureK": 267.8114351963941,
+      "phase": "Liquid + vapor",
+      "quality": 0.1397319811041945,
+      "wet": true,
+      "superheatK": 0
+    },
+    "totals": {
+      "massKg": 0.059547787680715364,
+      "internalEnergyKJ": 28.723893840357682
+    },
+    "sectionResiduals": [
+      {
+        "massKg": 0,
+        "energyKJ": 0
+      },
+      {
+        "massKg": 0,
+        "energyKJ": 0
+      },
+      {
+        "massKg": 0,
+        "energyKJ": 0
+      },
+      {
+        "massKg": 0,
+        "energyKJ": 0
+      },
+      {
+        "massKg": 0,
+        "energyKJ": 0
+      }
+    ],
+    "massResidualKg": 0,
+    "refrigerantEnergyResidualKJ": 0,
+    "thermalEnergyResidualKJ": 0,
+    "combinedEnergyResidualKJ": 0,
+    "ledger": {
+      "faces": [
+        {
+          "massKg": 0,
+          "energyKJ": 0
+        },
+        {
+          "massKg": 0,
+          "energyKJ": 0
+        },
+        {
+          "massKg": 0,
+          "energyKJ": 0
+        },
+        {
+          "massKg": 0,
+          "energyKJ": 0
+        },
+        {
+          "massKg": 0,
+          "energyKJ": 0
+        },
+        {
+          "massKg": 0,
+          "energyKJ": 0
+        }
+      ],
+      "tubeRefrigerantKJ": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "thermalLinksKJ": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "thermalNodesKJ": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "airLoadKJ": 0,
+      "boundaryMassKg": 0,
+      "boundaryEnthalpyKJ": 0
+    },
+    "fluxes": {
+      "faces": [
+        {
+          "massKgS": 0.015487205547684919,
+          "energyKW": 7.7436027738424595
+        },
+        {
+          "massKgS": 0,
+          "energyKW": 0
+        },
+        {
+          "massKgS": 0,
+          "energyKW": 0
+        },
+        {
+          "massKgS": 0,
+          "energyKW": 0
+        },
+        {
+          "massKgS": 0,
+          "energyKW": 0
+        },
+        {
+          "massKgS": 0,
+          "energyKW": 0
+        }
+      ],
+      "links": [
+        0.03455989392759445,
+        0.8784647041673923,
+        0,
+        0.03455989392759445,
+        0.8784647041673923,
+        0,
+        0.03455989392759444,
+        0.8784647041673921,
+        0,
+        0.034559893927594454,
+        0.8784647041673926,
+        0,
+        0.03455989392759444,
+        0.8784647041673921,
+        0
+      ],
+      "tubeRefrigerant": [
+        0.6406277764327069,
+        0.6406277764327069,
+        0.6406277764327069,
+        0.6406277764327069,
+        0.6406277764327069
+      ],
+      "thermalRates": [
+        -0.6060678825051125,
+        0.8784647041673923,
+        -0.6060678825051125,
+        0.8784647041673923,
+        -0.6060678825051125,
+        0.8784647041673921,
+        -0.6060678825051125,
+        0.8784647041673926,
+        -0.6060678825051125,
+        0.8784647041673921,
+        -3.5651229904749333
+      ],
+      "airLoad": 1,
+      "fluidRates": [
+        {
+          "massKgS": 0.015487205547684919,
+          "energyKW": 8.384230550275166
+        },
+        {
+          "massKgS": 0,
+          "energyKW": 0.6406277764327069
+        },
+        {
+          "massKgS": 0,
+          "energyKW": 0.6406277764327069
+        },
+        {
+          "massKgS": 0,
+          "energyKW": 0.6406277764327069
+        },
+        {
+          "massKgS": 0,
+          "energyKW": 0.6406277764327069
+        }
+      ]
+    },
+    "settings": {
+      "method": "tr-bdf2",
+      "adaptive": true,
+      "maxStep": 0.5,
+      "minStep": 1e-09,
+      "relativeTolerance": 1e-06,
+      "massAbsoluteKg": 1.0000000000000001e-11,
+      "energyAbsoluteKJ": 1e-08,
+      "pressureAbsoluteBar": 1e-06,
+      "enthalpyAbsoluteKJkg": 9.999999999999999e-05,
+      "eventStepSeconds": 0.002,
+      "temperatureAbsoluteK": 9.999999999999999e-05,
+      "temperatureScaleK": 50,
+      "nonlinearTolerance": 1e-11,
+      "thermalResidualK": 1e-12,
+      "maxIterations": 30,
+      "maxAttempts": 100000,
+      "trace": true,
+      "thermalJacobian": "finite-difference",
+      "timestepGrowth": "failure-aware"
+    },
+    "conductancesKWK": [
+      0.12,
+      0.12,
+      0.12,
+      0.12,
+      0.12
+    ],
+    "conductanceDescription": "Effective uncalibrated constant tube-to-bulk-refrigerant conductance; radial/film resistance unresolved; no additional wall resistance.",
+    "energyReferenceK": 273.15,
+    "acceptedSteps": 0,
+    "rejectedSteps": 0,
+    "accuracyRejectedSteps": 0,
+    "eventRejectedSteps": 0,
+    "domainRejectedSteps": 0,
+    "attemptedResidualEvaluations": 0,
+    "attemptedIterations": 0,
+    "attemptedLinearSolves": 0,
+    "minAcceptedStepSeconds": null,
+    "maxAcceptedStepSeconds": 0,
+    "lastTimeError": null,
+    "lastResidual": null,
+    "events": [],
+    "boundaryEvents": [],
+    "trace": [],
+    "rejectionTrace": [],
+    "stop": null,
+    "growthHistory": {
+      "ceilingSeconds": null,
+      "pendingFailure": false,
+      "successes": 0,
+      "lastFailedSeconds": null,
+      "lastRecoverySeconds": null,
+      "nonlinearFailures": 0,
+      "limitedProposals": 0,
+      "releases": 0,
+      "resets": {}
+    }
+  },
+  "samples": [
+    0.01,
+    0.05,
+    0.2
+  ],
+  "settings": {
+    "method": "tr-bdf2",
+    "adaptive": true,
+    "maxStep": 0.5,
+    "minStep": 1e-09,
+    "relativeTolerance": 1e-06,
+    "massAbsoluteKg": 1.0000000000000001e-11,
+    "energyAbsoluteKJ": 1e-08,
+    "pressureAbsoluteBar": 1e-06,
+    "enthalpyAbsoluteKJkg": 9.999999999999999e-05,
+    "eventStepSeconds": 0.002,
+    "temperatureAbsoluteK": 9.999999999999999e-05,
+    "temperatureScaleK": 50,
+    "nonlinearTolerance": 1e-11,
+    "thermalResidualK": 1e-12,
+    "maxIterations": 30,
+    "maxAttempts": 100000,
+    "trace": true,
+    "thermalJacobian": "finite-difference",
+    "timestepGrowth": "failure-aware"
+  },
+  "init": {
+    "totalMS": 2297,
+    "importMS": 9,
+    "fetchMS": 56,
+    "compileInstantiateMS": 56,
+    "runtimeMS": 103,
+    "firstFactoryMS": 2129,
+    "initialLinearMemoryBytes": 22544384,
+    "readyLinearMemoryBytes": 56360960,
+    "wasmBytes": 9196594,
+    "mime": "application/wasm",
+    "streaming": true,
+    "logs": []
+  },
+  "build": "rebuiltA",
+  "sourceCommit": "be9eb35a4ddf5098e685182f8104685127c6a6ee",
+  "browser": "webkit",
+  "browserVersion": "26.5",
+  "fullQualification": false,
+  "physicalIPad": false,
+  "rows": [
+    {
+      "record": {
+        "model": "isolated-five-section-coupled-dx-stage2a",
+        "seconds": 0.01,
+        "sectionCount": 5,
+        "sections": [
+          {
+            "p": 3.5100499395522275,
+            "h": 500.57930438736605,
+            "T": -5.265187830341176,
+            "s": 2.063070771929538,
+            "rho": 19.87171298336353,
+            "u": 482.91575448358776,
+            "x": 0.13994882945492648,
+            "phase": "Liquid + vapor",
+            "massKg": 0.01192302779001812,
+            "volumeM3": 0.0006000000000000001,
+            "internalEnergyKJ": 5.7578179609453715,
+            "densityResidual": 0,
+            "energyResidual": 1.0800249583553523e-12,
+            "liquidVolumeFraction": 0.026466960419148113,
+            "superheatK": 0,
+            "wet": true
+          },
+          {
+            "p": 3.5087583155434627,
+            "h": 500.5776472724712,
+            "T": -5.274609037871187,
+            "s": 2.06308885631787,
+            "rho": 19.861013487796285,
+            "u": 482.91108500111864,
+            "x": 0.13997778937124766,
+            "phase": "Liquid + vapor",
+            "massKg": 0.011916608092677772,
+            "volumeM3": 0.0006000000000000001,
+            "internalEnergyKJ": 5.754662143568132,
+            "densityResidual": 0,
+            "energyResidual": 1.1368683772161603e-13,
+            "liquidVolumeFraction": 0.02645130347983509,
+            "superheatK": 0,
+            "wet": true
+          },
+          {
+            "p": 3.5073189822425146,
+            "h": 500.57132906347016,
+            "T": -5.285110856368021,
+            "s": 2.0630923315370513,
+            "rho": 19.849573894747326,
+            "u": 482.90183650489024,
+            "x": 0.14000657667543642,
+            "phase": "Liquid + vapor",
+            "massKg": 0.0119097443368484,
+            "volumeM3": 0.0006000000000000001,
+            "internalEnergyKJ": 5.7512374125678125,
+            "densityResidual": -1.7898186115424038e-16,
+            "energyResidual": -3.410605131648481e-13,
+            "liquidVolumeFraction": 0.026434608705580787,
+            "superheatK": 0,
+            "wet": true
+          },
+          {
+            "p": 3.505670183487301,
+            "h": 500.5639674025803,
+            "T": -5.29714515750976,
+            "s": 2.0630958690271295,
+            "rho": 19.836486399159472,
+            "u": 482.8911290130383,
+            "x": 0.14003946765931347,
+            "phase": "Liquid + vapor",
+            "massKg": 0.01190189183949568,
+            "volumeM3": 0.0006000000000000001,
+            "internalEnergyKJ": 5.747317987765134,
+            "densityResidual": 3.5819989561770787e-16,
+            "energyResidual": 2.2737367544323206e-13,
+            "liquidVolumeFraction": 0.026415511424155762,
+            "superheatK": 0,
+            "wet": true
+          },
+          {
+            "p": 3.5037088431029977,
+            "h": 500.55515771394363,
+            "T": -5.311466434397573,
+            "s": 2.063099907659592,
+            "rho": 19.82092868259275,
+            "u": 482.8783429732705,
+            "x": 0.14007856776938327,
+            "phase": "Liquid + vapor",
+            "massKg": 0.011892557209555652,
+            "volumeM3": 0.0006000000000000001,
+            "internalEnergyKJ": 5.742658319065053,
+            "densityResidual": 0,
+            "energyResidual": 1.7053025658242404e-13,
+            "liquidVolumeFraction": 0.026392811719441307,
+            "superheatK": 0,
+            "wet": true
+          }
+        ],
+        "nodes": [
+          {
+            "id": "tube-0",
+            "capacityKJK": 0.9740280000000001,
+            "temperatureK": 273.14387054839506,
+            "energyKJ": -0.00597025748784362,
+            "energyChangeKJ": -0.00597025748784362,
+            "residualKJ": -7.806255641895632e-18
+          },
+          {
+            "id": "fin-0",
+            "capacityKJK": 0.8492017487761112,
+            "temperatureK": 273.1602866156212,
+            "energyKJ": 0.008735411974513878,
+            "energyChangeKJ": 0.008735411974513878,
+            "residualKJ": 5.204170427930421e-18
+          },
+          {
+            "id": "tube-1",
+            "capacityKJK": 0.9740280000000001,
+            "temperatureK": 273.14386142913605,
+            "energyKJ": -0.005979139901457193,
+            "energyChangeKJ": -0.005979139901457193,
+            "residualKJ": -6.938893903907228e-18
+          },
+          {
+            "id": "fin-1",
+            "capacityKJK": 0.8492017487761112,
+            "temperatureK": 273.16028659692796,
+            "energyKJ": 0.008735396100203695,
+            "energyChangeKJ": 0.008735396100203695,
+            "residualKJ": 1.214306433183765e-17
+          },
+          {
+            "id": "tube-2",
+            "capacityKJK": 0.9740279999999998,
+            "temperatureK": 273.14385288149134,
+            "energyKJ": -0.005987465546722923,
+            "energyChangeKJ": -0.005987465546722923,
+            "residualKJ": 5.204170427930421e-18
+          },
+          {
+            "id": "fin-2",
+            "capacityKJK": 0.849201748776111,
+            "temperatureK": 273.16028658118955,
+            "energyKJ": 0.008735382735116391,
+            "energyChangeKJ": 0.008735382735116391,
+            "residualKJ": -8.673617379884035e-18
+          },
+          {
+            "id": "tube-3",
+            "capacityKJK": 0.9740280000000003,
+            "temperatureK": 273.1438440919464,
+            "energyKJ": -0.0059960268096451415,
+            "energyChangeKJ": -0.0059960268096451415,
+            "residualKJ": -1.3010426069826053e-17
+          },
+          {
+            "id": "fin-3",
+            "capacityKJK": 0.8492017487761115,
+            "temperatureK": 273.16028656611013,
+            "energyKJ": 0.008735369929640344,
+            "energyChangeKJ": 0.008735369929640344,
+            "residualKJ": 3.469446951953614e-18
+          },
+          {
+            "id": "tube-4",
+            "capacityKJK": 0.9740279999999998,
+            "temperatureK": 273.1438341420297,
+            "energyKJ": -0.006005718307094988,
+            "energyChangeKJ": -0.006005718307094988,
+            "residualKJ": -1.5612511283791264e-17
+          },
+          {
+            "id": "fin-4",
+            "capacityKJK": 0.849201748776111,
+            "temperatureK": 273.1602865495766,
+            "energyKJ": 0.008735355889331883,
+            "energyChangeKJ": 0.008735355889331883,
+            "residualKJ": 1.734723475976807e-17
+          },
+          {
+            "id": "air",
+            "capacityKJK": 4.308,
+            "temperatureK": 278.1417434288408,
+            "energyKJ": 21.504430691446274,
+            "energyChangeKJ": -0.03556930855372542,
+            "residualKJ": -6.980527267330672e-15
+          }
+        ],
+        "terminal": {
+          "p": 3.5037088431029977,
+          "h": 500.55515771394363,
+          "temperatureK": 267.8385335656024,
+          "phase": "Liquid + vapor",
+          "quality": 0.14007856776938327,
+          "wet": true,
+          "superheatK": 0
+        },
+        "outlet": {
+          "supported": true,
+          "p": 3.5,
+          "h": 500.55515771394363,
+          "temperatureK": 267.8114351963941,
+          "phase": "Liquid + vapor",
+          "quality": 0.14016556171562622,
+          "wet": true,
+          "superheatK": 0
+        },
+        "totals": {
+          "massKg": 0.059543829268595624,
+          "internalEnergyKJ": 28.753693823911508
+        },
+        "sectionResiduals": [
+          {
+            "massKg": 1.656456005347251e-13,
+            "energyKJ": 8.286944221114201e-11
+          },
+          {
+            "massKg": 1.6165795915443204e-13,
+            "energyKJ": 8.086148764463452e-11
+          },
+          {
+            "massKg": -8.795614518837536e-14,
+            "energyKJ": -4.3973391768148407e-11
+          },
+          {
+            "massKg": -1.2124676262992296e-13,
+            "energyKJ": -6.064927639964912e-11
+          },
+          {
+            "massKg": -1.0214648137746307e-13,
+            "energyKJ": -5.1105235494841583e-11
+          }
+        ],
+        "massResidualKg": 1.595072137523454e-14,
+        "refrigerantEnergyResidualKJ": 8.00657457000753e-12,
+        "thermalEnergyResidualKJ": -6.980527267330672e-15,
+        "combinedEnergyResidualKJ": 7.999594042740199e-12,
+        "ledger": {
+          "faces": [
+            {
+              "massKg": 0.00015391643858904256,
+              "energyKJ": 0.07695821929452128
+            },
+            {
+              "massKg": 0.00014044618487964064,
+              "energyKJ": 0.07026773321471905
+            },
+            {
+              "massKg": 0.00013339562850659856,
+              "energyKJ": 0.06674196308287929
+            },
+            {
+              "massKg": 0.00013320882771331475,
+              "energyKJ": 0.0666492630759943
+            },
+            {
+              "massKg": 0.00014087452423945925,
+              "energyKJ": 0.07048456215221045
+            },
+            {
+              "massKg": 0.00015787485072473272,
+              "energyKJ": 0.07898923572637834
+            }
+          ],
+          "tubeRefrigerantKJ": [
+            0.006348706711163476,
+            0.006357605283894657,
+            0.006365944533364598,
+            0.0063745188304634845,
+            0.0063842246187898926
+          ],
+          "thermalLinksKJ": [
+            0.00034552611603645575,
+            0.00876833508179728,
+            3.2923107283407265e-05,
+            0.0003455263909063673,
+            0.008768335091734783,
+            3.2938991531101916e-05,
+            0.00034552662229211484,
+            0.008768335099465955,
+            3.295236434955524e-05,
+            0.00034552684396782133,
+            0.008768335106490876,
+            3.2965176850535715e-05,
+            0.00034552708700974743,
+            0.008768335114017037,
+            3.2979224685173526e-05
+          ],
+          "thermalNodesKJ": [
+            -0.005970257487843612,
+            0.008735411974513873,
+            -0.005979139901457186,
+            0.008735396100203683,
+            -0.005987465546722928,
+            0.0087353827351164,
+            -0.0059960268096451285,
+            0.00873536992964034,
+            -0.006005718307094972,
+            0.008735355889331865,
+            -0.03556930855371844
+          ],
+          "airLoadKJ": 0.009999999999999998,
+          "boundaryMassKg": -3.958412135690184e-06,
+          "boundaryEnthalpyKJ": -0.0020310164318570606
+        },
+        "fluxes": {
+          "faces": [
+            {
+              "massKgS": 0.015330767572038086,
+              "energyKW": 7.665383786019043
+            },
+            {
+              "massKgS": 0.016037941322131113,
+              "energyKW": 8.028261510837787
+            },
+            {
+              "massKgS": 0.016939310414473076,
+              "energyKW": 8.479440153695016
+            },
+            {
+              "massKgS": 0.018142162866483052,
+              "energyKW": 9.081446578161392
+            },
+            {
+              "massKgS": 0.019802956046588355,
+              "energyKW": 9.91264624497922
+            },
+            {
+              "massKgS": 0.022079070034046796,
+              "energyKW": 11.051792383069513
+            }
+          ],
+          "links": [
+            0.034545191322361245,
+            0.8752067971495209,
+            0.006566426890458388,
+            0.03454525435448602,
+            0.8752068004337916,
+            0.006570067116763312,
+            0.034545313435624926,
+            0.8752068031989185,
+            0.006573479879284604,
+            0.03454537418877317,
+            0.8752068058482672,
+            0.006576989665495605,
+            0.03454544296238641,
+            0.8752068087530918,
+            0.006580963018768669
+          ],
+          "tubeRefrigerant": [
+            0.6310870054483507,
+            0.6322164560408646,
+            0.6334756485431126,
+            0.6349187099347273,
+            0.6366360691712589
+          ],
+          "thermalRates": [
+            -0.5899753872355311,
+            0.8686403702590625,
+            -0.5911011345696153,
+            0.8686367333170283,
+            -0.592356855228203,
+            0.8686333233196339,
+            -0.5937963460804585,
+            0.8686298161827716,
+            -0.5955096631901038,
+            0.8686258457343231,
+            -3.5487605916472216
+          ],
+          "airLoad": 1,
+          "fluidRates": [
+            {
+              "massKgS": -0.0007071737500930278,
+              "energyKW": 0.26820928062960725
+            },
+            {
+              "massKgS": -0.000901369092341963,
+              "energyKW": 0.18103781318363588
+            },
+            {
+              "massKgS": -0.0012028524520099754,
+              "energyKW": 0.031469224076737135
+            },
+            {
+              "massKgS": -0.0016607931801053029,
+              "energyKW": -0.19628095688310054
+            },
+            {
+              "massKgS": -0.002276113987458441,
+              "energyKW": -0.5025100689190349
+            }
+          ]
+        },
+        "settings": {
+          "method": "tr-bdf2",
+          "adaptive": true,
+          "maxStep": 0.5,
+          "minStep": 1e-09,
+          "relativeTolerance": 1e-06,
+          "massAbsoluteKg": 1.0000000000000001e-11,
+          "energyAbsoluteKJ": 1e-08,
+          "pressureAbsoluteBar": 1e-06,
+          "enthalpyAbsoluteKJkg": 9.999999999999999e-05,
+          "eventStepSeconds": 0.002,
+          "temperatureAbsoluteK": 9.999999999999999e-05,
+          "temperatureScaleK": 50,
+          "nonlinearTolerance": 1e-11,
+          "thermalResidualK": 1e-12,
+          "maxIterations": 30,
+          "maxAttempts": 100000,
+          "trace": true,
+          "thermalJacobian": "finite-difference",
+          "timestepGrowth": "failure-aware"
+        },
+        "conductancesKWK": [
+          0.12,
+          0.12,
+          0.12,
+          0.12,
+          0.12
+        ],
+        "conductanceDescription": "Effective uncalibrated constant tube-to-bulk-refrigerant conductance; radial/film resistance unresolved; no additional wall resistance.",
+        "energyReferenceK": 273.15,
+        "acceptedSteps": 24,
+        "rejectedSteps": 5,
+        "accuracyRejectedSteps": 5,
+        "eventRejectedSteps": 0,
+        "domainRejectedSteps": 0,
+        "attemptedResidualEvaluations": 6328,
+        "attemptedIterations": 283,
+        "attemptedLinearSolves": 283,
+        "minAcceptedStepSeconds": 3.813778978118051e-05,
+        "maxAcceptedStepSeconds": 0.0011954204876341613,
+        "lastTimeError": 0.006250364133481462,
+        "lastResidual": 1.517107157582823e-14,
+        "events": [],
+        "boundaryEvents": [],
+        "trace": [
+          {
+            "startSeconds": 0,
+            "endSeconds": 8.705837322440198e-05,
+            "trialSeconds": 8.705837322440198e-05,
+            "error": 0.9131284443879037
+          },
+          {
+            "startSeconds": 8.705837322440198e-05,
+            "endSeconds": 0.000163333952786763,
+            "trialSeconds": 7.627557956236102e-05,
+            "error": 0.043216497168373696
+          },
+          {
+            "startSeconds": 0.000163333952786763,
+            "endSeconds": 0.00031588511191148503,
+            "trialSeconds": 0.00015255115912472204,
+            "error": 0.11351380292591615
+          },
+          {
+            "startSeconds": 0.00031588511191148503,
+            "endSeconds": 0.0005836898232591858,
+            "trialSeconds": 0.0002678047113477008,
+            "error": 0.18820156232172103
+          },
+          {
+            "startSeconds": 0.0005836898232591858,
+            "endSeconds": 0.0009809082594772985,
+            "trialSeconds": 0.00039721843621811276,
+            "error": 0.1996758176163001
+          },
+          {
+            "startSeconds": 0.0009809082594772985,
+            "endSeconds": 0.0015585694166662676,
+            "trialSeconds": 0.0005776611571889689,
+            "error": 0.2166658081027349
+          },
+          {
+            "startSeconds": 0.0015585694166662676,
+            "endSeconds": 0.002376083603456514,
+            "trialSeconds": 0.0008175141867902467,
+            "error": 0.2350775494380851
+          },
+          {
+            "startSeconds": 0.002376083603456514,
+            "endSeconds": 0.0035020113077767674,
+            "trialSeconds": 0.0011259277043202533,
+            "error": 0.2596293643450957
+          },
+          {
+            "startSeconds": 0.0035020113077767674,
+            "endSeconds": 0.005002196339000952,
+            "trialSeconds": 0.0015001850312241847,
+            "error": 0.2898626593715944
+          },
+          {
+            "startSeconds": 0.005002196339000952,
+            "endSeconds": 0.006928980182650996,
+            "trialSeconds": 0.0019267838436500442,
+            "error": 0.3214427939008
+          },
+          {
+            "startSeconds": 0.006928980182650996,
+            "endSeconds": 0.009319821157919319,
+            "trialSeconds": 0.0023908409752683227,
+            "error": 0.3490784105315096
+          },
+          {
+            "startSeconds": 0.009319821157919319,
+            "endSeconds": 0.01,
+            "trialSeconds": 0.0006801788420806813,
+            "error": 0.006250364133481462
+          }
+        ],
+        "rejectionTrace": [
+          {
+            "seconds": 0,
+            "trialSeconds": 0.01,
+            "kind": "accuracy",
+            "error": 183.06177130202045
+          },
+          {
+            "seconds": 0,
+            "trialSeconds": 0.0014969927795837141,
+            "kind": "accuracy",
+            "error": 31.41296078877748
+          },
+          {
+            "seconds": 0,
+            "trialSeconds": 0.00040327596640165144,
+            "kind": "accuracy",
+            "error": 7.1684427324881455
+          },
+          {
+            "seconds": 0,
+            "trialSeconds": 0.0001777786727824342,
+            "kind": "accuracy",
+            "error": 2.4676955405569316
+          },
+          {
+            "seconds": 0,
+            "trialSeconds": 0.00011182392364402291,
+            "kind": "accuracy",
+            "error": 1.3014554725304093
+          }
+        ],
+        "stop": null,
+        "growthHistory": {
+          "ceilingSeconds": null,
+          "pendingFailure": false,
+          "successes": 0,
+          "lastFailedSeconds": null,
+          "lastRecoverySeconds": null,
+          "nonlinearFailures": 0,
+          "limitedProposals": 0,
+          "releases": 0,
+          "resets": {}
+        }
+      },
+      "elapsedMS": 1286,
+      "counts": {
+        "ph": 18047,
+        "sat": 39029,
+        "stateMVU": 785,
+        "domainGuards": 36879
+      },
+      "linearMemory": 56360960,
+      "conservation": {
+        "massKg": 1.595072137523454e-14,
+        "sectionMassKg": 1.656456005347251e-13,
+        "refrigerantKJ": 8.00657457000753e-12,
+        "thermalKJ": 6.980527267330672e-15,
+        "combinedKJ": 7.999594042740199e-12,
+        "sectionEnergyKJ": 8.286944221114201e-11,
+        "nodeEnergyKJ": 6.980527267330672e-15
+      }
+    },
+    {
+      "record": {
+        "model": "isolated-five-section-coupled-dx-stage2a",
+        "seconds": 0.05,
+        "sectionCount": 5,
+        "sections": [
+          {
+            "p": 3.5180140517829956,
+            "h": 502.6393142024195,
+            "T": -5.207157010851233,
+            "s": 2.070609675970025,
+            "rho": 19.71879460918812,
+            "u": 484.7983958222282,
+            "x": 0.14137188204058235,
+            "phase": "Liquid + vapor",
+            "massKg": 0.01183127676551287,
+            "volumeM3": 0.0006000000000000001,
+            "internalEnergyKJ": 5.735783996449445,
+            "densityResidual": 1.8016890734006065e-16,
+            "energyResidual": -4.547473508864641e-13,
+            "liquidVolumeFraction": 0.026222983313076653,
+            "superheatK": 0,
+            "wet": true
+          },
+          {
+            "p": 3.5163613796125928,
+            "h": 502.7236682015328,
+            "T": -5.21919078678917,
+            "s": 2.0709558023926298,
+            "rho": 19.696168427562494,
+            "u": 484.8706457086318,
+            "x": 0.1414763891128801,
+            "phase": "Liquid + vapor",
+            "massKg": 0.011817701056537495,
+            "volumeM3": 0.0006000000000000001,
+            "internalEnergyKJ": 5.7300563420749135,
+            "densityResidual": 1.8037587827635005e-16,
+            "energyResidual": 1.7053025658242404e-13,
+            "liquidVolumeFraction": 0.026189053590455952,
+            "superheatK": 0,
+            "wet": true
+          },
+          {
+            "p": 3.514096849950432,
+            "h": 502.72316130634914,
+            "T": -5.235686956304903,
+            "s": 2.0709968436832935,
+            "rho": 19.677432778799986,
+            "u": 484.86464851429463,
+            "x": 0.14152890645808422,
+            "phase": "Liquid + vapor",
+            "massKg": 0.01180645966727999,
+            "volumeM3": 0.0006000000000000001,
+            "internalEnergyKJ": 5.724534916773913,
+            "densityResidual": 1.805476211626607e-16,
+            "energyResidual": -3.979039320256561e-13,
+            "liquidVolumeFraction": 0.02616164797936556,
+            "superheatK": 0,
+            "wet": true
+          },
+          {
+            "p": 3.5111147033548855,
+            "h": 502.7191091800512,
+            "T": -5.257423405219697,
+            "s": 2.0710383228139624,
+            "rho": 19.653130335405496,
+            "u": 484.85368701354076,
+            "x": 0.14159545528120535,
+            "phase": "Liquid + vapor",
+            "massKg": 0.011791878201243298,
+            "volumeM3": 0.0006000000000000001,
+            "internalEnergyKJ": 5.71733562268741,
+            "densityResidual": 0,
+            "energyResidual": 1.7053025658242404e-13,
+            "liquidVolumeFraction": 0.026126136471966245,
+            "superheatK": 0,
+            "wet": true
+          },
+          {
+            "p": 3.5073010843153427,
+            "h": 502.7135475507398,
+            "T": -5.285241466444006,
+            "s": 2.071090056460378,
+            "rho": 19.622114199731286,
+            "u": 484.8393213148986,
+            "x": 0.14168031760806407,
+            "phase": "Liquid + vapor",
+            "massKg": 0.011773268519838771,
+            "volumeM3": 0.0006000000000000001,
+            "internalEnergyKJ": 5.70814351881669,
+            "densityResidual": 1.8105662023153215e-16,
+            "energyResidual": 5.684341886080802e-14,
+            "liquidVolumeFraction": 0.02608082475626532,
+            "superheatK": 0,
+            "wet": true
+          }
+        ],
+        "nodes": [
+          {
+            "id": "tube-0",
+            "capacityKJK": 0.9740280000000001,
+            "temperatureK": 273.12042170151705,
+            "energyKJ": -0.028810090914730822,
+            "energyChangeKJ": -0.028810090914730822,
+            "residualKJ": -2.7755575615628914e-17
+          },
+          {
+            "id": "fin-0",
+            "capacityKJK": 0.8492017487761112,
+            "temperatureK": 273.20029707245845,
+            "energyKJ": 0.04271236189006878,
+            "energyChangeKJ": 0.04271236189006878,
+            "residualKJ": -6.938893903907228e-18
+          },
+          {
+            "id": "tube-1",
+            "capacityKJK": 0.9740280000000001,
+            "temperatureK": 273.1203577954887,
+            "energyKJ": -0.02887233717569591,
+            "energyChangeKJ": -0.02887233717569591,
+            "residualKJ": -3.8163916471489756e-17
+          },
+          {
+            "id": "fin-1",
+            "capacityKJK": 0.8492017487761112,
+            "temperatureK": 273.20029638883136,
+            "energyKJ": 0.04271178135274442,
+            "energyChangeKJ": 0.04271178135274442,
+            "residualKJ": 5.551115123125783e-17
+          },
+          {
+            "id": "tube-2",
+            "capacityKJK": 0.9740279999999998,
+            "temperatureK": 273.12027782639984,
+            "energyKJ": -0.028950229307394697,
+            "energyChangeKJ": -0.028950229307394697,
+            "residualKJ": -2.0816681711721685e-17
+          },
+          {
+            "id": "fin-2",
+            "capacityKJK": 0.849201748776111,
+            "temperatureK": 273.20029558610577,
+            "energyKJ": 0.04271109967675499,
+            "energyChangeKJ": 0.04271109967675499,
+            "residualKJ": -3.469446951953614e-17
+          },
+          {
+            "id": "tube-3",
+            "capacityKJK": 0.9740280000000003,
+            "temperatureK": 273.12017786574415,
+            "energyKJ": -0.029047593784906987,
+            "energyChangeKJ": -0.029047593784906987,
+            "residualKJ": -4.163336342344337e-17
+          },
+          {
+            "id": "fin-3",
+            "capacityKJK": 0.8492017487761115,
+            "temperatureK": 273.20029462038735,
+            "energyKJ": 0.042710279587009105,
+            "energyChangeKJ": 0.042710279587009105,
+            "residualKJ": 6.938893903907228e-18
+          },
+          {
+            "id": "tube-4",
+            "capacityKJK": 0.9740279999999998,
+            "temperatureK": 273.12005308378474,
+            "energyKJ": -0.029169134907313203,
+            "energyChangeKJ": -0.029169134907313203,
+            "residualKJ": -6.245004513516506e-17
+          },
+          {
+            "id": "fin-4",
+            "capacityKJK": 0.849201748776111,
+            "temperatureK": 273.2002934366133,
+            "energyKJ": 0.04270927432401857,
+            "energyChangeKJ": 0.04270927432401857,
+            "residualKJ": 8.326672684688674e-17
+          },
+          {
+            "id": "air",
+            "capacityKJK": 4.308,
+            "temperatureK": 278.1090923905296,
+            "energyKJ": 21.363770018401713,
+            "energyChangeKJ": -0.1762299815982864,
+            "residualKJ": -7.854827899222983e-15
+          }
+        ],
+        "terminal": {
+          "p": 3.5073010843153427,
+          "h": 502.7135475507398,
+          "temperatureK": 267.86475853355597,
+          "phase": "Liquid + vapor",
+          "quality": 0.14168031760806407,
+          "wet": true,
+          "superheatK": 0
+        },
+        "outlet": {
+          "supported": true,
+          "p": 3.5,
+          "h": 502.7135475507398,
+          "temperatureK": 267.8114351963941,
+          "phase": "Liquid + vapor",
+          "quality": 0.14185127365232367,
+          "wet": true,
+          "superheatK": 0
+        },
+        "totals": {
+          "massKg": 0.05902058421041243,
+          "internalEnergyKJ": 28.615854396802373
+        },
+        "sectionResiduals": [
+          {
+            "massKg": 3.949035109335197e-13,
+            "energyKJ": 1.9767242703805366e-10
+          },
+          {
+            "massKg": 1.519952783426981e-13,
+            "energyKJ": 7.582235533876158e-11
+          },
+          {
+            "massKg": -1.4958108536522463e-13,
+            "energyKJ": -7.507316296395672e-11
+          },
+          {
+            "massKg": -1.8952959861262553e-13,
+            "energyKJ": -9.509816545349992e-11
+          },
+          {
+            "massKg": -1.7715690026065545e-13,
+            "energyKJ": -8.897299563770389e-11
+          }
+        ],
+        "massResidualKg": 3.063456606444692e-14,
+        "refrigerantEnergyResidualKJ": 1.4350465260548617e-11,
+        "thermalEnergyResidualKJ": -7.91033905045424e-15,
+        "combinedEnergyResidualKJ": 1.4342554921498163e-11,
+        "ledger": {
+          "faces": [
+            {
+              "massKg": 0.0007637073793216484,
+              "energyKJ": 0.3818536896608241
+            },
+            {
+              "massKg": 0.0008419881503467539,
+              "energyKJ": 0.4221921580124374
+            },
+            {
+              "massKg": 0.0009338446301043262,
+              "energyKJ": 0.4683211194328819
+            },
+            {
+              "massKg": 0.0010369424988178272,
+              "energyKJ": 0.5200500938071789
+            },
+            {
+              "massKg": 0.0011546218335280712,
+              "energyKJ": 0.5790765635706998
+            },
+            {
+              "massKg": 0.0012909108496552155,
+              "energyKJ": 0.6474177040882084
+            }
+          ],
+          "tubeRefrigerantKJ": [
+            0.031343696531849825,
+            0.03140653534799936,
+            0.03148512315174689,
+            0.031583324474493094,
+            0.031705891351635096
+          ],
+          "thermalLinksKJ": [
+            0.001726080469463011,
+            0.0435198870377248,
+            0.0008075251476560192,
+            0.0017260906075520586,
+            0.04351988891749579,
+            0.000808107564751422,
+            0.0017261025056652145,
+            0.04351989101544203,
+            0.0008087913386870022,
+            0.0017261168152618133,
+            0.04351989346133343,
+            0.0008096138743243361,
+            0.001726134353390271,
+            0.043519896414950146,
+            0.0008106220909316807
+          ],
+          "thermalNodesKJ": [
+            -0.028810090914730795,
+            0.04271236189006879,
+            -0.028872337175695872,
+            0.042711781352744366,
+            -0.028950229307394677,
+            0.04271109967675502,
+            -0.029047593784906945,
+            0.0427102795870091,
+            -0.02916913490731314,
+            0.042709274324018484,
+            -0.17622998159827855
+          ],
+          "airLoadKJ": 0.05000000000000001,
+          "boundaryMassKg": -0.000527203470333567,
+          "boundaryEnthalpyKJ": -0.2655640144273843
+        },
+        "fluxes": {
+          "faces": [
+            {
+              "massKgS": 0.015205654707883424,
+              "energyKW": 7.602827353941712
+            },
+            {
+              "massKgS": 0.018102998516490453,
+              "energyKW": 9.099278759336205
+            },
+            {
+              "massKgS": 0.021220737688616428,
+              "energyKW": 10.668167092763786
+            },
+            {
+              "massKgS": 0.024377033491937754,
+              "energyKW": 12.254899340337772
+            },
+            {
+              "massKgS": 0.027582082031703987,
+              "energyKW": 13.866039708309346
+            },
+            {
+              "massKgS": 0.03085443902678044,
+              "energyKW": 15.510944500840829
+            }
+          ],
+          "links": [
+            0.03448158597039475,
+            0.8624406853815318,
+            0.03195014837656345,
+            0.03448202768750694,
+            0.8624408054899863,
+            0.031975437337064254,
+            0.03448258043215262,
+            0.8624409465232062,
+            0.03200710388236984,
+            0.03448327135808414,
+            0.8624411161931149,
+            0.032046701857279924,
+            0.03448413384834041,
+            0.8624413241738553,
+            0.03209614113143288
+          ],
+          "tubeRefrigerant": [
+            0.6213094454841825,
+            0.6227458298733404,
+            0.6247157739245586,
+            0.6273121525156443,
+            0.6306353460274385
+          ],
+          "thermalRates": [
+            -0.5548777111372243,
+            0.8304905370049684,
+            -0.5562883648487692,
+            0.830465368152922,
+            -0.5582260896100362,
+            0.8304338426408364,
+            -0.5607821793002803,
+            0.830394414335835,
+            -0.5640550710476653,
+            0.8303451830424224,
+            -3.484618477058173
+          ],
+          "airLoad": 1,
+          "fluidRates": [
+            {
+              "massKgS": -0.0028973438086070287,
+              "energyKW": -0.8751419599103105
+            },
+            {
+              "massKgS": -0.0031177391721259745,
+              "energyKW": -0.9461425035542419
+            },
+            {
+              "massKgS": -0.003156295803321326,
+              "energyKW": -0.9620164736494274
+            },
+            {
+              "massKgS": -0.0032050485397662337,
+              "energyKW": -0.9838282154559295
+            },
+            {
+              "massKgS": -0.0032723569950764524,
+              "energyKW": -1.014269446504045
+            }
+          ]
+        },
+        "settings": {
+          "method": "tr-bdf2",
+          "adaptive": true,
+          "maxStep": 0.5,
+          "minStep": 1e-09,
+          "relativeTolerance": 1e-06,
+          "massAbsoluteKg": 1.0000000000000001e-11,
+          "energyAbsoluteKJ": 1e-08,
+          "pressureAbsoluteBar": 1e-06,
+          "enthalpyAbsoluteKJkg": 9.999999999999999e-05,
+          "eventStepSeconds": 0.002,
+          "temperatureAbsoluteK": 9.999999999999999e-05,
+          "temperatureScaleK": 50,
+          "nonlinearTolerance": 1e-11,
+          "thermalResidualK": 1e-12,
+          "maxIterations": 30,
+          "maxAttempts": 100000,
+          "trace": true,
+          "thermalJacobian": "finite-difference",
+          "timestepGrowth": "failure-aware"
+        },
+        "conductancesKWK": [
+          0.12,
+          0.12,
+          0.12,
+          0.12,
+          0.12
+        ],
+        "conductanceDescription": "Effective uncalibrated constant tube-to-bulk-refrigerant conductance; radial/film resistance unresolved; no additional wall resistance.",
+        "energyReferenceK": 273.15,
+        "acceptedSteps": 42,
+        "rejectedSteps": 5,
+        "accuracyRejectedSteps": 5,
+        "eventRejectedSteps": 0,
+        "domainRejectedSteps": 0,
+        "attemptedResidualEvaluations": 9066,
+        "attemptedIterations": 405,
+        "attemptedLinearSolves": 405,
+        "minAcceptedStepSeconds": 3.813778978118051e-05,
+        "maxAcceptedStepSeconds": 0.0038638329168814416,
+        "lastTimeError": 0.0121114271328964,
+        "lastResidual": 5.157339147181125e-14,
+        "events": [],
+        "boundaryEvents": [],
+        "trace": [
+          {
+            "startSeconds": 0,
+            "endSeconds": 8.705837322440198e-05,
+            "trialSeconds": 8.705837322440198e-05,
+            "error": 0.9131284443879037
+          },
+          {
+            "startSeconds": 8.705837322440198e-05,
+            "endSeconds": 0.000163333952786763,
+            "trialSeconds": 7.627557956236102e-05,
+            "error": 0.043216497168373696
+          },
+          {
+            "startSeconds": 0.000163333952786763,
+            "endSeconds": 0.00031588511191148503,
+            "trialSeconds": 0.00015255115912472204,
+            "error": 0.11351380292591615
+          },
+          {
+            "startSeconds": 0.00031588511191148503,
+            "endSeconds": 0.0005836898232591858,
+            "trialSeconds": 0.0002678047113477008,
+            "error": 0.18820156232172103
+          },
+          {
+            "startSeconds": 0.0005836898232591858,
+            "endSeconds": 0.0009809082594772985,
+            "trialSeconds": 0.00039721843621811276,
+            "error": 0.1996758176163001
+          },
+          {
+            "startSeconds": 0.0009809082594772985,
+            "endSeconds": 0.0015585694166662676,
+            "trialSeconds": 0.0005776611571889689,
+            "error": 0.2166658081027349
+          },
+          {
+            "startSeconds": 0.0015585694166662676,
+            "endSeconds": 0.002376083603456514,
+            "trialSeconds": 0.0008175141867902467,
+            "error": 0.2350775494380851
+          },
+          {
+            "startSeconds": 0.002376083603456514,
+            "endSeconds": 0.0035020113077767674,
+            "trialSeconds": 0.0011259277043202533,
+            "error": 0.2596293643450957
+          },
+          {
+            "startSeconds": 0.0035020113077767674,
+            "endSeconds": 0.005002196339000952,
+            "trialSeconds": 0.0015001850312241847,
+            "error": 0.2898626593715944
+          },
+          {
+            "startSeconds": 0.005002196339000952,
+            "endSeconds": 0.006928980182650996,
+            "trialSeconds": 0.0019267838436500442,
+            "error": 0.3214427939008
+          },
+          {
+            "startSeconds": 0.006928980182650996,
+            "endSeconds": 0.009319821157919319,
+            "trialSeconds": 0.0023908409752683227,
+            "error": 0.3490784105315096
+          },
+          {
+            "startSeconds": 0.009319821157919319,
+            "endSeconds": 0.01,
+            "trialSeconds": 0.0006801788420806813,
+            "error": 0.006250364133481462
+          },
+          {
+            "startSeconds": 0.01,
+            "endSeconds": 0.011360357684161363,
+            "trialSeconds": 0.0013603576841613625,
+            "error": 0.040953180048776724
+          },
+          {
+            "startSeconds": 0.011360357684161363,
+            "endSeconds": 0.014081073052484088,
+            "trialSeconds": 0.002720715368322725,
+            "error": 0.23211784563110255
+          },
+          {
+            "startSeconds": 0.014081073052484088,
+            "endSeconds": 0.0178440583818466,
+            "trialSeconds": 0.003762985329362513,
+            "error": 0.3995852796407472
+          },
+          {
+            "startSeconds": 0.0178440583818466,
+            "endSeconds": 0.022186643008698263,
+            "trialSeconds": 0.004342584626851664,
+            "error": 0.3986118174663377
+          },
+          {
+            "startSeconds": 0.022186643008698263,
+            "endSeconds": 0.0272021767876519,
+            "trialSeconds": 0.005015533778953637,
+            "error": 0.4017993721309529
+          },
+          {
+            "startSeconds": 0.0272021767876519,
+            "endSeconds": 0.03297958428665867,
+            "trialSeconds": 0.005777407499006767,
+            "error": 0.400154931171742
+          },
+          {
+            "startSeconds": 0.03297958428665867,
+            "endSeconds": 0.03964370009308763,
+            "trialSeconds": 0.006664115806428961,
+            "error": 0.39385773813317604
+          },
+          {
+            "startSeconds": 0.03964370009308763,
+            "endSeconds": 0.04737136592685051,
+            "trialSeconds": 0.007727665833762883,
+            "error": 0.3823186725880732
+          },
+          {
+            "startSeconds": 0.04737136592685051,
+            "endSeconds": 0.05,
+            "trialSeconds": 0.002628634073149491,
+            "error": 0.0121114271328964
+          }
+        ],
+        "rejectionTrace": [
+          {
+            "seconds": 0,
+            "trialSeconds": 0.01,
+            "kind": "accuracy",
+            "error": 183.06177130202045
+          },
+          {
+            "seconds": 0,
+            "trialSeconds": 0.0014969927795837141,
+            "kind": "accuracy",
+            "error": 31.41296078877748
+          },
+          {
+            "seconds": 0,
+            "trialSeconds": 0.00040327596640165144,
+            "kind": "accuracy",
+            "error": 7.1684427324881455
+          },
+          {
+            "seconds": 0,
+            "trialSeconds": 0.0001777786727824342,
+            "kind": "accuracy",
+            "error": 2.4676955405569316
+          },
+          {
+            "seconds": 0,
+            "trialSeconds": 0.00011182392364402291,
+            "kind": "accuracy",
+            "error": 1.3014554725304093
+          }
+        ],
+        "stop": null,
+        "growthHistory": {
+          "ceilingSeconds": null,
+          "pendingFailure": false,
+          "successes": 0,
+          "lastFailedSeconds": null,
+          "lastRecoverySeconds": null,
+          "nonlinearFailures": 0,
+          "limitedProposals": 0,
+          "releases": 0,
+          "resets": {}
+        }
+      },
+      "elapsedMS": 481,
+      "counts": {
+        "ph": 26054,
+        "sat": 56633,
+        "stateMVU": 1195,
+        "domainGuards": 53303
+      },
+      "linearMemory": 56360960,
+      "conservation": {
+        "massKg": 3.063456606444692e-14,
+        "sectionMassKg": 3.949035109335197e-13,
+        "refrigerantKJ": 1.4350465260548617e-11,
+        "thermalKJ": 7.91033905045424e-15,
+        "combinedKJ": 1.4342554921498163e-11,
+        "sectionEnergyKJ": 1.9767242703805366e-10,
+        "nodeEnergyKJ": 7.854827899222983e-15
+      }
+    },
+    {
+      "record": {
+        "model": "isolated-five-section-coupled-dx-stage2a",
+        "seconds": 0.2,
+        "sectionCount": 5,
+        "sections": [
+          {
+            "p": 3.5180289396949984,
+            "h": 509.39082985267714,
+            "T": -5.2070486260980715,
+            "s": 2.0958069805258437,
+            "rho": 19.030540531728192,
+            "u": 490.90460275981354,
+            "x": 0.14664636015205101,
+            "phase": "Liquid + vapor",
+            "massKg": 0.011418324319036919,
+            "volumeM3": 0.0006000000000000001,
+            "internalEnergyKJ": 5.605307964019536,
+            "densityResidual": -1.8668485389983155e-16,
+            "energyResidual": 1.1368683772161603e-13,
+            "liquidVolumeFraction": 0.025152253142336125,
+            "superheatK": 0,
+            "wet": true
+          },
+          {
+            "p": 3.5163984886939303,
+            "h": 510.5983709653548,
+            "T": -5.218920531809317,
+            "s": 2.1003458767849477,
+            "rho": 18.899682809915227,
+            "u": 491.992775707169,
+            "x": 0.14762767570966545,
+            "phase": "Liquid + vapor",
+            "massKg": 0.011339809685949137,
+            "volumeM3": 0.0006000000000000001,
+            "internalEnergyKJ": 5.579104443381158,
+            "densityResidual": 0,
+            "energyResidual": -1.1368683772161603e-13,
+            "liquidVolumeFraction": 0.024949963239086183,
+            "superheatK": 0,
+            "wet": true
+          },
+          {
+            "p": 3.51414630628718,
+            "h": 510.74679816789114,
+            "T": -5.235326598067218,
+            "s": 2.1009443841699778,
+            "rho": 18.867664880456708,
+            "u": 492.121566436502,
+            "x": 0.14779598344329511,
+            "phase": "Liquid + vapor",
+            "massKg": 0.011320598928274023,
+            "volumeM3": 0.0006000000000000001,
+            "internalEnergyKJ": 5.571110877581605,
+            "densityResidual": 1.8829641618663862e-16,
+            "energyResidual": -5.684341886080801e-13,
+            "liquidVolumeFraction": 0.024901931755247648,
+            "superheatK": 0,
+            "wet": true
+          },
+          {
+            "p": 3.51115841439665,
+            "h": 510.79651245515305,
+            "T": -5.257104696925978,
+            "s": 2.1011891069744157,
+            "rho": 18.839501313519662,
+            "u": 492.1592971915161,
+            "x": 0.14790430034578256,
+            "phase": "Liquid + vapor",
+            "massKg": 0.0113037007881118,
+            "volumeM3": 0.0006000000000000001,
+            "internalEnergyKJ": 5.563221435540289,
+            "densityResidual": -1.8857790446135592e-16,
+            "energyResidual": 1.1368683772161603e-13,
+            "liquidVolumeFraction": 0.024860480087182932,
+            "superheatK": 0,
+            "wet": true
+          },
+          {
+            "p": 3.507325779141914,
+            "h": 510.8474132982831,
+            "T": -5.285061256149788,
+            "s": 2.1014551349745068,
+            "rho": 18.804664923286598,
+            "u": 492.19605315201187,
+            "x": 0.14803323704304022,
+            "phase": "Liquid + vapor",
+            "massKg": 0.01128279895397196,
+            "volumeM3": 0.0006000000000000001,
+            "internalEnergyKJ": 5.553349113652649,
+            "densityResidual": 0,
+            "energyResidual": -1.7053025658242404e-13,
+            "liquidVolumeFraction": 0.024809320178748512,
+            "superheatK": 0,
+            "wet": true
+          }
+        ],
+        "nodes": [
+          {
+            "id": "tube-0",
+            "capacityKJK": 0.9740280000000001,
+            "temperatureK": 273.04249010967,
+            "energyKJ": -0.10471764345836733,
+            "energyChangeKJ": -0.10471764345836733,
+            "residualKJ": -4.163336342344337e-17
+          },
+          {
+            "id": "fin-0",
+            "capacityKJK": 0.8492017487761112,
+            "temperatureK": 273.3352581520155,
+            "energyKJ": 0.1573215466666424,
+            "energyChangeKJ": 0.1573215466666424,
+            "residualKJ": 0
+          },
+          {
+            "id": "tube-1",
+            "capacityKJK": 0.9740280000000001,
+            "temperatureK": 273.0422169400223,
+            "energyKJ": -0.10498371834393777,
+            "energyChangeKJ": -0.10498371834393777,
+            "residualKJ": -1.8041124150158794e-16
+          },
+          {
+            "id": "fin-1",
+            "capacityKJK": 0.8492017487761112,
+            "temperatureK": 273.33524597257997,
+            "energyKJ": 0.15731120386866795,
+            "energyChangeKJ": 0.15731120386866795,
+            "residualKJ": 1.942890293094024e-16
+          },
+          {
+            "id": "tube-2",
+            "capacityKJK": 0.9740279999999998,
+            "temperatureK": 273.0418462319311,
+            "energyKJ": -0.10534479840454981,
+            "energyChangeKJ": -0.10534479840454981,
+            "residualKJ": 4.163336342344337e-17
+          },
+          {
+            "id": "fin-2",
+            "capacityKJK": 0.849201748776111,
+            "temperatureK": 273.33522977622283,
+            "energyKJ": 0.15729744989383748,
+            "energyChangeKJ": 0.15729744989383748,
+            "residualKJ": 2.7755575615628914e-17
+          },
+          {
+            "id": "tube-3",
+            "capacityKJK": 0.9740280000000003,
+            "temperatureK": 273.0413596125243,
+            "energyKJ": -0.10581877933220302,
+            "energyChangeKJ": -0.10581877933220302,
+            "residualKJ": -4.163336342344337e-17
+          },
+          {
+            "id": "fin-3",
+            "capacityKJK": 0.8492017487761115,
+            "temperatureK": 273.3352087629016,
+            "energyKJ": 0.15727960534470023,
+            "energyChangeKJ": 0.15727960534470023,
+            "residualKJ": 5.551115123125783e-17
+          },
+          {
+            "id": "tube-4",
+            "capacityKJK": 0.9740279999999998,
+            "temperatureK": 273.04073787735797,
+            "energyKJ": -0.10642436679275936,
+            "energyChangeKJ": -0.10642436679275936,
+            "residualKJ": 0
+          },
+          {
+            "id": "fin-4",
+            "capacityKJK": 0.849201748776111,
+            "temperatureK": 273.3351820566089,
+            "energyKJ": 0.1572569263142778,
+            "energyChangeKJ": 0.1572569263142778,
+            "residualKJ": 1.6653345369377348e-16
+          },
+          {
+            "id": "air",
+            "capacityKJK": 4.308,
+            "temperatureK": 277.9917207523384,
+            "energyKJ": 20.858133001073753,
+            "energyChangeKJ": -0.681866998926246,
+            "residualKJ": -6.439293542825908e-15
+          }
+        ],
+        "terminal": {
+          "p": 3.507325779141914,
+          "h": 510.8474132982831,
+          "temperatureK": 267.8649387438502,
+          "phase": "Liquid + vapor",
+          "quality": 0.14803323704304022,
+          "wet": true,
+          "superheatK": 0
+        },
+        "outlet": {
+          "supported": true,
+          "p": 3.5,
+          "h": 510.8474132982831,
+          "temperatureK": 267.8114351963941,
+          "phase": "Liquid + vapor",
+          "quality": 0.14820385850441,
+          "wet": true,
+          "superheatK": 0
+        },
+        "totals": {
+          "massKg": 0.05666523267534384,
+          "internalEnergyKJ": 27.87209383417523
+        },
+        "sectionResiduals": [
+          {
+            "massKg": 4.588586455245292e-13,
+            "energyKJ": 2.025330181343321e-10
+          },
+          {
+            "massKg": 4.47951571669325e-13,
+            "energyKJ": 1.753858724917734e-10
+          },
+          {
+            "massKg": 1.5405732245454828e-13,
+            "energyKJ": 2.5033294881460222e-11
+          },
+          {
+            "massKg": 1.1063285704215886e-13,
+            "energyKJ": 2.1879720257800273e-12
+          },
+          {
+            "massKg": 1.3014762878515995e-13,
+            "energyKJ": 1.0645151427013388e-11
+          }
+        ],
+        "massResidualKg": 1.3016436886670313e-12,
+        "refrigerantEnergyResidualKJ": 4.1577996601205314e-10,
+        "thermalEnergyResidualKJ": -6.106226635438361e-15,
+        "combinedEnergyResidualKJ": 4.157738597854177e-10,
+        "ledger": {
+          "faces": [
+            {
+              "massKg": 0.003043678735725867,
+              "energyKJ": 1.5218393678629336
+            },
+            {
+              "massKg": 0.003534911953290879,
+              "energyKJ": 1.7850787814803257
+            },
+            {
+              "massKg": 0.004104659803932765,
+              "energyKJ": 2.074798461720778
+            },
+            {
+              "massKg": 0.004693618411955871,
+              "energyKJ": 2.3728869742938294
+            },
+            {
+              "massKg": 0.005299475160097777,
+              "energyKJ": 2.6793573127692896
+            },
+            {
+              "massKg": 0.005926233742399036,
+              "energyKJ": 2.996328947631096
+            }
+          ],
+          "tubeRefrigerantKJ": [
+            0.1237686093628588,
+            0.1240453553746877,
+            0.12442062205808659,
+            0.12491300594202454,
+            0.12554198043227383
+          ],
+          "thermalLinksKJ": [
+            0.006878447761685856,
+            0.16949406480944804,
+            0.01217251814280564,
+            0.0068786345015890045,
+            0.1694942063978288,
+            0.012183002529161073,
+            0.006878882617943605,
+            0.16949439092943056,
+            0.01219694103559312,
+            0.006879204370472548,
+            0.16949462758404915,
+            0.01221502223934901,
+            0.006879613202141226,
+            0.16949492675165082,
+            0.012238000437373222
+          ],
+          "thermalNodesKJ": [
+            -0.10471764345836729,
+            0.1573215466666424,
+            -0.10498371834393759,
+            0.15731120386866776,
+            -0.10534479840454986,
+            0.15729744989383745,
+            -0.10581877933220298,
+            0.15727960534470017,
+            -0.10642436679275936,
+            0.15725692631427762,
+            -0.6818669989262396
+          ],
+          "airLoadKJ": 0.2,
+          "boundaryMassKg": -0.0028825550066731683,
+          "boundaryEnthalpyKJ": -1.4744895797681623
+        },
+        "fluxes": {
+          "faces": [
+            {
+              "massKgS": 0.015205419861029634,
+              "energyKW": 7.602709930514817
+            },
+            {
+              "massKgS": 0.017658293197949336,
+              "energyKW": 8.994972625885321
+            },
+            {
+              "massKgS": 0.020724755740478922,
+              "energyKW": 10.582026519743449
+            },
+            {
+              "massKgS": 0.02388822637379023,
+              "energyKW": 12.200835134323173
+            },
+            {
+              "massKgS": 0.02706774863417097,
+              "energyKW": 13.8261116023473
+            },
+            {
+              "massKgS": 0.030254378028342264,
+              "energyKW": 15.455370756727094
+            }
+          ],
+          "links": [
+            0.034208977206763976,
+            0.818107608131831,
+            0.11710721693821143,
+            0.03421086534957372,
+            0.8181097479726793,
+            0.11721161302307337,
+            0.03421342767603548,
+            0.8181125935582954,
+            0.1173534177166857,
+            0.03421679117905222,
+            0.8181162854505045,
+            0.11753966015091923,
+            0.034221088599331914,
+            0.8181209775575999,
+            0.11777767170037802
+          ],
+          "tubeRefrigerant": [
+            0.6119446482921558,
+            0.6133364966197746,
+            0.6152607395997824,
+            0.6178157171340263,
+            0.62109589602092
+          ],
+          "thermalRates": [
+            -0.46062845414718034,
+            0.7010003911936196,
+            -0.4619140182471275,
+            0.700898134949606,
+            -0.46369389420706125,
+            0.7007591758416096,
+            -0.4660592658040548,
+            0.7005766252995853,
+            -0.46909713572121003,
+            0.7003433058572219,
+            -3.2616383626816674
+          ],
+          "airLoad": 1,
+          "fluidRates": [
+            {
+              "massKgS": -0.0024528733369197017,
+              "energyKW": -0.7803180470783477
+            },
+            {
+              "massKgS": -0.003066462542529586,
+              "energyKW": -0.973717397238353
+            },
+            {
+              "massKgS": -0.0031634706333113077,
+              "energyKW": -1.003547874979942
+            },
+            {
+              "massKgS": -0.0031795222603807384,
+              "energyKW": -1.0074607508901003
+            },
+            {
+              "massKgS": -0.003186629394171296,
+              "energyKW": -1.0081632583588735
+            }
+          ]
+        },
+        "settings": {
+          "method": "tr-bdf2",
+          "adaptive": true,
+          "maxStep": 0.5,
+          "minStep": 1e-09,
+          "relativeTolerance": 1e-06,
+          "massAbsoluteKg": 1.0000000000000001e-11,
+          "energyAbsoluteKJ": 1e-08,
+          "pressureAbsoluteBar": 1e-06,
+          "enthalpyAbsoluteKJkg": 9.999999999999999e-05,
+          "eventStepSeconds": 0.002,
+          "temperatureAbsoluteK": 9.999999999999999e-05,
+          "temperatureScaleK": 50,
+          "nonlinearTolerance": 1e-11,
+          "thermalResidualK": 1e-12,
+          "maxIterations": 30,
+          "maxAttempts": 100000,
+          "trace": true,
+          "thermalJacobian": "finite-difference",
+          "timestepGrowth": "failure-aware"
+        },
+        "conductancesKWK": [
+          0.12,
+          0.12,
+          0.12,
+          0.12,
+          0.12
+        ],
+        "conductanceDescription": "Effective uncalibrated constant tube-to-bulk-refrigerant conductance; radial/film resistance unresolved; no additional wall resistance.",
+        "energyReferenceK": 273.15,
+        "acceptedSteps": 58,
+        "rejectedSteps": 5,
+        "accuracyRejectedSteps": 5,
+        "eventRejectedSteps": 0,
+        "domainRejectedSteps": 0,
+        "attemptedResidualEvaluations": 11600,
+        "attemptedIterations": 518,
+        "attemptedLinearSolves": 518,
+        "minAcceptedStepSeconds": 3.813778978118051e-05,
+        "maxAcceptedStepSeconds": 0.021977720714630968,
+        "lastTimeError": 0.007190797010758818,
+        "lastResidual": 7.087240372181753e-13,
+        "events": [],
+        "boundaryEvents": [],
+        "trace": [
+          {
+            "startSeconds": 0,
+            "endSeconds": 8.705837322440198e-05,
+            "trialSeconds": 8.705837322440198e-05,
+            "error": 0.9131284443879037
+          },
+          {
+            "startSeconds": 8.705837322440198e-05,
+            "endSeconds": 0.000163333952786763,
+            "trialSeconds": 7.627557956236102e-05,
+            "error": 0.043216497168373696
+          },
+          {
+            "startSeconds": 0.000163333952786763,
+            "endSeconds": 0.00031588511191148503,
+            "trialSeconds": 0.00015255115912472204,
+            "error": 0.11351380292591615
+          },
+          {
+            "startSeconds": 0.00031588511191148503,
+            "endSeconds": 0.0005836898232591858,
+            "trialSeconds": 0.0002678047113477008,
+            "error": 0.18820156232172103
+          },
+          {
+            "startSeconds": 0.0005836898232591858,
+            "endSeconds": 0.0009809082594772985,
+            "trialSeconds": 0.00039721843621811276,
+            "error": 0.1996758176163001
+          },
+          {
+            "startSeconds": 0.0009809082594772985,
+            "endSeconds": 0.0015585694166662676,
+            "trialSeconds": 0.0005776611571889689,
+            "error": 0.2166658081027349
+          },
+          {
+            "startSeconds": 0.0015585694166662676,
+            "endSeconds": 0.002376083603456514,
+            "trialSeconds": 0.0008175141867902467,
+            "error": 0.2350775494380851
+          },
+          {
+            "startSeconds": 0.002376083603456514,
+            "endSeconds": 0.0035020113077767674,
+            "trialSeconds": 0.0011259277043202533,
+            "error": 0.2596293643450957
+          },
+          {
+            "startSeconds": 0.0035020113077767674,
+            "endSeconds": 0.005002196339000952,
+            "trialSeconds": 0.0015001850312241847,
+            "error": 0.2898626593715944
+          },
+          {
+            "startSeconds": 0.005002196339000952,
+            "endSeconds": 0.006928980182650996,
+            "trialSeconds": 0.0019267838436500442,
+            "error": 0.3214427939008
+          },
+          {
+            "startSeconds": 0.006928980182650996,
+            "endSeconds": 0.009319821157919319,
+            "trialSeconds": 0.0023908409752683227,
+            "error": 0.3490784105315096
+          },
+          {
+            "startSeconds": 0.009319821157919319,
+            "endSeconds": 0.01,
+            "trialSeconds": 0.0006801788420806813,
+            "error": 0.006250364133481462
+          },
+          {
+            "startSeconds": 0.01,
+            "endSeconds": 0.011360357684161363,
+            "trialSeconds": 0.0013603576841613625,
+            "error": 0.040953180048776724
+          },
+          {
+            "startSeconds": 0.011360357684161363,
+            "endSeconds": 0.014081073052484088,
+            "trialSeconds": 0.002720715368322725,
+            "error": 0.23211784563110255
+          },
+          {
+            "startSeconds": 0.014081073052484088,
+            "endSeconds": 0.0178440583818466,
+            "trialSeconds": 0.003762985329362513,
+            "error": 0.3995852796407472
+          },
+          {
+            "startSeconds": 0.0178440583818466,
+            "endSeconds": 0.022186643008698263,
+            "trialSeconds": 0.004342584626851664,
+            "error": 0.3986118174663377
+          },
+          {
+            "startSeconds": 0.022186643008698263,
+            "endSeconds": 0.0272021767876519,
+            "trialSeconds": 0.005015533778953637,
+            "error": 0.4017993721309529
+          },
+          {
+            "startSeconds": 0.0272021767876519,
+            "endSeconds": 0.03297958428665867,
+            "trialSeconds": 0.005777407499006767,
+            "error": 0.400154931171742
+          },
+          {
+            "startSeconds": 0.03297958428665867,
+            "endSeconds": 0.03964370009308763,
+            "trialSeconds": 0.006664115806428961,
+            "error": 0.39385773813317604
+          },
+          {
+            "startSeconds": 0.03964370009308763,
+            "endSeconds": 0.04737136592685051,
+            "trialSeconds": 0.007727665833762883,
+            "error": 0.3823186725880732
+          },
+          {
+            "startSeconds": 0.04737136592685051,
+            "endSeconds": 0.05,
+            "trialSeconds": 0.002628634073149491,
+            "error": 0.0121114271328964
+          },
+          {
+            "startSeconds": 0.05,
+            "endSeconds": 0.055257268146298985,
+            "trialSeconds": 0.005257268146298982,
+            "error": 0.07319277324282636
+          },
+          {
+            "startSeconds": 0.055257268146298985,
+            "endSeconds": 0.06577180443889695,
+            "trialSeconds": 0.010514536292597965,
+            "error": 0.341012316738981
+          },
+          {
+            "startSeconds": 0.06577180443889695,
+            "endSeconds": 0.07856421418818334,
+            "trialSeconds": 0.01279240974928639,
+            "error": 0.30927430269616096
+          },
+          {
+            "startSeconds": 0.07856421418818334,
+            "endSeconds": 0.09464312681620751,
+            "trialSeconds": 0.016078912628024168,
+            "error": 0.2725170475786581
+          },
+          {
+            "startSeconds": 0.09464312681620751,
+            "endSeconds": 0.11572347157461389,
+            "trialSeconds": 0.021080344758406377,
+            "error": 0.2232510639640976
+          },
+          {
+            "startSeconds": 0.11572347157461389,
+            "endSeconds": 0.1452604085195698,
+            "trialSeconds": 0.029536936944955912,
+            "error": 0.18634391137359949
+          },
+          {
+            "startSeconds": 0.1452604085195698,
+            "endSeconds": 0.18921584994883175,
+            "trialSeconds": 0.043955441429261936,
+            "error": 0.45672957958432253
+          },
+          {
+            "startSeconds": 0.18921584994883175,
+            "endSeconds": 0.2,
+            "trialSeconds": 0.010784150051168256,
+            "error": 0.007190797010758818
+          }
+        ],
+        "rejectionTrace": [
+          {
+            "seconds": 0,
+            "trialSeconds": 0.01,
+            "kind": "accuracy",
+            "error": 183.06177130202045
+          },
+          {
+            "seconds": 0,
+            "trialSeconds": 0.0014969927795837141,
+            "kind": "accuracy",
+            "error": 31.41296078877748
+          },
+          {
+            "seconds": 0,
+            "trialSeconds": 0.00040327596640165144,
+            "kind": "accuracy",
+            "error": 7.1684427324881455
+          },
+          {
+            "seconds": 0,
+            "trialSeconds": 0.0001777786727824342,
+            "kind": "accuracy",
+            "error": 2.4676955405569316
+          },
+          {
+            "seconds": 0,
+            "trialSeconds": 0.00011182392364402291,
+            "kind": "accuracy",
+            "error": 1.3014554725304093
+          }
+        ],
+        "stop": null,
+        "growthHistory": {
+          "ceilingSeconds": null,
+          "pendingFailure": false,
+          "successes": 0,
+          "lastFailedSeconds": null,
+          "lastRecoverySeconds": null,
+          "nonlinearFailures": 0,
+          "limitedProposals": 0,
+          "releases": 0,
+          "resets": {}
+        }
+      },
+      "elapsedMS": 427,
+      "counts": {
+        "ph": 33441,
+        "sat": 72822,
+        "stateMVU": 1560,
+        "domainGuards": 68442
+      },
+      "linearMemory": 56360960,
+      "conservation": {
+        "massKg": 1.3016436886670313e-12,
+        "sectionMassKg": 4.588586455245292e-13,
+        "refrigerantKJ": 4.1577996601205314e-10,
+        "thermalKJ": 7.91033905045424e-15,
+        "combinedKJ": 4.157738597854177e-10,
+        "sectionEnergyKJ": 2.025330181343321e-10,
+        "nodeEnergyKJ": 7.854827899222983e-15
+      }
+    }
+  ],
+  "completedAllSelectedSamples": true,
+  "elapsedSeconds": 5.939481955000019
+}

@@ -1,0 +1,225 @@
+{
+  "startCommit": "d0d11d59756c4dc32bbfdb22a5975fd6f4527e05",
+  "branch": "research/browser-eos-b4c-upper-quality-repair-20261016",
+  "upstreamCommit": "ae81610e7d23efc57f9d051c8e70a4d66e87537f",
+  "upstreamTree": "ca49b8c34df0dae93dcc7fe07e2815a10d967662",
+  "functionalFiles": [
+    "src/Backends/Helmholtz/HelmholtzEOSMixtureBackend.cpp"
+  ],
+  "sourceBeforeSHA256": {
+    "src/Backends/Helmholtz/HelmholtzEOSMixtureBackend.cpp": "6c6a2997936f9c006a2b5341632bdabc8626feb60655471359aad44bd93daf55"
+  },
+  "sourceAfterSHA256": {
+    "src/Backends/Helmholtz/HelmholtzEOSMixtureBackend.cpp": "bdfee0724282ee248235b7ebd51fcebe407bd45154570d24181ee2445716742c"
+  },
+  "inheritedFlashSHA256": "f40afccde19c0799bf93b4f144d22e5affba4d0a69c0081d00501a1bffd34c3f",
+  "unchangedGenericSolversSHA256": "f35b49f818a96153819b7ca7a16e9b8a436a356b3a1ab3036580b89e95e7b5c1",
+  "patchSHA256": "9c42f70817ac1ff812f55ab64670cb7cc81fb1606976de06ac6fa1c87e71e24a",
+  "algorithmSHA256": "187acc92de044bb16264358290222407e9ad7462a1f957b9e46b6714ef3f240b",
+  "preimplementation": {
+    "algorithmSHA256": "187acc92de044bb16264358290222407e9ad7462a1f957b9e46b6714ef3f240b",
+    "controlReproduced": true,
+    "sourceMatchesB4B": true,
+    "functionalB4CPatchApplied": false,
+    "thermodynamicsEvidenceSHA256": "f151412a8938af798a81d444d9821d7beacafabe58813844a5432d27eeb2b9ba"
+  },
+  "nativeBinaries": {
+    "controlA": {
+      "library": "/workspace/b4c-libs/rebuiltA.so",
+      "bytes": 12912824,
+      "sha256": "d8fa3a5ac1993dd5f6e6a001e70084838e1eea4baa590e1347ea5cb13795c00a",
+      "archive": "artifacts/libCoolProp-controlA.so.xz",
+      "archiveBytes": 4606676,
+      "archiveSHA256": "7e34553beab3ee8f2af83ee843b5c27af91163c3f93c76a36349a7bfed352929"
+    },
+    "candidateB": {
+      "library": "/workspace/b4c-libs/candidateB.so",
+      "bytes": 12912824,
+      "sha256": "1dbd593fb568d18af704bedc5e29b790abddbadd7f6f03838819ca193b9afbb1",
+      "archive": "artifacts/libCoolProp-candidateB.so.xz",
+      "archiveBytes": 4605560,
+      "archiveSHA256": "4de2f0cb0e1e7851d6f96c635f5900ee779cd4384a7b3bcdb2595c3105648d47"
+    },
+    "diagnostic-candidateB": {
+      "library": "/workspace/b4c-libs/diagnostic-candidateB.so",
+      "bytes": 12912984,
+      "sha256": "bcb3d7ab33a79962a3e65675e13077da5c0a706fbc4be3bb1432af98481567f8",
+      "archive": "artifacts/libCoolProp-diagnostic-candidateB.so.xz",
+      "archiveBytes": 4606140,
+      "archiveSHA256": "fc6ccad95cf55038e6881e90eccaf4eb9316203cb13dd3ddde77ceb20c16e1b4"
+    }
+  },
+  "scientificNativeControl": "../browser_eos_b4b/artifacts/libCoolProp-candidateB.so.xz",
+  "scientificBrowserControl": "../browser_eos_b4b/vendor/candidateB",
+  "matchedPerformanceControls": "newly rebuilt controlA native/WASM; complete scientific equivalence independently verified",
+  "buildVersions": {
+    "platform": "Linux-6.18.44-x86_64-with-glibc2.41",
+    "python": "3.12.14",
+    "compiler": "g++ (Debian 14.2.0-19) 14.2.0\nCopyright (C) 2024 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n\n",
+    "compilerSHA256": "6b3696e4dcb85e1c949c732a02befa50e3983ecf94ce7e8e58d9d503b954b79d",
+    "packages": {
+      "CoolProp": "8.0.0",
+      "numpy": "2.5.4",
+      "cmake": "4.4.4",
+      "ninja": "1.13.2",
+      "playwright": "1.62.0"
+    },
+    "emsdkCommit": "389a68bc35dcff7ebae4614e1615099dafda00d1",
+    "emcc": "emcc (Emscripten gcc/clang-like replacement + linker emulating GNU ld) 4.0.12 (6f625bd62ee64f4f8cd11476774741b961e4a2d5)\nCopyright (C) 2025 the Emscripten authors (see AUTHORS.txt)\nThis is free and open source software under the MIT license.\nThere is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n\n",
+    "clang": "clang version 22.0.0git (https:/github.com/llvm/llvm-project 7f93487862d98bf1c168babba87daf6224d8a46f)\nTarget: x86_64-unknown-linux-gnu\nThread model: posix\nInstalledDir: /workspace/emsdk-b4c/upstream/bin\n",
+    "cpuQuota": "200000 100000",
+    "memoryLimit": "8589934592"
+  },
+  "dependencies": "dependency-verification.json",
+  "artifacts": {
+    "vendor/LICENSE-CoolProp.txt": {
+      "bytes": 1103,
+      "sha256": "9bf835333ef602af4cb19338b9f9d43671e174fa029b00280e9bdba6ea4719b2"
+    },
+    "vendor/THIRD_PARTY-B1.md": {
+      "bytes": 2134,
+      "sha256": "08d17dda6b0ef439e8e29c0680e95b1aff984f0ba93b22bb0de280b21a5769c3"
+    },
+    "vendor/candidateB/coolprop.js": {
+      "bytes": 167060,
+      "sha256": "ebd02f5721abc10fee3e6560b0d96c1a17b8ae1f01bc144a4f9a1af8cf1e3217"
+    },
+    "vendor/candidateB/coolprop.wasm": {
+      "bytes": 9196619,
+      "sha256": "8c690c741d33d26f758a825ed5e4043af50cfc52a1e8587d8a5fb93732c026c5"
+    },
+    "vendor/controlA/coolprop.js": {
+      "bytes": 167060,
+      "sha256": "ebd02f5721abc10fee3e6560b0d96c1a17b8ae1f01bc144a4f9a1af8cf1e3217"
+    },
+    "vendor/controlA/coolprop.wasm": {
+      "bytes": 9196594,
+      "sha256": "c8520e9c867e662c2731ed581c02d4157df2a5eed284be866ed3b45d29b2519d"
+    },
+    "vendor/notices/Boost-1.0.txt": {
+      "bytes": 1338,
+      "sha256": "c9bff75738922193e67fa726fa225535870d2aa1059f91452c411736284ad566"
+    },
+    "vendor/notices/Eigen-7.2-MPL2.txt": {
+      "bytes": 16726,
+      "sha256": "fab3dd6bdab226f1c08630b1dd917e11fcb4ec5e1e020e2c16f83a0a13863e85"
+    },
+    "vendor/notices/Eigen-8.0-MPL2.txt": {
+      "bytes": 16727,
+      "sha256": "66a3107d5ad6a058aab753eaac2047ccb2ed0e39465dd0fe5844da3e300d5172"
+    },
+    "vendor/notices/IF97-MIT.txt": {
+      "bytes": 1054,
+      "sha256": "e22c3d30ef8d88ab468d9ea20392ca1df22fa3fd0a92dc3e996d89cf3cfdbd03"
+    },
+    "vendor/notices/LLVM-Apache.txt": {
+      "bytes": 16703,
+      "sha256": "539dd7aed86e8a4f12cbdd0e6c50c189c7d74847e4fecc64ce2c6ee3a01da38b"
+    },
+    "vendor/notices/REFPROP-headers.txt": {
+      "bytes": 1068,
+      "sha256": "f21f633c596509e89b2baedfd657c8f1b8018954b06576590971684b210e91f8"
+    },
+    "vendor/notices/compiler-rt-4.0.12.txt": {
+      "bytes": 16708,
+      "sha256": "1a8f1058753f1ba890de984e48f0242a3a5c29a6a8f2ed9fd813f36985387e8d"
+    },
+    "vendor/notices/emscripten-4.0.12.txt": {
+      "bytes": 5093,
+      "sha256": "620a78084fc7ca97c0b5dea9abf891f3ffcadfdbf305276f099c9c4e12fc1d86"
+    },
+    "vendor/notices/emscripten-MIT-NCSA.txt": {
+      "bytes": 5093,
+      "sha256": "620a78084fc7ca97c0b5dea9abf891f3ffcadfdbf305276f099c9c4e12fc1d86"
+    },
+    "vendor/notices/fmt-7.2.txt": {
+      "bytes": 1431,
+      "sha256": "07580f2a3b35709ce703d523f447b242f6dfec7582a8c0df102c7fa2849375f8"
+    },
+    "vendor/notices/fmt-8.0-MIT.txt": {
+      "bytes": 1431,
+      "sha256": "07580f2a3b35709ce703d523f447b242f6dfec7582a8c0df102c7fa2849375f8"
+    },
+    "vendor/notices/incbin-UNLICENSE.txt": {
+      "bytes": 1211,
+      "sha256": "7e12e5df4bae12cb21581ba157ced20e1986a0508dd10d0e8a4ab9a4cf94e85c"
+    },
+    "vendor/notices/libcxx-4.0.12.txt": {
+      "bytes": 16703,
+      "sha256": "539dd7aed86e8a4f12cbdd0e6c50c189c7d74847e4fecc64ce2c6ee3a01da38b"
+    },
+    "vendor/notices/libcxxabi-4.0.12.txt": {
+      "bytes": 16706,
+      "sha256": "e2b35be49f7284a45b7baca8fc7b3ab7440e7902392b2528a457816b5bb2a15c"
+    },
+    "vendor/notices/libunwind-4.0.12.txt": {
+      "bytes": 16706,
+      "sha256": "b5efebcaca80879234098e52d1725e6d9eb8fb96a19fce625d39184b705f7b6d"
+    },
+    "vendor/notices/miniz-MIT.txt": {
+      "bytes": 1162,
+      "sha256": "6f20fa7672b00e2e975c291df737cf227addf3ad32e36fef3fe0f416e4664d3d"
+    },
+    "vendor/notices/msgpack-Boost.txt": {
+      "bytes": 200,
+      "sha256": "664550b43996452a5a2c7471bb0ff77185a58c69ccafa60f983dc4c162e1ee22"
+    },
+    "vendor/notices/musl-4.0.12.txt": {
+      "bytes": 6204,
+      "sha256": "f9bc4423732350eb0b3f7ed7e91d530298476f8fec0c6c427a1c04ade22655af"
+    },
+    "vendor/notices/musl-MIT.txt": {
+      "bytes": 6204,
+      "sha256": "f9bc4423732350eb0b3f7ed7e91d530298476f8fec0c6c427a1c04ade22655af"
+    },
+    "vendor/notices/nlohmann-json-MIT.txt": {
+      "bytes": 1076,
+      "sha256": "46a65cffd1ea955132d95a8dd921640714a8d6b537d2e4e482d31145ae95b603"
+    },
+    "vendor/notices/rapidjson-MIT.txt": {
+      "bytes": 5152,
+      "sha256": "a140e5d46fe734a1c78f1a3c3ef207871dd75648be71fdda8e309b23ab8b1f32"
+    },
+    "vendor/notices/valijson-BSD.txt": {
+      "bytes": 1346,
+      "sha256": "61b5766db38eaa3f320c366357956d7743424bfbf90fd78f5943866ba237589e"
+    },
+    "artifacts/libCoolProp-candidateB.so.xz": {
+      "bytes": 4605560,
+      "sha256": "4de2f0cb0e1e7851d6f96c635f5900ee779cd4384a7b3bcdb2595c3105648d47"
+    },
+    "artifacts/libCoolProp-controlA.so.xz": {
+      "bytes": 4606676,
+      "sha256": "7e34553beab3ee8f2af83ee843b5c27af91163c3f93c76a36349a7bfed352929"
+    },
+    "artifacts/libCoolProp-diagnostic-candidateB.so.xz": {
+      "bytes": 4606140,
+      "sha256": "fc6ccad95cf55038e6881e90eccaf4eb9316203cb13dd3ddde77ceb20c16e1b4"
+    }
+  },
+  "startingTrackedFiles": 1313,
+  "changedStartingFiles": [],
+  "loaderExceptionHandlingUnchanged": true,
+  "EOSAndFluidDataUnchanged": true,
+  "acceptedA2": {
+    "commit": "be9eb35a4ddf5098e685182f8104685127c6a6ee",
+    "files": {
+      "conservation.cjs": "4e8b9d335a4f74d0303c259cfaca209114431099736cea707acfccc102bad4bc",
+      "coupled-fixtures.cjs": "0033737237d0e910fe555b7cde36e706c2c41c68564b041f56babfe9f18a1df9",
+      "coupled-implicit.cjs": "68b2ce9d8a3c59898cd3143b092abc4b1bd8775a52ea246c817446259fec955c",
+      "coupled-model.cjs": "929be63391a11efe3769f356e12e77afb62111672349069af7cf1562f42bf91e",
+      "evaporator.cjs": "3a2f438fab4def08928dd273321a150326516090bb3c3862711d9549b09d072c",
+      "hydraulics.cjs": "9bc1a6bce5dafbcff9c5ecf75beff956877fc9334da233b26aa00a4fadd288bf",
+      "implicit.cjs": "5bd347cd831c9504ea28ed96ee196d76de416754171a6d3922ec8a6a9d522a7a",
+      "spatial-fixtures.cjs": "952c66e126d4704f2a6a354f0de6b3bc210814bd26af6ac5503dd468e3cf451a",
+      "thermal-geometry.cjs": "f7db3d7f656cf4008ae5c4c91291534c8477a020d885d1f67181b3e1bb58bc77",
+      "thermal-network.cjs": "77e634aacc11521ea93423284afa80d5bc78564b33377ab3bd26d111979e6f63",
+      "thermodynamics.cjs": "8d1404243a8e22c1dfafb06c9bbe4db48a2f8858dd0c575da729857f4e0020a0",
+      "time-control.cjs": "3ef4055e659099fdca1e9ff49d5731d3a45d32ed823439e6837332236113da6d"
+    },
+    "unchanged": true
+  },
+  "fullQualification": false,
+  "physicalIPad": false,
+  "deployment": false
+}

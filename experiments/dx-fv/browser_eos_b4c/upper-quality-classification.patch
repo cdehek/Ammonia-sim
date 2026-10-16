@@ -1,0 +1,20 @@
+--- a/src/Backends/Helmholtz/HelmholtzEOSMixtureBackend.cpp
++++ b/src/Backends/Helmholtz/HelmholtzEOSMixtureBackend.cpp
+@@ -1844,7 +1844,7 @@
+                     SatV->clear();
+                     _Q = -1000;
+                     _TLanc = Tsat;
+-                } else if (Q > 1 + 1e-9) {
++                } else if (Q > 1 + 1e-9 || (Q > 1 && (other == iHmolar || other == iSmolar || other == iUmolar))) {
+                     this->_phase = iphase_gas;
+                     SatL->clear();
+                     SatV->clear();
+@@ -2084,7 +2084,7 @@
+                 this->_phase = iphase_liquid;
+                 _Q = -1000;
+                 return;
+-            } else if (Q > 1 + 1e-9) {
++            } else if (Q > 1 + 1e-9 || (Q > 1 && (other == iHmolar || other == iSmolar || other == iUmolar))) {
+                 this->_phase = iphase_gas;
+                 _Q = 1000;
+                 return;

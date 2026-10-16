@@ -1,0 +1,44 @@
+{
+  "scientificAcceptanceBudgetsChanged": false,
+  "attempts": [
+    {
+      "action": "initial git clone in restricted network namespace",
+      "result": "Failed to connect to proxy port 8080",
+      "disposition": "Retried with network-enabled workspace permission; original clone and exact checkpoint verification succeeded."
+    },
+    {
+      "action": "apt-get download from host package indexes",
+      "result": "Packages unavailable in indexes; apt config read warning",
+      "disposition": "Downloaded same six preserved Debian packages from public Debian pool, verified all original SHA256, extracted into isolated b4c-sysroot; no host package changes."
+    },
+    {
+      "action": "Playwright install host validation",
+      "result": "Missing default host-library warning",
+      "disposition": "Installed original isolated WPE package set/launcher; Chromium and desktop WPE WebKit complete all campaigns."
+    },
+    {
+      "action": "first boundary auditor",
+      "result": "68 false lifecycleQuality flags",
+      "evidence": "boundary-gate-attempt1.json",
+      "disposition": "Auditor incorrectly treated homogeneous DU Q=10000 sentinel as mixture quality. Established native phase/source and independent EOS; corrected interpretation without backend/tolerance change; final boundary-gate passes."
+    },
+    {
+      "action": "first native timing pair",
+      "result": "Overlapped A2 zero-exchange work",
+      "evidence": "performance-native-*-contended-do-not-use.json",
+      "disposition": "Excluded completely from reported timing. Repeated both builds serially after all compilers/scientific workloads. Separate matched A2 cold timings also executed serially."
+    }
+  ],
+  "runtimeBudgets": {
+    "inspectMinutes": 10,
+    "reproductionMinutes": 10,
+    "buildSetupMinutes": 60,
+    "fullBuildSeconds": 900,
+    "incrementalBuildSeconds": 300,
+    "maxCompilerJobsPerBuild": 2,
+    "propertiesSeconds": 120,
+    "browserSeconds": 180,
+    "limitedA2Seconds": 300,
+    "allProcessDeadlinesCompleted": true
+  }
+}

@@ -1,0 +1,589 @@
+{
+  "native": {
+    "controlA": {
+      "groups": {
+        "B1-PH": {
+          "medianMicroseconds": 84.22897304878799,
+          "calls": 8888,
+          "exceptions": 0
+        },
+        "B4B-vapor-PH": {
+          "medianMicroseconds": 89.22958323425468,
+          "calls": 8452,
+          "exceptions": 0
+        },
+        "liquid-PH": {
+          "medianMicroseconds": 78.60437768454211,
+          "calls": 9634,
+          "exceptions": 0
+        },
+        "two-phase-PQ": {
+          "medianMicroseconds": 18.829129032274302,
+          "calls": 39537,
+          "exceptions": 0
+        },
+        "upper-vapor-PH": {
+          "medianMicroseconds": 19.11234450246788,
+          "calls": 39491,
+          "exceptions": 0
+        }
+      },
+      "initializationMS": 731.3882650000778,
+      "maxRSSKiB": 120120
+    },
+    "candidateB": {
+      "groups": {
+        "B1-PH": {
+          "medianMicroseconds": 83.36205333332853,
+          "calls": 9085,
+          "exceptions": 0
+        },
+        "B4B-vapor-PH": {
+          "medianMicroseconds": 88.19489006467604,
+          "calls": 8542,
+          "exceptions": 0
+        },
+        "liquid-PH": {
+          "medianMicroseconds": 77.59247235143864,
+          "calls": 9682,
+          "exceptions": 0
+        },
+        "two-phase-PQ": {
+          "medianMicroseconds": 18.653732562459542,
+          "calls": 39941,
+          "exceptions": 0
+        },
+        "upper-vapor-PH": {
+          "medianMicroseconds": 85.58592873434222,
+          "calls": 8760,
+          "exceptions": 0
+        }
+      },
+      "initializationMS": 740.0414180001462,
+      "maxRSSKiB": 120124
+    }
+  },
+  "browser": {
+    "chromium-controlA": {
+      "groups": {
+        "B1-PH": {
+          "medianMicroseconds": 70.95553453169347,
+          "calls": 10463,
+          "exceptions": 0
+        },
+        "B4B-vapor-PH": {
+          "medianMicroseconds": 72.8862973760933,
+          "calls": 10077,
+          "exceptions": 0
+        },
+        "liquid-PH": {
+          "medianMicroseconds": 66.4599025254763,
+          "calls": 11179,
+          "exceptions": 0
+        },
+        "two-phase-PQ": {
+          "medianMicroseconds": 5.260573753244021,
+          "calls": 139118,
+          "exceptions": 0
+        },
+        "upper-vapor-PH": {
+          "medianMicroseconds": 5.566069241901369,
+          "calls": 128702,
+          "exceptions": 0
+        },
+        "vapor-PT": {
+          "medianMicroseconds": 12.304158805676318,
+          "calls": 61045,
+          "exceptions": 0
+        }
+      },
+      "workerGroups": {
+        "B1-PH": {
+          "medianMicroseconds": 73.49338559529642,
+          "calls": 10327,
+          "exceptions": 0
+        },
+        "B4B-vapor-PH": {
+          "medianMicroseconds": 76.2582613116421,
+          "calls": 9885,
+          "exceptions": 0
+        },
+        "liquid-PH": {
+          "medianMicroseconds": 65.48865619550311,
+          "calls": 11161,
+          "exceptions": 0
+        },
+        "two-phase-PQ": {
+          "medianMicroseconds": 5.181168180719146,
+          "calls": 141316,
+          "exceptions": 0
+        },
+        "upper-vapor-PH": {
+          "medianMicroseconds": 5.633591226620596,
+          "calls": 126370,
+          "exceptions": 0
+        },
+        "vapor-PT": {
+          "medianMicroseconds": 11.92368839427663,
+          "calls": 61315,
+          "exceptions": 0
+        }
+      },
+      "init": {
+        "totalMS": 2093.899999999907,
+        "importMS": 5,
+        "fetchMS": 30.300000000046566,
+        "compileInstantiateMS": 23.5,
+        "runtimeMS": 59.39999999990687,
+        "firstFactoryMS": 1999.1999999999534,
+        "initialLinearMemoryBytes": 22544384,
+        "readyLinearMemoryBytes": 56360960,
+        "wasmBytes": 9196594,
+        "mime": "application/wasm",
+        "streaming": true,
+        "logs": []
+      },
+      "workerInit": {
+        "totalMS": 2027.3000000000466,
+        "importMS": 3.9000000001396984,
+        "fetchMS": 34.300000000046566,
+        "compileInstantiateMS": 19.9000000001397,
+        "runtimeMS": 38.5999999998603,
+        "firstFactoryMS": 1950.5,
+        "initialLinearMemoryBytes": 22544384,
+        "readyLinearMemoryBytes": 56360960,
+        "wasmBytes": 9196594,
+        "mime": "application/wasm",
+        "streaming": true,
+        "logs": []
+      },
+      "linearMemoryBytes": 56360960,
+      "workerLinearMemoryBytes": 56360960,
+      "heartbeat": {
+        "ticks": 654,
+        "maxGapMS": 13.5
+      },
+      "jsHeap": {
+        "usedJSHeapSize": 23100000,
+        "totalJSHeapSize": 39600000
+      },
+      "browserVersion": "151.0.7922.34"
+    },
+    "chromium-candidateB": {
+      "groups": {
+        "B1-PH": {
+          "medianMicroseconds": 70.72135785007072,
+          "calls": 10197,
+          "exceptions": 0
+        },
+        "B4B-vapor-PH": {
+          "medianMicroseconds": 73.92804337111878,
+          "calls": 10117,
+          "exceptions": 0
+        },
+        "liquid-PH": {
+          "medianMicroseconds": 63.829787234042556,
+          "calls": 11388,
+          "exceptions": 0
+        },
+        "two-phase-PQ": {
+          "medianMicroseconds": 5.413989749512741,
+          "calls": 140318,
+          "exceptions": 0
+        },
+        "upper-vapor-PH": {
+          "medianMicroseconds": 70.85498346717053,
+          "calls": 9596,
+          "exceptions": 0
+        },
+        "vapor-PT": {
+          "medianMicroseconds": 11.937922801432551,
+          "calls": 61651,
+          "exceptions": 0
+        }
+      },
+      "workerGroups": {
+        "B1-PH": {
+          "medianMicroseconds": 70.75471698113208,
+          "calls": 10705,
+          "exceptions": 0
+        },
+        "B4B-vapor-PH": {
+          "medianMicroseconds": 74.11067193675889,
+          "calls": 10163,
+          "exceptions": 0
+        },
+        "liquid-PH": {
+          "medianMicroseconds": 65.43156059289151,
+          "calls": 11468,
+          "exceptions": 0
+        },
+        "two-phase-PQ": {
+          "medianMicroseconds": 5.271296035985381,
+          "calls": 141953,
+          "exceptions": 0
+        },
+        "upper-vapor-PH": {
+          "medianMicroseconds": 71.32667617689016,
+          "calls": 10443,
+          "exceptions": 0
+        },
+        "vapor-PT": {
+          "medianMicroseconds": 12.444001991040318,
+          "calls": 60703,
+          "exceptions": 0
+        }
+      },
+      "init": {
+        "totalMS": 1972,
+        "importMS": 5.199999999953434,
+        "fetchMS": 37.5999999998603,
+        "compileInstantiateMS": 19.899999999906868,
+        "runtimeMS": 46.300000000046566,
+        "firstFactoryMS": 1882.9000000001397,
+        "initialLinearMemoryBytes": 22544384,
+        "readyLinearMemoryBytes": 56360960,
+        "wasmBytes": 9196619,
+        "mime": "application/wasm",
+        "streaming": true,
+        "logs": []
+      },
+      "workerInit": {
+        "totalMS": 1948.5,
+        "importMS": 5.5,
+        "fetchMS": 34.699999999953434,
+        "compileInstantiateMS": 20.899999999906868,
+        "runtimeMS": 37.5,
+        "firstFactoryMS": 1870.8000000000466,
+        "initialLinearMemoryBytes": 22544384,
+        "readyLinearMemoryBytes": 56360960,
+        "wasmBytes": 9196619,
+        "mime": "application/wasm",
+        "streaming": true,
+        "logs": []
+      },
+      "linearMemoryBytes": 56360960,
+      "workerLinearMemoryBytes": 56360960,
+      "heartbeat": {
+        "ticks": 646,
+        "maxGapMS": 11.199999999953434
+      },
+      "jsHeap": {
+        "usedJSHeapSize": 24500000,
+        "totalJSHeapSize": 39600000
+      },
+      "browserVersion": "151.0.7922.34"
+    },
+    "webkit-controlA": {
+      "groups": {
+        "B1-PH": {
+          "medianMicroseconds": 75.18796992481202,
+          "calls": 9949,
+          "exceptions": 0
+        },
+        "B4B-vapor-PH": {
+          "medianMicroseconds": 77.92207792207792,
+          "calls": 9370,
+          "exceptions": 0
+        },
+        "liquid-PH": {
+          "medianMicroseconds": 68.4931506849315,
+          "calls": 11028,
+          "exceptions": 0
+        },
+        "two-phase-PQ": {
+          "medianMicroseconds": 4.855468876444502,
+          "calls": 153347,
+          "exceptions": 0
+        },
+        "upper-vapor-PH": {
+          "medianMicroseconds": 5.5892983567462835,
+          "calls": 125149,
+          "exceptions": 0
+        },
+        "vapor-PT": {
+          "medianMicroseconds": 12.514600367094944,
+          "calls": 59695,
+          "exceptions": 0
+        }
+      },
+      "workerGroups": {
+        "B1-PH": {
+          "medianMicroseconds": 81.65487207403375,
+          "calls": 8953,
+          "exceptions": 0
+        },
+        "B4B-vapor-PH": {
+          "medianMicroseconds": 87.87346221441125,
+          "calls": 7825,
+          "exceptions": 0
+        },
+        "liquid-PH": {
+          "medianMicroseconds": 70.09345794392523,
+          "calls": 10049,
+          "exceptions": 0
+        },
+        "two-phase-PQ": {
+          "medianMicroseconds": 5.090267408714538,
+          "calls": 142353,
+          "exceptions": 0
+        },
+        "upper-vapor-PH": {
+          "medianMicroseconds": 6.239081607187422,
+          "calls": 111408,
+          "exceptions": 0
+        },
+        "vapor-PT": {
+          "medianMicroseconds": 14.259910637893336,
+          "calls": 47858,
+          "exceptions": 0
+        }
+      },
+      "init": {
+        "totalMS": 2170,
+        "importMS": 6,
+        "fetchMS": 113,
+        "compileInstantiateMS": 38,
+        "runtimeMS": 103,
+        "firstFactoryMS": 1948,
+        "initialLinearMemoryBytes": 22544384,
+        "readyLinearMemoryBytes": 56360960,
+        "wasmBytes": 9196594,
+        "mime": "application/wasm",
+        "streaming": true,
+        "logs": []
+      },
+      "workerInit": {
+        "totalMS": 2600,
+        "importMS": 6,
+        "fetchMS": 73,
+        "compileInstantiateMS": 39,
+        "runtimeMS": 105,
+        "firstFactoryMS": 2416,
+        "initialLinearMemoryBytes": 22544384,
+        "readyLinearMemoryBytes": 56360960,
+        "wasmBytes": 9196594,
+        "mime": "application/wasm",
+        "streaming": true,
+        "logs": []
+      },
+      "linearMemoryBytes": 56360960,
+      "workerLinearMemoryBytes": 56360960,
+      "heartbeat": {
+        "ticks": 572,
+        "maxGapMS": 47
+      },
+      "jsHeap": null,
+      "browserVersion": "26.5"
+    },
+    "webkit-candidateB": {
+      "groups": {
+        "B1-PH": {
+          "medianMicroseconds": 74.03751233958539,
+          "calls": 10068,
+          "exceptions": 0
+        },
+        "B4B-vapor-PH": {
+          "medianMicroseconds": 75.41478129713424,
+          "calls": 9858,
+          "exceptions": 0
+        },
+        "liquid-PH": {
+          "medianMicroseconds": 66.60746003552399,
+          "calls": 10802,
+          "exceptions": 0
+        },
+        "two-phase-PQ": {
+          "medianMicroseconds": 5.037952576073084,
+          "calls": 148862,
+          "exceptions": 0
+        },
+        "upper-vapor-PH": {
+          "medianMicroseconds": 76.18080243778567,
+          "calls": 9106,
+          "exceptions": 0
+        },
+        "vapor-PT": {
+          "medianMicroseconds": 12.128072445019406,
+          "calls": 60244,
+          "exceptions": 0
+        }
+      },
+      "workerGroups": {
+        "B1-PH": {
+          "medianMicroseconds": 79.95735607675905,
+          "calls": 9439,
+          "exceptions": 0
+        },
+        "B4B-vapor-PH": {
+          "medianMicroseconds": 81.30081300813008,
+          "calls": 8652,
+          "exceptions": 0
+        },
+        "liquid-PH": {
+          "medianMicroseconds": 72.21954742416948,
+          "calls": 10298,
+          "exceptions": 0
+        },
+        "two-phase-PQ": {
+          "medianMicroseconds": 5.385222948230057,
+          "calls": 141440,
+          "exceptions": 0
+        },
+        "upper-vapor-PH": {
+          "medianMicroseconds": 80.99352051835854,
+          "calls": 8540,
+          "exceptions": 0
+        },
+        "vapor-PT": {
+          "medianMicroseconds": 13.635124079629124,
+          "calls": 54103,
+          "exceptions": 0
+        }
+      },
+      "init": {
+        "totalMS": 2287,
+        "importMS": 5,
+        "fetchMS": 74,
+        "compileInstantiateMS": 61,
+        "runtimeMS": 111,
+        "firstFactoryMS": 2097,
+        "initialLinearMemoryBytes": 22544384,
+        "readyLinearMemoryBytes": 56360960,
+        "wasmBytes": 9196619,
+        "mime": "application/wasm",
+        "streaming": true,
+        "logs": []
+      },
+      "workerInit": {
+        "totalMS": 2534,
+        "importMS": 7,
+        "fetchMS": 108,
+        "compileInstantiateMS": 39,
+        "runtimeMS": 113,
+        "firstFactoryMS": 2306,
+        "initialLinearMemoryBytes": 22544384,
+        "readyLinearMemoryBytes": 56360960,
+        "wasmBytes": 9196619,
+        "mime": "application/wasm",
+        "streaming": true,
+        "logs": []
+      },
+      "linearMemoryBytes": 56360960,
+      "workerLinearMemoryBytes": 56360960,
+      "heartbeat": {
+        "ticks": 566,
+        "maxGapMS": 44
+      },
+      "jsHeap": null,
+      "browserVersion": "26.5"
+    }
+  },
+  "A2Cold": {
+    "chromium-controlA": {
+      "completedSeconds": 0.2,
+      "advanceElapsedMS": 2094.0999999998603,
+      "elapsedMSWithSetup": 5356.577846000164,
+      "counts": {
+        "ph": 33441,
+        "sat": 72822,
+        "stateMVU": 1560,
+        "domainGuards": 68442
+      },
+      "work": {
+        "acceptedSteps": 58,
+        "rejectedSteps": 5,
+        "attemptedResidualEvaluations": 11600,
+        "attemptedIterations": 518
+      }
+    },
+    "chromium-candidateB": {
+      "completedSeconds": 0.2,
+      "advanceElapsedMS": 2039.1999999999534,
+      "elapsedMSWithSetup": 5289.594407000095,
+      "counts": {
+        "ph": 33441,
+        "sat": 72822,
+        "stateMVU": 1560,
+        "domainGuards": 68442
+      },
+      "work": {
+        "acceptedSteps": 58,
+        "rejectedSteps": 5,
+        "attemptedResidualEvaluations": 11600,
+        "attemptedIterations": 518
+      }
+    },
+    "webkit-controlA": {
+      "completedSeconds": 0.2,
+      "advanceElapsedMS": 2194,
+      "elapsedMSWithSetup": 5939.481955000019,
+      "counts": {
+        "ph": 33441,
+        "sat": 72822,
+        "stateMVU": 1560,
+        "domainGuards": 68442
+      },
+      "work": {
+        "acceptedSteps": 58,
+        "rejectedSteps": 5,
+        "attemptedResidualEvaluations": 11600,
+        "attemptedIterations": 518
+      }
+    },
+    "webkit-candidateB": {
+      "completedSeconds": 0.2,
+      "advanceElapsedMS": 2269,
+      "elapsedMSWithSetup": 5911.638109000023,
+      "counts": {
+        "ph": 33441,
+        "sat": 72822,
+        "stateMVU": 1560,
+        "domainGuards": 68442
+      },
+      "work": {
+        "acceptedSteps": 58,
+        "rejectedSteps": 5,
+        "attemptedResidualEvaluations": 11600,
+        "attemptedIterations": 518
+      }
+    }
+  },
+  "physicalIPad": false,
+  "timingAcceptanceThreshold": null,
+  "wholeSimulatorSlowdownClaim": false,
+  "additionalB4CCostRatios": {
+    "native": {
+      "B1-PH": 0.9897075829838586,
+      "B4B-vapor-PH": 0.9884041465613231,
+      "liquid-PH": 0.9871266033405355,
+      "two-phase-PQ": 0.9906848336152926,
+      "upper-vapor-PH": 4.4780444766099174
+    },
+    "chromium": {
+      "B1-PH": 0.9966996699669967,
+      "B4B-vapor-PH": 1.0142927550517495,
+      "liquid-PH": 0.9604255319148937,
+      "two-phase-PQ": 1.0291633581173751,
+      "upper-vapor-PH": 12.729806329711858,
+      "vapor-PT": 0.9702347791484283
+    },
+    "webkit": {
+      "B1-PH": 0.9846989141164858,
+      "B4B-vapor-PH": 0.9678230266465562,
+      "liquid-PH": 0.9724689165186502,
+      "two-phase-PQ": 1.0375831262175053,
+      "upper-vapor-PH": 13.62976130015236,
+      "vapor-PT": 0.9691138421733506
+    }
+  },
+  "measurementNotes": [
+    "Five 150ms rounds per microbenchmark group, medians; full updates/getters, not pure kernel time.",
+    "Control/candidate native and WASM rebuilt with matched toolchains/flags. Full scientific controls also match archived B4B exactly.",
+    "Authoritative timings ran serially after scientific campaigns and compilers. First native timing pair overlapped A2 zero-exchange and is retained as contended-do-not-use.",
+    "A2 cold performance is a separate matched end-to-end replay. Other A2 scientific-run wall times are not cumulative performance evidence.",
+    "One cold timing per runtime/build is descriptive, not a statistical speed guarantee.",
+    "B4A/B4B historical ratios are different workloads; no multiplied cumulative slowdown is reported.",
+    "Internal homogeneous evaluation counts are native source traces; browser adapter counts are public interface calls, not internal Newton counts."
+  ]
+}

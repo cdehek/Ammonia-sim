@@ -1,0 +1,914 @@
+{
+  "startingTrackedFiles": 1313,
+  "nativeMaxima": {
+    "p": 1.097272615879774e-06,
+    "h": 3.809574991464615e-06,
+    "T": 2.1941559680271894e-11,
+    "getterP": 7.813796401023865e-07,
+    "getterH": 3.80747951567173e-06,
+    "getterU": 3.5297125577926636e-06,
+    "normalizedEnergy": 6.103728633632954e-13
+  },
+  "browserMaxima": {
+    "chromium": {
+      "p": 1.3972166925668716e-06,
+      "h": 3.718072548508644e-06,
+      "T": 1.0913936421275139e-11,
+      "getterP": 7.03614205121994e-07,
+      "getterH": 3.718072548508644e-06,
+      "getterU": 3.446824848651886e-06,
+      "normalizedEnergy": 5.956624082870121e-13
+    },
+    "webkit": {
+      "p": 1.3972166925668716e-06,
+      "h": 3.718072548508644e-06,
+      "T": 1.0913936421275139e-11,
+      "getterP": 7.03614205121994e-07,
+      "getterH": 3.718072548508644e-06,
+      "getterU": 3.446824848651886e-06,
+      "normalizedEnergy": 5.956624082870121e-13
+    }
+  },
+  "changedBaseCounts": {
+    "native": 11,
+    "chromium": 9,
+    "webkit": 9
+  },
+  "nativeUpperUniqueCases": 14,
+  "browserUpperUniqueCases": {
+    "chromium": 12,
+    "webkit": 12
+  },
+  "A2": {
+    "massKg": 1.3470301263307505e-12,
+    "sectionMassKg": 1.1936424071379292e-12,
+    "refrigerantKJ": 4.310809487151346e-10,
+    "thermalKJ": 4.7163384309101275e-12,
+    "combinedKJ": 4.310720669309376e-10,
+    "sectionEnergyKJ": 6.136446906168658e-10,
+    "nodeEnergyKJ": 7.919220834651242e-13
+  },
+  "nativeBinaries": {
+    "controlA": {
+      "library": "/workspace/b4c-libs/rebuiltA.so",
+      "bytes": 12912824,
+      "sha256": "d8fa3a5ac1993dd5f6e6a001e70084838e1eea4baa590e1347ea5cb13795c00a",
+      "archive": "artifacts/libCoolProp-controlA.so.xz",
+      "archiveBytes": 4606676,
+      "archiveSHA256": "7e34553beab3ee8f2af83ee843b5c27af91163c3f93c76a36349a7bfed352929"
+    },
+    "candidateB": {
+      "library": "/workspace/b4c-libs/candidateB.so",
+      "bytes": 12912824,
+      "sha256": "1dbd593fb568d18af704bedc5e29b790abddbadd7f6f03838819ca193b9afbb1",
+      "archive": "artifacts/libCoolProp-candidateB.so.xz",
+      "archiveBytes": 4605560,
+      "archiveSHA256": "4de2f0cb0e1e7851d6f96c635f5900ee779cd4384a7b3bcdb2595c3105648d47"
+    },
+    "diagnostic-candidateB": {
+      "library": "/workspace/b4c-libs/diagnostic-candidateB.so",
+      "bytes": 12912984,
+      "sha256": "bcb3d7ab33a79962a3e65675e13077da5c0a706fbc4be3bb1432af98481567f8",
+      "archive": "artifacts/libCoolProp-diagnostic-candidateB.so.xz",
+      "archiveBytes": 4606140,
+      "archiveSHA256": "fc6ccad95cf55038e6881e90eccaf4eb9316203cb13dd3ddde77ceb20c16e1b4"
+    }
+  },
+  "functionalPatchSHA256": "9c42f70817ac1ff812f55ab64670cb7cc81fb1606976de06ac6fa1c87e71e24a",
+  "originalSupportedVaporComparisons": [
+    {
+      "id": "approach-30298.937123458254-vapor-0.001",
+      "axis": "P",
+      "step": -0.01,
+      "before": {
+        "normalizedMassProbeContamination": 2.7522027015046027e-11,
+        "normalizedEnergyProbeContamination": 4.2093425370108464e-10,
+        "nonlinearScalePass": false
+      },
+      "after": {
+        "normalizedMassProbeContamination": 4.305568791358299e-18,
+        "normalizedEnergyProbeContamination": 8.923624448222063e-17,
+        "nonlinearScalePass": true
+      }
+    },
+    {
+      "id": "approach-30298.937123458254-vapor-0.001",
+      "axis": "H",
+      "step": 0.015294448888290521,
+      "before": {
+        "normalizedMassProbeContamination": 2.752201117695852e-11,
+        "normalizedEnergyProbeContamination": 4.2093404840987324e-10,
+        "nonlinearScalePass": false
+      },
+      "after": {
+        "normalizedMassProbeContamination": 2.014365629792139e-17,
+        "normalizedEnergyProbeContamination": 2.9873680017449247e-16,
+        "nonlinearScalePass": true
+      }
+    },
+    {
+      "id": "approach-30298.937123458254-vapor-0.01",
+      "axis": "P",
+      "step": 0.01,
+      "before": {
+        "normalizedMassProbeContamination": 2.7446196246357487e-11,
+        "normalizedEnergyProbeContamination": 4.1977443156727087e-10,
+        "nonlinearScalePass": false
+      },
+      "after": {
+        "normalizedMassProbeContamination": 2.400783334187694e-18,
+        "normalizedEnergyProbeContamination": 6.137623235117322e-17,
+        "nonlinearScalePass": true
+      }
+    },
+    {
+      "id": "approach-350000.0-vapor-0.001",
+      "axis": "P",
+      "step": -0.034999999999999996,
+      "before": {
+        "normalizedMassProbeContamination": 1.850996044624569e-10,
+        "normalizedEnergyProbeContamination": 1.1728432630071619e-09,
+        "nonlinearScalePass": false
+      },
+      "after": {
+        "normalizedMassProbeContamination": 1.117249692318223e-17,
+        "normalizedEnergyProbeContamination": 5.4722929002059543e-17,
+        "nonlinearScalePass": true
+      }
+    },
+    {
+      "id": "approach-350000.0-vapor-0.001",
+      "axis": "H",
+      "step": 0.016014893530557073,
+      "before": {
+        "normalizedMassProbeContamination": 1.8509931875545544e-10,
+        "normalizedEnergyProbeContamination": 1.1728416915411607e-09,
+        "nonlinearScalePass": false
+      },
+      "after": {
+        "normalizedMassProbeContamination": 2.9687949835864097e-16,
+        "normalizedEnergyProbeContamination": 1.6379173656343365e-15,
+        "nonlinearScalePass": true
+      }
+    },
+    {
+      "id": "approach-799999.9981754856-vapor-0.001",
+      "axis": "P",
+      "step": -0.07999999981754856,
+      "before": {
+        "normalizedMassProbeContamination": 3.506642288250251e-10,
+        "normalizedEnergyProbeContamination": 1.012196931795372e-09,
+        "nonlinearScalePass": false
+      },
+      "after": {
+        "normalizedMassProbeContamination": 3.575514429312048e-16,
+        "normalizedEnergyProbeContamination": 1.0118729294713814e-15,
+        "nonlinearScalePass": true
+      }
+    },
+    {
+      "id": "approach-799999.9981754856-vapor-0.001",
+      "axis": "H",
+      "step": 0.016240197431341155,
+      "before": {
+        "normalizedMassProbeContamination": 3.506637424021832e-10,
+        "normalizedEnergyProbeContamination": 1.0121957322322078e-09,
+        "nonlinearScalePass": false
+      },
+      "after": {
+        "normalizedMassProbeContamination": 1.28871398949576e-16,
+        "normalizedEnergyProbeContamination": 1.9781219372101136e-16,
+        "nonlinearScalePass": true
+      }
+    },
+    {
+      "id": "diagnostic-quality-band-30298.937123458254-hg-9.9e-10",
+      "axis": "P",
+      "step": -0.01,
+      "before": {
+        "normalizedMassProbeContamination": 3.900076363923934e-11,
+        "normalizedEnergyProbeContamination": 5.964952106217798e-10,
+        "nonlinearScalePass": false
+      },
+      "after": {
+        "normalizedMassProbeContamination": 7.681154169542092e-18,
+        "normalizedEnergyProbeContamination": 1.3506629881728443e-16,
+        "nonlinearScalePass": true
+      }
+    },
+    {
+      "id": "diagnostic-quality-band-30298.937123458254-hg-9.9e-10",
+      "axis": "H",
+      "step": 0.015294448892452872,
+      "before": {
+        "normalizedMassProbeContamination": 3.900074012257936e-11,
+        "normalizedEnergyProbeContamination": 5.96494904426618e-10,
+        "nonlinearScalePass": false
+      },
+      "after": {
+        "normalizedMassProbeContamination": 1.5835505809696864e-17,
+        "normalizedEnergyProbeContamination": 1.7709381380260932e-16,
+        "nonlinearScalePass": true
+      }
+    },
+    {
+      "id": "diagnostic-quality-band-350000.0-hg-9.9e-10",
+      "axis": "P",
+      "step": -0.034999999999999996,
+      "before": {
+        "normalizedMassProbeContamination": 2.346398246319019e-10,
+        "normalizedEnergyProbeContamination": 1.4867441040284035e-09,
+        "nonlinearScalePass": false
+      },
+      "after": {
+        "normalizedMassProbeContamination": 1.8358170805777565e-16,
+        "normalizedEnergyProbeContamination": 1.2092984706075046e-15,
+        "nonlinearScalePass": true
+      }
+    },
+    {
+      "id": "diagnostic-quality-band-350000.0-hg-9.9e-10",
+      "axis": "H",
+      "step": 0.016014893533233057,
+      "before": {
+        "normalizedMassProbeContamination": 2.3463956121221616e-10,
+        "normalizedEnergyProbeContamination": 1.486742692909876e-09,
+        "nonlinearScalePass": false
+      },
+      "after": {
+        "normalizedMassProbeContamination": 7.983797771046634e-17,
+        "normalizedEnergyProbeContamination": 2.1668748745011434e-16,
+        "nonlinearScalePass": true
+      }
+    },
+    {
+      "id": "diagnostic-quality-band-799999.9981754856-hg-9.9e-10",
+      "axis": "P",
+      "step": -0.07999999981754856,
+      "before": {
+        "normalizedMassProbeContamination": 4.1480019072616544e-10,
+        "normalizedEnergyProbeContamination": 1.1973261557137282e-09,
+        "nonlinearScalePass": false
+      },
+      "after": {
+        "normalizedMassProbeContamination": 3.4666559783924112e-18,
+        "normalizedEnergyProbeContamination": 8.707070374986226e-17,
+        "nonlinearScalePass": true
+      }
+    },
+    {
+      "id": "diagnostic-quality-band-799999.9981754856-hg-9.9e-10",
+      "axis": "H",
+      "step": 0.016240197433170057,
+      "before": {
+        "normalizedMassProbeContamination": 4.1479975068162053e-10,
+        "normalizedEnergyProbeContamination": 1.1973251024503471e-09,
+        "nonlinearScalePass": false
+      },
+      "after": {
+        "normalizedMassProbeContamination": 4.435112009196034e-16,
+        "normalizedEnergyProbeContamination": 9.781659383638619e-16,
+        "nonlinearScalePass": true
+      }
+    },
+    {
+      "id": "diagnostic-quality-band-3500000.0-hg-9.9e-10",
+      "axis": "H",
+      "step": 0.016280693286840793,
+      "before": {
+        "normalizedMassProbeContamination": 7.097941017564245e-10,
+        "normalizedEnergyProbeContamination": 7.687061690771012e-10,
+        "nonlinearScalePass": false
+      },
+      "after": {
+        "normalizedMassProbeContamination": 8.296655095060441e-16,
+        "normalizedEnergyProbeContamination": 3.7356470381860436e-16,
+        "nonlinearScalePass": true
+      }
+    }
+  ],
+  "eightBarExample": {
+    "inputBits": [
+      "412869ffff10db75",
+      "4138c7d3be3e0993"
+    ],
+    "p": 799999.9981754856,
+    "h": 1624019.7431341156,
+    "independentPhysicalPhase": "gas",
+    "saturation": {
+      "liquid": {
+        "values": {
+          "p": 799999.9981754856,
+          "T": 291.01336143550407,
+          "rho": 613.5129566644232,
+          "h": 429181.30692029034,
+          "u": 427877.3409820226,
+          "Q": 0.0,
+          "phase": 6.0
+        },
+        "bits": {
+          "p": "412869ffff10db75",
+          "T": "40723036ba7b0848",
+          "rho": "40832c1a89060fb4",
+          "h": "411a31f53a495006",
+          "u": "411a1d955d2a642e",
+          "Q": "0000000000000000",
+          "phase": "4018000000000000"
+        }
+      },
+      "vapor": {
+        "values": {
+          "p": 799999.9981754856,
+          "T": 291.01336143550407,
+          "rho": 6.26658403942953,
+          "h": 1624019.7421341157,
+          "u": 1496358.4847183006,
+          "Q": 1.0,
+          "phase": 6.0
+        },
+        "bits": {
+          "p": "412869ffff10db75",
+          "T": "40723036ba7b0848",
+          "rho": "401910fb680bf10e",
+          "h": "4138c7d3bdfc805c",
+          "u": "4136d5267c167fa1",
+          "Q": "3ff0000000000000",
+          "phase": "4018000000000000"
+        }
+      }
+    },
+    "hMinusHg": 0.0009999999310821295,
+    "rawQuality": 1.0000000008369334,
+    "reference": {
+      "state": {
+        "p": 799999.9981754856,
+        "T": 291.0133617685673,
+        "rho": 6.266584028393985,
+        "h": 1624019.743134116,
+        "u": 1496358.485493482,
+        "Q": -1.0,
+        "phase": 5.0
+      },
+      "trace": [
+        {
+          "rho": 6.26658403942953,
+          "T": 291.01336143550407,
+          "pResidual": -3.329478204250336e-08,
+          "hResidual": -0.0009999999310821295
+        },
+        {
+          "rho": 6.266584028393984,
+          "T": 291.0133617685673,
+          "pResidual": 0.0,
+          "hResidual": 4.656612873077393e-10
+        }
+      ],
+      "converged": true,
+      "stability": {
+        "cp": 3002.441264104876,
+        "cv": 2081.649549215137,
+        "kappa": 1.4099908798000344e-06
+      },
+      "derivatives": {
+        "rhoP": 7.887102747691583e-06,
+        "rhoH": -1.1035808845369832e-05
+      }
+    },
+    "before": {
+      "p": 799999.9981754856,
+      "h": 1624019.7431341156,
+      "inputBits": [
+        "412869ffff10db75",
+        "4138c7d3be3e0993"
+      ],
+      "PH": {
+        "values": {
+          "p": 799999.9981754856,
+          "T": 291.01336143550407,
+          "rho": 6.266584034238387,
+          "h": 1624019.7431341156,
+          "u": 1496358.485612548,
+          "Q": 1.0000000008369332,
+          "phase": 6.0
+        },
+        "bits": {
+          "p": "412869ffff10db75",
+          "T": "40723036ba7b0848",
+          "rho": "401910fb67b2c22b",
+          "h": "4138c7d3be3e0993",
+          "u": "4136d5267c511a9c",
+          "Q": "3ff000000039837c",
+          "phase": "4018000000000000"
+        }
+      },
+      "independentDT": {
+        "values": {
+          "p": 799999.9975879417,
+          "T": 291.01336143550407,
+          "rho": 6.266584034238387,
+          "h": 1624019.7421846227,
+          "u": 1496358.484756808,
+          "Q": -1.0,
+          "phase": 5.0
+        },
+        "bits": {
+          "p": "412869fffec3d8c1",
+          "T": "40723036ba7b0848",
+          "rho": "401910fb67b2c22b",
+          "h": "4138c7d3bdffcfba",
+          "u": "4136d5267c1905ad",
+          "Q": "bff0000000000000",
+          "phase": "4014000000000000"
+        }
+      },
+      "residuals": {
+        "p": -0.0005875439383089542,
+        "h": -0.0009494929108768702
+      },
+      "elapsedSeconds": 3.2889000010527525e-05,
+      "supportedInput": true,
+      "physicalPhase": "gas",
+      "hMinusHf": 1194838.4362138254,
+      "hMinusHg": 0.0009999999310821295,
+      "rawQuality": 1.0000000008369334,
+      "saturation": {
+        "liquid": {
+          "values": {
+            "p": 799999.9981754856,
+            "T": 291.01336143550407,
+            "rho": 613.5129566644232,
+            "h": 429181.30692029034,
+            "u": 427877.3409820226,
+            "Q": 0.0,
+            "phase": 6.0
+          },
+          "bits": {
+            "p": "412869ffff10db75",
+            "T": "40723036ba7b0848",
+            "rho": "40832c1a89060fb4",
+            "h": "411a31f53a495006",
+            "u": "411a1d955d2a642e",
+            "Q": "0000000000000000",
+            "phase": "4018000000000000"
+          }
+        },
+        "vapor": {
+          "values": {
+            "p": 799999.9981754856,
+            "T": 291.01336143550407,
+            "rho": 6.26658403942953,
+            "h": 1624019.7421341157,
+            "u": 1496358.4847183006,
+            "Q": 1.0,
+            "phase": 6.0
+          },
+          "bits": {
+            "p": "412869ffff10db75",
+            "T": "40723036ba7b0848",
+            "rho": "401910fb680bf10e",
+            "h": "4138c7d3bdfc805c",
+            "u": "4136d5267c167fa1",
+            "Q": "3ff0000000000000",
+            "phase": "4018000000000000"
+          }
+        }
+      },
+      "reference": {
+        "state": {
+          "p": 799999.9981754856,
+          "T": 291.0133617685673,
+          "rho": 6.266584028393985,
+          "h": 1624019.743134116,
+          "u": 1496358.485493482,
+          "Q": -1.0,
+          "phase": 5.0
+        },
+        "trace": [
+          {
+            "rho": 6.26658403942953,
+            "T": 291.01336143550407,
+            "pResidual": -3.329478204250336e-08,
+            "hResidual": -0.0009999999310821295
+          },
+          {
+            "rho": 6.266584028393984,
+            "T": 291.0133617685673,
+            "pResidual": 0.0,
+            "hResidual": 4.656612873077393e-10
+          }
+        ],
+        "converged": true,
+        "stability": {
+          "cp": 3002.441264104876,
+          "cv": 2081.649549215137,
+          "kappa": 1.4099908798000344e-06
+        },
+        "derivatives": {
+          "rhoP": 7.887102747691583e-06,
+          "rhoH": -1.1035808845369832e-05
+        }
+      }
+    },
+    "after": {
+      "p": 799999.9981754856,
+      "h": 1624019.7431341156,
+      "inputBits": [
+        "412869ffff10db75",
+        "4138c7d3be3e0993"
+      ],
+      "PH": {
+        "values": {
+          "p": 799999.9981754856,
+          "T": 291.01336176856717,
+          "rho": 6.266584028393989,
+          "h": 1624019.7431341151,
+          "u": 1496358.4854934816,
+          "Q": -1.0,
+          "phase": 5.0
+        },
+        "bits": {
+          "p": "412869ffff10db75",
+          "T": "40723036bad47034",
+          "rho": "401910fb674e5a3c",
+          "h": "4138c7d3be3e0991",
+          "u": "4136d5267c494d02",
+          "Q": "bff0000000000000",
+          "phase": "4014000000000000"
+        }
+      },
+      "independentDT": {
+        "values": {
+          "p": 799999.9981754856,
+          "T": 291.01336176856717,
+          "rho": 6.266584028393989,
+          "h": 1624019.7431341151,
+          "u": 1496358.4854934816,
+          "Q": -1.0,
+          "phase": 5.0
+        },
+        "bits": {
+          "p": "412869ffff10db75",
+          "T": "40723036bad47034",
+          "rho": "401910fb674e5a3c",
+          "h": "4138c7d3be3e0991",
+          "u": "4136d5267c494d02",
+          "Q": "bff0000000000000",
+          "phase": "4014000000000000"
+        }
+      },
+      "residuals": {
+        "p": 0.0,
+        "h": -4.656612873077393e-10
+      },
+      "elapsedSeconds": 9.586299995589798e-05,
+      "supportedInput": true,
+      "physicalPhase": "gas",
+      "hMinusHf": 1194838.4362138254,
+      "hMinusHg": 0.0009999999310821295,
+      "rawQuality": 1.0000000008369334,
+      "saturation": {
+        "liquid": {
+          "values": {
+            "p": 799999.9981754856,
+            "T": 291.01336143550407,
+            "rho": 613.5129566644232,
+            "h": 429181.30692029034,
+            "u": 427877.3409820226,
+            "Q": 0.0,
+            "phase": 6.0
+          },
+          "bits": {
+            "p": "412869ffff10db75",
+            "T": "40723036ba7b0848",
+            "rho": "40832c1a89060fb4",
+            "h": "411a31f53a495006",
+            "u": "411a1d955d2a642e",
+            "Q": "0000000000000000",
+            "phase": "4018000000000000"
+          }
+        },
+        "vapor": {
+          "values": {
+            "p": 799999.9981754856,
+            "T": 291.01336143550407,
+            "rho": 6.26658403942953,
+            "h": 1624019.7421341157,
+            "u": 1496358.4847183006,
+            "Q": 1.0,
+            "phase": 6.0
+          },
+          "bits": {
+            "p": "412869ffff10db75",
+            "T": "40723036ba7b0848",
+            "rho": "401910fb680bf10e",
+            "h": "4138c7d3bdfc805c",
+            "u": "4136d5267c167fa1",
+            "Q": "3ff0000000000000",
+            "phase": "4018000000000000"
+          }
+        }
+      },
+      "reference": {
+        "state": {
+          "p": 799999.9981754856,
+          "T": 291.0133617685673,
+          "rho": 6.266584028393985,
+          "h": 1624019.743134116,
+          "u": 1496358.485493482,
+          "Q": -1.0,
+          "phase": 5.0
+        },
+        "trace": [
+          {
+            "rho": 6.26658403942953,
+            "T": 291.01336143550407,
+            "pResidual": -3.329478204250336e-08,
+            "hResidual": -0.0009999999310821295
+          },
+          {
+            "rho": 6.266584028393984,
+            "T": 291.0133617685673,
+            "pResidual": 0.0,
+            "hResidual": 4.656612873077393e-10
+          }
+        ],
+        "converged": true,
+        "stability": {
+          "cp": 3002.441264104876,
+          "cv": 2081.649549215137,
+          "kappa": 1.4099908798000344e-06
+        },
+        "derivatives": {
+          "rhoP": 7.887102747691583e-06,
+          "rhoH": -1.1035808845369832e-05
+        }
+      }
+    },
+    "canonical": {
+      "controlA": {
+        "input": {
+          "values": {
+            "M": 0.0037599504205430324,
+            "U_kJ": 5.626233717262014,
+            "V": 0.0006000000000000001,
+            "rho": 6.266584034238387,
+            "u": 1496358.4856125424
+          },
+          "bits": {
+            "M": "3f6ecd3002e7f248",
+            "U_kJ": "40168143695d2be4",
+            "V": "3f43a92a30553262",
+            "rho": "401910fb67b2c22b",
+            "u": "4136d5267c511a84"
+          }
+        },
+        "accounting": "accepted bar/kJ equations",
+        "DU": {
+          "values": {
+            "p": 799999.9991295106,
+            "T": 291.0133618465888,
+            "rho": 6.266584034238387,
+            "h": 1624019.7432863554,
+            "u": 1496358.4856125424,
+            "Q": 10000.0,
+            "phase": 5.0
+          },
+          "bits": {
+            "p": "412869ffff8de739",
+            "T": "40723036bae961cf",
+            "rho": "401910fb67b2c22b",
+            "h": "4138c7d3be4803bc",
+            "u": "4136d5267c511a84",
+            "Q": "40c3880000000000",
+            "phase": "4014000000000000"
+          }
+        },
+        "independentDT": {
+          "values": {
+            "p": 799999.9991295106,
+            "T": 291.0133618465888,
+            "rho": 6.266584034238387,
+            "h": 1624019.7432863554,
+            "u": 1496358.4856125424,
+            "Q": -1.0,
+            "phase": 5.0
+          },
+          "bits": {
+            "p": "412869ffff8de739",
+            "T": "40723036bae961cf",
+            "rho": "401910fb67b2c22b",
+            "h": "4138c7d3be4803bc",
+            "u": "4136d5267c511a84",
+            "Q": "bff0000000000000",
+            "phase": "4014000000000000"
+          }
+        },
+        "canonicalDifferences": {
+          "p": 0.0009540249593555927,
+          "h": 0.00015223980881273746,
+          "T": 4.110847271476814e-07
+        },
+        "canonicalPass": true,
+        "inventoryResiduals": {
+          "rho": 0.0,
+          "u": 0.0
+        },
+        "independentDUResiduals": {
+          "p": 0.0,
+          "h": 0.0,
+          "u": 0.0
+        },
+        "recoveredPressureInAcceptedRange": true
+      },
+      "candidateB": {
+        "input": {
+          "values": {
+            "M": 0.003759950417036394,
+            "U_kJ": 5.6262337115671635,
+            "V": 0.0006000000000000001,
+            "rho": 6.266584028393989,
+            "u": 1496358.4854934819
+          },
+          "bits": {
+            "M": "3f6ecd30026c914a",
+            "U_kJ": "4016814368fb55ac",
+            "V": "3f43a92a30553262",
+            "rho": "401910fb674e5a3c",
+            "u": "4136d5267c494d03"
+          }
+        },
+        "accounting": "accepted bar/kJ equations",
+        "DU": {
+          "values": {
+            "p": 799999.9981754863,
+            "T": 291.01336176856734,
+            "rho": 6.266584028393989,
+            "h": 1624019.7431341156,
+            "u": 1496358.4854934819,
+            "Q": 10000.0,
+            "phase": 5.0
+          },
+          "bits": {
+            "p": "412869ffff10db7b",
+            "T": "40723036bad47037",
+            "rho": "401910fb674e5a3c",
+            "h": "4138c7d3be3e0993",
+            "u": "4136d5267c494d03",
+            "Q": "40c3880000000000",
+            "phase": "4014000000000000"
+          }
+        },
+        "independentDT": {
+          "values": {
+            "p": 799999.9981754863,
+            "T": 291.01336176856734,
+            "rho": 6.266584028393989,
+            "h": 1624019.7431341156,
+            "u": 1496358.4854934819,
+            "Q": -1.0,
+            "phase": 5.0
+          },
+          "bits": {
+            "p": "412869ffff10db7b",
+            "T": "40723036bad47037",
+            "rho": "401910fb674e5a3c",
+            "h": "4138c7d3be3e0993",
+            "u": "4136d5267c494d03",
+            "Q": "bff0000000000000",
+            "phase": "4014000000000000"
+          }
+        },
+        "canonicalDifferences": {
+          "p": 6.984919309616089e-10,
+          "h": 0.0,
+          "T": 1.7053025658242404e-13
+        },
+        "canonicalPass": true,
+        "inventoryResiduals": {
+          "rho": 0.0,
+          "u": 0.0
+        },
+        "independentDUResiduals": {
+          "p": 0.0,
+          "h": 0.0,
+          "u": 0.0
+        },
+        "recoveredPressureInAcceptedRange": true
+      }
+    }
+  },
+  "artifacts": {
+    "vendor/LICENSE-CoolProp.txt": {
+      "bytes": 1103,
+      "sha256": "9bf835333ef602af4cb19338b9f9d43671e174fa029b00280e9bdba6ea4719b2"
+    },
+    "vendor/THIRD_PARTY-B1.md": {
+      "bytes": 2134,
+      "sha256": "08d17dda6b0ef439e8e29c0680e95b1aff984f0ba93b22bb0de280b21a5769c3"
+    },
+    "vendor/candidateB/coolprop.js": {
+      "bytes": 167060,
+      "sha256": "ebd02f5721abc10fee3e6560b0d96c1a17b8ae1f01bc144a4f9a1af8cf1e3217"
+    },
+    "vendor/candidateB/coolprop.wasm": {
+      "bytes": 9196619,
+      "sha256": "8c690c741d33d26f758a825ed5e4043af50cfc52a1e8587d8a5fb93732c026c5"
+    },
+    "vendor/controlA/coolprop.js": {
+      "bytes": 167060,
+      "sha256": "ebd02f5721abc10fee3e6560b0d96c1a17b8ae1f01bc144a4f9a1af8cf1e3217"
+    },
+    "vendor/controlA/coolprop.wasm": {
+      "bytes": 9196594,
+      "sha256": "c8520e9c867e662c2731ed581c02d4157df2a5eed284be866ed3b45d29b2519d"
+    },
+    "vendor/notices/Boost-1.0.txt": {
+      "bytes": 1338,
+      "sha256": "c9bff75738922193e67fa726fa225535870d2aa1059f91452c411736284ad566"
+    },
+    "vendor/notices/Eigen-7.2-MPL2.txt": {
+      "bytes": 16726,
+      "sha256": "fab3dd6bdab226f1c08630b1dd917e11fcb4ec5e1e020e2c16f83a0a13863e85"
+    },
+    "vendor/notices/Eigen-8.0-MPL2.txt": {
+      "bytes": 16727,
+      "sha256": "66a3107d5ad6a058aab753eaac2047ccb2ed0e39465dd0fe5844da3e300d5172"
+    },
+    "vendor/notices/IF97-MIT.txt": {
+      "bytes": 1054,
+      "sha256": "e22c3d30ef8d88ab468d9ea20392ca1df22fa3fd0a92dc3e996d89cf3cfdbd03"
+    },
+    "vendor/notices/LLVM-Apache.txt": {
+      "bytes": 16703,
+      "sha256": "539dd7aed86e8a4f12cbdd0e6c50c189c7d74847e4fecc64ce2c6ee3a01da38b"
+    },
+    "vendor/notices/REFPROP-headers.txt": {
+      "bytes": 1068,
+      "sha256": "f21f633c596509e89b2baedfd657c8f1b8018954b06576590971684b210e91f8"
+    },
+    "vendor/notices/compiler-rt-4.0.12.txt": {
+      "bytes": 16708,
+      "sha256": "1a8f1058753f1ba890de984e48f0242a3a5c29a6a8f2ed9fd813f36985387e8d"
+    },
+    "vendor/notices/emscripten-4.0.12.txt": {
+      "bytes": 5093,
+      "sha256": "620a78084fc7ca97c0b5dea9abf891f3ffcadfdbf305276f099c9c4e12fc1d86"
+    },
+    "vendor/notices/emscripten-MIT-NCSA.txt": {
+      "bytes": 5093,
+      "sha256": "620a78084fc7ca97c0b5dea9abf891f3ffcadfdbf305276f099c9c4e12fc1d86"
+    },
+    "vendor/notices/fmt-7.2.txt": {
+      "bytes": 1431,
+      "sha256": "07580f2a3b35709ce703d523f447b242f6dfec7582a8c0df102c7fa2849375f8"
+    },
+    "vendor/notices/fmt-8.0-MIT.txt": {
+      "bytes": 1431,
+      "sha256": "07580f2a3b35709ce703d523f447b242f6dfec7582a8c0df102c7fa2849375f8"
+    },
+    "vendor/notices/incbin-UNLICENSE.txt": {
+      "bytes": 1211,
+      "sha256": "7e12e5df4bae12cb21581ba157ced20e1986a0508dd10d0e8a4ab9a4cf94e85c"
+    },
+    "vendor/notices/libcxx-4.0.12.txt": {
+      "bytes": 16703,
+      "sha256": "539dd7aed86e8a4f12cbdd0e6c50c189c7d74847e4fecc64ce2c6ee3a01da38b"
+    },
+    "vendor/notices/libcxxabi-4.0.12.txt": {
+      "bytes": 16706,
+      "sha256": "e2b35be49f7284a45b7baca8fc7b3ab7440e7902392b2528a457816b5bb2a15c"
+    },
+    "vendor/notices/libunwind-4.0.12.txt": {
+      "bytes": 16706,
+      "sha256": "b5efebcaca80879234098e52d1725e6d9eb8fb96a19fce625d39184b705f7b6d"
+    },
+    "vendor/notices/miniz-MIT.txt": {
+      "bytes": 1162,
+      "sha256": "6f20fa7672b00e2e975c291df737cf227addf3ad32e36fef3fe0f416e4664d3d"
+    },
+    "vendor/notices/msgpack-Boost.txt": {
+      "bytes": 200,
+      "sha256": "664550b43996452a5a2c7471bb0ff77185a58c69ccafa60f983dc4c162e1ee22"
+    },
+    "vendor/notices/musl-4.0.12.txt": {
+      "bytes": 6204,
+      "sha256": "f9bc4423732350eb0b3f7ed7e91d530298476f8fec0c6c427a1c04ade22655af"
+    },
+    "vendor/notices/musl-MIT.txt": {
+      "bytes": 6204,
+      "sha256": "f9bc4423732350eb0b3f7ed7e91d530298476f8fec0c6c427a1c04ade22655af"
+    },
+    "vendor/notices/nlohmann-json-MIT.txt": {
+      "bytes": 1076,
+      "sha256": "46a65cffd1ea955132d95a8dd921640714a8d6b537d2e4e482d31145ae95b603"
+    },
+    "vendor/notices/rapidjson-MIT.txt": {
+      "bytes": 5152,
+      "sha256": "a140e5d46fe734a1c78f1a3c3ef207871dd75648be71fdda8e309b23ab8b1f32"
+    },
+    "vendor/notices/valijson-BSD.txt": {
+      "bytes": 1346,
+      "sha256": "61b5766db38eaa3f320c366357956d7743424bfbf90fd78f5943866ba237589e"
+    }
+  }
+}

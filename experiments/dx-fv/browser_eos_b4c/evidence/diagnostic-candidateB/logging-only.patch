@@ -1,0 +1,70 @@
+--- a/src/Backends/Helmholtz/HelmholtzEOSMixtureBackend.cpp
++++ b/src/Backends/Helmholtz/HelmholtzEOSMixtureBackend.cpp
+@@ -1,3 +1,14 @@
++
++// B4C diagnostic logging only. Set B4C_TRACE to enable.
++#include <cstdio>
++#include <cstdlib>
++#include <cstdarg>
++static void b4ctrace(const char* event,const char* fmt,...) {
++ if (!std::getenv("B4C_TRACE")) return;
++ std::fprintf(stderr,"{\"event\":\"%s\",",event);
++ va_list args;va_start(args,fmt);std::vfprintf(stderr,fmt,args);va_end(args);
++ std::fprintf(stderr,"}\n");
++}
+ /*
+  * AbstractBackend.cpp
+  *
+@@ -1835,6 +1846,8 @@
+                     default:
+                         throw ValueError(format("bad input for other"));
+                 }
++
++                b4ctrace("superanc_quality", "\"other\":%d,\"p\":%.17g,\"value_molar\":%.17g,\"Tsat\":%.17g,\"Q\":%.17g,\"hf_molar\":%.17g,\"hg_molar\":%.17g,\"rhoL_molar\":%.17g,\"rhoV_molar\":%.17g", int(other),double(_p),double(value),double(Tsat),double(Q),double(SatL->hmolar()),double(SatV->hmolar()),double(SatL->rhomolar()),double(SatV->rhomolar()));
+                 // Start off by setting variables based on assumption that the state is two-phase
+                 // Resolve negative caloric quality by the existing bounded liquid flash.
+                 // Saturation uncertainty does not permit extrapolating mixture volume.
+@@ -2069,6 +2082,8 @@
+                 default:
+                     throw ValueError(format("bad input for other"));
+             }
++
++            b4ctrace("vle_quality", "\"other\":%d,\"p\":%.17g,\"value_molar\":%.17g,\"Tsat\":%.17g,\"Q\":%.17g,\"hf_molar\":%.17g,\"hg_molar\":%.17g,\"rhoL_molar\":%.17g,\"rhoV_molar\":%.17g", int(other),double(_p),double(value),double(HEOS.SatV->T()),double(Q),double(HEOS.SatL->hmolar()),double(HEOS.SatV->hmolar()),double(HEOS.SatL->rhomolar()),double(HEOS.SatV->rhomolar()));
+             // TODO: Check the speed penalty of these calls
+             // Update the states
+             if (this->SatL) this->SatL->update(DmolarT_INPUTS, HEOS.SatL->rhomolar(), HEOS.SatL->T());
+--- a/src/Backends/Helmholtz/FlashRoutines.cpp
++++ b/src/Backends/Helmholtz/FlashRoutines.cpp
+@@ -1,3 +1,14 @@
++
++// B4C diagnostic logging only. Set B4C_TRACE to enable.
++#include <cstdio>
++#include <cstdlib>
++#include <cstdarg>
++static void b4ctrace(const char* event,const char* fmt,...) {
++ if (!std::getenv("B4C_TRACE")) return;
++ std::fprintf(stderr,"{\"event\":\"%s\",",event);
++ va_list args;va_start(args,fmt);std::vfprintf(stderr,fmt,args);va_end(args);
++ std::fprintf(stderr,"}\n");
++}
+ #include "VLERoutines.h"
+ #include "FlashRoutines.h"
+ 
+@@ -2983,6 +2994,8 @@
+             }
+         }
+         double call(double T) override {
++            b4ctrace("homogeneous_eval", "\"other\":%d,\"T\":%.17g",int(other),T);
++
+             // Direct-path WARM branch only: cold probes go through master's
+             // update(PT_INPUTS) so the SRK seed + Householder4 + basin-recovery
+             // (iphase_liquid/gas retries inside solver_rho_Tp) are byte-identical
+@@ -3351,6 +3364,8 @@
+ 
+         // Find the phase, while updating all internal variables possible
+         HEOS.p_phase_determination_pure_or_pseudopure(other, value, saturation_called);
++        b4ctrace("caloric_dispatch", "\"other\":%d,\"p\":%.17g,\"value_molar\":%.17g,\"phase\":%d,\"homogeneous\":%d,\"saturation_called\":%d", int(other),double(HEOS._p),double(value),int(HEOS._phase),HEOS.isHomogeneousPhase(),saturation_called);
++
+ 
+         if (HEOS.isHomogeneousPhase()) {
+             // Now we use the single-phase solver to find T,rho given P,Y using a
