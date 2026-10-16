@@ -1,0 +1,42 @@
+{
+  "upstreamCommit": "ae81610e7d23efc57f9d051c8e70a4d66e87537f",
+  "source": "pinned codeload archive",
+  "archiveSHA256": "ee35a029f647ea43ef55864343a39be33461dc3b20f3e9520d8ec8815b66c7a6",
+  "reconstructedSourceFiles": 1782,
+  "sourceMismatches": [],
+  "patches": [
+    {
+      "file": "browser_eos_backend/flash-44.patch",
+      "sha256": "6234d4f9fd0ea9b88eec2a178b7d7b8e00a54aa63a928a54bb65057984a126ef",
+      "forwardApplicable": true,
+      "reverseApplicable": true
+    },
+    {
+      "file": "browser_eos_b4a/liquid-classification.patch",
+      "sha256": "67eb377174cda509980b5c17b3283abcda9fb9e7f0f265c23a29b58cbd724572",
+      "forwardApplicable": true,
+      "reverseApplicable": true
+    },
+    {
+      "file": "browser_eos_b4b/pt-cache-consistency.patch",
+      "sha256": "621375770c2663fb86a0e3621fd85da34c4b410dbd4b592154dee402d860fe14",
+      "forwardApplicable": true,
+      "reverseApplicable": true
+    },
+    {
+      "file": "browser_eos_b4c/upper-quality-classification.patch",
+      "sha256": "9c42f70817ac1ff812f55ab64670cb7cc81fb1606976de06ac6fa1c87e71e24a",
+      "forwardApplicable": true,
+      "reverseApplicable": true
+    },
+    {
+      "file": "browser_eos_b5a/gate-a.patch",
+      "sha256": "2f4b9e675b98a59f3846ede09b767698090083934e080bc11790b723c9d90eeb",
+      "forwardApplicable": true,
+      "reverseApplicable": true
+    }
+  ],
+  "compiled": false,
+  "dependencies": "Historical manifests preserved; no dependency build or source dependency reconstruction",
+  "sourceUnchanged": true
+}

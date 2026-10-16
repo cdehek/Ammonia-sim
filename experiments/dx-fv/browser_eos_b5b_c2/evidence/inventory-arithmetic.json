@@ -1,0 +1,2450 @@
+{
+  "operationOrder": "accepted binary64 sequence, no algebraic simplification or FMA",
+  "rows": [
+    {
+      "key": "chromium-ledger-64",
+      "origin": "B5 original-failures.json, saved bits",
+      "requestedPH": {
+        "values": {
+          "p": 3500000,
+          "h": 703826.5644298478
+        }
+      },
+      "actualPH": {
+        "values": {
+          "p": 3500000.000000099,
+          "T": 345.56367341878797,
+          "h": 703826.564429847,
+          "s": 2625.843410197629,
+          "rho": 521.5319011003706,
+          "u": 697115.5655578403,
+          "Q": -1
+        },
+        "bits": {}
+      },
+      "input": {
+        "values": {
+          "M": 0.3129191406602224,
+          "U_kJ": 218.14080371522462,
+          "V": 0.0006000000000000001,
+          "rho": 521.5319011003706,
+          "u": 697115.5655578412
+        },
+        "bits": {
+          "M": "3fd406de00db65a6",
+          "U_kJ": "406b448176cb0171",
+          "V": "3f43a92a30553262",
+          "rho": "40804c41555d3663",
+          "u": "412546372190cc20"
+        }
+      },
+      "storedRationals": {
+        "M": {
+          "numerator": "2818525050548947",
+          "denominator": "9007199254740992"
+        },
+        "U_kJ": {
+          "numerator": "7675147205673329",
+          "denominator": "35184372088832"
+        },
+        "V": {
+          "numerator": "2767011611056433",
+          "denominator": "4611686018427387904"
+        },
+        "rho": {
+          "numerator": "4587443116127843",
+          "denominator": "8796093022208"
+        },
+        "u": {
+          "numerator": "187130534725217",
+          "denominator": "268435456"
+        }
+      },
+      "operations": [
+        {
+          "name": "V",
+          "operation": "/",
+          "aBits": "3f689374bc6a7efa",
+          "bBits": "4014000000000000",
+          "resultBits": "3f43a92a30553262",
+          "resultExactRational": {
+            "numerator": "2767011611056433",
+            "denominator": "4611686018427387904"
+          },
+          "roundingError": {
+            "numerator": "1",
+            "denominator": "23058430092136939520"
+          }
+        },
+        {
+          "name": "M",
+          "operation": "*",
+          "aBits": "40804c41555d3663",
+          "bBits": "3f43a92a30553262",
+          "resultBits": "3fd406de00db65a6",
+          "resultExactRational": {
+            "numerator": "2818525050548947",
+            "denominator": "9007199254740992"
+          },
+          "roundingError": {
+            "numerator": "-7186563896307",
+            "denominator": "40564819207303340847894502572032"
+          }
+        },
+        {
+          "name": "h_kJkg",
+          "operation": "/",
+          "aBits": "41257aa520fcf2f2",
+          "bBits": "408f400000000000",
+          "resultBits": "4085fe9ccdcfd1dd",
+          "resultExactRational": {
+            "numerator": "6190923932226013",
+            "denominator": "8796093022208"
+          },
+          "roundingError": {
+            "numerator": "-23",
+            "denominator": "1099511627776000"
+          }
+        },
+        {
+          "name": "P_bar",
+          "operation": "/",
+          "aBits": "414ab3f000000000",
+          "bBits": "40f86a0000000000",
+          "resultBits": "4041800000000000",
+          "resultExactRational": {
+            "numerator": "35",
+            "denominator": "1"
+          },
+          "roundingError": {
+            "numerator": "0",
+            "denominator": "1"
+          }
+        },
+        {
+          "name": "M_h",
+          "operation": "*",
+          "aBits": "3fd406de00db65a6",
+          "bBits": "4085fe9ccdcfd1dd",
+          "resultBits": "406b87b4a9fe34a4",
+          "resultExactRational": {
+            "numerator": "1937258596764969",
+            "denominator": "8796093022208"
+          },
+          "roundingError": {
+            "numerator": "-309682129249063",
+            "denominator": "79228162514264337593543950336"
+          }
+        },
+        {
+          "name": "100_Pbar",
+          "operation": "*",
+          "aBits": "4059000000000000",
+          "bBits": "4041800000000000",
+          "resultBits": "40ab580000000000",
+          "resultExactRational": {
+            "numerator": "3500",
+            "denominator": "1"
+          },
+          "roundingError": {
+            "numerator": "0",
+            "denominator": "1"
+          }
+        },
+        {
+          "name": "pressureWork",
+          "operation": "*",
+          "aBits": "40ab580000000000",
+          "bBits": "3f43a92a30553262",
+          "resultBits": "4000cccccccccccd",
+          "resultExactRational": {
+            "numerator": "4728779608739021",
+            "denominator": "2251799813685248"
+          },
+          "roundingError": {
+            "numerator": "-123",
+            "denominator": "1152921504606846976"
+          }
+        },
+        {
+          "name": "U_kJ",
+          "operation": "-",
+          "aBits": "406b87b4a9fe34a4",
+          "bBits": "4000cccccccccccd",
+          "resultBits": "406b448176cb0171",
+          "resultExactRational": {
+            "numerator": "7675147205673329",
+            "denominator": "35184372088832"
+          },
+          "roundingError": {
+            "numerator": "13",
+            "denominator": "2251799813685248"
+          }
+        },
+        {
+          "name": "rho_DU",
+          "operation": "/",
+          "aBits": "3fd406de00db65a6",
+          "bBits": "3f43a92a30553262",
+          "resultBits": "40804c41555d3663",
+          "resultExactRational": {
+            "numerator": "4587443116127843",
+            "denominator": "8796093022208"
+          },
+          "roundingError": {
+            "numerator": "7186563896307",
+            "denominator": "24338891524382006774610264064"
+          }
+        },
+        {
+          "name": "u_kJkg",
+          "operation": "/",
+          "aBits": "406b448176cb0171",
+          "bBits": "3fd406de00db65a6",
+          "resultBits": "4085c8ecada29bc7",
+          "resultExactRational": {
+            "numerator": "6131893361875911",
+            "denominator": "8796093022208"
+          },
+          "roundingError": {
+            "numerator": "556711531365125",
+            "denominator": "24792008530052043186662014976"
+          }
+        },
+        {
+          "name": "u_DU",
+          "operation": "*",
+          "aBits": "4085c8ecada29bc7",
+          "bBits": "408f400000000000",
+          "resultBits": "412546372190cc20",
+          "resultExactRational": {
+            "numerator": "187130534725217",
+            "denominator": "268435456"
+          },
+          "roundingError": {
+            "numerator": "-43",
+            "denominator": "1099511627776"
+          }
+        }
+      ],
+      "internalMolar": {
+        "values": {
+          "rhomolar": 30623.369169019537,
+          "umolar": 11872.240581544127
+        },
+        "bits": {
+          "rhomolar": "40dde7d7a0771867",
+          "umolar": "40c7301ecb604406"
+        }
+      },
+      "targetRationals": {
+        "exact_MUV": {
+          "exactDensity": {
+            "numerator": "1443084825881060864",
+            "denominator": "2767011611056433"
+          },
+          "exactEnergyJkg": {
+            "numerator": "1964837684652372224000",
+            "denominator": "2818525050548947"
+          }
+        },
+        "rounded_DU": {
+          "exactDensity": {
+            "numerator": "4587443116127843",
+            "denominator": "8796093022208"
+          },
+          "exactEnergyJkg": {
+            "numerator": "187130534725217",
+            "denominator": "268435456"
+          }
+        },
+        "internal_molar": {
+          "exactDensity": {
+            "numerator": "20660007108376699822362143563375",
+            "denominator": "39614081257132168796771975168"
+          },
+          "exactEnergyJkg": {
+            "numerator": "1710970184291040362496",
+            "denominator": "2454356592829625"
+          }
+        }
+      }
+    },
+    {
+      "key": "chromium-ledger-65",
+      "origin": "B5 original-failures.json, saved bits",
+      "requestedPH": {
+        "values": {
+          "p": 3500000,
+          "h": 703826.5554298478
+        }
+      },
+      "actualPH": {
+        "values": {
+          "p": 3500000.0000003683,
+          "T": 345.56367179371773,
+          "h": 703826.5554298488,
+          "s": 2625.8433841532265,
+          "rho": 521.5319046541697,
+          "u": 697115.5566035713,
+          "Q": -1
+        },
+        "bits": {}
+      },
+      "input": {
+        "values": {
+          "M": 0.3129191427925018,
+          "U_kJ": 218.14080239970724,
+          "V": 0.0006000000000000001,
+          "rho": 521.5319046541697,
+          "u": 697115.556603571
+        },
+        "bits": {
+          "M": "3fd406de03258379",
+          "U_kJ": "406b44817408be1c",
+          "V": "3f43a92a30553262",
+          "rho": "40804c41573a31fe",
+          "u": "412546371cfb24ad"
+        }
+      },
+      "storedRationals": {
+        "M": {
+          "numerator": "5637050139509625",
+          "denominator": "18014398509481984"
+        },
+        "U_kJ": {
+          "numerator": "1918786789846919",
+          "denominator": "8796093022208"
+        },
+        "V": {
+          "numerator": "2767011611056433",
+          "denominator": "4611686018427387904"
+        },
+        "rho": {
+          "numerator": "2293721573693695",
+          "denominator": "4398046511104"
+        },
+        "u": {
+          "numerator": "5988177034290349",
+          "denominator": "8589934592"
+        }
+      },
+      "operations": [
+        {
+          "name": "V",
+          "operation": "/",
+          "aBits": "3f689374bc6a7efa",
+          "bBits": "4014000000000000",
+          "resultBits": "3f43a92a30553262",
+          "resultExactRational": {
+            "numerator": "2767011611056433",
+            "denominator": "4611686018427387904"
+          },
+          "roundingError": {
+            "numerator": "1",
+            "denominator": "23058430092136939520"
+          }
+        },
+        {
+          "name": "M",
+          "operation": "*",
+          "aBits": "40804c41573a31fe",
+          "bBits": "3f43a92a30553262",
+          "resultBits": "3fd406de03258379",
+          "resultExactRational": {
+            "numerator": "5637050139509625",
+            "denominator": "18014398509481984"
+          },
+          "roundingError": {
+            "numerator": "-401711493033935",
+            "denominator": "20282409603651670423947251286016"
+          }
+        },
+        {
+          "name": "h_kJkg",
+          "operation": "/",
+          "aBits": "41257aa51c614d0f",
+          "bBits": "408f400000000000",
+          "resultBits": "4085fe9cc917dc38",
+          "resultExactRational": {
+            "numerator": "773865481632647",
+            "denominator": "1099511627776"
+          },
+          "roundingError": {
+            "numerator": "-1",
+            "denominator": "27487790694400"
+          }
+        },
+        {
+          "name": "P_bar",
+          "operation": "/",
+          "aBits": "414ab3f000000000",
+          "bBits": "40f86a0000000000",
+          "resultBits": "4041800000000000",
+          "resultExactRational": {
+            "numerator": "35",
+            "denominator": "1"
+          },
+          "roundingError": {
+            "numerator": "0",
+            "denominator": "1"
+          }
+        },
+        {
+          "name": "M_h",
+          "operation": "*",
+          "aBits": "3fd406de03258379",
+          "bBits": "4085fe9cc917dc38",
+          "resultBits": "406b87b4a73bf14f",
+          "resultExactRational": {
+            "numerator": "7749034340774223",
+            "denominator": "35184372088832"
+          },
+          "roundingError": {
+            "numerator": "63276817713201",
+            "denominator": "19807040628566084398385987584"
+          }
+        },
+        {
+          "name": "100_Pbar",
+          "operation": "*",
+          "aBits": "4059000000000000",
+          "bBits": "4041800000000000",
+          "resultBits": "40ab580000000000",
+          "resultExactRational": {
+            "numerator": "3500",
+            "denominator": "1"
+          },
+          "roundingError": {
+            "numerator": "0",
+            "denominator": "1"
+          }
+        },
+        {
+          "name": "pressureWork",
+          "operation": "*",
+          "aBits": "40ab580000000000",
+          "bBits": "3f43a92a30553262",
+          "resultBits": "4000cccccccccccd",
+          "resultExactRational": {
+            "numerator": "4728779608739021",
+            "denominator": "2251799813685248"
+          },
+          "roundingError": {
+            "numerator": "-123",
+            "denominator": "1152921504606846976"
+          }
+        },
+        {
+          "name": "U_kJ",
+          "operation": "-",
+          "aBits": "406b87b4a73bf14f",
+          "bBits": "4000cccccccccccd",
+          "resultBits": "406b44817408be1c",
+          "resultExactRational": {
+            "numerator": "1918786789846919",
+            "denominator": "8796093022208"
+          },
+          "roundingError": {
+            "numerator": "13",
+            "denominator": "2251799813685248"
+          }
+        },
+        {
+          "name": "rho_DU",
+          "operation": "/",
+          "aBits": "3fd406de03258379",
+          "bBits": "3f43a92a30553262",
+          "resultBits": "40804c41573a31fe",
+          "resultExactRational": {
+            "numerator": "2293721573693695",
+            "denominator": "4398046511104"
+          },
+          "roundingError": {
+            "numerator": "401711493033935",
+            "denominator": "12169445762191003387305132032"
+          }
+        },
+        {
+          "name": "u_kJkg",
+          "operation": "/",
+          "aBits": "406b44817408be1c",
+          "bBits": "3fd406de03258379",
+          "resultBits": "4085c8eca8f0c965",
+          "resultExactRational": {
+            "numerator": "6131893283113317",
+            "denominator": "8796093022208"
+          },
+          "roundingError": {
+            "numerator": "-2441953661231171",
+            "denominator": "49584017397977245393354752000"
+          }
+        },
+        {
+          "name": "u_DU",
+          "operation": "*",
+          "aBits": "4085c8eca8f0c965",
+          "bBits": "408f400000000000",
+          "resultBits": "412546371cfb24ad",
+          "resultExactRational": {
+            "numerator": "5988177034290349",
+            "denominator": "8589934592"
+          },
+          "roundingError": {
+            "numerator": "47",
+            "denominator": "1099511627776"
+          }
+        }
+      ],
+      "internalMolar": {
+        "values": {
+          "rhomolar": 30623.369377691914,
+          "umolar": 11872.24042904825
+        },
+        "bits": {
+          "rhomolar": "40dde7d7a3e254a9",
+          "umolar": "40c7301ec661099f"
+        }
+      },
+      "targetRationals": {
+        "exact_MUV": {
+          "exactDensity": {
+            "numerator": "1443084835714464000",
+            "denominator": "2767011611056433"
+          },
+          "exactEnergyJkg": {
+            "numerator": "31437402764851920896",
+            "denominator": "45096401116077"
+          }
+        },
+        "rounded_DU": {
+          "exactDensity": {
+            "numerator": "2293721573693695",
+            "denominator": "4398046511104"
+          },
+          "exactEnergyJkg": {
+            "numerator": "5988177034290349",
+            "denominator": "8589934592"
+          }
+        },
+        "internal_molar": {
+          "exactDensity": {
+            "numerator": "20660007249157185186385149358625",
+            "denominator": "39614081257132168796771975168"
+          },
+          "exactEnergyJkg": {
+            "numerator": "1710970162314068361216",
+            "denominator": "2454356592829625"
+          }
+        }
+      }
+    },
+    {
+      "key": "chromium-ledger-67",
+      "origin": "B5 original-failures.json, saved bits",
+      "requestedPH": {
+        "values": {
+          "p": 3500000,
+          "h": 1628069.3287690787
+        }
+      },
+      "actualPH": {
+        "values": {
+          "p": 3499999.999999998,
+          "T": 345.56367380557305,
+          "h": 1628069.3287690782,
+          "s": 5300.43809404395,
+          "rho": 28.0513773967189,
+          "u": 1503298.2720576392,
+          "Q": -1
+        },
+        "bits": {}
+      },
+      "input": {
+        "values": {
+          "M": 0.016830826438031344,
+          "U_kJ": 25.301752301594554,
+          "V": 0.0006000000000000001,
+          "rho": 28.051377396718905,
+          "u": 1503298.2720576394
+        },
+        "bits": {
+          "M": "3f913c19a476c7dd",
+          "U_kJ": "40394d3fa38ad762",
+          "V": "3f43a92a30553262",
+          "rho": "403c0d2711aea94c",
+          "u": "4136f04245a591c8"
+        }
+      },
+      "storedRationals": {
+        "M": {
+          "numerator": "4851155435177949",
+          "denominator": "288230376151711744"
+        },
+        "U_kJ": {
+          "numerator": "3560905069915057",
+          "denominator": "140737488355328"
+        },
+        "V": {
+          "numerator": "2767011611056433",
+          "denominator": "4611686018427387904"
+        },
+        "rho": {
+          "numerator": "1973940199860819",
+          "denominator": "70368744177664"
+        },
+        "u": {
+          "numerator": "807077114327609",
+          "denominator": "536870912"
+        }
+      },
+      "operations": [
+        {
+          "name": "V",
+          "operation": "/",
+          "aBits": "3f689374bc6a7efa",
+          "bBits": "4014000000000000",
+          "resultBits": "3f43a92a30553262",
+          "resultExactRational": {
+            "numerator": "2767011611056433",
+            "denominator": "4611686018427387904"
+          },
+          "roundingError": {
+            "numerator": "1",
+            "denominator": "23058430092136939520"
+          }
+        },
+        {
+          "name": "M",
+          "operation": "*",
+          "aBits": "403c0d2711aea94b",
+          "bBits": "3f43a92a30553262",
+          "resultBits": "3f913c19a476c7dd",
+          "resultExactRational": {
+            "numerator": "4851155435177949",
+            "denominator": "288230376151711744"
+          },
+          "roundingError": {
+            "numerator": "1749075705054629",
+            "denominator": "1298074214633706907132624082305024"
+          }
+        },
+        {
+          "name": "h_kJkg",
+          "operation": "/",
+          "aBits": "4138d7a5542a35d9",
+          "bBits": "408f400000000000",
+          "resultBits": "40997046fe1eef76",
+          "resultExactRational": {
+            "numerator": "3580162315614139",
+            "denominator": "2199023255552"
+          },
+          "roundingError": {
+            "numerator": "3",
+            "denominator": "54975581388800"
+          }
+        },
+        {
+          "name": "P_bar",
+          "operation": "/",
+          "aBits": "414ab3f000000000",
+          "bBits": "40f86a0000000000",
+          "resultBits": "4041800000000000",
+          "resultExactRational": {
+            "numerator": "35",
+            "denominator": "1"
+          },
+          "roundingError": {
+            "numerator": "0",
+            "denominator": "1"
+          }
+        },
+        {
+          "name": "M_h",
+          "operation": "*",
+          "aBits": "3f913c19a476c7dd",
+          "bBits": "40997046fe1eef76",
+          "resultBits": "403b66d93d2470fc",
+          "resultExactRational": {
+            "numerator": "1928226897730623",
+            "denominator": "70368744177664"
+          },
+          "roundingError": {
+            "numerator": "407361766377105",
+            "denominator": "633825300114114700748351602688"
+          }
+        },
+        {
+          "name": "100_Pbar",
+          "operation": "*",
+          "aBits": "4059000000000000",
+          "bBits": "4041800000000000",
+          "resultBits": "40ab580000000000",
+          "resultExactRational": {
+            "numerator": "3500",
+            "denominator": "1"
+          },
+          "roundingError": {
+            "numerator": "0",
+            "denominator": "1"
+          }
+        },
+        {
+          "name": "pressureWork",
+          "operation": "*",
+          "aBits": "40ab580000000000",
+          "bBits": "3f43a92a30553262",
+          "resultBits": "4000cccccccccccd",
+          "resultExactRational": {
+            "numerator": "4728779608739021",
+            "denominator": "2251799813685248"
+          },
+          "roundingError": {
+            "numerator": "-123",
+            "denominator": "1152921504606846976"
+          }
+        },
+        {
+          "name": "U_kJ",
+          "operation": "-",
+          "aBits": "403b66d93d2470fc",
+          "bBits": "4000cccccccccccd",
+          "resultBits": "40394d3fa38ad762",
+          "resultExactRational": {
+            "numerator": "3560905069915057",
+            "denominator": "140737488355328"
+          },
+          "roundingError": {
+            "numerator": "-3",
+            "denominator": "2251799813685248"
+          }
+        },
+        {
+          "name": "rho_DU",
+          "operation": "/",
+          "aBits": "3f913c19a476c7dd",
+          "bBits": "3f43a92a30553262",
+          "resultBits": "403c0d2711aea94c",
+          "resultExactRational": {
+            "numerator": "1973940199860819",
+            "denominator": "70368744177664"
+          },
+          "roundingError": {
+            "numerator": "254483976500451",
+            "denominator": "194711132195056054196882112512"
+          }
+        },
+        {
+          "name": "u_kJkg",
+          "operation": "/",
+          "aBits": "40394d3fa38ad762",
+          "bBits": "3f913c19a476c7dd",
+          "resultBits": "40977d316e3af37d",
+          "resultExactRational": {
+            "numerator": "6611575720571773",
+            "denominator": "4398046511104"
+          },
+          "roundingError": {
+            "numerator": "-238897694482967",
+            "denominator": "21335607236507585428844445696"
+          }
+        },
+        {
+          "name": "u_DU",
+          "operation": "*",
+          "aBits": "40977d316e3af37d",
+          "bBits": "408f400000000000",
+          "resultBits": "4136f04245a591c8",
+          "resultExactRational": {
+            "numerator": "807077114327609",
+            "denominator": "536870912"
+          },
+          "roundingError": {
+            "numerator": "-9",
+            "denominator": "549755813888"
+          }
+        }
+      ],
+      "internalMolar": {
+        "values": {
+          "rhomolar": 1647.1239513954304,
+          "umolar": 25601.95128824307
+        },
+        "bits": {
+          "rhomolar": "4099bc7eed1d56ab",
+          "umolar": "40d9007ce1e81544"
+        }
+      },
+      "targetRationals": {
+        "exact_MUV": {
+          "exactDensity": {
+            "numerator": "77618486962847184",
+            "denominator": "2767011611056433"
+          },
+          "exactEnergyJkg": {
+            "numerator": "7292733583186036736000",
+            "denominator": "4851155435177949"
+          }
+        },
+        "rounded_DU": {
+          "exactDensity": {
+            "numerator": "1973940199860819",
+            "denominator": "70368744177664"
+          },
+          "exactEnergyJkg": {
+            "numerator": "807077114327609",
+            "denominator": "536870912"
+          }
+        },
+        "internal_molar": {
+          "exactDensity": {
+            "numerator": "17779672697089653773232843369875",
+            "denominator": "633825300114114700748351602688"
+          },
+          "exactEnergyJkg": {
+            "numerator": "29517040200112406528",
+            "denominator": "19634852742637"
+          }
+        }
+      }
+    },
+    {
+      "key": "chromium-ledger-68",
+      "origin": "B5 original-failures.json, saved bits",
+      "requestedPH": {
+        "values": {
+          "p": 3500000,
+          "h": 1628069.3377690788
+        }
+      },
+      "actualPH": {
+        "values": {
+          "p": 3499999.999999999,
+          "T": 345.563675661567,
+          "h": 1628069.3377690788,
+          "s": 5300.4381200883545,
+          "rho": 28.051376942410506,
+          "u": 1503298.2790368993,
+          "Q": -1
+        },
+        "bits": {}
+      },
+      "input": {
+        "values": {
+          "M": 0.016830826165446306,
+          "U_kJ": 25.30175200928465,
+          "V": 0.0006000000000000001,
+          "rho": 28.051376942410506,
+          "u": 1503298.2790368996
+        },
+        "bits": {
+          "M": "3f913c199fc7f065",
+          "U_kJ": "40394d3f9ea3613f",
+          "V": "3f43a92a30553262",
+          "rho": "403c0d270a0f6bee",
+          "u": "4136f042476ef656"
+        }
+      },
+      "storedRationals": {
+        "M": {
+          "numerator": "4851155356610661",
+          "denominator": "288230376151711744"
+        },
+        "U_kJ": {
+          "numerator": "7121810057552191",
+          "denominator": "281474976710656"
+        },
+        "V": {
+          "numerator": "2767011611056433",
+          "denominator": "4611686018427387904"
+        },
+        "rho": {
+          "numerator": "3947880335783415",
+          "denominator": "140737488355328"
+        },
+        "u": {
+          "numerator": "3228308472298283",
+          "denominator": "2147483648"
+        }
+      },
+      "operations": [
+        {
+          "name": "V",
+          "operation": "/",
+          "aBits": "3f689374bc6a7efa",
+          "bBits": "4014000000000000",
+          "resultBits": "3f43a92a30553262",
+          "resultExactRational": {
+            "numerator": "2767011611056433",
+            "denominator": "4611686018427387904"
+          },
+          "roundingError": {
+            "numerator": "1",
+            "denominator": "23058430092136939520"
+          }
+        },
+        {
+          "name": "M",
+          "operation": "*",
+          "aBits": "403c0d270a0f6bee",
+          "bBits": "3f43a92a30553262",
+          "resultBits": "3f913c199fc7f065",
+          "resultExactRational": {
+            "numerator": "4851155356610661",
+            "denominator": "288230376151711744"
+          },
+          "roundingError": {
+            "numerator": "442192304770233",
+            "denominator": "649037107316853453566312041152512"
+          }
+        },
+        {
+          "name": "h_kJkg",
+          "operation": "/",
+          "aBits": "4138d7a5567808cb",
+          "bBits": "408f400000000000",
+          "resultBits": "40997047007aea49",
+          "resultExactRational": {
+            "numerator": "7160324670810697",
+            "denominator": "4398046511104"
+          },
+          "roundingError": {
+            "numerator": "37",
+            "denominator": "549755813888000"
+          }
+        },
+        {
+          "name": "P_bar",
+          "operation": "/",
+          "aBits": "414ab3f000000000",
+          "bBits": "40f86a0000000000",
+          "resultBits": "4041800000000000",
+          "resultExactRational": {
+            "numerator": "35",
+            "denominator": "1"
+          },
+          "roundingError": {
+            "numerator": "0",
+            "denominator": "1"
+          }
+        },
+        {
+          "name": "M_h",
+          "operation": "*",
+          "aBits": "3f913c199fc7f065",
+          "bBits": "40997047007aea49",
+          "resultBits": "403b66d9383cfad9",
+          "resultExactRational": {
+            "numerator": "7712907508644569",
+            "denominator": "281474976710656"
+          },
+          "roundingError": {
+            "numerator": "966853478195507",
+            "denominator": "1267650600228229401496703205376"
+          }
+        },
+        {
+          "name": "100_Pbar",
+          "operation": "*",
+          "aBits": "4059000000000000",
+          "bBits": "4041800000000000",
+          "resultBits": "40ab580000000000",
+          "resultExactRational": {
+            "numerator": "3500",
+            "denominator": "1"
+          },
+          "roundingError": {
+            "numerator": "0",
+            "denominator": "1"
+          }
+        },
+        {
+          "name": "pressureWork",
+          "operation": "*",
+          "aBits": "40ab580000000000",
+          "bBits": "3f43a92a30553262",
+          "resultBits": "4000cccccccccccd",
+          "resultExactRational": {
+            "numerator": "4728779608739021",
+            "denominator": "2251799813685248"
+          },
+          "roundingError": {
+            "numerator": "-123",
+            "denominator": "1152921504606846976"
+          }
+        },
+        {
+          "name": "U_kJ",
+          "operation": "-",
+          "aBits": "403b66d9383cfad9",
+          "bBits": "4000cccccccccccd",
+          "resultBits": "40394d3f9ea3613f",
+          "resultExactRational": {
+            "numerator": "7121810057552191",
+            "denominator": "281474976710656"
+          },
+          "roundingError": {
+            "numerator": "-3",
+            "denominator": "2251799813685248"
+          }
+        },
+        {
+          "name": "rho_DU",
+          "operation": "/",
+          "aBits": "3f913c199fc7f065",
+          "bBits": "3f43a92a30553262",
+          "resultBits": "403c0d270a0f6bee",
+          "resultExactRational": {
+            "numerator": "3947880335783415",
+            "denominator": "140737488355328"
+          },
+          "roundingError": {
+            "numerator": "-442192304770233",
+            "denominator": "389422264390112108393764225024"
+          }
+        },
+        {
+          "name": "u_kJkg",
+          "operation": "/",
+          "aBits": "40394d3f9ea3613f",
+          "bBits": "3f913c199fc7f065",
+          "resultBits": "40977d31700f5244",
+          "resultExactRational": {
+            "numerator": "1652893937816721",
+            "denominator": "1099511627776"
+          },
+          "roundingError": {
+            "numerator": "375539869273397",
+            "denominator": "5333901722741249638385319936"
+          }
+        },
+        {
+          "name": "u_DU",
+          "operation": "*",
+          "aBits": "40977d31700f5244",
+          "bBits": "408f400000000000",
+          "resultBits": "4136f042476ef656",
+          "resultExactRational": {
+            "numerator": "3228308472298283",
+            "denominator": "2147483648"
+          },
+          "roundingError": {
+            "numerator": "-13",
+            "denominator": "137438953472"
+          }
+        }
+      ],
+      "internalMolar": {
+        "values": {
+          "rhomolar": 1647.1239247192984,
+          "umolar": 25601.9514071035
+        },
+        "bits": {
+          "rhomolar": "4099bc7ee61f2236",
+          "umolar": "40d9007ce3da9eae"
+        }
+      },
+      "targetRationals": {
+        "exact_MUV": {
+          "exactDensity": {
+            "numerator": "77618485705770576",
+            "denominator": "2767011611056433"
+          },
+          "exactEnergyJkg": {
+            "numerator": "7292733498933443584000",
+            "denominator": "4851155356610661"
+          }
+        },
+        "rounded_DU": {
+          "exactDensity": {
+            "numerator": "3947880335783415",
+            "denominator": "140737488355328"
+          },
+          "exactEnergyJkg": {
+            "numerator": "3228308472298283",
+            "denominator": "2147483648"
+          }
+        },
+        "internal_molar": {
+          "exactDensity": {
+            "numerator": "8889836204568748376698205087875",
+            "denominator": "316912650057057350374175801344"
+          },
+          "exactEnergyJkg": {
+            "numerator": "3689630042143643926528",
+            "denominator": "2454356592829625"
+          }
+        }
+      }
+    },
+    {
+      "key": "chromium-ledger-70",
+      "origin": "B5 original-failures.json, saved bits",
+      "requestedPH": {
+        "values": {
+          "p": 3500000,
+          "h": 703826.5645148475
+        }
+      },
+      "actualPH": {
+        "values": {
+          "p": 3500000.0000001346,
+          "T": 345.5636734341359,
+          "h": 703826.5645148468,
+          "s": 2625.8434104436024,
+          "rho": 521.5319010668079,
+          "u": 697115.5656424082,
+          "Q": -1
+        },
+        "bits": {}
+      },
+      "input": {
+        "values": {
+          "M": 0.31291914064008475,
+          "U_kJ": 218.14080372764926,
+          "V": 0.0006000000000000001,
+          "rho": 521.5319010668079,
+          "u": 697115.5656424091
+        },
+        "bits": {
+          "M": "3fd406de00d5dc96",
+          "U_kJ": "406b448176d1ad12",
+          "V": "3f43a92a30553262",
+          "rho": "40804c415558b52e",
+          "u": "41254637219be1c1"
+        }
+      },
+      "storedRationals": {
+        "M": {
+          "numerator": "2818525050367563",
+          "denominator": "9007199254740992"
+        },
+        "U_kJ": {
+          "numerator": "3837573603055241",
+          "denominator": "17592186044416"
+        },
+        "V": {
+          "numerator": "2767011611056433",
+          "denominator": "4611686018427387904"
+        },
+        "rho": {
+          "numerator": "2293721557916311",
+          "denominator": "4398046511104"
+        },
+        "u": {
+          "numerator": "5988177111933377",
+          "denominator": "8589934592"
+        }
+      },
+      "operations": [
+        {
+          "name": "V",
+          "operation": "/",
+          "aBits": "3f689374bc6a7efa",
+          "bBits": "4014000000000000",
+          "resultBits": "3f43a92a30553262",
+          "resultExactRational": {
+            "numerator": "2767011611056433",
+            "denominator": "4611686018427387904"
+          },
+          "roundingError": {
+            "numerator": "1",
+            "denominator": "23058430092136939520"
+          }
+        },
+        {
+          "name": "M",
+          "operation": "*",
+          "aBits": "40804c415558b52e",
+          "bBits": "3f43a92a30553262",
+          "resultBits": "3fd406de00d5dc96",
+          "resultExactRational": {
+            "numerator": "2818525050367563",
+            "denominator": "9007199254740992"
+          },
+          "roundingError": {
+            "numerator": "-493584921368039",
+            "denominator": "20282409603651670423947251286016"
+          }
+        },
+        {
+          "name": "h_kJkg",
+          "operation": "/",
+          "aBits": "41257aa521081710",
+          "bBits": "408f400000000000",
+          "resultBits": "4085fe9ccddb3a6f",
+          "resultExactRational": {
+            "numerator": "6190923932973679",
+            "denominator": "8796093022208"
+          },
+          "roundingError": {
+            "numerator": "51",
+            "denominator": "1099511627776000"
+          }
+        },
+        {
+          "name": "P_bar",
+          "operation": "/",
+          "aBits": "414ab3f000000000",
+          "bBits": "40f86a0000000000",
+          "resultBits": "4041800000000000",
+          "resultExactRational": {
+            "numerator": "35",
+            "denominator": "1"
+          },
+          "roundingError": {
+            "numerator": "0",
+            "denominator": "1"
+          }
+        },
+        {
+          "name": "M_h",
+          "operation": "*",
+          "aBits": "3fd406de00d5dc96",
+          "bBits": "4085fe9ccddb3a6f",
+          "resultBits": "406b87b4aa04e045",
+          "resultExactRational": {
+            "numerator": "7749034387497029",
+            "denominator": "35184372088832"
+          },
+          "roundingError": {
+            "numerator": "-69515413246085",
+            "denominator": "79228162514264337593543950336"
+          }
+        },
+        {
+          "name": "100_Pbar",
+          "operation": "*",
+          "aBits": "4059000000000000",
+          "bBits": "4041800000000000",
+          "resultBits": "40ab580000000000",
+          "resultExactRational": {
+            "numerator": "3500",
+            "denominator": "1"
+          },
+          "roundingError": {
+            "numerator": "0",
+            "denominator": "1"
+          }
+        },
+        {
+          "name": "pressureWork",
+          "operation": "*",
+          "aBits": "40ab580000000000",
+          "bBits": "3f43a92a30553262",
+          "resultBits": "4000cccccccccccd",
+          "resultExactRational": {
+            "numerator": "4728779608739021",
+            "denominator": "2251799813685248"
+          },
+          "roundingError": {
+            "numerator": "-123",
+            "denominator": "1152921504606846976"
+          }
+        },
+        {
+          "name": "U_kJ",
+          "operation": "-",
+          "aBits": "406b87b4aa04e045",
+          "bBits": "4000cccccccccccd",
+          "resultBits": "406b448176d1ad12",
+          "resultExactRational": {
+            "numerator": "3837573603055241",
+            "denominator": "17592186044416"
+          },
+          "roundingError": {
+            "numerator": "13",
+            "denominator": "2251799813685248"
+          }
+        },
+        {
+          "name": "rho_DU",
+          "operation": "/",
+          "aBits": "3fd406de00d5dc96",
+          "bBits": "3f43a92a30553262",
+          "resultBits": "40804c415558b52e",
+          "resultExactRational": {
+            "numerator": "2293721557916311",
+            "denominator": "4398046511104"
+          },
+          "roundingError": {
+            "numerator": "493584921368039",
+            "denominator": "12169445762191003387305132032"
+          }
+        },
+        {
+          "name": "u_kJkg",
+          "operation": "/",
+          "aBits": "406b448176d1ad12",
+          "bBits": "3fd406de00d5dc96",
+          "resultBits": "4085c8ecadadf582",
+          "resultExactRational": {
+            "numerator": "3065946681309889",
+            "denominator": "4398046511104"
+          },
+          "roundingError": {
+            "numerator": "-29574574054261",
+            "denominator": "12396004264228286324960919552"
+          }
+        },
+        {
+          "name": "u_DU",
+          "operation": "*",
+          "aBits": "4085c8ecadadf582",
+          "bBits": "408f400000000000",
+          "resultBits": "41254637219be1c1",
+          "resultExactRational": {
+            "numerator": "5988177111933377",
+            "denominator": "8589934592"
+          },
+          "roundingError": {
+            "numerator": "3",
+            "denominator": "549755813888"
+          }
+        }
+      ],
+      "internalMolar": {
+        "values": {
+          "rhomolar": 30623.369167048797,
+          "umolar": 11872.240582984363
+        },
+        "bits": {
+          "rhomolar": "40dde7d7a06ed456",
+          "umolar": "40c7301ecb6c58e8"
+        }
+      },
+      "targetRationals": {
+        "exact_MUV": {
+          "exactDensity": {
+            "numerator": "1443084825788192256",
+            "denominator": "2767011611056433"
+          },
+          "exactEnergyJkg": {
+            "numerator": "1964837684764283392000",
+            "denominator": "2818525050367563"
+          }
+        },
+        "rounded_DU": {
+          "exactDensity": {
+            "numerator": "2293721557916311",
+            "denominator": "4398046511104"
+          },
+          "exactEnergyJkg": {
+            "numerator": "5988177111933377",
+            "denominator": "8589934592"
+          }
+        },
+        "internal_molar": {
+          "exactDensity": {
+            "numerator": "10330003553523571474695314457875",
+            "denominator": "19807040628566084398385987584"
+          },
+          "exactEnergyJkg": {
+            "numerator": "1710970184498600214528",
+            "denominator": "2454356592829625"
+          }
+        }
+      }
+    },
+    {
+      "key": "chromium-ledger-75",
+      "origin": "B5 original-failures.json, saved bits",
+      "requestedPH": {
+        "values": {
+          "p": 3500000,
+          "h": 1628069.3286840792
+        }
+      },
+      "actualPH": {
+        "values": {
+          "p": 3500000.000000001,
+          "T": 345.5636737880445,
+          "h": 1628069.3286840795,
+          "s": 5300.438093797976,
+          "rho": 28.051377401009518,
+          "u": 1503298.2719917244,
+          "Q": -1
+        },
+        "bits": {}
+      },
+      "input": {
+        "values": {
+          "M": 0.016830826440605712,
+          "U_kJ": 25.30175230435519,
+          "V": 0.0006000000000000001,
+          "rho": 28.051377401009518,
+          "u": 1503298.2719917244
+        },
+        "bits": {
+          "M": "3f913c19a4821a58",
+          "U_kJ": "40394d3fa396b2bc",
+          "V": "3f43a92a30553262",
+          "rho": "403c0d2711c116e0",
+          "u": "4136f04245a13fe9"
+        }
+      },
+      "storedRationals": {
+        "M": {
+          "numerator": "606394429489995",
+          "denominator": "36028797018963968"
+        },
+        "U_kJ": {
+          "numerator": "1780452535151791",
+          "denominator": "70368744177664"
+        },
+        "V": {
+          "numerator": "2767011611056433",
+          "denominator": "4611686018427387904"
+        },
+        "rho": {
+          "numerator": "246742525020343",
+          "denominator": "8796093022208"
+        },
+        "u": {
+          "numerator": "6456616914337769",
+          "denominator": "4294967296"
+        }
+      },
+      "operations": [
+        {
+          "name": "V",
+          "operation": "/",
+          "aBits": "3f689374bc6a7efa",
+          "bBits": "4014000000000000",
+          "resultBits": "3f43a92a30553262",
+          "resultExactRational": {
+            "numerator": "2767011611056433",
+            "denominator": "4611686018427387904"
+          },
+          "roundingError": {
+            "numerator": "1",
+            "denominator": "23058430092136939520"
+          }
+        },
+        {
+          "name": "M",
+          "operation": "*",
+          "aBits": "403c0d2711c116e0",
+          "bBits": "3f43a92a30553262",
+          "resultBits": "3f913c19a4821a58",
+          "resultExactRational": {
+            "numerator": "606394429489995",
+            "denominator": "36028797018963968"
+          },
+          "roundingError": {
+            "numerator": "-14921998469639",
+            "denominator": "40564819207303340847894502572032"
+          }
+        },
+        {
+          "name": "h_kJkg",
+          "operation": "/",
+          "aBits": "4138d7a55424a3cb",
+          "bBits": "408f400000000000",
+          "resultBits": "40997046fe193b2e",
+          "resultExactRational": {
+            "numerator": "3580162315427223",
+            "denominator": "2199023255552"
+          },
+          "roundingError": {
+            "numerator": "-1",
+            "denominator": "54975581388800"
+          }
+        },
+        {
+          "name": "P_bar",
+          "operation": "/",
+          "aBits": "414ab3f000000000",
+          "bBits": "40f86a0000000000",
+          "resultBits": "4041800000000000",
+          "resultExactRational": {
+            "numerator": "35",
+            "denominator": "1"
+          },
+          "roundingError": {
+            "numerator": "0",
+            "denominator": "1"
+          }
+        },
+        {
+          "name": "M_h",
+          "operation": "*",
+          "aBits": "3f913c19a4821a58",
+          "bBits": "40997046fe193b2e",
+          "resultBits": "403b66d93d304c56",
+          "resultExactRational": {
+            "numerator": "3856453795849771",
+            "denominator": "140737488355328"
+          },
+          "roundingError": {
+            "numerator": "25259392585667",
+            "denominator": "79228162514264337593543950336"
+          }
+        },
+        {
+          "name": "100_Pbar",
+          "operation": "*",
+          "aBits": "4059000000000000",
+          "bBits": "4041800000000000",
+          "resultBits": "40ab580000000000",
+          "resultExactRational": {
+            "numerator": "3500",
+            "denominator": "1"
+          },
+          "roundingError": {
+            "numerator": "0",
+            "denominator": "1"
+          }
+        },
+        {
+          "name": "pressureWork",
+          "operation": "*",
+          "aBits": "40ab580000000000",
+          "bBits": "3f43a92a30553262",
+          "resultBits": "4000cccccccccccd",
+          "resultExactRational": {
+            "numerator": "4728779608739021",
+            "denominator": "2251799813685248"
+          },
+          "roundingError": {
+            "numerator": "-123",
+            "denominator": "1152921504606846976"
+          }
+        },
+        {
+          "name": "U_kJ",
+          "operation": "-",
+          "aBits": "403b66d93d304c56",
+          "bBits": "4000cccccccccccd",
+          "resultBits": "40394d3fa396b2bc",
+          "resultExactRational": {
+            "numerator": "1780452535151791",
+            "denominator": "70368744177664"
+          },
+          "roundingError": {
+            "numerator": "-3",
+            "denominator": "2251799813685248"
+          }
+        },
+        {
+          "name": "rho_DU",
+          "operation": "/",
+          "aBits": "3f913c19a4821a58",
+          "bBits": "3f43a92a30553262",
+          "resultBits": "403c0d2711c116e0",
+          "resultExactRational": {
+            "numerator": "246742525020343",
+            "denominator": "8796093022208"
+          },
+          "roundingError": {
+            "numerator": "14921998469639",
+            "denominator": "24338891524382006774610264064"
+          }
+        },
+        {
+          "name": "u_kJkg",
+          "operation": "/",
+          "aBits": "40394d3fa396b2bc",
+          "bBits": "3f913c19a4821a58",
+          "resultBits": "40977d316e368713",
+          "resultExactRational": {
+            "numerator": "6611575720281875",
+            "denominator": "4398046511104"
+          },
+          "roundingError": {
+            "numerator": "-84488885138543",
+            "denominator": "2666950904971373039824404480"
+          }
+        },
+        {
+          "name": "u_DU",
+          "operation": "*",
+          "aBits": "40977d316e368713",
+          "bBits": "408f400000000000",
+          "resultBits": "4136f04245a13fe9",
+          "resultExactRational": {
+            "numerator": "6456616914337769",
+            "denominator": "4294967296"
+          },
+          "roundingError": {
+            "numerator": "57",
+            "denominator": "549755813888"
+          }
+        }
+      ],
+      "internalMolar": {
+        "values": {
+          "rhomolar": 1647.123951647367,
+          "umolar": 25601.951287120504
+        },
+        "bits": {
+          "rhomolar": "4099bc7eed2e3ee8",
+          "umolar": "40d9007ce1e35feb"
+        }
+      },
+      "targetRationals": {
+        "exact_MUV": {
+          "exactDensity": {
+            "numerator": "77618486974719360",
+            "denominator": "2767011611056433"
+          },
+          "exactEnergyJkg": {
+            "numerator": "182318339599543398400",
+            "denominator": "121278885897999"
+          }
+        },
+        "rounded_DU": {
+          "exactDensity": {
+            "numerator": "246742525020343",
+            "denominator": "8796093022208"
+          },
+          "exactEnergyJkg": {
+            "numerator": "6456616914337769",
+            "denominator": "4294967296"
+          }
+        },
+        "internal_molar": {
+          "exactDensity": {
+            "numerator": "2222459087476144006803657491125",
+            "denominator": "79228162514264337593543950336"
+          },
+          "exactEnergyJkg": {
+            "numerator": "3689630024852271792128",
+            "denominator": "2454356592829625"
+          }
+        }
+      }
+    },
+    {
+      "key": "chromium-ledger-79",
+      "origin": "B5 original-failures.json, saved bits",
+      "requestedPH": {
+        "values": {
+          "p": 3500000,
+          "h": 1638069.3277690788
+        }
+      },
+      "actualPH": {
+        "values": {
+          "p": 3500000.0000000005,
+          "T": 347.66773880290896,
+          "h": 1638069.327769079,
+          "s": 5329.2891536061925,
+          "rho": 27.554827993594685,
+          "u": 1511049.844983209,
+          "Q": -1
+        },
+        "bits": {}
+      },
+      "input": {
+        "values": {
+          "M": 0.016532896796156812,
+          "U_kJ": 24.982031140956146,
+          "V": 0.0006000000000000001,
+          "rho": 27.554827993594685,
+          "u": 1511049.8449832092
+        },
+        "bits": {
+          "M": "3f90edffec30c7ac",
+          "U_kJ": "4038fb6664920f6a",
+          "V": "3f43a92a30553262",
+          "rho": "403b8e09351764fc",
+          "u": "41370e89d850d1d1"
+        }
+      },
+      "storedRationals": {
+        "M": {
+          "numerator": "1191320765608427",
+          "denominator": "72057594037927936"
+        },
+        "U_kJ": {
+          "numerator": "3515908316792757",
+          "denominator": "140737488355328"
+        },
+        "V": {
+          "numerator": "2767011611056433",
+          "denominator": "4611686018427387904"
+        },
+        "rho": {
+          "numerator": "1938998641940799",
+          "denominator": "70368744177664"
+        },
+        "u": {
+          "numerator": "6489909666828753",
+          "denominator": "4294967296"
+        }
+      },
+      "operations": [
+        {
+          "name": "V",
+          "operation": "/",
+          "aBits": "3f689374bc6a7efa",
+          "bBits": "4014000000000000",
+          "resultBits": "3f43a92a30553262",
+          "resultExactRational": {
+            "numerator": "2767011611056433",
+            "denominator": "4611686018427387904"
+          },
+          "roundingError": {
+            "numerator": "1",
+            "denominator": "23058430092136939520"
+          }
+        },
+        {
+          "name": "M",
+          "operation": "*",
+          "aBits": "403b8e09351764fc",
+          "bBits": "3f43a92a30553262",
+          "resultBits": "3f90edffec30c7ac",
+          "resultExactRational": {
+            "numerator": "1191320765608427",
+            "denominator": "72057594037927936"
+          },
+          "roundingError": {
+            "numerator": "-74346245340175",
+            "denominator": "324518553658426726783156020576256"
+          }
+        },
+        {
+          "name": "h_kJkg",
+          "operation": "/",
+          "aBits": "4138feb553e8aca2",
+          "bBits": "408f400000000000",
+          "resultBits": "40999846fddbd398",
+          "resultExactRational": {
+            "numerator": "900538136492659",
+            "denominator": "549755813888"
+          },
+          "roundingError": {
+            "numerator": "7",
+            "denominator": "68719476736000"
+          }
+        },
+        {
+          "name": "P_bar",
+          "operation": "/",
+          "aBits": "414ab3f000000000",
+          "bBits": "40f86a0000000000",
+          "resultBits": "4041800000000000",
+          "resultExactRational": {
+            "numerator": "35",
+            "denominator": "1"
+          },
+          "roundingError": {
+            "numerator": "0",
+            "denominator": "1"
+          }
+        },
+        {
+          "name": "M_h",
+          "operation": "*",
+          "aBits": "3f90edffec30c7ac",
+          "bBits": "40999846fddbd398",
+          "resultBits": "403b14fffe2ba904",
+          "resultExactRational": {
+            "numerator": "1905728521169473",
+            "denominator": "70368744177664"
+          },
+          "roundingError": {
+            "numerator": "-28440232028817",
+            "denominator": "39614081257132168796771975168"
+          }
+        },
+        {
+          "name": "100_Pbar",
+          "operation": "*",
+          "aBits": "4059000000000000",
+          "bBits": "4041800000000000",
+          "resultBits": "40ab580000000000",
+          "resultExactRational": {
+            "numerator": "3500",
+            "denominator": "1"
+          },
+          "roundingError": {
+            "numerator": "0",
+            "denominator": "1"
+          }
+        },
+        {
+          "name": "pressureWork",
+          "operation": "*",
+          "aBits": "40ab580000000000",
+          "bBits": "3f43a92a30553262",
+          "resultBits": "4000cccccccccccd",
+          "resultExactRational": {
+            "numerator": "4728779608739021",
+            "denominator": "2251799813685248"
+          },
+          "roundingError": {
+            "numerator": "-123",
+            "denominator": "1152921504606846976"
+          }
+        },
+        {
+          "name": "U_kJ",
+          "operation": "-",
+          "aBits": "403b14fffe2ba904",
+          "bBits": "4000cccccccccccd",
+          "resultBits": "4038fb6664920f6a",
+          "resultExactRational": {
+            "numerator": "3515908316792757",
+            "denominator": "140737488355328"
+          },
+          "roundingError": {
+            "numerator": "-3",
+            "denominator": "2251799813685248"
+          }
+        },
+        {
+          "name": "rho_DU",
+          "operation": "/",
+          "aBits": "3f90edffec30c7ac",
+          "bBits": "3f43a92a30553262",
+          "resultBits": "403b8e09351764fc",
+          "resultExactRational": {
+            "numerator": "1938998641940799",
+            "denominator": "70368744177664"
+          },
+          "roundingError": {
+            "numerator": "74346245340175",
+            "denominator": "194711132195056054196882112512"
+          }
+        },
+        {
+          "name": "u_kJkg",
+          "operation": "/",
+          "aBits": "4038fb6664920f6a",
+          "bBits": "3f90edffec30c7ac",
+          "resultBits": "40979c330a903303",
+          "resultExactRational": {
+            "numerator": "6645667498832643",
+            "denominator": "4398046511104"
+          },
+          "roundingError": {
+            "numerator": "290424099333825",
+            "denominator": "5239484136789888519171473408"
+          }
+        },
+        {
+          "name": "u_DU",
+          "operation": "*",
+          "aBits": "40979c330a903303",
+          "bBits": "408f400000000000",
+          "resultBits": "41370e89d850d1d1",
+          "resultExactRational": {
+            "numerator": "6489909666828753",
+            "denominator": "4294967296"
+          },
+          "roundingError": {
+            "numerator": "9",
+            "denominator": "549755813888"
+          }
+        }
+      ],
+      "internalMolar": {
+        "values": {
+          "rhomolar": 1617.967507368811,
+          "umolar": 25733.964605983445
+        },
+        "bits": {
+          "rhomolar": "409947deba406ebb",
+          "umolar": "40d9217dbc1abc1b"
+        }
+      },
+      "targetRationals": {
+        "exact_MUV": {
+          "exactDensity": {
+            "numerator": "76244528998939328",
+            "denominator": "2767011611056433"
+          },
+          "exactEnergyJkg": {
+            "numerator": "1800145058197891584000",
+            "denominator": "1191320765608427"
+          }
+        },
+        "rounded_DU": {
+          "exactDensity": {
+            "numerator": "1938998641940799",
+            "denominator": "70368744177664"
+          },
+          "exactEnergyJkg": {
+            "numerator": "6489909666828753",
+            "denominator": "4294967296"
+          }
+        },
+        "internal_molar": {
+          "exactDensity": {
+            "numerator": "17464947122632960351461465411875",
+            "denominator": "633825300114114700748351602688"
+          },
+          "exactEnergyJkg": {
+            "numerator": "3708655149128722415616",
+            "denominator": "2454356592829625"
+          }
+        }
+      }
+    },
+    {
+      "key": "webkit-ledger-69",
+      "origin": "B4C webkit-candidateB-focused.json inputBits; newly replayed in both engines",
+      "requestedPH": {
+        "values": {
+          "p": 3500000,
+          "h": 703826.5644963626
+        },
+        "bits": {
+          "p": "414ab3f000000000",
+          "h": "41257aa52105aad0"
+        }
+      },
+      "actualPH": {
+        "values": {
+          "p": 3499999.9999998375,
+          "T": 345.5636734307983,
+          "h": 703826.5644963622,
+          "s": 2625.843410390113,
+          "rho": 521.5319010741065,
+          "u": 697115.5656240182,
+          "Q": -1
+        },
+        "bits": {
+          "p": "414ab3effffffea3",
+          "T": "40759904ce6e6e72",
+          "h": "41257aa52105aacd",
+          "s": "40a483afd37c9549",
+          "rho": "40804c415559aff5",
+          "u": "41254637219978a8",
+          "Q": "bff0000000000000"
+        }
+      },
+      "input": {
+        "values": {
+          "M": 0.3129191406444639,
+          "U_kJ": 218.14080372494715,
+          "V": 0.0006000000000000001,
+          "rho": 521.5319010741065,
+          "u": 697115.5656240181
+        },
+        "bits": {
+          "M": "3fd406de00d710be",
+          "U_kJ": "406b448176d039b2",
+          "V": "3f43a92a30553262",
+          "rho": "40804c415559aff5",
+          "u": "41254637219978a7"
+        }
+      },
+      "storedRationals": {
+        "M": {
+          "numerator": "2818525050407007",
+          "denominator": "9007199254740992"
+        },
+        "U_kJ": {
+          "numerator": "3837573603007705",
+          "denominator": "17592186044416"
+        },
+        "V": {
+          "numerator": "2767011611056433",
+          "denominator": "4611686018427387904"
+        },
+        "rho": {
+          "numerator": "4587443115896821",
+          "denominator": "8796093022208"
+        },
+        "u": {
+          "numerator": "5988177111775399",
+          "denominator": "8589934592"
+        }
+      },
+      "operations": [
+        {
+          "name": "V",
+          "operation": "/",
+          "aBits": "3f689374bc6a7efa",
+          "bBits": "4014000000000000",
+          "resultBits": "3f43a92a30553262",
+          "resultExactRational": {
+            "numerator": "2767011611056433",
+            "denominator": "4611686018427387904"
+          },
+          "roundingError": {
+            "numerator": "1",
+            "denominator": "23058430092136939520"
+          }
+        },
+        {
+          "name": "M",
+          "operation": "*",
+          "aBits": "40804c415559aff5",
+          "bBits": "3f43a92a30553262",
+          "resultBits": "3fd406de00d710be",
+          "resultExactRational": {
+            "numerator": "2818525050407007",
+            "denominator": "9007199254740992"
+          },
+          "roundingError": {
+            "numerator": "-381886052834021",
+            "denominator": "40564819207303340847894502572032"
+          }
+        },
+        {
+          "name": "h_kJkg",
+          "operation": "/",
+          "aBits": "41257aa52105aad0",
+          "bBits": "408f400000000000",
+          "resultBits": "4085fe9ccdd8bf4c",
+          "resultExactRational": {
+            "numerator": "1547730983202771",
+            "denominator": "2199023255552"
+          },
+          "roundingError": {
+            "numerator": "7",
+            "denominator": "274877906944000"
+          }
+        },
+        {
+          "name": "P_bar",
+          "operation": "/",
+          "aBits": "414ab3f000000000",
+          "bBits": "40f86a0000000000",
+          "resultBits": "4041800000000000",
+          "resultExactRational": {
+            "numerator": "35",
+            "denominator": "1"
+          },
+          "roundingError": {
+            "numerator": "0",
+            "denominator": "1"
+          }
+        },
+        {
+          "name": "M_h",
+          "operation": "*",
+          "aBits": "3fd406de00d710be",
+          "bBits": "4085fe9ccdd8bf4c",
+          "resultBits": "406b87b4aa036ce5",
+          "resultExactRational": {
+            "numerator": "7749034387401957",
+            "denominator": "35184372088832"
+          },
+          "roundingError": {
+            "numerator": "23889154091187",
+            "denominator": "19807040628566084398385987584"
+          }
+        },
+        {
+          "name": "100_Pbar",
+          "operation": "*",
+          "aBits": "4059000000000000",
+          "bBits": "4041800000000000",
+          "resultBits": "40ab580000000000",
+          "resultExactRational": {
+            "numerator": "3500",
+            "denominator": "1"
+          },
+          "roundingError": {
+            "numerator": "0",
+            "denominator": "1"
+          }
+        },
+        {
+          "name": "pressureWork",
+          "operation": "*",
+          "aBits": "40ab580000000000",
+          "bBits": "3f43a92a30553262",
+          "resultBits": "4000cccccccccccd",
+          "resultExactRational": {
+            "numerator": "4728779608739021",
+            "denominator": "2251799813685248"
+          },
+          "roundingError": {
+            "numerator": "-123",
+            "denominator": "1152921504606846976"
+          }
+        },
+        {
+          "name": "U_kJ",
+          "operation": "-",
+          "aBits": "406b87b4aa036ce5",
+          "bBits": "4000cccccccccccd",
+          "resultBits": "406b448176d039b2",
+          "resultExactRational": {
+            "numerator": "3837573603007705",
+            "denominator": "17592186044416"
+          },
+          "roundingError": {
+            "numerator": "13",
+            "denominator": "2251799813685248"
+          }
+        },
+        {
+          "name": "rho_DU",
+          "operation": "/",
+          "aBits": "3fd406de00d710be",
+          "bBits": "3f43a92a30553262",
+          "resultBits": "40804c415559aff5",
+          "resultExactRational": {
+            "numerator": "4587443115896821",
+            "denominator": "8796093022208"
+          },
+          "roundingError": {
+            "numerator": "381886052834021",
+            "denominator": "24338891524382006774610264064"
+          }
+        },
+        {
+          "name": "u_kJkg",
+          "operation": "/",
+          "aBits": "406b448176d039b2",
+          "bBits": "3fd406de00d710be",
+          "resultBits": "4085c8ecadab7d99",
+          "resultExactRational": {
+            "numerator": "6131893362458009",
+            "denominator": "8796093022208"
+          },
+          "roundingError": {
+            "numerator": "-524346580802617",
+            "denominator": "24792008528803525743089811456"
+          }
+        },
+        {
+          "name": "u_DU",
+          "operation": "*",
+          "aBits": "4085c8ecadab7d99",
+          "bBits": "408f400000000000",
+          "resultBits": "41254637219978a7",
+          "resultExactRational": {
+            "numerator": "5988177111775399",
+            "denominator": "8589934592"
+          },
+          "roundingError": {
+            "numerator": "-53",
+            "denominator": "1099511627776"
+          }
+        }
+      ],
+      "internalMolar": {
+        "values": {
+          "rhomolar": 30623.369167477358,
+          "umolar": 11872.240582671153
+        },
+        "bits": {
+          "rhomolar": "40dde7d7a070a080",
+          "umolar": "40c7301ecb69b84b"
+        }
+      },
+      "targetRationals": {
+        "exact_MUV": {
+          "exactDensity": {
+            "numerator": "1443084825808387584",
+            "denominator": "2767011611056433"
+          },
+          "exactEnergyJkg": {
+            "numerator": "1964837684739944960000",
+            "denominator": "2818525050407007"
+          }
+        },
+        "rounded_DU": {
+          "exactDensity": {
+            "numerator": "4587443115896821",
+            "denominator": "8796093022208"
+          },
+          "exactEnergyJkg": {
+            "numerator": "5988177111775399",
+            "denominator": "8589934592"
+          }
+        },
+        "internal_molar": {
+          "exactDensity": {
+            "numerator": "161406305526064617693274565625",
+            "denominator": "309485009821345068724781056"
+          },
+          "exactEnergyJkg": {
+            "numerator": "1710970184453461901312",
+            "denominator": "2454356592829625"
+          }
+        }
+      }
+    },
+    {
+      "key": "webkit-ledger-76",
+      "origin": "B4C webkit-candidateB-focused.json inputBits; newly replayed in both engines",
+      "requestedPH": {
+        "values": {
+          "p": 3500000,
+          "h": 1628069.328702564
+        },
+        "bits": {
+          "p": "414ab3f000000000",
+          "h": "4138d7a55425d9ea"
+        }
+      },
+      "actualPH": {
+        "values": {
+          "p": 3499999.9999999995,
+          "T": 345.56367379185633,
+          "h": 1628069.3287025637,
+          "s": 5300.438093851469,
+          "rho": 28.051377400076458,
+          "u": 1503298.2720060586,
+          "Q": -1
+        },
+        "bits": {
+          "p": "414ab3efffffffff",
+          "T": "40759904cecf5a2a",
+          "h": "4138d7a55425d9e9",
+          "s": "40b4b47026eb2ca3",
+          "rho": "403c0d2711bd14f7",
+          "u": "4136f04245a23066",
+          "Q": "bff0000000000000"
+        }
+      },
+      "input": {
+        "values": {
+          "M": 0.016830826440045875,
+          "U_kJ": 25.301752303754846,
+          "V": 0.0006000000000000001,
+          "rho": 28.051377400076454,
+          "u": 1503298.2720060586
+        },
+        "bits": {
+          "M": "3f913c19a47fa406",
+          "U_kJ": "40394d3fa3941ea6",
+          "V": "3f43a92a30553262",
+          "rho": "403c0d2711bd14f6",
+          "u": "4136f04245a23066"
+        }
+      },
+      "storedRationals": {
+        "M": {
+          "numerator": "2425577717879299",
+          "denominator": "144115188075855872"
+        },
+        "U_kJ": {
+          "numerator": "3560905070219091",
+          "denominator": "140737488355328"
+        },
+        "V": {
+          "numerator": "2767011611056433",
+          "denominator": "4611686018427387904"
+        },
+        "rho": {
+          "numerator": "3947880400194171",
+          "denominator": "140737488355328"
+        },
+        "u": {
+          "numerator": "3228308457199667",
+          "denominator": "2147483648"
+        }
+      },
+      "operations": [
+        {
+          "name": "V",
+          "operation": "/",
+          "aBits": "3f689374bc6a7efa",
+          "bBits": "4014000000000000",
+          "resultBits": "3f43a92a30553262",
+          "resultExactRational": {
+            "numerator": "2767011611056433",
+            "denominator": "4611686018427387904"
+          },
+          "roundingError": {
+            "numerator": "1",
+            "denominator": "23058430092136939520"
+          }
+        },
+        {
+          "name": "M",
+          "operation": "*",
+          "aBits": "403c0d2711bd14f7",
+          "bBits": "3f43a92a30553262",
+          "resultBits": "3f913c19a47fa406",
+          "resultExactRational": {
+            "numerator": "2425577717879299",
+            "denominator": "144115188075855872"
+          },
+          "roundingError": {
+            "numerator": "-1760129124835911",
+            "denominator": "1298074214633706907132624082305024"
+          }
+        },
+        {
+          "name": "h_kJkg",
+          "operation": "/",
+          "aBits": "4138d7a55425d9ea",
+          "bBits": "408f400000000000",
+          "resultBits": "40997046fe1a78be",
+          "resultExactRational": {
+            "numerator": "3580162315467871",
+            "denominator": "2199023255552"
+          },
+          "roundingError": {
+            "numerator": "-29",
+            "denominator": "274877906944000"
+          }
+        },
+        {
+          "name": "P_bar",
+          "operation": "/",
+          "aBits": "414ab3f000000000",
+          "bBits": "40f86a0000000000",
+          "resultBits": "4041800000000000",
+          "resultExactRational": {
+            "numerator": "35",
+            "denominator": "1"
+          },
+          "roundingError": {
+            "numerator": "0",
+            "denominator": "1"
+          }
+        },
+        {
+          "name": "M_h",
+          "operation": "*",
+          "aBits": "3f913c19a47fa406",
+          "bBits": "40997046fe1a78be",
+          "resultBits": "403b66d93d2db840",
+          "resultExactRational": {
+            "numerator": "120514181117665",
+            "denominator": "4398046511104"
+          },
+          "roundingError": {
+            "numerator": "-524325883912989",
+            "denominator": "316912650057057350374175801344"
+          }
+        },
+        {
+          "name": "100_Pbar",
+          "operation": "*",
+          "aBits": "4059000000000000",
+          "bBits": "4041800000000000",
+          "resultBits": "40ab580000000000",
+          "resultExactRational": {
+            "numerator": "3500",
+            "denominator": "1"
+          },
+          "roundingError": {
+            "numerator": "0",
+            "denominator": "1"
+          }
+        },
+        {
+          "name": "pressureWork",
+          "operation": "*",
+          "aBits": "40ab580000000000",
+          "bBits": "3f43a92a30553262",
+          "resultBits": "4000cccccccccccd",
+          "resultExactRational": {
+            "numerator": "4728779608739021",
+            "denominator": "2251799813685248"
+          },
+          "roundingError": {
+            "numerator": "-123",
+            "denominator": "1152921504606846976"
+          }
+        },
+        {
+          "name": "U_kJ",
+          "operation": "-",
+          "aBits": "403b66d93d2db840",
+          "bBits": "4000cccccccccccd",
+          "resultBits": "40394d3fa3941ea6",
+          "resultExactRational": {
+            "numerator": "3560905070219091",
+            "denominator": "140737488355328"
+          },
+          "roundingError": {
+            "numerator": "-3",
+            "denominator": "2251799813685248"
+          }
+        },
+        {
+          "name": "rho_DU",
+          "operation": "/",
+          "aBits": "3f913c19a47fa406",
+          "bBits": "3f43a92a30553262",
+          "resultBits": "403c0d2711bd14f6",
+          "resultExactRational": {
+            "numerator": "3947880400194171",
+            "denominator": "140737488355328"
+          },
+          "roundingError": {
+            "numerator": "-503441243110261",
+            "denominator": "389422264390112108393764225024"
+          }
+        },
+        {
+          "name": "u_kJkg",
+          "operation": "/",
+          "aBits": "40394d3fa3941ea6",
+          "bBits": "3f913c19a47fa406",
+          "resultBits": "40977d316e377d56",
+          "resultExactRational": {
+            "numerator": "3305787860172459",
+            "denominator": "2199023255552"
+          },
+          "roundingError": {
+            "numerator": "226770411356673",
+            "denominator": "5333901809765326684367618048"
+          }
+        },
+        {
+          "name": "u_DU",
+          "operation": "*",
+          "aBits": "40977d316e377d56",
+          "bBits": "408f400000000000",
+          "resultBits": "4136f04245a23066",
+          "resultExactRational": {
+            "numerator": "3228308457199667",
+            "denominator": "2147483648"
+          },
+          "roundingError": {
+            "numerator": "1",
+            "denominator": "274877906944"
+          }
+        }
+      ],
+      "internalMolar": {
+        "values": {
+          "rhomolar": 1647.1239515925793,
+          "umolar": 25601.95128736462
+        },
+        "bits": {
+          "rhomolar": "4099bc7eed2a91a9",
+          "umolar": "40d9007ce1e46609"
+        }
+      },
+      "targetRationals": {
+        "exact_MUV": {
+          "exactDensity": {
+            "numerator": "77618486972137568",
+            "denominator": "2767011611056433"
+          },
+          "exactEnergyJkg": {
+            "numerator": "3646366791904349184000",
+            "denominator": "2425577717879299"
+          }
+        },
+        "rounded_DU": {
+          "exactDensity": {
+            "numerator": "3947880400194171",
+            "denominator": "140737488355328"
+          },
+          "exactEnergyJkg": {
+            "numerator": "3228308457199667",
+            "denominator": "2147483648"
+          }
+        },
+        "internal_molar": {
+          "exactDensity": {
+            "numerator": "17779672699217752744177626318625",
+            "denominator": "633825300114114700748351602688"
+          },
+          "exactEnergyJkg": {
+            "numerator": "3689630024887452565504",
+            "denominator": "2454356592829625"
+          }
+        }
+      }
+    }
+  ]
+}
