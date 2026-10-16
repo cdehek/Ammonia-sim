@@ -11,7 +11,7 @@ def replace(f,a,b):
  assert new[f].count(a)==1,(f,a)
  new[f]=new[f].replace(a,b)
 h,v,f=files
-replace(h,'    bool use_guesses,  ///< True to start off at the values specified by rhoL, rhoV, T\n', '    // Opt-in final-state consistency and roundoff-level polishing for legacy DU.\n    bool polish_du;\n    bool use_guesses,  ///< True to start off at the values specified by rhoL, rhoV, T\n')
+replace(h,'struct saturation_D_pure_options\n{\n', 'struct saturation_D_pure_options\n{\n    // Opt-in final-state consistency and roundoff-level polishing for legacy DU.\n    bool polish_du;\n')
 replace(h,'    saturation_D_pure_options()\n      : use_guesses(false),','    saturation_D_pure_options()\n      : polish_du(false),\n        use_guesses(false),')
 replace(f,'            optionsD.omega = 1;\n','            optionsD.polish_du = (other == iUmolar);\n            optionsD.omega = 1;\n')
 start=new[v].index('void SaturationSolvers::saturation_D_pure('); end=new[v].index('void SaturationSolvers::saturation_T_pure(',start)

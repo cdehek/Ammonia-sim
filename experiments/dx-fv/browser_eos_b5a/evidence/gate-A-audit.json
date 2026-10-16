@@ -1,0 +1,3360 @@
+{
+  "rows": [
+    {
+      "key": "native-ledger-146",
+      "id": "approach-3500000.0-liquid-0.001",
+      "originalClassification": "liquid",
+      "disposition": "resolved-stable-liquid",
+      "checks": {
+        "finalCacheMatchesEvaluatedCoordinates": true,
+        "imposedDensityPreserved": true,
+        "bothCachedDensitiesMatchEvaluatedCoordinates": true,
+        "pressureWithinOriginalReference": true,
+        "chemicalPotentialWithinOriginalReference": true,
+        "positiveResolvedEnergySeparation": true,
+        "stableLiquidRecovered": true,
+        "canonical": true,
+        "nonlinear": true
+      },
+      "result": {
+        "key": "native-ledger-146",
+        "id": "approach-3500000.0-liquid-0.001",
+        "fullVLE": true,
+        "input": {
+          "values": {
+            "M": 0.3129191406602219,
+            "U_kJ": 218.14080371522428,
+            "V": 0.0006000000000000001,
+            "rho": 521.5319011003699,
+            "u": 697115.5655578412
+          },
+          "bits": {
+            "M": "3fd406de00db659d",
+            "U_kJ": "406b448176cb0165",
+            "V": "3f43a92a30553262",
+            "rho": "40804c41555d365c",
+            "u": "412546372190cc20"
+          }
+        },
+        "DU": {
+          "values": {
+            "p": 3499999.9999996712,
+            "T": 345.56367341878774,
+            "rho": 521.5319011003699,
+            "h": 703826.564429847,
+            "u": 697115.5655578412,
+            "Q": 10000.0,
+            "phase": 0.0
+          },
+          "bits": {
+            "p": "414ab3effffffd3e",
+            "T": "40759904ce6b3516",
+            "rho": "40804c41555d365c",
+            "h": "41257aa520fcf2ec",
+            "u": "412546372190cc20",
+            "Q": "40c3880000000000",
+            "phase": "0000000000000000"
+          }
+        },
+        "mathematicalReferenceBranch": "homogeneous",
+        "differences": {
+          "p": 4.0605664253234863e-07,
+          "h": 6.984919309616089e-10,
+          "T": 0.0,
+          "rho": 0.0,
+          "u": 0.0
+        },
+        "referencePass": true,
+        "canonicalDifferences": {
+          "p": -3.287568688392639e-07,
+          "h": -6.984919309616089e-10,
+          "T": -3.410605131648481e-13
+        },
+        "canonicalPass": true,
+        "standalonePass": true,
+        "independentInventoryEOS": {
+          "p": 3499999.9999996712,
+          "rho": 521.5319011003699,
+          "h": 703826.564429847,
+          "u": 697115.5655578412
+        },
+        "normalizedResiduals": {
+          "mass": 0.0,
+          "energy": 1.3029066064828305e-16
+        },
+        "nonlinearPass": true,
+        "physicalQuality": true,
+        "strictSupport": true,
+        "independentEOS": {
+          "p": 3499999.9999996712,
+          "hmass": 703826.564429847,
+          "umass": 697115.5655578412,
+          "cpmass": 5538.221370307084,
+          "cvmass": 2748.7862427649043,
+          "isothermal_compressibility": 4.1764801428051265e-09
+        },
+        "pRho": 459101.4882347514,
+        "getterDifferences": {
+          "p": 0.0,
+          "h": 0.0,
+          "u": 0.0
+        }
+      },
+      "phaseDecision": {
+        "event": "legacy_phase_value_satValue_satT_satRho",
+        "a": 11872.240581544127,
+        "b": 11872.240580819342,
+        "c": 345.56367340330524,
+        "d": 30623.369169019494
+      },
+      "finalSaturation": {
+        "event": "satD_exit_Tadvanced_TL_TV_error",
+        "a": 345.56367340330524,
+        "b": 345.56367340330524,
+        "c": 345.56367340330524,
+        "d": 4.0012576816167005e-15
+      },
+      "finalEvaluation": {
+        "event": "satD_eval_T_rhoL_rhoV_iter",
+        "a": 345.56367340330524,
+        "b": 30623.369169019494,
+        "c": 1647.1239462780877,
+        "d": 2
+      },
+      "finalCachedDensities": {
+        "event": "satD_final_rhoL_rhoV_TL_TV",
+        "a": 30623.369169019494,
+        "b": 1647.1239462780877,
+        "c": 345.56367340330524,
+        "d": 345.56367340330524
+      },
+      "pressureDifferencePa": 1.3364478945732117e-07,
+      "chemicalPotentialDifferenceJkg": 3.5587546035111693e-10,
+      "saturationEvaluations": 3,
+      "originalSaturationEvaluations": 2,
+      "comparison": {
+        "trueUminusSatU": "0.0000425572685279519259346888128544831580493416907487597834308371",
+        "cachedUminusTrueSatU": "-0.00000000076392143095996063862670817391038728531654564860752096792669",
+        "inputMinusCachedSatU": "0.0000425580324493828858953274395626570684366270072944083909518051",
+        "finalTerror": "-0.000000000000323938043622880784868466857269311295928467689250565789760134"
+      },
+      "events": [
+        {
+          "event": "DU_entry_rhomolar_umolar_config",
+          "a": 30623.369169019494,
+          "b": 11872.240581544127,
+          "c": 0,
+          "d": 31
+        },
+        {
+          "event": "legacy_enter_rhomolar_umolar",
+          "a": 30623.369169019494,
+          "b": 11872.240581544127,
+          "c": 0,
+          "d": 0
+        },
+        {
+          "event": "satD_attempt_i_omega_maxiter_rho",
+          "a": 0,
+          "b": 1,
+          "c": 200,
+          "d": 30623.369169019494
+        },
+        {
+          "event": "Brent_entry_a_b_t_maxiter",
+          "a": 195.485,
+          "b": 405.56,
+          "c": 1e-10,
+          "d": 100
+        },
+        {
+          "event": "Brent_stop_loop_m_tol_fb",
+          "a": 5.007905201637186e-11,
+          "b": 1.0015345761012447e-10,
+          "c": 3.637978807091713e-12,
+          "d": 0
+        },
+        {
+          "event": "Brent_return_b_fb_iter_threshold",
+          "a": 345.5558178868783,
+          "b": 3.637978807091713e-12,
+          "c": 8,
+          "d": 1.5345761012447591e-13
+        },
+        {
+          "event": "satD_seed_T_rhoL_rhoV_omega",
+          "a": 345.5558178868783,
+          "b": 30623.369169019494,
+          "c": 1647.046275076595,
+          "d": 1
+        },
+        {
+          "event": "satD_eval_T_rhoL_rhoV_iter",
+          "a": 345.5558178868783,
+          "b": 30623.369169019494,
+          "c": 1647.046275076595,
+          "d": 0
+        },
+        {
+          "event": "satD_residual_r0_r1_pL_pV",
+          "a": -0.00019351966820918554,
+          "b": -0.0001567432524346435,
+          "c": 3492113.1593689104,
+          "d": 3499728.1803671992
+        },
+        {
+          "event": "satD_step_dtau_ddelta_omega",
+          "a": -2.66799755466532e-05,
+          "b": 5.671186420805884e-06,
+          "c": 1,
+          "d": 0
+        },
+        {
+          "event": "satD_advanced_T_error_pError",
+          "a": 345.5636734370032,
+          "b": 0.0002490347549391121,
+          "c": -0.0021806340890926494,
+          "d": 0
+        },
+        {
+          "event": "satD_eval_T_rhoL_rhoV_iter",
+          "a": 345.5636734370032,
+          "b": 30623.369169019494,
+          "c": 1647.1239476458145,
+          "d": 1
+        },
+        {
+          "event": "satD_residual_r0_r1_pL_pV",
+          "a": 7.92632792734338e-10,
+          "b": 3.605872267442578e-10,
+          "c": 3500000.018287687,
+          "d": 3499999.987096787
+        },
+        {
+          "event": "satD_step_dtau_ddelta_omega",
+          "a": 1.144464036529064e-10,
+          "b": -9.98632161555865e-11,
+          "c": 1,
+          "d": 0
+        },
+        {
+          "event": "satD_advanced_T_error_pError",
+          "a": 345.56367340330524,
+          "b": 8.707984222591074e-10,
+          "c": 8.911685705453123e-09,
+          "d": 0
+        },
+        {
+          "event": "satD_eval_T_rhoL_rhoV_iter",
+          "a": 345.56367340330524,
+          "b": 30623.369169019494,
+          "c": 1647.1239462780877,
+          "d": 2
+        },
+        {
+          "event": "satD_residual_r0_r1_pL_pV",
+          "a": 3.400058012914542e-15,
+          "b": 2.1094237467877974e-15,
+          "c": 3499999.984455442,
+          "d": 3499999.9844553084
+        },
+        {
+          "event": "satD_step_dtau_ddelta_omega",
+          "a": 4.805907087084137e-16,
+          "b": -2.7514599103241666e-16,
+          "c": 1,
+          "d": 0
+        },
+        {
+          "event": "satD_final_rhoL_rhoV_TL_TV",
+          "a": 30623.369169019494,
+          "b": 1647.1239462780877,
+          "c": 345.56367340330524,
+          "d": 345.56367340330524
+        },
+        {
+          "event": "satD_exit_Tadvanced_TL_TV_error",
+          "a": 345.56367340330524,
+          "b": 345.56367340330524,
+          "c": 345.56367340330524,
+          "d": 4.0012576816167005e-15
+        },
+        {
+          "event": "legacy_phase_value_satValue_satT_satRho",
+          "a": 11872.240581544127,
+          "b": 11872.240580819342,
+          "c": 345.56367340330524,
+          "d": 30623.369169019494
+        },
+        {
+          "event": "legacy_homogeneous_seed_Tmin_Tmax",
+          "a": 716.5318367016527,
+          "b": 345.56367340330524,
+          "c": 1087.5,
+          "d": 0
+        },
+        {
+          "event": "DU_homogeneous_residual_T_rho_eos_target",
+          "a": 716.5318367016527,
+          "b": 30623.369169019494,
+          "c": 28650.613264050324,
+          "d": 11872.240581544127
+        },
+        {
+          "event": "Brent_entry_a_b_t_maxiter",
+          "a": 345.56367340330524,
+          "b": 1087.5,
+          "c": 1e-12,
+          "d": 100
+        },
+        {
+          "event": "DU_homogeneous_residual_T_rho_eos_target",
+          "a": 345.56367340330524,
+          "b": 30623.369169019494,
+          "c": 11872.240580819342,
+          "d": 11872.240581544127
+        },
+        {
+          "event": "DU_homogeneous_residual_T_rho_eos_target",
+          "a": 1087.5,
+          "b": 30623.369169019494,
+          "c": 47661.35573251549,
+          "d": 11872.240581544127
+        },
+        {
+          "event": "DU_homogeneous_residual_T_rho_eos_target",
+          "a": 345.5636734183306,
+          "b": 30623.369169019494,
+          "c": 11872.240581522727,
+          "d": 11872.240581544127
+        },
+        {
+          "event": "DU_homogeneous_residual_T_rho_eos_target",
+          "a": 345.56367341878774,
+          "b": 30623.369169019494,
+          "c": 11872.240581544127,
+          "d": 11872.240581544127
+        },
+        {
+          "event": "Brent_stop_machine_residual",
+          "a": 345.56367341878774,
+          "b": 0,
+          "c": 2.220446049250313e-16,
+          "d": 0
+        },
+        {
+          "event": "Brent_return_b_fb_iter_threshold",
+          "a": 345.56367341878774,
+          "b": 0,
+          "c": 2,
+          "d": 1.5346109868143454e-13
+        }
+      ]
+    },
+    {
+      "key": "native-ledger-148",
+      "id": "approach-3500000.0-vapor-0.0",
+      "originalClassification": "endpoint-unresolved at original reference resolution",
+      "disposition": "endpoint-unresolved",
+      "checks": {
+        "finalCacheMatchesEvaluatedCoordinates": true,
+        "imposedDensityPreserved": true,
+        "bothCachedDensitiesMatchEvaluatedCoordinates": true,
+        "pressureWithinOriginalReference": true,
+        "chemicalPotentialWithinOriginalReference": true
+      },
+      "result": {
+        "key": "native-ledger-148",
+        "id": "approach-3500000.0-vapor-0.0",
+        "fullVLE": true,
+        "input": {
+          "values": {
+            "M": 0.016830826468318547,
+            "U_kJ": 25.301752334073395,
+            "V": 0.0006000000000000001,
+            "rho": 28.051377447197577,
+            "u": 1503298.271282166
+          },
+          "bits": {
+            "M": "3f913c19a4fbfc39",
+            "U_kJ": "40394d3fa416563f",
+            "V": "3f43a92a30553262",
+            "rho": "403c0d271287772f",
+            "u": "4136f0424572bf7f"
+          }
+        },
+        "error": "Error: Input vapor quality [Q] must be between 0 and 1",
+        "exceptionType": "ValueError"
+      },
+      "phaseDecision": {
+        "event": "legacy_phase_value_satValue_satT_satRho",
+        "a": 25601.951275036354,
+        "b": 25601.951275036354,
+        "c": 345.56367359935155,
+        "d": 1647.1239543594427
+      },
+      "finalSaturation": {
+        "event": "satD_exit_Tadvanced_TL_TV_error",
+        "a": 345.56367359935155,
+        "b": 345.56367359935155,
+        "c": 345.56367359935155,
+        "d": 5.878697093325952e-15
+      },
+      "finalEvaluation": {
+        "event": "satD_eval_T_rhoL_rhoV_iter",
+        "a": 345.56367359935155,
+        "b": 30623.369145833716,
+        "c": 1647.1239543594427,
+        "d": 3
+      },
+      "finalCachedDensities": {
+        "event": "satD_final_rhoL_rhoV_TL_TV",
+        "a": 30623.369145833716,
+        "b": 1647.1239543594427,
+        "c": 345.56367359935155,
+        "d": 345.56367359935155
+      },
+      "pressureDifferencePa": -1.6111880540847778e-07,
+      "chemicalPotentialDifferenceJkg": -7.117509211060266e-10,
+      "saturationEvaluations": 4,
+      "originalSaturationEvaluations": 3,
+      "comparison": {
+        "trueUminusSatU": "-0.000000000142178188022048933829939229779538896493013692581444406794524",
+        "cachedUminusTrueSatU": "-0.000000000142178188022048933829939229779538896493013692581444406794524",
+        "inputMinusCachedSatU": "0.0",
+        "finalTerror": "-0.000000000000216758912816736685632833380738182915352045586351527091029655"
+      },
+      "events": [
+        {
+          "event": "DU_entry_rhomolar_umolar_config",
+          "a": 1647.1239543594427,
+          "b": 25601.951275036354,
+          "c": 0,
+          "d": 31
+        },
+        {
+          "event": "legacy_enter_rhomolar_umolar",
+          "a": 1647.1239543594427,
+          "b": 25601.951275036354,
+          "c": 0,
+          "d": 0
+        },
+        {
+          "event": "satD_attempt_i_omega_maxiter_rho",
+          "a": 0,
+          "b": 1,
+          "c": 200,
+          "d": 1647.1239543594427
+        },
+        {
+          "event": "Brent_entry_a_b_t_maxiter",
+          "a": 195.485,
+          "b": 405.56,
+          "c": 1e-10,
+          "d": 100
+        },
+        {
+          "event": "Brent_stop_loop_m_tol_fb",
+          "a": -5.007905201637186e-11,
+          "b": 1.0015345844693275e-10,
+          "c": 1.1368683772161603e-12,
+          "d": 0
+        },
+        {
+          "event": "Brent_return_b_fb_iter_threshold",
+          "a": 345.55770221158275,
+          "b": 1.1368683772161603e-12,
+          "c": 11,
+          "d": 1.5345844693274502e-13
+        },
+        {
+          "event": "satD_seed_T_rhoL_rhoV_omega",
+          "a": 345.55770221158275,
+          "b": 30623.14652028739,
+          "c": 1647.1239543594427,
+          "d": 1
+        },
+        {
+          "event": "satD_eval_T_rhoL_rhoV_iter",
+          "a": 345.55770221158275,
+          "b": 30623.14652028739,
+          "c": 1647.1239543594427,
+          "d": 0
+        },
+        {
+          "event": "satD_residual_r0_r1_pL_pV",
+          "a": -0.00019347308400867458,
+          "b": -0.0001567225597577382,
+          "c": 3492264.36025765,
+          "d": 3499877.589677247
+        },
+        {
+          "event": "satD_step_dtau_ddelta_omega",
+          "a": -2.028070877903693e-05,
+          "b": 1.6256431282589026e-05,
+          "c": 1,
+          "d": 0
+        },
+        {
+          "event": "satD_advanced_T_error_pError",
+          "a": 345.56367361860083,
+          "b": 0.00024898553165363937,
+          "c": -0.0021800266629974545,
+          "d": 0
+        },
+        {
+          "event": "satD_eval_T_rhoL_rhoV_iter",
+          "a": 345.56367361860083,
+          "b": 30623.36916837024,
+          "c": 1647.1239543594427,
+          "d": 1
+        },
+        {
+          "event": "satD_residual_r0_r1_pL_pV",
+          "a": 4.958926533293884e-09,
+          "b": 2.4440994783603287e-09,
+          "c": 3500000.195533354,
+          "d": 3500000.0003945935
+        },
+        {
+          "event": "satD_step_dtau_ddelta_omega",
+          "a": 6.537424135816452e-11,
+          "b": -1.6454860386121529e-09,
+          "c": 1,
+          "d": 0
+        },
+        {
+          "event": "satD_advanced_T_error_pError",
+          "a": 345.5636735993519,
+          "b": 5.528523729055283e-09,
+          "c": 5.575392842141972e-08,
+          "d": 0
+        },
+        {
+          "event": "satD_eval_T_rhoL_rhoV_iter",
+          "a": 345.5636735993519,
+          "b": 30623.36914583366,
+          "c": 1647.1239543594427,
+          "d": 2
+        },
+        {
+          "event": "satD_residual_r0_r1_pL_pV",
+          "a": -3.039235529911366e-15,
+          "b": 2.4424906541753444e-15,
+          "c": 3499999.9999998836,
+          "d": 3500000.000000003
+        },
+        {
+          "event": "satD_step_dtau_ddelta_omega",
+          "a": 1.098416847653453e-15,
+          "b": 4.087190536048427e-15,
+          "c": 1,
+          "d": 0
+        },
+        {
+          "event": "satD_advanced_T_error_pError",
+          "a": 345.56367359935155,
+          "b": 3.899065683213034e-15,
+          "c": -3.405979701451006e-14,
+          "d": 0
+        },
+        {
+          "event": "satD_eval_T_rhoL_rhoV_iter",
+          "a": 345.56367359935155,
+          "b": 30623.369145833716,
+          "c": 1647.1239543594427,
+          "d": 3
+        },
+        {
+          "event": "satD_residual_r0_r1_pL_pV",
+          "a": -4.093947403305265e-15,
+          "b": -4.218847493575595e-15,
+          "c": 3499999.9999998375,
+          "d": 3499999.9999999986
+        },
+        {
+          "event": "satD_step_dtau_ddelta_omega",
+          "a": -6.899113391438514e-16,
+          "b": -3.612519452987436e-16,
+          "c": 1,
+          "d": 0
+        },
+        {
+          "event": "satD_final_rhoL_rhoV_TL_TV",
+          "a": 30623.369145833716,
+          "b": 1647.1239543594427,
+          "c": 345.56367359935155,
+          "d": 345.56367359935155
+        },
+        {
+          "event": "satD_exit_Tadvanced_TL_TV_error",
+          "a": 345.56367359935155,
+          "b": 345.56367359935155,
+          "c": 345.56367359935155,
+          "d": 5.878697093325952e-15
+        },
+        {
+          "event": "legacy_phase_value_satValue_satT_satRho",
+          "a": 25601.951275036354,
+          "b": 25601.951275036354,
+          "c": 345.56367359935155,
+          "d": 1647.1239543594427
+        },
+        {
+          "event": "legacy_dispatch_two_phase",
+          "a": 1647.1239543594427,
+          "b": 25601.951275036354,
+          "c": 0,
+          "d": 0
+        },
+        {
+          "event": "legacy_two_phase_bracket",
+          "a": 195.4949999999999,
+          "b": 405.5499999999999,
+          "c": 1e-12,
+          "d": 20
+        },
+        {
+          "event": "Brent_entry_a_b_t_maxiter",
+          "a": 195.4949999999999,
+          "b": 405.5499999999999,
+          "c": 1e-12,
+          "d": 20
+        },
+        {
+          "event": "legacy_two_phase_residual_T_Qo_Qd_diff",
+          "a": 195.4949999999999,
+          "b": 1.078462307644828,
+          "c": 0.0021853027890623195,
+          "d": 1.0762770048557657
+        },
+        {
+          "event": "legacy_two_phase_residual_T_Qo_Qd_diff",
+          "a": 405.5499999999999,
+          "b": 10.219175894729592,
+          "c": 71.27225567867109,
+          "d": -61.0530797839415
+        },
+        {
+          "event": "legacy_two_phase_residual_T_Qo_Qd_diff",
+          "a": 199.13381710579267,
+          "b": 1.0754509400713326,
+          "c": 0.002856725402824894,
+          "d": 1.0725942146685077
+        },
+        {
+          "event": "legacy_two_phase_residual_T_Qo_Qd_diff",
+          "a": 302.34190855289626,
+          "b": 1.0007687354704253,
+          "c": 0.3046439280020144,
+          "d": 0.696124807468411
+        },
+        {
+          "event": "legacy_two_phase_residual_T_Qo_Qd_diff",
+          "a": 353.9459542764481,
+          "b": 1.0078474972609133,
+          "c": 1.2495024460171948,
+          "d": -0.24165494875628157
+        },
+        {
+          "event": "legacy_two_phase_residual_T_Qo_Qd_diff",
+          "a": 340.64819119064117,
+          "b": 0.9972319153496926,
+          "c": 0.878135517321067,
+          "d": 0.1190963980286256
+        },
+        {
+          "event": "legacy_two_phase_residual_T_Qo_Qd_diff",
+          "a": 345.03823907118834,
+          "b": 0.9996476292458508,
+          "c": 0.9862005586115756,
+          "d": 0.013447070634275193
+        },
+        {
+          "event": "legacy_two_phase_residual_T_Qo_Qd_diff",
+          "a": 345.5675513922319,
+          "b": 1.0000026543668412,
+          "c": 1.0001025691776437,
+          "d": -9.991481080251496e-05
+        },
+        {
+          "event": "legacy_two_phase_residual_T_Qo_Qd_diff",
+          "a": 345.5636474875125,
+          "b": 0.9999999821290199,
+          "c": 0.9999993093677049,
+          "d": 6.727613149903888e-07
+        },
+        {
+          "event": "legacy_two_phase_residual_T_Qo_Qd_diff",
+          "a": 345.563673598055,
+          "b": 0.9999999999991126,
+          "c": 0.9999999999657014,
+          "d": 3.3411162725371923e-11
+        },
+        {
+          "event": "legacy_two_phase_residual_T_Qo_Qd_diff",
+          "a": 345.5636735993518,
+          "b": 1,
+          "c": 1.000000000000002,
+          "d": -1.9984014443252818e-15
+        },
+        {
+          "event": "Brent_stop_scaled_residual",
+          "a": 345.5636735993518,
+          "b": -1.9984014443252818e-15,
+          "c": 1.5346109876162107e-13,
+          "d": 0
+        },
+        {
+          "event": "Brent_return_b_fb_iter_threshold",
+          "a": 345.5636735993518,
+          "b": -1.9984014443252818e-15,
+          "c": 10,
+          "d": 1.5346109876162107e-13
+        },
+        {
+          "event": "legacy_two_phase_return_Treturn_Tstate_Qd",
+          "a": 345.5636735993518,
+          "b": 345.5636735993518,
+          "c": 1.000000000000002,
+          "d": 0
+        }
+      ]
+    },
+    {
+      "key": "native-ledger-151",
+      "id": "diagnostic-quality-band-3500000.0-hf--1.01e-09",
+      "originalClassification": "liquid",
+      "disposition": "resolved-stable-liquid",
+      "checks": {
+        "finalCacheMatchesEvaluatedCoordinates": true,
+        "imposedDensityPreserved": true,
+        "bothCachedDensitiesMatchEvaluatedCoordinates": true,
+        "pressureWithinOriginalReference": true,
+        "chemicalPotentialWithinOriginalReference": true,
+        "positiveResolvedEnergySeparation": true,
+        "stableLiquidRecovered": true,
+        "canonical": true,
+        "nonlinear": true
+      },
+      "result": {
+        "key": "native-ledger-151",
+        "id": "diagnostic-quality-band-3500000.0-hf--1.01e-09",
+        "fullVLE": true,
+        "input": {
+          "values": {
+            "M": 0.3129191406444639,
+            "U_kJ": 218.14080372494715,
+            "V": 0.0006000000000000001,
+            "rho": 521.5319010741065,
+            "u": 697115.5656240181
+          },
+          "bits": {
+            "M": "3fd406de00d710be",
+            "U_kJ": "406b448176d039b2",
+            "V": "3f43a92a30553262",
+            "rho": "40804c415559aff5",
+            "u": "41254637219978a7"
+          }
+        },
+        "DU": {
+          "values": {
+            "p": 3499999.9999997276,
+            "T": 345.5636734307981,
+            "rho": 521.5319010741065,
+            "h": 703826.5644963618,
+            "u": 697115.5656240177,
+            "Q": 10000.0,
+            "phase": 0.0
+          },
+          "bits": {
+            "p": "414ab3effffffdb7",
+            "T": "40759904ce6e6e6e",
+            "rho": "40804c415559aff5",
+            "h": "41257aa52105aac9",
+            "u": "41254637219978a4",
+            "Q": "40c3880000000000",
+            "phase": "0000000000000000"
+          }
+        },
+        "mathematicalReferenceBranch": "homogeneous",
+        "differences": {
+          "p": -5.667097866535187e-07,
+          "h": -1.3969838619232178e-09,
+          "T": -3.410605131648481e-13,
+          "rho": 0.0,
+          "u": -3.4924596548080444e-10
+        },
+        "referencePass": true,
+        "canonicalDifferences": {
+          "p": -2.7241185307502747e-07,
+          "h": -8.149072527885437e-10,
+          "T": -2.2737367544323206e-13
+        },
+        "canonicalPass": true,
+        "standalonePass": true,
+        "independentInventoryEOS": {
+          "p": 3499999.9999997276,
+          "rho": 521.5319010741065,
+          "h": 703826.5644963618,
+          "u": 697115.5656240177
+        },
+        "normalizedResiduals": {
+          "mass": 0.0,
+          "energy": 6.514533032123789e-16
+        },
+        "nonlinearPass": true,
+        "physicalQuality": true,
+        "strictSupport": true,
+        "independentEOS": {
+          "p": 3499999.9999997276,
+          "hmass": 703826.5644963618,
+          "umass": 697115.5656240177,
+          "cpmass": 5538.2213707088995,
+          "cvmass": 2748.786242773273,
+          "isothermal_compressibility": 4.176480144319285e-09
+        },
+        "pRho": 459101.48809142644,
+        "getterDifferences": {
+          "p": 0.0,
+          "h": 0.0,
+          "u": 0.0
+        }
+      },
+      "phaseDecision": {
+        "event": "legacy_phase_value_satValue_satT_satRho",
+        "a": 11872.240582671153,
+        "b": 11872.240581994563,
+        "c": 345.56367341634524,
+        "d": 30623.369167477358
+      },
+      "finalSaturation": {
+        "event": "satD_exit_Tadvanced_TL_TV_error",
+        "a": 345.56367341634524,
+        "b": 345.56367341634524,
+        "c": 345.56367341634524,
+        "d": 3.650491345586044e-15
+      },
+      "finalEvaluation": {
+        "event": "satD_eval_T_rhoL_rhoV_iter",
+        "a": 345.56367341634524,
+        "b": 30623.369167477358,
+        "c": 1647.1239468156223,
+        "d": 2
+      },
+      "finalCachedDensities": {
+        "event": "satD_final_rhoL_rhoV_TL_TV",
+        "a": 30623.369167477358,
+        "b": 1647.1239468156223,
+        "c": 345.56367341634524,
+        "d": 345.56367341634524
+      },
+      "pressureDifferencePa": 1.3830140233039856e-07,
+      "chemicalPotentialDifferenceJkg": 1.6857258648846918e-10,
+      "saturationEvaluations": 3,
+      "originalSaturationEvaluations": 2,
+      "comparison": {
+        "trueUminusSatU": "0.0000397293314994496779708043858339646963134132408030300701233319",
+        "cachedUminusTrueSatU": "0.00000000127389736159059647077452958563087661524603267745642710043275",
+        "inputMinusCachedSatU": "0.0000397280576020880873743336113043790654367979947703526136962315",
+        "finalTerror": "0.000000000000234974192277894412338711881558562735811648379860619614236484"
+      },
+      "events": [
+        {
+          "event": "DU_entry_rhomolar_umolar_config",
+          "a": 30623.369167477358,
+          "b": 11872.240582671153,
+          "c": 0,
+          "d": 31
+        },
+        {
+          "event": "legacy_enter_rhomolar_umolar",
+          "a": 30623.369167477358,
+          "b": 11872.240582671153,
+          "c": 0,
+          "d": 0
+        },
+        {
+          "event": "satD_attempt_i_omega_maxiter_rho",
+          "a": 0,
+          "b": 1,
+          "c": 200,
+          "d": 30623.369167477358
+        },
+        {
+          "event": "Brent_entry_a_b_t_maxiter",
+          "a": 195.485,
+          "b": 405.56,
+          "c": 1e-10,
+          "d": 100
+        },
+        {
+          "event": "Brent_stop_machine_residual",
+          "a": 345.5558178999299,
+          "b": 0,
+          "c": 2.220446049250313e-16,
+          "d": 0
+        },
+        {
+          "event": "Brent_return_b_fb_iter_threshold",
+          "a": 345.5558178999299,
+          "b": 0,
+          "c": 6,
+          "d": 1.5345761013027198e-13
+        },
+        {
+          "event": "satD_seed_T_rhoL_rhoV_omega",
+          "a": 345.5558178999299,
+          "b": 30623.369167477358,
+          "c": 1647.0462756146205,
+          "d": 1
+        },
+        {
+          "event": "satD_eval_T_rhoL_rhoV_iter",
+          "a": 345.5558178999299,
+          "b": 30623.369167477358,
+          "c": 1647.0462756146205,
+          "d": 0
+        },
+        {
+          "event": "satD_residual_r0_r1_pL_pV",
+          "a": -0.00019351966790266684,
+          "b": -0.00015674325229697583,
+          "c": 3492113.160415534,
+          "d": 3499728.181402048
+        },
+        {
+          "event": "satD_step_dtau_ddelta_omega",
+          "a": -2.66799755059014e-05,
+          "b": 5.671186385540653e-06,
+          "c": 1,
+          "d": 0
+        },
+        {
+          "event": "satD_advanced_T_error_pError",
+          "a": 345.56367345004344,
+          "b": 0.0002490347546142744,
+          "c": -0.0021806340850672886,
+          "d": 0
+        },
+        {
+          "event": "satD_eval_T_rhoL_rhoV_iter",
+          "a": 345.56367345004344,
+          "b": 30623.369167477358,
+          "c": 1647.123948183357,
+          "d": 1
+        },
+        {
+          "event": "satD_residual_r0_r1_pL_pV",
+          "a": 7.926395512170004e-10,
+          "b": 3.6059122354714646e-10,
+          "c": 3500000.0193219264,
+          "d": 3499999.9881307604
+        },
+        {
+          "event": "satD_step_dtau_ddelta_omega",
+          "a": 1.144473625709627e-10,
+          "b": -9.986381657013409e-11,
+          "c": 1,
+          "d": 0
+        },
+        {
+          "event": "satD_advanced_T_error_pError",
+          "a": 345.56367341634524,
+          "b": 8.708062291076677e-10,
+          "c": 8.9117616721322e-09,
+          "d": 0
+        },
+        {
+          "event": "satD_eval_T_rhoL_rhoV_iter",
+          "a": 345.56367341634524,
+          "b": 30623.369167477358,
+          "c": 1647.1239468156223,
+          "d": 2
+        },
+        {
+          "event": "satD_residual_r0_r1_pL_pV",
+          "a": 3.5110803153770576e-15,
+          "b": 9.992007221626409e-16,
+          "c": 3499999.985489406,
+          "d": 3499999.985489268
+        },
+        {
+          "event": "satD_step_dtau_ddelta_omega",
+          "a": 5.179430081941892e-16,
+          "b": -6.052273163600277e-16,
+          "c": 1,
+          "d": 0
+        },
+        {
+          "event": "satD_final_rhoL_rhoV_TL_TV",
+          "a": 30623.369167477358,
+          "b": 1647.1239468156223,
+          "c": 345.56367341634524,
+          "d": 345.56367341634524
+        },
+        {
+          "event": "satD_exit_Tadvanced_TL_TV_error",
+          "a": 345.56367341634524,
+          "b": 345.56367341634524,
+          "c": 345.56367341634524,
+          "d": 3.650491345586044e-15
+        },
+        {
+          "event": "legacy_phase_value_satValue_satT_satRho",
+          "a": 11872.240582671153,
+          "b": 11872.240581994563,
+          "c": 345.56367341634524,
+          "d": 30623.369167477358
+        },
+        {
+          "event": "legacy_homogeneous_seed_Tmin_Tmax",
+          "a": 716.5318367081726,
+          "b": 345.56367341634524,
+          "c": 1087.5,
+          "d": 0
+        },
+        {
+          "event": "DU_homogeneous_residual_T_rho_eos_target",
+          "a": 716.5318367081726,
+          "b": 30623.369167477358,
+          "c": 28650.613264852305,
+          "d": 11872.240582671153
+        },
+        {
+          "event": "Brent_entry_a_b_t_maxiter",
+          "a": 345.56367341634524,
+          "b": 1087.5,
+          "c": 1e-12,
+          "d": 100
+        },
+        {
+          "event": "DU_homogeneous_residual_T_rho_eos_target",
+          "a": 345.56367341634524,
+          "b": 30623.369167477358,
+          "c": 11872.240581994563,
+          "d": 11872.240582671153
+        },
+        {
+          "event": "DU_homogeneous_residual_T_rho_eos_target",
+          "a": 1087.5,
+          "b": 30623.369167477358,
+          "c": 47661.355732851545,
+          "d": 11872.240582671153
+        },
+        {
+          "event": "DU_homogeneous_residual_T_rho_eos_target",
+          "a": 345.56367343037147,
+          "b": 30623.369167477358,
+          "c": 11872.240582651182,
+          "d": 11872.240582671153
+        },
+        {
+          "event": "DU_homogeneous_residual_T_rho_eos_target",
+          "a": 345.5636734307981,
+          "b": 30623.369167477358,
+          "c": 11872.240582671147,
+          "d": 11872.240582671153
+        },
+        {
+          "event": "DU_homogeneous_residual_T_rho_eos_target",
+          "a": 345.5636734307992,
+          "b": 30623.369167477358,
+          "c": 11872.240582671191,
+          "d": 11872.240582671153
+        },
+        {
+          "event": "Brent_stop_loop_m_tol_fb",
+          "a": 5.684341886080801e-13,
+          "b": 1.1534610986867682e-12,
+          "c": -5.4569682106375694e-12,
+          "d": 0
+        },
+        {
+          "event": "Brent_return_b_fb_iter_threshold",
+          "a": 345.5636734307981,
+          "b": -5.4569682106375694e-12,
+          "c": 4,
+          "d": 1.534610986867682e-13
+        }
+      ]
+    },
+    {
+      "key": "native-ledger-152",
+      "id": "diagnostic-quality-band-3500000.0-hf--9.9e-10",
+      "originalClassification": "liquid",
+      "disposition": "resolved-stable-liquid",
+      "checks": {
+        "finalCacheMatchesEvaluatedCoordinates": true,
+        "imposedDensityPreserved": true,
+        "bothCachedDensitiesMatchEvaluatedCoordinates": true,
+        "pressureWithinOriginalReference": true,
+        "chemicalPotentialWithinOriginalReference": true,
+        "positiveResolvedEnergySeparation": true,
+        "stableLiquidRecovered": true,
+        "canonical": true,
+        "nonlinear": true
+      },
+      "result": {
+        "key": "native-ledger-152",
+        "id": "diagnostic-quality-band-3500000.0-hf--9.9e-10",
+        "fullVLE": true,
+        "input": {
+          "values": {
+            "M": 0.312919140640084,
+            "U_kJ": 218.14080372764874,
+            "V": 0.0006000000000000001,
+            "rho": 521.5319010668067,
+            "u": 697115.5656424091
+          },
+          "bits": {
+            "M": "3fd406de00d5dc89",
+            "U_kJ": "406b448176d1ad00",
+            "V": "3f43a92a30553262",
+            "rho": "40804c415558b523",
+            "u": "41254637219be1c1"
+          }
+        },
+        "DU": {
+          "values": {
+            "p": 3499999.9999993723,
+            "T": 345.56367343413575,
+            "rho": 521.5319010668067,
+            "h": 703826.5645148464,
+            "u": 697115.565642409,
+            "Q": 10000.0,
+            "phase": 0.0
+          },
+          "bits": {
+            "p": "414ab3effffffabc",
+            "T": "40759904ce6f53cb",
+            "rho": "40804c415558b523",
+            "h": "41257aa521081707",
+            "u": "41254637219be1c0",
+            "Q": "40c3880000000000",
+            "phase": "0000000000000000"
+          }
+        },
+        "mathematicalReferenceBranch": "homogeneous",
+        "differences": {
+          "p": -2.491287887096405e-07,
+          "h": -3.4924596548080444e-10,
+          "T": 0.0,
+          "rho": 0.0,
+          "u": -1.1641532182693481e-10
+        },
+        "referencePass": true,
+        "canonicalDifferences": {
+          "p": -6.277114152908325e-07,
+          "h": -1.0477378964424133e-09,
+          "T": -2.8421709430404007e-13
+        },
+        "canonicalPass": true,
+        "standalonePass": true,
+        "independentInventoryEOS": {
+          "p": 3499999.9999993723,
+          "rho": 521.5319010668067,
+          "h": 703826.5645148464,
+          "u": 697115.565642409
+        },
+        "normalizedResiduals": {
+          "mass": 0.0,
+          "energy": 1.302906606408622e-16
+        },
+        "nonlinearPass": true,
+        "physicalQuality": true,
+        "strictSupport": true,
+        "independentEOS": {
+          "p": 3499999.9999993723,
+          "hmass": 703826.5645148464,
+          "umass": 697115.565642409,
+          "cpmass": 5538.221370820607,
+          "cvmass": 2748.7862427756,
+          "isothermal_compressibility": 4.176480144740198e-09
+        },
+        "pRho": 459101.48805158335,
+        "getterDifferences": {
+          "p": 0.0,
+          "h": 0.0,
+          "u": 0.0
+        }
+      },
+      "phaseDecision": {
+        "event": "legacy_phase_value_satValue_satT_satRho",
+        "a": 11872.240582984363,
+        "b": 11872.240582321188,
+        "c": 345.5636734199694,
+        "d": 30623.369167048724
+      },
+      "finalSaturation": {
+        "event": "satD_exit_Tadvanced_TL_TV_error",
+        "a": 345.5636734199694,
+        "b": 345.5636734199694,
+        "c": 345.5636734199694,
+        "d": 1.1157603309187458e-15
+      },
+      "finalEvaluation": {
+        "event": "satD_eval_T_rhoL_rhoV_iter",
+        "a": 345.5636734199694,
+        "b": 30623.369167048724,
+        "c": 1647.1239469650156,
+        "d": 2
+      },
+      "finalCachedDensities": {
+        "event": "satD_final_rhoL_rhoV_TL_TV",
+        "a": 30623.369167048724,
+        "b": 1647.1239469650156,
+        "c": 345.5636734199694,
+        "d": 345.5636734199694
+      },
+      "pressureDifferencePa": 4.6566128730773926e-09,
+      "chemicalPotentialDifferenceJkg": 1.8730287387804122e-10,
+      "saturationEvaluations": 3,
+      "originalSaturationEvaluations": 2,
+      "comparison": {
+        "trueUminusSatU": "0.0000389406731198648488412153284501415187948011082492788185935646",
+        "cachedUminusTrueSatU": "0.000000000321756408975351706954291173091647697367983942484987778914468",
+        "inputMinusCachedSatU": "0.0000389403513634558734895083741589684271471037402653363336057857",
+        "finalTerror": "0.000000000000112220059605806143357353819976105679202021930013758462250839"
+      },
+      "events": [
+        {
+          "event": "DU_entry_rhomolar_umolar_config",
+          "a": 30623.369167048724,
+          "b": 11872.240582984363,
+          "c": 0,
+          "d": 31
+        },
+        {
+          "event": "legacy_enter_rhomolar_umolar",
+          "a": 30623.369167048724,
+          "b": 11872.240582984363,
+          "c": 0,
+          "d": 0
+        },
+        {
+          "event": "satD_attempt_i_omega_maxiter_rho",
+          "a": 0,
+          "b": 1,
+          "c": 200,
+          "d": 30623.369167048724
+        },
+        {
+          "event": "Brent_entry_a_b_t_maxiter",
+          "a": 195.485,
+          "b": 405.56,
+          "c": 1e-10,
+          "d": 100
+        },
+        {
+          "event": "Brent_stop_loop_m_tol_fb",
+          "a": 5.007905201637186e-11,
+          "b": 1.0015345761013188e-10,
+          "c": 7.275957614183426e-12,
+          "d": 0
+        },
+        {
+          "event": "Brent_return_b_fb_iter_threshold",
+          "a": 345.5558179035575,
+          "b": 7.275957614183426e-12,
+          "c": 8,
+          "d": 1.5345761013188298e-13
+        },
+        {
+          "event": "satD_seed_T_rhoL_rhoV_omega",
+          "a": 345.5558179035575,
+          "b": 30623.369167048724,
+          "c": 1647.046275764162,
+          "d": 1
+        },
+        {
+          "event": "satD_eval_T_rhoL_rhoV_iter",
+          "a": 345.5558179035575,
+          "b": 30623.369167048724,
+          "c": 1647.046275764162,
+          "d": 0
+        },
+        {
+          "event": "satD_residual_r0_r1_pL_pV",
+          "a": -0.00019351966782275853,
+          "b": -0.0001567432522604495,
+          "c": 3492113.1607062276,
+          "d": 3499728.1816896773
+        },
+        {
+          "event": "satD_step_dtau_ddelta_omega",
+          "a": -2.6679975495350346e-05,
+          "b": 5.671186376586795e-06,
+          "c": 1,
+          "d": 0
+        },
+        {
+          "event": "satD_advanced_T_error_pError",
+          "a": 345.5636734536681,
+          "b": 0.0002490347545291896,
+          "c": -0.0021806340840082126,
+          "d": 0
+        },
+        {
+          "event": "satD_eval_T_rhoL_rhoV_iter",
+          "a": 345.5636734536681,
+          "b": 30623.369167048724,
+          "c": 1647.1239483327756,
+          "d": 1
+        },
+        {
+          "event": "satD_residual_r0_r1_pL_pV",
+          "a": 7.926506812028222e-10,
+          "b": 3.605946652385228e-10,
+          "c": 3500000.019609775,
+          "d": 3499999.9884181707
+        },
+        {
+          "event": "satD_step_dtau_ddelta_omega",
+          "a": 1.1444899939645698e-10,
+          "b": -9.98656604442465e-11,
+          "c": 1,
+          "d": 0
+        },
+        {
+          "event": "satD_advanced_T_error_pError",
+          "a": 345.5636734199694,
+          "b": 8.708177851937686e-10,
+          "c": 8.911886867761818e-09,
+          "d": 0
+        },
+        {
+          "event": "satD_eval_T_rhoL_rhoV_iter",
+          "a": 345.5636734199694,
+          "b": 30623.369167048724,
+          "c": 1647.1239469650156,
+          "d": 2
+        },
+        {
+          "event": "satD_residual_r0_r1_pL_pV",
+          "a": 1.1102230246251565e-16,
+          "b": 1.1102230246251565e-15,
+          "c": 3499999.985776634,
+          "d": 3499999.9857766293
+        },
+        {
+          "event": "satD_step_dtau_ddelta_omega",
+          "a": -3.436230078015491e-18,
+          "b": 2.7459781965559153e-16,
+          "c": 1,
+          "d": 0
+        },
+        {
+          "event": "satD_final_rhoL_rhoV_TL_TV",
+          "a": 30623.369167048724,
+          "b": 1647.1239469650156,
+          "c": 345.5636734199694,
+          "d": 345.5636734199694
+        },
+        {
+          "event": "satD_exit_Tadvanced_TL_TV_error",
+          "a": 345.5636734199694,
+          "b": 345.5636734199694,
+          "c": 345.5636734199694,
+          "d": 1.1157603309187458e-15
+        },
+        {
+          "event": "legacy_phase_value_satValue_satT_satRho",
+          "a": 11872.240582984363,
+          "b": 11872.240582321188,
+          "c": 345.5636734199694,
+          "d": 30623.369167048724
+        },
+        {
+          "event": "legacy_homogeneous_seed_Tmin_Tmax",
+          "a": 716.5318367099846,
+          "b": 345.5636734199694,
+          "c": 1087.5,
+          "d": 0
+        },
+        {
+          "event": "DU_homogeneous_residual_T_rho_eos_target",
+          "a": 716.5318367099846,
+          "b": 30623.369167048724,
+          "c": 28650.613265075226,
+          "d": 11872.240582984363
+        },
+        {
+          "event": "Brent_entry_a_b_t_maxiter",
+          "a": 345.5636734199694,
+          "b": 1087.5,
+          "c": 1e-12,
+          "d": 100
+        },
+        {
+          "event": "DU_homogeneous_residual_T_rho_eos_target",
+          "a": 345.5636734199694,
+          "b": 30623.369167048724,
+          "c": 11872.240582321188,
+          "d": 11872.240582984363
+        },
+        {
+          "event": "DU_homogeneous_residual_T_rho_eos_target",
+          "a": 1087.5,
+          "b": 30623.369167048724,
+          "c": 47661.35573294495,
+          "d": 11872.240582984363
+        },
+        {
+          "event": "DU_homogeneous_residual_T_rho_eos_target",
+          "a": 345.56367343371755,
+          "b": 30623.369167048724,
+          "c": 11872.240582964785,
+          "d": 11872.240582984363
+        },
+        {
+          "event": "DU_homogeneous_residual_T_rho_eos_target",
+          "a": 345.56367343413575,
+          "b": 30623.369167048724,
+          "c": 11872.240582984361,
+          "d": 11872.240582984363
+        },
+        {
+          "event": "DU_homogeneous_residual_T_rho_eos_target",
+          "a": 345.5636734341369,
+          "b": 30623.369167048724,
+          "c": 11872.240582984417,
+          "d": 11872.240582984363
+        },
+        {
+          "event": "Brent_stop_loop_m_tol_fb",
+          "a": 5.684341886080801e-13,
+          "b": 1.1534610986882503e-12,
+          "c": -1.8189894035458565e-12,
+          "d": 0
+        },
+        {
+          "event": "Brent_return_b_fb_iter_threshold",
+          "a": 345.56367343413575,
+          "b": -1.8189894035458565e-12,
+          "c": 4,
+          "d": 1.5346109868825042e-13
+        }
+      ]
+    },
+    {
+      "key": "native-ledger-162",
+      "id": "ULP-3500000.0-hf--1",
+      "originalClassification": "endpoint-unresolved at original reference resolution",
+      "disposition": "endpoint-unresolved",
+      "checks": {
+        "finalCacheMatchesEvaluatedCoordinates": true,
+        "imposedDensityPreserved": true,
+        "bothCachedDensitiesMatchEvaluatedCoordinates": true,
+        "pressureWithinOriginalReference": true,
+        "chemicalPotentialWithinOriginalReference": true
+      },
+      "result": {
+        "key": "native-ledger-162",
+        "id": "ULP-3500000.0-hf--1",
+        "fullVLE": true,
+        "input": {
+          "values": {
+            "M": 0.31291914042330304,
+            "U_kJ": 218.1408038613936,
+            "V": 0.0006000000000000001,
+            "rho": 521.531900705505,
+            "u": 697115.5665527601
+          },
+          "bits": {
+            "M": "3fd406de009a45ee",
+            "U_kJ": "406b448177197ac1",
+            "V": "3f43a92a30553262",
+            "rho": "40804c41552836e8",
+            "u": "4125463722133410"
+          }
+        },
+        "DU": {
+          "values": {
+            "p": 3500000.0000012456,
+            "T": 345.563673599352,
+            "rho": 521.531900705505,
+            "h": 703826.5654298502,
+            "u": 697115.5665527604,
+            "Q": 10000.0,
+            "phase": 0.0
+          },
+          "bits": {
+            "p": "414ab3f000000a73",
+            "T": "40759904ce9bad5e",
+            "rho": "40804c41552836e8",
+            "h": "41257aa521800576",
+            "u": "4125463722133413",
+            "Q": "40c3880000000000",
+            "phase": "0000000000000000"
+          }
+        },
+        "mathematicalReferenceBranch": "homogeneous",
+        "differences": {
+          "p": 4.6798959374427795e-07,
+          "h": 1.0477378964424133e-09,
+          "T": 1.1368683772161603e-13,
+          "rho": 0.0,
+          "u": 3.4924596548080444e-10
+        },
+        "referencePass": true,
+        "canonicalDifferences": {
+          "p": 1.2456439435482025e-06,
+          "h": 2.561137080192566e-09,
+          "T": 5.684341886080801e-13
+        },
+        "canonicalPass": true,
+        "standalonePass": true,
+        "independentInventoryEOS": {
+          "p": 3500000.0000012456,
+          "rho": 521.531900705505,
+          "h": 703826.5654298502,
+          "u": 697115.5665527604
+        },
+        "normalizedResiduals": {
+          "mass": 0.0,
+          "energy": 5.211626422439174e-16
+        },
+        "nonlinearPass": true,
+        "physicalQuality": true,
+        "strictSupport": false,
+        "independentEOS": {
+          "p": 3500000.0000012456,
+          "hmass": 703826.5654298502,
+          "umass": 697115.5665527604,
+          "cpmass": 5538.221376348644,
+          "cvmass": 2748.7862428906947,
+          "isothermal_compressibility": 4.176480165570998e-09
+        },
+        "pRho": 459101.4860797999,
+        "getterDifferences": {
+          "p": 0.0,
+          "h": 0.0,
+          "u": 0.0
+        }
+      },
+      "phaseDecision": {
+        "event": "legacy_phase_value_satValue_satT_satRho",
+        "a": 11872.240598488112,
+        "b": 11872.240598488059,
+        "c": 345.56367359935086,
+        "d": 30623.369145833774
+      },
+      "finalSaturation": {
+        "event": "satD_exit_Tadvanced_TL_TV_error",
+        "a": 345.56367359935086,
+        "b": 345.56367359935086,
+        "c": 345.56367359935086,
+        "d": 3.680623755400682e-15
+      },
+      "finalEvaluation": {
+        "event": "satD_eval_T_rhoL_rhoV_iter",
+        "a": 345.56367359935086,
+        "b": 30623.369145833774,
+        "c": 1647.123954359396,
+        "d": 2
+      },
+      "finalCachedDensities": {
+        "event": "satD_final_rhoL_rhoV_TL_TV",
+        "a": 30623.369145833774,
+        "b": 1647.123954359396,
+        "c": 345.56367359935086,
+        "d": 345.56367359935086
+      },
+      "pressureDifferencePa": 7.683411240577698e-08,
+      "chemicalPotentialDifferenceJkg": 5.244480471307555e-10,
+      "saturationEvaluations": 3,
+      "originalSaturationEvaluations": 2,
+      "comparison": {
+        "trueUminusSatU": "0.00000000233352793036621485484388738669840120280323585439456422096263",
+        "cachedUminusTrueSatU": "-0.00000000076389321137401601429941799864512563124874796194063915622716",
+        "inputMinusCachedSatU": "0.00000000309742114174023086914330538534352683405198381633520337718979",
+        "finalTerror": "-0.000000000000166677879608354997078028582738707371445526038927069010212339"
+      },
+      "events": [
+        {
+          "event": "DU_entry_rhomolar_umolar_config",
+          "a": 30623.369145833774,
+          "b": 11872.240598488112,
+          "c": 0,
+          "d": 31
+        },
+        {
+          "event": "legacy_enter_rhomolar_umolar",
+          "a": 30623.369145833774,
+          "b": 11872.240598488112,
+          "c": 0,
+          "d": 0
+        },
+        {
+          "event": "satD_attempt_i_omega_maxiter_rho",
+          "a": 0,
+          "b": 1,
+          "c": 200,
+          "d": 30623.369145833774
+        },
+        {
+          "event": "Brent_entry_a_b_t_maxiter",
+          "a": 195.485,
+          "b": 405.56,
+          "c": 1e-10,
+          "d": 100
+        },
+        {
+          "event": "Brent_stop_loop_m_tol_fb",
+          "a": -5.007905201637186e-11,
+          "b": 1.0015345761021163e-10,
+          "c": -3.637978807091713e-12,
+          "d": 0
+        },
+        {
+          "event": "Brent_return_b_fb_iter_threshold",
+          "a": 345.5558180831057,
+          "b": -3.637978807091713e-12,
+          "c": 8,
+          "d": 1.5345761021161839e-13
+        },
+        {
+          "event": "satD_seed_T_rhoL_rhoV_omega",
+          "a": 345.5558180831057,
+          "b": 30623.369145833774,
+          "c": 1647.046283165681,
+          "d": 1
+        },
+        {
+          "event": "satD_eval_T_rhoL_rhoV_iter",
+          "a": 345.5558180831057,
+          "b": 30623.369145833774,
+          "c": 1647.046283165681,
+          "d": 0
+        },
+        {
+          "event": "satD_residual_r0_r1_pL_pV",
+          "a": -0.00019351966336354776,
+          "b": -0.0001567432502826982,
+          "c": 3492113.1751140053,
+          "d": 3499728.195925942
+        },
+        {
+          "event": "satD_step_dtau_ddelta_omega",
+          "a": -2.6679974899237764e-05,
+          "b": 5.671185853702006e-06,
+          "c": 1,
+          "d": 0
+        },
+        {
+          "event": "satD_advanced_T_error_pError",
+          "a": 345.5636736330489,
+          "b": 0.0002490347498192279,
+          "c": -0.0021806340258970027,
+          "d": 0
+        },
+        {
+          "event": "satD_eval_T_rhoL_rhoV_iter",
+          "a": 345.5636736330489,
+          "b": 30623.369145833774,
+          "c": 1647.1239557271333,
+          "d": 1
+        },
+        {
+          "event": "satD_residual_r0_r1_pL_pV",
+          "a": 7.926353046139312e-10,
+          "b": 3.605866716327455e-10,
+          "c": 3500000.0338324145,
+          "d": 3500000.0026414157
+        },
+        {
+          "event": "satD_step_dtau_ddelta_omega",
+          "a": 1.1444679778190147e-10,
+          "b": -9.986399585161689e-11,
+          "c": 1,
+          "d": 0
+        },
+        {
+          "event": "satD_advanced_T_error_pError",
+          "a": 345.56367359935086,
+          "b": 8.708004788007417e-10,
+          "c": 8.911713871642332e-09,
+          "d": 0
+        },
+        {
+          "event": "satD_eval_T_rhoL_rhoV_iter",
+          "a": 345.56367359935086,
+          "b": 30623.369145833774,
+          "c": 1647.123954359396,
+          "d": 2
+        },
+        {
+          "event": "satD_residual_r0_r1_pL_pV",
+          "a": 1.970645868709653e-15,
+          "b": 3.1086244689504383e-15,
+          "c": 3499999.9999999935,
+          "d": 3499999.9999999166
+        },
+        {
+          "event": "satD_step_dtau_ddelta_omega",
+          "a": 2.439011744297999e-16,
+          "b": 3.541346935593517e-16,
+          "c": 1,
+          "d": 0
+        },
+        {
+          "event": "satD_final_rhoL_rhoV_TL_TV",
+          "a": 30623.369145833774,
+          "b": 1647.123954359396,
+          "c": 345.56367359935086,
+          "d": 345.56367359935086
+        },
+        {
+          "event": "satD_exit_Tadvanced_TL_TV_error",
+          "a": 345.56367359935086,
+          "b": 345.56367359935086,
+          "c": 345.56367359935086,
+          "d": 3.680623755400682e-15
+        },
+        {
+          "event": "legacy_phase_value_satValue_satT_satRho",
+          "a": 11872.240598488112,
+          "b": 11872.240598488059,
+          "c": 345.56367359935086,
+          "d": 30623.369145833774
+        },
+        {
+          "event": "legacy_homogeneous_seed_Tmin_Tmax",
+          "a": 716.5318367996754,
+          "b": 345.56367359935086,
+          "c": 1087.5,
+          "d": 0
+        },
+        {
+          "event": "DU_homogeneous_residual_T_rho_eos_target",
+          "a": 716.5318367996754,
+          "b": 30623.369145833774,
+          "c": 28650.61327610788,
+          "d": 11872.240598488112
+        },
+        {
+          "event": "Brent_entry_a_b_t_maxiter",
+          "a": 345.56367359935086,
+          "b": 1087.5,
+          "c": 1e-12,
+          "d": 100
+        },
+        {
+          "event": "DU_homogeneous_residual_T_rho_eos_target",
+          "a": 345.56367359935086,
+          "b": 30623.369145833774,
+          "c": 11872.240598488059,
+          "d": 11872.240598488112
+        },
+        {
+          "event": "DU_homogeneous_residual_T_rho_eos_target",
+          "a": 1087.5,
+          "b": 30623.369145833774,
+          "c": 47661.35573756801,
+          "d": 11872.240598488112
+        },
+        {
+          "event": "DU_homogeneous_residual_T_rho_eos_target",
+          "a": 345.563673599352,
+          "b": 30623.369145833774,
+          "c": 11872.240598488117,
+          "d": 11872.240598488112
+        },
+        {
+          "event": "Brent_stop_loop_m_tol_fb",
+          "a": -5.684341886080801e-13,
+          "b": 1.1534610987616212e-12,
+          "c": 5.4569682106375694e-12,
+          "d": 0
+        },
+        {
+          "event": "Brent_return_b_fb_iter_threshold",
+          "a": 345.563673599352,
+          "b": 5.4569682106375694e-12,
+          "c": 2,
+          "d": 1.5346109876162117e-13
+        }
+      ]
+    },
+    {
+      "key": "native-ledger-164",
+      "id": "ULP-3500000.0-hg--1",
+      "originalClassification": "endpoint-unresolved at original reference resolution",
+      "disposition": "endpoint-unresolved",
+      "checks": {
+        "finalCacheMatchesEvaluatedCoordinates": true,
+        "imposedDensityPreserved": true,
+        "bothCachedDensitiesMatchEvaluatedCoordinates": true,
+        "pressureWithinOriginalReference": true,
+        "chemicalPotentialWithinOriginalReference": true
+      },
+      "result": {
+        "key": "native-ledger-164",
+        "id": "ULP-3500000.0-hg--1",
+        "fullVLE": true,
+        "input": {
+          "values": {
+            "M": 0.01683082646831855,
+            "U_kJ": 25.3017523340734,
+            "V": 0.0006000000000000001,
+            "rho": 28.05137744719758,
+            "u": 1503298.2712821658
+          },
+          "bits": {
+            "M": "3f913c19a4fbfc3a",
+            "U_kJ": "40394d3fa4165640",
+            "V": "3f43a92a30553262",
+            "rho": "403c0d2712877730",
+            "u": "4136f0424572bf7e"
+          }
+        },
+        "error": "Error: Input vapor quality [Q] must be between 0 and 1",
+        "exceptionType": "ValueError"
+      },
+      "phaseDecision": {
+        "event": "legacy_phase_value_satValue_satT_satRho",
+        "a": 25601.95127503635,
+        "b": 25601.951275036357,
+        "c": 345.56367359935183,
+        "d": 1647.123954359443
+      },
+      "finalSaturation": {
+        "event": "satD_exit_Tadvanced_TL_TV_error",
+        "a": 345.56367359935183,
+        "b": 345.56367359935183,
+        "c": 345.56367359935183,
+        "d": 2.855588798222804e-15
+      },
+      "finalEvaluation": {
+        "event": "satD_eval_T_rhoL_rhoV_iter",
+        "a": 345.56367359935183,
+        "b": 30623.36914583369,
+        "c": 1647.123954359443,
+        "d": 2
+      },
+      "finalCachedDensities": {
+        "event": "satD_final_rhoL_rhoV_TL_TV",
+        "a": 30623.36914583369,
+        "b": 1647.123954359443,
+        "c": 345.56367359935183,
+        "d": 345.56367359935183
+      },
+      "pressureDifferencePa": -1.0756775736808777e-07,
+      "chemicalPotentialDifferenceJkg": -1.3111201178268923e-10,
+      "saturationEvaluations": 3,
+      "originalSaturationEvaluations": 3,
+      "comparison": {
+        "trueUminusSatU": "-0.000000000352750032399053245292859984183960920770366888701926803643936",
+        "cachedUminusTrueSatU": "0.0000000000744804699099441159682855862082496770299067411374111640363603",
+        "inputMinusCachedSatU": "-0.000000000427230502308997361261145570392210597800273629839337967680296",
+        "finalTerror": "0.0000000000000619422966825413228585488029511989529766362437572535944682351"
+      },
+      "events": [
+        {
+          "event": "DU_entry_rhomolar_umolar_config",
+          "a": 1647.123954359443,
+          "b": 25601.95127503635,
+          "c": 0,
+          "d": 31
+        },
+        {
+          "event": "legacy_enter_rhomolar_umolar",
+          "a": 1647.123954359443,
+          "b": 25601.95127503635,
+          "c": 0,
+          "d": 0
+        },
+        {
+          "event": "satD_attempt_i_omega_maxiter_rho",
+          "a": 0,
+          "b": 1,
+          "c": 200,
+          "d": 1647.123954359443
+        },
+        {
+          "event": "Brent_entry_a_b_t_maxiter",
+          "a": 195.485,
+          "b": 405.56,
+          "c": 1e-10,
+          "d": 100
+        },
+        {
+          "event": "Brent_stop_loop_m_tol_fb",
+          "a": -5.007905201637186e-11,
+          "b": 1.0015345844693275e-10,
+          "c": 9.094947017729282e-13,
+          "d": 0
+        },
+        {
+          "event": "Brent_return_b_fb_iter_threshold",
+          "a": 345.55770221158275,
+          "b": 9.094947017729282e-13,
+          "c": 11,
+          "d": 1.5345844693274502e-13
+        },
+        {
+          "event": "satD_seed_T_rhoL_rhoV_omega",
+          "a": 345.55770221158275,
+          "b": 30623.14652028739,
+          "c": 1647.123954359443,
+          "d": 1
+        },
+        {
+          "event": "satD_eval_T_rhoL_rhoV_iter",
+          "a": 345.55770221158275,
+          "b": 30623.14652028739,
+          "c": 1647.123954359443,
+          "d": 0
+        },
+        {
+          "event": "satD_residual_r0_r1_pL_pV",
+          "a": -0.00019347308400868846,
+          "b": -0.0001567225597572941,
+          "c": 3492264.36025765,
+          "d": 3499877.5896772477
+        },
+        {
+          "event": "satD_step_dtau_ddelta_omega",
+          "a": -2.0280708778906832e-05,
+          "b": 1.6256431282945976e-05,
+          "c": 1,
+          "d": 0
+        },
+        {
+          "event": "satD_advanced_T_error_pError",
+          "a": 345.5636736186008,
+          "b": 0.00024898553165337065,
+          "c": -0.0021800266629975877,
+          "d": 0
+        },
+        {
+          "event": "satD_eval_T_rhoL_rhoV_iter",
+          "a": 345.5636736186008,
+          "b": 30623.369168370242,
+          "c": 1647.123954359443,
+          "d": 1
+        },
+        {
+          "event": "satD_residual_r0_r1_pL_pV",
+          "a": 4.958920107878129e-09,
+          "b": 2.4440960366689524e-09,
+          "c": 3500000.1955331,
+          "d": 3500000.0003945925
+        },
+        {
+          "event": "satD_step_dtau_ddelta_omega",
+          "a": 6.537407725331465e-11,
+          "b": -1.6454841212194217e-09,
+          "c": 1,
+          "d": 0
+        },
+        {
+          "event": "satD_advanced_T_error_pError",
+          "a": 345.56367359935183,
+          "b": 5.528516444108574e-09,
+          "c": 5.575385617740522e-08,
+          "d": 0
+        },
+        {
+          "event": "satD_eval_T_rhoL_rhoV_iter",
+          "a": 345.56367359935183,
+          "b": 30623.36914583369,
+          "c": 1647.123954359443,
+          "d": 2
+        },
+        {
+          "event": "satD_residual_r0_r1_pL_pV",
+          "a": -2.7478019859472624e-15,
+          "b": -7.771561172376096e-16,
+          "c": 3499999.999999896,
+          "d": 3500000.0000000037
+        },
+        {
+          "event": "satD_step_dtau_ddelta_omega",
+          "a": 1.3052725459911196e-16,
+          "b": 1.3627167452352109e-15,
+          "c": 1,
+          "d": 0
+        },
+        {
+          "event": "satD_final_rhoL_rhoV_TL_TV",
+          "a": 30623.36914583369,
+          "b": 1647.123954359443,
+          "c": 345.56367359935183,
+          "d": 345.56367359935183
+        },
+        {
+          "event": "satD_exit_Tadvanced_TL_TV_error",
+          "a": 345.56367359935183,
+          "b": 345.56367359935183,
+          "c": 345.56367359935183,
+          "d": 2.855588798222804e-15
+        },
+        {
+          "event": "legacy_phase_value_satValue_satT_satRho",
+          "a": 25601.95127503635,
+          "b": 25601.951275036357,
+          "c": 345.56367359935183,
+          "d": 1647.123954359443
+        },
+        {
+          "event": "legacy_dispatch_two_phase",
+          "a": 1647.123954359443,
+          "b": 25601.95127503635,
+          "c": 0,
+          "d": 0
+        },
+        {
+          "event": "legacy_two_phase_bracket",
+          "a": 195.4949999999999,
+          "b": 405.5499999999999,
+          "c": 1e-12,
+          "d": 20
+        },
+        {
+          "event": "Brent_entry_a_b_t_maxiter",
+          "a": 195.4949999999999,
+          "b": 405.5499999999999,
+          "c": 1e-12,
+          "d": 20
+        },
+        {
+          "event": "legacy_two_phase_residual_T_Qo_Qd_diff",
+          "a": 195.4949999999999,
+          "b": 1.0784623076448279,
+          "c": 0.002185302789062319,
+          "d": 1.0762770048557655
+        },
+        {
+          "event": "legacy_two_phase_residual_T_Qo_Qd_diff",
+          "a": 405.5499999999999,
+          "b": 10.219175894729585,
+          "c": 71.27225567867107,
+          "d": -61.053079783941484
+        },
+        {
+          "event": "legacy_two_phase_residual_T_Qo_Qd_diff",
+          "a": 199.13381710579267,
+          "b": 1.0754509400713324,
+          "c": 0.0028567254028248933,
+          "d": 1.0725942146685075
+        },
+        {
+          "event": "legacy_two_phase_residual_T_Qo_Qd_diff",
+          "a": 302.34190855289626,
+          "b": 1.0007687354704253,
+          "c": 0.30464392800201434,
+          "d": 0.696124807468411
+        },
+        {
+          "event": "legacy_two_phase_residual_T_Qo_Qd_diff",
+          "a": 353.9459542764481,
+          "b": 1.007847497260913,
+          "c": 1.2495024460171946,
+          "d": -0.24165494875628157
+        },
+        {
+          "event": "legacy_two_phase_residual_T_Qo_Qd_diff",
+          "a": 340.64819119064117,
+          "b": 0.9972319153496924,
+          "c": 0.8781355173210668,
+          "d": 0.1190963980286256
+        },
+        {
+          "event": "legacy_two_phase_residual_T_Qo_Qd_diff",
+          "a": 345.03823907118834,
+          "b": 0.9996476292458505,
+          "c": 0.9862005586115756,
+          "d": 0.01344707063427486
+        },
+        {
+          "event": "legacy_two_phase_residual_T_Qo_Qd_diff",
+          "a": 345.5675513922319,
+          "b": 1.000002654366841,
+          "c": 1.0001025691776435,
+          "d": -9.991481080251496e-05
+        },
+        {
+          "event": "legacy_two_phase_residual_T_Qo_Qd_diff",
+          "a": 345.5636474875125,
+          "b": 0.9999999821290196,
+          "c": 0.9999993093677048,
+          "d": 6.727613148793665e-07
+        },
+        {
+          "event": "legacy_two_phase_residual_T_Qo_Qd_diff",
+          "a": 345.563673598055,
+          "b": 0.9999999999991124,
+          "c": 0.9999999999657012,
+          "d": 3.3411162725371923e-11
+        },
+        {
+          "event": "legacy_two_phase_residual_T_Qo_Qd_diff",
+          "a": 345.5636735993518,
+          "b": 0.9999999999999998,
+          "c": 1.0000000000000018,
+          "d": -1.9984014443252818e-15
+        },
+        {
+          "event": "Brent_stop_scaled_residual",
+          "a": 345.5636735993518,
+          "b": -1.9984014443252818e-15,
+          "c": 1.5346109876162107e-13,
+          "d": 0
+        },
+        {
+          "event": "Brent_return_b_fb_iter_threshold",
+          "a": 345.5636735993518,
+          "b": -1.9984014443252818e-15,
+          "c": 10,
+          "d": 1.5346109876162107e-13
+        },
+        {
+          "event": "legacy_two_phase_return_Treturn_Tstate_Qd",
+          "a": 345.5636735993518,
+          "b": 345.5636735993518,
+          "c": 1.0000000000000018,
+          "d": 0
+        }
+      ]
+    },
+    {
+      "key": "native-ledger-165",
+      "id": "ULP-3500000.0-hg-1",
+      "originalClassification": "endpoint-unresolved at original reference resolution",
+      "disposition": "endpoint-unresolved",
+      "checks": {
+        "finalCacheMatchesEvaluatedCoordinates": true,
+        "imposedDensityPreserved": true,
+        "bothCachedDensitiesMatchEvaluatedCoordinates": true,
+        "pressureWithinOriginalReference": true,
+        "chemicalPotentialWithinOriginalReference": true
+      },
+      "result": {
+        "key": "native-ledger-165",
+        "id": "ULP-3500000.0-hg-1",
+        "fullVLE": true,
+        "input": {
+          "values": {
+            "M": 0.016830826468318544,
+            "U_kJ": 25.301752334073395,
+            "V": 0.0006000000000000001,
+            "rho": 28.05137744719757,
+            "u": 1503298.2712821662
+          },
+          "bits": {
+            "M": "3f913c19a4fbfc38",
+            "U_kJ": "40394d3fa416563f",
+            "V": "3f43a92a30553262",
+            "rho": "403c0d271287772d",
+            "u": "4136f0424572bf80"
+          }
+        },
+        "error": "Error: Input vapor quality [Q] must be between 0 and 1",
+        "exceptionType": "ValueError"
+      },
+      "phaseDecision": {
+        "event": "legacy_phase_value_satValue_satT_satRho",
+        "a": 25601.951275036357,
+        "b": 25601.951275036357,
+        "c": 345.56367359935183,
+        "d": 1647.1239543594422
+      },
+      "finalSaturation": {
+        "event": "satD_exit_Tadvanced_TL_TV_error",
+        "a": 345.56367359935183,
+        "b": 345.56367359935183,
+        "c": 345.56367359935183,
+        "d": 5.200968299740694e-15
+      },
+      "finalEvaluation": {
+        "event": "satD_eval_T_rhoL_rhoV_iter",
+        "a": 345.56367359935183,
+        "b": 30623.36914583367,
+        "c": 1647.1239543594422,
+        "d": 2
+      },
+      "finalCachedDensities": {
+        "event": "satD_final_rhoL_rhoV_TL_TV",
+        "a": 30623.36914583367,
+        "b": 1647.1239543594422,
+        "c": 345.56367359935183,
+        "d": 345.56367359935183
+      },
+      "pressureDifferencePa": -1.885928213596344e-07,
+      "chemicalPotentialDifferenceJkg": -3.371451731554866e-10,
+      "saturationEvaluations": 3,
+      "originalSaturationEvaluations": 3,
+      "comparison": {
+        "trueUminusSatU": "0.0000000000653502495774610104308288438972806943880405651261096146792414",
+        "cachedUminusTrueSatU": "0.0000000000653502495774610104308288438972806943880405651261096146792414",
+        "inputMinusCachedSatU": "0.0",
+        "finalTerror": "0.0000000000000784899510968275225896306177061523718974203462998368132309042"
+      },
+      "events": [
+        {
+          "event": "DU_entry_rhomolar_umolar_config",
+          "a": 1647.1239543594422,
+          "b": 25601.951275036357,
+          "c": 0,
+          "d": 31
+        },
+        {
+          "event": "legacy_enter_rhomolar_umolar",
+          "a": 1647.1239543594422,
+          "b": 25601.951275036357,
+          "c": 0,
+          "d": 0
+        },
+        {
+          "event": "satD_attempt_i_omega_maxiter_rho",
+          "a": 0,
+          "b": 1,
+          "c": 200,
+          "d": 1647.1239543594422
+        },
+        {
+          "event": "Brent_entry_a_b_t_maxiter",
+          "a": 195.485,
+          "b": 405.56,
+          "c": 1e-10,
+          "d": 100
+        },
+        {
+          "event": "Brent_stop_loop_m_tol_fb",
+          "a": 5.007905201637186e-11,
+          "b": 1.0015345844693275e-10,
+          "c": -1.3642420526593924e-12,
+          "d": 0
+        },
+        {
+          "event": "Brent_return_b_fb_iter_threshold",
+          "a": 345.5577022115827,
+          "b": -1.3642420526593924e-12,
+          "c": 11,
+          "d": 1.53458446932745e-13
+        },
+        {
+          "event": "satD_seed_T_rhoL_rhoV_omega",
+          "a": 345.5577022115827,
+          "b": 30623.14652028739,
+          "c": 1647.1239543594422,
+          "d": 1
+        },
+        {
+          "event": "satD_eval_T_rhoL_rhoV_iter",
+          "a": 345.5577022115827,
+          "b": 30623.14652028739,
+          "c": 1647.1239543594422,
+          "d": 0
+        },
+        {
+          "event": "satD_residual_r0_r1_pL_pV",
+          "a": -0.0001934730840162241,
+          "b": -0.00015672255976040272,
+          "c": 3492264.360257346,
+          "d": 3499877.589677241
+        },
+        {
+          "event": "satD_step_dtau_ddelta_omega",
+          "a": -2.028070877883125e-05,
+          "b": 1.6256431285919936e-05,
+          "c": 1,
+          "d": 0
+        },
+        {
+          "event": "satD_advanced_T_error_pError",
+          "a": 345.5636736186007,
+          "b": 0.00024898553166118287,
+          "c": -0.002180026663082849,
+          "d": 0
+        },
+        {
+          "event": "satD_eval_T_rhoL_rhoV_iter",
+          "a": 345.5636736186007,
+          "b": 30623.369168370285,
+          "c": 1647.1239543594422,
+          "d": 1
+        },
+        {
+          "event": "satD_residual_r0_r1_pL_pV",
+          "a": 4.9589323897203386e-09,
+          "b": 2.4441008106279583e-09,
+          "c": 3500000.1955335834,
+          "d": 3500000.000394593
+        },
+        {
+          "event": "satD_step_dtau_ddelta_omega",
+          "a": 6.53738695249868e-11,
+          "b": -1.6454891962072644e-09,
+          "c": 1,
+          "d": 0
+        },
+        {
+          "event": "satD_advanced_T_error_pError",
+          "a": 345.56367359935183,
+          "b": 5.528529571082144e-09,
+          "c": 5.575399414617694e-08,
+          "d": 0
+        },
+        {
+          "event": "satD_eval_T_rhoL_rhoV_iter",
+          "a": 345.56367359935183,
+          "b": 30623.36914583367,
+          "c": 1647.1239543594422,
+          "d": 2
+        },
+        {
+          "event": "satD_residual_r0_r1_pL_pV",
+          "a": -4.801714581503802e-15,
+          "b": -1.9984014443252818e-15,
+          "c": 3499999.999999815,
+          "d": 3500000.0000000037
+        },
+        {
+          "event": "satD_step_dtau_ddelta_omega",
+          "a": 4.308369156357618e-17,
+          "b": 1.8810082666463615e-15,
+          "c": 1,
+          "d": 0
+        },
+        {
+          "event": "satD_final_rhoL_rhoV_TL_TV",
+          "a": 30623.36914583367,
+          "b": 1647.1239543594422,
+          "c": 345.56367359935183,
+          "d": 345.56367359935183
+        },
+        {
+          "event": "satD_exit_Tadvanced_TL_TV_error",
+          "a": 345.56367359935183,
+          "b": 345.56367359935183,
+          "c": 345.56367359935183,
+          "d": 5.200968299740694e-15
+        },
+        {
+          "event": "legacy_phase_value_satValue_satT_satRho",
+          "a": 25601.951275036357,
+          "b": 25601.951275036357,
+          "c": 345.56367359935183,
+          "d": 1647.1239543594422
+        },
+        {
+          "event": "legacy_dispatch_two_phase",
+          "a": 1647.1239543594422,
+          "b": 25601.951275036357,
+          "c": 0,
+          "d": 0
+        },
+        {
+          "event": "legacy_two_phase_bracket",
+          "a": 195.4949999999999,
+          "b": 405.5499999999999,
+          "c": 1e-12,
+          "d": 20
+        },
+        {
+          "event": "Brent_entry_a_b_t_maxiter",
+          "a": 195.4949999999999,
+          "b": 405.5499999999999,
+          "c": 1e-12,
+          "d": 20
+        },
+        {
+          "event": "legacy_two_phase_residual_T_Qo_Qd_diff",
+          "a": 195.4949999999999,
+          "b": 1.0784623076448283,
+          "c": 0.00218530278906232,
+          "d": 1.076277004855766
+        },
+        {
+          "event": "legacy_two_phase_residual_T_Qo_Qd_diff",
+          "a": 405.5499999999999,
+          "b": 10.219175894729599,
+          "c": 71.27225567867112,
+          "d": -61.05307978394151
+        },
+        {
+          "event": "legacy_two_phase_residual_T_Qo_Qd_diff",
+          "a": 199.13381710579267,
+          "b": 1.0754509400713328,
+          "c": 0.002856725402824895,
+          "d": 1.072594214668508
+        },
+        {
+          "event": "legacy_two_phase_residual_T_Qo_Qd_diff",
+          "a": 302.34190855289626,
+          "b": 1.0007687354704256,
+          "c": 0.3046439280020145,
+          "d": 0.696124807468411
+        },
+        {
+          "event": "legacy_two_phase_residual_T_Qo_Qd_diff",
+          "a": 353.9459542764481,
+          "b": 1.0078474972609137,
+          "c": 1.2495024460171955,
+          "d": -0.2416549487562818
+        },
+        {
+          "event": "legacy_two_phase_residual_T_Qo_Qd_diff",
+          "a": 340.64819119064117,
+          "b": 0.9972319153496929,
+          "c": 0.8781355173210672,
+          "d": 0.1190963980286257
+        },
+        {
+          "event": "legacy_two_phase_residual_T_Qo_Qd_diff",
+          "a": 345.03823907118834,
+          "b": 0.999647629245851,
+          "c": 0.986200558611576,
+          "d": 0.013447070634275082
+        },
+        {
+          "event": "legacy_two_phase_residual_T_Qo_Qd_diff",
+          "a": 345.5675513922319,
+          "b": 1.0000026543668414,
+          "c": 1.0001025691776442,
+          "d": -9.991481080273701e-05
+        },
+        {
+          "event": "legacy_two_phase_residual_T_Qo_Qd_diff",
+          "a": 345.5636474875125,
+          "b": 0.9999999821290201,
+          "c": 0.9999993093677053,
+          "d": 6.727613147683442e-07
+        },
+        {
+          "event": "legacy_two_phase_residual_T_Qo_Qd_diff",
+          "a": 345.563673598055,
+          "b": 0.9999999999991128,
+          "c": 0.9999999999657018,
+          "d": 3.341105170306946e-11
+        },
+        {
+          "event": "legacy_two_phase_residual_T_Qo_Qd_diff",
+          "a": 345.5636735993518,
+          "b": 1.0000000000000002,
+          "c": 1.0000000000000024,
+          "d": -2.220446049250313e-15
+        },
+        {
+          "event": "Brent_stop_scaled_residual",
+          "a": 345.5636735993518,
+          "b": -2.220446049250313e-15,
+          "c": 1.5346109876162107e-13,
+          "d": 0
+        },
+        {
+          "event": "Brent_return_b_fb_iter_threshold",
+          "a": 345.5636735993518,
+          "b": -2.220446049250313e-15,
+          "c": 10,
+          "d": 1.5346109876162107e-13
+        },
+        {
+          "event": "legacy_two_phase_return_Treturn_Tstate_Qd",
+          "a": 345.5636735993518,
+          "b": 345.5636735993518,
+          "c": 1.0000000000000024,
+          "d": 0
+        }
+      ]
+    }
+  ],
+  "resolvedCrossPath": [
+    {
+      "key": "native-ledger-94",
+      "fullVLE": false,
+      "pass_": true,
+      "referenceQ": -1.8265372162275545e-12
+    },
+    {
+      "key": "native-ledger-94",
+      "fullVLE": true,
+      "pass_": true,
+      "referenceQ": -1.8265372162275545e-12
+    },
+    {
+      "key": "native-ledger-64",
+      "fullVLE": false,
+      "pass_": true,
+      "referenceQ": -1.826453646560392e-12
+    },
+    {
+      "key": "native-ledger-64",
+      "fullVLE": true,
+      "pass_": true,
+      "referenceQ": -1.826453646560392e-12
+    },
+    {
+      "key": "native-ledger-96",
+      "fullVLE": false,
+      "pass_": true,
+      "referenceQ": -1.8265872757266034e-11
+    },
+    {
+      "key": "native-ledger-96",
+      "fullVLE": true,
+      "pass_": true,
+      "referenceQ": -1.8265872757266034e-11
+    },
+    {
+      "key": "native-ledger-147",
+      "fullVLE": false,
+      "pass_": true,
+      "referenceQ": -1.82659048994444e-11
+    },
+    {
+      "key": "native-ledger-147",
+      "fullVLE": true,
+      "pass_": true,
+      "referenceQ": -1.82659048994444e-11
+    },
+    {
+      "key": "native-ledger-99",
+      "fullVLE": false,
+      "pass_": true,
+      "referenceQ": 1.0000000009369414
+    },
+    {
+      "key": "native-ledger-99",
+      "fullVLE": true,
+      "pass_": true,
+      "referenceQ": 1.0000000009369414
+    },
+    {
+      "key": "native-ledger-149",
+      "fullVLE": false,
+      "pass_": true,
+      "referenceQ": 1.0000000009369399
+    },
+    {
+      "key": "native-ledger-149",
+      "fullVLE": true,
+      "pass_": true,
+      "referenceQ": 1.0000000009369399
+    },
+    {
+      "key": "native-ledger-101",
+      "fullVLE": false,
+      "pass_": true,
+      "referenceQ": 1.0000000093694061
+    },
+    {
+      "key": "native-ledger-101",
+      "fullVLE": true,
+      "pass_": true,
+      "referenceQ": 1.0000000093694061
+    },
+    {
+      "key": "webkit-ledger-68",
+      "fullVLE": false,
+      "pass_": true,
+      "referenceQ": 1.000000009369407
+    },
+    {
+      "key": "webkit-ledger-68",
+      "fullVLE": true,
+      "pass_": true,
+      "referenceQ": 1.000000009369407
+    },
+    {
+      "key": "native-ledger-103",
+      "fullVLE": false,
+      "pass_": true,
+      "referenceQ": -1.705078348221353e-12
+    },
+    {
+      "key": "native-ledger-103",
+      "fullVLE": true,
+      "pass_": true,
+      "referenceQ": -1.705078348221353e-12
+    },
+    {
+      "key": "native-ledger-73",
+      "fullVLE": false,
+      "pass_": true,
+      "referenceQ": -1.7050590629135387e-12
+    },
+    {
+      "key": "native-ledger-73",
+      "fullVLE": true,
+      "pass_": true,
+      "referenceQ": -1.7050590629135387e-12
+    },
+    {
+      "key": "native-ledger-105",
+      "fullVLE": false,
+      "pass_": true,
+      "referenceQ": -1.6712647753416177e-12
+    },
+    {
+      "key": "native-ledger-105",
+      "fullVLE": true,
+      "pass_": true,
+      "referenceQ": -1.6712647753416177e-12
+    },
+    {
+      "key": "native-ledger-75",
+      "fullVLE": false,
+      "pass_": true,
+      "referenceQ": -1.6721776132449306e-12
+    },
+    {
+      "key": "native-ledger-75",
+      "fullVLE": true,
+      "pass_": true,
+      "referenceQ": -1.6721776132449306e-12
+    },
+    {
+      "key": "native-ledger-132",
+      "fullVLE": false,
+      "pass_": true,
+      "referenceQ": 9.900000250822465e-10
+    },
+    {
+      "key": "native-ledger-132",
+      "fullVLE": true,
+      "pass_": true,
+      "referenceQ": 9.900000250822465e-10
+    },
+    {
+      "key": "native-ledger-133",
+      "fullVLE": false,
+      "pass_": true,
+      "referenceQ": 1.010000059354479e-09
+    },
+    {
+      "key": "native-ledger-133",
+      "fullVLE": true,
+      "pass_": true,
+      "referenceQ": 1.010000059354479e-09
+    },
+    {
+      "key": "native-ledger-134",
+      "fullVLE": false,
+      "pass_": true,
+      "referenceQ": 0.9999999989899985
+    },
+    {
+      "key": "native-ledger-134",
+      "fullVLE": true,
+      "pass_": true,
+      "referenceQ": 0.9999999989899985
+    },
+    {
+      "key": "native-ledger-135",
+      "fullVLE": false,
+      "pass_": true,
+      "referenceQ": 0.9999999990099983
+    },
+    {
+      "key": "native-ledger-135",
+      "fullVLE": true,
+      "pass_": true,
+      "referenceQ": 0.9999999990099983
+    },
+    {
+      "key": "native-ledger-111",
+      "fullVLE": false,
+      "pass_": true,
+      "referenceQ": 1.0000000008573011
+    },
+    {
+      "key": "native-ledger-111",
+      "fullVLE": true,
+      "pass_": true,
+      "referenceQ": 1.0000000008573011
+    },
+    {
+      "key": "native-ledger-50",
+      "fullVLE": false,
+      "pass_": true,
+      "referenceQ": 1.0000000009899992
+    },
+    {
+      "key": "native-ledger-50",
+      "fullVLE": true,
+      "pass_": true,
+      "referenceQ": 1.0000000009899992
+    },
+    {
+      "key": "native-ledger-113",
+      "fullVLE": false,
+      "pass_": true,
+      "referenceQ": 1.0000000008746204
+    },
+    {
+      "key": "native-ledger-113",
+      "fullVLE": true,
+      "pass_": true,
+      "referenceQ": 1.0000000008746204
+    },
+    {
+      "key": "native-ledger-137",
+      "fullVLE": false,
+      "pass_": true,
+      "referenceQ": 1.0000000008746195
+    },
+    {
+      "key": "native-ledger-137",
+      "fullVLE": true,
+      "pass_": true,
+      "referenceQ": 1.0000000008746195
+    },
+    {
+      "key": "native-ledger-115",
+      "fullVLE": false,
+      "pass_": true,
+      "referenceQ": -1.805763720283612e-06
+    },
+    {
+      "key": "native-ledger-115",
+      "fullVLE": true,
+      "pass_": true,
+      "referenceQ": -1.805763720283612e-06
+    },
+    {
+      "key": "native-ledger-85",
+      "fullVLE": false,
+      "pass_": true,
+      "referenceQ": -1.805763720251636e-06
+    },
+    {
+      "key": "native-ledger-85",
+      "fullVLE": true,
+      "pass_": true,
+      "referenceQ": -1.805763720251636e-06
+    },
+    {
+      "key": "native-ledger-139",
+      "fullVLE": false,
+      "pass_": true,
+      "referenceQ": 0.39999999999999947
+    },
+    {
+      "key": "native-ledger-139",
+      "fullVLE": true,
+      "pass_": true,
+      "referenceQ": 0.39999999999999947
+    },
+    {
+      "key": "native-ledger-118",
+      "fullVLE": false,
+      "pass_": true,
+      "referenceQ": 1.009346062949632
+    },
+    {
+      "key": "native-ledger-118",
+      "fullVLE": true,
+      "pass_": true,
+      "referenceQ": 1.009346062949632
+    },
+    {
+      "key": "webkit-ledger-79",
+      "fullVLE": false,
+      "pass_": true,
+      "referenceQ": 1.0093460629496334
+    },
+    {
+      "key": "webkit-ledger-79",
+      "fullVLE": true,
+      "pass_": true,
+      "referenceQ": 1.0093460629496334
+    },
+    {
+      "key": "native-ledger-146",
+      "fullVLE": false,
+      "pass_": true,
+      "referenceQ": -1.82644078968852e-12
+    },
+    {
+      "key": "native-ledger-146",
+      "fullVLE": true,
+      "pass_": true,
+      "referenceQ": -1.82644078968852e-12
+    },
+    {
+      "key": "native-ledger-126",
+      "fullVLE": false,
+      "pass_": true,
+      "referenceQ": -1.826599489754341e-11
+    },
+    {
+      "key": "native-ledger-126",
+      "fullVLE": true,
+      "pass_": true,
+      "referenceQ": -1.826599489754341e-11
+    },
+    {
+      "key": "webkit-ledger-69",
+      "fullVLE": false,
+      "pass_": true,
+      "referenceQ": -1.7051619178885486e-12
+    },
+    {
+      "key": "webkit-ledger-69",
+      "fullVLE": true,
+      "pass_": true,
+      "referenceQ": -1.7051619178885486e-12
+    },
+    {
+      "key": "native-ledger-131",
+      "fullVLE": false,
+      "pass_": true,
+      "referenceQ": -1.6712776322134951e-12
+    },
+    {
+      "key": "native-ledger-131",
+      "fullVLE": true,
+      "pass_": true,
+      "referenceQ": -1.6712776322134951e-12
+    },
+    {
+      "key": "webkit-ledger-77",
+      "fullVLE": false,
+      "pass_": true,
+      "referenceQ": -1.8057637201748802e-06
+    },
+    {
+      "key": "webkit-ledger-77",
+      "fullVLE": true,
+      "pass_": true,
+      "referenceQ": -1.8057637201748802e-06
+    },
+    {
+      "key": "native-ledger-71",
+      "fullVLE": false,
+      "pass_": true,
+      "referenceQ": 1.0000000093694068
+    },
+    {
+      "key": "native-ledger-71",
+      "fullVLE": true,
+      "pass_": true,
+      "referenceQ": 1.0000000093694068
+    },
+    {
+      "key": "native-ledger-153",
+      "fullVLE": false,
+      "pass_": true,
+      "referenceQ": 9.899988229647146e-10
+    },
+    {
+      "key": "native-ledger-153",
+      "fullVLE": true,
+      "pass_": true,
+      "referenceQ": 9.899988229647146e-10
+    },
+    {
+      "key": "native-ledger-154",
+      "fullVLE": false,
+      "pass_": true,
+      "referenceQ": 1.0099988572369464e-09
+    },
+    {
+      "key": "native-ledger-154",
+      "fullVLE": true,
+      "pass_": true,
+      "referenceQ": 1.0099988572369464e-09
+    },
+    {
+      "key": "native-ledger-155",
+      "fullVLE": false,
+      "pass_": true,
+      "referenceQ": 0.9999999989899999
+    },
+    {
+      "key": "native-ledger-155",
+      "fullVLE": true,
+      "pass_": true,
+      "referenceQ": 0.9999999989899999
+    },
+    {
+      "key": "native-ledger-156",
+      "fullVLE": false,
+      "pass_": true,
+      "referenceQ": 0.9999999990099997
+    },
+    {
+      "key": "native-ledger-156",
+      "fullVLE": true,
+      "pass_": true,
+      "referenceQ": 0.9999999990099997
+    },
+    {
+      "key": "native-ledger-112",
+      "fullVLE": false,
+      "pass_": true,
+      "referenceQ": 1.0000000009899992
+    },
+    {
+      "key": "native-ledger-112",
+      "fullVLE": true,
+      "pass_": true,
+      "referenceQ": 1.0000000009899992
+    },
+    {
+      "key": "native-ledger-83",
+      "fullVLE": false,
+      "pass_": true,
+      "referenceQ": 1.0000000008746204
+    },
+    {
+      "key": "native-ledger-83",
+      "fullVLE": true,
+      "pass_": true,
+      "referenceQ": 1.0000000008746204
+    },
+    {
+      "key": "native-ledger-160",
+      "fullVLE": false,
+      "pass_": true,
+      "referenceQ": 0.399999999999998
+    },
+    {
+      "key": "native-ledger-160",
+      "fullVLE": true,
+      "pass_": true,
+      "referenceQ": 0.399999999999998
+    },
+    {
+      "key": "native-ledger-150",
+      "fullVLE": false,
+      "pass_": true,
+      "referenceQ": 1.0000000093694061
+    },
+    {
+      "key": "native-ledger-150",
+      "fullVLE": true,
+      "pass_": true,
+      "referenceQ": 1.0000000093694061
+    },
+    {
+      "key": "native-ledger-152",
+      "fullVLE": false,
+      "pass_": true,
+      "referenceQ": -1.6712262047259847e-12
+    },
+    {
+      "key": "native-ledger-152",
+      "fullVLE": true,
+      "pass_": true,
+      "referenceQ": -1.6712262047259847e-12
+    },
+    {
+      "key": "webkit-ledger-76",
+      "fullVLE": false,
+      "pass_": true,
+      "referenceQ": 1.0000000008746206
+    },
+    {
+      "key": "webkit-ledger-76",
+      "fullVLE": true,
+      "pass_": true,
+      "referenceQ": 1.0000000008746206
+    },
+    {
+      "key": "native-ledger-136",
+      "fullVLE": false,
+      "pass_": true,
+      "referenceQ": 1.000000000857301
+    },
+    {
+      "key": "native-ledger-136",
+      "fullVLE": true,
+      "pass_": true,
+      "referenceQ": 1.000000000857301
+    },
+    {
+      "key": "webkit-ledger-75",
+      "fullVLE": false,
+      "pass_": true,
+      "referenceQ": 1.0000000008573007
+    },
+    {
+      "key": "webkit-ledger-75",
+      "fullVLE": true,
+      "pass_": true,
+      "referenceQ": 1.0000000008573007
+    },
+    {
+      "key": "webkit-ledger-64",
+      "fullVLE": false,
+      "pass_": true,
+      "referenceQ": -1.8265757868431714e-12
+    },
+    {
+      "key": "webkit-ledger-64",
+      "fullVLE": true,
+      "pass_": true,
+      "referenceQ": -1.8265757868431714e-12
+    },
+    {
+      "key": "webkit-ledger-65",
+      "fullVLE": false,
+      "pass_": true,
+      "referenceQ": -1.8265937041622496e-11
+    },
+    {
+      "key": "webkit-ledger-65",
+      "fullVLE": true,
+      "pass_": true,
+      "referenceQ": -1.8265937041622496e-11
+    },
+    {
+      "key": "webkit-ledger-67",
+      "fullVLE": false,
+      "pass_": true,
+      "referenceQ": 1.00000000093694
+    },
+    {
+      "key": "webkit-ledger-67",
+      "fullVLE": true,
+      "pass_": true,
+      "referenceQ": 1.00000000093694
+    },
+    {
+      "key": "webkit-ledger-70",
+      "fullVLE": false,
+      "pass_": true,
+      "referenceQ": -1.6713804871885222e-12
+    },
+    {
+      "key": "webkit-ledger-70",
+      "fullVLE": true,
+      "pass_": true,
+      "referenceQ": -1.6713804871885222e-12
+    },
+    {
+      "key": "webkit-ledger-71",
+      "fullVLE": false,
+      "pass_": true,
+      "referenceQ": 9.900004172168333e-10
+    },
+    {
+      "key": "webkit-ledger-71",
+      "fullVLE": true,
+      "pass_": true,
+      "referenceQ": 9.900004172168333e-10
+    },
+    {
+      "key": "webkit-ledger-72",
+      "fullVLE": false,
+      "pass_": true,
+      "referenceQ": 1.0100004514890642e-09
+    },
+    {
+      "key": "webkit-ledger-72",
+      "fullVLE": true,
+      "pass_": true,
+      "referenceQ": 1.0100004514890642e-09
+    },
+    {
+      "key": "webkit-ledger-73",
+      "fullVLE": false,
+      "pass_": true,
+      "referenceQ": 0.9999999989899991
+    },
+    {
+      "key": "webkit-ledger-73",
+      "fullVLE": true,
+      "pass_": true,
+      "referenceQ": 0.9999999989899991
+    },
+    {
+      "key": "webkit-ledger-74",
+      "fullVLE": false,
+      "pass_": true,
+      "referenceQ": 0.999999999009999
+    },
+    {
+      "key": "webkit-ledger-74",
+      "fullVLE": true,
+      "pass_": true,
+      "referenceQ": 0.999999999009999
+    },
+    {
+      "key": "webkit-ledger-54",
+      "fullVLE": false,
+      "pass_": true,
+      "referenceQ": 1.0000000009899987
+    },
+    {
+      "key": "webkit-ledger-54",
+      "fullVLE": true,
+      "pass_": true,
+      "referenceQ": 1.0000000009899987
+    },
+    {
+      "key": "webkit-ledger-78",
+      "fullVLE": false,
+      "pass_": true,
+      "referenceQ": 0.3999999999999995
+    },
+    {
+      "key": "webkit-ledger-78",
+      "fullVLE": true,
+      "pass_": true,
+      "referenceQ": 0.3999999999999995
+    }
+  ],
+  "resolvedFocused": [
+    {
+      "id": "B1-vapor-regression",
+      "physicalPhase": "gas",
+      "canonicalPass": true,
+      "error": null
+    },
+    {
+      "id": "approach-30298.937123458254-liquid-0.001",
+      "physicalPhase": "liquid",
+      "canonicalPass": true,
+      "error": null
+    },
+    {
+      "id": "approach-30298.937123458254-liquid-0.01",
+      "physicalPhase": "liquid",
+      "canonicalPass": true,
+      "error": null
+    },
+    {
+      "id": "approach-30298.937123458254-vapor-0.001",
+      "physicalPhase": "gas",
+      "canonicalPass": true,
+      "error": null
+    },
+    {
+      "id": "approach-30298.937123458254-vapor-0.01",
+      "physicalPhase": "gas",
+      "canonicalPass": true,
+      "error": null
+    },
+    {
+      "id": "approach-350000.0-liquid-0.001",
+      "physicalPhase": "liquid",
+      "canonicalPass": true,
+      "error": null
+    },
+    {
+      "id": "approach-350000.0-liquid-0.01",
+      "physicalPhase": "liquid",
+      "canonicalPass": true,
+      "error": null
+    },
+    {
+      "id": "approach-350000.0-vapor-0.001",
+      "physicalPhase": "gas",
+      "canonicalPass": true,
+      "error": null
+    },
+    {
+      "id": "approach-350000.0-vapor-0.01",
+      "physicalPhase": "gas",
+      "canonicalPass": true,
+      "error": null
+    },
+    {
+      "id": "approach-799999.9981754856-liquid-0.001",
+      "physicalPhase": "liquid",
+      "canonicalPass": true,
+      "error": null
+    },
+    {
+      "id": "approach-799999.9981754856-liquid-0.01",
+      "physicalPhase": "liquid",
+      "canonicalPass": true,
+      "error": null
+    },
+    {
+      "id": "approach-799999.9981754856-vapor-0.001",
+      "physicalPhase": "gas",
+      "canonicalPass": true,
+      "error": null
+    },
+    {
+      "id": "approach-799999.9981754856-vapor-0.01",
+      "physicalPhase": "gas",
+      "canonicalPass": true,
+      "error": null
+    },
+    {
+      "id": "approach-3500000.0-liquid-0.001",
+      "physicalPhase": "liquid",
+      "canonicalPass": true,
+      "error": null
+    },
+    {
+      "id": "approach-3500000.0-liquid-0.01",
+      "physicalPhase": "liquid",
+      "canonicalPass": true,
+      "error": null
+    },
+    {
+      "id": "approach-3500000.0-vapor-0.001",
+      "physicalPhase": "gas",
+      "canonicalPass": true,
+      "error": null
+    },
+    {
+      "id": "approach-3500000.0-vapor-0.01",
+      "physicalPhase": "gas",
+      "canonicalPass": true,
+      "error": null
+    },
+    {
+      "id": "diagnostic-quality-band-30298.937123458254-hf--1.01e-09",
+      "physicalPhase": "liquid",
+      "canonicalPass": true,
+      "error": null
+    },
+    {
+      "id": "diagnostic-quality-band-30298.937123458254-hf--9.9e-10",
+      "physicalPhase": "liquid",
+      "canonicalPass": true,
+      "error": null
+    },
+    {
+      "id": "diagnostic-quality-band-30298.937123458254-hg-9.9e-10",
+      "physicalPhase": "gas",
+      "canonicalPass": true,
+      "error": null
+    },
+    {
+      "id": "diagnostic-quality-band-30298.937123458254-hg-1.01e-09",
+      "physicalPhase": "gas",
+      "canonicalPass": true,
+      "error": null
+    },
+    {
+      "id": "diagnostic-quality-band-350000.0-hf--1.01e-09",
+      "physicalPhase": "liquid",
+      "canonicalPass": true,
+      "error": null
+    },
+    {
+      "id": "diagnostic-quality-band-350000.0-hf--9.9e-10",
+      "physicalPhase": "liquid",
+      "canonicalPass": true,
+      "error": null
+    },
+    {
+      "id": "diagnostic-quality-band-350000.0-hg-9.9e-10",
+      "physicalPhase": "gas",
+      "canonicalPass": true,
+      "error": null
+    },
+    {
+      "id": "diagnostic-quality-band-350000.0-hg-1.01e-09",
+      "physicalPhase": "gas",
+      "canonicalPass": true,
+      "error": null
+    },
+    {
+      "id": "diagnostic-quality-band-799999.9981754856-hf--1.01e-09",
+      "physicalPhase": "liquid",
+      "canonicalPass": true,
+      "error": null
+    },
+    {
+      "id": "diagnostic-quality-band-799999.9981754856-hf--9.9e-10",
+      "physicalPhase": "liquid",
+      "canonicalPass": true,
+      "error": null
+    },
+    {
+      "id": "diagnostic-quality-band-799999.9981754856-hg-9.9e-10",
+      "physicalPhase": "gas",
+      "canonicalPass": true,
+      "error": null
+    },
+    {
+      "id": "diagnostic-quality-band-799999.9981754856-hg-1.01e-09",
+      "physicalPhase": "gas",
+      "canonicalPass": true,
+      "error": null
+    },
+    {
+      "id": "diagnostic-quality-band-3500000.0-hf--1.01e-09",
+      "physicalPhase": "liquid",
+      "canonicalPass": true,
+      "error": null
+    },
+    {
+      "id": "diagnostic-quality-band-3500000.0-hf--9.9e-10",
+      "physicalPhase": "liquid",
+      "canonicalPass": true,
+      "error": null
+    },
+    {
+      "id": "diagnostic-quality-band-3500000.0-hg-9.9e-10",
+      "physicalPhase": "gas",
+      "canonicalPass": true,
+      "error": null
+    },
+    {
+      "id": "diagnostic-quality-band-3500000.0-hg-1.01e-09",
+      "physicalPhase": "gas",
+      "canonicalPass": true,
+      "error": null
+    },
+    {
+      "id": "B1-liquid-precision",
+      "physicalPhase": "liquid",
+      "canonicalPass": true,
+      "error": null
+    },
+    {
+      "id": "focused-30298.937123458254-stable-liquid",
+      "physicalPhase": "liquid",
+      "canonicalPass": true,
+      "error": null
+    },
+    {
+      "id": "focused-30298.937123458254-stable-vapor",
+      "physicalPhase": "gas",
+      "canonicalPass": true,
+      "error": null
+    },
+    {
+      "id": "focused-350000.0-stable-liquid",
+      "physicalPhase": "liquid",
+      "canonicalPass": true,
+      "error": null
+    },
+    {
+      "id": "focused-350000.0-stable-vapor",
+      "physicalPhase": "gas",
+      "canonicalPass": true,
+      "error": null
+    },
+    {
+      "id": "focused-799999.9981754856-stable-liquid",
+      "physicalPhase": "liquid",
+      "canonicalPass": true,
+      "error": null
+    },
+    {
+      "id": "focused-799999.9981754856-stable-vapor",
+      "physicalPhase": "gas",
+      "canonicalPass": true,
+      "error": null
+    },
+    {
+      "id": "focused-3500000.0-stable-liquid",
+      "physicalPhase": "liquid",
+      "canonicalPass": true,
+      "error": null
+    },
+    {
+      "id": "focused-3500000.0-stable-vapor",
+      "physicalPhase": "gas",
+      "canonicalPass": true,
+      "error": null
+    }
+  ],
+  "gateAApplicableChecksPass": true,
+  "gateBPassed": false,
+  "endpointUncertaintyRetained": true
+}

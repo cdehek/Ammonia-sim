@@ -1,0 +1,74 @@
+--- a/src/Backends/Helmholtz/VLERoutines.h
++++ b/src/Backends/Helmholtz/VLERoutines.h
+@@ -21,6 +21,8 @@
+ 
+ struct saturation_D_pure_options
+ {
++    // Opt-in final-state consistency and roundoff-level polishing for legacy DU.
++    bool polish_du;
+     enum imposed_rho_options
+     {
+         IMPOSED_RHOL,
+@@ -32,7 +34,8 @@
+     int imposed_rho;
+     int max_iterations;
+     saturation_D_pure_options()
+-      : use_guesses(false),
++      : polish_du(false),
++        use_guesses(false),
+         use_logdelta(true),
+         omega(1.0),
+         rhoL(_HUGE),
+--- a/src/Backends/Helmholtz/VLERoutines.cpp
++++ b/src/Backends/Helmholtz/VLERoutines.cpp
+@@ -702,6 +702,20 @@
+ 
+         v = linsolve(J, r);
+ 
++        // For DU, a saturation convergence residual alone need not resolve
++        // the caloric side of the boundary. Polish the undamped coordinate
++        // correction to roundoff, and return the EVALUATED coordinates rather
++        // than advancing once more while leaving SatL/SatV at the old iterate.
++        if (options.polish_du) {
++            error = sqrt(pow(r[0], 2) + pow(r[1], 2));
++            p_error = (pL - pV) / pL;
++            const CoolPropDbl delta_scale = std::max(std::abs(deltaL), std::abs(deltaV));
++            if (error <= 1e-9 && std::abs(v[0]) <= 8 * DBL_EPSILON * std::abs(tau)
++                && std::abs(v[1]) <= 8 * DBL_EPSILON * (options.use_logdelta ? 1 : delta_scale)) {
++                break;
++            }
++        }
++
+         double omega = options.omega;
+ 
+         if (options.imposed_rho == saturation_D_pure_options::IMPOSED_RHOL) {
+@@ -732,8 +746,8 @@
+ 
+         tau += omega * v[0];
+ 
+-        rhoL = deltaL * reduce.rhomolar;
+-        rhoV = deltaV * reduce.rhomolar;
++        rhoL = options.polish_du && options.imposed_rho == saturation_D_pure_options::IMPOSED_RHOL ? rhomolar : deltaL * reduce.rhomolar;
++        rhoV = options.polish_du && options.imposed_rho == saturation_D_pure_options::IMPOSED_RHOV ? rhomolar : deltaV * reduce.rhomolar;
+         T = reduce.T / tau;
+ 
+         p_error = (pL - pV) / pL;
+@@ -747,7 +761,7 @@
+             throw SolutionError(
+               format("saturation_D_pure solver did not converge after %d iterations with rho: %g mol/m^3", options.max_iterations, rhomolar));
+         }
+-    } while (error > 1e-9);
++    } while (options.polish_du || error > 1e-9);
+     CoolPropDbl p_error_limit = 1e-3;
+     if (std::abs(p_error) > p_error_limit) {
+         throw SolutionError(format("saturation_D_pure solver abs error on p [%Lg] > limit [%Lg]", p_error, p_error_limit));
+--- a/src/Backends/Helmholtz/FlashRoutines.cpp
++++ b/src/Backends/Helmholtz/FlashRoutines.cpp
+@@ -2227,6 +2227,7 @@
+ 
+             // Check if other is above the saturation value.
+             SaturationSolvers::saturation_D_pure_options optionsD;
++            optionsD.polish_du = (other == iUmolar);
+             optionsD.omega = 1;
+             optionsD.use_logdelta = false;
+             optionsD.max_iterations = 200;
