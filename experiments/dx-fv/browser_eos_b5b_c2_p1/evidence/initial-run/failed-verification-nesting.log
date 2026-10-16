@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/workspace/Ammonia-sim/experiments/dx-fv/browser_eos_b5b_c2_p1/verify.py", line 150, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/workspace/Ammonia-sim/experiments/dx-fv/browser_eos_b5b_c2_p1/verify.py", line 87, in main
+    assert all(nested(hi,lo) for hi,lo in zip(high[kind]['box'],low[kind]['box']))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

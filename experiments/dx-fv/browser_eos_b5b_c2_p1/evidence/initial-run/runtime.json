@@ -1,0 +1,23 @@
+{
+  "python": "3.12.14",
+  "platform": "Linux-6.18.44-x86_64-with-glibc2.41",
+  "pythonFlint": "0.8.0",
+  "FLINT": "3.3.1",
+  "mpmath": "1.3.0",
+  "inheritedIdentities": {
+    "experiments/dx-fv/browser_eos_b5/high-precision.py": "f35b812606d07dabfcd21f2cf677eb7fe6a2767c511c0208a45074e2d73939e5",
+    "experiments/dx-fv/browser_eos_b5b_c2/local_enclosure.py": "8718bd9b93bc2b19325b16d3e528db660cb6ff95b16ef21ad104b5831e2c2fc9",
+    "experiments/dx-fv/browser_eos_b5b_c2/evidence/Ammonia.json": "4d451fadbe6eb1c2441169c599890cf7cd6edc818918f23959e2afb20a881e14",
+    "experiments/dx-fv/browser_eos_b5b_c2/evidence/references.json": "3e3f031c12808930f14aacab7f5054b1b379133a213b4c7f8d8c5512d01ab7d7",
+    "experiments/dx-fv/browser_eos_b5b_c2/evidence/local-enclosures.json": "0af2bada5cb0c73e503d44b6f07eb5423d555c25939f9fdf3105fd9b817638ee"
+  },
+  "coefficientConvention": "exact parsed binary64 rationals",
+  "referenceConvention": "unchanged original JSON lead a1/a2; no setter",
+  "perAttemptDeadlineSeconds": 20,
+  "pathRedirection": "in-memory B5 evaluator JSON path only; original source bytes unmodified",
+  "flintArtifacts": {
+    "/tmp/p1-venv/lib/python3.12/site-packages/python_flint.libs/libmpfr-be332c05.so.6.2.2": "c4dfcfc7c5c7ab71d427e15f2f9fae4ace88592a81d4596a918dcc02eadfc6e3",
+    "/tmp/p1-venv/lib/python3.12/site-packages/python_flint.libs/libgmp-e0c82b6b.so.10.5.0": "33d24e675b10f8b1ab93a8ad3fa2ed5012e1b0d89dcdb97273877c6c6b9450d8",
+    "/tmp/p1-venv/lib/python3.12/site-packages/python_flint.libs/libflint-24205715.so.21.0.0": "513ac27a526bef27a1aa66bf0756ce62bbe41eba41f54f14771d8306b52a4228"
+  }
+}
