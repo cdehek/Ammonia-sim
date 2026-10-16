@@ -1,0 +1,102 @@
+{
+  "allPass": true,
+  "rows": [
+    {
+      "id": "B1-vapor-regression",
+      "returned": {
+        "p": 799999.9981754855,
+        "T": 291.0143614933306,
+        "rho": 6.266550903429728,
+        "h": 1624022.7447377462,
+        "u": 1496360.81228019,
+        "Q": -1.0,
+        "phase": 5.0
+      },
+      "requestedResiduals": {
+        "p": -1.1641532182693481e-10,
+        "h": -3.282912075519562e-08
+      },
+      "getterMinusDT": {
+        "p": 0.0,
+        "h": 0.0,
+        "u": 0.0
+      },
+      "normalizedEnergyMismatch": 2.194314479059365e-14,
+      "canonicalPass": true,
+      "probesPass": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "PTcacheDifference": {
+        "p": 0.0,
+        "h": 0.0,
+        "u": 0.0
+      },
+      "gatePass": true
+    },
+    {
+      "id": "approach-30298.937123458254-liquid-0.001",
+      "returned": {
+        "p": 30298.937122506686,
+        "T": 218.26293702735893,
+        "rho": 707.4983265879032,
+        "h": 98904.56398938295,
+        "u": 98861.73853526684,
+        "Q": -1.0,
+        "phase": 0.0
+      },
+      "requestedResiduals": {
+        "p": -9.515679266769439e-07,
+        "h": -3.92901711165905e-10
+      },
+      "getterMinusDT": {
+        "p": 0.0,
+        "h": 0.0,
+        "u": 0.0
+      },
+      "normalizedEnergyMismatch": 9.650729625500072e-15,
+      "canonicalPass": true,
+      "probesPass": [
+        true,
+        null,
+        true,
+        true
+      ],
+      "PTcacheDifference": null,
+      "gatePass": true
+    },
+    {
+      "id": "B1-liquid-precision",
+      "returned": {
+        "p": 30298.93712340819,
+        "T": 217.2629372554989,
+        "rho": 708.6710614955961,
+        "h": 94523.3461232128,
+        "u": 94480.59153823022,
+        "Q": -1.0,
+        "phase": 0.0
+      },
+      "requestedResiduals": {
+        "p": -5.0065864343196154e-08,
+        "h": -2.3283064365386963e-10
+      },
+      "getterMinusDT": {
+        "p": 0.0,
+        "h": 0.0,
+        "u": 0.0
+      },
+      "normalizedEnergyMismatch": 1.7686897172641858e-15,
+      "canonicalPass": true,
+      "probesPass": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "PTcacheDifference": null,
+      "gatePass": true
+    }
+  ]
+}

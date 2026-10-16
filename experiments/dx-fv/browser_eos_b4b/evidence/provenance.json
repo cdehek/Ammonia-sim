@@ -1,0 +1,175 @@
+{
+  "start": "94f77bb062b75ffebf17a1c9758d11c1adc61711",
+  "branch": "research/browser-eos-b4b-vapor-cache-repair-20261016",
+  "upstreamCommit": "ae81610e7d23efc57f9d051c8e70a4d66e87537f",
+  "upstreamTree": "ca49b8c34df0dae93dcc7fe07e2815a10d967662",
+  "functionalSourceFiles": [
+    "src/Backends/Helmholtz/FlashRoutines.cpp"
+  ],
+  "originalSourceSHA256": {
+    "src/Backends/Helmholtz/FlashRoutines.cpp": "9e6d3be44cc61c3ca5b539fa10f4587cfeef3e286dec2d267fe90933df67c0e3"
+  },
+  "patchedSourceSHA256": {
+    "src/Backends/Helmholtz/FlashRoutines.cpp": "f40afccde19c0799bf93b4f144d22e5affba4d0a69c0081d00501a1bffd34c3f"
+  },
+  "B4AclassifierSHA256": "6c6a2997936f9c006a2b5341632bdabc8626feb60655471359aad44bd93daf55",
+  "unchangedGenericSolversSHA256": "f35b49f818a96153819b7ca7a16e9b8a436a356b3a1ab3036580b89e95e7b5c1",
+  "B1patchSHA256": "6234d4f9fd0ea9b88eec2a178b7d7b8e00a54aa63a928a54bb65057984a126ef",
+  "B4ApatchSHA256": "67eb377174cda509980b5c17b3283abcda9fb9e7f0f265c23a29b58cbd724572",
+  "B4BpatchSHA256": "621375770c2663fb86a0e3621fd85da34c4b410dbd4b592154dee402d860fe14",
+  "preimplementationAlgorithmSHA256": "617aed591d5aa6428cf33e0cf8319e6726ec570012d535895c647eac1165313a",
+  "buildVersions": {
+    "platform": "Linux-6.18.44-x86_64-with-glibc2.41",
+    "python": "3.12.14",
+    "compiler": "g++ (Debian 14.2.0-19) 14.2.0\nCopyright (C) 2024 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n\n",
+    "compilerSHA256": "6b3696e4dcb85e1c949c732a02befa50e3983ecf94ce7e8e58d9d503b954b79d",
+    "packages": {
+      "CoolProp": "8.0.0",
+      "numpy": "2.5.4",
+      "cmake": "4.4.4",
+      "ninja": "1.13.2",
+      "playwright": "1.62.0"
+    },
+    "emcc": "emcc (Emscripten gcc/clang-like replacement + linker emulating GNU ld) 4.0.12 (6f625bd62ee64f4f8cd11476774741b961e4a2d5)\nCopyright (C) 2025 the Emscripten authors (see AUTHORS.txt)\nThis is free and open source software under the MIT license.\nThere is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n\n",
+    "clang": "clang version 22.0.0git (https:/github.com/llvm/llvm-project 7f93487862d98bf1c168babba87daf6224d8a46f)\nTarget: x86_64-unknown-linux-gnu\nThread model: posix\nInstalledDir: /workspace/emsdk-b4b/upstream/bin\n",
+    "emsdkCommit": "389a68bc35dcff7ebae4614e1615099dafda00d1"
+  },
+  "dependencies": "dependency-verification.json",
+  "nativeBinaries": "native-binaries.json",
+  "artifacts": {
+    "vendor/LICENSE-CoolProp.txt": {
+      "bytes": 1103,
+      "sha256": "9bf835333ef602af4cb19338b9f9d43671e174fa029b00280e9bdba6ea4719b2"
+    },
+    "vendor/THIRD_PARTY-B1.md": {
+      "bytes": 2134,
+      "sha256": "08d17dda6b0ef439e8e29c0680e95b1aff984f0ba93b22bb0de280b21a5769c3"
+    },
+    "vendor/candidateB/coolprop.js": {
+      "bytes": 167060,
+      "sha256": "ebd02f5721abc10fee3e6560b0d96c1a17b8ae1f01bc144a4f9a1af8cf1e3217"
+    },
+    "vendor/candidateB/coolprop.wasm": {
+      "bytes": 9196595,
+      "sha256": "cd12d7d0c5e7271df867d3f633929c68dbd02a155aa071585153d6c0be7840d3"
+    },
+    "vendor/controlA/coolprop.js": {
+      "bytes": 167060,
+      "sha256": "ebd02f5721abc10fee3e6560b0d96c1a17b8ae1f01bc144a4f9a1af8cf1e3217"
+    },
+    "vendor/controlA/coolprop.wasm": {
+      "bytes": 9196596,
+      "sha256": "e74ac0694f6f85706d9b8dd71044074741bb05b4d14b7b0bc93b4aa7bb5b0078"
+    },
+    "vendor/notices/Boost-1.0.txt": {
+      "bytes": 1338,
+      "sha256": "c9bff75738922193e67fa726fa225535870d2aa1059f91452c411736284ad566"
+    },
+    "vendor/notices/Eigen-7.2-MPL2.txt": {
+      "bytes": 16726,
+      "sha256": "fab3dd6bdab226f1c08630b1dd917e11fcb4ec5e1e020e2c16f83a0a13863e85"
+    },
+    "vendor/notices/Eigen-8.0-MPL2.txt": {
+      "bytes": 16727,
+      "sha256": "66a3107d5ad6a058aab753eaac2047ccb2ed0e39465dd0fe5844da3e300d5172"
+    },
+    "vendor/notices/IF97-MIT.txt": {
+      "bytes": 1054,
+      "sha256": "e22c3d30ef8d88ab468d9ea20392ca1df22fa3fd0a92dc3e996d89cf3cfdbd03"
+    },
+    "vendor/notices/LLVM-Apache.txt": {
+      "bytes": 16703,
+      "sha256": "539dd7aed86e8a4f12cbdd0e6c50c189c7d74847e4fecc64ce2c6ee3a01da38b"
+    },
+    "vendor/notices/REFPROP-headers.txt": {
+      "bytes": 1068,
+      "sha256": "f21f633c596509e89b2baedfd657c8f1b8018954b06576590971684b210e91f8"
+    },
+    "vendor/notices/compiler-rt-4.0.12.txt": {
+      "bytes": 16708,
+      "sha256": "1a8f1058753f1ba890de984e48f0242a3a5c29a6a8f2ed9fd813f36985387e8d"
+    },
+    "vendor/notices/emscripten-4.0.12.txt": {
+      "bytes": 5093,
+      "sha256": "620a78084fc7ca97c0b5dea9abf891f3ffcadfdbf305276f099c9c4e12fc1d86"
+    },
+    "vendor/notices/emscripten-MIT-NCSA.txt": {
+      "bytes": 5093,
+      "sha256": "620a78084fc7ca97c0b5dea9abf891f3ffcadfdbf305276f099c9c4e12fc1d86"
+    },
+    "vendor/notices/fmt-7.2.txt": {
+      "bytes": 1431,
+      "sha256": "07580f2a3b35709ce703d523f447b242f6dfec7582a8c0df102c7fa2849375f8"
+    },
+    "vendor/notices/fmt-8.0-MIT.txt": {
+      "bytes": 1431,
+      "sha256": "07580f2a3b35709ce703d523f447b242f6dfec7582a8c0df102c7fa2849375f8"
+    },
+    "vendor/notices/incbin-UNLICENSE.txt": {
+      "bytes": 1211,
+      "sha256": "7e12e5df4bae12cb21581ba157ced20e1986a0508dd10d0e8a4ab9a4cf94e85c"
+    },
+    "vendor/notices/libcxx-4.0.12.txt": {
+      "bytes": 16703,
+      "sha256": "539dd7aed86e8a4f12cbdd0e6c50c189c7d74847e4fecc64ce2c6ee3a01da38b"
+    },
+    "vendor/notices/libcxxabi-4.0.12.txt": {
+      "bytes": 16706,
+      "sha256": "e2b35be49f7284a45b7baca8fc7b3ab7440e7902392b2528a457816b5bb2a15c"
+    },
+    "vendor/notices/libunwind-4.0.12.txt": {
+      "bytes": 16706,
+      "sha256": "b5efebcaca80879234098e52d1725e6d9eb8fb96a19fce625d39184b705f7b6d"
+    },
+    "vendor/notices/miniz-MIT.txt": {
+      "bytes": 1162,
+      "sha256": "6f20fa7672b00e2e975c291df737cf227addf3ad32e36fef3fe0f416e4664d3d"
+    },
+    "vendor/notices/msgpack-Boost.txt": {
+      "bytes": 200,
+      "sha256": "664550b43996452a5a2c7471bb0ff77185a58c69ccafa60f983dc4c162e1ee22"
+    },
+    "vendor/notices/musl-4.0.12.txt": {
+      "bytes": 6204,
+      "sha256": "f9bc4423732350eb0b3f7ed7e91d530298476f8fec0c6c427a1c04ade22655af"
+    },
+    "vendor/notices/musl-MIT.txt": {
+      "bytes": 6204,
+      "sha256": "f9bc4423732350eb0b3f7ed7e91d530298476f8fec0c6c427a1c04ade22655af"
+    },
+    "vendor/notices/nlohmann-json-MIT.txt": {
+      "bytes": 1076,
+      "sha256": "46a65cffd1ea955132d95a8dd921640714a8d6b537d2e4e482d31145ae95b603"
+    },
+    "vendor/notices/rapidjson-MIT.txt": {
+      "bytes": 5152,
+      "sha256": "a140e5d46fe734a1c78f1a3c3ef207871dd75648be71fdda8e309b23ab8b1f32"
+    },
+    "vendor/notices/valijson-BSD.txt": {
+      "bytes": 1346,
+      "sha256": "61b5766db38eaa3f320c366357956d7743424bfbf90fd78f5943866ba237589e"
+    },
+    "artifacts/libCoolProp-candidateB.so.xz": {
+      "bytes": 4598480,
+      "sha256": "fbd78a34c255b34d3d3f67f7769e22ed066c39490e8cfda0938ecfc7d9b3c485"
+    },
+    "artifacts/libCoolProp-diagnostic-candidateB.so.xz": {
+      "bytes": 4607092,
+      "sha256": "c8065942a0e6ed6aea96f99fce68cf5c359ec8204c28e78b221fb05d38705526"
+    },
+    "artifacts/libCoolProp-diagnostic-controlA.so.xz": {
+      "bytes": 4608308,
+      "sha256": "4defde4153d1574b37acc8f8db77372f8dbd7f43b28d3dcbb6d696cfd351d758"
+    },
+    "artifacts/libCoolProp-rebuilt-controlA.so.xz": {
+      "bytes": 4604736,
+      "sha256": "e7f5d2a085a3791e2fe6f097a3b916eaad622232fd61d63536c0cbe3cd69913e"
+    }
+  },
+  "changedOriginalFiles": [],
+  "originalTrackedFiles": 1102,
+  "acceptedA2": "accepted-a2-verification.json",
+  "sameEOSReference": true,
+  "fullQualification": false,
+  "physicalIPad": false
+}

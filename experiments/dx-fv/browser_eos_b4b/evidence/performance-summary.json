@@ -1,0 +1,174 @@
+{
+  "native": {
+    "controlA": {
+      "medianMicroseconds": {
+        "vapor-PT": 25.955124048422473,
+        "liquid-PH": 71.67460917340631,
+        "B1-PH": 81.44157328992107,
+        "vapor-PH": 82.38751070840728
+      },
+      "maxRSSKiB": 120188,
+      "init": null,
+      "linearMemory": null,
+      "jsHeap": null,
+      "worker": null
+    },
+    "candidateB": {
+      "medianMicroseconds": {
+        "vapor-PT": 29.561499507423292,
+        "liquid-PH": 86.11188461529767,
+        "B1-PH": 89.8126505086614,
+        "vapor-PH": 93.56613092270317
+      },
+      "maxRSSKiB": 120872,
+      "init": null,
+      "linearMemory": null,
+      "jsHeap": null,
+      "worker": null
+    },
+    "ratios": {
+      "vapor-PT": 1.1389465699440573,
+      "liquid-PH": 1.2014280316054806,
+      "B1-PH": 1.1027862905955959,
+      "vapor-PH": 1.1356834320903346
+    }
+  },
+  "chromium": {
+    "controlA": {
+      "medianMicroseconds": {
+        "vapor-PT": 11.627005658476087,
+        "liquid-PH": 64.99133448873484,
+        "B1-PH": 69.57328385899814,
+        "vapor-PH": 70.92198581560284
+      },
+      "maxRSSKiB": null,
+      "init": {
+        "totalMS": 2237.100000000093,
+        "importMS": 6.100000000093132,
+        "fetchMS": 39.39999999990687,
+        "compileInstantiateMS": 25.5,
+        "runtimeMS": 59.4000000001397,
+        "firstFactoryMS": 2132.1999999999534,
+        "initialLinearMemoryBytes": 22544384,
+        "readyLinearMemoryBytes": 56360960,
+        "wasmBytes": 9196596,
+        "mime": "application/wasm",
+        "streaming": true,
+        "logs": []
+      },
+      "linearMemory": 56360960,
+      "jsHeap": {
+        "usedJSHeapSize": 29400000,
+        "totalJSHeapSize": 39600000
+      },
+      "worker": {
+        "ticks": 403,
+        "maxGapMS": 14.800000000046566
+      }
+    },
+    "candidateB": {
+      "medianMicroseconds": {
+        "vapor-PT": 13.191451939143436,
+        "liquid-PH": 67.598017124831,
+        "B1-PH": 75.33902561526871,
+        "vapor-PH": 78.99999999992647
+      },
+      "maxRSSKiB": null,
+      "init": {
+        "totalMS": 2178.600000000093,
+        "importMS": 6,
+        "fetchMS": 39.60000000009313,
+        "compileInstantiateMS": 25.100000000093132,
+        "runtimeMS": 64.30000000004657,
+        "firstFactoryMS": 2068.6999999999534,
+        "initialLinearMemoryBytes": 22544384,
+        "readyLinearMemoryBytes": 56360960,
+        "wasmBytes": 9196595,
+        "mime": "application/wasm",
+        "streaming": true,
+        "logs": []
+      },
+      "linearMemory": 56360960,
+      "jsHeap": {
+        "usedJSHeapSize": 23100000,
+        "totalJSHeapSize": 39600000
+      },
+      "worker": {
+        "ticks": 396,
+        "maxGapMS": 12.5
+      }
+    },
+    "ratios": {
+      "vapor-PT": 1.1345528097792632,
+      "liquid-PH": 1.0401081568273998,
+      "B1-PH": 1.0828729281767957,
+      "vapor-PH": 1.1138999999989632
+    }
+  },
+  "webkit": {
+    "controlA": {
+      "medianMicroseconds": {
+        "vapor-PT": 12.518778167250876,
+        "liquid-PH": 67.5371454299865,
+        "B1-PH": 74.33102081268582,
+        "vapor-PH": 79.11392405063292
+      },
+      "maxRSSKiB": null,
+      "init": {
+        "totalMS": 2431,
+        "importMS": 6,
+        "fetchMS": 68,
+        "compileInstantiateMS": 57,
+        "runtimeMS": 118,
+        "firstFactoryMS": 2239,
+        "initialLinearMemoryBytes": 22544384,
+        "readyLinearMemoryBytes": 56360960,
+        "wasmBytes": 9196596,
+        "mime": "application/wasm",
+        "streaming": true,
+        "logs": []
+      },
+      "linearMemory": 56360960,
+      "jsHeap": null,
+      "worker": {
+        "ticks": 341,
+        "maxGapMS": 77
+      }
+    },
+    "candidateB": {
+      "medianMicroseconds": {
+        "vapor-PT": 13.94181615391765,
+        "liquid-PH": 72.28915662650603,
+        "B1-PH": 78.41087297438578,
+        "vapor-PH": 85.37279453614114
+      },
+      "maxRSSKiB": null,
+      "init": {
+        "totalMS": 2642,
+        "importMS": 8,
+        "fetchMS": 88,
+        "compileInstantiateMS": 66,
+        "runtimeMS": 138,
+        "firstFactoryMS": 2408,
+        "initialLinearMemoryBytes": 22544384,
+        "readyLinearMemoryBytes": 56360960,
+        "wasmBytes": 9196595,
+        "mime": "application/wasm",
+        "streaming": true,
+        "logs": []
+      },
+      "linearMemory": 56360960,
+      "jsHeap": null,
+      "worker": {
+        "ticks": 350,
+        "maxGapMS": 45
+      }
+    },
+    "ratios": {
+      "vapor-PT": 1.1136722743749419,
+      "liquid-PH": 1.0703614457831325,
+      "B1-PH": 1.0548876110820702,
+      "vapor-PH": 1.079112122936824
+    }
+  }
+}

@@ -1,0 +1,277 @@
+-- CPM: Adding package Eigen@5.0.1 (5.0.1)
+-- Populating eigen
+-- Configuring done (0.0s)
+-- Generating done (0.0s)
+-- Build files have been written to: /workspace/b4b-native-build/_deps/eigen-subbuild
+[1/9] Creating directories for 'eigen-populate'
+[1/9] Performing download step (download, verify and extract) for 'eigen-populate'
+-- Downloading...
+   dst='/workspace/b4b-native-build/_deps/eigen-subbuild/eigen-populate-prefix/src/eigen-5.0.1.tar.gz'
+   timeout='none'
+   inactivity timeout='none'
+-- Using src='https://gitlab.com/libeigen/eigen/-/archive/5.0.1/eigen-5.0.1.tar.gz'
+-- verifying file...
+       file='/workspace/b4b-native-build/_deps/eigen-subbuild/eigen-populate-prefix/src/eigen-5.0.1.tar.gz'
+-- Downloading... done
+-- extracting...
+     src='/workspace/b4b-native-build/_deps/eigen-subbuild/eigen-populate-prefix/src/eigen-5.0.1.tar.gz'
+     dst='/workspace/b4b-native-build/_deps/eigen-src'
+-- extracting... [tar xf]
+-- extracting... [analysis]
+-- extracting... [rename]
+-- extracting... [clean up]
+-- extracting... done
+[2/9] No update step for 'eigen-populate'
+[3/9] No patch step for 'eigen-populate'
+[5/9] No configure step for 'eigen-populate'
+[6/9] No build step for 'eigen-populate'
+[7/9] No install step for 'eigen-populate'
+[8/9] No test step for 'eigen-populate'
+[9/9] Completed 'eigen-populate'
+-- CPM: Adding package msgpack-c@0 (919908742b4fdbc575e77fe1a8657e70c9573c44)
+-- Populating msgpack-c
+-- Configuring done (0.0s)
+-- Generating done (0.0s)
+-- Build files have been written to: /workspace/b4b-native-build/_deps/msgpack-c-subbuild
+[1/9] Creating directories for 'msgpack-c-populate'
+[1/9] Performing download step (git clone) for 'msgpack-c-populate'
+Cloning into 'msgpack-c-src'...
+HEAD is now at 91990874 Fixed brace
+[2/9] Performing update step for 'msgpack-c-populate'
+-- Already at requested ref: 919908742b4fdbc575e77fe1a8657e70c9573c44
+[3/9] No patch step for 'msgpack-c-populate'
+[5/9] No configure step for 'msgpack-c-populate'
+[6/9] No build step for 'msgpack-c-populate'
+[7/9] No install step for 'msgpack-c-populate'
+[8/9] No test step for 'msgpack-c-populate'
+[9/9] Completed 'msgpack-c-populate'
+-- CPM: Adding package nlohmann_json@3.12.0 (v3.12.0)
+-- Populating nlohmann_json
+-- Configuring done (0.0s)
+-- Generating done (0.0s)
+-- Build files have been written to: /workspace/b4b-native-build/_deps/nlohmann_json-subbuild
+[1/9] Creating directories for 'nlohmann_json-populate'
+[1/9] Performing download step (git clone) for 'nlohmann_json-populate'
+Cloning into 'nlohmann_json-src'...
+HEAD is now at 55f93686c Merge branch 'release/3.12.0'
+[2/9] Performing update step for 'nlohmann_json-populate'
+-- Already at requested tag: v3.12.0
+[3/9] No patch step for 'nlohmann_json-populate'
+[5/9] No configure step for 'nlohmann_json-populate'
+[6/9] No build step for 'nlohmann_json-populate'
+[7/9] No install step for 'nlohmann_json-populate'
+[8/9] No test step for 'nlohmann_json-populate'
+[9/9] Completed 'nlohmann_json-populate'
+-- CPM: Adding package valijson@1.0.6 (1.0.6)
+-- Populating valijson
+-- Configuring done (0.0s)
+-- Generating done (0.0s)
+-- Build files have been written to: /workspace/b4b-native-build/_deps/valijson-subbuild
+[1/9] Creating directories for 'valijson-populate'
+[1/9] Performing download step (download, verify and extract) for 'valijson-populate'
+-- Downloading...
+   dst='/workspace/b4b-native-build/_deps/valijson-subbuild/valijson-populate-prefix/src/v1.0.6.tar.gz'
+   timeout='none'
+   inactivity timeout='none'
+-- Using src='https://github.com/tristanpenman/valijson/archive/refs/tags/v1.0.6.tar.gz'
+-- [download 0% complete]
+-- [download 2% complete]
+-- [download 4% complete]
+-- [download 7% complete]
+-- [download 9% complete]
+-- [download 11% complete]
+-- [download 14% complete]
+-- [download 16% complete]
+-- [download 18% complete]
+-- [download 20% complete]
+-- [download 22% complete]
+-- [download 25% complete]
+-- [download 27% complete]
+-- [download 29% complete]
+-- [download 31% complete]
+-- [download 34% complete]
+-- [download 36% complete]
+-- [download 38% complete]
+-- [download 40% complete]
+-- [download 42% complete]
+-- [download 45% complete]
+-- [download 47% complete]
+-- [download 49% complete]
+-- [download 51% complete]
+-- [download 53% complete]
+-- [download 54% complete]
+-- [download 56% complete]
+-- [download 58% complete]
+-- [download 61% complete]
+-- [download 63% complete]
+-- [download 65% complete]
+-- [download 67% complete]
+-- [download 69% complete]
+-- [download 72% complete]
+-- [download 74% complete]
+-- [download 76% complete]
+-- [download 78% complete]
+-- [download 80% complete]
+-- [download 83% complete]
+-- [download 85% complete]
+-- [download 87% complete]
+-- [download 89% complete]
+-- [download 92% complete]
+-- [download 94% complete]
+-- [download 96% complete]
+-- [download 98% complete]
+-- [download 100% complete]
+-- verifying file...
+       file='/workspace/b4b-native-build/_deps/valijson-subbuild/valijson-populate-prefix/src/v1.0.6.tar.gz'
+-- Downloading... done
+-- extracting...
+     src='/workspace/b4b-native-build/_deps/valijson-subbuild/valijson-populate-prefix/src/v1.0.6.tar.gz'
+     dst='/workspace/b4b-native-build/_deps/valijson-src'
+-- extracting... [tar xf]
+-- extracting... [analysis]
+-- extracting... [rename]
+-- extracting... [clean up]
+-- extracting... done
+[2/9] No update step for 'valijson-populate'
+[3/9] No patch step for 'valijson-populate'
+[5/9] No configure step for 'valijson-populate'
+[6/9] No build step for 'valijson-populate'
+[7/9] No install step for 'valijson-populate'
+[8/9] No test step for 'valijson-populate'
+[9/9] Completed 'valijson-populate'
+-- CPM: Adding package IF97@0 (7aaced024a702f0985474bf293cdaae9c8d06521)
+-- Populating if97
+-- Configuring done (0.0s)
+-- Generating done (0.0s)
+-- Build files have been written to: /workspace/b4b-native-build/_deps/if97-subbuild
+[1/9] Creating directories for 'if97-populate'
+[1/9] Performing download step (git clone) for 'if97-populate'
+Cloning into 'if97-src'...
+HEAD is now at 7aaced0 Vectorize p_T and bump patch number (#54)
+[2/9] Performing update step for 'if97-populate'
+-- Already at requested ref: 7aaced024a702f0985474bf293cdaae9c8d06521
+[3/9] No patch step for 'if97-populate'
+[5/9] No configure step for 'if97-populate'
+[6/9] No build step for 'if97-populate'
+[7/9] No install step for 'if97-populate'
+[8/9] No test step for 'if97-populate'
+[9/9] Completed 'if97-populate'
+-- CPM: Adding package REFPROP_headers@0 (b4faab1b73911c32c4b69c526c7e92f74edb67de)
+-- Populating refprop_headers
+-- Configuring done (0.0s)
+-- Generating done (0.0s)
+-- Build files have been written to: /workspace/b4b-native-build/_deps/refprop_headers-subbuild
+[1/9] Creating directories for 'refprop_headers-populate'
+[1/9] Performing download step (git clone) for 'refprop_headers-populate'
+Cloning into 'refprop_headers-src'...
+HEAD is now at b4faab1 Assume that Linux on PowerPC behaves like any other Linux
+[2/9] Performing update step for 'refprop_headers-populate'
+-- Already at requested ref: b4faab1b73911c32c4b69c526c7e92f74edb67de
+[3/9] No patch step for 'refprop_headers-populate'
+[5/9] No configure step for 'refprop_headers-populate'
+[6/9] No build step for 'refprop_headers-populate'
+[7/9] No install step for 'refprop_headers-populate'
+[8/9] No test step for 'refprop_headers-populate'
+[9/9] Completed 'refprop_headers-populate'
+-- CPM: Adding package boost_headers@0 (c68104660ca4bd80d0d5cb34c4eba0cf5bab3f73)
+-- Populating boost_headers
+-- Configuring done (0.0s)
+-- Generating done (0.0s)
+-- Build files have been written to: /workspace/b4b-native-build/_deps/boost_headers-subbuild
+[1/9] Creating directories for 'boost_headers-populate'
+[1/9] Performing download step (git clone) for 'boost_headers-populate'
+Cloning into 'boost_headers-src'...
+HEAD is now at c681046 bcp: pull typeof as a library to capture macro-registered headers
+[2/9] Performing update step for 'boost_headers-populate'
+-- Already at requested ref: c68104660ca4bd80d0d5cb34c4eba0cf5bab3f73
+[3/9] No patch step for 'boost_headers-populate'
+[5/9] No configure step for 'boost_headers-populate'
+[6/9] No build step for 'boost_headers-populate'
+[7/9] No install step for 'boost_headers-populate'
+[8/9] No test step for 'boost_headers-populate'
+[9/9] Completed 'boost_headers-populate'
+-- CPM: Adding package multicomplex@0 (39bf9ca52c7882ff0788bb9087c7548ebd8fba4c)
+-- Populating multicomplex
+-- Configuring done (0.0s)
+-- Generating done (0.0s)
+-- Build files have been written to: /workspace/b4b-native-build/_deps/multicomplex-subbuild
+[1/9] Creating directories for 'multicomplex-populate'
+[1/9] Performing download step (git clone) for 'multicomplex-populate'
+Cloning into 'multicomplex-src'...
+HEAD is now at 39bf9ca Fix -Wpedantic warnings
+Submodule 'pymcx/externals/pybind11' (https://github.com/pybind/pybind11.git) registered for path 'multicomplex/externals/pybind11'
+Cloning into '/workspace/b4b-native-build/_deps/multicomplex-src/multicomplex/externals/pybind11'...
+Submodule path 'multicomplex/externals/pybind11': checked out '6d1b197b4669c70da94c8efb516374e1935d3ea3'
+[2/9] Performing update step for 'multicomplex-populate'
+-- Already at requested ref: 39bf9ca52c7882ff0788bb9087c7548ebd8fba4c
+[3/9] No patch step for 'multicomplex-populate'
+[5/9] No configure step for 'multicomplex-populate'
+[6/9] No build step for 'multicomplex-populate'
+[7/9] No install step for 'multicomplex-populate'
+[8/9] No test step for 'multicomplex-populate'
+[9/9] Completed 'multicomplex-populate'
+-- CPM: Adding package fmt@12.0.0 (12.0.0)
+-- Populating fmt
+-- Configuring done (0.0s)
+-- Generating done (0.0s)
+-- Build files have been written to: /workspace/b4b-native-build/_deps/fmt-subbuild
+[1/9] Creating directories for 'fmt-populate'
+[1/9] Performing download step (git clone) for 'fmt-populate'
+Cloning into 'fmt-src'...
+HEAD is now at e424e3f2 Update version
+[2/9] Performing update step for 'fmt-populate'
+-- Already at requested tag: 12.0.0
+[3/9] No patch step for 'fmt-populate'
+[5/9] No configure step for 'fmt-populate'
+[6/9] No build step for 'fmt-populate'
+[7/9] No install step for 'fmt-populate'
+[8/9] No test step for 'fmt-populate'
+[9/9] Completed 'fmt-populate'
+-- COOLPROP_INSTALL_PREFIX=/workspace/coolprop-b4b/install_root
+-- The C compiler identification is GNU 14.2.0
+-- The CXX compiler identification is GNU 14.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- CoolProp version: 8.0.0
+-- Looking for Python
+-- Found Python: /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3 (found version "3.12.14") found components: Interpreter
+CMake Warning (author) at /workspace/b4b-tools/cmake/data/share/cmake-4.4/Modules/FindPackageHandleStandardArgs.cmake:493 (message):
+  The package name passed to find_package_handle_standard_args() (LibDL) does
+  not match the name of the calling package (dl).  This can lead to problems
+  in calling code that expects find_package() result variables (e.g.,
+  `_FOUND`) to follow a certain pattern.
+Call Stack (most recent call first):
+  dev/cmake/Modules/Finddl.cmake:22 (FIND_PACKAGE_HANDLE_STANDARD_ARGS)
+  CMakeLists.txt:436 (find_package)
+This warning is for project developers.  Use -Wno-author to suppress it.
+
+-- Found LibDL: /usr/lib/x86_64-linux-gnu/libdl.a
+-- Looking for C++ include memory
+-- Looking for C++ include memory - found
+-- Performing Test HAVE_SHARED_PTR_IN_STD_NAMESPACE
+-- Performing Test HAVE_SHARED_PTR_IN_STD_NAMESPACE - Success
+-- Found shared_ptr in std namespace using <memory> header.
+-- Setting bitness flag -m64
+-- Library compilation detected:
+-- Creating CoolProp, a 64-bit library
+-- CMAKE_SYSTEM_NAME: Linux
+-- COOLPROP_STATIC_LIBRARY: OFF
+-- COOLPROP_SHARED_LIBRARY: ON
+-- COOLPROP_OBJECT_LIBRARY: OFF
+-- CONVENTION: Not Set
+-- COOLPROP_LIBRARY_HEADER: include/CoolProp/CoolPropLib.h
+-- COOLPROP_LIBRARY_SOURCE: src/CoolPropLib.cpp
+-- COMPILE_FLAGS:  -DCOOLPROP_LIB -DEXTERNC -m64
+-- LINK_FLAGS:  -m64
+-- clang-format not found; 'format' and 'format-check' targets disabled
+-- Configuring done (48.9s)
+-- Generating done (0.0s)
+-- Build files have been written to: /workspace/b4b-native-build

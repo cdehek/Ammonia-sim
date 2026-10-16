@@ -1,0 +1,177 @@
+diff --git a/src/Backends/Helmholtz/FlashRoutines.cpp b/src/Backends/Helmholtz/FlashRoutines.cpp
+index 65bfc5ff..89e33e81 100644
+--- a/src/Backends/Helmholtz/FlashRoutines.cpp
++++ b/src/Backends/Helmholtz/FlashRoutines.cpp
+@@ -1,3 +1,14 @@
++
++// B3 diagnostic-only output; enabled at runtime, no additional EOS evaluation.
++#include <cstdio>
++#include <cstdlib>
++#include <cstdarg>
++static void b3trace(const char* event, const char* fmt, ...) {
++    if (!std::getenv("B3_TRACE")) return;
++    std::fprintf(stderr, "{\"event\":\"%s\",", event);
++    va_list args; va_start(args, fmt); std::vfprintf(stderr, fmt, args); va_end(args);
++    std::fprintf(stderr, "}\n");
++}
+ #include "VLERoutines.h"
+ #include "FlashRoutines.h"
+ 
+@@ -334,6 +345,8 @@ void FlashRoutines::PT_flash(HelmholtzEOSMixtureBackend& HEOS) {
+         }
+         // Find density
+         HEOS._rhomolar = HEOS.solver_rho_Tp(HEOS._T, HEOS._p);
++        b3trace("PT_density_assigned", "\"T\":%.17g,\"rho_molar\":%.17g,\"delta_cached_coordinate\":%.17g,\"p\":%.17g", double(HEOS._T), double(HEOS._rhomolar), double(HEOS._delta), double(HEOS._p));
++
+         HEOS._Q = -1;
+     } else {
+         PT_flash_mixtures(HEOS);
+@@ -3168,7 +3181,7 @@ void FlashRoutines::HSU_P_flash_singlephase_Brent(HelmholtzEOSMixtureBackend& HE
+             // (~9.3e-10 on T) keeps the worst P+X round-trip well under the 1e-6
+             // hard limit while cutting ~7% of the outer iterations.
+             // >>> 2**(1-30) == 9.31e-10
+-            auto [l, r] = toms748_solve(f, Tmin, Tmax, resid_Tmin, resid_Tmax, boost::math::tools::eps_tolerance<double>(30), max_iter);
++            auto [l, r] = toms748_solve(f, Tmin, Tmax, resid_Tmin, resid_Tmax, boost::math::tools::eps_tolerance<double>(44), max_iter);
+             // Re-evaluate at the midpoint of the final bracket so HEOS is left at
+             // the converged state (TOMS748's last probe may be at a slightly
+             // different point within the bracket).  Same discipline as the
+@@ -3348,6 +3361,8 @@ void FlashRoutines::HSU_P_flash(HelmholtzEOSMixtureBackend& HEOS, parameters oth
+ 
+         // Find the phase, while updating all internal variables possible
+         HEOS.p_phase_determination_pure_or_pseudopure(other, value, saturation_called);
++        if (other == iHmolar) b3trace("PH_dispatch", "\"p\":%.17g,\"hmolar\":%.17g,\"phase\":%d,\"homogeneous\":%d", double(HEOS._p), double(value), int(HEOS._phase), HEOS.isHomogeneousPhase());
++
+ 
+         if (HEOS.isHomogeneousPhase()) {
+             // Now we use the single-phase solver to find T,rho given P,Y using a
+diff --git a/src/Backends/Helmholtz/HelmholtzEOSMixtureBackend.cpp b/src/Backends/Helmholtz/HelmholtzEOSMixtureBackend.cpp
+index 65aa98b8..b0cb7eae 100644
+--- a/src/Backends/Helmholtz/HelmholtzEOSMixtureBackend.cpp
++++ b/src/Backends/Helmholtz/HelmholtzEOSMixtureBackend.cpp
+@@ -1,3 +1,14 @@
++
++// B3 diagnostic-only output; enabled at runtime, no additional EOS evaluation.
++#include <cstdio>
++#include <cstdlib>
++#include <cstdarg>
++static void b3trace(const char* event, const char* fmt, ...) {
++    if (!std::getenv("B3_TRACE")) return;
++    std::fprintf(stderr, "{\"event\":\"%s\",", event);
++    va_list args; va_start(args, fmt); std::vfprintf(stderr, fmt, args); va_end(args);
++    std::fprintf(stderr, "}\n");
++}
+ /*
+  * AbstractBackend.cpp
+  *
+@@ -1836,7 +1847,12 @@ void HelmholtzEOSMixtureBackend::p_phase_determination_pure_or_pseudopure(int ot
+                         throw ValueError(format("bad input for other"));
+                 }
+                 // Start off by setting variables based on assumption that the state is two-phase
+-                if (Q < -1e-9) {
++                if (other == iHmolar) b3trace("superanc_quality", "\"p\":%.17g,\"hmolar\":%.17g,\"Tsat\":%.17g,\"hf_molar\":%.17g,\"hg_molar\":%.17g,\"h_minus_hf_molar\":%.17g,\"h_minus_hg_molar\":%.17g,\"Q\":%.17g,\"below_lower\":%d,\"above_upper\":%d,\"rhoL_molar\":%.17g,\"rhoV_molar\":%.17g",
++                    double(_p), double(value), double(Tsat), double(SatL->hmolar()), double(SatV->hmolar()), double(value-SatL->hmolar()), double(value-SatV->hmolar()), Q, Q < -1e-9, Q > 1+1e-9, double(SatL->rhomolar()), double(SatV->rhomolar()));
++
++                // Resolve negative caloric quality by the existing bounded liquid flash.
++                // Saturation uncertainty does not permit extrapolating mixture volume.
++                if (Q < -1e-9 || (Q < 0 && (other == iHmolar || other == iSmolar || other == iUmolar))) {
+                     this->_phase = iphase_liquid;
+                     SatL->clear();
+                     SatV->clear();
+@@ -1853,6 +1869,8 @@ void HelmholtzEOSMixtureBackend::p_phase_determination_pure_or_pseudopure(int ot
+                     _rhomolar = 1 / (_Q / SatV->rhomolar() + (1 - _Q) / SatL->rhomolar());
+                     this->_phase = iphase_twophase;
+                 }
++                if (other == iHmolar) b3trace("superanc_selected", "\"phase\":%d,\"Q\":%.17g", int(_phase), double(_Q));
++                if (other == iHmolar && _phase == iphase_twophase) b3trace("superanc_lever", "\"T\":%.17g,\"rho_molar\":%.17g,\"v_molar\":%.17g", double(_T), double(_rhomolar), double(1/_rhomolar));
+                 return;
+             }
+         }
+@@ -2068,6 +2086,8 @@ void HelmholtzEOSMixtureBackend::p_phase_determination_pure_or_pseudopure(int ot
+                     throw ValueError(format("bad input for other"));
+             }
+             // TODO: Check the speed penalty of these calls
++            if (other == iHmolar) b3trace("vle_quality", "\"p\":%.17g,\"hmolar\":%.17g,\"Tsat\":%.17g,\"hf_molar\":%.17g,\"hg_molar\":%.17g,\"Q\":%.17g,\"below_lower\":%d,\"above_upper\":%d", double(_p), double(value), double(HEOS.SatL->T()), double(HEOS.SatL->hmolar()), double(HEOS.SatV->hmolar()), double(Q), Q < -1e-9, Q > 1+1e-9);
++
+             // Update the states
+             if (this->SatL) this->SatL->update(DmolarT_INPUTS, HEOS.SatL->rhomolar(), HEOS.SatL->T());
+             if (this->SatV) this->SatV->update(DmolarT_INPUTS, HEOS.SatV->rhomolar(), HEOS.SatV->T());
+@@ -2076,7 +2096,9 @@ void HelmholtzEOSMixtureBackend::p_phase_determination_pure_or_pseudopure(int ot
+             _rhoVmolar = HEOS.SatV->rhomolar();
+ 
+             //
+-            if (Q < -1e-9) {
++            // Resolve negative caloric quality by the existing bounded liquid flash.
++            // Saturation uncertainty does not permit extrapolating mixture volume.
++            if (Q < -1e-9 || (Q < 0 && (other == iHmolar || other == iSmolar || other == iUmolar))) {
+                 this->_phase = iphase_liquid;
+                 _Q = -1000;
+                 return;
+@@ -2802,6 +2824,8 @@ class SolverTPResid : public FuncWrapper1DWithThreeDerivs
+         delta = rhomolar / rhor;  // needed for derivative
+         HEOS->update_DmolarT_direct(rhomolar, T);
+         CoolPropDbl peos = HEOS->p();
++        b3trace("density_residual_call", "\"T\":%.17g,\"rho_molar\":%.17g,\"p_target\":%.17g,\"p_eos\":%.17g,\"delta\":%.17g", double(T), rhomolar, double(p), double(peos), double(delta));
++
+         return (peos - p) / p;
+     };
+     double deriv(double rhomolar) override {
+@@ -3208,6 +3232,8 @@ CoolPropDbl HelmholtzEOSMixtureBackend::calc_hmolar() {
+ 
+         // Get molar enthalpy
+         _hmolar = R_u * _T * (1 + _tau.pt() * (da0_dTau + dar_dTau) + _delta.pt() * dar_dDelta);
++        b3trace("homogeneous_hmolar", "\"T\":%.17g,\"rho_molar\":%.17g,\"tau\":%.17g,\"explicit_delta\":%.17g,\"dar_dtau\":%.17g,\"dar_ddelta\":%.17g,\"hmolar\":%.17g", double(_T), double(_rhomolar), double(_tau), double(_delta), double(dar_dTau), double(dar_dDelta), double(_hmolar));
++
+ 
+         return static_cast<CoolPropDbl>(_hmolar);
+     } else {
+@@ -3569,6 +3595,8 @@ void HelmholtzEOSMixtureBackend::calc_all_alphar_deriv_cache(const std::vector<C
+     _d4alphar_dDelta2_dTau2 = derivs.d4alphar_ddelta2_dtau2;
+     _d4alphar_dDelta_dTau3 = derivs.d4alphar_ddelta_dtau3;
+     _d4alphar_dTau4 = derivs.d4alphar_dtau4;
++    b3trace("alphar_cache_fill", "\"tau\":%.17g,\"delta\":%.17g,\"dar_dtau\":%.17g,\"dar_ddelta\":%.17g", double(tau), double(delta), double(derivs.dalphar_dtau), double(derivs.dalphar_ddelta));
++
+ }
+ 
+ CoolPropDbl HelmholtzEOSMixtureBackend::calc_alphar_deriv_nocache(const int nTau, const int nDelta, const std::vector<CoolPropDbl>& mole_fractions,
+diff --git a/src/Solvers.cpp b/src/Solvers.cpp
+index 9f6c3fd4..5587b5b1 100644
+--- a/src/Solvers.cpp
++++ b/src/Solvers.cpp
+@@ -1,3 +1,14 @@
++
++// B3 diagnostic-only output; enabled at runtime, no additional EOS evaluation.
++#include <cstdio>
++#include <cstdlib>
++#include <cstdarg>
++static void b3trace(const char* event, const char* fmt, ...) {
++    if (!std::getenv("B3_TRACE")) return;
++    std::fprintf(stderr, "{\"event\":\"%s\",", event);
++    va_list args; va_start(args, fmt); std::vfprintf(stderr, fmt, args); va_end(args);
++    std::fprintf(stderr, "}\n");
++}
+ #include <cmath>
+ #include <vector>
+ #include "CoolProp/numerics/Solvers.h"
+@@ -260,10 +271,13 @@ double Householder4(FuncWrapper1DWithThreeDerivs* f, double x0, double ftol, int
+ 
+         dx = -omega * fval * (POW2(dfdx) - fval * d2fdx2 / 2.0) / (POW3(dfdx) - fval * dfdx * d2fdx2 + d3fdx3 * POW2(fval) / 6.0);
+ 
++        b3trace("Householder4_step", "\"iter\":%d,\"x_evaluated\":%.17g,\"fval\":%.17g,\"dx\":%.17g,\"ftol\":%.17g,\"xtol_rel\":%.17g", f->iter, x, fval, dx, ftol, xtol_rel);
+         x += dx;
+ 
+         if (std::abs(dx / x) < xtol_rel) {
+-            return x;
++            b3trace("Householder4_return_xtol", "\"x_returned\":%.17g", x);
++            b3trace("Householder4_return", "\"x_returned\":%.17g", x);
++    return x;
+         }
+ 
+         if (f->iter > maxiter) {
+@@ -272,6 +286,7 @@ double Householder4(FuncWrapper1DWithThreeDerivs* f, double x0, double ftol, int
+         }
+         f->iter += 1;
+     }
++    b3trace("Householder4_return", "\"x_returned\":%.17g", x);
+     return x;
+ }
+ 
