@@ -1,0 +1,681 @@
+{
+  "sourceHEAD": "ae81610e7d23efc57f9d051c8e70a4d66e87537f",
+  "sourceFiles": 1782,
+  "sourceMismatches": [],
+  "patches": [
+    {
+      "file": "browser_eos_backend/flash-44.patch",
+      "sha256": "6234d4f9fd0ea9b88eec2a178b7d7b8e00a54aa63a928a54bb65057984a126ef",
+      "reverseApplicable": true
+    },
+    {
+      "file": "browser_eos_b4a/liquid-classification.patch",
+      "sha256": "67eb377174cda509980b5c17b3283abcda9fb9e7f0f265c23a29b58cbd724572",
+      "reverseApplicable": true
+    },
+    {
+      "file": "browser_eos_b4b/pt-cache-consistency.patch",
+      "sha256": "621375770c2663fb86a0e3621fd85da34c4b410dbd4b592154dee402d860fe14",
+      "reverseApplicable": true
+    },
+    {
+      "file": "browser_eos_b4c/upper-quality-classification.patch",
+      "sha256": "9c42f70817ac1ff812f55ab64670cb7cc81fb1606976de06ac6fa1c87e71e24a",
+      "reverseApplicable": true
+    },
+    {
+      "file": "browser_eos_b5a/gate-a.patch",
+      "sha256": "2f4b9e675b98a59f3846ede09b767698090083934e080bc11790b723c9d90eeb",
+      "reverseApplicable": true
+    }
+  ],
+  "artifacts": [
+    {
+      "file": "experiments/dx-fv/browser_eos_b3/artifacts/libCoolProp-diag30.so.xz",
+      "archiveSHA256": "2678dd7f0e44b864b1f04f528e745a68088374150f9fdcbe53e666ae33cf6208",
+      "binarySHA256": "26c34b06988b0c80db1be71ba6cc133bcf8855f45762b139f3c9c0c992ec0605"
+    },
+    {
+      "file": "experiments/dx-fv/browser_eos_b3/artifacts/libCoolProp-diag44.so.xz",
+      "archiveSHA256": "64ff62e92ea4c26bc3cfd1e2b7745570ddc8fafc02bf02a29b23659bc7bbb1d5",
+      "binarySHA256": "995f18fca99c8818f9d2e7e6c66a608395f1903a2ed090be19fd946e365734e9"
+    },
+    {
+      "file": "experiments/dx-fv/browser_eos_b3/artifacts/libCoolProp30.so.xz",
+      "archiveSHA256": "a55878bb5a55a5d91a7dd2bcdd22ab113856fa549588eb6744ddaee19599bc9e",
+      "binarySHA256": "637d66e9762871e69762b9288217169ba98700c7cbd9476b06aeb0ec79d07bfa"
+    },
+    {
+      "file": "experiments/dx-fv/browser_eos_b3/artifacts/libCoolProp44.so.xz",
+      "archiveSHA256": "86392cb6e8b3ba6d6a936e6afeba0e3f383cb667f2cbd33bebfab2c76205c9f4",
+      "binarySHA256": "6082f6f56903a25d85492eaa817be88b3d37d5da81aacb91bbfd34aaa64e8e7e"
+    },
+    {
+      "file": "experiments/dx-fv/browser_eos_b4a/artifacts/libCoolProp-control44.so.xz",
+      "archiveSHA256": "3bd638522b01a55c4dd9b1384ee65624e073cd0e47e72e949f8428f8272a96f6",
+      "binarySHA256": "e5812fbadaa45e7ae766081c87ca8e13f6fff96bf925a1105a53eb82641b3728"
+    },
+    {
+      "file": "experiments/dx-fv/browser_eos_b4a/artifacts/libCoolProp-diagnostic44.so.xz",
+      "archiveSHA256": "8b51516a966ae37f9e9e472fc8477b89cd6153f5a9ddde2b1274b735f5e3e882",
+      "binarySHA256": "4ca12059489d7c57d214ec8e1d039a3daeceae50f0892aaa7a8574098e22ba4d"
+    },
+    {
+      "file": "experiments/dx-fv/browser_eos_b4a/artifacts/libCoolProp-liquid44.so.xz",
+      "archiveSHA256": "9d6e9e60356e9ef47a61bee113a2a5f90aa4d79269fe8e60f15e1d53b5da0759",
+      "binarySHA256": "7a31ae229a6f62bc3f53b570759f631b29c393f743826a6de08ce9d1b87e36de"
+    },
+    {
+      "file": "experiments/dx-fv/browser_eos_b4b/artifacts/libCoolProp-rebuilt-controlA.so.xz",
+      "archiveSHA256": "e7f5d2a085a3791e2fe6f097a3b916eaad622232fd61d63536c0cbe3cd69913e",
+      "binarySHA256": "8b8630549a261ad5093d64855f71ecdba14cf139dbbe872a6de7877ddee37a4a"
+    },
+    {
+      "file": "experiments/dx-fv/browser_eos_b4b/artifacts/libCoolProp-diagnostic-controlA.so.xz",
+      "archiveSHA256": "4defde4153d1574b37acc8f8db77372f8dbd7f43b28d3dcbb6d696cfd351d758",
+      "binarySHA256": "a6c01488a2960798852b6b42981fc37762419894bc662fa054d2bd93a82b49bf"
+    },
+    {
+      "file": "experiments/dx-fv/browser_eos_b4b/artifacts/libCoolProp-candidateB.so.xz",
+      "archiveSHA256": "fbd78a34c255b34d3d3f67f7769e22ed066c39490e8cfda0938ecfc7d9b3c485",
+      "binarySHA256": "b1835d39a44e3f732149fddc0abc8743ff883071efc29eb110080cac6d9e5d9e"
+    },
+    {
+      "file": "experiments/dx-fv/browser_eos_b4b/artifacts/libCoolProp-diagnostic-candidateB.so.xz",
+      "archiveSHA256": "c8065942a0e6ed6aea96f99fce68cf5c359ec8204c28e78b221fb05d38705526",
+      "binarySHA256": "6d359cdda7893821a118449346137293c9677f2b77a7ff99650ab1c46b2d3c29"
+    },
+    {
+      "file": "experiments/dx-fv/browser_eos_b4b/../browser_eos_b4a/artifacts/libCoolProp-liquid44.so.xz",
+      "archiveSHA256": "9d6e9e60356e9ef47a61bee113a2a5f90aa4d79269fe8e60f15e1d53b5da0759",
+      "binarySHA256": "7a31ae229a6f62bc3f53b570759f631b29c393f743826a6de08ce9d1b87e36de"
+    },
+    {
+      "file": "experiments/dx-fv/browser_eos_b4c/artifacts/libCoolProp-controlA.so.xz",
+      "archiveSHA256": "7e34553beab3ee8f2af83ee843b5c27af91163c3f93c76a36349a7bfed352929",
+      "binarySHA256": "d8fa3a5ac1993dd5f6e6a001e70084838e1eea4baa590e1347ea5cb13795c00a"
+    },
+    {
+      "file": "experiments/dx-fv/browser_eos_b4c/artifacts/libCoolProp-candidateB.so.xz",
+      "archiveSHA256": "4de2f0cb0e1e7851d6f96c635f5900ee779cd4384a7b3bcdb2595c3105648d47",
+      "binarySHA256": "1dbd593fb568d18af704bedc5e29b790abddbadd7f6f03838819ca193b9afbb1"
+    },
+    {
+      "file": "experiments/dx-fv/browser_eos_b4c/artifacts/libCoolProp-diagnostic-candidateB.so.xz",
+      "archiveSHA256": "fc6ccad95cf55038e6881e90eccaf4eb9316203cb13dd3ddde77ceb20c16e1b4",
+      "binarySHA256": "bcb3d7ab33a79962a3e65675e13077da5c0a706fbc4be3bb1432af98481567f8"
+    },
+    {
+      "file": "experiments/dx-fv/browser_eos_b5/artifacts/rebuilt-uninstrumented.so.xz",
+      "archiveSHA256": "e7e62c3a03d2231ace97c3d75f30bbc02519ce5fdc0465652609d5bf5b54b358",
+      "binarySHA256": "41507e2d57540a4a3669a926b8b6c443d4aae2c794ec5f260ea2b1295452b2f4"
+    },
+    {
+      "file": "experiments/dx-fv/browser_eos_b5/artifacts/diagnostic-phase-only.so.xz",
+      "archiveSHA256": "69601b9bf431e7b1bea2dff6a778e49783954a896d18e7b49438e4d6cb4ddf8e",
+      "binarySHA256": "fa9881c24783f0c19ffab03e4461ecdd20ab9789eca45e04c20c7d06b0e77b03"
+    },
+    {
+      "file": "experiments/dx-fv/browser_eos_b5/artifacts/diagnostic.so.xz",
+      "archiveSHA256": "5e3e9640cd75c968c45d012c2badcdf253bbacb880a6e5635c3df1f0ae6ecfba",
+      "binarySHA256": "d39698666bcaa41d337f92fc2d35e87621482b2f4b1d501d1fb6a2a0ae36cdbc"
+    },
+    {
+      "file": "experiments/dx-fv/browser_eos_b5a/artifacts/libCoolProp-control.so.xz",
+      "archiveSHA256": "4fd3de5b59a750bca444298ad6733835e5229ac0acbba8cae466be626f6e0e44",
+      "binarySHA256": "6dfeaffb397df603997f77bae2d19f0e85efe830d417e0b5faa90562320ba71f"
+    },
+    {
+      "file": "experiments/dx-fv/browser_eos_b5a/artifacts/libCoolProp-A1.so.xz",
+      "archiveSHA256": "2341cfdc164388df12fd642d89032558fedd80b8f21ee38a5871ea3d44eaedbf",
+      "binarySHA256": "3cbe3fd0ad16309ca498ccce7ec6c89f37bf7b1fe9036a5799f37ce612fba6f0"
+    },
+    {
+      "file": "experiments/dx-fv/browser_eos_b5a/artifacts/libCoolProp-A1-diagnostic.so.xz",
+      "archiveSHA256": "1624d21d706dbd98d64b6a3085fb2e151304f4071bca61fb5a80f93c176087d6",
+      "binarySHA256": "86186ff71e9fdceb9a8b6b7807922991d58ca25c172bd3b2cf12327d978e24c9"
+    },
+    {
+      "file": "experiments/dx-fv/browser_eos_backend/vendor/build30/LICENSE",
+      "sha256": "9bf835333ef602af4cb19338b9f9d43671e174fa029b00280e9bdba6ea4719b2"
+    },
+    {
+      "file": "experiments/dx-fv/browser_eos_backend/vendor/build30/coolprop.js",
+      "sha256": "ebd02f5721abc10fee3e6560b0d96c1a17b8ae1f01bc144a4f9a1af8cf1e3217"
+    },
+    {
+      "file": "experiments/dx-fv/browser_eos_backend/vendor/build30/coolprop.wasm",
+      "sha256": "b1baa13a092fc30e73d3ebb974a3d56013e4d20c56da89360c5d966a3eff47d5"
+    },
+    {
+      "file": "experiments/dx-fv/browser_eos_backend/vendor/build44/LICENSE",
+      "sha256": "9bf835333ef602af4cb19338b9f9d43671e174fa029b00280e9bdba6ea4719b2"
+    },
+    {
+      "file": "experiments/dx-fv/browser_eos_backend/vendor/build44/coolprop.js",
+      "sha256": "ebd02f5721abc10fee3e6560b0d96c1a17b8ae1f01bc144a4f9a1af8cf1e3217"
+    },
+    {
+      "file": "experiments/dx-fv/browser_eos_backend/vendor/build44/coolprop.wasm",
+      "sha256": "30decd700ad8b46530a8accadd051bdf7147cc7a894904e2ce83d6babfdd63ab"
+    },
+    {
+      "file": "experiments/dx-fv/browser_eos_backend/vendor/notices/Boost-1.0.txt",
+      "sha256": "c9bff75738922193e67fa726fa225535870d2aa1059f91452c411736284ad566"
+    },
+    {
+      "file": "experiments/dx-fv/browser_eos_backend/vendor/notices/Eigen-7.2-MPL2.txt",
+      "sha256": "fab3dd6bdab226f1c08630b1dd917e11fcb4ec5e1e020e2c16f83a0a13863e85"
+    },
+    {
+      "file": "experiments/dx-fv/browser_eos_backend/vendor/notices/Eigen-8.0-MPL2.txt",
+      "sha256": "66a3107d5ad6a058aab753eaac2047ccb2ed0e39465dd0fe5844da3e300d5172"
+    },
+    {
+      "file": "experiments/dx-fv/browser_eos_backend/vendor/notices/IF97-MIT.txt",
+      "sha256": "e22c3d30ef8d88ab468d9ea20392ca1df22fa3fd0a92dc3e996d89cf3cfdbd03"
+    },
+    {
+      "file": "experiments/dx-fv/browser_eos_backend/vendor/notices/LLVM-Apache.txt",
+      "sha256": "539dd7aed86e8a4f12cbdd0e6c50c189c7d74847e4fecc64ce2c6ee3a01da38b"
+    },
+    {
+      "file": "experiments/dx-fv/browser_eos_backend/vendor/notices/REFPROP-headers.txt",
+      "sha256": "f21f633c596509e89b2baedfd657c8f1b8018954b06576590971684b210e91f8"
+    },
+    {
+      "file": "experiments/dx-fv/browser_eos_backend/vendor/notices/compiler-rt-4.0.12.txt",
+      "sha256": "1a8f1058753f1ba890de984e48f0242a3a5c29a6a8f2ed9fd813f36985387e8d"
+    },
+    {
+      "file": "experiments/dx-fv/browser_eos_backend/vendor/notices/emscripten-4.0.12.txt",
+      "sha256": "620a78084fc7ca97c0b5dea9abf891f3ffcadfdbf305276f099c9c4e12fc1d86"
+    },
+    {
+      "file": "experiments/dx-fv/browser_eos_backend/vendor/notices/emscripten-MIT-NCSA.txt",
+      "sha256": "620a78084fc7ca97c0b5dea9abf891f3ffcadfdbf305276f099c9c4e12fc1d86"
+    },
+    {
+      "file": "experiments/dx-fv/browser_eos_backend/vendor/notices/fmt-7.2.txt",
+      "sha256": "07580f2a3b35709ce703d523f447b242f6dfec7582a8c0df102c7fa2849375f8"
+    },
+    {
+      "file": "experiments/dx-fv/browser_eos_backend/vendor/notices/fmt-8.0-MIT.txt",
+      "sha256": "07580f2a3b35709ce703d523f447b242f6dfec7582a8c0df102c7fa2849375f8"
+    },
+    {
+      "file": "experiments/dx-fv/browser_eos_backend/vendor/notices/incbin-UNLICENSE.txt",
+      "sha256": "7e12e5df4bae12cb21581ba157ced20e1986a0508dd10d0e8a4ab9a4cf94e85c"
+    },
+    {
+      "file": "experiments/dx-fv/browser_eos_backend/vendor/notices/libcxx-4.0.12.txt",
+      "sha256": "539dd7aed86e8a4f12cbdd0e6c50c189c7d74847e4fecc64ce2c6ee3a01da38b"
+    },
+    {
+      "file": "experiments/dx-fv/browser_eos_backend/vendor/notices/libcxxabi-4.0.12.txt",
+      "sha256": "e2b35be49f7284a45b7baca8fc7b3ab7440e7902392b2528a457816b5bb2a15c"
+    },
+    {
+      "file": "experiments/dx-fv/browser_eos_backend/vendor/notices/libunwind-4.0.12.txt",
+      "sha256": "b5efebcaca80879234098e52d1725e6d9eb8fb96a19fce625d39184b705f7b6d"
+    },
+    {
+      "file": "experiments/dx-fv/browser_eos_backend/vendor/notices/miniz-MIT.txt",
+      "sha256": "6f20fa7672b00e2e975c291df737cf227addf3ad32e36fef3fe0f416e4664d3d"
+    },
+    {
+      "file": "experiments/dx-fv/browser_eos_backend/vendor/notices/msgpack-Boost.txt",
+      "sha256": "664550b43996452a5a2c7471bb0ff77185a58c69ccafa60f983dc4c162e1ee22"
+    },
+    {
+      "file": "experiments/dx-fv/browser_eos_backend/vendor/notices/musl-4.0.12.txt",
+      "sha256": "f9bc4423732350eb0b3f7ed7e91d530298476f8fec0c6c427a1c04ade22655af"
+    },
+    {
+      "file": "experiments/dx-fv/browser_eos_backend/vendor/notices/musl-MIT.txt",
+      "sha256": "f9bc4423732350eb0b3f7ed7e91d530298476f8fec0c6c427a1c04ade22655af"
+    },
+    {
+      "file": "experiments/dx-fv/browser_eos_backend/vendor/notices/nlohmann-json-MIT.txt",
+      "sha256": "46a65cffd1ea955132d95a8dd921640714a8d6b537d2e4e482d31145ae95b603"
+    },
+    {
+      "file": "experiments/dx-fv/browser_eos_backend/vendor/notices/rapidjson-MIT.txt",
+      "sha256": "a140e5d46fe734a1c78f1a3c3ef207871dd75648be71fdda8e309b23ab8b1f32"
+    },
+    {
+      "file": "experiments/dx-fv/browser_eos_backend/vendor/notices/valijson-BSD.txt",
+      "sha256": "61b5766db38eaa3f320c366357956d7743424bfbf90fd78f5943866ba237589e"
+    },
+    {
+      "file": "experiments/dx-fv/browser_eos_b4a/artifacts/libCoolProp-control44.so.xz",
+      "sha256": "3bd638522b01a55c4dd9b1384ee65624e073cd0e47e72e949f8428f8272a96f6"
+    },
+    {
+      "file": "experiments/dx-fv/browser_eos_b4a/artifacts/libCoolProp-diagnostic44.so.xz",
+      "sha256": "8b51516a966ae37f9e9e472fc8477b89cd6153f5a9ddde2b1274b735f5e3e882"
+    },
+    {
+      "file": "experiments/dx-fv/browser_eos_b4a/artifacts/libCoolProp-liquid44.so.xz",
+      "sha256": "9d6e9e60356e9ef47a61bee113a2a5f90aa4d79269fe8e60f15e1d53b5da0759"
+    },
+    {
+      "file": "experiments/dx-fv/browser_eos_b4a/vendor/LICENSE-CoolProp.txt",
+      "sha256": "9bf835333ef602af4cb19338b9f9d43671e174fa029b00280e9bdba6ea4719b2"
+    },
+    {
+      "file": "experiments/dx-fv/browser_eos_b4a/vendor/THIRD_PARTY-B1.md",
+      "sha256": "08d17dda6b0ef439e8e29c0680e95b1aff984f0ba93b22bb0de280b21a5769c3"
+    },
+    {
+      "file": "experiments/dx-fv/browser_eos_b4a/vendor/control44/coolprop.js",
+      "sha256": "ebd02f5721abc10fee3e6560b0d96c1a17b8ae1f01bc144a4f9a1af8cf1e3217"
+    },
+    {
+      "file": "experiments/dx-fv/browser_eos_b4a/vendor/control44/coolprop.wasm",
+      "sha256": "eff473068c5f9950a37cdffef013a931b291c606bf7768d21b0c4fe8c1d82126"
+    },
+    {
+      "file": "experiments/dx-fv/browser_eos_b4a/vendor/liquid44/coolprop.js",
+      "sha256": "ebd02f5721abc10fee3e6560b0d96c1a17b8ae1f01bc144a4f9a1af8cf1e3217"
+    },
+    {
+      "file": "experiments/dx-fv/browser_eos_b4a/vendor/liquid44/coolprop.wasm",
+      "sha256": "25dceb87d7845e52c53a2599b959fc7d1e7739f09660ca3c92b2e3b298ab0306"
+    },
+    {
+      "file": "experiments/dx-fv/browser_eos_b4a/vendor/notices/Boost-1.0.txt",
+      "sha256": "c9bff75738922193e67fa726fa225535870d2aa1059f91452c411736284ad566"
+    },
+    {
+      "file": "experiments/dx-fv/browser_eos_b4a/vendor/notices/Eigen-7.2-MPL2.txt",
+      "sha256": "fab3dd6bdab226f1c08630b1dd917e11fcb4ec5e1e020e2c16f83a0a13863e85"
+    },
+    {
+      "file": "experiments/dx-fv/browser_eos_b4a/vendor/notices/Eigen-8.0-MPL2.txt",
+      "sha256": "66a3107d5ad6a058aab753eaac2047ccb2ed0e39465dd0fe5844da3e300d5172"
+    },
+    {
+      "file": "experiments/dx-fv/browser_eos_b4a/vendor/notices/IF97-MIT.txt",
+      "sha256": "e22c3d30ef8d88ab468d9ea20392ca1df22fa3fd0a92dc3e996d89cf3cfdbd03"
+    },
+    {
+      "file": "experiments/dx-fv/browser_eos_b4a/vendor/notices/LLVM-Apache.txt",
+      "sha256": "539dd7aed86e8a4f12cbdd0e6c50c189c7d74847e4fecc64ce2c6ee3a01da38b"
+    },
+    {
+      "file": "experiments/dx-fv/browser_eos_b4a/vendor/notices/REFPROP-headers.txt",
+      "sha256": "f21f633c596509e89b2baedfd657c8f1b8018954b06576590971684b210e91f8"
+    },
+    {
+      "file": "experiments/dx-fv/browser_eos_b4a/vendor/notices/compiler-rt-4.0.12.txt",
+      "sha256": "1a8f1058753f1ba890de984e48f0242a3a5c29a6a8f2ed9fd813f36985387e8d"
+    },
+    {
+      "file": "experiments/dx-fv/browser_eos_b4a/vendor/notices/emscripten-4.0.12.txt",
+      "sha256": "620a78084fc7ca97c0b5dea9abf891f3ffcadfdbf305276f099c9c4e12fc1d86"
+    },
+    {
+      "file": "experiments/dx-fv/browser_eos_b4a/vendor/notices/emscripten-MIT-NCSA.txt",
+      "sha256": "620a78084fc7ca97c0b5dea9abf891f3ffcadfdbf305276f099c9c4e12fc1d86"
+    },
+    {
+      "file": "experiments/dx-fv/browser_eos_b4a/vendor/notices/fmt-7.2.txt",
+      "sha256": "07580f2a3b35709ce703d523f447b242f6dfec7582a8c0df102c7fa2849375f8"
+    },
+    {
+      "file": "experiments/dx-fv/browser_eos_b4a/vendor/notices/fmt-8.0-MIT.txt",
+      "sha256": "07580f2a3b35709ce703d523f447b242f6dfec7582a8c0df102c7fa2849375f8"
+    },
+    {
+      "file": "experiments/dx-fv/browser_eos_b4a/vendor/notices/incbin-UNLICENSE.txt",
+      "sha256": "7e12e5df4bae12cb21581ba157ced20e1986a0508dd10d0e8a4ab9a4cf94e85c"
+    },
+    {
+      "file": "experiments/dx-fv/browser_eos_b4a/vendor/notices/libcxx-4.0.12.txt",
+      "sha256": "539dd7aed86e8a4f12cbdd0e6c50c189c7d74847e4fecc64ce2c6ee3a01da38b"
+    },
+    {
+      "file": "experiments/dx-fv/browser_eos_b4a/vendor/notices/libcxxabi-4.0.12.txt",
+      "sha256": "e2b35be49f7284a45b7baca8fc7b3ab7440e7902392b2528a457816b5bb2a15c"
+    },
+    {
+      "file": "experiments/dx-fv/browser_eos_b4a/vendor/notices/libunwind-4.0.12.txt",
+      "sha256": "b5efebcaca80879234098e52d1725e6d9eb8fb96a19fce625d39184b705f7b6d"
+    },
+    {
+      "file": "experiments/dx-fv/browser_eos_b4a/vendor/notices/miniz-MIT.txt",
+      "sha256": "6f20fa7672b00e2e975c291df737cf227addf3ad32e36fef3fe0f416e4664d3d"
+    },
+    {
+      "file": "experiments/dx-fv/browser_eos_b4a/vendor/notices/msgpack-Boost.txt",
+      "sha256": "664550b43996452a5a2c7471bb0ff77185a58c69ccafa60f983dc4c162e1ee22"
+    },
+    {
+      "file": "experiments/dx-fv/browser_eos_b4a/vendor/notices/musl-4.0.12.txt",
+      "sha256": "f9bc4423732350eb0b3f7ed7e91d530298476f8fec0c6c427a1c04ade22655af"
+    },
+    {
+      "file": "experiments/dx-fv/browser_eos_b4a/vendor/notices/musl-MIT.txt",
+      "sha256": "f9bc4423732350eb0b3f7ed7e91d530298476f8fec0c6c427a1c04ade22655af"
+    },
+    {
+      "file": "experiments/dx-fv/browser_eos_b4a/vendor/notices/nlohmann-json-MIT.txt",
+      "sha256": "46a65cffd1ea955132d95a8dd921640714a8d6b537d2e4e482d31145ae95b603"
+    },
+    {
+      "file": "experiments/dx-fv/browser_eos_b4a/vendor/notices/rapidjson-MIT.txt",
+      "sha256": "a140e5d46fe734a1c78f1a3c3ef207871dd75648be71fdda8e309b23ab8b1f32"
+    },
+    {
+      "file": "experiments/dx-fv/browser_eos_b4a/vendor/notices/valijson-BSD.txt",
+      "sha256": "61b5766db38eaa3f320c366357956d7743424bfbf90fd78f5943866ba237589e"
+    },
+    {
+      "file": "experiments/dx-fv/browser_eos_b4b/vendor/LICENSE-CoolProp.txt",
+      "sha256": "9bf835333ef602af4cb19338b9f9d43671e174fa029b00280e9bdba6ea4719b2"
+    },
+    {
+      "file": "experiments/dx-fv/browser_eos_b4b/vendor/THIRD_PARTY-B1.md",
+      "sha256": "08d17dda6b0ef439e8e29c0680e95b1aff984f0ba93b22bb0de280b21a5769c3"
+    },
+    {
+      "file": "experiments/dx-fv/browser_eos_b4b/vendor/candidateB/coolprop.js",
+      "sha256": "ebd02f5721abc10fee3e6560b0d96c1a17b8ae1f01bc144a4f9a1af8cf1e3217"
+    },
+    {
+      "file": "experiments/dx-fv/browser_eos_b4b/vendor/candidateB/coolprop.wasm",
+      "sha256": "cd12d7d0c5e7271df867d3f633929c68dbd02a155aa071585153d6c0be7840d3"
+    },
+    {
+      "file": "experiments/dx-fv/browser_eos_b4b/vendor/controlA/coolprop.js",
+      "sha256": "ebd02f5721abc10fee3e6560b0d96c1a17b8ae1f01bc144a4f9a1af8cf1e3217"
+    },
+    {
+      "file": "experiments/dx-fv/browser_eos_b4b/vendor/controlA/coolprop.wasm",
+      "sha256": "e74ac0694f6f85706d9b8dd71044074741bb05b4d14b7b0bc93b4aa7bb5b0078"
+    },
+    {
+      "file": "experiments/dx-fv/browser_eos_b4b/vendor/notices/Boost-1.0.txt",
+      "sha256": "c9bff75738922193e67fa726fa225535870d2aa1059f91452c411736284ad566"
+    },
+    {
+      "file": "experiments/dx-fv/browser_eos_b4b/vendor/notices/Eigen-7.2-MPL2.txt",
+      "sha256": "fab3dd6bdab226f1c08630b1dd917e11fcb4ec5e1e020e2c16f83a0a13863e85"
+    },
+    {
+      "file": "experiments/dx-fv/browser_eos_b4b/vendor/notices/Eigen-8.0-MPL2.txt",
+      "sha256": "66a3107d5ad6a058aab753eaac2047ccb2ed0e39465dd0fe5844da3e300d5172"
+    },
+    {
+      "file": "experiments/dx-fv/browser_eos_b4b/vendor/notices/IF97-MIT.txt",
+      "sha256": "e22c3d30ef8d88ab468d9ea20392ca1df22fa3fd0a92dc3e996d89cf3cfdbd03"
+    },
+    {
+      "file": "experiments/dx-fv/browser_eos_b4b/vendor/notices/LLVM-Apache.txt",
+      "sha256": "539dd7aed86e8a4f12cbdd0e6c50c189c7d74847e4fecc64ce2c6ee3a01da38b"
+    },
+    {
+      "file": "experiments/dx-fv/browser_eos_b4b/vendor/notices/REFPROP-headers.txt",
+      "sha256": "f21f633c596509e89b2baedfd657c8f1b8018954b06576590971684b210e91f8"
+    },
+    {
+      "file": "experiments/dx-fv/browser_eos_b4b/vendor/notices/compiler-rt-4.0.12.txt",
+      "sha256": "1a8f1058753f1ba890de984e48f0242a3a5c29a6a8f2ed9fd813f36985387e8d"
+    },
+    {
+      "file": "experiments/dx-fv/browser_eos_b4b/vendor/notices/emscripten-4.0.12.txt",
+      "sha256": "620a78084fc7ca97c0b5dea9abf891f3ffcadfdbf305276f099c9c4e12fc1d86"
+    },
+    {
+      "file": "experiments/dx-fv/browser_eos_b4b/vendor/notices/emscripten-MIT-NCSA.txt",
+      "sha256": "620a78084fc7ca97c0b5dea9abf891f3ffcadfdbf305276f099c9c4e12fc1d86"
+    },
+    {
+      "file": "experiments/dx-fv/browser_eos_b4b/vendor/notices/fmt-7.2.txt",
+      "sha256": "07580f2a3b35709ce703d523f447b242f6dfec7582a8c0df102c7fa2849375f8"
+    },
+    {
+      "file": "experiments/dx-fv/browser_eos_b4b/vendor/notices/fmt-8.0-MIT.txt",
+      "sha256": "07580f2a3b35709ce703d523f447b242f6dfec7582a8c0df102c7fa2849375f8"
+    },
+    {
+      "file": "experiments/dx-fv/browser_eos_b4b/vendor/notices/incbin-UNLICENSE.txt",
+      "sha256": "7e12e5df4bae12cb21581ba157ced20e1986a0508dd10d0e8a4ab9a4cf94e85c"
+    },
+    {
+      "file": "experiments/dx-fv/browser_eos_b4b/vendor/notices/libcxx-4.0.12.txt",
+      "sha256": "539dd7aed86e8a4f12cbdd0e6c50c189c7d74847e4fecc64ce2c6ee3a01da38b"
+    },
+    {
+      "file": "experiments/dx-fv/browser_eos_b4b/vendor/notices/libcxxabi-4.0.12.txt",
+      "sha256": "e2b35be49f7284a45b7baca8fc7b3ab7440e7902392b2528a457816b5bb2a15c"
+    },
+    {
+      "file": "experiments/dx-fv/browser_eos_b4b/vendor/notices/libunwind-4.0.12.txt",
+      "sha256": "b5efebcaca80879234098e52d1725e6d9eb8fb96a19fce625d39184b705f7b6d"
+    },
+    {
+      "file": "experiments/dx-fv/browser_eos_b4b/vendor/notices/miniz-MIT.txt",
+      "sha256": "6f20fa7672b00e2e975c291df737cf227addf3ad32e36fef3fe0f416e4664d3d"
+    },
+    {
+      "file": "experiments/dx-fv/browser_eos_b4b/vendor/notices/msgpack-Boost.txt",
+      "sha256": "664550b43996452a5a2c7471bb0ff77185a58c69ccafa60f983dc4c162e1ee22"
+    },
+    {
+      "file": "experiments/dx-fv/browser_eos_b4b/vendor/notices/musl-4.0.12.txt",
+      "sha256": "f9bc4423732350eb0b3f7ed7e91d530298476f8fec0c6c427a1c04ade22655af"
+    },
+    {
+      "file": "experiments/dx-fv/browser_eos_b4b/vendor/notices/musl-MIT.txt",
+      "sha256": "f9bc4423732350eb0b3f7ed7e91d530298476f8fec0c6c427a1c04ade22655af"
+    },
+    {
+      "file": "experiments/dx-fv/browser_eos_b4b/vendor/notices/nlohmann-json-MIT.txt",
+      "sha256": "46a65cffd1ea955132d95a8dd921640714a8d6b537d2e4e482d31145ae95b603"
+    },
+    {
+      "file": "experiments/dx-fv/browser_eos_b4b/vendor/notices/rapidjson-MIT.txt",
+      "sha256": "a140e5d46fe734a1c78f1a3c3ef207871dd75648be71fdda8e309b23ab8b1f32"
+    },
+    {
+      "file": "experiments/dx-fv/browser_eos_b4b/vendor/notices/valijson-BSD.txt",
+      "sha256": "61b5766db38eaa3f320c366357956d7743424bfbf90fd78f5943866ba237589e"
+    },
+    {
+      "file": "experiments/dx-fv/browser_eos_b4b/artifacts/libCoolProp-candidateB.so.xz",
+      "sha256": "fbd78a34c255b34d3d3f67f7769e22ed066c39490e8cfda0938ecfc7d9b3c485"
+    },
+    {
+      "file": "experiments/dx-fv/browser_eos_b4b/artifacts/libCoolProp-diagnostic-candidateB.so.xz",
+      "sha256": "c8065942a0e6ed6aea96f99fce68cf5c359ec8204c28e78b221fb05d38705526"
+    },
+    {
+      "file": "experiments/dx-fv/browser_eos_b4b/artifacts/libCoolProp-diagnostic-controlA.so.xz",
+      "sha256": "4defde4153d1574b37acc8f8db77372f8dbd7f43b28d3dcbb6d696cfd351d758"
+    },
+    {
+      "file": "experiments/dx-fv/browser_eos_b4b/artifacts/libCoolProp-rebuilt-controlA.so.xz",
+      "sha256": "e7f5d2a085a3791e2fe6f097a3b916eaad622232fd61d63536c0cbe3cd69913e"
+    },
+    {
+      "file": "experiments/dx-fv/browser_eos_b4c/vendor/LICENSE-CoolProp.txt",
+      "sha256": "9bf835333ef602af4cb19338b9f9d43671e174fa029b00280e9bdba6ea4719b2"
+    },
+    {
+      "file": "experiments/dx-fv/browser_eos_b4c/vendor/THIRD_PARTY-B1.md",
+      "sha256": "08d17dda6b0ef439e8e29c0680e95b1aff984f0ba93b22bb0de280b21a5769c3"
+    },
+    {
+      "file": "experiments/dx-fv/browser_eos_b4c/vendor/candidateB/coolprop.js",
+      "sha256": "ebd02f5721abc10fee3e6560b0d96c1a17b8ae1f01bc144a4f9a1af8cf1e3217"
+    },
+    {
+      "file": "experiments/dx-fv/browser_eos_b4c/vendor/candidateB/coolprop.wasm",
+      "sha256": "8c690c741d33d26f758a825ed5e4043af50cfc52a1e8587d8a5fb93732c026c5"
+    },
+    {
+      "file": "experiments/dx-fv/browser_eos_b4c/vendor/controlA/coolprop.js",
+      "sha256": "ebd02f5721abc10fee3e6560b0d96c1a17b8ae1f01bc144a4f9a1af8cf1e3217"
+    },
+    {
+      "file": "experiments/dx-fv/browser_eos_b4c/vendor/controlA/coolprop.wasm",
+      "sha256": "c8520e9c867e662c2731ed581c02d4157df2a5eed284be866ed3b45d29b2519d"
+    },
+    {
+      "file": "experiments/dx-fv/browser_eos_b4c/vendor/notices/Boost-1.0.txt",
+      "sha256": "c9bff75738922193e67fa726fa225535870d2aa1059f91452c411736284ad566"
+    },
+    {
+      "file": "experiments/dx-fv/browser_eos_b4c/vendor/notices/Eigen-7.2-MPL2.txt",
+      "sha256": "fab3dd6bdab226f1c08630b1dd917e11fcb4ec5e1e020e2c16f83a0a13863e85"
+    },
+    {
+      "file": "experiments/dx-fv/browser_eos_b4c/vendor/notices/Eigen-8.0-MPL2.txt",
+      "sha256": "66a3107d5ad6a058aab753eaac2047ccb2ed0e39465dd0fe5844da3e300d5172"
+    },
+    {
+      "file": "experiments/dx-fv/browser_eos_b4c/vendor/notices/IF97-MIT.txt",
+      "sha256": "e22c3d30ef8d88ab468d9ea20392ca1df22fa3fd0a92dc3e996d89cf3cfdbd03"
+    },
+    {
+      "file": "experiments/dx-fv/browser_eos_b4c/vendor/notices/LLVM-Apache.txt",
+      "sha256": "539dd7aed86e8a4f12cbdd0e6c50c189c7d74847e4fecc64ce2c6ee3a01da38b"
+    },
+    {
+      "file": "experiments/dx-fv/browser_eos_b4c/vendor/notices/REFPROP-headers.txt",
+      "sha256": "f21f633c596509e89b2baedfd657c8f1b8018954b06576590971684b210e91f8"
+    },
+    {
+      "file": "experiments/dx-fv/browser_eos_b4c/vendor/notices/compiler-rt-4.0.12.txt",
+      "sha256": "1a8f1058753f1ba890de984e48f0242a3a5c29a6a8f2ed9fd813f36985387e8d"
+    },
+    {
+      "file": "experiments/dx-fv/browser_eos_b4c/vendor/notices/emscripten-4.0.12.txt",
+      "sha256": "620a78084fc7ca97c0b5dea9abf891f3ffcadfdbf305276f099c9c4e12fc1d86"
+    },
+    {
+      "file": "experiments/dx-fv/browser_eos_b4c/vendor/notices/emscripten-MIT-NCSA.txt",
+      "sha256": "620a78084fc7ca97c0b5dea9abf891f3ffcadfdbf305276f099c9c4e12fc1d86"
+    },
+    {
+      "file": "experiments/dx-fv/browser_eos_b4c/vendor/notices/fmt-7.2.txt",
+      "sha256": "07580f2a3b35709ce703d523f447b242f6dfec7582a8c0df102c7fa2849375f8"
+    },
+    {
+      "file": "experiments/dx-fv/browser_eos_b4c/vendor/notices/fmt-8.0-MIT.txt",
+      "sha256": "07580f2a3b35709ce703d523f447b242f6dfec7582a8c0df102c7fa2849375f8"
+    },
+    {
+      "file": "experiments/dx-fv/browser_eos_b4c/vendor/notices/incbin-UNLICENSE.txt",
+      "sha256": "7e12e5df4bae12cb21581ba157ced20e1986a0508dd10d0e8a4ab9a4cf94e85c"
+    },
+    {
+      "file": "experiments/dx-fv/browser_eos_b4c/vendor/notices/libcxx-4.0.12.txt",
+      "sha256": "539dd7aed86e8a4f12cbdd0e6c50c189c7d74847e4fecc64ce2c6ee3a01da38b"
+    },
+    {
+      "file": "experiments/dx-fv/browser_eos_b4c/vendor/notices/libcxxabi-4.0.12.txt",
+      "sha256": "e2b35be49f7284a45b7baca8fc7b3ab7440e7902392b2528a457816b5bb2a15c"
+    },
+    {
+      "file": "experiments/dx-fv/browser_eos_b4c/vendor/notices/libunwind-4.0.12.txt",
+      "sha256": "b5efebcaca80879234098e52d1725e6d9eb8fb96a19fce625d39184b705f7b6d"
+    },
+    {
+      "file": "experiments/dx-fv/browser_eos_b4c/vendor/notices/miniz-MIT.txt",
+      "sha256": "6f20fa7672b00e2e975c291df737cf227addf3ad32e36fef3fe0f416e4664d3d"
+    },
+    {
+      "file": "experiments/dx-fv/browser_eos_b4c/vendor/notices/msgpack-Boost.txt",
+      "sha256": "664550b43996452a5a2c7471bb0ff77185a58c69ccafa60f983dc4c162e1ee22"
+    },
+    {
+      "file": "experiments/dx-fv/browser_eos_b4c/vendor/notices/musl-4.0.12.txt",
+      "sha256": "f9bc4423732350eb0b3f7ed7e91d530298476f8fec0c6c427a1c04ade22655af"
+    },
+    {
+      "file": "experiments/dx-fv/browser_eos_b4c/vendor/notices/musl-MIT.txt",
+      "sha256": "f9bc4423732350eb0b3f7ed7e91d530298476f8fec0c6c427a1c04ade22655af"
+    },
+    {
+      "file": "experiments/dx-fv/browser_eos_b4c/vendor/notices/nlohmann-json-MIT.txt",
+      "sha256": "46a65cffd1ea955132d95a8dd921640714a8d6b537d2e4e482d31145ae95b603"
+    },
+    {
+      "file": "experiments/dx-fv/browser_eos_b4c/vendor/notices/rapidjson-MIT.txt",
+      "sha256": "a140e5d46fe734a1c78f1a3c3ef207871dd75648be71fdda8e309b23ab8b1f32"
+    },
+    {
+      "file": "experiments/dx-fv/browser_eos_b4c/vendor/notices/valijson-BSD.txt",
+      "sha256": "61b5766db38eaa3f320c366357956d7743424bfbf90fd78f5943866ba237589e"
+    },
+    {
+      "file": "experiments/dx-fv/browser_eos_b4c/artifacts/libCoolProp-candidateB.so.xz",
+      "sha256": "4de2f0cb0e1e7851d6f96c635f5900ee779cd4384a7b3bcdb2595c3105648d47"
+    },
+    {
+      "file": "experiments/dx-fv/browser_eos_b4c/artifacts/libCoolProp-controlA.so.xz",
+      "sha256": "7e34553beab3ee8f2af83ee843b5c27af91163c3f93c76a36349a7bfed352929"
+    },
+    {
+      "file": "experiments/dx-fv/browser_eos_b4c/artifacts/libCoolProp-diagnostic-candidateB.so.xz",
+      "sha256": "fc6ccad95cf55038e6881e90eccaf4eb9316203cb13dd3ddde77ceb20c16e1b4"
+    }
+  ],
+  "acceptedA2": [
+    {
+      "file": "conservation.cjs",
+      "sha256": "4e8b9d335a4f74d0303c259cfaca209114431099736cea707acfccc102bad4bc"
+    },
+    {
+      "file": "coupled-fixtures.cjs",
+      "sha256": "0033737237d0e910fe555b7cde36e706c2c41c68564b041f56babfe9f18a1df9"
+    },
+    {
+      "file": "coupled-implicit.cjs",
+      "sha256": "68b2ce9d8a3c59898cd3143b092abc4b1bd8775a52ea246c817446259fec955c"
+    },
+    {
+      "file": "coupled-model.cjs",
+      "sha256": "929be63391a11efe3769f356e12e77afb62111672349069af7cf1562f42bf91e"
+    },
+    {
+      "file": "evaporator.cjs",
+      "sha256": "3a2f438fab4def08928dd273321a150326516090bb3c3862711d9549b09d072c"
+    },
+    {
+      "file": "hydraulics.cjs",
+      "sha256": "9bc1a6bce5dafbcff9c5ecf75beff956877fc9334da233b26aa00a4fadd288bf"
+    },
+    {
+      "file": "implicit.cjs",
+      "sha256": "5bd347cd831c9504ea28ed96ee196d76de416754171a6d3922ec8a6a9d522a7a"
+    },
+    {
+      "file": "spatial-fixtures.cjs",
+      "sha256": "952c66e126d4704f2a6a354f0de6b3bc210814bd26af6ac5503dd468e3cf451a"
+    },
+    {
+      "file": "thermal-geometry.cjs",
+      "sha256": "f7db3d7f656cf4008ae5c4c91291534c8477a020d885d1f67181b3e1bb58bc77"
+    },
+    {
+      "file": "thermal-network.cjs",
+      "sha256": "77e634aacc11521ea93423284afa80d5bc78564b33377ab3bd26d111979e6f63"
+    },
+    {
+      "file": "thermodynamics.cjs",
+      "sha256": "8d1404243a8e22c1dfafb06c9bbe4db48a2f8858dd0c575da729857f4e0020a0"
+    },
+    {
+      "file": "time-control.cjs",
+      "sha256": "3ef4055e659099fdca1e9ff49d5731d3a45d32ed823439e6837332236113da6d"
+    }
+  ],
+  "fluidSHA256": "4d451fadbe6eb1c2441169c599890cf7cd6edc818918f23959e2afb20a881e14",
+  "dependencyTrees": "Not downloaded: archived verified libraries used; inherited dependency manifests preserved, no new build",
+  "python": "3.12.14",
+  "allPass": true
+}
