@@ -1,0 +1,1674 @@
+[
+  {
+    "engine": "chromium",
+    "source": "browser_eos_b4c/evidence/chromium-candidateB-lifecycle.json",
+    "sourceSHA256": "4610b0709ad3f06acccd9f24a736a586af3f4b8b8d35e8b29edacb949e0974be",
+    "row": 1,
+    "sequence": 0,
+    "fixture": {
+      "id": "approach-30298.937123458254-liquid-0.001",
+      "mode": "PH",
+      "args": [
+        30298.937123458254,
+        98904.56398938334
+      ],
+      "region": "liquid",
+      "origin": "diagnostic native saturation enthalpy offset",
+      "saturationSource": {
+        "version": "8.0.0",
+        "hf": 98904.56498938335,
+        "hg": 1529444.8878290523,
+        "T": 218.26293725550534
+      },
+      "inputBits": [
+        "40dd96bbf9d4ab61",
+        "40f825890619bb4c"
+      ]
+    },
+    "request": {
+      "mode": "PT",
+      "args": [
+        30298.937123458254,
+        218.262937027359
+      ]
+    },
+    "inputBits": [
+      "40dd96bbf9d4ab61",
+      "406b4869fae9ad42"
+    ],
+    "phaseImposition": false,
+    "fresh": false,
+    "priorOperations": [
+      {
+        "mode": "PH",
+        "args": [
+          30298.937123458254,
+          98904.56398938334
+        ],
+        "state": {
+          "p": 30298.93712341066,
+          "T": 218.262937027359,
+          "h": 98904.56398938403,
+          "s": 478.2863058108587,
+          "rho": 707.4983265879034,
+          "u": 98861.73853526665,
+          "Q": -1
+        },
+        "independentDT": {
+          "p": 30298.93712341066,
+          "T": 218.262937027359,
+          "rho": 707.4983265879034,
+          "h": 98904.56398938403,
+          "u": 98861.73853526665,
+          "Q": -1
+        },
+        "derivatives": {
+          "arT": -6.72102829179326,
+          "arD": -0.32955026244868885,
+          "pRho": 2363751.0407608,
+          "hT": 6884.642921207743,
+          "uT": 2963.195566796793
+        },
+        "independentDerivatives": {
+          "arT": -6.72102829179326,
+          "arD": -0.32955026244868885,
+          "pRho": 2363751.0407608,
+          "hT": 6884.642921207743,
+          "uT": 2963.195566796793
+        },
+        "derivativeDifferences": {
+          "arT": 0,
+          "arD": 0,
+          "pRho": 0,
+          "hT": 0,
+          "uT": 0
+        },
+        "getterDifferences": {
+          "p": 0,
+          "h": 0,
+          "u": 0
+        },
+        "normalizedEnergyInconsistency": 0
+      }
+    ],
+    "historicalError": "RuntimeError: Aborted(Assertion failed: exception_header->referenceCount > 0, at: /emsdk/emscripten/system/lib/libcxxabi/src/cxa_exception_emscripten.cpp,149,__cxa_decrement_exception_refcount)",
+    "freshPTError": "CoolProp::CoolPropError<(CoolProp::CoolPropBaseError::ErrCode)4>: Saturation pressure [30298.9 Pa] corresponding to T [218.263 K] is within 1e-4 % of given p [30298.9 Pa]"
+  },
+  {
+    "engine": "chromium",
+    "source": "browser_eos_b4c/evidence/chromium-candidateB-lifecycle.json",
+    "sourceSHA256": "4610b0709ad3f06acccd9f24a736a586af3f4b8b8d35e8b29edacb949e0974be",
+    "row": 1,
+    "sequence": 1,
+    "fixture": {
+      "id": "approach-30298.937123458254-liquid-0.001",
+      "mode": "PH",
+      "args": [
+        30298.937123458254,
+        98904.56398938334
+      ],
+      "region": "liquid",
+      "origin": "diagnostic native saturation enthalpy offset",
+      "saturationSource": {
+        "version": "8.0.0",
+        "hf": 98904.56498938335,
+        "hg": 1529444.8878290523,
+        "T": 218.26293725550534
+      },
+      "inputBits": [
+        "40dd96bbf9d4ab61",
+        "40f825890619bb4c"
+      ]
+    },
+    "request": {
+      "mode": "PT",
+      "args": [
+        30298.937123458254,
+        218.262937027359
+      ]
+    },
+    "inputBits": [
+      "40dd96bbf9d4ab61",
+      "406b4869fae9ad42"
+    ],
+    "phaseImposition": false,
+    "fresh": false,
+    "priorOperations": [
+      {
+        "mode": "PH",
+        "args": [
+          30298.937123458254,
+          98904.56398938334
+        ],
+        "state": {
+          "p": 30298.93712341066,
+          "T": 218.262937027359,
+          "h": 98904.56398938403,
+          "s": 478.2863058108587,
+          "rho": 707.4983265879034,
+          "u": 98861.73853526665,
+          "Q": -1
+        },
+        "independentDT": {
+          "p": 30298.93712341066,
+          "T": 218.262937027359,
+          "rho": 707.4983265879034,
+          "h": 98904.56398938403,
+          "u": 98861.73853526665,
+          "Q": -1
+        },
+        "derivatives": {
+          "arT": -6.72102829179326,
+          "arD": -0.32955026244868885,
+          "pRho": 2363751.0407608,
+          "hT": 6884.642921207743,
+          "uT": 2963.195566796793
+        },
+        "independentDerivatives": {
+          "arT": -6.72102829179326,
+          "arD": -0.32955026244868885,
+          "pRho": 2363751.0407608,
+          "hT": 6884.642921207743,
+          "uT": 2963.195566796793
+        },
+        "derivativeDifferences": {
+          "arT": 0,
+          "arD": 0,
+          "pRho": 0,
+          "hT": 0,
+          "uT": 0
+        },
+        "getterDifferences": {
+          "p": 0,
+          "h": 0,
+          "u": 0
+        },
+        "normalizedEnergyInconsistency": 0
+      },
+      {
+        "mode": "PT",
+        "args": [
+          30298.937123458254,
+          218.262937027359
+        ],
+        "error": "RuntimeError: Aborted(Assertion failed: exception_header->referenceCount > 0, at: /emsdk/emscripten/system/lib/libcxxabi/src/cxa_exception_emscripten.cpp,149,__cxa_decrement_exception_refcount)"
+      }
+    ],
+    "historicalError": "RuntimeError: Aborted(Assertion failed: exception_header->referenceCount > 0, at: /emsdk/emscripten/system/lib/libcxxabi/src/cxa_exception_emscripten.cpp,149,__cxa_decrement_exception_refcount)",
+    "freshPTError": "CoolProp::CoolPropError<(CoolProp::CoolPropBaseError::ErrCode)4>: Saturation pressure [30298.9 Pa] corresponding to T [218.263 K] is within 1e-4 % of given p [30298.9 Pa]"
+  },
+  {
+    "engine": "chromium",
+    "source": "browser_eos_b4c/evidence/chromium-candidateB-lifecycle.json",
+    "sourceSHA256": "4610b0709ad3f06acccd9f24a736a586af3f4b8b8d35e8b29edacb949e0974be",
+    "row": 1,
+    "sequence": 5,
+    "fixture": {
+      "id": "approach-30298.937123458254-liquid-0.001",
+      "mode": "PH",
+      "args": [
+        30298.937123458254,
+        98904.56398938334
+      ],
+      "region": "liquid",
+      "origin": "diagnostic native saturation enthalpy offset",
+      "saturationSource": {
+        "version": "8.0.0",
+        "hf": 98904.56498938335,
+        "hg": 1529444.8878290523,
+        "T": 218.26293725550534
+      },
+      "inputBits": [
+        "40dd96bbf9d4ab61",
+        "40f825890619bb4c"
+      ]
+    },
+    "request": {
+      "mode": "PT",
+      "args": [
+        30298.937123458254,
+        218.262937027359
+      ]
+    },
+    "inputBits": [
+      "40dd96bbf9d4ab61",
+      "406b4869fae9ad42"
+    ],
+    "phaseImposition": false,
+    "fresh": false,
+    "priorOperations": [
+      {
+        "mode": "PH",
+        "args": [
+          30298.937123458254,
+          98904.56398938334
+        ],
+        "state": {
+          "p": 30298.93712341066,
+          "T": 218.262937027359,
+          "h": 98904.56398938403,
+          "s": 478.2863058108587,
+          "rho": 707.4983265879034,
+          "u": 98861.73853526665,
+          "Q": -1
+        },
+        "independentDT": {
+          "p": 30298.93712341066,
+          "T": 218.262937027359,
+          "rho": 707.4983265879034,
+          "h": 98904.56398938403,
+          "u": 98861.73853526665,
+          "Q": -1
+        },
+        "derivatives": {
+          "arT": -6.72102829179326,
+          "arD": -0.32955026244868885,
+          "pRho": 2363751.0407608,
+          "hT": 6884.642921207743,
+          "uT": 2963.195566796793
+        },
+        "independentDerivatives": {
+          "arT": -6.72102829179326,
+          "arD": -0.32955026244868885,
+          "pRho": 2363751.0407608,
+          "hT": 6884.642921207743,
+          "uT": 2963.195566796793
+        },
+        "derivativeDifferences": {
+          "arT": 0,
+          "arD": 0,
+          "pRho": 0,
+          "hT": 0,
+          "uT": 0
+        },
+        "getterDifferences": {
+          "p": 0,
+          "h": 0,
+          "u": 0
+        },
+        "normalizedEnergyInconsistency": 0
+      },
+      {
+        "mode": "PT",
+        "args": [
+          30298.937123458254,
+          218.262937027359
+        ],
+        "error": "RuntimeError: Aborted(Assertion failed: exception_header->referenceCount > 0, at: /emsdk/emscripten/system/lib/libcxxabi/src/cxa_exception_emscripten.cpp,149,__cxa_decrement_exception_refcount)"
+      },
+      {
+        "mode": "PT",
+        "args": [
+          30298.937123458254,
+          218.262937027359
+        ],
+        "error": "RuntimeError: Aborted(Assertion failed: exception_header->referenceCount > 0, at: /emsdk/emscripten/system/lib/libcxxabi/src/cxa_exception_emscripten.cpp,149,__cxa_decrement_exception_refcount)"
+      },
+      {
+        "mode": "PH",
+        "args": [
+          30298.937123458254,
+          98904.56398938334
+        ],
+        "state": {
+          "p": 30298.93712341066,
+          "T": 218.262937027359,
+          "h": 98904.56398938403,
+          "s": 478.2863058108587,
+          "rho": 707.4983265879034,
+          "u": 98861.73853526665,
+          "Q": -1
+        },
+        "independentDT": {
+          "p": 30298.93712341066,
+          "T": 218.262937027359,
+          "rho": 707.4983265879034,
+          "h": 98904.56398938403,
+          "u": 98861.73853526665,
+          "Q": -1
+        },
+        "derivatives": {
+          "arT": -6.72102829179326,
+          "arD": -0.32955026244868885,
+          "pRho": 2363751.0407608,
+          "hT": 6884.642921207743,
+          "uT": 2963.195566796793
+        },
+        "independentDerivatives": {
+          "arT": -6.72102829179326,
+          "arD": -0.32955026244868885,
+          "pRho": 2363751.0407608,
+          "hT": 6884.642921207743,
+          "uT": 2963.195566796793
+        },
+        "derivativeDifferences": {
+          "arT": 0,
+          "arD": 0,
+          "pRho": 0,
+          "hT": 0,
+          "uT": 0
+        },
+        "getterDifferences": {
+          "p": 0,
+          "h": 0,
+          "u": 0
+        },
+        "normalizedEnergyInconsistency": 0
+      },
+      {
+        "mode": "PH",
+        "args": [
+          30298.937123458254,
+          98904.56398938334
+        ],
+        "state": {
+          "p": 30298.93712341066,
+          "T": 218.262937027359,
+          "h": 98904.56398938403,
+          "s": 478.2863058108587,
+          "rho": 707.4983265879034,
+          "u": 98861.73853526665,
+          "Q": -1
+        },
+        "independentDT": {
+          "p": 30298.93712341066,
+          "T": 218.262937027359,
+          "rho": 707.4983265879034,
+          "h": 98904.56398938403,
+          "u": 98861.73853526665,
+          "Q": -1
+        },
+        "derivatives": {
+          "arT": -6.72102829179326,
+          "arD": -0.32955026244868885,
+          "pRho": 2363751.0407608,
+          "hT": 6884.642921207743,
+          "uT": 2963.195566796793
+        },
+        "independentDerivatives": {
+          "arT": -6.72102829179326,
+          "arD": -0.32955026244868885,
+          "pRho": 2363751.0407608,
+          "hT": 6884.642921207743,
+          "uT": 2963.195566796793
+        },
+        "derivativeDifferences": {
+          "arT": 0,
+          "arD": 0,
+          "pRho": 0,
+          "hT": 0,
+          "uT": 0
+        },
+        "getterDifferences": {
+          "p": 0,
+          "h": 0,
+          "u": 0
+        },
+        "normalizedEnergyInconsistency": 0
+      },
+      {
+        "mode": "DU",
+        "args": [
+          707.4983265879034,
+          98861.73853526665
+        ],
+        "state": {
+          "p": 30298.936692514493,
+          "T": 218.26293702731235,
+          "h": 98904.56398879319,
+          "s": 478.2863058109267,
+          "rho": 707.4983265877767,
+          "u": 98861.73853528197,
+          "Q": 0
+        },
+        "independentDT": {
+          "p": 30298.936694557073,
+          "T": 218.26293702731235,
+          "rho": 707.4983265877767,
+          "h": 98904.56398879319,
+          "u": 98861.73853528197,
+          "Q": -1
+        },
+        "equilibriumQualityValid": true
+      }
+    ],
+    "historicalError": "RuntimeError: Aborted(Assertion failed: exception_header->referenceCount > 0, at: /emsdk/emscripten/system/lib/libcxxabi/src/cxa_exception_emscripten.cpp,149,__cxa_decrement_exception_refcount)",
+    "freshPTError": "CoolProp::CoolPropError<(CoolProp::CoolPropBaseError::ErrCode)4>: Saturation pressure [30298.9 Pa] corresponding to T [218.263 K] is within 1e-4 % of given p [30298.9 Pa]"
+  },
+  {
+    "engine": "chromium",
+    "source": "browser_eos_b4c/evidence/chromium-candidateB-lifecycle.json",
+    "sourceSHA256": "4610b0709ad3f06acccd9f24a736a586af3f4b8b8d35e8b29edacb949e0974be",
+    "row": 26,
+    "sequence": 0,
+    "fixture": {
+      "id": "endpoint-350000.0-0",
+      "args": [
+        350000,
+        321086.8171927678
+      ],
+      "origin": "new diagnostic native PQ endpoint"
+    },
+    "request": {
+      "mode": "PT",
+      "args": [
+        350000,
+        267.8114351963941
+      ]
+    },
+    "inputBits": [
+      "41155cc000000000",
+      "4070bcfba378f560"
+    ],
+    "phaseImposition": false,
+    "fresh": false,
+    "priorOperations": [
+      {
+        "mode": "PH",
+        "args": [
+          350000,
+          321086.8171927678
+        ],
+        "state": {
+          "p": 350000.00000026874,
+          "T": 267.8114351963941,
+          "h": 321086.8171927674,
+          "s": 1393.0403381467395,
+          "rho": 645.834820798453,
+          "u": 320544.8829570637,
+          "Q": -1
+        },
+        "independentDT": {
+          "p": 350000.0000000003,
+          "T": 267.8114351963941,
+          "rho": 645.834820798453,
+          "h": 321086.8171927681,
+          "u": 320544.88295706315,
+          "Q": 2.2771399009046344e-18
+        },
+        "derivatives": {
+          "arT": -5.9825177589010305,
+          "arD": -0.3596634968446639,
+          "pRho": 1495842.2241639888,
+          "hT": 5960.163850499562,
+          "uT": 2844.967743870532
+        },
+        "independentDerivatives": {
+          "arT": -5.9825177589010305,
+          "arD": -0.3596634968446639,
+          "pRho": 1495842.2241639888,
+          "hT": 5960.163850499562,
+          "uT": 2844.967743870532
+        },
+        "derivativeDifferences": {
+          "arT": 0,
+          "arD": 0,
+          "pRho": 0,
+          "hT": 0,
+          "uT": 0
+        },
+        "getterDifferences": {
+          "p": 2.684537321329117e-07,
+          "h": -6.984919309616089e-10,
+          "u": 5.238689482212067e-10
+        },
+        "normalizedEnergyInconsistency": 1.634307630770627e-15
+      }
+    ],
+    "historicalError": "RuntimeError: Aborted(Assertion failed: exception_header->referenceCount > 0, at: /emsdk/emscripten/system/lib/libcxxabi/src/cxa_exception_emscripten.cpp,149,__cxa_decrement_exception_refcount)",
+    "freshPTError": "CoolProp::CoolPropError<(CoolProp::CoolPropBaseError::ErrCode)4>: Saturation pressure [350000 Pa] corresponding to T [267.811 K] is within 1e-4 % of given p [350000 Pa]"
+  },
+  {
+    "engine": "chromium",
+    "source": "browser_eos_b4c/evidence/chromium-candidateB-lifecycle.json",
+    "sourceSHA256": "4610b0709ad3f06acccd9f24a736a586af3f4b8b8d35e8b29edacb949e0974be",
+    "row": 26,
+    "sequence": 1,
+    "fixture": {
+      "id": "endpoint-350000.0-0",
+      "args": [
+        350000,
+        321086.8171927678
+      ],
+      "origin": "new diagnostic native PQ endpoint"
+    },
+    "request": {
+      "mode": "PT",
+      "args": [
+        350000,
+        267.8114351963941
+      ]
+    },
+    "inputBits": [
+      "41155cc000000000",
+      "4070bcfba378f560"
+    ],
+    "phaseImposition": false,
+    "fresh": false,
+    "priorOperations": [
+      {
+        "mode": "PH",
+        "args": [
+          350000,
+          321086.8171927678
+        ],
+        "state": {
+          "p": 350000.00000026874,
+          "T": 267.8114351963941,
+          "h": 321086.8171927674,
+          "s": 1393.0403381467395,
+          "rho": 645.834820798453,
+          "u": 320544.8829570637,
+          "Q": -1
+        },
+        "independentDT": {
+          "p": 350000.0000000003,
+          "T": 267.8114351963941,
+          "rho": 645.834820798453,
+          "h": 321086.8171927681,
+          "u": 320544.88295706315,
+          "Q": 2.2771399009046344e-18
+        },
+        "derivatives": {
+          "arT": -5.9825177589010305,
+          "arD": -0.3596634968446639,
+          "pRho": 1495842.2241639888,
+          "hT": 5960.163850499562,
+          "uT": 2844.967743870532
+        },
+        "independentDerivatives": {
+          "arT": -5.9825177589010305,
+          "arD": -0.3596634968446639,
+          "pRho": 1495842.2241639888,
+          "hT": 5960.163850499562,
+          "uT": 2844.967743870532
+        },
+        "derivativeDifferences": {
+          "arT": 0,
+          "arD": 0,
+          "pRho": 0,
+          "hT": 0,
+          "uT": 0
+        },
+        "getterDifferences": {
+          "p": 2.684537321329117e-07,
+          "h": -6.984919309616089e-10,
+          "u": 5.238689482212067e-10
+        },
+        "normalizedEnergyInconsistency": 1.634307630770627e-15
+      },
+      {
+        "mode": "PT",
+        "args": [
+          350000,
+          267.8114351963941
+        ],
+        "error": "RuntimeError: Aborted(Assertion failed: exception_header->referenceCount > 0, at: /emsdk/emscripten/system/lib/libcxxabi/src/cxa_exception_emscripten.cpp,149,__cxa_decrement_exception_refcount)"
+      }
+    ],
+    "historicalError": "RuntimeError: Aborted(Assertion failed: exception_header->referenceCount > 0, at: /emsdk/emscripten/system/lib/libcxxabi/src/cxa_exception_emscripten.cpp,149,__cxa_decrement_exception_refcount)",
+    "freshPTError": "CoolProp::CoolPropError<(CoolProp::CoolPropBaseError::ErrCode)4>: Saturation pressure [350000 Pa] corresponding to T [267.811 K] is within 1e-4 % of given p [350000 Pa]"
+  },
+  {
+    "engine": "chromium",
+    "source": "browser_eos_b4c/evidence/chromium-candidateB-lifecycle.json",
+    "sourceSHA256": "4610b0709ad3f06acccd9f24a736a586af3f4b8b8d35e8b29edacb949e0974be",
+    "row": 26,
+    "sequence": 5,
+    "fixture": {
+      "id": "endpoint-350000.0-0",
+      "args": [
+        350000,
+        321086.8171927678
+      ],
+      "origin": "new diagnostic native PQ endpoint"
+    },
+    "request": {
+      "mode": "PT",
+      "args": [
+        350000,
+        267.8114351963941
+      ]
+    },
+    "inputBits": [
+      "41155cc000000000",
+      "4070bcfba378f560"
+    ],
+    "phaseImposition": false,
+    "fresh": false,
+    "priorOperations": [
+      {
+        "mode": "PH",
+        "args": [
+          350000,
+          321086.8171927678
+        ],
+        "state": {
+          "p": 350000.00000026874,
+          "T": 267.8114351963941,
+          "h": 321086.8171927674,
+          "s": 1393.0403381467395,
+          "rho": 645.834820798453,
+          "u": 320544.8829570637,
+          "Q": -1
+        },
+        "independentDT": {
+          "p": 350000.0000000003,
+          "T": 267.8114351963941,
+          "rho": 645.834820798453,
+          "h": 321086.8171927681,
+          "u": 320544.88295706315,
+          "Q": 2.2771399009046344e-18
+        },
+        "derivatives": {
+          "arT": -5.9825177589010305,
+          "arD": -0.3596634968446639,
+          "pRho": 1495842.2241639888,
+          "hT": 5960.163850499562,
+          "uT": 2844.967743870532
+        },
+        "independentDerivatives": {
+          "arT": -5.9825177589010305,
+          "arD": -0.3596634968446639,
+          "pRho": 1495842.2241639888,
+          "hT": 5960.163850499562,
+          "uT": 2844.967743870532
+        },
+        "derivativeDifferences": {
+          "arT": 0,
+          "arD": 0,
+          "pRho": 0,
+          "hT": 0,
+          "uT": 0
+        },
+        "getterDifferences": {
+          "p": 2.684537321329117e-07,
+          "h": -6.984919309616089e-10,
+          "u": 5.238689482212067e-10
+        },
+        "normalizedEnergyInconsistency": 1.634307630770627e-15
+      },
+      {
+        "mode": "PT",
+        "args": [
+          350000,
+          267.8114351963941
+        ],
+        "error": "RuntimeError: Aborted(Assertion failed: exception_header->referenceCount > 0, at: /emsdk/emscripten/system/lib/libcxxabi/src/cxa_exception_emscripten.cpp,149,__cxa_decrement_exception_refcount)"
+      },
+      {
+        "mode": "PT",
+        "args": [
+          350000,
+          267.8114351963941
+        ],
+        "error": "RuntimeError: Aborted(Assertion failed: exception_header->referenceCount > 0, at: /emsdk/emscripten/system/lib/libcxxabi/src/cxa_exception_emscripten.cpp,149,__cxa_decrement_exception_refcount)"
+      },
+      {
+        "mode": "PH",
+        "args": [
+          350000,
+          321086.8171927678
+        ],
+        "state": {
+          "p": 350000.00000026874,
+          "T": 267.8114351963941,
+          "h": 321086.8171927674,
+          "s": 1393.0403381467395,
+          "rho": 645.834820798453,
+          "u": 320544.8829570637,
+          "Q": -1
+        },
+        "independentDT": {
+          "p": 350000.0000000003,
+          "T": 267.8114351963941,
+          "rho": 645.834820798453,
+          "h": 321086.8171927681,
+          "u": 320544.88295706315,
+          "Q": 2.2771399009046344e-18
+        },
+        "derivatives": {
+          "arT": -5.9825177589010305,
+          "arD": -0.3596634968446639,
+          "pRho": 1495842.2241639888,
+          "hT": 5960.163850499562,
+          "uT": 2844.967743870532
+        },
+        "independentDerivatives": {
+          "arT": -5.9825177589010305,
+          "arD": -0.3596634968446639,
+          "pRho": 1495842.2241639888,
+          "hT": 5960.163850499562,
+          "uT": 2844.967743870532
+        },
+        "derivativeDifferences": {
+          "arT": 0,
+          "arD": 0,
+          "pRho": 0,
+          "hT": 0,
+          "uT": 0
+        },
+        "getterDifferences": {
+          "p": 2.684537321329117e-07,
+          "h": -6.984919309616089e-10,
+          "u": 5.238689482212067e-10
+        },
+        "normalizedEnergyInconsistency": 1.634307630770627e-15
+      },
+      {
+        "mode": "PH",
+        "args": [
+          350000,
+          321086.8171927678
+        ],
+        "state": {
+          "p": 350000.00000026874,
+          "T": 267.8114351963941,
+          "h": 321086.8171927674,
+          "s": 1393.0403381467395,
+          "rho": 645.834820798453,
+          "u": 320544.8829570637,
+          "Q": -1
+        },
+        "independentDT": {
+          "p": 350000.0000000003,
+          "T": 267.8114351963941,
+          "rho": 645.834820798453,
+          "h": 321086.8171927681,
+          "u": 320544.88295706315,
+          "Q": 2.2771399009046344e-18
+        },
+        "derivatives": {
+          "arT": -5.9825177589010305,
+          "arD": -0.3596634968446639,
+          "pRho": 1495842.2241639888,
+          "hT": 5960.163850499562,
+          "uT": 2844.967743870532
+        },
+        "independentDerivatives": {
+          "arT": -5.9825177589010305,
+          "arD": -0.3596634968446639,
+          "pRho": 1495842.2241639888,
+          "hT": 5960.163850499562,
+          "uT": 2844.967743870532
+        },
+        "derivativeDifferences": {
+          "arT": 0,
+          "arD": 0,
+          "pRho": 0,
+          "hT": 0,
+          "uT": 0
+        },
+        "getterDifferences": {
+          "p": 2.684537321329117e-07,
+          "h": -6.984919309616089e-10,
+          "u": 5.238689482212067e-10
+        },
+        "normalizedEnergyInconsistency": 1.634307630770627e-15
+      },
+      {
+        "mode": "DU",
+        "args": [
+          645.834820798453,
+          320544.8829570637
+        ],
+        "state": {
+          "p": 350000.00000000105,
+          "T": 267.81143519639414,
+          "h": 321086.81719276856,
+          "s": 1393.0403381467363,
+          "rho": 645.834820798453,
+          "u": 320544.8829570629,
+          "Q": 1.7078549256784796e-18
+        },
+        "independentDT": {
+          "p": 350000.00000000105,
+          "T": 267.81143519639414,
+          "rho": 645.834820798453,
+          "h": 321086.81719276856,
+          "u": 320544.8829570629,
+          "Q": 1.7078549256784796e-18
+        },
+        "equilibriumQualityValid": true
+      }
+    ],
+    "historicalError": "RuntimeError: Aborted(Assertion failed: exception_header->referenceCount > 0, at: /emsdk/emscripten/system/lib/libcxxabi/src/cxa_exception_emscripten.cpp,149,__cxa_decrement_exception_refcount)",
+    "freshPTError": "CoolProp::CoolPropError<(CoolProp::CoolPropBaseError::ErrCode)4>: Saturation pressure [350000 Pa] corresponding to T [267.811 K] is within 1e-4 % of given p [350000 Pa]"
+  },
+  {
+    "engine": "webkit",
+    "source": "browser_eos_b4c/evidence/webkit-candidateB-lifecycle.json",
+    "sourceSHA256": "4bc7a2ac30176dd2b17b76ceefee8e4df49e189b40793d4f3ce0ccdc88a49b0d",
+    "row": 1,
+    "sequence": 0,
+    "fixture": {
+      "id": "approach-30298.937123458254-liquid-0.001",
+      "mode": "PH",
+      "args": [
+        30298.937123458254,
+        98904.56398938334
+      ],
+      "region": "liquid",
+      "origin": "diagnostic native saturation enthalpy offset",
+      "saturationSource": {
+        "version": "8.0.0",
+        "hf": 98904.56498938335,
+        "hg": 1529444.8878290523,
+        "T": 218.26293725550534
+      },
+      "inputBits": [
+        "40dd96bbf9d4ab61",
+        "40f825890619bb4c"
+      ]
+    },
+    "request": {
+      "mode": "PT",
+      "args": [
+        30298.937123458254,
+        218.262937027359
+      ]
+    },
+    "inputBits": [
+      "40dd96bbf9d4ab61",
+      "406b4869fae9ad42"
+    ],
+    "phaseImposition": false,
+    "fresh": false,
+    "priorOperations": [
+      {
+        "mode": "PH",
+        "args": [
+          30298.937123458254,
+          98904.56398938334
+        ],
+        "state": {
+          "p": 30298.93712341066,
+          "T": 218.262937027359,
+          "h": 98904.56398938403,
+          "s": 478.2863058108587,
+          "rho": 707.4983265879034,
+          "u": 98861.73853526665,
+          "Q": -1
+        },
+        "independentDT": {
+          "p": 30298.93712341066,
+          "T": 218.262937027359,
+          "rho": 707.4983265879034,
+          "h": 98904.56398938403,
+          "u": 98861.73853526665,
+          "Q": -1
+        },
+        "derivatives": {
+          "arT": -6.72102829179326,
+          "arD": -0.32955026244868885,
+          "pRho": 2363751.0407608,
+          "hT": 6884.642921207743,
+          "uT": 2963.195566796793
+        },
+        "independentDerivatives": {
+          "arT": -6.72102829179326,
+          "arD": -0.32955026244868885,
+          "pRho": 2363751.0407608,
+          "hT": 6884.642921207743,
+          "uT": 2963.195566796793
+        },
+        "derivativeDifferences": {
+          "arT": 0,
+          "arD": 0,
+          "pRho": 0,
+          "hT": 0,
+          "uT": 0
+        },
+        "getterDifferences": {
+          "p": 0,
+          "h": 0,
+          "u": 0
+        },
+        "normalizedEnergyInconsistency": 0
+      }
+    ],
+    "historicalError": "RuntimeError: Aborted(Assertion failed: exception_header->referenceCount > 0, at: /emsdk/emscripten/system/lib/libcxxabi/src/cxa_exception_emscripten.cpp,149,__cxa_decrement_exception_refcount)",
+    "freshPTError": "CoolProp::CoolPropError<(CoolProp::CoolPropBaseError::ErrCode)4>: Saturation pressure [30298.9 Pa] corresponding to T [218.263 K] is within 1e-4 % of given p [30298.9 Pa]"
+  },
+  {
+    "engine": "webkit",
+    "source": "browser_eos_b4c/evidence/webkit-candidateB-lifecycle.json",
+    "sourceSHA256": "4bc7a2ac30176dd2b17b76ceefee8e4df49e189b40793d4f3ce0ccdc88a49b0d",
+    "row": 1,
+    "sequence": 1,
+    "fixture": {
+      "id": "approach-30298.937123458254-liquid-0.001",
+      "mode": "PH",
+      "args": [
+        30298.937123458254,
+        98904.56398938334
+      ],
+      "region": "liquid",
+      "origin": "diagnostic native saturation enthalpy offset",
+      "saturationSource": {
+        "version": "8.0.0",
+        "hf": 98904.56498938335,
+        "hg": 1529444.8878290523,
+        "T": 218.26293725550534
+      },
+      "inputBits": [
+        "40dd96bbf9d4ab61",
+        "40f825890619bb4c"
+      ]
+    },
+    "request": {
+      "mode": "PT",
+      "args": [
+        30298.937123458254,
+        218.262937027359
+      ]
+    },
+    "inputBits": [
+      "40dd96bbf9d4ab61",
+      "406b4869fae9ad42"
+    ],
+    "phaseImposition": false,
+    "fresh": false,
+    "priorOperations": [
+      {
+        "mode": "PH",
+        "args": [
+          30298.937123458254,
+          98904.56398938334
+        ],
+        "state": {
+          "p": 30298.93712341066,
+          "T": 218.262937027359,
+          "h": 98904.56398938403,
+          "s": 478.2863058108587,
+          "rho": 707.4983265879034,
+          "u": 98861.73853526665,
+          "Q": -1
+        },
+        "independentDT": {
+          "p": 30298.93712341066,
+          "T": 218.262937027359,
+          "rho": 707.4983265879034,
+          "h": 98904.56398938403,
+          "u": 98861.73853526665,
+          "Q": -1
+        },
+        "derivatives": {
+          "arT": -6.72102829179326,
+          "arD": -0.32955026244868885,
+          "pRho": 2363751.0407608,
+          "hT": 6884.642921207743,
+          "uT": 2963.195566796793
+        },
+        "independentDerivatives": {
+          "arT": -6.72102829179326,
+          "arD": -0.32955026244868885,
+          "pRho": 2363751.0407608,
+          "hT": 6884.642921207743,
+          "uT": 2963.195566796793
+        },
+        "derivativeDifferences": {
+          "arT": 0,
+          "arD": 0,
+          "pRho": 0,
+          "hT": 0,
+          "uT": 0
+        },
+        "getterDifferences": {
+          "p": 0,
+          "h": 0,
+          "u": 0
+        },
+        "normalizedEnergyInconsistency": 0
+      },
+      {
+        "mode": "PT",
+        "args": [
+          30298.937123458254,
+          218.262937027359
+        ],
+        "error": "RuntimeError: Aborted(Assertion failed: exception_header->referenceCount > 0, at: /emsdk/emscripten/system/lib/libcxxabi/src/cxa_exception_emscripten.cpp,149,__cxa_decrement_exception_refcount)"
+      }
+    ],
+    "historicalError": "RuntimeError: Aborted(Assertion failed: exception_header->referenceCount > 0, at: /emsdk/emscripten/system/lib/libcxxabi/src/cxa_exception_emscripten.cpp,149,__cxa_decrement_exception_refcount)",
+    "freshPTError": "CoolProp::CoolPropError<(CoolProp::CoolPropBaseError::ErrCode)4>: Saturation pressure [30298.9 Pa] corresponding to T [218.263 K] is within 1e-4 % of given p [30298.9 Pa]"
+  },
+  {
+    "engine": "webkit",
+    "source": "browser_eos_b4c/evidence/webkit-candidateB-lifecycle.json",
+    "sourceSHA256": "4bc7a2ac30176dd2b17b76ceefee8e4df49e189b40793d4f3ce0ccdc88a49b0d",
+    "row": 1,
+    "sequence": 5,
+    "fixture": {
+      "id": "approach-30298.937123458254-liquid-0.001",
+      "mode": "PH",
+      "args": [
+        30298.937123458254,
+        98904.56398938334
+      ],
+      "region": "liquid",
+      "origin": "diagnostic native saturation enthalpy offset",
+      "saturationSource": {
+        "version": "8.0.0",
+        "hf": 98904.56498938335,
+        "hg": 1529444.8878290523,
+        "T": 218.26293725550534
+      },
+      "inputBits": [
+        "40dd96bbf9d4ab61",
+        "40f825890619bb4c"
+      ]
+    },
+    "request": {
+      "mode": "PT",
+      "args": [
+        30298.937123458254,
+        218.262937027359
+      ]
+    },
+    "inputBits": [
+      "40dd96bbf9d4ab61",
+      "406b4869fae9ad42"
+    ],
+    "phaseImposition": false,
+    "fresh": false,
+    "priorOperations": [
+      {
+        "mode": "PH",
+        "args": [
+          30298.937123458254,
+          98904.56398938334
+        ],
+        "state": {
+          "p": 30298.93712341066,
+          "T": 218.262937027359,
+          "h": 98904.56398938403,
+          "s": 478.2863058108587,
+          "rho": 707.4983265879034,
+          "u": 98861.73853526665,
+          "Q": -1
+        },
+        "independentDT": {
+          "p": 30298.93712341066,
+          "T": 218.262937027359,
+          "rho": 707.4983265879034,
+          "h": 98904.56398938403,
+          "u": 98861.73853526665,
+          "Q": -1
+        },
+        "derivatives": {
+          "arT": -6.72102829179326,
+          "arD": -0.32955026244868885,
+          "pRho": 2363751.0407608,
+          "hT": 6884.642921207743,
+          "uT": 2963.195566796793
+        },
+        "independentDerivatives": {
+          "arT": -6.72102829179326,
+          "arD": -0.32955026244868885,
+          "pRho": 2363751.0407608,
+          "hT": 6884.642921207743,
+          "uT": 2963.195566796793
+        },
+        "derivativeDifferences": {
+          "arT": 0,
+          "arD": 0,
+          "pRho": 0,
+          "hT": 0,
+          "uT": 0
+        },
+        "getterDifferences": {
+          "p": 0,
+          "h": 0,
+          "u": 0
+        },
+        "normalizedEnergyInconsistency": 0
+      },
+      {
+        "mode": "PT",
+        "args": [
+          30298.937123458254,
+          218.262937027359
+        ],
+        "error": "RuntimeError: Aborted(Assertion failed: exception_header->referenceCount > 0, at: /emsdk/emscripten/system/lib/libcxxabi/src/cxa_exception_emscripten.cpp,149,__cxa_decrement_exception_refcount)"
+      },
+      {
+        "mode": "PT",
+        "args": [
+          30298.937123458254,
+          218.262937027359
+        ],
+        "error": "RuntimeError: Aborted(Assertion failed: exception_header->referenceCount > 0, at: /emsdk/emscripten/system/lib/libcxxabi/src/cxa_exception_emscripten.cpp,149,__cxa_decrement_exception_refcount)"
+      },
+      {
+        "mode": "PH",
+        "args": [
+          30298.937123458254,
+          98904.56398938334
+        ],
+        "state": {
+          "p": 30298.93712341066,
+          "T": 218.262937027359,
+          "h": 98904.56398938403,
+          "s": 478.2863058108587,
+          "rho": 707.4983265879034,
+          "u": 98861.73853526665,
+          "Q": -1
+        },
+        "independentDT": {
+          "p": 30298.93712341066,
+          "T": 218.262937027359,
+          "rho": 707.4983265879034,
+          "h": 98904.56398938403,
+          "u": 98861.73853526665,
+          "Q": -1
+        },
+        "derivatives": {
+          "arT": -6.72102829179326,
+          "arD": -0.32955026244868885,
+          "pRho": 2363751.0407608,
+          "hT": 6884.642921207743,
+          "uT": 2963.195566796793
+        },
+        "independentDerivatives": {
+          "arT": -6.72102829179326,
+          "arD": -0.32955026244868885,
+          "pRho": 2363751.0407608,
+          "hT": 6884.642921207743,
+          "uT": 2963.195566796793
+        },
+        "derivativeDifferences": {
+          "arT": 0,
+          "arD": 0,
+          "pRho": 0,
+          "hT": 0,
+          "uT": 0
+        },
+        "getterDifferences": {
+          "p": 0,
+          "h": 0,
+          "u": 0
+        },
+        "normalizedEnergyInconsistency": 0
+      },
+      {
+        "mode": "PH",
+        "args": [
+          30298.937123458254,
+          98904.56398938334
+        ],
+        "state": {
+          "p": 30298.93712341066,
+          "T": 218.262937027359,
+          "h": 98904.56398938403,
+          "s": 478.2863058108587,
+          "rho": 707.4983265879034,
+          "u": 98861.73853526665,
+          "Q": -1
+        },
+        "independentDT": {
+          "p": 30298.93712341066,
+          "T": 218.262937027359,
+          "rho": 707.4983265879034,
+          "h": 98904.56398938403,
+          "u": 98861.73853526665,
+          "Q": -1
+        },
+        "derivatives": {
+          "arT": -6.72102829179326,
+          "arD": -0.32955026244868885,
+          "pRho": 2363751.0407608,
+          "hT": 6884.642921207743,
+          "uT": 2963.195566796793
+        },
+        "independentDerivatives": {
+          "arT": -6.72102829179326,
+          "arD": -0.32955026244868885,
+          "pRho": 2363751.0407608,
+          "hT": 6884.642921207743,
+          "uT": 2963.195566796793
+        },
+        "derivativeDifferences": {
+          "arT": 0,
+          "arD": 0,
+          "pRho": 0,
+          "hT": 0,
+          "uT": 0
+        },
+        "getterDifferences": {
+          "p": 0,
+          "h": 0,
+          "u": 0
+        },
+        "normalizedEnergyInconsistency": 0
+      },
+      {
+        "mode": "DU",
+        "args": [
+          707.4983265879034,
+          98861.73853526665
+        ],
+        "state": {
+          "p": 30298.936692514493,
+          "T": 218.26293702731235,
+          "h": 98904.56398879319,
+          "s": 478.2863058109267,
+          "rho": 707.4983265877767,
+          "u": 98861.73853528197,
+          "Q": 0
+        },
+        "independentDT": {
+          "p": 30298.936694557073,
+          "T": 218.26293702731235,
+          "rho": 707.4983265877767,
+          "h": 98904.56398879319,
+          "u": 98861.73853528197,
+          "Q": -1
+        },
+        "equilibriumQualityValid": true
+      }
+    ],
+    "historicalError": "RuntimeError: Aborted(Assertion failed: exception_header->referenceCount > 0, at: /emsdk/emscripten/system/lib/libcxxabi/src/cxa_exception_emscripten.cpp,149,__cxa_decrement_exception_refcount)",
+    "freshPTError": "CoolProp::CoolPropError<(CoolProp::CoolPropBaseError::ErrCode)4>: Saturation pressure [30298.9 Pa] corresponding to T [218.263 K] is within 1e-4 % of given p [30298.9 Pa]"
+  },
+  {
+    "engine": "webkit",
+    "source": "browser_eos_b4c/evidence/webkit-candidateB-lifecycle.json",
+    "sourceSHA256": "4bc7a2ac30176dd2b17b76ceefee8e4df49e189b40793d4f3ce0ccdc88a49b0d",
+    "row": 26,
+    "sequence": 0,
+    "fixture": {
+      "id": "endpoint-350000.0-0",
+      "args": [
+        350000,
+        321086.8171927678
+      ],
+      "origin": "new diagnostic native PQ endpoint"
+    },
+    "request": {
+      "mode": "PT",
+      "args": [
+        350000,
+        267.8114351963941
+      ]
+    },
+    "inputBits": [
+      "41155cc000000000",
+      "4070bcfba378f560"
+    ],
+    "phaseImposition": false,
+    "fresh": false,
+    "priorOperations": [
+      {
+        "mode": "PH",
+        "args": [
+          350000,
+          321086.8171927678
+        ],
+        "state": {
+          "p": 350000.00000026874,
+          "T": 267.8114351963941,
+          "h": 321086.8171927674,
+          "s": 1393.0403381467395,
+          "rho": 645.834820798453,
+          "u": 320544.8829570637,
+          "Q": -1
+        },
+        "independentDT": {
+          "p": 350000.0000000003,
+          "T": 267.8114351963941,
+          "rho": 645.834820798453,
+          "h": 321086.8171927681,
+          "u": 320544.88295706315,
+          "Q": 2.2771399009046344e-18
+        },
+        "derivatives": {
+          "arT": -5.9825177589010305,
+          "arD": -0.3596634968446639,
+          "pRho": 1495842.2241639888,
+          "hT": 5960.163850499562,
+          "uT": 2844.967743870532
+        },
+        "independentDerivatives": {
+          "arT": -5.9825177589010305,
+          "arD": -0.3596634968446639,
+          "pRho": 1495842.2241639888,
+          "hT": 5960.163850499562,
+          "uT": 2844.967743870532
+        },
+        "derivativeDifferences": {
+          "arT": 0,
+          "arD": 0,
+          "pRho": 0,
+          "hT": 0,
+          "uT": 0
+        },
+        "getterDifferences": {
+          "p": 2.684537321329117e-07,
+          "h": -6.984919309616089e-10,
+          "u": 5.238689482212067e-10
+        },
+        "normalizedEnergyInconsistency": 1.634307630770627e-15
+      }
+    ],
+    "historicalError": "RuntimeError: Aborted(Assertion failed: exception_header->referenceCount > 0, at: /emsdk/emscripten/system/lib/libcxxabi/src/cxa_exception_emscripten.cpp,149,__cxa_decrement_exception_refcount)",
+    "freshPTError": "CoolProp::CoolPropError<(CoolProp::CoolPropBaseError::ErrCode)4>: Saturation pressure [350000 Pa] corresponding to T [267.811 K] is within 1e-4 % of given p [350000 Pa]"
+  },
+  {
+    "engine": "webkit",
+    "source": "browser_eos_b4c/evidence/webkit-candidateB-lifecycle.json",
+    "sourceSHA256": "4bc7a2ac30176dd2b17b76ceefee8e4df49e189b40793d4f3ce0ccdc88a49b0d",
+    "row": 26,
+    "sequence": 1,
+    "fixture": {
+      "id": "endpoint-350000.0-0",
+      "args": [
+        350000,
+        321086.8171927678
+      ],
+      "origin": "new diagnostic native PQ endpoint"
+    },
+    "request": {
+      "mode": "PT",
+      "args": [
+        350000,
+        267.8114351963941
+      ]
+    },
+    "inputBits": [
+      "41155cc000000000",
+      "4070bcfba378f560"
+    ],
+    "phaseImposition": false,
+    "fresh": false,
+    "priorOperations": [
+      {
+        "mode": "PH",
+        "args": [
+          350000,
+          321086.8171927678
+        ],
+        "state": {
+          "p": 350000.00000026874,
+          "T": 267.8114351963941,
+          "h": 321086.8171927674,
+          "s": 1393.0403381467395,
+          "rho": 645.834820798453,
+          "u": 320544.8829570637,
+          "Q": -1
+        },
+        "independentDT": {
+          "p": 350000.0000000003,
+          "T": 267.8114351963941,
+          "rho": 645.834820798453,
+          "h": 321086.8171927681,
+          "u": 320544.88295706315,
+          "Q": 2.2771399009046344e-18
+        },
+        "derivatives": {
+          "arT": -5.9825177589010305,
+          "arD": -0.3596634968446639,
+          "pRho": 1495842.2241639888,
+          "hT": 5960.163850499562,
+          "uT": 2844.967743870532
+        },
+        "independentDerivatives": {
+          "arT": -5.9825177589010305,
+          "arD": -0.3596634968446639,
+          "pRho": 1495842.2241639888,
+          "hT": 5960.163850499562,
+          "uT": 2844.967743870532
+        },
+        "derivativeDifferences": {
+          "arT": 0,
+          "arD": 0,
+          "pRho": 0,
+          "hT": 0,
+          "uT": 0
+        },
+        "getterDifferences": {
+          "p": 2.684537321329117e-07,
+          "h": -6.984919309616089e-10,
+          "u": 5.238689482212067e-10
+        },
+        "normalizedEnergyInconsistency": 1.634307630770627e-15
+      },
+      {
+        "mode": "PT",
+        "args": [
+          350000,
+          267.8114351963941
+        ],
+        "error": "RuntimeError: Aborted(Assertion failed: exception_header->referenceCount > 0, at: /emsdk/emscripten/system/lib/libcxxabi/src/cxa_exception_emscripten.cpp,149,__cxa_decrement_exception_refcount)"
+      }
+    ],
+    "historicalError": "RuntimeError: Aborted(Assertion failed: exception_header->referenceCount > 0, at: /emsdk/emscripten/system/lib/libcxxabi/src/cxa_exception_emscripten.cpp,149,__cxa_decrement_exception_refcount)",
+    "freshPTError": "CoolProp::CoolPropError<(CoolProp::CoolPropBaseError::ErrCode)4>: Saturation pressure [350000 Pa] corresponding to T [267.811 K] is within 1e-4 % of given p [350000 Pa]"
+  },
+  {
+    "engine": "webkit",
+    "source": "browser_eos_b4c/evidence/webkit-candidateB-lifecycle.json",
+    "sourceSHA256": "4bc7a2ac30176dd2b17b76ceefee8e4df49e189b40793d4f3ce0ccdc88a49b0d",
+    "row": 26,
+    "sequence": 5,
+    "fixture": {
+      "id": "endpoint-350000.0-0",
+      "args": [
+        350000,
+        321086.8171927678
+      ],
+      "origin": "new diagnostic native PQ endpoint"
+    },
+    "request": {
+      "mode": "PT",
+      "args": [
+        350000,
+        267.8114351963941
+      ]
+    },
+    "inputBits": [
+      "41155cc000000000",
+      "4070bcfba378f560"
+    ],
+    "phaseImposition": false,
+    "fresh": false,
+    "priorOperations": [
+      {
+        "mode": "PH",
+        "args": [
+          350000,
+          321086.8171927678
+        ],
+        "state": {
+          "p": 350000.00000026874,
+          "T": 267.8114351963941,
+          "h": 321086.8171927674,
+          "s": 1393.0403381467395,
+          "rho": 645.834820798453,
+          "u": 320544.8829570637,
+          "Q": -1
+        },
+        "independentDT": {
+          "p": 350000.0000000003,
+          "T": 267.8114351963941,
+          "rho": 645.834820798453,
+          "h": 321086.8171927681,
+          "u": 320544.88295706315,
+          "Q": 2.2771399009046344e-18
+        },
+        "derivatives": {
+          "arT": -5.9825177589010305,
+          "arD": -0.3596634968446639,
+          "pRho": 1495842.2241639888,
+          "hT": 5960.163850499562,
+          "uT": 2844.967743870532
+        },
+        "independentDerivatives": {
+          "arT": -5.9825177589010305,
+          "arD": -0.3596634968446639,
+          "pRho": 1495842.2241639888,
+          "hT": 5960.163850499562,
+          "uT": 2844.967743870532
+        },
+        "derivativeDifferences": {
+          "arT": 0,
+          "arD": 0,
+          "pRho": 0,
+          "hT": 0,
+          "uT": 0
+        },
+        "getterDifferences": {
+          "p": 2.684537321329117e-07,
+          "h": -6.984919309616089e-10,
+          "u": 5.238689482212067e-10
+        },
+        "normalizedEnergyInconsistency": 1.634307630770627e-15
+      },
+      {
+        "mode": "PT",
+        "args": [
+          350000,
+          267.8114351963941
+        ],
+        "error": "RuntimeError: Aborted(Assertion failed: exception_header->referenceCount > 0, at: /emsdk/emscripten/system/lib/libcxxabi/src/cxa_exception_emscripten.cpp,149,__cxa_decrement_exception_refcount)"
+      },
+      {
+        "mode": "PT",
+        "args": [
+          350000,
+          267.8114351963941
+        ],
+        "error": "RuntimeError: Aborted(Assertion failed: exception_header->referenceCount > 0, at: /emsdk/emscripten/system/lib/libcxxabi/src/cxa_exception_emscripten.cpp,149,__cxa_decrement_exception_refcount)"
+      },
+      {
+        "mode": "PH",
+        "args": [
+          350000,
+          321086.8171927678
+        ],
+        "state": {
+          "p": 350000.00000026874,
+          "T": 267.8114351963941,
+          "h": 321086.8171927674,
+          "s": 1393.0403381467395,
+          "rho": 645.834820798453,
+          "u": 320544.8829570637,
+          "Q": -1
+        },
+        "independentDT": {
+          "p": 350000.0000000003,
+          "T": 267.8114351963941,
+          "rho": 645.834820798453,
+          "h": 321086.8171927681,
+          "u": 320544.88295706315,
+          "Q": 2.2771399009046344e-18
+        },
+        "derivatives": {
+          "arT": -5.9825177589010305,
+          "arD": -0.3596634968446639,
+          "pRho": 1495842.2241639888,
+          "hT": 5960.163850499562,
+          "uT": 2844.967743870532
+        },
+        "independentDerivatives": {
+          "arT": -5.9825177589010305,
+          "arD": -0.3596634968446639,
+          "pRho": 1495842.2241639888,
+          "hT": 5960.163850499562,
+          "uT": 2844.967743870532
+        },
+        "derivativeDifferences": {
+          "arT": 0,
+          "arD": 0,
+          "pRho": 0,
+          "hT": 0,
+          "uT": 0
+        },
+        "getterDifferences": {
+          "p": 2.684537321329117e-07,
+          "h": -6.984919309616089e-10,
+          "u": 5.238689482212067e-10
+        },
+        "normalizedEnergyInconsistency": 1.634307630770627e-15
+      },
+      {
+        "mode": "PH",
+        "args": [
+          350000,
+          321086.8171927678
+        ],
+        "state": {
+          "p": 350000.00000026874,
+          "T": 267.8114351963941,
+          "h": 321086.8171927674,
+          "s": 1393.0403381467395,
+          "rho": 645.834820798453,
+          "u": 320544.8829570637,
+          "Q": -1
+        },
+        "independentDT": {
+          "p": 350000.0000000003,
+          "T": 267.8114351963941,
+          "rho": 645.834820798453,
+          "h": 321086.8171927681,
+          "u": 320544.88295706315,
+          "Q": 2.2771399009046344e-18
+        },
+        "derivatives": {
+          "arT": -5.9825177589010305,
+          "arD": -0.3596634968446639,
+          "pRho": 1495842.2241639888,
+          "hT": 5960.163850499562,
+          "uT": 2844.967743870532
+        },
+        "independentDerivatives": {
+          "arT": -5.9825177589010305,
+          "arD": -0.3596634968446639,
+          "pRho": 1495842.2241639888,
+          "hT": 5960.163850499562,
+          "uT": 2844.967743870532
+        },
+        "derivativeDifferences": {
+          "arT": 0,
+          "arD": 0,
+          "pRho": 0,
+          "hT": 0,
+          "uT": 0
+        },
+        "getterDifferences": {
+          "p": 2.684537321329117e-07,
+          "h": -6.984919309616089e-10,
+          "u": 5.238689482212067e-10
+        },
+        "normalizedEnergyInconsistency": 1.634307630770627e-15
+      },
+      {
+        "mode": "DU",
+        "args": [
+          645.834820798453,
+          320544.8829570637
+        ],
+        "state": {
+          "p": 350000.00000000105,
+          "T": 267.81143519639414,
+          "h": 321086.81719276856,
+          "s": 1393.0403381467363,
+          "rho": 645.834820798453,
+          "u": 320544.8829570629,
+          "Q": 1.7078549256784796e-18
+        },
+        "independentDT": {
+          "p": 350000.00000000105,
+          "T": 267.81143519639414,
+          "rho": 645.834820798453,
+          "h": 321086.81719276856,
+          "u": 320544.8829570629,
+          "Q": 1.7078549256784796e-18
+        },
+        "equilibriumQualityValid": true
+      }
+    ],
+    "historicalError": "RuntimeError: Aborted(Assertion failed: exception_header->referenceCount > 0, at: /emsdk/emscripten/system/lib/libcxxabi/src/cxa_exception_emscripten.cpp,149,__cxa_decrement_exception_refcount)",
+    "freshPTError": "CoolProp::CoolPropError<(CoolProp::CoolPropBaseError::ErrCode)4>: Saturation pressure [350000 Pa] corresponding to T [267.811 K] is within 1e-4 % of given p [350000 Pa]"
+  }
+]

@@ -1,0 +1,38 @@
+--- historical-loader
++++ control-diagnostic
+@@ -1,7 +1,8 @@
++import {observeImports,observeCatch,observeModule} from './observe.mjs';
+ // Isolated browser research only. SI mass-based values; no production imports.
+ export async function loadEOS(version='controlA', options={}) {
+   const start=performance.now(),logs=[];
+-  const assets={controlA:'../browser_eos_b4b/vendor/candidateB',rebuiltA:'./vendor/controlA',candidateB:'./vendor/candidateB'};
++  const assets={controlA:'../browser_eos_b4b/vendor/candidateB',rebuiltA:'../browser_eos_b4c/vendor/controlA',candidateB:'../browser_eos_b4c/vendor/candidateB'};
+   const asset=assets[version];if(!asset)throw Error('Unknown isolated B4C build');
+   const {default:factory}=await import(`${asset}/coolprop.js`);
+   const jsReady=performance.now();let memory,wasmExports,fetchMS=0,compileInstantiateMS=0,mime,streaming=false;
+@@ -11,6 +12,7 @@
+   let failInstantiation;
+   const failed=new Promise((_,reject)=>{failInstantiation=reject;});
+   const module=await Promise.race([factory({printErr:v=>logs.push(String(v)),instantiateWasm(imports,done){
++    observeImports(imports,()=>wasmExports,()=>memory,options);
+     const t=performance.now();
+     (async()=>{
+       let result;
+@@ -26,6 +28,7 @@
+       compileInstantiateMS=performance.now()-t;done(result.instance,result.module);
+     })().catch(failInstantiation);return {};
+   }}),failed]);
++  observeModule(module,()=>wasmExports,()=>memory,options);
+   const initialized=performance.now(),beforeFactory=memory.buffer.byteLength;
+   const state=module.factory('HEOS','Ammonia');const ready=performance.now();
+   const capabilities={version:module.get_global_param_string('version'),git:module.get_global_param_string('gitrevision'),
+@@ -75,7 +78,9 @@
+       if(!Object.values(out).every(Number.isFinite))throw Error('EOS returned a nonfinite property');
+       return out;
+     }catch(e){
++      observeCatch(e,()=>wasmExports,()=>memory,options);
+       const message=decodeError(e);wasmExports._emscripten_stack_restore(stackPointer);
++      options.events?.push({kind:'stack-restored',stack:wasmExports.emscripten_stack_get_current()});
+       const pointer=typeof e==='number'?e:e?.excPtr;
+       if(Number.isInteger(pointer)&&pointer>0)module.decrementExceptionRefcount(pointer);
+       throw new Error(message);
