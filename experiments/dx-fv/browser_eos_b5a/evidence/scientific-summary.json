@@ -1,0 +1,41 @@
+{
+  "assessment": "PARTIAL REPAIR",
+  "branch": "research/browser-eos-b5a-du-saturation-repair-20261016",
+  "startingCommit": "e30ad9d76bc892aa355126339997d6184c8729d2",
+  "gateAImplementationCommit": "b013448bc1005d9bb922c4420772b590180febd2",
+  "GateAApplicablePass": true,
+  "GateBPass": false,
+  "GateBPatch": null,
+  "physicalOriginalSuccesses": [
+    "native-ledger-146",
+    "native-ledger-151",
+    "native-ledger-152"
+  ],
+  "originalUnresolved": [
+    "native-ledger-148",
+    "native-ledger-162",
+    "native-ledger-164",
+    "native-ledger-165"
+  ],
+  "originalCurrentExceptions": [
+    "native-ledger-148",
+    "native-ledger-164",
+    "native-ledger-165"
+  ],
+  "allOriginalFailuresRetained": true,
+  "nativeRegressionsPass": true,
+  "browserCandidateExecuted": false,
+  "A2CompatibilityExecuted": false,
+  "backendQualified": false,
+  "B5BResolved": false,
+  "rejectedPTLoaderResolved": false,
+  "productionChanged": false,
+  "scientificBudgetsChanged": false,
+  "canonicalMaxResolved": {
+    "p": 6.277114152908325e-07,
+    "h": 1.0477378964424133e-09,
+    "T": 3.410605131648481e-13
+  },
+  "nonlinearMaxResolved": 6.514533032123789e-16,
+  "patchSHA256": "2f4b9e675b98a59f3846ede09b767698090083934e080bc11790b723c9d90eeb"
+}

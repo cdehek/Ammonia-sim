@@ -1,0 +1,57 @@
+{
+  "checks": {
+    "all86DefaultScientificRowsExact": true,
+    "fullVLEPHAndSignedProbesExact": true,
+    "originalFocusedAssertionsPass": true,
+    "defaultPHPSPUOutputsExact": true,
+    "defaultPHPSPUFreshReused": true,
+    "full-vlePHPSPUOutputsExact": true,
+    "full-vlePHPSPUFreshReused": true,
+    "all47LifecycleRowsExact": true,
+    "lifecycleCasesExact": true,
+    "all14CacheRowsExact": true,
+    "all14DerivativeDifferencesZero": true,
+    "allSharedDensityCallersExact": true,
+    "additionalAllReturnedOriginalBudgets": true,
+    "B4COriginalUpperBandVaporPreserved": true,
+    "B1-liquid-precision": true,
+    "approach-30298.937123458254-liquid-0.001": true,
+    "B1-vapor-regression": true
+  },
+  "details": {
+    "defaultPHPSPU": {
+      "rows": 96,
+      "propertyErrors": [],
+      "canonicalFailures": []
+    },
+    "full-vlePHPSPU": {
+      "rows": 96,
+      "propertyErrors": [],
+      "canonicalFailures": [
+        "PS-3500000.0-hg-minus-ULP"
+      ]
+    }
+  },
+  "allApplicableNativeRegressionChecksPass": true,
+  "B4COriginalUpperBandFixtures": [
+    "approach-30298.937123458254-vapor-0.001",
+    "approach-350000.0-vapor-0.001",
+    "approach-799999.9981754856-vapor-0.001",
+    "diagnostic-quality-band-30298.937123458254-hg-9.9e-10",
+    "diagnostic-quality-band-350000.0-hg-9.9e-10",
+    "diagnostic-quality-band-799999.9981754856-hg-9.9e-10",
+    "diagnostic-quality-band-3500000.0-hg-9.9e-10",
+    "ULP-30298.937123458254-hg-1",
+    "ULP-350000.0-hg-1",
+    "ULP-799999.9981754856-hg-1",
+    "ULP-3500000.0-hg-1"
+  ],
+  "baseRows": 86,
+  "signedProbes": 344,
+  "fullVLEBaseRows": 86,
+  "lifecycleRows": 47,
+  "cacheRows": 14,
+  "browserCandidateExecuted": false,
+  "nonAmmoniaQualified": false,
+  "pseudopureQualified": false
+}

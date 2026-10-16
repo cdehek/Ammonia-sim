@@ -1,0 +1,44 @@
+{
+  "initialNetworkAttempt": "Repository clone in the default restricted command sandbox could not reach the configured proxy. Retried with explicit network-enabled command permissions and the inherited proxy; clone succeeded. No proxy or network policy was bypassed.",
+  "isolatedTools": "CoolProp 8.0.0, CMake 4.4.4, Ninja 1.13.2, numpy 2.5.4, mpmath 1.4.1 installed only into /workspace/b5-tools. Pip printed a sympy compatibility warning for isolated mpmath 1.4.1; no system environment was edited. All stored B5 MP values and 65/90-digit checks reproduce.",
+  "versionReceiptAttempt": "First CMake version query omitted PYTHONPATH and failed to import its isolated Python package. Corrected query succeeded; runtime-versions.json is authoritative.",
+  "controlBuildInitial": {
+    "deadlineSeconds": 900,
+    "exitCode": 124,
+    "completedSteps": 57,
+    "totalSteps": 69,
+    "log": "build-control.log",
+    "scientificResult": "NONE; build timeout is not a scientific pass"
+  },
+  "controlBuildContinuation": {
+    "deadlineSeconds": 300,
+    "log": "build-control-resume.log",
+    "sourceChanged": false,
+    "exitCode": 0
+  },
+  "comparisonHarnessRefinement": "Initial comparator applied canonical-sized limits to fixed-inventory reference differences only. Retained exact initial script/output in attempts/. Final comparator separately checks originating-PH canonical differences and fresh-EOS normalized mass/energy, without changing any original threshold.",
+  "compilerJobsMaximum": 2,
+  "propertyDeadlineSeconds": 120,
+  "referenceDeadlineSeconds": [
+    180,
+    240,
+    240
+  ],
+  "incrementalBuildDeadlineSeconds": 300,
+  "noFullB2OrA2Campaign": true,
+  "applyGuardAttempt": "The first patch application refused a non-unique header text anchor before writing any source. Narrowed the anchor to the exact saturation_D_pure_options struct. Initial script retained in attempts/; no scientific result or source was modified by the refused attempt.",
+  "B5DiagnosticHashTiming": "The 137 B1/B4 historical artifact audit ran before control replay/source edits. The additional B5 diagnostic archives were protected by the exact B5 Git checkout and their results matched all historical traces; their explicit SHA256/decompressed-manifest audit was recorded after A1 source application, not before first diagnostic loading. All match. This sequencing limitation is retained.",
+  "A1Build": {
+    "deadlineSeconds": 300,
+    "exitCode": 0,
+    "log": "build-A1.log"
+  },
+  "A1DiagnosticBuild": {
+    "deadlineSeconds": 300,
+    "exitCode": 0,
+    "log": "build-A1-diagnostic.log"
+  },
+  "performanceDeadlineSeconds": 60,
+  "allScientificInvocationsCompletedWithinBounds": true,
+  "whitespaceCheck": "Broad git diff --check reported literal upstream whitespace in archived VLERoutines.cpp, required blank context lines in the logging unified patch, and the exact CMake cache ending. These preserved evidence bytes are not normalized. Authored code/docs are checked separately with literal evidence/patch files excluded."
+}

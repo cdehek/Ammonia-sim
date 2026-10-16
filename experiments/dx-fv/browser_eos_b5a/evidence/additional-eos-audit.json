@@ -1,0 +1,1362 @@
+{
+  "rows": [
+    {
+      "failureKey": "native-full-VLE/approach-3500000.0-liquid-0.001",
+      "build": "control",
+      "path": "default",
+      "freshEOS": {
+        "p": 3500000.000000149,
+        "rho": 521.5319011003706,
+        "h": 703826.564429848,
+        "u": 697115.5655578412
+      },
+      "normalizedResiduals": {
+        "mass": 0.0,
+        "energy": 0.0
+      },
+      "nonlinearPass": true,
+      "canonicalPass": true,
+      "physicalQuality": true
+    },
+    {
+      "failureKey": "native-full-VLE/approach-3500000.0-liquid-0.001",
+      "build": "control",
+      "path": "fullVLE",
+      "error": "Error: Input vapor quality [Q] must be between 0 and 1"
+    },
+    {
+      "failureKey": "native-full-VLE/approach-3500000.0-liquid-0.001",
+      "build": "A1",
+      "path": "default",
+      "freshEOS": {
+        "p": 3500000.000000149,
+        "rho": 521.5319011003706,
+        "h": 703826.564429848,
+        "u": 697115.5655578412
+      },
+      "normalizedResiduals": {
+        "mass": 0.0,
+        "energy": 0.0
+      },
+      "nonlinearPass": true,
+      "canonicalPass": true,
+      "physicalQuality": true
+    },
+    {
+      "failureKey": "native-full-VLE/approach-3500000.0-liquid-0.001",
+      "build": "A1",
+      "path": "fullVLE",
+      "freshEOS": {
+        "p": 3500000.000000149,
+        "rho": 521.5319011003706,
+        "h": 703826.564429848,
+        "u": 697115.5655578412
+      },
+      "normalizedResiduals": {
+        "mass": 0.0,
+        "energy": 0.0
+      },
+      "nonlinearPass": true,
+      "canonicalPass": true,
+      "physicalQuality": true
+    },
+    {
+      "failureKey": "native-full-VLE/approach-3500000.0-vapor-0.0",
+      "build": "control",
+      "path": "default",
+      "freshEOS": {
+        "p": 3500000.0000000196,
+        "rho": 28.051377447197595,
+        "h": 1628069.327769079,
+        "u": 1503298.2712821662
+      },
+      "normalizedResiduals": {
+        "mass": 1.519802876912384e-15,
+        "energy": 1.4041374019838663e-16
+      },
+      "nonlinearPass": true,
+      "canonicalPass": true,
+      "physicalQuality": true
+    },
+    {
+      "failureKey": "native-full-VLE/approach-3500000.0-vapor-0.0",
+      "build": "control",
+      "path": "fullVLE",
+      "error": "Error: Input vapor quality [Q] must be between 0 and 1"
+    },
+    {
+      "failureKey": "native-full-VLE/approach-3500000.0-vapor-0.0",
+      "build": "A1",
+      "path": "default",
+      "freshEOS": {
+        "p": 3500000.0000000196,
+        "rho": 28.051377447197595,
+        "h": 1628069.327769079,
+        "u": 1503298.2712821662
+      },
+      "normalizedResiduals": {
+        "mass": 1.519802876912384e-15,
+        "energy": 1.4041374019838663e-16
+      },
+      "nonlinearPass": true,
+      "canonicalPass": true,
+      "physicalQuality": true
+    },
+    {
+      "failureKey": "native-full-VLE/approach-3500000.0-vapor-0.0",
+      "build": "A1",
+      "path": "fullVLE",
+      "error": "Error: Input vapor quality [Q] must be between 0 and 1"
+    },
+    {
+      "failureKey": "native-full-VLE/diagnostic-quality-band-3500000.0-hf--1.01e-09",
+      "build": "control",
+      "path": "default",
+      "freshEOS": {
+        "p": 3499999.9999993537,
+        "rho": 521.5319010741061,
+        "h": 703826.5644963613,
+        "u": 697115.5656240181
+      },
+      "normalizedResiduals": {
+        "mass": 0.0,
+        "energy": 0.0
+      },
+      "nonlinearPass": true,
+      "canonicalPass": true,
+      "physicalQuality": true
+    },
+    {
+      "failureKey": "native-full-VLE/diagnostic-quality-band-3500000.0-hf--1.01e-09",
+      "build": "control",
+      "path": "fullVLE",
+      "error": "Error: Input vapor quality [Q] must be between 0 and 1"
+    },
+    {
+      "failureKey": "native-full-VLE/diagnostic-quality-band-3500000.0-hf--1.01e-09",
+      "build": "A1",
+      "path": "default",
+      "freshEOS": {
+        "p": 3499999.9999993537,
+        "rho": 521.5319010741061,
+        "h": 703826.5644963613,
+        "u": 697115.5656240181
+      },
+      "normalizedResiduals": {
+        "mass": 0.0,
+        "energy": 0.0
+      },
+      "nonlinearPass": true,
+      "canonicalPass": true,
+      "physicalQuality": true
+    },
+    {
+      "failureKey": "native-full-VLE/diagnostic-quality-band-3500000.0-hf--1.01e-09",
+      "build": "A1",
+      "path": "fullVLE",
+      "freshEOS": {
+        "p": 3499999.9999994035,
+        "rho": 521.5319010741061,
+        "h": 703826.5644963614,
+        "u": 697115.5656240181
+      },
+      "normalizedResiduals": {
+        "mass": 0.0,
+        "energy": 0.0
+      },
+      "nonlinearPass": true,
+      "canonicalPass": true,
+      "physicalQuality": true
+    },
+    {
+      "failureKey": "native-full-VLE/diagnostic-quality-band-3500000.0-hf--9.9e-10",
+      "build": "control",
+      "path": "default",
+      "freshEOS": {
+        "p": 3499999.9999997085,
+        "rho": 521.5319010668071,
+        "h": 703826.5645148471,
+        "u": 697115.5656424094
+      },
+      "normalizedResiduals": {
+        "mass": 0.0,
+        "energy": 2.6058132128172413e-16
+      },
+      "nonlinearPass": true,
+      "canonicalPass": true,
+      "physicalQuality": true
+    },
+    {
+      "failureKey": "native-full-VLE/diagnostic-quality-band-3500000.0-hf--9.9e-10",
+      "build": "control",
+      "path": "fullVLE",
+      "error": "Error: Input vapor quality [Q] must be between 0 and 1"
+    },
+    {
+      "failureKey": "native-full-VLE/diagnostic-quality-band-3500000.0-hf--9.9e-10",
+      "build": "A1",
+      "path": "default",
+      "freshEOS": {
+        "p": 3499999.9999997085,
+        "rho": 521.5319010668071,
+        "h": 703826.5645148471,
+        "u": 697115.5656424094
+      },
+      "normalizedResiduals": {
+        "mass": 0.0,
+        "energy": 2.6058132128172413e-16
+      },
+      "nonlinearPass": true,
+      "canonicalPass": true,
+      "physicalQuality": true
+    },
+    {
+      "failureKey": "native-full-VLE/diagnostic-quality-band-3500000.0-hf--9.9e-10",
+      "build": "A1",
+      "path": "fullVLE",
+      "freshEOS": {
+        "p": 3499999.9999995413,
+        "rho": 521.5319010668071,
+        "h": 703826.5645148461,
+        "u": 697115.5656424086
+      },
+      "normalizedResiduals": {
+        "mass": 0.0,
+        "energy": 7.817439638451724e-16
+      },
+      "nonlinearPass": true,
+      "canonicalPass": true,
+      "physicalQuality": true
+    },
+    {
+      "failureKey": "native-full-VLE/ULP-3500000.0-hf--1",
+      "build": "control",
+      "path": "default",
+      "freshEOS": {
+        "p": 3499999.9999999925,
+        "rho": 521.5319007055042,
+        "h": 703826.5654298473,
+        "u": 697115.5665527595
+      },
+      "normalizedResiduals": {
+        "mass": 0.0,
+        "energy": 9.120346239268568e-16
+      },
+      "nonlinearPass": true,
+      "canonicalPass": true,
+      "physicalQuality": true
+    },
+    {
+      "failureKey": "native-full-VLE/ULP-3500000.0-hf--1",
+      "build": "control",
+      "path": "fullVLE",
+      "freshEOS": {
+        "p": 3499999.999999988,
+        "rho": 521.5319007055042,
+        "h": 703826.5654298466,
+        "u": 697115.5665527586
+      },
+      "normalizedResiduals": {
+        "mass": 0.0,
+        "energy": 2.2149412295366525e-15
+      },
+      "nonlinearPass": true,
+      "canonicalPass": true,
+      "physicalQuality": true
+    },
+    {
+      "failureKey": "native-full-VLE/ULP-3500000.0-hf--1",
+      "build": "A1",
+      "path": "default",
+      "freshEOS": {
+        "p": 3499999.9999999925,
+        "rho": 521.5319007055042,
+        "h": 703826.5654298473,
+        "u": 697115.5665527595
+      },
+      "normalizedResiduals": {
+        "mass": 0.0,
+        "energy": 9.120346239268568e-16
+      },
+      "nonlinearPass": true,
+      "canonicalPass": true,
+      "physicalQuality": true
+    },
+    {
+      "failureKey": "native-full-VLE/ULP-3500000.0-hf--1",
+      "build": "A1",
+      "path": "fullVLE",
+      "freshEOS": {
+        "p": 3499999.9999998743,
+        "rho": 521.5319007055042,
+        "h": 703826.5654298466,
+        "u": 697115.5665527593
+      },
+      "normalizedResiduals": {
+        "mass": 0.0,
+        "energy": 1.3029066056097955e-15
+      },
+      "nonlinearPass": true,
+      "canonicalPass": true,
+      "physicalQuality": true
+    },
+    {
+      "failureKey": "native-full-VLE/ULP-3500000.0-hg--1",
+      "build": "control",
+      "path": "default",
+      "freshEOS": {
+        "p": 3500000.0000000107,
+        "rho": 28.05137744719757,
+        "h": 1628069.3277690774,
+        "u": 1503298.2712821646
+      },
+      "normalizedResiduals": {
+        "mass": 2.5330047948539724e-16,
+        "energy": 8.424824411903195e-16
+      },
+      "nonlinearPass": true,
+      "canonicalPass": true,
+      "physicalQuality": true
+    },
+    {
+      "failureKey": "native-full-VLE/ULP-3500000.0-hg--1",
+      "build": "control",
+      "path": "fullVLE",
+      "error": "Error: Input vapor quality [Q] must be between 0 and 1"
+    },
+    {
+      "failureKey": "native-full-VLE/ULP-3500000.0-hg--1",
+      "build": "A1",
+      "path": "default",
+      "freshEOS": {
+        "p": 3500000.0000000107,
+        "rho": 28.05137744719757,
+        "h": 1628069.3277690774,
+        "u": 1503298.2712821646
+      },
+      "normalizedResiduals": {
+        "mass": 2.5330047948539724e-16,
+        "energy": 8.424824411903195e-16
+      },
+      "nonlinearPass": true,
+      "canonicalPass": true,
+      "physicalQuality": true
+    },
+    {
+      "failureKey": "native-full-VLE/ULP-3500000.0-hg--1",
+      "build": "A1",
+      "path": "fullVLE",
+      "error": "Error: Input vapor quality [Q] must be between 0 and 1"
+    },
+    {
+      "failureKey": "native-full-VLE/ULP-3500000.0-hg-1",
+      "build": "control",
+      "path": "default",
+      "freshEOS": {
+        "p": 3500000.000000015,
+        "rho": 28.051377447197556,
+        "h": 1628069.3277690792,
+        "u": 1503298.2712821665
+      },
+      "normalizedResiduals": {
+        "mass": 2.533004794853974e-16,
+        "energy": 2.8082748039677325e-16
+      },
+      "nonlinearPass": true,
+      "canonicalPass": true,
+      "physicalQuality": true
+    },
+    {
+      "failureKey": "native-full-VLE/ULP-3500000.0-hg-1",
+      "build": "control",
+      "path": "fullVLE",
+      "error": "Error: Input vapor quality [Q] must be between 0 and 1"
+    },
+    {
+      "failureKey": "native-full-VLE/ULP-3500000.0-hg-1",
+      "build": "A1",
+      "path": "default",
+      "freshEOS": {
+        "p": 3500000.000000015,
+        "rho": 28.051377447197556,
+        "h": 1628069.3277690792,
+        "u": 1503298.2712821665
+      },
+      "normalizedResiduals": {
+        "mass": 2.533004794853974e-16,
+        "energy": 2.8082748039677325e-16
+      },
+      "nonlinearPass": true,
+      "canonicalPass": true,
+      "physicalQuality": true
+    },
+    {
+      "failureKey": "native-full-VLE/ULP-3500000.0-hg-1",
+      "build": "A1",
+      "path": "fullVLE",
+      "error": "Error: Input vapor quality [Q] must be between 0 and 1"
+    },
+    {
+      "failureKey": "chromium/approach-3500000.0-liquid-0.001",
+      "build": "control",
+      "path": "default",
+      "freshEOS": {
+        "p": 3500000.000000149,
+        "rho": 521.5319011003706,
+        "h": 703826.564429848,
+        "u": 697115.5655578412
+      },
+      "normalizedResiduals": {
+        "mass": 0.0,
+        "energy": 0.0
+      },
+      "nonlinearPass": true,
+      "canonicalPass": true,
+      "physicalQuality": true
+    },
+    {
+      "failureKey": "chromium/approach-3500000.0-liquid-0.001",
+      "build": "control",
+      "path": "fullVLE",
+      "error": "Error: Input vapor quality [Q] must be between 0 and 1"
+    },
+    {
+      "failureKey": "chromium/approach-3500000.0-liquid-0.001",
+      "build": "A1",
+      "path": "default",
+      "freshEOS": {
+        "p": 3500000.000000149,
+        "rho": 521.5319011003706,
+        "h": 703826.564429848,
+        "u": 697115.5655578412
+      },
+      "normalizedResiduals": {
+        "mass": 0.0,
+        "energy": 0.0
+      },
+      "nonlinearPass": true,
+      "canonicalPass": true,
+      "physicalQuality": true
+    },
+    {
+      "failureKey": "chromium/approach-3500000.0-liquid-0.001",
+      "build": "A1",
+      "path": "fullVLE",
+      "freshEOS": {
+        "p": 3500000.000000149,
+        "rho": 521.5319011003706,
+        "h": 703826.564429848,
+        "u": 697115.5655578412
+      },
+      "normalizedResiduals": {
+        "mass": 0.0,
+        "energy": 0.0
+      },
+      "nonlinearPass": true,
+      "canonicalPass": true,
+      "physicalQuality": true
+    },
+    {
+      "failureKey": "chromium/approach-3500000.0-liquid-0.01",
+      "build": "control",
+      "path": "default",
+      "freshEOS": {
+        "p": 3499999.999999915,
+        "rho": 521.5319046541692,
+        "h": 703826.5554298478,
+        "u": 697115.5566035713
+      },
+      "normalizedResiduals": {
+        "mass": 0.0,
+        "energy": 3.908719843020369e-16
+      },
+      "nonlinearPass": true,
+      "canonicalPass": true,
+      "physicalQuality": true
+    },
+    {
+      "failureKey": "chromium/approach-3500000.0-liquid-0.01",
+      "build": "control",
+      "path": "fullVLE",
+      "freshEOS": {
+        "p": 3499999.999999642,
+        "rho": 521.5319046541692,
+        "h": 703826.5554298474,
+        "u": 697115.5566035713
+      },
+      "normalizedResiduals": {
+        "mass": 0.0,
+        "energy": 3.908719843020369e-16
+      },
+      "nonlinearPass": true,
+      "canonicalPass": true,
+      "physicalQuality": true
+    },
+    {
+      "failureKey": "chromium/approach-3500000.0-liquid-0.01",
+      "build": "A1",
+      "path": "default",
+      "freshEOS": {
+        "p": 3499999.999999915,
+        "rho": 521.5319046541692,
+        "h": 703826.5554298478,
+        "u": 697115.5566035713
+      },
+      "normalizedResiduals": {
+        "mass": 0.0,
+        "energy": 3.908719843020369e-16
+      },
+      "nonlinearPass": true,
+      "canonicalPass": true,
+      "physicalQuality": true
+    },
+    {
+      "failureKey": "chromium/approach-3500000.0-liquid-0.01",
+      "build": "A1",
+      "path": "fullVLE",
+      "freshEOS": {
+        "p": 3499999.9999997965,
+        "rho": 521.5319046541692,
+        "h": 703826.5554298474,
+        "u": 697115.556603571
+      },
+      "normalizedResiduals": {
+        "mass": 0.0,
+        "energy": 1.302906614340123e-16
+      },
+      "nonlinearPass": true,
+      "canonicalPass": true,
+      "physicalQuality": true
+    },
+    {
+      "failureKey": "chromium/approach-3500000.0-vapor-0.001",
+      "build": "control",
+      "path": "default",
+      "freshEOS": {
+        "p": 3499999.999999993,
+        "rho": 28.05137739671886,
+        "h": 1628069.3287690778,
+        "u": 1503298.2720576387
+      },
+      "normalizedResiduals": {
+        "mass": 0.0,
+        "energy": 2.8082748075726045e-16
+      },
+      "nonlinearPass": true,
+      "canonicalPass": true,
+      "physicalQuality": true
+    },
+    {
+      "failureKey": "chromium/approach-3500000.0-vapor-0.001",
+      "build": "control",
+      "path": "fullVLE",
+      "freshEOS": {
+        "p": 3500000.0000000005,
+        "rho": 28.05137739671886,
+        "h": 1628069.3287690785,
+        "u": 1503298.2720576392
+      },
+      "normalizedResiduals": {
+        "mass": 0.0,
+        "energy": 0.0
+      },
+      "nonlinearPass": true,
+      "canonicalPass": true,
+      "physicalQuality": true
+    },
+    {
+      "failureKey": "chromium/approach-3500000.0-vapor-0.001",
+      "build": "A1",
+      "path": "default",
+      "freshEOS": {
+        "p": 3499999.999999993,
+        "rho": 28.05137739671886,
+        "h": 1628069.3287690778,
+        "u": 1503298.2720576387
+      },
+      "normalizedResiduals": {
+        "mass": 0.0,
+        "energy": 2.8082748075726045e-16
+      },
+      "nonlinearPass": true,
+      "canonicalPass": true,
+      "physicalQuality": true
+    },
+    {
+      "failureKey": "chromium/approach-3500000.0-vapor-0.001",
+      "build": "A1",
+      "path": "fullVLE",
+      "freshEOS": {
+        "p": 3500000.0000000005,
+        "rho": 28.05137739671886,
+        "h": 1628069.3287690785,
+        "u": 1503298.2720576392
+      },
+      "normalizedResiduals": {
+        "mass": 0.0,
+        "energy": 0.0
+      },
+      "nonlinearPass": true,
+      "canonicalPass": true,
+      "physicalQuality": true
+    },
+    {
+      "failureKey": "chromium/approach-3500000.0-vapor-0.01",
+      "build": "control",
+      "path": "default",
+      "freshEOS": {
+        "p": 3499999.9999999963,
+        "rho": 28.051376942410503,
+        "h": 1628069.3377690786,
+        "u": 1503298.2790368993
+      },
+      "normalizedResiduals": {
+        "mass": 0.0,
+        "energy": 1.4041374200082308e-16
+      },
+      "nonlinearPass": true,
+      "canonicalPass": true,
+      "physicalQuality": true
+    },
+    {
+      "failureKey": "chromium/approach-3500000.0-vapor-0.01",
+      "build": "control",
+      "path": "fullVLE",
+      "freshEOS": {
+        "p": 3499999.9999999963,
+        "rho": 28.051376942410503,
+        "h": 1628069.3377690786,
+        "u": 1503298.2790368993
+      },
+      "normalizedResiduals": {
+        "mass": 0.0,
+        "energy": 1.4041374200082308e-16
+      },
+      "nonlinearPass": true,
+      "canonicalPass": true,
+      "physicalQuality": true
+    },
+    {
+      "failureKey": "chromium/approach-3500000.0-vapor-0.01",
+      "build": "A1",
+      "path": "default",
+      "freshEOS": {
+        "p": 3499999.9999999963,
+        "rho": 28.051376942410503,
+        "h": 1628069.3377690786,
+        "u": 1503298.2790368993
+      },
+      "normalizedResiduals": {
+        "mass": 0.0,
+        "energy": 1.4041374200082308e-16
+      },
+      "nonlinearPass": true,
+      "canonicalPass": true,
+      "physicalQuality": true
+    },
+    {
+      "failureKey": "chromium/approach-3500000.0-vapor-0.01",
+      "build": "A1",
+      "path": "fullVLE",
+      "freshEOS": {
+        "p": 3499999.9999999963,
+        "rho": 28.051376942410503,
+        "h": 1628069.3377690786,
+        "u": 1503298.2790368993
+      },
+      "normalizedResiduals": {
+        "mass": 0.0,
+        "energy": 1.4041374200082308e-16
+      },
+      "nonlinearPass": true,
+      "canonicalPass": true,
+      "physicalQuality": true
+    },
+    {
+      "failureKey": "chromium/diagnostic-quality-band-3500000.0-hf--9.9e-10",
+      "build": "control",
+      "path": "default",
+      "freshEOS": {
+        "p": 3499999.9999997085,
+        "rho": 521.5319010668071,
+        "h": 703826.5645148471,
+        "u": 697115.5656424094
+      },
+      "normalizedResiduals": {
+        "mass": 0.0,
+        "energy": 2.6058132128172413e-16
+      },
+      "nonlinearPass": true,
+      "canonicalPass": true,
+      "physicalQuality": true
+    },
+    {
+      "failureKey": "chromium/diagnostic-quality-band-3500000.0-hf--9.9e-10",
+      "build": "control",
+      "path": "fullVLE",
+      "error": "Error: Input vapor quality [Q] must be between 0 and 1"
+    },
+    {
+      "failureKey": "chromium/diagnostic-quality-band-3500000.0-hf--9.9e-10",
+      "build": "A1",
+      "path": "default",
+      "freshEOS": {
+        "p": 3499999.9999997085,
+        "rho": 521.5319010668071,
+        "h": 703826.5645148471,
+        "u": 697115.5656424094
+      },
+      "normalizedResiduals": {
+        "mass": 0.0,
+        "energy": 2.6058132128172413e-16
+      },
+      "nonlinearPass": true,
+      "canonicalPass": true,
+      "physicalQuality": true
+    },
+    {
+      "failureKey": "chromium/diagnostic-quality-band-3500000.0-hf--9.9e-10",
+      "build": "A1",
+      "path": "fullVLE",
+      "freshEOS": {
+        "p": 3499999.9999995413,
+        "rho": 521.5319010668071,
+        "h": 703826.5645148461,
+        "u": 697115.5656424086
+      },
+      "normalizedResiduals": {
+        "mass": 0.0,
+        "energy": 7.817439638451724e-16
+      },
+      "nonlinearPass": true,
+      "canonicalPass": true,
+      "physicalQuality": true
+    },
+    {
+      "failureKey": "chromium/diagnostic-quality-band-3500000.0-hg-9.9e-10",
+      "build": "control",
+      "path": "default",
+      "freshEOS": {
+        "p": 3500000.0000000005,
+        "rho": 28.05137740100952,
+        "h": 1628069.328684079,
+        "u": 1503298.2719917244
+      },
+      "normalizedResiduals": {
+        "mass": 0.0,
+        "energy": 1.4041374036330958e-16
+      },
+      "nonlinearPass": true,
+      "canonicalPass": true,
+      "physicalQuality": true
+    },
+    {
+      "failureKey": "chromium/diagnostic-quality-band-3500000.0-hg-9.9e-10",
+      "build": "control",
+      "path": "fullVLE",
+      "freshEOS": {
+        "p": 3500000.000000004,
+        "rho": 28.05137740100952,
+        "h": 1628069.32868408,
+        "u": 1503298.2719917246
+      },
+      "normalizedResiduals": {
+        "mass": 0.0,
+        "energy": 0.0
+      },
+      "nonlinearPass": true,
+      "canonicalPass": true,
+      "physicalQuality": true
+    },
+    {
+      "failureKey": "chromium/diagnostic-quality-band-3500000.0-hg-9.9e-10",
+      "build": "A1",
+      "path": "default",
+      "freshEOS": {
+        "p": 3500000.0000000005,
+        "rho": 28.05137740100952,
+        "h": 1628069.328684079,
+        "u": 1503298.2719917244
+      },
+      "normalizedResiduals": {
+        "mass": 0.0,
+        "energy": 1.4041374036330958e-16
+      },
+      "nonlinearPass": true,
+      "canonicalPass": true,
+      "physicalQuality": true
+    },
+    {
+      "failureKey": "chromium/diagnostic-quality-band-3500000.0-hg-9.9e-10",
+      "build": "A1",
+      "path": "fullVLE",
+      "freshEOS": {
+        "p": 3500000.0000000047,
+        "rho": 28.05137740100952,
+        "h": 1628069.32868408,
+        "u": 1503298.2719917248
+      },
+      "normalizedResiduals": {
+        "mass": 0.0,
+        "energy": 4.212412210899288e-16
+      },
+      "nonlinearPass": true,
+      "canonicalPass": true,
+      "physicalQuality": true
+    },
+    {
+      "failureKey": "chromium/focused-3500000.0-stable-vapor",
+      "build": "control",
+      "path": "default",
+      "freshEOS": {
+        "p": 3500000.000000002,
+        "rho": 27.554827993594678,
+        "h": 1638069.3277690788,
+        "u": 1511049.844983209
+      },
+      "normalizedResiduals": {
+        "mass": 0.0,
+        "energy": 2.84421523514643e-16
+      },
+      "nonlinearPass": true,
+      "canonicalPass": true,
+      "physicalQuality": true
+    },
+    {
+      "failureKey": "chromium/focused-3500000.0-stable-vapor",
+      "build": "control",
+      "path": "fullVLE",
+      "freshEOS": {
+        "p": 3500000.000000002,
+        "rho": 27.554827993594678,
+        "h": 1638069.3277690788,
+        "u": 1511049.844983209
+      },
+      "normalizedResiduals": {
+        "mass": 0.0,
+        "energy": 2.84421523514643e-16
+      },
+      "nonlinearPass": true,
+      "canonicalPass": true,
+      "physicalQuality": true
+    },
+    {
+      "failureKey": "chromium/focused-3500000.0-stable-vapor",
+      "build": "A1",
+      "path": "default",
+      "freshEOS": {
+        "p": 3500000.000000002,
+        "rho": 27.554827993594678,
+        "h": 1638069.3277690788,
+        "u": 1511049.844983209
+      },
+      "normalizedResiduals": {
+        "mass": 0.0,
+        "energy": 2.84421523514643e-16
+      },
+      "nonlinearPass": true,
+      "canonicalPass": true,
+      "physicalQuality": true
+    },
+    {
+      "failureKey": "chromium/focused-3500000.0-stable-vapor",
+      "build": "A1",
+      "path": "fullVLE",
+      "freshEOS": {
+        "p": 3500000.000000002,
+        "rho": 27.554827993594678,
+        "h": 1638069.3277690788,
+        "u": 1511049.844983209
+      },
+      "normalizedResiduals": {
+        "mass": 0.0,
+        "energy": 2.84421523514643e-16
+      },
+      "nonlinearPass": true,
+      "canonicalPass": true,
+      "physicalQuality": true
+    },
+    {
+      "failureKey": "webkit/approach-3500000.0-liquid-0.001",
+      "build": "control",
+      "path": "default",
+      "freshEOS": {
+        "p": 3500000.000000149,
+        "rho": 521.5319011003706,
+        "h": 703826.564429848,
+        "u": 697115.5655578412
+      },
+      "normalizedResiduals": {
+        "mass": 0.0,
+        "energy": 0.0
+      },
+      "nonlinearPass": true,
+      "canonicalPass": true,
+      "physicalQuality": true
+    },
+    {
+      "failureKey": "webkit/approach-3500000.0-liquid-0.001",
+      "build": "control",
+      "path": "fullVLE",
+      "error": "Error: Input vapor quality [Q] must be between 0 and 1"
+    },
+    {
+      "failureKey": "webkit/approach-3500000.0-liquid-0.001",
+      "build": "A1",
+      "path": "default",
+      "freshEOS": {
+        "p": 3500000.000000149,
+        "rho": 521.5319011003706,
+        "h": 703826.564429848,
+        "u": 697115.5655578412
+      },
+      "normalizedResiduals": {
+        "mass": 0.0,
+        "energy": 0.0
+      },
+      "nonlinearPass": true,
+      "canonicalPass": true,
+      "physicalQuality": true
+    },
+    {
+      "failureKey": "webkit/approach-3500000.0-liquid-0.001",
+      "build": "A1",
+      "path": "fullVLE",
+      "freshEOS": {
+        "p": 3500000.000000149,
+        "rho": 521.5319011003706,
+        "h": 703826.564429848,
+        "u": 697115.5655578412
+      },
+      "normalizedResiduals": {
+        "mass": 0.0,
+        "energy": 0.0
+      },
+      "nonlinearPass": true,
+      "canonicalPass": true,
+      "physicalQuality": true
+    },
+    {
+      "failureKey": "webkit/approach-3500000.0-liquid-0.01",
+      "build": "control",
+      "path": "default",
+      "freshEOS": {
+        "p": 3499999.999999915,
+        "rho": 521.5319046541692,
+        "h": 703826.5554298478,
+        "u": 697115.5566035713
+      },
+      "normalizedResiduals": {
+        "mass": 0.0,
+        "energy": 3.908719843020369e-16
+      },
+      "nonlinearPass": true,
+      "canonicalPass": true,
+      "physicalQuality": true
+    },
+    {
+      "failureKey": "webkit/approach-3500000.0-liquid-0.01",
+      "build": "control",
+      "path": "fullVLE",
+      "freshEOS": {
+        "p": 3499999.999999642,
+        "rho": 521.5319046541692,
+        "h": 703826.5554298474,
+        "u": 697115.5566035713
+      },
+      "normalizedResiduals": {
+        "mass": 0.0,
+        "energy": 3.908719843020369e-16
+      },
+      "nonlinearPass": true,
+      "canonicalPass": true,
+      "physicalQuality": true
+    },
+    {
+      "failureKey": "webkit/approach-3500000.0-liquid-0.01",
+      "build": "A1",
+      "path": "default",
+      "freshEOS": {
+        "p": 3499999.999999915,
+        "rho": 521.5319046541692,
+        "h": 703826.5554298478,
+        "u": 697115.5566035713
+      },
+      "normalizedResiduals": {
+        "mass": 0.0,
+        "energy": 3.908719843020369e-16
+      },
+      "nonlinearPass": true,
+      "canonicalPass": true,
+      "physicalQuality": true
+    },
+    {
+      "failureKey": "webkit/approach-3500000.0-liquid-0.01",
+      "build": "A1",
+      "path": "fullVLE",
+      "freshEOS": {
+        "p": 3499999.9999997965,
+        "rho": 521.5319046541692,
+        "h": 703826.5554298474,
+        "u": 697115.556603571
+      },
+      "normalizedResiduals": {
+        "mass": 0.0,
+        "energy": 1.302906614340123e-16
+      },
+      "nonlinearPass": true,
+      "canonicalPass": true,
+      "physicalQuality": true
+    },
+    {
+      "failureKey": "webkit/approach-3500000.0-vapor-0.001",
+      "build": "control",
+      "path": "default",
+      "freshEOS": {
+        "p": 3499999.999999993,
+        "rho": 28.05137739671886,
+        "h": 1628069.3287690778,
+        "u": 1503298.2720576387
+      },
+      "normalizedResiduals": {
+        "mass": 0.0,
+        "energy": 2.8082748075726045e-16
+      },
+      "nonlinearPass": true,
+      "canonicalPass": true,
+      "physicalQuality": true
+    },
+    {
+      "failureKey": "webkit/approach-3500000.0-vapor-0.001",
+      "build": "control",
+      "path": "fullVLE",
+      "freshEOS": {
+        "p": 3500000.0000000005,
+        "rho": 28.05137739671886,
+        "h": 1628069.3287690785,
+        "u": 1503298.2720576392
+      },
+      "normalizedResiduals": {
+        "mass": 0.0,
+        "energy": 0.0
+      },
+      "nonlinearPass": true,
+      "canonicalPass": true,
+      "physicalQuality": true
+    },
+    {
+      "failureKey": "webkit/approach-3500000.0-vapor-0.001",
+      "build": "A1",
+      "path": "default",
+      "freshEOS": {
+        "p": 3499999.999999993,
+        "rho": 28.05137739671886,
+        "h": 1628069.3287690778,
+        "u": 1503298.2720576387
+      },
+      "normalizedResiduals": {
+        "mass": 0.0,
+        "energy": 2.8082748075726045e-16
+      },
+      "nonlinearPass": true,
+      "canonicalPass": true,
+      "physicalQuality": true
+    },
+    {
+      "failureKey": "webkit/approach-3500000.0-vapor-0.001",
+      "build": "A1",
+      "path": "fullVLE",
+      "freshEOS": {
+        "p": 3500000.0000000005,
+        "rho": 28.05137739671886,
+        "h": 1628069.3287690785,
+        "u": 1503298.2720576392
+      },
+      "normalizedResiduals": {
+        "mass": 0.0,
+        "energy": 0.0
+      },
+      "nonlinearPass": true,
+      "canonicalPass": true,
+      "physicalQuality": true
+    },
+    {
+      "failureKey": "webkit/approach-3500000.0-vapor-0.01",
+      "build": "control",
+      "path": "default",
+      "freshEOS": {
+        "p": 3499999.9999999963,
+        "rho": 28.051376942410503,
+        "h": 1628069.3377690786,
+        "u": 1503298.2790368993
+      },
+      "normalizedResiduals": {
+        "mass": 0.0,
+        "energy": 1.4041374200082308e-16
+      },
+      "nonlinearPass": true,
+      "canonicalPass": true,
+      "physicalQuality": true
+    },
+    {
+      "failureKey": "webkit/approach-3500000.0-vapor-0.01",
+      "build": "control",
+      "path": "fullVLE",
+      "freshEOS": {
+        "p": 3499999.9999999963,
+        "rho": 28.051376942410503,
+        "h": 1628069.3377690786,
+        "u": 1503298.2790368993
+      },
+      "normalizedResiduals": {
+        "mass": 0.0,
+        "energy": 1.4041374200082308e-16
+      },
+      "nonlinearPass": true,
+      "canonicalPass": true,
+      "physicalQuality": true
+    },
+    {
+      "failureKey": "webkit/approach-3500000.0-vapor-0.01",
+      "build": "A1",
+      "path": "default",
+      "freshEOS": {
+        "p": 3499999.9999999963,
+        "rho": 28.051376942410503,
+        "h": 1628069.3377690786,
+        "u": 1503298.2790368993
+      },
+      "normalizedResiduals": {
+        "mass": 0.0,
+        "energy": 1.4041374200082308e-16
+      },
+      "nonlinearPass": true,
+      "canonicalPass": true,
+      "physicalQuality": true
+    },
+    {
+      "failureKey": "webkit/approach-3500000.0-vapor-0.01",
+      "build": "A1",
+      "path": "fullVLE",
+      "freshEOS": {
+        "p": 3499999.9999999963,
+        "rho": 28.051376942410503,
+        "h": 1628069.3377690786,
+        "u": 1503298.2790368993
+      },
+      "normalizedResiduals": {
+        "mass": 0.0,
+        "energy": 1.4041374200082308e-16
+      },
+      "nonlinearPass": true,
+      "canonicalPass": true,
+      "physicalQuality": true
+    },
+    {
+      "failureKey": "webkit/diagnostic-quality-band-3500000.0-hf--9.9e-10",
+      "build": "control",
+      "path": "default",
+      "freshEOS": {
+        "p": 3499999.9999997085,
+        "rho": 521.5319010668071,
+        "h": 703826.5645148471,
+        "u": 697115.5656424094
+      },
+      "normalizedResiduals": {
+        "mass": 0.0,
+        "energy": 2.6058132128172413e-16
+      },
+      "nonlinearPass": true,
+      "canonicalPass": true,
+      "physicalQuality": true
+    },
+    {
+      "failureKey": "webkit/diagnostic-quality-band-3500000.0-hf--9.9e-10",
+      "build": "control",
+      "path": "fullVLE",
+      "error": "Error: Input vapor quality [Q] must be between 0 and 1"
+    },
+    {
+      "failureKey": "webkit/diagnostic-quality-band-3500000.0-hf--9.9e-10",
+      "build": "A1",
+      "path": "default",
+      "freshEOS": {
+        "p": 3499999.9999997085,
+        "rho": 521.5319010668071,
+        "h": 703826.5645148471,
+        "u": 697115.5656424094
+      },
+      "normalizedResiduals": {
+        "mass": 0.0,
+        "energy": 2.6058132128172413e-16
+      },
+      "nonlinearPass": true,
+      "canonicalPass": true,
+      "physicalQuality": true
+    },
+    {
+      "failureKey": "webkit/diagnostic-quality-band-3500000.0-hf--9.9e-10",
+      "build": "A1",
+      "path": "fullVLE",
+      "freshEOS": {
+        "p": 3499999.9999995413,
+        "rho": 521.5319010668071,
+        "h": 703826.5645148461,
+        "u": 697115.5656424086
+      },
+      "normalizedResiduals": {
+        "mass": 0.0,
+        "energy": 7.817439638451724e-16
+      },
+      "nonlinearPass": true,
+      "canonicalPass": true,
+      "physicalQuality": true
+    },
+    {
+      "failureKey": "webkit/diagnostic-quality-band-3500000.0-hg-9.9e-10",
+      "build": "control",
+      "path": "default",
+      "freshEOS": {
+        "p": 3500000.0000000005,
+        "rho": 28.05137740100952,
+        "h": 1628069.328684079,
+        "u": 1503298.2719917244
+      },
+      "normalizedResiduals": {
+        "mass": 0.0,
+        "energy": 1.4041374036330958e-16
+      },
+      "nonlinearPass": true,
+      "canonicalPass": true,
+      "physicalQuality": true
+    },
+    {
+      "failureKey": "webkit/diagnostic-quality-band-3500000.0-hg-9.9e-10",
+      "build": "control",
+      "path": "fullVLE",
+      "freshEOS": {
+        "p": 3500000.000000004,
+        "rho": 28.05137740100952,
+        "h": 1628069.32868408,
+        "u": 1503298.2719917246
+      },
+      "normalizedResiduals": {
+        "mass": 0.0,
+        "energy": 0.0
+      },
+      "nonlinearPass": true,
+      "canonicalPass": true,
+      "physicalQuality": true
+    },
+    {
+      "failureKey": "webkit/diagnostic-quality-band-3500000.0-hg-9.9e-10",
+      "build": "A1",
+      "path": "default",
+      "freshEOS": {
+        "p": 3500000.0000000005,
+        "rho": 28.05137740100952,
+        "h": 1628069.328684079,
+        "u": 1503298.2719917244
+      },
+      "normalizedResiduals": {
+        "mass": 0.0,
+        "energy": 1.4041374036330958e-16
+      },
+      "nonlinearPass": true,
+      "canonicalPass": true,
+      "physicalQuality": true
+    },
+    {
+      "failureKey": "webkit/diagnostic-quality-band-3500000.0-hg-9.9e-10",
+      "build": "A1",
+      "path": "fullVLE",
+      "freshEOS": {
+        "p": 3500000.0000000047,
+        "rho": 28.05137740100952,
+        "h": 1628069.32868408,
+        "u": 1503298.2719917248
+      },
+      "normalizedResiduals": {
+        "mass": 0.0,
+        "energy": 4.212412210899288e-16
+      },
+      "nonlinearPass": true,
+      "canonicalPass": true,
+      "physicalQuality": true
+    },
+    {
+      "failureKey": "webkit/focused-3500000.0-stable-vapor",
+      "build": "control",
+      "path": "default",
+      "freshEOS": {
+        "p": 3500000.000000002,
+        "rho": 27.554827993594678,
+        "h": 1638069.3277690788,
+        "u": 1511049.844983209
+      },
+      "normalizedResiduals": {
+        "mass": 0.0,
+        "energy": 2.84421523514643e-16
+      },
+      "nonlinearPass": true,
+      "canonicalPass": true,
+      "physicalQuality": true
+    },
+    {
+      "failureKey": "webkit/focused-3500000.0-stable-vapor",
+      "build": "control",
+      "path": "fullVLE",
+      "freshEOS": {
+        "p": 3500000.000000002,
+        "rho": 27.554827993594678,
+        "h": 1638069.3277690788,
+        "u": 1511049.844983209
+      },
+      "normalizedResiduals": {
+        "mass": 0.0,
+        "energy": 2.84421523514643e-16
+      },
+      "nonlinearPass": true,
+      "canonicalPass": true,
+      "physicalQuality": true
+    },
+    {
+      "failureKey": "webkit/focused-3500000.0-stable-vapor",
+      "build": "A1",
+      "path": "default",
+      "freshEOS": {
+        "p": 3500000.000000002,
+        "rho": 27.554827993594678,
+        "h": 1638069.3277690788,
+        "u": 1511049.844983209
+      },
+      "normalizedResiduals": {
+        "mass": 0.0,
+        "energy": 2.84421523514643e-16
+      },
+      "nonlinearPass": true,
+      "canonicalPass": true,
+      "physicalQuality": true
+    },
+    {
+      "failureKey": "webkit/focused-3500000.0-stable-vapor",
+      "build": "A1",
+      "path": "fullVLE",
+      "freshEOS": {
+        "p": 3500000.000000002,
+        "rho": 27.554827993594678,
+        "h": 1638069.3277690788,
+        "u": 1511049.844983209
+      },
+      "normalizedResiduals": {
+        "mass": 0.0,
+        "energy": 2.84421523514643e-16
+      },
+      "nonlinearPass": true,
+      "canonicalPass": true,
+      "physicalQuality": true
+    }
+  ],
+  "allReturnedPass": true,
+  "endpointPhysicalQualification": false
+}
