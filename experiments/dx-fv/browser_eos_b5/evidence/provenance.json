@@ -1,0 +1,114 @@
+{
+  "startingCommit": "3622000309cacdd35aaaebbb805ae40d27c75603",
+  "branch": "research/browser-eos-b5-35bar-inverse-forensics-20261016",
+  "sourceCommit": "ae81610e7d23efc57f9d051c8e70a4d66e87537f",
+  "sourceTree": "ca49b8c34df0dae93dcc7fe07e2815a10d967662",
+  "sourceRestoredToB4C": true,
+  "sourceFilesVerified": 1782,
+  "sourceMismatches": [],
+  "dependencies": {
+    "boost_headers-src": {
+      "fileCount": 2826,
+      "pathSHA256JSON": "9d1f3dcbd1194bd6933e0f1df549c9b968a72aaca3566c24f252a044d915a2b2",
+      "match": true
+    },
+    "eigen-src": {
+      "fileCount": 1913,
+      "pathSHA256JSON": "8036b5c9945c802277c98f69633c6e110222090b243a2c767e85f4f0d8a202cf",
+      "match": true
+    },
+    "fmt-src": {
+      "fileCount": 128,
+      "pathSHA256JSON": "95600f430d27ed56d19824cf29ef69ba5d061a3ce2829c1c3153fb4d27f5a528",
+      "match": true
+    },
+    "if97-src": {
+      "fileCount": 98,
+      "pathSHA256JSON": "1c7205f107b1ccdb06daa69bfa4e45410d0a49aba4de26e310ab3fb76f89bbb9",
+      "match": true
+    },
+    "msgpack-c-src": {
+      "fileCount": 852,
+      "pathSHA256JSON": "3ba100e92d31711310b1efb24e04d26d6d9e4c24559c755ff11495145e75c3e1",
+      "match": true
+    },
+    "multicomplex-src": {
+      "fileCount": 249,
+      "pathSHA256JSON": "a4873f9d30ef7d83fe8547adc51d449c8a845f520a2e7b2add0035a447bf2549",
+      "match": true
+    },
+    "nlohmann_json-src": {
+      "fileCount": 1163,
+      "pathSHA256JSON": "4f08a25bb96bb16a209f5bfcff404713cd23dc4084dcfb43f0194865aa9b67cb",
+      "match": true
+    },
+    "refprop_headers-src": {
+      "fileCount": 13,
+      "pathSHA256JSON": "f2386fff7c7c8131708319fb235413110bdb7e026e88e8563155061b3bfcdc35",
+      "match": true
+    },
+    "valijson-src": {
+      "fileCount": 141,
+      "pathSHA256JSON": "90daad56ab1e58f9fbb457031c1129fdc0a28bcfc434c941a0c4460ad77dbf76",
+      "match": true
+    }
+  },
+  "wheelBinaries": {
+    "/workspace/b5-tools/CoolProp/CoolProp.abi3.so": {
+      "sha256": "05d85591871524e83bb23170e22ee149e1167fb3ef5deaf81b9d248283089be5",
+      "matchesHistorical": true
+    },
+    "/workspace/b5-tools/CoolProp/State.abi3.so": {
+      "sha256": "e9bc46346285046cb750f1c66043b91601fa5f3c606324842ca673e53b0c64dc",
+      "matchesHistorical": true
+    },
+    "/workspace/b5-tools/CoolProp/_constants.abi3.so": {
+      "sha256": "5be23cba765b2fe34feb4eec08167b656974ee3b52a762e4f47d6b47c397d7fe",
+      "matchesHistorical": true
+    },
+    "/workspace/b5-tools72/CoolProp/CoolProp.cpython-312-x86_64-linux-gnu.so": {
+      "sha256": "cc8f3d9248c67fe9c11165d591a67768df40aee9e7e4c56106451e24f26f387c",
+      "matchesHistorical": true
+    },
+    "/workspace/b5-tools72/CoolProp/_constants.cpython-312-x86_64-linux-gnu.so": {
+      "sha256": "861be6204867393f56304f290cea1cc7afe2b589c78855ac79a8bbef3bd6fd20",
+      "matchesHistorical": true
+    }
+  },
+  "versions": {
+    "gcc": "g++ (Debian 14.2.0-19) 14.2.0",
+    "python": "Python 3.12.14",
+    "cmake": "cmake version 4.4.4",
+    "ninja": "1.13.2.git.kitware.jobserver-pipe-1"
+  },
+  "platform": "Linux-6.18.44-x86_64-with-glibc2.41",
+  "binaries": {
+    "rebuilt-uninstrumented": {
+      "sha256": "41507e2d57540a4a3669a926b8b6c443d4aae2c794ec5f260ea2b1295452b2f4",
+      "bytes": 12912824,
+      "archive": "artifacts/rebuilt-uninstrumented.so.xz",
+      "archiveSHA256": "e7e62c3a03d2231ace97c3d75f30bbc02519ce5fdc0465652609d5bf5b54b358"
+    },
+    "diagnostic-phase-only": {
+      "sha256": "fa9881c24783f0c19ffab03e4461ecdd20ab9789eca45e04c20c7d06b0e77b03",
+      "bytes": 12916920,
+      "archive": "artifacts/diagnostic-phase-only.so.xz",
+      "archiveSHA256": "69601b9bf431e7b1bea2dff6a778e49783954a896d18e7b49438e4d6cb4ddf8e"
+    },
+    "diagnostic": {
+      "sha256": "d39698666bcaa41d337f92fc2d35e87621482b2f4b1d501d1fb6a2a0ae36cdbc",
+      "bytes": 12916920,
+      "archive": "artifacts/diagnostic.so.xz",
+      "archiveSHA256": "5e3e9640cd75c968c45d012c2badcdf253bbacb880a6e5635c3df1f0ae6ecfba"
+    }
+  },
+  "diagnosticOnly": true,
+  "functionalRepair": false,
+  "originalTrackedFiles": 1557,
+  "changedStartingFiles": [],
+  "acceptedContract": "../browser_eos_backend/SOLVER_CONTRACT.md",
+  "loaderUnchanged": true,
+  "fullA2Qualification": false,
+  "productionIntegration": false,
+  "deployment": false
+}

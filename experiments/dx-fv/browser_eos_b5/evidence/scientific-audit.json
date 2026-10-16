@@ -1,0 +1,143 @@
+{
+  "assessment": "ROOT CAUSE CONFIRMED",
+  "checks": {
+    "binary64InventoryAndOperationOrder": true,
+    "allNativeHistoricalRowsExact": true,
+    "instrumentedUninstrumentedParity": true,
+    "nativeFreshReused": true,
+    "sourceAndArtifactsPreserved": true,
+    "allDoubleReferencesConverged": true,
+    "allMPReferencesPresent": true,
+    "precisionRepeat": true,
+    "stableReferences": true,
+    "allReturnedCanonicalBudgets": true,
+    "allReturnedNonlinearBudgets": true,
+    "chromiumHistoricalExact": true,
+    "chromiumPHExact": true,
+    "chromiumFreshReused": true,
+    "chromiumGuardPath": true,
+    "webkitHistoricalExact": true,
+    "webkitPHExact": true,
+    "webkitFreshReused": true,
+    "webkitGuardPath": true,
+    "trace-native-ledger-146": true,
+    "trace-native-ledger-148": true,
+    "trace-native-ledger-151": true,
+    "trace-native-ledger-152": true,
+    "trace-native-ledger-162": true,
+    "trace-native-ledger-164": true,
+    "trace-native-ledger-165": true
+  },
+  "evidenceAuditPass": true,
+  "facts": {
+    "failureCounts": {
+      "native-full-VLE": 7,
+      "chromium": 7,
+      "webkit": 7
+    },
+    "fixedRows": 250,
+    "uniqueInventories": 73,
+    "nativeDefaultCrossPathExceptions": 0,
+    "nativeFullVLECrossPathExceptions": 21,
+    "native72Exceptions": 57,
+    "native72UniqueExceptionInventories": 19,
+    "rawEOSAuditRows": 1668,
+    "rawExceptions": 144,
+    "successfulCanonicalMax": {
+      "p": 0.0030563343316316605,
+      "h": 0.00010895798914134502,
+      "T": 2.5644533252489055e-07
+    },
+    "successfulNonlinearMax": {
+      "mass": 1.0463345009683197e-14,
+      "energy": 1.1074706147683365e-14
+    },
+    "originalBrowserCanonicalMax": {
+      "p": 7.655471563339233e-07,
+      "h": 1.5133991837501526e-09,
+      "T": 5.684341886080801e-13
+    },
+    "originalBrowserFixedReferenceBelowLimit": 2,
+    "originalBrowserFixedReferenceAboveLimit": 5,
+    "maxPHInventoryEnergyMismatch": 1.8155068224379328e-15,
+    "browser": {
+      "chromium": {
+        "version": "154.0.8037.57",
+        "fixedRows": 334,
+        "ownHistoricalInventories": 42,
+        "sharedNativeBrowserMaxDifferences": {
+          "p": 1.3504177331924438e-08,
+          "h": 4.190951585769653e-09,
+          "u": 3.4924596548080444e-09,
+          "T": 1.7053025658242404e-13,
+          "rho": 1.1368683772161603e-13,
+          "Q": 4.551914400963142e-15
+        },
+        "sharedNativeBrowserGuardDisagreements": [
+          "native-ledger-15",
+          "native-ledger-46",
+          "native-ledger-133"
+        ],
+        "scalarVsStateDifferences": {
+          "p": 0.0,
+          "h": 0.0,
+          "T": 0.0,
+          "rho": 6.480149750132114e-12,
+          "u": 7.683411240577698e-09,
+          "Q": 0
+        },
+        "boundaryAdapterRejections": 6
+      },
+      "webkit": {
+        "version": "26.5",
+        "fixedRows": 334,
+        "ownHistoricalInventories": 42,
+        "sharedNativeBrowserMaxDifferences": {
+          "p": 1.3504177331924438e-08,
+          "h": 4.190951585769653e-09,
+          "u": 3.4924596548080444e-09,
+          "T": 1.7053025658242404e-13,
+          "rho": 1.1368683772161603e-13,
+          "Q": 4.551914400963142e-15
+        },
+        "sharedNativeBrowserGuardDisagreements": [
+          "native-ledger-15",
+          "native-ledger-46",
+          "native-ledger-133"
+        ],
+        "scalarVsStateDifferences": {
+          "p": 0.0,
+          "h": 0.0,
+          "T": 0.0,
+          "rho": 6.480149750132114e-12,
+          "u": 7.683411240577698e-09,
+          "Q": 0
+        },
+        "boundaryAdapterRejections": 6
+      }
+    },
+    "retainedBudgets": {
+      "canonical": {
+        "p": 0.1,
+        "h": 0.1,
+        "T": 0.0001
+      },
+      "nonlinear": 1e-11,
+      "independentResolution": {
+        "p": 1e-05,
+        "caloric": 1e-08
+      },
+      "standalone": {
+        "p": 10,
+        "h": 50,
+        "T": 0.01
+      },
+      "massLedger": 1e-08,
+      "energyLedger": 1e-06
+    },
+    "fullA2Qualification": false
+  },
+  "backendQualified": false,
+  "allOriginalFailuresRetained": true,
+  "functionalRepairImplemented": false
+}

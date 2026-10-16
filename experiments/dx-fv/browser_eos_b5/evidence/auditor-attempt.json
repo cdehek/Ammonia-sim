@@ -1,0 +1,6 @@
+{
+  "stage": "first scientific-audit.py invocation",
+  "error": "KeyError: 'liquidStability'",
+  "cause": "Auditor read equilibrium endpoint stability one dictionary level too high.",
+  "disposition": "Corrected auditor indexing. No experiment, input, scientific budget or backend changed. No scientific-audit.json was produced by the failed invocation."
+}

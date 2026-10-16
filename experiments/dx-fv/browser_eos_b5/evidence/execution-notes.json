@@ -1,0 +1,38 @@
+{
+  "startObservedUTC": "2026-10-16 04:48 UTC",
+  "auditObservedUTC": "2026-10-16 05:13:34 UTC",
+  "limitsSeconds": {
+    "nativeReplay": 120,
+    "browserReplay": 180,
+    "doubleReferences": 180,
+    "highPrecision": 240,
+    "configure": 240,
+    "initialBuild": 900,
+    "diagnosticBuild": 300
+  },
+  "compilerJobs": 2,
+  "setupBuildBudgetMinutes": 30,
+  "allScientificRunsCompleted": true,
+  "initialCloneAttempt": {
+    "error": "Failed to connect to proxy port 8080 after 0 ms: Could not connect to server",
+    "resolution": "Retried the same authorized clone with execution network access enabled; no proxy or credential bypass."
+  },
+  "webkitSetup": "Missing GTK/WPE host-library warning retained; same six hashed isolated WPE packages used; both engines completed.",
+  "auditorAttempt": "auditor-attempt.json",
+  "instrumentationStages": [
+    "phase/iteration logging",
+    "additional direct Brent termination logging"
+  ],
+  "isolatedOutputReplay": {
+    "path": "/tmp/b5-replay-smoke",
+    "fixedInputsExact": true,
+    "nativeResultsExact": true
+  },
+  "noSpeculativeFunctionalFixBuild": true,
+  "noFullA2Campaign": true,
+  "noLoaderRepair": true,
+  "whitespaceReview": {
+    "csv": "Writer now uses LF, with identical numerical values and bits.",
+    "verbatimEvidence": "Full git diff --check reports original source trailing spaces, blank patch context, raw CMake EOF and raw Playwright log whitespace. Retained byte-for-byte as evidence; custom code/docs/JSON checked separately."
+  }
+}
