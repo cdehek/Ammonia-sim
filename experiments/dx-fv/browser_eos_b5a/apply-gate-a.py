@@ -1,4 +1,5 @@
 """Apply A1 only to an exact inherited B4C source tree; write separate patch."""
+import os
 import hashlib,json,sys,difflib
 from pathlib import Path
 B=Path(__file__).resolve().parent; S=Path(sys.argv[1]); H=B.parent/'browser_eos_b4c/evidence/source-stage-candidateB.json'
@@ -25,9 +26,9 @@ b='''        // For DU, a saturation convergence residual alone need not resolve
         if (options.polish_du) {
             error = sqrt(pow(r[0], 2) + pow(r[1], 2));
             p_error = (pL - pV) / pL;
-            const CoolPropDbl free_delta = options.imposed_rho == saturation_D_pure_options::IMPOSED_RHOL ? deltaV : deltaL;
+            const CoolPropDbl delta_scale = std::max(std::abs(deltaL), std::abs(deltaV));
             if (error <= 1e-9 && std::abs(v[0]) <= 8 * DBL_EPSILON * std::abs(tau)
-                && std::abs(v[1]) <= 8 * DBL_EPSILON * (options.use_logdelta ? 1 : std::abs(free_delta))) {
+                && std::abs(v[1]) <= 8 * DBL_EPSILON * (options.use_logdelta ? 1 : delta_scale)) {
                 break;
             }
         }
@@ -44,6 +45,9 @@ assert chunk.count(a)==1;chunk=chunk.replace(a,b)
 assert chunk.count('} while (error > 1e-9);')==1;chunk=chunk.replace('} while (error > 1e-9);','} while (options.polish_du || error > 1e-9);')
 new[v]=new[v][:start]+chunk+new[v][end:]
 patch=''.join(''.join(difflib.unified_diff(old[f].splitlines(True),new[f].splitlines(True),fromfile='a/'+f,tofile='b/'+f)) for f in files)
-(B/'gate-a.patch').write_text(patch)
+p=B/'gate-a.patch'
+if p.exists():assert p.read_text()==patch
+else:p.write_text(patch)
 for f in files:(S/f).write_text(new[f])
-(B/'evidence/source-stage-A1.json').write_text(json.dumps(dict(trackedSourceSHA256={f:hashlib.sha256((S/f).read_bytes()).hexdigest() for f in expected},patchSHA256=hashlib.sha256(patch.encode()).hexdigest()),indent=2)+'\n')
+E=Path(os.environ.get('B5A_EVIDENCE',B/'evidence'));out=E/'source-stage-A1.json';assert not out.exists(),out
+out.write_text(json.dumps(dict(trackedSourceSHA256={f:hashlib.sha256((S/f).read_bytes()).hexdigest() for f in expected},patchSHA256=hashlib.sha256(patch.encode()).hexdigest()),indent=2)+'\n')
