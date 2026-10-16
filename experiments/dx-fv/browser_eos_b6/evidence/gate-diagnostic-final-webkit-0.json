@@ -1,0 +1,2715 @@
+{
+  "result": {
+    "javascriptPaths": {
+      "rows": [
+        {
+          "request": {
+            "mode": "PT",
+            "args": [
+              NaN,
+              300
+            ],
+            "inputBits": [
+              "7ff8000000000000",
+              "4072c00000000000"
+            ]
+          },
+          "expectReject": true,
+          "highLevel": false,
+          "synthetic": false,
+          "phaseImposition": false,
+          "before": {
+            "stack": 5706944,
+            "memory": 56360960
+          },
+          "error": {
+            "type": "object",
+            "constructor": "Error",
+            "name": "Error",
+            "message": "Nonfinite state input",
+            "string": "Error: Nonfinite state input",
+            "excPtr": null,
+            "ownKeys": [
+              "message",
+              "line",
+              "column",
+              "sourceURL",
+              "stack"
+            ],
+            "stack": "evaluate@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/candidate-diagnostic.mjs:102:33\nstep@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/lifecycle.mjs:14:33\njavascriptPaths@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/lifecycle.mjs:65:17\nasync attempt@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/gate-b.mjs:10:104\nasync run@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/gate-b.mjs:16:15",
+            "nativeException": null
+          },
+          "after": {
+            "stack": 5706944,
+            "memory": 56360960
+          },
+          "events": [
+            0,
+            2
+          ]
+        },
+        {
+          "request": {
+            "mode": "PT",
+            "args": [
+              30298.937123458254,
+              218.262937027359
+            ],
+            "inputBits": [
+              "40dd96bbf9d4ab61",
+              "406b4869fae9ad42"
+            ]
+          },
+          "expectReject": true,
+          "highLevel": true,
+          "synthetic": false,
+          "phaseImposition": false,
+          "before": {
+            "stack": 5706944,
+            "memory": 56360960
+          },
+          "error": {
+            "type": "object",
+            "constructor": "Error",
+            "name": "Error",
+            "message": "EOS returned a nonfinite property",
+            "string": "Error: EOS returned a nonfinite property",
+            "excPtr": null,
+            "ownKeys": [
+              "message",
+              "line",
+              "column",
+              "sourceURL",
+              "stack"
+            ],
+            "stack": "evaluate@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/candidate-diagnostic.mjs:102:33\nstep@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/lifecycle.mjs:14:33\njavascriptPaths@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/lifecycle.mjs:66:17\nasync attempt@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/gate-b.mjs:10:104\nasync run@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/gate-b.mjs:16:15",
+            "nativeException": null
+          },
+          "after": {
+            "stack": 5706944,
+            "memory": 56360960
+          },
+          "events": [
+            2,
+            94
+          ]
+        },
+        {
+          "request": {
+            "mode": "unknown",
+            "args": [
+              350000,
+              300
+            ],
+            "inputBits": [
+              "41155cc000000000",
+              "4072c00000000000"
+            ]
+          },
+          "expectReject": true,
+          "highLevel": false,
+          "synthetic": false,
+          "phaseImposition": false,
+          "before": {
+            "stack": 5706944,
+            "memory": 56360960
+          },
+          "error": {
+            "type": "object",
+            "constructor": "Error",
+            "name": "Error",
+            "message": "Unsupported research input pair",
+            "string": "Error: Unsupported research input pair",
+            "excPtr": null,
+            "ownKeys": [
+              "message",
+              "line",
+              "column",
+              "sourceURL",
+              "stack"
+            ],
+            "stack": "evaluate@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/candidate-diagnostic.mjs:102:33\nstep@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/lifecycle.mjs:14:33\njavascriptPaths@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/lifecycle.mjs:67:17\nasync attempt@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/gate-b.mjs:10:104\nasync run@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/gate-b.mjs:16:15",
+            "nativeException": null
+          },
+          "after": {
+            "stack": 5706944,
+            "memory": 56360960
+          },
+          "events": [
+            94,
+            96
+          ]
+        },
+        {
+          "request": {
+            "mode": "PT",
+            "args": [
+              350000,
+              300
+            ],
+            "inputBits": [
+              "41155cc000000000",
+              "4072c00000000000"
+            ]
+          },
+          "expectReject": true,
+          "highLevel": false,
+          "synthetic": true,
+          "phaseImposition": false,
+          "before": {
+            "stack": 5706944,
+            "memory": 56360960
+          },
+          "error": {
+            "type": "object",
+            "constructor": "Error",
+            "name": "Error",
+            "message": "Synthetic JS diagnostic",
+            "string": "Error: Synthetic JS diagnostic",
+            "excPtr": null,
+            "ownKeys": [
+              "message",
+              "line",
+              "column",
+              "sourceURL",
+              "stack"
+            ],
+            "stack": "evaluate@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/candidate-diagnostic.mjs:102:33\nstep@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/lifecycle.mjs:14:33\njavascriptPaths@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/lifecycle.mjs:70:55\nasync attempt@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/gate-b.mjs:10:104\nasync run@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/gate-b.mjs:16:15",
+            "nativeException": null
+          },
+          "after": {
+            "stack": 5706944,
+            "memory": 56360960
+          },
+          "events": [
+            96,
+            98
+          ]
+        },
+        {
+          "request": {
+            "mode": "PT",
+            "args": [
+              350000,
+              300
+            ],
+            "inputBits": [
+              "41155cc000000000",
+              "4072c00000000000"
+            ]
+          },
+          "expectReject": false,
+          "highLevel": false,
+          "synthetic": false,
+          "phaseImposition": false,
+          "before": {
+            "stack": 5706944,
+            "memory": 56360960
+          },
+          "value": {
+            "values": {
+              "p": 349999.99999999994,
+              "T": 300,
+              "h": 1680932.6312187368,
+              "s": 6454.416542652696,
+              "rho": 2.4800949227013804,
+              "u": 1539809.0005075498,
+              "Q": -1
+            },
+            "bits": {
+              "p": "41155cbfffffffff",
+              "T": "4072c00000000000",
+              "h": "4139a624a1978d17",
+              "s": "40b9366aa28a0eb8",
+              "rho": "4003d73c01bfd31a",
+              "u": "41377ee100214346",
+              "Q": "bff0000000000000"
+            }
+          },
+          "fresh": {
+            "values": {
+              "p": 349999.99999999994,
+              "T": 300,
+              "h": 1680932.6312187368,
+              "s": 6454.416542652696,
+              "rho": 2.4800949227013804,
+              "u": 1539809.0005075498,
+              "Q": -1
+            },
+            "bits": {
+              "p": "41155cbfffffffff",
+              "T": "4072c00000000000",
+              "h": "4139a624a1978d17",
+              "s": "40b9366aa28a0eb8",
+              "rho": "4003d73c01bfd31a",
+              "u": "41377ee100214346",
+              "Q": "bff0000000000000"
+            }
+          },
+          "after": {
+            "stack": 5706944,
+            "memory": 56360960
+          },
+          "events": [
+            98,
+            98
+          ]
+        },
+        {
+          "request": {
+            "mode": "PT",
+            "args": [
+              350000,
+              300
+            ],
+            "inputBits": [
+              "41155cc000000000",
+              "4072c00000000000"
+            ]
+          },
+          "expectReject": true,
+          "highLevel": false,
+          "synthetic": true,
+          "phaseImposition": false,
+          "before": {
+            "stack": 5706944,
+            "memory": 56360960
+          },
+          "error": {
+            "type": "object",
+            "constructor": "Error",
+            "name": "Error",
+            "message": "123456",
+            "string": "Error: 123456",
+            "excPtr": null,
+            "ownKeys": [
+              "message",
+              "line",
+              "column",
+              "sourceURL",
+              "stack"
+            ],
+            "stack": "evaluate@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/candidate-diagnostic.mjs:102:33\nstep@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/lifecycle.mjs:14:33\njavascriptPaths@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/lifecycle.mjs:70:55\nasync attempt@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/gate-b.mjs:10:104\nasync run@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/gate-b.mjs:16:15",
+            "nativeException": null
+          },
+          "after": {
+            "stack": 5706944,
+            "memory": 56360960
+          },
+          "events": [
+            98,
+            100
+          ]
+        },
+        {
+          "request": {
+            "mode": "PT",
+            "args": [
+              350000,
+              300
+            ],
+            "inputBits": [
+              "41155cc000000000",
+              "4072c00000000000"
+            ]
+          },
+          "expectReject": false,
+          "highLevel": false,
+          "synthetic": false,
+          "phaseImposition": false,
+          "before": {
+            "stack": 5706944,
+            "memory": 56360960
+          },
+          "value": {
+            "values": {
+              "p": 349999.99999999994,
+              "T": 300,
+              "h": 1680932.6312187368,
+              "s": 6454.416542652696,
+              "rho": 2.4800949227013804,
+              "u": 1539809.0005075498,
+              "Q": -1
+            },
+            "bits": {
+              "p": "41155cbfffffffff",
+              "T": "4072c00000000000",
+              "h": "4139a624a1978d17",
+              "s": "40b9366aa28a0eb8",
+              "rho": "4003d73c01bfd31a",
+              "u": "41377ee100214346",
+              "Q": "bff0000000000000"
+            }
+          },
+          "fresh": {
+            "values": {
+              "p": 349999.99999999994,
+              "T": 300,
+              "h": 1680932.6312187368,
+              "s": 6454.416542652696,
+              "rho": 2.4800949227013804,
+              "u": 1539809.0005075498,
+              "Q": -1
+            },
+            "bits": {
+              "p": "41155cbfffffffff",
+              "T": "4072c00000000000",
+              "h": "4139a624a1978d17",
+              "s": "40b9366aa28a0eb8",
+              "rho": "4003d73c01bfd31a",
+              "u": "41377ee100214346",
+              "Q": "bff0000000000000"
+            }
+          },
+          "after": {
+            "stack": 5706944,
+            "memory": 56360960
+          },
+          "events": [
+            100,
+            100
+          ]
+        },
+        {
+          "request": {
+            "mode": "PT",
+            "args": [
+              350000,
+              300
+            ],
+            "inputBits": [
+              "41155cc000000000",
+              "4072c00000000000"
+            ]
+          },
+          "expectReject": true,
+          "highLevel": false,
+          "synthetic": true,
+          "phaseImposition": false,
+          "before": {
+            "stack": 5706944,
+            "memory": 56360960
+          },
+          "error": {
+            "type": "object",
+            "constructor": "Error",
+            "name": "Error",
+            "message": "Synthetic excPtr lookalike",
+            "string": "Error: Synthetic excPtr lookalike",
+            "excPtr": null,
+            "ownKeys": [
+              "message",
+              "line",
+              "column",
+              "sourceURL",
+              "stack"
+            ],
+            "stack": "evaluate@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/candidate-diagnostic.mjs:102:33\nstep@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/lifecycle.mjs:14:33\njavascriptPaths@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/lifecycle.mjs:70:55\nasync attempt@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/gate-b.mjs:10:104\nasync run@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/gate-b.mjs:16:15",
+            "nativeException": null
+          },
+          "after": {
+            "stack": 5706944,
+            "memory": 56360960
+          },
+          "events": [
+            100,
+            102
+          ]
+        },
+        {
+          "request": {
+            "mode": "PT",
+            "args": [
+              350000,
+              300
+            ],
+            "inputBits": [
+              "41155cc000000000",
+              "4072c00000000000"
+            ]
+          },
+          "expectReject": false,
+          "highLevel": false,
+          "synthetic": false,
+          "phaseImposition": false,
+          "before": {
+            "stack": 5706944,
+            "memory": 56360960
+          },
+          "value": {
+            "values": {
+              "p": 349999.99999999994,
+              "T": 300,
+              "h": 1680932.6312187368,
+              "s": 6454.416542652696,
+              "rho": 2.4800949227013804,
+              "u": 1539809.0005075498,
+              "Q": -1
+            },
+            "bits": {
+              "p": "41155cbfffffffff",
+              "T": "4072c00000000000",
+              "h": "4139a624a1978d17",
+              "s": "40b9366aa28a0eb8",
+              "rho": "4003d73c01bfd31a",
+              "u": "41377ee100214346",
+              "Q": "bff0000000000000"
+            }
+          },
+          "fresh": {
+            "values": {
+              "p": 349999.99999999994,
+              "T": 300,
+              "h": 1680932.6312187368,
+              "s": 6454.416542652696,
+              "rho": 2.4800949227013804,
+              "u": 1539809.0005075498,
+              "Q": -1
+            },
+            "bits": {
+              "p": "41155cbfffffffff",
+              "T": "4072c00000000000",
+              "h": "4139a624a1978d17",
+              "s": "40b9366aa28a0eb8",
+              "rho": "4003d73c01bfd31a",
+              "u": "41377ee100214346",
+              "Q": "bff0000000000000"
+            }
+          },
+          "after": {
+            "stack": 5706944,
+            "memory": 56360960
+          },
+          "events": [
+            102,
+            102
+          ]
+        },
+        {
+          "request": {
+            "mode": "PT",
+            "args": [
+              350000,
+              300
+            ],
+            "inputBits": [
+              "41155cc000000000",
+              "4072c00000000000"
+            ]
+          },
+          "expectReject": true,
+          "highLevel": false,
+          "synthetic": true,
+          "phaseImposition": false,
+          "before": {
+            "stack": 5706944,
+            "memory": 56360960
+          },
+          "error": {
+            "type": "object",
+            "constructor": "Error",
+            "name": "Error",
+            "message": "Synthetic forged CppException",
+            "string": "Error: Synthetic forged CppException",
+            "excPtr": null,
+            "ownKeys": [
+              "message",
+              "line",
+              "column",
+              "sourceURL",
+              "stack"
+            ],
+            "stack": "evaluate@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/candidate-diagnostic.mjs:102:33\nstep@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/lifecycle.mjs:14:33\njavascriptPaths@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/lifecycle.mjs:70:55\nasync attempt@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/gate-b.mjs:10:104\nasync run@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/gate-b.mjs:16:15",
+            "nativeException": null
+          },
+          "after": {
+            "stack": 5706944,
+            "memory": 56360960
+          },
+          "events": [
+            102,
+            104
+          ]
+        },
+        {
+          "request": {
+            "mode": "PT",
+            "args": [
+              350000,
+              300
+            ],
+            "inputBits": [
+              "41155cc000000000",
+              "4072c00000000000"
+            ]
+          },
+          "expectReject": false,
+          "highLevel": false,
+          "synthetic": false,
+          "phaseImposition": false,
+          "before": {
+            "stack": 5706944,
+            "memory": 56360960
+          },
+          "value": {
+            "values": {
+              "p": 349999.99999999994,
+              "T": 300,
+              "h": 1680932.6312187368,
+              "s": 6454.416542652696,
+              "rho": 2.4800949227013804,
+              "u": 1539809.0005075498,
+              "Q": -1
+            },
+            "bits": {
+              "p": "41155cbfffffffff",
+              "T": "4072c00000000000",
+              "h": "4139a624a1978d17",
+              "s": "40b9366aa28a0eb8",
+              "rho": "4003d73c01bfd31a",
+              "u": "41377ee100214346",
+              "Q": "bff0000000000000"
+            }
+          },
+          "fresh": {
+            "values": {
+              "p": 349999.99999999994,
+              "T": 300,
+              "h": 1680932.6312187368,
+              "s": 6454.416542652696,
+              "rho": 2.4800949227013804,
+              "u": 1539809.0005075498,
+              "Q": -1
+            },
+            "bits": {
+              "p": "41155cbfffffffff",
+              "T": "4072c00000000000",
+              "h": "4139a624a1978d17",
+              "s": "40b9366aa28a0eb8",
+              "rho": "4003d73c01bfd31a",
+              "u": "41377ee100214346",
+              "Q": "bff0000000000000"
+            }
+          },
+          "after": {
+            "stack": 5706944,
+            "memory": 56360960
+          },
+          "events": [
+            104,
+            104
+          ]
+        },
+        {
+          "request": {
+            "mode": "PT",
+            "args": [
+              350000,
+              300
+            ],
+            "inputBits": [
+              "41155cc000000000",
+              "4072c00000000000"
+            ]
+          },
+          "expectReject": true,
+          "highLevel": false,
+          "synthetic": true,
+          "phaseImposition": false,
+          "before": {
+            "stack": 5706944,
+            "memory": 56360960
+          },
+          "error": {
+            "type": "object",
+            "constructor": "Error",
+            "name": "Error",
+            "message": "EOS returned a nonfinite property",
+            "string": "Error: EOS returned a nonfinite property",
+            "excPtr": null,
+            "ownKeys": [
+              "message",
+              "line",
+              "column",
+              "sourceURL",
+              "stack"
+            ],
+            "stack": "evaluate@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/candidate-diagnostic.mjs:102:33\nstep@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/lifecycle.mjs:14:33\njavascriptPaths@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/lifecycle.mjs:75:17\nasync attempt@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/gate-b.mjs:10:104\nasync run@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/gate-b.mjs:16:15",
+            "nativeException": null
+          },
+          "after": {
+            "stack": 5706944,
+            "memory": 56360960
+          },
+          "events": [
+            104,
+            106
+          ]
+        },
+        {
+          "request": {
+            "mode": "PT",
+            "args": [
+              350000,
+              300
+            ],
+            "inputBits": [
+              "41155cc000000000",
+              "4072c00000000000"
+            ]
+          },
+          "expectReject": false,
+          "highLevel": false,
+          "synthetic": false,
+          "phaseImposition": false,
+          "before": {
+            "stack": 5706944,
+            "memory": 56360960
+          },
+          "value": {
+            "values": {
+              "p": 349999.99999999994,
+              "T": 300,
+              "h": 1680932.6312187368,
+              "s": 6454.416542652696,
+              "rho": 2.4800949227013804,
+              "u": 1539809.0005075498,
+              "Q": -1
+            },
+            "bits": {
+              "p": "41155cbfffffffff",
+              "T": "4072c00000000000",
+              "h": "4139a624a1978d17",
+              "s": "40b9366aa28a0eb8",
+              "rho": "4003d73c01bfd31a",
+              "u": "41377ee100214346",
+              "Q": "bff0000000000000"
+            }
+          },
+          "fresh": {
+            "values": {
+              "p": 349999.99999999994,
+              "T": 300,
+              "h": 1680932.6312187368,
+              "s": 6454.416542652696,
+              "rho": 2.4800949227013804,
+              "u": 1539809.0005075498,
+              "Q": -1
+            },
+            "bits": {
+              "p": "41155cbfffffffff",
+              "T": "4072c00000000000",
+              "h": "4139a624a1978d17",
+              "s": "40b9366aa28a0eb8",
+              "rho": "4003d73c01bfd31a",
+              "u": "41377ee100214346",
+              "Q": "bff0000000000000"
+            }
+          },
+          "after": {
+            "stack": 5706944,
+            "memory": 56360960
+          },
+          "events": [
+            106,
+            106
+          ]
+        }
+      ],
+      "events": [
+        {
+          "kind": "loader-catch",
+          "raw": {
+            "type": "object",
+            "constructor": "Error",
+            "name": "Error",
+            "message": "Nonfinite state input",
+            "string": "Error: Nonfinite state input",
+            "excPtr": null,
+            "ownKeys": [
+              "message",
+              "line",
+              "column",
+              "sourceURL",
+              "stack"
+            ],
+            "stack": "evaluate@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/candidate-diagnostic.mjs:73:58\nstep@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/lifecycle.mjs:14:33\njavascriptPaths@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/lifecycle.mjs:65:17\nasync attempt@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/gate-b.mjs:10:104\nasync run@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/gate-b.mjs:16:15"
+          },
+          "stack": 5706944,
+          "memory": 56360960
+        },
+        {
+          "kind": "stack-restored",
+          "stack": 5706944
+        },
+        {
+          "kind": "__cxa_throw",
+          "stage": "before",
+          "args": [
+            23037336,
+            124668,
+            4
+          ],
+          "stack": 5703552,
+          "memory": 56360960,
+          "header": {
+            "ptr": 23037336,
+            "referenceCount": 0,
+            "type": 0,
+            "destructor": 0,
+            "caught": 0,
+            "rethrown": 0
+          },
+          "uncaught": 0,
+          "observedCatchDepth": 0
+        },
+        {
+          "kind": "__cxa_throw",
+          "stage": "thrown",
+          "raw": {
+            "type": "object",
+            "constructor": "CppException",
+            "name": "CoolProp::CoolPropError<(CoolProp::CoolPropBaseError::ErrCode)4>",
+            "message": "Saturation pressure [30298.9 Pa] corresponding to T [218.263 K] is within 1e-4 % of given p [30298.9 Pa]",
+            "string": "CoolProp::CoolPropError<(CoolProp::CoolPropBaseError::ErrCode)4>: Saturation pressure [30298.9 Pa] corresponding to T [218.263 K] is within 1e-4 % of given p [30298.9 Pa]",
+            "excPtr": 23037336,
+            "ownKeys": [
+              "message",
+              "excPtr",
+              "name",
+              "line",
+              "column",
+              "sourceURL",
+              "stack"
+            ],
+            "stack": "___cxa_throw@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b4c/vendor/candidateB/coolprop.js:1:18013\n@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/observe.mjs:14:17\n@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/candidate-diagnostic.mjs:23:48\n@[native code]\ninvoke_viii@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b4c/vendor/candidateB/coolprop.js:1:136636\n2923@wasm-function[2923]\n2914@wasm-function[2914]\ninvoke_viidd@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b4c/vendor/candidateB/coolprop.js:1:144090\n1108@wasm-function[1108]\ninvoke_viiiiii@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b4c/vendor/candidateB/coolprop.js:1:141798\n1116@wasm-function[1116]\ninvoke_viiiiiiiii@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b4c/vendor/candidateB/coolprop.js:1:145065\n1121@wasm-function[1121]\ninvoke_diididi@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b4c/vendor/candidateB/coolprop.js:1:145491\n3787@wasm-function[3787]\n@\nhigh@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/candidate-diagnostic.mjs:65:75\nevaluate@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/candidate-diagnostic.mjs:85:75\nstep@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/lifecycle.mjs:14:33\njavascriptPaths@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/lifecycle.mjs:66:17\nasync attempt@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/gate-b.mjs:10:104\nasync run@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/gate-b.mjs:16:15"
+          },
+          "stack": 5703552,
+          "memory": 56360960,
+          "header": {
+            "ptr": 23037336,
+            "referenceCount": 0,
+            "type": 124668,
+            "destructor": 4,
+            "caught": 0,
+            "rethrown": 0
+          },
+          "uncaught": 1,
+          "observedCatchDepth": 0
+        },
+        {
+          "kind": "__resumeException",
+          "stage": "before",
+          "args": [
+            23037336
+          ],
+          "stack": 5703552,
+          "memory": 56360960,
+          "header": {
+            "ptr": 23037336,
+            "referenceCount": 0,
+            "type": 124668,
+            "destructor": 4,
+            "caught": 0,
+            "rethrown": 0
+          },
+          "uncaught": 1,
+          "observedCatchDepth": 0
+        },
+        {
+          "kind": "__resumeException",
+          "stage": "thrown",
+          "raw": {
+            "type": "object",
+            "constructor": "CppException",
+            "name": "CoolProp::CoolPropError<(CoolProp::CoolPropBaseError::ErrCode)4>",
+            "message": "Saturation pressure [30298.9 Pa] corresponding to T [218.263 K] is within 1e-4 % of given p [30298.9 Pa]",
+            "string": "CoolProp::CoolPropError<(CoolProp::CoolPropBaseError::ErrCode)4>: Saturation pressure [30298.9 Pa] corresponding to T [218.263 K] is within 1e-4 % of given p [30298.9 Pa]",
+            "excPtr": 23037336,
+            "ownKeys": [
+              "message",
+              "excPtr",
+              "name",
+              "line",
+              "column",
+              "sourceURL",
+              "stack"
+            ],
+            "stack": "___cxa_throw@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b4c/vendor/candidateB/coolprop.js:1:18013\n@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/observe.mjs:14:17\n@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/candidate-diagnostic.mjs:23:48\n@[native code]\ninvoke_viii@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b4c/vendor/candidateB/coolprop.js:1:136636\n2923@wasm-function[2923]\n2914@wasm-function[2914]\ninvoke_viidd@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b4c/vendor/candidateB/coolprop.js:1:144090\n1108@wasm-function[1108]\ninvoke_viiiiii@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b4c/vendor/candidateB/coolprop.js:1:141798\n1116@wasm-function[1116]\ninvoke_viiiiiiiii@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b4c/vendor/candidateB/coolprop.js:1:145065\n1121@wasm-function[1121]\ninvoke_diididi@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b4c/vendor/candidateB/coolprop.js:1:145491\n3787@wasm-function[3787]\n@\nhigh@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/candidate-diagnostic.mjs:65:75\nevaluate@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/candidate-diagnostic.mjs:85:75\nstep@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/lifecycle.mjs:14:33\njavascriptPaths@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/lifecycle.mjs:66:17\nasync attempt@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/gate-b.mjs:10:104\nasync run@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/gate-b.mjs:16:15"
+          },
+          "stack": 5703552,
+          "memory": 56360960,
+          "header": {
+            "ptr": 23037336,
+            "referenceCount": 0,
+            "type": 124668,
+            "destructor": 4,
+            "caught": 0,
+            "rethrown": 0
+          },
+          "uncaught": 1,
+          "observedCatchDepth": 0
+        },
+        {
+          "kind": "__cxa_begin_catch",
+          "stage": "before",
+          "args": [
+            23037336
+          ],
+          "stack": 5706480,
+          "memory": 56360960,
+          "header": {
+            "ptr": 23037336,
+            "referenceCount": 0,
+            "type": 124668,
+            "destructor": 4,
+            "caught": 0,
+            "rethrown": 0
+          },
+          "uncaught": 1,
+          "observedCatchDepth": 0
+        },
+        {
+          "kind": "__cxa_begin_catch",
+          "stage": "returned",
+          "stack": 5706480,
+          "uncaught": 0,
+          "observedCatchDepth": 1
+        },
+        {
+          "kind": "__cxa_rethrow",
+          "stage": "before",
+          "args": [],
+          "stack": 5706480,
+          "memory": 56360960,
+          "uncaught": 0,
+          "observedCatchDepth": 1
+        },
+        {
+          "kind": "__cxa_rethrow",
+          "stage": "thrown",
+          "raw": {
+            "type": "object",
+            "constructor": "CppException",
+            "name": "CoolProp::CoolPropError<(CoolProp::CoolPropBaseError::ErrCode)4>",
+            "message": "Saturation pressure [30298.9 Pa] corresponding to T [218.263 K] is within 1e-4 % of given p [30298.9 Pa]",
+            "string": "CoolProp::CoolPropError<(CoolProp::CoolPropBaseError::ErrCode)4>: Saturation pressure [30298.9 Pa] corresponding to T [218.263 K] is within 1e-4 % of given p [30298.9 Pa]",
+            "excPtr": 23037336,
+            "ownKeys": [
+              "message",
+              "excPtr",
+              "name",
+              "line",
+              "column",
+              "sourceURL",
+              "stack"
+            ],
+            "stack": "___cxa_rethrow@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b4c/vendor/candidateB/coolprop.js:1:17856\n@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/observe.mjs:14:17\n@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/candidate-diagnostic.mjs:23:48\n@[native code]\ninvoke_v@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b4c/vendor/candidateB/coolprop.js:1:137864\n1108@wasm-function[1108]\ninvoke_viiiiii@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b4c/vendor/candidateB/coolprop.js:1:141798\n1116@wasm-function[1116]\ninvoke_viiiiiiiii@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b4c/vendor/candidateB/coolprop.js:1:145065\n1121@wasm-function[1121]\ninvoke_diididi@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b4c/vendor/candidateB/coolprop.js:1:145491\n3787@wasm-function[3787]\n@\nhigh@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/candidate-diagnostic.mjs:65:75\nevaluate@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/candidate-diagnostic.mjs:85:75\nstep@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/lifecycle.mjs:14:33\njavascriptPaths@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/lifecycle.mjs:66:17\nasync attempt@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/gate-b.mjs:10:104\nasync run@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/gate-b.mjs:16:15"
+          },
+          "stack": 5706480,
+          "memory": 56360960,
+          "header": {
+            "ptr": 23037336,
+            "referenceCount": 1,
+            "type": 124668,
+            "destructor": 4,
+            "caught": 0,
+            "rethrown": 1
+          },
+          "uncaught": 1,
+          "observedCatchDepth": 1
+        },
+        {
+          "kind": "__cxa_end_catch",
+          "stage": "before",
+          "args": [],
+          "stack": 5706480,
+          "memory": 56360960,
+          "header": {
+            "ptr": 23037336,
+            "referenceCount": 1,
+            "type": 124668,
+            "destructor": 4,
+            "caught": 0,
+            "rethrown": 1
+          },
+          "uncaught": 1,
+          "observedCatchDepth": 1
+        },
+        {
+          "kind": "__cxa_end_catch",
+          "stage": "returned",
+          "stack": 5706480,
+          "uncaught": 1,
+          "observedCatchDepth": 0
+        },
+        {
+          "kind": "__resumeException",
+          "stage": "before",
+          "args": [
+            23037336
+          ],
+          "stack": 5706480,
+          "memory": 56360960,
+          "header": {
+            "ptr": 23037336,
+            "referenceCount": 0,
+            "type": 124668,
+            "destructor": 4,
+            "caught": 0,
+            "rethrown": 1
+          },
+          "uncaught": 1,
+          "observedCatchDepth": 0
+        },
+        {
+          "kind": "__resumeException",
+          "stage": "thrown",
+          "raw": {
+            "type": "object",
+            "constructor": "CppException",
+            "name": "CoolProp::CoolPropError<(CoolProp::CoolPropBaseError::ErrCode)4>",
+            "message": "Saturation pressure [30298.9 Pa] corresponding to T [218.263 K] is within 1e-4 % of given p [30298.9 Pa]",
+            "string": "CoolProp::CoolPropError<(CoolProp::CoolPropBaseError::ErrCode)4>: Saturation pressure [30298.9 Pa] corresponding to T [218.263 K] is within 1e-4 % of given p [30298.9 Pa]",
+            "excPtr": 23037336,
+            "ownKeys": [
+              "message",
+              "excPtr",
+              "name",
+              "line",
+              "column",
+              "sourceURL",
+              "stack"
+            ],
+            "stack": "___resumeException@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b4c/vendor/candidateB/coolprop.js:1:18201\n@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/observe.mjs:14:17\n@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/candidate-diagnostic.mjs:23:48\n1108@wasm-function[1108]\ninvoke_viiiiii@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b4c/vendor/candidateB/coolprop.js:1:141798\n1116@wasm-function[1116]\ninvoke_viiiiiiiii@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b4c/vendor/candidateB/coolprop.js:1:145065\n1121@wasm-function[1121]\ninvoke_diididi@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b4c/vendor/candidateB/coolprop.js:1:145491\n3787@wasm-function[3787]\n@\nhigh@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/candidate-diagnostic.mjs:65:75\nevaluate@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/candidate-diagnostic.mjs:85:75\nstep@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/lifecycle.mjs:14:33\njavascriptPaths@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/lifecycle.mjs:66:17\nasync attempt@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/gate-b.mjs:10:104\nasync run@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/gate-b.mjs:16:15"
+          },
+          "stack": 5706480,
+          "memory": 56360960,
+          "header": {
+            "ptr": 23037336,
+            "referenceCount": 0,
+            "type": 124668,
+            "destructor": 4,
+            "caught": 0,
+            "rethrown": 1
+          },
+          "uncaught": 1,
+          "observedCatchDepth": 0
+        },
+        {
+          "kind": "__resumeException",
+          "stage": "before",
+          "args": [
+            23037336
+          ],
+          "stack": 5706608,
+          "memory": 56360960,
+          "header": {
+            "ptr": 23037336,
+            "referenceCount": 0,
+            "type": 124668,
+            "destructor": 4,
+            "caught": 0,
+            "rethrown": 1
+          },
+          "uncaught": 1,
+          "observedCatchDepth": 0
+        },
+        {
+          "kind": "__resumeException",
+          "stage": "thrown",
+          "raw": {
+            "type": "object",
+            "constructor": "CppException",
+            "name": "CoolProp::CoolPropError<(CoolProp::CoolPropBaseError::ErrCode)4>",
+            "message": "Saturation pressure [30298.9 Pa] corresponding to T [218.263 K] is within 1e-4 % of given p [30298.9 Pa]",
+            "string": "CoolProp::CoolPropError<(CoolProp::CoolPropBaseError::ErrCode)4>: Saturation pressure [30298.9 Pa] corresponding to T [218.263 K] is within 1e-4 % of given p [30298.9 Pa]",
+            "excPtr": 23037336,
+            "ownKeys": [
+              "message",
+              "excPtr",
+              "name",
+              "line",
+              "column",
+              "sourceURL",
+              "stack"
+            ],
+            "stack": "___resumeException@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b4c/vendor/candidateB/coolprop.js:1:18201\n@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/observe.mjs:14:17\n@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/candidate-diagnostic.mjs:23:48\n1108@wasm-function[1108]\ninvoke_viiiiii@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b4c/vendor/candidateB/coolprop.js:1:141798\n1116@wasm-function[1116]\ninvoke_viiiiiiiii@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b4c/vendor/candidateB/coolprop.js:1:145065\n1121@wasm-function[1121]\ninvoke_diididi@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b4c/vendor/candidateB/coolprop.js:1:145491\n3787@wasm-function[3787]\n@\nhigh@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/candidate-diagnostic.mjs:65:75\nevaluate@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/candidate-diagnostic.mjs:85:75\nstep@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/lifecycle.mjs:14:33\njavascriptPaths@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/lifecycle.mjs:66:17\nasync attempt@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/gate-b.mjs:10:104\nasync run@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/gate-b.mjs:16:15"
+          },
+          "stack": 5706608,
+          "memory": 56360960,
+          "header": {
+            "ptr": 23037336,
+            "referenceCount": 0,
+            "type": 124668,
+            "destructor": 4,
+            "caught": 0,
+            "rethrown": 1
+          },
+          "uncaught": 1,
+          "observedCatchDepth": 0
+        },
+        {
+          "kind": "__cxa_begin_catch",
+          "stage": "before",
+          "args": [
+            23037336
+          ],
+          "stack": 5706736,
+          "memory": 56360960,
+          "header": {
+            "ptr": 23037336,
+            "referenceCount": 0,
+            "type": 124668,
+            "destructor": 4,
+            "caught": 0,
+            "rethrown": 1
+          },
+          "uncaught": 1,
+          "observedCatchDepth": 0
+        },
+        {
+          "kind": "__cxa_begin_catch",
+          "stage": "returned",
+          "stack": 5706736,
+          "uncaught": 0,
+          "observedCatchDepth": 1
+        },
+        {
+          "kind": "__cxa_end_catch",
+          "stage": "before",
+          "args": [],
+          "stack": 5706736,
+          "memory": 56360960,
+          "header": {
+            "ptr": 23037336,
+            "referenceCount": 1,
+            "type": 124668,
+            "destructor": 4,
+            "caught": 1,
+            "rethrown": 0
+          },
+          "uncaught": 0,
+          "observedCatchDepth": 1
+        },
+        {
+          "kind": "__cxa_end_catch",
+          "stage": "returned",
+          "stack": 5706736,
+          "uncaught": 0,
+          "observedCatchDepth": 0
+        },
+        {
+          "kind": "__cxa_throw",
+          "stage": "before",
+          "args": [
+            23108680,
+            124668,
+            4
+          ],
+          "stack": 5703552,
+          "memory": 56360960,
+          "header": {
+            "ptr": 23108680,
+            "referenceCount": 0,
+            "type": 0,
+            "destructor": 0,
+            "caught": 0,
+            "rethrown": 0
+          },
+          "uncaught": 0,
+          "observedCatchDepth": 0
+        },
+        {
+          "kind": "__cxa_throw",
+          "stage": "thrown",
+          "raw": {
+            "type": "object",
+            "constructor": "CppException",
+            "name": "CoolProp::CoolPropError<(CoolProp::CoolPropBaseError::ErrCode)4>",
+            "message": "Saturation pressure [30298.9 Pa] corresponding to T [218.263 K] is within 1e-4 % of given p [30298.9 Pa]",
+            "string": "CoolProp::CoolPropError<(CoolProp::CoolPropBaseError::ErrCode)4>: Saturation pressure [30298.9 Pa] corresponding to T [218.263 K] is within 1e-4 % of given p [30298.9 Pa]",
+            "excPtr": 23108680,
+            "ownKeys": [
+              "message",
+              "excPtr",
+              "name",
+              "line",
+              "column",
+              "sourceURL",
+              "stack"
+            ],
+            "stack": "___cxa_throw@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b4c/vendor/candidateB/coolprop.js:1:18013\n@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/observe.mjs:14:17\n@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/candidate-diagnostic.mjs:23:48\n@[native code]\ninvoke_viii@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b4c/vendor/candidateB/coolprop.js:1:136636\n2923@wasm-function[2923]\n2914@wasm-function[2914]\ninvoke_viidd@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b4c/vendor/candidateB/coolprop.js:1:144090\n1108@wasm-function[1108]\ninvoke_viiiiii@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b4c/vendor/candidateB/coolprop.js:1:141798\n1116@wasm-function[1116]\ninvoke_viiiiiiiii@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b4c/vendor/candidateB/coolprop.js:1:145065\n1121@wasm-function[1121]\ninvoke_diididi@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b4c/vendor/candidateB/coolprop.js:1:145491\n3787@wasm-function[3787]\n@\nhigh@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/candidate-diagnostic.mjs:65:75\nevaluate@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/candidate-diagnostic.mjs:85:75\nstep@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/lifecycle.mjs:14:33\njavascriptPaths@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/lifecycle.mjs:66:17\nasync attempt@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/gate-b.mjs:10:104\nasync run@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/gate-b.mjs:16:15"
+          },
+          "stack": 5703552,
+          "memory": 56360960,
+          "header": {
+            "ptr": 23108680,
+            "referenceCount": 0,
+            "type": 124668,
+            "destructor": 4,
+            "caught": 0,
+            "rethrown": 0
+          },
+          "uncaught": 1,
+          "observedCatchDepth": 0
+        },
+        {
+          "kind": "__resumeException",
+          "stage": "before",
+          "args": [
+            23108680
+          ],
+          "stack": 5703552,
+          "memory": 56360960,
+          "header": {
+            "ptr": 23108680,
+            "referenceCount": 0,
+            "type": 124668,
+            "destructor": 4,
+            "caught": 0,
+            "rethrown": 0
+          },
+          "uncaught": 1,
+          "observedCatchDepth": 0
+        },
+        {
+          "kind": "__resumeException",
+          "stage": "thrown",
+          "raw": {
+            "type": "object",
+            "constructor": "CppException",
+            "name": "CoolProp::CoolPropError<(CoolProp::CoolPropBaseError::ErrCode)4>",
+            "message": "Saturation pressure [30298.9 Pa] corresponding to T [218.263 K] is within 1e-4 % of given p [30298.9 Pa]",
+            "string": "CoolProp::CoolPropError<(CoolProp::CoolPropBaseError::ErrCode)4>: Saturation pressure [30298.9 Pa] corresponding to T [218.263 K] is within 1e-4 % of given p [30298.9 Pa]",
+            "excPtr": 23108680,
+            "ownKeys": [
+              "message",
+              "excPtr",
+              "name",
+              "line",
+              "column",
+              "sourceURL",
+              "stack"
+            ],
+            "stack": "___cxa_throw@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b4c/vendor/candidateB/coolprop.js:1:18013\n@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/observe.mjs:14:17\n@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/candidate-diagnostic.mjs:23:48\n@[native code]\ninvoke_viii@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b4c/vendor/candidateB/coolprop.js:1:136636\n2923@wasm-function[2923]\n2914@wasm-function[2914]\ninvoke_viidd@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b4c/vendor/candidateB/coolprop.js:1:144090\n1108@wasm-function[1108]\ninvoke_viiiiii@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b4c/vendor/candidateB/coolprop.js:1:141798\n1116@wasm-function[1116]\ninvoke_viiiiiiiii@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b4c/vendor/candidateB/coolprop.js:1:145065\n1121@wasm-function[1121]\ninvoke_diididi@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b4c/vendor/candidateB/coolprop.js:1:145491\n3787@wasm-function[3787]\n@\nhigh@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/candidate-diagnostic.mjs:65:75\nevaluate@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/candidate-diagnostic.mjs:85:75\nstep@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/lifecycle.mjs:14:33\njavascriptPaths@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/lifecycle.mjs:66:17\nasync attempt@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/gate-b.mjs:10:104\nasync run@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/gate-b.mjs:16:15"
+          },
+          "stack": 5703552,
+          "memory": 56360960,
+          "header": {
+            "ptr": 23108680,
+            "referenceCount": 0,
+            "type": 124668,
+            "destructor": 4,
+            "caught": 0,
+            "rethrown": 0
+          },
+          "uncaught": 1,
+          "observedCatchDepth": 0
+        },
+        {
+          "kind": "__cxa_begin_catch",
+          "stage": "before",
+          "args": [
+            23108680
+          ],
+          "stack": 5706480,
+          "memory": 56360960,
+          "header": {
+            "ptr": 23108680,
+            "referenceCount": 0,
+            "type": 124668,
+            "destructor": 4,
+            "caught": 0,
+            "rethrown": 0
+          },
+          "uncaught": 1,
+          "observedCatchDepth": 0
+        },
+        {
+          "kind": "__cxa_begin_catch",
+          "stage": "returned",
+          "stack": 5706480,
+          "uncaught": 0,
+          "observedCatchDepth": 1
+        },
+        {
+          "kind": "__cxa_rethrow",
+          "stage": "before",
+          "args": [],
+          "stack": 5706480,
+          "memory": 56360960,
+          "uncaught": 0,
+          "observedCatchDepth": 1
+        },
+        {
+          "kind": "__cxa_rethrow",
+          "stage": "thrown",
+          "raw": {
+            "type": "object",
+            "constructor": "CppException",
+            "name": "CoolProp::CoolPropError<(CoolProp::CoolPropBaseError::ErrCode)4>",
+            "message": "Saturation pressure [30298.9 Pa] corresponding to T [218.263 K] is within 1e-4 % of given p [30298.9 Pa]",
+            "string": "CoolProp::CoolPropError<(CoolProp::CoolPropBaseError::ErrCode)4>: Saturation pressure [30298.9 Pa] corresponding to T [218.263 K] is within 1e-4 % of given p [30298.9 Pa]",
+            "excPtr": 23108680,
+            "ownKeys": [
+              "message",
+              "excPtr",
+              "name",
+              "line",
+              "column",
+              "sourceURL",
+              "stack"
+            ],
+            "stack": "___cxa_rethrow@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b4c/vendor/candidateB/coolprop.js:1:17856\n@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/observe.mjs:14:17\n@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/candidate-diagnostic.mjs:23:48\n@[native code]\ninvoke_v@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b4c/vendor/candidateB/coolprop.js:1:137864\n1108@wasm-function[1108]\ninvoke_viiiiii@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b4c/vendor/candidateB/coolprop.js:1:141798\n1116@wasm-function[1116]\ninvoke_viiiiiiiii@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b4c/vendor/candidateB/coolprop.js:1:145065\n1121@wasm-function[1121]\ninvoke_diididi@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b4c/vendor/candidateB/coolprop.js:1:145491\n3787@wasm-function[3787]\n@\nhigh@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/candidate-diagnostic.mjs:65:75\nevaluate@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/candidate-diagnostic.mjs:85:75\nstep@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/lifecycle.mjs:14:33\njavascriptPaths@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/lifecycle.mjs:66:17\nasync attempt@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/gate-b.mjs:10:104\nasync run@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/gate-b.mjs:16:15"
+          },
+          "stack": 5706480,
+          "memory": 56360960,
+          "header": {
+            "ptr": 23108680,
+            "referenceCount": 1,
+            "type": 124668,
+            "destructor": 4,
+            "caught": 0,
+            "rethrown": 1
+          },
+          "uncaught": 1,
+          "observedCatchDepth": 1
+        },
+        {
+          "kind": "__cxa_end_catch",
+          "stage": "before",
+          "args": [],
+          "stack": 5706480,
+          "memory": 56360960,
+          "header": {
+            "ptr": 23108680,
+            "referenceCount": 1,
+            "type": 124668,
+            "destructor": 4,
+            "caught": 0,
+            "rethrown": 1
+          },
+          "uncaught": 1,
+          "observedCatchDepth": 1
+        },
+        {
+          "kind": "__cxa_end_catch",
+          "stage": "returned",
+          "stack": 5706480,
+          "uncaught": 1,
+          "observedCatchDepth": 0
+        },
+        {
+          "kind": "__resumeException",
+          "stage": "before",
+          "args": [
+            23108680
+          ],
+          "stack": 5706480,
+          "memory": 56360960,
+          "header": {
+            "ptr": 23108680,
+            "referenceCount": 0,
+            "type": 124668,
+            "destructor": 4,
+            "caught": 0,
+            "rethrown": 1
+          },
+          "uncaught": 1,
+          "observedCatchDepth": 0
+        },
+        {
+          "kind": "__resumeException",
+          "stage": "thrown",
+          "raw": {
+            "type": "object",
+            "constructor": "CppException",
+            "name": "CoolProp::CoolPropError<(CoolProp::CoolPropBaseError::ErrCode)4>",
+            "message": "Saturation pressure [30298.9 Pa] corresponding to T [218.263 K] is within 1e-4 % of given p [30298.9 Pa]",
+            "string": "CoolProp::CoolPropError<(CoolProp::CoolPropBaseError::ErrCode)4>: Saturation pressure [30298.9 Pa] corresponding to T [218.263 K] is within 1e-4 % of given p [30298.9 Pa]",
+            "excPtr": 23108680,
+            "ownKeys": [
+              "message",
+              "excPtr",
+              "name",
+              "line",
+              "column",
+              "sourceURL",
+              "stack"
+            ],
+            "stack": "___resumeException@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b4c/vendor/candidateB/coolprop.js:1:18201\n@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/observe.mjs:14:17\n@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/candidate-diagnostic.mjs:23:48\n1108@wasm-function[1108]\ninvoke_viiiiii@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b4c/vendor/candidateB/coolprop.js:1:141798\n1116@wasm-function[1116]\ninvoke_viiiiiiiii@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b4c/vendor/candidateB/coolprop.js:1:145065\n1121@wasm-function[1121]\ninvoke_diididi@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b4c/vendor/candidateB/coolprop.js:1:145491\n3787@wasm-function[3787]\n@\nhigh@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/candidate-diagnostic.mjs:65:75\nevaluate@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/candidate-diagnostic.mjs:85:75\nstep@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/lifecycle.mjs:14:33\njavascriptPaths@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/lifecycle.mjs:66:17\nasync attempt@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/gate-b.mjs:10:104\nasync run@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/gate-b.mjs:16:15"
+          },
+          "stack": 5706480,
+          "memory": 56360960,
+          "header": {
+            "ptr": 23108680,
+            "referenceCount": 0,
+            "type": 124668,
+            "destructor": 4,
+            "caught": 0,
+            "rethrown": 1
+          },
+          "uncaught": 1,
+          "observedCatchDepth": 0
+        },
+        {
+          "kind": "__resumeException",
+          "stage": "before",
+          "args": [
+            23108680
+          ],
+          "stack": 5706608,
+          "memory": 56360960,
+          "header": {
+            "ptr": 23108680,
+            "referenceCount": 0,
+            "type": 124668,
+            "destructor": 4,
+            "caught": 0,
+            "rethrown": 1
+          },
+          "uncaught": 1,
+          "observedCatchDepth": 0
+        },
+        {
+          "kind": "__resumeException",
+          "stage": "thrown",
+          "raw": {
+            "type": "object",
+            "constructor": "CppException",
+            "name": "CoolProp::CoolPropError<(CoolProp::CoolPropBaseError::ErrCode)4>",
+            "message": "Saturation pressure [30298.9 Pa] corresponding to T [218.263 K] is within 1e-4 % of given p [30298.9 Pa]",
+            "string": "CoolProp::CoolPropError<(CoolProp::CoolPropBaseError::ErrCode)4>: Saturation pressure [30298.9 Pa] corresponding to T [218.263 K] is within 1e-4 % of given p [30298.9 Pa]",
+            "excPtr": 23108680,
+            "ownKeys": [
+              "message",
+              "excPtr",
+              "name",
+              "line",
+              "column",
+              "sourceURL",
+              "stack"
+            ],
+            "stack": "___resumeException@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b4c/vendor/candidateB/coolprop.js:1:18201\n@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/observe.mjs:14:17\n@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/candidate-diagnostic.mjs:23:48\n1108@wasm-function[1108]\ninvoke_viiiiii@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b4c/vendor/candidateB/coolprop.js:1:141798\n1116@wasm-function[1116]\ninvoke_viiiiiiiii@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b4c/vendor/candidateB/coolprop.js:1:145065\n1121@wasm-function[1121]\ninvoke_diididi@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b4c/vendor/candidateB/coolprop.js:1:145491\n3787@wasm-function[3787]\n@\nhigh@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/candidate-diagnostic.mjs:65:75\nevaluate@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/candidate-diagnostic.mjs:85:75\nstep@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/lifecycle.mjs:14:33\njavascriptPaths@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/lifecycle.mjs:66:17\nasync attempt@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/gate-b.mjs:10:104\nasync run@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/gate-b.mjs:16:15"
+          },
+          "stack": 5706608,
+          "memory": 56360960,
+          "header": {
+            "ptr": 23108680,
+            "referenceCount": 0,
+            "type": 124668,
+            "destructor": 4,
+            "caught": 0,
+            "rethrown": 1
+          },
+          "uncaught": 1,
+          "observedCatchDepth": 0
+        },
+        {
+          "kind": "__cxa_begin_catch",
+          "stage": "before",
+          "args": [
+            23108680
+          ],
+          "stack": 5706736,
+          "memory": 56360960,
+          "header": {
+            "ptr": 23108680,
+            "referenceCount": 0,
+            "type": 124668,
+            "destructor": 4,
+            "caught": 0,
+            "rethrown": 1
+          },
+          "uncaught": 1,
+          "observedCatchDepth": 0
+        },
+        {
+          "kind": "__cxa_begin_catch",
+          "stage": "returned",
+          "stack": 5706736,
+          "uncaught": 0,
+          "observedCatchDepth": 1
+        },
+        {
+          "kind": "__cxa_end_catch",
+          "stage": "before",
+          "args": [],
+          "stack": 5706736,
+          "memory": 56360960,
+          "header": {
+            "ptr": 23108680,
+            "referenceCount": 1,
+            "type": 124668,
+            "destructor": 4,
+            "caught": 1,
+            "rethrown": 0
+          },
+          "uncaught": 0,
+          "observedCatchDepth": 1
+        },
+        {
+          "kind": "__cxa_end_catch",
+          "stage": "returned",
+          "stack": 5706736,
+          "uncaught": 0,
+          "observedCatchDepth": 0
+        },
+        {
+          "kind": "__cxa_throw",
+          "stage": "before",
+          "args": [
+            23108680,
+            124668,
+            4
+          ],
+          "stack": 5703552,
+          "memory": 56360960,
+          "header": {
+            "ptr": 23108680,
+            "referenceCount": 0,
+            "type": 0,
+            "destructor": 0,
+            "caught": 0,
+            "rethrown": 0
+          },
+          "uncaught": 0,
+          "observedCatchDepth": 0
+        },
+        {
+          "kind": "__cxa_throw",
+          "stage": "thrown",
+          "raw": {
+            "type": "object",
+            "constructor": "CppException",
+            "name": "CoolProp::CoolPropError<(CoolProp::CoolPropBaseError::ErrCode)4>",
+            "message": "Saturation pressure [30298.9 Pa] corresponding to T [218.263 K] is within 1e-4 % of given p [30298.9 Pa]",
+            "string": "CoolProp::CoolPropError<(CoolProp::CoolPropBaseError::ErrCode)4>: Saturation pressure [30298.9 Pa] corresponding to T [218.263 K] is within 1e-4 % of given p [30298.9 Pa]",
+            "excPtr": 23108680,
+            "ownKeys": [
+              "message",
+              "excPtr",
+              "name",
+              "line",
+              "column",
+              "sourceURL",
+              "stack"
+            ],
+            "stack": "___cxa_throw@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b4c/vendor/candidateB/coolprop.js:1:18013\n@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/observe.mjs:14:17\n@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/candidate-diagnostic.mjs:23:48\n@[native code]\ninvoke_viii@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b4c/vendor/candidateB/coolprop.js:1:136636\n2923@wasm-function[2923]\n2914@wasm-function[2914]\ninvoke_viidd@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b4c/vendor/candidateB/coolprop.js:1:144090\n1108@wasm-function[1108]\ninvoke_viiiiii@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b4c/vendor/candidateB/coolprop.js:1:141798\n1116@wasm-function[1116]\ninvoke_viiiiiiiii@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b4c/vendor/candidateB/coolprop.js:1:145065\n1121@wasm-function[1121]\ninvoke_diididi@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b4c/vendor/candidateB/coolprop.js:1:145491\n3787@wasm-function[3787]\n@\nhigh@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/candidate-diagnostic.mjs:65:75\nevaluate@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/candidate-diagnostic.mjs:85:75\nstep@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/lifecycle.mjs:14:33\njavascriptPaths@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/lifecycle.mjs:66:17\nasync attempt@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/gate-b.mjs:10:104\nasync run@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/gate-b.mjs:16:15"
+          },
+          "stack": 5703552,
+          "memory": 56360960,
+          "header": {
+            "ptr": 23108680,
+            "referenceCount": 0,
+            "type": 124668,
+            "destructor": 4,
+            "caught": 0,
+            "rethrown": 0
+          },
+          "uncaught": 1,
+          "observedCatchDepth": 0
+        },
+        {
+          "kind": "__resumeException",
+          "stage": "before",
+          "args": [
+            23108680
+          ],
+          "stack": 5703552,
+          "memory": 56360960,
+          "header": {
+            "ptr": 23108680,
+            "referenceCount": 0,
+            "type": 124668,
+            "destructor": 4,
+            "caught": 0,
+            "rethrown": 0
+          },
+          "uncaught": 1,
+          "observedCatchDepth": 0
+        },
+        {
+          "kind": "__resumeException",
+          "stage": "thrown",
+          "raw": {
+            "type": "object",
+            "constructor": "CppException",
+            "name": "CoolProp::CoolPropError<(CoolProp::CoolPropBaseError::ErrCode)4>",
+            "message": "Saturation pressure [30298.9 Pa] corresponding to T [218.263 K] is within 1e-4 % of given p [30298.9 Pa]",
+            "string": "CoolProp::CoolPropError<(CoolProp::CoolPropBaseError::ErrCode)4>: Saturation pressure [30298.9 Pa] corresponding to T [218.263 K] is within 1e-4 % of given p [30298.9 Pa]",
+            "excPtr": 23108680,
+            "ownKeys": [
+              "message",
+              "excPtr",
+              "name",
+              "line",
+              "column",
+              "sourceURL",
+              "stack"
+            ],
+            "stack": "___cxa_throw@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b4c/vendor/candidateB/coolprop.js:1:18013\n@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/observe.mjs:14:17\n@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/candidate-diagnostic.mjs:23:48\n@[native code]\ninvoke_viii@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b4c/vendor/candidateB/coolprop.js:1:136636\n2923@wasm-function[2923]\n2914@wasm-function[2914]\ninvoke_viidd@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b4c/vendor/candidateB/coolprop.js:1:144090\n1108@wasm-function[1108]\ninvoke_viiiiii@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b4c/vendor/candidateB/coolprop.js:1:141798\n1116@wasm-function[1116]\ninvoke_viiiiiiiii@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b4c/vendor/candidateB/coolprop.js:1:145065\n1121@wasm-function[1121]\ninvoke_diididi@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b4c/vendor/candidateB/coolprop.js:1:145491\n3787@wasm-function[3787]\n@\nhigh@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/candidate-diagnostic.mjs:65:75\nevaluate@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/candidate-diagnostic.mjs:85:75\nstep@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/lifecycle.mjs:14:33\njavascriptPaths@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/lifecycle.mjs:66:17\nasync attempt@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/gate-b.mjs:10:104\nasync run@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/gate-b.mjs:16:15"
+          },
+          "stack": 5703552,
+          "memory": 56360960,
+          "header": {
+            "ptr": 23108680,
+            "referenceCount": 0,
+            "type": 124668,
+            "destructor": 4,
+            "caught": 0,
+            "rethrown": 0
+          },
+          "uncaught": 1,
+          "observedCatchDepth": 0
+        },
+        {
+          "kind": "__cxa_begin_catch",
+          "stage": "before",
+          "args": [
+            23108680
+          ],
+          "stack": 5706480,
+          "memory": 56360960,
+          "header": {
+            "ptr": 23108680,
+            "referenceCount": 0,
+            "type": 124668,
+            "destructor": 4,
+            "caught": 0,
+            "rethrown": 0
+          },
+          "uncaught": 1,
+          "observedCatchDepth": 0
+        },
+        {
+          "kind": "__cxa_begin_catch",
+          "stage": "returned",
+          "stack": 5706480,
+          "uncaught": 0,
+          "observedCatchDepth": 1
+        },
+        {
+          "kind": "__cxa_rethrow",
+          "stage": "before",
+          "args": [],
+          "stack": 5706480,
+          "memory": 56360960,
+          "uncaught": 0,
+          "observedCatchDepth": 1
+        },
+        {
+          "kind": "__cxa_rethrow",
+          "stage": "thrown",
+          "raw": {
+            "type": "object",
+            "constructor": "CppException",
+            "name": "CoolProp::CoolPropError<(CoolProp::CoolPropBaseError::ErrCode)4>",
+            "message": "Saturation pressure [30298.9 Pa] corresponding to T [218.263 K] is within 1e-4 % of given p [30298.9 Pa]",
+            "string": "CoolProp::CoolPropError<(CoolProp::CoolPropBaseError::ErrCode)4>: Saturation pressure [30298.9 Pa] corresponding to T [218.263 K] is within 1e-4 % of given p [30298.9 Pa]",
+            "excPtr": 23108680,
+            "ownKeys": [
+              "message",
+              "excPtr",
+              "name",
+              "line",
+              "column",
+              "sourceURL",
+              "stack"
+            ],
+            "stack": "___cxa_rethrow@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b4c/vendor/candidateB/coolprop.js:1:17856\n@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/observe.mjs:14:17\n@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/candidate-diagnostic.mjs:23:48\n@[native code]\ninvoke_v@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b4c/vendor/candidateB/coolprop.js:1:137864\n1108@wasm-function[1108]\ninvoke_viiiiii@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b4c/vendor/candidateB/coolprop.js:1:141798\n1116@wasm-function[1116]\ninvoke_viiiiiiiii@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b4c/vendor/candidateB/coolprop.js:1:145065\n1121@wasm-function[1121]\ninvoke_diididi@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b4c/vendor/candidateB/coolprop.js:1:145491\n3787@wasm-function[3787]\n@\nhigh@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/candidate-diagnostic.mjs:65:75\nevaluate@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/candidate-diagnostic.mjs:85:75\nstep@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/lifecycle.mjs:14:33\njavascriptPaths@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/lifecycle.mjs:66:17\nasync attempt@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/gate-b.mjs:10:104\nasync run@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/gate-b.mjs:16:15"
+          },
+          "stack": 5706480,
+          "memory": 56360960,
+          "header": {
+            "ptr": 23108680,
+            "referenceCount": 1,
+            "type": 124668,
+            "destructor": 4,
+            "caught": 0,
+            "rethrown": 1
+          },
+          "uncaught": 1,
+          "observedCatchDepth": 1
+        },
+        {
+          "kind": "__cxa_end_catch",
+          "stage": "before",
+          "args": [],
+          "stack": 5706480,
+          "memory": 56360960,
+          "header": {
+            "ptr": 23108680,
+            "referenceCount": 1,
+            "type": 124668,
+            "destructor": 4,
+            "caught": 0,
+            "rethrown": 1
+          },
+          "uncaught": 1,
+          "observedCatchDepth": 1
+        },
+        {
+          "kind": "__cxa_end_catch",
+          "stage": "returned",
+          "stack": 5706480,
+          "uncaught": 1,
+          "observedCatchDepth": 0
+        },
+        {
+          "kind": "__resumeException",
+          "stage": "before",
+          "args": [
+            23108680
+          ],
+          "stack": 5706480,
+          "memory": 56360960,
+          "header": {
+            "ptr": 23108680,
+            "referenceCount": 0,
+            "type": 124668,
+            "destructor": 4,
+            "caught": 0,
+            "rethrown": 1
+          },
+          "uncaught": 1,
+          "observedCatchDepth": 0
+        },
+        {
+          "kind": "__resumeException",
+          "stage": "thrown",
+          "raw": {
+            "type": "object",
+            "constructor": "CppException",
+            "name": "CoolProp::CoolPropError<(CoolProp::CoolPropBaseError::ErrCode)4>",
+            "message": "Saturation pressure [30298.9 Pa] corresponding to T [218.263 K] is within 1e-4 % of given p [30298.9 Pa]",
+            "string": "CoolProp::CoolPropError<(CoolProp::CoolPropBaseError::ErrCode)4>: Saturation pressure [30298.9 Pa] corresponding to T [218.263 K] is within 1e-4 % of given p [30298.9 Pa]",
+            "excPtr": 23108680,
+            "ownKeys": [
+              "message",
+              "excPtr",
+              "name",
+              "line",
+              "column",
+              "sourceURL",
+              "stack"
+            ],
+            "stack": "___resumeException@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b4c/vendor/candidateB/coolprop.js:1:18201\n@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/observe.mjs:14:17\n@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/candidate-diagnostic.mjs:23:48\n1108@wasm-function[1108]\ninvoke_viiiiii@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b4c/vendor/candidateB/coolprop.js:1:141798\n1116@wasm-function[1116]\ninvoke_viiiiiiiii@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b4c/vendor/candidateB/coolprop.js:1:145065\n1121@wasm-function[1121]\ninvoke_diididi@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b4c/vendor/candidateB/coolprop.js:1:145491\n3787@wasm-function[3787]\n@\nhigh@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/candidate-diagnostic.mjs:65:75\nevaluate@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/candidate-diagnostic.mjs:85:75\nstep@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/lifecycle.mjs:14:33\njavascriptPaths@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/lifecycle.mjs:66:17\nasync attempt@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/gate-b.mjs:10:104\nasync run@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/gate-b.mjs:16:15"
+          },
+          "stack": 5706480,
+          "memory": 56360960,
+          "header": {
+            "ptr": 23108680,
+            "referenceCount": 0,
+            "type": 124668,
+            "destructor": 4,
+            "caught": 0,
+            "rethrown": 1
+          },
+          "uncaught": 1,
+          "observedCatchDepth": 0
+        },
+        {
+          "kind": "__resumeException",
+          "stage": "before",
+          "args": [
+            23108680
+          ],
+          "stack": 5706608,
+          "memory": 56360960,
+          "header": {
+            "ptr": 23108680,
+            "referenceCount": 0,
+            "type": 124668,
+            "destructor": 4,
+            "caught": 0,
+            "rethrown": 1
+          },
+          "uncaught": 1,
+          "observedCatchDepth": 0
+        },
+        {
+          "kind": "__resumeException",
+          "stage": "thrown",
+          "raw": {
+            "type": "object",
+            "constructor": "CppException",
+            "name": "CoolProp::CoolPropError<(CoolProp::CoolPropBaseError::ErrCode)4>",
+            "message": "Saturation pressure [30298.9 Pa] corresponding to T [218.263 K] is within 1e-4 % of given p [30298.9 Pa]",
+            "string": "CoolProp::CoolPropError<(CoolProp::CoolPropBaseError::ErrCode)4>: Saturation pressure [30298.9 Pa] corresponding to T [218.263 K] is within 1e-4 % of given p [30298.9 Pa]",
+            "excPtr": 23108680,
+            "ownKeys": [
+              "message",
+              "excPtr",
+              "name",
+              "line",
+              "column",
+              "sourceURL",
+              "stack"
+            ],
+            "stack": "___resumeException@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b4c/vendor/candidateB/coolprop.js:1:18201\n@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/observe.mjs:14:17\n@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/candidate-diagnostic.mjs:23:48\n1108@wasm-function[1108]\ninvoke_viiiiii@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b4c/vendor/candidateB/coolprop.js:1:141798\n1116@wasm-function[1116]\ninvoke_viiiiiiiii@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b4c/vendor/candidateB/coolprop.js:1:145065\n1121@wasm-function[1121]\ninvoke_diididi@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b4c/vendor/candidateB/coolprop.js:1:145491\n3787@wasm-function[3787]\n@\nhigh@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/candidate-diagnostic.mjs:65:75\nevaluate@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/candidate-diagnostic.mjs:85:75\nstep@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/lifecycle.mjs:14:33\njavascriptPaths@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/lifecycle.mjs:66:17\nasync attempt@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/gate-b.mjs:10:104\nasync run@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/gate-b.mjs:16:15"
+          },
+          "stack": 5706608,
+          "memory": 56360960,
+          "header": {
+            "ptr": 23108680,
+            "referenceCount": 0,
+            "type": 124668,
+            "destructor": 4,
+            "caught": 0,
+            "rethrown": 1
+          },
+          "uncaught": 1,
+          "observedCatchDepth": 0
+        },
+        {
+          "kind": "__cxa_begin_catch",
+          "stage": "before",
+          "args": [
+            23108680
+          ],
+          "stack": 5706736,
+          "memory": 56360960,
+          "header": {
+            "ptr": 23108680,
+            "referenceCount": 0,
+            "type": 124668,
+            "destructor": 4,
+            "caught": 0,
+            "rethrown": 1
+          },
+          "uncaught": 1,
+          "observedCatchDepth": 0
+        },
+        {
+          "kind": "__cxa_begin_catch",
+          "stage": "returned",
+          "stack": 5706736,
+          "uncaught": 0,
+          "observedCatchDepth": 1
+        },
+        {
+          "kind": "__cxa_end_catch",
+          "stage": "before",
+          "args": [],
+          "stack": 5706736,
+          "memory": 56360960,
+          "header": {
+            "ptr": 23108680,
+            "referenceCount": 1,
+            "type": 124668,
+            "destructor": 4,
+            "caught": 1,
+            "rethrown": 0
+          },
+          "uncaught": 0,
+          "observedCatchDepth": 1
+        },
+        {
+          "kind": "__cxa_end_catch",
+          "stage": "returned",
+          "stack": 5706736,
+          "uncaught": 0,
+          "observedCatchDepth": 0
+        },
+        {
+          "kind": "__cxa_throw",
+          "stage": "before",
+          "args": [
+            23108680,
+            124668,
+            4
+          ],
+          "stack": 5703552,
+          "memory": 56360960,
+          "header": {
+            "ptr": 23108680,
+            "referenceCount": 0,
+            "type": 0,
+            "destructor": 0,
+            "caught": 0,
+            "rethrown": 0
+          },
+          "uncaught": 0,
+          "observedCatchDepth": 0
+        },
+        {
+          "kind": "__cxa_throw",
+          "stage": "thrown",
+          "raw": {
+            "type": "object",
+            "constructor": "CppException",
+            "name": "CoolProp::CoolPropError<(CoolProp::CoolPropBaseError::ErrCode)4>",
+            "message": "Saturation pressure [30298.9 Pa] corresponding to T [218.263 K] is within 1e-4 % of given p [30298.9 Pa]",
+            "string": "CoolProp::CoolPropError<(CoolProp::CoolPropBaseError::ErrCode)4>: Saturation pressure [30298.9 Pa] corresponding to T [218.263 K] is within 1e-4 % of given p [30298.9 Pa]",
+            "excPtr": 23108680,
+            "ownKeys": [
+              "message",
+              "excPtr",
+              "name",
+              "line",
+              "column",
+              "sourceURL",
+              "stack"
+            ],
+            "stack": "___cxa_throw@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b4c/vendor/candidateB/coolprop.js:1:18013\n@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/observe.mjs:14:17\n@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/candidate-diagnostic.mjs:23:48\n@[native code]\ninvoke_viii@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b4c/vendor/candidateB/coolprop.js:1:136636\n2923@wasm-function[2923]\n2914@wasm-function[2914]\ninvoke_viidd@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b4c/vendor/candidateB/coolprop.js:1:144090\n1108@wasm-function[1108]\ninvoke_viiiiii@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b4c/vendor/candidateB/coolprop.js:1:141798\n1116@wasm-function[1116]\ninvoke_viiiiiiiii@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b4c/vendor/candidateB/coolprop.js:1:145065\n1121@wasm-function[1121]\ninvoke_diididi@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b4c/vendor/candidateB/coolprop.js:1:145491\n3787@wasm-function[3787]\n@\nhigh@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/candidate-diagnostic.mjs:65:75\nevaluate@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/candidate-diagnostic.mjs:85:75\nstep@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/lifecycle.mjs:14:33\njavascriptPaths@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/lifecycle.mjs:66:17\nasync attempt@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/gate-b.mjs:10:104\nasync run@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/gate-b.mjs:16:15"
+          },
+          "stack": 5703552,
+          "memory": 56360960,
+          "header": {
+            "ptr": 23108680,
+            "referenceCount": 0,
+            "type": 124668,
+            "destructor": 4,
+            "caught": 0,
+            "rethrown": 0
+          },
+          "uncaught": 1,
+          "observedCatchDepth": 0
+        },
+        {
+          "kind": "__resumeException",
+          "stage": "before",
+          "args": [
+            23108680
+          ],
+          "stack": 5703552,
+          "memory": 56360960,
+          "header": {
+            "ptr": 23108680,
+            "referenceCount": 0,
+            "type": 124668,
+            "destructor": 4,
+            "caught": 0,
+            "rethrown": 0
+          },
+          "uncaught": 1,
+          "observedCatchDepth": 0
+        },
+        {
+          "kind": "__resumeException",
+          "stage": "thrown",
+          "raw": {
+            "type": "object",
+            "constructor": "CppException",
+            "name": "CoolProp::CoolPropError<(CoolProp::CoolPropBaseError::ErrCode)4>",
+            "message": "Saturation pressure [30298.9 Pa] corresponding to T [218.263 K] is within 1e-4 % of given p [30298.9 Pa]",
+            "string": "CoolProp::CoolPropError<(CoolProp::CoolPropBaseError::ErrCode)4>: Saturation pressure [30298.9 Pa] corresponding to T [218.263 K] is within 1e-4 % of given p [30298.9 Pa]",
+            "excPtr": 23108680,
+            "ownKeys": [
+              "message",
+              "excPtr",
+              "name",
+              "line",
+              "column",
+              "sourceURL",
+              "stack"
+            ],
+            "stack": "___cxa_throw@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b4c/vendor/candidateB/coolprop.js:1:18013\n@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/observe.mjs:14:17\n@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/candidate-diagnostic.mjs:23:48\n@[native code]\ninvoke_viii@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b4c/vendor/candidateB/coolprop.js:1:136636\n2923@wasm-function[2923]\n2914@wasm-function[2914]\ninvoke_viidd@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b4c/vendor/candidateB/coolprop.js:1:144090\n1108@wasm-function[1108]\ninvoke_viiiiii@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b4c/vendor/candidateB/coolprop.js:1:141798\n1116@wasm-function[1116]\ninvoke_viiiiiiiii@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b4c/vendor/candidateB/coolprop.js:1:145065\n1121@wasm-function[1121]\ninvoke_diididi@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b4c/vendor/candidateB/coolprop.js:1:145491\n3787@wasm-function[3787]\n@\nhigh@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/candidate-diagnostic.mjs:65:75\nevaluate@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/candidate-diagnostic.mjs:85:75\nstep@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/lifecycle.mjs:14:33\njavascriptPaths@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/lifecycle.mjs:66:17\nasync attempt@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/gate-b.mjs:10:104\nasync run@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/gate-b.mjs:16:15"
+          },
+          "stack": 5703552,
+          "memory": 56360960,
+          "header": {
+            "ptr": 23108680,
+            "referenceCount": 0,
+            "type": 124668,
+            "destructor": 4,
+            "caught": 0,
+            "rethrown": 0
+          },
+          "uncaught": 1,
+          "observedCatchDepth": 0
+        },
+        {
+          "kind": "__cxa_begin_catch",
+          "stage": "before",
+          "args": [
+            23108680
+          ],
+          "stack": 5706480,
+          "memory": 56360960,
+          "header": {
+            "ptr": 23108680,
+            "referenceCount": 0,
+            "type": 124668,
+            "destructor": 4,
+            "caught": 0,
+            "rethrown": 0
+          },
+          "uncaught": 1,
+          "observedCatchDepth": 0
+        },
+        {
+          "kind": "__cxa_begin_catch",
+          "stage": "returned",
+          "stack": 5706480,
+          "uncaught": 0,
+          "observedCatchDepth": 1
+        },
+        {
+          "kind": "__cxa_rethrow",
+          "stage": "before",
+          "args": [],
+          "stack": 5706480,
+          "memory": 56360960,
+          "uncaught": 0,
+          "observedCatchDepth": 1
+        },
+        {
+          "kind": "__cxa_rethrow",
+          "stage": "thrown",
+          "raw": {
+            "type": "object",
+            "constructor": "CppException",
+            "name": "CoolProp::CoolPropError<(CoolProp::CoolPropBaseError::ErrCode)4>",
+            "message": "Saturation pressure [30298.9 Pa] corresponding to T [218.263 K] is within 1e-4 % of given p [30298.9 Pa]",
+            "string": "CoolProp::CoolPropError<(CoolProp::CoolPropBaseError::ErrCode)4>: Saturation pressure [30298.9 Pa] corresponding to T [218.263 K] is within 1e-4 % of given p [30298.9 Pa]",
+            "excPtr": 23108680,
+            "ownKeys": [
+              "message",
+              "excPtr",
+              "name",
+              "line",
+              "column",
+              "sourceURL",
+              "stack"
+            ],
+            "stack": "___cxa_rethrow@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b4c/vendor/candidateB/coolprop.js:1:17856\n@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/observe.mjs:14:17\n@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/candidate-diagnostic.mjs:23:48\n@[native code]\ninvoke_v@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b4c/vendor/candidateB/coolprop.js:1:137864\n1108@wasm-function[1108]\ninvoke_viiiiii@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b4c/vendor/candidateB/coolprop.js:1:141798\n1116@wasm-function[1116]\ninvoke_viiiiiiiii@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b4c/vendor/candidateB/coolprop.js:1:145065\n1121@wasm-function[1121]\ninvoke_diididi@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b4c/vendor/candidateB/coolprop.js:1:145491\n3787@wasm-function[3787]\n@\nhigh@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/candidate-diagnostic.mjs:65:75\nevaluate@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/candidate-diagnostic.mjs:85:75\nstep@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/lifecycle.mjs:14:33\njavascriptPaths@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/lifecycle.mjs:66:17\nasync attempt@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/gate-b.mjs:10:104\nasync run@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/gate-b.mjs:16:15"
+          },
+          "stack": 5706480,
+          "memory": 56360960,
+          "header": {
+            "ptr": 23108680,
+            "referenceCount": 1,
+            "type": 124668,
+            "destructor": 4,
+            "caught": 0,
+            "rethrown": 1
+          },
+          "uncaught": 1,
+          "observedCatchDepth": 1
+        },
+        {
+          "kind": "__cxa_end_catch",
+          "stage": "before",
+          "args": [],
+          "stack": 5706480,
+          "memory": 56360960,
+          "header": {
+            "ptr": 23108680,
+            "referenceCount": 1,
+            "type": 124668,
+            "destructor": 4,
+            "caught": 0,
+            "rethrown": 1
+          },
+          "uncaught": 1,
+          "observedCatchDepth": 1
+        },
+        {
+          "kind": "__cxa_end_catch",
+          "stage": "returned",
+          "stack": 5706480,
+          "uncaught": 1,
+          "observedCatchDepth": 0
+        },
+        {
+          "kind": "__resumeException",
+          "stage": "before",
+          "args": [
+            23108680
+          ],
+          "stack": 5706480,
+          "memory": 56360960,
+          "header": {
+            "ptr": 23108680,
+            "referenceCount": 0,
+            "type": 124668,
+            "destructor": 4,
+            "caught": 0,
+            "rethrown": 1
+          },
+          "uncaught": 1,
+          "observedCatchDepth": 0
+        },
+        {
+          "kind": "__resumeException",
+          "stage": "thrown",
+          "raw": {
+            "type": "object",
+            "constructor": "CppException",
+            "name": "CoolProp::CoolPropError<(CoolProp::CoolPropBaseError::ErrCode)4>",
+            "message": "Saturation pressure [30298.9 Pa] corresponding to T [218.263 K] is within 1e-4 % of given p [30298.9 Pa]",
+            "string": "CoolProp::CoolPropError<(CoolProp::CoolPropBaseError::ErrCode)4>: Saturation pressure [30298.9 Pa] corresponding to T [218.263 K] is within 1e-4 % of given p [30298.9 Pa]",
+            "excPtr": 23108680,
+            "ownKeys": [
+              "message",
+              "excPtr",
+              "name",
+              "line",
+              "column",
+              "sourceURL",
+              "stack"
+            ],
+            "stack": "___resumeException@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b4c/vendor/candidateB/coolprop.js:1:18201\n@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/observe.mjs:14:17\n@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/candidate-diagnostic.mjs:23:48\n1108@wasm-function[1108]\ninvoke_viiiiii@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b4c/vendor/candidateB/coolprop.js:1:141798\n1116@wasm-function[1116]\ninvoke_viiiiiiiii@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b4c/vendor/candidateB/coolprop.js:1:145065\n1121@wasm-function[1121]\ninvoke_diididi@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b4c/vendor/candidateB/coolprop.js:1:145491\n3787@wasm-function[3787]\n@\nhigh@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/candidate-diagnostic.mjs:65:75\nevaluate@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/candidate-diagnostic.mjs:85:75\nstep@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/lifecycle.mjs:14:33\njavascriptPaths@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/lifecycle.mjs:66:17\nasync attempt@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/gate-b.mjs:10:104\nasync run@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/gate-b.mjs:16:15"
+          },
+          "stack": 5706480,
+          "memory": 56360960,
+          "header": {
+            "ptr": 23108680,
+            "referenceCount": 0,
+            "type": 124668,
+            "destructor": 4,
+            "caught": 0,
+            "rethrown": 1
+          },
+          "uncaught": 1,
+          "observedCatchDepth": 0
+        },
+        {
+          "kind": "__resumeException",
+          "stage": "before",
+          "args": [
+            23108680
+          ],
+          "stack": 5706608,
+          "memory": 56360960,
+          "header": {
+            "ptr": 23108680,
+            "referenceCount": 0,
+            "type": 124668,
+            "destructor": 4,
+            "caught": 0,
+            "rethrown": 1
+          },
+          "uncaught": 1,
+          "observedCatchDepth": 0
+        },
+        {
+          "kind": "__resumeException",
+          "stage": "thrown",
+          "raw": {
+            "type": "object",
+            "constructor": "CppException",
+            "name": "CoolProp::CoolPropError<(CoolProp::CoolPropBaseError::ErrCode)4>",
+            "message": "Saturation pressure [30298.9 Pa] corresponding to T [218.263 K] is within 1e-4 % of given p [30298.9 Pa]",
+            "string": "CoolProp::CoolPropError<(CoolProp::CoolPropBaseError::ErrCode)4>: Saturation pressure [30298.9 Pa] corresponding to T [218.263 K] is within 1e-4 % of given p [30298.9 Pa]",
+            "excPtr": 23108680,
+            "ownKeys": [
+              "message",
+              "excPtr",
+              "name",
+              "line",
+              "column",
+              "sourceURL",
+              "stack"
+            ],
+            "stack": "___resumeException@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b4c/vendor/candidateB/coolprop.js:1:18201\n@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/observe.mjs:14:17\n@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/candidate-diagnostic.mjs:23:48\n1108@wasm-function[1108]\ninvoke_viiiiii@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b4c/vendor/candidateB/coolprop.js:1:141798\n1116@wasm-function[1116]\ninvoke_viiiiiiiii@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b4c/vendor/candidateB/coolprop.js:1:145065\n1121@wasm-function[1121]\ninvoke_diididi@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b4c/vendor/candidateB/coolprop.js:1:145491\n3787@wasm-function[3787]\n@\nhigh@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/candidate-diagnostic.mjs:65:75\nevaluate@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/candidate-diagnostic.mjs:85:75\nstep@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/lifecycle.mjs:14:33\njavascriptPaths@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/lifecycle.mjs:66:17\nasync attempt@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/gate-b.mjs:10:104\nasync run@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/gate-b.mjs:16:15"
+          },
+          "stack": 5706608,
+          "memory": 56360960,
+          "header": {
+            "ptr": 23108680,
+            "referenceCount": 0,
+            "type": 124668,
+            "destructor": 4,
+            "caught": 0,
+            "rethrown": 1
+          },
+          "uncaught": 1,
+          "observedCatchDepth": 0
+        },
+        {
+          "kind": "__cxa_begin_catch",
+          "stage": "before",
+          "args": [
+            23108680
+          ],
+          "stack": 5706736,
+          "memory": 56360960,
+          "header": {
+            "ptr": 23108680,
+            "referenceCount": 0,
+            "type": 124668,
+            "destructor": 4,
+            "caught": 0,
+            "rethrown": 1
+          },
+          "uncaught": 1,
+          "observedCatchDepth": 0
+        },
+        {
+          "kind": "__cxa_begin_catch",
+          "stage": "returned",
+          "stack": 5706736,
+          "uncaught": 0,
+          "observedCatchDepth": 1
+        },
+        {
+          "kind": "__cxa_end_catch",
+          "stage": "before",
+          "args": [],
+          "stack": 5706736,
+          "memory": 56360960,
+          "header": {
+            "ptr": 23108680,
+            "referenceCount": 1,
+            "type": 124668,
+            "destructor": 4,
+            "caught": 1,
+            "rethrown": 0
+          },
+          "uncaught": 0,
+          "observedCatchDepth": 1
+        },
+        {
+          "kind": "__cxa_end_catch",
+          "stage": "returned",
+          "stack": 5706736,
+          "uncaught": 0,
+          "observedCatchDepth": 0
+        },
+        {
+          "kind": "__cxa_throw",
+          "stage": "before",
+          "args": [
+            23108680,
+            124668,
+            4
+          ],
+          "stack": 5703552,
+          "memory": 56360960,
+          "header": {
+            "ptr": 23108680,
+            "referenceCount": 0,
+            "type": 0,
+            "destructor": 0,
+            "caught": 0,
+            "rethrown": 0
+          },
+          "uncaught": 0,
+          "observedCatchDepth": 0
+        },
+        {
+          "kind": "__cxa_throw",
+          "stage": "thrown",
+          "raw": {
+            "type": "object",
+            "constructor": "CppException",
+            "name": "CoolProp::CoolPropError<(CoolProp::CoolPropBaseError::ErrCode)4>",
+            "message": "Saturation pressure [30298.9 Pa] corresponding to T [218.263 K] is within 1e-4 % of given p [30298.9 Pa]",
+            "string": "CoolProp::CoolPropError<(CoolProp::CoolPropBaseError::ErrCode)4>: Saturation pressure [30298.9 Pa] corresponding to T [218.263 K] is within 1e-4 % of given p [30298.9 Pa]",
+            "excPtr": 23108680,
+            "ownKeys": [
+              "message",
+              "excPtr",
+              "name",
+              "line",
+              "column",
+              "sourceURL",
+              "stack"
+            ],
+            "stack": "___cxa_throw@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b4c/vendor/candidateB/coolprop.js:1:18013\n@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/observe.mjs:14:17\n@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/candidate-diagnostic.mjs:23:48\n@[native code]\ninvoke_viii@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b4c/vendor/candidateB/coolprop.js:1:136636\n2923@wasm-function[2923]\n2914@wasm-function[2914]\ninvoke_viidd@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b4c/vendor/candidateB/coolprop.js:1:144090\n1108@wasm-function[1108]\ninvoke_viiiiii@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b4c/vendor/candidateB/coolprop.js:1:141798\n1116@wasm-function[1116]\ninvoke_viiiiiiiii@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b4c/vendor/candidateB/coolprop.js:1:145065\n1121@wasm-function[1121]\ninvoke_diididi@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b4c/vendor/candidateB/coolprop.js:1:145491\n3787@wasm-function[3787]\n@\nhigh@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/candidate-diagnostic.mjs:65:75\nevaluate@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/candidate-diagnostic.mjs:85:75\nstep@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/lifecycle.mjs:14:33\njavascriptPaths@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/lifecycle.mjs:66:17\nasync attempt@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/gate-b.mjs:10:104\nasync run@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/gate-b.mjs:16:15"
+          },
+          "stack": 5703552,
+          "memory": 56360960,
+          "header": {
+            "ptr": 23108680,
+            "referenceCount": 0,
+            "type": 124668,
+            "destructor": 4,
+            "caught": 0,
+            "rethrown": 0
+          },
+          "uncaught": 1,
+          "observedCatchDepth": 0
+        },
+        {
+          "kind": "__resumeException",
+          "stage": "before",
+          "args": [
+            23108680
+          ],
+          "stack": 5703552,
+          "memory": 56360960,
+          "header": {
+            "ptr": 23108680,
+            "referenceCount": 0,
+            "type": 124668,
+            "destructor": 4,
+            "caught": 0,
+            "rethrown": 0
+          },
+          "uncaught": 1,
+          "observedCatchDepth": 0
+        },
+        {
+          "kind": "__resumeException",
+          "stage": "thrown",
+          "raw": {
+            "type": "object",
+            "constructor": "CppException",
+            "name": "CoolProp::CoolPropError<(CoolProp::CoolPropBaseError::ErrCode)4>",
+            "message": "Saturation pressure [30298.9 Pa] corresponding to T [218.263 K] is within 1e-4 % of given p [30298.9 Pa]",
+            "string": "CoolProp::CoolPropError<(CoolProp::CoolPropBaseError::ErrCode)4>: Saturation pressure [30298.9 Pa] corresponding to T [218.263 K] is within 1e-4 % of given p [30298.9 Pa]",
+            "excPtr": 23108680,
+            "ownKeys": [
+              "message",
+              "excPtr",
+              "name",
+              "line",
+              "column",
+              "sourceURL",
+              "stack"
+            ],
+            "stack": "___cxa_throw@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b4c/vendor/candidateB/coolprop.js:1:18013\n@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/observe.mjs:14:17\n@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/candidate-diagnostic.mjs:23:48\n@[native code]\ninvoke_viii@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b4c/vendor/candidateB/coolprop.js:1:136636\n2923@wasm-function[2923]\n2914@wasm-function[2914]\ninvoke_viidd@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b4c/vendor/candidateB/coolprop.js:1:144090\n1108@wasm-function[1108]\ninvoke_viiiiii@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b4c/vendor/candidateB/coolprop.js:1:141798\n1116@wasm-function[1116]\ninvoke_viiiiiiiii@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b4c/vendor/candidateB/coolprop.js:1:145065\n1121@wasm-function[1121]\ninvoke_diididi@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b4c/vendor/candidateB/coolprop.js:1:145491\n3787@wasm-function[3787]\n@\nhigh@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/candidate-diagnostic.mjs:65:75\nevaluate@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/candidate-diagnostic.mjs:85:75\nstep@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/lifecycle.mjs:14:33\njavascriptPaths@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/lifecycle.mjs:66:17\nasync attempt@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/gate-b.mjs:10:104\nasync run@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/gate-b.mjs:16:15"
+          },
+          "stack": 5703552,
+          "memory": 56360960,
+          "header": {
+            "ptr": 23108680,
+            "referenceCount": 0,
+            "type": 124668,
+            "destructor": 4,
+            "caught": 0,
+            "rethrown": 0
+          },
+          "uncaught": 1,
+          "observedCatchDepth": 0
+        },
+        {
+          "kind": "__cxa_begin_catch",
+          "stage": "before",
+          "args": [
+            23108680
+          ],
+          "stack": 5706480,
+          "memory": 56360960,
+          "header": {
+            "ptr": 23108680,
+            "referenceCount": 0,
+            "type": 124668,
+            "destructor": 4,
+            "caught": 0,
+            "rethrown": 0
+          },
+          "uncaught": 1,
+          "observedCatchDepth": 0
+        },
+        {
+          "kind": "__cxa_begin_catch",
+          "stage": "returned",
+          "stack": 5706480,
+          "uncaught": 0,
+          "observedCatchDepth": 1
+        },
+        {
+          "kind": "__cxa_rethrow",
+          "stage": "before",
+          "args": [],
+          "stack": 5706480,
+          "memory": 56360960,
+          "uncaught": 0,
+          "observedCatchDepth": 1
+        },
+        {
+          "kind": "__cxa_rethrow",
+          "stage": "thrown",
+          "raw": {
+            "type": "object",
+            "constructor": "CppException",
+            "name": "CoolProp::CoolPropError<(CoolProp::CoolPropBaseError::ErrCode)4>",
+            "message": "Saturation pressure [30298.9 Pa] corresponding to T [218.263 K] is within 1e-4 % of given p [30298.9 Pa]",
+            "string": "CoolProp::CoolPropError<(CoolProp::CoolPropBaseError::ErrCode)4>: Saturation pressure [30298.9 Pa] corresponding to T [218.263 K] is within 1e-4 % of given p [30298.9 Pa]",
+            "excPtr": 23108680,
+            "ownKeys": [
+              "message",
+              "excPtr",
+              "name",
+              "line",
+              "column",
+              "sourceURL",
+              "stack"
+            ],
+            "stack": "___cxa_rethrow@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b4c/vendor/candidateB/coolprop.js:1:17856\n@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/observe.mjs:14:17\n@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/candidate-diagnostic.mjs:23:48\n@[native code]\ninvoke_v@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b4c/vendor/candidateB/coolprop.js:1:137864\n1108@wasm-function[1108]\ninvoke_viiiiii@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b4c/vendor/candidateB/coolprop.js:1:141798\n1116@wasm-function[1116]\ninvoke_viiiiiiiii@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b4c/vendor/candidateB/coolprop.js:1:145065\n1121@wasm-function[1121]\ninvoke_diididi@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b4c/vendor/candidateB/coolprop.js:1:145491\n3787@wasm-function[3787]\n@\nhigh@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/candidate-diagnostic.mjs:65:75\nevaluate@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/candidate-diagnostic.mjs:85:75\nstep@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/lifecycle.mjs:14:33\njavascriptPaths@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/lifecycle.mjs:66:17\nasync attempt@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/gate-b.mjs:10:104\nasync run@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/gate-b.mjs:16:15"
+          },
+          "stack": 5706480,
+          "memory": 56360960,
+          "header": {
+            "ptr": 23108680,
+            "referenceCount": 1,
+            "type": 124668,
+            "destructor": 4,
+            "caught": 0,
+            "rethrown": 1
+          },
+          "uncaught": 1,
+          "observedCatchDepth": 1
+        },
+        {
+          "kind": "__cxa_end_catch",
+          "stage": "before",
+          "args": [],
+          "stack": 5706480,
+          "memory": 56360960,
+          "header": {
+            "ptr": 23108680,
+            "referenceCount": 1,
+            "type": 124668,
+            "destructor": 4,
+            "caught": 0,
+            "rethrown": 1
+          },
+          "uncaught": 1,
+          "observedCatchDepth": 1
+        },
+        {
+          "kind": "__cxa_end_catch",
+          "stage": "returned",
+          "stack": 5706480,
+          "uncaught": 1,
+          "observedCatchDepth": 0
+        },
+        {
+          "kind": "__resumeException",
+          "stage": "before",
+          "args": [
+            23108680
+          ],
+          "stack": 5706480,
+          "memory": 56360960,
+          "header": {
+            "ptr": 23108680,
+            "referenceCount": 0,
+            "type": 124668,
+            "destructor": 4,
+            "caught": 0,
+            "rethrown": 1
+          },
+          "uncaught": 1,
+          "observedCatchDepth": 0
+        },
+        {
+          "kind": "__resumeException",
+          "stage": "thrown",
+          "raw": {
+            "type": "object",
+            "constructor": "CppException",
+            "name": "CoolProp::CoolPropError<(CoolProp::CoolPropBaseError::ErrCode)4>",
+            "message": "Saturation pressure [30298.9 Pa] corresponding to T [218.263 K] is within 1e-4 % of given p [30298.9 Pa]",
+            "string": "CoolProp::CoolPropError<(CoolProp::CoolPropBaseError::ErrCode)4>: Saturation pressure [30298.9 Pa] corresponding to T [218.263 K] is within 1e-4 % of given p [30298.9 Pa]",
+            "excPtr": 23108680,
+            "ownKeys": [
+              "message",
+              "excPtr",
+              "name",
+              "line",
+              "column",
+              "sourceURL",
+              "stack"
+            ],
+            "stack": "___resumeException@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b4c/vendor/candidateB/coolprop.js:1:18201\n@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/observe.mjs:14:17\n@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/candidate-diagnostic.mjs:23:48\n1108@wasm-function[1108]\ninvoke_viiiiii@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b4c/vendor/candidateB/coolprop.js:1:141798\n1116@wasm-function[1116]\ninvoke_viiiiiiiii@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b4c/vendor/candidateB/coolprop.js:1:145065\n1121@wasm-function[1121]\ninvoke_diididi@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b4c/vendor/candidateB/coolprop.js:1:145491\n3787@wasm-function[3787]\n@\nhigh@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/candidate-diagnostic.mjs:65:75\nevaluate@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/candidate-diagnostic.mjs:85:75\nstep@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/lifecycle.mjs:14:33\njavascriptPaths@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/lifecycle.mjs:66:17\nasync attempt@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/gate-b.mjs:10:104\nasync run@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/gate-b.mjs:16:15"
+          },
+          "stack": 5706480,
+          "memory": 56360960,
+          "header": {
+            "ptr": 23108680,
+            "referenceCount": 0,
+            "type": 124668,
+            "destructor": 4,
+            "caught": 0,
+            "rethrown": 1
+          },
+          "uncaught": 1,
+          "observedCatchDepth": 0
+        },
+        {
+          "kind": "__resumeException",
+          "stage": "before",
+          "args": [
+            23108680
+          ],
+          "stack": 5706608,
+          "memory": 56360960,
+          "header": {
+            "ptr": 23108680,
+            "referenceCount": 0,
+            "type": 124668,
+            "destructor": 4,
+            "caught": 0,
+            "rethrown": 1
+          },
+          "uncaught": 1,
+          "observedCatchDepth": 0
+        },
+        {
+          "kind": "__resumeException",
+          "stage": "thrown",
+          "raw": {
+            "type": "object",
+            "constructor": "CppException",
+            "name": "CoolProp::CoolPropError<(CoolProp::CoolPropBaseError::ErrCode)4>",
+            "message": "Saturation pressure [30298.9 Pa] corresponding to T [218.263 K] is within 1e-4 % of given p [30298.9 Pa]",
+            "string": "CoolProp::CoolPropError<(CoolProp::CoolPropBaseError::ErrCode)4>: Saturation pressure [30298.9 Pa] corresponding to T [218.263 K] is within 1e-4 % of given p [30298.9 Pa]",
+            "excPtr": 23108680,
+            "ownKeys": [
+              "message",
+              "excPtr",
+              "name",
+              "line",
+              "column",
+              "sourceURL",
+              "stack"
+            ],
+            "stack": "___resumeException@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b4c/vendor/candidateB/coolprop.js:1:18201\n@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/observe.mjs:14:17\n@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/candidate-diagnostic.mjs:23:48\n1108@wasm-function[1108]\ninvoke_viiiiii@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b4c/vendor/candidateB/coolprop.js:1:141798\n1116@wasm-function[1116]\ninvoke_viiiiiiiii@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b4c/vendor/candidateB/coolprop.js:1:145065\n1121@wasm-function[1121]\ninvoke_diididi@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b4c/vendor/candidateB/coolprop.js:1:145491\n3787@wasm-function[3787]\n@\nhigh@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/candidate-diagnostic.mjs:65:75\nevaluate@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/candidate-diagnostic.mjs:85:75\nstep@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/lifecycle.mjs:14:33\njavascriptPaths@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/lifecycle.mjs:66:17\nasync attempt@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/gate-b.mjs:10:104\nasync run@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/gate-b.mjs:16:15"
+          },
+          "stack": 5706608,
+          "memory": 56360960,
+          "header": {
+            "ptr": 23108680,
+            "referenceCount": 0,
+            "type": 124668,
+            "destructor": 4,
+            "caught": 0,
+            "rethrown": 1
+          },
+          "uncaught": 1,
+          "observedCatchDepth": 0
+        },
+        {
+          "kind": "__cxa_begin_catch",
+          "stage": "before",
+          "args": [
+            23108680
+          ],
+          "stack": 5706736,
+          "memory": 56360960,
+          "header": {
+            "ptr": 23108680,
+            "referenceCount": 0,
+            "type": 124668,
+            "destructor": 4,
+            "caught": 0,
+            "rethrown": 1
+          },
+          "uncaught": 1,
+          "observedCatchDepth": 0
+        },
+        {
+          "kind": "__cxa_begin_catch",
+          "stage": "returned",
+          "stack": 5706736,
+          "uncaught": 0,
+          "observedCatchDepth": 1
+        },
+        {
+          "kind": "__cxa_end_catch",
+          "stage": "before",
+          "args": [],
+          "stack": 5706736,
+          "memory": 56360960,
+          "header": {
+            "ptr": 23108680,
+            "referenceCount": 1,
+            "type": 124668,
+            "destructor": 4,
+            "caught": 1,
+            "rethrown": 0
+          },
+          "uncaught": 0,
+          "observedCatchDepth": 1
+        },
+        {
+          "kind": "__cxa_end_catch",
+          "stage": "returned",
+          "stack": 5706736,
+          "uncaught": 0,
+          "observedCatchDepth": 0
+        },
+        {
+          "kind": "loader-catch",
+          "raw": {
+            "type": "object",
+            "constructor": "Error",
+            "name": "Error",
+            "message": "EOS returned a nonfinite property",
+            "string": "Error: EOS returned a nonfinite property",
+            "excPtr": null,
+            "ownKeys": [
+              "message",
+              "line",
+              "column",
+              "sourceURL",
+              "stack"
+            ],
+            "stack": "evaluate@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/candidate-diagnostic.mjs:96:64\nstep@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/lifecycle.mjs:14:33\njavascriptPaths@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/lifecycle.mjs:66:17\nasync attempt@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/gate-b.mjs:10:104\nasync run@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/gate-b.mjs:16:15"
+          },
+          "stack": 5706944,
+          "memory": 56360960
+        },
+        {
+          "kind": "stack-restored",
+          "stack": 5706944
+        },
+        {
+          "kind": "loader-catch",
+          "raw": {
+            "type": "object",
+            "constructor": "Error",
+            "name": "Error",
+            "message": "Unsupported research input pair",
+            "string": "Error: Unsupported research input pair",
+            "excPtr": null,
+            "ownKeys": [
+              "message",
+              "line",
+              "column",
+              "sourceURL",
+              "stack"
+            ],
+            "stack": "evaluate@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/candidate-diagnostic.mjs:88:60\nstep@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/lifecycle.mjs:14:33\njavascriptPaths@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/lifecycle.mjs:67:17\nasync attempt@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/gate-b.mjs:10:104\nasync run@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/gate-b.mjs:16:15"
+          },
+          "stack": 5706944,
+          "memory": 56360960
+        },
+        {
+          "kind": "stack-restored",
+          "stack": 5706944
+        },
+        {
+          "kind": "loader-catch",
+          "raw": {
+            "type": "object",
+            "constructor": "Error",
+            "name": "Error",
+            "message": "Synthetic JS diagnostic",
+            "string": "Error: Synthetic JS diagnostic",
+            "excPtr": null,
+            "ownKeys": [
+              "message",
+              "line",
+              "column",
+              "sourceURL",
+              "stack"
+            ],
+            "stack": "javascriptPaths@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/lifecycle.mjs:69:35\nasync attempt@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/gate-b.mjs:10:104\nasync run@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/gate-b.mjs:16:15"
+          },
+          "stack": 5706944,
+          "memory": 56360960
+        },
+        {
+          "kind": "stack-restored",
+          "stack": 5706944
+        },
+        {
+          "kind": "loader-catch",
+          "raw": {
+            "type": "number",
+            "constructor": "Number",
+            "name": null,
+            "message": null,
+            "string": "123456",
+            "excPtr": null,
+            "ownKeys": [],
+            "stack": null
+          },
+          "stack": 5706944,
+          "memory": 56360960
+        },
+        {
+          "kind": "stack-restored",
+          "stack": 5706944
+        },
+        {
+          "kind": "loader-catch",
+          "raw": {
+            "type": "object",
+            "constructor": "Object",
+            "name": null,
+            "message": "Synthetic excPtr lookalike",
+            "string": "[object Object]",
+            "excPtr": 123456,
+            "ownKeys": [
+              "excPtr",
+              "message"
+            ],
+            "stack": null
+          },
+          "stack": 5706944,
+          "memory": 56360960
+        },
+        {
+          "kind": "stack-restored",
+          "stack": 5706944
+        },
+        {
+          "kind": "loader-catch",
+          "raw": {
+            "type": "object",
+            "constructor": "Error",
+            "name": "CppException",
+            "message": "Synthetic forged CppException",
+            "string": "CppException: Synthetic forged CppException",
+            "excPtr": 123456,
+            "ownKeys": [
+              "message",
+              "name",
+              "excPtr",
+              "line",
+              "column",
+              "sourceURL",
+              "stack"
+            ],
+            "stack": "javascriptPaths@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/lifecycle.mjs:69:146\nasync attempt@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/gate-b.mjs:10:104\nasync run@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/gate-b.mjs:16:15"
+          },
+          "stack": 5706944,
+          "memory": 56360960
+        },
+        {
+          "kind": "stack-restored",
+          "stack": 5706944
+        },
+        {
+          "kind": "loader-catch",
+          "raw": {
+            "type": "object",
+            "constructor": "Error",
+            "name": "Error",
+            "message": "EOS returned a nonfinite property",
+            "string": "Error: EOS returned a nonfinite property",
+            "excPtr": null,
+            "ownKeys": [
+              "message",
+              "line",
+              "column",
+              "sourceURL",
+              "stack"
+            ],
+            "stack": "evaluate@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/candidate-diagnostic.mjs:96:64\nstep@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/lifecycle.mjs:14:33\njavascriptPaths@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/lifecycle.mjs:75:17\nasync attempt@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/gate-b.mjs:10:104\nasync run@http://127.0.0.1:41209/experiments/dx-fv/browser_eos_b6/gate-b.mjs:16:15"
+          },
+          "stack": 5706944,
+          "memory": 56360960
+        },
+        {
+          "kind": "stack-restored",
+          "stack": 5706944
+        }
+      ],
+      "syntheticErrorsAreNotCoolPropRefusals": true
+    },
+    "passed": true
+  },
+  "browser": "webkit",
+  "browserVersion": "26.5",
+  "replica": 0,
+  "executable": "/workspace/b6-browsers/webkit-2336/b6-wpe.sh",
+  "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.5 Safari/605.1.15",
+  "physicalIPad": false,
+  "console": [
+    {
+      "type": "log",
+      "text": "B6 section webkit javascriptPaths complete"
+    }
+  ]
+}

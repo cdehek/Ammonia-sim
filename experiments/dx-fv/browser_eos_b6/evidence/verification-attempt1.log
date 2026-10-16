@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/workspace/Ammonia-sim/experiments/dx-fv/browser_eos_b6/verify-results.py", line 36, in <module>
+    L=r['lifecycleCandidate'];assert len(L['rows'])==32 and L['deleted'] and L['secondDelete'] and L['invalidReuse'];assert L['invalidReuse']['constructor']=='BindingError'
+                                                                                                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

@@ -9,7 +9,7 @@ def git(*a): return subprocess.check_output(['git',*a],cwd=R,text=True).strip()
 def sha(p): return hashlib.sha256(p.read_bytes()).hexdigest()
 def write(n,x): (E/n).write_text(json.dumps(x,indent=2)+'\n')
 def main():
- ap=argparse.ArgumentParser();ap.add_argument('--start',action='store_true');ap.add_argument('--refs',default='remote-refs-before.tsv');ap.add_argument('--clean',action='store_true');a=ap.parse_args()
+ ap=argparse.ArgumentParser();ap.add_argument('--start',action='store_true');ap.add_argument('--refs',default='remote-refs-before.tsv');ap.add_argument('--pr3-refs',default='pr3-refs-observed.tsv');ap.add_argument('--clean',action='store_true');ap.add_argument('--read-only',action='store_true');a=ap.parse_args()
  assert git('branch','--show-current')==TARGET
  assert git('merge-base',START,'HEAD')==START
  if a.start:
@@ -25,10 +25,16 @@ def main():
  before,after=refs(E/'remote-refs-before.tsv'),refs(E/a.refs)
  drift={k:[v,after.get(k)] for k,v in before.items() if after.get(k)!=v};assert not drift,drift
  assert set(after)-set(before)<={'refs/heads/'+TARGET}
+ if 'refs/heads/'+TARGET in after:assert after['refs/heads/'+TARGET]==git('rev-parse','HEAD')
+ pr3={k:v for k,v in refs(B.parent/'browser_eos_b5b_c2_p1/evidence/remote-refs-before.tsv').items() if k.startswith('refs/pull/3/')}
+ observed=E/a.pr3_refs
+ if observed.exists():assert refs(observed)==pr3,'PR #3 refs differ from protected P1 evidence'
  changes=git('diff',START,'--name-status').splitlines();assert all(x.startswith('A\texperiments/dx-fv/browser_eos_b6/') for x in changes),changes
  status=git('status','--porcelain=v1','--untracked-files=all');assert all('experiments/dx-fv/browser_eos_b6/' in x for x in status.splitlines()),status
  if a.clean: assert not status,status
- receipt=dict(start=START,head=git('rev-parse','HEAD'),branch=TARGET,historicalFiles=len(hashes),mismatches=bad,protectedRemoteRefs=len(before),drift=drift,acceptedEngineIdentical=True,allChangesAdditiveB6=True,**{k:prior[k] for k in ['artifacts','patches','acceptedA2','protectedCommits']})
- write('start-audit.json' if a.start else 'final-preservation.json',receipt)
+ receipt=dict(start=START,head=git('rev-parse','HEAD'),branch=TARGET,historicalFiles=len(hashes),mismatches=bad,protectedRemoteRefs=len(before),drift=drift,protectedPR3Refs=pr3,PR3MatchesPinnedP1=observed.exists(),acceptedEngineIdentical=True,allChangesAdditiveB6=True,**{k:prior[k] for k in ['artifacts','patches','acceptedA2','protectedCommits']})
+ if a.read_only and (E/'delivery-manifest-sha256.json').exists():
+  for p,h in json.loads((E/'delivery-manifest-sha256.json').read_text()).items():assert sha(B/p)==h,p
+ if not a.read_only:write('start-audit.json' if a.start else 'final-preservation.json',receipt)
  print(json.dumps({k:len(v) if isinstance(v,list) else v for k,v in receipt.items()}))
 if __name__=='__main__':main()

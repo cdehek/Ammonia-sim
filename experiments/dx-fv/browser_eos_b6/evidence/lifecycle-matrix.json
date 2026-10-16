@@ -1,0 +1,578 @@
+[
+  {
+    "engine": "chromium",
+    "sequence": "valid-valid",
+    "fresh": false,
+    "operations": 2,
+    "refusals": 0,
+    "allSupportedFreshComparisonsExact": true,
+    "terminalDeleted": null
+  },
+  {
+    "engine": "chromium",
+    "sequence": "valid-valid",
+    "fresh": true,
+    "operations": 2,
+    "refusals": 0,
+    "allSupportedFreshComparisonsExact": true,
+    "terminalDeleted": true
+  },
+  {
+    "engine": "chromium",
+    "sequence": "valid-rejected-valid",
+    "fresh": false,
+    "operations": 3,
+    "refusals": 1,
+    "allSupportedFreshComparisonsExact": true,
+    "terminalDeleted": null
+  },
+  {
+    "engine": "chromium",
+    "sequence": "valid-rejected-valid",
+    "fresh": true,
+    "operations": 3,
+    "refusals": 1,
+    "allSupportedFreshComparisonsExact": true,
+    "terminalDeleted": true
+  },
+  {
+    "engine": "chromium",
+    "sequence": "rejected-valid",
+    "fresh": false,
+    "operations": 2,
+    "refusals": 1,
+    "allSupportedFreshComparisonsExact": true,
+    "terminalDeleted": null
+  },
+  {
+    "engine": "chromium",
+    "sequence": "rejected-valid",
+    "fresh": true,
+    "operations": 2,
+    "refusals": 1,
+    "allSupportedFreshComparisonsExact": true,
+    "terminalDeleted": true
+  },
+  {
+    "engine": "chromium",
+    "sequence": "rejected-rejected-valid",
+    "fresh": false,
+    "operations": 3,
+    "refusals": 2,
+    "allSupportedFreshComparisonsExact": true,
+    "terminalDeleted": null
+  },
+  {
+    "engine": "chromium",
+    "sequence": "rejected-rejected-valid",
+    "fresh": true,
+    "operations": 3,
+    "refusals": 2,
+    "allSupportedFreshComparisonsExact": true,
+    "terminalDeleted": true
+  },
+  {
+    "engine": "chromium",
+    "sequence": "alternating",
+    "fresh": false,
+    "operations": 6,
+    "refusals": 3,
+    "allSupportedFreshComparisonsExact": true,
+    "terminalDeleted": null
+  },
+  {
+    "engine": "chromium",
+    "sequence": "alternating",
+    "fresh": true,
+    "operations": 6,
+    "refusals": 3,
+    "allSupportedFreshComparisonsExact": true,
+    "terminalDeleted": true
+  },
+  {
+    "engine": "chromium",
+    "sequence": "PH-rejected-PH",
+    "fresh": false,
+    "operations": 3,
+    "refusals": 1,
+    "allSupportedFreshComparisonsExact": true,
+    "terminalDeleted": null
+  },
+  {
+    "engine": "chromium",
+    "sequence": "PH-rejected-PH",
+    "fresh": true,
+    "operations": 3,
+    "refusals": 1,
+    "allSupportedFreshComparisonsExact": true,
+    "terminalDeleted": true
+  },
+  {
+    "engine": "chromium",
+    "sequence": "PT-DU-rejected-PT",
+    "fresh": false,
+    "operations": 4,
+    "refusals": 1,
+    "allSupportedFreshComparisonsExact": true,
+    "terminalDeleted": null
+  },
+  {
+    "engine": "chromium",
+    "sequence": "PT-DU-rejected-PT",
+    "fresh": true,
+    "operations": 4,
+    "refusals": 1,
+    "allSupportedFreshComparisonsExact": true,
+    "terminalDeleted": true
+  },
+  {
+    "engine": "chromium",
+    "sequence": "PQ-rejected-PQ",
+    "fresh": false,
+    "operations": 3,
+    "refusals": 1,
+    "allSupportedFreshComparisonsExact": true,
+    "terminalDeleted": null
+  },
+  {
+    "engine": "chromium",
+    "sequence": "PQ-rejected-PQ",
+    "fresh": true,
+    "operations": 3,
+    "refusals": 1,
+    "allSupportedFreshComparisonsExact": true,
+    "terminalDeleted": true
+  },
+  {
+    "engine": "chromium",
+    "sequence": "liquid-rejected-vapor",
+    "fresh": false,
+    "operations": 3,
+    "refusals": 1,
+    "allSupportedFreshComparisonsExact": true,
+    "terminalDeleted": null
+  },
+  {
+    "engine": "chromium",
+    "sequence": "liquid-rejected-vapor",
+    "fresh": true,
+    "operations": 3,
+    "refusals": 1,
+    "allSupportedFreshComparisonsExact": true,
+    "terminalDeleted": true
+  },
+  {
+    "engine": "chromium",
+    "sequence": "vapor-rejected-liquid",
+    "fresh": false,
+    "operations": 3,
+    "refusals": 1,
+    "allSupportedFreshComparisonsExact": true,
+    "terminalDeleted": null
+  },
+  {
+    "engine": "chromium",
+    "sequence": "vapor-rejected-liquid",
+    "fresh": true,
+    "operations": 3,
+    "refusals": 1,
+    "allSupportedFreshComparisonsExact": true,
+    "terminalDeleted": true
+  },
+  {
+    "engine": "chromium",
+    "sequence": "nonfinite-input",
+    "fresh": false,
+    "operations": 3,
+    "refusals": 1,
+    "allSupportedFreshComparisonsExact": true,
+    "terminalDeleted": null
+  },
+  {
+    "engine": "chromium",
+    "sequence": "nonfinite-input",
+    "fresh": true,
+    "operations": 3,
+    "refusals": 1,
+    "allSupportedFreshComparisonsExact": true,
+    "terminalDeleted": true
+  },
+  {
+    "engine": "chromium",
+    "sequence": "unsupported-pressure",
+    "fresh": false,
+    "operations": 3,
+    "refusals": 1,
+    "allSupportedFreshComparisonsExact": true,
+    "terminalDeleted": null
+  },
+  {
+    "engine": "chromium",
+    "sequence": "unsupported-pressure",
+    "fresh": true,
+    "operations": 3,
+    "refusals": 1,
+    "allSupportedFreshComparisonsExact": true,
+    "terminalDeleted": true
+  },
+  {
+    "engine": "chromium",
+    "sequence": "low-high-supported",
+    "fresh": false,
+    "operations": 2,
+    "refusals": 0,
+    "allSupportedFreshComparisonsExact": true,
+    "terminalDeleted": null
+  },
+  {
+    "engine": "chromium",
+    "sequence": "low-high-supported",
+    "fresh": true,
+    "operations": 2,
+    "refusals": 0,
+    "allSupportedFreshComparisonsExact": true,
+    "terminalDeleted": true
+  },
+  {
+    "engine": "chromium",
+    "sequence": "factory-disposal",
+    "fresh": false,
+    "operations": 1,
+    "refusals": 0,
+    "allSupportedFreshComparisonsExact": true,
+    "terminalDeleted": null
+  },
+  {
+    "engine": "chromium",
+    "sequence": "factory-disposal",
+    "fresh": true,
+    "operations": 1,
+    "refusals": 0,
+    "allSupportedFreshComparisonsExact": true,
+    "terminalDeleted": true
+  },
+  {
+    "engine": "chromium",
+    "sequence": "worker-rejection-recovery",
+    "fresh": false,
+    "operations": 2,
+    "refusals": 1,
+    "allSupportedFreshComparisonsExact": true,
+    "terminalDeleted": null
+  },
+  {
+    "engine": "chromium",
+    "sequence": "worker-rejection-recovery",
+    "fresh": true,
+    "operations": 2,
+    "refusals": 1,
+    "allSupportedFreshComparisonsExact": true,
+    "terminalDeleted": true
+  },
+  {
+    "engine": "chromium",
+    "sequence": "bounded-alternation",
+    "fresh": false,
+    "operations": 256,
+    "refusals": 128,
+    "allSupportedFreshComparisonsExact": true,
+    "terminalDeleted": null
+  },
+  {
+    "engine": "chromium",
+    "sequence": "bounded-alternation",
+    "fresh": true,
+    "operations": 256,
+    "refusals": 128,
+    "allSupportedFreshComparisonsExact": true,
+    "terminalDeleted": true
+  },
+  {
+    "engine": "webkit",
+    "sequence": "valid-valid",
+    "fresh": false,
+    "operations": 2,
+    "refusals": 0,
+    "allSupportedFreshComparisonsExact": true,
+    "terminalDeleted": null
+  },
+  {
+    "engine": "webkit",
+    "sequence": "valid-valid",
+    "fresh": true,
+    "operations": 2,
+    "refusals": 0,
+    "allSupportedFreshComparisonsExact": true,
+    "terminalDeleted": true
+  },
+  {
+    "engine": "webkit",
+    "sequence": "valid-rejected-valid",
+    "fresh": false,
+    "operations": 3,
+    "refusals": 1,
+    "allSupportedFreshComparisonsExact": true,
+    "terminalDeleted": null
+  },
+  {
+    "engine": "webkit",
+    "sequence": "valid-rejected-valid",
+    "fresh": true,
+    "operations": 3,
+    "refusals": 1,
+    "allSupportedFreshComparisonsExact": true,
+    "terminalDeleted": true
+  },
+  {
+    "engine": "webkit",
+    "sequence": "rejected-valid",
+    "fresh": false,
+    "operations": 2,
+    "refusals": 1,
+    "allSupportedFreshComparisonsExact": true,
+    "terminalDeleted": null
+  },
+  {
+    "engine": "webkit",
+    "sequence": "rejected-valid",
+    "fresh": true,
+    "operations": 2,
+    "refusals": 1,
+    "allSupportedFreshComparisonsExact": true,
+    "terminalDeleted": true
+  },
+  {
+    "engine": "webkit",
+    "sequence": "rejected-rejected-valid",
+    "fresh": false,
+    "operations": 3,
+    "refusals": 2,
+    "allSupportedFreshComparisonsExact": true,
+    "terminalDeleted": null
+  },
+  {
+    "engine": "webkit",
+    "sequence": "rejected-rejected-valid",
+    "fresh": true,
+    "operations": 3,
+    "refusals": 2,
+    "allSupportedFreshComparisonsExact": true,
+    "terminalDeleted": true
+  },
+  {
+    "engine": "webkit",
+    "sequence": "alternating",
+    "fresh": false,
+    "operations": 6,
+    "refusals": 3,
+    "allSupportedFreshComparisonsExact": true,
+    "terminalDeleted": null
+  },
+  {
+    "engine": "webkit",
+    "sequence": "alternating",
+    "fresh": true,
+    "operations": 6,
+    "refusals": 3,
+    "allSupportedFreshComparisonsExact": true,
+    "terminalDeleted": true
+  },
+  {
+    "engine": "webkit",
+    "sequence": "PH-rejected-PH",
+    "fresh": false,
+    "operations": 3,
+    "refusals": 1,
+    "allSupportedFreshComparisonsExact": true,
+    "terminalDeleted": null
+  },
+  {
+    "engine": "webkit",
+    "sequence": "PH-rejected-PH",
+    "fresh": true,
+    "operations": 3,
+    "refusals": 1,
+    "allSupportedFreshComparisonsExact": true,
+    "terminalDeleted": true
+  },
+  {
+    "engine": "webkit",
+    "sequence": "PT-DU-rejected-PT",
+    "fresh": false,
+    "operations": 4,
+    "refusals": 1,
+    "allSupportedFreshComparisonsExact": true,
+    "terminalDeleted": null
+  },
+  {
+    "engine": "webkit",
+    "sequence": "PT-DU-rejected-PT",
+    "fresh": true,
+    "operations": 4,
+    "refusals": 1,
+    "allSupportedFreshComparisonsExact": true,
+    "terminalDeleted": true
+  },
+  {
+    "engine": "webkit",
+    "sequence": "PQ-rejected-PQ",
+    "fresh": false,
+    "operations": 3,
+    "refusals": 1,
+    "allSupportedFreshComparisonsExact": true,
+    "terminalDeleted": null
+  },
+  {
+    "engine": "webkit",
+    "sequence": "PQ-rejected-PQ",
+    "fresh": true,
+    "operations": 3,
+    "refusals": 1,
+    "allSupportedFreshComparisonsExact": true,
+    "terminalDeleted": true
+  },
+  {
+    "engine": "webkit",
+    "sequence": "liquid-rejected-vapor",
+    "fresh": false,
+    "operations": 3,
+    "refusals": 1,
+    "allSupportedFreshComparisonsExact": true,
+    "terminalDeleted": null
+  },
+  {
+    "engine": "webkit",
+    "sequence": "liquid-rejected-vapor",
+    "fresh": true,
+    "operations": 3,
+    "refusals": 1,
+    "allSupportedFreshComparisonsExact": true,
+    "terminalDeleted": true
+  },
+  {
+    "engine": "webkit",
+    "sequence": "vapor-rejected-liquid",
+    "fresh": false,
+    "operations": 3,
+    "refusals": 1,
+    "allSupportedFreshComparisonsExact": true,
+    "terminalDeleted": null
+  },
+  {
+    "engine": "webkit",
+    "sequence": "vapor-rejected-liquid",
+    "fresh": true,
+    "operations": 3,
+    "refusals": 1,
+    "allSupportedFreshComparisonsExact": true,
+    "terminalDeleted": true
+  },
+  {
+    "engine": "webkit",
+    "sequence": "nonfinite-input",
+    "fresh": false,
+    "operations": 3,
+    "refusals": 1,
+    "allSupportedFreshComparisonsExact": true,
+    "terminalDeleted": null
+  },
+  {
+    "engine": "webkit",
+    "sequence": "nonfinite-input",
+    "fresh": true,
+    "operations": 3,
+    "refusals": 1,
+    "allSupportedFreshComparisonsExact": true,
+    "terminalDeleted": true
+  },
+  {
+    "engine": "webkit",
+    "sequence": "unsupported-pressure",
+    "fresh": false,
+    "operations": 3,
+    "refusals": 1,
+    "allSupportedFreshComparisonsExact": true,
+    "terminalDeleted": null
+  },
+  {
+    "engine": "webkit",
+    "sequence": "unsupported-pressure",
+    "fresh": true,
+    "operations": 3,
+    "refusals": 1,
+    "allSupportedFreshComparisonsExact": true,
+    "terminalDeleted": true
+  },
+  {
+    "engine": "webkit",
+    "sequence": "low-high-supported",
+    "fresh": false,
+    "operations": 2,
+    "refusals": 0,
+    "allSupportedFreshComparisonsExact": true,
+    "terminalDeleted": null
+  },
+  {
+    "engine": "webkit",
+    "sequence": "low-high-supported",
+    "fresh": true,
+    "operations": 2,
+    "refusals": 0,
+    "allSupportedFreshComparisonsExact": true,
+    "terminalDeleted": true
+  },
+  {
+    "engine": "webkit",
+    "sequence": "factory-disposal",
+    "fresh": false,
+    "operations": 1,
+    "refusals": 0,
+    "allSupportedFreshComparisonsExact": true,
+    "terminalDeleted": null
+  },
+  {
+    "engine": "webkit",
+    "sequence": "factory-disposal",
+    "fresh": true,
+    "operations": 1,
+    "refusals": 0,
+    "allSupportedFreshComparisonsExact": true,
+    "terminalDeleted": true
+  },
+  {
+    "engine": "webkit",
+    "sequence": "worker-rejection-recovery",
+    "fresh": false,
+    "operations": 2,
+    "refusals": 1,
+    "allSupportedFreshComparisonsExact": true,
+    "terminalDeleted": null
+  },
+  {
+    "engine": "webkit",
+    "sequence": "worker-rejection-recovery",
+    "fresh": true,
+    "operations": 2,
+    "refusals": 1,
+    "allSupportedFreshComparisonsExact": true,
+    "terminalDeleted": true
+  },
+  {
+    "engine": "webkit",
+    "sequence": "bounded-alternation",
+    "fresh": false,
+    "operations": 256,
+    "refusals": 128,
+    "allSupportedFreshComparisonsExact": true,
+    "terminalDeleted": null
+  },
+  {
+    "engine": "webkit",
+    "sequence": "bounded-alternation",
+    "fresh": true,
+    "operations": 256,
+    "refusals": 128,
+    "allSupportedFreshComparisonsExact": true,
+    "terminalDeleted": true
+  }
+]

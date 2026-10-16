@@ -1,0 +1,25 @@
+{
+  "canonicalLimits": {
+    "pressurePa": "0.1 inclusive",
+    "enthalpyJkg": "0.1 inclusive",
+    "temperatureK": "1e-4 inclusive"
+  },
+  "standaloneLimits": {
+    "pressurePa": "10 strict",
+    "enthalpyJkg": "50 strict",
+    "temperatureK": "0.01 strict"
+  },
+  "normalizedFluidResidualMax": "1e-11",
+  "independentReferenceResolution": {
+    "pressurePa": "1e-5",
+    "energyJkg": "1e-8"
+  },
+  "hardPressureMaximumPa": 3500000,
+  "lowerPressurePa": 30000,
+  "propertyTemperatureFloorK": "195.495",
+  "source": "experiments/dx-fv/browser_eos_b5b_c2_p1/evidence/scientific-contract-audit.json",
+  "sourceSHA256": "a9980510f3b9bd2ff2a8e668c8f5517694965f0aef3032d45aacb9ae3c287be1",
+  "immutableStartingFilesAudit": "starting-files-sha256.json and start-audit.json verify all accepted/C1/P1 files",
+  "noLimitsChanged": true,
+  "interpretation": "B6 tests use original budgets. Exact valid-output identity is stronger than a relaxed numerical check, but does not complete phase/support qualification."
+}

@@ -1,0 +1,70 @@
+{
+  "chromium": {
+    "version": "154.0.8037.57",
+    "originalSequences": 47,
+    "originalSecondaryAssertions": 6,
+    "candidatePrimaryRefusals": 6,
+    "unchangedOriginalSuccesses": 315,
+    "sequenceVariants": 32,
+    "validLifecycleCalls": 312,
+    "refusedLifecycleCalls": 286,
+    "freshObjectComparisons": 310,
+    "lowHighDifferences": {
+      "p": 5.820766091346741e-11,
+      "h": 0.0,
+      "T": 0
+    },
+    "workerAlternationsPerVariant": 64,
+    "originalSevenRefused": 7,
+    "unchangedInwardQualificationHazards": 2,
+    "signedFDProbes": 13,
+    "C1A2Scenarios": 10,
+    "memoryLeakProof": false,
+    "qualificationSources": [
+      "gate-b-chromium-0.json",
+      "gate-corrected-chromium-0.json"
+    ],
+    "candidateUncaughtCountBeforeAfter": [
+      0,
+      0
+    ],
+    "historicalUncaughtCountBeforeAfter": [
+      0,
+      16
+    ]
+  },
+  "webkit": {
+    "version": "26.5",
+    "originalSequences": 47,
+    "originalSecondaryAssertions": 6,
+    "candidatePrimaryRefusals": 6,
+    "unchangedOriginalSuccesses": 315,
+    "sequenceVariants": 32,
+    "validLifecycleCalls": 312,
+    "refusedLifecycleCalls": 286,
+    "freshObjectComparisons": 310,
+    "lowHighDifferences": {
+      "p": 5.820766091346741e-11,
+      "h": 0.0,
+      "T": 0
+    },
+    "workerAlternationsPerVariant": 64,
+    "originalSevenRefused": 7,
+    "unchangedInwardQualificationHazards": 2,
+    "signedFDProbes": 13,
+    "C1A2Scenarios": 10,
+    "memoryLeakProof": false,
+    "qualificationSources": [
+      "gate-b-webkit-0.json",
+      "gate-corrected-webkit-0.json"
+    ],
+    "candidateUncaughtCountBeforeAfter": [
+      0,
+      0
+    ],
+    "historicalUncaughtCountBeforeAfter": [
+      0,
+      16
+    ]
+  }
+}

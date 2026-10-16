@@ -1,0 +1,609 @@
+{
+  "source": "browser_eos_b5b_c1/evidence/webkit-replay.json",
+  "sourceSHA256": "db414c793d7c9f2f79d5b231862027c4a0d7116cc0d5906f180d16532036be69",
+  "rows": [
+    {
+      "key": "webkit-ledger-64",
+      "error": {
+        "message": "Outside accepted pressure domain",
+        "faultKind": "solver",
+        "evidence": {
+          "propertyFailure": {
+            "schemaVersion": "C1/1",
+            "operation": "stateMVU",
+            "inputScope": "fixed-inventory",
+            "input": {
+              "values": {
+                "massKg": 0.3129191406602224,
+                "volumeM3": 0.0006000000000000001,
+                "internalEnergyKJ": 218.14080371522462,
+                "guess": 35
+              },
+              "bits": {
+                "massKg": "3fd406de00db65a6",
+                "volumeM3": "3f43a92a30553262",
+                "internalEnergyKJ": "406b448176cb0171",
+                "guess": "4041800000000000"
+              }
+            },
+            "rawRecovery": "returned",
+            "rawCoordinates": {
+              "values": {
+                "p": 3500000.000000149,
+                "T": 345.5636734187881,
+                "h": 703826.564429848,
+                "s": 2625.843410197631,
+                "rho": 521.5319011003706,
+                "u": 697115.5655578412,
+                "Q": 10000
+              },
+              "bits": {
+                "p": "414ab3f000000140",
+                "T": "40759904ce6b351c",
+                "h": "41257aa520fcf2f4",
+                "s": "40a483afd3761fe0",
+                "rho": "40804c41555d3663",
+                "u": "412546372190cc20",
+                "Q": "40c3880000000000"
+              }
+            },
+            "lastRequest": {
+              "mode": "DU",
+              "args": [
+                {
+                  "value": 521.5319011003706,
+                  "bits": "40804c41555d3663"
+                },
+                {
+                  "value": 697115.5655578412,
+                  "bits": "412546372190cc20"
+                }
+              ]
+            },
+            "requestedInputSupport": "unknown",
+            "returnedCoordinateSupport": "unsupported",
+            "exactInventorySupport": "unknown",
+            "checks": {
+              "support": "fail",
+              "phase": "unmeasured",
+              "canonical": "unmeasured",
+              "nonlinear": "unmeasured"
+            },
+            "observedResiduals": {
+              "densityResidual": 0,
+              "energyResidualKJkg": 0
+            },
+            "physicalTrajectoryExit": "unproved",
+            "reason": "boundary-unresolved",
+            "errorSource": "adapter-support-or-inventory",
+            "originalError": {
+              "message": "Outside accepted pressure domain",
+              "faultKind": "domain"
+            },
+            "numericalPressureEnclosure": false
+          }
+        },
+        "propertyCause": null,
+        "domainCause": null,
+        "nonlinearResidual": null
+      }
+    },
+    {
+      "key": "webkit-ledger-65",
+      "error": {
+        "message": "Outside accepted pressure domain",
+        "faultKind": "solver",
+        "evidence": {
+          "propertyFailure": {
+            "schemaVersion": "C1/1",
+            "operation": "stateMVU",
+            "inputScope": "fixed-inventory",
+            "input": {
+              "values": {
+                "massKg": 0.3129191427925018,
+                "volumeM3": 0.0006000000000000001,
+                "internalEnergyKJ": 218.14080239970724,
+                "guess": 35
+              },
+              "bits": {
+                "massKg": "3fd406de03258379",
+                "volumeM3": "3f43a92a30553262",
+                "internalEnergyKJ": "406b44817408be1c",
+                "guess": "4041800000000000"
+              }
+            },
+            "rawRecovery": "returned",
+            "rawCoordinates": {
+              "values": {
+                "p": 3500000.0000003683,
+                "T": 345.56367179371773,
+                "h": 703826.5554298488,
+                "s": 2625.8433841532265,
+                "rho": 521.5319046541697,
+                "u": 697115.5566035713,
+                "Q": 10000
+              },
+              "bits": {
+                "p": "414ab3f000000317",
+                "T": "40759904ccb6fb20",
+                "h": "41257aa51c614d18",
+                "s": "40a483afd00c3825",
+                "rho": "40804c41573a31fe",
+                "u": "412546371cfb24af",
+                "Q": "40c3880000000000"
+              }
+            },
+            "lastRequest": {
+              "mode": "DU",
+              "args": [
+                {
+                  "value": 521.5319046541697,
+                  "bits": "40804c41573a31fe"
+                },
+                {
+                  "value": 697115.556603571,
+                  "bits": "412546371cfb24ad"
+                }
+              ]
+            },
+            "requestedInputSupport": "unknown",
+            "returnedCoordinateSupport": "unsupported",
+            "exactInventorySupport": "unknown",
+            "checks": {
+              "support": "fail",
+              "phase": "unmeasured",
+              "canonical": "unmeasured",
+              "nonlinear": "unmeasured"
+            },
+            "observedResiduals": {
+              "densityResidual": 0,
+              "energyResidualKJkg": 2.2737367544323206e-13
+            },
+            "physicalTrajectoryExit": "unproved",
+            "reason": "boundary-unresolved",
+            "errorSource": "adapter-support-or-inventory",
+            "originalError": {
+              "message": "Outside accepted pressure domain",
+              "faultKind": "domain"
+            },
+            "numericalPressureEnclosure": false
+          }
+        },
+        "propertyCause": null,
+        "domainCause": null,
+        "nonlinearResidual": null
+      }
+    },
+    {
+      "key": "webkit-ledger-67",
+      "error": {
+        "message": "Outside accepted pressure domain",
+        "faultKind": "solver",
+        "evidence": {
+          "propertyFailure": {
+            "schemaVersion": "C1/1",
+            "operation": "stateMVU",
+            "inputScope": "fixed-inventory",
+            "input": {
+              "values": {
+                "massKg": 0.016830826438031344,
+                "volumeM3": 0.0006000000000000001,
+                "internalEnergyKJ": 25.301752301594554,
+                "guess": 35
+              },
+              "bits": {
+                "massKg": "3f913c19a476c7dd",
+                "volumeM3": "3f43a92a30553262",
+                "internalEnergyKJ": "40394d3fa38ad762",
+                "guess": "4041800000000000"
+              }
+            },
+            "rawRecovery": "returned",
+            "rawCoordinates": {
+              "values": {
+                "p": 3500000.000000003,
+                "T": 345.5636738055732,
+                "h": 1628069.328769079,
+                "s": 5300.43809404395,
+                "rho": 28.051377396718905,
+                "u": 1503298.2720576394,
+                "Q": 10000
+              },
+              "bits": {
+                "p": "414ab3f000000006",
+                "T": "40759904ced308c8",
+                "h": "4138d7a5542a35da",
+                "s": "40b4b47026ee6756",
+                "rho": "403c0d2711aea94c",
+                "u": "4136f04245a591c8",
+                "Q": "40c3880000000000"
+              }
+            },
+            "lastRequest": {
+              "mode": "DU",
+              "args": [
+                {
+                  "value": 28.051377396718905,
+                  "bits": "403c0d2711aea94c"
+                },
+                {
+                  "value": 1503298.2720576394,
+                  "bits": "4136f04245a591c8"
+                }
+              ]
+            },
+            "requestedInputSupport": "unknown",
+            "returnedCoordinateSupport": "unsupported",
+            "exactInventorySupport": "unknown",
+            "checks": {
+              "support": "fail",
+              "phase": "unmeasured",
+              "canonical": "unmeasured",
+              "nonlinear": "unmeasured"
+            },
+            "observedResiduals": {
+              "densityResidual": 0,
+              "energyResidualKJkg": 0
+            },
+            "physicalTrajectoryExit": "unproved",
+            "reason": "boundary-unresolved",
+            "errorSource": "adapter-support-or-inventory",
+            "originalError": {
+              "message": "Outside accepted pressure domain",
+              "faultKind": "domain"
+            },
+            "numericalPressureEnclosure": false
+          }
+        },
+        "propertyCause": null,
+        "domainCause": null,
+        "nonlinearResidual": null
+      }
+    },
+    {
+      "key": "webkit-ledger-68",
+      "error": {
+        "message": "Outside accepted pressure domain",
+        "faultKind": "solver",
+        "evidence": {
+          "propertyFailure": {
+            "schemaVersion": "C1/1",
+            "operation": "stateMVU",
+            "inputScope": "fixed-inventory",
+            "input": {
+              "values": {
+                "massKg": 0.016830826165446306,
+                "volumeM3": 0.0006000000000000001,
+                "internalEnergyKJ": 25.30175200928465,
+                "guess": 35
+              },
+              "bits": {
+                "massKg": "3f913c199fc7f065",
+                "volumeM3": "3f43a92a30553262",
+                "internalEnergyKJ": "40394d3f9ea3613f",
+                "guess": "4041800000000000"
+              }
+            },
+            "rawRecovery": "returned",
+            "rawCoordinates": {
+              "values": {
+                "p": 3500000.000000002,
+                "T": 345.56367566156706,
+                "h": 1628069.337769079,
+                "s": 5300.438120088355,
+                "rho": 28.051376942410506,
+                "u": 1503298.2790368996,
+                "Q": 10000
+              },
+              "bits": {
+                "p": "414ab3f000000004",
+                "T": "40759904d0c53fb5",
+                "h": "4138d7a5567808cc",
+                "s": "40b4b47028a35b35",
+                "rho": "403c0d270a0f6bee",
+                "u": "4136f042476ef656",
+                "Q": "40c3880000000000"
+              }
+            },
+            "lastRequest": {
+              "mode": "DU",
+              "args": [
+                {
+                  "value": 28.051376942410506,
+                  "bits": "403c0d270a0f6bee"
+                },
+                {
+                  "value": 1503298.2790368996,
+                  "bits": "4136f042476ef656"
+                }
+              ]
+            },
+            "requestedInputSupport": "unknown",
+            "returnedCoordinateSupport": "unsupported",
+            "exactInventorySupport": "unknown",
+            "checks": {
+              "support": "fail",
+              "phase": "unmeasured",
+              "canonical": "unmeasured",
+              "nonlinear": "unmeasured"
+            },
+            "observedResiduals": {
+              "densityResidual": 0,
+              "energyResidualKJkg": 0
+            },
+            "physicalTrajectoryExit": "unproved",
+            "reason": "boundary-unresolved",
+            "errorSource": "adapter-support-or-inventory",
+            "originalError": {
+              "message": "Outside accepted pressure domain",
+              "faultKind": "domain"
+            },
+            "numericalPressureEnclosure": false
+          }
+        },
+        "propertyCause": null,
+        "domainCause": null,
+        "nonlinearResidual": null
+      }
+    },
+    {
+      "key": "webkit-ledger-70",
+      "error": {
+        "message": "Outside accepted pressure domain",
+        "faultKind": "solver",
+        "evidence": {
+          "propertyFailure": {
+            "schemaVersion": "C1/1",
+            "operation": "stateMVU",
+            "inputScope": "fixed-inventory",
+            "input": {
+              "values": {
+                "massKg": 0.31291914064008475,
+                "volumeM3": 0.0006000000000000001,
+                "internalEnergyKJ": 218.14080372764926,
+                "guess": 35
+              },
+              "bits": {
+                "massKg": "3fd406de00d5dc96",
+                "volumeM3": "3f43a92a30553262",
+                "internalEnergyKJ": "406b448176d1ad12",
+                "guess": "4041800000000000"
+              }
+            },
+            "rawRecovery": "returned",
+            "rawCoordinates": {
+              "values": {
+                "p": 3500000.0000007655,
+                "T": 345.5636734341365,
+                "h": 703826.564514849,
+                "s": 2625.843410443606,
+                "rho": 521.5319010668079,
+                "u": 697115.5656424091,
+                "Q": 10000
+              },
+              "bits": {
+                "p": "414ab3f00000066c",
+                "T": "40759904ce6f53d8",
+                "h": "41257aa52108171d",
+                "s": "40a483afd37e60c9",
+                "rho": "40804c415558b52e",
+                "u": "41254637219be1c1",
+                "Q": "40c3880000000000"
+              }
+            },
+            "lastRequest": {
+              "mode": "DU",
+              "args": [
+                {
+                  "value": 521.5319010668079,
+                  "bits": "40804c415558b52e"
+                },
+                {
+                  "value": 697115.5656424091,
+                  "bits": "41254637219be1c1"
+                }
+              ]
+            },
+            "requestedInputSupport": "unknown",
+            "returnedCoordinateSupport": "unsupported",
+            "exactInventorySupport": "unknown",
+            "checks": {
+              "support": "fail",
+              "phase": "unmeasured",
+              "canonical": "unmeasured",
+              "nonlinear": "unmeasured"
+            },
+            "observedResiduals": {
+              "densityResidual": 0,
+              "energyResidualKJkg": 0
+            },
+            "physicalTrajectoryExit": "unproved",
+            "reason": "boundary-unresolved",
+            "errorSource": "adapter-support-or-inventory",
+            "originalError": {
+              "message": "Outside accepted pressure domain",
+              "faultKind": "domain"
+            },
+            "numericalPressureEnclosure": false
+          }
+        },
+        "propertyCause": null,
+        "domainCause": null,
+        "nonlinearResidual": null
+      }
+    },
+    {
+      "key": "webkit-ledger-75",
+      "error": {
+        "message": "Outside accepted pressure domain",
+        "faultKind": "solver",
+        "evidence": {
+          "propertyFailure": {
+            "schemaVersion": "C1/1",
+            "operation": "stateMVU",
+            "inputScope": "fixed-inventory",
+            "input": {
+              "values": {
+                "massKg": 0.016830826440605712,
+                "volumeM3": 0.0006000000000000001,
+                "internalEnergyKJ": 25.30175230435519,
+                "guess": 35
+              },
+              "bits": {
+                "massKg": "3f913c19a4821a58",
+                "volumeM3": "3f43a92a30553262",
+                "internalEnergyKJ": "40394d3fa396b2bc",
+                "guess": "4041800000000000"
+              }
+            },
+            "rawRecovery": "returned",
+            "rawCoordinates": {
+              "values": {
+                "p": 3500000.0000000014,
+                "T": 345.5636737880446,
+                "h": 1628069.3286840797,
+                "s": 5300.438093797978,
+                "rho": 28.051377401009518,
+                "u": 1503298.2719917248,
+                "Q": 10000
+              },
+              "bits": {
+                "p": "414ab3f000000003",
+                "T": "40759904cece5439",
+                "h": "4138d7a55424a3cd",
+                "s": "40b4b47026ea46e5",
+                "rho": "403c0d2711c116e0",
+                "u": "4136f04245a13feb",
+                "Q": "40c3880000000000"
+              }
+            },
+            "lastRequest": {
+              "mode": "DU",
+              "args": [
+                {
+                  "value": 28.051377401009518,
+                  "bits": "403c0d2711c116e0"
+                },
+                {
+                  "value": 1503298.2719917244,
+                  "bits": "4136f04245a13fe9"
+                }
+              ]
+            },
+            "requestedInputSupport": "unknown",
+            "returnedCoordinateSupport": "unsupported",
+            "exactInventorySupport": "unknown",
+            "checks": {
+              "support": "fail",
+              "phase": "unmeasured",
+              "canonical": "unmeasured",
+              "nonlinear": "unmeasured"
+            },
+            "observedResiduals": {
+              "densityResidual": 0,
+              "energyResidualKJkg": 6.821210263296962e-13
+            },
+            "physicalTrajectoryExit": "unproved",
+            "reason": "boundary-unresolved",
+            "errorSource": "adapter-support-or-inventory",
+            "originalError": {
+              "message": "Outside accepted pressure domain",
+              "faultKind": "domain"
+            },
+            "numericalPressureEnclosure": false
+          }
+        },
+        "propertyCause": null,
+        "domainCause": null,
+        "nonlinearResidual": null
+      }
+    },
+    {
+      "key": "webkit-ledger-79",
+      "error": {
+        "message": "Outside accepted pressure domain",
+        "faultKind": "solver",
+        "evidence": {
+          "propertyFailure": {
+            "schemaVersion": "C1/1",
+            "operation": "stateMVU",
+            "inputScope": "fixed-inventory",
+            "input": {
+              "values": {
+                "massKg": 0.016532896796156812,
+                "volumeM3": 0.0006000000000000001,
+                "internalEnergyKJ": 24.982031140956146,
+                "guess": 35
+              },
+              "bits": {
+                "massKg": "3f90edffec30c7ac",
+                "volumeM3": "3f43a92a30553262",
+                "internalEnergyKJ": "4038fb6664920f6a",
+                "guess": "4041800000000000"
+              }
+            },
+            "rawRecovery": "returned",
+            "rawCoordinates": {
+              "values": {
+                "p": 3500000.000000002,
+                "T": 347.66773880290907,
+                "h": 1638069.3277690795,
+                "s": 5329.289153606194,
+                "rho": 27.554827993594685,
+                "u": 1511049.8449832096,
+                "Q": 10000
+              },
+              "bits": {
+                "p": "414ab3f000000004",
+                "T": "4075baaf0ee20c3c",
+                "h": "4138feb553e8aca5",
+                "s": "40b4d14a05f88220",
+                "rho": "403b8e09351764fc",
+                "u": "41370e89d850d1d3",
+                "Q": "40c3880000000000"
+              }
+            },
+            "lastRequest": {
+              "mode": "DU",
+              "args": [
+                {
+                  "value": 27.554827993594685,
+                  "bits": "403b8e09351764fc"
+                },
+                {
+                  "value": 1511049.8449832092,
+                  "bits": "41370e89d850d1d1"
+                }
+              ]
+            },
+            "requestedInputSupport": "unknown",
+            "returnedCoordinateSupport": "unsupported",
+            "exactInventorySupport": "unknown",
+            "checks": {
+              "support": "fail",
+              "phase": "unmeasured",
+              "canonical": "unmeasured",
+              "nonlinear": "unmeasured"
+            },
+            "observedResiduals": {
+              "densityResidual": 0,
+              "energyResidualKJkg": 4.547473508864641e-13
+            },
+            "physicalTrajectoryExit": "unproved",
+            "reason": "boundary-unresolved",
+            "errorSource": "adapter-support-or-inventory",
+            "originalError": {
+              "message": "Outside accepted pressure domain",
+              "faultKind": "domain"
+            },
+            "numericalPressureEnclosure": false
+          }
+        },
+        "propertyCause": null,
+        "domainCause": null,
+        "nonlinearResidual": null
+      }
+    }
+  ],
+  "extraction": "Verbatim seven errors only; unused legacy evidence has Python -Infinity tokens that strict browser JSON rejects. No numerical source values replaced."
+}

@@ -1,0 +1,59 @@
+--- browser_eos_b4c/loader.mjs
++++ browser_eos_b6/loader.mjs
+@@ -1,16 +1,34 @@
+ // Isolated browser research only. SI mass-based values; no production imports.
+ export async function loadEOS(version='controlA', options={}) {
+   const start=performance.now(),logs=[];
+-  const assets={controlA:'../browser_eos_b4b/vendor/candidateB',rebuiltA:'./vendor/controlA',candidateB:'./vendor/candidateB'};
++  const assets={controlA:'../browser_eos_b4b/vendor/candidateB',rebuiltA:'../browser_eos_b4c/vendor/controlA',candidateB:'../browser_eos_b4c/vendor/candidateB'};
+   const asset=assets[version];if(!asset)throw Error('Unknown isolated B4C build');
+   const {default:factory}=await import(`${asset}/coolprop.js`);
+   const jsReady=performance.now();let memory,wasmExports,fetchMS=0,compileInstantiateMS=0,mime,streaming=false;
+   const response=await fetch(new URL(options.wasmURL||`${asset}/coolprop.wasm${options.badMime?'?mime=bad':''}`,import.meta.url));
+   if(!response.ok)throw Error(`WASM asset unavailable: HTTP ${response.status}`);
+   mime=response.headers.get('content-type');const bytes=await response.arrayBuffer();fetchMS=performance.now()-jsReady;
++  // Pinned B4C Emscripten JS exception ABI; see pre-edit ownership design.
++  // Only identities actually thrown by this module's generated callbacks may
++  // enter native catch cleanup. An excPtr field or numeric throw is insufficient.
++  const nativeThrows=new WeakSet();let beginCatch,endCatch;
++  function bindExceptionABI(imports){
++    const env=imports.env;
++    beginCatch=env.__cxa_begin_catch;endCatch=env.__cxa_end_catch;
++    if(typeof beginCatch!=='function'||typeof endCatch!=='function')throw Error('B6 requires the audited B4C exception ABI');
++    for(const name of ['__cxa_throw','__cxa_rethrow','__resumeException']){
++      const original=env[name];
++      if(typeof original!=='function')throw Error('B6 missing generated exception callback: '+name);
++      env[name]=(...args)=>{try{return original(...args);}catch(e){
++        if(e&&typeof e==='object'&&Number.isInteger(e.excPtr)&&e.excPtr>0)nativeThrows.add(e);
++        throw e;
++      }};
++    }
++  }
+   let failInstantiation;
+   const failed=new Promise((_,reject)=>{failInstantiation=reject;});
+   const module=await Promise.race([factory({printErr:v=>logs.push(String(v)),instantiateWasm(imports,done){
++    bindExceptionABI(imports);
+     const t=performance.now();
+     (async()=>{
+       let result;
+@@ -76,9 +94,17 @@
+       return out;
+     }catch(e){
+       const message=decodeError(e);wasmExports._emscripten_stack_restore(stackPointer);
+-      const pointer=typeof e==='number'?e:e?.excPtr;
+-      if(Number.isInteger(pointer)&&pointer>0)module.decrementExceptionRefcount(pointer);
+-      throw new Error(message);
++      const propagated=new Error(message);
++      if(nativeThrows.has(e)){
++        nativeThrows.delete(e);
++        const diagnostic=Object.freeze({representation:'CppException',name:e.name,message,cleanup:'generated-begin/end-catch'});
++        propagated.nativeException=diagnostic;
++        // begin acquires the count (zero -> one) and fixes uncaught bookkeeping;
++        // end destroys/frees, pops catch state and clears exceptionLast.
++        try{beginCatch(e.excPtr);endCatch();}
++        catch(cleanupError){throw new AggregateError([propagated,cleanupError],'B6 native exception cleanup failed: '+message);}
++      }
++      throw propagated;
+     }
+   }
+   return {module,state,capabilities,init,evaluate,memory:()=>memory.buffer.byteLength,stackPointer:()=>wasmExports.emscripten_stack_get_current(),dispose:()=>state.delete()};

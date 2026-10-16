@@ -1,0 +1,35 @@
+{
+  "source": "browser_eos_b5b_c1/a2-tests.cjs",
+  "sourceSHA256": "7cad544c641d27f3270c42549b93128ca431710607ed87992fedd6e1a15e7bca",
+  "subsetSHA256": "13ed40b131c922d087cb124ad2c7fa887d9c86a43a03b0a9c1232650fed25eb4",
+  "selection": "Exact supported pair, real-browser-boundary transient/persistent loop, and two thermal boundary blocks. Fault-kind list filtered only. Run once with original boundary failure and once with actual PT failure under labeled dispatch injection. No classification/solver semantics changed.",
+  "candidateFiles": [
+    "conservation.cjs",
+    "coupled-fixtures.cjs",
+    "coupled-implicit.cjs",
+    "coupled-model.cjs",
+    "evaporator.cjs",
+    "failure-contract.cjs",
+    "hydraulics.cjs",
+    "implicit.cjs",
+    "spatial-fixtures.cjs",
+    "thermal-geometry.cjs",
+    "thermal-network.cjs",
+    "thermodynamics.cjs",
+    "time-control.cjs"
+  ],
+  "controlFiles": [
+    "conservation.cjs",
+    "coupled-fixtures.cjs",
+    "coupled-implicit.cjs",
+    "coupled-model.cjs",
+    "evaporator.cjs",
+    "hydraulics.cjs",
+    "implicit.cjs",
+    "spatial-fixtures.cjs",
+    "thermal-geometry.cjs",
+    "thermal-network.cjs",
+    "thermodynamics.cjs",
+    "time-control.cjs"
+  ]
+}

@@ -1,0 +1,118 @@
+{
+  "chromium": {
+    "version": "154.0.8037.57",
+    "medianMicrosecondsPerCall": {
+      "PT": {
+        "control": 18.359375000045475,
+        "candidate": 14.25781250009095,
+        "ratio": 0.7765957446838814
+      },
+      "rejected-PT": {
+        "control": 71.13821138211382,
+        "candidate": 48.046874999954525,
+        "ratio": 0.6754017857136464
+      },
+      "PH": {
+        "control": 92.83819628647215,
+        "candidate": 84.95145631067962,
+        "ratio": 0.9150485436893204
+      },
+      "DU": {
+        "control": 30.078125000045475,
+        "candidate": 28.515624999954525,
+        "ratio": 0.9480519480490028
+      },
+      "alternating": {
+        "control": 38.671874999863576,
+        "candidate": 35.15625,
+        "ratio": 0.9090909090941162
+      }
+    },
+    "factories": {
+      "control": {
+        "factoryMS": 0.19999999995343387,
+        "disposeMS": 0.0
+      },
+      "candidate": {
+        "factoryMS": 0.19999999995343387,
+        "disposeMS": 0.0
+      }
+    },
+    "samples": 30,
+    "worker": [
+      {
+        "kind": "control",
+        "elapsedMS": 3088.29999999993,
+        "mainThreadTicks": 599,
+        "maxGapMS": 31.300000000046566
+      },
+      {
+        "kind": "candidate",
+        "elapsedMS": 2844.3000000000466,
+        "mainThreadTicks": 568,
+        "maxGapMS": 8.70000000006985
+      }
+    ],
+    "linearMemorySizes": [
+      56360960
+    ]
+  },
+  "webkit": {
+    "version": "26.5",
+    "medianMicrosecondsPerCall": {
+      "PT": {
+        "control": 41.015625,
+        "candidate": 19.53125,
+        "ratio": 0.47619047619047616
+      },
+      "rejected-PT": {
+        "control": 116.99779249448123,
+        "candidate": 155.3398058252427,
+        "ratio": 1.3277156988459424
+      },
+      "PH": {
+        "control": 169.08212560386474,
+        "candidate": 131.08614232209737,
+        "ratio": 0.7752808988764044
+      },
+      "DU": {
+        "control": 101.15606936416185,
+        "candidate": 44.921875,
+        "ratio": 0.4440848214285714
+      },
+      "alternating": {
+        "control": 74.78632478632478,
+        "candidate": 50.78125,
+        "ratio": 0.6790178571428571
+      }
+    },
+    "factories": {
+      "control": {
+        "factoryMS": 1.0,
+        "disposeMS": 0.0
+      },
+      "candidate": {
+        "factoryMS": 1.0,
+        "disposeMS": 0.0
+      }
+    },
+    "samples": 30,
+    "worker": [
+      {
+        "kind": "control",
+        "elapsedMS": 4781,
+        "mainThreadTicks": 499,
+        "maxGapMS": 222
+      },
+      {
+        "kind": "candidate",
+        "elapsedMS": 6167,
+        "mainThreadTicks": 627,
+        "maxGapMS": 367
+      }
+    ],
+    "linearMemorySizes": [
+      56360960
+    ]
+  }
+}

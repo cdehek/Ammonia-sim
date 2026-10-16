@@ -1,0 +1,9 @@
+--- final-loader
++++ initial-benchmark-loader
+@@ -1,5 +1,5 @@
+ // Isolated browser research only. SI mass-based values; no production imports.
+-export async function loadEOS(version='controlA', options={}) {
++export async function loadEOS(version='candidateB', options={}) {
+   const start=performance.now(),logs=[];
+   const assets={controlA:'../browser_eos_b4b/vendor/candidateB',rebuiltA:'../browser_eos_b4c/vendor/controlA',candidateB:'../browser_eos_b4c/vendor/candidateB'};
+   const asset=assets[version];if(!asset)throw Error('Unknown isolated B4C build');
