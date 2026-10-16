@@ -1,0 +1,316 @@
+{
+  "rows": [
+    {
+      "label": "one-Pa-ULP-below",
+      "pPa": 3499999.9999999995,
+      "pBits": "414ab3efffffffff",
+      "bar": 34.99999999999999,
+      "barBits": "40417fffffffffff",
+      "PaAfterRoundTrip": 3499999.999999999,
+      "roundTripBits": "414ab3effffffffe",
+      "exactPa": {
+        "numerator": "7516192767999999",
+        "denominator": "2147483648"
+      },
+      "exactBar": {
+        "numerator": "7516192767999999",
+        "denominator": "214748364800000"
+      },
+      "actualRoundedBar": {
+        "numerator": "4925812092436479",
+        "denominator": "140737488355328"
+      },
+      "conversionErrorBar": {
+        "numerator": "-1077",
+        "denominator": "439804651110400000"
+      },
+      "roundTripErrorPa": {
+        "numerator": "-1",
+        "denominator": "2147483648"
+      },
+      "strictPaInside": true,
+      "strictBarInside": true
+    },
+    {
+      "label": "exact-maximum",
+      "pPa": 3500000.0,
+      "pBits": "414ab3f000000000",
+      "bar": 35.0,
+      "barBits": "4041800000000000",
+      "PaAfterRoundTrip": 3500000.0,
+      "roundTripBits": "414ab3f000000000",
+      "exactPa": {
+        "numerator": "3500000",
+        "denominator": "1"
+      },
+      "exactBar": {
+        "numerator": "35",
+        "denominator": "1"
+      },
+      "actualRoundedBar": {
+        "numerator": "35",
+        "denominator": "1"
+      },
+      "conversionErrorBar": {
+        "numerator": "0",
+        "denominator": "1"
+      },
+      "roundTripErrorPa": {
+        "numerator": "0",
+        "denominator": "1"
+      },
+      "strictPaInside": true,
+      "strictBarInside": true
+    },
+    {
+      "label": "one-Pa-ULP-above",
+      "pPa": 3500000.0000000005,
+      "pBits": "414ab3f000000001",
+      "bar": 35.00000000000001,
+      "barBits": "4041800000000001",
+      "PaAfterRoundTrip": 3500000.000000001,
+      "roundTripBits": "414ab3f000000002",
+      "exactPa": {
+        "numerator": "7516192768000001",
+        "denominator": "2147483648"
+      },
+      "exactBar": {
+        "numerator": "7516192768000001",
+        "denominator": "214748364800000"
+      },
+      "actualRoundedBar": {
+        "numerator": "4925812092436481",
+        "denominator": "140737488355328"
+      },
+      "conversionErrorBar": {
+        "numerator": "1077",
+        "denominator": "439804651110400000"
+      },
+      "roundTripErrorPa": {
+        "numerator": "1",
+        "denominator": "2147483648"
+      },
+      "strictPaInside": false,
+      "strictBarInside": false
+    },
+    {
+      "label": "chromium-ledger-64",
+      "pPa": 3500000.000000149,
+      "pBits": "414ab3f000000140",
+      "bar": 35.00000000000149,
+      "barBits": "40418000000000d2",
+      "PaAfterRoundTrip": 3500000.000000149,
+      "roundTripBits": "414ab3f000000140",
+      "exactPa": {
+        "numerator": "117440512000005",
+        "denominator": "33554432"
+      },
+      "exactBar": {
+        "numerator": "23488102400001",
+        "denominator": "671088640000"
+      },
+      "actualRoundedBar": {
+        "numerator": "2462906046218345",
+        "denominator": "70368744177664"
+      },
+      "conversionErrorBar": {
+        "numerator": "89",
+        "denominator": "43980465111040000"
+      },
+      "roundTripErrorPa": {
+        "numerator": "0",
+        "denominator": "1"
+      },
+      "strictPaInside": false,
+      "strictBarInside": false
+    },
+    {
+      "label": "chromium-ledger-65",
+      "pPa": 3500000.0000003683,
+      "pBits": "414ab3f000000317",
+      "bar": 35.00000000000368,
+      "barBits": "4041800000000206",
+      "PaAfterRoundTrip": 3500000.000000368,
+      "roundTripBits": "414ab3f000000316",
+      "exactPa": {
+        "numerator": "7516192768000791",
+        "denominator": "2147483648"
+      },
+      "exactBar": {
+        "numerator": "7516192768000791",
+        "denominator": "214748364800000"
+      },
+      "actualRoundedBar": {
+        "numerator": "2462906046218499",
+        "denominator": "70368744177664"
+      },
+      "conversionErrorBar": {
+        "numerator": "-609",
+        "denominator": "219902325555200000"
+      },
+      "roundTripErrorPa": {
+        "numerator": "-1",
+        "denominator": "2147483648"
+      },
+      "strictPaInside": false,
+      "strictBarInside": false
+    },
+    {
+      "label": "chromium-ledger-67",
+      "pPa": 3500000.000000003,
+      "pBits": "414ab3f000000006",
+      "bar": 35.00000000000003,
+      "barBits": "4041800000000004",
+      "PaAfterRoundTrip": 3500000.000000003,
+      "roundTripBits": "414ab3f000000006",
+      "exactPa": {
+        "numerator": "3758096384000003",
+        "denominator": "1073741824"
+      },
+      "exactBar": {
+        "numerator": "3758096384000003",
+        "denominator": "107374182400000"
+      },
+      "actualRoundedBar": {
+        "numerator": "1231453023109121",
+        "denominator": "35184372088832"
+      },
+      "conversionErrorBar": {
+        "numerator": "53",
+        "denominator": "109951162777600000"
+      },
+      "roundTripErrorPa": {
+        "numerator": "0",
+        "denominator": "1"
+      },
+      "strictPaInside": false,
+      "strictBarInside": false
+    },
+    {
+      "label": "chromium-ledger-68",
+      "pPa": 3500000.000000002,
+      "pBits": "414ab3f000000004",
+      "bar": 35.00000000000002,
+      "barBits": "4041800000000003",
+      "PaAfterRoundTrip": 3500000.0000000023,
+      "roundTripBits": "414ab3f000000005",
+      "exactPa": {
+        "numerator": "1879048192000001",
+        "denominator": "536870912"
+      },
+      "exactBar": {
+        "numerator": "1879048192000001",
+        "denominator": "53687091200000"
+      },
+      "actualRoundedBar": {
+        "numerator": "4925812092436483",
+        "denominator": "140737488355328"
+      },
+      "conversionErrorBar": {
+        "numerator": "1183",
+        "denominator": "439804651110400000"
+      },
+      "roundTripErrorPa": {
+        "numerator": "1",
+        "denominator": "2147483648"
+      },
+      "strictPaInside": false,
+      "strictBarInside": false
+    },
+    {
+      "label": "chromium-ledger-70",
+      "pPa": 3500000.0000007655,
+      "pBits": "414ab3f00000066c",
+      "bar": 35.00000000000765,
+      "barBits": "4041800000000435",
+      "PaAfterRoundTrip": 3500000.000000765,
+      "roundTripBits": "414ab3f00000066b",
+      "exactPa": {
+        "numerator": "1879048192000411",
+        "denominator": "536870912"
+      },
+      "exactBar": {
+        "numerator": "1879048192000411",
+        "denominator": "53687091200000"
+      },
+      "actualRoundedBar": {
+        "numerator": "4925812092437557",
+        "denominator": "140737488355328"
+      },
+      "conversionErrorBar": {
+        "numerator": "-1287",
+        "denominator": "439804651110400000"
+      },
+      "roundTripErrorPa": {
+        "numerator": "-1",
+        "denominator": "2147483648"
+      },
+      "strictPaInside": false,
+      "strictBarInside": false
+    },
+    {
+      "label": "chromium-ledger-75",
+      "pPa": 3500000.0000000014,
+      "pBits": "414ab3f000000003",
+      "bar": 35.000000000000014,
+      "barBits": "4041800000000002",
+      "PaAfterRoundTrip": 3500000.0000000014,
+      "roundTripBits": "414ab3f000000003",
+      "exactPa": {
+        "numerator": "7516192768000003",
+        "denominator": "2147483648"
+      },
+      "exactBar": {
+        "numerator": "7516192768000003",
+        "denominator": "214748364800000"
+      },
+      "actualRoundedBar": {
+        "numerator": "2462906046218241",
+        "denominator": "70368744177664"
+      },
+      "conversionErrorBar": {
+        "numerator": "53",
+        "denominator": "219902325555200000"
+      },
+      "roundTripErrorPa": {
+        "numerator": "0",
+        "denominator": "1"
+      },
+      "strictPaInside": false,
+      "strictBarInside": false
+    },
+    {
+      "label": "chromium-ledger-79",
+      "pPa": 3500000.000000002,
+      "pBits": "414ab3f000000004",
+      "bar": 35.00000000000002,
+      "barBits": "4041800000000003",
+      "PaAfterRoundTrip": 3500000.0000000023,
+      "roundTripBits": "414ab3f000000005",
+      "exactPa": {
+        "numerator": "1879048192000001",
+        "denominator": "536870912"
+      },
+      "exactBar": {
+        "numerator": "1879048192000001",
+        "denominator": "53687091200000"
+      },
+      "actualRoundedBar": {
+        "numerator": "4925812092436483",
+        "denominator": "140737488355328"
+      },
+      "conversionErrorBar": {
+        "numerator": "1183",
+        "denominator": "439804651110400000"
+      },
+      "roundTripErrorPa": {
+        "numerator": "1",
+        "denominator": "2147483648"
+      },
+      "strictPaInside": false,
+      "strictBarInside": false
+    }
+  ],
+  "pressureULPPa": 4.656612873077393e-10,
+  "unitConvention": "1 bar = exactly 100000 Pa; actual operations are binary64."
+}

@@ -1,0 +1,240 @@
+[
+  {
+    "path": "engine.js",
+    "sha256": "23bb186115cbc7dea6d3115e501de93ef80867b168a54b554192d08c98752fc5",
+    "lines": [
+      {
+        "line": 11,
+        "text": " function sat(p){const [i,w]=pBracket(p),a=data.sat[i],b=data.sat[i+1];return {p,T:lerp(a[0],b[0],w),hf:lerp(a[1],b[1],w),sf:lerp(a[2],b[2],w),rhof:Math.exp(lerp(Math.log(a[3]),Math.log(b[3]),w)),hg:lerp(a[4],b[4],w),sg:lerp(a[5],b[5],w),rhog:Math.exp(lerp(Math.log(a[6]),Math.log(b[6]),w))};}"
+      },
+      {
+        "line": 12,
+        "text": " function satP(T){const temps=data.sat.map(row=>row[0]),[i,w]=bracket(temps,T);return Math.exp(lerp(logs[i],logs[i+1],w));}"
+      },
+      {
+        "line": 33,
+        "text": " function propertyError(kind,message){const e=new Error(message);e.faultKind=kind;return e;}"
+      },
+      {
+        "line": 76,
+        "text": " function stateMVU(massKg,volumeM3,internalEnergyKJ,guess){"
+      },
+      {
+        "line": 166,
+        "text": " return {sat,satP,statePT,statePX,ph,ps,stateDU,stateMVU,solve,roomSimulation,defaults};"
+      }
+    ]
+  },
+  {
+    "path": "experiments/dx-fv/browser_eos_backend/adapter.mjs",
+    "sha256": "3114b012f0d5d44cf72ef6c22a62fe74a5ac5259b923180e6ec62375b0fd07ce",
+    "lines": [
+      {
+        "line": 6,
+        "text": " const counts={ph:0,sat:0,stateMVU:0,domainGuards:0};"
+      },
+      {
+        "line": 7,
+        "text": " function sat(p){"
+      },
+      {
+        "line": 8,
+        "text": "  counts.sat++;if(!Number.isFinite(p)||p<.3||p>35)throw Object.assign(Error('Outside accepted pressure domain'),{faultKind:'domain'});"
+      },
+      {
+        "line": 13,
+        "text": " function convert(s,p,h){"
+      },
+      {
+        "line": 19,
+        "text": "  if(s.T<195.495||s.T-273.15<a.T-30||s.T-273.15>a.T+250)throw Object.assign(Error('EOS state outside original physical temperature envelope'),{faultKind:'domain'});"
+      },
+      {
+        "line": 22,
+        "text": " function ph(p,h){counts.ph++;guard(p,h);const s=eos.evaluate({mode:'PH',args:[p*1e5,h*1000]});return convert(s,p,h);}"
+      },
+      {
+        "line": 23,
+        "text": " function stateMVU(massKg,volumeM3,internalEnergyKJ,guess){"
+      },
+      {
+        "line": 24,
+        "text": "  counts.stateMVU++;"
+      },
+      {
+        "line": 25,
+        "text": "  if(!(massKg>0&&volumeM3>0&&Number.isFinite(internalEnergyKJ)))throw Object.assign(Error('Invalid canonical inventory'),{faultKind:'domain'});"
+      },
+      {
+        "line": 28,
+        "text": "  const out=convert(s,s.p/1e5,s.h/1000),a=sat(out.p);"
+      },
+      {
+        "line": 32,
+        "text": " return {ph,sat,stateMVU,counts};"
+      }
+    ]
+  },
+  {
+    "path": "experiments/dx-fv/browser_eos_b4c/loader.mjs",
+    "sha256": "37126b2ff302b6ca42bd1f8b5bcb530c61063b979ac9893d07f38306d7b1e37a",
+    "lines": []
+  },
+  {
+    "path": "experiments/dx-fv/browser_eos_backend/accepted/thermodynamics.cjs",
+    "sha256": "8d1404243a8e22c1dfafb06c9bbe4db48a2f8858dd0c575da729857f4e0020a0",
+    "lines": [
+      {
+        "line": 4,
+        "text": " function ph(p,h){"
+      },
+      {
+        "line": 5,
+        "text": "  if(!Number.isFinite(p)||p<.3||p>35||!Number.isFinite(h)){const error=Error('Thermodynamic state outside the bounded property domain.');error.faultKind='domain';throw error;}"
+      },
+      {
+        "line": 8,
+        "text": "   error.faultKind=error.faultKind||'domain';throw error;"
+      },
+      {
+        "line": 10,
+        "text": "  return {...state,superheatK:Math.max(0,state.T-sat.T),wet:state.x!==null?state.x<1:state.phase.includes('liquid')};"
+      },
+      {
+        "line": 13,
+        "text": " function recover(cell){"
+      },
+      {
+        "line": 14,
+        "text": "  const state=engine.stateMVU(cell.massKg,cell.volumeM3,cell.internalEnergyKJ,cell.pressureGuess);"
+      },
+      {
+        "line": 15,
+        "text": "  return {...state,superheatK:Math.max(0,state.T-engine.sat(state.p).T),wet:state.x!==null?state.x<1:state.phase.includes('liquid')};"
+      }
+    ]
+  },
+  {
+    "path": "experiments/dx-fv/browser_eos_backend/accepted/conservation.cjs",
+    "sha256": "4e8b9d335a4f74d0303c259cfaca209114431099736cea707acfccc102bad4bc",
+    "lines": [
+      {
+        "line": 3,
+        "text": "function inventory(state,volumeM3){"
+      }
+    ]
+  },
+  {
+    "path": "experiments/dx-fv/browser_eos_backend/accepted/coupled-model.cjs",
+    "sha256": "929be63391a11efe3769f356e12e77afb62111672349069af7cf1562f42bf91e",
+    "lines": [
+      {
+        "line": 53,
+        "text": "function recoveredGrowth(history, dt, proposal, maxStep) {"
+      },
+      {
+        "line": 81,
+        "text": "  function recover(c,i) { return fluidCall(()=>thermo.recover(c),i,'canonical-recovery'); }"
+      },
+      {
+        "line": 86,
+        "text": "        faultKind:'domain',evidence:{source:'thermal',node:spec.thermal.nodes[i].id,stage,temperatureK:t,domainK:spec.thermal.domainK}"
+      },
+      {
+        "line": 185,
+        "text": "    const recovered=solved.value.cells.map(recover);"
+      },
+      {
+        "line": 188,
+        "text": "      if (Math.abs(v.p-ph.p)>1e-6 || Math.abs(v.h-ph.h)>1e-4 || Math.abs(v.T-ph.T)>1e-4) throw Object.assign(Error('Canonical M/U/V recovery disagrees with stage PH coordinates.'),{faultKind:'solver',evidence:{section:i,pressureDifference:v.p-ph.p,enthalpyDifference:v.h-ph.h,temperatureDifference:v.T-ph.T}});"
+      },
+      {
+        "line": 201,
+        "text": "    if(outward>=0)throw Object.assign(Error('Thermal trajectory points outward at the supported boundary.'),{faultKind:'domain',evidence:{source:'thermal',node:s.spec.thermal.nodes[outward].id,stage:'initial-direction',temperatureK:t[outward],rateKS:direction[outward]/s.spec.thermal.nodes[outward].capacityKJK}});"
+      },
+      {
+        "line": 232,
+        "text": "  function domainEvidence(s,dt,cause) {"
+      },
+      {
+        "line": 233,
+        "text": "    const evidence={originalCause:cause.message,nonlinearResidual:cause.nonlinearResidual??null,trial:cause.evidence||cause.domainCause?.evidence||null,confirmed:false};"
+      },
+      {
+        "line": 257,
+        "text": "      catch (e) { evidence.refrigerantDirection.push({section:i,kind:e.faultKind||'solver',message:e.message});if(e.faultKind==='domain'){evidence.confirmed=true;evidence.source='refrigerant';evidence.section=i;} }"
+      },
+      {
+        "line": 284,
+        "text": "        diagnosticFailure={kind:cause.faultKind||'solver',message:cause.message};"
+      },
+      {
+        "line": 288,
+        "text": "          if(cause.faultKind==='solver'&&Number.isFinite(cause.nonlinearResidual)&&!cause.domainCause)noteNonlinearFailure(s.growthHistory,dt);"
+      },
+      {
+        "line": 289,
+        "text": "          else resetGrowth(s.growthHistory,cause.faultKind==='domain'||cause.domainCause?'domain-rejection':'other-failure');"
+      },
+      {
+        "line": 291,
+        "text": "        s.rejectedSteps++;if(cause.faultKind==='domain'||cause.domainCause)s.domainRejectedSteps++;"
+      },
+      {
+        "line": 292,
+        "text": "        if(settings.trace)s.rejectionTrace.push({seconds:s.seconds,trialSeconds:dt,kind:cause.faultKind||'solver',message:cause.message,nonlinearResidual:cause.nonlinearResidual??null,evidence:clone(cause.evidence||cause.domainCause||{})});"
+      },
+      {
+        "line": 295,
+        "text": "          const evidence=domainEvidence(s,dt,cause);"
+      },
+      {
+        "line": 320,
+        "text": "      Object.assign(s,accepted);"
+      },
+      {
+        "line": 343,
+        "text": "    const current=evaluate(s.spec,s.cells.map(coordinates),s.energies),last=sections.at(-1),diagnostic=v=>({p:v.p,h:v.h,temperatureK:v.T+273.15,phase:v.phase,quality:v.x,wet:v.wet,superheatK:v.superheatK});"
+      }
+    ]
+  },
+  {
+    "path": "experiments/dx-fv/browser_eos_backend/accepted/coupled-implicit.cjs",
+    "sha256": "68b2ce9d8a3c59898cd3143b092abc4b1bd8775a52ea246c817446259fec955c",
+    "lines": [
+      {
+        "line": 60,
+        "text": "                outcome:'probe-failed',message:cause.message,faultKind:cause.faultKind||'solver'});"
+      },
+      {
+        "line": 78,
+        "text": "          if(recorded)work.diagnostics.push({type:'line-search',solveId,iteration,factor,previousError:error,outcome:'probe-failed',message:cause.message,faultKind:cause.faultKind||'solver'});"
+      },
+      {
+        "line": 79,
+        "text": "          if (cause.faultKind === 'domain') lastDomain = cause;"
+      },
+      {
+        "line": 83,
+        "text": "        faultKind:'solver', nonlinearResidual:error,"
+      },
+      {
+        "line": 84,
+        "text": "        domainCause:lastDomain ? {message:lastDomain.message,evidence:lastDomain.evidence} : null"
+      },
+      {
+        "line": 87,
+        "text": "    throw Object.assign(Error('Coupled nonlinear iteration budget exhausted.'), {faultKind:'solver',nonlinearResidual:norm(value.residual)});"
+      },
+      {
+        "line": 89,
+        "text": "    if(recorded)work.diagnostics.push({type:'solve-failed',solveId,message:cause.message,faultKind:cause.faultKind||'solver',"
+      }
+    ]
+  },
+  {
+    "path": "accepted A2 Git object: experiments/dx-fv/coupled-domain-test.cjs",
+    "sha256": "f961c443de112d38d187f5412a2e7b89017dccd7cd11c30b706fb5048f6a06ce",
+    "purpose": "read-only contract review; NOT executed"
+  }
+]

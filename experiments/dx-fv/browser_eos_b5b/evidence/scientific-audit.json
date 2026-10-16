@@ -1,0 +1,92 @@
+{
+  "checks": {
+    "chromiumSevenBitExact": true,
+    "chromiumOriginPHBitExact": true,
+    "chromiumRawThenGuard": true,
+    "chromiumInherited21SweepExact": true,
+    "chromiumStrictPressureGuards": true,
+    "chromiumTemperatureGuardIsolation": true,
+    "webkitSevenBitExact": true,
+    "webkitOriginPHBitExact": true,
+    "webkitRawThenGuard": true,
+    "webkitInherited21SweepExact": true,
+    "webkitStrictPressureGuards": true,
+    "webkitTemperatureGuardIsolation": true,
+    "BothEngineMatrixBitsIdentical": true,
+    "TwoMathematicalFalseAcceptanceControls": true,
+    "OriginalCanonicalAndNonlinear": true,
+    "MatrixCanonicalAndNonlinear": true,
+    "OriginalTwoMathematicallyInFiveOut": true,
+    "IndependentOriginalStandalone": true,
+    "ProposedFailureNeverBecomesPropertyState": true
+  },
+  "facts": {
+    "canonicalMax": {
+      "p": 7.655471563339233e-07,
+      "h": 1.5133991837501526e-09,
+      "T": 5.684341886080801e-13
+    },
+    "originalNormalizedMax": {
+      "mass": 7.776966101317867e-17,
+      "energy": 5.619668573436315e-16
+    },
+    "matrixNormalizedMax": {
+      "mass": 5.477067943797085e-16,
+      "energy": 6.760839584561977e-16
+    },
+    "observedOriginalRejections": 14,
+    "observedMatrixPerBrowser": 24,
+    "proposedClasses": {
+      "C": 15,
+      "E": 6,
+      "D": 12,
+      "B": 3
+    },
+    "physicalTrajectoryProofsObserved": 0,
+    "fullA2Qualification": false,
+    "newNativeExecution": false,
+    "intervalCertification": false
+  },
+  "originalBudgets": {
+    "canonical": {
+      "pPa": 0.1,
+      "hJkg": 0.1,
+      "TK": 0.0001
+    },
+    "nonlinearMassEnergy": 1e-11,
+    "independentReferenceResolution": {
+      "pPa": 1e-05,
+      "caloricJkg": 1e-08
+    },
+    "standaloneStrict": {
+      "pPa": 10,
+      "hJkg": 50,
+      "TK": 0.01
+    },
+    "sectionAndAggregateStrict": {
+      "massKg": 1e-08,
+      "energyKJ": 1e-06
+    },
+    "support": {
+      "pBar": [
+        0.3,
+        35
+      ],
+      "TminK": 195.495,
+      "subcoolK": 30,
+      "superheatK": 250,
+      "thermalDomainK": [
+        200,
+        400
+      ]
+    },
+    "newtonIterations": 30,
+    "thermalClosureK": 1e-12,
+    "minimumStepSeconds": 1e-09,
+    "maximumAttempts": 100000,
+    "FD": "unchanged signed pressure 1e-7*max(1,abs(pbar)), enthalpy 1e-8*max(1,abs(hkJkg)), thermal capacity*1e-6; +1,-1, 12 shrink levels",
+    "TRBDF2": "unchanged gamma=2-sqrt(2), full versus two half steps /3; commit two half steps"
+  },
+  "allPass": true,
+  "scope": "Focused diagnostic arithmetic checks only; refusal, unresolved phase, and backend qualification remain separate."
+}

@@ -1,0 +1,47 @@
+{
+  "rows": [
+    {
+      "method": "ph",
+      "injectedFaultKind": null,
+      "observedFaultKind": "domain",
+      "coupledCatchFallback": "domain",
+      "scope": "Synthetic interface-only observation, no property state or trajectory proof"
+    },
+    {
+      "method": "ph",
+      "injectedFaultKind": "solver",
+      "observedFaultKind": "solver",
+      "coupledCatchFallback": "solver",
+      "scope": "Synthetic interface-only observation, no property state or trajectory proof"
+    },
+    {
+      "method": "ph",
+      "injectedFaultKind": "domain",
+      "observedFaultKind": "domain",
+      "coupledCatchFallback": "domain",
+      "scope": "Synthetic interface-only observation, no property state or trajectory proof"
+    },
+    {
+      "method": "recover",
+      "injectedFaultKind": null,
+      "observedFaultKind": null,
+      "coupledCatchFallback": "solver",
+      "scope": "Synthetic interface-only observation, no property state or trajectory proof"
+    },
+    {
+      "method": "recover",
+      "injectedFaultKind": "solver",
+      "observedFaultKind": "solver",
+      "coupledCatchFallback": "solver",
+      "scope": "Synthetic interface-only observation, no property state or trajectory proof"
+    },
+    {
+      "method": "recover",
+      "injectedFaultKind": "domain",
+      "observedFaultKind": "domain",
+      "coupledCatchFallback": "domain",
+      "scope": "Synthetic interface-only observation, no property state or trajectory proof"
+    }
+  ],
+  "simulationExecuted": false
+}
