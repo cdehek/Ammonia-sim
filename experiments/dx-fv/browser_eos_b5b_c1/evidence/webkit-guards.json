@@ -1,0 +1,602 @@
+{
+  "passed": true,
+  "rows": [
+    {
+      "kind": "sat-input",
+      "p": 0.3,
+      "control": {
+        "state": {
+          "values": {
+            "p": 0.3,
+            "T": -55.046009163661466,
+            "hf": 98.20765961800612,
+            "hg": 1529.1745515710813,
+            "sf": 0.4750941210666617,
+            "sg": 7.036032719511891,
+            "rhof": 707.6847354753208,
+            "rhog": 0.2853615346655307
+          },
+          "bits": {
+            "p": "3fd3333333333333",
+            "T": "c04b85e3a0d69f04",
+            "hf": "40588d4a4b910250",
+            "hg": "4097e4b2bda5a50a",
+            "sf": "3fde67f12c20340c",
+            "sg": "401c24e5c2df8edc",
+            "rhof": "40861d7a5697c750",
+            "rhog": "3fd2435d06bb3054"
+          }
+        }
+      },
+      "candidate": {
+        "state": {
+          "values": {
+            "p": 0.3,
+            "T": -55.046009163661466,
+            "hf": 98.20765961800612,
+            "hg": 1529.1745515710813,
+            "sf": 0.4750941210666617,
+            "sg": 7.036032719511891,
+            "rhof": 707.6847354753208,
+            "rhog": 0.2853615346655307
+          },
+          "bits": {
+            "p": "3fd3333333333333",
+            "T": "c04b85e3a0d69f04",
+            "hf": "40588d4a4b910250",
+            "hg": "4097e4b2bda5a50a",
+            "sf": "3fde67f12c20340c",
+            "sg": "401c24e5c2df8edc",
+            "rhof": "40861d7a5697c750",
+            "rhog": "3fd2435d06bb3054"
+          }
+        }
+      }
+    },
+    {
+      "kind": "sat-input",
+      "p": 0.29999999999999993,
+      "control": {
+        "error": {
+          "message": "Outside accepted pressure domain",
+          "faultKind": "domain",
+          "evidence": null,
+          "propertyCause": null,
+          "domainCause": null,
+          "nonlinearResidual": null
+        }
+      },
+      "candidate": {
+        "error": {
+          "message": "Outside accepted pressure domain",
+          "faultKind": "domain",
+          "evidence": {
+            "propertyFailure": {
+              "schemaVersion": "C1/1",
+              "operation": "sat",
+              "inputScope": "requested-coordinate",
+              "input": {
+                "values": {
+                  "p": 0.29999999999999993
+                },
+                "bits": {
+                  "p": "3fd3333333333332"
+                }
+              },
+              "rawRecovery": "failed",
+              "rawCoordinates": null,
+              "lastRequest": null,
+              "requestedInputSupport": "unsupported",
+              "returnedCoordinateSupport": "unknown",
+              "exactInventorySupport": "unknown",
+              "checks": {
+                "support": "fail",
+                "phase": "unmeasured",
+                "canonical": "unmeasured",
+                "nonlinear": "unmeasured"
+              },
+              "observedResiduals": null,
+              "physicalTrajectoryExit": "unproved",
+              "reason": "explicit-unsupported-input",
+              "errorSource": "adapter-support-or-inventory",
+              "originalError": {
+                "message": "Outside accepted pressure domain",
+                "faultKind": "domain"
+              },
+              "numericalPressureEnclosure": false
+            }
+          },
+          "propertyCause": null,
+          "domainCause": null,
+          "nonlinearResidual": null
+        }
+      }
+    },
+    {
+      "kind": "sat-input",
+      "p": 35,
+      "control": {
+        "state": {
+          "values": {
+            "p": 35,
+            "T": 72.41367359935145,
+            "hf": 703.8265654298474,
+            "hg": 1628.069327769079,
+            "sf": 2.625843413091452,
+            "sg": 5.30043809115013,
+            "rhof": 521.5319007055045,
+            "rhog": 28.051377447197357
+          },
+          "bits": {
+            "p": "4041800000000000",
+            "T": "40521a79a0d51bb8",
+            "hf": "4085fe9cce560997",
+            "hg": "40997046fddbd399",
+            "sf": "400501ba30fd288f",
+            "sg": "401533a60affd993",
+            "rhof": "40804c41552836e4",
+            "rhog": "403c0d27128776f1"
+          }
+        }
+      },
+      "candidate": {
+        "state": {
+          "values": {
+            "p": 35,
+            "T": 72.41367359935145,
+            "hf": 703.8265654298474,
+            "hg": 1628.069327769079,
+            "sf": 2.625843413091452,
+            "sg": 5.30043809115013,
+            "rhof": 521.5319007055045,
+            "rhog": 28.051377447197357
+          },
+          "bits": {
+            "p": "4041800000000000",
+            "T": "40521a79a0d51bb8",
+            "hf": "4085fe9cce560997",
+            "hg": "40997046fddbd399",
+            "sf": "400501ba30fd288f",
+            "sg": "401533a60affd993",
+            "rhof": "40804c41552836e4",
+            "rhog": "403c0d27128776f1"
+          }
+        }
+      }
+    },
+    {
+      "kind": "sat-input",
+      "p": 35.00000000000001,
+      "control": {
+        "error": {
+          "message": "Outside accepted pressure domain",
+          "faultKind": "domain",
+          "evidence": null,
+          "propertyCause": null,
+          "domainCause": null,
+          "nonlinearResidual": null
+        }
+      },
+      "candidate": {
+        "error": {
+          "message": "Outside accepted pressure domain",
+          "faultKind": "domain",
+          "evidence": {
+            "propertyFailure": {
+              "schemaVersion": "C1/1",
+              "operation": "sat",
+              "inputScope": "requested-coordinate",
+              "input": {
+                "values": {
+                  "p": 35.00000000000001
+                },
+                "bits": {
+                  "p": "4041800000000001"
+                }
+              },
+              "rawRecovery": "failed",
+              "rawCoordinates": null,
+              "lastRequest": null,
+              "requestedInputSupport": "unsupported",
+              "returnedCoordinateSupport": "unknown",
+              "exactInventorySupport": "unknown",
+              "checks": {
+                "support": "fail",
+                "phase": "unmeasured",
+                "canonical": "unmeasured",
+                "nonlinear": "unmeasured"
+              },
+              "observedResiduals": null,
+              "physicalTrajectoryExit": "unproved",
+              "reason": "explicit-unsupported-input",
+              "errorSource": "adapter-support-or-inventory",
+              "originalError": {
+                "message": "Outside accepted pressure domain",
+                "faultKind": "domain"
+              },
+              "numericalPressureEnclosure": false
+            }
+          },
+          "propertyCause": null,
+          "domainCause": null,
+          "nonlinearResidual": null
+        }
+      }
+    },
+    {
+      "kind": "synthetic-temperature-guard-isolation",
+      "T": 195.494,
+      "control": {
+        "error": {
+          "message": "EOS state outside original physical temperature envelope",
+          "faultKind": "domain",
+          "evidence": null,
+          "propertyCause": null,
+          "domainCause": null,
+          "nonlinearResidual": null
+        }
+      },
+      "candidate": {
+        "error": {
+          "message": "EOS state outside original physical temperature envelope",
+          "faultKind": "solver",
+          "evidence": {
+            "propertyFailure": {
+              "schemaVersion": "C1/1",
+              "operation": "stateMVU",
+              "inputScope": "fixed-inventory",
+              "input": {
+                "values": {
+                  "massKg": 1,
+                  "volumeM3": 0.01,
+                  "internalEnergyKJ": 1000,
+                  "guess": 35
+                },
+                "bits": {
+                  "massKg": "3ff0000000000000",
+                  "volumeM3": "3f847ae147ae147b",
+                  "internalEnergyKJ": "408f400000000000",
+                  "guess": "4041800000000000"
+                }
+              },
+              "rawRecovery": "returned",
+              "rawCoordinates": {
+                "values": {
+                  "p": 3500000,
+                  "h": 1100000,
+                  "rho": 100,
+                  "u": 1000000,
+                  "T": 195.494,
+                  "s": 3000,
+                  "Q": -1
+                },
+                "bits": {
+                  "p": "414ab3f000000000",
+                  "h": "4130c8e000000000",
+                  "rho": "4059000000000000",
+                  "u": "412e848000000000",
+                  "T": "40686fced916872b",
+                  "s": "40a7700000000000",
+                  "Q": "bff0000000000000"
+                }
+              },
+              "lastRequest": {
+                "mode": "SAT",
+                "args": [
+                  {
+                    "value": 3500000,
+                    "bits": "414ab3f000000000"
+                  },
+                  {
+                    "value": 0,
+                    "bits": "0000000000000000"
+                  }
+                ]
+              },
+              "requestedInputSupport": "unknown",
+              "returnedCoordinateSupport": "supported",
+              "exactInventorySupport": "unknown",
+              "checks": {
+                "support": "fail",
+                "phase": "unmeasured",
+                "canonical": "unmeasured",
+                "nonlinear": "unmeasured"
+              },
+              "observedResiduals": {
+                "densityResidual": 0,
+                "energyResidualKJkg": 0
+              },
+              "physicalTrajectoryExit": "unproved",
+              "reason": "boundary-unresolved",
+              "errorSource": "adapter-support-or-inventory",
+              "originalError": {
+                "message": "EOS state outside original physical temperature envelope",
+                "faultKind": "domain"
+              },
+              "numericalPressureEnclosure": false
+            }
+          },
+          "propertyCause": null,
+          "domainCause": null,
+          "nonlinearResidual": null
+        }
+      }
+    },
+    {
+      "kind": "synthetic-temperature-guard-isolation",
+      "T": 315.5626735993518,
+      "control": {
+        "error": {
+          "message": "EOS state outside original physical temperature envelope",
+          "faultKind": "domain",
+          "evidence": null,
+          "propertyCause": null,
+          "domainCause": null,
+          "nonlinearResidual": null
+        }
+      },
+      "candidate": {
+        "error": {
+          "message": "EOS state outside original physical temperature envelope",
+          "faultKind": "solver",
+          "evidence": {
+            "propertyFailure": {
+              "schemaVersion": "C1/1",
+              "operation": "stateMVU",
+              "inputScope": "fixed-inventory",
+              "input": {
+                "values": {
+                  "massKg": 1,
+                  "volumeM3": 0.01,
+                  "internalEnergyKJ": 1000,
+                  "guess": 35
+                },
+                "bits": {
+                  "massKg": "3ff0000000000000",
+                  "volumeM3": "3f847ae147ae147b",
+                  "internalEnergyKJ": "408f400000000000",
+                  "guess": "4041800000000000"
+                }
+              },
+              "rawRecovery": "returned",
+              "rawCoordinates": {
+                "values": {
+                  "p": 3500000,
+                  "h": 1100000,
+                  "rho": 100,
+                  "u": 1000000,
+                  "T": 315.5626735993518,
+                  "s": 3000,
+                  "Q": -1
+                },
+                "bits": {
+                  "p": "414ab3f000000000",
+                  "h": "4130c8e000000000",
+                  "rho": "4059000000000000",
+                  "u": "412e848000000000",
+                  "T": "4073b900b608389e",
+                  "s": "40a7700000000000",
+                  "Q": "bff0000000000000"
+                }
+              },
+              "lastRequest": {
+                "mode": "SAT",
+                "args": [
+                  {
+                    "value": 3500000,
+                    "bits": "414ab3f000000000"
+                  },
+                  {
+                    "value": 0,
+                    "bits": "0000000000000000"
+                  }
+                ]
+              },
+              "requestedInputSupport": "unknown",
+              "returnedCoordinateSupport": "supported",
+              "exactInventorySupport": "unknown",
+              "checks": {
+                "support": "fail",
+                "phase": "unmeasured",
+                "canonical": "unmeasured",
+                "nonlinear": "unmeasured"
+              },
+              "observedResiduals": {
+                "densityResidual": 0,
+                "energyResidualKJkg": 0
+              },
+              "physicalTrajectoryExit": "unproved",
+              "reason": "boundary-unresolved",
+              "errorSource": "adapter-support-or-inventory",
+              "originalError": {
+                "message": "EOS state outside original physical temperature envelope",
+                "faultKind": "domain"
+              },
+              "numericalPressureEnclosure": false
+            }
+          },
+          "propertyCause": null,
+          "domainCause": null,
+          "nonlinearResidual": null
+        }
+      }
+    },
+    {
+      "kind": "synthetic-temperature-guard-isolation",
+      "T": 595.5646735993517,
+      "control": {
+        "error": {
+          "message": "EOS state outside original physical temperature envelope",
+          "faultKind": "domain",
+          "evidence": null,
+          "propertyCause": null,
+          "domainCause": null,
+          "nonlinearResidual": null
+        }
+      },
+      "candidate": {
+        "error": {
+          "message": "EOS state outside original physical temperature envelope",
+          "faultKind": "solver",
+          "evidence": {
+            "propertyFailure": {
+              "schemaVersion": "C1/1",
+              "operation": "stateMVU",
+              "inputScope": "fixed-inventory",
+              "input": {
+                "values": {
+                  "massKg": 1,
+                  "volumeM3": 0.01,
+                  "internalEnergyKJ": 1000,
+                  "guess": 35
+                },
+                "bits": {
+                  "massKg": "3ff0000000000000",
+                  "volumeM3": "3f847ae147ae147b",
+                  "internalEnergyKJ": "408f400000000000",
+                  "guess": "4041800000000000"
+                }
+              },
+              "rawRecovery": "returned",
+              "rawCoordinates": {
+                "values": {
+                  "p": 3500000,
+                  "h": 1100000,
+                  "rho": 100,
+                  "u": 1000000,
+                  "T": 595.5646735993517,
+                  "s": 3000,
+                  "Q": -1
+                },
+                "bits": {
+                  "p": "414ab3f000000000",
+                  "h": "4130c8e000000000",
+                  "rho": "4059000000000000",
+                  "u": "412e848000000000",
+                  "T": "40829c847397910b",
+                  "s": "40a7700000000000",
+                  "Q": "bff0000000000000"
+                }
+              },
+              "lastRequest": {
+                "mode": "SAT",
+                "args": [
+                  {
+                    "value": 3500000,
+                    "bits": "414ab3f000000000"
+                  },
+                  {
+                    "value": 0,
+                    "bits": "0000000000000000"
+                  }
+                ]
+              },
+              "requestedInputSupport": "unknown",
+              "returnedCoordinateSupport": "supported",
+              "exactInventorySupport": "unknown",
+              "checks": {
+                "support": "fail",
+                "phase": "unmeasured",
+                "canonical": "unmeasured",
+                "nonlinear": "unmeasured"
+              },
+              "observedResiduals": {
+                "densityResidual": 0,
+                "energyResidualKJkg": 0
+              },
+              "physicalTrajectoryExit": "unproved",
+              "reason": "boundary-unresolved",
+              "errorSource": "adapter-support-or-inventory",
+              "originalError": {
+                "message": "EOS state outside original physical temperature envelope",
+                "faultKind": "domain"
+              },
+              "numericalPressureEnclosure": false
+            }
+          },
+          "propertyCause": null,
+          "domainCause": null,
+          "nonlinearResidual": null
+        }
+      }
+    },
+    {
+      "kind": "loader-nonfinite-refusal",
+      "control": {
+        "error": {
+          "message": "Nonfinite state input",
+          "faultKind": null,
+          "evidence": null,
+          "propertyCause": null,
+          "domainCause": null,
+          "nonlinearResidual": null
+        }
+      },
+      "candidate": {
+        "error": {
+          "message": "Nonfinite state input",
+          "faultKind": "solver",
+          "evidence": {
+            "propertyFailure": {
+              "schemaVersion": "C1/1",
+              "operation": "stateMVU",
+              "inputScope": "fixed-inventory",
+              "input": {
+                "values": {
+                  "massKg": Infinity,
+                  "volumeM3": 0.01,
+                  "internalEnergyKJ": 1000,
+                  "guess": 35
+                },
+                "bits": {
+                  "massKg": "7ff0000000000000",
+                  "volumeM3": "3f847ae147ae147b",
+                  "internalEnergyKJ": "408f400000000000",
+                  "guess": "4041800000000000"
+                }
+              },
+              "rawRecovery": "failed",
+              "rawCoordinates": null,
+              "lastRequest": {
+                "mode": "DU",
+                "args": [
+                  {
+                    "value": Infinity,
+                    "bits": "7ff0000000000000"
+                  },
+                  {
+                    "value": 0,
+                    "bits": "0000000000000000"
+                  }
+                ]
+              },
+              "requestedInputSupport": "unknown",
+              "returnedCoordinateSupport": "unknown",
+              "exactInventorySupport": "unknown",
+              "checks": {
+                "support": "unmeasured",
+                "phase": "unmeasured",
+                "canonical": "unmeasured",
+                "nonlinear": "unmeasured"
+              },
+              "observedResiduals": null,
+              "physicalTrajectoryExit": "unproved",
+              "reason": "inverse-recovery-failure",
+              "errorSource": "EOS",
+              "originalError": {
+                "message": "Nonfinite state input",
+                "faultKind": null
+              },
+              "numericalPressureEnclosure": false
+            }
+          },
+          "propertyCause": null,
+          "domainCause": null,
+          "nonlinearResidual": null
+        }
+      }
+    }
+  ],
+  "version": "26.5",
+  "elapsedSeconds": 7.622777182999926
+}

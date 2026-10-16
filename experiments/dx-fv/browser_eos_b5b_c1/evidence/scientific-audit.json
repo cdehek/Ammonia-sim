@@ -1,0 +1,1288 @@
+{
+  "browsers": {
+    "chromium": {
+      "version": "154.0.8037.57",
+      "originalSevenRefused": 7,
+      "rawAndInputBitsUnchanged": true,
+      "falseAcceptanceQualificationBlockers": 2,
+      "supplementalGuardCases": 8,
+      "focusedSamples": [
+        {
+          "id": "B1-vapor-regression",
+          "sample": "base",
+          "p": -1.1641532182693481e-10,
+          "h": -3.306195139884949e-08,
+          "normalizedEnergy": 2.225887349261657e-14,
+          "getterP": 0.0,
+          "getterH": 0.0,
+          "getterU": 0.0,
+          "T": -1.0913936421275139e-11
+        },
+        {
+          "id": "B1-vapor-regression",
+          "sample": "P0.07999999981754856",
+          "p": 1.1641532182693481e-10,
+          "h": -6.565824151039124e-08,
+          "normalizedEnergy": 4.388628515979802e-14,
+          "getterP": 0.0,
+          "getterH": 0.0,
+          "getterU": 0.0
+        },
+        {
+          "id": "B1-vapor-regression",
+          "sample": "P-0.07999999981754856",
+          "p": 1.1641532182693481e-10,
+          "h": -3.236345946788788e-08,
+          "normalizedEnergy": 2.1627418267455877e-14,
+          "getterP": 0.0,
+          "getterH": 0.0,
+          "getterU": 0.0
+        },
+        {
+          "id": "B1-vapor-regression",
+          "sample": "H0.01624022744737779",
+          "p": -1.1641532182693481e-10,
+          "h": -3.3527612686157227e-08,
+          "normalizedEnergy": 2.2416738296147482e-14,
+          "getterP": 0.0,
+          "getterH": 0.0,
+          "getterU": 0.0
+        },
+        {
+          "id": "B1-vapor-regression",
+          "sample": "H-0.01624022744737779",
+          "p": 0.0,
+          "h": -6.51925802230835e-08,
+          "normalizedEnergy": 4.357055999961678e-14,
+          "getterP": 0.0,
+          "getterH": 0.0,
+          "getterU": 0.0
+        },
+        {
+          "id": "approach-30298.937123458254-liquid-0.001",
+          "sample": "base",
+          "p": -4.759567673318088e-08,
+          "h": 6.83940015733242e-10,
+          "normalizedEnergy": 7.449686026701806e-15,
+          "getterP": 0.0,
+          "getterH": 0.0,
+          "getterU": 0.0,
+          "T": 1.7053025658242404e-13
+        },
+        {
+          "id": "approach-30298.937123458254-liquid-0.001",
+          "sample": "P0.01",
+          "p": 2.420565579086542e-07,
+          "h": 2.6193447411060333e-10,
+          "normalizedEnergy": 6.772441843360807e-16,
+          "getterP": 0.0,
+          "getterH": 0.0,
+          "getterU": 0.0
+        },
+        {
+          "id": "approach-30298.937123458254-liquid-0.001",
+          "sample": "H0.0009890456398938335",
+          "p": -5.470828909892589e-07,
+          "h": 5.675246939063072e-10,
+          "normalizedEnergy": 1.3714194598908541e-14,
+          "getterP": 0.0,
+          "getterH": 0.0,
+          "getterU": 0.0
+        },
+        {
+          "id": "approach-30298.937123458254-liquid-0.001",
+          "sample": "H-0.0009890456398938335",
+          "p": 1.4216493582352996e-07,
+          "h": -1.7462298274040222e-09,
+          "normalizedEnergy": 1.980939257994524e-14,
+          "getterP": 0.0,
+          "getterH": 0.0,
+          "getterU": 0.0
+        },
+        {
+          "id": "diagnostic-quality-band-799999.9981754856-hg-9.9e-10",
+          "sample": "base",
+          "p": 2.3283064365386963e-10,
+          "h": 0.0,
+          "normalizedEnergy": 1.578637620538235e-16,
+          "getterP": 0.0,
+          "getterH": 0.0,
+          "getterU": 0.0,
+          "T": -5.684341886080802e-14
+        },
+        {
+          "id": "diagnostic-quality-band-799999.9981754856-hg-9.9e-10",
+          "sample": "P-0.07999999981754856",
+          "p": -1.1641532182693481e-10,
+          "h": 0.0,
+          "normalizedEnergy": 3.1572755591606833e-16,
+          "getterP": 0.0,
+          "getterH": 0.0,
+          "getterU": 0.0
+        },
+        {
+          "id": "diagnostic-quality-band-799999.9981754856-hg-9.9e-10",
+          "sample": "H0.016240197433170057",
+          "p": -1.1641532182693481e-10,
+          "h": -2.3283064365386963e-10,
+          "normalizedEnergy": 1.578637652405798e-16,
+          "getterP": 0.0,
+          "getterH": 0.0,
+          "getterU": 0.0
+        },
+        {
+          "id": "B1-liquid-precision",
+          "sample": "base",
+          "p": -5.0065864343196154e-08,
+          "h": -2.3283064365386963e-10,
+          "normalizedEnergy": 1.7686897172641858e-15,
+          "getterP": 0.0,
+          "getterH": 0.0,
+          "getterU": 0.0,
+          "T": -1.1368683772161603e-13
+        },
+        {
+          "id": "B1-liquid-precision",
+          "sample": "P0.01",
+          "p": -3.975947038270533e-08,
+          "h": 1.4551915228366852e-11,
+          "normalizedEnergy": 5.306069152535468e-16,
+          "getterP": 0.0,
+          "getterH": 0.0,
+          "getterU": 0.0
+        },
+        {
+          "id": "B1-liquid-precision",
+          "sample": "P-0.01",
+          "p": 2.1503001335076988e-07,
+          "h": 8.731149137020111e-11,
+          "normalizedEnergy": 2.1224276604198595e-15,
+          "getterP": 0.0,
+          "getterH": 0.0,
+          "getterU": 0.0
+        },
+        {
+          "id": "B1-liquid-precision",
+          "sample": "H0.0009452334612321304",
+          "p": -1.2381860869936645e-07,
+          "h": -6.693881005048752e-10,
+          "normalizedEnergy": 5.306069100602347e-15,
+          "getterP": 0.0,
+          "getterH": 0.0,
+          "getterU": 0.0
+        },
+        {
+          "id": "B1-liquid-precision",
+          "sample": "H-0.0009452334612321304",
+          "p": 9.045470505952835e-08,
+          "h": -4.220055416226387e-10,
+          "normalizedEnergy": 5.659807149848284e-15,
+          "getterP": 0.0,
+          "getterH": 0.0,
+          "getterU": 0.0
+        }
+      ],
+      "originalSignedFDProbes": [
+        {
+          "id": "B1-vapor-regression",
+          "axis": "P",
+          "step": 0.07999999981754856,
+          "mass": 2.171881303622897e-14,
+          "energy": 6.253740489495496e-14
+        },
+        {
+          "id": "B1-vapor-regression",
+          "axis": "P",
+          "step": -0.07999999981754856,
+          "mass": 1.3607743751592656e-16,
+          "energy": 3.388505964377471e-16
+        },
+        {
+          "id": "B1-vapor-regression",
+          "axis": "H",
+          "step": 0.01624022744737779,
+          "mass": 6.07592783281069e-16,
+          "energy": 1.4546601345758104e-15
+        },
+        {
+          "id": "B1-vapor-regression",
+          "axis": "H",
+          "step": -0.01624022744737779,
+          "mass": 2.1561340572434057e-14,
+          "energy": 6.184894462102167e-14
+        },
+        {
+          "id": "approach-30298.937123458254-liquid-0.001",
+          "axis": "P",
+          "step": 0.01,
+          "mass": 4.876263291449009e-16,
+          "energy": 4.459728324776508e-16
+        },
+        {
+          "id": "approach-30298.937123458254-liquid-0.001",
+          "axis": "H",
+          "step": 0.0009890456398938335,
+          "mass": 3.8568502009037967e-16,
+          "energy": 4.276677992525828e-16
+        },
+        {
+          "id": "approach-30298.937123458254-liquid-0.001",
+          "axis": "H",
+          "step": -0.0009890456398938335,
+          "mass": 1.1891274696994175e-15,
+          "energy": 1.1049119834982016e-15
+        },
+        {
+          "id": "diagnostic-quality-band-799999.9981754856-hg-9.9e-10",
+          "axis": "P",
+          "step": -0.07999999981754856,
+          "mass": 2.0969616474963767e-16,
+          "energy": 5.606619899113327e-16
+        },
+        {
+          "id": "diagnostic-quality-band-799999.9981754856-hg-9.9e-10",
+          "axis": "H",
+          "step": 0.016240197433170057,
+          "mass": 2.836390853735809e-16,
+          "energy": 6.624384071991541e-16
+        },
+        {
+          "id": "B1-liquid-precision",
+          "axis": "P",
+          "step": 0.01,
+          "mass": 3.773163214514389e-16,
+          "energy": 2.2782301668859776e-16
+        },
+        {
+          "id": "B1-liquid-precision",
+          "axis": "P",
+          "step": -0.01,
+          "mass": 2.6437398536983107e-16,
+          "energy": 3.02783898490658e-16
+        },
+        {
+          "id": "B1-liquid-precision",
+          "axis": "H",
+          "step": 0.0009452334612321304,
+          "mass": 6.085420421982577e-17,
+          "energy": 8.214354326725392e-17
+        },
+        {
+          "id": "B1-liquid-precision",
+          "axis": "H",
+          "step": -0.0009452334612321304,
+          "mass": 6.085420421982577e-17,
+          "energy": 8.214354326725392e-17
+        }
+      ],
+      "canonical": [
+        {
+          "p": 6.007030606269836e-08,
+          "h": 9.778887033462524e-09,
+          "T": 1.5973000699887052e-11
+        },
+        {
+          "p": 1.1781230568885803e-07,
+          "h": 1.862645149230957e-08,
+          "T": 3.143441063002683e-11
+        },
+        {
+          "p": 5.832407623529434e-08,
+          "h": 9.313225746154785e-09,
+          "T": 1.5575096767861396e-11
+        },
+        {
+          "p": 6.030313670635223e-08,
+          "h": 9.778887033462524e-09,
+          "T": 1.602984411874786e-11
+        },
+        {
+          "p": 1.1664815247058868e-07,
+          "h": 1.83936208486557e-08,
+          "T": 3.1093350116861984e-11
+        },
+        {
+          "p": -0.0004309440810175147,
+          "h": -5.921610863879323e-07,
+          "T": -4.68105554318754e-11
+        },
+        {
+          "p": 8.363604138139635e-07,
+          "h": 1.2951204553246498e-09,
+          "T": 2.8421709430404007e-13
+        },
+        {
+          "p": 1.1496013030409813e-09,
+          "h": 2.9249349609017372e-09,
+          "T": 6.821210263296962e-13
+        },
+        {
+          "p": -4.719728167401627e-06,
+          "h": -4.583853296935558e-09,
+          "T": -5.400124791776761e-13
+        },
+        {
+          "p": -0.0008571689722884912,
+          "h": -1.1805968824774027e-06,
+          "T": -9.296741154685151e-11
+        },
+        {
+          "p": 2.3283064365386963e-10,
+          "h": 0,
+          "T": 0
+        },
+        {
+          "p": -9.42964106798172e-09,
+          "h": -8.847564458847046e-09,
+          "T": -2.2737367544323206e-13
+        },
+        {
+          "p": -9.313225746154785e-10,
+          "h": -6.984919309616089e-10,
+          "T": -2.2737367544323206e-13
+        },
+        {
+          "p": 1.1641532182693481e-10,
+          "h": 2.3283064365386963e-10,
+          "T": 5.684341886080802e-14
+        },
+        {
+          "p": -5.820766091346741e-09,
+          "h": -6.28642737865448e-09,
+          "T": -1.7053025658242404e-13
+        },
+        {
+          "p": -2.2199928935151547e-06,
+          "h": -5.0640664994716644e-09,
+          "T": -9.094947017729282e-13
+        },
+        {
+          "p": -3.0192022677510977e-06,
+          "h": -7.377821020781994e-09,
+          "T": -9.663381206337363e-13
+        },
+        {
+          "p": -1.6043813957367092e-06,
+          "h": -4.933099262416363e-09,
+          "T": -8.526512829121202e-13
+        },
+        {
+          "p": 5.939036782365292e-07,
+          "h": 7.130438461899757e-10,
+          "T": 1.1368683772161603e-13
+        },
+        {
+          "p": -1.8124082998838276e-06,
+          "h": -5.384208634495735e-09,
+          "T": -8.242295734817162e-13
+        }
+      ],
+      "phaseLabels": {
+        "B1-vapor-regression": "vapor",
+        "approach-30298.937123458254-liquid-0.001": "liquid",
+        "diagnostic-quality-band-799999.9981754856-hg-9.9e-10": "vapor",
+        "B1-liquid-precision": "liquid"
+      },
+      "a2Scenarios": 24,
+      "worker": {
+        "passed": true,
+        "error": {
+          "message": "Outside accepted pressure domain",
+          "faultKind": "solver",
+          "evidence": {
+            "propertyFailure": {
+              "schemaVersion": "C1/1",
+              "operation": "stateMVU",
+              "inputScope": "fixed-inventory",
+              "input": {
+                "values": {
+                  "massKg": 0.3129191406602224,
+                  "volumeM3": 0.0006000000000000001,
+                  "internalEnergyKJ": 218.14080371522462,
+                  "guess": 35
+                },
+                "bits": {
+                  "massKg": "3fd406de00db65a6",
+                  "volumeM3": "3f43a92a30553262",
+                  "internalEnergyKJ": "406b448176cb0171",
+                  "guess": "4041800000000000"
+                }
+              },
+              "rawRecovery": "returned",
+              "rawCoordinates": {
+                "values": {
+                  "p": 3500000.000000149,
+                  "T": 345.5636734187881,
+                  "h": 703826.564429848,
+                  "s": 2625.843410197631,
+                  "rho": 521.5319011003706,
+                  "u": 697115.5655578412,
+                  "Q": 10000
+                },
+                "bits": {
+                  "p": "414ab3f000000140",
+                  "T": "40759904ce6b351c",
+                  "h": "41257aa520fcf2f4",
+                  "s": "40a483afd3761fe0",
+                  "rho": "40804c41555d3663",
+                  "u": "412546372190cc20",
+                  "Q": "40c3880000000000"
+                }
+              },
+              "lastRequest": {
+                "mode": "DU",
+                "args": [
+                  {
+                    "value": 521.5319011003706,
+                    "bits": "40804c41555d3663"
+                  },
+                  {
+                    "value": 697115.5655578412,
+                    "bits": "412546372190cc20"
+                  }
+                ]
+              },
+              "requestedInputSupport": "unknown",
+              "returnedCoordinateSupport": "unsupported",
+              "exactInventorySupport": "unknown",
+              "checks": {
+                "support": "fail",
+                "phase": "unmeasured",
+                "canonical": "unmeasured",
+                "nonlinear": "unmeasured"
+              },
+              "observedResiduals": {
+                "densityResidual": 0,
+                "energyResidualKJkg": 0
+              },
+              "physicalTrajectoryExit": "unproved",
+              "reason": "boundary-unresolved",
+              "errorSource": "adapter-support-or-inventory",
+              "originalError": {
+                "message": "Outside accepted pressure domain",
+                "faultKind": "domain"
+              },
+              "numericalPressureEnclosure": false
+            }
+          },
+          "propertyCause": null,
+          "domainCause": null,
+          "nonlinearResidual": null
+        },
+        "state": {
+          "values": {
+            "p": 34.899999999979784,
+            "h": 703.13615200244,
+            "T": 72.28742050901587,
+            "s": 2.623900597608248,
+            "rho": 521.7860534416628,
+            "u": 696.4475868769863,
+            "x": null,
+            "phase": "Subcooled liquid",
+            "massKg": 0.3130716320649977,
+            "volumeM3": 0.0006000000000000001,
+            "internalEnergyKJ": 218.03798267130747,
+            "densityResidual": 0,
+            "energyResidual": -3.410605131648481e-13,
+            "liquidVolumeFraction": 1
+          },
+          "bits": {
+            "p": "4041733333332816",
+            "h": "4085f916d6dc6e1e",
+            "T": "4052126518fd9b10",
+            "s": "4004fdbf98b57550",
+            "rho": "40804e49d66306cd",
+            "u": "4085c394a86db633",
+            "massKg": "3fd4095d99419193",
+            "volumeM3": "3f43a92a30553262",
+            "internalEnergyKJ": "406b4137276f6292",
+            "densityResidual": "0000000000000000",
+            "energyResidual": "bd58000000000000",
+            "liquidVolumeFraction": "3ff0000000000000"
+          }
+        },
+        "memoryBytes": 56360960,
+        "elapsedMS": 4408.599999999977,
+        "mainThreadTicks": 831
+      },
+      "lifecycle": {
+        "alternations": 40,
+        "freshReusedExact": true,
+        "memoryBefore": 56360960,
+        "memoryAfter": 56360960,
+        "heapBefore": 67881087,
+        "heapAfter": 55320880
+      },
+      "medianMSPerCall": {
+        "success": {
+          "control": 0.07771317829452852,
+          "candidate": 0.07956349206344587,
+          "candidateOverControl": 1.023809523809524
+        },
+        "rejected": {
+          "control": 0.10025062656641603,
+          "candidate": 0.17316017316017315,
+          "candidateOverControl": 1.7272727272727273
+        }
+      },
+      "propagationMSPerCall": {
+        "control": 0.05847953216374269,
+        "candidate": 0.06389776357827476
+      }
+    },
+    "webkit": {
+      "version": "26.5",
+      "originalSevenRefused": 7,
+      "rawAndInputBitsUnchanged": true,
+      "falseAcceptanceQualificationBlockers": 2,
+      "supplementalGuardCases": 8,
+      "focusedSamples": [
+        {
+          "id": "B1-vapor-regression",
+          "sample": "base",
+          "p": -1.1641532182693481e-10,
+          "h": -3.306195139884949e-08,
+          "normalizedEnergy": 2.225887349261657e-14,
+          "getterP": 0.0,
+          "getterH": 0.0,
+          "getterU": 0.0,
+          "T": -1.0913936421275139e-11
+        },
+        {
+          "id": "B1-vapor-regression",
+          "sample": "P0.07999999981754856",
+          "p": 1.1641532182693481e-10,
+          "h": -6.565824151039124e-08,
+          "normalizedEnergy": 4.388628515979802e-14,
+          "getterP": 0.0,
+          "getterH": 0.0,
+          "getterU": 0.0
+        },
+        {
+          "id": "B1-vapor-regression",
+          "sample": "P-0.07999999981754856",
+          "p": 1.1641532182693481e-10,
+          "h": -3.236345946788788e-08,
+          "normalizedEnergy": 2.1627418267455877e-14,
+          "getterP": 0.0,
+          "getterH": 0.0,
+          "getterU": 0.0
+        },
+        {
+          "id": "B1-vapor-regression",
+          "sample": "H0.01624022744737779",
+          "p": -1.1641532182693481e-10,
+          "h": -3.3527612686157227e-08,
+          "normalizedEnergy": 2.2416738296147482e-14,
+          "getterP": 0.0,
+          "getterH": 0.0,
+          "getterU": 0.0
+        },
+        {
+          "id": "B1-vapor-regression",
+          "sample": "H-0.01624022744737779",
+          "p": 0.0,
+          "h": -6.51925802230835e-08,
+          "normalizedEnergy": 4.357055999961678e-14,
+          "getterP": 0.0,
+          "getterH": 0.0,
+          "getterU": 0.0
+        },
+        {
+          "id": "approach-30298.937123458254-liquid-0.001",
+          "sample": "base",
+          "p": -4.759567673318088e-08,
+          "h": 6.83940015733242e-10,
+          "normalizedEnergy": 7.449686026701806e-15,
+          "getterP": 0.0,
+          "getterH": 0.0,
+          "getterU": 0.0,
+          "T": 1.7053025658242404e-13
+        },
+        {
+          "id": "approach-30298.937123458254-liquid-0.001",
+          "sample": "P0.01",
+          "p": 2.420565579086542e-07,
+          "h": 2.6193447411060333e-10,
+          "normalizedEnergy": 6.772441843360807e-16,
+          "getterP": 0.0,
+          "getterH": 0.0,
+          "getterU": 0.0
+        },
+        {
+          "id": "approach-30298.937123458254-liquid-0.001",
+          "sample": "H0.0009890456398938335",
+          "p": -5.470828909892589e-07,
+          "h": 5.675246939063072e-10,
+          "normalizedEnergy": 1.3714194598908541e-14,
+          "getterP": 0.0,
+          "getterH": 0.0,
+          "getterU": 0.0
+        },
+        {
+          "id": "approach-30298.937123458254-liquid-0.001",
+          "sample": "H-0.0009890456398938335",
+          "p": 1.4216493582352996e-07,
+          "h": -1.7462298274040222e-09,
+          "normalizedEnergy": 1.980939257994524e-14,
+          "getterP": 0.0,
+          "getterH": 0.0,
+          "getterU": 0.0
+        },
+        {
+          "id": "diagnostic-quality-band-799999.9981754856-hg-9.9e-10",
+          "sample": "base",
+          "p": 2.3283064365386963e-10,
+          "h": 0.0,
+          "normalizedEnergy": 1.578637620538235e-16,
+          "getterP": 0.0,
+          "getterH": 0.0,
+          "getterU": 0.0,
+          "T": -5.684341886080802e-14
+        },
+        {
+          "id": "diagnostic-quality-band-799999.9981754856-hg-9.9e-10",
+          "sample": "P-0.07999999981754856",
+          "p": -1.1641532182693481e-10,
+          "h": 0.0,
+          "normalizedEnergy": 3.1572755591606833e-16,
+          "getterP": 0.0,
+          "getterH": 0.0,
+          "getterU": 0.0
+        },
+        {
+          "id": "diagnostic-quality-band-799999.9981754856-hg-9.9e-10",
+          "sample": "H0.016240197433170057",
+          "p": -1.1641532182693481e-10,
+          "h": -2.3283064365386963e-10,
+          "normalizedEnergy": 1.578637652405798e-16,
+          "getterP": 0.0,
+          "getterH": 0.0,
+          "getterU": 0.0
+        },
+        {
+          "id": "B1-liquid-precision",
+          "sample": "base",
+          "p": -5.0065864343196154e-08,
+          "h": -2.3283064365386963e-10,
+          "normalizedEnergy": 1.7686897172641858e-15,
+          "getterP": 0.0,
+          "getterH": 0.0,
+          "getterU": 0.0,
+          "T": -1.1368683772161603e-13
+        },
+        {
+          "id": "B1-liquid-precision",
+          "sample": "P0.01",
+          "p": -3.975947038270533e-08,
+          "h": 1.4551915228366852e-11,
+          "normalizedEnergy": 5.306069152535468e-16,
+          "getterP": 0.0,
+          "getterH": 0.0,
+          "getterU": 0.0
+        },
+        {
+          "id": "B1-liquid-precision",
+          "sample": "P-0.01",
+          "p": 2.1503001335076988e-07,
+          "h": 8.731149137020111e-11,
+          "normalizedEnergy": 2.1224276604198595e-15,
+          "getterP": 0.0,
+          "getterH": 0.0,
+          "getterU": 0.0
+        },
+        {
+          "id": "B1-liquid-precision",
+          "sample": "H0.0009452334612321304",
+          "p": -1.2381860869936645e-07,
+          "h": -6.693881005048752e-10,
+          "normalizedEnergy": 5.306069100602347e-15,
+          "getterP": 0.0,
+          "getterH": 0.0,
+          "getterU": 0.0
+        },
+        {
+          "id": "B1-liquid-precision",
+          "sample": "H-0.0009452334612321304",
+          "p": 9.045470505952835e-08,
+          "h": -4.220055416226387e-10,
+          "normalizedEnergy": 5.659807149848284e-15,
+          "getterP": 0.0,
+          "getterH": 0.0,
+          "getterU": 0.0
+        }
+      ],
+      "originalSignedFDProbes": [
+        {
+          "id": "B1-vapor-regression",
+          "axis": "P",
+          "step": 0.07999999981754856,
+          "mass": 2.171881303622897e-14,
+          "energy": 6.253740489495496e-14
+        },
+        {
+          "id": "B1-vapor-regression",
+          "axis": "P",
+          "step": -0.07999999981754856,
+          "mass": 1.3607743751592656e-16,
+          "energy": 3.388505964377471e-16
+        },
+        {
+          "id": "B1-vapor-regression",
+          "axis": "H",
+          "step": 0.01624022744737779,
+          "mass": 6.07592783281069e-16,
+          "energy": 1.4546601345758104e-15
+        },
+        {
+          "id": "B1-vapor-regression",
+          "axis": "H",
+          "step": -0.01624022744737779,
+          "mass": 2.1561340572434057e-14,
+          "energy": 6.184894462102167e-14
+        },
+        {
+          "id": "approach-30298.937123458254-liquid-0.001",
+          "axis": "P",
+          "step": 0.01,
+          "mass": 4.876263291449009e-16,
+          "energy": 4.459728324776508e-16
+        },
+        {
+          "id": "approach-30298.937123458254-liquid-0.001",
+          "axis": "H",
+          "step": 0.0009890456398938335,
+          "mass": 3.8568502009037967e-16,
+          "energy": 4.276677992525828e-16
+        },
+        {
+          "id": "approach-30298.937123458254-liquid-0.001",
+          "axis": "H",
+          "step": -0.0009890456398938335,
+          "mass": 1.1891274696994175e-15,
+          "energy": 1.1049119834982016e-15
+        },
+        {
+          "id": "diagnostic-quality-band-799999.9981754856-hg-9.9e-10",
+          "axis": "P",
+          "step": -0.07999999981754856,
+          "mass": 2.0969616474963767e-16,
+          "energy": 5.606619899113327e-16
+        },
+        {
+          "id": "diagnostic-quality-band-799999.9981754856-hg-9.9e-10",
+          "axis": "H",
+          "step": 0.016240197433170057,
+          "mass": 2.836390853735809e-16,
+          "energy": 6.624384071991541e-16
+        },
+        {
+          "id": "B1-liquid-precision",
+          "axis": "P",
+          "step": 0.01,
+          "mass": 3.773163214514389e-16,
+          "energy": 2.2782301668859776e-16
+        },
+        {
+          "id": "B1-liquid-precision",
+          "axis": "P",
+          "step": -0.01,
+          "mass": 2.6437398536983107e-16,
+          "energy": 3.02783898490658e-16
+        },
+        {
+          "id": "B1-liquid-precision",
+          "axis": "H",
+          "step": 0.0009452334612321304,
+          "mass": 6.085420421982577e-17,
+          "energy": 8.214354326725392e-17
+        },
+        {
+          "id": "B1-liquid-precision",
+          "axis": "H",
+          "step": -0.0009452334612321304,
+          "mass": 6.085420421982577e-17,
+          "energy": 8.214354326725392e-17
+        }
+      ],
+      "canonical": [
+        {
+          "p": 6.007030606269836e-08,
+          "h": 9.778887033462524e-09,
+          "T": 1.5973000699887052e-11
+        },
+        {
+          "p": 1.1781230568885803e-07,
+          "h": 1.862645149230957e-08,
+          "T": 3.143441063002683e-11
+        },
+        {
+          "p": 5.832407623529434e-08,
+          "h": 9.313225746154785e-09,
+          "T": 1.5575096767861396e-11
+        },
+        {
+          "p": 6.030313670635223e-08,
+          "h": 9.778887033462524e-09,
+          "T": 1.602984411874786e-11
+        },
+        {
+          "p": 1.1664815247058868e-07,
+          "h": 1.83936208486557e-08,
+          "T": 3.1093350116861984e-11
+        },
+        {
+          "p": -0.0004309440810175147,
+          "h": -5.921610863879323e-07,
+          "T": -4.68105554318754e-11
+        },
+        {
+          "p": 8.363604138139635e-07,
+          "h": 1.2951204553246498e-09,
+          "T": 2.8421709430404007e-13
+        },
+        {
+          "p": 1.1496013030409813e-09,
+          "h": 2.9249349609017372e-09,
+          "T": 6.821210263296962e-13
+        },
+        {
+          "p": -4.719728167401627e-06,
+          "h": -4.583853296935558e-09,
+          "T": -5.400124791776761e-13
+        },
+        {
+          "p": -0.0008571689722884912,
+          "h": -1.1805968824774027e-06,
+          "T": -9.296741154685151e-11
+        },
+        {
+          "p": 2.3283064365386963e-10,
+          "h": 0,
+          "T": 0
+        },
+        {
+          "p": -9.42964106798172e-09,
+          "h": -8.847564458847046e-09,
+          "T": -2.2737367544323206e-13
+        },
+        {
+          "p": -9.313225746154785e-10,
+          "h": -6.984919309616089e-10,
+          "T": -2.2737367544323206e-13
+        },
+        {
+          "p": 1.1641532182693481e-10,
+          "h": 2.3283064365386963e-10,
+          "T": 5.684341886080802e-14
+        },
+        {
+          "p": -5.820766091346741e-09,
+          "h": -6.28642737865448e-09,
+          "T": -1.7053025658242404e-13
+        },
+        {
+          "p": -2.2199928935151547e-06,
+          "h": -5.0640664994716644e-09,
+          "T": -9.094947017729282e-13
+        },
+        {
+          "p": -3.0192022677510977e-06,
+          "h": -7.377821020781994e-09,
+          "T": -9.663381206337363e-13
+        },
+        {
+          "p": -1.6043813957367092e-06,
+          "h": -4.933099262416363e-09,
+          "T": -8.526512829121202e-13
+        },
+        {
+          "p": 5.939036782365292e-07,
+          "h": 7.130438461899757e-10,
+          "T": 1.1368683772161603e-13
+        },
+        {
+          "p": -1.8124082998838276e-06,
+          "h": -5.384208634495735e-09,
+          "T": -8.242295734817162e-13
+        }
+      ],
+      "phaseLabels": {
+        "B1-vapor-regression": "vapor",
+        "approach-30298.937123458254-liquid-0.001": "liquid",
+        "diagnostic-quality-band-799999.9981754856-hg-9.9e-10": "vapor",
+        "B1-liquid-precision": "liquid"
+      },
+      "a2Scenarios": 24,
+      "worker": {
+        "passed": true,
+        "error": {
+          "message": "Outside accepted pressure domain",
+          "faultKind": "solver",
+          "evidence": {
+            "propertyFailure": {
+              "schemaVersion": "C1/1",
+              "operation": "stateMVU",
+              "inputScope": "fixed-inventory",
+              "input": {
+                "values": {
+                  "massKg": 0.3129191406602224,
+                  "volumeM3": 0.0006000000000000001,
+                  "internalEnergyKJ": 218.14080371522462,
+                  "guess": 35
+                },
+                "bits": {
+                  "massKg": "3fd406de00db65a6",
+                  "volumeM3": "3f43a92a30553262",
+                  "internalEnergyKJ": "406b448176cb0171",
+                  "guess": "4041800000000000"
+                }
+              },
+              "rawRecovery": "returned",
+              "rawCoordinates": {
+                "values": {
+                  "p": 3500000.000000149,
+                  "T": 345.5636734187881,
+                  "h": 703826.564429848,
+                  "s": 2625.843410197631,
+                  "rho": 521.5319011003706,
+                  "u": 697115.5655578412,
+                  "Q": 10000
+                },
+                "bits": {
+                  "p": "414ab3f000000140",
+                  "T": "40759904ce6b351c",
+                  "h": "41257aa520fcf2f4",
+                  "s": "40a483afd3761fe0",
+                  "rho": "40804c41555d3663",
+                  "u": "412546372190cc20",
+                  "Q": "40c3880000000000"
+                }
+              },
+              "lastRequest": {
+                "mode": "DU",
+                "args": [
+                  {
+                    "value": 521.5319011003706,
+                    "bits": "40804c41555d3663"
+                  },
+                  {
+                    "value": 697115.5655578412,
+                    "bits": "412546372190cc20"
+                  }
+                ]
+              },
+              "requestedInputSupport": "unknown",
+              "returnedCoordinateSupport": "unsupported",
+              "exactInventorySupport": "unknown",
+              "checks": {
+                "support": "fail",
+                "phase": "unmeasured",
+                "canonical": "unmeasured",
+                "nonlinear": "unmeasured"
+              },
+              "observedResiduals": {
+                "densityResidual": 0,
+                "energyResidualKJkg": 0
+              },
+              "physicalTrajectoryExit": "unproved",
+              "reason": "boundary-unresolved",
+              "errorSource": "adapter-support-or-inventory",
+              "originalError": {
+                "message": "Outside accepted pressure domain",
+                "faultKind": "domain"
+              },
+              "numericalPressureEnclosure": false
+            }
+          },
+          "propertyCause": null,
+          "domainCause": null,
+          "nonlinearResidual": null
+        },
+        "state": {
+          "values": {
+            "p": 34.899999999979784,
+            "h": 703.13615200244,
+            "T": 72.28742050901587,
+            "s": 2.623900597608248,
+            "rho": 521.7860534416628,
+            "u": 696.4475868769863,
+            "x": null,
+            "phase": "Subcooled liquid",
+            "massKg": 0.3130716320649977,
+            "volumeM3": 0.0006000000000000001,
+            "internalEnergyKJ": 218.03798267130747,
+            "densityResidual": 0,
+            "energyResidual": -3.410605131648481e-13,
+            "liquidVolumeFraction": 1
+          },
+          "bits": {
+            "p": "4041733333332816",
+            "h": "4085f916d6dc6e1e",
+            "T": "4052126518fd9b10",
+            "s": "4004fdbf98b57550",
+            "rho": "40804e49d66306cd",
+            "u": "4085c394a86db633",
+            "massKg": "3fd4095d99419193",
+            "volumeM3": "3f43a92a30553262",
+            "internalEnergyKJ": "406b4137276f6292",
+            "densityResidual": "0000000000000000",
+            "energyResidual": "bd58000000000000",
+            "liquidVolumeFraction": "3ff0000000000000"
+          }
+        },
+        "memoryBytes": 56360960,
+        "elapsedMS": 8793,
+        "mainThreadTicks": 718
+      },
+      "lifecycle": {
+        "alternations": 40,
+        "freshReusedExact": true,
+        "memoryBefore": 56360960,
+        "memoryAfter": 56360960,
+        "heapBefore": null,
+        "heapAfter": null
+      },
+      "medianMSPerCall": {
+        "success": {
+          "control": 0.07407407407407407,
+          "candidate": 0.09009009009009009,
+          "candidateOverControl": 1.2162162162162162
+        },
+        "rejected": {
+          "control": 0.07984031936127745,
+          "candidate": 0.2777777777777778,
+          "candidateOverControl": 3.479166666666667
+        }
+      },
+      "propagationMSPerCall": {
+        "control": 0.004062563477554337,
+        "candidate": 0.010509721492380452
+      }
+    }
+  },
+  "native": {
+    "fixedRecords": 250,
+    "exactArchivedParity": true,
+    "wrapperCases": 15,
+    "a2Scenarios": 24,
+    "gateANativeControls": [
+      {
+        "key": "native-ledger-146",
+        "result": {
+          "raw": {
+            "values": {
+              "p": 3499999.9999996712,
+              "T": 345.56367341878774,
+              "rho": 521.5319011003699,
+              "h": 703826.564429847,
+              "u": 697115.5655578412,
+              "Q": 10000.0,
+              "phase": 0.0,
+              "s": 2625.843410197631
+            },
+            "bits": {
+              "p": "414ab3effffffd3e",
+              "T": "40759904ce6b3516",
+              "rho": "40804c41555d365c",
+              "h": "41257aa520fcf2ec",
+              "u": "412546372190cc20",
+              "Q": "40c3880000000000",
+              "phase": "0000000000000000",
+              "s": "40a483afd3761fe0"
+            }
+          }
+        },
+        "qualification": "native control only; endpoint physical qualification unresolved"
+      },
+      {
+        "key": "native-ledger-148",
+        "result": {
+          "error": "Error: Input vapor quality [Q] must be between 0 and 1"
+        },
+        "qualification": "native control only; endpoint physical qualification unresolved"
+      },
+      {
+        "key": "native-ledger-151",
+        "result": {
+          "raw": {
+            "values": {
+              "p": 3499999.9999997276,
+              "T": 345.5636734307981,
+              "rho": 521.5319010741065,
+              "h": 703826.5644963618,
+              "u": 697115.5656240177,
+              "Q": 10000.0,
+              "phase": 0.0,
+              "s": 2625.843410390112
+            },
+            "bits": {
+              "p": "414ab3effffffdb7",
+              "T": "40759904ce6e6e6e",
+              "rho": "40804c415559aff5",
+              "h": "41257aa52105aac9",
+              "u": "41254637219978a4",
+              "Q": "40c3880000000000",
+              "phase": "0000000000000000",
+              "s": "40a483afd37c9546"
+            }
+          }
+        },
+        "qualification": "native control only; endpoint physical qualification unresolved"
+      },
+      {
+        "key": "native-ledger-152",
+        "result": {
+          "raw": {
+            "values": {
+              "p": 3499999.9999993723,
+              "T": 345.56367343413575,
+              "rho": 521.5319010668067,
+              "h": 703826.5645148464,
+              "u": 697115.565642409,
+              "Q": 10000.0,
+              "phase": 0.0,
+              "s": 2625.843410443604
+            },
+            "bits": {
+              "p": "414ab3effffffabc",
+              "T": "40759904ce6f53cb",
+              "rho": "40804c415558b523",
+              "h": "41257aa521081707",
+              "u": "41254637219be1c0",
+              "Q": "40c3880000000000",
+              "phase": "0000000000000000",
+              "s": "40a483afd37e60c5"
+            }
+          }
+        },
+        "qualification": "native control only; endpoint physical qualification unresolved"
+      },
+      {
+        "key": "native-ledger-162",
+        "result": {
+          "raw": {
+            "values": {
+              "p": 3500000.0000012456,
+              "T": 345.563673599352,
+              "rho": 521.531900705505,
+              "h": 703826.5654298502,
+              "u": 697115.5665527604,
+              "Q": 10000.0,
+              "phase": 0.0,
+              "s": 2625.8434130914547
+            },
+            "bits": {
+              "p": "414ab3f000000a73",
+              "T": "40759904ce9bad5e",
+              "rho": "40804c41552836e8",
+              "h": "41257aa521800576",
+              "u": "4125463722133413",
+              "Q": "40c3880000000000",
+              "phase": "0000000000000000",
+              "s": "40a483afd3d739a2"
+            }
+          }
+        },
+        "qualification": "native control only; endpoint physical qualification unresolved"
+      },
+      {
+        "key": "native-ledger-164",
+        "result": {
+          "error": "Error: Input vapor quality [Q] must be between 0 and 1"
+        },
+        "qualification": "native control only; endpoint physical qualification unresolved"
+      },
+      {
+        "key": "native-ledger-165",
+        "result": {
+          "error": "Error: Input vapor quality [Q] must be between 0 and 1"
+        },
+        "qualification": "native control only; endpoint physical qualification unresolved"
+      }
+    ],
+    "maxRSSKiB": 118872
+  },
+  "failures": [],
+  "fullQualification": false,
+  "physicalIPad": false,
+  "acceptedClosure": {
+    "spatial-fixtures.cjs": {
+      "acceptedSHA256": "952c66e126d4704f2a6a354f0de6b3bc210814bd26af6ac5503dd468e3cf451a",
+      "candidateSHA256": "952c66e126d4704f2a6a354f0de6b3bc210814bd26af6ac5503dd468e3cf451a",
+      "byteIdentical": true
+    },
+    "implicit.cjs": {
+      "acceptedSHA256": "5bd347cd831c9504ea28ed96ee196d76de416754171a6d3922ec8a6a9d522a7a",
+      "candidateSHA256": "5bd347cd831c9504ea28ed96ee196d76de416754171a6d3922ec8a6a9d522a7a",
+      "byteIdentical": true
+    },
+    "time-control.cjs": {
+      "acceptedSHA256": "3ef4055e659099fdca1e9ff49d5731d3a45d32ed823439e6837332236113da6d",
+      "candidateSHA256": "3ef4055e659099fdca1e9ff49d5731d3a45d32ed823439e6837332236113da6d",
+      "byteIdentical": true
+    },
+    "thermal-geometry.cjs": {
+      "acceptedSHA256": "f7db3d7f656cf4008ae5c4c91291534c8477a020d885d1f67181b3e1bb58bc77",
+      "candidateSHA256": "f7db3d7f656cf4008ae5c4c91291534c8477a020d885d1f67181b3e1bb58bc77",
+      "byteIdentical": true
+    },
+    "coupled-implicit.cjs": {
+      "acceptedSHA256": "68b2ce9d8a3c59898cd3143b092abc4b1bd8775a52ea246c817446259fec955c",
+      "candidateSHA256": "8a1823fb02bfa2c7f6dfa9f89a266e44186c8a2424e6bf48ec5102355547a1ff",
+      "byteIdentical": false
+    },
+    "evaporator.cjs": {
+      "acceptedSHA256": "3a2f438fab4def08928dd273321a150326516090bb3c3862711d9549b09d072c",
+      "candidateSHA256": "3a2f438fab4def08928dd273321a150326516090bb3c3862711d9549b09d072c",
+      "byteIdentical": true
+    },
+    "hydraulics.cjs": {
+      "acceptedSHA256": "9bc1a6bce5dafbcff9c5ecf75beff956877fc9334da233b26aa00a4fadd288bf",
+      "candidateSHA256": "9bc1a6bce5dafbcff9c5ecf75beff956877fc9334da233b26aa00a4fadd288bf",
+      "byteIdentical": true
+    },
+    "coupled-fixtures.cjs": {
+      "acceptedSHA256": "0033737237d0e910fe555b7cde36e706c2c41c68564b041f56babfe9f18a1df9",
+      "candidateSHA256": "0033737237d0e910fe555b7cde36e706c2c41c68564b041f56babfe9f18a1df9",
+      "byteIdentical": true
+    },
+    "thermal-network.cjs": {
+      "acceptedSHA256": "77e634aacc11521ea93423284afa80d5bc78564b33377ab3bd26d111979e6f63",
+      "candidateSHA256": "77e634aacc11521ea93423284afa80d5bc78564b33377ab3bd26d111979e6f63",
+      "byteIdentical": true
+    },
+    "coupled-model.cjs": {
+      "acceptedSHA256": "929be63391a11efe3769f356e12e77afb62111672349069af7cf1562f42bf91e",
+      "candidateSHA256": "123a81b83da4b957dcea0e9053e811647dedd5c3d276287ba01abc92b0d069c2",
+      "byteIdentical": false
+    },
+    "conservation.cjs": {
+      "acceptedSHA256": "4e8b9d335a4f74d0303c259cfaca209114431099736cea707acfccc102bad4bc",
+      "candidateSHA256": "4e8b9d335a4f74d0303c259cfaca209114431099736cea707acfccc102bad4bc",
+      "byteIdentical": true
+    },
+    "thermodynamics.cjs": {
+      "acceptedSHA256": "8d1404243a8e22c1dfafb06c9bbe4db48a2f8858dd0c575da729857f4e0020a0",
+      "candidateSHA256": "aedcf84b0de355b29ae49df899d8b172fcc1217030e547262f7810449aeb02a0",
+      "byteIdentical": false
+    }
+  },
+  "changedAcceptedCopies": [
+    "coupled-implicit.cjs",
+    "coupled-model.cjs",
+    "thermodynamics.cjs"
+  ],
+  "classificationOnly": true,
+  "numericalPressureEnclosure": false,
+  "inheritedBlockers": [
+    "two saved exact-inventory inward false acceptances",
+    "B5A Gate B endpoint recovery",
+    "Gate A browser unqualified",
+    "rejected-PT loader cleanup",
+    "full backend/A2 qualification",
+    "physical iPad qualification"
+  ],
+  "gate1": "PASS",
+  "gate2": "PASS"
+}

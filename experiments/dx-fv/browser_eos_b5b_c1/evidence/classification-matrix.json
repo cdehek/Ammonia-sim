@@ -1,0 +1,804 @@
+{
+  "rows": [
+    {
+      "browser": "chromium",
+      "key": "chromium-ledger-64",
+      "id": "approach-3500000.0-liquid-0.001",
+      "input": {
+        "values": {
+          "M": 0.3129191406602224,
+          "U_kJ": 218.14080371522462,
+          "V": 0.0006000000000000001,
+          "rho": 521.5319011003706,
+          "u": 697115.5655578412
+        },
+        "bits": {
+          "M": "3fd406de00db65a6",
+          "U_kJ": "406b448176cb0171",
+          "V": "3f43a92a30553262",
+          "rho": "40804c41555d3663",
+          "u": "412546372190cc20"
+        }
+      },
+      "raw": {
+        "values": {
+          "p": 3500000.000000149,
+          "T": 345.5636734187881,
+          "h": 703826.564429848,
+          "s": 2625.843410197631,
+          "rho": 521.5319011003706,
+          "u": 697115.5655578412,
+          "Q": 10000
+        },
+        "bits": {
+          "p": "414ab3f000000140",
+          "T": "40759904ce6b351c",
+          "h": "41257aa520fcf2f4",
+          "s": "40a483afd3761fe0",
+          "rho": "40804c41555d3663",
+          "u": "412546372190cc20",
+          "Q": "40c3880000000000"
+        }
+      },
+      "runtimeReason": "boundary-unresolved",
+      "refused": true,
+      "physicalDomainProof": false,
+      "independentMechanism": "numerical-wrong-side",
+      "mathematicalPressureMinusLimitPa": "-0.00000000258101716514029660951129038130602100133250881109186711487641",
+      "referenceSource": "../browser_eos_b5b/evidence/seven-case-analysis.json",
+      "referenceSHA256": "3ecb954a012d31df41edabb22363a0b3c487fad168fabb622d75cced24847915",
+      "canonical": {
+        "p": 1.4901161193847656e-07,
+        "h": 2.3283064365386963e-10,
+        "T": 1.1368683772161603e-13
+      },
+      "normalizedResiduals": {
+        "mass": 0,
+        "energy": 0
+      }
+    },
+    {
+      "browser": "chromium",
+      "key": "chromium-ledger-65",
+      "id": "approach-3500000.0-liquid-0.01",
+      "input": {
+        "values": {
+          "M": 0.3129191427925018,
+          "U_kJ": 218.14080239970724,
+          "V": 0.0006000000000000001,
+          "rho": 521.5319046541697,
+          "u": 697115.556603571
+        },
+        "bits": {
+          "M": "3fd406de03258379",
+          "U_kJ": "406b44817408be1c",
+          "V": "3f43a92a30553262",
+          "rho": "40804c41573a31fe",
+          "u": "412546371cfb24ad"
+        }
+      },
+      "raw": {
+        "values": {
+          "p": 3500000.0000003683,
+          "T": 345.56367179371773,
+          "h": 703826.5554298488,
+          "s": 2625.8433841532265,
+          "rho": 521.5319046541697,
+          "u": 697115.5566035713,
+          "Q": 10000
+        },
+        "bits": {
+          "p": "414ab3f000000317",
+          "T": "40759904ccb6fb20",
+          "h": "41257aa51c614d18",
+          "s": "40a483afd00c3825",
+          "rho": "40804c41573a31fe",
+          "u": "412546371cfb24af",
+          "Q": "40c3880000000000"
+        }
+      },
+      "runtimeReason": "boundary-unresolved",
+      "refused": true,
+      "physicalDomainProof": false,
+      "independentMechanism": "rounded-inventory-conflict",
+      "mathematicalPressureMinusLimitPa": "0.000000401190221955103402439734303456882638152443431593478862179781",
+      "referenceSource": "../browser_eos_b5b/evidence/seven-case-analysis.json",
+      "referenceSHA256": "3ecb954a012d31df41edabb22363a0b3c487fad168fabb622d75cced24847915",
+      "canonical": {
+        "p": 3.6833807826042175e-07,
+        "h": 1.0477378964424133e-09,
+        "T": 0
+      },
+      "normalizedResiduals": {
+        "mass": 0,
+        "energy": 3.339914615996348e-16
+      }
+    },
+    {
+      "browser": "chromium",
+      "key": "chromium-ledger-67",
+      "id": "approach-3500000.0-vapor-0.001",
+      "input": {
+        "values": {
+          "M": 0.016830826438031344,
+          "U_kJ": 25.301752301594554,
+          "V": 0.0006000000000000001,
+          "rho": 28.051377396718905,
+          "u": 1503298.2720576394
+        },
+        "bits": {
+          "M": "3f913c19a476c7dd",
+          "U_kJ": "40394d3fa38ad762",
+          "V": "3f43a92a30553262",
+          "rho": "403c0d2711aea94c",
+          "u": "4136f04245a591c8"
+        }
+      },
+      "raw": {
+        "values": {
+          "p": 3500000.000000003,
+          "T": 345.5636738055732,
+          "h": 1628069.328769079,
+          "s": 5300.43809404395,
+          "rho": 28.051377396718905,
+          "u": 1503298.2720576394,
+          "Q": 10000
+        },
+        "bits": {
+          "p": "414ab3f000000006",
+          "T": "40759904ced308c8",
+          "h": "4138d7a5542a35da",
+          "s": "40b4b47026ee6756",
+          "rho": "403c0d2711aea94c",
+          "u": "4136f04245a591c8",
+          "Q": "40c3880000000000"
+        }
+      },
+      "runtimeReason": "boundary-unresolved",
+      "refused": true,
+      "physicalDomainProof": false,
+      "independentMechanism": "rounded-inventory-conflict",
+      "mathematicalPressureMinusLimitPa": "0.00000000702192693616087952231519642876880140597919365414148859603561",
+      "referenceSource": "../browser_eos_b5b/evidence/seven-case-analysis.json",
+      "referenceSHA256": "3ecb954a012d31df41edabb22363a0b3c487fad168fabb622d75cced24847915",
+      "canonical": {
+        "p": 2.7939677238464355e-09,
+        "h": 2.3283064365386963e-10,
+        "T": 1.7053025658242404e-13
+      },
+      "normalizedResiduals": {
+        "mass": 0,
+        "energy": 0
+      }
+    },
+    {
+      "browser": "chromium",
+      "key": "chromium-ledger-68",
+      "id": "approach-3500000.0-vapor-0.01",
+      "input": {
+        "values": {
+          "M": 0.016830826165446306,
+          "U_kJ": 25.30175200928465,
+          "V": 0.0006000000000000001,
+          "rho": 28.051376942410506,
+          "u": 1503298.2790368996
+        },
+        "bits": {
+          "M": "3f913c199fc7f065",
+          "U_kJ": "40394d3f9ea3613f",
+          "V": "3f43a92a30553262",
+          "rho": "403c0d270a0f6bee",
+          "u": "4136f042476ef656"
+        }
+      },
+      "raw": {
+        "values": {
+          "p": 3500000.000000002,
+          "T": 345.56367566156706,
+          "h": 1628069.337769079,
+          "s": 5300.438120088355,
+          "rho": 28.051376942410506,
+          "u": 1503298.2790368996,
+          "Q": 10000
+        },
+        "bits": {
+          "p": "414ab3f000000004",
+          "T": "40759904d0c53fb5",
+          "h": "4138d7a5567808cc",
+          "s": "40b4b47028a35b35",
+          "rho": "403c0d270a0f6bee",
+          "u": "4136f042476ef656",
+          "Q": "40c3880000000000"
+        }
+      },
+      "runtimeReason": "boundary-unresolved",
+      "refused": true,
+      "physicalDomainProof": false,
+      "independentMechanism": "rounded-inventory-conflict",
+      "mathematicalPressureMinusLimitPa": "0.000000000704166454343441110405502998454295512867561085419373775327384",
+      "referenceSource": "../browser_eos_b5b/evidence/seven-case-analysis.json",
+      "referenceSHA256": "3ecb954a012d31df41edabb22363a0b3c487fad168fabb622d75cced24847915",
+      "canonical": {
+        "p": 1.862645149230957e-09,
+        "h": 2.3283064365386963e-10,
+        "T": 5.684341886080802e-14
+      },
+      "normalizedResiduals": {
+        "mass": 0,
+        "energy": 0
+      }
+    },
+    {
+      "browser": "chromium",
+      "key": "chromium-ledger-70",
+      "id": "diagnostic-quality-band-3500000.0-hf--9.9e-10",
+      "input": {
+        "values": {
+          "M": 0.31291914064008475,
+          "U_kJ": 218.14080372764926,
+          "V": 0.0006000000000000001,
+          "rho": 521.5319010668079,
+          "u": 697115.5656424091
+        },
+        "bits": {
+          "M": "3fd406de00d5dc96",
+          "U_kJ": "406b448176d1ad12",
+          "V": "3f43a92a30553262",
+          "rho": "40804c415558b52e",
+          "u": "41254637219be1c1"
+        }
+      },
+      "raw": {
+        "values": {
+          "p": 3500000.0000007655,
+          "T": 345.5636734341365,
+          "h": 703826.564514849,
+          "s": 2625.843410443606,
+          "rho": 521.5319010668079,
+          "u": 697115.5656424091,
+          "Q": 10000
+        },
+        "bits": {
+          "p": "414ab3f00000066c",
+          "T": "40759904ce6f53d8",
+          "h": "41257aa52108171d",
+          "s": "40a483afd37e60c9",
+          "rho": "40804c415558b52e",
+          "u": "41254637219be1c1",
+          "Q": "40c3880000000000"
+        }
+      },
+      "runtimeReason": "boundary-unresolved",
+      "refused": true,
+      "physicalDomainProof": false,
+      "independentMechanism": "rounded-inventory-conflict",
+      "mathematicalPressureMinusLimitPa": "0.000000772409866695395094658273211235298504854822571097945274123047",
+      "referenceSource": "../browser_eos_b5b/evidence/seven-case-analysis.json",
+      "referenceSHA256": "3ecb954a012d31df41edabb22363a0b3c487fad168fabb622d75cced24847915",
+      "canonical": {
+        "p": 7.655471563339233e-07,
+        "h": 1.5133991837501526e-09,
+        "T": 5.684341886080801e-13
+      },
+      "normalizedResiduals": {
+        "mass": 0,
+        "energy": 0
+      }
+    },
+    {
+      "browser": "chromium",
+      "key": "chromium-ledger-75",
+      "id": "diagnostic-quality-band-3500000.0-hg-9.9e-10",
+      "input": {
+        "values": {
+          "M": 0.016830826440605712,
+          "U_kJ": 25.30175230435519,
+          "V": 0.0006000000000000001,
+          "rho": 28.051377401009518,
+          "u": 1503298.2719917244
+        },
+        "bits": {
+          "M": "3f913c19a4821a58",
+          "U_kJ": "40394d3fa396b2bc",
+          "V": "3f43a92a30553262",
+          "rho": "403c0d2711c116e0",
+          "u": "4136f04245a13fe9"
+        }
+      },
+      "raw": {
+        "values": {
+          "p": 3500000.0000000014,
+          "T": 345.5636737880446,
+          "h": 1628069.3286840797,
+          "s": 5300.438093797978,
+          "rho": 28.051377401009518,
+          "u": 1503298.2719917248,
+          "Q": 10000
+        },
+        "bits": {
+          "p": "414ab3f000000003",
+          "T": "40759904cece5439",
+          "h": "4138d7a55424a3cd",
+          "s": "40b4b47026ea46e5",
+          "rho": "403c0d2711c116e0",
+          "u": "4136f04245a13feb",
+          "Q": "40c3880000000000"
+        }
+      },
+      "runtimeReason": "boundary-unresolved",
+      "refused": true,
+      "physicalDomainProof": false,
+      "independentMechanism": "numerical-wrong-side",
+      "mathematicalPressureMinusLimitPa": "-0.000000000824286338427787709121800935967250517158294158102642847146783",
+      "referenceSource": "../browser_eos_b5b/evidence/seven-case-analysis.json",
+      "referenceSHA256": "3ecb954a012d31df41edabb22363a0b3c487fad168fabb622d75cced24847915",
+      "canonical": {
+        "p": 1.3969838619232178e-09,
+        "h": 4.656612873077393e-10,
+        "T": 5.684341886080802e-14
+      },
+      "normalizedResiduals": {
+        "mass": 0,
+        "energy": 3.09759743614142e-16
+      }
+    },
+    {
+      "browser": "chromium",
+      "key": "chromium-ledger-79",
+      "id": "focused-3500000.0-stable-vapor",
+      "input": {
+        "values": {
+          "M": 0.016532896796156812,
+          "U_kJ": 24.982031140956146,
+          "V": 0.0006000000000000001,
+          "rho": 27.554827993594685,
+          "u": 1511049.8449832092
+        },
+        "bits": {
+          "M": "3f90edffec30c7ac",
+          "U_kJ": "4038fb6664920f6a",
+          "V": "3f43a92a30553262",
+          "rho": "403b8e09351764fc",
+          "u": "41370e89d850d1d1"
+        }
+      },
+      "raw": {
+        "values": {
+          "p": 3500000.000000002,
+          "T": 347.66773880290907,
+          "h": 1638069.3277690795,
+          "s": 5329.289153606194,
+          "rho": 27.554827993594685,
+          "u": 1511049.8449832096,
+          "Q": 10000
+        },
+        "bits": {
+          "p": "414ab3f000000004",
+          "T": "4075baaf0ee20c3c",
+          "h": "4138feb553e8aca5",
+          "s": "40b4d14a05f88220",
+          "rho": "403b8e09351764fc",
+          "u": "41370e89d850d1d3",
+          "Q": "40c3880000000000"
+        }
+      },
+      "runtimeReason": "boundary-unresolved",
+      "refused": true,
+      "physicalDomainProof": false,
+      "independentMechanism": "rounded-inventory-conflict",
+      "mathematicalPressureMinusLimitPa": "0.00000000179967963168573029233701443050030584824610823477863884564216",
+      "referenceSource": "../browser_eos_b5b/evidence/seven-case-analysis.json",
+      "referenceSHA256": "3ecb954a012d31df41edabb22363a0b3c487fad168fabb622d75cced24847915",
+      "canonical": {
+        "p": 1.862645149230957e-09,
+        "h": 6.984919309616089e-10,
+        "T": 1.1368683772161603e-13
+      },
+      "normalizedResiduals": {
+        "mass": 0,
+        "energy": 3.0817069923521534e-16
+      }
+    },
+    {
+      "browser": "webkit",
+      "key": "webkit-ledger-64",
+      "id": "approach-3500000.0-liquid-0.001",
+      "input": {
+        "values": {
+          "M": 0.3129191406602224,
+          "U_kJ": 218.14080371522462,
+          "V": 0.0006000000000000001,
+          "rho": 521.5319011003706,
+          "u": 697115.5655578412
+        },
+        "bits": {
+          "M": "3fd406de00db65a6",
+          "U_kJ": "406b448176cb0171",
+          "V": "3f43a92a30553262",
+          "rho": "40804c41555d3663",
+          "u": "412546372190cc20"
+        }
+      },
+      "raw": {
+        "values": {
+          "p": 3500000.000000149,
+          "T": 345.5636734187881,
+          "h": 703826.564429848,
+          "s": 2625.843410197631,
+          "rho": 521.5319011003706,
+          "u": 697115.5655578412,
+          "Q": 10000
+        },
+        "bits": {
+          "p": "414ab3f000000140",
+          "T": "40759904ce6b351c",
+          "h": "41257aa520fcf2f4",
+          "s": "40a483afd3761fe0",
+          "rho": "40804c41555d3663",
+          "u": "412546372190cc20",
+          "Q": "40c3880000000000"
+        }
+      },
+      "runtimeReason": "boundary-unresolved",
+      "refused": true,
+      "physicalDomainProof": false,
+      "independentMechanism": "numerical-wrong-side",
+      "mathematicalPressureMinusLimitPa": "-0.00000000258101716514029660951129038130602100133250881109186711487641",
+      "referenceSource": "../browser_eos_b5b/evidence/seven-case-analysis.json",
+      "referenceSHA256": "3ecb954a012d31df41edabb22363a0b3c487fad168fabb622d75cced24847915",
+      "canonical": {
+        "p": 1.4901161193847656e-07,
+        "h": 2.3283064365386963e-10,
+        "T": 1.1368683772161603e-13
+      },
+      "normalizedResiduals": {
+        "mass": 0,
+        "energy": 0
+      }
+    },
+    {
+      "browser": "webkit",
+      "key": "webkit-ledger-65",
+      "id": "approach-3500000.0-liquid-0.01",
+      "input": {
+        "values": {
+          "M": 0.3129191427925018,
+          "U_kJ": 218.14080239970724,
+          "V": 0.0006000000000000001,
+          "rho": 521.5319046541697,
+          "u": 697115.556603571
+        },
+        "bits": {
+          "M": "3fd406de03258379",
+          "U_kJ": "406b44817408be1c",
+          "V": "3f43a92a30553262",
+          "rho": "40804c41573a31fe",
+          "u": "412546371cfb24ad"
+        }
+      },
+      "raw": {
+        "values": {
+          "p": 3500000.0000003683,
+          "T": 345.56367179371773,
+          "h": 703826.5554298488,
+          "s": 2625.8433841532265,
+          "rho": 521.5319046541697,
+          "u": 697115.5566035713,
+          "Q": 10000
+        },
+        "bits": {
+          "p": "414ab3f000000317",
+          "T": "40759904ccb6fb20",
+          "h": "41257aa51c614d18",
+          "s": "40a483afd00c3825",
+          "rho": "40804c41573a31fe",
+          "u": "412546371cfb24af",
+          "Q": "40c3880000000000"
+        }
+      },
+      "runtimeReason": "boundary-unresolved",
+      "refused": true,
+      "physicalDomainProof": false,
+      "independentMechanism": "rounded-inventory-conflict",
+      "mathematicalPressureMinusLimitPa": "0.000000401190221955103402439734303456882638152443431593478862179781",
+      "referenceSource": "../browser_eos_b5b/evidence/seven-case-analysis.json",
+      "referenceSHA256": "3ecb954a012d31df41edabb22363a0b3c487fad168fabb622d75cced24847915",
+      "canonical": {
+        "p": 3.6833807826042175e-07,
+        "h": 1.0477378964424133e-09,
+        "T": 0
+      },
+      "normalizedResiduals": {
+        "mass": 0,
+        "energy": 3.339914615996348e-16
+      }
+    },
+    {
+      "browser": "webkit",
+      "key": "webkit-ledger-67",
+      "id": "approach-3500000.0-vapor-0.001",
+      "input": {
+        "values": {
+          "M": 0.016830826438031344,
+          "U_kJ": 25.301752301594554,
+          "V": 0.0006000000000000001,
+          "rho": 28.051377396718905,
+          "u": 1503298.2720576394
+        },
+        "bits": {
+          "M": "3f913c19a476c7dd",
+          "U_kJ": "40394d3fa38ad762",
+          "V": "3f43a92a30553262",
+          "rho": "403c0d2711aea94c",
+          "u": "4136f04245a591c8"
+        }
+      },
+      "raw": {
+        "values": {
+          "p": 3500000.000000003,
+          "T": 345.5636738055732,
+          "h": 1628069.328769079,
+          "s": 5300.43809404395,
+          "rho": 28.051377396718905,
+          "u": 1503298.2720576394,
+          "Q": 10000
+        },
+        "bits": {
+          "p": "414ab3f000000006",
+          "T": "40759904ced308c8",
+          "h": "4138d7a5542a35da",
+          "s": "40b4b47026ee6756",
+          "rho": "403c0d2711aea94c",
+          "u": "4136f04245a591c8",
+          "Q": "40c3880000000000"
+        }
+      },
+      "runtimeReason": "boundary-unresolved",
+      "refused": true,
+      "physicalDomainProof": false,
+      "independentMechanism": "rounded-inventory-conflict",
+      "mathematicalPressureMinusLimitPa": "0.00000000702192693616087952231519642876880140597919365414148859603561",
+      "referenceSource": "../browser_eos_b5b/evidence/seven-case-analysis.json",
+      "referenceSHA256": "3ecb954a012d31df41edabb22363a0b3c487fad168fabb622d75cced24847915",
+      "canonical": {
+        "p": 2.7939677238464355e-09,
+        "h": 2.3283064365386963e-10,
+        "T": 1.7053025658242404e-13
+      },
+      "normalizedResiduals": {
+        "mass": 0,
+        "energy": 0
+      }
+    },
+    {
+      "browser": "webkit",
+      "key": "webkit-ledger-68",
+      "id": "approach-3500000.0-vapor-0.01",
+      "input": {
+        "values": {
+          "M": 0.016830826165446306,
+          "U_kJ": 25.30175200928465,
+          "V": 0.0006000000000000001,
+          "rho": 28.051376942410506,
+          "u": 1503298.2790368996
+        },
+        "bits": {
+          "M": "3f913c199fc7f065",
+          "U_kJ": "40394d3f9ea3613f",
+          "V": "3f43a92a30553262",
+          "rho": "403c0d270a0f6bee",
+          "u": "4136f042476ef656"
+        }
+      },
+      "raw": {
+        "values": {
+          "p": 3500000.000000002,
+          "T": 345.56367566156706,
+          "h": 1628069.337769079,
+          "s": 5300.438120088355,
+          "rho": 28.051376942410506,
+          "u": 1503298.2790368996,
+          "Q": 10000
+        },
+        "bits": {
+          "p": "414ab3f000000004",
+          "T": "40759904d0c53fb5",
+          "h": "4138d7a5567808cc",
+          "s": "40b4b47028a35b35",
+          "rho": "403c0d270a0f6bee",
+          "u": "4136f042476ef656",
+          "Q": "40c3880000000000"
+        }
+      },
+      "runtimeReason": "boundary-unresolved",
+      "refused": true,
+      "physicalDomainProof": false,
+      "independentMechanism": "rounded-inventory-conflict",
+      "mathematicalPressureMinusLimitPa": "0.000000000704166454343441110405502998454295512867561085419373775327384",
+      "referenceSource": "../browser_eos_b5b/evidence/seven-case-analysis.json",
+      "referenceSHA256": "3ecb954a012d31df41edabb22363a0b3c487fad168fabb622d75cced24847915",
+      "canonical": {
+        "p": 1.862645149230957e-09,
+        "h": 2.3283064365386963e-10,
+        "T": 5.684341886080802e-14
+      },
+      "normalizedResiduals": {
+        "mass": 0,
+        "energy": 0
+      }
+    },
+    {
+      "browser": "webkit",
+      "key": "webkit-ledger-70",
+      "id": "diagnostic-quality-band-3500000.0-hf--9.9e-10",
+      "input": {
+        "values": {
+          "M": 0.31291914064008475,
+          "U_kJ": 218.14080372764926,
+          "V": 0.0006000000000000001,
+          "rho": 521.5319010668079,
+          "u": 697115.5656424091
+        },
+        "bits": {
+          "M": "3fd406de00d5dc96",
+          "U_kJ": "406b448176d1ad12",
+          "V": "3f43a92a30553262",
+          "rho": "40804c415558b52e",
+          "u": "41254637219be1c1"
+        }
+      },
+      "raw": {
+        "values": {
+          "p": 3500000.0000007655,
+          "T": 345.5636734341365,
+          "h": 703826.564514849,
+          "s": 2625.843410443606,
+          "rho": 521.5319010668079,
+          "u": 697115.5656424091,
+          "Q": 10000
+        },
+        "bits": {
+          "p": "414ab3f00000066c",
+          "T": "40759904ce6f53d8",
+          "h": "41257aa52108171d",
+          "s": "40a483afd37e60c9",
+          "rho": "40804c415558b52e",
+          "u": "41254637219be1c1",
+          "Q": "40c3880000000000"
+        }
+      },
+      "runtimeReason": "boundary-unresolved",
+      "refused": true,
+      "physicalDomainProof": false,
+      "independentMechanism": "rounded-inventory-conflict",
+      "mathematicalPressureMinusLimitPa": "0.000000772409866695395094658273211235298504854822571097945274123047",
+      "referenceSource": "../browser_eos_b5b/evidence/seven-case-analysis.json",
+      "referenceSHA256": "3ecb954a012d31df41edabb22363a0b3c487fad168fabb622d75cced24847915",
+      "canonical": {
+        "p": 7.655471563339233e-07,
+        "h": 1.5133991837501526e-09,
+        "T": 5.684341886080801e-13
+      },
+      "normalizedResiduals": {
+        "mass": 0,
+        "energy": 0
+      }
+    },
+    {
+      "browser": "webkit",
+      "key": "webkit-ledger-75",
+      "id": "diagnostic-quality-band-3500000.0-hg-9.9e-10",
+      "input": {
+        "values": {
+          "M": 0.016830826440605712,
+          "U_kJ": 25.30175230435519,
+          "V": 0.0006000000000000001,
+          "rho": 28.051377401009518,
+          "u": 1503298.2719917244
+        },
+        "bits": {
+          "M": "3f913c19a4821a58",
+          "U_kJ": "40394d3fa396b2bc",
+          "V": "3f43a92a30553262",
+          "rho": "403c0d2711c116e0",
+          "u": "4136f04245a13fe9"
+        }
+      },
+      "raw": {
+        "values": {
+          "p": 3500000.0000000014,
+          "T": 345.5636737880446,
+          "h": 1628069.3286840797,
+          "s": 5300.438093797978,
+          "rho": 28.051377401009518,
+          "u": 1503298.2719917248,
+          "Q": 10000
+        },
+        "bits": {
+          "p": "414ab3f000000003",
+          "T": "40759904cece5439",
+          "h": "4138d7a55424a3cd",
+          "s": "40b4b47026ea46e5",
+          "rho": "403c0d2711c116e0",
+          "u": "4136f04245a13feb",
+          "Q": "40c3880000000000"
+        }
+      },
+      "runtimeReason": "boundary-unresolved",
+      "refused": true,
+      "physicalDomainProof": false,
+      "independentMechanism": "numerical-wrong-side",
+      "mathematicalPressureMinusLimitPa": "-0.000000000824286338427787709121800935967250517158294158102642847146783",
+      "referenceSource": "../browser_eos_b5b/evidence/seven-case-analysis.json",
+      "referenceSHA256": "3ecb954a012d31df41edabb22363a0b3c487fad168fabb622d75cced24847915",
+      "canonical": {
+        "p": 1.3969838619232178e-09,
+        "h": 4.656612873077393e-10,
+        "T": 5.684341886080802e-14
+      },
+      "normalizedResiduals": {
+        "mass": 0,
+        "energy": 3.09759743614142e-16
+      }
+    },
+    {
+      "browser": "webkit",
+      "key": "webkit-ledger-79",
+      "id": "focused-3500000.0-stable-vapor",
+      "input": {
+        "values": {
+          "M": 0.016532896796156812,
+          "U_kJ": 24.982031140956146,
+          "V": 0.0006000000000000001,
+          "rho": 27.554827993594685,
+          "u": 1511049.8449832092
+        },
+        "bits": {
+          "M": "3f90edffec30c7ac",
+          "U_kJ": "4038fb6664920f6a",
+          "V": "3f43a92a30553262",
+          "rho": "403b8e09351764fc",
+          "u": "41370e89d850d1d1"
+        }
+      },
+      "raw": {
+        "values": {
+          "p": 3500000.000000002,
+          "T": 347.66773880290907,
+          "h": 1638069.3277690795,
+          "s": 5329.289153606194,
+          "rho": 27.554827993594685,
+          "u": 1511049.8449832096,
+          "Q": 10000
+        },
+        "bits": {
+          "p": "414ab3f000000004",
+          "T": "4075baaf0ee20c3c",
+          "h": "4138feb553e8aca5",
+          "s": "40b4d14a05f88220",
+          "rho": "403b8e09351764fc",
+          "u": "41370e89d850d1d3",
+          "Q": "40c3880000000000"
+        }
+      },
+      "runtimeReason": "boundary-unresolved",
+      "refused": true,
+      "physicalDomainProof": false,
+      "independentMechanism": "rounded-inventory-conflict",
+      "mathematicalPressureMinusLimitPa": "0.00000000179967963168573029233701443050030584824610823477863884564216",
+      "referenceSource": "../browser_eos_b5b/evidence/seven-case-analysis.json",
+      "referenceSHA256": "3ecb954a012d31df41edabb22363a0b3c487fad168fabb622d75cced24847915",
+      "canonical": {
+        "p": 1.862645149230957e-09,
+        "h": 6.984919309616089e-10,
+        "T": 1.1368683772161603e-13
+      },
+      "normalizedResiduals": {
+        "mass": 0,
+        "energy": 3.0817069923521534e-16
+      }
+    }
+  ],
+  "mechanismAttribution": "Offline mathematical evidence joined only by report; no fixture identities or pressure gaps enter runtime classifier.",
+  "numericalPressureEnclosure": false
+}

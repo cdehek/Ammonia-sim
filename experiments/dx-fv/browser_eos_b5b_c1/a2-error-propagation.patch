@@ -1,0 +1,176 @@
+--- a/coupled-implicit.cjs
++++ b/coupled-implicit.cjs
+@@ -1,6 +1,7 @@
+ 'use strict';
+ // Separate from the historical alternating-PH Newton implementation.
+ const {solveLinear} = require('./implicit.cjs');
++const {propertyFailure,describe}=require('./failure-contract.cjs');
+ const norm = r => Math.max(...r.map(Math.abs));
+ const region = s => s.x === null ? (s.phase.includes('liquid') ? 'liquid' : 'vapor') : 'mixture';
+ 
+@@ -57,7 +58,7 @@
+             } catch (cause) {
+               if(recorded)work.diagnostics.push({type:'derivative',solveId,iteration,column:k,kind:variable.kind,epsilon,step,shrink,
+                 originalCoordinate:x[k],perturbedCoordinate:probe[k],actualPerturbation:probe[k]-x[k],
+-                outcome:'probe-failed',message:cause.message,faultKind:cause.faultKind||'solver'});
++                outcome:'probe-failed',message:cause.message,faultKind:cause.faultKind||'solver',failure:describe(cause)});
+               lastCause = cause;
+             }
+           }
+@@ -67,7 +68,7 @@
+       }
+       work.linearSolves++;
+       const delta = solveLinear(jacobian, value.residual.map(r => -r));
+-      let accepted = false, lastDomain = null;
++      let accepted = false, lastDomain = null, lastProperty = null;
+       for (let factor = 1; factor >= 2**-28; factor /= 2) {
+         try {
+           const nextX = x.map((v,k) => v+factor*delta[k]), next = counted(nextX);
+@@ -75,19 +76,21 @@
+           if(recorded)work.diagnostics.push({type:'line-search',solveId,iteration,factor,previousError:error,nextError,outcome:nextError<error?'accepted':'not-reduced'});
+           if (nextError < error) { x = nextX; value = next; accepted = true; break; }
+         } catch (cause) {
+-          if(recorded)work.diagnostics.push({type:'line-search',solveId,iteration,factor,previousError:error,outcome:'probe-failed',message:cause.message,faultKind:cause.faultKind||'solver'});
++          if(recorded)work.diagnostics.push({type:'line-search',solveId,iteration,factor,previousError:error,outcome:'probe-failed',message:cause.message,faultKind:cause.faultKind||'solver',failure:describe(cause)});
+           if (cause.faultKind === 'domain') lastDomain = cause;
++          if (propertyFailure(cause)) lastProperty = cause;
+         }
+       }
+       if (!accepted) throw Object.assign(Error('Coupled line search did not reduce the conservative residual.'), {
+         faultKind:'solver', nonlinearResidual:error,
+-        domainCause:lastDomain ? {message:lastDomain.message,evidence:lastDomain.evidence} : null
++        domainCause:lastDomain ? {message:lastDomain.message,evidence:lastDomain.evidence} : null,
++        propertyCause:lastProperty?describe(lastProperty):null
+       });
+     }
+     throw Object.assign(Error('Coupled nonlinear iteration budget exhausted.'), {faultKind:'solver',nonlinearResidual:norm(value.residual)});
+   } catch(cause) {
+     if(recorded)work.diagnostics.push({type:'solve-failed',solveId,message:cause.message,faultKind:cause.faultKind||'solver',
+-      nonlinearResidual:cause.nonlinearResidual??null,lastIteration,context:work.diagnosticContext});
++      nonlinearResidual:cause.nonlinearResidual??null,failure:describe(cause),lastIteration,context:work.diagnosticContext});
+     throw cause;
+   }
+ }
+--- a/coupled-model.cjs
++++ b/coupled-model.cjs
+@@ -8,6 +8,7 @@
+ const {normalize:normalizeThermal, ANCHOR_K} = require('./thermal-network.cjs');
+ const Time = require('./time-control.cjs');
+ const {coupledNewton} = require('./coupled-implicit.cjs');
++const {propertyFailure,describe}=require('./failure-contract.cjs');
+ const clone = x => JSON.parse(JSON.stringify(x));
+ const sum = a => a.reduce((s,v) => s+v,0);
+ const positive = (v,label) => { if (!Number.isFinite(v) || v<=0) throw Error(`Positive ${label} required.`); };
+@@ -230,7 +231,8 @@
+     s.boundaryEvents.push({seconds:s.seconds,scheduled,patch:clone(patch)});
+   }
+   function domainEvidence(s,dt,cause) {
+-    const evidence={originalCause:cause.message,nonlinearResidual:cause.nonlinearResidual??null,trial:cause.evidence||cause.domainCause?.evidence||null,confirmed:false};
++    const evidence={originalCause:cause.message,nonlinearResidual:cause.nonlinearResidual??null,trial:cause.evidence||cause.domainCause?.evidence||null,propertyCause:cause.propertyCause||null,confirmed:false};
++    try{
+     // An exact boundary with an outward derivative already establishes that
+     // no positive interval is supported. Recheck that proof at the accepted
+     // state independently of the retry floor; arbitrary PH probes do not qualify.
+@@ -254,9 +256,10 @@
+     evidence.refrigerantDirection=[];
+     s.cells.forEach((c,i)=>{
+       try { recover({...c,massKg:c.massKg+dt*r.fluidRates[i].massKgS,internalEnergyKJ:c.internalEnergyKJ+dt*r.fluidRates[i].energyKW},i); }
+-      catch (e) { evidence.refrigerantDirection.push({section:i,kind:e.faultKind||'solver',message:e.message});if(e.faultKind==='domain'){evidence.confirmed=true;evidence.source='refrigerant';evidence.section=i;} }
++      catch (e) { evidence.refrigerantDirection.push({section:i,kind:e.faultKind||'solver',message:e.message,failure:describe(e)});if(e.faultKind==='domain'&&!propertyFailure(e)){evidence.confirmed=true;evidence.source='refrigerant';evidence.section=i;} }
+     });
+     return evidence;
++    }catch(error){return {...evidence,evidenceGatheringFailure:describe(error)};}
+   }
+   function advance(s,duration) {
+     positive(duration,'advance duration');if(s.stop)return record(s);
+@@ -281,15 +284,15 @@
+           if(error>1)reason='accuracy';else if(crossings.length&&dt/2>settings.eventStepSeconds)reason='event';
+         }
+       } catch(cause) {
+-        diagnosticFailure={kind:cause.faultKind||'solver',message:cause.message};
++        diagnosticFailure={kind:cause.faultKind||'solver',...describe(cause)};
+         if(failureAware){
+           // Learn only actual Newton nonconvergence without a domain-probe cause.
+           // Recovery/property/other errors retain their original retry/stop rules.
+-          if(cause.faultKind==='solver'&&Number.isFinite(cause.nonlinearResidual)&&!cause.domainCause)noteNonlinearFailure(s.growthHistory,dt);
++          if(cause.faultKind==='solver'&&Number.isFinite(cause.nonlinearResidual)&&!cause.domainCause&&!propertyFailure(cause))noteNonlinearFailure(s.growthHistory,dt);
+           else resetGrowth(s.growthHistory,cause.faultKind==='domain'||cause.domainCause?'domain-rejection':'other-failure');
+         }
+         s.rejectedSteps++;if(cause.faultKind==='domain'||cause.domainCause)s.domainRejectedSteps++;
+-        if(settings.trace)s.rejectionTrace.push({seconds:s.seconds,trialSeconds:dt,kind:cause.faultKind||'solver',message:cause.message,nonlinearResidual:cause.nonlinearResidual??null,evidence:clone(cause.evidence||cause.domainCause||{})});
++        if(settings.trace)s.rejectionTrace.push({seconds:s.seconds,trialSeconds:dt,kind:cause.faultKind||'solver',message:cause.message,nonlinearResidual:cause.nonlinearResidual??null,evidence:clone(cause.evidence||cause.domainCause||{}),propertyCause:clone(cause.propertyCause||null)});
+         const next=dt/2;
+         if(next<settings.minStep||s.seconds+next===s.seconds){
+           const evidence=domainEvidence(s,dt,cause);
+@@ -332,6 +335,7 @@
+   }
+   function update(s,patch) {if(s.stop)throw Error('Stopped coupled state is frozen.');applyBoundary(s,patch,false);return record(s);}
+   function record(s) {
++    try{
+     const sections=s.cells.map(recover),t=temperatures(s.spec,s.energies,'record'),initial=C.totals(s.initialCells),totals=C.totals(s.cells),q=sum(s.ledger.tubeRefrigerantKJ);
+     const massResidualKg=totals.massKg-initial.massKg-s.ledger.boundaryMassKg;
+     const refrigerantEnergyResidualKJ=totals.internalEnergyKJ-initial.internalEnergyKJ-s.ledger.boundaryEnthalpyKJ-q;
+@@ -343,7 +347,7 @@
+     const current=evaluate(s.spec,s.cells.map(coordinates),s.energies),last=sections.at(-1),diagnostic=v=>({p:v.p,h:v.h,temperatureK:v.T+273.15,phase:v.phase,quality:v.x,wet:v.wet,superheatK:v.superheatK});
+     let outlet;
+     try {outlet={supported:true,...diagnostic(thermo.ph(s.spec.fluid.outlet.p,current.faces.at(-1).massKgS>=0?last.h:s.spec.fluid.outlet.h))};}
+-    catch(cause){outlet={supported:false,message:cause.message};}
++    catch(cause){outlet={supported:false,...describe(cause)};}
+     return clone({model:s.model,seconds:s.seconds,sectionCount:5,sections,nodes,terminal:diagnostic(last),outlet,totals,sectionResiduals,
+       massResidualKg,refrigerantEnergyResidualKJ,thermalEnergyResidualKJ,combinedEnergyResidualKJ:refrigerantEnergyResidualKJ+thermalEnergyResidualKJ,
+       ledger:s.ledger,fluxes:current,settings,conductancesKWK:s.spec.conductancesKWK,conductanceDescription:s.spec.conductanceDescription,
+@@ -352,6 +356,7 @@
+       minAcceptedStepSeconds:s.minAcceptedStepSeconds,maxAcceptedStepSeconds:s.maxAcceptedStepSeconds,lastTimeError:s.lastTimeError,lastResidual:s.lastResidual,
+       events:s.events,boundaryEvents:s.boundaryEvents,trace:s.trace,rejectionTrace:s.rejectionTrace,stop:s.stop,
+       ...(failureAware?{growthHistory:s.growthHistory}: {})});
++    }catch(error){error.recordFailure={seconds:s.seconds,retainedStop:clone(s.stop),propertyStatesReturned:false};throw error;}
+   }
+   return {create,trial,advance,update,record,settings};
+ }
+--- a/thermodynamics.cjs
++++ b/thermodynamics.cjs
+@@ -1,18 +1,22 @@
+ 'use strict';
+ const {inventory}=require('./conservation.cjs');
++const {classify}=require('./failure-contract.cjs');
+ function createThermodynamics(engine){
+  function ph(p,h){
+-  if(!Number.isFinite(p)||p<.3||p>35||!Number.isFinite(h)){const error=Error('Thermodynamic state outside the bounded property domain.');error.faultKind='domain';throw error;}
++  if(!Number.isFinite(p)||p<.3||p>35||!Number.isFinite(h))throw classify(Error('Thermodynamic state outside the bounded property domain.'),'ph','requested-coordinate',true,{p,h});
+   let state,sat;try{state=engine.ph(p,h);sat=engine.sat(p);}catch(error){
+    if(error.message.includes('Compressor discharge exceeds'))error.message='Section enthalpy exceeds the bounded property table (250 K superheat).';
+-   error.faultKind=error.faultKind||'domain';throw error;
++   // Preserve typed input refusal; unknown property exceptions are numerical.
++   if(!error.evidence?.propertyFailure)classify(error,'ph','requested-coordinate',false,{p,h});throw error;
+   }
+   return {...state,superheatK:Math.max(0,state.T-sat.T),wet:state.x!==null?state.x<1:state.phase.includes('liquid')};
+  }
+  function initialize(p,h,volumeM3){return {...inventory(ph(p,h),volumeM3),volumeM3,pressureGuess:p};}
+  function recover(cell){
++  try{
+   const state=engine.stateMVU(cell.massKg,cell.volumeM3,cell.internalEnergyKJ,cell.pressureGuess);
+   return {...state,superheatK:Math.max(0,state.T-engine.sat(state.p).T),wet:state.x!==null?state.x<1:state.phase.includes('liquid')};
++  }catch(error){throw classify(error,'recover','fixed-inventory',false,cell);}
+  }
+  return {ph,initialize,recover};
+ }
+--- /dev/null
++++ b/failure-contract.cjs
+@@ -0,0 +1,17 @@
++'use strict';
++// Diagnostic envelope only. No property result and no physical proof factory.
++const propertyFailure=e=>e?.evidence?.propertyFailure||e?.propertyCause?.evidence?.propertyFailure||e?.domainCause?.evidence?.propertyFailure;
++const describe=e=>({message:e.message||String(e),faultKind:e.faultKind||'solver',evidence:e.evidence||null,
++  propertyCause:e.propertyCause||null,domainCause:e.domainCause||null});
++const bits=x=>{const d=new DataView(new ArrayBuffer(8));d.setFloat64(0,x);return d.getBigUint64(0).toString(16).padStart(16,'0');};
++const pack=x=>({values:x,bits:Object.fromEntries(Object.entries(x).filter(([,v])=>typeof v==='number').map(([k,v])=>[k,bits(v)]))});
++function classify(e,operation,inputScope='requested-coordinate',explicit=false,input=null){
++ if(!propertyFailure(e))e.evidence={...e.evidence,propertyFailure:{schemaVersion:'C1/1',operation,inputScope,
++  input:input?pack(input):null,
++  reason:explicit?'explicit-unsupported-input':'inverse-recovery-failure',physicalTrajectoryExit:'unproved',
++  rawRecovery:'unknown',originalError:{message:e.message,faultKind:e.faultKind||null},numericalPressureEnclosure:false}};
++ if(inputScope==='fixed-inventory')e.evidence={...e.evidence,recoveryContext:{operation,input:input?pack(input):null}};
++ e.faultKind=explicit?'domain':'solver';
++ return e;
++}
++module.exports={propertyFailure,describe,classify};

@@ -31,5 +31,11 @@ if '--start' not in sys.argv:
     assert not drift,drift
     assert set(after)-set(before)<={TARGET}
     out.update(changes=changed,protectedRefDrift=drift,protectedRefsChecked=len(before))
+    initial=json.loads((E/'checkpoint.json').read_text())
+    localBefore={line.split()[1]:line.split()[0] for line in initial['localRefs'].splitlines()}
+    localAfter={line.split()[1]:line.split()[0] for line in git('show-ref').splitlines()}
+    localDrift={k:[v,localAfter.get(k)] for k,v in localBefore.items() if k!=TARGET and localAfter.get(k)!=v}
+    assert not localDrift,localDrift
+    out.update(protectedLocalRefDrift=localDrift,preimplementationDecisionCommit='95f7881')
 write('start-audit.json' if '--start' in sys.argv else 'final-preservation.json',out)
 print('preserved',len(start),'files;',len(prior['artifacts']),'artifact identities;',len(prior['acceptedA2']),'accepted A2 dependencies')
