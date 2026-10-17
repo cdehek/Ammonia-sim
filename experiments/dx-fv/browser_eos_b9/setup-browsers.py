@@ -1,0 +1,17 @@
+"""Local browser-only dependencies; no host install. Outer timeout 420s."""
+import hashlib,importlib.metadata,json,os,subprocess,sys,urllib.request
+from pathlib import Path
+B=Path(__file__).resolve().parent;W=Path('/workspace/b9-runtime');D=W/'debs';D.mkdir(parents=True,exist_ok=True)
+assert importlib.metadata.version('playwright')=='1.62.0','Use the recorded Playwright version in an isolated environment'
+pins=json.loads((B.parent/'browser_eos_b4a/evidence/provenance.json').read_text())['browserExtraDebs']
+for name,digest in pins.items():
+ folder='libm/libmanette' if name.startswith('libmanette') else 'h/hyphen' if name.startswith('libhyphen') else 'h/harfbuzz' if name.startswith('libharfbuzz') else 'libg/libglvnd'
+ p=D/name
+ if not p.exists():
+  with urllib.request.urlopen('https://deb.debian.org/debian/pool/main/'+folder+'/'+name,timeout=40) as response:p.write_bytes(response.read())
+ assert hashlib.sha256(p.read_bytes()).hexdigest()==digest
+ subprocess.run(['dpkg-deb','-x',str(p),str(W/'sysroot')],check=True,timeout=20)
+subprocess.run([sys.executable,'-m','playwright','install','chromium','webkit'],env=dict(os.environ,PLAYWRIGHT_BROWSERS_PATH=str(W/'browsers')),check=True,timeout=300)
+s=(B.parent/'browser_eos_b4c/evidence/webkit-launcher.sh').read_text().replace('/workspace/b4c-browsers',str(W/'browsers')).replace('/workspace/b4c-sysroot',str(W/'sysroot'))
+p=W/'webkit.sh';p.write_text(s);p.chmod(0o755)
+print('Browser setup complete; no host package change')

@@ -1,0 +1,107 @@
+{
+  "passed": true,
+  "engines": [
+    "chromium",
+    "webkit"
+  ],
+  "C1ExactRollbackAnd20Attempts": true,
+  "lifecycle": true,
+  "errorSequenceTiming": {
+    "chromium": {
+      "main": {
+        "sequenceMS": {
+          "n": 3,
+          "median": 417,
+          "p95": 425.4000000000233,
+          "max": 425.4000000000233,
+          "min": 375.80000000004657
+        },
+        "heartbeatMS": {
+          "n": 26,
+          "median": 10.0,
+          "p95": 391.89999999990687,
+          "max": 398.5999999999767,
+          "min": 1.099999999976717
+        },
+        "automationInputRoundtripMS": {
+          "n": 9,
+          "median": 5.162758999972539,
+          "p95": 354.8987510000643,
+          "max": 354.8987510000643,
+          "min": 3.1170479999218514
+        }
+      },
+      "worker": {
+        "sequenceMS": {
+          "n": 3,
+          "median": 427.60000000009313,
+          "p95": 520.2999999999302,
+          "max": 520.2999999999302,
+          "min": 426.0999999999767
+        },
+        "heartbeatMS": {
+          "n": 152,
+          "median": 10.0,
+          "p95": 16.70000000006985,
+          "max": 22.79999999993015,
+          "min": 1.900000000023283
+        },
+        "automationInputRoundtripMS": {
+          "n": 32,
+          "median": 2.8960449999999582,
+          "p95": 5.98701000001256,
+          "max": 8.092127999930199,
+          "min": 1.6531249999616193
+        }
+      }
+    },
+    "webkit": {
+      "main": {
+        "sequenceMS": {
+          "n": 3,
+          "median": 743,
+          "p95": 752,
+          "max": 752,
+          "min": 700
+        },
+        "heartbeatMS": {
+          "n": 22,
+          "median": 11.5,
+          "p95": 716,
+          "max": 731,
+          "min": 10
+        },
+        "automationInputRoundtripMS": {
+          "n": 7,
+          "median": 7.693060000065088,
+          "p95": 725.0686449999648,
+          "max": 725.0686449999648,
+          "min": 3.4982209999725455
+        }
+      },
+      "worker": {
+        "sequenceMS": {
+          "n": 3,
+          "median": 886,
+          "p95": 905,
+          "max": 905,
+          "min": 875
+        },
+        "heartbeatMS": {
+          "n": 205,
+          "median": 12,
+          "p95": 26,
+          "max": 40,
+          "min": 10
+        },
+        "automationInputRoundtripMS": {
+          "n": 49,
+          "median": 6.232919000012771,
+          "p95": 29.8512289999735,
+          "max": 38.41824899996027,
+          "min": 1.6704640000853033
+        }
+      }
+    }
+  }
+}

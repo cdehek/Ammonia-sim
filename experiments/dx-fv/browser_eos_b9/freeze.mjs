@@ -1,0 +1,3 @@
+import {loader} from './accepted-bundle.mjs';import {exact} from './values.mjs';import {writeFileSync} from 'node:fs';
+const load=loader(),engine=load('engine.js').createEngine(load('properties.json'));
+writeFileSync(new URL('./evidence/frozen-fixtures.json',import.meta.url),JSON.stringify({predeclaredInCommit:'81e43e4',fixtures:Object.fromEntries(['cold','warm'].map(k=>[k,{values:load('coupled-fixtures.cjs').fixture(k),exact:exact(load('coupled-fixtures.cjs').fixture(k))}])),settings:load('coupled-model.cjs').createCoupledModel(engine,{trace:true,timestepGrowth:'failure-aware'}).settings,times:[0,.0001,.0005,.001],durations:[.0001,.0004,.0005],balancedOrder:[['main','worker'],['worker','main'],['main','worker']]},null,2)+'\n');

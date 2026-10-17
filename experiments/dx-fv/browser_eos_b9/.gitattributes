@@ -1,0 +1,3 @@
+# Preserve actual tool logs and standard CSV CRLF without whitespace rewrites.
+evidence/*.log whitespace=-blank-at-eol
+milestone-status.csv whitespace=cr-at-eol

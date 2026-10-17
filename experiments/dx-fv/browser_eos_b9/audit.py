@@ -16,7 +16,7 @@ def main():
  if '--start' in sys.argv:
   assert git('rev-parse','HEAD')==START
   write('starting-files-sha256.json',{n:sha((R/n).read_bytes()) for n in git('ls-tree','-r','--name-only',START).splitlines()})
-  write('checkpoint.json',dict(start=START,tree=git('rev-parse',START+'^{tree}'),branch=BRANCH,initialClean=True,observation='Clone clean; detached exact B7; empty porcelain before switch -c. Sandbox network clone failure retained in execution notes.'))
+  write('checkpoint.json',dict(start=START,tree=git('rev-parse',START+'^{tree}'),branch=BRANCH,initialClean=True,observation='Clone clean; detached exact B8; empty porcelain before switch -c. Sandbox network clone failure retained in execution notes.'))
  starting=read(E/'starting-files-sha256.json')
  assert all(sha((R/n).read_bytes())==h for n,h in starting.items())
  spec=importlib.util.spec_from_file_location('old',X/'browser_eos_b5b/audit.py');m=importlib.util.module_from_spec(spec);spec.loader.exec_module(m);prior=m.verify()
@@ -39,13 +39,13 @@ def main():
   snapshot=R/n if '/' not in n else X/'browser_eos_backend/accepted'/Path(n).name
   assert raw==snapshot.read_bytes();accepted[n]=dict(sha256=sha(raw),snapshot=str(snapshot.relative_to(R)),rootMatches=(R/n).read_bytes()==raw)
  canonical={}
- for label,ref in [('B5A','research/browser-eos-b5a-du-saturation-repair-20261016'),('GateB','research/browser-eos-b5a-gate-b-feasibility-20261016'),('C1','research/browser-eos-b5b-c1-failclosed-propagation-20261016'),('C2','research/browser-eos-b5b-c2-inventory-certification-feasibility-20261016'),('P1','research/browser-eos-b5b-c2-p1-phase-certification-20261016'),('B6','research/browser-eos-b6-rejected-pt-loader-repair-20261016'),('B7','research/browser-eos-b7-gatea-wasm-qualification-20261017'),('UI','feature/operator-workstation-bottom-panel-20261014')]:
+ for label,ref in [('B5A','research/browser-eos-b5a-du-saturation-repair-20261016'),('GateB','research/browser-eos-b5a-gate-b-feasibility-20261016'),('C1','research/browser-eos-b5b-c1-failclosed-propagation-20261016'),('C2','research/browser-eos-b5b-c2-inventory-certification-feasibility-20261016'),('P1','research/browser-eos-b5b-c2-p1-phase-certification-20261016'),('B6','research/browser-eos-b6-rejected-pt-loader-repair-20261016'),('B7','research/browser-eos-b7-gatea-wasm-qualification-20261017'),('B8','research/browser-eos-b8-blocker-disposition-20261017'),('UI','feature/operator-workstation-bottom-panel-20261014')]:
   canonical[label]=git('rev-parse','refs/remotes/origin/'+ref);git('cat-file','-e',canonical[label]+'^{commit}')
  assert canonical['C2']=='7c75d9538d57080a01dffbf7e06128a27e2b9ccd'
- expected={'B5A':'cc2ec6b54d40cabea93fa761d10a2ecab59def25','GateB':'14b8b386148c687fcb549d5f17003fa9e63fbca8','C1':'7809d08be67eab7cb9b537b1c1199b456b2da122','C2':'7c75d9538d57080a01dffbf7e06128a27e2b9ccd','P1':'75e015fd3455e75fa85074e8748bc01eb8973624','B6':'f6227de0760d81994c60497869f5c6013a9d403f','B7':'429ce020128763454324529cc1c7640cf1f474e8','UI':'262b6092b2ed694073ad9ffd41265f44dd0b6ca0'}
+ expected={'B5A':'cc2ec6b54d40cabea93fa761d10a2ecab59def25','GateB':'14b8b386148c687fcb549d5f17003fa9e63fbca8','C1':'7809d08be67eab7cb9b537b1c1199b456b2da122','C2':'7c75d9538d57080a01dffbf7e06128a27e2b9ccd','P1':'75e015fd3455e75fa85074e8748bc01eb8973624','B6':'f6227de0760d81994c60497869f5c6013a9d403f','B7':'429ce020128763454324529cc1c7640cf1f474e8','B8':START,'UI':'262b6092b2ed694073ad9ffd41265f44dd0b6ca0'}
  assert canonical==expected
  prBefore=read(E/'pr3-before.json');prAfter=read(E/'pr3-prepush.json') if '--final' in sys.argv else prBefore
- for key in ['base_sha','head_sha','merge_commit_sha','state','merged']:assert prBefore[key]==prAfter[key]
+ for key in ['base_sha','head_sha','merge_commit_sha','state','merged','title','body','base','head','draft','updated_at','commits','changed_files','additions','deletions']:assert prBefore[key]==prAfter[key]
  assert prBefore['base_sha']=='0473d32f62db992fde0f581d116e1bd0c8e7d8ed' and prBefore['head_sha']=='d4422425750a1d3c4e432cc103ac42ead40b7cc6' and prBefore['merge_commit_sha']=='f440560fccfa45421ec2bf679bac32df10df63ae' and not prBefore['merged']
  before=dict(line.split()[::-1] for line in (E/'remote-before.tsv').read_text().splitlines())
  refpath=E/('remote-prepush.tsv' if '--final' in sys.argv else 'remote-before.tsv')

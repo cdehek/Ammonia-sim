@@ -1,0 +1,66 @@
+{
+  "chromium": {
+    "passed": true,
+    "exactMainWorkerSubset": true,
+    "qualification": "EXPERIMENTAL COOLPROP \u2014 NOT SCIENTIFICALLY QUALIFIED as complete backend",
+    "memoryBytes": [
+      56360960,
+      56360960
+    ],
+    "tests": [
+      {
+        "fullVLE": false,
+        "tests": [
+          "supported-PH-DU-saturation-coexistence",
+          "historical-35bar-C1-refusal",
+          "actual-native-PT-error-supported-followup",
+          "C1-actual-PT-dispatch-injection"
+        ]
+      },
+      {
+        "fullVLE": true,
+        "tests": [
+          "supported-PH-DU-saturation-coexistence",
+          "qualified-Gate-A-liquid",
+          "qualified-Gate-A-liquid",
+          "qualified-Gate-A-liquid",
+          "unresolved-endpoint",
+          "actual-native-PT-error-supported-followup",
+          "C1-actual-PT-dispatch-injection"
+        ]
+      }
+    ]
+  },
+  "webkit": {
+    "passed": true,
+    "exactMainWorkerSubset": true,
+    "qualification": "EXPERIMENTAL COOLPROP \u2014 NOT SCIENTIFICALLY QUALIFIED as complete backend",
+    "memoryBytes": [
+      56360960,
+      56360960
+    ],
+    "tests": [
+      {
+        "fullVLE": false,
+        "tests": [
+          "supported-PH-DU-saturation-coexistence",
+          "historical-35bar-C1-refusal",
+          "actual-native-PT-error-supported-followup",
+          "C1-actual-PT-dispatch-injection"
+        ]
+      },
+      {
+        "fullVLE": true,
+        "tests": [
+          "supported-PH-DU-saturation-coexistence",
+          "qualified-Gate-A-liquid",
+          "qualified-Gate-A-liquid",
+          "qualified-Gate-A-liquid",
+          "unresolved-endpoint",
+          "actual-native-PT-error-supported-followup",
+          "C1-actual-PT-dispatch-injection"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,1498 @@
+{
+  "chromium": {
+    "main": {
+      "fixtures": {
+        "cold": {
+          "advanceMS": {
+            "n": 18,
+            "median": 36.15000000002328,
+            "p95": 60.9000000001397,
+            "max": 60.9000000001397,
+            "min": 14.199999999953434
+          },
+          "throughputSimulatedSecondsPerWallSecond": {
+            "n": 6,
+            "median": 0.009519466041220765,
+            "p95": 0.011534025374831045,
+            "max": 0.011534025374831045,
+            "min": 0.008176614881435972
+          },
+          "requestedWorkPerRunSeconds": 0.001,
+          "recordMS": {
+            "n": 18,
+            "median": 0.19999999995343387,
+            "p95": 0.20000000018626451,
+            "max": 0.20000000018626451,
+            "min": 0.09999999986030161
+          },
+          "propertyCounts": [
+            {
+              "ph": 8476,
+              "sat": 9261,
+              "stateMVU": 445
+            },
+            {
+              "ph": 8476,
+              "sat": 9261,
+              "stateMVU": 445
+            },
+            {
+              "ph": 8476,
+              "sat": 9261,
+              "stateMVU": 445
+            },
+            {
+              "ph": 8476,
+              "sat": 9261,
+              "stateMVU": 445
+            },
+            {
+              "ph": 8476,
+              "sat": 9261,
+              "stateMVU": 445
+            },
+            {
+              "ph": 8476,
+              "sat": 9261,
+              "stateMVU": 445
+            }
+          ]
+        },
+        "warm": {
+          "advanceMS": {
+            "n": 18,
+            "median": 76.15000000002328,
+            "p95": 156.80000000004657,
+            "max": 156.80000000004657,
+            "min": 55.299999999813735
+          },
+          "throughputSimulatedSecondsPerWallSecond": {
+            "n": 6,
+            "median": 0.003943615817948623,
+            "p95": 0.004260758414994488,
+            "max": 0.004260758414994488,
+            "min": 0.00325945241199429
+          },
+          "requestedWorkPerRunSeconds": 0.001,
+          "recordMS": {
+            "n": 18,
+            "median": 0.19999999995343387,
+            "p95": 0.30000000004656613,
+            "max": 0.30000000004656613,
+            "min": 0.09999999986030161
+          },
+          "propertyCounts": [
+            {
+              "ph": 22072,
+              "sat": 23752,
+              "stateMVU": 940
+            },
+            {
+              "ph": 22072,
+              "sat": 23752,
+              "stateMVU": 940
+            },
+            {
+              "ph": 22072,
+              "sat": 23752,
+              "stateMVU": 940
+            },
+            {
+              "ph": 22072,
+              "sat": 23752,
+              "stateMVU": 940
+            },
+            {
+              "ph": 22072,
+              "sat": 23752,
+              "stateMVU": 940
+            },
+            {
+              "ph": 22072,
+              "sat": 23752,
+              "stateMVU": 940
+            }
+          ]
+        }
+      },
+      "initializationRoundtripMS": {
+        "cold-session": {
+          "n": 6,
+          "median": 21.600000000093132,
+          "p95": 37.10000000009313,
+          "max": 37.10000000009313,
+          "min": 7.199999999953434
+        },
+        "warm-restart": {
+          "n": 6,
+          "median": 5.300000000046566,
+          "p95": 7,
+          "max": 7,
+          "min": 4.100000000093132
+        }
+      },
+      "initializationComponentsMS": {
+        "importMS": {
+          "n": 12,
+          "median": 0.09999999997671694,
+          "p95": 19.199999999953434,
+          "max": 19.199999999953434,
+          "min": 0
+        },
+        "factoryMS": {
+          "n": 12,
+          "median": 3.300000000046566,
+          "p95": 12.400000000139698,
+          "max": 12.400000000139698,
+          "min": 3.199999999953434
+        },
+        "constructionMS": {
+          "n": 12,
+          "median": 1.849999999976717,
+          "p95": 6.199999999953434,
+          "max": 6.199999999953434,
+          "min": 0.30000000004656613
+        },
+        "firstRenderMS": {
+          "n": 12,
+          "median": 0.04999999993015081,
+          "p95": 0.10000000009313226,
+          "max": 0.10000000009313226,
+          "min": 0
+        },
+        "firstRenderableMS": {
+          "n": 12,
+          "median": 7.200000000069849,
+          "p95": 37.300000000046566,
+          "max": 37.300000000046566,
+          "min": 4.100000000093132
+        }
+      },
+      "communicationMS": {
+        "postMS": {
+          "n": 84,
+          "median": 0.0,
+          "p95": 0.10000000009313226,
+          "max": 0.10000000009313226,
+          "min": 0
+        },
+        "handlingMS": {
+          "n": 84,
+          "median": 0.0,
+          "p95": 0.09999999986030161,
+          "max": 0.10000000009313226,
+          "min": 0
+        },
+        "roundtripMS": {
+          "n": 84,
+          "median": 7.099999999976717,
+          "p95": 141,
+          "max": 191.9000000001397,
+          "min": 0.39999999990686774
+        },
+        "workerCreationMS": {
+          "n": 84,
+          "median": 0.0,
+          "p95": 0.10000000009313226,
+          "max": 0.10000000009313226,
+          "min": 0
+        },
+        "requestDispatchUpperBoundMS": null,
+        "queueUpperBoundMS": null,
+        "responseDispatchUpperBoundMS": null,
+        "previousWorkerPostMS": null,
+        "roundtripMinusServiceUpperBoundMS": {
+          "n": 84,
+          "median": 0.5,
+          "p95": 21.600000000093132,
+          "max": 23.699999999953434,
+          "min": 0.09999999986030161
+        }
+      },
+      "heartbeatByLargestOverlapMS": {
+        "initialization": {
+          "n": 41,
+          "median": 10.099999999860302,
+          "p95": 23.799999999813735,
+          "max": 29.800000000046566,
+          "min": 1
+        },
+        "physics": {
+          "n": 36,
+          "median": 82.84999999997672,
+          "p95": 196.10000000009313,
+          "max": 196.80000000004657,
+          "min": 25.699999999953434
+        },
+        "snapshot": null,
+        "render": {
+          "n": 102,
+          "median": 9.900000000139698,
+          "p95": 10.100000000093132,
+          "max": 11.100000000093132,
+          "min": 0.7000000001862645
+        },
+        "diagnostics": {
+          "n": 48,
+          "median": 10.0,
+          "p95": 83.5,
+          "max": 98.30000000004657,
+          "min": 0.6999999999534339
+        },
+        "idle": {
+          "n": 36,
+          "median": 10.0,
+          "p95": 10.200000000186265,
+          "max": 10.400000000139698,
+          "min": 9.699999999953434
+        }
+      },
+      "allHeartbeatMS": {
+        "n": 263,
+        "median": 10,
+        "p95": 94.39999999990687,
+        "max": 196.80000000004657,
+        "min": 0.6999999999534339
+      },
+      "frameGapMS": {
+        "n": 221,
+        "median": 16.69999999999999,
+        "p95": 83.30000000000018,
+        "max": 166.69999999999982,
+        "min": 16.499999999999986
+      },
+      "longTasks": [
+        {
+          "phase": "render",
+          "ms": 70,
+          "start": 158.10000000009313
+        },
+        {
+          "phase": "render",
+          "ms": 55,
+          "start": 626.1999999999534
+        },
+        {
+          "phase": "render",
+          "ms": 52,
+          "start": 711.5
+        },
+        {
+          "phase": "render",
+          "ms": 193,
+          "start": 1094.1999999999534
+        },
+        {
+          "phase": "render",
+          "ms": 108,
+          "start": 1317.3999999999069
+        },
+        {
+          "phase": "render",
+          "ms": 87,
+          "start": 1455.5
+        },
+        {
+          "phase": "diagnostics",
+          "ms": 73,
+          "start": 1573.1999999999534
+        },
+        {
+          "phase": "render",
+          "ms": 142,
+          "start": 1946.6999999999534
+        },
+        {
+          "phase": "render",
+          "ms": 96,
+          "start": 2118.899999999907
+        },
+        {
+          "phase": "render",
+          "ms": 78,
+          "start": 2245.1999999999534
+        },
+        {
+          "phase": "diagnostics",
+          "ms": 74,
+          "start": 2354
+        },
+        {
+          "phase": "render",
+          "ms": 76,
+          "start": 127.4000000001397
+        },
+        {
+          "phase": "render",
+          "ms": 54,
+          "start": 234.30000000004657
+        },
+        {
+          "phase": "render",
+          "ms": 61,
+          "start": 627.9000000001397
+        },
+        {
+          "phase": "render",
+          "ms": 50,
+          "start": 719.3000000000466
+        },
+        {
+          "phase": "render",
+          "ms": 187,
+          "start": 1087
+        },
+        {
+          "phase": "render",
+          "ms": 107,
+          "start": 1304
+        },
+        {
+          "phase": "render",
+          "ms": 81,
+          "start": 1441.4000000001397
+        },
+        {
+          "phase": "diagnostics",
+          "ms": 75,
+          "start": 1552.8000000000466
+        },
+        {
+          "phase": "render",
+          "ms": 138,
+          "start": 1940.5
+        },
+        {
+          "phase": "render",
+          "ms": 101,
+          "start": 2108.9000000001397
+        },
+        {
+          "phase": "render",
+          "ms": 78,
+          "start": 2240.4000000001397
+        },
+        {
+          "phase": "diagnostics",
+          "ms": 94,
+          "start": 2348.9000000001397
+        },
+        {
+          "phase": "render",
+          "ms": 72,
+          "start": 131.5
+        },
+        {
+          "phase": "render",
+          "ms": 50,
+          "start": 601.8000000000466
+        },
+        {
+          "phase": "render",
+          "ms": 171,
+          "start": 1037.6999999999534
+        },
+        {
+          "phase": "render",
+          "ms": 101,
+          "start": 1239.3000000000466
+        },
+        {
+          "phase": "render",
+          "ms": 79,
+          "start": 1370.6000000000931
+        },
+        {
+          "phase": "diagnostics",
+          "ms": 81,
+          "start": 1480.3999999999069
+        },
+        {
+          "phase": "render",
+          "ms": 142,
+          "start": 1855.6999999999534
+        },
+        {
+          "phase": "render",
+          "ms": 98,
+          "start": 2028.3000000000466
+        },
+        {
+          "phase": "render",
+          "ms": 76,
+          "start": 2156.600000000093
+        },
+        {
+          "phase": "diagnostics",
+          "ms": 90,
+          "start": 2262.600000000093
+        }
+      ],
+      "automationInputRoundtripMS": {
+        "n": 76,
+        "median": 43.29798449998634,
+        "p95": 176.5705610000623,
+        "max": 220.19632800015643,
+        "min": 1.4172839998991549
+      },
+      "browserInputTimestampLatencyMS": {
+        "n": 76,
+        "median": 40.550000000046566,
+        "p95": 170,
+        "max": 212.4000000001397,
+        "min": 0.19999999995343387
+      },
+      "renderMS": {
+        "n": 36,
+        "median": 0.04999999993015081,
+        "p95": 0.10000000009313226,
+        "max": 0.10000000009313226,
+        "min": 0
+      },
+      "recordJSONEstimateBytes": {
+        "n": 36,
+        "median": 10253.5,
+        "p95": 11909,
+        "max": 11909,
+        "min": 9496
+      },
+      "heapObservations": [
+        {
+          "used": 21700000,
+          "total": 31200000
+        },
+        {
+          "used": 21700000,
+          "total": 31200000
+        },
+        {
+          "used": 21700000,
+          "total": 31200000
+        },
+        {
+          "used": 21700000,
+          "total": 31200000
+        },
+        {
+          "used": 17100000,
+          "total": 31200000
+        },
+        {
+          "used": 17100000,
+          "total": 31200000
+        },
+        {
+          "used": 17100000,
+          "total": 31200000
+        },
+        {
+          "used": 17100000,
+          "total": 31200000
+        },
+        {
+          "used": 21700000,
+          "total": 31200000
+        },
+        {
+          "used": 21700000,
+          "total": 31200000
+        },
+        {
+          "used": 21700000,
+          "total": 31200000
+        },
+        {
+          "used": 21700000,
+          "total": 31200000
+        }
+      ],
+      "scientificBaselineVerified": true
+    },
+    "worker": {
+      "fixtures": {
+        "cold": {
+          "advanceMS": {
+            "n": 18,
+            "median": 36.65000000002328,
+            "p95": 64,
+            "max": 64,
+            "min": 19.600000000093132
+          },
+          "throughputSimulatedSecondsPerWallSecond": {
+            "n": 6,
+            "median": 0.008595914447196096,
+            "p95": 0.009267840593149798,
+            "max": 0.009267840593149798,
+            "min": 0.0076045627376425855
+          },
+          "requestedWorkPerRunSeconds": 0.001,
+          "recordMS": {
+            "n": 18,
+            "median": 0.19999999995343387,
+            "p95": 0.4000000001396984,
+            "max": 0.4000000001396984,
+            "min": 0.09999999986030161
+          },
+          "propertyCounts": [
+            {
+              "ph": 8476,
+              "sat": 9261,
+              "stateMVU": 445
+            },
+            {
+              "ph": 8476,
+              "sat": 9261,
+              "stateMVU": 445
+            },
+            {
+              "ph": 8476,
+              "sat": 9261,
+              "stateMVU": 445
+            },
+            {
+              "ph": 8476,
+              "sat": 9261,
+              "stateMVU": 445
+            },
+            {
+              "ph": 8476,
+              "sat": 9261,
+              "stateMVU": 445
+            },
+            {
+              "ph": 8476,
+              "sat": 9261,
+              "stateMVU": 445
+            }
+          ]
+        },
+        "warm": {
+          "advanceMS": {
+            "n": 18,
+            "median": 94.30000000004657,
+            "p95": 168.80000000004657,
+            "max": 168.80000000004657,
+            "min": 64
+          },
+          "throughputSimulatedSecondsPerWallSecond": {
+            "n": 6,
+            "median": 0.003212526313974882,
+            "p95": 0.0034376074252331396,
+            "max": 0.0034376074252331396,
+            "min": 0.003007518796992481
+          },
+          "requestedWorkPerRunSeconds": 0.001,
+          "recordMS": {
+            "n": 18,
+            "median": 0.30000000004656613,
+            "p95": 1.0999999998603016,
+            "max": 1.0999999998603016,
+            "min": 0.19999999995343387
+          },
+          "propertyCounts": [
+            {
+              "ph": 22072,
+              "sat": 23752,
+              "stateMVU": 940
+            },
+            {
+              "ph": 22072,
+              "sat": 23752,
+              "stateMVU": 940
+            },
+            {
+              "ph": 22072,
+              "sat": 23752,
+              "stateMVU": 940
+            },
+            {
+              "ph": 22072,
+              "sat": 23752,
+              "stateMVU": 940
+            },
+            {
+              "ph": 22072,
+              "sat": 23752,
+              "stateMVU": 940
+            },
+            {
+              "ph": 22072,
+              "sat": 23752,
+              "stateMVU": 940
+            }
+          ]
+        }
+      },
+      "initializationRoundtripMS": {
+        "cold-session": {
+          "n": 6,
+          "median": 41.5,
+          "p95": 48.60000000009313,
+          "max": 48.60000000009313,
+          "min": 32.89999999990687
+        },
+        "warm-restart": {
+          "n": 6,
+          "median": 33.59999999997672,
+          "p95": 37.199999999953434,
+          "max": 37.199999999953434,
+          "min": 30.100000000093132
+        }
+      },
+      "initializationComponentsMS": {
+        "importMS": {
+          "n": 12,
+          "median": 11.300000000046566,
+          "p95": 18.100000000093132,
+          "max": 18.100000000093132,
+          "min": 10.399999999906868
+        },
+        "factoryMS": {
+          "n": 12,
+          "median": 7.75,
+          "p95": 12.699999999953434,
+          "max": 12.699999999953434,
+          "min": 7
+        },
+        "constructionMS": {
+          "n": 12,
+          "median": 3.6000000000931323,
+          "p95": 4.199999999953434,
+          "max": 4.199999999953434,
+          "min": 2.8999999999068677
+        },
+        "firstRenderMS": {
+          "n": 12,
+          "median": 0.0,
+          "p95": 0.19999999995343387,
+          "max": 0.19999999995343387,
+          "min": 0
+        },
+        "firstRenderableMS": {
+          "n": 12,
+          "median": 35.199999999953434,
+          "p95": 48.700000000186265,
+          "max": 48.700000000186265,
+          "min": 30.299999999813735
+        }
+      },
+      "communicationMS": {
+        "postMS": {
+          "n": 84,
+          "median": 0.0,
+          "p95": 0.19999999995343387,
+          "max": 1.0999999998603016,
+          "min": 0
+        },
+        "handlingMS": {
+          "n": 84,
+          "median": 0.0,
+          "p95": 0.09999999986030161,
+          "max": 0.10000000009313226,
+          "min": 0
+        },
+        "roundtripMS": {
+          "n": 84,
+          "median": 29.800000000046566,
+          "p95": 190.60000000009313,
+          "max": 206.60000000009313,
+          "min": 0.6000000000931323
+        },
+        "workerCreationMS": {
+          "n": 84,
+          "median": 0.19999999995343387,
+          "p95": 0.30000000004656613,
+          "max": 0.30000000004656613,
+          "min": 0.09999999986030161
+        },
+        "requestDispatchUpperBoundMS": {
+          "n": 84,
+          "median": 0.199951171875,
+          "p95": 8.900146484375,
+          "max": 19.400146484375,
+          "min": 0
+        },
+        "queueUpperBoundMS": {
+          "n": 84,
+          "median": 0.44997558591421694,
+          "p95": 11,
+          "max": 12.900000000139698,
+          "min": 0.10000000009313226
+        },
+        "responseDispatchUpperBoundMS": {
+          "n": 84,
+          "median": 1.1998291015625,
+          "p95": 15.7001953125,
+          "max": 22.5,
+          "min": 0.099853515625
+        },
+        "previousWorkerPostMS": {
+          "n": 72,
+          "median": 0.4500000000698492,
+          "p95": 5.199999999953434,
+          "max": 6.800000000046566,
+          "min": 0
+        },
+        "roundtripMinusServiceUpperBoundMS": {
+          "n": 84,
+          "median": 7.850000000093132,
+          "p95": 27.50000000023283,
+          "max": 34.700000000186265,
+          "min": 0.30000000004656613
+        }
+      },
+      "heartbeatByLargestOverlapMS": {
+        "initialization": {
+          "n": 78,
+          "median": 10.0,
+          "p95": 19.299999999813735,
+          "max": 23.5,
+          "min": 0.7000000001862645
+        },
+        "physics": {
+          "n": 324,
+          "median": 10.0,
+          "p95": 18.199999999953434,
+          "max": 30.300000000046566,
+          "min": 0.6999999999534339
+        },
+        "snapshot": {
+          "n": 4,
+          "median": 2.200000000069849,
+          "p95": 3.3999999999068677,
+          "max": 3.3999999999068677,
+          "min": 0.8000000000465661
+        },
+        "render": {
+          "n": 107,
+          "median": 10,
+          "p95": 16.199999999953434,
+          "max": 24.399999999906868,
+          "min": 3.300000000046566
+        },
+        "diagnostics": {
+          "n": 105,
+          "median": 10,
+          "p95": 29.699999999953434,
+          "max": 58.5999999998603,
+          "min": 1
+        },
+        "idle": {
+          "n": 36,
+          "median": 10.0,
+          "p95": 10.100000000093132,
+          "max": 10.199999999953434,
+          "min": 9.899999999906868
+        }
+      },
+      "allHeartbeatMS": {
+        "n": 654,
+        "median": 10.0,
+        "p95": 18.699999999953434,
+        "max": 58.5999999998603,
+        "min": 0.6999999999534339
+      },
+      "frameGapMS": {
+        "n": 409,
+        "median": 16.699999999999932,
+        "p95": 16.700000000000273,
+        "max": 33.40000000000009,
+        "min": 16.5
+      },
+      "longTasks": [
+        {
+          "phase": "diagnostics",
+          "ms": 52,
+          "start": 2742.7999999998137
+        }
+      ],
+      "automationInputRoundtripMS": {
+        "n": 139,
+        "median": 2.2922360001302877,
+        "p95": 90.63170599984005,
+        "max": 210.82343900002343,
+        "min": 1.30682799999704
+      },
+      "browserInputTimestampLatencyMS": {
+        "n": 139,
+        "median": 0.4000000001396984,
+        "p95": 87.69999999995343,
+        "max": 207.5999999998603,
+        "min": 0.09999999986030161
+      },
+      "renderMS": {
+        "n": 36,
+        "median": 0.0,
+        "p95": 0.10000000009313226,
+        "max": 0.10000000009313226,
+        "min": 0
+      },
+      "recordJSONEstimateBytes": {
+        "n": 36,
+        "median": 10253.5,
+        "p95": 11909,
+        "max": 11909,
+        "min": 9496
+      },
+      "heapObservations": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "scientificBaselineVerified": true
+    }
+  },
+  "webkit": {
+    "main": {
+      "fixtures": {
+        "cold": {
+          "advanceMS": {
+            "n": 18,
+            "median": 30.5,
+            "p95": 122,
+            "max": 122,
+            "min": 15
+          },
+          "throughputSimulatedSecondsPerWallSecond": {
+            "n": 6,
+            "median": 0.00900829081632653,
+            "p95": 0.011764705882352941,
+            "max": 0.011764705882352941,
+            "min": 0.005649717514124295
+          },
+          "requestedWorkPerRunSeconds": 0.001,
+          "recordMS": {
+            "n": 18,
+            "median": 0.0,
+            "p95": 1,
+            "max": 1,
+            "min": 0
+          },
+          "propertyCounts": [
+            {
+              "ph": 8476,
+              "sat": 9261,
+              "stateMVU": 445
+            },
+            {
+              "ph": 8476,
+              "sat": 9261,
+              "stateMVU": 445
+            },
+            {
+              "ph": 8476,
+              "sat": 9261,
+              "stateMVU": 445
+            },
+            {
+              "ph": 8476,
+              "sat": 9261,
+              "stateMVU": 445
+            },
+            {
+              "ph": 8476,
+              "sat": 9261,
+              "stateMVU": 445
+            },
+            {
+              "ph": 8476,
+              "sat": 9261,
+              "stateMVU": 445
+            }
+          ]
+        },
+        "warm": {
+          "advanceMS": {
+            "n": 18,
+            "median": 82.0,
+            "p95": 143,
+            "max": 143,
+            "min": 60
+          },
+          "throughputSimulatedSecondsPerWallSecond": {
+            "n": 6,
+            "median": 0.003683353683353683,
+            "p95": 0.00411522633744856,
+            "max": 0.00411522633744856,
+            "min": 0.0033898305084745766
+          },
+          "requestedWorkPerRunSeconds": 0.001,
+          "recordMS": {
+            "n": 18,
+            "median": 0.0,
+            "p95": 1,
+            "max": 1,
+            "min": 0
+          },
+          "propertyCounts": [
+            {
+              "ph": 22072,
+              "sat": 23752,
+              "stateMVU": 940
+            },
+            {
+              "ph": 22072,
+              "sat": 23752,
+              "stateMVU": 940
+            },
+            {
+              "ph": 22072,
+              "sat": 23752,
+              "stateMVU": 940
+            },
+            {
+              "ph": 22072,
+              "sat": 23752,
+              "stateMVU": 940
+            },
+            {
+              "ph": 22072,
+              "sat": 23752,
+              "stateMVU": 940
+            },
+            {
+              "ph": 22072,
+              "sat": 23752,
+              "stateMVU": 940
+            }
+          ]
+        }
+      },
+      "initializationRoundtripMS": {
+        "cold-session": {
+          "n": 6,
+          "median": 20.0,
+          "p95": 39,
+          "max": 39,
+          "min": 6
+        },
+        "warm-restart": {
+          "n": 6,
+          "median": 7.0,
+          "p95": 18,
+          "max": 18,
+          "min": 7
+        }
+      },
+      "initializationComponentsMS": {
+        "importMS": {
+          "n": 12,
+          "median": 0.0,
+          "p95": 24,
+          "max": 24,
+          "min": 0
+        },
+        "factoryMS": {
+          "n": 12,
+          "median": 5.5,
+          "p95": 10,
+          "max": 10,
+          "min": 4
+        },
+        "constructionMS": {
+          "n": 12,
+          "median": 1.0,
+          "p95": 5,
+          "max": 5,
+          "min": 0
+        },
+        "firstRenderMS": {
+          "n": 12,
+          "median": 0.0,
+          "p95": 1,
+          "max": 1,
+          "min": 0
+        },
+        "firstRenderableMS": {
+          "n": 12,
+          "median": 7.5,
+          "p95": 40,
+          "max": 40,
+          "min": 6
+        }
+      },
+      "communicationMS": {
+        "postMS": {
+          "n": 84,
+          "median": 0.0,
+          "p95": 0,
+          "max": 1,
+          "min": 0
+        },
+        "handlingMS": {
+          "n": 84,
+          "median": 0.0,
+          "p95": 0,
+          "max": 0,
+          "min": 0
+        },
+        "roundtripMS": {
+          "n": 84,
+          "median": 7.0,
+          "p95": 151,
+          "max": 174,
+          "min": 0
+        },
+        "workerCreationMS": {
+          "n": 84,
+          "median": 0.0,
+          "p95": 0,
+          "max": 0,
+          "min": 0
+        },
+        "requestDispatchUpperBoundMS": null,
+        "queueUpperBoundMS": null,
+        "responseDispatchUpperBoundMS": null,
+        "previousWorkerPostMS": null,
+        "roundtripMinusServiceUpperBoundMS": {
+          "n": 84,
+          "median": 1.0,
+          "p95": 22,
+          "max": 40,
+          "min": 0
+        }
+      },
+      "heartbeatByLargestOverlapMS": {
+        "initialization": {
+          "n": 34,
+          "median": 11.0,
+          "p95": 20,
+          "max": 35,
+          "min": 3
+        },
+        "physics": {
+          "n": 36,
+          "median": 95.5,
+          "p95": 181,
+          "max": 187,
+          "min": 29
+        },
+        "snapshot": null,
+        "render": {
+          "n": 72,
+          "median": 12.0,
+          "p95": 14,
+          "max": 27,
+          "min": 10
+        },
+        "diagnostics": {
+          "n": 44,
+          "median": 13.0,
+          "p95": 82,
+          "max": 99,
+          "min": 11
+        },
+        "idle": {
+          "n": 34,
+          "median": 10.0,
+          "p95": 18,
+          "max": 18,
+          "min": 10
+        }
+      },
+      "allHeartbeatMS": {
+        "n": 220,
+        "median": 12.0,
+        "p95": 113,
+        "max": 187,
+        "min": 3
+      },
+      "frameGapMS": {
+        "n": 185,
+        "median": 14,
+        "p95": 116,
+        "max": 330,
+        "min": 1
+      },
+      "longTasks": [],
+      "automationInputRoundtripMS": {
+        "n": 75,
+        "median": 47.78348599984383,
+        "p95": 159.44589000014275,
+        "max": 230.41790299998866,
+        "min": 1.8961749999562016
+      },
+      "browserInputTimestampLatencyMS": {
+        "n": 75,
+        "median": 46,
+        "p95": 148,
+        "max": 229,
+        "min": 0
+      },
+      "renderMS": {
+        "n": 36,
+        "median": 0.0,
+        "p95": 1,
+        "max": 1,
+        "min": 0
+      },
+      "recordJSONEstimateBytes": {
+        "n": 36,
+        "median": 10259.5,
+        "p95": 11890,
+        "max": 11890,
+        "min": 9517
+      },
+      "heapObservations": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "scientificBaselineVerified": true
+    },
+    "worker": {
+      "fixtures": {
+        "cold": {
+          "advanceMS": {
+            "n": 18,
+            "median": 40.5,
+            "p95": 117,
+            "max": 117,
+            "min": 13
+          },
+          "throughputSimulatedSecondsPerWallSecond": {
+            "n": 6,
+            "median": 0.0062509767151117356,
+            "p95": 0.006944444444444445,
+            "max": 0.006944444444444445,
+            "min": 0.005208333333333333
+          },
+          "requestedWorkPerRunSeconds": 0.001,
+          "recordMS": {
+            "n": 18,
+            "median": 0.5,
+            "p95": 3,
+            "max": 3,
+            "min": 0
+          },
+          "propertyCounts": [
+            {
+              "ph": 8476,
+              "sat": 9261,
+              "stateMVU": 445
+            },
+            {
+              "ph": 8476,
+              "sat": 9261,
+              "stateMVU": 445
+            },
+            {
+              "ph": 8476,
+              "sat": 9261,
+              "stateMVU": 445
+            },
+            {
+              "ph": 8476,
+              "sat": 9261,
+              "stateMVU": 445
+            },
+            {
+              "ph": 8476,
+              "sat": 9261,
+              "stateMVU": 445
+            },
+            {
+              "ph": 8476,
+              "sat": 9261,
+              "stateMVU": 445
+            }
+          ]
+        },
+        "warm": {
+          "advanceMS": {
+            "n": 18,
+            "median": 84.5,
+            "p95": 236,
+            "max": 236,
+            "min": 61
+          },
+          "throughputSimulatedSecondsPerWallSecond": {
+            "n": 6,
+            "median": 0.0027137092023094144,
+            "p95": 0.002865329512893983,
+            "max": 0.002865329512893983,
+            "min": 0.002450980392156863
+          },
+          "requestedWorkPerRunSeconds": 0.001,
+          "recordMS": {
+            "n": 18,
+            "median": 0.0,
+            "p95": 1,
+            "max": 1,
+            "min": 0
+          },
+          "propertyCounts": [
+            {
+              "ph": 22072,
+              "sat": 23752,
+              "stateMVU": 940
+            },
+            {
+              "ph": 22072,
+              "sat": 23752,
+              "stateMVU": 940
+            },
+            {
+              "ph": 22072,
+              "sat": 23752,
+              "stateMVU": 940
+            },
+            {
+              "ph": 22072,
+              "sat": 23752,
+              "stateMVU": 940
+            },
+            {
+              "ph": 22072,
+              "sat": 23752,
+              "stateMVU": 940
+            },
+            {
+              "ph": 22072,
+              "sat": 23752,
+              "stateMVU": 940
+            }
+          ]
+        }
+      },
+      "initializationRoundtripMS": {
+        "cold-session": {
+          "n": 6,
+          "median": 55.5,
+          "p95": 87,
+          "max": 87,
+          "min": 36
+        },
+        "warm-restart": {
+          "n": 6,
+          "median": 35.5,
+          "p95": 39,
+          "max": 39,
+          "min": 34
+        }
+      },
+      "initializationComponentsMS": {
+        "importMS": {
+          "n": 12,
+          "median": 13.0,
+          "p95": 44,
+          "max": 44,
+          "min": 10
+        },
+        "factoryMS": {
+          "n": 12,
+          "median": 11.0,
+          "p95": 15,
+          "max": 15,
+          "min": 9
+        },
+        "constructionMS": {
+          "n": 12,
+          "median": 5.5,
+          "p95": 9,
+          "max": 9,
+          "min": 4
+        },
+        "firstRenderMS": {
+          "n": 12,
+          "median": 0.0,
+          "p95": 1,
+          "max": 1,
+          "min": 0
+        },
+        "firstRenderableMS": {
+          "n": 12,
+          "median": 38.0,
+          "p95": 87,
+          "max": 87,
+          "min": 34
+        }
+      },
+      "communicationMS": {
+        "postMS": {
+          "n": 84,
+          "median": 0.0,
+          "p95": 0,
+          "max": 1,
+          "min": 0
+        },
+        "handlingMS": {
+          "n": 84,
+          "median": 0.0,
+          "p95": 0,
+          "max": 0,
+          "min": 0
+        },
+        "roundtripMS": {
+          "n": 84,
+          "median": 31.5,
+          "p95": 245,
+          "max": 284,
+          "min": 1
+        },
+        "workerCreationMS": {
+          "n": 84,
+          "median": 0.0,
+          "p95": 1,
+          "max": 1,
+          "min": 0
+        },
+        "requestDispatchUpperBoundMS": {
+          "n": 84,
+          "median": 0.0,
+          "p95": 7,
+          "max": 18,
+          "min": -1
+        },
+        "queueUpperBoundMS": {
+          "n": 84,
+          "median": 1.0,
+          "p95": 14,
+          "max": 32,
+          "min": 0
+        },
+        "responseDispatchUpperBoundMS": {
+          "n": 84,
+          "median": 1.0,
+          "p95": 11,
+          "max": 18,
+          "min": -1
+        },
+        "previousWorkerPostMS": {
+          "n": 72,
+          "median": 1.0,
+          "p95": 8,
+          "max": 14,
+          "min": 0
+        },
+        "roundtripMinusServiceUpperBoundMS": {
+          "n": 84,
+          "median": 5.0,
+          "p95": 24,
+          "max": 40,
+          "min": 0
+        }
+      },
+      "heartbeatByLargestOverlapMS": {
+        "initialization": {
+          "n": 79,
+          "median": 12,
+          "p95": 14,
+          "max": 27,
+          "min": 8
+        },
+        "physics": {
+          "n": 335,
+          "median": 12,
+          "p95": 15,
+          "max": 39,
+          "min": 6
+        },
+        "snapshot": {
+          "n": 1,
+          "median": 12,
+          "p95": 12,
+          "max": 12,
+          "min": 12
+        },
+        "render": {
+          "n": 92,
+          "median": 12.0,
+          "p95": 13,
+          "max": 14,
+          "min": 10
+        },
+        "diagnostics": {
+          "n": 88,
+          "median": 12.0,
+          "p95": 17,
+          "max": 20,
+          "min": 10
+        },
+        "idle": {
+          "n": 36,
+          "median": 10.0,
+          "p95": 11,
+          "max": 12,
+          "min": 10
+        }
+      },
+      "allHeartbeatMS": {
+        "n": 631,
+        "median": 12,
+        "p95": 15,
+        "max": 39,
+        "min": 6
+      },
+      "frameGapMS": {
+        "n": 408,
+        "median": 16.0,
+        "p95": 20,
+        "max": 354,
+        "min": 2
+      },
+      "longTasks": [],
+      "automationInputRoundtripMS": {
+        "n": 147,
+        "median": 4.617125999857308,
+        "p95": 57.62068299986822,
+        "max": 158.2638349998433,
+        "min": 1.6737450000618992
+      },
+      "browserInputTimestampLatencyMS": {
+        "n": 147,
+        "median": 1,
+        "p95": 54,
+        "max": 156,
+        "min": 0
+      },
+      "renderMS": {
+        "n": 36,
+        "median": 0.0,
+        "p95": 0,
+        "max": 0,
+        "min": 0
+      },
+      "recordJSONEstimateBytes": {
+        "n": 36,
+        "median": 10259.5,
+        "p95": 11890,
+        "max": 11890,
+        "min": 9517
+      },
+      "heapObservations": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "scientificBaselineVerified": true
+    }
+  }
+}

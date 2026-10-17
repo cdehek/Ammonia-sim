@@ -1,0 +1,209 @@
+{
+  "passed": true,
+  "engine": "webkit",
+  "browserVersion": "26.5",
+  "observations": [
+    {
+      "label": "page-ready",
+      "summedBrowserChildRSSBytes": 366178304,
+      "processCount": 3,
+      "pageHeap": null
+    },
+    {
+      "label": "main-0-initialized",
+      "summedBrowserChildRSSBytes": 409014272,
+      "processCount": 3,
+      "pageHeap": null
+    },
+    {
+      "label": "main-0-disposed",
+      "summedBrowserChildRSSBytes": 462450688,
+      "processCount": 3,
+      "pageHeap": null
+    },
+    {
+      "label": "main-1-initialized",
+      "summedBrowserChildRSSBytes": 459550720,
+      "processCount": 3,
+      "pageHeap": null
+    },
+    {
+      "label": "main-1-disposed",
+      "summedBrowserChildRSSBytes": 470118400,
+      "processCount": 3,
+      "pageHeap": null
+    },
+    {
+      "label": "main-2-initialized",
+      "summedBrowserChildRSSBytes": 470179840,
+      "processCount": 3,
+      "pageHeap": null
+    },
+    {
+      "label": "main-2-disposed",
+      "summedBrowserChildRSSBytes": 477204480,
+      "processCount": 3,
+      "pageHeap": null
+    },
+    {
+      "label": "worker-0-initialized",
+      "summedBrowserChildRSSBytes": 506544128,
+      "processCount": 3,
+      "pageHeap": null
+    },
+    {
+      "label": "worker-0-disposed",
+      "summedBrowserChildRSSBytes": 520056832,
+      "processCount": 3,
+      "pageHeap": null
+    },
+    {
+      "label": "worker-1-initialized",
+      "summedBrowserChildRSSBytes": 515809280,
+      "processCount": 3,
+      "pageHeap": null
+    },
+    {
+      "label": "worker-1-disposed",
+      "summedBrowserChildRSSBytes": 512823296,
+      "processCount": 3,
+      "pageHeap": null
+    },
+    {
+      "label": "worker-2-initialized",
+      "summedBrowserChildRSSBytes": 513679360,
+      "processCount": 3,
+      "pageHeap": null
+    },
+    {
+      "label": "worker-2-disposed",
+      "summedBrowserChildRSSBytes": 514068480,
+      "processCount": 3,
+      "pageHeap": null
+    },
+    {
+      "label": "navigation-new-page-no-session",
+      "summedBrowserChildRSSBytes": 524820480,
+      "processCount": 3,
+      "pageHeap": null
+    }
+  ],
+  "cycles": [
+    {
+      "mode": "main",
+      "cycle": 0,
+      "initial": {
+        "clock": 0,
+        "version": 0
+      },
+      "result": {
+        "success": true,
+        "clock": 0.0001,
+        "acceptedVersion": 4,
+        "diagnosticHeap": null,
+        "disposed": {
+          "referencesDropped": true,
+          "nativeDestructorApplicable": false
+        }
+      }
+    },
+    {
+      "mode": "main",
+      "cycle": 1,
+      "initial": {
+        "clock": 0,
+        "version": 0
+      },
+      "result": {
+        "success": true,
+        "clock": 0.0001,
+        "acceptedVersion": 4,
+        "diagnosticHeap": null,
+        "disposed": {
+          "referencesDropped": true,
+          "nativeDestructorApplicable": false
+        }
+      }
+    },
+    {
+      "mode": "main",
+      "cycle": 2,
+      "initial": {
+        "clock": 0,
+        "version": 0
+      },
+      "result": {
+        "success": true,
+        "clock": 0.0001,
+        "acceptedVersion": 4,
+        "diagnosticHeap": null,
+        "disposed": {
+          "referencesDropped": true,
+          "nativeDestructorApplicable": false
+        }
+      }
+    },
+    {
+      "mode": "worker",
+      "cycle": 0,
+      "initial": {
+        "clock": 0,
+        "version": 0
+      },
+      "result": {
+        "success": true,
+        "clock": 0.0001,
+        "acceptedVersion": 4,
+        "diagnosticHeap": null,
+        "disposed": {
+          "referencesDropped": true,
+          "nativeDestructorApplicable": false
+        }
+      }
+    },
+    {
+      "mode": "worker",
+      "cycle": 1,
+      "initial": {
+        "clock": 0,
+        "version": 0
+      },
+      "result": {
+        "success": true,
+        "clock": 0.0001,
+        "acceptedVersion": 4,
+        "diagnosticHeap": null,
+        "disposed": {
+          "referencesDropped": true,
+          "nativeDestructorApplicable": false
+        }
+      }
+    },
+    {
+      "mode": "worker",
+      "cycle": 2,
+      "initial": {
+        "clock": 0,
+        "version": 0
+      },
+      "result": {
+        "success": true,
+        "clock": 0.0001,
+        "acceptedVersion": 4,
+        "diagnosticHeap": null,
+        "disposed": {
+          "referencesDropped": true,
+          "nativeDestructorApplicable": false
+        }
+      }
+    }
+  ],
+  "navigationWithPendingWork": true,
+  "lastKnownPanelClockBeforeNavigation": 0,
+  "inFlightAcceptedState": "unknown; disposable session terminated",
+  "uniquePhysicalMemoryClaim": false,
+  "workerThreadHeapSeparatelyAvailable": false,
+  "forcedGC": false,
+  "leakFreedomProved": false,
+  "scope": "Sum of current browser child RSS includes shared pages more than once; OS process grouping, allocator and GC high-water effects prevent unique worker attribution. Page heap is coarse Chromium-only API. Desktop WebKit is not iPad."
+}

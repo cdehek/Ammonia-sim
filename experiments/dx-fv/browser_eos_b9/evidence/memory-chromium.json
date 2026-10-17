@@ -1,0 +1,274 @@
+{
+  "passed": true,
+  "engine": "chromium",
+  "browserVersion": "151.0.7922.34",
+  "observations": [
+    {
+      "label": "page-ready",
+      "summedBrowserChildRSSBytes": 402124800,
+      "processCount": 6,
+      "pageHeap": {
+        "used": 10000000,
+        "total": 10000000,
+        "limit": 3760000000
+      }
+    },
+    {
+      "label": "main-0-initialized",
+      "summedBrowserChildRSSBytes": 419057664,
+      "processCount": 6,
+      "pageHeap": {
+        "used": 10000000,
+        "total": 10000000,
+        "limit": 3760000000
+      }
+    },
+    {
+      "label": "main-0-disposed",
+      "summedBrowserChildRSSBytes": 440082432,
+      "processCount": 6,
+      "pageHeap": {
+        "used": 10000000,
+        "total": 10000000,
+        "limit": 3760000000
+      }
+    },
+    {
+      "label": "main-1-initialized",
+      "summedBrowserChildRSSBytes": 445100032,
+      "processCount": 6,
+      "pageHeap": {
+        "used": 10000000,
+        "total": 10000000,
+        "limit": 3760000000
+      }
+    },
+    {
+      "label": "main-1-disposed",
+      "summedBrowserChildRSSBytes": 458485760,
+      "processCount": 6,
+      "pageHeap": {
+        "used": 10000000,
+        "total": 10000000,
+        "limit": 3760000000
+      }
+    },
+    {
+      "label": "main-2-initialized",
+      "summedBrowserChildRSSBytes": 458559488,
+      "processCount": 6,
+      "pageHeap": {
+        "used": 10000000,
+        "total": 10000000,
+        "limit": 3760000000
+      }
+    },
+    {
+      "label": "main-2-disposed",
+      "summedBrowserChildRSSBytes": 485928960,
+      "processCount": 6,
+      "pageHeap": {
+        "used": 10000000,
+        "total": 10000000,
+        "limit": 3760000000
+      }
+    },
+    {
+      "label": "worker-0-initialized",
+      "summedBrowserChildRSSBytes": 499359744,
+      "processCount": 6,
+      "pageHeap": {
+        "used": 10000000,
+        "total": 10000000,
+        "limit": 3760000000
+      }
+    },
+    {
+      "label": "worker-0-disposed",
+      "summedBrowserChildRSSBytes": 493686784,
+      "processCount": 6,
+      "pageHeap": {
+        "used": 10000000,
+        "total": 10000000,
+        "limit": 3760000000
+      }
+    },
+    {
+      "label": "worker-1-initialized",
+      "summedBrowserChildRSSBytes": 499118080,
+      "processCount": 6,
+      "pageHeap": {
+        "used": 10000000,
+        "total": 10000000,
+        "limit": 3760000000
+      }
+    },
+    {
+      "label": "worker-1-disposed",
+      "summedBrowserChildRSSBytes": 496414720,
+      "processCount": 6,
+      "pageHeap": {
+        "used": 10000000,
+        "total": 10000000,
+        "limit": 3760000000
+      }
+    },
+    {
+      "label": "worker-2-initialized",
+      "summedBrowserChildRSSBytes": 501846016,
+      "processCount": 6,
+      "pageHeap": {
+        "used": 10000000,
+        "total": 10000000,
+        "limit": 3760000000
+      }
+    },
+    {
+      "label": "worker-2-disposed",
+      "summedBrowserChildRSSBytes": 498102272,
+      "processCount": 6,
+      "pageHeap": {
+        "used": 10000000,
+        "total": 10000000,
+        "limit": 3760000000
+      }
+    },
+    {
+      "label": "navigation-new-page-no-session",
+      "summedBrowserChildRSSBytes": 515080192,
+      "processCount": 6,
+      "pageHeap": {
+        "used": 10000000,
+        "total": 10000000,
+        "limit": 3760000000
+      }
+    }
+  ],
+  "cycles": [
+    {
+      "mode": "main",
+      "cycle": 0,
+      "initial": {
+        "clock": 0,
+        "version": 0
+      },
+      "result": {
+        "success": true,
+        "clock": 0.0001,
+        "acceptedVersion": 4,
+        "diagnosticHeap": {
+          "used": 10000000,
+          "total": 10000000
+        },
+        "disposed": {
+          "referencesDropped": true,
+          "nativeDestructorApplicable": false
+        }
+      }
+    },
+    {
+      "mode": "main",
+      "cycle": 1,
+      "initial": {
+        "clock": 0,
+        "version": 0
+      },
+      "result": {
+        "success": true,
+        "clock": 0.0001,
+        "acceptedVersion": 4,
+        "diagnosticHeap": {
+          "used": 10000000,
+          "total": 10000000
+        },
+        "disposed": {
+          "referencesDropped": true,
+          "nativeDestructorApplicable": false
+        }
+      }
+    },
+    {
+      "mode": "main",
+      "cycle": 2,
+      "initial": {
+        "clock": 0,
+        "version": 0
+      },
+      "result": {
+        "success": true,
+        "clock": 0.0001,
+        "acceptedVersion": 4,
+        "diagnosticHeap": {
+          "used": 10000000,
+          "total": 10000000
+        },
+        "disposed": {
+          "referencesDropped": true,
+          "nativeDestructorApplicable": false
+        }
+      }
+    },
+    {
+      "mode": "worker",
+      "cycle": 0,
+      "initial": {
+        "clock": 0,
+        "version": 0
+      },
+      "result": {
+        "success": true,
+        "clock": 0.0001,
+        "acceptedVersion": 4,
+        "diagnosticHeap": null,
+        "disposed": {
+          "referencesDropped": true,
+          "nativeDestructorApplicable": false
+        }
+      }
+    },
+    {
+      "mode": "worker",
+      "cycle": 1,
+      "initial": {
+        "clock": 0,
+        "version": 0
+      },
+      "result": {
+        "success": true,
+        "clock": 0.0001,
+        "acceptedVersion": 4,
+        "diagnosticHeap": null,
+        "disposed": {
+          "referencesDropped": true,
+          "nativeDestructorApplicable": false
+        }
+      }
+    },
+    {
+      "mode": "worker",
+      "cycle": 2,
+      "initial": {
+        "clock": 0,
+        "version": 0
+      },
+      "result": {
+        "success": true,
+        "clock": 0.0001,
+        "acceptedVersion": 4,
+        "diagnosticHeap": null,
+        "disposed": {
+          "referencesDropped": true,
+          "nativeDestructorApplicable": false
+        }
+      }
+    }
+  ],
+  "navigationWithPendingWork": true,
+  "lastKnownPanelClockBeforeNavigation": 0,
+  "inFlightAcceptedState": "unknown; disposable session terminated",
+  "uniquePhysicalMemoryClaim": false,
+  "workerThreadHeapSeparatelyAvailable": false,
+  "forcedGC": false,
+  "leakFreedomProved": false,
+  "scope": "Sum of current browser child RSS includes shared pages more than once; OS process grouping, allocator and GC high-water effects prevent unique worker attribution. Page heap is coarse Chromium-only API. Desktop WebKit is not iPad."
+}

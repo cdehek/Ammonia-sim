@@ -50,3 +50,14 @@ payloads are compared with typed-array byte transport (JS numeric NaN payload
 canonicalization is not a scientific contract). Signed zero/Infinity/NaN and
 transfer-detachment receive explicit deterministic tests. No JSON scientific
 transport; JSON evidence contains bit tags. Transfer uses copied test buffers only.
+
+Implementation clarification after bounded-cache review: disposal clears cached
+snapshots; requests after cache exhaustion still consume a valid sequence so the
+next dispose can succeed. No more scientific work is accepted. See the final
+cache-bound lifecycle receipt. Test-only probe extensions and ownership are
+specified in MESSAGE_OWNERSHIP.md; they are not accepted model methods.
+
+Display ordering also checks command sequence when accepted-state versions are
+equal. A later numerical refusal can update fault metadata without committing a
+new physical step; an older same-version snapshot must not clear that evidence.
+The display-sequence lifecycle receipt covers that case explicitly.

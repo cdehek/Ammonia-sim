@@ -1,0 +1,22 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>B9 — Ammonia worker research</title>
+<style>body{font:17px system-ui;background:#10202b;color:#e6eef2;max-width:1000px;margin:2em auto;padding:1em}button,select{font:inherit;padding:.7em;margin:.3em}pre{white-space:pre-wrap;background:#182f3d;padding:1em}strong{color:#ffc971}</style>
+<h1>Ammonia Simulation Laboratory · B9</h1><p><strong>Isolated architecture research. No production or complete model qualification.</strong></p>
+<label>Execution <select id="mode"><option>worker</option><option>main</option></select></label><label>Original fixture <select id="fixture"><option>cold</option><option>warm</option></select></label>
+<button id="initialize">Initialize / restart</button><button id="advance">Advance next frozen checkpoint</button><button id="stop">Stop at command boundary</button><button id="dispose">Dispose</button><button id="input" style="position:fixed;left:10px;top:10px">Input acknowledgement</button>
+<p id="status">Not initialized · accepted-A2-table</p><p id="heartbeat">Heartbeat pending</p><pre id="reading">No validated scientific state</pre>
+<script type="module">
+import {Client} from './client.mjs';import {times} from './experiment.mjs';
+let client,index=0,last=performance.now(),maxGap=0;window.inputAcks=[];
+setInterval(()=>{const n=performance.now(),gap=n-last;last=n;maxGap=Math.max(maxGap,gap);document.querySelector('#heartbeat').textContent=`UI heartbeat gap ${gap.toFixed(1)} ms · maximum ${maxGap.toFixed(1)} ms`;},10);
+document.querySelector('#input').onclick=e=>{window.inputAcks.push({phase:window.workPhase??'idle',latencyMS:performance.now()-e.timeStamp});document.querySelector('#input').textContent=`Input acknowledged ${window.inputAcks.length}`;};
+function render(reply){document.querySelector('#status').textContent=`${reply.status} · ${reply.backendId} · physics service ${reply.timing.serviceMS.toFixed(2)} ms`;
+if(!reply.success){document.querySelector('#reading').textContent=JSON.stringify(reply.error,null,2);return;}
+const r=reply.result?.record;if(!r)return;
+document.querySelector('#reading').textContent=JSON.stringify({mode:client.mode,clockSeconds:r.seconds,lastAcceptedSteps:r.acceptedSteps,lastAcceptedTrial:r.trace.at(-1)??null,sectionTemperatureK:r.sections.map(s=>s.T+273.15),coilTemperatureK:r.nodes.map(n=>({id:n.id,K:n.temperatureK})),totalInventory:r.totals,numericalOrDomainFault:r.stop,terminalBulkWet:r.terminal.wet,qualification:'Short table-backed research only; wet indication is not a compressor suction safety guarantee'},null,2);}
+async function action(fn){try{await fn();}catch(e){document.querySelector('#status').textContent='Session error: '+e.message;}}
+document.querySelector('#initialize').onclick=()=>action(async()=>{client?.terminate();client=new Client(document.querySelector('#mode').value);index=0;document.querySelector('#status').textContent='initializing · accepted-A2-table';document.querySelector('#reading').textContent='Waiting for validated accepted state';render(await client.request('initialize',{fixture:document.querySelector('#fixture').value}));});
+document.querySelector('#advance').onclick=()=>action(async()=>{if(index>=times.length-1)throw Error('Frozen research horizon complete');const r=await client.request('advance',{duration:times[index+1]-times[index]});if(r.success)index++;render(r);});
+document.querySelector('#stop').onclick=()=>action(async()=>render(await client.request('stop')));
+document.querySelector('#dispose').onclick=()=>action(async()=>render(await client.dispose()));
+window.addEventListener('pagehide',()=>client?.terminate());
+</script></html>
