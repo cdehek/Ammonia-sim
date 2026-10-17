@@ -1,0 +1,51 @@
+# C1 failure propagation and consequences
+
+C1 is an isolated experimental adapter and three error-transport copies of accepted A2. It is **not installed** into original A2. B8 verifies its source bytes against canonical C1 `7809d08…`, including `a2-error-propagation.patch`; accepted snapshots are independently preserved. The B6 exception loader hash is `9e9b9715ae83de4ff8bbcd636b3a9f3a0dcbe616894f4b47b21bf23ce0cb41da`. B7 extends isolated artifact/configuration selection while preserving its proven native-identity WeakSet/consume-once generated begin/end-catch lifecycle. B8 changes neither.
+
+## Ownership and truthful error meaning
+
+| Layer | Actual protection and limits |
+|---|---|
+| CoolProp / B7 loader | Strict QT refuses failed DU updates. Evaluate restores stack and preserves primary native meaning using the audited generated catch pair. Only proven escaping native identities receive cleanup. JS-origin errors are not adopted. No getters from a failed state become accepted output. The loader finite check alone does not refuse finite invalid DP Q. |
+| Historical adapter | `adapter.mjs:7 sat` enforces .3–35 bar; `:13 convert` applies table PH guard, saturation and temperature support before returning properties. `:23 stateMVU` uses original M/V, U/M arithmetic. It has no DP method and no exact-inventory support enclosure. |
+| C1 wrapper | `adapter.mjs:23 operation` preserves request/raw bits and source. B=`inverse-recovery-failure` for EOS exceptions; C=`boundary-unresolved` for a raw result refused by complete conversion; both compatible `solver`. Direct explicit unsupported PH/SAT input is E/domain, input-scope only. Every such diagnostic says `physicalTrajectoryExit:unproved`. |
+| Experimental thermodynamics | `a2/thermodynamics.cjs:5 ph` preserves typed input failures; unknown property exceptions default numerical. `recover:15` scopes failures to fixed inventory. It derives wet/superheat only after successful properties/saturation. |
+| Newton/probes | `a2/coupled-implicit.cjs` retains signed probes, shrinking, branch selection and line-search factors; propertyCause survives failed derivative/line search. Real nonlinear residual is retained, never fabricated by a property failure. |
+| Advance / stop | `a2/coupled-model.cjs:264 advance` retains dt/2, original floor/attempt behavior and diagnostic cause. Property failures do not teach nonlinear-growth history. `domainEvidence:233` refuses unproved typed property failures as refrigerant exit evidence; accepted thermal outward-direction recheck remains independent. |
+| Commit / record | Detached half-step ledgers/events install atomically only after both commit preparations. Record re-evaluation may throw with diagnostics; no invented sections are returned. Outlet PH failure remains an unsupported port diagnostic with original cause retained. |
+
+C1 A confirmed-domain-exit is a caller proof result, not a property-layer label. D supported runtime return remains subject to all scientific and solver acceptance requirements. C1 does **not** certify returned physical phase and cannot generally detect inward pressure hazards. B8's strict scientific refusal is a disposition, not a newly installed runtime acceptance gate.
+
+## Evidence reused instead of a new solver campaign
+
+The original C1 engineering report, GATE1_DESIGN, complete source patch and saved extended runs cover initialization/edit/record refusal, line-search cause transport, false thermal claims, failed second detached commit and rollback. B7 reuses the exact bounded B6/C1 subset: **10 scenarios per engine**, two groups of five (original-boundary error and actual-PT-dispatch injection). `evidence/c1-reused-a2-audit.json` is an exact copy of B7's audited summary; `extract-evidence.py` additionally checks original raw result records.
+
+Supported nonzero-exchange candidate/control states, ledgers and events match. The transient injected failure rejects twice then recovers in that specific experiment. Persistent injection rejects **20 attempts / 19 halvings**, last attempted dt **1.9073486328125e-9 s**, then the original **1e-9 s** floor prevents another halving. Accepted cell/thermal/ledger object identities and physical JSON are preserved. Thermal 200/400 K outward-direction cases retain independently confirmed domain stops. Original section/aggregate mass <1e-8 kg, energy <1e-6 kJ, signed thermal accounting, residual and temporal assertions are retained.
+
+These failures are **synthetic dispatch/injection experiments using real saved property errors**. They prove handling, not natural endpoint reachability. A rejected PT operation injected under DU dispatch is not a genuine observed DU thermodynamic fault. B8 does not substitute Gate B endpoint properties into a solver or assert they successfully progress after halving.
+
+The new saved-row adapter replay (24 outcomes) injects recorded DU states/errors into unchanged C1 solely to verify B/C classification. It does not simulate Newton or establish a trajectory. The new accepted A2 trace uses no faults and proves observer parity for one short table-backed scenario only.
+
+## Consequence checklist
+
+| Question | Four DU endpoint / seven-per-engine strict refusals, conditional CoolProp path | Two inward hazards | Eleven DP identities, current A2 |
+|---|---|---|---|
+| Block initialization? | Yes if recovery at supplied inventory fails; source calls recovery before returning create. Saved construction arithmetic matches. Exact B7-backed full create/natural transient not executed. | A return may bypass numerical guard; initialization qualification remains blocked even if it runs. | No implemented DP initialization route. |
+| Reject Newton trial? | A DU failure rejects post-convergence stage recovery or trial-start recovery. C1 injection proves retry machinery, not these exact natural trials. | An unqualified return could evade refusal; downstream canonical/temporal checks still apply and do not certify support/phase. | No DP edge. |
+| Invalidate signed FD probe? | Direct DU is outside the PH residual/Jacobian; these DU errors do not directly fail signed PH probes. PH/support/SAT errors can fail a signed probe; both signs/shrinks remain. | No direct DP/DU signed-probe invocation; future wrong PH interpretation remains separate. | No. |
+| Repeated halving? | Persistent conditional property failure can reach original floor; existing synthetic C1 evidence proves exact 20/19 sequence, no guaranteed escape. | Not triggered if numerically returned and accepted by guards. | No. |
+| Prevent future accepted integration? | Yes for full-VLE endpoint/35-bar qualification; no demonstrated baseline table blocker. | Yes, hard exact-boundary qualification hazard. | Yes for future DP consumers; no current dependency. |
+| Invalid phase reach thermal/hydraulic calculation? | At these exact replayed candidate outcomes, no complete adapter state returns. Other unqualified shared label returns remain separate. | Possible on experimental adapter return; no independent phase/support certification. Natural supported path not proved. | No current route. Future raw consumer could do so. |
+| Contaminate conserved liquid/energy inventory? | Refusal supplies no state/flux; accepted M/U/V and ledgers preserved. No quality clamp or correction exists. | Wrong properties could change future rates/phase interpretation if consumed; original stored M/U/V is not overwritten by a property return. No observed baseline ledger failure. | None observed/currently reachable; future extrapolated quality could imply negative component mass. |
+| Alter wet suction? | Refused initialization/record yields no successful wet diagnostic. Underlying unknown physical phase remains unresolved, not forced dry/wet. | Could affect experimental bulk-port interpretation if consumed. No compressor trip or dry selector exists in A2. | No current effect; future quality relabeling risk. |
+| Misleading model-domain stop? | Original generic domain inference can misclassify numerical refusal. C1 typed B/C removes that inference; separate genuine thermal exits remain. | A returned inward value may conceal unsupported inventory; C1 does not solve it. | No DP path in model; B7 scientific audit refuses raw states. |
+| Accepted state preserved after failure? | Exact physical rollback demonstrated in synthetic C1 subset; initialization has no installed state. Record refusal preserves existing state and throws. | Refusal protection does not apply to a raw return; independent certification still required. | Not consumed by A2. |
+| Only unsupported operating conditions? | Cannot assert that: explicit PH may be exactly 35 bar; mathematical rounded/exact support differs, and full phase/topology proof is missing. | Mathematical outside signs do not by themselves prove physical trajectory exit. | Some inputs are well inside pressure domain; quality failure is real regardless of reachability. |
+
+Rollback covers mass, U, V, finite tube/fin/air energies, initial identities, accepted clock, specification, ledgers, phase/boundary events, schedule index and accepted-step count. Attempt/rejection counters, stop and permitted growth-history resets remain bookkeeping. Existing injection evidence preserves exact accepted clock/event/ledger identity; no conservation tolerance is used as a rollback tolerance.
+
+## Boundary distinction retained
+
+The seven original default browser refusals per engine remain separately retained in `boundary-attribution.json`, not conflated with four native DU endpoints. At **rounded DU** C2 finds **two mathematically inside / five outside**. At **exact rational stored M/U/V**, it finds **one inside / six outside**. Both statements are preserved without rewriting history or treating local root enclosures as global physical branch proof.
+
+The two saved inward hazards (`webkit-ledger-69`, `webkit-ledger-76`) still return on the original experimental default path, despite mathematical outward-inventory diagnostics. They remain unqualified. A binary64 pressure apparently below 35 bar is not a rigorous inventory certificate. C1 provides no runtime numerical enclosure, pressure correction or general hazard detector. Full phase/topology and independent physical trajectory-exit obligations remain parked, not erased by B7's liquid repair.

@@ -1,0 +1,822 @@
+[
+  {
+    "runtime": "chromium",
+    "artifact": "rebuiltB4C",
+    "fullVLE": false,
+    "key": "webkit-ledger-76",
+    "input": {
+      "values": {
+        "M": 0.016830826440045875,
+        "U_kJ": 25.301752303754846,
+        "V": 0.0006000000000000001,
+        "rho": 28.051377400076454,
+        "u": 1503298.2720060586
+      },
+      "bits": {
+        "M": "3f913c19a47fa406",
+        "U_kJ": "40394d3fa3941ea6",
+        "V": "3f43a92a30553262",
+        "rho": "403c0d2711bd14f6",
+        "u": "4136f04245a23066"
+      }
+    },
+    "raw": {
+      "values": {
+        "p": 3499999.9999999967,
+        "T": 345.5636737918562,
+        "h": 1628069.328702563,
+        "s": 5300.438093851467,
+        "rho": 28.051377400076454,
+        "u": 1503298.2720060581,
+        "Q": 10000
+      },
+      "bits": {
+        "p": "414ab3effffffff9",
+        "T": "40759904cecf5a28",
+        "h": "4138d7a55425d9e6",
+        "s": "40b4b47026eb2ca1",
+        "rho": "403c0d2711bd14f6",
+        "u": "4136f04245a23064",
+        "Q": "40c3880000000000"
+      }
+    },
+    "state": {
+      "values": {
+        "p": 34.999999999999964,
+        "h": 1628.0693287025629,
+        "T": 72.41367379185624,
+        "s": 5.300438093851467,
+        "rho": 28.051377400076454,
+        "u": 1503.2982720060581,
+        "x": null,
+        "phase": "Superheated vapor",
+        "massKg": 0.016830826440045875,
+        "volumeM3": 0.0006000000000000001,
+        "internalEnergyKJ": 25.301752303754846,
+        "densityResidual": 0,
+        "energyResidual": -4.547473508864641e-13,
+        "liquidVolumeFraction": 0
+      },
+      "bits": {
+        "p": "40417ffffffffffb",
+        "h": "40997046fe1a78ba",
+        "T": "40521a79a1a3cf08",
+        "s": "401533a60b2e422e",
+        "rho": "403c0d2711bd14f6",
+        "u": "40977d316e377d54",
+        "massKg": "3f913c19a47fa406",
+        "volumeM3": "3f43a92a30553262",
+        "internalEnergyKJ": "40394d3fa3941ea6",
+        "densityResidual": "0000000000000000",
+        "energyResidual": "bd60000000000000",
+        "liquidVolumeFraction": "0000000000000000"
+      }
+    },
+    "error": null,
+    "certified": false,
+    "qualificationBlocker": true
+  },
+  {
+    "runtime": "chromium",
+    "artifact": "rebuiltB4C",
+    "fullVLE": true,
+    "key": "webkit-ledger-76",
+    "input": {
+      "values": {
+        "M": 0.016830826440045875,
+        "U_kJ": 25.301752303754846,
+        "V": 0.0006000000000000001,
+        "rho": 28.051377400076454,
+        "u": 1503298.2720060586
+      },
+      "bits": {
+        "M": "3f913c19a47fa406",
+        "U_kJ": "40394d3fa3941ea6",
+        "V": "3f43a92a30553262",
+        "rho": "403c0d2711bd14f6",
+        "u": "4136f04245a23066"
+      }
+    },
+    "raw": {
+      "values": {
+        "p": 3500000.000000002,
+        "T": 345.5636737918564,
+        "h": 1628069.328702564,
+        "s": 5300.438093851469,
+        "rho": 28.051377400076454,
+        "u": 1503298.2720060586,
+        "Q": 10000
+      },
+      "bits": {
+        "p": "414ab3f000000004",
+        "T": "40759904cecf5a2b",
+        "h": "4138d7a55425d9ea",
+        "s": "40b4b47026eb2ca3",
+        "rho": "403c0d2711bd14f6",
+        "u": "4136f04245a23066",
+        "Q": "40c3880000000000"
+      }
+    },
+    "state": null,
+    "error": {
+      "message": "Outside accepted pressure domain",
+      "faultKind": "solver",
+      "evidence": {
+        "propertyFailure": {
+          "schemaVersion": "C1/1",
+          "operation": "stateMVU",
+          "inputScope": "fixed-inventory",
+          "input": {
+            "values": {
+              "massKg": 0.016830826440045875,
+              "volumeM3": 0.0006000000000000001,
+              "internalEnergyKJ": 25.301752303754846,
+              "guess": 35
+            },
+            "bits": {
+              "massKg": "3f913c19a47fa406",
+              "volumeM3": "3f43a92a30553262",
+              "internalEnergyKJ": "40394d3fa3941ea6",
+              "guess": "4041800000000000"
+            }
+          },
+          "rawRecovery": "returned",
+          "rawCoordinates": {
+            "values": {
+              "p": 3500000.000000002,
+              "T": 345.5636737918564,
+              "h": 1628069.328702564,
+              "s": 5300.438093851469,
+              "rho": 28.051377400076454,
+              "u": 1503298.2720060586,
+              "Q": 10000
+            },
+            "bits": {
+              "p": "414ab3f000000004",
+              "T": "40759904cecf5a2b",
+              "h": "4138d7a55425d9ea",
+              "s": "40b4b47026eb2ca3",
+              "rho": "403c0d2711bd14f6",
+              "u": "4136f04245a23066",
+              "Q": "40c3880000000000"
+            }
+          },
+          "lastRequest": {
+            "mode": "DU",
+            "args": [
+              {
+                "value": 28.051377400076454,
+                "bits": "403c0d2711bd14f6"
+              },
+              {
+                "value": 1503298.2720060586,
+                "bits": "4136f04245a23066"
+              }
+            ]
+          },
+          "requestedInputSupport": "unknown",
+          "returnedCoordinateSupport": "unsupported",
+          "exactInventorySupport": "unknown",
+          "checks": {
+            "support": "fail",
+            "phase": "unmeasured",
+            "canonical": "unmeasured",
+            "nonlinear": "unmeasured"
+          },
+          "observedResiduals": {
+            "densityResidual": 0,
+            "energyResidualKJkg": 0
+          },
+          "physicalTrajectoryExit": "unproved",
+          "reason": "boundary-unresolved",
+          "errorSource": "adapter-support-or-inventory",
+          "originalError": {
+            "message": "Outside accepted pressure domain",
+            "faultKind": "domain"
+          },
+          "numericalPressureEnclosure": false
+        }
+      },
+      "propertyCause": null,
+      "domainCause": null,
+      "nonlinearResidual": null
+    },
+    "certified": false,
+    "qualificationBlocker": true
+  },
+  {
+    "runtime": "chromium",
+    "artifact": "gateA",
+    "fullVLE": false,
+    "key": "webkit-ledger-76",
+    "input": {
+      "values": {
+        "M": 0.016830826440045875,
+        "U_kJ": 25.301752303754846,
+        "V": 0.0006000000000000001,
+        "rho": 28.051377400076454,
+        "u": 1503298.2720060586
+      },
+      "bits": {
+        "M": "3f913c19a47fa406",
+        "U_kJ": "40394d3fa3941ea6",
+        "V": "3f43a92a30553262",
+        "rho": "403c0d2711bd14f6",
+        "u": "4136f04245a23066"
+      }
+    },
+    "raw": {
+      "values": {
+        "p": 3499999.9999999967,
+        "T": 345.5636737918562,
+        "h": 1628069.328702563,
+        "s": 5300.438093851467,
+        "rho": 28.051377400076454,
+        "u": 1503298.2720060581,
+        "Q": 10000
+      },
+      "bits": {
+        "p": "414ab3effffffff9",
+        "T": "40759904cecf5a28",
+        "h": "4138d7a55425d9e6",
+        "s": "40b4b47026eb2ca1",
+        "rho": "403c0d2711bd14f6",
+        "u": "4136f04245a23064",
+        "Q": "40c3880000000000"
+      }
+    },
+    "state": {
+      "values": {
+        "p": 34.999999999999964,
+        "h": 1628.0693287025629,
+        "T": 72.41367379185624,
+        "s": 5.300438093851467,
+        "rho": 28.051377400076454,
+        "u": 1503.2982720060581,
+        "x": null,
+        "phase": "Superheated vapor",
+        "massKg": 0.016830826440045875,
+        "volumeM3": 0.0006000000000000001,
+        "internalEnergyKJ": 25.301752303754846,
+        "densityResidual": 0,
+        "energyResidual": -4.547473508864641e-13,
+        "liquidVolumeFraction": 0
+      },
+      "bits": {
+        "p": "40417ffffffffffb",
+        "h": "40997046fe1a78ba",
+        "T": "40521a79a1a3cf08",
+        "s": "401533a60b2e422e",
+        "rho": "403c0d2711bd14f6",
+        "u": "40977d316e377d54",
+        "massKg": "3f913c19a47fa406",
+        "volumeM3": "3f43a92a30553262",
+        "internalEnergyKJ": "40394d3fa3941ea6",
+        "densityResidual": "0000000000000000",
+        "energyResidual": "bd60000000000000",
+        "liquidVolumeFraction": "0000000000000000"
+      }
+    },
+    "error": null,
+    "certified": false,
+    "qualificationBlocker": true
+  },
+  {
+    "runtime": "chromium",
+    "artifact": "gateA",
+    "fullVLE": true,
+    "key": "webkit-ledger-76",
+    "input": {
+      "values": {
+        "M": 0.016830826440045875,
+        "U_kJ": 25.301752303754846,
+        "V": 0.0006000000000000001,
+        "rho": 28.051377400076454,
+        "u": 1503298.2720060586
+      },
+      "bits": {
+        "M": "3f913c19a47fa406",
+        "U_kJ": "40394d3fa3941ea6",
+        "V": "3f43a92a30553262",
+        "rho": "403c0d2711bd14f6",
+        "u": "4136f04245a23066"
+      }
+    },
+    "raw": {
+      "values": {
+        "p": 3500000.000000002,
+        "T": 345.5636737918564,
+        "h": 1628069.328702564,
+        "s": 5300.438093851469,
+        "rho": 28.051377400076454,
+        "u": 1503298.2720060586,
+        "Q": 10000
+      },
+      "bits": {
+        "p": "414ab3f000000004",
+        "T": "40759904cecf5a2b",
+        "h": "4138d7a55425d9ea",
+        "s": "40b4b47026eb2ca3",
+        "rho": "403c0d2711bd14f6",
+        "u": "4136f04245a23066",
+        "Q": "40c3880000000000"
+      }
+    },
+    "state": null,
+    "error": {
+      "message": "Outside accepted pressure domain",
+      "faultKind": "solver",
+      "evidence": {
+        "propertyFailure": {
+          "schemaVersion": "C1/1",
+          "operation": "stateMVU",
+          "inputScope": "fixed-inventory",
+          "input": {
+            "values": {
+              "massKg": 0.016830826440045875,
+              "volumeM3": 0.0006000000000000001,
+              "internalEnergyKJ": 25.301752303754846,
+              "guess": 35
+            },
+            "bits": {
+              "massKg": "3f913c19a47fa406",
+              "volumeM3": "3f43a92a30553262",
+              "internalEnergyKJ": "40394d3fa3941ea6",
+              "guess": "4041800000000000"
+            }
+          },
+          "rawRecovery": "returned",
+          "rawCoordinates": {
+            "values": {
+              "p": 3500000.000000002,
+              "T": 345.5636737918564,
+              "h": 1628069.328702564,
+              "s": 5300.438093851469,
+              "rho": 28.051377400076454,
+              "u": 1503298.2720060586,
+              "Q": 10000
+            },
+            "bits": {
+              "p": "414ab3f000000004",
+              "T": "40759904cecf5a2b",
+              "h": "4138d7a55425d9ea",
+              "s": "40b4b47026eb2ca3",
+              "rho": "403c0d2711bd14f6",
+              "u": "4136f04245a23066",
+              "Q": "40c3880000000000"
+            }
+          },
+          "lastRequest": {
+            "mode": "DU",
+            "args": [
+              {
+                "value": 28.051377400076454,
+                "bits": "403c0d2711bd14f6"
+              },
+              {
+                "value": 1503298.2720060586,
+                "bits": "4136f04245a23066"
+              }
+            ]
+          },
+          "requestedInputSupport": "unknown",
+          "returnedCoordinateSupport": "unsupported",
+          "exactInventorySupport": "unknown",
+          "checks": {
+            "support": "fail",
+            "phase": "unmeasured",
+            "canonical": "unmeasured",
+            "nonlinear": "unmeasured"
+          },
+          "observedResiduals": {
+            "densityResidual": 0,
+            "energyResidualKJkg": 0
+          },
+          "physicalTrajectoryExit": "unproved",
+          "reason": "boundary-unresolved",
+          "errorSource": "adapter-support-or-inventory",
+          "originalError": {
+            "message": "Outside accepted pressure domain",
+            "faultKind": "domain"
+          },
+          "numericalPressureEnclosure": false
+        }
+      },
+      "propertyCause": null,
+      "domainCause": null,
+      "nonlinearResidual": null
+    },
+    "certified": false,
+    "qualificationBlocker": true
+  },
+  {
+    "runtime": "webkit",
+    "artifact": "rebuiltB4C",
+    "fullVLE": false,
+    "key": "webkit-ledger-76",
+    "input": {
+      "values": {
+        "M": 0.016830826440045875,
+        "U_kJ": 25.301752303754846,
+        "V": 0.0006000000000000001,
+        "rho": 28.051377400076454,
+        "u": 1503298.2720060586
+      },
+      "bits": {
+        "M": "3f913c19a47fa406",
+        "U_kJ": "40394d3fa3941ea6",
+        "V": "3f43a92a30553262",
+        "rho": "403c0d2711bd14f6",
+        "u": "4136f04245a23066"
+      }
+    },
+    "raw": {
+      "values": {
+        "p": 3499999.9999999967,
+        "T": 345.5636737918562,
+        "h": 1628069.328702563,
+        "s": 5300.438093851467,
+        "rho": 28.051377400076454,
+        "u": 1503298.2720060581,
+        "Q": 10000
+      },
+      "bits": {
+        "p": "414ab3effffffff9",
+        "T": "40759904cecf5a28",
+        "h": "4138d7a55425d9e6",
+        "s": "40b4b47026eb2ca1",
+        "rho": "403c0d2711bd14f6",
+        "u": "4136f04245a23064",
+        "Q": "40c3880000000000"
+      }
+    },
+    "state": {
+      "values": {
+        "p": 34.999999999999964,
+        "h": 1628.0693287025629,
+        "T": 72.41367379185624,
+        "s": 5.300438093851467,
+        "rho": 28.051377400076454,
+        "u": 1503.2982720060581,
+        "x": null,
+        "phase": "Superheated vapor",
+        "massKg": 0.016830826440045875,
+        "volumeM3": 0.0006000000000000001,
+        "internalEnergyKJ": 25.301752303754846,
+        "densityResidual": 0,
+        "energyResidual": -4.547473508864641e-13,
+        "liquidVolumeFraction": 0
+      },
+      "bits": {
+        "p": "40417ffffffffffb",
+        "h": "40997046fe1a78ba",
+        "T": "40521a79a1a3cf08",
+        "s": "401533a60b2e422e",
+        "rho": "403c0d2711bd14f6",
+        "u": "40977d316e377d54",
+        "massKg": "3f913c19a47fa406",
+        "volumeM3": "3f43a92a30553262",
+        "internalEnergyKJ": "40394d3fa3941ea6",
+        "densityResidual": "0000000000000000",
+        "energyResidual": "bd60000000000000",
+        "liquidVolumeFraction": "0000000000000000"
+      }
+    },
+    "error": null,
+    "certified": false,
+    "qualificationBlocker": true
+  },
+  {
+    "runtime": "webkit",
+    "artifact": "rebuiltB4C",
+    "fullVLE": true,
+    "key": "webkit-ledger-76",
+    "input": {
+      "values": {
+        "M": 0.016830826440045875,
+        "U_kJ": 25.301752303754846,
+        "V": 0.0006000000000000001,
+        "rho": 28.051377400076454,
+        "u": 1503298.2720060586
+      },
+      "bits": {
+        "M": "3f913c19a47fa406",
+        "U_kJ": "40394d3fa3941ea6",
+        "V": "3f43a92a30553262",
+        "rho": "403c0d2711bd14f6",
+        "u": "4136f04245a23066"
+      }
+    },
+    "raw": {
+      "values": {
+        "p": 3500000.000000002,
+        "T": 345.5636737918564,
+        "h": 1628069.328702564,
+        "s": 5300.438093851469,
+        "rho": 28.051377400076454,
+        "u": 1503298.2720060586,
+        "Q": 10000
+      },
+      "bits": {
+        "p": "414ab3f000000004",
+        "T": "40759904cecf5a2b",
+        "h": "4138d7a55425d9ea",
+        "s": "40b4b47026eb2ca3",
+        "rho": "403c0d2711bd14f6",
+        "u": "4136f04245a23066",
+        "Q": "40c3880000000000"
+      }
+    },
+    "state": null,
+    "error": {
+      "message": "Outside accepted pressure domain",
+      "faultKind": "solver",
+      "evidence": {
+        "propertyFailure": {
+          "schemaVersion": "C1/1",
+          "operation": "stateMVU",
+          "inputScope": "fixed-inventory",
+          "input": {
+            "values": {
+              "massKg": 0.016830826440045875,
+              "volumeM3": 0.0006000000000000001,
+              "internalEnergyKJ": 25.301752303754846,
+              "guess": 35
+            },
+            "bits": {
+              "massKg": "3f913c19a47fa406",
+              "volumeM3": "3f43a92a30553262",
+              "internalEnergyKJ": "40394d3fa3941ea6",
+              "guess": "4041800000000000"
+            }
+          },
+          "rawRecovery": "returned",
+          "rawCoordinates": {
+            "values": {
+              "p": 3500000.000000002,
+              "T": 345.5636737918564,
+              "h": 1628069.328702564,
+              "s": 5300.438093851469,
+              "rho": 28.051377400076454,
+              "u": 1503298.2720060586,
+              "Q": 10000
+            },
+            "bits": {
+              "p": "414ab3f000000004",
+              "T": "40759904cecf5a2b",
+              "h": "4138d7a55425d9ea",
+              "s": "40b4b47026eb2ca3",
+              "rho": "403c0d2711bd14f6",
+              "u": "4136f04245a23066",
+              "Q": "40c3880000000000"
+            }
+          },
+          "lastRequest": {
+            "mode": "DU",
+            "args": [
+              {
+                "value": 28.051377400076454,
+                "bits": "403c0d2711bd14f6"
+              },
+              {
+                "value": 1503298.2720060586,
+                "bits": "4136f04245a23066"
+              }
+            ]
+          },
+          "requestedInputSupport": "unknown",
+          "returnedCoordinateSupport": "unsupported",
+          "exactInventorySupport": "unknown",
+          "checks": {
+            "support": "fail",
+            "phase": "unmeasured",
+            "canonical": "unmeasured",
+            "nonlinear": "unmeasured"
+          },
+          "observedResiduals": {
+            "densityResidual": 0,
+            "energyResidualKJkg": 0
+          },
+          "physicalTrajectoryExit": "unproved",
+          "reason": "boundary-unresolved",
+          "errorSource": "adapter-support-or-inventory",
+          "originalError": {
+            "message": "Outside accepted pressure domain",
+            "faultKind": "domain"
+          },
+          "numericalPressureEnclosure": false
+        }
+      },
+      "propertyCause": null,
+      "domainCause": null,
+      "nonlinearResidual": null
+    },
+    "certified": false,
+    "qualificationBlocker": true
+  },
+  {
+    "runtime": "webkit",
+    "artifact": "gateA",
+    "fullVLE": false,
+    "key": "webkit-ledger-76",
+    "input": {
+      "values": {
+        "M": 0.016830826440045875,
+        "U_kJ": 25.301752303754846,
+        "V": 0.0006000000000000001,
+        "rho": 28.051377400076454,
+        "u": 1503298.2720060586
+      },
+      "bits": {
+        "M": "3f913c19a47fa406",
+        "U_kJ": "40394d3fa3941ea6",
+        "V": "3f43a92a30553262",
+        "rho": "403c0d2711bd14f6",
+        "u": "4136f04245a23066"
+      }
+    },
+    "raw": {
+      "values": {
+        "p": 3499999.9999999967,
+        "T": 345.5636737918562,
+        "h": 1628069.328702563,
+        "s": 5300.438093851467,
+        "rho": 28.051377400076454,
+        "u": 1503298.2720060581,
+        "Q": 10000
+      },
+      "bits": {
+        "p": "414ab3effffffff9",
+        "T": "40759904cecf5a28",
+        "h": "4138d7a55425d9e6",
+        "s": "40b4b47026eb2ca1",
+        "rho": "403c0d2711bd14f6",
+        "u": "4136f04245a23064",
+        "Q": "40c3880000000000"
+      }
+    },
+    "state": {
+      "values": {
+        "p": 34.999999999999964,
+        "h": 1628.0693287025629,
+        "T": 72.41367379185624,
+        "s": 5.300438093851467,
+        "rho": 28.051377400076454,
+        "u": 1503.2982720060581,
+        "x": null,
+        "phase": "Superheated vapor",
+        "massKg": 0.016830826440045875,
+        "volumeM3": 0.0006000000000000001,
+        "internalEnergyKJ": 25.301752303754846,
+        "densityResidual": 0,
+        "energyResidual": -4.547473508864641e-13,
+        "liquidVolumeFraction": 0
+      },
+      "bits": {
+        "p": "40417ffffffffffb",
+        "h": "40997046fe1a78ba",
+        "T": "40521a79a1a3cf08",
+        "s": "401533a60b2e422e",
+        "rho": "403c0d2711bd14f6",
+        "u": "40977d316e377d54",
+        "massKg": "3f913c19a47fa406",
+        "volumeM3": "3f43a92a30553262",
+        "internalEnergyKJ": "40394d3fa3941ea6",
+        "densityResidual": "0000000000000000",
+        "energyResidual": "bd60000000000000",
+        "liquidVolumeFraction": "0000000000000000"
+      }
+    },
+    "error": null,
+    "certified": false,
+    "qualificationBlocker": true
+  },
+  {
+    "runtime": "webkit",
+    "artifact": "gateA",
+    "fullVLE": true,
+    "key": "webkit-ledger-76",
+    "input": {
+      "values": {
+        "M": 0.016830826440045875,
+        "U_kJ": 25.301752303754846,
+        "V": 0.0006000000000000001,
+        "rho": 28.051377400076454,
+        "u": 1503298.2720060586
+      },
+      "bits": {
+        "M": "3f913c19a47fa406",
+        "U_kJ": "40394d3fa3941ea6",
+        "V": "3f43a92a30553262",
+        "rho": "403c0d2711bd14f6",
+        "u": "4136f04245a23066"
+      }
+    },
+    "raw": {
+      "values": {
+        "p": 3500000.000000002,
+        "T": 345.5636737918564,
+        "h": 1628069.328702564,
+        "s": 5300.438093851469,
+        "rho": 28.051377400076454,
+        "u": 1503298.2720060586,
+        "Q": 10000
+      },
+      "bits": {
+        "p": "414ab3f000000004",
+        "T": "40759904cecf5a2b",
+        "h": "4138d7a55425d9ea",
+        "s": "40b4b47026eb2ca3",
+        "rho": "403c0d2711bd14f6",
+        "u": "4136f04245a23066",
+        "Q": "40c3880000000000"
+      }
+    },
+    "state": null,
+    "error": {
+      "message": "Outside accepted pressure domain",
+      "faultKind": "solver",
+      "evidence": {
+        "propertyFailure": {
+          "schemaVersion": "C1/1",
+          "operation": "stateMVU",
+          "inputScope": "fixed-inventory",
+          "input": {
+            "values": {
+              "massKg": 0.016830826440045875,
+              "volumeM3": 0.0006000000000000001,
+              "internalEnergyKJ": 25.301752303754846,
+              "guess": 35
+            },
+            "bits": {
+              "massKg": "3f913c19a47fa406",
+              "volumeM3": "3f43a92a30553262",
+              "internalEnergyKJ": "40394d3fa3941ea6",
+              "guess": "4041800000000000"
+            }
+          },
+          "rawRecovery": "returned",
+          "rawCoordinates": {
+            "values": {
+              "p": 3500000.000000002,
+              "T": 345.5636737918564,
+              "h": 1628069.328702564,
+              "s": 5300.438093851469,
+              "rho": 28.051377400076454,
+              "u": 1503298.2720060586,
+              "Q": 10000
+            },
+            "bits": {
+              "p": "414ab3f000000004",
+              "T": "40759904cecf5a2b",
+              "h": "4138d7a55425d9ea",
+              "s": "40b4b47026eb2ca3",
+              "rho": "403c0d2711bd14f6",
+              "u": "4136f04245a23066",
+              "Q": "40c3880000000000"
+            }
+          },
+          "lastRequest": {
+            "mode": "DU",
+            "args": [
+              {
+                "value": 28.051377400076454,
+                "bits": "403c0d2711bd14f6"
+              },
+              {
+                "value": 1503298.2720060586,
+                "bits": "4136f04245a23066"
+              }
+            ]
+          },
+          "requestedInputSupport": "unknown",
+          "returnedCoordinateSupport": "unsupported",
+          "exactInventorySupport": "unknown",
+          "checks": {
+            "support": "fail",
+            "phase": "unmeasured",
+            "canonical": "unmeasured",
+            "nonlinear": "unmeasured"
+          },
+          "observedResiduals": {
+            "densityResidual": 0,
+            "energyResidualKJkg": 0
+          },
+          "physicalTrajectoryExit": "unproved",
+          "reason": "boundary-unresolved",
+          "errorSource": "adapter-support-or-inventory",
+          "originalError": {
+            "message": "Outside accepted pressure domain",
+            "faultKind": "domain"
+          },
+          "numericalPressureEnclosure": false
+        }
+      },
+      "propertyCause": null,
+      "domainCause": null,
+      "nonlinearResidual": null
+    },
+    "certified": false,
+    "qualificationBlocker": true
+  }
+]

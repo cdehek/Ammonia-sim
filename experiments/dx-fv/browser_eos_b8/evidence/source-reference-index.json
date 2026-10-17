@@ -1,0 +1,734 @@
+[
+  {
+    "file": "experiments/dx-fv/coupled-model.cjs",
+    "snapshot": "experiments/dx-fv/browser_eos_backend/accepted/coupled-model.cjs",
+    "line": 3,
+    "text": "const C = require('./conservation.cjs');"
+  },
+  {
+    "file": "experiments/dx-fv/coupled-model.cjs",
+    "snapshot": "experiments/dx-fv/browser_eos_backend/accepted/coupled-model.cjs",
+    "line": 4,
+    "text": "const {connectionFlow} = require('./hydraulics.cjs');"
+  },
+  {
+    "file": "experiments/dx-fv/coupled-model.cjs",
+    "snapshot": "experiments/dx-fv/browser_eos_backend/accepted/coupled-model.cjs",
+    "line": 5,
+    "text": "const {createThermodynamics} = require('./thermodynamics.cjs');"
+  },
+  {
+    "file": "experiments/dx-fv/coupled-model.cjs",
+    "snapshot": "experiments/dx-fv/browser_eos_backend/accepted/coupled-model.cjs",
+    "line": 6,
+    "text": "const {fixture} = require('./spatial-fixtures.cjs');"
+  },
+  {
+    "file": "experiments/dx-fv/coupled-model.cjs",
+    "snapshot": "experiments/dx-fv/browser_eos_backend/accepted/coupled-model.cjs",
+    "line": 7,
+    "text": "const {createThermalConfig} = require('./thermal-geometry.cjs');"
+  },
+  {
+    "file": "experiments/dx-fv/coupled-model.cjs",
+    "snapshot": "experiments/dx-fv/browser_eos_backend/accepted/coupled-model.cjs",
+    "line": 8,
+    "text": "const {normalize:normalizeThermal, ANCHOR_K} = require('./thermal-network.cjs');"
+  },
+  {
+    "file": "experiments/dx-fv/coupled-model.cjs",
+    "snapshot": "experiments/dx-fv/browser_eos_backend/accepted/coupled-model.cjs",
+    "line": 9,
+    "text": "const Time = require('./time-control.cjs');"
+  },
+  {
+    "file": "experiments/dx-fv/coupled-model.cjs",
+    "snapshot": "experiments/dx-fv/browser_eos_backend/accepted/coupled-model.cjs",
+    "line": 10,
+    "text": "const {coupledNewton} = require('./coupled-implicit.cjs');"
+  },
+  {
+    "file": "experiments/dx-fv/coupled-model.cjs",
+    "snapshot": "experiments/dx-fv/browser_eos_backend/accepted/coupled-model.cjs",
+    "line": 18,
+    "text": "function exactThermalColumns(spec, dt, weight, scales) {"
+  },
+  {
+    "file": "experiments/dx-fv/coupled-model.cjs",
+    "snapshot": "experiments/dx-fv/browser_eos_backend/accepted/coupled-model.cjs",
+    "line": 41,
+    "text": "function createGrowthHistory() {"
+  },
+  {
+    "file": "experiments/dx-fv/coupled-model.cjs",
+    "snapshot": "experiments/dx-fv/browser_eos_backend/accepted/coupled-model.cjs",
+    "line": 45,
+    "text": "function resetGrowth(history, reason) {"
+  },
+  {
+    "file": "experiments/dx-fv/coupled-model.cjs",
+    "snapshot": "experiments/dx-fv/browser_eos_backend/accepted/coupled-model.cjs",
+    "line": 50,
+    "text": "function noteNonlinearFailure(history, dt) {"
+  },
+  {
+    "file": "experiments/dx-fv/coupled-model.cjs",
+    "snapshot": "experiments/dx-fv/browser_eos_backend/accepted/coupled-model.cjs",
+    "line": 53,
+    "text": "function recoveredGrowth(history, dt, proposal, maxStep) {"
+  },
+  {
+    "file": "experiments/dx-fv/coupled-model.cjs",
+    "snapshot": "experiments/dx-fv/browser_eos_backend/accepted/coupled-model.cjs",
+    "line": 64,
+    "text": "function createCoupledModel(engine, options={}, observeAttempt=null) {"
+  },
+  {
+    "file": "experiments/dx-fv/coupled-model.cjs",
+    "snapshot": "experiments/dx-fv/browser_eos_backend/accepted/coupled-model.cjs",
+    "line": 75,
+    "text": "  function fluidCall(fn, section, stage) {"
+  },
+  {
+    "file": "experiments/dx-fv/coupled-model.cjs",
+    "snapshot": "experiments/dx-fv/browser_eos_backend/accepted/coupled-model.cjs",
+    "line": 80,
+    "text": "  function coordinates(c,i) { return fluidCall(()=>thermo.ph(c.pressureGuess,(c.internalEnergyKJ+100*c.pressureGuess*c.volumeM3)/c.massKg),i,'coordinates'); }"
+  },
+  {
+    "file": "experiments/dx-fv/coupled-model.cjs",
+    "snapshot": "experiments/dx-fv/browser_eos_backend/accepted/coupled-model.cjs",
+    "line": 81,
+    "text": "  function recover(c,i) { return fluidCall(()=>thermo.recover(c),i,'canonical-recovery'); }"
+  },
+  {
+    "file": "experiments/dx-fv/coupled-model.cjs",
+    "snapshot": "experiments/dx-fv/browser_eos_backend/accepted/coupled-model.cjs",
+    "line": 82,
+    "text": "  function temperatures(spec, energies, stage) {"
+  },
+  {
+    "file": "experiments/dx-fv/coupled-model.cjs",
+    "snapshot": "experiments/dx-fv/browser_eos_backend/accepted/coupled-model.cjs",
+    "line": 91,
+    "text": "  function patchSpec(spec, patch) {"
+  },
+  {
+    "file": "experiments/dx-fv/coupled-model.cjs",
+    "snapshot": "experiments/dx-fv/browser_eos_backend/accepted/coupled-model.cjs",
+    "line": 103,
+    "text": "  function create(config={}) {"
+  },
+  {
+    "file": "experiments/dx-fv/coupled-model.cjs",
+    "snapshot": "experiments/dx-fv/browser_eos_backend/accepted/coupled-model.cjs",
+    "line": 137,
+    "text": "  function evaluate(spec, states, energies) {"
+  },
+  {
+    "file": "experiments/dx-fv/coupled-model.cjs",
+    "snapshot": "experiments/dx-fv/browser_eos_backend/accepted/coupled-model.cjs",
+    "line": 152,
+    "text": "  function blend(terms) {"
+  },
+  {
+    "file": "experiments/dx-fv/coupled-model.cjs",
+    "snapshot": "experiments/dx-fv/browser_eos_backend/accepted/coupled-model.cjs",
+    "line": 157,
+    "text": "  function solveStage(s, dt, known, weight, guess, work) {"
+  },
+  {
+    "file": "experiments/dx-fv/coupled-model.cjs",
+    "snapshot": "experiments/dx-fv/browser_eos_backend/accepted/coupled-model.cjs",
+    "line": 193,
+    "text": "  function trial(s, dt, work={evaluations:0,iterations:0,linearSolves:0}) {"
+  },
+  {
+    "file": "experiments/dx-fv/coupled-model.cjs",
+    "snapshot": "experiments/dx-fv/browser_eos_backend/accepted/coupled-model.cjs",
+    "line": 208,
+    "text": "  function errorEstimate(s, coarse, fine) {"
+  },
+  {
+    "file": "experiments/dx-fv/coupled-model.cjs",
+    "snapshot": "experiments/dx-fv/browser_eos_backend/accepted/coupled-model.cjs",
+    "line": 213,
+    "text": "  function commit(s, piece, dt, start) {"
+  },
+  {
+    "file": "experiments/dx-fv/coupled-model.cjs",
+    "snapshot": "experiments/dx-fv/browser_eos_backend/accepted/coupled-model.cjs",
+    "line": 214,
+    "text": "    for (const e of Time.crossings(s.cells.map(coordinates),piece.states,engine.sat)) s.events.push({...e,seconds:start+dt*Math.abs(e.left)/(Math.abs(e.left)+Math.abs(e.right)),bracketStartSeconds:start,bracketEndSeconds:start+dt});"
+  },
+  {
+    "file": "experiments/dx-fv/coupled-model.cjs",
+    "snapshot": "experiments/dx-fv/browser_eos_backend/accepted/coupled-model.cjs",
+    "line": 226,
+    "text": "  function applyBoundary(s,patch,scheduled) {"
+  },
+  {
+    "file": "experiments/dx-fv/coupled-model.cjs",
+    "snapshot": "experiments/dx-fv/browser_eos_backend/accepted/coupled-model.cjs",
+    "line": 232,
+    "text": "  function domainEvidence(s,dt,cause) {"
+  },
+  {
+    "file": "experiments/dx-fv/coupled-model.cjs",
+    "snapshot": "experiments/dx-fv/browser_eos_backend/accepted/coupled-model.cjs",
+    "line": 261,
+    "text": "  function advance(s,duration) {"
+  },
+  {
+    "file": "experiments/dx-fv/coupled-model.cjs",
+    "snapshot": "experiments/dx-fv/browser_eos_backend/accepted/coupled-model.cjs",
+    "line": 280,
+    "text": "          const crossings=[...Time.crossings(s.cells.map(coordinates),half.states,engine.sat),...Time.crossings(half.states,fine.states,engine.sat)];"
+  },
+  {
+    "file": "experiments/dx-fv/coupled-model.cjs",
+    "snapshot": "experiments/dx-fv/browser_eos_backend/accepted/coupled-model.cjs",
+    "line": 333,
+    "text": "  function update(s,patch) {if(s.stop)throw Error('Stopped coupled state is frozen.');applyBoundary(s,patch,false);return record(s);}"
+  },
+  {
+    "file": "experiments/dx-fv/coupled-model.cjs",
+    "snapshot": "experiments/dx-fv/browser_eos_backend/accepted/coupled-model.cjs",
+    "line": 334,
+    "text": "  function record(s) {"
+  },
+  {
+    "file": "experiments/dx-fv/conservation.cjs",
+    "snapshot": "experiments/dx-fv/browser_eos_backend/accepted/conservation.cjs",
+    "line": 3,
+    "text": "function inventory(state,volumeM3){"
+  },
+  {
+    "file": "experiments/dx-fv/conservation.cjs",
+    "snapshot": "experiments/dx-fv/browser_eos_backend/accepted/conservation.cjs",
+    "line": 7,
+    "text": "function flux(massFlowKgS,donor){"
+  },
+  {
+    "file": "experiments/dx-fv/conservation.cjs",
+    "snapshot": "experiments/dx-fv/browser_eos_backend/accepted/conservation.cjs",
+    "line": 11,
+    "text": "function assemble(faces,heatKW){"
+  },
+  {
+    "file": "experiments/dx-fv/conservation.cjs",
+    "snapshot": "experiments/dx-fv/browser_eos_backend/accepted/conservation.cjs",
+    "line": 15,
+    "text": "function totals(cells){return cells.reduce((a,c)=>({massKg:a.massKg+c.massKg,internalEnergyKJ:a.internalEnergyKJ+c.internalEnergyKJ}),{massKg:0,internalEnergyKJ:0});}"
+  },
+  {
+    "file": "experiments/dx-fv/hydraulics.cjs",
+    "snapshot": "experiments/dx-fv/browser_eos_backend/accepted/hydraulics.cjs",
+    "line": 6,
+    "text": "function coefficients(donor,connection){"
+  },
+  {
+    "file": "experiments/dx-fv/hydraulics.cjs",
+    "snapshot": "experiments/dx-fv/browser_eos_backend/accepted/hydraulics.cjs",
+    "line": 10,
+    "text": "function pressureDropPa(massFlowKgS,donor,connection){const c=coefficients(donor,connection);return c.linear*massFlowKgS+c.quadratic*massFlowKgS*Math.abs(massFlowKgS);}"
+  },
+  {
+    "file": "experiments/dx-fv/hydraulics.cjs",
+    "snapshot": "experiments/dx-fv/browser_eos_backend/accepted/hydraulics.cjs",
+    "line": 11,
+    "text": "function connectionFlow(left,right,connection){"
+  },
+  {
+    "file": "experiments/dx-fv/thermodynamics.cjs",
+    "snapshot": "experiments/dx-fv/browser_eos_backend/accepted/thermodynamics.cjs",
+    "line": 2,
+    "text": "const {inventory}=require('./conservation.cjs');"
+  },
+  {
+    "file": "experiments/dx-fv/thermodynamics.cjs",
+    "snapshot": "experiments/dx-fv/browser_eos_backend/accepted/thermodynamics.cjs",
+    "line": 3,
+    "text": "function createThermodynamics(engine){"
+  },
+  {
+    "file": "experiments/dx-fv/thermodynamics.cjs",
+    "snapshot": "experiments/dx-fv/browser_eos_backend/accepted/thermodynamics.cjs",
+    "line": 4,
+    "text": " function ph(p,h){"
+  },
+  {
+    "file": "experiments/dx-fv/thermodynamics.cjs",
+    "snapshot": "experiments/dx-fv/browser_eos_backend/accepted/thermodynamics.cjs",
+    "line": 6,
+    "text": "  let state,sat;try{state=engine.ph(p,h);sat=engine.sat(p);}catch(error){"
+  },
+  {
+    "file": "experiments/dx-fv/thermodynamics.cjs",
+    "snapshot": "experiments/dx-fv/browser_eos_backend/accepted/thermodynamics.cjs",
+    "line": 12,
+    "text": " function initialize(p,h,volumeM3){return {...inventory(ph(p,h),volumeM3),volumeM3,pressureGuess:p};}"
+  },
+  {
+    "file": "experiments/dx-fv/thermodynamics.cjs",
+    "snapshot": "experiments/dx-fv/browser_eos_backend/accepted/thermodynamics.cjs",
+    "line": 13,
+    "text": " function recover(cell){"
+  },
+  {
+    "file": "experiments/dx-fv/thermodynamics.cjs",
+    "snapshot": "experiments/dx-fv/browser_eos_backend/accepted/thermodynamics.cjs",
+    "line": 14,
+    "text": "  const state=engine.stateMVU(cell.massKg,cell.volumeM3,cell.internalEnergyKJ,cell.pressureGuess);"
+  },
+  {
+    "file": "experiments/dx-fv/thermodynamics.cjs",
+    "snapshot": "experiments/dx-fv/browser_eos_backend/accepted/thermodynamics.cjs",
+    "line": 15,
+    "text": "  return {...state,superheatK:Math.max(0,state.T-engine.sat(state.p).T),wet:state.x!==null?state.x<1:state.phase.includes('liquid')};"
+  },
+  {
+    "file": "experiments/dx-fv/spatial-fixtures.cjs",
+    "snapshot": "experiments/dx-fv/browser_eos_backend/accepted/spatial-fixtures.cjs",
+    "line": 2,
+    "text": "const {normalize}=require('./evaporator.cjs');"
+  },
+  {
+    "file": "experiments/dx-fv/spatial-fixtures.cjs",
+    "snapshot": "experiments/dx-fv/browser_eos_backend/accepted/spatial-fixtures.cjs",
+    "line": 6,
+    "text": "function heatInputs(n,total,profile='uniform'){"
+  },
+  {
+    "file": "experiments/dx-fv/spatial-fixtures.cjs",
+    "snapshot": "experiments/dx-fv/browser_eos_backend/accepted/spatial-fixtures.cjs",
+    "line": 11,
+    "text": "function fixture(n,{totalHeatKW=18,profile='uniform',initial={p:3.5,h:500}}={}){"
+  },
+  {
+    "file": "experiments/dx-fv/spatial-fixtures.cjs",
+    "snapshot": "experiments/dx-fv/browser_eos_backend/accepted/spatial-fixtures.cjs",
+    "line": 15,
+    "text": "function cases(n){"
+  },
+  {
+    "file": "experiments/dx-fv/spatial-fixtures.cjs",
+    "snapshot": "experiments/dx-fv/browser_eos_backend/accepted/spatial-fixtures.cjs",
+    "line": 26,
+    "text": "function numericalOptions(tolerance){"
+  },
+  {
+    "file": "experiments/dx-fv/evaporator.cjs",
+    "snapshot": "experiments/dx-fv/browser_eos_backend/accepted/evaporator.cjs",
+    "line": 2,
+    "text": "const {createThermodynamics}=require('./thermodynamics.cjs'),C=require('./conservation.cjs'),{connectionFlow}=require('./hydraulics.cjs'),{newton}=require('./implicit.cjs');"
+  },
+  {
+    "file": "experiments/dx-fv/evaporator.cjs",
+    "snapshot": "experiments/dx-fv/browser_eos_backend/accepted/evaporator.cjs",
+    "line": 3,
+    "text": "const Time=require('./time-control.cjs');"
+  },
+  {
+    "file": "experiments/dx-fv/evaporator.cjs",
+    "snapshot": "experiments/dx-fv/browser_eos_backend/accepted/evaporator.cjs",
+    "line": 5,
+    "text": "function normalize(config){"
+  },
+  {
+    "file": "experiments/dx-fv/evaporator.cjs",
+    "snapshot": "experiments/dx-fv/browser_eos_backend/accepted/evaporator.cjs",
+    "line": 21,
+    "text": "function createEvaporator(engine,options={}){"
+  },
+  {
+    "file": "experiments/dx-fv/evaporator.cjs",
+    "snapshot": "experiments/dx-fv/browser_eos_backend/accepted/evaporator.cjs",
+    "line": 28,
+    "text": " function create(config){"
+  },
+  {
+    "file": "experiments/dx-fv/evaporator.cjs",
+    "snapshot": "experiments/dx-fv/browser_eos_backend/accepted/evaporator.cjs",
+    "line": 33,
+    "text": " function transport(spec,states){"
+  },
+  {
+    "file": "experiments/dx-fv/evaporator.cjs",
+    "snapshot": "experiments/dx-fv/browser_eos_backend/accepted/evaporator.cjs",
+    "line": 37,
+    "text": " function blendFaces(terms){"
+  },
+  {
+    "file": "experiments/dx-fv/evaporator.cjs",
+    "snapshot": "experiments/dx-fv/browser_eos_backend/accepted/evaporator.cjs",
+    "line": 40,
+    "text": " function solveStage(spec,old,base,dt,known,weight,guess){"
+  },
+  {
+    "file": "experiments/dx-fv/evaporator.cjs",
+    "snapshot": "experiments/dx-fv/browser_eos_backend/accepted/evaporator.cjs",
+    "line": 51,
+    "text": " function coordinates(cell){return thermo.ph(cell.pressureGuess,(cell.internalEnergyKJ+100*cell.pressureGuess*cell.volumeM3)/cell.massKg);}"
+  },
+  {
+    "file": "experiments/dx-fv/evaporator.cjs",
+    "snapshot": "experiments/dx-fv/browser_eos_backend/accepted/evaporator.cjs",
+    "line": 52,
+    "text": " function trial(s,dt){"
+  },
+  {
+    "file": "experiments/dx-fv/evaporator.cjs",
+    "snapshot": "experiments/dx-fv/browser_eos_backend/accepted/evaporator.cjs",
+    "line": 66,
+    "text": " function commit(s,t,dt,error){"
+  },
+  {
+    "file": "experiments/dx-fv/evaporator.cjs",
+    "snapshot": "experiments/dx-fv/browser_eos_backend/accepted/evaporator.cjs",
+    "line": 68,
+    "text": "  for(const event of Time.crossings(before,after,engine.sat)){"
+  },
+  {
+    "file": "experiments/dx-fv/evaporator.cjs",
+    "snapshot": "experiments/dx-fv/browser_eos_backend/accepted/evaporator.cjs",
+    "line": 79,
+    "text": " function advance(s,seconds){"
+  },
+  {
+    "file": "experiments/dx-fv/evaporator.cjs",
+    "snapshot": "experiments/dx-fv/browser_eos_backend/accepted/evaporator.cjs",
+    "line": 93,
+    "text": "     const events=[...Time.crossings(s.cells.map(coordinates),half.value.states,engine.sat),...Time.crossings(half.value.states,second.value.states,engine.sat)];"
+  },
+  {
+    "file": "experiments/dx-fv/evaporator.cjs",
+    "snapshot": "experiments/dx-fv/browser_eos_backend/accepted/evaporator.cjs",
+    "line": 123,
+    "text": " function update(s,patch){"
+  },
+  {
+    "file": "experiments/dx-fv/evaporator.cjs",
+    "snapshot": "experiments/dx-fv/browser_eos_backend/accepted/evaporator.cjs",
+    "line": 127,
+    "text": " function record(s){"
+  },
+  {
+    "file": "experiments/dx-fv/implicit.cjs",
+    "snapshot": "experiments/dx-fv/browser_eos_backend/accepted/implicit.cjs",
+    "line": 2,
+    "text": "function solveLinear(matrix,rhs){"
+  },
+  {
+    "file": "experiments/dx-fv/implicit.cjs",
+    "snapshot": "experiments/dx-fv/browser_eos_backend/accepted/implicit.cjs",
+    "line": 13,
+    "text": "function newton(evaluate,initial,{tolerance=1e-11,maxIterations=24,onEvaluation=()=>{},onIteration=()=>{},pressureDifference=1e-5,enthalpyDifference=1e-4,sameRegion=null,lineSearchMinimum=1/4096}={}){"
+  },
+  {
+    "file": "experiments/dx-fv/time-control.cjs",
+    "snapshot": "experiments/dx-fv/browser_eos_backend/accepted/time-control.cjs",
+    "line": 3,
+    "text": "function estimate(coarse,fine,initial,order,settings){"
+  },
+  {
+    "file": "experiments/dx-fv/time-control.cjs",
+    "snapshot": "experiments/dx-fv/browser_eos_backend/accepted/time-control.cjs",
+    "line": 18,
+    "text": "function factor(error,order,accepted){"
+  },
+  {
+    "file": "experiments/dx-fv/time-control.cjs",
+    "snapshot": "experiments/dx-fv/browser_eos_backend/accepted/time-control.cjs",
+    "line": 23,
+    "text": "function crossings(before,after,saturation){"
+  },
+  {
+    "file": "experiments/dx-fv/thermal-geometry.cjs",
+    "snapshot": "experiments/dx-fv/browser_eos_backend/accepted/thermal-geometry.cjs",
+    "line": 3,
+    "text": "const {ANCHOR_K}=require('./thermal-network.cjs');"
+  },
+  {
+    "file": "experiments/dx-fv/thermal-geometry.cjs",
+    "snapshot": "experiments/dx-fv/browser_eos_backend/accepted/thermal-geometry.cjs",
+    "line": 9,
+    "text": "function positive(v,name){if(!Number.isFinite(v)||v<=0)throw Error(`Positive ${name} required.`);}"
+  },
+  {
+    "file": "experiments/dx-fv/thermal-geometry.cjs",
+    "snapshot": "experiments/dx-fv/browser_eos_backend/accepted/thermal-geometry.cjs",
+    "line": 10,
+    "text": "function fields(obj,allowed){if(!obj||typeof obj!=='object'||Array.isArray(obj)||Object.keys(obj).some(k=>!allowed.includes(k)))throw Error('Unsupported thermal geometry/configuration field.');}"
+  },
+  {
+    "file": "experiments/dx-fv/thermal-geometry.cjs",
+    "snapshot": "experiments/dx-fv/browser_eos_backend/accepted/thermal-geometry.cjs",
+    "line": 11,
+    "text": "function geometry(options={}){"
+  },
+  {
+    "file": "experiments/dx-fv/thermal-geometry.cjs",
+    "snapshot": "experiments/dx-fv/browser_eos_backend/accepted/thermal-geometry.cjs",
+    "line": 29,
+    "text": "function profileIntegral(profile,left,right,domain){"
+  },
+  {
+    "file": "experiments/dx-fv/thermal-geometry.cjs",
+    "snapshot": "experiments/dx-fv/browser_eos_backend/accepted/thermal-geometry.cjs",
+    "line": 40,
+    "text": "function createThermalConfig(options={}){"
+  },
+  {
+    "file": "experiments/dx-fv/thermal-network.cjs",
+    "snapshot": "experiments/dx-fv/browser_eos_backend/accepted/thermal-network.cjs",
+    "line": 3,
+    "text": "const {solveLinear}=require('./implicit.cjs');"
+  },
+  {
+    "file": "experiments/dx-fv/thermal-network.cjs",
+    "snapshot": "experiments/dx-fv/browser_eos_backend/accepted/thermal-network.cjs",
+    "line": 4,
+    "text": "const {factor}=require('./time-control.cjs');"
+  },
+  {
+    "file": "experiments/dx-fv/thermal-network.cjs",
+    "snapshot": "experiments/dx-fv/browser_eos_backend/accepted/thermal-network.cjs",
+    "line": 11,
+    "text": "function keys(value,allowed,label){"
+  },
+  {
+    "file": "experiments/dx-fv/thermal-network.cjs",
+    "snapshot": "experiments/dx-fv/browser_eos_backend/accepted/thermal-network.cjs",
+    "line": 14,
+    "text": "function normalize(config){"
+  },
+  {
+    "file": "experiments/dx-fv/thermal-network.cjs",
+    "snapshot": "experiments/dx-fv/browser_eos_backend/accepted/thermal-network.cjs",
+    "line": 50,
+    "text": "function boundaryPatch(spec,patch){"
+  },
+  {
+    "file": "experiments/dx-fv/thermal-network.cjs",
+    "snapshot": "experiments/dx-fv/browser_eos_backend/accepted/thermal-network.cjs",
+    "line": 64,
+    "text": "function createIntegrator(options={}){"
+  },
+  {
+    "file": "experiments/dx-fv/thermal-network.cjs",
+    "snapshot": "experiments/dx-fv/browser_eos_backend/accepted/thermal-network.cjs",
+    "line": 71,
+    "text": " function create(config){"
+  },
+  {
+    "file": "experiments/dx-fv/thermal-network.cjs",
+    "snapshot": "experiments/dx-fv/browser_eos_backend/accepted/thermal-network.cjs",
+    "line": 79,
+    "text": " function temperatures(s,energy){return energy.map((e,i)=>ANCHOR_K+e/s.spec.nodes[i].capacityKJK);}"
+  },
+  {
+    "file": "experiments/dx-fv/thermal-network.cjs",
+    "snapshot": "experiments/dx-fv/browser_eos_backend/accepted/thermal-network.cjs",
+    "line": 80,
+    "text": " function recover(s,energy,stage){"
+  },
+  {
+    "file": "experiments/dx-fv/thermal-network.cjs",
+    "snapshot": "experiments/dx-fv/browser_eos_backend/accepted/thermal-network.cjs",
+    "line": 86,
+    "text": " function evaluate(s,energy){"
+  },
+  {
+    "file": "experiments/dx-fv/thermal-network.cjs",
+    "snapshot": "experiments/dx-fv/browser_eos_backend/accepted/thermal-network.cjs",
+    "line": 97,
+    "text": " function jacobian(s){"
+  },
+  {
+    "file": "experiments/dx-fv/thermal-network.cjs",
+    "snapshot": "experiments/dx-fv/browser_eos_backend/accepted/thermal-network.cjs",
+    "line": 105,
+    "text": " function solve(s,a,rhs,weight,work){"
+  },
+  {
+    "file": "experiments/dx-fv/thermal-network.cjs",
+    "snapshot": "experiments/dx-fv/browser_eos_backend/accepted/thermal-network.cjs",
+    "line": 112,
+    "text": " function trial(s,dt,work={solves:0,evaluations:0}){"
+  },
+  {
+    "file": "experiments/dx-fv/thermal-network.cjs",
+    "snapshot": "experiments/dx-fv/browser_eos_backend/accepted/thermal-network.cjs",
+    "line": 134,
+    "text": " function commit(s,t,dt){"
+  },
+  {
+    "file": "experiments/dx-fv/thermal-network.cjs",
+    "snapshot": "experiments/dx-fv/browser_eos_backend/accepted/thermal-network.cjs",
+    "line": 146,
+    "text": " function stop(s,kind,message,dt,evidence){s.stop={kind,message,seconds:s.seconds,attemptedStepSeconds:dt,evidence:clone(evidence||{})};}"
+  },
+  {
+    "file": "experiments/dx-fv/thermal-network.cjs",
+    "snapshot": "experiments/dx-fv/browser_eos_backend/accepted/thermal-network.cjs",
+    "line": 147,
+    "text": " function applyBoundary(s,patch,scheduled=false){"
+  },
+  {
+    "file": "experiments/dx-fv/thermal-network.cjs",
+    "snapshot": "experiments/dx-fv/browser_eos_backend/accepted/thermal-network.cjs",
+    "line": 153,
+    "text": " function advance(s,duration){"
+  },
+  {
+    "file": "experiments/dx-fv/thermal-network.cjs",
+    "snapshot": "experiments/dx-fv/browser_eos_backend/accepted/thermal-network.cjs",
+    "line": 202,
+    "text": " function update(s,patch){if(s.stop)throw Error('Stopped thermal state is frozen.');applyBoundary(s,patch);return record(s);}"
+  },
+  {
+    "file": "experiments/dx-fv/thermal-network.cjs",
+    "snapshot": "experiments/dx-fv/browser_eos_backend/accepted/thermal-network.cjs",
+    "line": 203,
+    "text": " function record(s){"
+  },
+  {
+    "file": "experiments/dx-fv/coupled-implicit.cjs",
+    "snapshot": "experiments/dx-fv/browser_eos_backend/accepted/coupled-implicit.cjs",
+    "line": 3,
+    "text": "const {solveLinear} = require('./implicit.cjs');"
+  },
+  {
+    "file": "experiments/dx-fv/coupled-implicit.cjs",
+    "snapshot": "experiments/dx-fv/browser_eos_backend/accepted/coupled-implicit.cjs",
+    "line": 7,
+    "text": "function coupledNewton(evaluate, initial, variables, settings, work, exactThermal=null) {"
+  },
+  {
+    "file": "experiments/dx-fv/coupled-fixtures.cjs",
+    "snapshot": "experiments/dx-fv/browser_eos_backend/accepted/coupled-fixtures.cjs",
+    "line": 3,
+    "text": "function fixture(kind='cold', extra={}) {"
+  },
+  {
+    "file": "experiments/dx-fv/coupled-fixtures.cjs",
+    "snapshot": "experiments/dx-fv/browser_eos_backend/accepted/coupled-fixtures.cjs",
+    "line": 10,
+    "text": "function cases() {"
+  },
+  {
+    "file": "experiments/dx-fv/coupled-fixtures.cjs",
+    "snapshot": "experiments/dx-fv/browser_eos_backend/accepted/coupled-fixtures.cjs",
+    "line": 21,
+    "text": "function accuracyOptions(tolerance=1e-6) {"
+  },
+  {
+    "file": "engine.js",
+    "snapshot": "engine.js",
+    "line": 4,
+    "text": "function createEngine(data){"
+  },
+  {
+    "file": "engine.js",
+    "snapshot": "engine.js",
+    "line": 7,
+    "text": " function bracket(values,x){if(x<values[0]-eps||x>values[values.length-1]+eps)throw Error('State outside the validated property domain.');if(x>=values[values.length-1])return [values.length-2,1];let lo=0,hi=values.length-1;while(hi-lo>1){const m=(lo+hi)>>1;if(values[m]<=x)lo=m;else hi=m;}return [lo,(x-values[lo])/(values[lo+1]-values[lo])];}"
+  },
+  {
+    "file": "engine.js",
+    "snapshot": "engine.js",
+    "line": 9,
+    "text": " function pBracket(p){if(!(p>0))throw Error('Absolute pressure must be positive.');return bracket(logs,Math.log(p));}"
+  },
+  {
+    "file": "engine.js",
+    "snapshot": "engine.js",
+    "line": 10,
+    "text": " function mixRow(a,b,w){if(!a||!b)throw Error('Liquid state below the property table temperature limit.');return [lerp(a[0],b[0],w),lerp(a[1],b[1],w),Math.exp(lerp(Math.log(a[2]),Math.log(b[2]),w))];}"
+  },
+  {
+    "file": "engine.js",
+    "snapshot": "engine.js",
+    "line": 11,
+    "text": " function sat(p){const [i,w]=pBracket(p),a=data.sat[i],b=data.sat[i+1];return {p,T:lerp(a[0],b[0],w),hf:lerp(a[1],b[1],w),sf:lerp(a[2],b[2],w),rhof:Math.exp(lerp(Math.log(a[3]),Math.log(b[3]),w)),hg:lerp(a[4],b[4],w),sg:lerp(a[5],b[5],w),rhog:Math.exp(lerp(Math.log(a[6]),Math.log(b[6]),w))};}"
+  },
+  {
+    "file": "engine.js",
+    "snapshot": "engine.js",
+    "line": 12,
+    "text": " function satP(T){const temps=data.sat.map(row=>row[0]),[i,w]=bracket(temps,T);return Math.exp(lerp(logs[i],logs[i+1],w));}"
+  },
+  {
+    "file": "engine.js",
+    "snapshot": "engine.js",
+    "line": 13,
+    "text": " function branch(p,offset,kind){const axis=kind==='vapor'?data.sh:data.sc,[j,u]=bracket(axis,offset),[i,w]=pBracket(p);return mixRow(mixRow(data[kind][i][j],data[kind][i][j+1],u),mixRow(data[kind][i+1][j],data[kind][i+1][j+1],u),w);}"
+  },
+  {
+    "file": "engine.js",
+    "snapshot": "engine.js",
+    "line": 14,
+    "text": " function statePT(p,T,kind){const a=sat(p),d=T-a.T;"
+  },
+  {
+    "file": "engine.js",
+    "snapshot": "engine.js",
+    "line": 18,
+    "text": " function statePX(p,x){if(x<0||x>1)throw Error('Vapor quality must be between zero and one.');const a=sat(p);return {p,T:a.T,h:lerp(a.hf,a.hg,x),s:lerp(a.sf,a.sg,x),rho:1/((1-x)/a.rhof+x/a.rhog),x,phase:x===0?'Saturated liquid':x===1?'Saturated vapor':'Liquid + vapor'};}"
+  },
+  {
+    "file": "engine.js",
+    "snapshot": "engine.js",
+    "line": 19,
+    "text": " function inverse(p,target,key){const a=sat(p),f=key==='h'?a.hf:a.sf,g=key==='h'?a.hg:a.sg;"
+  },
+  {
+    "file": "engine.js",
+    "snapshot": "engine.js",
+    "line": 33,
+    "text": " function propertyError(kind,message){const e=new Error(message);e.faultKind=kind;return e;}"
+  },
+  {
+    "file": "engine.js",
+    "snapshot": "engine.js",
+    "line": 34,
+    "text": " function branchLimit(p,kind){"
+  },
+  {
+    "file": "engine.js",
+    "snapshot": "engine.js",
+    "line": 40,
+    "text": " function atDensity(p,rho){"
+  },
+  {
+    "file": "engine.js",
+    "snapshot": "engine.js",
+    "line": 52,
+    "text": " function stateDU(rho,u,guess){"
+  },
+  {
+    "file": "engine.js",
+    "snapshot": "engine.js",
+    "line": 76,
+    "text": " function stateMVU(massKg,volumeM3,internalEnergyKJ,guess){"
+  },
+  {
+    "file": "engine.js",
+    "snapshot": "engine.js",
+    "line": 84,
+    "text": " function solve(inputs){const c={...defaults,...inputs};const finiteKeys=Object.keys(defaults).filter(k=>typeof defaults[k]==='number');for(const k of finiteKeys)if(!Number.isFinite(c[k]))throw Error('Enter a finite number for '+k+'.');"
+  },
+  {
+    "file": "engine.js",
+    "snapshot": "engine.js",
+    "line": 125,
+    "text": " function roomSimulation(result,opts){const {initial,target,deadband,thermalMass,leakUA,internalGain,hours}=opts;"
+  },
+  {
+    "file": "engine.js",
+    "snapshot": "engine.js",
+    "line": 135,
+    "text": "  function segment(T,on,remaining){"
+  }
+]

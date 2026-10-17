@@ -1,0 +1,2180 @@
+{
+  "passed": true,
+  "scope": "Saved raw observation injection only; unchanged C1 adapter, actual table guard. Proves classification for these raw rows, not natural A2 reachability or a fresh EOS execution.",
+  "rows": [
+    {
+      "issueId": "DU-148",
+      "runtime": "native",
+      "fullVLE": false,
+      "requests": [
+        {
+          "mode": "DU",
+          "bits": [
+            "403c0d271287772f",
+            "4136f0424572bf7f"
+          ]
+        }
+      ],
+      "error": {
+        "message": "Outside accepted pressure domain",
+        "faultKind": "solver",
+        "evidence": {
+          "propertyFailure": {
+            "schemaVersion": "C1/1",
+            "operation": "stateMVU",
+            "inputScope": "fixed-inventory",
+            "input": {
+              "values": {
+                "massKg": 0.016830826468318547,
+                "volumeM3": 0.0006000000000000001,
+                "internalEnergyKJ": 25.301752334073395,
+                "guess": 35
+              },
+              "bits": {
+                "massKg": "3f913c19a4fbfc39",
+                "volumeM3": "3f43a92a30553262",
+                "internalEnergyKJ": "40394d3fa416563f",
+                "guess": "4041800000000000"
+              }
+            },
+            "rawRecovery": "returned",
+            "rawCoordinates": {
+              "values": {
+                "p": 3500000.0000000196,
+                "T": 345.5636735993518,
+                "rho": 28.051377447197595,
+                "h": 1628069.327769079,
+                "u": 1503298.2712821662,
+                "Q": 1,
+                "phase": 6
+              },
+              "bits": {
+                "p": "414ab3f00000002a",
+                "T": "40759904ce9bad5a",
+                "rho": "403c0d2712877734",
+                "h": "4138d7a553e8aca3",
+                "u": "4136f0424572bf80",
+                "Q": "3ff0000000000000",
+                "phase": "4018000000000000"
+              }
+            },
+            "lastRequest": {
+              "mode": "DU",
+              "args": [
+                {
+                  "value": 28.051377447197577,
+                  "bits": "403c0d271287772f"
+                },
+                {
+                  "value": 1503298.271282166,
+                  "bits": "4136f0424572bf7f"
+                }
+              ]
+            },
+            "requestedInputSupport": "unknown",
+            "returnedCoordinateSupport": "unsupported",
+            "exactInventorySupport": "unknown",
+            "checks": {
+              "support": "fail",
+              "phase": "unmeasured",
+              "canonical": "unmeasured",
+              "nonlinear": "unmeasured"
+            },
+            "observedResiduals": {
+              "densityResidual": 6.332511987134929e-16,
+              "energyResidualKJkg": 2.2737367544323206e-13
+            },
+            "physicalTrajectoryExit": "unproved",
+            "reason": "boundary-unresolved",
+            "errorSource": "adapter-support-or-inventory",
+            "originalError": {
+              "message": "Outside accepted pressure domain",
+              "faultKind": "domain"
+            },
+            "numericalPressureEnclosure": false
+          }
+        },
+        "propertyCause": null,
+        "domainCause": null,
+        "nonlinearResidual": null
+      },
+      "accepted": false
+    },
+    {
+      "issueId": "DU-148",
+      "runtime": "native",
+      "fullVLE": true,
+      "requests": [
+        {
+          "mode": "DU",
+          "bits": [
+            "403c0d271287772f",
+            "4136f0424572bf7f"
+          ]
+        }
+      ],
+      "error": {
+        "message": "Error: Input vapor quality [Q] must be between 0 and 1",
+        "faultKind": "solver",
+        "evidence": {
+          "propertyFailure": {
+            "schemaVersion": "C1/1",
+            "operation": "stateMVU",
+            "inputScope": "fixed-inventory",
+            "input": {
+              "values": {
+                "massKg": 0.016830826468318547,
+                "volumeM3": 0.0006000000000000001,
+                "internalEnergyKJ": 25.301752334073395,
+                "guess": 35
+              },
+              "bits": {
+                "massKg": "3f913c19a4fbfc39",
+                "volumeM3": "3f43a92a30553262",
+                "internalEnergyKJ": "40394d3fa416563f",
+                "guess": "4041800000000000"
+              }
+            },
+            "rawRecovery": "failed",
+            "rawCoordinates": null,
+            "lastRequest": {
+              "mode": "DU",
+              "args": [
+                {
+                  "value": 28.051377447197577,
+                  "bits": "403c0d271287772f"
+                },
+                {
+                  "value": 1503298.271282166,
+                  "bits": "4136f0424572bf7f"
+                }
+              ]
+            },
+            "requestedInputSupport": "unknown",
+            "returnedCoordinateSupport": "unknown",
+            "exactInventorySupport": "unknown",
+            "checks": {
+              "support": "unmeasured",
+              "phase": "unmeasured",
+              "canonical": "unmeasured",
+              "nonlinear": "unmeasured"
+            },
+            "observedResiduals": null,
+            "physicalTrajectoryExit": "unproved",
+            "reason": "inverse-recovery-failure",
+            "errorSource": "EOS",
+            "originalError": {
+              "message": "Error: Input vapor quality [Q] must be between 0 and 1",
+              "faultKind": null
+            },
+            "numericalPressureEnclosure": false
+          }
+        },
+        "propertyCause": null,
+        "domainCause": null,
+        "nonlinearResidual": null
+      },
+      "accepted": false
+    },
+    {
+      "issueId": "DU-148",
+      "runtime": "chromium",
+      "fullVLE": false,
+      "requests": [
+        {
+          "mode": "DU",
+          "bits": [
+            "403c0d271287772f",
+            "4136f0424572bf7f"
+          ]
+        }
+      ],
+      "error": {
+        "message": "Outside accepted pressure domain",
+        "faultKind": "solver",
+        "evidence": {
+          "propertyFailure": {
+            "schemaVersion": "C1/1",
+            "operation": "stateMVU",
+            "inputScope": "fixed-inventory",
+            "input": {
+              "values": {
+                "massKg": 0.016830826468318547,
+                "volumeM3": 0.0006000000000000001,
+                "internalEnergyKJ": 25.301752334073395,
+                "guess": 35
+              },
+              "bits": {
+                "massKg": "3f913c19a4fbfc39",
+                "volumeM3": "3f43a92a30553262",
+                "internalEnergyKJ": "40394d3fa416563f",
+                "guess": "4041800000000000"
+              }
+            },
+            "rawRecovery": "returned",
+            "rawCoordinates": {
+              "values": {
+                "p": 3500000.0000000196,
+                "T": 345.5636735993518,
+                "h": 1628069.327769079,
+                "s": 5300.4380911501285,
+                "rho": 28.051377447197595,
+                "u": 1503298.2712821662,
+                "Q": 1,
+                "phase": 6
+              },
+              "bits": {
+                "p": "414ab3f00000002a",
+                "T": "40759904ce9bad5a",
+                "h": "4138d7a553e8aca3",
+                "s": "40b4b47026bdda78",
+                "rho": "403c0d2712877734",
+                "u": "4136f0424572bf80",
+                "Q": "3ff0000000000000",
+                "phase": "4018000000000000"
+              }
+            },
+            "lastRequest": {
+              "mode": "DU",
+              "args": [
+                {
+                  "value": 28.051377447197577,
+                  "bits": "403c0d271287772f"
+                },
+                {
+                  "value": 1503298.271282166,
+                  "bits": "4136f0424572bf7f"
+                }
+              ]
+            },
+            "requestedInputSupport": "unknown",
+            "returnedCoordinateSupport": "unsupported",
+            "exactInventorySupport": "unknown",
+            "checks": {
+              "support": "fail",
+              "phase": "unmeasured",
+              "canonical": "unmeasured",
+              "nonlinear": "unmeasured"
+            },
+            "observedResiduals": {
+              "densityResidual": 6.332511987134929e-16,
+              "energyResidualKJkg": 2.2737367544323206e-13
+            },
+            "physicalTrajectoryExit": "unproved",
+            "reason": "boundary-unresolved",
+            "errorSource": "adapter-support-or-inventory",
+            "originalError": {
+              "message": "Outside accepted pressure domain",
+              "faultKind": "domain"
+            },
+            "numericalPressureEnclosure": false
+          }
+        },
+        "propertyCause": null,
+        "domainCause": null,
+        "nonlinearResidual": null
+      },
+      "accepted": false
+    },
+    {
+      "issueId": "DU-148",
+      "runtime": "chromium",
+      "fullVLE": true,
+      "requests": [
+        {
+          "mode": "DU",
+          "bits": [
+            "403c0d271287772f",
+            "4136f0424572bf7f"
+          ]
+        }
+      ],
+      "error": {
+        "message": "Input vapor quality [Q] must be between 0 and 1",
+        "faultKind": "solver",
+        "evidence": {
+          "propertyFailure": {
+            "schemaVersion": "C1/1",
+            "operation": "stateMVU",
+            "inputScope": "fixed-inventory",
+            "input": {
+              "values": {
+                "massKg": 0.016830826468318547,
+                "volumeM3": 0.0006000000000000001,
+                "internalEnergyKJ": 25.301752334073395,
+                "guess": 35
+              },
+              "bits": {
+                "massKg": "3f913c19a4fbfc39",
+                "volumeM3": "3f43a92a30553262",
+                "internalEnergyKJ": "40394d3fa416563f",
+                "guess": "4041800000000000"
+              }
+            },
+            "rawRecovery": "failed",
+            "rawCoordinates": null,
+            "lastRequest": {
+              "mode": "DU",
+              "args": [
+                {
+                  "value": 28.051377447197577,
+                  "bits": "403c0d271287772f"
+                },
+                {
+                  "value": 1503298.271282166,
+                  "bits": "4136f0424572bf7f"
+                }
+              ]
+            },
+            "requestedInputSupport": "unknown",
+            "returnedCoordinateSupport": "unknown",
+            "exactInventorySupport": "unknown",
+            "checks": {
+              "support": "unmeasured",
+              "phase": "unmeasured",
+              "canonical": "unmeasured",
+              "nonlinear": "unmeasured"
+            },
+            "observedResiduals": null,
+            "physicalTrajectoryExit": "unproved",
+            "reason": "inverse-recovery-failure",
+            "errorSource": "EOS",
+            "originalError": {
+              "message": "Input vapor quality [Q] must be between 0 and 1",
+              "faultKind": null
+            },
+            "numericalPressureEnclosure": false
+          }
+        },
+        "propertyCause": null,
+        "domainCause": null,
+        "nonlinearResidual": null
+      },
+      "accepted": false
+    },
+    {
+      "issueId": "DU-148",
+      "runtime": "webkit",
+      "fullVLE": false,
+      "requests": [
+        {
+          "mode": "DU",
+          "bits": [
+            "403c0d271287772f",
+            "4136f0424572bf7f"
+          ]
+        }
+      ],
+      "error": {
+        "message": "Outside accepted pressure domain",
+        "faultKind": "solver",
+        "evidence": {
+          "propertyFailure": {
+            "schemaVersion": "C1/1",
+            "operation": "stateMVU",
+            "inputScope": "fixed-inventory",
+            "input": {
+              "values": {
+                "massKg": 0.016830826468318547,
+                "volumeM3": 0.0006000000000000001,
+                "internalEnergyKJ": 25.301752334073395,
+                "guess": 35
+              },
+              "bits": {
+                "massKg": "3f913c19a4fbfc39",
+                "volumeM3": "3f43a92a30553262",
+                "internalEnergyKJ": "40394d3fa416563f",
+                "guess": "4041800000000000"
+              }
+            },
+            "rawRecovery": "returned",
+            "rawCoordinates": {
+              "values": {
+                "p": 3500000.0000000196,
+                "T": 345.5636735993518,
+                "h": 1628069.327769079,
+                "s": 5300.4380911501285,
+                "rho": 28.051377447197595,
+                "u": 1503298.2712821662,
+                "Q": 1,
+                "phase": 6
+              },
+              "bits": {
+                "p": "414ab3f00000002a",
+                "T": "40759904ce9bad5a",
+                "h": "4138d7a553e8aca3",
+                "s": "40b4b47026bdda78",
+                "rho": "403c0d2712877734",
+                "u": "4136f0424572bf80",
+                "Q": "3ff0000000000000",
+                "phase": "4018000000000000"
+              }
+            },
+            "lastRequest": {
+              "mode": "DU",
+              "args": [
+                {
+                  "value": 28.051377447197577,
+                  "bits": "403c0d271287772f"
+                },
+                {
+                  "value": 1503298.271282166,
+                  "bits": "4136f0424572bf7f"
+                }
+              ]
+            },
+            "requestedInputSupport": "unknown",
+            "returnedCoordinateSupport": "unsupported",
+            "exactInventorySupport": "unknown",
+            "checks": {
+              "support": "fail",
+              "phase": "unmeasured",
+              "canonical": "unmeasured",
+              "nonlinear": "unmeasured"
+            },
+            "observedResiduals": {
+              "densityResidual": 6.332511987134929e-16,
+              "energyResidualKJkg": 2.2737367544323206e-13
+            },
+            "physicalTrajectoryExit": "unproved",
+            "reason": "boundary-unresolved",
+            "errorSource": "adapter-support-or-inventory",
+            "originalError": {
+              "message": "Outside accepted pressure domain",
+              "faultKind": "domain"
+            },
+            "numericalPressureEnclosure": false
+          }
+        },
+        "propertyCause": null,
+        "domainCause": null,
+        "nonlinearResidual": null
+      },
+      "accepted": false
+    },
+    {
+      "issueId": "DU-148",
+      "runtime": "webkit",
+      "fullVLE": true,
+      "requests": [
+        {
+          "mode": "DU",
+          "bits": [
+            "403c0d271287772f",
+            "4136f0424572bf7f"
+          ]
+        }
+      ],
+      "error": {
+        "message": "Input vapor quality [Q] must be between 0 and 1",
+        "faultKind": "solver",
+        "evidence": {
+          "propertyFailure": {
+            "schemaVersion": "C1/1",
+            "operation": "stateMVU",
+            "inputScope": "fixed-inventory",
+            "input": {
+              "values": {
+                "massKg": 0.016830826468318547,
+                "volumeM3": 0.0006000000000000001,
+                "internalEnergyKJ": 25.301752334073395,
+                "guess": 35
+              },
+              "bits": {
+                "massKg": "3f913c19a4fbfc39",
+                "volumeM3": "3f43a92a30553262",
+                "internalEnergyKJ": "40394d3fa416563f",
+                "guess": "4041800000000000"
+              }
+            },
+            "rawRecovery": "failed",
+            "rawCoordinates": null,
+            "lastRequest": {
+              "mode": "DU",
+              "args": [
+                {
+                  "value": 28.051377447197577,
+                  "bits": "403c0d271287772f"
+                },
+                {
+                  "value": 1503298.271282166,
+                  "bits": "4136f0424572bf7f"
+                }
+              ]
+            },
+            "requestedInputSupport": "unknown",
+            "returnedCoordinateSupport": "unknown",
+            "exactInventorySupport": "unknown",
+            "checks": {
+              "support": "unmeasured",
+              "phase": "unmeasured",
+              "canonical": "unmeasured",
+              "nonlinear": "unmeasured"
+            },
+            "observedResiduals": null,
+            "physicalTrajectoryExit": "unproved",
+            "reason": "inverse-recovery-failure",
+            "errorSource": "EOS",
+            "originalError": {
+              "message": "Input vapor quality [Q] must be between 0 and 1",
+              "faultKind": null
+            },
+            "numericalPressureEnclosure": false
+          }
+        },
+        "propertyCause": null,
+        "domainCause": null,
+        "nonlinearResidual": null
+      },
+      "accepted": false
+    },
+    {
+      "issueId": "DU-162",
+      "runtime": "native",
+      "fullVLE": false,
+      "requests": [
+        {
+          "mode": "DU",
+          "bits": [
+            "40804c41552836e8",
+            "4125463722133410"
+          ]
+        }
+      ],
+      "error": {
+        "message": "Outside accepted pressure domain",
+        "faultKind": "solver",
+        "evidence": {
+          "propertyFailure": {
+            "schemaVersion": "C1/1",
+            "operation": "stateMVU",
+            "inputScope": "fixed-inventory",
+            "input": {
+              "values": {
+                "massKg": 0.31291914042330304,
+                "volumeM3": 0.0006000000000000001,
+                "internalEnergyKJ": 218.1408038613936,
+                "guess": 35
+              },
+              "bits": {
+                "massKg": "3fd406de009a45ee",
+                "volumeM3": "3f43a92a30553262",
+                "internalEnergyKJ": "406b448177197ac1",
+                "guess": "4041800000000000"
+              }
+            },
+            "rawRecovery": "returned",
+            "rawCoordinates": {
+              "values": {
+                "p": 3500000.0000000107,
+                "T": 345.56367359935166,
+                "rho": 521.5319007055042,
+                "h": 703826.5654298483,
+                "u": 697115.5665527608,
+                "Q": 0,
+                "phase": 6
+              },
+              "bits": {
+                "p": "414ab3f000000017",
+                "T": "40759904ce9bad58",
+                "rho": "40804c41552836e1",
+                "h": "41257aa521800565",
+                "u": "4125463722133416",
+                "Q": "0000000000000000",
+                "phase": "4018000000000000"
+              }
+            },
+            "lastRequest": {
+              "mode": "DU",
+              "args": [
+                {
+                  "value": 521.531900705505,
+                  "bits": "40804c41552836e8"
+                },
+                {
+                  "value": 697115.5665527601,
+                  "bits": "4125463722133410"
+                }
+              ]
+            },
+            "requestedInputSupport": "unknown",
+            "returnedCoordinateSupport": "unsupported",
+            "exactInventorySupport": "unknown",
+            "checks": {
+              "support": "fail",
+              "phase": "unmeasured",
+              "canonical": "unmeasured",
+              "nonlinear": "unmeasured"
+            },
+            "observedResiduals": {
+              "densityResidual": -1.5259044805788083e-15,
+              "energyResidualKJkg": 6.821210263296962e-13
+            },
+            "physicalTrajectoryExit": "unproved",
+            "reason": "boundary-unresolved",
+            "errorSource": "adapter-support-or-inventory",
+            "originalError": {
+              "message": "Outside accepted pressure domain",
+              "faultKind": "domain"
+            },
+            "numericalPressureEnclosure": false
+          }
+        },
+        "propertyCause": null,
+        "domainCause": null,
+        "nonlinearResidual": null
+      },
+      "accepted": false
+    },
+    {
+      "issueId": "DU-162",
+      "runtime": "native",
+      "fullVLE": true,
+      "requests": [
+        {
+          "mode": "DU",
+          "bits": [
+            "40804c41552836e8",
+            "4125463722133410"
+          ]
+        }
+      ],
+      "error": {
+        "message": "Outside accepted pressure domain",
+        "faultKind": "solver",
+        "evidence": {
+          "propertyFailure": {
+            "schemaVersion": "C1/1",
+            "operation": "stateMVU",
+            "inputScope": "fixed-inventory",
+            "input": {
+              "values": {
+                "massKg": 0.31291914042330304,
+                "volumeM3": 0.0006000000000000001,
+                "internalEnergyKJ": 218.1408038613936,
+                "guess": 35
+              },
+              "bits": {
+                "massKg": "3fd406de009a45ee",
+                "volumeM3": "3f43a92a30553262",
+                "internalEnergyKJ": "406b448177197ac1",
+                "guess": "4041800000000000"
+              }
+            },
+            "rawRecovery": "returned",
+            "rawCoordinates": {
+              "values": {
+                "p": 3500000.0000012456,
+                "T": 345.563673599352,
+                "rho": 521.531900705505,
+                "h": 703826.5654298502,
+                "u": 697115.5665527604,
+                "Q": 10000,
+                "phase": 0
+              },
+              "bits": {
+                "p": "414ab3f000000a73",
+                "T": "40759904ce9bad5e",
+                "rho": "40804c41552836e8",
+                "h": "41257aa521800576",
+                "u": "4125463722133413",
+                "Q": "40c3880000000000",
+                "phase": "0000000000000000"
+              }
+            },
+            "lastRequest": {
+              "mode": "DU",
+              "args": [
+                {
+                  "value": 521.531900705505,
+                  "bits": "40804c41552836e8"
+                },
+                {
+                  "value": 697115.5665527601,
+                  "bits": "4125463722133410"
+                }
+              ]
+            },
+            "requestedInputSupport": "unknown",
+            "returnedCoordinateSupport": "unsupported",
+            "exactInventorySupport": "unknown",
+            "checks": {
+              "support": "fail",
+              "phase": "unmeasured",
+              "canonical": "unmeasured",
+              "nonlinear": "unmeasured"
+            },
+            "observedResiduals": {
+              "densityResidual": 0,
+              "energyResidualKJkg": 3.410605131648481e-13
+            },
+            "physicalTrajectoryExit": "unproved",
+            "reason": "boundary-unresolved",
+            "errorSource": "adapter-support-or-inventory",
+            "originalError": {
+              "message": "Outside accepted pressure domain",
+              "faultKind": "domain"
+            },
+            "numericalPressureEnclosure": false
+          }
+        },
+        "propertyCause": null,
+        "domainCause": null,
+        "nonlinearResidual": null
+      },
+      "accepted": false
+    },
+    {
+      "issueId": "DU-162",
+      "runtime": "chromium",
+      "fullVLE": false,
+      "requests": [
+        {
+          "mode": "DU",
+          "bits": [
+            "40804c41552836e8",
+            "4125463722133410"
+          ]
+        }
+      ],
+      "error": {
+        "message": "Outside accepted pressure domain",
+        "faultKind": "solver",
+        "evidence": {
+          "propertyFailure": {
+            "schemaVersion": "C1/1",
+            "operation": "stateMVU",
+            "inputScope": "fixed-inventory",
+            "input": {
+              "values": {
+                "massKg": 0.31291914042330304,
+                "volumeM3": 0.0006000000000000001,
+                "internalEnergyKJ": 218.1408038613936,
+                "guess": 35
+              },
+              "bits": {
+                "massKg": "3fd406de009a45ee",
+                "volumeM3": "3f43a92a30553262",
+                "internalEnergyKJ": "406b448177197ac1",
+                "guess": "4041800000000000"
+              }
+            },
+            "rawRecovery": "returned",
+            "rawCoordinates": {
+              "values": {
+                "p": 3500000.0000000107,
+                "T": 345.56367359935166,
+                "h": 703826.5654298483,
+                "s": 2625.843413091455,
+                "rho": 521.5319007055042,
+                "u": 697115.5665527608,
+                "Q": 0,
+                "phase": 6
+              },
+              "bits": {
+                "p": "414ab3f000000017",
+                "T": "40759904ce9bad58",
+                "h": "41257aa521800565",
+                "s": "40a483afd3d739a3",
+                "rho": "40804c41552836e1",
+                "u": "4125463722133416",
+                "Q": "0000000000000000",
+                "phase": "4018000000000000"
+              }
+            },
+            "lastRequest": {
+              "mode": "DU",
+              "args": [
+                {
+                  "value": 521.531900705505,
+                  "bits": "40804c41552836e8"
+                },
+                {
+                  "value": 697115.5665527601,
+                  "bits": "4125463722133410"
+                }
+              ]
+            },
+            "requestedInputSupport": "unknown",
+            "returnedCoordinateSupport": "unsupported",
+            "exactInventorySupport": "unknown",
+            "checks": {
+              "support": "fail",
+              "phase": "unmeasured",
+              "canonical": "unmeasured",
+              "nonlinear": "unmeasured"
+            },
+            "observedResiduals": {
+              "densityResidual": -1.5259044805788083e-15,
+              "energyResidualKJkg": 6.821210263296962e-13
+            },
+            "physicalTrajectoryExit": "unproved",
+            "reason": "boundary-unresolved",
+            "errorSource": "adapter-support-or-inventory",
+            "originalError": {
+              "message": "Outside accepted pressure domain",
+              "faultKind": "domain"
+            },
+            "numericalPressureEnclosure": false
+          }
+        },
+        "propertyCause": null,
+        "domainCause": null,
+        "nonlinearResidual": null
+      },
+      "accepted": false
+    },
+    {
+      "issueId": "DU-162",
+      "runtime": "chromium",
+      "fullVLE": true,
+      "requests": [
+        {
+          "mode": "DU",
+          "bits": [
+            "40804c41552836e8",
+            "4125463722133410"
+          ]
+        }
+      ],
+      "error": {
+        "message": "Outside accepted pressure domain",
+        "faultKind": "solver",
+        "evidence": {
+          "propertyFailure": {
+            "schemaVersion": "C1/1",
+            "operation": "stateMVU",
+            "inputScope": "fixed-inventory",
+            "input": {
+              "values": {
+                "massKg": 0.31291914042330304,
+                "volumeM3": 0.0006000000000000001,
+                "internalEnergyKJ": 218.1408038613936,
+                "guess": 35
+              },
+              "bits": {
+                "massKg": "3fd406de009a45ee",
+                "volumeM3": "3f43a92a30553262",
+                "internalEnergyKJ": "406b448177197ac1",
+                "guess": "4041800000000000"
+              }
+            },
+            "rawRecovery": "returned",
+            "rawCoordinates": {
+              "values": {
+                "p": 3500000.0000012456,
+                "T": 345.563673599352,
+                "h": 703826.5654298502,
+                "s": 2625.8434130914547,
+                "rho": 521.531900705505,
+                "u": 697115.5665527604,
+                "Q": 10000,
+                "phase": 0
+              },
+              "bits": {
+                "p": "414ab3f000000a73",
+                "T": "40759904ce9bad5e",
+                "h": "41257aa521800576",
+                "s": "40a483afd3d739a2",
+                "rho": "40804c41552836e8",
+                "u": "4125463722133413",
+                "Q": "40c3880000000000",
+                "phase": "0000000000000000"
+              }
+            },
+            "lastRequest": {
+              "mode": "DU",
+              "args": [
+                {
+                  "value": 521.531900705505,
+                  "bits": "40804c41552836e8"
+                },
+                {
+                  "value": 697115.5665527601,
+                  "bits": "4125463722133410"
+                }
+              ]
+            },
+            "requestedInputSupport": "unknown",
+            "returnedCoordinateSupport": "unsupported",
+            "exactInventorySupport": "unknown",
+            "checks": {
+              "support": "fail",
+              "phase": "unmeasured",
+              "canonical": "unmeasured",
+              "nonlinear": "unmeasured"
+            },
+            "observedResiduals": {
+              "densityResidual": 0,
+              "energyResidualKJkg": 3.410605131648481e-13
+            },
+            "physicalTrajectoryExit": "unproved",
+            "reason": "boundary-unresolved",
+            "errorSource": "adapter-support-or-inventory",
+            "originalError": {
+              "message": "Outside accepted pressure domain",
+              "faultKind": "domain"
+            },
+            "numericalPressureEnclosure": false
+          }
+        },
+        "propertyCause": null,
+        "domainCause": null,
+        "nonlinearResidual": null
+      },
+      "accepted": false
+    },
+    {
+      "issueId": "DU-162",
+      "runtime": "webkit",
+      "fullVLE": false,
+      "requests": [
+        {
+          "mode": "DU",
+          "bits": [
+            "40804c41552836e8",
+            "4125463722133410"
+          ]
+        }
+      ],
+      "error": {
+        "message": "Outside accepted pressure domain",
+        "faultKind": "solver",
+        "evidence": {
+          "propertyFailure": {
+            "schemaVersion": "C1/1",
+            "operation": "stateMVU",
+            "inputScope": "fixed-inventory",
+            "input": {
+              "values": {
+                "massKg": 0.31291914042330304,
+                "volumeM3": 0.0006000000000000001,
+                "internalEnergyKJ": 218.1408038613936,
+                "guess": 35
+              },
+              "bits": {
+                "massKg": "3fd406de009a45ee",
+                "volumeM3": "3f43a92a30553262",
+                "internalEnergyKJ": "406b448177197ac1",
+                "guess": "4041800000000000"
+              }
+            },
+            "rawRecovery": "returned",
+            "rawCoordinates": {
+              "values": {
+                "p": 3500000.0000000107,
+                "T": 345.56367359935166,
+                "h": 703826.5654298483,
+                "s": 2625.843413091455,
+                "rho": 521.5319007055042,
+                "u": 697115.5665527608,
+                "Q": 0,
+                "phase": 6
+              },
+              "bits": {
+                "p": "414ab3f000000017",
+                "T": "40759904ce9bad58",
+                "h": "41257aa521800565",
+                "s": "40a483afd3d739a3",
+                "rho": "40804c41552836e1",
+                "u": "4125463722133416",
+                "Q": "0000000000000000",
+                "phase": "4018000000000000"
+              }
+            },
+            "lastRequest": {
+              "mode": "DU",
+              "args": [
+                {
+                  "value": 521.531900705505,
+                  "bits": "40804c41552836e8"
+                },
+                {
+                  "value": 697115.5665527601,
+                  "bits": "4125463722133410"
+                }
+              ]
+            },
+            "requestedInputSupport": "unknown",
+            "returnedCoordinateSupport": "unsupported",
+            "exactInventorySupport": "unknown",
+            "checks": {
+              "support": "fail",
+              "phase": "unmeasured",
+              "canonical": "unmeasured",
+              "nonlinear": "unmeasured"
+            },
+            "observedResiduals": {
+              "densityResidual": -1.5259044805788083e-15,
+              "energyResidualKJkg": 6.821210263296962e-13
+            },
+            "physicalTrajectoryExit": "unproved",
+            "reason": "boundary-unresolved",
+            "errorSource": "adapter-support-or-inventory",
+            "originalError": {
+              "message": "Outside accepted pressure domain",
+              "faultKind": "domain"
+            },
+            "numericalPressureEnclosure": false
+          }
+        },
+        "propertyCause": null,
+        "domainCause": null,
+        "nonlinearResidual": null
+      },
+      "accepted": false
+    },
+    {
+      "issueId": "DU-162",
+      "runtime": "webkit",
+      "fullVLE": true,
+      "requests": [
+        {
+          "mode": "DU",
+          "bits": [
+            "40804c41552836e8",
+            "4125463722133410"
+          ]
+        }
+      ],
+      "error": {
+        "message": "Outside accepted pressure domain",
+        "faultKind": "solver",
+        "evidence": {
+          "propertyFailure": {
+            "schemaVersion": "C1/1",
+            "operation": "stateMVU",
+            "inputScope": "fixed-inventory",
+            "input": {
+              "values": {
+                "massKg": 0.31291914042330304,
+                "volumeM3": 0.0006000000000000001,
+                "internalEnergyKJ": 218.1408038613936,
+                "guess": 35
+              },
+              "bits": {
+                "massKg": "3fd406de009a45ee",
+                "volumeM3": "3f43a92a30553262",
+                "internalEnergyKJ": "406b448177197ac1",
+                "guess": "4041800000000000"
+              }
+            },
+            "rawRecovery": "returned",
+            "rawCoordinates": {
+              "values": {
+                "p": 3500000.0000012456,
+                "T": 345.563673599352,
+                "h": 703826.5654298502,
+                "s": 2625.8434130914547,
+                "rho": 521.531900705505,
+                "u": 697115.5665527604,
+                "Q": 10000,
+                "phase": 0
+              },
+              "bits": {
+                "p": "414ab3f000000a73",
+                "T": "40759904ce9bad5e",
+                "h": "41257aa521800576",
+                "s": "40a483afd3d739a2",
+                "rho": "40804c41552836e8",
+                "u": "4125463722133413",
+                "Q": "40c3880000000000",
+                "phase": "0000000000000000"
+              }
+            },
+            "lastRequest": {
+              "mode": "DU",
+              "args": [
+                {
+                  "value": 521.531900705505,
+                  "bits": "40804c41552836e8"
+                },
+                {
+                  "value": 697115.5665527601,
+                  "bits": "4125463722133410"
+                }
+              ]
+            },
+            "requestedInputSupport": "unknown",
+            "returnedCoordinateSupport": "unsupported",
+            "exactInventorySupport": "unknown",
+            "checks": {
+              "support": "fail",
+              "phase": "unmeasured",
+              "canonical": "unmeasured",
+              "nonlinear": "unmeasured"
+            },
+            "observedResiduals": {
+              "densityResidual": 0,
+              "energyResidualKJkg": 3.410605131648481e-13
+            },
+            "physicalTrajectoryExit": "unproved",
+            "reason": "boundary-unresolved",
+            "errorSource": "adapter-support-or-inventory",
+            "originalError": {
+              "message": "Outside accepted pressure domain",
+              "faultKind": "domain"
+            },
+            "numericalPressureEnclosure": false
+          }
+        },
+        "propertyCause": null,
+        "domainCause": null,
+        "nonlinearResidual": null
+      },
+      "accepted": false
+    },
+    {
+      "issueId": "DU-164",
+      "runtime": "native",
+      "fullVLE": false,
+      "requests": [
+        {
+          "mode": "DU",
+          "bits": [
+            "403c0d2712877730",
+            "4136f0424572bf7e"
+          ]
+        }
+      ],
+      "error": {
+        "message": "Outside accepted pressure domain",
+        "faultKind": "solver",
+        "evidence": {
+          "propertyFailure": {
+            "schemaVersion": "C1/1",
+            "operation": "stateMVU",
+            "inputScope": "fixed-inventory",
+            "input": {
+              "values": {
+                "massKg": 0.01683082646831855,
+                "volumeM3": 0.0006000000000000001,
+                "internalEnergyKJ": 25.3017523340734,
+                "guess": 35
+              },
+              "bits": {
+                "massKg": "3f913c19a4fbfc3a",
+                "volumeM3": "3f43a92a30553262",
+                "internalEnergyKJ": "40394d3fa4165640",
+                "guess": "4041800000000000"
+              }
+            },
+            "rawRecovery": "returned",
+            "rawCoordinates": {
+              "values": {
+                "p": 3500000.000000024,
+                "T": 345.56367359935183,
+                "rho": 28.05137744719763,
+                "h": 1628069.3277690785,
+                "u": 1503298.2712821658,
+                "Q": 1,
+                "phase": 6
+              },
+              "bits": {
+                "p": "414ab3f000000034",
+                "T": "40759904ce9bad5b",
+                "rho": "403c0d271287773e",
+                "h": "4138d7a553e8aca1",
+                "u": "4136f0424572bf7e",
+                "Q": "3ff0000000000000",
+                "phase": "4018000000000000"
+              }
+            },
+            "lastRequest": {
+              "mode": "DU",
+              "args": [
+                {
+                  "value": 28.05137744719758,
+                  "bits": "403c0d2712877730"
+                },
+                {
+                  "value": 1503298.2712821658,
+                  "bits": "4136f0424572bf7e"
+                }
+              ]
+            },
+            "requestedInputSupport": "unknown",
+            "returnedCoordinateSupport": "unsupported",
+            "exactInventorySupport": "unknown",
+            "checks": {
+              "support": "fail",
+              "phase": "unmeasured",
+              "canonical": "unmeasured",
+              "nonlinear": "unmeasured"
+            },
+            "observedResiduals": {
+              "densityResidual": 1.7731033563977798e-15,
+              "energyResidualKJkg": 0
+            },
+            "physicalTrajectoryExit": "unproved",
+            "reason": "boundary-unresolved",
+            "errorSource": "adapter-support-or-inventory",
+            "originalError": {
+              "message": "Outside accepted pressure domain",
+              "faultKind": "domain"
+            },
+            "numericalPressureEnclosure": false
+          }
+        },
+        "propertyCause": null,
+        "domainCause": null,
+        "nonlinearResidual": null
+      },
+      "accepted": false
+    },
+    {
+      "issueId": "DU-164",
+      "runtime": "native",
+      "fullVLE": true,
+      "requests": [
+        {
+          "mode": "DU",
+          "bits": [
+            "403c0d2712877730",
+            "4136f0424572bf7e"
+          ]
+        }
+      ],
+      "error": {
+        "message": "Error: Input vapor quality [Q] must be between 0 and 1",
+        "faultKind": "solver",
+        "evidence": {
+          "propertyFailure": {
+            "schemaVersion": "C1/1",
+            "operation": "stateMVU",
+            "inputScope": "fixed-inventory",
+            "input": {
+              "values": {
+                "massKg": 0.01683082646831855,
+                "volumeM3": 0.0006000000000000001,
+                "internalEnergyKJ": 25.3017523340734,
+                "guess": 35
+              },
+              "bits": {
+                "massKg": "3f913c19a4fbfc3a",
+                "volumeM3": "3f43a92a30553262",
+                "internalEnergyKJ": "40394d3fa4165640",
+                "guess": "4041800000000000"
+              }
+            },
+            "rawRecovery": "failed",
+            "rawCoordinates": null,
+            "lastRequest": {
+              "mode": "DU",
+              "args": [
+                {
+                  "value": 28.05137744719758,
+                  "bits": "403c0d2712877730"
+                },
+                {
+                  "value": 1503298.2712821658,
+                  "bits": "4136f0424572bf7e"
+                }
+              ]
+            },
+            "requestedInputSupport": "unknown",
+            "returnedCoordinateSupport": "unknown",
+            "exactInventorySupport": "unknown",
+            "checks": {
+              "support": "unmeasured",
+              "phase": "unmeasured",
+              "canonical": "unmeasured",
+              "nonlinear": "unmeasured"
+            },
+            "observedResiduals": null,
+            "physicalTrajectoryExit": "unproved",
+            "reason": "inverse-recovery-failure",
+            "errorSource": "EOS",
+            "originalError": {
+              "message": "Error: Input vapor quality [Q] must be between 0 and 1",
+              "faultKind": null
+            },
+            "numericalPressureEnclosure": false
+          }
+        },
+        "propertyCause": null,
+        "domainCause": null,
+        "nonlinearResidual": null
+      },
+      "accepted": false
+    },
+    {
+      "issueId": "DU-164",
+      "runtime": "chromium",
+      "fullVLE": false,
+      "requests": [
+        {
+          "mode": "DU",
+          "bits": [
+            "403c0d2712877730",
+            "4136f0424572bf7e"
+          ]
+        }
+      ],
+      "error": {
+        "message": "Outside accepted pressure domain",
+        "faultKind": "solver",
+        "evidence": {
+          "propertyFailure": {
+            "schemaVersion": "C1/1",
+            "operation": "stateMVU",
+            "inputScope": "fixed-inventory",
+            "input": {
+              "values": {
+                "massKg": 0.01683082646831855,
+                "volumeM3": 0.0006000000000000001,
+                "internalEnergyKJ": 25.3017523340734,
+                "guess": 35
+              },
+              "bits": {
+                "massKg": "3f913c19a4fbfc3a",
+                "volumeM3": "3f43a92a30553262",
+                "internalEnergyKJ": "40394d3fa4165640",
+                "guess": "4041800000000000"
+              }
+            },
+            "rawRecovery": "returned",
+            "rawCoordinates": {
+              "values": {
+                "p": 3500000.000000024,
+                "T": 345.56367359935183,
+                "h": 1628069.3277690785,
+                "s": 5300.438091150127,
+                "rho": 28.05137744719763,
+                "u": 1503298.2712821658,
+                "Q": 1,
+                "phase": 6
+              },
+              "bits": {
+                "p": "414ab3f000000034",
+                "T": "40759904ce9bad5b",
+                "h": "4138d7a553e8aca1",
+                "s": "40b4b47026bdda76",
+                "rho": "403c0d271287773e",
+                "u": "4136f0424572bf7e",
+                "Q": "3ff0000000000000",
+                "phase": "4018000000000000"
+              }
+            },
+            "lastRequest": {
+              "mode": "DU",
+              "args": [
+                {
+                  "value": 28.05137744719758,
+                  "bits": "403c0d2712877730"
+                },
+                {
+                  "value": 1503298.2712821658,
+                  "bits": "4136f0424572bf7e"
+                }
+              ]
+            },
+            "requestedInputSupport": "unknown",
+            "returnedCoordinateSupport": "unsupported",
+            "exactInventorySupport": "unknown",
+            "checks": {
+              "support": "fail",
+              "phase": "unmeasured",
+              "canonical": "unmeasured",
+              "nonlinear": "unmeasured"
+            },
+            "observedResiduals": {
+              "densityResidual": 1.7731033563977798e-15,
+              "energyResidualKJkg": 0
+            },
+            "physicalTrajectoryExit": "unproved",
+            "reason": "boundary-unresolved",
+            "errorSource": "adapter-support-or-inventory",
+            "originalError": {
+              "message": "Outside accepted pressure domain",
+              "faultKind": "domain"
+            },
+            "numericalPressureEnclosure": false
+          }
+        },
+        "propertyCause": null,
+        "domainCause": null,
+        "nonlinearResidual": null
+      },
+      "accepted": false
+    },
+    {
+      "issueId": "DU-164",
+      "runtime": "chromium",
+      "fullVLE": true,
+      "requests": [
+        {
+          "mode": "DU",
+          "bits": [
+            "403c0d2712877730",
+            "4136f0424572bf7e"
+          ]
+        }
+      ],
+      "error": {
+        "message": "Input vapor quality [Q] must be between 0 and 1",
+        "faultKind": "solver",
+        "evidence": {
+          "propertyFailure": {
+            "schemaVersion": "C1/1",
+            "operation": "stateMVU",
+            "inputScope": "fixed-inventory",
+            "input": {
+              "values": {
+                "massKg": 0.01683082646831855,
+                "volumeM3": 0.0006000000000000001,
+                "internalEnergyKJ": 25.3017523340734,
+                "guess": 35
+              },
+              "bits": {
+                "massKg": "3f913c19a4fbfc3a",
+                "volumeM3": "3f43a92a30553262",
+                "internalEnergyKJ": "40394d3fa4165640",
+                "guess": "4041800000000000"
+              }
+            },
+            "rawRecovery": "failed",
+            "rawCoordinates": null,
+            "lastRequest": {
+              "mode": "DU",
+              "args": [
+                {
+                  "value": 28.05137744719758,
+                  "bits": "403c0d2712877730"
+                },
+                {
+                  "value": 1503298.2712821658,
+                  "bits": "4136f0424572bf7e"
+                }
+              ]
+            },
+            "requestedInputSupport": "unknown",
+            "returnedCoordinateSupport": "unknown",
+            "exactInventorySupport": "unknown",
+            "checks": {
+              "support": "unmeasured",
+              "phase": "unmeasured",
+              "canonical": "unmeasured",
+              "nonlinear": "unmeasured"
+            },
+            "observedResiduals": null,
+            "physicalTrajectoryExit": "unproved",
+            "reason": "inverse-recovery-failure",
+            "errorSource": "EOS",
+            "originalError": {
+              "message": "Input vapor quality [Q] must be between 0 and 1",
+              "faultKind": null
+            },
+            "numericalPressureEnclosure": false
+          }
+        },
+        "propertyCause": null,
+        "domainCause": null,
+        "nonlinearResidual": null
+      },
+      "accepted": false
+    },
+    {
+      "issueId": "DU-164",
+      "runtime": "webkit",
+      "fullVLE": false,
+      "requests": [
+        {
+          "mode": "DU",
+          "bits": [
+            "403c0d2712877730",
+            "4136f0424572bf7e"
+          ]
+        }
+      ],
+      "error": {
+        "message": "Outside accepted pressure domain",
+        "faultKind": "solver",
+        "evidence": {
+          "propertyFailure": {
+            "schemaVersion": "C1/1",
+            "operation": "stateMVU",
+            "inputScope": "fixed-inventory",
+            "input": {
+              "values": {
+                "massKg": 0.01683082646831855,
+                "volumeM3": 0.0006000000000000001,
+                "internalEnergyKJ": 25.3017523340734,
+                "guess": 35
+              },
+              "bits": {
+                "massKg": "3f913c19a4fbfc3a",
+                "volumeM3": "3f43a92a30553262",
+                "internalEnergyKJ": "40394d3fa4165640",
+                "guess": "4041800000000000"
+              }
+            },
+            "rawRecovery": "returned",
+            "rawCoordinates": {
+              "values": {
+                "p": 3500000.000000024,
+                "T": 345.56367359935183,
+                "h": 1628069.3277690785,
+                "s": 5300.438091150127,
+                "rho": 28.05137744719763,
+                "u": 1503298.2712821658,
+                "Q": 1,
+                "phase": 6
+              },
+              "bits": {
+                "p": "414ab3f000000034",
+                "T": "40759904ce9bad5b",
+                "h": "4138d7a553e8aca1",
+                "s": "40b4b47026bdda76",
+                "rho": "403c0d271287773e",
+                "u": "4136f0424572bf7e",
+                "Q": "3ff0000000000000",
+                "phase": "4018000000000000"
+              }
+            },
+            "lastRequest": {
+              "mode": "DU",
+              "args": [
+                {
+                  "value": 28.05137744719758,
+                  "bits": "403c0d2712877730"
+                },
+                {
+                  "value": 1503298.2712821658,
+                  "bits": "4136f0424572bf7e"
+                }
+              ]
+            },
+            "requestedInputSupport": "unknown",
+            "returnedCoordinateSupport": "unsupported",
+            "exactInventorySupport": "unknown",
+            "checks": {
+              "support": "fail",
+              "phase": "unmeasured",
+              "canonical": "unmeasured",
+              "nonlinear": "unmeasured"
+            },
+            "observedResiduals": {
+              "densityResidual": 1.7731033563977798e-15,
+              "energyResidualKJkg": 0
+            },
+            "physicalTrajectoryExit": "unproved",
+            "reason": "boundary-unresolved",
+            "errorSource": "adapter-support-or-inventory",
+            "originalError": {
+              "message": "Outside accepted pressure domain",
+              "faultKind": "domain"
+            },
+            "numericalPressureEnclosure": false
+          }
+        },
+        "propertyCause": null,
+        "domainCause": null,
+        "nonlinearResidual": null
+      },
+      "accepted": false
+    },
+    {
+      "issueId": "DU-164",
+      "runtime": "webkit",
+      "fullVLE": true,
+      "requests": [
+        {
+          "mode": "DU",
+          "bits": [
+            "403c0d2712877730",
+            "4136f0424572bf7e"
+          ]
+        }
+      ],
+      "error": {
+        "message": "Input vapor quality [Q] must be between 0 and 1",
+        "faultKind": "solver",
+        "evidence": {
+          "propertyFailure": {
+            "schemaVersion": "C1/1",
+            "operation": "stateMVU",
+            "inputScope": "fixed-inventory",
+            "input": {
+              "values": {
+                "massKg": 0.01683082646831855,
+                "volumeM3": 0.0006000000000000001,
+                "internalEnergyKJ": 25.3017523340734,
+                "guess": 35
+              },
+              "bits": {
+                "massKg": "3f913c19a4fbfc3a",
+                "volumeM3": "3f43a92a30553262",
+                "internalEnergyKJ": "40394d3fa4165640",
+                "guess": "4041800000000000"
+              }
+            },
+            "rawRecovery": "failed",
+            "rawCoordinates": null,
+            "lastRequest": {
+              "mode": "DU",
+              "args": [
+                {
+                  "value": 28.05137744719758,
+                  "bits": "403c0d2712877730"
+                },
+                {
+                  "value": 1503298.2712821658,
+                  "bits": "4136f0424572bf7e"
+                }
+              ]
+            },
+            "requestedInputSupport": "unknown",
+            "returnedCoordinateSupport": "unknown",
+            "exactInventorySupport": "unknown",
+            "checks": {
+              "support": "unmeasured",
+              "phase": "unmeasured",
+              "canonical": "unmeasured",
+              "nonlinear": "unmeasured"
+            },
+            "observedResiduals": null,
+            "physicalTrajectoryExit": "unproved",
+            "reason": "inverse-recovery-failure",
+            "errorSource": "EOS",
+            "originalError": {
+              "message": "Input vapor quality [Q] must be between 0 and 1",
+              "faultKind": null
+            },
+            "numericalPressureEnclosure": false
+          }
+        },
+        "propertyCause": null,
+        "domainCause": null,
+        "nonlinearResidual": null
+      },
+      "accepted": false
+    },
+    {
+      "issueId": "DU-165",
+      "runtime": "native",
+      "fullVLE": false,
+      "requests": [
+        {
+          "mode": "DU",
+          "bits": [
+            "403c0d271287772d",
+            "4136f0424572bf80"
+          ]
+        }
+      ],
+      "error": {
+        "message": "Outside accepted pressure domain",
+        "faultKind": "solver",
+        "evidence": {
+          "propertyFailure": {
+            "schemaVersion": "C1/1",
+            "operation": "stateMVU",
+            "inputScope": "fixed-inventory",
+            "input": {
+              "values": {
+                "massKg": 0.016830826468318544,
+                "volumeM3": 0.0006000000000000001,
+                "internalEnergyKJ": 25.301752334073395,
+                "guess": 35
+              },
+              "bits": {
+                "massKg": "3f913c19a4fbfc38",
+                "volumeM3": "3f43a92a30553262",
+                "internalEnergyKJ": "40394d3fa416563f",
+                "guess": "4041800000000000"
+              }
+            },
+            "rawRecovery": "returned",
+            "rawCoordinates": {
+              "values": {
+                "p": 3500000.0000000107,
+                "T": 345.56367359935166,
+                "rho": 28.05137744719757,
+                "h": 1628069.3277690774,
+                "u": 1503298.2712821646,
+                "Q": 0.9999999999999979,
+                "phase": 6
+              },
+              "bits": {
+                "p": "414ab3f000000017",
+                "T": "40759904ce9bad58",
+                "rho": "403c0d271287772d",
+                "h": "4138d7a553e8ac9c",
+                "u": "4136f0424572bf79",
+                "Q": "3fefffffffffffed",
+                "phase": "4018000000000000"
+              }
+            },
+            "lastRequest": {
+              "mode": "DU",
+              "args": [
+                {
+                  "value": 28.05137744719757,
+                  "bits": "403c0d271287772d"
+                },
+                {
+                  "value": 1503298.2712821662,
+                  "bits": "4136f0424572bf80"
+                }
+              ]
+            },
+            "requestedInputSupport": "unknown",
+            "returnedCoordinateSupport": "unsupported",
+            "exactInventorySupport": "unknown",
+            "checks": {
+              "support": "fail",
+              "phase": "unmeasured",
+              "canonical": "unmeasured",
+              "nonlinear": "unmeasured"
+            },
+            "observedResiduals": {
+              "densityResidual": 0,
+              "energyResidualKJkg": -1.5916157281026244e-12
+            },
+            "physicalTrajectoryExit": "unproved",
+            "reason": "boundary-unresolved",
+            "errorSource": "adapter-support-or-inventory",
+            "originalError": {
+              "message": "Outside accepted pressure domain",
+              "faultKind": "domain"
+            },
+            "numericalPressureEnclosure": false
+          }
+        },
+        "propertyCause": null,
+        "domainCause": null,
+        "nonlinearResidual": null
+      },
+      "accepted": false
+    },
+    {
+      "issueId": "DU-165",
+      "runtime": "native",
+      "fullVLE": true,
+      "requests": [
+        {
+          "mode": "DU",
+          "bits": [
+            "403c0d271287772d",
+            "4136f0424572bf80"
+          ]
+        }
+      ],
+      "error": {
+        "message": "Error: Input vapor quality [Q] must be between 0 and 1",
+        "faultKind": "solver",
+        "evidence": {
+          "propertyFailure": {
+            "schemaVersion": "C1/1",
+            "operation": "stateMVU",
+            "inputScope": "fixed-inventory",
+            "input": {
+              "values": {
+                "massKg": 0.016830826468318544,
+                "volumeM3": 0.0006000000000000001,
+                "internalEnergyKJ": 25.301752334073395,
+                "guess": 35
+              },
+              "bits": {
+                "massKg": "3f913c19a4fbfc38",
+                "volumeM3": "3f43a92a30553262",
+                "internalEnergyKJ": "40394d3fa416563f",
+                "guess": "4041800000000000"
+              }
+            },
+            "rawRecovery": "failed",
+            "rawCoordinates": null,
+            "lastRequest": {
+              "mode": "DU",
+              "args": [
+                {
+                  "value": 28.05137744719757,
+                  "bits": "403c0d271287772d"
+                },
+                {
+                  "value": 1503298.2712821662,
+                  "bits": "4136f0424572bf80"
+                }
+              ]
+            },
+            "requestedInputSupport": "unknown",
+            "returnedCoordinateSupport": "unknown",
+            "exactInventorySupport": "unknown",
+            "checks": {
+              "support": "unmeasured",
+              "phase": "unmeasured",
+              "canonical": "unmeasured",
+              "nonlinear": "unmeasured"
+            },
+            "observedResiduals": null,
+            "physicalTrajectoryExit": "unproved",
+            "reason": "inverse-recovery-failure",
+            "errorSource": "EOS",
+            "originalError": {
+              "message": "Error: Input vapor quality [Q] must be between 0 and 1",
+              "faultKind": null
+            },
+            "numericalPressureEnclosure": false
+          }
+        },
+        "propertyCause": null,
+        "domainCause": null,
+        "nonlinearResidual": null
+      },
+      "accepted": false
+    },
+    {
+      "issueId": "DU-165",
+      "runtime": "chromium",
+      "fullVLE": false,
+      "requests": [
+        {
+          "mode": "DU",
+          "bits": [
+            "403c0d271287772d",
+            "4136f0424572bf80"
+          ]
+        }
+      ],
+      "error": {
+        "message": "Outside accepted pressure domain",
+        "faultKind": "solver",
+        "evidence": {
+          "propertyFailure": {
+            "schemaVersion": "C1/1",
+            "operation": "stateMVU",
+            "inputScope": "fixed-inventory",
+            "input": {
+              "values": {
+                "massKg": 0.016830826468318544,
+                "volumeM3": 0.0006000000000000001,
+                "internalEnergyKJ": 25.301752334073395,
+                "guess": 35
+              },
+              "bits": {
+                "massKg": "3f913c19a4fbfc38",
+                "volumeM3": "3f43a92a30553262",
+                "internalEnergyKJ": "40394d3fa416563f",
+                "guess": "4041800000000000"
+              }
+            },
+            "rawRecovery": "returned",
+            "rawCoordinates": {
+              "values": {
+                "p": 3500000.0000000107,
+                "T": 345.56367359935166,
+                "h": 1628069.3277690774,
+                "s": 5300.438091150125,
+                "rho": 28.05137744719757,
+                "u": 1503298.2712821646,
+                "Q": 0.9999999999999979,
+                "phase": 6
+              },
+              "bits": {
+                "p": "414ab3f000000017",
+                "T": "40759904ce9bad58",
+                "h": "4138d7a553e8ac9c",
+                "s": "40b4b47026bdda74",
+                "rho": "403c0d271287772d",
+                "u": "4136f0424572bf79",
+                "Q": "3fefffffffffffed",
+                "phase": "4018000000000000"
+              }
+            },
+            "lastRequest": {
+              "mode": "DU",
+              "args": [
+                {
+                  "value": 28.05137744719757,
+                  "bits": "403c0d271287772d"
+                },
+                {
+                  "value": 1503298.2712821662,
+                  "bits": "4136f0424572bf80"
+                }
+              ]
+            },
+            "requestedInputSupport": "unknown",
+            "returnedCoordinateSupport": "unsupported",
+            "exactInventorySupport": "unknown",
+            "checks": {
+              "support": "fail",
+              "phase": "unmeasured",
+              "canonical": "unmeasured",
+              "nonlinear": "unmeasured"
+            },
+            "observedResiduals": {
+              "densityResidual": 0,
+              "energyResidualKJkg": -1.5916157281026244e-12
+            },
+            "physicalTrajectoryExit": "unproved",
+            "reason": "boundary-unresolved",
+            "errorSource": "adapter-support-or-inventory",
+            "originalError": {
+              "message": "Outside accepted pressure domain",
+              "faultKind": "domain"
+            },
+            "numericalPressureEnclosure": false
+          }
+        },
+        "propertyCause": null,
+        "domainCause": null,
+        "nonlinearResidual": null
+      },
+      "accepted": false
+    },
+    {
+      "issueId": "DU-165",
+      "runtime": "chromium",
+      "fullVLE": true,
+      "requests": [
+        {
+          "mode": "DU",
+          "bits": [
+            "403c0d271287772d",
+            "4136f0424572bf80"
+          ]
+        }
+      ],
+      "error": {
+        "message": "Input vapor quality [Q] must be between 0 and 1",
+        "faultKind": "solver",
+        "evidence": {
+          "propertyFailure": {
+            "schemaVersion": "C1/1",
+            "operation": "stateMVU",
+            "inputScope": "fixed-inventory",
+            "input": {
+              "values": {
+                "massKg": 0.016830826468318544,
+                "volumeM3": 0.0006000000000000001,
+                "internalEnergyKJ": 25.301752334073395,
+                "guess": 35
+              },
+              "bits": {
+                "massKg": "3f913c19a4fbfc38",
+                "volumeM3": "3f43a92a30553262",
+                "internalEnergyKJ": "40394d3fa416563f",
+                "guess": "4041800000000000"
+              }
+            },
+            "rawRecovery": "failed",
+            "rawCoordinates": null,
+            "lastRequest": {
+              "mode": "DU",
+              "args": [
+                {
+                  "value": 28.05137744719757,
+                  "bits": "403c0d271287772d"
+                },
+                {
+                  "value": 1503298.2712821662,
+                  "bits": "4136f0424572bf80"
+                }
+              ]
+            },
+            "requestedInputSupport": "unknown",
+            "returnedCoordinateSupport": "unknown",
+            "exactInventorySupport": "unknown",
+            "checks": {
+              "support": "unmeasured",
+              "phase": "unmeasured",
+              "canonical": "unmeasured",
+              "nonlinear": "unmeasured"
+            },
+            "observedResiduals": null,
+            "physicalTrajectoryExit": "unproved",
+            "reason": "inverse-recovery-failure",
+            "errorSource": "EOS",
+            "originalError": {
+              "message": "Input vapor quality [Q] must be between 0 and 1",
+              "faultKind": null
+            },
+            "numericalPressureEnclosure": false
+          }
+        },
+        "propertyCause": null,
+        "domainCause": null,
+        "nonlinearResidual": null
+      },
+      "accepted": false
+    },
+    {
+      "issueId": "DU-165",
+      "runtime": "webkit",
+      "fullVLE": false,
+      "requests": [
+        {
+          "mode": "DU",
+          "bits": [
+            "403c0d271287772d",
+            "4136f0424572bf80"
+          ]
+        }
+      ],
+      "error": {
+        "message": "Outside accepted pressure domain",
+        "faultKind": "solver",
+        "evidence": {
+          "propertyFailure": {
+            "schemaVersion": "C1/1",
+            "operation": "stateMVU",
+            "inputScope": "fixed-inventory",
+            "input": {
+              "values": {
+                "massKg": 0.016830826468318544,
+                "volumeM3": 0.0006000000000000001,
+                "internalEnergyKJ": 25.301752334073395,
+                "guess": 35
+              },
+              "bits": {
+                "massKg": "3f913c19a4fbfc38",
+                "volumeM3": "3f43a92a30553262",
+                "internalEnergyKJ": "40394d3fa416563f",
+                "guess": "4041800000000000"
+              }
+            },
+            "rawRecovery": "returned",
+            "rawCoordinates": {
+              "values": {
+                "p": 3500000.0000000107,
+                "T": 345.56367359935166,
+                "h": 1628069.3277690774,
+                "s": 5300.438091150125,
+                "rho": 28.05137744719757,
+                "u": 1503298.2712821646,
+                "Q": 0.9999999999999979,
+                "phase": 6
+              },
+              "bits": {
+                "p": "414ab3f000000017",
+                "T": "40759904ce9bad58",
+                "h": "4138d7a553e8ac9c",
+                "s": "40b4b47026bdda74",
+                "rho": "403c0d271287772d",
+                "u": "4136f0424572bf79",
+                "Q": "3fefffffffffffed",
+                "phase": "4018000000000000"
+              }
+            },
+            "lastRequest": {
+              "mode": "DU",
+              "args": [
+                {
+                  "value": 28.05137744719757,
+                  "bits": "403c0d271287772d"
+                },
+                {
+                  "value": 1503298.2712821662,
+                  "bits": "4136f0424572bf80"
+                }
+              ]
+            },
+            "requestedInputSupport": "unknown",
+            "returnedCoordinateSupport": "unsupported",
+            "exactInventorySupport": "unknown",
+            "checks": {
+              "support": "fail",
+              "phase": "unmeasured",
+              "canonical": "unmeasured",
+              "nonlinear": "unmeasured"
+            },
+            "observedResiduals": {
+              "densityResidual": 0,
+              "energyResidualKJkg": -1.5916157281026244e-12
+            },
+            "physicalTrajectoryExit": "unproved",
+            "reason": "boundary-unresolved",
+            "errorSource": "adapter-support-or-inventory",
+            "originalError": {
+              "message": "Outside accepted pressure domain",
+              "faultKind": "domain"
+            },
+            "numericalPressureEnclosure": false
+          }
+        },
+        "propertyCause": null,
+        "domainCause": null,
+        "nonlinearResidual": null
+      },
+      "accepted": false
+    },
+    {
+      "issueId": "DU-165",
+      "runtime": "webkit",
+      "fullVLE": true,
+      "requests": [
+        {
+          "mode": "DU",
+          "bits": [
+            "403c0d271287772d",
+            "4136f0424572bf80"
+          ]
+        }
+      ],
+      "error": {
+        "message": "Input vapor quality [Q] must be between 0 and 1",
+        "faultKind": "solver",
+        "evidence": {
+          "propertyFailure": {
+            "schemaVersion": "C1/1",
+            "operation": "stateMVU",
+            "inputScope": "fixed-inventory",
+            "input": {
+              "values": {
+                "massKg": 0.016830826468318544,
+                "volumeM3": 0.0006000000000000001,
+                "internalEnergyKJ": 25.301752334073395,
+                "guess": 35
+              },
+              "bits": {
+                "massKg": "3f913c19a4fbfc38",
+                "volumeM3": "3f43a92a30553262",
+                "internalEnergyKJ": "40394d3fa416563f",
+                "guess": "4041800000000000"
+              }
+            },
+            "rawRecovery": "failed",
+            "rawCoordinates": null,
+            "lastRequest": {
+              "mode": "DU",
+              "args": [
+                {
+                  "value": 28.05137744719757,
+                  "bits": "403c0d271287772d"
+                },
+                {
+                  "value": 1503298.2712821662,
+                  "bits": "4136f0424572bf80"
+                }
+              ]
+            },
+            "requestedInputSupport": "unknown",
+            "returnedCoordinateSupport": "unknown",
+            "exactInventorySupport": "unknown",
+            "checks": {
+              "support": "unmeasured",
+              "phase": "unmeasured",
+              "canonical": "unmeasured",
+              "nonlinear": "unmeasured"
+            },
+            "observedResiduals": null,
+            "physicalTrajectoryExit": "unproved",
+            "reason": "inverse-recovery-failure",
+            "errorSource": "EOS",
+            "originalError": {
+              "message": "Input vapor quality [Q] must be between 0 and 1",
+              "faultKind": null
+            },
+            "numericalPressureEnclosure": false
+          }
+        },
+        "propertyCause": null,
+        "domainCause": null,
+        "nonlinearResidual": null
+      },
+      "accepted": false
+    }
+  ]
+}

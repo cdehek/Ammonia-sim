@@ -1,0 +1,638 @@
+[
+  {
+    "runtime": "chromium",
+    "artifact": "rebuiltB4C",
+    "fullVLE": false,
+    "key": "webkit-ledger-69",
+    "input": {
+      "values": {
+        "M": 0.3129191406444639,
+        "U_kJ": 218.14080372494715,
+        "V": 0.0006000000000000001,
+        "rho": 521.5319010741065,
+        "u": 697115.5656240181
+      },
+      "bits": {
+        "M": "3fd406de00d710be",
+        "U_kJ": "406b448176d039b2",
+        "V": "3f43a92a30553262",
+        "rho": "40804c415559aff5",
+        "u": "41254637219978a7"
+      }
+    },
+    "raw": {
+      "values": {
+        "p": 3499999.9999996508,
+        "T": 345.5636734307982,
+        "h": 703826.5644963617,
+        "s": 2625.843410390111,
+        "rho": 521.5319010741065,
+        "u": 697115.5656240179,
+        "Q": 10000
+      },
+      "bits": {
+        "p": "414ab3effffffd12",
+        "T": "40759904ce6e6e70",
+        "h": "41257aa52105aac8",
+        "s": "40a483afd37c9544",
+        "rho": "40804c415559aff5",
+        "u": "41254637219978a5",
+        "Q": "40c3880000000000"
+      }
+    },
+    "state": {
+      "values": {
+        "p": 34.999999999996504,
+        "h": 703.8265644963617,
+        "T": 72.41367343079821,
+        "s": 2.625843410390111,
+        "rho": 521.5319010741065,
+        "u": 697.1155656240179,
+        "x": null,
+        "phase": "Subcooled liquid",
+        "massKg": 0.3129191406444639,
+        "volumeM3": 0.0006000000000000001,
+        "internalEnergyKJ": 218.14080372494715,
+        "densityResidual": 0,
+        "energyResidual": -2.2737367544323206e-13,
+        "liquidVolumeFraction": 1
+      },
+      "bits": {
+        "p": "40417ffffffffe14",
+        "h": "4085fe9ccdd8bf44",
+        "T": "40521a79a0202028",
+        "s": "400501ba30a05750",
+        "rho": "40804c415559aff5",
+        "u": "4085c8ecadab7d97",
+        "massKg": "3fd406de00d710be",
+        "volumeM3": "3f43a92a30553262",
+        "internalEnergyKJ": "406b448176d039b2",
+        "densityResidual": "0000000000000000",
+        "energyResidual": "bd50000000000000",
+        "liquidVolumeFraction": "3ff0000000000000"
+      }
+    },
+    "error": null,
+    "certified": false,
+    "qualificationBlocker": true
+  },
+  {
+    "runtime": "chromium",
+    "artifact": "rebuiltB4C",
+    "fullVLE": true,
+    "key": "webkit-ledger-69",
+    "input": {
+      "values": {
+        "M": 0.3129191406444639,
+        "U_kJ": 218.14080372494715,
+        "V": 0.0006000000000000001,
+        "rho": 521.5319010741065,
+        "u": 697115.5656240181
+      },
+      "bits": {
+        "M": "3fd406de00d710be",
+        "U_kJ": "406b448176d039b2",
+        "V": "3f43a92a30553262",
+        "rho": "40804c415559aff5",
+        "u": "41254637219978a7"
+      }
+    },
+    "raw": null,
+    "state": null,
+    "error": {
+      "message": "Input vapor quality [Q] must be between 0 and 1",
+      "faultKind": "solver",
+      "evidence": {
+        "propertyFailure": {
+          "schemaVersion": "C1/1",
+          "operation": "stateMVU",
+          "inputScope": "fixed-inventory",
+          "input": {
+            "values": {
+              "massKg": 0.3129191406444639,
+              "volumeM3": 0.0006000000000000001,
+              "internalEnergyKJ": 218.14080372494715,
+              "guess": 35
+            },
+            "bits": {
+              "massKg": "3fd406de00d710be",
+              "volumeM3": "3f43a92a30553262",
+              "internalEnergyKJ": "406b448176d039b2",
+              "guess": "4041800000000000"
+            }
+          },
+          "rawRecovery": "failed",
+          "rawCoordinates": null,
+          "lastRequest": {
+            "mode": "DU",
+            "args": [
+              {
+                "value": 521.5319010741065,
+                "bits": "40804c415559aff5"
+              },
+              {
+                "value": 697115.5656240181,
+                "bits": "41254637219978a7"
+              }
+            ]
+          },
+          "requestedInputSupport": "unknown",
+          "returnedCoordinateSupport": "unknown",
+          "exactInventorySupport": "unknown",
+          "checks": {
+            "support": "unmeasured",
+            "phase": "unmeasured",
+            "canonical": "unmeasured",
+            "nonlinear": "unmeasured"
+          },
+          "observedResiduals": null,
+          "physicalTrajectoryExit": "unproved",
+          "reason": "inverse-recovery-failure",
+          "errorSource": "EOS",
+          "originalError": {
+            "message": "Input vapor quality [Q] must be between 0 and 1",
+            "faultKind": null
+          },
+          "numericalPressureEnclosure": false
+        }
+      },
+      "propertyCause": null,
+      "domainCause": null,
+      "nonlinearResidual": null
+    },
+    "certified": false,
+    "qualificationBlocker": true
+  },
+  {
+    "runtime": "chromium",
+    "artifact": "gateA",
+    "fullVLE": false,
+    "key": "webkit-ledger-69",
+    "input": {
+      "values": {
+        "M": 0.3129191406444639,
+        "U_kJ": 218.14080372494715,
+        "V": 0.0006000000000000001,
+        "rho": 521.5319010741065,
+        "u": 697115.5656240181
+      },
+      "bits": {
+        "M": "3fd406de00d710be",
+        "U_kJ": "406b448176d039b2",
+        "V": "3f43a92a30553262",
+        "rho": "40804c415559aff5",
+        "u": "41254637219978a7"
+      }
+    },
+    "raw": {
+      "values": {
+        "p": 3499999.9999996508,
+        "T": 345.5636734307982,
+        "h": 703826.5644963617,
+        "s": 2625.843410390111,
+        "rho": 521.5319010741065,
+        "u": 697115.5656240179,
+        "Q": 10000
+      },
+      "bits": {
+        "p": "414ab3effffffd12",
+        "T": "40759904ce6e6e70",
+        "h": "41257aa52105aac8",
+        "s": "40a483afd37c9544",
+        "rho": "40804c415559aff5",
+        "u": "41254637219978a5",
+        "Q": "40c3880000000000"
+      }
+    },
+    "state": {
+      "values": {
+        "p": 34.999999999996504,
+        "h": 703.8265644963617,
+        "T": 72.41367343079821,
+        "s": 2.625843410390111,
+        "rho": 521.5319010741065,
+        "u": 697.1155656240179,
+        "x": null,
+        "phase": "Subcooled liquid",
+        "massKg": 0.3129191406444639,
+        "volumeM3": 0.0006000000000000001,
+        "internalEnergyKJ": 218.14080372494715,
+        "densityResidual": 0,
+        "energyResidual": -2.2737367544323206e-13,
+        "liquidVolumeFraction": 1
+      },
+      "bits": {
+        "p": "40417ffffffffe14",
+        "h": "4085fe9ccdd8bf44",
+        "T": "40521a79a0202028",
+        "s": "400501ba30a05750",
+        "rho": "40804c415559aff5",
+        "u": "4085c8ecadab7d97",
+        "massKg": "3fd406de00d710be",
+        "volumeM3": "3f43a92a30553262",
+        "internalEnergyKJ": "406b448176d039b2",
+        "densityResidual": "0000000000000000",
+        "energyResidual": "bd50000000000000",
+        "liquidVolumeFraction": "3ff0000000000000"
+      }
+    },
+    "error": null,
+    "certified": false,
+    "qualificationBlocker": true
+  },
+  {
+    "runtime": "chromium",
+    "artifact": "gateA",
+    "fullVLE": true,
+    "key": "webkit-ledger-69",
+    "input": {
+      "values": {
+        "M": 0.3129191406444639,
+        "U_kJ": 218.14080372494715,
+        "V": 0.0006000000000000001,
+        "rho": 521.5319010741065,
+        "u": 697115.5656240181
+      },
+      "bits": {
+        "M": "3fd406de00d710be",
+        "U_kJ": "406b448176d039b2",
+        "V": "3f43a92a30553262",
+        "rho": "40804c415559aff5",
+        "u": "41254637219978a7"
+      }
+    },
+    "raw": {
+      "values": {
+        "p": 3499999.9999997276,
+        "T": 345.5636734307981,
+        "h": 703826.5644963618,
+        "s": 2625.843410390112,
+        "rho": 521.5319010741065,
+        "u": 697115.5656240177,
+        "Q": 10000
+      },
+      "bits": {
+        "p": "414ab3effffffdb7",
+        "T": "40759904ce6e6e6e",
+        "h": "41257aa52105aac9",
+        "s": "40a483afd37c9546",
+        "rho": "40804c415559aff5",
+        "u": "41254637219978a4",
+        "Q": "40c3880000000000"
+      }
+    },
+    "state": {
+      "values": {
+        "p": 34.99999999999728,
+        "h": 703.8265644963618,
+        "T": 72.4136734307981,
+        "s": 2.625843410390112,
+        "rho": 521.5319010741065,
+        "u": 697.1155656240178,
+        "x": null,
+        "phase": "Subcooled liquid",
+        "massKg": 0.3129191406444639,
+        "volumeM3": 0.0006000000000000001,
+        "internalEnergyKJ": 218.14080372494715,
+        "densityResidual": 0,
+        "energyResidual": -3.410605131648481e-13,
+        "liquidVolumeFraction": 1
+      },
+      "bits": {
+        "p": "40417ffffffffe81",
+        "h": "4085fe9ccdd8bf45",
+        "T": "40521a79a0202020",
+        "s": "400501ba30a05752",
+        "rho": "40804c415559aff5",
+        "u": "4085c8ecadab7d96",
+        "massKg": "3fd406de00d710be",
+        "volumeM3": "3f43a92a30553262",
+        "internalEnergyKJ": "406b448176d039b2",
+        "densityResidual": "0000000000000000",
+        "energyResidual": "bd58000000000000",
+        "liquidVolumeFraction": "3ff0000000000000"
+      }
+    },
+    "error": null,
+    "certified": false,
+    "qualificationBlocker": true
+  },
+  {
+    "runtime": "webkit",
+    "artifact": "rebuiltB4C",
+    "fullVLE": false,
+    "key": "webkit-ledger-69",
+    "input": {
+      "values": {
+        "M": 0.3129191406444639,
+        "U_kJ": 218.14080372494715,
+        "V": 0.0006000000000000001,
+        "rho": 521.5319010741065,
+        "u": 697115.5656240181
+      },
+      "bits": {
+        "M": "3fd406de00d710be",
+        "U_kJ": "406b448176d039b2",
+        "V": "3f43a92a30553262",
+        "rho": "40804c415559aff5",
+        "u": "41254637219978a7"
+      }
+    },
+    "raw": {
+      "values": {
+        "p": 3499999.9999996508,
+        "T": 345.5636734307982,
+        "h": 703826.5644963617,
+        "s": 2625.843410390111,
+        "rho": 521.5319010741065,
+        "u": 697115.5656240179,
+        "Q": 10000
+      },
+      "bits": {
+        "p": "414ab3effffffd12",
+        "T": "40759904ce6e6e70",
+        "h": "41257aa52105aac8",
+        "s": "40a483afd37c9544",
+        "rho": "40804c415559aff5",
+        "u": "41254637219978a5",
+        "Q": "40c3880000000000"
+      }
+    },
+    "state": {
+      "values": {
+        "p": 34.999999999996504,
+        "h": 703.8265644963617,
+        "T": 72.41367343079821,
+        "s": 2.625843410390111,
+        "rho": 521.5319010741065,
+        "u": 697.1155656240179,
+        "x": null,
+        "phase": "Subcooled liquid",
+        "massKg": 0.3129191406444639,
+        "volumeM3": 0.0006000000000000001,
+        "internalEnergyKJ": 218.14080372494715,
+        "densityResidual": 0,
+        "energyResidual": -2.2737367544323206e-13,
+        "liquidVolumeFraction": 1
+      },
+      "bits": {
+        "p": "40417ffffffffe14",
+        "h": "4085fe9ccdd8bf44",
+        "T": "40521a79a0202028",
+        "s": "400501ba30a05750",
+        "rho": "40804c415559aff5",
+        "u": "4085c8ecadab7d97",
+        "massKg": "3fd406de00d710be",
+        "volumeM3": "3f43a92a30553262",
+        "internalEnergyKJ": "406b448176d039b2",
+        "densityResidual": "0000000000000000",
+        "energyResidual": "bd50000000000000",
+        "liquidVolumeFraction": "3ff0000000000000"
+      }
+    },
+    "error": null,
+    "certified": false,
+    "qualificationBlocker": true
+  },
+  {
+    "runtime": "webkit",
+    "artifact": "rebuiltB4C",
+    "fullVLE": true,
+    "key": "webkit-ledger-69",
+    "input": {
+      "values": {
+        "M": 0.3129191406444639,
+        "U_kJ": 218.14080372494715,
+        "V": 0.0006000000000000001,
+        "rho": 521.5319010741065,
+        "u": 697115.5656240181
+      },
+      "bits": {
+        "M": "3fd406de00d710be",
+        "U_kJ": "406b448176d039b2",
+        "V": "3f43a92a30553262",
+        "rho": "40804c415559aff5",
+        "u": "41254637219978a7"
+      }
+    },
+    "raw": null,
+    "state": null,
+    "error": {
+      "message": "Input vapor quality [Q] must be between 0 and 1",
+      "faultKind": "solver",
+      "evidence": {
+        "propertyFailure": {
+          "schemaVersion": "C1/1",
+          "operation": "stateMVU",
+          "inputScope": "fixed-inventory",
+          "input": {
+            "values": {
+              "massKg": 0.3129191406444639,
+              "volumeM3": 0.0006000000000000001,
+              "internalEnergyKJ": 218.14080372494715,
+              "guess": 35
+            },
+            "bits": {
+              "massKg": "3fd406de00d710be",
+              "volumeM3": "3f43a92a30553262",
+              "internalEnergyKJ": "406b448176d039b2",
+              "guess": "4041800000000000"
+            }
+          },
+          "rawRecovery": "failed",
+          "rawCoordinates": null,
+          "lastRequest": {
+            "mode": "DU",
+            "args": [
+              {
+                "value": 521.5319010741065,
+                "bits": "40804c415559aff5"
+              },
+              {
+                "value": 697115.5656240181,
+                "bits": "41254637219978a7"
+              }
+            ]
+          },
+          "requestedInputSupport": "unknown",
+          "returnedCoordinateSupport": "unknown",
+          "exactInventorySupport": "unknown",
+          "checks": {
+            "support": "unmeasured",
+            "phase": "unmeasured",
+            "canonical": "unmeasured",
+            "nonlinear": "unmeasured"
+          },
+          "observedResiduals": null,
+          "physicalTrajectoryExit": "unproved",
+          "reason": "inverse-recovery-failure",
+          "errorSource": "EOS",
+          "originalError": {
+            "message": "Input vapor quality [Q] must be between 0 and 1",
+            "faultKind": null
+          },
+          "numericalPressureEnclosure": false
+        }
+      },
+      "propertyCause": null,
+      "domainCause": null,
+      "nonlinearResidual": null
+    },
+    "certified": false,
+    "qualificationBlocker": true
+  },
+  {
+    "runtime": "webkit",
+    "artifact": "gateA",
+    "fullVLE": false,
+    "key": "webkit-ledger-69",
+    "input": {
+      "values": {
+        "M": 0.3129191406444639,
+        "U_kJ": 218.14080372494715,
+        "V": 0.0006000000000000001,
+        "rho": 521.5319010741065,
+        "u": 697115.5656240181
+      },
+      "bits": {
+        "M": "3fd406de00d710be",
+        "U_kJ": "406b448176d039b2",
+        "V": "3f43a92a30553262",
+        "rho": "40804c415559aff5",
+        "u": "41254637219978a7"
+      }
+    },
+    "raw": {
+      "values": {
+        "p": 3499999.9999996508,
+        "T": 345.5636734307982,
+        "h": 703826.5644963617,
+        "s": 2625.843410390111,
+        "rho": 521.5319010741065,
+        "u": 697115.5656240179,
+        "Q": 10000
+      },
+      "bits": {
+        "p": "414ab3effffffd12",
+        "T": "40759904ce6e6e70",
+        "h": "41257aa52105aac8",
+        "s": "40a483afd37c9544",
+        "rho": "40804c415559aff5",
+        "u": "41254637219978a5",
+        "Q": "40c3880000000000"
+      }
+    },
+    "state": {
+      "values": {
+        "p": 34.999999999996504,
+        "h": 703.8265644963617,
+        "T": 72.41367343079821,
+        "s": 2.625843410390111,
+        "rho": 521.5319010741065,
+        "u": 697.1155656240179,
+        "x": null,
+        "phase": "Subcooled liquid",
+        "massKg": 0.3129191406444639,
+        "volumeM3": 0.0006000000000000001,
+        "internalEnergyKJ": 218.14080372494715,
+        "densityResidual": 0,
+        "energyResidual": -2.2737367544323206e-13,
+        "liquidVolumeFraction": 1
+      },
+      "bits": {
+        "p": "40417ffffffffe14",
+        "h": "4085fe9ccdd8bf44",
+        "T": "40521a79a0202028",
+        "s": "400501ba30a05750",
+        "rho": "40804c415559aff5",
+        "u": "4085c8ecadab7d97",
+        "massKg": "3fd406de00d710be",
+        "volumeM3": "3f43a92a30553262",
+        "internalEnergyKJ": "406b448176d039b2",
+        "densityResidual": "0000000000000000",
+        "energyResidual": "bd50000000000000",
+        "liquidVolumeFraction": "3ff0000000000000"
+      }
+    },
+    "error": null,
+    "certified": false,
+    "qualificationBlocker": true
+  },
+  {
+    "runtime": "webkit",
+    "artifact": "gateA",
+    "fullVLE": true,
+    "key": "webkit-ledger-69",
+    "input": {
+      "values": {
+        "M": 0.3129191406444639,
+        "U_kJ": 218.14080372494715,
+        "V": 0.0006000000000000001,
+        "rho": 521.5319010741065,
+        "u": 697115.5656240181
+      },
+      "bits": {
+        "M": "3fd406de00d710be",
+        "U_kJ": "406b448176d039b2",
+        "V": "3f43a92a30553262",
+        "rho": "40804c415559aff5",
+        "u": "41254637219978a7"
+      }
+    },
+    "raw": {
+      "values": {
+        "p": 3499999.9999997276,
+        "T": 345.5636734307981,
+        "h": 703826.5644963618,
+        "s": 2625.843410390112,
+        "rho": 521.5319010741065,
+        "u": 697115.5656240177,
+        "Q": 10000
+      },
+      "bits": {
+        "p": "414ab3effffffdb7",
+        "T": "40759904ce6e6e6e",
+        "h": "41257aa52105aac9",
+        "s": "40a483afd37c9546",
+        "rho": "40804c415559aff5",
+        "u": "41254637219978a4",
+        "Q": "40c3880000000000"
+      }
+    },
+    "state": {
+      "values": {
+        "p": 34.99999999999728,
+        "h": 703.8265644963618,
+        "T": 72.4136734307981,
+        "s": 2.625843410390112,
+        "rho": 521.5319010741065,
+        "u": 697.1155656240178,
+        "x": null,
+        "phase": "Subcooled liquid",
+        "massKg": 0.3129191406444639,
+        "volumeM3": 0.0006000000000000001,
+        "internalEnergyKJ": 218.14080372494715,
+        "densityResidual": 0,
+        "energyResidual": -3.410605131648481e-13,
+        "liquidVolumeFraction": 1
+      },
+      "bits": {
+        "p": "40417ffffffffe81",
+        "h": "4085fe9ccdd8bf45",
+        "T": "40521a79a0202020",
+        "s": "400501ba30a05752",
+        "rho": "40804c415559aff5",
+        "u": "4085c8ecadab7d96",
+        "massKg": "3fd406de00d710be",
+        "volumeM3": "3f43a92a30553262",
+        "internalEnergyKJ": "406b448176d039b2",
+        "densityResidual": "0000000000000000",
+        "energyResidual": "bd58000000000000",
+        "liquidVolumeFraction": "3ff0000000000000"
+      }
+    },
+    "error": null,
+    "certified": false,
+    "qualificationBlocker": true
+  }
+]

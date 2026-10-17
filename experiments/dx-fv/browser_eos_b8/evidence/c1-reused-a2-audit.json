@@ -1,0 +1,202 @@
+{
+  "passed": true,
+  "rows": [
+    {
+      "engine": "chromium",
+      "errorExperiment": "original-boundary",
+      "scenario": "A-supported",
+      "exactAcceptedMatch": true,
+      "massResidualKg": 2.299243830267486e-15,
+      "combinedEnergyResidualKJ": 1.1521209333786864e-12
+    },
+    {
+      "engine": "chromium",
+      "errorExperiment": "original-boundary",
+      "scenario": "real-browser-boundary",
+      "persistent": false,
+      "rejectedTrials": 2,
+      "everyRejectedTrialRollback": true,
+      "massResidualKg": -1.627343415187485e-15,
+      "combinedEnergyResidualKJ": -8.143325423703995e-13
+    },
+    {
+      "engine": "chromium",
+      "errorExperiment": "original-boundary",
+      "scenario": "real-browser-boundary",
+      "persistent": true,
+      "rejectedTrials": 20,
+      "everyRejectedTrialRollback": true,
+      "exactAcceptedRollback": true,
+      "identityPreserved": true,
+      "attempts": 20,
+      "halvings": 19,
+      "floor": 1e-09,
+      "massResidualKg": 1.2168515554320273e-15,
+      "combinedEnergyResidualKJ": 6.076932576939975e-13
+    },
+    {
+      "engine": "chromium",
+      "errorExperiment": "original-boundary",
+      "scenario": "D-physical-thermal-exit",
+      "temperatureLimitK": 200,
+      "independentThermalExitConfirmed": true
+    },
+    {
+      "engine": "chromium",
+      "errorExperiment": "original-boundary",
+      "scenario": "D-physical-thermal-exit",
+      "temperatureLimitK": 400,
+      "independentThermalExitConfirmed": true
+    },
+    {
+      "engine": "chromium",
+      "errorExperiment": "actual-PT-dispatch-injection",
+      "scenario": "A-supported",
+      "exactAcceptedMatch": true,
+      "massResidualKg": 2.299243830267486e-15,
+      "combinedEnergyResidualKJ": 1.1521209333786864e-12
+    },
+    {
+      "engine": "chromium",
+      "errorExperiment": "actual-PT-dispatch-injection",
+      "scenario": "real-browser-boundary",
+      "persistent": false,
+      "rejectedTrials": 2,
+      "everyRejectedTrialRollback": true,
+      "massResidualKg": -1.627343415187485e-15,
+      "combinedEnergyResidualKJ": -8.143325423703995e-13
+    },
+    {
+      "engine": "chromium",
+      "errorExperiment": "actual-PT-dispatch-injection",
+      "scenario": "real-browser-boundary",
+      "persistent": true,
+      "rejectedTrials": 20,
+      "everyRejectedTrialRollback": true,
+      "exactAcceptedRollback": true,
+      "identityPreserved": true,
+      "attempts": 20,
+      "halvings": 19,
+      "floor": 1e-09,
+      "massResidualKg": 1.2168515554320273e-15,
+      "combinedEnergyResidualKJ": 6.076932576939975e-13
+    },
+    {
+      "engine": "chromium",
+      "errorExperiment": "actual-PT-dispatch-injection",
+      "scenario": "D-physical-thermal-exit",
+      "temperatureLimitK": 200,
+      "independentThermalExitConfirmed": true
+    },
+    {
+      "engine": "chromium",
+      "errorExperiment": "actual-PT-dispatch-injection",
+      "scenario": "D-physical-thermal-exit",
+      "temperatureLimitK": 400,
+      "independentThermalExitConfirmed": true
+    },
+    {
+      "engine": "webkit",
+      "errorExperiment": "original-boundary",
+      "scenario": "A-supported",
+      "exactAcceptedMatch": true,
+      "massResidualKg": 2.299243830267486e-15,
+      "combinedEnergyResidualKJ": 1.1521209333786864e-12
+    },
+    {
+      "engine": "webkit",
+      "errorExperiment": "original-boundary",
+      "scenario": "real-browser-boundary",
+      "persistent": false,
+      "rejectedTrials": 2,
+      "everyRejectedTrialRollback": true,
+      "massResidualKg": -1.627343415187485e-15,
+      "combinedEnergyResidualKJ": -8.143325423703995e-13
+    },
+    {
+      "engine": "webkit",
+      "errorExperiment": "original-boundary",
+      "scenario": "real-browser-boundary",
+      "persistent": true,
+      "rejectedTrials": 20,
+      "everyRejectedTrialRollback": true,
+      "exactAcceptedRollback": true,
+      "identityPreserved": true,
+      "attempts": 20,
+      "halvings": 19,
+      "floor": 1e-09,
+      "massResidualKg": 1.2168515554320273e-15,
+      "combinedEnergyResidualKJ": 6.076932576939975e-13
+    },
+    {
+      "engine": "webkit",
+      "errorExperiment": "original-boundary",
+      "scenario": "D-physical-thermal-exit",
+      "temperatureLimitK": 200,
+      "independentThermalExitConfirmed": true
+    },
+    {
+      "engine": "webkit",
+      "errorExperiment": "original-boundary",
+      "scenario": "D-physical-thermal-exit",
+      "temperatureLimitK": 400,
+      "independentThermalExitConfirmed": true
+    },
+    {
+      "engine": "webkit",
+      "errorExperiment": "actual-PT-dispatch-injection",
+      "scenario": "A-supported",
+      "exactAcceptedMatch": true,
+      "massResidualKg": 2.299243830267486e-15,
+      "combinedEnergyResidualKJ": 1.1521209333786864e-12
+    },
+    {
+      "engine": "webkit",
+      "errorExperiment": "actual-PT-dispatch-injection",
+      "scenario": "real-browser-boundary",
+      "persistent": false,
+      "rejectedTrials": 2,
+      "everyRejectedTrialRollback": true,
+      "massResidualKg": -1.627343415187485e-15,
+      "combinedEnergyResidualKJ": -8.143325423703995e-13
+    },
+    {
+      "engine": "webkit",
+      "errorExperiment": "actual-PT-dispatch-injection",
+      "scenario": "real-browser-boundary",
+      "persistent": true,
+      "rejectedTrials": 20,
+      "everyRejectedTrialRollback": true,
+      "exactAcceptedRollback": true,
+      "identityPreserved": true,
+      "attempts": 20,
+      "halvings": 19,
+      "floor": 1e-09,
+      "massResidualKg": 1.2168515554320273e-15,
+      "combinedEnergyResidualKJ": 6.076932576939975e-13
+    },
+    {
+      "engine": "webkit",
+      "errorExperiment": "actual-PT-dispatch-injection",
+      "scenario": "D-physical-thermal-exit",
+      "temperatureLimitK": 200,
+      "independentThermalExitConfirmed": true
+    },
+    {
+      "engine": "webkit",
+      "errorExperiment": "actual-PT-dispatch-injection",
+      "scenario": "D-physical-thermal-exit",
+      "temperatureLimitK": 400,
+      "independentThermalExitConfirmed": true
+    }
+  ],
+  "scenariosPerEngine": 10,
+  "sourceIdentities": {
+    "browser_eos_b6/a2-subset.cjs": "13ed40b131c922d087cb124ad2c7fa887d9c86a43a03b0a9c1232650fed25eb4",
+    "browser_eos_b6/science.mjs": "5004d77f96ab0250af46458b245ef3fda86633c1313f5ec996858eb677f5de86",
+    "browser_eos_b6/evidence/c1-harness-provenance.json": "e88f32d9588378ff2114e20b1a14b09991c01f3561f178d5dd9c3b95a974c0cb"
+  },
+  "originalC1AndAcceptedA2DependenciesUnchanged": true,
+  "fullA2Qualification": false,
+  "scope": "Existing supported pair, transient/persistent real property fault experiments, exact rollback, genuine thermal exits. Actual PT fault uses explicitly labeled harness dispatch injection; no Gate B endpoint properties substituted."
+}

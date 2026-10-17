@@ -1,0 +1,4364 @@
+{
+  "count": 11,
+  "observations": 44,
+  "fullVLE": 8,
+  "default": 3,
+  "rows": [
+    {
+      "issueId": "DP-01",
+      "fixtureId": "30298.937123458254-hg",
+      "inputPair": "DmassP_INPUTS",
+      "input": [
+        0.28801899212112925,
+        30298.937123458254
+      ],
+      "inputBits": [
+        "3fd26ee735f2605e",
+        "40dd96bbf9d4ab61"
+      ],
+      "fullVLE": false,
+      "classification": "browser-endpoint-rounding-relative-to-native",
+      "historicalRowIndex": 11,
+      "historicalRow": {
+        "fixture": {
+          "id": "30298.937123458254-hg",
+          "p": 30298.937123458254,
+          "rho": 0.28801899212112925,
+          "h": 1529444.8878290523,
+          "s": 7032.492630657634
+        },
+        "mode": "DP",
+        "fullVLE": false,
+        "input": [
+          0.28801899212112925,
+          30298.937123458254
+        ],
+        "inputBits": [
+          "3fd26ee735f2605e",
+          "40dd96bbf9d4ab61"
+        ],
+        "result": {
+          "control": {
+            "state": {
+              "values": {
+                "p": 30298.937123458254,
+                "T": 218.26293725550534,
+                "rho": 0.28801899212112925,
+                "h": 1529444.8878290523,
+                "u": 1424247.182288099,
+                "Q": 1.0,
+                "phase": 6.0
+              },
+              "bits": {
+                "p": "40dd96bbf9d4ab61",
+                "T": "406b4869fb642974",
+                "rho": "3fd26ee735f2605e",
+                "h": "41375664e348c3c8",
+                "u": "4135bb772eaa6ed0",
+                "Q": "3ff0000000000000",
+                "phase": "4018000000000000"
+              }
+            }
+          },
+          "A1": {
+            "state": {
+              "values": {
+                "p": 30298.937123458254,
+                "T": 218.26293725550534,
+                "rho": 0.28801899212112925,
+                "h": 1529444.8878290523,
+                "u": 1424247.182288099,
+                "Q": 1.0,
+                "phase": 6.0
+              },
+              "bits": {
+                "p": "40dd96bbf9d4ab61",
+                "T": "406b4869fb642974",
+                "rho": "3fd26ee735f2605e",
+                "h": "41375664e348c3c8",
+                "u": "4135bb772eaa6ed0",
+                "Q": "3ff0000000000000",
+                "phase": "4018000000000000"
+              }
+            }
+          }
+        },
+        "exact": true
+      },
+      "observationIndices": [
+        0,
+        11,
+        22,
+        33
+      ],
+      "observations": [
+        {
+          "engine": "chromium",
+          "artifact": "rebuiltB4C",
+          "fullVLE": false,
+          "id": "30298.937123458254-hg",
+          "mode": "DP",
+          "input": [
+            0.28801899212112925,
+            30298.937123458254
+          ],
+          "inputBits": [
+            "3fd26ee735f2605e",
+            "40dd96bbf9d4ab61"
+          ],
+          "rawReturn": {
+            "values": {
+              "p": 30298.937123458254,
+              "T": 218.26293725550536,
+              "h": 1529444.8878290544,
+              "s": 7032.4926306576435,
+              "rho": 0.2880189921211293,
+              "u": 1424247.182288101,
+              "Q": 1.0000000000000016,
+              "phase": 6
+            },
+            "bits": {
+              "p": "40dd96bbf9d4ab61",
+              "T": "406b4869fb642975",
+              "h": "41375664e348c3d1",
+              "s": "40bb787e1d0af396",
+              "rho": "3fd26ee735f2605f",
+              "u": "4135bb772eaa6ed8",
+              "Q": "3ff0000000000007",
+              "phase": "4018000000000000"
+            }
+          },
+          "nativeRaw": {
+            "values": {
+              "p": 30298.937123458254,
+              "h": 1529444.8878290523,
+              "T": 218.26293725550534,
+              "rho": 0.28801899212112925,
+              "u": 1424247.182288099,
+              "Q": 1.0,
+              "phase": 6.0,
+              "s": 7032.492630657634
+            },
+            "bits": {
+              "p": "40dd96bbf9d4ab61",
+              "h": "41375664e348c3c8",
+              "T": "406b4869fb642974",
+              "rho": "3fd26ee735f2605e",
+              "u": "4135bb772eaa6ed0",
+              "Q": "3ff0000000000000",
+              "phase": "4018000000000000",
+              "s": "40bb787e1d0af38c"
+            }
+          },
+          "preservedNativeRaw": {
+            "p": 30298.937123458254,
+            "T": 218.26293725550534,
+            "rho": 0.28801899212112925,
+            "h": 1529444.8878290523,
+            "u": 1424247.182288099,
+            "Q": 1.0,
+            "phase": 6.0
+          },
+          "physicalQualityAdmissible": false,
+          "scientificAcceptance": "REFUSED \u2014 invalid physical quality",
+          "controlCandidateExact": true,
+          "DPInterfaceQualified": false,
+          "scope": "Unchanged supplemental DP endpoint diagnostic, not a repaired DU state or an accepted A2/model state"
+        },
+        {
+          "engine": "chromium",
+          "artifact": "gateA",
+          "fullVLE": false,
+          "id": "30298.937123458254-hg",
+          "mode": "DP",
+          "input": [
+            0.28801899212112925,
+            30298.937123458254
+          ],
+          "inputBits": [
+            "3fd26ee735f2605e",
+            "40dd96bbf9d4ab61"
+          ],
+          "rawReturn": {
+            "values": {
+              "p": 30298.937123458254,
+              "T": 218.26293725550536,
+              "h": 1529444.8878290544,
+              "s": 7032.4926306576435,
+              "rho": 0.2880189921211293,
+              "u": 1424247.182288101,
+              "Q": 1.0000000000000016,
+              "phase": 6
+            },
+            "bits": {
+              "p": "40dd96bbf9d4ab61",
+              "T": "406b4869fb642975",
+              "h": "41375664e348c3d1",
+              "s": "40bb787e1d0af396",
+              "rho": "3fd26ee735f2605f",
+              "u": "4135bb772eaa6ed8",
+              "Q": "3ff0000000000007",
+              "phase": "4018000000000000"
+            }
+          },
+          "nativeRaw": {
+            "values": {
+              "p": 30298.937123458254,
+              "h": 1529444.8878290523,
+              "T": 218.26293725550534,
+              "rho": 0.28801899212112925,
+              "u": 1424247.182288099,
+              "Q": 1.0,
+              "phase": 6.0,
+              "s": 7032.492630657634
+            },
+            "bits": {
+              "p": "40dd96bbf9d4ab61",
+              "h": "41375664e348c3c8",
+              "T": "406b4869fb642974",
+              "rho": "3fd26ee735f2605e",
+              "u": "4135bb772eaa6ed0",
+              "Q": "3ff0000000000000",
+              "phase": "4018000000000000",
+              "s": "40bb787e1d0af38c"
+            }
+          },
+          "preservedNativeRaw": {
+            "p": 30298.937123458254,
+            "T": 218.26293725550534,
+            "rho": 0.28801899212112925,
+            "h": 1529444.8878290523,
+            "u": 1424247.182288099,
+            "Q": 1.0,
+            "phase": 6.0
+          },
+          "physicalQualityAdmissible": false,
+          "scientificAcceptance": "REFUSED \u2014 invalid physical quality",
+          "controlCandidateExact": true,
+          "DPInterfaceQualified": false,
+          "scope": "Unchanged supplemental DP endpoint diagnostic, not a repaired DU state or an accepted A2/model state"
+        },
+        {
+          "engine": "webkit",
+          "artifact": "rebuiltB4C",
+          "fullVLE": false,
+          "id": "30298.937123458254-hg",
+          "mode": "DP",
+          "input": [
+            0.28801899212112925,
+            30298.937123458254
+          ],
+          "inputBits": [
+            "3fd26ee735f2605e",
+            "40dd96bbf9d4ab61"
+          ],
+          "rawReturn": {
+            "values": {
+              "p": 30298.937123458254,
+              "T": 218.26293725550536,
+              "h": 1529444.8878290544,
+              "s": 7032.4926306576435,
+              "rho": 0.2880189921211293,
+              "u": 1424247.182288101,
+              "Q": 1.0000000000000016,
+              "phase": 6
+            },
+            "bits": {
+              "p": "40dd96bbf9d4ab61",
+              "T": "406b4869fb642975",
+              "h": "41375664e348c3d1",
+              "s": "40bb787e1d0af396",
+              "rho": "3fd26ee735f2605f",
+              "u": "4135bb772eaa6ed8",
+              "Q": "3ff0000000000007",
+              "phase": "4018000000000000"
+            }
+          },
+          "nativeRaw": {
+            "values": {
+              "p": 30298.937123458254,
+              "h": 1529444.8878290523,
+              "T": 218.26293725550534,
+              "rho": 0.28801899212112925,
+              "u": 1424247.182288099,
+              "Q": 1.0,
+              "phase": 6.0,
+              "s": 7032.492630657634
+            },
+            "bits": {
+              "p": "40dd96bbf9d4ab61",
+              "h": "41375664e348c3c8",
+              "T": "406b4869fb642974",
+              "rho": "3fd26ee735f2605e",
+              "u": "4135bb772eaa6ed0",
+              "Q": "3ff0000000000000",
+              "phase": "4018000000000000",
+              "s": "40bb787e1d0af38c"
+            }
+          },
+          "preservedNativeRaw": {
+            "p": 30298.937123458254,
+            "T": 218.26293725550534,
+            "rho": 0.28801899212112925,
+            "h": 1529444.8878290523,
+            "u": 1424247.182288099,
+            "Q": 1.0,
+            "phase": 6.0
+          },
+          "physicalQualityAdmissible": false,
+          "scientificAcceptance": "REFUSED \u2014 invalid physical quality",
+          "controlCandidateExact": true,
+          "DPInterfaceQualified": false,
+          "scope": "Unchanged supplemental DP endpoint diagnostic, not a repaired DU state or an accepted A2/model state"
+        },
+        {
+          "engine": "webkit",
+          "artifact": "gateA",
+          "fullVLE": false,
+          "id": "30298.937123458254-hg",
+          "mode": "DP",
+          "input": [
+            0.28801899212112925,
+            30298.937123458254
+          ],
+          "inputBits": [
+            "3fd26ee735f2605e",
+            "40dd96bbf9d4ab61"
+          ],
+          "rawReturn": {
+            "values": {
+              "p": 30298.937123458254,
+              "T": 218.26293725550536,
+              "h": 1529444.8878290544,
+              "s": 7032.4926306576435,
+              "rho": 0.2880189921211293,
+              "u": 1424247.182288101,
+              "Q": 1.0000000000000016,
+              "phase": 6
+            },
+            "bits": {
+              "p": "40dd96bbf9d4ab61",
+              "T": "406b4869fb642975",
+              "h": "41375664e348c3d1",
+              "s": "40bb787e1d0af396",
+              "rho": "3fd26ee735f2605f",
+              "u": "4135bb772eaa6ed8",
+              "Q": "3ff0000000000007",
+              "phase": "4018000000000000"
+            }
+          },
+          "nativeRaw": {
+            "values": {
+              "p": 30298.937123458254,
+              "h": 1529444.8878290523,
+              "T": 218.26293725550534,
+              "rho": 0.28801899212112925,
+              "u": 1424247.182288099,
+              "Q": 1.0,
+              "phase": 6.0,
+              "s": 7032.492630657634
+            },
+            "bits": {
+              "p": "40dd96bbf9d4ab61",
+              "h": "41375664e348c3c8",
+              "T": "406b4869fb642974",
+              "rho": "3fd26ee735f2605e",
+              "u": "4135bb772eaa6ed0",
+              "Q": "3ff0000000000000",
+              "phase": "4018000000000000",
+              "s": "40bb787e1d0af38c"
+            }
+          },
+          "preservedNativeRaw": {
+            "p": 30298.937123458254,
+            "T": 218.26293725550534,
+            "rho": 0.28801899212112925,
+            "h": 1529444.8878290523,
+            "u": 1424247.182288099,
+            "Q": 1.0,
+            "phase": 6.0
+          },
+          "physicalQualityAdmissible": false,
+          "scientificAcceptance": "REFUSED \u2014 invalid physical quality",
+          "controlCandidateExact": true,
+          "DPInterfaceQualified": false,
+          "scope": "Unchanged supplemental DP endpoint diagnostic, not a repaired DU state or an accepted A2/model state"
+        }
+      ],
+      "nativeReturned": true,
+      "browsersReturned": true,
+      "phaseEnum": 6,
+      "phaseEnumMeaning": "iphase_twophase numerical label; not independent phase certification",
+      "qualityAdmissible": false,
+      "independentPhysicalPhaseReference": "NOT ESTABLISHED for exact DP input; same-EOS endpoint fixture provenance is not an independent phase certificate",
+      "acceptedPropertyEligible": false,
+      "adapterDPMethodImplemented": false,
+      "acceptedA2RequestsDP": false,
+      "currentReachability": "No CoolProp DP edge in complete accepted dependency closure; bounded trace supports static exclusion",
+      "futureConsumerConsequence": "A finite-only raw loader can expose this state. A future consumer must refuse invalid equilibrium quality; historical convert maps out-of-range Q to x=null and supplies no independent phase certificate. No current DP adapter edge exists.",
+      "scientificDisposition": "REFUSED / DP NOT QUALIFIED",
+      "severity": "P3",
+      "confidence": "HIGH for current interface exclusion and invalid quality; no physical branch qualification"
+    },
+    {
+      "issueId": "DP-02",
+      "fixtureId": "350000.0-hg",
+      "inputPair": "DmassP_INPUTS",
+      "input": [
+        2.848900896323008,
+        350000
+      ],
+      "inputBits": [
+        "4006ca8c8d9a04ed",
+        "41155cc000000000"
+      ],
+      "fullVLE": false,
+      "classification": "browser-endpoint-rounding-relative-to-native",
+      "historicalRowIndex": 26,
+      "historicalRow": {
+        "fixture": {
+          "id": "350000.0-hg",
+          "p": 350000.0,
+          "rho": 2.848900896323008,
+          "h": 1601489.3520557072,
+          "s": 6174.02563821051
+        },
+        "mode": "DP",
+        "fullVLE": false,
+        "input": [
+          2.848900896323008,
+          350000.0
+        ],
+        "inputBits": [
+          "4006ca8c8d9a04ed",
+          "41155cc000000000"
+        ],
+        "result": {
+          "control": {
+            "state": {
+              "values": {
+                "p": 350000.0,
+                "T": 267.8114351963939,
+                "rho": 2.848900896323008,
+                "h": 1601489.3520557072,
+                "u": 1478634.955663163,
+                "Q": 1.0,
+                "phase": 6.0
+              },
+              "bits": {
+                "p": "41155cc000000000",
+                "T": "4070bcfba378f55d",
+                "rho": "4006ca8c8d9a04ed",
+                "h": "41386fd15a2052a5",
+                "u": "41368feaf4a6574f",
+                "Q": "3ff0000000000000",
+                "phase": "4018000000000000"
+              }
+            }
+          },
+          "A1": {
+            "state": {
+              "values": {
+                "p": 350000.0,
+                "T": 267.8114351963939,
+                "rho": 2.848900896323008,
+                "h": 1601489.3520557072,
+                "u": 1478634.955663163,
+                "Q": 1.0,
+                "phase": 6.0
+              },
+              "bits": {
+                "p": "41155cc000000000",
+                "T": "4070bcfba378f55d",
+                "rho": "4006ca8c8d9a04ed",
+                "h": "41386fd15a2052a5",
+                "u": "41368feaf4a6574f",
+                "Q": "3ff0000000000000",
+                "phase": "4018000000000000"
+              }
+            }
+          }
+        },
+        "exact": true
+      },
+      "observationIndices": [
+        2,
+        13,
+        24,
+        35
+      ],
+      "observations": [
+        {
+          "engine": "chromium",
+          "artifact": "rebuiltB4C",
+          "fullVLE": false,
+          "id": "350000.0-hg",
+          "mode": "DP",
+          "input": [
+            2.848900896323008,
+            350000
+          ],
+          "inputBits": [
+            "4006ca8c8d9a04ed",
+            "41155cc000000000"
+          ],
+          "rawReturn": {
+            "values": {
+              "p": 350000,
+              "T": 267.8114351963941,
+              "h": 1601489.3520557154,
+              "s": 6174.025638210538,
+              "rho": 2.8489008963230082,
+              "u": 1478634.9556631704,
+              "Q": 1.0000000000000062,
+              "phase": 6
+            },
+            "bits": {
+              "p": "41155cc000000000",
+              "T": "4070bcfba378f560",
+              "h": "41386fd15a2052c8",
+              "s": "40b81e069039cbca",
+              "rho": "4006ca8c8d9a04ee",
+              "u": "41368feaf4a6576f",
+              "Q": "3ff000000000001c",
+              "phase": "4018000000000000"
+            }
+          },
+          "nativeRaw": {
+            "values": {
+              "p": 350000.0,
+              "h": 1601489.3520557072,
+              "T": 267.8114351963939,
+              "rho": 2.848900896323008,
+              "u": 1478634.955663163,
+              "Q": 1.0,
+              "phase": 6.0,
+              "s": 6174.02563821051
+            },
+            "bits": {
+              "p": "41155cc000000000",
+              "h": "41386fd15a2052a5",
+              "T": "4070bcfba378f55d",
+              "rho": "4006ca8c8d9a04ed",
+              "u": "41368feaf4a6574f",
+              "Q": "3ff0000000000000",
+              "phase": "4018000000000000",
+              "s": "40b81e069039cbab"
+            }
+          },
+          "preservedNativeRaw": {
+            "p": 350000.0,
+            "T": 267.8114351963939,
+            "rho": 2.848900896323008,
+            "h": 1601489.3520557072,
+            "u": 1478634.955663163,
+            "Q": 1.0,
+            "phase": 6.0
+          },
+          "physicalQualityAdmissible": false,
+          "scientificAcceptance": "REFUSED \u2014 invalid physical quality",
+          "controlCandidateExact": true,
+          "DPInterfaceQualified": false,
+          "scope": "Unchanged supplemental DP endpoint diagnostic, not a repaired DU state or an accepted A2/model state"
+        },
+        {
+          "engine": "chromium",
+          "artifact": "gateA",
+          "fullVLE": false,
+          "id": "350000.0-hg",
+          "mode": "DP",
+          "input": [
+            2.848900896323008,
+            350000
+          ],
+          "inputBits": [
+            "4006ca8c8d9a04ed",
+            "41155cc000000000"
+          ],
+          "rawReturn": {
+            "values": {
+              "p": 350000,
+              "T": 267.8114351963941,
+              "h": 1601489.3520557154,
+              "s": 6174.025638210538,
+              "rho": 2.8489008963230082,
+              "u": 1478634.9556631704,
+              "Q": 1.0000000000000062,
+              "phase": 6
+            },
+            "bits": {
+              "p": "41155cc000000000",
+              "T": "4070bcfba378f560",
+              "h": "41386fd15a2052c8",
+              "s": "40b81e069039cbca",
+              "rho": "4006ca8c8d9a04ee",
+              "u": "41368feaf4a6576f",
+              "Q": "3ff000000000001c",
+              "phase": "4018000000000000"
+            }
+          },
+          "nativeRaw": {
+            "values": {
+              "p": 350000.0,
+              "h": 1601489.3520557072,
+              "T": 267.8114351963939,
+              "rho": 2.848900896323008,
+              "u": 1478634.955663163,
+              "Q": 1.0,
+              "phase": 6.0,
+              "s": 6174.02563821051
+            },
+            "bits": {
+              "p": "41155cc000000000",
+              "h": "41386fd15a2052a5",
+              "T": "4070bcfba378f55d",
+              "rho": "4006ca8c8d9a04ed",
+              "u": "41368feaf4a6574f",
+              "Q": "3ff0000000000000",
+              "phase": "4018000000000000",
+              "s": "40b81e069039cbab"
+            }
+          },
+          "preservedNativeRaw": {
+            "p": 350000.0,
+            "T": 267.8114351963939,
+            "rho": 2.848900896323008,
+            "h": 1601489.3520557072,
+            "u": 1478634.955663163,
+            "Q": 1.0,
+            "phase": 6.0
+          },
+          "physicalQualityAdmissible": false,
+          "scientificAcceptance": "REFUSED \u2014 invalid physical quality",
+          "controlCandidateExact": true,
+          "DPInterfaceQualified": false,
+          "scope": "Unchanged supplemental DP endpoint diagnostic, not a repaired DU state or an accepted A2/model state"
+        },
+        {
+          "engine": "webkit",
+          "artifact": "rebuiltB4C",
+          "fullVLE": false,
+          "id": "350000.0-hg",
+          "mode": "DP",
+          "input": [
+            2.848900896323008,
+            350000
+          ],
+          "inputBits": [
+            "4006ca8c8d9a04ed",
+            "41155cc000000000"
+          ],
+          "rawReturn": {
+            "values": {
+              "p": 350000,
+              "T": 267.8114351963941,
+              "h": 1601489.3520557154,
+              "s": 6174.025638210538,
+              "rho": 2.8489008963230082,
+              "u": 1478634.9556631704,
+              "Q": 1.0000000000000062,
+              "phase": 6
+            },
+            "bits": {
+              "p": "41155cc000000000",
+              "T": "4070bcfba378f560",
+              "h": "41386fd15a2052c8",
+              "s": "40b81e069039cbca",
+              "rho": "4006ca8c8d9a04ee",
+              "u": "41368feaf4a6576f",
+              "Q": "3ff000000000001c",
+              "phase": "4018000000000000"
+            }
+          },
+          "nativeRaw": {
+            "values": {
+              "p": 350000.0,
+              "h": 1601489.3520557072,
+              "T": 267.8114351963939,
+              "rho": 2.848900896323008,
+              "u": 1478634.955663163,
+              "Q": 1.0,
+              "phase": 6.0,
+              "s": 6174.02563821051
+            },
+            "bits": {
+              "p": "41155cc000000000",
+              "h": "41386fd15a2052a5",
+              "T": "4070bcfba378f55d",
+              "rho": "4006ca8c8d9a04ed",
+              "u": "41368feaf4a6574f",
+              "Q": "3ff0000000000000",
+              "phase": "4018000000000000",
+              "s": "40b81e069039cbab"
+            }
+          },
+          "preservedNativeRaw": {
+            "p": 350000.0,
+            "T": 267.8114351963939,
+            "rho": 2.848900896323008,
+            "h": 1601489.3520557072,
+            "u": 1478634.955663163,
+            "Q": 1.0,
+            "phase": 6.0
+          },
+          "physicalQualityAdmissible": false,
+          "scientificAcceptance": "REFUSED \u2014 invalid physical quality",
+          "controlCandidateExact": true,
+          "DPInterfaceQualified": false,
+          "scope": "Unchanged supplemental DP endpoint diagnostic, not a repaired DU state or an accepted A2/model state"
+        },
+        {
+          "engine": "webkit",
+          "artifact": "gateA",
+          "fullVLE": false,
+          "id": "350000.0-hg",
+          "mode": "DP",
+          "input": [
+            2.848900896323008,
+            350000
+          ],
+          "inputBits": [
+            "4006ca8c8d9a04ed",
+            "41155cc000000000"
+          ],
+          "rawReturn": {
+            "values": {
+              "p": 350000,
+              "T": 267.8114351963941,
+              "h": 1601489.3520557154,
+              "s": 6174.025638210538,
+              "rho": 2.8489008963230082,
+              "u": 1478634.9556631704,
+              "Q": 1.0000000000000062,
+              "phase": 6
+            },
+            "bits": {
+              "p": "41155cc000000000",
+              "T": "4070bcfba378f560",
+              "h": "41386fd15a2052c8",
+              "s": "40b81e069039cbca",
+              "rho": "4006ca8c8d9a04ee",
+              "u": "41368feaf4a6576f",
+              "Q": "3ff000000000001c",
+              "phase": "4018000000000000"
+            }
+          },
+          "nativeRaw": {
+            "values": {
+              "p": 350000.0,
+              "h": 1601489.3520557072,
+              "T": 267.8114351963939,
+              "rho": 2.848900896323008,
+              "u": 1478634.955663163,
+              "Q": 1.0,
+              "phase": 6.0,
+              "s": 6174.02563821051
+            },
+            "bits": {
+              "p": "41155cc000000000",
+              "h": "41386fd15a2052a5",
+              "T": "4070bcfba378f55d",
+              "rho": "4006ca8c8d9a04ed",
+              "u": "41368feaf4a6574f",
+              "Q": "3ff0000000000000",
+              "phase": "4018000000000000",
+              "s": "40b81e069039cbab"
+            }
+          },
+          "preservedNativeRaw": {
+            "p": 350000.0,
+            "T": 267.8114351963939,
+            "rho": 2.848900896323008,
+            "h": 1601489.3520557072,
+            "u": 1478634.955663163,
+            "Q": 1.0,
+            "phase": 6.0
+          },
+          "physicalQualityAdmissible": false,
+          "scientificAcceptance": "REFUSED \u2014 invalid physical quality",
+          "controlCandidateExact": true,
+          "DPInterfaceQualified": false,
+          "scope": "Unchanged supplemental DP endpoint diagnostic, not a repaired DU state or an accepted A2/model state"
+        }
+      ],
+      "nativeReturned": true,
+      "browsersReturned": true,
+      "phaseEnum": 6,
+      "phaseEnumMeaning": "iphase_twophase numerical label; not independent phase certification",
+      "qualityAdmissible": false,
+      "independentPhysicalPhaseReference": "NOT ESTABLISHED for exact DP input; same-EOS endpoint fixture provenance is not an independent phase certificate",
+      "acceptedPropertyEligible": false,
+      "adapterDPMethodImplemented": false,
+      "acceptedA2RequestsDP": false,
+      "currentReachability": "No CoolProp DP edge in complete accepted dependency closure; bounded trace supports static exclusion",
+      "futureConsumerConsequence": "A finite-only raw loader can expose this state. A future consumer must refuse invalid equilibrium quality; historical convert maps out-of-range Q to x=null and supplies no independent phase certificate. No current DP adapter edge exists.",
+      "scientificDisposition": "REFUSED / DP NOT QUALIFIED",
+      "severity": "P3",
+      "confidence": "HIGH for current interface exclusion and invalid quality; no physical branch qualification"
+    },
+    {
+      "issueId": "DP-03",
+      "fixtureId": "350000.0-hf",
+      "inputPair": "DmassP_INPUTS",
+      "input": [
+        645.8348207984537,
+        350000
+      ],
+      "inputBits": [
+        "40842eadb686db09",
+        "41155cc000000000"
+      ],
+      "fullVLE": false,
+      "classification": "browser-endpoint-rounding-relative-to-native",
+      "historicalRowIndex": 20,
+      "historicalRow": {
+        "fixture": {
+          "id": "350000.0-hf",
+          "p": 350000.0,
+          "rho": 645.8348207984537,
+          "h": 321086.8171927678,
+          "s": 1393.0403381467327
+        },
+        "mode": "DP",
+        "fullVLE": false,
+        "input": [
+          645.8348207984537,
+          350000.0
+        ],
+        "inputBits": [
+          "40842eadb686db09",
+          "41155cc000000000"
+        ],
+        "result": {
+          "control": {
+            "state": {
+              "values": {
+                "p": 350000.0,
+                "T": 267.8114351963939,
+                "rho": 645.8348207984537,
+                "h": 321086.8171927678,
+                "u": 320544.882957062,
+                "Q": 0.0,
+                "phase": 6.0
+              },
+              "bits": {
+                "p": "41155cc000000000",
+                "T": "4070bcfba378f55d",
+                "rho": "40842eadb686db09",
+                "h": "411398fb44ce2e51",
+                "u": "411390838825e564",
+                "Q": "0000000000000000",
+                "phase": "4018000000000000"
+              }
+            }
+          },
+          "A1": {
+            "state": {
+              "values": {
+                "p": 350000.0,
+                "T": 267.8114351963939,
+                "rho": 645.8348207984537,
+                "h": 321086.8171927678,
+                "u": 320544.882957062,
+                "Q": 0.0,
+                "phase": 6.0
+              },
+              "bits": {
+                "p": "41155cc000000000",
+                "T": "4070bcfba378f55d",
+                "rho": "40842eadb686db09",
+                "h": "411398fb44ce2e51",
+                "u": "411390838825e564",
+                "Q": "0000000000000000",
+                "phase": "4018000000000000"
+              }
+            }
+          }
+        },
+        "exact": true
+      },
+      "observationIndices": [
+        1,
+        12,
+        23,
+        34
+      ],
+      "observations": [
+        {
+          "engine": "chromium",
+          "artifact": "rebuiltB4C",
+          "fullVLE": false,
+          "id": "350000.0-hf",
+          "mode": "DP",
+          "input": [
+            645.8348207984537,
+            350000
+          ],
+          "inputBits": [
+            "40842eadb686db09",
+            "41155cc000000000"
+          ],
+          "rawReturn": {
+            "values": {
+              "p": 350000,
+              "T": 267.8114351963941,
+              "h": 321086.8171927681,
+              "s": 1393.0403381467386,
+              "rho": 645.8348207984537,
+              "u": 320544.88295706315,
+              "Q": -1.7078549256784757e-18,
+              "phase": 6
+            },
+            "bits": {
+              "p": "41155cc000000000",
+              "T": "4070bcfba378f560",
+              "h": "411398fb44ce2e56",
+              "s": "4095c4294e673418",
+              "rho": "40842eadb686db09",
+              "u": "411390838825e578",
+              "Q": "bc3f811dea7270ed",
+              "phase": "4018000000000000"
+            }
+          },
+          "nativeRaw": {
+            "values": {
+              "p": 350000.0,
+              "h": 321086.8171927678,
+              "T": 267.8114351963939,
+              "rho": 645.8348207984537,
+              "u": 320544.882957062,
+              "Q": 0.0,
+              "phase": 6.0,
+              "s": 1393.0403381467327
+            },
+            "bits": {
+              "p": "41155cc000000000",
+              "h": "411398fb44ce2e51",
+              "T": "4070bcfba378f55d",
+              "rho": "40842eadb686db09",
+              "u": "411390838825e564",
+              "Q": "0000000000000000",
+              "phase": "4018000000000000",
+              "s": "4095c4294e6733fe"
+            }
+          },
+          "preservedNativeRaw": {
+            "p": 350000.0,
+            "T": 267.8114351963939,
+            "rho": 645.8348207984537,
+            "h": 321086.8171927678,
+            "u": 320544.882957062,
+            "Q": 0.0,
+            "phase": 6.0
+          },
+          "physicalQualityAdmissible": false,
+          "scientificAcceptance": "REFUSED \u2014 invalid physical quality",
+          "controlCandidateExact": true,
+          "DPInterfaceQualified": false,
+          "scope": "Unchanged supplemental DP endpoint diagnostic, not a repaired DU state or an accepted A2/model state"
+        },
+        {
+          "engine": "chromium",
+          "artifact": "gateA",
+          "fullVLE": false,
+          "id": "350000.0-hf",
+          "mode": "DP",
+          "input": [
+            645.8348207984537,
+            350000
+          ],
+          "inputBits": [
+            "40842eadb686db09",
+            "41155cc000000000"
+          ],
+          "rawReturn": {
+            "values": {
+              "p": 350000,
+              "T": 267.8114351963941,
+              "h": 321086.8171927681,
+              "s": 1393.0403381467386,
+              "rho": 645.8348207984537,
+              "u": 320544.88295706315,
+              "Q": -1.7078549256784757e-18,
+              "phase": 6
+            },
+            "bits": {
+              "p": "41155cc000000000",
+              "T": "4070bcfba378f560",
+              "h": "411398fb44ce2e56",
+              "s": "4095c4294e673418",
+              "rho": "40842eadb686db09",
+              "u": "411390838825e578",
+              "Q": "bc3f811dea7270ed",
+              "phase": "4018000000000000"
+            }
+          },
+          "nativeRaw": {
+            "values": {
+              "p": 350000.0,
+              "h": 321086.8171927678,
+              "T": 267.8114351963939,
+              "rho": 645.8348207984537,
+              "u": 320544.882957062,
+              "Q": 0.0,
+              "phase": 6.0,
+              "s": 1393.0403381467327
+            },
+            "bits": {
+              "p": "41155cc000000000",
+              "h": "411398fb44ce2e51",
+              "T": "4070bcfba378f55d",
+              "rho": "40842eadb686db09",
+              "u": "411390838825e564",
+              "Q": "0000000000000000",
+              "phase": "4018000000000000",
+              "s": "4095c4294e6733fe"
+            }
+          },
+          "preservedNativeRaw": {
+            "p": 350000.0,
+            "T": 267.8114351963939,
+            "rho": 645.8348207984537,
+            "h": 321086.8171927678,
+            "u": 320544.882957062,
+            "Q": 0.0,
+            "phase": 6.0
+          },
+          "physicalQualityAdmissible": false,
+          "scientificAcceptance": "REFUSED \u2014 invalid physical quality",
+          "controlCandidateExact": true,
+          "DPInterfaceQualified": false,
+          "scope": "Unchanged supplemental DP endpoint diagnostic, not a repaired DU state or an accepted A2/model state"
+        },
+        {
+          "engine": "webkit",
+          "artifact": "rebuiltB4C",
+          "fullVLE": false,
+          "id": "350000.0-hf",
+          "mode": "DP",
+          "input": [
+            645.8348207984537,
+            350000
+          ],
+          "inputBits": [
+            "40842eadb686db09",
+            "41155cc000000000"
+          ],
+          "rawReturn": {
+            "values": {
+              "p": 350000,
+              "T": 267.8114351963941,
+              "h": 321086.8171927681,
+              "s": 1393.0403381467386,
+              "rho": 645.8348207984537,
+              "u": 320544.88295706315,
+              "Q": -1.7078549256784757e-18,
+              "phase": 6
+            },
+            "bits": {
+              "p": "41155cc000000000",
+              "T": "4070bcfba378f560",
+              "h": "411398fb44ce2e56",
+              "s": "4095c4294e673418",
+              "rho": "40842eadb686db09",
+              "u": "411390838825e578",
+              "Q": "bc3f811dea7270ed",
+              "phase": "4018000000000000"
+            }
+          },
+          "nativeRaw": {
+            "values": {
+              "p": 350000.0,
+              "h": 321086.8171927678,
+              "T": 267.8114351963939,
+              "rho": 645.8348207984537,
+              "u": 320544.882957062,
+              "Q": 0.0,
+              "phase": 6.0,
+              "s": 1393.0403381467327
+            },
+            "bits": {
+              "p": "41155cc000000000",
+              "h": "411398fb44ce2e51",
+              "T": "4070bcfba378f55d",
+              "rho": "40842eadb686db09",
+              "u": "411390838825e564",
+              "Q": "0000000000000000",
+              "phase": "4018000000000000",
+              "s": "4095c4294e6733fe"
+            }
+          },
+          "preservedNativeRaw": {
+            "p": 350000.0,
+            "T": 267.8114351963939,
+            "rho": 645.8348207984537,
+            "h": 321086.8171927678,
+            "u": 320544.882957062,
+            "Q": 0.0,
+            "phase": 6.0
+          },
+          "physicalQualityAdmissible": false,
+          "scientificAcceptance": "REFUSED \u2014 invalid physical quality",
+          "controlCandidateExact": true,
+          "DPInterfaceQualified": false,
+          "scope": "Unchanged supplemental DP endpoint diagnostic, not a repaired DU state or an accepted A2/model state"
+        },
+        {
+          "engine": "webkit",
+          "artifact": "gateA",
+          "fullVLE": false,
+          "id": "350000.0-hf",
+          "mode": "DP",
+          "input": [
+            645.8348207984537,
+            350000
+          ],
+          "inputBits": [
+            "40842eadb686db09",
+            "41155cc000000000"
+          ],
+          "rawReturn": {
+            "values": {
+              "p": 350000,
+              "T": 267.8114351963941,
+              "h": 321086.8171927681,
+              "s": 1393.0403381467386,
+              "rho": 645.8348207984537,
+              "u": 320544.88295706315,
+              "Q": -1.7078549256784757e-18,
+              "phase": 6
+            },
+            "bits": {
+              "p": "41155cc000000000",
+              "T": "4070bcfba378f560",
+              "h": "411398fb44ce2e56",
+              "s": "4095c4294e673418",
+              "rho": "40842eadb686db09",
+              "u": "411390838825e578",
+              "Q": "bc3f811dea7270ed",
+              "phase": "4018000000000000"
+            }
+          },
+          "nativeRaw": {
+            "values": {
+              "p": 350000.0,
+              "h": 321086.8171927678,
+              "T": 267.8114351963939,
+              "rho": 645.8348207984537,
+              "u": 320544.882957062,
+              "Q": 0.0,
+              "phase": 6.0,
+              "s": 1393.0403381467327
+            },
+            "bits": {
+              "p": "41155cc000000000",
+              "h": "411398fb44ce2e51",
+              "T": "4070bcfba378f55d",
+              "rho": "40842eadb686db09",
+              "u": "411390838825e564",
+              "Q": "0000000000000000",
+              "phase": "4018000000000000",
+              "s": "4095c4294e6733fe"
+            }
+          },
+          "preservedNativeRaw": {
+            "p": 350000.0,
+            "T": 267.8114351963939,
+            "rho": 645.8348207984537,
+            "h": 321086.8171927678,
+            "u": 320544.882957062,
+            "Q": 0.0,
+            "phase": 6.0
+          },
+          "physicalQualityAdmissible": false,
+          "scientificAcceptance": "REFUSED \u2014 invalid physical quality",
+          "controlCandidateExact": true,
+          "DPInterfaceQualified": false,
+          "scope": "Unchanged supplemental DP endpoint diagnostic, not a repaired DU state or an accepted A2/model state"
+        }
+      ],
+      "nativeReturned": true,
+      "browsersReturned": true,
+      "phaseEnum": 6,
+      "phaseEnumMeaning": "iphase_twophase numerical label; not independent phase certification",
+      "qualityAdmissible": false,
+      "independentPhysicalPhaseReference": "NOT ESTABLISHED for exact DP input; same-EOS endpoint fixture provenance is not an independent phase certificate",
+      "acceptedPropertyEligible": false,
+      "adapterDPMethodImplemented": false,
+      "acceptedA2RequestsDP": false,
+      "currentReachability": "No CoolProp DP edge in complete accepted dependency closure; bounded trace supports static exclusion",
+      "futureConsumerConsequence": "A finite-only raw loader can expose this state. A future consumer must refuse invalid equilibrium quality; historical convert maps out-of-range Q to x=null and supplies no independent phase certificate. No current DP adapter edge exists.",
+      "scientificDisposition": "REFUSED / DP NOT QUALIFIED",
+      "severity": "P3",
+      "confidence": "HIGH for current interface exclusion and invalid quality; no physical branch qualification"
+    },
+    {
+      "issueId": "DP-04",
+      "fixtureId": "30298.937123458254-hg",
+      "inputPair": "DmassP_INPUTS",
+      "input": [
+        0.28801899212112925,
+        30298.937123458254
+      ],
+      "inputBits": [
+        "3fd26ee735f2605e",
+        "40dd96bbf9d4ab61"
+      ],
+      "fullVLE": true,
+      "classification": "inherited-native-invalid-quality",
+      "historicalRowIndex": 71,
+      "historicalRow": {
+        "fixture": {
+          "id": "30298.937123458254-hg",
+          "p": 30298.937123458254,
+          "rho": 0.28801899212112925,
+          "h": 1529444.8878290523,
+          "s": 7032.492630657634
+        },
+        "mode": "DP",
+        "fullVLE": true,
+        "input": [
+          0.28801899212112925,
+          30298.937123458254
+        ],
+        "inputBits": [
+          "3fd26ee735f2605e",
+          "40dd96bbf9d4ab61"
+        ],
+        "result": {
+          "control": {
+            "state": {
+              "values": {
+                "p": 30298.937123458254,
+                "T": 218.26293725555706,
+                "rho": 0.28801899212112925,
+                "h": 1529444.8878334495,
+                "u": 1424247.1822921578,
+                "Q": 1.0000000000030123,
+                "phase": 6.0
+              },
+              "bits": {
+                "p": "40dd96bbf9d4ab61",
+                "T": "406b4869fb643090",
+                "rho": "3fd26ee735f2605e",
+                "h": "41375664e3490d8e",
+                "u": "4135bb772eaab2e8",
+                "Q": "3ff00000000034fe",
+                "phase": "4018000000000000"
+              }
+            }
+          },
+          "A1": {
+            "state": {
+              "values": {
+                "p": 30298.937123458254,
+                "T": 218.26293725555706,
+                "rho": 0.28801899212112925,
+                "h": 1529444.8878334495,
+                "u": 1424247.1822921578,
+                "Q": 1.0000000000030123,
+                "phase": 6.0
+              },
+              "bits": {
+                "p": "40dd96bbf9d4ab61",
+                "T": "406b4869fb643090",
+                "rho": "3fd26ee735f2605e",
+                "h": "41375664e3490d8e",
+                "u": "4135bb772eaab2e8",
+                "Q": "3ff00000000034fe",
+                "phase": "4018000000000000"
+              }
+            }
+          }
+        },
+        "exact": true
+      },
+      "observationIndices": [
+        4,
+        15,
+        26,
+        37
+      ],
+      "observations": [
+        {
+          "engine": "chromium",
+          "artifact": "rebuiltB4C",
+          "fullVLE": true,
+          "id": "30298.937123458254-hg",
+          "mode": "DP",
+          "input": [
+            0.28801899212112925,
+            30298.937123458254
+          ],
+          "inputBits": [
+            "3fd26ee735f2605e",
+            "40dd96bbf9d4ab61"
+          ],
+          "rawReturn": {
+            "values": {
+              "p": 30298.937123458254,
+              "T": 218.26293725555706,
+              "h": 1529444.8878334495,
+              "s": 7032.492630676228,
+              "rho": 0.28801899212112925,
+              "u": 1424247.1822921578,
+              "Q": 1.0000000000030123,
+              "phase": 6
+            },
+            "bits": {
+              "p": "40dd96bbf9d4ab61",
+              "T": "406b4869fb643090",
+              "h": "41375664e3490d8e",
+              "s": "40bb787e1d0b4368",
+              "rho": "3fd26ee735f2605e",
+              "u": "4135bb772eaab2e8",
+              "Q": "3ff00000000034fe",
+              "phase": "4018000000000000"
+            }
+          },
+          "nativeRaw": {
+            "values": {
+              "p": 30298.937123458254,
+              "h": 1529444.8878334495,
+              "T": 218.26293725555706,
+              "rho": 0.28801899212112925,
+              "u": 1424247.1822921578,
+              "Q": 1.0000000000030123,
+              "phase": 6.0,
+              "s": 7032.492630676228
+            },
+            "bits": {
+              "p": "40dd96bbf9d4ab61",
+              "h": "41375664e3490d8e",
+              "T": "406b4869fb643090",
+              "rho": "3fd26ee735f2605e",
+              "u": "4135bb772eaab2e8",
+              "Q": "3ff00000000034fe",
+              "phase": "4018000000000000",
+              "s": "40bb787e1d0b4368"
+            }
+          },
+          "preservedNativeRaw": {
+            "p": 30298.937123458254,
+            "T": 218.26293725555706,
+            "rho": 0.28801899212112925,
+            "h": 1529444.8878334495,
+            "u": 1424247.1822921578,
+            "Q": 1.0000000000030123,
+            "phase": 6.0
+          },
+          "physicalQualityAdmissible": false,
+          "scientificAcceptance": "REFUSED \u2014 invalid physical quality",
+          "controlCandidateExact": true,
+          "DPInterfaceQualified": false,
+          "scope": "Unchanged supplemental DP endpoint diagnostic, not a repaired DU state or an accepted A2/model state"
+        },
+        {
+          "engine": "chromium",
+          "artifact": "gateA",
+          "fullVLE": true,
+          "id": "30298.937123458254-hg",
+          "mode": "DP",
+          "input": [
+            0.28801899212112925,
+            30298.937123458254
+          ],
+          "inputBits": [
+            "3fd26ee735f2605e",
+            "40dd96bbf9d4ab61"
+          ],
+          "rawReturn": {
+            "values": {
+              "p": 30298.937123458254,
+              "T": 218.26293725555706,
+              "h": 1529444.8878334495,
+              "s": 7032.492630676228,
+              "rho": 0.28801899212112925,
+              "u": 1424247.1822921578,
+              "Q": 1.0000000000030123,
+              "phase": 6
+            },
+            "bits": {
+              "p": "40dd96bbf9d4ab61",
+              "T": "406b4869fb643090",
+              "h": "41375664e3490d8e",
+              "s": "40bb787e1d0b4368",
+              "rho": "3fd26ee735f2605e",
+              "u": "4135bb772eaab2e8",
+              "Q": "3ff00000000034fe",
+              "phase": "4018000000000000"
+            }
+          },
+          "nativeRaw": {
+            "values": {
+              "p": 30298.937123458254,
+              "h": 1529444.8878334495,
+              "T": 218.26293725555706,
+              "rho": 0.28801899212112925,
+              "u": 1424247.1822921578,
+              "Q": 1.0000000000030123,
+              "phase": 6.0,
+              "s": 7032.492630676228
+            },
+            "bits": {
+              "p": "40dd96bbf9d4ab61",
+              "h": "41375664e3490d8e",
+              "T": "406b4869fb643090",
+              "rho": "3fd26ee735f2605e",
+              "u": "4135bb772eaab2e8",
+              "Q": "3ff00000000034fe",
+              "phase": "4018000000000000",
+              "s": "40bb787e1d0b4368"
+            }
+          },
+          "preservedNativeRaw": {
+            "p": 30298.937123458254,
+            "T": 218.26293725555706,
+            "rho": 0.28801899212112925,
+            "h": 1529444.8878334495,
+            "u": 1424247.1822921578,
+            "Q": 1.0000000000030123,
+            "phase": 6.0
+          },
+          "physicalQualityAdmissible": false,
+          "scientificAcceptance": "REFUSED \u2014 invalid physical quality",
+          "controlCandidateExact": true,
+          "DPInterfaceQualified": false,
+          "scope": "Unchanged supplemental DP endpoint diagnostic, not a repaired DU state or an accepted A2/model state"
+        },
+        {
+          "engine": "webkit",
+          "artifact": "rebuiltB4C",
+          "fullVLE": true,
+          "id": "30298.937123458254-hg",
+          "mode": "DP",
+          "input": [
+            0.28801899212112925,
+            30298.937123458254
+          ],
+          "inputBits": [
+            "3fd26ee735f2605e",
+            "40dd96bbf9d4ab61"
+          ],
+          "rawReturn": {
+            "values": {
+              "p": 30298.937123458254,
+              "T": 218.26293725555706,
+              "h": 1529444.8878334495,
+              "s": 7032.492630676228,
+              "rho": 0.28801899212112925,
+              "u": 1424247.1822921578,
+              "Q": 1.0000000000030123,
+              "phase": 6
+            },
+            "bits": {
+              "p": "40dd96bbf9d4ab61",
+              "T": "406b4869fb643090",
+              "h": "41375664e3490d8e",
+              "s": "40bb787e1d0b4368",
+              "rho": "3fd26ee735f2605e",
+              "u": "4135bb772eaab2e8",
+              "Q": "3ff00000000034fe",
+              "phase": "4018000000000000"
+            }
+          },
+          "nativeRaw": {
+            "values": {
+              "p": 30298.937123458254,
+              "h": 1529444.8878334495,
+              "T": 218.26293725555706,
+              "rho": 0.28801899212112925,
+              "u": 1424247.1822921578,
+              "Q": 1.0000000000030123,
+              "phase": 6.0,
+              "s": 7032.492630676228
+            },
+            "bits": {
+              "p": "40dd96bbf9d4ab61",
+              "h": "41375664e3490d8e",
+              "T": "406b4869fb643090",
+              "rho": "3fd26ee735f2605e",
+              "u": "4135bb772eaab2e8",
+              "Q": "3ff00000000034fe",
+              "phase": "4018000000000000",
+              "s": "40bb787e1d0b4368"
+            }
+          },
+          "preservedNativeRaw": {
+            "p": 30298.937123458254,
+            "T": 218.26293725555706,
+            "rho": 0.28801899212112925,
+            "h": 1529444.8878334495,
+            "u": 1424247.1822921578,
+            "Q": 1.0000000000030123,
+            "phase": 6.0
+          },
+          "physicalQualityAdmissible": false,
+          "scientificAcceptance": "REFUSED \u2014 invalid physical quality",
+          "controlCandidateExact": true,
+          "DPInterfaceQualified": false,
+          "scope": "Unchanged supplemental DP endpoint diagnostic, not a repaired DU state or an accepted A2/model state"
+        },
+        {
+          "engine": "webkit",
+          "artifact": "gateA",
+          "fullVLE": true,
+          "id": "30298.937123458254-hg",
+          "mode": "DP",
+          "input": [
+            0.28801899212112925,
+            30298.937123458254
+          ],
+          "inputBits": [
+            "3fd26ee735f2605e",
+            "40dd96bbf9d4ab61"
+          ],
+          "rawReturn": {
+            "values": {
+              "p": 30298.937123458254,
+              "T": 218.26293725555706,
+              "h": 1529444.8878334495,
+              "s": 7032.492630676228,
+              "rho": 0.28801899212112925,
+              "u": 1424247.1822921578,
+              "Q": 1.0000000000030123,
+              "phase": 6
+            },
+            "bits": {
+              "p": "40dd96bbf9d4ab61",
+              "T": "406b4869fb643090",
+              "h": "41375664e3490d8e",
+              "s": "40bb787e1d0b4368",
+              "rho": "3fd26ee735f2605e",
+              "u": "4135bb772eaab2e8",
+              "Q": "3ff00000000034fe",
+              "phase": "4018000000000000"
+            }
+          },
+          "nativeRaw": {
+            "values": {
+              "p": 30298.937123458254,
+              "h": 1529444.8878334495,
+              "T": 218.26293725555706,
+              "rho": 0.28801899212112925,
+              "u": 1424247.1822921578,
+              "Q": 1.0000000000030123,
+              "phase": 6.0,
+              "s": 7032.492630676228
+            },
+            "bits": {
+              "p": "40dd96bbf9d4ab61",
+              "h": "41375664e3490d8e",
+              "T": "406b4869fb643090",
+              "rho": "3fd26ee735f2605e",
+              "u": "4135bb772eaab2e8",
+              "Q": "3ff00000000034fe",
+              "phase": "4018000000000000",
+              "s": "40bb787e1d0b4368"
+            }
+          },
+          "preservedNativeRaw": {
+            "p": 30298.937123458254,
+            "T": 218.26293725555706,
+            "rho": 0.28801899212112925,
+            "h": 1529444.8878334495,
+            "u": 1424247.1822921578,
+            "Q": 1.0000000000030123,
+            "phase": 6.0
+          },
+          "physicalQualityAdmissible": false,
+          "scientificAcceptance": "REFUSED \u2014 invalid physical quality",
+          "controlCandidateExact": true,
+          "DPInterfaceQualified": false,
+          "scope": "Unchanged supplemental DP endpoint diagnostic, not a repaired DU state or an accepted A2/model state"
+        }
+      ],
+      "nativeReturned": true,
+      "browsersReturned": true,
+      "phaseEnum": 6,
+      "phaseEnumMeaning": "iphase_twophase numerical label; not independent phase certification",
+      "qualityAdmissible": false,
+      "independentPhysicalPhaseReference": "NOT ESTABLISHED for exact DP input; same-EOS endpoint fixture provenance is not an independent phase certificate",
+      "acceptedPropertyEligible": false,
+      "adapterDPMethodImplemented": false,
+      "acceptedA2RequestsDP": false,
+      "currentReachability": "No CoolProp DP edge in complete accepted dependency closure; bounded trace supports static exclusion",
+      "futureConsumerConsequence": "A finite-only raw loader can expose this state. A future consumer must refuse invalid equilibrium quality; historical convert maps out-of-range Q to x=null and supplies no independent phase certificate. No current DP adapter edge exists.",
+      "scientificDisposition": "REFUSED / DP NOT QUALIFIED",
+      "severity": "P3",
+      "confidence": "HIGH for current interface exclusion and invalid quality; no physical branch qualification"
+    },
+    {
+      "issueId": "DP-05",
+      "fixtureId": "350000.0-hg",
+      "inputPair": "DmassP_INPUTS",
+      "input": [
+        2.848900896323008,
+        350000
+      ],
+      "inputBits": [
+        "4006ca8c8d9a04ed",
+        "41155cc000000000"
+      ],
+      "fullVLE": true,
+      "classification": "inherited-native-invalid-quality",
+      "historicalRowIndex": 86,
+      "historicalRow": {
+        "fixture": {
+          "id": "350000.0-hg",
+          "p": 350000.0,
+          "rho": 2.848900896323008,
+          "h": 1601489.3520557072,
+          "s": 6174.02563821051
+        },
+        "mode": "DP",
+        "fullVLE": true,
+        "input": [
+          2.848900896323008,
+          350000.0
+        ],
+        "inputBits": [
+          "4006ca8c8d9a04ed",
+          "41155cc000000000"
+        ],
+        "result": {
+          "control": {
+            "state": {
+              "values": {
+                "p": 350000.0,
+                "T": 267.8114351963981,
+                "rho": 2.848900896323008,
+                "h": 1601489.3520559152,
+                "u": 1478634.9556633504,
+                "Q": 1.0000000000001585,
+                "phase": 6.0
+              },
+              "bits": {
+                "p": "41155cc000000000",
+                "T": "4070bcfba378f5a7",
+                "rho": "4006ca8c8d9a04ed",
+                "h": "41386fd15a205622",
+                "u": "41368feaf4a65a74",
+                "Q": "3ff00000000002ca",
+                "phase": "4018000000000000"
+              }
+            }
+          },
+          "A1": {
+            "state": {
+              "values": {
+                "p": 350000.0,
+                "T": 267.8114351963981,
+                "rho": 2.848900896323008,
+                "h": 1601489.3520559152,
+                "u": 1478634.9556633504,
+                "Q": 1.0000000000001585,
+                "phase": 6.0
+              },
+              "bits": {
+                "p": "41155cc000000000",
+                "T": "4070bcfba378f5a7",
+                "rho": "4006ca8c8d9a04ed",
+                "h": "41386fd15a205622",
+                "u": "41368feaf4a65a74",
+                "Q": "3ff00000000002ca",
+                "phase": "4018000000000000"
+              }
+            }
+          }
+        },
+        "exact": true
+      },
+      "observationIndices": [
+        6,
+        17,
+        28,
+        39
+      ],
+      "observations": [
+        {
+          "engine": "chromium",
+          "artifact": "rebuiltB4C",
+          "fullVLE": true,
+          "id": "350000.0-hg",
+          "mode": "DP",
+          "input": [
+            2.848900896323008,
+            350000
+          ],
+          "inputBits": [
+            "4006ca8c8d9a04ed",
+            "41155cc000000000"
+          ],
+          "rawReturn": {
+            "values": {
+              "p": 350000,
+              "T": 267.8114351963981,
+              "h": 1601489.3520559152,
+              "s": 6174.025638211208,
+              "rho": 2.848900896323008,
+              "u": 1478634.9556633504,
+              "Q": 1.0000000000001585,
+              "phase": 6
+            },
+            "bits": {
+              "p": "41155cc000000000",
+              "T": "4070bcfba378f5a7",
+              "h": "41386fd15a205622",
+              "s": "40b81e069039ceab",
+              "rho": "4006ca8c8d9a04ed",
+              "u": "41368feaf4a65a74",
+              "Q": "3ff00000000002ca",
+              "phase": "4018000000000000"
+            }
+          },
+          "nativeRaw": {
+            "values": {
+              "p": 350000.0,
+              "h": 1601489.3520559152,
+              "T": 267.8114351963981,
+              "rho": 2.848900896323008,
+              "u": 1478634.9556633504,
+              "Q": 1.0000000000001585,
+              "phase": 6.0,
+              "s": 6174.025638211208
+            },
+            "bits": {
+              "p": "41155cc000000000",
+              "h": "41386fd15a205622",
+              "T": "4070bcfba378f5a7",
+              "rho": "4006ca8c8d9a04ed",
+              "u": "41368feaf4a65a74",
+              "Q": "3ff00000000002ca",
+              "phase": "4018000000000000",
+              "s": "40b81e069039ceab"
+            }
+          },
+          "preservedNativeRaw": {
+            "p": 350000.0,
+            "T": 267.8114351963981,
+            "rho": 2.848900896323008,
+            "h": 1601489.3520559152,
+            "u": 1478634.9556633504,
+            "Q": 1.0000000000001585,
+            "phase": 6.0
+          },
+          "physicalQualityAdmissible": false,
+          "scientificAcceptance": "REFUSED \u2014 invalid physical quality",
+          "controlCandidateExact": true,
+          "DPInterfaceQualified": false,
+          "scope": "Unchanged supplemental DP endpoint diagnostic, not a repaired DU state or an accepted A2/model state"
+        },
+        {
+          "engine": "chromium",
+          "artifact": "gateA",
+          "fullVLE": true,
+          "id": "350000.0-hg",
+          "mode": "DP",
+          "input": [
+            2.848900896323008,
+            350000
+          ],
+          "inputBits": [
+            "4006ca8c8d9a04ed",
+            "41155cc000000000"
+          ],
+          "rawReturn": {
+            "values": {
+              "p": 350000,
+              "T": 267.8114351963981,
+              "h": 1601489.3520559152,
+              "s": 6174.025638211208,
+              "rho": 2.848900896323008,
+              "u": 1478634.9556633504,
+              "Q": 1.0000000000001585,
+              "phase": 6
+            },
+            "bits": {
+              "p": "41155cc000000000",
+              "T": "4070bcfba378f5a7",
+              "h": "41386fd15a205622",
+              "s": "40b81e069039ceab",
+              "rho": "4006ca8c8d9a04ed",
+              "u": "41368feaf4a65a74",
+              "Q": "3ff00000000002ca",
+              "phase": "4018000000000000"
+            }
+          },
+          "nativeRaw": {
+            "values": {
+              "p": 350000.0,
+              "h": 1601489.3520559152,
+              "T": 267.8114351963981,
+              "rho": 2.848900896323008,
+              "u": 1478634.9556633504,
+              "Q": 1.0000000000001585,
+              "phase": 6.0,
+              "s": 6174.025638211208
+            },
+            "bits": {
+              "p": "41155cc000000000",
+              "h": "41386fd15a205622",
+              "T": "4070bcfba378f5a7",
+              "rho": "4006ca8c8d9a04ed",
+              "u": "41368feaf4a65a74",
+              "Q": "3ff00000000002ca",
+              "phase": "4018000000000000",
+              "s": "40b81e069039ceab"
+            }
+          },
+          "preservedNativeRaw": {
+            "p": 350000.0,
+            "T": 267.8114351963981,
+            "rho": 2.848900896323008,
+            "h": 1601489.3520559152,
+            "u": 1478634.9556633504,
+            "Q": 1.0000000000001585,
+            "phase": 6.0
+          },
+          "physicalQualityAdmissible": false,
+          "scientificAcceptance": "REFUSED \u2014 invalid physical quality",
+          "controlCandidateExact": true,
+          "DPInterfaceQualified": false,
+          "scope": "Unchanged supplemental DP endpoint diagnostic, not a repaired DU state or an accepted A2/model state"
+        },
+        {
+          "engine": "webkit",
+          "artifact": "rebuiltB4C",
+          "fullVLE": true,
+          "id": "350000.0-hg",
+          "mode": "DP",
+          "input": [
+            2.848900896323008,
+            350000
+          ],
+          "inputBits": [
+            "4006ca8c8d9a04ed",
+            "41155cc000000000"
+          ],
+          "rawReturn": {
+            "values": {
+              "p": 350000,
+              "T": 267.8114351963981,
+              "h": 1601489.3520559152,
+              "s": 6174.025638211208,
+              "rho": 2.848900896323008,
+              "u": 1478634.9556633504,
+              "Q": 1.0000000000001585,
+              "phase": 6
+            },
+            "bits": {
+              "p": "41155cc000000000",
+              "T": "4070bcfba378f5a7",
+              "h": "41386fd15a205622",
+              "s": "40b81e069039ceab",
+              "rho": "4006ca8c8d9a04ed",
+              "u": "41368feaf4a65a74",
+              "Q": "3ff00000000002ca",
+              "phase": "4018000000000000"
+            }
+          },
+          "nativeRaw": {
+            "values": {
+              "p": 350000.0,
+              "h": 1601489.3520559152,
+              "T": 267.8114351963981,
+              "rho": 2.848900896323008,
+              "u": 1478634.9556633504,
+              "Q": 1.0000000000001585,
+              "phase": 6.0,
+              "s": 6174.025638211208
+            },
+            "bits": {
+              "p": "41155cc000000000",
+              "h": "41386fd15a205622",
+              "T": "4070bcfba378f5a7",
+              "rho": "4006ca8c8d9a04ed",
+              "u": "41368feaf4a65a74",
+              "Q": "3ff00000000002ca",
+              "phase": "4018000000000000",
+              "s": "40b81e069039ceab"
+            }
+          },
+          "preservedNativeRaw": {
+            "p": 350000.0,
+            "T": 267.8114351963981,
+            "rho": 2.848900896323008,
+            "h": 1601489.3520559152,
+            "u": 1478634.9556633504,
+            "Q": 1.0000000000001585,
+            "phase": 6.0
+          },
+          "physicalQualityAdmissible": false,
+          "scientificAcceptance": "REFUSED \u2014 invalid physical quality",
+          "controlCandidateExact": true,
+          "DPInterfaceQualified": false,
+          "scope": "Unchanged supplemental DP endpoint diagnostic, not a repaired DU state or an accepted A2/model state"
+        },
+        {
+          "engine": "webkit",
+          "artifact": "gateA",
+          "fullVLE": true,
+          "id": "350000.0-hg",
+          "mode": "DP",
+          "input": [
+            2.848900896323008,
+            350000
+          ],
+          "inputBits": [
+            "4006ca8c8d9a04ed",
+            "41155cc000000000"
+          ],
+          "rawReturn": {
+            "values": {
+              "p": 350000,
+              "T": 267.8114351963981,
+              "h": 1601489.3520559152,
+              "s": 6174.025638211208,
+              "rho": 2.848900896323008,
+              "u": 1478634.9556633504,
+              "Q": 1.0000000000001585,
+              "phase": 6
+            },
+            "bits": {
+              "p": "41155cc000000000",
+              "T": "4070bcfba378f5a7",
+              "h": "41386fd15a205622",
+              "s": "40b81e069039ceab",
+              "rho": "4006ca8c8d9a04ed",
+              "u": "41368feaf4a65a74",
+              "Q": "3ff00000000002ca",
+              "phase": "4018000000000000"
+            }
+          },
+          "nativeRaw": {
+            "values": {
+              "p": 350000.0,
+              "h": 1601489.3520559152,
+              "T": 267.8114351963981,
+              "rho": 2.848900896323008,
+              "u": 1478634.9556633504,
+              "Q": 1.0000000000001585,
+              "phase": 6.0,
+              "s": 6174.025638211208
+            },
+            "bits": {
+              "p": "41155cc000000000",
+              "h": "41386fd15a205622",
+              "T": "4070bcfba378f5a7",
+              "rho": "4006ca8c8d9a04ed",
+              "u": "41368feaf4a65a74",
+              "Q": "3ff00000000002ca",
+              "phase": "4018000000000000",
+              "s": "40b81e069039ceab"
+            }
+          },
+          "preservedNativeRaw": {
+            "p": 350000.0,
+            "T": 267.8114351963981,
+            "rho": 2.848900896323008,
+            "h": 1601489.3520559152,
+            "u": 1478634.9556633504,
+            "Q": 1.0000000000001585,
+            "phase": 6.0
+          },
+          "physicalQualityAdmissible": false,
+          "scientificAcceptance": "REFUSED \u2014 invalid physical quality",
+          "controlCandidateExact": true,
+          "DPInterfaceQualified": false,
+          "scope": "Unchanged supplemental DP endpoint diagnostic, not a repaired DU state or an accepted A2/model state"
+        }
+      ],
+      "nativeReturned": true,
+      "browsersReturned": true,
+      "phaseEnum": 6,
+      "phaseEnumMeaning": "iphase_twophase numerical label; not independent phase certification",
+      "qualityAdmissible": false,
+      "independentPhysicalPhaseReference": "NOT ESTABLISHED for exact DP input; same-EOS endpoint fixture provenance is not an independent phase certificate",
+      "acceptedPropertyEligible": false,
+      "adapterDPMethodImplemented": false,
+      "acceptedA2RequestsDP": false,
+      "currentReachability": "No CoolProp DP edge in complete accepted dependency closure; bounded trace supports static exclusion",
+      "futureConsumerConsequence": "A finite-only raw loader can expose this state. A future consumer must refuse invalid equilibrium quality; historical convert maps out-of-range Q to x=null and supplies no independent phase certificate. No current DP adapter edge exists.",
+      "scientificDisposition": "REFUSED / DP NOT QUALIFIED",
+      "severity": "P3",
+      "confidence": "HIGH for current interface exclusion and invalid quality; no physical branch qualification"
+    },
+    {
+      "issueId": "DP-06",
+      "fixtureId": "799999.9981754856-hg",
+      "inputPair": "DmassP_INPUTS",
+      "input": [
+        6.26658403942953,
+        799999.9981754856
+      ],
+      "inputBits": [
+        "401910fb680bf10e",
+        "412869ffff10db75"
+      ],
+      "fullVLE": true,
+      "classification": "inherited-native-invalid-quality",
+      "historicalRowIndex": 101,
+      "historicalRow": {
+        "fixture": {
+          "id": "799999.9981754856-hg",
+          "p": 799999.9981754856,
+          "rho": 6.26658403942953,
+          "h": 1624019.7421341157,
+          "s": 5883.276234129618
+        },
+        "mode": "DP",
+        "fullVLE": true,
+        "input": [
+          6.26658403942953,
+          799999.9981754856
+        ],
+        "inputBits": [
+          "401910fb680bf10e",
+          "412869ffff10db75"
+        ],
+        "result": {
+          "control": {
+            "state": {
+              "values": {
+                "p": 799999.9981754856,
+                "T": 291.0133614355054,
+                "rho": 6.26658403942953,
+                "h": 1624019.7421341655,
+                "u": 1496358.484718345,
+                "Q": 1.0000000000000406,
+                "phase": 6.0
+              },
+              "bits": {
+                "p": "412869ffff10db75",
+                "T": "40723036ba7b085f",
+                "rho": "401910fb680bf10e",
+                "h": "4138c7d3bdfc8132",
+                "u": "4136d5267c168060",
+                "Q": "3ff00000000000b7",
+                "phase": "4018000000000000"
+              }
+            }
+          },
+          "A1": {
+            "state": {
+              "values": {
+                "p": 799999.9981754856,
+                "T": 291.0133614355054,
+                "rho": 6.26658403942953,
+                "h": 1624019.7421341655,
+                "u": 1496358.484718345,
+                "Q": 1.0000000000000406,
+                "phase": 6.0
+              },
+              "bits": {
+                "p": "412869ffff10db75",
+                "T": "40723036ba7b085f",
+                "rho": "401910fb680bf10e",
+                "h": "4138c7d3bdfc8132",
+                "u": "4136d5267c168060",
+                "Q": "3ff00000000000b7",
+                "phase": "4018000000000000"
+              }
+            }
+          }
+        },
+        "exact": true
+      },
+      "observationIndices": [
+        8,
+        19,
+        30,
+        41
+      ],
+      "observations": [
+        {
+          "engine": "chromium",
+          "artifact": "rebuiltB4C",
+          "fullVLE": true,
+          "id": "799999.9981754856-hg",
+          "mode": "DP",
+          "input": [
+            6.26658403942953,
+            799999.9981754856
+          ],
+          "inputBits": [
+            "401910fb680bf10e",
+            "412869ffff10db75"
+          ],
+          "rawReturn": {
+            "values": {
+              "p": 799999.9981754856,
+              "T": 291.0133614355054,
+              "h": 1624019.7421341655,
+              "s": 5883.276234129768,
+              "rho": 6.26658403942953,
+              "u": 1496358.484718345,
+              "Q": 1.0000000000000406,
+              "phase": 6
+            },
+            "bits": {
+              "p": "412869ffff10db75",
+              "T": "40723036ba7b085f",
+              "h": "4138c7d3bdfc8132",
+              "s": "40b6fb46b747a965",
+              "rho": "401910fb680bf10e",
+              "u": "4136d5267c168060",
+              "Q": "3ff00000000000b7",
+              "phase": "4018000000000000"
+            }
+          },
+          "nativeRaw": {
+            "values": {
+              "p": 799999.9981754856,
+              "h": 1624019.7421341655,
+              "T": 291.0133614355054,
+              "rho": 6.26658403942953,
+              "u": 1496358.484718345,
+              "Q": 1.0000000000000406,
+              "phase": 6.0,
+              "s": 5883.276234129768
+            },
+            "bits": {
+              "p": "412869ffff10db75",
+              "h": "4138c7d3bdfc8132",
+              "T": "40723036ba7b085f",
+              "rho": "401910fb680bf10e",
+              "u": "4136d5267c168060",
+              "Q": "3ff00000000000b7",
+              "phase": "4018000000000000",
+              "s": "40b6fb46b747a965"
+            }
+          },
+          "preservedNativeRaw": {
+            "p": 799999.9981754856,
+            "T": 291.0133614355054,
+            "rho": 6.26658403942953,
+            "h": 1624019.7421341655,
+            "u": 1496358.484718345,
+            "Q": 1.0000000000000406,
+            "phase": 6.0
+          },
+          "physicalQualityAdmissible": false,
+          "scientificAcceptance": "REFUSED \u2014 invalid physical quality",
+          "controlCandidateExact": true,
+          "DPInterfaceQualified": false,
+          "scope": "Unchanged supplemental DP endpoint diagnostic, not a repaired DU state or an accepted A2/model state"
+        },
+        {
+          "engine": "chromium",
+          "artifact": "gateA",
+          "fullVLE": true,
+          "id": "799999.9981754856-hg",
+          "mode": "DP",
+          "input": [
+            6.26658403942953,
+            799999.9981754856
+          ],
+          "inputBits": [
+            "401910fb680bf10e",
+            "412869ffff10db75"
+          ],
+          "rawReturn": {
+            "values": {
+              "p": 799999.9981754856,
+              "T": 291.0133614355054,
+              "h": 1624019.7421341655,
+              "s": 5883.276234129768,
+              "rho": 6.26658403942953,
+              "u": 1496358.484718345,
+              "Q": 1.0000000000000406,
+              "phase": 6
+            },
+            "bits": {
+              "p": "412869ffff10db75",
+              "T": "40723036ba7b085f",
+              "h": "4138c7d3bdfc8132",
+              "s": "40b6fb46b747a965",
+              "rho": "401910fb680bf10e",
+              "u": "4136d5267c168060",
+              "Q": "3ff00000000000b7",
+              "phase": "4018000000000000"
+            }
+          },
+          "nativeRaw": {
+            "values": {
+              "p": 799999.9981754856,
+              "h": 1624019.7421341655,
+              "T": 291.0133614355054,
+              "rho": 6.26658403942953,
+              "u": 1496358.484718345,
+              "Q": 1.0000000000000406,
+              "phase": 6.0,
+              "s": 5883.276234129768
+            },
+            "bits": {
+              "p": "412869ffff10db75",
+              "h": "4138c7d3bdfc8132",
+              "T": "40723036ba7b085f",
+              "rho": "401910fb680bf10e",
+              "u": "4136d5267c168060",
+              "Q": "3ff00000000000b7",
+              "phase": "4018000000000000",
+              "s": "40b6fb46b747a965"
+            }
+          },
+          "preservedNativeRaw": {
+            "p": 799999.9981754856,
+            "T": 291.0133614355054,
+            "rho": 6.26658403942953,
+            "h": 1624019.7421341655,
+            "u": 1496358.484718345,
+            "Q": 1.0000000000000406,
+            "phase": 6.0
+          },
+          "physicalQualityAdmissible": false,
+          "scientificAcceptance": "REFUSED \u2014 invalid physical quality",
+          "controlCandidateExact": true,
+          "DPInterfaceQualified": false,
+          "scope": "Unchanged supplemental DP endpoint diagnostic, not a repaired DU state or an accepted A2/model state"
+        },
+        {
+          "engine": "webkit",
+          "artifact": "rebuiltB4C",
+          "fullVLE": true,
+          "id": "799999.9981754856-hg",
+          "mode": "DP",
+          "input": [
+            6.26658403942953,
+            799999.9981754856
+          ],
+          "inputBits": [
+            "401910fb680bf10e",
+            "412869ffff10db75"
+          ],
+          "rawReturn": {
+            "values": {
+              "p": 799999.9981754856,
+              "T": 291.0133614355054,
+              "h": 1624019.7421341655,
+              "s": 5883.276234129768,
+              "rho": 6.26658403942953,
+              "u": 1496358.484718345,
+              "Q": 1.0000000000000406,
+              "phase": 6
+            },
+            "bits": {
+              "p": "412869ffff10db75",
+              "T": "40723036ba7b085f",
+              "h": "4138c7d3bdfc8132",
+              "s": "40b6fb46b747a965",
+              "rho": "401910fb680bf10e",
+              "u": "4136d5267c168060",
+              "Q": "3ff00000000000b7",
+              "phase": "4018000000000000"
+            }
+          },
+          "nativeRaw": {
+            "values": {
+              "p": 799999.9981754856,
+              "h": 1624019.7421341655,
+              "T": 291.0133614355054,
+              "rho": 6.26658403942953,
+              "u": 1496358.484718345,
+              "Q": 1.0000000000000406,
+              "phase": 6.0,
+              "s": 5883.276234129768
+            },
+            "bits": {
+              "p": "412869ffff10db75",
+              "h": "4138c7d3bdfc8132",
+              "T": "40723036ba7b085f",
+              "rho": "401910fb680bf10e",
+              "u": "4136d5267c168060",
+              "Q": "3ff00000000000b7",
+              "phase": "4018000000000000",
+              "s": "40b6fb46b747a965"
+            }
+          },
+          "preservedNativeRaw": {
+            "p": 799999.9981754856,
+            "T": 291.0133614355054,
+            "rho": 6.26658403942953,
+            "h": 1624019.7421341655,
+            "u": 1496358.484718345,
+            "Q": 1.0000000000000406,
+            "phase": 6.0
+          },
+          "physicalQualityAdmissible": false,
+          "scientificAcceptance": "REFUSED \u2014 invalid physical quality",
+          "controlCandidateExact": true,
+          "DPInterfaceQualified": false,
+          "scope": "Unchanged supplemental DP endpoint diagnostic, not a repaired DU state or an accepted A2/model state"
+        },
+        {
+          "engine": "webkit",
+          "artifact": "gateA",
+          "fullVLE": true,
+          "id": "799999.9981754856-hg",
+          "mode": "DP",
+          "input": [
+            6.26658403942953,
+            799999.9981754856
+          ],
+          "inputBits": [
+            "401910fb680bf10e",
+            "412869ffff10db75"
+          ],
+          "rawReturn": {
+            "values": {
+              "p": 799999.9981754856,
+              "T": 291.0133614355054,
+              "h": 1624019.7421341655,
+              "s": 5883.276234129768,
+              "rho": 6.26658403942953,
+              "u": 1496358.484718345,
+              "Q": 1.0000000000000406,
+              "phase": 6
+            },
+            "bits": {
+              "p": "412869ffff10db75",
+              "T": "40723036ba7b085f",
+              "h": "4138c7d3bdfc8132",
+              "s": "40b6fb46b747a965",
+              "rho": "401910fb680bf10e",
+              "u": "4136d5267c168060",
+              "Q": "3ff00000000000b7",
+              "phase": "4018000000000000"
+            }
+          },
+          "nativeRaw": {
+            "values": {
+              "p": 799999.9981754856,
+              "h": 1624019.7421341655,
+              "T": 291.0133614355054,
+              "rho": 6.26658403942953,
+              "u": 1496358.484718345,
+              "Q": 1.0000000000000406,
+              "phase": 6.0,
+              "s": 5883.276234129768
+            },
+            "bits": {
+              "p": "412869ffff10db75",
+              "h": "4138c7d3bdfc8132",
+              "T": "40723036ba7b085f",
+              "rho": "401910fb680bf10e",
+              "u": "4136d5267c168060",
+              "Q": "3ff00000000000b7",
+              "phase": "4018000000000000",
+              "s": "40b6fb46b747a965"
+            }
+          },
+          "preservedNativeRaw": {
+            "p": 799999.9981754856,
+            "T": 291.0133614355054,
+            "rho": 6.26658403942953,
+            "h": 1624019.7421341655,
+            "u": 1496358.484718345,
+            "Q": 1.0000000000000406,
+            "phase": 6.0
+          },
+          "physicalQualityAdmissible": false,
+          "scientificAcceptance": "REFUSED \u2014 invalid physical quality",
+          "controlCandidateExact": true,
+          "DPInterfaceQualified": false,
+          "scope": "Unchanged supplemental DP endpoint diagnostic, not a repaired DU state or an accepted A2/model state"
+        }
+      ],
+      "nativeReturned": true,
+      "browsersReturned": true,
+      "phaseEnum": 6,
+      "phaseEnumMeaning": "iphase_twophase numerical label; not independent phase certification",
+      "qualityAdmissible": false,
+      "independentPhysicalPhaseReference": "NOT ESTABLISHED for exact DP input; same-EOS endpoint fixture provenance is not an independent phase certificate",
+      "acceptedPropertyEligible": false,
+      "adapterDPMethodImplemented": false,
+      "acceptedA2RequestsDP": false,
+      "currentReachability": "No CoolProp DP edge in complete accepted dependency closure; bounded trace supports static exclusion",
+      "futureConsumerConsequence": "A finite-only raw loader can expose this state. A future consumer must refuse invalid equilibrium quality; historical convert maps out-of-range Q to x=null and supplies no independent phase certificate. No current DP adapter edge exists.",
+      "scientificDisposition": "REFUSED / DP NOT QUALIFIED",
+      "severity": "P3",
+      "confidence": "HIGH for current interface exclusion and invalid quality; no physical branch qualification"
+    },
+    {
+      "issueId": "DP-07",
+      "fixtureId": "3500000.0-hg",
+      "inputPair": "DmassP_INPUTS",
+      "input": [
+        28.0513774471974,
+        3500000
+      ],
+      "inputBits": [
+        "403c0d27128776fd",
+        "414ab3f000000000"
+      ],
+      "fullVLE": true,
+      "classification": "inherited-native-invalid-quality",
+      "historicalRowIndex": 116,
+      "historicalRow": {
+        "fixture": {
+          "id": "3500000.0-hg",
+          "p": 3500000.0,
+          "rho": 28.0513774471974,
+          "h": 1628069.3277690788,
+          "s": 5300.43809115013
+        },
+        "mode": "DP",
+        "fullVLE": true,
+        "input": [
+          28.0513774471974,
+          3500000.0
+        ],
+        "inputBits": [
+          "403c0d27128776fd",
+          "414ab3f000000000"
+        ],
+        "result": {
+          "control": {
+            "state": {
+              "values": {
+                "p": 3500000.0,
+                "T": 345.56367359935166,
+                "rho": 28.0513774471974,
+                "h": 1628069.327769085,
+                "u": 1503298.2712821714,
+                "Q": 1.0000000000000064,
+                "phase": 6.0
+              },
+              "bits": {
+                "p": "414ab3f000000000",
+                "T": "40759904ce9bad58",
+                "rho": "403c0d27128776fd",
+                "h": "4138d7a553e8acbd",
+                "u": "4136f0424572bf96",
+                "Q": "3ff000000000001d",
+                "phase": "4018000000000000"
+              }
+            }
+          },
+          "A1": {
+            "state": {
+              "values": {
+                "p": 3500000.0,
+                "T": 345.56367359935166,
+                "rho": 28.0513774471974,
+                "h": 1628069.327769085,
+                "u": 1503298.2712821714,
+                "Q": 1.0000000000000064,
+                "phase": 6.0
+              },
+              "bits": {
+                "p": "414ab3f000000000",
+                "T": "40759904ce9bad58",
+                "rho": "403c0d27128776fd",
+                "h": "4138d7a553e8acbd",
+                "u": "4136f0424572bf96",
+                "Q": "3ff000000000001d",
+                "phase": "4018000000000000"
+              }
+            }
+          }
+        },
+        "exact": true
+      },
+      "observationIndices": [
+        10,
+        21,
+        32,
+        43
+      ],
+      "observations": [
+        {
+          "engine": "chromium",
+          "artifact": "rebuiltB4C",
+          "fullVLE": true,
+          "id": "3500000.0-hg",
+          "mode": "DP",
+          "input": [
+            28.0513774471974,
+            3500000
+          ],
+          "inputBits": [
+            "403c0d27128776fd",
+            "414ab3f000000000"
+          ],
+          "rawReturn": {
+            "values": {
+              "p": 3500000,
+              "T": 345.56367359935166,
+              "h": 1628069.327769085,
+              "s": 5300.438091150146,
+              "rho": 28.0513774471974,
+              "u": 1503298.2712821714,
+              "Q": 1.0000000000000064,
+              "phase": 6
+            },
+            "bits": {
+              "p": "414ab3f000000000",
+              "T": "40759904ce9bad58",
+              "h": "4138d7a553e8acbd",
+              "s": "40b4b47026bdda8b",
+              "rho": "403c0d27128776fd",
+              "u": "4136f0424572bf96",
+              "Q": "3ff000000000001d",
+              "phase": "4018000000000000"
+            }
+          },
+          "nativeRaw": {
+            "values": {
+              "p": 3500000.0,
+              "h": 1628069.327769085,
+              "T": 345.56367359935166,
+              "rho": 28.0513774471974,
+              "u": 1503298.2712821714,
+              "Q": 1.0000000000000064,
+              "phase": 6.0,
+              "s": 5300.438091150146
+            },
+            "bits": {
+              "p": "414ab3f000000000",
+              "h": "4138d7a553e8acbd",
+              "T": "40759904ce9bad58",
+              "rho": "403c0d27128776fd",
+              "u": "4136f0424572bf96",
+              "Q": "3ff000000000001d",
+              "phase": "4018000000000000",
+              "s": "40b4b47026bdda8b"
+            }
+          },
+          "preservedNativeRaw": {
+            "p": 3500000.0,
+            "T": 345.56367359935166,
+            "rho": 28.0513774471974,
+            "h": 1628069.327769085,
+            "u": 1503298.2712821714,
+            "Q": 1.0000000000000064,
+            "phase": 6.0
+          },
+          "physicalQualityAdmissible": false,
+          "scientificAcceptance": "REFUSED \u2014 invalid physical quality",
+          "controlCandidateExact": true,
+          "DPInterfaceQualified": false,
+          "scope": "Unchanged supplemental DP endpoint diagnostic, not a repaired DU state or an accepted A2/model state"
+        },
+        {
+          "engine": "chromium",
+          "artifact": "gateA",
+          "fullVLE": true,
+          "id": "3500000.0-hg",
+          "mode": "DP",
+          "input": [
+            28.0513774471974,
+            3500000
+          ],
+          "inputBits": [
+            "403c0d27128776fd",
+            "414ab3f000000000"
+          ],
+          "rawReturn": {
+            "values": {
+              "p": 3500000,
+              "T": 345.56367359935166,
+              "h": 1628069.327769085,
+              "s": 5300.438091150146,
+              "rho": 28.0513774471974,
+              "u": 1503298.2712821714,
+              "Q": 1.0000000000000064,
+              "phase": 6
+            },
+            "bits": {
+              "p": "414ab3f000000000",
+              "T": "40759904ce9bad58",
+              "h": "4138d7a553e8acbd",
+              "s": "40b4b47026bdda8b",
+              "rho": "403c0d27128776fd",
+              "u": "4136f0424572bf96",
+              "Q": "3ff000000000001d",
+              "phase": "4018000000000000"
+            }
+          },
+          "nativeRaw": {
+            "values": {
+              "p": 3500000.0,
+              "h": 1628069.327769085,
+              "T": 345.56367359935166,
+              "rho": 28.0513774471974,
+              "u": 1503298.2712821714,
+              "Q": 1.0000000000000064,
+              "phase": 6.0,
+              "s": 5300.438091150146
+            },
+            "bits": {
+              "p": "414ab3f000000000",
+              "h": "4138d7a553e8acbd",
+              "T": "40759904ce9bad58",
+              "rho": "403c0d27128776fd",
+              "u": "4136f0424572bf96",
+              "Q": "3ff000000000001d",
+              "phase": "4018000000000000",
+              "s": "40b4b47026bdda8b"
+            }
+          },
+          "preservedNativeRaw": {
+            "p": 3500000.0,
+            "T": 345.56367359935166,
+            "rho": 28.0513774471974,
+            "h": 1628069.327769085,
+            "u": 1503298.2712821714,
+            "Q": 1.0000000000000064,
+            "phase": 6.0
+          },
+          "physicalQualityAdmissible": false,
+          "scientificAcceptance": "REFUSED \u2014 invalid physical quality",
+          "controlCandidateExact": true,
+          "DPInterfaceQualified": false,
+          "scope": "Unchanged supplemental DP endpoint diagnostic, not a repaired DU state or an accepted A2/model state"
+        },
+        {
+          "engine": "webkit",
+          "artifact": "rebuiltB4C",
+          "fullVLE": true,
+          "id": "3500000.0-hg",
+          "mode": "DP",
+          "input": [
+            28.0513774471974,
+            3500000
+          ],
+          "inputBits": [
+            "403c0d27128776fd",
+            "414ab3f000000000"
+          ],
+          "rawReturn": {
+            "values": {
+              "p": 3500000,
+              "T": 345.56367359935166,
+              "h": 1628069.327769085,
+              "s": 5300.438091150146,
+              "rho": 28.0513774471974,
+              "u": 1503298.2712821714,
+              "Q": 1.0000000000000064,
+              "phase": 6
+            },
+            "bits": {
+              "p": "414ab3f000000000",
+              "T": "40759904ce9bad58",
+              "h": "4138d7a553e8acbd",
+              "s": "40b4b47026bdda8b",
+              "rho": "403c0d27128776fd",
+              "u": "4136f0424572bf96",
+              "Q": "3ff000000000001d",
+              "phase": "4018000000000000"
+            }
+          },
+          "nativeRaw": {
+            "values": {
+              "p": 3500000.0,
+              "h": 1628069.327769085,
+              "T": 345.56367359935166,
+              "rho": 28.0513774471974,
+              "u": 1503298.2712821714,
+              "Q": 1.0000000000000064,
+              "phase": 6.0,
+              "s": 5300.438091150146
+            },
+            "bits": {
+              "p": "414ab3f000000000",
+              "h": "4138d7a553e8acbd",
+              "T": "40759904ce9bad58",
+              "rho": "403c0d27128776fd",
+              "u": "4136f0424572bf96",
+              "Q": "3ff000000000001d",
+              "phase": "4018000000000000",
+              "s": "40b4b47026bdda8b"
+            }
+          },
+          "preservedNativeRaw": {
+            "p": 3500000.0,
+            "T": 345.56367359935166,
+            "rho": 28.0513774471974,
+            "h": 1628069.327769085,
+            "u": 1503298.2712821714,
+            "Q": 1.0000000000000064,
+            "phase": 6.0
+          },
+          "physicalQualityAdmissible": false,
+          "scientificAcceptance": "REFUSED \u2014 invalid physical quality",
+          "controlCandidateExact": true,
+          "DPInterfaceQualified": false,
+          "scope": "Unchanged supplemental DP endpoint diagnostic, not a repaired DU state or an accepted A2/model state"
+        },
+        {
+          "engine": "webkit",
+          "artifact": "gateA",
+          "fullVLE": true,
+          "id": "3500000.0-hg",
+          "mode": "DP",
+          "input": [
+            28.0513774471974,
+            3500000
+          ],
+          "inputBits": [
+            "403c0d27128776fd",
+            "414ab3f000000000"
+          ],
+          "rawReturn": {
+            "values": {
+              "p": 3500000,
+              "T": 345.56367359935166,
+              "h": 1628069.327769085,
+              "s": 5300.438091150146,
+              "rho": 28.0513774471974,
+              "u": 1503298.2712821714,
+              "Q": 1.0000000000000064,
+              "phase": 6
+            },
+            "bits": {
+              "p": "414ab3f000000000",
+              "T": "40759904ce9bad58",
+              "h": "4138d7a553e8acbd",
+              "s": "40b4b47026bdda8b",
+              "rho": "403c0d27128776fd",
+              "u": "4136f0424572bf96",
+              "Q": "3ff000000000001d",
+              "phase": "4018000000000000"
+            }
+          },
+          "nativeRaw": {
+            "values": {
+              "p": 3500000.0,
+              "h": 1628069.327769085,
+              "T": 345.56367359935166,
+              "rho": 28.0513774471974,
+              "u": 1503298.2712821714,
+              "Q": 1.0000000000000064,
+              "phase": 6.0,
+              "s": 5300.438091150146
+            },
+            "bits": {
+              "p": "414ab3f000000000",
+              "h": "4138d7a553e8acbd",
+              "T": "40759904ce9bad58",
+              "rho": "403c0d27128776fd",
+              "u": "4136f0424572bf96",
+              "Q": "3ff000000000001d",
+              "phase": "4018000000000000",
+              "s": "40b4b47026bdda8b"
+            }
+          },
+          "preservedNativeRaw": {
+            "p": 3500000.0,
+            "T": 345.56367359935166,
+            "rho": 28.0513774471974,
+            "h": 1628069.327769085,
+            "u": 1503298.2712821714,
+            "Q": 1.0000000000000064,
+            "phase": 6.0
+          },
+          "physicalQualityAdmissible": false,
+          "scientificAcceptance": "REFUSED \u2014 invalid physical quality",
+          "controlCandidateExact": true,
+          "DPInterfaceQualified": false,
+          "scope": "Unchanged supplemental DP endpoint diagnostic, not a repaired DU state or an accepted A2/model state"
+        }
+      ],
+      "nativeReturned": true,
+      "browsersReturned": true,
+      "phaseEnum": 6,
+      "phaseEnumMeaning": "iphase_twophase numerical label; not independent phase certification",
+      "qualityAdmissible": false,
+      "independentPhysicalPhaseReference": "NOT ESTABLISHED for exact DP input; same-EOS endpoint fixture provenance is not an independent phase certificate",
+      "acceptedPropertyEligible": false,
+      "adapterDPMethodImplemented": false,
+      "acceptedA2RequestsDP": false,
+      "currentReachability": "No CoolProp DP edge in complete accepted dependency closure; bounded trace supports static exclusion",
+      "futureConsumerConsequence": "A finite-only raw loader can expose this state. A future consumer must refuse invalid equilibrium quality; historical convert maps out-of-range Q to x=null and supplies no independent phase certificate. No current DP adapter edge exists.",
+      "scientificDisposition": "REFUSED / DP NOT QUALIFIED",
+      "severity": "P3",
+      "confidence": "HIGH for current interface exclusion and invalid quality; no physical branch qualification"
+    },
+    {
+      "issueId": "DP-08",
+      "fixtureId": "3500000.0-hf",
+      "inputPair": "DmassP_INPUTS",
+      "input": [
+        521.5319007055045,
+        3500000
+      ],
+      "inputBits": [
+        "40804c41552836e4",
+        "414ab3f000000000"
+      ],
+      "fullVLE": true,
+      "classification": "inherited-native-invalid-quality",
+      "historicalRowIndex": 110,
+      "historicalRow": {
+        "fixture": {
+          "id": "3500000.0-hf",
+          "p": 3500000.0,
+          "rho": 521.5319007055045,
+          "h": 703826.5654298478,
+          "s": 2625.8434130914516
+        },
+        "mode": "DP",
+        "fullVLE": true,
+        "input": [
+          521.5319007055045,
+          3500000.0
+        ],
+        "inputBits": [
+          "40804c41552836e4",
+          "414ab3f000000000"
+        ],
+        "result": {
+          "control": {
+            "state": {
+              "values": {
+                "p": 3500000.0,
+                "T": 345.56367359935166,
+                "rho": 521.5319007055045,
+                "h": 703826.5654298489,
+                "u": 697115.5665527621,
+                "Q": -1.179580095055351e-16,
+                "phase": 6.0
+              },
+              "bits": {
+                "p": "414ab3f000000000",
+                "T": "40759904ce9bad58",
+                "rho": "40804c41552836e4",
+                "h": "41257aa52180056a",
+                "u": "4125463722133421",
+                "Q": "bca0ffe1e6a4a758",
+                "phase": "4018000000000000"
+              }
+            }
+          },
+          "A1": {
+            "state": {
+              "values": {
+                "p": 3500000.0,
+                "T": 345.56367359935166,
+                "rho": 521.5319007055045,
+                "h": 703826.5654298489,
+                "u": 697115.5665527621,
+                "Q": -1.179580095055351e-16,
+                "phase": 6.0
+              },
+              "bits": {
+                "p": "414ab3f000000000",
+                "T": "40759904ce9bad58",
+                "rho": "40804c41552836e4",
+                "h": "41257aa52180056a",
+                "u": "4125463722133421",
+                "Q": "bca0ffe1e6a4a758",
+                "phase": "4018000000000000"
+              }
+            }
+          }
+        },
+        "exact": true
+      },
+      "observationIndices": [
+        9,
+        20,
+        31,
+        42
+      ],
+      "observations": [
+        {
+          "engine": "chromium",
+          "artifact": "rebuiltB4C",
+          "fullVLE": true,
+          "id": "3500000.0-hf",
+          "mode": "DP",
+          "input": [
+            521.5319007055045,
+            3500000
+          ],
+          "inputBits": [
+            "40804c41552836e4",
+            "414ab3f000000000"
+          ],
+          "rawReturn": {
+            "values": {
+              "p": 3500000,
+              "T": 345.56367359935166,
+              "h": 703826.5654298489,
+              "s": 2625.843413091458,
+              "rho": 521.5319007055045,
+              "u": 697115.5665527621,
+              "Q": -1.179580095055351e-16,
+              "phase": 6
+            },
+            "bits": {
+              "p": "414ab3f000000000",
+              "T": "40759904ce9bad58",
+              "h": "41257aa52180056a",
+              "s": "40a483afd3d739a9",
+              "rho": "40804c41552836e4",
+              "u": "4125463722133421",
+              "Q": "bca0ffe1e6a4a758",
+              "phase": "4018000000000000"
+            }
+          },
+          "nativeRaw": {
+            "values": {
+              "p": 3500000.0,
+              "h": 703826.5654298489,
+              "T": 345.56367359935166,
+              "rho": 521.5319007055045,
+              "u": 697115.5665527621,
+              "Q": -1.179580095055351e-16,
+              "phase": 6.0,
+              "s": 2625.843413091458
+            },
+            "bits": {
+              "p": "414ab3f000000000",
+              "h": "41257aa52180056a",
+              "T": "40759904ce9bad58",
+              "rho": "40804c41552836e4",
+              "u": "4125463722133421",
+              "Q": "bca0ffe1e6a4a758",
+              "phase": "4018000000000000",
+              "s": "40a483afd3d739a9"
+            }
+          },
+          "preservedNativeRaw": {
+            "p": 3500000.0,
+            "T": 345.56367359935166,
+            "rho": 521.5319007055045,
+            "h": 703826.5654298489,
+            "u": 697115.5665527621,
+            "Q": -1.179580095055351e-16,
+            "phase": 6.0
+          },
+          "physicalQualityAdmissible": false,
+          "scientificAcceptance": "REFUSED \u2014 invalid physical quality",
+          "controlCandidateExact": true,
+          "DPInterfaceQualified": false,
+          "scope": "Unchanged supplemental DP endpoint diagnostic, not a repaired DU state or an accepted A2/model state"
+        },
+        {
+          "engine": "chromium",
+          "artifact": "gateA",
+          "fullVLE": true,
+          "id": "3500000.0-hf",
+          "mode": "DP",
+          "input": [
+            521.5319007055045,
+            3500000
+          ],
+          "inputBits": [
+            "40804c41552836e4",
+            "414ab3f000000000"
+          ],
+          "rawReturn": {
+            "values": {
+              "p": 3500000,
+              "T": 345.56367359935166,
+              "h": 703826.5654298489,
+              "s": 2625.843413091458,
+              "rho": 521.5319007055045,
+              "u": 697115.5665527621,
+              "Q": -1.179580095055351e-16,
+              "phase": 6
+            },
+            "bits": {
+              "p": "414ab3f000000000",
+              "T": "40759904ce9bad58",
+              "h": "41257aa52180056a",
+              "s": "40a483afd3d739a9",
+              "rho": "40804c41552836e4",
+              "u": "4125463722133421",
+              "Q": "bca0ffe1e6a4a758",
+              "phase": "4018000000000000"
+            }
+          },
+          "nativeRaw": {
+            "values": {
+              "p": 3500000.0,
+              "h": 703826.5654298489,
+              "T": 345.56367359935166,
+              "rho": 521.5319007055045,
+              "u": 697115.5665527621,
+              "Q": -1.179580095055351e-16,
+              "phase": 6.0,
+              "s": 2625.843413091458
+            },
+            "bits": {
+              "p": "414ab3f000000000",
+              "h": "41257aa52180056a",
+              "T": "40759904ce9bad58",
+              "rho": "40804c41552836e4",
+              "u": "4125463722133421",
+              "Q": "bca0ffe1e6a4a758",
+              "phase": "4018000000000000",
+              "s": "40a483afd3d739a9"
+            }
+          },
+          "preservedNativeRaw": {
+            "p": 3500000.0,
+            "T": 345.56367359935166,
+            "rho": 521.5319007055045,
+            "h": 703826.5654298489,
+            "u": 697115.5665527621,
+            "Q": -1.179580095055351e-16,
+            "phase": 6.0
+          },
+          "physicalQualityAdmissible": false,
+          "scientificAcceptance": "REFUSED \u2014 invalid physical quality",
+          "controlCandidateExact": true,
+          "DPInterfaceQualified": false,
+          "scope": "Unchanged supplemental DP endpoint diagnostic, not a repaired DU state or an accepted A2/model state"
+        },
+        {
+          "engine": "webkit",
+          "artifact": "rebuiltB4C",
+          "fullVLE": true,
+          "id": "3500000.0-hf",
+          "mode": "DP",
+          "input": [
+            521.5319007055045,
+            3500000
+          ],
+          "inputBits": [
+            "40804c41552836e4",
+            "414ab3f000000000"
+          ],
+          "rawReturn": {
+            "values": {
+              "p": 3500000,
+              "T": 345.56367359935166,
+              "h": 703826.5654298489,
+              "s": 2625.843413091458,
+              "rho": 521.5319007055045,
+              "u": 697115.5665527621,
+              "Q": -1.179580095055351e-16,
+              "phase": 6
+            },
+            "bits": {
+              "p": "414ab3f000000000",
+              "T": "40759904ce9bad58",
+              "h": "41257aa52180056a",
+              "s": "40a483afd3d739a9",
+              "rho": "40804c41552836e4",
+              "u": "4125463722133421",
+              "Q": "bca0ffe1e6a4a758",
+              "phase": "4018000000000000"
+            }
+          },
+          "nativeRaw": {
+            "values": {
+              "p": 3500000.0,
+              "h": 703826.5654298489,
+              "T": 345.56367359935166,
+              "rho": 521.5319007055045,
+              "u": 697115.5665527621,
+              "Q": -1.179580095055351e-16,
+              "phase": 6.0,
+              "s": 2625.843413091458
+            },
+            "bits": {
+              "p": "414ab3f000000000",
+              "h": "41257aa52180056a",
+              "T": "40759904ce9bad58",
+              "rho": "40804c41552836e4",
+              "u": "4125463722133421",
+              "Q": "bca0ffe1e6a4a758",
+              "phase": "4018000000000000",
+              "s": "40a483afd3d739a9"
+            }
+          },
+          "preservedNativeRaw": {
+            "p": 3500000.0,
+            "T": 345.56367359935166,
+            "rho": 521.5319007055045,
+            "h": 703826.5654298489,
+            "u": 697115.5665527621,
+            "Q": -1.179580095055351e-16,
+            "phase": 6.0
+          },
+          "physicalQualityAdmissible": false,
+          "scientificAcceptance": "REFUSED \u2014 invalid physical quality",
+          "controlCandidateExact": true,
+          "DPInterfaceQualified": false,
+          "scope": "Unchanged supplemental DP endpoint diagnostic, not a repaired DU state or an accepted A2/model state"
+        },
+        {
+          "engine": "webkit",
+          "artifact": "gateA",
+          "fullVLE": true,
+          "id": "3500000.0-hf",
+          "mode": "DP",
+          "input": [
+            521.5319007055045,
+            3500000
+          ],
+          "inputBits": [
+            "40804c41552836e4",
+            "414ab3f000000000"
+          ],
+          "rawReturn": {
+            "values": {
+              "p": 3500000,
+              "T": 345.56367359935166,
+              "h": 703826.5654298489,
+              "s": 2625.843413091458,
+              "rho": 521.5319007055045,
+              "u": 697115.5665527621,
+              "Q": -1.179580095055351e-16,
+              "phase": 6
+            },
+            "bits": {
+              "p": "414ab3f000000000",
+              "T": "40759904ce9bad58",
+              "h": "41257aa52180056a",
+              "s": "40a483afd3d739a9",
+              "rho": "40804c41552836e4",
+              "u": "4125463722133421",
+              "Q": "bca0ffe1e6a4a758",
+              "phase": "4018000000000000"
+            }
+          },
+          "nativeRaw": {
+            "values": {
+              "p": 3500000.0,
+              "h": 703826.5654298489,
+              "T": 345.56367359935166,
+              "rho": 521.5319007055045,
+              "u": 697115.5665527621,
+              "Q": -1.179580095055351e-16,
+              "phase": 6.0,
+              "s": 2625.843413091458
+            },
+            "bits": {
+              "p": "414ab3f000000000",
+              "h": "41257aa52180056a",
+              "T": "40759904ce9bad58",
+              "rho": "40804c41552836e4",
+              "u": "4125463722133421",
+              "Q": "bca0ffe1e6a4a758",
+              "phase": "4018000000000000",
+              "s": "40a483afd3d739a9"
+            }
+          },
+          "preservedNativeRaw": {
+            "p": 3500000.0,
+            "T": 345.56367359935166,
+            "rho": 521.5319007055045,
+            "h": 703826.5654298489,
+            "u": 697115.5665527621,
+            "Q": -1.179580095055351e-16,
+            "phase": 6.0
+          },
+          "physicalQualityAdmissible": false,
+          "scientificAcceptance": "REFUSED \u2014 invalid physical quality",
+          "controlCandidateExact": true,
+          "DPInterfaceQualified": false,
+          "scope": "Unchanged supplemental DP endpoint diagnostic, not a repaired DU state or an accepted A2/model state"
+        }
+      ],
+      "nativeReturned": true,
+      "browsersReturned": true,
+      "phaseEnum": 6,
+      "phaseEnumMeaning": "iphase_twophase numerical label; not independent phase certification",
+      "qualityAdmissible": false,
+      "independentPhysicalPhaseReference": "NOT ESTABLISHED for exact DP input; same-EOS endpoint fixture provenance is not an independent phase certificate",
+      "acceptedPropertyEligible": false,
+      "adapterDPMethodImplemented": false,
+      "acceptedA2RequestsDP": false,
+      "currentReachability": "No CoolProp DP edge in complete accepted dependency closure; bounded trace supports static exclusion",
+      "futureConsumerConsequence": "A finite-only raw loader can expose this state. A future consumer must refuse invalid equilibrium quality; historical convert maps out-of-range Q to x=null and supplies no independent phase certificate. No current DP adapter edge exists.",
+      "scientificDisposition": "REFUSED / DP NOT QUALIFIED",
+      "severity": "P3",
+      "confidence": "HIGH for current interface exclusion and invalid quality; no physical branch qualification"
+    },
+    {
+      "issueId": "DP-09",
+      "fixtureId": "799999.9981754856-hf",
+      "inputPair": "DmassP_INPUTS",
+      "input": [
+        613.5129566644232,
+        799999.9981754856
+      ],
+      "inputBits": [
+        "40832c1a89060fb4",
+        "412869ffff10db75"
+      ],
+      "fullVLE": true,
+      "classification": "inherited-native-invalid-quality",
+      "historicalRowIndex": 95,
+      "historicalRow": {
+        "fixture": {
+          "id": "799999.9981754856-hf",
+          "p": 799999.9981754856,
+          "rho": 613.5129566644232,
+          "h": 429181.30692029034,
+          "s": 1777.4907495045998
+        },
+        "mode": "DP",
+        "fullVLE": true,
+        "input": [
+          613.5129566644232,
+          799999.9981754856
+        ],
+        "inputBits": [
+          "40832c1a89060fb4",
+          "412869ffff10db75"
+        ],
+        "result": {
+          "control": {
+            "state": {
+              "values": {
+                "p": 799999.9981754856,
+                "T": 291.0133614355054,
+                "rho": 613.5129566644232,
+                "h": 429181.3069202963,
+                "u": 427877.3409820303,
+                "Q": -4.9123202393395254e-17,
+                "phase": 6.0
+              },
+              "bits": {
+                "p": "412869ffff10db75",
+                "T": "40723036ba7b085f",
+                "rho": "40832c1a89060fb4",
+                "h": "411a31f53a49506c",
+                "u": "411a1d955d2a64b3",
+                "Q": "bc8c514e1db96825",
+                "phase": "4018000000000000"
+              }
+            }
+          },
+          "A1": {
+            "state": {
+              "values": {
+                "p": 799999.9981754856,
+                "T": 291.0133614355054,
+                "rho": 613.5129566644232,
+                "h": 429181.3069202963,
+                "u": 427877.3409820303,
+                "Q": -4.9123202393395254e-17,
+                "phase": 6.0
+              },
+              "bits": {
+                "p": "412869ffff10db75",
+                "T": "40723036ba7b085f",
+                "rho": "40832c1a89060fb4",
+                "h": "411a31f53a49506c",
+                "u": "411a1d955d2a64b3",
+                "Q": "bc8c514e1db96825",
+                "phase": "4018000000000000"
+              }
+            }
+          }
+        },
+        "exact": true
+      },
+      "observationIndices": [
+        7,
+        18,
+        29,
+        40
+      ],
+      "observations": [
+        {
+          "engine": "chromium",
+          "artifact": "rebuiltB4C",
+          "fullVLE": true,
+          "id": "799999.9981754856-hf",
+          "mode": "DP",
+          "input": [
+            613.5129566644232,
+            799999.9981754856
+          ],
+          "inputBits": [
+            "40832c1a89060fb4",
+            "412869ffff10db75"
+          ],
+          "rawReturn": {
+            "values": {
+              "p": 799999.9981754856,
+              "T": 291.0133614355054,
+              "h": 429181.3069202963,
+              "s": 1777.4907495046268,
+              "rho": 613.5129566644232,
+              "u": 427877.3409820303,
+              "Q": -4.9123202393395254e-17,
+              "phase": 6
+            },
+            "bits": {
+              "p": "412869ffff10db75",
+              "T": "40723036ba7b085f",
+              "h": "411a31f53a49506c",
+              "s": "409bc5f68709c39a",
+              "rho": "40832c1a89060fb4",
+              "u": "411a1d955d2a64b3",
+              "Q": "bc8c514e1db96825",
+              "phase": "4018000000000000"
+            }
+          },
+          "nativeRaw": {
+            "values": {
+              "p": 799999.9981754856,
+              "h": 429181.3069202963,
+              "T": 291.0133614355054,
+              "rho": 613.5129566644232,
+              "u": 427877.3409820303,
+              "Q": -4.9123202393395254e-17,
+              "phase": 6.0,
+              "s": 1777.4907495046268
+            },
+            "bits": {
+              "p": "412869ffff10db75",
+              "h": "411a31f53a49506c",
+              "T": "40723036ba7b085f",
+              "rho": "40832c1a89060fb4",
+              "u": "411a1d955d2a64b3",
+              "Q": "bc8c514e1db96825",
+              "phase": "4018000000000000",
+              "s": "409bc5f68709c39a"
+            }
+          },
+          "preservedNativeRaw": {
+            "p": 799999.9981754856,
+            "T": 291.0133614355054,
+            "rho": 613.5129566644232,
+            "h": 429181.3069202963,
+            "u": 427877.3409820303,
+            "Q": -4.9123202393395254e-17,
+            "phase": 6.0
+          },
+          "physicalQualityAdmissible": false,
+          "scientificAcceptance": "REFUSED \u2014 invalid physical quality",
+          "controlCandidateExact": true,
+          "DPInterfaceQualified": false,
+          "scope": "Unchanged supplemental DP endpoint diagnostic, not a repaired DU state or an accepted A2/model state"
+        },
+        {
+          "engine": "chromium",
+          "artifact": "gateA",
+          "fullVLE": true,
+          "id": "799999.9981754856-hf",
+          "mode": "DP",
+          "input": [
+            613.5129566644232,
+            799999.9981754856
+          ],
+          "inputBits": [
+            "40832c1a89060fb4",
+            "412869ffff10db75"
+          ],
+          "rawReturn": {
+            "values": {
+              "p": 799999.9981754856,
+              "T": 291.0133614355054,
+              "h": 429181.3069202963,
+              "s": 1777.4907495046268,
+              "rho": 613.5129566644232,
+              "u": 427877.3409820303,
+              "Q": -4.9123202393395254e-17,
+              "phase": 6
+            },
+            "bits": {
+              "p": "412869ffff10db75",
+              "T": "40723036ba7b085f",
+              "h": "411a31f53a49506c",
+              "s": "409bc5f68709c39a",
+              "rho": "40832c1a89060fb4",
+              "u": "411a1d955d2a64b3",
+              "Q": "bc8c514e1db96825",
+              "phase": "4018000000000000"
+            }
+          },
+          "nativeRaw": {
+            "values": {
+              "p": 799999.9981754856,
+              "h": 429181.3069202963,
+              "T": 291.0133614355054,
+              "rho": 613.5129566644232,
+              "u": 427877.3409820303,
+              "Q": -4.9123202393395254e-17,
+              "phase": 6.0,
+              "s": 1777.4907495046268
+            },
+            "bits": {
+              "p": "412869ffff10db75",
+              "h": "411a31f53a49506c",
+              "T": "40723036ba7b085f",
+              "rho": "40832c1a89060fb4",
+              "u": "411a1d955d2a64b3",
+              "Q": "bc8c514e1db96825",
+              "phase": "4018000000000000",
+              "s": "409bc5f68709c39a"
+            }
+          },
+          "preservedNativeRaw": {
+            "p": 799999.9981754856,
+            "T": 291.0133614355054,
+            "rho": 613.5129566644232,
+            "h": 429181.3069202963,
+            "u": 427877.3409820303,
+            "Q": -4.9123202393395254e-17,
+            "phase": 6.0
+          },
+          "physicalQualityAdmissible": false,
+          "scientificAcceptance": "REFUSED \u2014 invalid physical quality",
+          "controlCandidateExact": true,
+          "DPInterfaceQualified": false,
+          "scope": "Unchanged supplemental DP endpoint diagnostic, not a repaired DU state or an accepted A2/model state"
+        },
+        {
+          "engine": "webkit",
+          "artifact": "rebuiltB4C",
+          "fullVLE": true,
+          "id": "799999.9981754856-hf",
+          "mode": "DP",
+          "input": [
+            613.5129566644232,
+            799999.9981754856
+          ],
+          "inputBits": [
+            "40832c1a89060fb4",
+            "412869ffff10db75"
+          ],
+          "rawReturn": {
+            "values": {
+              "p": 799999.9981754856,
+              "T": 291.0133614355054,
+              "h": 429181.3069202963,
+              "s": 1777.4907495046268,
+              "rho": 613.5129566644232,
+              "u": 427877.3409820303,
+              "Q": -4.9123202393395254e-17,
+              "phase": 6
+            },
+            "bits": {
+              "p": "412869ffff10db75",
+              "T": "40723036ba7b085f",
+              "h": "411a31f53a49506c",
+              "s": "409bc5f68709c39a",
+              "rho": "40832c1a89060fb4",
+              "u": "411a1d955d2a64b3",
+              "Q": "bc8c514e1db96825",
+              "phase": "4018000000000000"
+            }
+          },
+          "nativeRaw": {
+            "values": {
+              "p": 799999.9981754856,
+              "h": 429181.3069202963,
+              "T": 291.0133614355054,
+              "rho": 613.5129566644232,
+              "u": 427877.3409820303,
+              "Q": -4.9123202393395254e-17,
+              "phase": 6.0,
+              "s": 1777.4907495046268
+            },
+            "bits": {
+              "p": "412869ffff10db75",
+              "h": "411a31f53a49506c",
+              "T": "40723036ba7b085f",
+              "rho": "40832c1a89060fb4",
+              "u": "411a1d955d2a64b3",
+              "Q": "bc8c514e1db96825",
+              "phase": "4018000000000000",
+              "s": "409bc5f68709c39a"
+            }
+          },
+          "preservedNativeRaw": {
+            "p": 799999.9981754856,
+            "T": 291.0133614355054,
+            "rho": 613.5129566644232,
+            "h": 429181.3069202963,
+            "u": 427877.3409820303,
+            "Q": -4.9123202393395254e-17,
+            "phase": 6.0
+          },
+          "physicalQualityAdmissible": false,
+          "scientificAcceptance": "REFUSED \u2014 invalid physical quality",
+          "controlCandidateExact": true,
+          "DPInterfaceQualified": false,
+          "scope": "Unchanged supplemental DP endpoint diagnostic, not a repaired DU state or an accepted A2/model state"
+        },
+        {
+          "engine": "webkit",
+          "artifact": "gateA",
+          "fullVLE": true,
+          "id": "799999.9981754856-hf",
+          "mode": "DP",
+          "input": [
+            613.5129566644232,
+            799999.9981754856
+          ],
+          "inputBits": [
+            "40832c1a89060fb4",
+            "412869ffff10db75"
+          ],
+          "rawReturn": {
+            "values": {
+              "p": 799999.9981754856,
+              "T": 291.0133614355054,
+              "h": 429181.3069202963,
+              "s": 1777.4907495046268,
+              "rho": 613.5129566644232,
+              "u": 427877.3409820303,
+              "Q": -4.9123202393395254e-17,
+              "phase": 6
+            },
+            "bits": {
+              "p": "412869ffff10db75",
+              "T": "40723036ba7b085f",
+              "h": "411a31f53a49506c",
+              "s": "409bc5f68709c39a",
+              "rho": "40832c1a89060fb4",
+              "u": "411a1d955d2a64b3",
+              "Q": "bc8c514e1db96825",
+              "phase": "4018000000000000"
+            }
+          },
+          "nativeRaw": {
+            "values": {
+              "p": 799999.9981754856,
+              "h": 429181.3069202963,
+              "T": 291.0133614355054,
+              "rho": 613.5129566644232,
+              "u": 427877.3409820303,
+              "Q": -4.9123202393395254e-17,
+              "phase": 6.0,
+              "s": 1777.4907495046268
+            },
+            "bits": {
+              "p": "412869ffff10db75",
+              "h": "411a31f53a49506c",
+              "T": "40723036ba7b085f",
+              "rho": "40832c1a89060fb4",
+              "u": "411a1d955d2a64b3",
+              "Q": "bc8c514e1db96825",
+              "phase": "4018000000000000",
+              "s": "409bc5f68709c39a"
+            }
+          },
+          "preservedNativeRaw": {
+            "p": 799999.9981754856,
+            "T": 291.0133614355054,
+            "rho": 613.5129566644232,
+            "h": 429181.3069202963,
+            "u": 427877.3409820303,
+            "Q": -4.9123202393395254e-17,
+            "phase": 6.0
+          },
+          "physicalQualityAdmissible": false,
+          "scientificAcceptance": "REFUSED \u2014 invalid physical quality",
+          "controlCandidateExact": true,
+          "DPInterfaceQualified": false,
+          "scope": "Unchanged supplemental DP endpoint diagnostic, not a repaired DU state or an accepted A2/model state"
+        }
+      ],
+      "nativeReturned": true,
+      "browsersReturned": true,
+      "phaseEnum": 6,
+      "phaseEnumMeaning": "iphase_twophase numerical label; not independent phase certification",
+      "qualityAdmissible": false,
+      "independentPhysicalPhaseReference": "NOT ESTABLISHED for exact DP input; same-EOS endpoint fixture provenance is not an independent phase certificate",
+      "acceptedPropertyEligible": false,
+      "adapterDPMethodImplemented": false,
+      "acceptedA2RequestsDP": false,
+      "currentReachability": "No CoolProp DP edge in complete accepted dependency closure; bounded trace supports static exclusion",
+      "futureConsumerConsequence": "A finite-only raw loader can expose this state. A future consumer must refuse invalid equilibrium quality; historical convert maps out-of-range Q to x=null and supplies no independent phase certificate. No current DP adapter edge exists.",
+      "scientificDisposition": "REFUSED / DP NOT QUALIFIED",
+      "severity": "P3",
+      "confidence": "HIGH for current interface exclusion and invalid quality; no physical branch qualification"
+    },
+    {
+      "issueId": "DP-10",
+      "fixtureId": "350000.0-hf",
+      "inputPair": "DmassP_INPUTS",
+      "input": [
+        645.8348207984537,
+        350000
+      ],
+      "inputBits": [
+        "40842eadb686db09",
+        "41155cc000000000"
+      ],
+      "fullVLE": true,
+      "classification": "inherited-native-invalid-quality",
+      "historicalRowIndex": 80,
+      "historicalRow": {
+        "fixture": {
+          "id": "350000.0-hf",
+          "p": 350000.0,
+          "rho": 645.8348207984537,
+          "h": 321086.8171927678,
+          "s": 1393.0403381467327
+        },
+        "mode": "DP",
+        "fullVLE": true,
+        "input": [
+          645.8348207984537,
+          350000.0
+        ],
+        "inputBits": [
+          "40842eadb686db09",
+          "41155cc000000000"
+        ],
+        "result": {
+          "control": {
+            "state": {
+              "values": {
+                "p": 350000.0,
+                "T": 267.8114351963981,
+                "rho": 645.8348207984537,
+                "h": 321086.81719278614,
+                "u": 320544.8829570832,
+                "Q": -4.4973513042873376e-17,
+                "phase": 6.0
+              },
+              "bits": {
+                "p": "41155cc000000000",
+                "T": "4070bcfba378f5a7",
+                "rho": "40842eadb686db09",
+                "h": "411398fb44ce2f8c",
+                "u": "411390838825e6d0",
+                "Q": "bc89eceb48ee3145",
+                "phase": "4018000000000000"
+              }
+            }
+          },
+          "A1": {
+            "state": {
+              "values": {
+                "p": 350000.0,
+                "T": 267.8114351963981,
+                "rho": 645.8348207984537,
+                "h": 321086.81719278614,
+                "u": 320544.8829570832,
+                "Q": -4.4973513042873376e-17,
+                "phase": 6.0
+              },
+              "bits": {
+                "p": "41155cc000000000",
+                "T": "4070bcfba378f5a7",
+                "rho": "40842eadb686db09",
+                "h": "411398fb44ce2f8c",
+                "u": "411390838825e6d0",
+                "Q": "bc89eceb48ee3145",
+                "phase": "4018000000000000"
+              }
+            }
+          }
+        },
+        "exact": true
+      },
+      "observationIndices": [
+        5,
+        16,
+        27,
+        38
+      ],
+      "observations": [
+        {
+          "engine": "chromium",
+          "artifact": "rebuiltB4C",
+          "fullVLE": true,
+          "id": "350000.0-hf",
+          "mode": "DP",
+          "input": [
+            645.8348207984537,
+            350000
+          ],
+          "inputBits": [
+            "40842eadb686db09",
+            "41155cc000000000"
+          ],
+          "rawReturn": {
+            "values": {
+              "p": 350000,
+              "T": 267.8114351963981,
+              "h": 321086.81719278614,
+              "s": 1393.0403381468132,
+              "rho": 645.8348207984537,
+              "u": 320544.8829570832,
+              "Q": -4.4973513042873376e-17,
+              "phase": 6
+            },
+            "bits": {
+              "p": "41155cc000000000",
+              "T": "4070bcfba378f5a7",
+              "h": "411398fb44ce2f8c",
+              "s": "4095c4294e673560",
+              "rho": "40842eadb686db09",
+              "u": "411390838825e6d0",
+              "Q": "bc89eceb48ee3145",
+              "phase": "4018000000000000"
+            }
+          },
+          "nativeRaw": {
+            "values": {
+              "p": 350000.0,
+              "h": 321086.81719278614,
+              "T": 267.8114351963981,
+              "rho": 645.8348207984537,
+              "u": 320544.8829570832,
+              "Q": -4.4973513042873376e-17,
+              "phase": 6.0,
+              "s": 1393.0403381468132
+            },
+            "bits": {
+              "p": "41155cc000000000",
+              "h": "411398fb44ce2f8c",
+              "T": "4070bcfba378f5a7",
+              "rho": "40842eadb686db09",
+              "u": "411390838825e6d0",
+              "Q": "bc89eceb48ee3145",
+              "phase": "4018000000000000",
+              "s": "4095c4294e673560"
+            }
+          },
+          "preservedNativeRaw": {
+            "p": 350000.0,
+            "T": 267.8114351963981,
+            "rho": 645.8348207984537,
+            "h": 321086.81719278614,
+            "u": 320544.8829570832,
+            "Q": -4.4973513042873376e-17,
+            "phase": 6.0
+          },
+          "physicalQualityAdmissible": false,
+          "scientificAcceptance": "REFUSED \u2014 invalid physical quality",
+          "controlCandidateExact": true,
+          "DPInterfaceQualified": false,
+          "scope": "Unchanged supplemental DP endpoint diagnostic, not a repaired DU state or an accepted A2/model state"
+        },
+        {
+          "engine": "chromium",
+          "artifact": "gateA",
+          "fullVLE": true,
+          "id": "350000.0-hf",
+          "mode": "DP",
+          "input": [
+            645.8348207984537,
+            350000
+          ],
+          "inputBits": [
+            "40842eadb686db09",
+            "41155cc000000000"
+          ],
+          "rawReturn": {
+            "values": {
+              "p": 350000,
+              "T": 267.8114351963981,
+              "h": 321086.81719278614,
+              "s": 1393.0403381468132,
+              "rho": 645.8348207984537,
+              "u": 320544.8829570832,
+              "Q": -4.4973513042873376e-17,
+              "phase": 6
+            },
+            "bits": {
+              "p": "41155cc000000000",
+              "T": "4070bcfba378f5a7",
+              "h": "411398fb44ce2f8c",
+              "s": "4095c4294e673560",
+              "rho": "40842eadb686db09",
+              "u": "411390838825e6d0",
+              "Q": "bc89eceb48ee3145",
+              "phase": "4018000000000000"
+            }
+          },
+          "nativeRaw": {
+            "values": {
+              "p": 350000.0,
+              "h": 321086.81719278614,
+              "T": 267.8114351963981,
+              "rho": 645.8348207984537,
+              "u": 320544.8829570832,
+              "Q": -4.4973513042873376e-17,
+              "phase": 6.0,
+              "s": 1393.0403381468132
+            },
+            "bits": {
+              "p": "41155cc000000000",
+              "h": "411398fb44ce2f8c",
+              "T": "4070bcfba378f5a7",
+              "rho": "40842eadb686db09",
+              "u": "411390838825e6d0",
+              "Q": "bc89eceb48ee3145",
+              "phase": "4018000000000000",
+              "s": "4095c4294e673560"
+            }
+          },
+          "preservedNativeRaw": {
+            "p": 350000.0,
+            "T": 267.8114351963981,
+            "rho": 645.8348207984537,
+            "h": 321086.81719278614,
+            "u": 320544.8829570832,
+            "Q": -4.4973513042873376e-17,
+            "phase": 6.0
+          },
+          "physicalQualityAdmissible": false,
+          "scientificAcceptance": "REFUSED \u2014 invalid physical quality",
+          "controlCandidateExact": true,
+          "DPInterfaceQualified": false,
+          "scope": "Unchanged supplemental DP endpoint diagnostic, not a repaired DU state or an accepted A2/model state"
+        },
+        {
+          "engine": "webkit",
+          "artifact": "rebuiltB4C",
+          "fullVLE": true,
+          "id": "350000.0-hf",
+          "mode": "DP",
+          "input": [
+            645.8348207984537,
+            350000
+          ],
+          "inputBits": [
+            "40842eadb686db09",
+            "41155cc000000000"
+          ],
+          "rawReturn": {
+            "values": {
+              "p": 350000,
+              "T": 267.8114351963981,
+              "h": 321086.81719278614,
+              "s": 1393.0403381468132,
+              "rho": 645.8348207984537,
+              "u": 320544.8829570832,
+              "Q": -4.4973513042873376e-17,
+              "phase": 6
+            },
+            "bits": {
+              "p": "41155cc000000000",
+              "T": "4070bcfba378f5a7",
+              "h": "411398fb44ce2f8c",
+              "s": "4095c4294e673560",
+              "rho": "40842eadb686db09",
+              "u": "411390838825e6d0",
+              "Q": "bc89eceb48ee3145",
+              "phase": "4018000000000000"
+            }
+          },
+          "nativeRaw": {
+            "values": {
+              "p": 350000.0,
+              "h": 321086.81719278614,
+              "T": 267.8114351963981,
+              "rho": 645.8348207984537,
+              "u": 320544.8829570832,
+              "Q": -4.4973513042873376e-17,
+              "phase": 6.0,
+              "s": 1393.0403381468132
+            },
+            "bits": {
+              "p": "41155cc000000000",
+              "h": "411398fb44ce2f8c",
+              "T": "4070bcfba378f5a7",
+              "rho": "40842eadb686db09",
+              "u": "411390838825e6d0",
+              "Q": "bc89eceb48ee3145",
+              "phase": "4018000000000000",
+              "s": "4095c4294e673560"
+            }
+          },
+          "preservedNativeRaw": {
+            "p": 350000.0,
+            "T": 267.8114351963981,
+            "rho": 645.8348207984537,
+            "h": 321086.81719278614,
+            "u": 320544.8829570832,
+            "Q": -4.4973513042873376e-17,
+            "phase": 6.0
+          },
+          "physicalQualityAdmissible": false,
+          "scientificAcceptance": "REFUSED \u2014 invalid physical quality",
+          "controlCandidateExact": true,
+          "DPInterfaceQualified": false,
+          "scope": "Unchanged supplemental DP endpoint diagnostic, not a repaired DU state or an accepted A2/model state"
+        },
+        {
+          "engine": "webkit",
+          "artifact": "gateA",
+          "fullVLE": true,
+          "id": "350000.0-hf",
+          "mode": "DP",
+          "input": [
+            645.8348207984537,
+            350000
+          ],
+          "inputBits": [
+            "40842eadb686db09",
+            "41155cc000000000"
+          ],
+          "rawReturn": {
+            "values": {
+              "p": 350000,
+              "T": 267.8114351963981,
+              "h": 321086.81719278614,
+              "s": 1393.0403381468132,
+              "rho": 645.8348207984537,
+              "u": 320544.8829570832,
+              "Q": -4.4973513042873376e-17,
+              "phase": 6
+            },
+            "bits": {
+              "p": "41155cc000000000",
+              "T": "4070bcfba378f5a7",
+              "h": "411398fb44ce2f8c",
+              "s": "4095c4294e673560",
+              "rho": "40842eadb686db09",
+              "u": "411390838825e6d0",
+              "Q": "bc89eceb48ee3145",
+              "phase": "4018000000000000"
+            }
+          },
+          "nativeRaw": {
+            "values": {
+              "p": 350000.0,
+              "h": 321086.81719278614,
+              "T": 267.8114351963981,
+              "rho": 645.8348207984537,
+              "u": 320544.8829570832,
+              "Q": -4.4973513042873376e-17,
+              "phase": 6.0,
+              "s": 1393.0403381468132
+            },
+            "bits": {
+              "p": "41155cc000000000",
+              "h": "411398fb44ce2f8c",
+              "T": "4070bcfba378f5a7",
+              "rho": "40842eadb686db09",
+              "u": "411390838825e6d0",
+              "Q": "bc89eceb48ee3145",
+              "phase": "4018000000000000",
+              "s": "4095c4294e673560"
+            }
+          },
+          "preservedNativeRaw": {
+            "p": 350000.0,
+            "T": 267.8114351963981,
+            "rho": 645.8348207984537,
+            "h": 321086.81719278614,
+            "u": 320544.8829570832,
+            "Q": -4.4973513042873376e-17,
+            "phase": 6.0
+          },
+          "physicalQualityAdmissible": false,
+          "scientificAcceptance": "REFUSED \u2014 invalid physical quality",
+          "controlCandidateExact": true,
+          "DPInterfaceQualified": false,
+          "scope": "Unchanged supplemental DP endpoint diagnostic, not a repaired DU state or an accepted A2/model state"
+        }
+      ],
+      "nativeReturned": true,
+      "browsersReturned": true,
+      "phaseEnum": 6,
+      "phaseEnumMeaning": "iphase_twophase numerical label; not independent phase certification",
+      "qualityAdmissible": false,
+      "independentPhysicalPhaseReference": "NOT ESTABLISHED for exact DP input; same-EOS endpoint fixture provenance is not an independent phase certificate",
+      "acceptedPropertyEligible": false,
+      "adapterDPMethodImplemented": false,
+      "acceptedA2RequestsDP": false,
+      "currentReachability": "No CoolProp DP edge in complete accepted dependency closure; bounded trace supports static exclusion",
+      "futureConsumerConsequence": "A finite-only raw loader can expose this state. A future consumer must refuse invalid equilibrium quality; historical convert maps out-of-range Q to x=null and supplies no independent phase certificate. No current DP adapter edge exists.",
+      "scientificDisposition": "REFUSED / DP NOT QUALIFIED",
+      "severity": "P3",
+      "confidence": "HIGH for current interface exclusion and invalid quality; no physical branch qualification"
+    },
+    {
+      "issueId": "DP-11",
+      "fixtureId": "30298.937123458254-hf",
+      "inputPair": "DmassP_INPUTS",
+      "input": [
+        707.498326320121,
+        30298.937123458254
+      ],
+      "inputBits": [
+        "40861bfc92827d3f",
+        "40dd96bbf9d4ab61"
+      ],
+      "fullVLE": true,
+      "classification": "inherited-native-invalid-quality",
+      "historicalRowIndex": 65,
+      "historicalRow": {
+        "fixture": {
+          "id": "30298.937123458254-hf",
+          "p": 30298.937123458254,
+          "rho": 707.498326320121,
+          "h": 98904.56498938335,
+          "s": 478.2863103924672
+        },
+        "mode": "DP",
+        "fullVLE": true,
+        "input": [
+          707.498326320121,
+          30298.937123458254
+        ],
+        "inputBits": [
+          "40861bfc92827d3f",
+          "40dd96bbf9d4ab61"
+        ],
+        "result": {
+          "control": {
+            "state": {
+              "values": {
+                "p": 30298.937123458254,
+                "T": 218.26293725555706,
+                "rho": 707.498326320121,
+                "h": 98904.56498960641,
+                "u": 98861.73953547368,
+                "Q": -3.536840798279418e-17,
+                "phase": 6.0
+              },
+              "bits": {
+                "p": "40dd96bbf9d4ab61",
+                "T": "406b4869fb643090",
+                "rho": "40861bfc92827d3f",
+                "h": "40f825890a328aa2",
+                "u": "40f822dbd523261b",
+                "Q": "bc846374acdf5cf9",
+                "phase": "4018000000000000"
+              }
+            }
+          },
+          "A1": {
+            "state": {
+              "values": {
+                "p": 30298.937123458254,
+                "T": 218.26293725555706,
+                "rho": 707.498326320121,
+                "h": 98904.56498960641,
+                "u": 98861.73953547368,
+                "Q": -3.536840798279418e-17,
+                "phase": 6.0
+              },
+              "bits": {
+                "p": "40dd96bbf9d4ab61",
+                "T": "406b4869fb643090",
+                "rho": "40861bfc92827d3f",
+                "h": "40f825890a328aa2",
+                "u": "40f822dbd523261b",
+                "Q": "bc846374acdf5cf9",
+                "phase": "4018000000000000"
+              }
+            }
+          }
+        },
+        "exact": true
+      },
+      "observationIndices": [
+        3,
+        14,
+        25,
+        36
+      ],
+      "observations": [
+        {
+          "engine": "chromium",
+          "artifact": "rebuiltB4C",
+          "fullVLE": true,
+          "id": "30298.937123458254-hf",
+          "mode": "DP",
+          "input": [
+            707.498326320121,
+            30298.937123458254
+          ],
+          "inputBits": [
+            "40861bfc92827d3f",
+            "40dd96bbf9d4ab61"
+          ],
+          "rawReturn": {
+            "values": {
+              "p": 30298.937123458254,
+              "T": 218.26293725555706,
+              "h": 98904.56498960641,
+              "s": 478.2863103935123,
+              "rho": 707.498326320121,
+              "u": 98861.73953547368,
+              "Q": -3.536840798279418e-17,
+              "phase": 6
+            },
+            "bits": {
+              "p": "40dd96bbf9d4ab61",
+              "T": "406b4869fb643090",
+              "h": "40f825890a328aa2",
+              "s": "407de494ba350a3e",
+              "rho": "40861bfc92827d3f",
+              "u": "40f822dbd523261b",
+              "Q": "bc846374acdf5cf9",
+              "phase": "4018000000000000"
+            }
+          },
+          "nativeRaw": {
+            "values": {
+              "p": 30298.937123458254,
+              "h": 98904.56498960641,
+              "T": 218.26293725555706,
+              "rho": 707.498326320121,
+              "u": 98861.73953547368,
+              "Q": -3.536840798279418e-17,
+              "phase": 6.0,
+              "s": 478.2863103935123
+            },
+            "bits": {
+              "p": "40dd96bbf9d4ab61",
+              "h": "40f825890a328aa2",
+              "T": "406b4869fb643090",
+              "rho": "40861bfc92827d3f",
+              "u": "40f822dbd523261b",
+              "Q": "bc846374acdf5cf9",
+              "phase": "4018000000000000",
+              "s": "407de494ba350a3e"
+            }
+          },
+          "preservedNativeRaw": {
+            "p": 30298.937123458254,
+            "T": 218.26293725555706,
+            "rho": 707.498326320121,
+            "h": 98904.56498960641,
+            "u": 98861.73953547368,
+            "Q": -3.536840798279418e-17,
+            "phase": 6.0
+          },
+          "physicalQualityAdmissible": false,
+          "scientificAcceptance": "REFUSED \u2014 invalid physical quality",
+          "controlCandidateExact": true,
+          "DPInterfaceQualified": false,
+          "scope": "Unchanged supplemental DP endpoint diagnostic, not a repaired DU state or an accepted A2/model state"
+        },
+        {
+          "engine": "chromium",
+          "artifact": "gateA",
+          "fullVLE": true,
+          "id": "30298.937123458254-hf",
+          "mode": "DP",
+          "input": [
+            707.498326320121,
+            30298.937123458254
+          ],
+          "inputBits": [
+            "40861bfc92827d3f",
+            "40dd96bbf9d4ab61"
+          ],
+          "rawReturn": {
+            "values": {
+              "p": 30298.937123458254,
+              "T": 218.26293725555706,
+              "h": 98904.56498960641,
+              "s": 478.2863103935123,
+              "rho": 707.498326320121,
+              "u": 98861.73953547368,
+              "Q": -3.536840798279418e-17,
+              "phase": 6
+            },
+            "bits": {
+              "p": "40dd96bbf9d4ab61",
+              "T": "406b4869fb643090",
+              "h": "40f825890a328aa2",
+              "s": "407de494ba350a3e",
+              "rho": "40861bfc92827d3f",
+              "u": "40f822dbd523261b",
+              "Q": "bc846374acdf5cf9",
+              "phase": "4018000000000000"
+            }
+          },
+          "nativeRaw": {
+            "values": {
+              "p": 30298.937123458254,
+              "h": 98904.56498960641,
+              "T": 218.26293725555706,
+              "rho": 707.498326320121,
+              "u": 98861.73953547368,
+              "Q": -3.536840798279418e-17,
+              "phase": 6.0,
+              "s": 478.2863103935123
+            },
+            "bits": {
+              "p": "40dd96bbf9d4ab61",
+              "h": "40f825890a328aa2",
+              "T": "406b4869fb643090",
+              "rho": "40861bfc92827d3f",
+              "u": "40f822dbd523261b",
+              "Q": "bc846374acdf5cf9",
+              "phase": "4018000000000000",
+              "s": "407de494ba350a3e"
+            }
+          },
+          "preservedNativeRaw": {
+            "p": 30298.937123458254,
+            "T": 218.26293725555706,
+            "rho": 707.498326320121,
+            "h": 98904.56498960641,
+            "u": 98861.73953547368,
+            "Q": -3.536840798279418e-17,
+            "phase": 6.0
+          },
+          "physicalQualityAdmissible": false,
+          "scientificAcceptance": "REFUSED \u2014 invalid physical quality",
+          "controlCandidateExact": true,
+          "DPInterfaceQualified": false,
+          "scope": "Unchanged supplemental DP endpoint diagnostic, not a repaired DU state or an accepted A2/model state"
+        },
+        {
+          "engine": "webkit",
+          "artifact": "rebuiltB4C",
+          "fullVLE": true,
+          "id": "30298.937123458254-hf",
+          "mode": "DP",
+          "input": [
+            707.498326320121,
+            30298.937123458254
+          ],
+          "inputBits": [
+            "40861bfc92827d3f",
+            "40dd96bbf9d4ab61"
+          ],
+          "rawReturn": {
+            "values": {
+              "p": 30298.937123458254,
+              "T": 218.26293725555706,
+              "h": 98904.56498960641,
+              "s": 478.2863103935123,
+              "rho": 707.498326320121,
+              "u": 98861.73953547368,
+              "Q": -3.536840798279418e-17,
+              "phase": 6
+            },
+            "bits": {
+              "p": "40dd96bbf9d4ab61",
+              "T": "406b4869fb643090",
+              "h": "40f825890a328aa2",
+              "s": "407de494ba350a3e",
+              "rho": "40861bfc92827d3f",
+              "u": "40f822dbd523261b",
+              "Q": "bc846374acdf5cf9",
+              "phase": "4018000000000000"
+            }
+          },
+          "nativeRaw": {
+            "values": {
+              "p": 30298.937123458254,
+              "h": 98904.56498960641,
+              "T": 218.26293725555706,
+              "rho": 707.498326320121,
+              "u": 98861.73953547368,
+              "Q": -3.536840798279418e-17,
+              "phase": 6.0,
+              "s": 478.2863103935123
+            },
+            "bits": {
+              "p": "40dd96bbf9d4ab61",
+              "h": "40f825890a328aa2",
+              "T": "406b4869fb643090",
+              "rho": "40861bfc92827d3f",
+              "u": "40f822dbd523261b",
+              "Q": "bc846374acdf5cf9",
+              "phase": "4018000000000000",
+              "s": "407de494ba350a3e"
+            }
+          },
+          "preservedNativeRaw": {
+            "p": 30298.937123458254,
+            "T": 218.26293725555706,
+            "rho": 707.498326320121,
+            "h": 98904.56498960641,
+            "u": 98861.73953547368,
+            "Q": -3.536840798279418e-17,
+            "phase": 6.0
+          },
+          "physicalQualityAdmissible": false,
+          "scientificAcceptance": "REFUSED \u2014 invalid physical quality",
+          "controlCandidateExact": true,
+          "DPInterfaceQualified": false,
+          "scope": "Unchanged supplemental DP endpoint diagnostic, not a repaired DU state or an accepted A2/model state"
+        },
+        {
+          "engine": "webkit",
+          "artifact": "gateA",
+          "fullVLE": true,
+          "id": "30298.937123458254-hf",
+          "mode": "DP",
+          "input": [
+            707.498326320121,
+            30298.937123458254
+          ],
+          "inputBits": [
+            "40861bfc92827d3f",
+            "40dd96bbf9d4ab61"
+          ],
+          "rawReturn": {
+            "values": {
+              "p": 30298.937123458254,
+              "T": 218.26293725555706,
+              "h": 98904.56498960641,
+              "s": 478.2863103935123,
+              "rho": 707.498326320121,
+              "u": 98861.73953547368,
+              "Q": -3.536840798279418e-17,
+              "phase": 6
+            },
+            "bits": {
+              "p": "40dd96bbf9d4ab61",
+              "T": "406b4869fb643090",
+              "h": "40f825890a328aa2",
+              "s": "407de494ba350a3e",
+              "rho": "40861bfc92827d3f",
+              "u": "40f822dbd523261b",
+              "Q": "bc846374acdf5cf9",
+              "phase": "4018000000000000"
+            }
+          },
+          "nativeRaw": {
+            "values": {
+              "p": 30298.937123458254,
+              "h": 98904.56498960641,
+              "T": 218.26293725555706,
+              "rho": 707.498326320121,
+              "u": 98861.73953547368,
+              "Q": -3.536840798279418e-17,
+              "phase": 6.0,
+              "s": 478.2863103935123
+            },
+            "bits": {
+              "p": "40dd96bbf9d4ab61",
+              "h": "40f825890a328aa2",
+              "T": "406b4869fb643090",
+              "rho": "40861bfc92827d3f",
+              "u": "40f822dbd523261b",
+              "Q": "bc846374acdf5cf9",
+              "phase": "4018000000000000",
+              "s": "407de494ba350a3e"
+            }
+          },
+          "preservedNativeRaw": {
+            "p": 30298.937123458254,
+            "T": 218.26293725555706,
+            "rho": 707.498326320121,
+            "h": 98904.56498960641,
+            "u": 98861.73953547368,
+            "Q": -3.536840798279418e-17,
+            "phase": 6.0
+          },
+          "physicalQualityAdmissible": false,
+          "scientificAcceptance": "REFUSED \u2014 invalid physical quality",
+          "controlCandidateExact": true,
+          "DPInterfaceQualified": false,
+          "scope": "Unchanged supplemental DP endpoint diagnostic, not a repaired DU state or an accepted A2/model state"
+        }
+      ],
+      "nativeReturned": true,
+      "browsersReturned": true,
+      "phaseEnum": 6,
+      "phaseEnumMeaning": "iphase_twophase numerical label; not independent phase certification",
+      "qualityAdmissible": false,
+      "independentPhysicalPhaseReference": "NOT ESTABLISHED for exact DP input; same-EOS endpoint fixture provenance is not an independent phase certificate",
+      "acceptedPropertyEligible": false,
+      "adapterDPMethodImplemented": false,
+      "acceptedA2RequestsDP": false,
+      "currentReachability": "No CoolProp DP edge in complete accepted dependency closure; bounded trace supports static exclusion",
+      "futureConsumerConsequence": "A finite-only raw loader can expose this state. A future consumer must refuse invalid equilibrium quality; historical convert maps out-of-range Q to x=null and supplies no independent phase certificate. No current DP adapter edge exists.",
+      "scientificDisposition": "REFUSED / DP NOT QUALIFIED",
+      "severity": "P3",
+      "confidence": "HIGH for current interface exclusion and invalid quality; no physical branch qualification"
+    }
+  ]
+}
