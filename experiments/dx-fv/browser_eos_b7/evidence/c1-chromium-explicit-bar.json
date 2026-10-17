@@ -1,0 +1,4597 @@
+{
+  "result": {
+    "rows": [
+      {
+        "id": "rebuiltB4C",
+        "fullVLE": false,
+        "cases": [
+          {
+            "key": "chromium-ledger-64",
+            "input": {
+              "values": {
+                "M": 0.3129191406602224,
+                "U_kJ": 218.14080371522462,
+                "V": 0.0006000000000000001,
+                "rho": 521.5319011003706,
+                "u": 697115.5655578412
+              },
+              "bits": {
+                "M": "3fd406de00db65a6",
+                "U_kJ": "406b448176cb0171",
+                "V": "3f43a92a30553262",
+                "rho": "40804c41555d3663",
+                "u": "412546372190cc20"
+              }
+            },
+            "raw": {
+              "values": {
+                "p": 3500000.000000149,
+                "T": 345.5636734187881,
+                "h": 703826.564429848,
+                "s": 2625.843410197631,
+                "rho": 521.5319011003706,
+                "u": 697115.5655578412,
+                "Q": 10000
+              },
+              "bits": {
+                "p": "414ab3f000000140",
+                "T": "40759904ce6b351c",
+                "h": "41257aa520fcf2f4",
+                "s": "40a483afd3761fe0",
+                "rho": "40804c41555d3663",
+                "u": "412546372190cc20",
+                "Q": "40c3880000000000"
+              }
+            },
+            "rawError": null,
+            "state": null,
+            "error": {
+              "message": "Outside accepted pressure domain",
+              "faultKind": "solver",
+              "evidence": {
+                "propertyFailure": {
+                  "schemaVersion": "C1/1",
+                  "operation": "stateMVU",
+                  "inputScope": "fixed-inventory",
+                  "input": {
+                    "values": {
+                      "massKg": 0.3129191406602224,
+                      "volumeM3": 0.0006000000000000001,
+                      "internalEnergyKJ": 218.14080371522462,
+                      "guess": 35
+                    },
+                    "bits": {
+                      "massKg": "3fd406de00db65a6",
+                      "volumeM3": "3f43a92a30553262",
+                      "internalEnergyKJ": "406b448176cb0171",
+                      "guess": "4041800000000000"
+                    }
+                  },
+                  "rawRecovery": "returned",
+                  "rawCoordinates": {
+                    "values": {
+                      "p": 3500000.000000149,
+                      "T": 345.5636734187881,
+                      "h": 703826.564429848,
+                      "s": 2625.843410197631,
+                      "rho": 521.5319011003706,
+                      "u": 697115.5655578412,
+                      "Q": 10000
+                    },
+                    "bits": {
+                      "p": "414ab3f000000140",
+                      "T": "40759904ce6b351c",
+                      "h": "41257aa520fcf2f4",
+                      "s": "40a483afd3761fe0",
+                      "rho": "40804c41555d3663",
+                      "u": "412546372190cc20",
+                      "Q": "40c3880000000000"
+                    }
+                  },
+                  "lastRequest": {
+                    "mode": "DU",
+                    "args": [
+                      {
+                        "value": 521.5319011003706,
+                        "bits": "40804c41555d3663"
+                      },
+                      {
+                        "value": 697115.5655578412,
+                        "bits": "412546372190cc20"
+                      }
+                    ]
+                  },
+                  "requestedInputSupport": "unknown",
+                  "returnedCoordinateSupport": "unsupported",
+                  "exactInventorySupport": "unknown",
+                  "checks": {
+                    "support": "fail",
+                    "phase": "unmeasured",
+                    "canonical": "unmeasured",
+                    "nonlinear": "unmeasured"
+                  },
+                  "observedResiduals": {
+                    "densityResidual": 0,
+                    "energyResidualKJkg": 0
+                  },
+                  "physicalTrajectoryExit": "unproved",
+                  "reason": "boundary-unresolved",
+                  "errorSource": "adapter-support-or-inventory",
+                  "originalError": {
+                    "message": "Outside accepted pressure domain",
+                    "faultKind": "domain"
+                  },
+                  "numericalPressureEnclosure": false
+                }
+              },
+              "propertyCause": null,
+              "domainCause": null,
+              "nonlinearResidual": null
+            },
+            "originalDefaultRefusalPreserved": true,
+            "physicalQualification": "Unresolved original reference/phase contract; any full-VLE raw/adapter return is not a scientific success",
+            "exactVsRounded": "C2 distinguishes exact stored M/U/V mathematics from rounded DU mathematics; neither is inferred from raw pressure"
+          },
+          {
+            "key": "chromium-ledger-65",
+            "input": {
+              "values": {
+                "M": 0.3129191427925018,
+                "U_kJ": 218.14080239970724,
+                "V": 0.0006000000000000001,
+                "rho": 521.5319046541697,
+                "u": 697115.556603571
+              },
+              "bits": {
+                "M": "3fd406de03258379",
+                "U_kJ": "406b44817408be1c",
+                "V": "3f43a92a30553262",
+                "rho": "40804c41573a31fe",
+                "u": "412546371cfb24ad"
+              }
+            },
+            "raw": {
+              "values": {
+                "p": 3500000.0000003683,
+                "T": 345.56367179371773,
+                "h": 703826.5554298488,
+                "s": 2625.8433841532265,
+                "rho": 521.5319046541697,
+                "u": 697115.5566035713,
+                "Q": 10000
+              },
+              "bits": {
+                "p": "414ab3f000000317",
+                "T": "40759904ccb6fb20",
+                "h": "41257aa51c614d18",
+                "s": "40a483afd00c3825",
+                "rho": "40804c41573a31fe",
+                "u": "412546371cfb24af",
+                "Q": "40c3880000000000"
+              }
+            },
+            "rawError": null,
+            "state": null,
+            "error": {
+              "message": "Outside accepted pressure domain",
+              "faultKind": "solver",
+              "evidence": {
+                "propertyFailure": {
+                  "schemaVersion": "C1/1",
+                  "operation": "stateMVU",
+                  "inputScope": "fixed-inventory",
+                  "input": {
+                    "values": {
+                      "massKg": 0.3129191427925018,
+                      "volumeM3": 0.0006000000000000001,
+                      "internalEnergyKJ": 218.14080239970724,
+                      "guess": 35
+                    },
+                    "bits": {
+                      "massKg": "3fd406de03258379",
+                      "volumeM3": "3f43a92a30553262",
+                      "internalEnergyKJ": "406b44817408be1c",
+                      "guess": "4041800000000000"
+                    }
+                  },
+                  "rawRecovery": "returned",
+                  "rawCoordinates": {
+                    "values": {
+                      "p": 3500000.0000003683,
+                      "T": 345.56367179371773,
+                      "h": 703826.5554298488,
+                      "s": 2625.8433841532265,
+                      "rho": 521.5319046541697,
+                      "u": 697115.5566035713,
+                      "Q": 10000
+                    },
+                    "bits": {
+                      "p": "414ab3f000000317",
+                      "T": "40759904ccb6fb20",
+                      "h": "41257aa51c614d18",
+                      "s": "40a483afd00c3825",
+                      "rho": "40804c41573a31fe",
+                      "u": "412546371cfb24af",
+                      "Q": "40c3880000000000"
+                    }
+                  },
+                  "lastRequest": {
+                    "mode": "DU",
+                    "args": [
+                      {
+                        "value": 521.5319046541697,
+                        "bits": "40804c41573a31fe"
+                      },
+                      {
+                        "value": 697115.556603571,
+                        "bits": "412546371cfb24ad"
+                      }
+                    ]
+                  },
+                  "requestedInputSupport": "unknown",
+                  "returnedCoordinateSupport": "unsupported",
+                  "exactInventorySupport": "unknown",
+                  "checks": {
+                    "support": "fail",
+                    "phase": "unmeasured",
+                    "canonical": "unmeasured",
+                    "nonlinear": "unmeasured"
+                  },
+                  "observedResiduals": {
+                    "densityResidual": 0,
+                    "energyResidualKJkg": 2.2737367544323206e-13
+                  },
+                  "physicalTrajectoryExit": "unproved",
+                  "reason": "boundary-unresolved",
+                  "errorSource": "adapter-support-or-inventory",
+                  "originalError": {
+                    "message": "Outside accepted pressure domain",
+                    "faultKind": "domain"
+                  },
+                  "numericalPressureEnclosure": false
+                }
+              },
+              "propertyCause": null,
+              "domainCause": null,
+              "nonlinearResidual": null
+            },
+            "originalDefaultRefusalPreserved": true,
+            "physicalQualification": "Unresolved original reference/phase contract; any full-VLE raw/adapter return is not a scientific success",
+            "exactVsRounded": "C2 distinguishes exact stored M/U/V mathematics from rounded DU mathematics; neither is inferred from raw pressure"
+          },
+          {
+            "key": "chromium-ledger-67",
+            "input": {
+              "values": {
+                "M": 0.016830826438031344,
+                "U_kJ": 25.301752301594554,
+                "V": 0.0006000000000000001,
+                "rho": 28.051377396718905,
+                "u": 1503298.2720576394
+              },
+              "bits": {
+                "M": "3f913c19a476c7dd",
+                "U_kJ": "40394d3fa38ad762",
+                "V": "3f43a92a30553262",
+                "rho": "403c0d2711aea94c",
+                "u": "4136f04245a591c8"
+              }
+            },
+            "raw": {
+              "values": {
+                "p": 3500000.000000003,
+                "T": 345.5636738055732,
+                "h": 1628069.328769079,
+                "s": 5300.43809404395,
+                "rho": 28.051377396718905,
+                "u": 1503298.2720576394,
+                "Q": 10000
+              },
+              "bits": {
+                "p": "414ab3f000000006",
+                "T": "40759904ced308c8",
+                "h": "4138d7a5542a35da",
+                "s": "40b4b47026ee6756",
+                "rho": "403c0d2711aea94c",
+                "u": "4136f04245a591c8",
+                "Q": "40c3880000000000"
+              }
+            },
+            "rawError": null,
+            "state": null,
+            "error": {
+              "message": "Outside accepted pressure domain",
+              "faultKind": "solver",
+              "evidence": {
+                "propertyFailure": {
+                  "schemaVersion": "C1/1",
+                  "operation": "stateMVU",
+                  "inputScope": "fixed-inventory",
+                  "input": {
+                    "values": {
+                      "massKg": 0.016830826438031344,
+                      "volumeM3": 0.0006000000000000001,
+                      "internalEnergyKJ": 25.301752301594554,
+                      "guess": 35
+                    },
+                    "bits": {
+                      "massKg": "3f913c19a476c7dd",
+                      "volumeM3": "3f43a92a30553262",
+                      "internalEnergyKJ": "40394d3fa38ad762",
+                      "guess": "4041800000000000"
+                    }
+                  },
+                  "rawRecovery": "returned",
+                  "rawCoordinates": {
+                    "values": {
+                      "p": 3500000.000000003,
+                      "T": 345.5636738055732,
+                      "h": 1628069.328769079,
+                      "s": 5300.43809404395,
+                      "rho": 28.051377396718905,
+                      "u": 1503298.2720576394,
+                      "Q": 10000
+                    },
+                    "bits": {
+                      "p": "414ab3f000000006",
+                      "T": "40759904ced308c8",
+                      "h": "4138d7a5542a35da",
+                      "s": "40b4b47026ee6756",
+                      "rho": "403c0d2711aea94c",
+                      "u": "4136f04245a591c8",
+                      "Q": "40c3880000000000"
+                    }
+                  },
+                  "lastRequest": {
+                    "mode": "DU",
+                    "args": [
+                      {
+                        "value": 28.051377396718905,
+                        "bits": "403c0d2711aea94c"
+                      },
+                      {
+                        "value": 1503298.2720576394,
+                        "bits": "4136f04245a591c8"
+                      }
+                    ]
+                  },
+                  "requestedInputSupport": "unknown",
+                  "returnedCoordinateSupport": "unsupported",
+                  "exactInventorySupport": "unknown",
+                  "checks": {
+                    "support": "fail",
+                    "phase": "unmeasured",
+                    "canonical": "unmeasured",
+                    "nonlinear": "unmeasured"
+                  },
+                  "observedResiduals": {
+                    "densityResidual": 0,
+                    "energyResidualKJkg": 0
+                  },
+                  "physicalTrajectoryExit": "unproved",
+                  "reason": "boundary-unresolved",
+                  "errorSource": "adapter-support-or-inventory",
+                  "originalError": {
+                    "message": "Outside accepted pressure domain",
+                    "faultKind": "domain"
+                  },
+                  "numericalPressureEnclosure": false
+                }
+              },
+              "propertyCause": null,
+              "domainCause": null,
+              "nonlinearResidual": null
+            },
+            "originalDefaultRefusalPreserved": true,
+            "physicalQualification": "Unresolved original reference/phase contract; any full-VLE raw/adapter return is not a scientific success",
+            "exactVsRounded": "C2 distinguishes exact stored M/U/V mathematics from rounded DU mathematics; neither is inferred from raw pressure"
+          },
+          {
+            "key": "chromium-ledger-68",
+            "input": {
+              "values": {
+                "M": 0.016830826165446306,
+                "U_kJ": 25.30175200928465,
+                "V": 0.0006000000000000001,
+                "rho": 28.051376942410506,
+                "u": 1503298.2790368996
+              },
+              "bits": {
+                "M": "3f913c199fc7f065",
+                "U_kJ": "40394d3f9ea3613f",
+                "V": "3f43a92a30553262",
+                "rho": "403c0d270a0f6bee",
+                "u": "4136f042476ef656"
+              }
+            },
+            "raw": {
+              "values": {
+                "p": 3500000.000000002,
+                "T": 345.56367566156706,
+                "h": 1628069.337769079,
+                "s": 5300.438120088355,
+                "rho": 28.051376942410506,
+                "u": 1503298.2790368996,
+                "Q": 10000
+              },
+              "bits": {
+                "p": "414ab3f000000004",
+                "T": "40759904d0c53fb5",
+                "h": "4138d7a5567808cc",
+                "s": "40b4b47028a35b35",
+                "rho": "403c0d270a0f6bee",
+                "u": "4136f042476ef656",
+                "Q": "40c3880000000000"
+              }
+            },
+            "rawError": null,
+            "state": null,
+            "error": {
+              "message": "Outside accepted pressure domain",
+              "faultKind": "solver",
+              "evidence": {
+                "propertyFailure": {
+                  "schemaVersion": "C1/1",
+                  "operation": "stateMVU",
+                  "inputScope": "fixed-inventory",
+                  "input": {
+                    "values": {
+                      "massKg": 0.016830826165446306,
+                      "volumeM3": 0.0006000000000000001,
+                      "internalEnergyKJ": 25.30175200928465,
+                      "guess": 35
+                    },
+                    "bits": {
+                      "massKg": "3f913c199fc7f065",
+                      "volumeM3": "3f43a92a30553262",
+                      "internalEnergyKJ": "40394d3f9ea3613f",
+                      "guess": "4041800000000000"
+                    }
+                  },
+                  "rawRecovery": "returned",
+                  "rawCoordinates": {
+                    "values": {
+                      "p": 3500000.000000002,
+                      "T": 345.56367566156706,
+                      "h": 1628069.337769079,
+                      "s": 5300.438120088355,
+                      "rho": 28.051376942410506,
+                      "u": 1503298.2790368996,
+                      "Q": 10000
+                    },
+                    "bits": {
+                      "p": "414ab3f000000004",
+                      "T": "40759904d0c53fb5",
+                      "h": "4138d7a5567808cc",
+                      "s": "40b4b47028a35b35",
+                      "rho": "403c0d270a0f6bee",
+                      "u": "4136f042476ef656",
+                      "Q": "40c3880000000000"
+                    }
+                  },
+                  "lastRequest": {
+                    "mode": "DU",
+                    "args": [
+                      {
+                        "value": 28.051376942410506,
+                        "bits": "403c0d270a0f6bee"
+                      },
+                      {
+                        "value": 1503298.2790368996,
+                        "bits": "4136f042476ef656"
+                      }
+                    ]
+                  },
+                  "requestedInputSupport": "unknown",
+                  "returnedCoordinateSupport": "unsupported",
+                  "exactInventorySupport": "unknown",
+                  "checks": {
+                    "support": "fail",
+                    "phase": "unmeasured",
+                    "canonical": "unmeasured",
+                    "nonlinear": "unmeasured"
+                  },
+                  "observedResiduals": {
+                    "densityResidual": 0,
+                    "energyResidualKJkg": 0
+                  },
+                  "physicalTrajectoryExit": "unproved",
+                  "reason": "boundary-unresolved",
+                  "errorSource": "adapter-support-or-inventory",
+                  "originalError": {
+                    "message": "Outside accepted pressure domain",
+                    "faultKind": "domain"
+                  },
+                  "numericalPressureEnclosure": false
+                }
+              },
+              "propertyCause": null,
+              "domainCause": null,
+              "nonlinearResidual": null
+            },
+            "originalDefaultRefusalPreserved": true,
+            "physicalQualification": "Unresolved original reference/phase contract; any full-VLE raw/adapter return is not a scientific success",
+            "exactVsRounded": "C2 distinguishes exact stored M/U/V mathematics from rounded DU mathematics; neither is inferred from raw pressure"
+          },
+          {
+            "key": "chromium-ledger-70",
+            "input": {
+              "values": {
+                "M": 0.31291914064008475,
+                "U_kJ": 218.14080372764926,
+                "V": 0.0006000000000000001,
+                "rho": 521.5319010668079,
+                "u": 697115.5656424091
+              },
+              "bits": {
+                "M": "3fd406de00d5dc96",
+                "U_kJ": "406b448176d1ad12",
+                "V": "3f43a92a30553262",
+                "rho": "40804c415558b52e",
+                "u": "41254637219be1c1"
+              }
+            },
+            "raw": {
+              "values": {
+                "p": 3500000.0000007655,
+                "T": 345.5636734341365,
+                "h": 703826.564514849,
+                "s": 2625.843410443606,
+                "rho": 521.5319010668079,
+                "u": 697115.5656424091,
+                "Q": 10000
+              },
+              "bits": {
+                "p": "414ab3f00000066c",
+                "T": "40759904ce6f53d8",
+                "h": "41257aa52108171d",
+                "s": "40a483afd37e60c9",
+                "rho": "40804c415558b52e",
+                "u": "41254637219be1c1",
+                "Q": "40c3880000000000"
+              }
+            },
+            "rawError": null,
+            "state": null,
+            "error": {
+              "message": "Outside accepted pressure domain",
+              "faultKind": "solver",
+              "evidence": {
+                "propertyFailure": {
+                  "schemaVersion": "C1/1",
+                  "operation": "stateMVU",
+                  "inputScope": "fixed-inventory",
+                  "input": {
+                    "values": {
+                      "massKg": 0.31291914064008475,
+                      "volumeM3": 0.0006000000000000001,
+                      "internalEnergyKJ": 218.14080372764926,
+                      "guess": 35
+                    },
+                    "bits": {
+                      "massKg": "3fd406de00d5dc96",
+                      "volumeM3": "3f43a92a30553262",
+                      "internalEnergyKJ": "406b448176d1ad12",
+                      "guess": "4041800000000000"
+                    }
+                  },
+                  "rawRecovery": "returned",
+                  "rawCoordinates": {
+                    "values": {
+                      "p": 3500000.0000007655,
+                      "T": 345.5636734341365,
+                      "h": 703826.564514849,
+                      "s": 2625.843410443606,
+                      "rho": 521.5319010668079,
+                      "u": 697115.5656424091,
+                      "Q": 10000
+                    },
+                    "bits": {
+                      "p": "414ab3f00000066c",
+                      "T": "40759904ce6f53d8",
+                      "h": "41257aa52108171d",
+                      "s": "40a483afd37e60c9",
+                      "rho": "40804c415558b52e",
+                      "u": "41254637219be1c1",
+                      "Q": "40c3880000000000"
+                    }
+                  },
+                  "lastRequest": {
+                    "mode": "DU",
+                    "args": [
+                      {
+                        "value": 521.5319010668079,
+                        "bits": "40804c415558b52e"
+                      },
+                      {
+                        "value": 697115.5656424091,
+                        "bits": "41254637219be1c1"
+                      }
+                    ]
+                  },
+                  "requestedInputSupport": "unknown",
+                  "returnedCoordinateSupport": "unsupported",
+                  "exactInventorySupport": "unknown",
+                  "checks": {
+                    "support": "fail",
+                    "phase": "unmeasured",
+                    "canonical": "unmeasured",
+                    "nonlinear": "unmeasured"
+                  },
+                  "observedResiduals": {
+                    "densityResidual": 0,
+                    "energyResidualKJkg": 0
+                  },
+                  "physicalTrajectoryExit": "unproved",
+                  "reason": "boundary-unresolved",
+                  "errorSource": "adapter-support-or-inventory",
+                  "originalError": {
+                    "message": "Outside accepted pressure domain",
+                    "faultKind": "domain"
+                  },
+                  "numericalPressureEnclosure": false
+                }
+              },
+              "propertyCause": null,
+              "domainCause": null,
+              "nonlinearResidual": null
+            },
+            "originalDefaultRefusalPreserved": true,
+            "physicalQualification": "Unresolved original reference/phase contract; any full-VLE raw/adapter return is not a scientific success",
+            "exactVsRounded": "C2 distinguishes exact stored M/U/V mathematics from rounded DU mathematics; neither is inferred from raw pressure"
+          },
+          {
+            "key": "chromium-ledger-75",
+            "input": {
+              "values": {
+                "M": 0.016830826440605712,
+                "U_kJ": 25.30175230435519,
+                "V": 0.0006000000000000001,
+                "rho": 28.051377401009518,
+                "u": 1503298.2719917244
+              },
+              "bits": {
+                "M": "3f913c19a4821a58",
+                "U_kJ": "40394d3fa396b2bc",
+                "V": "3f43a92a30553262",
+                "rho": "403c0d2711c116e0",
+                "u": "4136f04245a13fe9"
+              }
+            },
+            "raw": {
+              "values": {
+                "p": 3500000.0000000014,
+                "T": 345.5636737880446,
+                "h": 1628069.3286840797,
+                "s": 5300.438093797978,
+                "rho": 28.051377401009518,
+                "u": 1503298.2719917248,
+                "Q": 10000
+              },
+              "bits": {
+                "p": "414ab3f000000003",
+                "T": "40759904cece5439",
+                "h": "4138d7a55424a3cd",
+                "s": "40b4b47026ea46e5",
+                "rho": "403c0d2711c116e0",
+                "u": "4136f04245a13feb",
+                "Q": "40c3880000000000"
+              }
+            },
+            "rawError": null,
+            "state": null,
+            "error": {
+              "message": "Outside accepted pressure domain",
+              "faultKind": "solver",
+              "evidence": {
+                "propertyFailure": {
+                  "schemaVersion": "C1/1",
+                  "operation": "stateMVU",
+                  "inputScope": "fixed-inventory",
+                  "input": {
+                    "values": {
+                      "massKg": 0.016830826440605712,
+                      "volumeM3": 0.0006000000000000001,
+                      "internalEnergyKJ": 25.30175230435519,
+                      "guess": 35
+                    },
+                    "bits": {
+                      "massKg": "3f913c19a4821a58",
+                      "volumeM3": "3f43a92a30553262",
+                      "internalEnergyKJ": "40394d3fa396b2bc",
+                      "guess": "4041800000000000"
+                    }
+                  },
+                  "rawRecovery": "returned",
+                  "rawCoordinates": {
+                    "values": {
+                      "p": 3500000.0000000014,
+                      "T": 345.5636737880446,
+                      "h": 1628069.3286840797,
+                      "s": 5300.438093797978,
+                      "rho": 28.051377401009518,
+                      "u": 1503298.2719917248,
+                      "Q": 10000
+                    },
+                    "bits": {
+                      "p": "414ab3f000000003",
+                      "T": "40759904cece5439",
+                      "h": "4138d7a55424a3cd",
+                      "s": "40b4b47026ea46e5",
+                      "rho": "403c0d2711c116e0",
+                      "u": "4136f04245a13feb",
+                      "Q": "40c3880000000000"
+                    }
+                  },
+                  "lastRequest": {
+                    "mode": "DU",
+                    "args": [
+                      {
+                        "value": 28.051377401009518,
+                        "bits": "403c0d2711c116e0"
+                      },
+                      {
+                        "value": 1503298.2719917244,
+                        "bits": "4136f04245a13fe9"
+                      }
+                    ]
+                  },
+                  "requestedInputSupport": "unknown",
+                  "returnedCoordinateSupport": "unsupported",
+                  "exactInventorySupport": "unknown",
+                  "checks": {
+                    "support": "fail",
+                    "phase": "unmeasured",
+                    "canonical": "unmeasured",
+                    "nonlinear": "unmeasured"
+                  },
+                  "observedResiduals": {
+                    "densityResidual": 0,
+                    "energyResidualKJkg": 6.821210263296962e-13
+                  },
+                  "physicalTrajectoryExit": "unproved",
+                  "reason": "boundary-unresolved",
+                  "errorSource": "adapter-support-or-inventory",
+                  "originalError": {
+                    "message": "Outside accepted pressure domain",
+                    "faultKind": "domain"
+                  },
+                  "numericalPressureEnclosure": false
+                }
+              },
+              "propertyCause": null,
+              "domainCause": null,
+              "nonlinearResidual": null
+            },
+            "originalDefaultRefusalPreserved": true,
+            "physicalQualification": "Unresolved original reference/phase contract; any full-VLE raw/adapter return is not a scientific success",
+            "exactVsRounded": "C2 distinguishes exact stored M/U/V mathematics from rounded DU mathematics; neither is inferred from raw pressure"
+          },
+          {
+            "key": "chromium-ledger-79",
+            "input": {
+              "values": {
+                "M": 0.016532896796156812,
+                "U_kJ": 24.982031140956146,
+                "V": 0.0006000000000000001,
+                "rho": 27.554827993594685,
+                "u": 1511049.8449832092
+              },
+              "bits": {
+                "M": "3f90edffec30c7ac",
+                "U_kJ": "4038fb6664920f6a",
+                "V": "3f43a92a30553262",
+                "rho": "403b8e09351764fc",
+                "u": "41370e89d850d1d1"
+              }
+            },
+            "raw": {
+              "values": {
+                "p": 3500000.000000002,
+                "T": 347.66773880290907,
+                "h": 1638069.3277690795,
+                "s": 5329.289153606194,
+                "rho": 27.554827993594685,
+                "u": 1511049.8449832096,
+                "Q": 10000
+              },
+              "bits": {
+                "p": "414ab3f000000004",
+                "T": "4075baaf0ee20c3c",
+                "h": "4138feb553e8aca5",
+                "s": "40b4d14a05f88220",
+                "rho": "403b8e09351764fc",
+                "u": "41370e89d850d1d3",
+                "Q": "40c3880000000000"
+              }
+            },
+            "rawError": null,
+            "state": null,
+            "error": {
+              "message": "Outside accepted pressure domain",
+              "faultKind": "solver",
+              "evidence": {
+                "propertyFailure": {
+                  "schemaVersion": "C1/1",
+                  "operation": "stateMVU",
+                  "inputScope": "fixed-inventory",
+                  "input": {
+                    "values": {
+                      "massKg": 0.016532896796156812,
+                      "volumeM3": 0.0006000000000000001,
+                      "internalEnergyKJ": 24.982031140956146,
+                      "guess": 35
+                    },
+                    "bits": {
+                      "massKg": "3f90edffec30c7ac",
+                      "volumeM3": "3f43a92a30553262",
+                      "internalEnergyKJ": "4038fb6664920f6a",
+                      "guess": "4041800000000000"
+                    }
+                  },
+                  "rawRecovery": "returned",
+                  "rawCoordinates": {
+                    "values": {
+                      "p": 3500000.000000002,
+                      "T": 347.66773880290907,
+                      "h": 1638069.3277690795,
+                      "s": 5329.289153606194,
+                      "rho": 27.554827993594685,
+                      "u": 1511049.8449832096,
+                      "Q": 10000
+                    },
+                    "bits": {
+                      "p": "414ab3f000000004",
+                      "T": "4075baaf0ee20c3c",
+                      "h": "4138feb553e8aca5",
+                      "s": "40b4d14a05f88220",
+                      "rho": "403b8e09351764fc",
+                      "u": "41370e89d850d1d3",
+                      "Q": "40c3880000000000"
+                    }
+                  },
+                  "lastRequest": {
+                    "mode": "DU",
+                    "args": [
+                      {
+                        "value": 27.554827993594685,
+                        "bits": "403b8e09351764fc"
+                      },
+                      {
+                        "value": 1511049.8449832092,
+                        "bits": "41370e89d850d1d1"
+                      }
+                    ]
+                  },
+                  "requestedInputSupport": "unknown",
+                  "returnedCoordinateSupport": "unsupported",
+                  "exactInventorySupport": "unknown",
+                  "checks": {
+                    "support": "fail",
+                    "phase": "unmeasured",
+                    "canonical": "unmeasured",
+                    "nonlinear": "unmeasured"
+                  },
+                  "observedResiduals": {
+                    "densityResidual": 0,
+                    "energyResidualKJkg": 4.547473508864641e-13
+                  },
+                  "physicalTrajectoryExit": "unproved",
+                  "reason": "boundary-unresolved",
+                  "errorSource": "adapter-support-or-inventory",
+                  "originalError": {
+                    "message": "Outside accepted pressure domain",
+                    "faultKind": "domain"
+                  },
+                  "numericalPressureEnclosure": false
+                }
+              },
+              "propertyCause": null,
+              "domainCause": null,
+              "nonlinearResidual": null
+            },
+            "originalDefaultRefusalPreserved": true,
+            "physicalQualification": "Unresolved original reference/phase contract; any full-VLE raw/adapter return is not a scientific success",
+            "exactVsRounded": "C2 distinguishes exact stored M/U/V mathematics from rounded DU mathematics; neither is inferred from raw pressure"
+          }
+        ],
+        "hazards": [
+          {
+            "key": "webkit-ledger-69",
+            "input": {
+              "values": {
+                "M": 0.3129191406444639,
+                "U_kJ": 218.14080372494715,
+                "V": 0.0006000000000000001,
+                "rho": 521.5319010741065,
+                "u": 697115.5656240181
+              },
+              "bits": {
+                "M": "3fd406de00d710be",
+                "U_kJ": "406b448176d039b2",
+                "V": "3f43a92a30553262",
+                "rho": "40804c415559aff5",
+                "u": "41254637219978a7"
+              }
+            },
+            "raw": {
+              "values": {
+                "p": 3499999.9999996508,
+                "T": 345.5636734307982,
+                "h": 703826.5644963617,
+                "s": 2625.843410390111,
+                "rho": 521.5319010741065,
+                "u": 697115.5656240179,
+                "Q": 10000
+              },
+              "bits": {
+                "p": "414ab3effffffd12",
+                "T": "40759904ce6e6e70",
+                "h": "41257aa52105aac8",
+                "s": "40a483afd37c9544",
+                "rho": "40804c415559aff5",
+                "u": "41254637219978a5",
+                "Q": "40c3880000000000"
+              }
+            },
+            "state": {
+              "values": {
+                "p": 34.999999999996504,
+                "h": 703.8265644963617,
+                "T": 72.41367343079821,
+                "s": 2.625843410390111,
+                "rho": 521.5319010741065,
+                "u": 697.1155656240179,
+                "x": null,
+                "phase": "Subcooled liquid",
+                "massKg": 0.3129191406444639,
+                "volumeM3": 0.0006000000000000001,
+                "internalEnergyKJ": 218.14080372494715,
+                "densityResidual": 0,
+                "energyResidual": -2.2737367544323206e-13,
+                "liquidVolumeFraction": 1
+              },
+              "bits": {
+                "p": "40417ffffffffe14",
+                "h": "4085fe9ccdd8bf44",
+                "T": "40521a79a0202028",
+                "s": "400501ba30a05750",
+                "rho": "40804c415559aff5",
+                "u": "4085c8ecadab7d97",
+                "massKg": "3fd406de00d710be",
+                "volumeM3": "3f43a92a30553262",
+                "internalEnergyKJ": "406b448176d039b2",
+                "densityResidual": "0000000000000000",
+                "energyResidual": "bd50000000000000",
+                "liquidVolumeFraction": "3ff0000000000000"
+              }
+            },
+            "error": null,
+            "certified": false,
+            "qualificationBlocker": true
+          },
+          {
+            "key": "webkit-ledger-76",
+            "input": {
+              "values": {
+                "M": 0.016830826440045875,
+                "U_kJ": 25.301752303754846,
+                "V": 0.0006000000000000001,
+                "rho": 28.051377400076454,
+                "u": 1503298.2720060586
+              },
+              "bits": {
+                "M": "3f913c19a47fa406",
+                "U_kJ": "40394d3fa3941ea6",
+                "V": "3f43a92a30553262",
+                "rho": "403c0d2711bd14f6",
+                "u": "4136f04245a23066"
+              }
+            },
+            "raw": {
+              "values": {
+                "p": 3499999.9999999967,
+                "T": 345.5636737918562,
+                "h": 1628069.328702563,
+                "s": 5300.438093851467,
+                "rho": 28.051377400076454,
+                "u": 1503298.2720060581,
+                "Q": 10000
+              },
+              "bits": {
+                "p": "414ab3effffffff9",
+                "T": "40759904cecf5a28",
+                "h": "4138d7a55425d9e6",
+                "s": "40b4b47026eb2ca1",
+                "rho": "403c0d2711bd14f6",
+                "u": "4136f04245a23064",
+                "Q": "40c3880000000000"
+              }
+            },
+            "state": {
+              "values": {
+                "p": 34.999999999999964,
+                "h": 1628.0693287025629,
+                "T": 72.41367379185624,
+                "s": 5.300438093851467,
+                "rho": 28.051377400076454,
+                "u": 1503.2982720060581,
+                "x": null,
+                "phase": "Superheated vapor",
+                "massKg": 0.016830826440045875,
+                "volumeM3": 0.0006000000000000001,
+                "internalEnergyKJ": 25.301752303754846,
+                "densityResidual": 0,
+                "energyResidual": -4.547473508864641e-13,
+                "liquidVolumeFraction": 0
+              },
+              "bits": {
+                "p": "40417ffffffffffb",
+                "h": "40997046fe1a78ba",
+                "T": "40521a79a1a3cf08",
+                "s": "401533a60b2e422e",
+                "rho": "403c0d2711bd14f6",
+                "u": "40977d316e377d54",
+                "massKg": "3f913c19a47fa406",
+                "volumeM3": "3f43a92a30553262",
+                "internalEnergyKJ": "40394d3fa3941ea6",
+                "densityResidual": "0000000000000000",
+                "energyResidual": "bd60000000000000",
+                "liquidVolumeFraction": "0000000000000000"
+              }
+            },
+            "error": null,
+            "certified": false,
+            "qualificationBlocker": true
+          }
+        ],
+        "explicit": [
+          {
+            "pBar": 0.29999999999999993,
+            "inputBits": "3fd3333333333332",
+            "error": {
+              "message": "Outside accepted pressure domain",
+              "faultKind": "domain",
+              "evidence": {
+                "propertyFailure": {
+                  "schemaVersion": "C1/1",
+                  "operation": "ph",
+                  "inputScope": "requested-coordinate",
+                  "input": {
+                    "values": {
+                      "p": 0.29999999999999993,
+                      "h": 1000
+                    },
+                    "bits": {
+                      "p": "3fd3333333333332",
+                      "h": "408f400000000000"
+                    }
+                  },
+                  "rawRecovery": "returned",
+                  "rawCoordinates": {
+                    "values": {
+                      "p": 29999.999999999993,
+                      "T": 218.1039908363385,
+                      "h": 1000000,
+                      "s": 4609.783894160659,
+                      "rho": 0.4527054528908622,
+                      "u": 933731.7458662575,
+                      "Q": 0.6301979070607078
+                    },
+                    "bits": {
+                      "p": "40dd4bfffffffffe",
+                      "T": "406b4353e497250b",
+                      "h": "412e848000000000",
+                      "s": "40b201c8ad49a78e",
+                      "rho": "3fdcf9204ab8c69b",
+                      "u": "412c7ec77de22e9e",
+                      "Q": "3fe42a94cd1aab1c"
+                    }
+                  },
+                  "lastRequest": {
+                    "mode": "PH",
+                    "args": [
+                      {
+                        "value": 29999.999999999993,
+                        "bits": "40dd4bfffffffffe"
+                      },
+                      {
+                        "value": 1000000,
+                        "bits": "412e848000000000"
+                      }
+                    ]
+                  },
+                  "requestedInputSupport": "unsupported",
+                  "returnedCoordinateSupport": "unsupported",
+                  "exactInventorySupport": "unknown",
+                  "checks": {
+                    "support": "fail",
+                    "phase": "unmeasured",
+                    "canonical": "unmeasured",
+                    "nonlinear": "unmeasured"
+                  },
+                  "observedResiduals": null,
+                  "physicalTrajectoryExit": "unproved",
+                  "reason": "explicit-unsupported-input",
+                  "errorSource": "adapter-support-or-inventory",
+                  "originalError": {
+                    "message": "Outside accepted pressure domain",
+                    "faultKind": "domain"
+                  },
+                  "numericalPressureEnclosure": false
+                }
+              },
+              "propertyCause": null,
+              "domainCause": null,
+              "nonlinearResidual": null
+            },
+            "inputScope": "Actual original bar-based adapter interface; no Pa-to-bar inward rounding"
+          },
+          {
+            "pBar": 35.00000000000001,
+            "inputBits": "4041800000000001",
+            "error": {
+              "message": "Outside accepted pressure domain",
+              "faultKind": "domain",
+              "evidence": {
+                "propertyFailure": {
+                  "schemaVersion": "C1/1",
+                  "operation": "ph",
+                  "inputScope": "requested-coordinate",
+                  "input": {
+                    "values": {
+                      "p": 35.00000000000001,
+                      "h": 1000
+                    },
+                    "bits": {
+                      "p": "4041800000000001",
+                      "h": "408f400000000000"
+                    }
+                  },
+                  "rawRecovery": "returned",
+                  "rawCoordinates": {
+                    "values": {
+                      "p": 3500000.000000001,
+                      "T": 345.56367359935143,
+                      "h": 1000000,
+                      "s": 3482.916818652992,
+                      "rho": 78.57518657573343,
+                      "u": 955456.6759236827,
+                      "Q": 0.3204498283768501
+                    },
+                    "bits": {
+                      "p": "414ab3f000000002",
+                      "T": "40759904ce9bad54",
+                      "h": "412e848000000000",
+                      "s": "40ab35d5694125ed",
+                      "rho": "4053a4cfdb5af7e4",
+                      "u": "412d28815a12ab40",
+                      "Q": "3fd4823fff38cae6"
+                    }
+                  },
+                  "lastRequest": {
+                    "mode": "PH",
+                    "args": [
+                      {
+                        "value": 3500000.000000001,
+                        "bits": "414ab3f000000002"
+                      },
+                      {
+                        "value": 1000000,
+                        "bits": "412e848000000000"
+                      }
+                    ]
+                  },
+                  "requestedInputSupport": "unsupported",
+                  "returnedCoordinateSupport": "unsupported",
+                  "exactInventorySupport": "unknown",
+                  "checks": {
+                    "support": "fail",
+                    "phase": "unmeasured",
+                    "canonical": "unmeasured",
+                    "nonlinear": "unmeasured"
+                  },
+                  "observedResiduals": null,
+                  "physicalTrajectoryExit": "unproved",
+                  "reason": "explicit-unsupported-input",
+                  "errorSource": "adapter-support-or-inventory",
+                  "originalError": {
+                    "message": "Outside accepted pressure domain",
+                    "faultKind": "domain"
+                  },
+                  "numericalPressureEnclosure": false
+                }
+              },
+              "propertyCause": null,
+              "domainCause": null,
+              "nonlinearResidual": null
+            },
+            "inputScope": "Actual original bar-based adapter interface; no Pa-to-bar inward rounding"
+          }
+        ],
+        "strictGuardUnchanged": true,
+        "scope": "Original browser default interface and seven refusals"
+      },
+      {
+        "id": "rebuiltB4C",
+        "fullVLE": true,
+        "cases": [
+          {
+            "key": "chromium-ledger-64",
+            "input": {
+              "values": {
+                "M": 0.3129191406602224,
+                "U_kJ": 218.14080371522462,
+                "V": 0.0006000000000000001,
+                "rho": 521.5319011003706,
+                "u": 697115.5655578412
+              },
+              "bits": {
+                "M": "3fd406de00db65a6",
+                "U_kJ": "406b448176cb0171",
+                "V": "3f43a92a30553262",
+                "rho": "40804c41555d3663",
+                "u": "412546372190cc20"
+              }
+            },
+            "raw": null,
+            "rawError": {
+              "message": "Input vapor quality [Q] must be between 0 and 1",
+              "faultKind": null,
+              "evidence": null,
+              "propertyCause": null,
+              "domainCause": null,
+              "nonlinearResidual": null
+            },
+            "state": null,
+            "error": {
+              "message": "Input vapor quality [Q] must be between 0 and 1",
+              "faultKind": "solver",
+              "evidence": {
+                "propertyFailure": {
+                  "schemaVersion": "C1/1",
+                  "operation": "stateMVU",
+                  "inputScope": "fixed-inventory",
+                  "input": {
+                    "values": {
+                      "massKg": 0.3129191406602224,
+                      "volumeM3": 0.0006000000000000001,
+                      "internalEnergyKJ": 218.14080371522462,
+                      "guess": 35
+                    },
+                    "bits": {
+                      "massKg": "3fd406de00db65a6",
+                      "volumeM3": "3f43a92a30553262",
+                      "internalEnergyKJ": "406b448176cb0171",
+                      "guess": "4041800000000000"
+                    }
+                  },
+                  "rawRecovery": "failed",
+                  "rawCoordinates": null,
+                  "lastRequest": {
+                    "mode": "DU",
+                    "args": [
+                      {
+                        "value": 521.5319011003706,
+                        "bits": "40804c41555d3663"
+                      },
+                      {
+                        "value": 697115.5655578412,
+                        "bits": "412546372190cc20"
+                      }
+                    ]
+                  },
+                  "requestedInputSupport": "unknown",
+                  "returnedCoordinateSupport": "unknown",
+                  "exactInventorySupport": "unknown",
+                  "checks": {
+                    "support": "unmeasured",
+                    "phase": "unmeasured",
+                    "canonical": "unmeasured",
+                    "nonlinear": "unmeasured"
+                  },
+                  "observedResiduals": null,
+                  "physicalTrajectoryExit": "unproved",
+                  "reason": "inverse-recovery-failure",
+                  "errorSource": "EOS",
+                  "originalError": {
+                    "message": "Input vapor quality [Q] must be between 0 and 1",
+                    "faultKind": null
+                  },
+                  "numericalPressureEnclosure": false
+                }
+              },
+              "propertyCause": null,
+              "domainCause": null,
+              "nonlinearResidual": null
+            },
+            "originalDefaultRefusalPreserved": false,
+            "physicalQualification": "Unresolved original reference/phase contract; any full-VLE raw/adapter return is not a scientific success",
+            "exactVsRounded": "C2 distinguishes exact stored M/U/V mathematics from rounded DU mathematics; neither is inferred from raw pressure"
+          },
+          {
+            "key": "chromium-ledger-65",
+            "input": {
+              "values": {
+                "M": 0.3129191427925018,
+                "U_kJ": 218.14080239970724,
+                "V": 0.0006000000000000001,
+                "rho": 521.5319046541697,
+                "u": 697115.556603571
+              },
+              "bits": {
+                "M": "3fd406de03258379",
+                "U_kJ": "406b44817408be1c",
+                "V": "3f43a92a30553262",
+                "rho": "40804c41573a31fe",
+                "u": "412546371cfb24ad"
+              }
+            },
+            "raw": {
+              "values": {
+                "p": 3499999.999999979,
+                "T": 345.56367179371784,
+                "h": 703826.5554298483,
+                "s": 2625.8433841532274,
+                "rho": 521.5319046541697,
+                "u": 697115.5566035715,
+                "Q": 10000
+              },
+              "bits": {
+                "p": "414ab3efffffffd3",
+                "T": "40759904ccb6fb22",
+                "h": "41257aa51c614d13",
+                "s": "40a483afd00c3827",
+                "rho": "40804c41573a31fe",
+                "u": "412546371cfb24b1",
+                "Q": "40c3880000000000"
+              }
+            },
+            "rawError": null,
+            "state": {
+              "values": {
+                "p": 34.999999999999794,
+                "h": 703.8265554298482,
+                "T": 72.41367179371787,
+                "s": 2.625843384153227,
+                "rho": 521.5319046541697,
+                "u": 697.1155566035715,
+                "x": null,
+                "phase": "Subcooled liquid",
+                "massKg": 0.3129191427925018,
+                "volumeM3": 0.0006000000000000001,
+                "internalEnergyKJ": 218.14080239970724,
+                "densityResidual": 0,
+                "energyResidual": 4.547473508864641e-13,
+                "liquidVolumeFraction": 1
+              },
+              "bits": {
+                "p": "40417fffffffffe3",
+                "h": "4085fe9cc917dc3c",
+                "T": "40521a79994252f0",
+                "s": "400501ba2d1ad93e",
+                "rho": "40804c41573a31fe",
+                "u": "4085c8eca8f0c969",
+                "massKg": "3fd406de03258379",
+                "volumeM3": "3f43a92a30553262",
+                "internalEnergyKJ": "406b44817408be1c",
+                "densityResidual": "0000000000000000",
+                "energyResidual": "3d60000000000000",
+                "liquidVolumeFraction": "3ff0000000000000"
+              }
+            },
+            "error": null,
+            "originalDefaultRefusalPreserved": false,
+            "physicalQualification": "Unresolved original reference/phase contract; any full-VLE raw/adapter return is not a scientific success",
+            "exactVsRounded": "C2 distinguishes exact stored M/U/V mathematics from rounded DU mathematics; neither is inferred from raw pressure"
+          },
+          {
+            "key": "chromium-ledger-67",
+            "input": {
+              "values": {
+                "M": 0.016830826438031344,
+                "U_kJ": 25.301752301594554,
+                "V": 0.0006000000000000001,
+                "rho": 28.051377396718905,
+                "u": 1503298.2720576394
+              },
+              "bits": {
+                "M": "3f913c19a476c7dd",
+                "U_kJ": "40394d3fa38ad762",
+                "V": "3f43a92a30553262",
+                "rho": "403c0d2711aea94c",
+                "u": "4136f04245a591c8"
+              }
+            },
+            "raw": {
+              "values": {
+                "p": 3500000.000000008,
+                "T": 345.56367380557333,
+                "h": 1628069.3287690794,
+                "s": 5300.438094043951,
+                "rho": 28.051377396718905,
+                "u": 1503298.2720576397,
+                "Q": 10000
+              },
+              "bits": {
+                "p": "414ab3f000000011",
+                "T": "40759904ced308ca",
+                "h": "4138d7a5542a35dc",
+                "s": "40b4b47026ee6758",
+                "rho": "403c0d2711aea94c",
+                "u": "4136f04245a591c9",
+                "Q": "40c3880000000000"
+              }
+            },
+            "rawError": null,
+            "state": null,
+            "error": {
+              "message": "Outside accepted pressure domain",
+              "faultKind": "solver",
+              "evidence": {
+                "propertyFailure": {
+                  "schemaVersion": "C1/1",
+                  "operation": "stateMVU",
+                  "inputScope": "fixed-inventory",
+                  "input": {
+                    "values": {
+                      "massKg": 0.016830826438031344,
+                      "volumeM3": 0.0006000000000000001,
+                      "internalEnergyKJ": 25.301752301594554,
+                      "guess": 35
+                    },
+                    "bits": {
+                      "massKg": "3f913c19a476c7dd",
+                      "volumeM3": "3f43a92a30553262",
+                      "internalEnergyKJ": "40394d3fa38ad762",
+                      "guess": "4041800000000000"
+                    }
+                  },
+                  "rawRecovery": "returned",
+                  "rawCoordinates": {
+                    "values": {
+                      "p": 3500000.000000008,
+                      "T": 345.56367380557333,
+                      "h": 1628069.3287690794,
+                      "s": 5300.438094043951,
+                      "rho": 28.051377396718905,
+                      "u": 1503298.2720576397,
+                      "Q": 10000
+                    },
+                    "bits": {
+                      "p": "414ab3f000000011",
+                      "T": "40759904ced308ca",
+                      "h": "4138d7a5542a35dc",
+                      "s": "40b4b47026ee6758",
+                      "rho": "403c0d2711aea94c",
+                      "u": "4136f04245a591c9",
+                      "Q": "40c3880000000000"
+                    }
+                  },
+                  "lastRequest": {
+                    "mode": "DU",
+                    "args": [
+                      {
+                        "value": 28.051377396718905,
+                        "bits": "403c0d2711aea94c"
+                      },
+                      {
+                        "value": 1503298.2720576394,
+                        "bits": "4136f04245a591c8"
+                      }
+                    ]
+                  },
+                  "requestedInputSupport": "unknown",
+                  "returnedCoordinateSupport": "unsupported",
+                  "exactInventorySupport": "unknown",
+                  "checks": {
+                    "support": "fail",
+                    "phase": "unmeasured",
+                    "canonical": "unmeasured",
+                    "nonlinear": "unmeasured"
+                  },
+                  "observedResiduals": {
+                    "densityResidual": 0,
+                    "energyResidualKJkg": 2.2737367544323206e-13
+                  },
+                  "physicalTrajectoryExit": "unproved",
+                  "reason": "boundary-unresolved",
+                  "errorSource": "adapter-support-or-inventory",
+                  "originalError": {
+                    "message": "Outside accepted pressure domain",
+                    "faultKind": "domain"
+                  },
+                  "numericalPressureEnclosure": false
+                }
+              },
+              "propertyCause": null,
+              "domainCause": null,
+              "nonlinearResidual": null
+            },
+            "originalDefaultRefusalPreserved": false,
+            "physicalQualification": "Unresolved original reference/phase contract; any full-VLE raw/adapter return is not a scientific success",
+            "exactVsRounded": "C2 distinguishes exact stored M/U/V mathematics from rounded DU mathematics; neither is inferred from raw pressure"
+          },
+          {
+            "key": "chromium-ledger-68",
+            "input": {
+              "values": {
+                "M": 0.016830826165446306,
+                "U_kJ": 25.30175200928465,
+                "V": 0.0006000000000000001,
+                "rho": 28.051376942410506,
+                "u": 1503298.2790368996
+              },
+              "bits": {
+                "M": "3f913c199fc7f065",
+                "U_kJ": "40394d3f9ea3613f",
+                "V": "3f43a92a30553262",
+                "rho": "403c0d270a0f6bee",
+                "u": "4136f042476ef656"
+              }
+            },
+            "raw": {
+              "values": {
+                "p": 3499999.999999997,
+                "T": 345.5636756615669,
+                "h": 1628069.337769078,
+                "s": 5300.438120088354,
+                "rho": 28.051376942410506,
+                "u": 1503298.2790368993,
+                "Q": 10000
+              },
+              "bits": {
+                "p": "414ab3effffffffa",
+                "T": "40759904d0c53fb2",
+                "h": "4138d7a5567808c8",
+                "s": "40b4b47028a35b33",
+                "rho": "403c0d270a0f6bee",
+                "u": "4136f042476ef655",
+                "Q": "40c3880000000000"
+              }
+            },
+            "rawError": null,
+            "state": {
+              "values": {
+                "p": 34.99999999999997,
+                "h": 1628.0693377690782,
+                "T": 72.41367566156691,
+                "s": 5.300438120088353,
+                "rho": 28.051376942410506,
+                "u": 1503.2982790368994,
+                "x": null,
+                "phase": "Superheated vapor",
+                "massKg": 0.016830826165446306,
+                "volumeM3": 0.0006000000000000001,
+                "internalEnergyKJ": 25.30175200928465,
+                "densityResidual": 0,
+                "energyResidual": -2.2737367544323206e-13,
+                "liquidVolumeFraction": 0
+              },
+              "bits": {
+                "p": "40417ffffffffffc",
+                "h": "40997047007aea46",
+                "T": "40521a79a97b6530",
+                "s": "401533a60cf1013a",
+                "rho": "403c0d270a0f6bee",
+                "u": "40977d31700f5243",
+                "massKg": "3f913c199fc7f065",
+                "volumeM3": "3f43a92a30553262",
+                "internalEnergyKJ": "40394d3f9ea3613f",
+                "densityResidual": "0000000000000000",
+                "energyResidual": "bd50000000000000",
+                "liquidVolumeFraction": "0000000000000000"
+              }
+            },
+            "error": null,
+            "originalDefaultRefusalPreserved": false,
+            "physicalQualification": "Unresolved original reference/phase contract; any full-VLE raw/adapter return is not a scientific success",
+            "exactVsRounded": "C2 distinguishes exact stored M/U/V mathematics from rounded DU mathematics; neither is inferred from raw pressure"
+          },
+          {
+            "key": "chromium-ledger-70",
+            "input": {
+              "values": {
+                "M": 0.31291914064008475,
+                "U_kJ": 218.14080372764926,
+                "V": 0.0006000000000000001,
+                "rho": 521.5319010668079,
+                "u": 697115.5656424091
+              },
+              "bits": {
+                "M": "3fd406de00d5dc96",
+                "U_kJ": "406b448176d1ad12",
+                "V": "3f43a92a30553262",
+                "rho": "40804c415558b52e",
+                "u": "41254637219be1c1"
+              }
+            },
+            "raw": null,
+            "rawError": {
+              "message": "Input vapor quality [Q] must be between 0 and 1",
+              "faultKind": null,
+              "evidence": null,
+              "propertyCause": null,
+              "domainCause": null,
+              "nonlinearResidual": null
+            },
+            "state": null,
+            "error": {
+              "message": "Input vapor quality [Q] must be between 0 and 1",
+              "faultKind": "solver",
+              "evidence": {
+                "propertyFailure": {
+                  "schemaVersion": "C1/1",
+                  "operation": "stateMVU",
+                  "inputScope": "fixed-inventory",
+                  "input": {
+                    "values": {
+                      "massKg": 0.31291914064008475,
+                      "volumeM3": 0.0006000000000000001,
+                      "internalEnergyKJ": 218.14080372764926,
+                      "guess": 35
+                    },
+                    "bits": {
+                      "massKg": "3fd406de00d5dc96",
+                      "volumeM3": "3f43a92a30553262",
+                      "internalEnergyKJ": "406b448176d1ad12",
+                      "guess": "4041800000000000"
+                    }
+                  },
+                  "rawRecovery": "failed",
+                  "rawCoordinates": null,
+                  "lastRequest": {
+                    "mode": "DU",
+                    "args": [
+                      {
+                        "value": 521.5319010668079,
+                        "bits": "40804c415558b52e"
+                      },
+                      {
+                        "value": 697115.5656424091,
+                        "bits": "41254637219be1c1"
+                      }
+                    ]
+                  },
+                  "requestedInputSupport": "unknown",
+                  "returnedCoordinateSupport": "unknown",
+                  "exactInventorySupport": "unknown",
+                  "checks": {
+                    "support": "unmeasured",
+                    "phase": "unmeasured",
+                    "canonical": "unmeasured",
+                    "nonlinear": "unmeasured"
+                  },
+                  "observedResiduals": null,
+                  "physicalTrajectoryExit": "unproved",
+                  "reason": "inverse-recovery-failure",
+                  "errorSource": "EOS",
+                  "originalError": {
+                    "message": "Input vapor quality [Q] must be between 0 and 1",
+                    "faultKind": null
+                  },
+                  "numericalPressureEnclosure": false
+                }
+              },
+              "propertyCause": null,
+              "domainCause": null,
+              "nonlinearResidual": null
+            },
+            "originalDefaultRefusalPreserved": false,
+            "physicalQualification": "Unresolved original reference/phase contract; any full-VLE raw/adapter return is not a scientific success",
+            "exactVsRounded": "C2 distinguishes exact stored M/U/V mathematics from rounded DU mathematics; neither is inferred from raw pressure"
+          },
+          {
+            "key": "chromium-ledger-75",
+            "input": {
+              "values": {
+                "M": 0.016830826440605712,
+                "U_kJ": 25.30175230435519,
+                "V": 0.0006000000000000001,
+                "rho": 28.051377401009518,
+                "u": 1503298.2719917244
+              },
+              "bits": {
+                "M": "3f913c19a4821a58",
+                "U_kJ": "40394d3fa396b2bc",
+                "V": "3f43a92a30553262",
+                "rho": "403c0d2711c116e0",
+                "u": "4136f04245a13fe9"
+              }
+            },
+            "raw": {
+              "values": {
+                "p": 3499999.999999997,
+                "T": 345.56367378804435,
+                "h": 1628069.3286840785,
+                "s": 5300.438093797976,
+                "rho": 28.051377401009518,
+                "u": 1503298.2719917241,
+                "Q": 10000
+              },
+              "bits": {
+                "p": "414ab3effffffffa",
+                "T": "40759904cece5435",
+                "h": "4138d7a55424a3c8",
+                "s": "40b4b47026ea46e3",
+                "rho": "403c0d2711c116e0",
+                "u": "4136f04245a13fe8",
+                "Q": "40c3880000000000"
+              }
+            },
+            "rawError": null,
+            "state": {
+              "values": {
+                "p": 34.99999999999997,
+                "h": 1628.0693286840785,
+                "T": 72.41367378804438,
+                "s": 5.300438093797976,
+                "rho": 28.051377401009518,
+                "u": 1503.298271991724,
+                "x": null,
+                "phase": "Superheated vapor",
+                "massKg": 0.016830826440605712,
+                "volumeM3": 0.0006000000000000001,
+                "internalEnergyKJ": 25.30175230435519,
+                "densityResidual": 0,
+                "energyResidual": -2.2737367544323206e-13,
+                "liquidVolumeFraction": 0
+              },
+              "bits": {
+                "p": "40417ffffffffffc",
+                "h": "40997046fe193b2b",
+                "T": "40521a79a19fb73c",
+                "s": "401533a60b2d56ed",
+                "rho": "403c0d2711c116e0",
+                "u": "40977d316e368712",
+                "massKg": "3f913c19a4821a58",
+                "volumeM3": "3f43a92a30553262",
+                "internalEnergyKJ": "40394d3fa396b2bc",
+                "densityResidual": "0000000000000000",
+                "energyResidual": "bd50000000000000",
+                "liquidVolumeFraction": "0000000000000000"
+              }
+            },
+            "error": null,
+            "originalDefaultRefusalPreserved": false,
+            "physicalQualification": "Unresolved original reference/phase contract; any full-VLE raw/adapter return is not a scientific success",
+            "exactVsRounded": "C2 distinguishes exact stored M/U/V mathematics from rounded DU mathematics; neither is inferred from raw pressure"
+          },
+          {
+            "key": "chromium-ledger-79",
+            "input": {
+              "values": {
+                "M": 0.016532896796156812,
+                "U_kJ": 24.982031140956146,
+                "V": 0.0006000000000000001,
+                "rho": 27.554827993594685,
+                "u": 1511049.8449832092
+              },
+              "bits": {
+                "M": "3f90edffec30c7ac",
+                "U_kJ": "4038fb6664920f6a",
+                "V": "3f43a92a30553262",
+                "rho": "403b8e09351764fc",
+                "u": "41370e89d850d1d1"
+              }
+            },
+            "raw": {
+              "values": {
+                "p": 3500000.000000002,
+                "T": 347.66773880290907,
+                "h": 1638069.3277690795,
+                "s": 5329.289153606194,
+                "rho": 27.554827993594685,
+                "u": 1511049.8449832096,
+                "Q": 10000
+              },
+              "bits": {
+                "p": "414ab3f000000004",
+                "T": "4075baaf0ee20c3c",
+                "h": "4138feb553e8aca5",
+                "s": "40b4d14a05f88220",
+                "rho": "403b8e09351764fc",
+                "u": "41370e89d850d1d3",
+                "Q": "40c3880000000000"
+              }
+            },
+            "rawError": null,
+            "state": null,
+            "error": {
+              "message": "Outside accepted pressure domain",
+              "faultKind": "solver",
+              "evidence": {
+                "propertyFailure": {
+                  "schemaVersion": "C1/1",
+                  "operation": "stateMVU",
+                  "inputScope": "fixed-inventory",
+                  "input": {
+                    "values": {
+                      "massKg": 0.016532896796156812,
+                      "volumeM3": 0.0006000000000000001,
+                      "internalEnergyKJ": 24.982031140956146,
+                      "guess": 35
+                    },
+                    "bits": {
+                      "massKg": "3f90edffec30c7ac",
+                      "volumeM3": "3f43a92a30553262",
+                      "internalEnergyKJ": "4038fb6664920f6a",
+                      "guess": "4041800000000000"
+                    }
+                  },
+                  "rawRecovery": "returned",
+                  "rawCoordinates": {
+                    "values": {
+                      "p": 3500000.000000002,
+                      "T": 347.66773880290907,
+                      "h": 1638069.3277690795,
+                      "s": 5329.289153606194,
+                      "rho": 27.554827993594685,
+                      "u": 1511049.8449832096,
+                      "Q": 10000
+                    },
+                    "bits": {
+                      "p": "414ab3f000000004",
+                      "T": "4075baaf0ee20c3c",
+                      "h": "4138feb553e8aca5",
+                      "s": "40b4d14a05f88220",
+                      "rho": "403b8e09351764fc",
+                      "u": "41370e89d850d1d3",
+                      "Q": "40c3880000000000"
+                    }
+                  },
+                  "lastRequest": {
+                    "mode": "DU",
+                    "args": [
+                      {
+                        "value": 27.554827993594685,
+                        "bits": "403b8e09351764fc"
+                      },
+                      {
+                        "value": 1511049.8449832092,
+                        "bits": "41370e89d850d1d1"
+                      }
+                    ]
+                  },
+                  "requestedInputSupport": "unknown",
+                  "returnedCoordinateSupport": "unsupported",
+                  "exactInventorySupport": "unknown",
+                  "checks": {
+                    "support": "fail",
+                    "phase": "unmeasured",
+                    "canonical": "unmeasured",
+                    "nonlinear": "unmeasured"
+                  },
+                  "observedResiduals": {
+                    "densityResidual": 0,
+                    "energyResidualKJkg": 4.547473508864641e-13
+                  },
+                  "physicalTrajectoryExit": "unproved",
+                  "reason": "boundary-unresolved",
+                  "errorSource": "adapter-support-or-inventory",
+                  "originalError": {
+                    "message": "Outside accepted pressure domain",
+                    "faultKind": "domain"
+                  },
+                  "numericalPressureEnclosure": false
+                }
+              },
+              "propertyCause": null,
+              "domainCause": null,
+              "nonlinearResidual": null
+            },
+            "originalDefaultRefusalPreserved": false,
+            "physicalQualification": "Unresolved original reference/phase contract; any full-VLE raw/adapter return is not a scientific success",
+            "exactVsRounded": "C2 distinguishes exact stored M/U/V mathematics from rounded DU mathematics; neither is inferred from raw pressure"
+          }
+        ],
+        "hazards": [
+          {
+            "key": "webkit-ledger-69",
+            "input": {
+              "values": {
+                "M": 0.3129191406444639,
+                "U_kJ": 218.14080372494715,
+                "V": 0.0006000000000000001,
+                "rho": 521.5319010741065,
+                "u": 697115.5656240181
+              },
+              "bits": {
+                "M": "3fd406de00d710be",
+                "U_kJ": "406b448176d039b2",
+                "V": "3f43a92a30553262",
+                "rho": "40804c415559aff5",
+                "u": "41254637219978a7"
+              }
+            },
+            "raw": null,
+            "state": null,
+            "error": {
+              "message": "Input vapor quality [Q] must be between 0 and 1",
+              "faultKind": "solver",
+              "evidence": {
+                "propertyFailure": {
+                  "schemaVersion": "C1/1",
+                  "operation": "stateMVU",
+                  "inputScope": "fixed-inventory",
+                  "input": {
+                    "values": {
+                      "massKg": 0.3129191406444639,
+                      "volumeM3": 0.0006000000000000001,
+                      "internalEnergyKJ": 218.14080372494715,
+                      "guess": 35
+                    },
+                    "bits": {
+                      "massKg": "3fd406de00d710be",
+                      "volumeM3": "3f43a92a30553262",
+                      "internalEnergyKJ": "406b448176d039b2",
+                      "guess": "4041800000000000"
+                    }
+                  },
+                  "rawRecovery": "failed",
+                  "rawCoordinates": null,
+                  "lastRequest": {
+                    "mode": "DU",
+                    "args": [
+                      {
+                        "value": 521.5319010741065,
+                        "bits": "40804c415559aff5"
+                      },
+                      {
+                        "value": 697115.5656240181,
+                        "bits": "41254637219978a7"
+                      }
+                    ]
+                  },
+                  "requestedInputSupport": "unknown",
+                  "returnedCoordinateSupport": "unknown",
+                  "exactInventorySupport": "unknown",
+                  "checks": {
+                    "support": "unmeasured",
+                    "phase": "unmeasured",
+                    "canonical": "unmeasured",
+                    "nonlinear": "unmeasured"
+                  },
+                  "observedResiduals": null,
+                  "physicalTrajectoryExit": "unproved",
+                  "reason": "inverse-recovery-failure",
+                  "errorSource": "EOS",
+                  "originalError": {
+                    "message": "Input vapor quality [Q] must be between 0 and 1",
+                    "faultKind": null
+                  },
+                  "numericalPressureEnclosure": false
+                }
+              },
+              "propertyCause": null,
+              "domainCause": null,
+              "nonlinearResidual": null
+            },
+            "certified": false,
+            "qualificationBlocker": true
+          },
+          {
+            "key": "webkit-ledger-76",
+            "input": {
+              "values": {
+                "M": 0.016830826440045875,
+                "U_kJ": 25.301752303754846,
+                "V": 0.0006000000000000001,
+                "rho": 28.051377400076454,
+                "u": 1503298.2720060586
+              },
+              "bits": {
+                "M": "3f913c19a47fa406",
+                "U_kJ": "40394d3fa3941ea6",
+                "V": "3f43a92a30553262",
+                "rho": "403c0d2711bd14f6",
+                "u": "4136f04245a23066"
+              }
+            },
+            "raw": {
+              "values": {
+                "p": 3500000.000000002,
+                "T": 345.5636737918564,
+                "h": 1628069.328702564,
+                "s": 5300.438093851469,
+                "rho": 28.051377400076454,
+                "u": 1503298.2720060586,
+                "Q": 10000
+              },
+              "bits": {
+                "p": "414ab3f000000004",
+                "T": "40759904cecf5a2b",
+                "h": "4138d7a55425d9ea",
+                "s": "40b4b47026eb2ca3",
+                "rho": "403c0d2711bd14f6",
+                "u": "4136f04245a23066",
+                "Q": "40c3880000000000"
+              }
+            },
+            "state": null,
+            "error": {
+              "message": "Outside accepted pressure domain",
+              "faultKind": "solver",
+              "evidence": {
+                "propertyFailure": {
+                  "schemaVersion": "C1/1",
+                  "operation": "stateMVU",
+                  "inputScope": "fixed-inventory",
+                  "input": {
+                    "values": {
+                      "massKg": 0.016830826440045875,
+                      "volumeM3": 0.0006000000000000001,
+                      "internalEnergyKJ": 25.301752303754846,
+                      "guess": 35
+                    },
+                    "bits": {
+                      "massKg": "3f913c19a47fa406",
+                      "volumeM3": "3f43a92a30553262",
+                      "internalEnergyKJ": "40394d3fa3941ea6",
+                      "guess": "4041800000000000"
+                    }
+                  },
+                  "rawRecovery": "returned",
+                  "rawCoordinates": {
+                    "values": {
+                      "p": 3500000.000000002,
+                      "T": 345.5636737918564,
+                      "h": 1628069.328702564,
+                      "s": 5300.438093851469,
+                      "rho": 28.051377400076454,
+                      "u": 1503298.2720060586,
+                      "Q": 10000
+                    },
+                    "bits": {
+                      "p": "414ab3f000000004",
+                      "T": "40759904cecf5a2b",
+                      "h": "4138d7a55425d9ea",
+                      "s": "40b4b47026eb2ca3",
+                      "rho": "403c0d2711bd14f6",
+                      "u": "4136f04245a23066",
+                      "Q": "40c3880000000000"
+                    }
+                  },
+                  "lastRequest": {
+                    "mode": "DU",
+                    "args": [
+                      {
+                        "value": 28.051377400076454,
+                        "bits": "403c0d2711bd14f6"
+                      },
+                      {
+                        "value": 1503298.2720060586,
+                        "bits": "4136f04245a23066"
+                      }
+                    ]
+                  },
+                  "requestedInputSupport": "unknown",
+                  "returnedCoordinateSupport": "unsupported",
+                  "exactInventorySupport": "unknown",
+                  "checks": {
+                    "support": "fail",
+                    "phase": "unmeasured",
+                    "canonical": "unmeasured",
+                    "nonlinear": "unmeasured"
+                  },
+                  "observedResiduals": {
+                    "densityResidual": 0,
+                    "energyResidualKJkg": 0
+                  },
+                  "physicalTrajectoryExit": "unproved",
+                  "reason": "boundary-unresolved",
+                  "errorSource": "adapter-support-or-inventory",
+                  "originalError": {
+                    "message": "Outside accepted pressure domain",
+                    "faultKind": "domain"
+                  },
+                  "numericalPressureEnclosure": false
+                }
+              },
+              "propertyCause": null,
+              "domainCause": null,
+              "nonlinearResidual": null
+            },
+            "certified": false,
+            "qualificationBlocker": true
+          }
+        ],
+        "explicit": [
+          {
+            "pBar": 0.29999999999999993,
+            "inputBits": "3fd3333333333332",
+            "error": {
+              "message": "Outside accepted pressure domain",
+              "faultKind": "domain",
+              "evidence": {
+                "propertyFailure": {
+                  "schemaVersion": "C1/1",
+                  "operation": "ph",
+                  "inputScope": "requested-coordinate",
+                  "input": {
+                    "values": {
+                      "p": 0.29999999999999993,
+                      "h": 1000
+                    },
+                    "bits": {
+                      "p": "3fd3333333333332",
+                      "h": "408f400000000000"
+                    }
+                  },
+                  "rawRecovery": "returned",
+                  "rawCoordinates": {
+                    "values": {
+                      "p": 29999.999999999993,
+                      "T": 218.10399083639066,
+                      "h": 1000000,
+                      "s": 4609.783894159673,
+                      "rho": 0.4527054528923102,
+                      "u": 933731.7458662542,
+                      "Q": 0.6301979070606099
+                    },
+                    "bits": {
+                      "p": "40dd4bfffffffffe",
+                      "T": "406b4353e4972c36",
+                      "h": "412e848000000000",
+                      "s": "40b201c8ad49a352",
+                      "rho": "3fdcf9204ab92c7f",
+                      "u": "412c7ec77de22e82",
+                      "Q": "3fe42a94cd1aa7aa"
+                    }
+                  },
+                  "lastRequest": {
+                    "mode": "PH",
+                    "args": [
+                      {
+                        "value": 29999.999999999993,
+                        "bits": "40dd4bfffffffffe"
+                      },
+                      {
+                        "value": 1000000,
+                        "bits": "412e848000000000"
+                      }
+                    ]
+                  },
+                  "requestedInputSupport": "unsupported",
+                  "returnedCoordinateSupport": "unsupported",
+                  "exactInventorySupport": "unknown",
+                  "checks": {
+                    "support": "fail",
+                    "phase": "unmeasured",
+                    "canonical": "unmeasured",
+                    "nonlinear": "unmeasured"
+                  },
+                  "observedResiduals": null,
+                  "physicalTrajectoryExit": "unproved",
+                  "reason": "explicit-unsupported-input",
+                  "errorSource": "adapter-support-or-inventory",
+                  "originalError": {
+                    "message": "Outside accepted pressure domain",
+                    "faultKind": "domain"
+                  },
+                  "numericalPressureEnclosure": false
+                }
+              },
+              "propertyCause": null,
+              "domainCause": null,
+              "nonlinearResidual": null
+            },
+            "inputScope": "Actual original bar-based adapter interface; no Pa-to-bar inward rounding"
+          },
+          {
+            "pBar": 35.00000000000001,
+            "inputBits": "4041800000000001",
+            "error": {
+              "message": "Outside accepted pressure domain",
+              "faultKind": "domain",
+              "evidence": {
+                "propertyFailure": {
+                  "schemaVersion": "C1/1",
+                  "operation": "ph",
+                  "inputScope": "requested-coordinate",
+                  "input": {
+                    "values": {
+                      "p": 35.00000000000001,
+                      "h": 1000
+                    },
+                    "bits": {
+                      "p": "4041800000000001",
+                      "h": "408f400000000000"
+                    }
+                  },
+                  "rawRecovery": "returned",
+                  "rawCoordinates": {
+                    "values": {
+                      "p": 3500000.000000001,
+                      "T": 345.56367359935166,
+                      "h": 1000000,
+                      "s": 3482.916818652993,
+                      "rho": 78.5751865757342,
+                      "u": 955456.6759236834,
+                      "Q": 0.320449828376849
+                    },
+                    "bits": {
+                      "p": "414ab3f000000002",
+                      "T": "40759904ce9bad58",
+                      "h": "412e848000000000",
+                      "s": "40ab35d5694125ef",
+                      "rho": "4053a4cfdb5af81a",
+                      "u": "412d28815a12ab46",
+                      "Q": "3fd4823fff38cad2"
+                    }
+                  },
+                  "lastRequest": {
+                    "mode": "PH",
+                    "args": [
+                      {
+                        "value": 3500000.000000001,
+                        "bits": "414ab3f000000002"
+                      },
+                      {
+                        "value": 1000000,
+                        "bits": "412e848000000000"
+                      }
+                    ]
+                  },
+                  "requestedInputSupport": "unsupported",
+                  "returnedCoordinateSupport": "unsupported",
+                  "exactInventorySupport": "unknown",
+                  "checks": {
+                    "support": "fail",
+                    "phase": "unmeasured",
+                    "canonical": "unmeasured",
+                    "nonlinear": "unmeasured"
+                  },
+                  "observedResiduals": null,
+                  "physicalTrajectoryExit": "unproved",
+                  "reason": "explicit-unsupported-input",
+                  "errorSource": "adapter-support-or-inventory",
+                  "originalError": {
+                    "message": "Outside accepted pressure domain",
+                    "faultKind": "domain"
+                  },
+                  "numericalPressureEnclosure": false
+                }
+              },
+              "propertyCause": null,
+              "domainCause": null,
+              "nonlinearResidual": null
+            },
+            "inputScope": "Actual original bar-based adapter interface; no Pa-to-bar inward rounding"
+          }
+        ],
+        "strictGuardUnchanged": true,
+        "scope": "Additional isolated full-VLE diagnostic; retained returns are unqualified"
+      },
+      {
+        "id": "gateA",
+        "fullVLE": false,
+        "cases": [
+          {
+            "key": "chromium-ledger-64",
+            "input": {
+              "values": {
+                "M": 0.3129191406602224,
+                "U_kJ": 218.14080371522462,
+                "V": 0.0006000000000000001,
+                "rho": 521.5319011003706,
+                "u": 697115.5655578412
+              },
+              "bits": {
+                "M": "3fd406de00db65a6",
+                "U_kJ": "406b448176cb0171",
+                "V": "3f43a92a30553262",
+                "rho": "40804c41555d3663",
+                "u": "412546372190cc20"
+              }
+            },
+            "raw": {
+              "values": {
+                "p": 3500000.000000149,
+                "T": 345.5636734187881,
+                "h": 703826.564429848,
+                "s": 2625.843410197631,
+                "rho": 521.5319011003706,
+                "u": 697115.5655578412,
+                "Q": 10000
+              },
+              "bits": {
+                "p": "414ab3f000000140",
+                "T": "40759904ce6b351c",
+                "h": "41257aa520fcf2f4",
+                "s": "40a483afd3761fe0",
+                "rho": "40804c41555d3663",
+                "u": "412546372190cc20",
+                "Q": "40c3880000000000"
+              }
+            },
+            "rawError": null,
+            "state": null,
+            "error": {
+              "message": "Outside accepted pressure domain",
+              "faultKind": "solver",
+              "evidence": {
+                "propertyFailure": {
+                  "schemaVersion": "C1/1",
+                  "operation": "stateMVU",
+                  "inputScope": "fixed-inventory",
+                  "input": {
+                    "values": {
+                      "massKg": 0.3129191406602224,
+                      "volumeM3": 0.0006000000000000001,
+                      "internalEnergyKJ": 218.14080371522462,
+                      "guess": 35
+                    },
+                    "bits": {
+                      "massKg": "3fd406de00db65a6",
+                      "volumeM3": "3f43a92a30553262",
+                      "internalEnergyKJ": "406b448176cb0171",
+                      "guess": "4041800000000000"
+                    }
+                  },
+                  "rawRecovery": "returned",
+                  "rawCoordinates": {
+                    "values": {
+                      "p": 3500000.000000149,
+                      "T": 345.5636734187881,
+                      "h": 703826.564429848,
+                      "s": 2625.843410197631,
+                      "rho": 521.5319011003706,
+                      "u": 697115.5655578412,
+                      "Q": 10000
+                    },
+                    "bits": {
+                      "p": "414ab3f000000140",
+                      "T": "40759904ce6b351c",
+                      "h": "41257aa520fcf2f4",
+                      "s": "40a483afd3761fe0",
+                      "rho": "40804c41555d3663",
+                      "u": "412546372190cc20",
+                      "Q": "40c3880000000000"
+                    }
+                  },
+                  "lastRequest": {
+                    "mode": "DU",
+                    "args": [
+                      {
+                        "value": 521.5319011003706,
+                        "bits": "40804c41555d3663"
+                      },
+                      {
+                        "value": 697115.5655578412,
+                        "bits": "412546372190cc20"
+                      }
+                    ]
+                  },
+                  "requestedInputSupport": "unknown",
+                  "returnedCoordinateSupport": "unsupported",
+                  "exactInventorySupport": "unknown",
+                  "checks": {
+                    "support": "fail",
+                    "phase": "unmeasured",
+                    "canonical": "unmeasured",
+                    "nonlinear": "unmeasured"
+                  },
+                  "observedResiduals": {
+                    "densityResidual": 0,
+                    "energyResidualKJkg": 0
+                  },
+                  "physicalTrajectoryExit": "unproved",
+                  "reason": "boundary-unresolved",
+                  "errorSource": "adapter-support-or-inventory",
+                  "originalError": {
+                    "message": "Outside accepted pressure domain",
+                    "faultKind": "domain"
+                  },
+                  "numericalPressureEnclosure": false
+                }
+              },
+              "propertyCause": null,
+              "domainCause": null,
+              "nonlinearResidual": null
+            },
+            "originalDefaultRefusalPreserved": true,
+            "physicalQualification": "Unresolved original reference/phase contract; any full-VLE raw/adapter return is not a scientific success",
+            "exactVsRounded": "C2 distinguishes exact stored M/U/V mathematics from rounded DU mathematics; neither is inferred from raw pressure"
+          },
+          {
+            "key": "chromium-ledger-65",
+            "input": {
+              "values": {
+                "M": 0.3129191427925018,
+                "U_kJ": 218.14080239970724,
+                "V": 0.0006000000000000001,
+                "rho": 521.5319046541697,
+                "u": 697115.556603571
+              },
+              "bits": {
+                "M": "3fd406de03258379",
+                "U_kJ": "406b44817408be1c",
+                "V": "3f43a92a30553262",
+                "rho": "40804c41573a31fe",
+                "u": "412546371cfb24ad"
+              }
+            },
+            "raw": {
+              "values": {
+                "p": 3500000.0000003683,
+                "T": 345.56367179371773,
+                "h": 703826.5554298488,
+                "s": 2625.8433841532265,
+                "rho": 521.5319046541697,
+                "u": 697115.5566035713,
+                "Q": 10000
+              },
+              "bits": {
+                "p": "414ab3f000000317",
+                "T": "40759904ccb6fb20",
+                "h": "41257aa51c614d18",
+                "s": "40a483afd00c3825",
+                "rho": "40804c41573a31fe",
+                "u": "412546371cfb24af",
+                "Q": "40c3880000000000"
+              }
+            },
+            "rawError": null,
+            "state": null,
+            "error": {
+              "message": "Outside accepted pressure domain",
+              "faultKind": "solver",
+              "evidence": {
+                "propertyFailure": {
+                  "schemaVersion": "C1/1",
+                  "operation": "stateMVU",
+                  "inputScope": "fixed-inventory",
+                  "input": {
+                    "values": {
+                      "massKg": 0.3129191427925018,
+                      "volumeM3": 0.0006000000000000001,
+                      "internalEnergyKJ": 218.14080239970724,
+                      "guess": 35
+                    },
+                    "bits": {
+                      "massKg": "3fd406de03258379",
+                      "volumeM3": "3f43a92a30553262",
+                      "internalEnergyKJ": "406b44817408be1c",
+                      "guess": "4041800000000000"
+                    }
+                  },
+                  "rawRecovery": "returned",
+                  "rawCoordinates": {
+                    "values": {
+                      "p": 3500000.0000003683,
+                      "T": 345.56367179371773,
+                      "h": 703826.5554298488,
+                      "s": 2625.8433841532265,
+                      "rho": 521.5319046541697,
+                      "u": 697115.5566035713,
+                      "Q": 10000
+                    },
+                    "bits": {
+                      "p": "414ab3f000000317",
+                      "T": "40759904ccb6fb20",
+                      "h": "41257aa51c614d18",
+                      "s": "40a483afd00c3825",
+                      "rho": "40804c41573a31fe",
+                      "u": "412546371cfb24af",
+                      "Q": "40c3880000000000"
+                    }
+                  },
+                  "lastRequest": {
+                    "mode": "DU",
+                    "args": [
+                      {
+                        "value": 521.5319046541697,
+                        "bits": "40804c41573a31fe"
+                      },
+                      {
+                        "value": 697115.556603571,
+                        "bits": "412546371cfb24ad"
+                      }
+                    ]
+                  },
+                  "requestedInputSupport": "unknown",
+                  "returnedCoordinateSupport": "unsupported",
+                  "exactInventorySupport": "unknown",
+                  "checks": {
+                    "support": "fail",
+                    "phase": "unmeasured",
+                    "canonical": "unmeasured",
+                    "nonlinear": "unmeasured"
+                  },
+                  "observedResiduals": {
+                    "densityResidual": 0,
+                    "energyResidualKJkg": 2.2737367544323206e-13
+                  },
+                  "physicalTrajectoryExit": "unproved",
+                  "reason": "boundary-unresolved",
+                  "errorSource": "adapter-support-or-inventory",
+                  "originalError": {
+                    "message": "Outside accepted pressure domain",
+                    "faultKind": "domain"
+                  },
+                  "numericalPressureEnclosure": false
+                }
+              },
+              "propertyCause": null,
+              "domainCause": null,
+              "nonlinearResidual": null
+            },
+            "originalDefaultRefusalPreserved": true,
+            "physicalQualification": "Unresolved original reference/phase contract; any full-VLE raw/adapter return is not a scientific success",
+            "exactVsRounded": "C2 distinguishes exact stored M/U/V mathematics from rounded DU mathematics; neither is inferred from raw pressure"
+          },
+          {
+            "key": "chromium-ledger-67",
+            "input": {
+              "values": {
+                "M": 0.016830826438031344,
+                "U_kJ": 25.301752301594554,
+                "V": 0.0006000000000000001,
+                "rho": 28.051377396718905,
+                "u": 1503298.2720576394
+              },
+              "bits": {
+                "M": "3f913c19a476c7dd",
+                "U_kJ": "40394d3fa38ad762",
+                "V": "3f43a92a30553262",
+                "rho": "403c0d2711aea94c",
+                "u": "4136f04245a591c8"
+              }
+            },
+            "raw": {
+              "values": {
+                "p": 3500000.000000003,
+                "T": 345.5636738055732,
+                "h": 1628069.328769079,
+                "s": 5300.43809404395,
+                "rho": 28.051377396718905,
+                "u": 1503298.2720576394,
+                "Q": 10000
+              },
+              "bits": {
+                "p": "414ab3f000000006",
+                "T": "40759904ced308c8",
+                "h": "4138d7a5542a35da",
+                "s": "40b4b47026ee6756",
+                "rho": "403c0d2711aea94c",
+                "u": "4136f04245a591c8",
+                "Q": "40c3880000000000"
+              }
+            },
+            "rawError": null,
+            "state": null,
+            "error": {
+              "message": "Outside accepted pressure domain",
+              "faultKind": "solver",
+              "evidence": {
+                "propertyFailure": {
+                  "schemaVersion": "C1/1",
+                  "operation": "stateMVU",
+                  "inputScope": "fixed-inventory",
+                  "input": {
+                    "values": {
+                      "massKg": 0.016830826438031344,
+                      "volumeM3": 0.0006000000000000001,
+                      "internalEnergyKJ": 25.301752301594554,
+                      "guess": 35
+                    },
+                    "bits": {
+                      "massKg": "3f913c19a476c7dd",
+                      "volumeM3": "3f43a92a30553262",
+                      "internalEnergyKJ": "40394d3fa38ad762",
+                      "guess": "4041800000000000"
+                    }
+                  },
+                  "rawRecovery": "returned",
+                  "rawCoordinates": {
+                    "values": {
+                      "p": 3500000.000000003,
+                      "T": 345.5636738055732,
+                      "h": 1628069.328769079,
+                      "s": 5300.43809404395,
+                      "rho": 28.051377396718905,
+                      "u": 1503298.2720576394,
+                      "Q": 10000
+                    },
+                    "bits": {
+                      "p": "414ab3f000000006",
+                      "T": "40759904ced308c8",
+                      "h": "4138d7a5542a35da",
+                      "s": "40b4b47026ee6756",
+                      "rho": "403c0d2711aea94c",
+                      "u": "4136f04245a591c8",
+                      "Q": "40c3880000000000"
+                    }
+                  },
+                  "lastRequest": {
+                    "mode": "DU",
+                    "args": [
+                      {
+                        "value": 28.051377396718905,
+                        "bits": "403c0d2711aea94c"
+                      },
+                      {
+                        "value": 1503298.2720576394,
+                        "bits": "4136f04245a591c8"
+                      }
+                    ]
+                  },
+                  "requestedInputSupport": "unknown",
+                  "returnedCoordinateSupport": "unsupported",
+                  "exactInventorySupport": "unknown",
+                  "checks": {
+                    "support": "fail",
+                    "phase": "unmeasured",
+                    "canonical": "unmeasured",
+                    "nonlinear": "unmeasured"
+                  },
+                  "observedResiduals": {
+                    "densityResidual": 0,
+                    "energyResidualKJkg": 0
+                  },
+                  "physicalTrajectoryExit": "unproved",
+                  "reason": "boundary-unresolved",
+                  "errorSource": "adapter-support-or-inventory",
+                  "originalError": {
+                    "message": "Outside accepted pressure domain",
+                    "faultKind": "domain"
+                  },
+                  "numericalPressureEnclosure": false
+                }
+              },
+              "propertyCause": null,
+              "domainCause": null,
+              "nonlinearResidual": null
+            },
+            "originalDefaultRefusalPreserved": true,
+            "physicalQualification": "Unresolved original reference/phase contract; any full-VLE raw/adapter return is not a scientific success",
+            "exactVsRounded": "C2 distinguishes exact stored M/U/V mathematics from rounded DU mathematics; neither is inferred from raw pressure"
+          },
+          {
+            "key": "chromium-ledger-68",
+            "input": {
+              "values": {
+                "M": 0.016830826165446306,
+                "U_kJ": 25.30175200928465,
+                "V": 0.0006000000000000001,
+                "rho": 28.051376942410506,
+                "u": 1503298.2790368996
+              },
+              "bits": {
+                "M": "3f913c199fc7f065",
+                "U_kJ": "40394d3f9ea3613f",
+                "V": "3f43a92a30553262",
+                "rho": "403c0d270a0f6bee",
+                "u": "4136f042476ef656"
+              }
+            },
+            "raw": {
+              "values": {
+                "p": 3500000.000000002,
+                "T": 345.56367566156706,
+                "h": 1628069.337769079,
+                "s": 5300.438120088355,
+                "rho": 28.051376942410506,
+                "u": 1503298.2790368996,
+                "Q": 10000
+              },
+              "bits": {
+                "p": "414ab3f000000004",
+                "T": "40759904d0c53fb5",
+                "h": "4138d7a5567808cc",
+                "s": "40b4b47028a35b35",
+                "rho": "403c0d270a0f6bee",
+                "u": "4136f042476ef656",
+                "Q": "40c3880000000000"
+              }
+            },
+            "rawError": null,
+            "state": null,
+            "error": {
+              "message": "Outside accepted pressure domain",
+              "faultKind": "solver",
+              "evidence": {
+                "propertyFailure": {
+                  "schemaVersion": "C1/1",
+                  "operation": "stateMVU",
+                  "inputScope": "fixed-inventory",
+                  "input": {
+                    "values": {
+                      "massKg": 0.016830826165446306,
+                      "volumeM3": 0.0006000000000000001,
+                      "internalEnergyKJ": 25.30175200928465,
+                      "guess": 35
+                    },
+                    "bits": {
+                      "massKg": "3f913c199fc7f065",
+                      "volumeM3": "3f43a92a30553262",
+                      "internalEnergyKJ": "40394d3f9ea3613f",
+                      "guess": "4041800000000000"
+                    }
+                  },
+                  "rawRecovery": "returned",
+                  "rawCoordinates": {
+                    "values": {
+                      "p": 3500000.000000002,
+                      "T": 345.56367566156706,
+                      "h": 1628069.337769079,
+                      "s": 5300.438120088355,
+                      "rho": 28.051376942410506,
+                      "u": 1503298.2790368996,
+                      "Q": 10000
+                    },
+                    "bits": {
+                      "p": "414ab3f000000004",
+                      "T": "40759904d0c53fb5",
+                      "h": "4138d7a5567808cc",
+                      "s": "40b4b47028a35b35",
+                      "rho": "403c0d270a0f6bee",
+                      "u": "4136f042476ef656",
+                      "Q": "40c3880000000000"
+                    }
+                  },
+                  "lastRequest": {
+                    "mode": "DU",
+                    "args": [
+                      {
+                        "value": 28.051376942410506,
+                        "bits": "403c0d270a0f6bee"
+                      },
+                      {
+                        "value": 1503298.2790368996,
+                        "bits": "4136f042476ef656"
+                      }
+                    ]
+                  },
+                  "requestedInputSupport": "unknown",
+                  "returnedCoordinateSupport": "unsupported",
+                  "exactInventorySupport": "unknown",
+                  "checks": {
+                    "support": "fail",
+                    "phase": "unmeasured",
+                    "canonical": "unmeasured",
+                    "nonlinear": "unmeasured"
+                  },
+                  "observedResiduals": {
+                    "densityResidual": 0,
+                    "energyResidualKJkg": 0
+                  },
+                  "physicalTrajectoryExit": "unproved",
+                  "reason": "boundary-unresolved",
+                  "errorSource": "adapter-support-or-inventory",
+                  "originalError": {
+                    "message": "Outside accepted pressure domain",
+                    "faultKind": "domain"
+                  },
+                  "numericalPressureEnclosure": false
+                }
+              },
+              "propertyCause": null,
+              "domainCause": null,
+              "nonlinearResidual": null
+            },
+            "originalDefaultRefusalPreserved": true,
+            "physicalQualification": "Unresolved original reference/phase contract; any full-VLE raw/adapter return is not a scientific success",
+            "exactVsRounded": "C2 distinguishes exact stored M/U/V mathematics from rounded DU mathematics; neither is inferred from raw pressure"
+          },
+          {
+            "key": "chromium-ledger-70",
+            "input": {
+              "values": {
+                "M": 0.31291914064008475,
+                "U_kJ": 218.14080372764926,
+                "V": 0.0006000000000000001,
+                "rho": 521.5319010668079,
+                "u": 697115.5656424091
+              },
+              "bits": {
+                "M": "3fd406de00d5dc96",
+                "U_kJ": "406b448176d1ad12",
+                "V": "3f43a92a30553262",
+                "rho": "40804c415558b52e",
+                "u": "41254637219be1c1"
+              }
+            },
+            "raw": {
+              "values": {
+                "p": 3500000.0000007655,
+                "T": 345.5636734341365,
+                "h": 703826.564514849,
+                "s": 2625.843410443606,
+                "rho": 521.5319010668079,
+                "u": 697115.5656424091,
+                "Q": 10000
+              },
+              "bits": {
+                "p": "414ab3f00000066c",
+                "T": "40759904ce6f53d8",
+                "h": "41257aa52108171d",
+                "s": "40a483afd37e60c9",
+                "rho": "40804c415558b52e",
+                "u": "41254637219be1c1",
+                "Q": "40c3880000000000"
+              }
+            },
+            "rawError": null,
+            "state": null,
+            "error": {
+              "message": "Outside accepted pressure domain",
+              "faultKind": "solver",
+              "evidence": {
+                "propertyFailure": {
+                  "schemaVersion": "C1/1",
+                  "operation": "stateMVU",
+                  "inputScope": "fixed-inventory",
+                  "input": {
+                    "values": {
+                      "massKg": 0.31291914064008475,
+                      "volumeM3": 0.0006000000000000001,
+                      "internalEnergyKJ": 218.14080372764926,
+                      "guess": 35
+                    },
+                    "bits": {
+                      "massKg": "3fd406de00d5dc96",
+                      "volumeM3": "3f43a92a30553262",
+                      "internalEnergyKJ": "406b448176d1ad12",
+                      "guess": "4041800000000000"
+                    }
+                  },
+                  "rawRecovery": "returned",
+                  "rawCoordinates": {
+                    "values": {
+                      "p": 3500000.0000007655,
+                      "T": 345.5636734341365,
+                      "h": 703826.564514849,
+                      "s": 2625.843410443606,
+                      "rho": 521.5319010668079,
+                      "u": 697115.5656424091,
+                      "Q": 10000
+                    },
+                    "bits": {
+                      "p": "414ab3f00000066c",
+                      "T": "40759904ce6f53d8",
+                      "h": "41257aa52108171d",
+                      "s": "40a483afd37e60c9",
+                      "rho": "40804c415558b52e",
+                      "u": "41254637219be1c1",
+                      "Q": "40c3880000000000"
+                    }
+                  },
+                  "lastRequest": {
+                    "mode": "DU",
+                    "args": [
+                      {
+                        "value": 521.5319010668079,
+                        "bits": "40804c415558b52e"
+                      },
+                      {
+                        "value": 697115.5656424091,
+                        "bits": "41254637219be1c1"
+                      }
+                    ]
+                  },
+                  "requestedInputSupport": "unknown",
+                  "returnedCoordinateSupport": "unsupported",
+                  "exactInventorySupport": "unknown",
+                  "checks": {
+                    "support": "fail",
+                    "phase": "unmeasured",
+                    "canonical": "unmeasured",
+                    "nonlinear": "unmeasured"
+                  },
+                  "observedResiduals": {
+                    "densityResidual": 0,
+                    "energyResidualKJkg": 0
+                  },
+                  "physicalTrajectoryExit": "unproved",
+                  "reason": "boundary-unresolved",
+                  "errorSource": "adapter-support-or-inventory",
+                  "originalError": {
+                    "message": "Outside accepted pressure domain",
+                    "faultKind": "domain"
+                  },
+                  "numericalPressureEnclosure": false
+                }
+              },
+              "propertyCause": null,
+              "domainCause": null,
+              "nonlinearResidual": null
+            },
+            "originalDefaultRefusalPreserved": true,
+            "physicalQualification": "Unresolved original reference/phase contract; any full-VLE raw/adapter return is not a scientific success",
+            "exactVsRounded": "C2 distinguishes exact stored M/U/V mathematics from rounded DU mathematics; neither is inferred from raw pressure"
+          },
+          {
+            "key": "chromium-ledger-75",
+            "input": {
+              "values": {
+                "M": 0.016830826440605712,
+                "U_kJ": 25.30175230435519,
+                "V": 0.0006000000000000001,
+                "rho": 28.051377401009518,
+                "u": 1503298.2719917244
+              },
+              "bits": {
+                "M": "3f913c19a4821a58",
+                "U_kJ": "40394d3fa396b2bc",
+                "V": "3f43a92a30553262",
+                "rho": "403c0d2711c116e0",
+                "u": "4136f04245a13fe9"
+              }
+            },
+            "raw": {
+              "values": {
+                "p": 3500000.0000000014,
+                "T": 345.5636737880446,
+                "h": 1628069.3286840797,
+                "s": 5300.438093797978,
+                "rho": 28.051377401009518,
+                "u": 1503298.2719917248,
+                "Q": 10000
+              },
+              "bits": {
+                "p": "414ab3f000000003",
+                "T": "40759904cece5439",
+                "h": "4138d7a55424a3cd",
+                "s": "40b4b47026ea46e5",
+                "rho": "403c0d2711c116e0",
+                "u": "4136f04245a13feb",
+                "Q": "40c3880000000000"
+              }
+            },
+            "rawError": null,
+            "state": null,
+            "error": {
+              "message": "Outside accepted pressure domain",
+              "faultKind": "solver",
+              "evidence": {
+                "propertyFailure": {
+                  "schemaVersion": "C1/1",
+                  "operation": "stateMVU",
+                  "inputScope": "fixed-inventory",
+                  "input": {
+                    "values": {
+                      "massKg": 0.016830826440605712,
+                      "volumeM3": 0.0006000000000000001,
+                      "internalEnergyKJ": 25.30175230435519,
+                      "guess": 35
+                    },
+                    "bits": {
+                      "massKg": "3f913c19a4821a58",
+                      "volumeM3": "3f43a92a30553262",
+                      "internalEnergyKJ": "40394d3fa396b2bc",
+                      "guess": "4041800000000000"
+                    }
+                  },
+                  "rawRecovery": "returned",
+                  "rawCoordinates": {
+                    "values": {
+                      "p": 3500000.0000000014,
+                      "T": 345.5636737880446,
+                      "h": 1628069.3286840797,
+                      "s": 5300.438093797978,
+                      "rho": 28.051377401009518,
+                      "u": 1503298.2719917248,
+                      "Q": 10000
+                    },
+                    "bits": {
+                      "p": "414ab3f000000003",
+                      "T": "40759904cece5439",
+                      "h": "4138d7a55424a3cd",
+                      "s": "40b4b47026ea46e5",
+                      "rho": "403c0d2711c116e0",
+                      "u": "4136f04245a13feb",
+                      "Q": "40c3880000000000"
+                    }
+                  },
+                  "lastRequest": {
+                    "mode": "DU",
+                    "args": [
+                      {
+                        "value": 28.051377401009518,
+                        "bits": "403c0d2711c116e0"
+                      },
+                      {
+                        "value": 1503298.2719917244,
+                        "bits": "4136f04245a13fe9"
+                      }
+                    ]
+                  },
+                  "requestedInputSupport": "unknown",
+                  "returnedCoordinateSupport": "unsupported",
+                  "exactInventorySupport": "unknown",
+                  "checks": {
+                    "support": "fail",
+                    "phase": "unmeasured",
+                    "canonical": "unmeasured",
+                    "nonlinear": "unmeasured"
+                  },
+                  "observedResiduals": {
+                    "densityResidual": 0,
+                    "energyResidualKJkg": 6.821210263296962e-13
+                  },
+                  "physicalTrajectoryExit": "unproved",
+                  "reason": "boundary-unresolved",
+                  "errorSource": "adapter-support-or-inventory",
+                  "originalError": {
+                    "message": "Outside accepted pressure domain",
+                    "faultKind": "domain"
+                  },
+                  "numericalPressureEnclosure": false
+                }
+              },
+              "propertyCause": null,
+              "domainCause": null,
+              "nonlinearResidual": null
+            },
+            "originalDefaultRefusalPreserved": true,
+            "physicalQualification": "Unresolved original reference/phase contract; any full-VLE raw/adapter return is not a scientific success",
+            "exactVsRounded": "C2 distinguishes exact stored M/U/V mathematics from rounded DU mathematics; neither is inferred from raw pressure"
+          },
+          {
+            "key": "chromium-ledger-79",
+            "input": {
+              "values": {
+                "M": 0.016532896796156812,
+                "U_kJ": 24.982031140956146,
+                "V": 0.0006000000000000001,
+                "rho": 27.554827993594685,
+                "u": 1511049.8449832092
+              },
+              "bits": {
+                "M": "3f90edffec30c7ac",
+                "U_kJ": "4038fb6664920f6a",
+                "V": "3f43a92a30553262",
+                "rho": "403b8e09351764fc",
+                "u": "41370e89d850d1d1"
+              }
+            },
+            "raw": {
+              "values": {
+                "p": 3500000.000000002,
+                "T": 347.66773880290907,
+                "h": 1638069.3277690795,
+                "s": 5329.289153606194,
+                "rho": 27.554827993594685,
+                "u": 1511049.8449832096,
+                "Q": 10000
+              },
+              "bits": {
+                "p": "414ab3f000000004",
+                "T": "4075baaf0ee20c3c",
+                "h": "4138feb553e8aca5",
+                "s": "40b4d14a05f88220",
+                "rho": "403b8e09351764fc",
+                "u": "41370e89d850d1d3",
+                "Q": "40c3880000000000"
+              }
+            },
+            "rawError": null,
+            "state": null,
+            "error": {
+              "message": "Outside accepted pressure domain",
+              "faultKind": "solver",
+              "evidence": {
+                "propertyFailure": {
+                  "schemaVersion": "C1/1",
+                  "operation": "stateMVU",
+                  "inputScope": "fixed-inventory",
+                  "input": {
+                    "values": {
+                      "massKg": 0.016532896796156812,
+                      "volumeM3": 0.0006000000000000001,
+                      "internalEnergyKJ": 24.982031140956146,
+                      "guess": 35
+                    },
+                    "bits": {
+                      "massKg": "3f90edffec30c7ac",
+                      "volumeM3": "3f43a92a30553262",
+                      "internalEnergyKJ": "4038fb6664920f6a",
+                      "guess": "4041800000000000"
+                    }
+                  },
+                  "rawRecovery": "returned",
+                  "rawCoordinates": {
+                    "values": {
+                      "p": 3500000.000000002,
+                      "T": 347.66773880290907,
+                      "h": 1638069.3277690795,
+                      "s": 5329.289153606194,
+                      "rho": 27.554827993594685,
+                      "u": 1511049.8449832096,
+                      "Q": 10000
+                    },
+                    "bits": {
+                      "p": "414ab3f000000004",
+                      "T": "4075baaf0ee20c3c",
+                      "h": "4138feb553e8aca5",
+                      "s": "40b4d14a05f88220",
+                      "rho": "403b8e09351764fc",
+                      "u": "41370e89d850d1d3",
+                      "Q": "40c3880000000000"
+                    }
+                  },
+                  "lastRequest": {
+                    "mode": "DU",
+                    "args": [
+                      {
+                        "value": 27.554827993594685,
+                        "bits": "403b8e09351764fc"
+                      },
+                      {
+                        "value": 1511049.8449832092,
+                        "bits": "41370e89d850d1d1"
+                      }
+                    ]
+                  },
+                  "requestedInputSupport": "unknown",
+                  "returnedCoordinateSupport": "unsupported",
+                  "exactInventorySupport": "unknown",
+                  "checks": {
+                    "support": "fail",
+                    "phase": "unmeasured",
+                    "canonical": "unmeasured",
+                    "nonlinear": "unmeasured"
+                  },
+                  "observedResiduals": {
+                    "densityResidual": 0,
+                    "energyResidualKJkg": 4.547473508864641e-13
+                  },
+                  "physicalTrajectoryExit": "unproved",
+                  "reason": "boundary-unresolved",
+                  "errorSource": "adapter-support-or-inventory",
+                  "originalError": {
+                    "message": "Outside accepted pressure domain",
+                    "faultKind": "domain"
+                  },
+                  "numericalPressureEnclosure": false
+                }
+              },
+              "propertyCause": null,
+              "domainCause": null,
+              "nonlinearResidual": null
+            },
+            "originalDefaultRefusalPreserved": true,
+            "physicalQualification": "Unresolved original reference/phase contract; any full-VLE raw/adapter return is not a scientific success",
+            "exactVsRounded": "C2 distinguishes exact stored M/U/V mathematics from rounded DU mathematics; neither is inferred from raw pressure"
+          }
+        ],
+        "hazards": [
+          {
+            "key": "webkit-ledger-69",
+            "input": {
+              "values": {
+                "M": 0.3129191406444639,
+                "U_kJ": 218.14080372494715,
+                "V": 0.0006000000000000001,
+                "rho": 521.5319010741065,
+                "u": 697115.5656240181
+              },
+              "bits": {
+                "M": "3fd406de00d710be",
+                "U_kJ": "406b448176d039b2",
+                "V": "3f43a92a30553262",
+                "rho": "40804c415559aff5",
+                "u": "41254637219978a7"
+              }
+            },
+            "raw": {
+              "values": {
+                "p": 3499999.9999996508,
+                "T": 345.5636734307982,
+                "h": 703826.5644963617,
+                "s": 2625.843410390111,
+                "rho": 521.5319010741065,
+                "u": 697115.5656240179,
+                "Q": 10000
+              },
+              "bits": {
+                "p": "414ab3effffffd12",
+                "T": "40759904ce6e6e70",
+                "h": "41257aa52105aac8",
+                "s": "40a483afd37c9544",
+                "rho": "40804c415559aff5",
+                "u": "41254637219978a5",
+                "Q": "40c3880000000000"
+              }
+            },
+            "state": {
+              "values": {
+                "p": 34.999999999996504,
+                "h": 703.8265644963617,
+                "T": 72.41367343079821,
+                "s": 2.625843410390111,
+                "rho": 521.5319010741065,
+                "u": 697.1155656240179,
+                "x": null,
+                "phase": "Subcooled liquid",
+                "massKg": 0.3129191406444639,
+                "volumeM3": 0.0006000000000000001,
+                "internalEnergyKJ": 218.14080372494715,
+                "densityResidual": 0,
+                "energyResidual": -2.2737367544323206e-13,
+                "liquidVolumeFraction": 1
+              },
+              "bits": {
+                "p": "40417ffffffffe14",
+                "h": "4085fe9ccdd8bf44",
+                "T": "40521a79a0202028",
+                "s": "400501ba30a05750",
+                "rho": "40804c415559aff5",
+                "u": "4085c8ecadab7d97",
+                "massKg": "3fd406de00d710be",
+                "volumeM3": "3f43a92a30553262",
+                "internalEnergyKJ": "406b448176d039b2",
+                "densityResidual": "0000000000000000",
+                "energyResidual": "bd50000000000000",
+                "liquidVolumeFraction": "3ff0000000000000"
+              }
+            },
+            "error": null,
+            "certified": false,
+            "qualificationBlocker": true
+          },
+          {
+            "key": "webkit-ledger-76",
+            "input": {
+              "values": {
+                "M": 0.016830826440045875,
+                "U_kJ": 25.301752303754846,
+                "V": 0.0006000000000000001,
+                "rho": 28.051377400076454,
+                "u": 1503298.2720060586
+              },
+              "bits": {
+                "M": "3f913c19a47fa406",
+                "U_kJ": "40394d3fa3941ea6",
+                "V": "3f43a92a30553262",
+                "rho": "403c0d2711bd14f6",
+                "u": "4136f04245a23066"
+              }
+            },
+            "raw": {
+              "values": {
+                "p": 3499999.9999999967,
+                "T": 345.5636737918562,
+                "h": 1628069.328702563,
+                "s": 5300.438093851467,
+                "rho": 28.051377400076454,
+                "u": 1503298.2720060581,
+                "Q": 10000
+              },
+              "bits": {
+                "p": "414ab3effffffff9",
+                "T": "40759904cecf5a28",
+                "h": "4138d7a55425d9e6",
+                "s": "40b4b47026eb2ca1",
+                "rho": "403c0d2711bd14f6",
+                "u": "4136f04245a23064",
+                "Q": "40c3880000000000"
+              }
+            },
+            "state": {
+              "values": {
+                "p": 34.999999999999964,
+                "h": 1628.0693287025629,
+                "T": 72.41367379185624,
+                "s": 5.300438093851467,
+                "rho": 28.051377400076454,
+                "u": 1503.2982720060581,
+                "x": null,
+                "phase": "Superheated vapor",
+                "massKg": 0.016830826440045875,
+                "volumeM3": 0.0006000000000000001,
+                "internalEnergyKJ": 25.301752303754846,
+                "densityResidual": 0,
+                "energyResidual": -4.547473508864641e-13,
+                "liquidVolumeFraction": 0
+              },
+              "bits": {
+                "p": "40417ffffffffffb",
+                "h": "40997046fe1a78ba",
+                "T": "40521a79a1a3cf08",
+                "s": "401533a60b2e422e",
+                "rho": "403c0d2711bd14f6",
+                "u": "40977d316e377d54",
+                "massKg": "3f913c19a47fa406",
+                "volumeM3": "3f43a92a30553262",
+                "internalEnergyKJ": "40394d3fa3941ea6",
+                "densityResidual": "0000000000000000",
+                "energyResidual": "bd60000000000000",
+                "liquidVolumeFraction": "0000000000000000"
+              }
+            },
+            "error": null,
+            "certified": false,
+            "qualificationBlocker": true
+          }
+        ],
+        "explicit": [
+          {
+            "pBar": 0.29999999999999993,
+            "inputBits": "3fd3333333333332",
+            "error": {
+              "message": "Outside accepted pressure domain",
+              "faultKind": "domain",
+              "evidence": {
+                "propertyFailure": {
+                  "schemaVersion": "C1/1",
+                  "operation": "ph",
+                  "inputScope": "requested-coordinate",
+                  "input": {
+                    "values": {
+                      "p": 0.29999999999999993,
+                      "h": 1000
+                    },
+                    "bits": {
+                      "p": "3fd3333333333332",
+                      "h": "408f400000000000"
+                    }
+                  },
+                  "rawRecovery": "returned",
+                  "rawCoordinates": {
+                    "values": {
+                      "p": 29999.999999999993,
+                      "T": 218.1039908363385,
+                      "h": 1000000,
+                      "s": 4609.783894160659,
+                      "rho": 0.4527054528908622,
+                      "u": 933731.7458662575,
+                      "Q": 0.6301979070607078
+                    },
+                    "bits": {
+                      "p": "40dd4bfffffffffe",
+                      "T": "406b4353e497250b",
+                      "h": "412e848000000000",
+                      "s": "40b201c8ad49a78e",
+                      "rho": "3fdcf9204ab8c69b",
+                      "u": "412c7ec77de22e9e",
+                      "Q": "3fe42a94cd1aab1c"
+                    }
+                  },
+                  "lastRequest": {
+                    "mode": "PH",
+                    "args": [
+                      {
+                        "value": 29999.999999999993,
+                        "bits": "40dd4bfffffffffe"
+                      },
+                      {
+                        "value": 1000000,
+                        "bits": "412e848000000000"
+                      }
+                    ]
+                  },
+                  "requestedInputSupport": "unsupported",
+                  "returnedCoordinateSupport": "unsupported",
+                  "exactInventorySupport": "unknown",
+                  "checks": {
+                    "support": "fail",
+                    "phase": "unmeasured",
+                    "canonical": "unmeasured",
+                    "nonlinear": "unmeasured"
+                  },
+                  "observedResiduals": null,
+                  "physicalTrajectoryExit": "unproved",
+                  "reason": "explicit-unsupported-input",
+                  "errorSource": "adapter-support-or-inventory",
+                  "originalError": {
+                    "message": "Outside accepted pressure domain",
+                    "faultKind": "domain"
+                  },
+                  "numericalPressureEnclosure": false
+                }
+              },
+              "propertyCause": null,
+              "domainCause": null,
+              "nonlinearResidual": null
+            },
+            "inputScope": "Actual original bar-based adapter interface; no Pa-to-bar inward rounding"
+          },
+          {
+            "pBar": 35.00000000000001,
+            "inputBits": "4041800000000001",
+            "error": {
+              "message": "Outside accepted pressure domain",
+              "faultKind": "domain",
+              "evidence": {
+                "propertyFailure": {
+                  "schemaVersion": "C1/1",
+                  "operation": "ph",
+                  "inputScope": "requested-coordinate",
+                  "input": {
+                    "values": {
+                      "p": 35.00000000000001,
+                      "h": 1000
+                    },
+                    "bits": {
+                      "p": "4041800000000001",
+                      "h": "408f400000000000"
+                    }
+                  },
+                  "rawRecovery": "returned",
+                  "rawCoordinates": {
+                    "values": {
+                      "p": 3500000.000000001,
+                      "T": 345.56367359935143,
+                      "h": 1000000,
+                      "s": 3482.916818652992,
+                      "rho": 78.57518657573343,
+                      "u": 955456.6759236827,
+                      "Q": 0.3204498283768501
+                    },
+                    "bits": {
+                      "p": "414ab3f000000002",
+                      "T": "40759904ce9bad54",
+                      "h": "412e848000000000",
+                      "s": "40ab35d5694125ed",
+                      "rho": "4053a4cfdb5af7e4",
+                      "u": "412d28815a12ab40",
+                      "Q": "3fd4823fff38cae6"
+                    }
+                  },
+                  "lastRequest": {
+                    "mode": "PH",
+                    "args": [
+                      {
+                        "value": 3500000.000000001,
+                        "bits": "414ab3f000000002"
+                      },
+                      {
+                        "value": 1000000,
+                        "bits": "412e848000000000"
+                      }
+                    ]
+                  },
+                  "requestedInputSupport": "unsupported",
+                  "returnedCoordinateSupport": "unsupported",
+                  "exactInventorySupport": "unknown",
+                  "checks": {
+                    "support": "fail",
+                    "phase": "unmeasured",
+                    "canonical": "unmeasured",
+                    "nonlinear": "unmeasured"
+                  },
+                  "observedResiduals": null,
+                  "physicalTrajectoryExit": "unproved",
+                  "reason": "explicit-unsupported-input",
+                  "errorSource": "adapter-support-or-inventory",
+                  "originalError": {
+                    "message": "Outside accepted pressure domain",
+                    "faultKind": "domain"
+                  },
+                  "numericalPressureEnclosure": false
+                }
+              },
+              "propertyCause": null,
+              "domainCause": null,
+              "nonlinearResidual": null
+            },
+            "inputScope": "Actual original bar-based adapter interface; no Pa-to-bar inward rounding"
+          }
+        ],
+        "strictGuardUnchanged": true,
+        "scope": "Original browser default interface and seven refusals"
+      },
+      {
+        "id": "gateA",
+        "fullVLE": true,
+        "cases": [
+          {
+            "key": "chromium-ledger-64",
+            "input": {
+              "values": {
+                "M": 0.3129191406602224,
+                "U_kJ": 218.14080371522462,
+                "V": 0.0006000000000000001,
+                "rho": 521.5319011003706,
+                "u": 697115.5655578412
+              },
+              "bits": {
+                "M": "3fd406de00db65a6",
+                "U_kJ": "406b448176cb0171",
+                "V": "3f43a92a30553262",
+                "rho": "40804c41555d3663",
+                "u": "412546372190cc20"
+              }
+            },
+            "raw": {
+              "values": {
+                "p": 3500000.000000149,
+                "T": 345.5636734187881,
+                "h": 703826.564429848,
+                "s": 2625.843410197631,
+                "rho": 521.5319011003706,
+                "u": 697115.5655578412,
+                "Q": 10000
+              },
+              "bits": {
+                "p": "414ab3f000000140",
+                "T": "40759904ce6b351c",
+                "h": "41257aa520fcf2f4",
+                "s": "40a483afd3761fe0",
+                "rho": "40804c41555d3663",
+                "u": "412546372190cc20",
+                "Q": "40c3880000000000"
+              }
+            },
+            "rawError": null,
+            "state": null,
+            "error": {
+              "message": "Outside accepted pressure domain",
+              "faultKind": "solver",
+              "evidence": {
+                "propertyFailure": {
+                  "schemaVersion": "C1/1",
+                  "operation": "stateMVU",
+                  "inputScope": "fixed-inventory",
+                  "input": {
+                    "values": {
+                      "massKg": 0.3129191406602224,
+                      "volumeM3": 0.0006000000000000001,
+                      "internalEnergyKJ": 218.14080371522462,
+                      "guess": 35
+                    },
+                    "bits": {
+                      "massKg": "3fd406de00db65a6",
+                      "volumeM3": "3f43a92a30553262",
+                      "internalEnergyKJ": "406b448176cb0171",
+                      "guess": "4041800000000000"
+                    }
+                  },
+                  "rawRecovery": "returned",
+                  "rawCoordinates": {
+                    "values": {
+                      "p": 3500000.000000149,
+                      "T": 345.5636734187881,
+                      "h": 703826.564429848,
+                      "s": 2625.843410197631,
+                      "rho": 521.5319011003706,
+                      "u": 697115.5655578412,
+                      "Q": 10000
+                    },
+                    "bits": {
+                      "p": "414ab3f000000140",
+                      "T": "40759904ce6b351c",
+                      "h": "41257aa520fcf2f4",
+                      "s": "40a483afd3761fe0",
+                      "rho": "40804c41555d3663",
+                      "u": "412546372190cc20",
+                      "Q": "40c3880000000000"
+                    }
+                  },
+                  "lastRequest": {
+                    "mode": "DU",
+                    "args": [
+                      {
+                        "value": 521.5319011003706,
+                        "bits": "40804c41555d3663"
+                      },
+                      {
+                        "value": 697115.5655578412,
+                        "bits": "412546372190cc20"
+                      }
+                    ]
+                  },
+                  "requestedInputSupport": "unknown",
+                  "returnedCoordinateSupport": "unsupported",
+                  "exactInventorySupport": "unknown",
+                  "checks": {
+                    "support": "fail",
+                    "phase": "unmeasured",
+                    "canonical": "unmeasured",
+                    "nonlinear": "unmeasured"
+                  },
+                  "observedResiduals": {
+                    "densityResidual": 0,
+                    "energyResidualKJkg": 0
+                  },
+                  "physicalTrajectoryExit": "unproved",
+                  "reason": "boundary-unresolved",
+                  "errorSource": "adapter-support-or-inventory",
+                  "originalError": {
+                    "message": "Outside accepted pressure domain",
+                    "faultKind": "domain"
+                  },
+                  "numericalPressureEnclosure": false
+                }
+              },
+              "propertyCause": null,
+              "domainCause": null,
+              "nonlinearResidual": null
+            },
+            "originalDefaultRefusalPreserved": false,
+            "physicalQualification": "Unresolved original reference/phase contract; any full-VLE raw/adapter return is not a scientific success",
+            "exactVsRounded": "C2 distinguishes exact stored M/U/V mathematics from rounded DU mathematics; neither is inferred from raw pressure"
+          },
+          {
+            "key": "chromium-ledger-65",
+            "input": {
+              "values": {
+                "M": 0.3129191427925018,
+                "U_kJ": 218.14080239970724,
+                "V": 0.0006000000000000001,
+                "rho": 521.5319046541697,
+                "u": 697115.556603571
+              },
+              "bits": {
+                "M": "3fd406de03258379",
+                "U_kJ": "406b44817408be1c",
+                "V": "3f43a92a30553262",
+                "rho": "40804c41573a31fe",
+                "u": "412546371cfb24ad"
+              }
+            },
+            "raw": {
+              "values": {
+                "p": 3499999.99999985,
+                "T": 345.5636717937177,
+                "h": 703826.5554298479,
+                "s": 2625.843384153227,
+                "rho": 521.5319046541697,
+                "u": 697115.5566035715,
+                "Q": 10000
+              },
+              "bits": {
+                "p": "414ab3effffffebe",
+                "T": "40759904ccb6fb1f",
+                "h": "41257aa51c614d10",
+                "s": "40a483afd00c3826",
+                "rho": "40804c41573a31fe",
+                "u": "412546371cfb24b1",
+                "Q": "40c3880000000000"
+              }
+            },
+            "rawError": null,
+            "state": {
+              "values": {
+                "p": 34.9999999999985,
+                "h": 703.8265554298479,
+                "T": 72.4136717937177,
+                "s": 2.6258433841532267,
+                "rho": 521.5319046541697,
+                "u": 697.1155566035715,
+                "x": null,
+                "phase": "Subcooled liquid",
+                "massKg": 0.3129191427925018,
+                "volumeM3": 0.0006000000000000001,
+                "internalEnergyKJ": 218.14080239970724,
+                "densityResidual": 0,
+                "energyResidual": 4.547473508864641e-13,
+                "liquidVolumeFraction": 1
+              },
+              "bits": {
+                "p": "40417fffffffff2d",
+                "h": "4085fe9cc917dc39",
+                "T": "40521a79994252e4",
+                "s": "400501ba2d1ad93d",
+                "rho": "40804c41573a31fe",
+                "u": "4085c8eca8f0c969",
+                "massKg": "3fd406de03258379",
+                "volumeM3": "3f43a92a30553262",
+                "internalEnergyKJ": "406b44817408be1c",
+                "densityResidual": "0000000000000000",
+                "energyResidual": "3d60000000000000",
+                "liquidVolumeFraction": "3ff0000000000000"
+              }
+            },
+            "error": null,
+            "originalDefaultRefusalPreserved": false,
+            "physicalQualification": "Unresolved original reference/phase contract; any full-VLE raw/adapter return is not a scientific success",
+            "exactVsRounded": "C2 distinguishes exact stored M/U/V mathematics from rounded DU mathematics; neither is inferred from raw pressure"
+          },
+          {
+            "key": "chromium-ledger-67",
+            "input": {
+              "values": {
+                "M": 0.016830826438031344,
+                "U_kJ": 25.301752301594554,
+                "V": 0.0006000000000000001,
+                "rho": 28.051377396718905,
+                "u": 1503298.2720576394
+              },
+              "bits": {
+                "M": "3f913c19a476c7dd",
+                "U_kJ": "40394d3fa38ad762",
+                "V": "3f43a92a30553262",
+                "rho": "403c0d2711aea94c",
+                "u": "4136f04245a591c8"
+              }
+            },
+            "raw": {
+              "values": {
+                "p": 3500000.000000008,
+                "T": 345.56367380557333,
+                "h": 1628069.3287690794,
+                "s": 5300.438094043951,
+                "rho": 28.051377396718905,
+                "u": 1503298.2720576397,
+                "Q": 10000
+              },
+              "bits": {
+                "p": "414ab3f000000011",
+                "T": "40759904ced308ca",
+                "h": "4138d7a5542a35dc",
+                "s": "40b4b47026ee6758",
+                "rho": "403c0d2711aea94c",
+                "u": "4136f04245a591c9",
+                "Q": "40c3880000000000"
+              }
+            },
+            "rawError": null,
+            "state": null,
+            "error": {
+              "message": "Outside accepted pressure domain",
+              "faultKind": "solver",
+              "evidence": {
+                "propertyFailure": {
+                  "schemaVersion": "C1/1",
+                  "operation": "stateMVU",
+                  "inputScope": "fixed-inventory",
+                  "input": {
+                    "values": {
+                      "massKg": 0.016830826438031344,
+                      "volumeM3": 0.0006000000000000001,
+                      "internalEnergyKJ": 25.301752301594554,
+                      "guess": 35
+                    },
+                    "bits": {
+                      "massKg": "3f913c19a476c7dd",
+                      "volumeM3": "3f43a92a30553262",
+                      "internalEnergyKJ": "40394d3fa38ad762",
+                      "guess": "4041800000000000"
+                    }
+                  },
+                  "rawRecovery": "returned",
+                  "rawCoordinates": {
+                    "values": {
+                      "p": 3500000.000000008,
+                      "T": 345.56367380557333,
+                      "h": 1628069.3287690794,
+                      "s": 5300.438094043951,
+                      "rho": 28.051377396718905,
+                      "u": 1503298.2720576397,
+                      "Q": 10000
+                    },
+                    "bits": {
+                      "p": "414ab3f000000011",
+                      "T": "40759904ced308ca",
+                      "h": "4138d7a5542a35dc",
+                      "s": "40b4b47026ee6758",
+                      "rho": "403c0d2711aea94c",
+                      "u": "4136f04245a591c9",
+                      "Q": "40c3880000000000"
+                    }
+                  },
+                  "lastRequest": {
+                    "mode": "DU",
+                    "args": [
+                      {
+                        "value": 28.051377396718905,
+                        "bits": "403c0d2711aea94c"
+                      },
+                      {
+                        "value": 1503298.2720576394,
+                        "bits": "4136f04245a591c8"
+                      }
+                    ]
+                  },
+                  "requestedInputSupport": "unknown",
+                  "returnedCoordinateSupport": "unsupported",
+                  "exactInventorySupport": "unknown",
+                  "checks": {
+                    "support": "fail",
+                    "phase": "unmeasured",
+                    "canonical": "unmeasured",
+                    "nonlinear": "unmeasured"
+                  },
+                  "observedResiduals": {
+                    "densityResidual": 0,
+                    "energyResidualKJkg": 2.2737367544323206e-13
+                  },
+                  "physicalTrajectoryExit": "unproved",
+                  "reason": "boundary-unresolved",
+                  "errorSource": "adapter-support-or-inventory",
+                  "originalError": {
+                    "message": "Outside accepted pressure domain",
+                    "faultKind": "domain"
+                  },
+                  "numericalPressureEnclosure": false
+                }
+              },
+              "propertyCause": null,
+              "domainCause": null,
+              "nonlinearResidual": null
+            },
+            "originalDefaultRefusalPreserved": false,
+            "physicalQualification": "Unresolved original reference/phase contract; any full-VLE raw/adapter return is not a scientific success",
+            "exactVsRounded": "C2 distinguishes exact stored M/U/V mathematics from rounded DU mathematics; neither is inferred from raw pressure"
+          },
+          {
+            "key": "chromium-ledger-68",
+            "input": {
+              "values": {
+                "M": 0.016830826165446306,
+                "U_kJ": 25.30175200928465,
+                "V": 0.0006000000000000001,
+                "rho": 28.051376942410506,
+                "u": 1503298.2790368996
+              },
+              "bits": {
+                "M": "3f913c199fc7f065",
+                "U_kJ": "40394d3f9ea3613f",
+                "V": "3f43a92a30553262",
+                "rho": "403c0d270a0f6bee",
+                "u": "4136f042476ef656"
+              }
+            },
+            "raw": {
+              "values": {
+                "p": 3499999.999999997,
+                "T": 345.5636756615669,
+                "h": 1628069.337769078,
+                "s": 5300.438120088354,
+                "rho": 28.051376942410506,
+                "u": 1503298.2790368993,
+                "Q": 10000
+              },
+              "bits": {
+                "p": "414ab3effffffffa",
+                "T": "40759904d0c53fb2",
+                "h": "4138d7a5567808c8",
+                "s": "40b4b47028a35b33",
+                "rho": "403c0d270a0f6bee",
+                "u": "4136f042476ef655",
+                "Q": "40c3880000000000"
+              }
+            },
+            "rawError": null,
+            "state": {
+              "values": {
+                "p": 34.99999999999997,
+                "h": 1628.0693377690782,
+                "T": 72.41367566156691,
+                "s": 5.300438120088353,
+                "rho": 28.051376942410506,
+                "u": 1503.2982790368994,
+                "x": null,
+                "phase": "Superheated vapor",
+                "massKg": 0.016830826165446306,
+                "volumeM3": 0.0006000000000000001,
+                "internalEnergyKJ": 25.30175200928465,
+                "densityResidual": 0,
+                "energyResidual": -2.2737367544323206e-13,
+                "liquidVolumeFraction": 0
+              },
+              "bits": {
+                "p": "40417ffffffffffc",
+                "h": "40997047007aea46",
+                "T": "40521a79a97b6530",
+                "s": "401533a60cf1013a",
+                "rho": "403c0d270a0f6bee",
+                "u": "40977d31700f5243",
+                "massKg": "3f913c199fc7f065",
+                "volumeM3": "3f43a92a30553262",
+                "internalEnergyKJ": "40394d3f9ea3613f",
+                "densityResidual": "0000000000000000",
+                "energyResidual": "bd50000000000000",
+                "liquidVolumeFraction": "0000000000000000"
+              }
+            },
+            "error": null,
+            "originalDefaultRefusalPreserved": false,
+            "physicalQualification": "Unresolved original reference/phase contract; any full-VLE raw/adapter return is not a scientific success",
+            "exactVsRounded": "C2 distinguishes exact stored M/U/V mathematics from rounded DU mathematics; neither is inferred from raw pressure"
+          },
+          {
+            "key": "chromium-ledger-70",
+            "input": {
+              "values": {
+                "M": 0.31291914064008475,
+                "U_kJ": 218.14080372764926,
+                "V": 0.0006000000000000001,
+                "rho": 521.5319010668079,
+                "u": 697115.5656424091
+              },
+              "bits": {
+                "M": "3fd406de00d5dc96",
+                "U_kJ": "406b448176d1ad12",
+                "V": "3f43a92a30553262",
+                "rho": "40804c415558b52e",
+                "u": "41254637219be1c1"
+              }
+            },
+            "raw": {
+              "values": {
+                "p": 3500000.0000005285,
+                "T": 345.56367343413626,
+                "h": 703826.5645148482,
+                "s": 2625.8434104436037,
+                "rho": 521.5319010668079,
+                "u": 697115.5656424089,
+                "Q": 10000
+              },
+              "bits": {
+                "p": "414ab3f00000046f",
+                "T": "40759904ce6f53d4",
+                "h": "41257aa521081716",
+                "s": "40a483afd37e60c4",
+                "rho": "40804c415558b52e",
+                "u": "41254637219be1bf",
+                "Q": "40c3880000000000"
+              }
+            },
+            "rawError": null,
+            "state": null,
+            "error": {
+              "message": "Outside accepted pressure domain",
+              "faultKind": "solver",
+              "evidence": {
+                "propertyFailure": {
+                  "schemaVersion": "C1/1",
+                  "operation": "stateMVU",
+                  "inputScope": "fixed-inventory",
+                  "input": {
+                    "values": {
+                      "massKg": 0.31291914064008475,
+                      "volumeM3": 0.0006000000000000001,
+                      "internalEnergyKJ": 218.14080372764926,
+                      "guess": 35
+                    },
+                    "bits": {
+                      "massKg": "3fd406de00d5dc96",
+                      "volumeM3": "3f43a92a30553262",
+                      "internalEnergyKJ": "406b448176d1ad12",
+                      "guess": "4041800000000000"
+                    }
+                  },
+                  "rawRecovery": "returned",
+                  "rawCoordinates": {
+                    "values": {
+                      "p": 3500000.0000005285,
+                      "T": 345.56367343413626,
+                      "h": 703826.5645148482,
+                      "s": 2625.8434104436037,
+                      "rho": 521.5319010668079,
+                      "u": 697115.5656424089,
+                      "Q": 10000
+                    },
+                    "bits": {
+                      "p": "414ab3f00000046f",
+                      "T": "40759904ce6f53d4",
+                      "h": "41257aa521081716",
+                      "s": "40a483afd37e60c4",
+                      "rho": "40804c415558b52e",
+                      "u": "41254637219be1bf",
+                      "Q": "40c3880000000000"
+                    }
+                  },
+                  "lastRequest": {
+                    "mode": "DU",
+                    "args": [
+                      {
+                        "value": 521.5319010668079,
+                        "bits": "40804c415558b52e"
+                      },
+                      {
+                        "value": 697115.5656424091,
+                        "bits": "41254637219be1c1"
+                      }
+                    ]
+                  },
+                  "requestedInputSupport": "unknown",
+                  "returnedCoordinateSupport": "unsupported",
+                  "exactInventorySupport": "unknown",
+                  "checks": {
+                    "support": "fail",
+                    "phase": "unmeasured",
+                    "canonical": "unmeasured",
+                    "nonlinear": "unmeasured"
+                  },
+                  "observedResiduals": {
+                    "densityResidual": 0,
+                    "energyResidualKJkg": -2.2737367544323206e-13
+                  },
+                  "physicalTrajectoryExit": "unproved",
+                  "reason": "boundary-unresolved",
+                  "errorSource": "adapter-support-or-inventory",
+                  "originalError": {
+                    "message": "Outside accepted pressure domain",
+                    "faultKind": "domain"
+                  },
+                  "numericalPressureEnclosure": false
+                }
+              },
+              "propertyCause": null,
+              "domainCause": null,
+              "nonlinearResidual": null
+            },
+            "originalDefaultRefusalPreserved": false,
+            "physicalQualification": "Unresolved original reference/phase contract; any full-VLE raw/adapter return is not a scientific success",
+            "exactVsRounded": "C2 distinguishes exact stored M/U/V mathematics from rounded DU mathematics; neither is inferred from raw pressure"
+          },
+          {
+            "key": "chromium-ledger-75",
+            "input": {
+              "values": {
+                "M": 0.016830826440605712,
+                "U_kJ": 25.30175230435519,
+                "V": 0.0006000000000000001,
+                "rho": 28.051377401009518,
+                "u": 1503298.2719917244
+              },
+              "bits": {
+                "M": "3f913c19a4821a58",
+                "U_kJ": "40394d3fa396b2bc",
+                "V": "3f43a92a30553262",
+                "rho": "403c0d2711c116e0",
+                "u": "4136f04245a13fe9"
+              }
+            },
+            "raw": {
+              "values": {
+                "p": 3499999.999999997,
+                "T": 345.56367378804435,
+                "h": 1628069.3286840785,
+                "s": 5300.438093797976,
+                "rho": 28.051377401009518,
+                "u": 1503298.2719917241,
+                "Q": 10000
+              },
+              "bits": {
+                "p": "414ab3effffffffa",
+                "T": "40759904cece5435",
+                "h": "4138d7a55424a3c8",
+                "s": "40b4b47026ea46e3",
+                "rho": "403c0d2711c116e0",
+                "u": "4136f04245a13fe8",
+                "Q": "40c3880000000000"
+              }
+            },
+            "rawError": null,
+            "state": {
+              "values": {
+                "p": 34.99999999999997,
+                "h": 1628.0693286840785,
+                "T": 72.41367378804438,
+                "s": 5.300438093797976,
+                "rho": 28.051377401009518,
+                "u": 1503.298271991724,
+                "x": null,
+                "phase": "Superheated vapor",
+                "massKg": 0.016830826440605712,
+                "volumeM3": 0.0006000000000000001,
+                "internalEnergyKJ": 25.30175230435519,
+                "densityResidual": 0,
+                "energyResidual": -2.2737367544323206e-13,
+                "liquidVolumeFraction": 0
+              },
+              "bits": {
+                "p": "40417ffffffffffc",
+                "h": "40997046fe193b2b",
+                "T": "40521a79a19fb73c",
+                "s": "401533a60b2d56ed",
+                "rho": "403c0d2711c116e0",
+                "u": "40977d316e368712",
+                "massKg": "3f913c19a4821a58",
+                "volumeM3": "3f43a92a30553262",
+                "internalEnergyKJ": "40394d3fa396b2bc",
+                "densityResidual": "0000000000000000",
+                "energyResidual": "bd50000000000000",
+                "liquidVolumeFraction": "0000000000000000"
+              }
+            },
+            "error": null,
+            "originalDefaultRefusalPreserved": false,
+            "physicalQualification": "Unresolved original reference/phase contract; any full-VLE raw/adapter return is not a scientific success",
+            "exactVsRounded": "C2 distinguishes exact stored M/U/V mathematics from rounded DU mathematics; neither is inferred from raw pressure"
+          },
+          {
+            "key": "chromium-ledger-79",
+            "input": {
+              "values": {
+                "M": 0.016532896796156812,
+                "U_kJ": 24.982031140956146,
+                "V": 0.0006000000000000001,
+                "rho": 27.554827993594685,
+                "u": 1511049.8449832092
+              },
+              "bits": {
+                "M": "3f90edffec30c7ac",
+                "U_kJ": "4038fb6664920f6a",
+                "V": "3f43a92a30553262",
+                "rho": "403b8e09351764fc",
+                "u": "41370e89d850d1d1"
+              }
+            },
+            "raw": {
+              "values": {
+                "p": 3500000.000000002,
+                "T": 347.66773880290907,
+                "h": 1638069.3277690795,
+                "s": 5329.289153606194,
+                "rho": 27.554827993594685,
+                "u": 1511049.8449832096,
+                "Q": 10000
+              },
+              "bits": {
+                "p": "414ab3f000000004",
+                "T": "4075baaf0ee20c3c",
+                "h": "4138feb553e8aca5",
+                "s": "40b4d14a05f88220",
+                "rho": "403b8e09351764fc",
+                "u": "41370e89d850d1d3",
+                "Q": "40c3880000000000"
+              }
+            },
+            "rawError": null,
+            "state": null,
+            "error": {
+              "message": "Outside accepted pressure domain",
+              "faultKind": "solver",
+              "evidence": {
+                "propertyFailure": {
+                  "schemaVersion": "C1/1",
+                  "operation": "stateMVU",
+                  "inputScope": "fixed-inventory",
+                  "input": {
+                    "values": {
+                      "massKg": 0.016532896796156812,
+                      "volumeM3": 0.0006000000000000001,
+                      "internalEnergyKJ": 24.982031140956146,
+                      "guess": 35
+                    },
+                    "bits": {
+                      "massKg": "3f90edffec30c7ac",
+                      "volumeM3": "3f43a92a30553262",
+                      "internalEnergyKJ": "4038fb6664920f6a",
+                      "guess": "4041800000000000"
+                    }
+                  },
+                  "rawRecovery": "returned",
+                  "rawCoordinates": {
+                    "values": {
+                      "p": 3500000.000000002,
+                      "T": 347.66773880290907,
+                      "h": 1638069.3277690795,
+                      "s": 5329.289153606194,
+                      "rho": 27.554827993594685,
+                      "u": 1511049.8449832096,
+                      "Q": 10000
+                    },
+                    "bits": {
+                      "p": "414ab3f000000004",
+                      "T": "4075baaf0ee20c3c",
+                      "h": "4138feb553e8aca5",
+                      "s": "40b4d14a05f88220",
+                      "rho": "403b8e09351764fc",
+                      "u": "41370e89d850d1d3",
+                      "Q": "40c3880000000000"
+                    }
+                  },
+                  "lastRequest": {
+                    "mode": "DU",
+                    "args": [
+                      {
+                        "value": 27.554827993594685,
+                        "bits": "403b8e09351764fc"
+                      },
+                      {
+                        "value": 1511049.8449832092,
+                        "bits": "41370e89d850d1d1"
+                      }
+                    ]
+                  },
+                  "requestedInputSupport": "unknown",
+                  "returnedCoordinateSupport": "unsupported",
+                  "exactInventorySupport": "unknown",
+                  "checks": {
+                    "support": "fail",
+                    "phase": "unmeasured",
+                    "canonical": "unmeasured",
+                    "nonlinear": "unmeasured"
+                  },
+                  "observedResiduals": {
+                    "densityResidual": 0,
+                    "energyResidualKJkg": 4.547473508864641e-13
+                  },
+                  "physicalTrajectoryExit": "unproved",
+                  "reason": "boundary-unresolved",
+                  "errorSource": "adapter-support-or-inventory",
+                  "originalError": {
+                    "message": "Outside accepted pressure domain",
+                    "faultKind": "domain"
+                  },
+                  "numericalPressureEnclosure": false
+                }
+              },
+              "propertyCause": null,
+              "domainCause": null,
+              "nonlinearResidual": null
+            },
+            "originalDefaultRefusalPreserved": false,
+            "physicalQualification": "Unresolved original reference/phase contract; any full-VLE raw/adapter return is not a scientific success",
+            "exactVsRounded": "C2 distinguishes exact stored M/U/V mathematics from rounded DU mathematics; neither is inferred from raw pressure"
+          }
+        ],
+        "hazards": [
+          {
+            "key": "webkit-ledger-69",
+            "input": {
+              "values": {
+                "M": 0.3129191406444639,
+                "U_kJ": 218.14080372494715,
+                "V": 0.0006000000000000001,
+                "rho": 521.5319010741065,
+                "u": 697115.5656240181
+              },
+              "bits": {
+                "M": "3fd406de00d710be",
+                "U_kJ": "406b448176d039b2",
+                "V": "3f43a92a30553262",
+                "rho": "40804c415559aff5",
+                "u": "41254637219978a7"
+              }
+            },
+            "raw": {
+              "values": {
+                "p": 3499999.9999997276,
+                "T": 345.5636734307981,
+                "h": 703826.5644963618,
+                "s": 2625.843410390112,
+                "rho": 521.5319010741065,
+                "u": 697115.5656240177,
+                "Q": 10000
+              },
+              "bits": {
+                "p": "414ab3effffffdb7",
+                "T": "40759904ce6e6e6e",
+                "h": "41257aa52105aac9",
+                "s": "40a483afd37c9546",
+                "rho": "40804c415559aff5",
+                "u": "41254637219978a4",
+                "Q": "40c3880000000000"
+              }
+            },
+            "state": {
+              "values": {
+                "p": 34.99999999999728,
+                "h": 703.8265644963618,
+                "T": 72.4136734307981,
+                "s": 2.625843410390112,
+                "rho": 521.5319010741065,
+                "u": 697.1155656240178,
+                "x": null,
+                "phase": "Subcooled liquid",
+                "massKg": 0.3129191406444639,
+                "volumeM3": 0.0006000000000000001,
+                "internalEnergyKJ": 218.14080372494715,
+                "densityResidual": 0,
+                "energyResidual": -3.410605131648481e-13,
+                "liquidVolumeFraction": 1
+              },
+              "bits": {
+                "p": "40417ffffffffe81",
+                "h": "4085fe9ccdd8bf45",
+                "T": "40521a79a0202020",
+                "s": "400501ba30a05752",
+                "rho": "40804c415559aff5",
+                "u": "4085c8ecadab7d96",
+                "massKg": "3fd406de00d710be",
+                "volumeM3": "3f43a92a30553262",
+                "internalEnergyKJ": "406b448176d039b2",
+                "densityResidual": "0000000000000000",
+                "energyResidual": "bd58000000000000",
+                "liquidVolumeFraction": "3ff0000000000000"
+              }
+            },
+            "error": null,
+            "certified": false,
+            "qualificationBlocker": true
+          },
+          {
+            "key": "webkit-ledger-76",
+            "input": {
+              "values": {
+                "M": 0.016830826440045875,
+                "U_kJ": 25.301752303754846,
+                "V": 0.0006000000000000001,
+                "rho": 28.051377400076454,
+                "u": 1503298.2720060586
+              },
+              "bits": {
+                "M": "3f913c19a47fa406",
+                "U_kJ": "40394d3fa3941ea6",
+                "V": "3f43a92a30553262",
+                "rho": "403c0d2711bd14f6",
+                "u": "4136f04245a23066"
+              }
+            },
+            "raw": {
+              "values": {
+                "p": 3500000.000000002,
+                "T": 345.5636737918564,
+                "h": 1628069.328702564,
+                "s": 5300.438093851469,
+                "rho": 28.051377400076454,
+                "u": 1503298.2720060586,
+                "Q": 10000
+              },
+              "bits": {
+                "p": "414ab3f000000004",
+                "T": "40759904cecf5a2b",
+                "h": "4138d7a55425d9ea",
+                "s": "40b4b47026eb2ca3",
+                "rho": "403c0d2711bd14f6",
+                "u": "4136f04245a23066",
+                "Q": "40c3880000000000"
+              }
+            },
+            "state": null,
+            "error": {
+              "message": "Outside accepted pressure domain",
+              "faultKind": "solver",
+              "evidence": {
+                "propertyFailure": {
+                  "schemaVersion": "C1/1",
+                  "operation": "stateMVU",
+                  "inputScope": "fixed-inventory",
+                  "input": {
+                    "values": {
+                      "massKg": 0.016830826440045875,
+                      "volumeM3": 0.0006000000000000001,
+                      "internalEnergyKJ": 25.301752303754846,
+                      "guess": 35
+                    },
+                    "bits": {
+                      "massKg": "3f913c19a47fa406",
+                      "volumeM3": "3f43a92a30553262",
+                      "internalEnergyKJ": "40394d3fa3941ea6",
+                      "guess": "4041800000000000"
+                    }
+                  },
+                  "rawRecovery": "returned",
+                  "rawCoordinates": {
+                    "values": {
+                      "p": 3500000.000000002,
+                      "T": 345.5636737918564,
+                      "h": 1628069.328702564,
+                      "s": 5300.438093851469,
+                      "rho": 28.051377400076454,
+                      "u": 1503298.2720060586,
+                      "Q": 10000
+                    },
+                    "bits": {
+                      "p": "414ab3f000000004",
+                      "T": "40759904cecf5a2b",
+                      "h": "4138d7a55425d9ea",
+                      "s": "40b4b47026eb2ca3",
+                      "rho": "403c0d2711bd14f6",
+                      "u": "4136f04245a23066",
+                      "Q": "40c3880000000000"
+                    }
+                  },
+                  "lastRequest": {
+                    "mode": "DU",
+                    "args": [
+                      {
+                        "value": 28.051377400076454,
+                        "bits": "403c0d2711bd14f6"
+                      },
+                      {
+                        "value": 1503298.2720060586,
+                        "bits": "4136f04245a23066"
+                      }
+                    ]
+                  },
+                  "requestedInputSupport": "unknown",
+                  "returnedCoordinateSupport": "unsupported",
+                  "exactInventorySupport": "unknown",
+                  "checks": {
+                    "support": "fail",
+                    "phase": "unmeasured",
+                    "canonical": "unmeasured",
+                    "nonlinear": "unmeasured"
+                  },
+                  "observedResiduals": {
+                    "densityResidual": 0,
+                    "energyResidualKJkg": 0
+                  },
+                  "physicalTrajectoryExit": "unproved",
+                  "reason": "boundary-unresolved",
+                  "errorSource": "adapter-support-or-inventory",
+                  "originalError": {
+                    "message": "Outside accepted pressure domain",
+                    "faultKind": "domain"
+                  },
+                  "numericalPressureEnclosure": false
+                }
+              },
+              "propertyCause": null,
+              "domainCause": null,
+              "nonlinearResidual": null
+            },
+            "certified": false,
+            "qualificationBlocker": true
+          }
+        ],
+        "explicit": [
+          {
+            "pBar": 0.29999999999999993,
+            "inputBits": "3fd3333333333332",
+            "error": {
+              "message": "Outside accepted pressure domain",
+              "faultKind": "domain",
+              "evidence": {
+                "propertyFailure": {
+                  "schemaVersion": "C1/1",
+                  "operation": "ph",
+                  "inputScope": "requested-coordinate",
+                  "input": {
+                    "values": {
+                      "p": 0.29999999999999993,
+                      "h": 1000
+                    },
+                    "bits": {
+                      "p": "3fd3333333333332",
+                      "h": "408f400000000000"
+                    }
+                  },
+                  "rawRecovery": "returned",
+                  "rawCoordinates": {
+                    "values": {
+                      "p": 29999.999999999993,
+                      "T": 218.10399083639066,
+                      "h": 1000000,
+                      "s": 4609.783894159673,
+                      "rho": 0.4527054528923102,
+                      "u": 933731.7458662542,
+                      "Q": 0.6301979070606099
+                    },
+                    "bits": {
+                      "p": "40dd4bfffffffffe",
+                      "T": "406b4353e4972c36",
+                      "h": "412e848000000000",
+                      "s": "40b201c8ad49a352",
+                      "rho": "3fdcf9204ab92c7f",
+                      "u": "412c7ec77de22e82",
+                      "Q": "3fe42a94cd1aa7aa"
+                    }
+                  },
+                  "lastRequest": {
+                    "mode": "PH",
+                    "args": [
+                      {
+                        "value": 29999.999999999993,
+                        "bits": "40dd4bfffffffffe"
+                      },
+                      {
+                        "value": 1000000,
+                        "bits": "412e848000000000"
+                      }
+                    ]
+                  },
+                  "requestedInputSupport": "unsupported",
+                  "returnedCoordinateSupport": "unsupported",
+                  "exactInventorySupport": "unknown",
+                  "checks": {
+                    "support": "fail",
+                    "phase": "unmeasured",
+                    "canonical": "unmeasured",
+                    "nonlinear": "unmeasured"
+                  },
+                  "observedResiduals": null,
+                  "physicalTrajectoryExit": "unproved",
+                  "reason": "explicit-unsupported-input",
+                  "errorSource": "adapter-support-or-inventory",
+                  "originalError": {
+                    "message": "Outside accepted pressure domain",
+                    "faultKind": "domain"
+                  },
+                  "numericalPressureEnclosure": false
+                }
+              },
+              "propertyCause": null,
+              "domainCause": null,
+              "nonlinearResidual": null
+            },
+            "inputScope": "Actual original bar-based adapter interface; no Pa-to-bar inward rounding"
+          },
+          {
+            "pBar": 35.00000000000001,
+            "inputBits": "4041800000000001",
+            "error": {
+              "message": "Outside accepted pressure domain",
+              "faultKind": "domain",
+              "evidence": {
+                "propertyFailure": {
+                  "schemaVersion": "C1/1",
+                  "operation": "ph",
+                  "inputScope": "requested-coordinate",
+                  "input": {
+                    "values": {
+                      "p": 35.00000000000001,
+                      "h": 1000
+                    },
+                    "bits": {
+                      "p": "4041800000000001",
+                      "h": "408f400000000000"
+                    }
+                  },
+                  "rawRecovery": "returned",
+                  "rawCoordinates": {
+                    "values": {
+                      "p": 3500000.000000001,
+                      "T": 345.56367359935166,
+                      "h": 1000000,
+                      "s": 3482.916818652993,
+                      "rho": 78.5751865757342,
+                      "u": 955456.6759236834,
+                      "Q": 0.320449828376849
+                    },
+                    "bits": {
+                      "p": "414ab3f000000002",
+                      "T": "40759904ce9bad58",
+                      "h": "412e848000000000",
+                      "s": "40ab35d5694125ef",
+                      "rho": "4053a4cfdb5af81a",
+                      "u": "412d28815a12ab46",
+                      "Q": "3fd4823fff38cad2"
+                    }
+                  },
+                  "lastRequest": {
+                    "mode": "PH",
+                    "args": [
+                      {
+                        "value": 3500000.000000001,
+                        "bits": "414ab3f000000002"
+                      },
+                      {
+                        "value": 1000000,
+                        "bits": "412e848000000000"
+                      }
+                    ]
+                  },
+                  "requestedInputSupport": "unsupported",
+                  "returnedCoordinateSupport": "unsupported",
+                  "exactInventorySupport": "unknown",
+                  "checks": {
+                    "support": "fail",
+                    "phase": "unmeasured",
+                    "canonical": "unmeasured",
+                    "nonlinear": "unmeasured"
+                  },
+                  "observedResiduals": null,
+                  "physicalTrajectoryExit": "unproved",
+                  "reason": "explicit-unsupported-input",
+                  "errorSource": "adapter-support-or-inventory",
+                  "originalError": {
+                    "message": "Outside accepted pressure domain",
+                    "faultKind": "domain"
+                  },
+                  "numericalPressureEnclosure": false
+                }
+              },
+              "propertyCause": null,
+              "domainCause": null,
+              "nonlinearResidual": null
+            },
+            "inputScope": "Actual original bar-based adapter interface; no Pa-to-bar inward rounding"
+          }
+        ],
+        "strictGuardUnchanged": true,
+        "scope": "Additional isolated full-VLE diagnostic; retained returns are unqualified"
+      }
+    ],
+    "passed": true,
+    "fullGateBPassed": false,
+    "C1SourceUnchanged": true,
+    "fullA2Run": false
+  },
+  "engine": "chromium",
+  "browserVersion": "151.0.7922.34",
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/151.0.7922.34 Safari/537.36",
+  "physicalSafariOrIPad": false,
+  "console": []
+}

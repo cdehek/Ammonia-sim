@@ -1,0 +1,24 @@
+{
+  "python": "3.12.14",
+  "packages": {
+    "CoolProp": "8.0.0",
+    "cmake": "4.4.4",
+    "ninja": "1.13.2",
+    "numpy": "2.5.4",
+    "playwright": "1.62.0",
+    "mpmath": "1.4.1"
+  },
+  "tools": {
+    "emsdk/upstream/bin/clang": "a4f02e6bc1f600f653e5ca80866d18f3ad7f8b3dcaf27acd4ad7726d6ba8ab29",
+    "emsdk/upstream/bin/wasm-ld": "f81e1f1ec49e0a1774352cfc0c0f5a7117fed7a5b4e7d6312d2a7b2e79a505bc",
+    "emsdk/upstream/emscripten/emcc.py": "30302748565ccd23d3bc19fa8842620e35327ac0a2c0c3f2375d0bad48f2a207",
+    "emsdk/upstream/emscripten/emcc": "b0c9551f9155fa9c028efa24591acdfd30f02f32fb247cf9266f5f0f2ede7589",
+    "emsdk/upstream/emscripten/src/lib/libexceptions.js": "50ae25e05aba826171104ca60c54e6ac2a2f7fb00e7c6bba7466305f7b4ec30e",
+    "emsdk/upstream/emscripten/system/lib/libcxxabi/src/cxa_exception_emscripten.cpp": "1498ce0cc4bb26f61844d6f74583f12325f71d5d6bf7737d7a333fb2d44b1705"
+  },
+  "nativeArchives": "Verified matched native B5A control/A1 archives; actual fresh/reused C API replay in B7. No new native compile.",
+  "browserVersions": {
+    "chromium": "151.0.7922.34",
+    "webkit": "26.5"
+  }
+}

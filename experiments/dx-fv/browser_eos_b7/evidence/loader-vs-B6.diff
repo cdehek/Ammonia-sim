@@ -1,0 +1,113 @@
+--- B6/loader.mjs
++++ B7/loader.mjs
+@@ -1,24 +1,34 @@
++import {selectEnvironment} from './runtime-environment.mjs';
++import {observeImports,observeCatch,observeModule} from '../browser_eos_b6/observe.mjs';
++const digest=async bytes=>Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256',bytes)),v=>v.toString(16).padStart(2,'0')).join('');
+ // Isolated browser research only. SI mass-based values; no production imports.
+ export async function loadEOS(version='controlA', options={}) {
+   const start=performance.now(),logs=[];
+-  const assets={controlA:'../browser_eos_b4b/vendor/candidateB',rebuiltA:'../browser_eos_b4c/vendor/controlA',candidateB:'../browser_eos_b4c/vendor/candidateB'};
+-  const asset=assets[version];if(!asset)throw Error('Unknown isolated B4C build');
++  const assets={controlA:'../browser_eos_b4b/vendor/candidateB',rebuiltB4C:'./vendor/control',gateA:'./vendor/candidate',diagnosticB4C:'./vendor/control-diagnostic',diagnosticGateA:'./vendor/candidate-diagnostic'};
++  const asset=assets[version];if(!asset)throw Error('Unknown isolated B7 artifact');
++  if(options.identity){
++    if(options.identity.id!==version)throw Error('Explicit artifact identity mismatch');
++    const js=await(await fetch(new URL(`${asset}/coolprop.js`,import.meta.url))).arrayBuffer();
++    if(await digest(js)!==options.identity.jsSHA256)throw Error('Generated JS identity mismatch');
++  }
+   const {default:factory}=await import(`${asset}/coolprop.js`);
+   const jsReady=performance.now();let memory,wasmExports,fetchMS=0,compileInstantiateMS=0,mime,streaming=false;
+   const response=await fetch(new URL(options.wasmURL||`${asset}/coolprop.wasm${options.badMime?'?mime=bad':''}`,import.meta.url));
+   if(!response.ok)throw Error(`WASM asset unavailable: HTTP ${response.status}`);
+   mime=response.headers.get('content-type');const bytes=await response.arrayBuffer();fetchMS=performance.now()-jsReady;
+-  // Pinned B4C Emscripten JS exception ABI; see pre-edit ownership design.
++  if(options.identity&&await digest(bytes)!==options.identity.wasmSHA256)throw Error('WASM identity mismatch');
++  const environmentObservations=[];
++  // Newly audited B7 Emscripten JS exception ABI; see EXCEPTION_ABI.md.
+   // Only identities actually thrown by this module's generated callbacks may
+   // enter native catch cleanup. An excPtr field or numeric throw is insufficient.
+   const nativeThrows=new WeakSet();let beginCatch,endCatch;
+   function bindExceptionABI(imports){
+     const env=imports.env;
+     beginCatch=env.__cxa_begin_catch;endCatch=env.__cxa_end_catch;
+-    if(typeof beginCatch!=='function'||typeof endCatch!=='function')throw Error('B6 requires the audited B4C exception ABI');
++    if(typeof beginCatch!=='function'||typeof endCatch!=='function')throw Error('B7 requires the independently audited exception ABI');
+     for(const name of ['__cxa_throw','__cxa_rethrow','__resumeException']){
+       const original=env[name];
+-      if(typeof original!=='function')throw Error('B6 missing generated exception callback: '+name);
++      if(typeof original!=='function')throw Error('B7 missing generated exception callback: '+name);
+       env[name]=(...args)=>{try{return original(...args);}catch(e){
+         if(e&&typeof e==='object'&&Number.isInteger(e.excPtr)&&e.excPtr>0)nativeThrows.add(e);
+         throw e;
+@@ -28,6 +38,8 @@
+   let failInstantiation;
+   const failed=new Promise((_,reject)=>{failInstantiation=reject;});
+   const module=await Promise.race([factory({printErr:v=>logs.push(String(v)),instantiateWasm(imports,done){
++    if(options.fullVLE||options.trace)selectEnvironment(imports,()=>memory,environmentObservations,{fullVLE:options.fullVLE,trace:options.trace});
++    observeImports(imports,()=>wasmExports,()=>memory,options);
+     bindExceptionABI(imports);
+     const t=performance.now();
+     (async()=>{
+@@ -44,8 +56,9 @@
+       compileInstantiateMS=performance.now()-t;done(result.instance,result.module);
+     })().catch(failInstantiation);return {};
+   }}),failed]);
++  observeModule(module,()=>wasmExports,()=>memory,options);
+   const initialized=performance.now(),beforeFactory=memory.buffer.byteLength;
+-  const state=module.factory('HEOS','Ammonia');const ready=performance.now();
++  let state=module.factory('HEOS','Ammonia');const ready=performance.now();
+   const capabilities={version:module.get_global_param_string('version'),git:module.get_global_param_string('gitrevision'),
+     exports:Object.keys(module).filter(k=>!k.startsWith('_')),inputPairs:Object.keys(module.input_pairs),stateMethods:Object.getOwnPropertyNames(Object.getPrototypeOf(state)),
+     phaseImpositionAvailable:typeof state.specify_phase==='function',referenceSetterAvailable:typeof module.set_reference_state==='function',
+@@ -81,7 +94,7 @@
+         }
+       }else if(highLevel||!state.hmass||request.mode==='PTliquid')out=high(request,extras);
+       else{
+-        const [a,b]=request.args;const pairs={PH:['HmassP_INPUTS',b,a],DU:['DmassUmass_INPUTS',a,b],PQ:['PQ_INPUTS',a,b],PT:['PT_INPUTS',a,b]};
++        const [a,b]=request.args;const pairs={PH:['HmassP_INPUTS',b,a],DU:['DmassUmass_INPUTS',a,b],PQ:['PQ_INPUTS',a,b],PT:['PT_INPUTS',a,b],PS:['PSmass_INPUTS',a,b],PU:['PUmass_INPUTS',a,b],DH:['DmassHmass_INPUTS',a,b],DS:['DmassSmass_INPUTS',a,b],DP:['DmassP_INPUTS',a,b],DT:['DmassT_INPUTS',a,b],QT:['QT_INPUTS',a,b]};
+         const pair=pairs[request.mode];if(!pair)throw Error('Unsupported research input pair');
+         state.update(module.input_pairs[pair[0]],pair[1],pair[2]);
+         out={p:state.p(),T:state.T(),h:state.hmass(),s:state.smass(),rho:state.rhomass(),u:state.umass(),Q:state.Q()};
+@@ -93,6 +106,7 @@
+       if(!Object.values(out).every(Number.isFinite))throw Error('EOS returned a nonfinite property');
+       return out;
+     }catch(e){
++      observeCatch(e,()=>wasmExports,()=>memory,options);
+       const message=decodeError(e);wasmExports._emscripten_stack_restore(stackPointer);
+       const propagated=new Error(message);
+       if(nativeThrows.has(e)){
+@@ -102,12 +116,17 @@
+         // begin acquires the count (zero -> one) and fixes uncaught bookkeeping;
+         // end destroys/frees, pops catch state and clears exceptionLast.
+         try{beginCatch(e.excPtr);endCatch();}
+-        catch(cleanupError){throw new AggregateError([propagated,cleanupError],'B6 native exception cleanup failed: '+message);}
++        catch(cleanupError){throw new AggregateError([propagated,cleanupError],'B7 native exception cleanup failed: '+message);}
+       }
+       throw propagated;
+     }
+   }
+-  return {module,state,capabilities,init,evaluate,memory:()=>memory.buffer.byteLength,stackPointer:()=>wasmExports.emscripten_stack_get_current(),dispose:()=>state.delete()};
++  function evaluateFresh(request,settings={}){
++    const previous=state;state=module.factory('HEOS','Ammonia');
++    try{const value=evaluate(request,settings);return {...value,phase:state.keyed_output(module.parameters.iPhase)};}
++    finally{state.delete();state=previous;}
++  }
++  return {module,state,capabilities,init,evaluate,evaluateFresh,environmentObservations,artifact:version,fullVLE:!!options.fullVLE,memory:()=>memory.buffer.byteLength,stackPointer:()=>wasmExports.emscripten_stack_get_current(),dispose:()=>state.delete()};
+ }
+ export function exactCache(eos,limit=1024){
+   const cache=new Map();let hits=0,misses=0;
+@@ -115,3 +134,13 @@
+     const result=Object.freeze(eos.evaluate(request));if(cache.size>=limit)cache.delete(cache.keys().next().value);cache.set(key,result);return result;},
+     clear(){cache.clear();hits=0;misses=0;},stats(){return {hits,misses,size:cache.size,limit};}};
+ }
++
++// Qualification never relies on the historical default. Identity is explicit,
++// selected from the independently retained build manifest by each harness.
++export function loadQualifiedEOS(identity, options={}) {
++  if(!identity||!['rebuiltB4C','gateA','diagnosticB4C','diagnosticGateA'].includes(identity.id)||
++     !/^[a-f0-9]{64}$/.test(identity.jsSHA256)||!/^[a-f0-9]{64}$/.test(identity.wasmSHA256))
++    throw Error('Explicit B7 JS/WASM artifact identity is required');
++  options.identity=identity;
++  return loadEOS(identity.id,options);
++}

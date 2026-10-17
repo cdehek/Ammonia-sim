@@ -1,0 +1,159 @@
+{
+  "passed": true,
+  "failures": [],
+  "summary": [
+    {
+      "engine": "chromium",
+      "kind": "focused-PH",
+      "fullVLE": false,
+      "baseFixtures": 86,
+      "signedProbes": 344,
+      "equivalentBeforeAfter": true
+    },
+    {
+      "engine": "chromium",
+      "kind": "focused-PH",
+      "fullVLE": true,
+      "baseFixtures": 86,
+      "signedProbes": 344,
+      "equivalentBeforeAfter": true
+    },
+    {
+      "engine": "chromium",
+      "kind": "shared-callers",
+      "fullVLE": false,
+      "records": 156,
+      "errors": 0
+    },
+    {
+      "engine": "chromium",
+      "kind": "shared-callers",
+      "fullVLE": true,
+      "records": 156,
+      "errors": 5
+    },
+    {
+      "engine": "chromium",
+      "artifact": "rebuiltB4C",
+      "kind": "lifecycle",
+      "originalSupported": 315,
+      "originalPTRefused": 6,
+      "variants": 32,
+      "supported": 312,
+      "rejected": 286,
+      "syntheticRefusals": 5,
+      "disposal": true
+    },
+    {
+      "engine": "chromium",
+      "artifact": "gateA",
+      "kind": "lifecycle",
+      "originalSupported": 315,
+      "originalPTRefused": 6,
+      "variants": 32,
+      "supported": 312,
+      "rejected": 286,
+      "syntheticRefusals": 5,
+      "disposal": true
+    },
+    {
+      "engine": "chromium",
+      "kind": "C1",
+      "fullVLE": false,
+      "originalSevenRefused": 7,
+      "unqualifiedReturns": 0,
+      "guardOutcomeEquivalent": true,
+      "hazardsUnqualified": true
+    },
+    {
+      "engine": "chromium",
+      "kind": "C1",
+      "fullVLE": true,
+      "originalSevenRefused": 4,
+      "unqualifiedReturns": 3,
+      "guardOutcomeEquivalent": true,
+      "hazardsUnqualified": true
+    },
+    {
+      "engine": "webkit",
+      "kind": "focused-PH",
+      "fullVLE": false,
+      "baseFixtures": 86,
+      "signedProbes": 344,
+      "equivalentBeforeAfter": true
+    },
+    {
+      "engine": "webkit",
+      "kind": "focused-PH",
+      "fullVLE": true,
+      "baseFixtures": 86,
+      "signedProbes": 344,
+      "equivalentBeforeAfter": true
+    },
+    {
+      "engine": "webkit",
+      "kind": "shared-callers",
+      "fullVLE": false,
+      "records": 156,
+      "errors": 0
+    },
+    {
+      "engine": "webkit",
+      "kind": "shared-callers",
+      "fullVLE": true,
+      "records": 156,
+      "errors": 5
+    },
+    {
+      "engine": "webkit",
+      "artifact": "rebuiltB4C",
+      "kind": "lifecycle",
+      "originalSupported": 315,
+      "originalPTRefused": 6,
+      "variants": 32,
+      "supported": 312,
+      "rejected": 286,
+      "syntheticRefusals": 5,
+      "disposal": true
+    },
+    {
+      "engine": "webkit",
+      "artifact": "gateA",
+      "kind": "lifecycle",
+      "originalSupported": 315,
+      "originalPTRefused": 6,
+      "variants": 32,
+      "supported": 312,
+      "rejected": 286,
+      "syntheticRefusals": 5,
+      "disposal": true
+    },
+    {
+      "engine": "webkit",
+      "kind": "C1",
+      "fullVLE": false,
+      "originalSevenRefused": 7,
+      "unqualifiedReturns": 0,
+      "guardOutcomeEquivalent": true,
+      "hazardsUnqualified": true
+    },
+    {
+      "engine": "webkit",
+      "kind": "C1",
+      "fullVLE": true,
+      "originalSevenRefused": 4,
+      "unqualifiedReturns": 3,
+      "guardOutcomeEquivalent": true,
+      "hazardsUnqualified": true
+    }
+  ],
+  "pinnedRuntimeSources": {
+    "libexceptions.js": "50ae25e05aba826171104ca60c54e6ac2a2f7fb00e7c6bba7466305f7b4ec30e",
+    "libexceptions_stub.js": "c85c836b859ac85909d6c934a09ff507af3e1e668856904126fe93ecc53eec5d",
+    "cxa_exception.h": "db439890899a8c0eb77fed3d5f33a61a813f15941c41e161d0524255965300d9",
+    "cxa_exception_emscripten.cpp": "1498ce0cc4bb26f61844d6f74583f12325f71d5d6bf7737d7a333fb2d44b1705"
+  },
+  "acceptedC1CodeUnchanged": true,
+  "applicableEssentialMainThreadRegressionsPassed": true,
+  "workersAndA2Pending": true
+}

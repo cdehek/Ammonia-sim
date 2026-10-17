@@ -1,0 +1,217 @@
+{
+  "gate1": "PASS",
+  "buildAndABIVerified": true,
+  "liveOwnership": [
+    {
+      "engine": "chromium",
+      "artifact": "rebuiltB4C",
+      "nativeEscapes": 16,
+      "baseline": {
+        "uncaught": 0,
+        "observedCatchDepth": 0
+      },
+      "after": {
+        "uncaught": 0,
+        "observedCatchDepth": 0
+      },
+      "representation": "CppException",
+      "liveReferenceAtEscape": 0,
+      "referenceBeforeEndCatch": 1,
+      "stackRestoreBytes": 2928,
+      "highLevelSeparatelyCaught": true
+    },
+    {
+      "engine": "chromium",
+      "artifact": "gateA",
+      "nativeEscapes": 16,
+      "baseline": {
+        "uncaught": 0,
+        "observedCatchDepth": 0
+      },
+      "after": {
+        "uncaught": 0,
+        "observedCatchDepth": 0
+      },
+      "representation": "CppException",
+      "liveReferenceAtEscape": 0,
+      "referenceBeforeEndCatch": 1,
+      "stackRestoreBytes": 2928,
+      "highLevelSeparatelyCaught": true
+    },
+    {
+      "engine": "chromium",
+      "artifact": "diagnosticB4C",
+      "nativeEscapes": 16,
+      "baseline": {
+        "uncaught": 0,
+        "observedCatchDepth": 0
+      },
+      "after": {
+        "uncaught": 0,
+        "observedCatchDepth": 0
+      },
+      "representation": "CppException",
+      "liveReferenceAtEscape": 0,
+      "referenceBeforeEndCatch": 1,
+      "stackRestoreBytes": 2928,
+      "highLevelSeparatelyCaught": true
+    },
+    {
+      "engine": "chromium",
+      "artifact": "diagnosticGateA",
+      "nativeEscapes": 16,
+      "baseline": {
+        "uncaught": 0,
+        "observedCatchDepth": 0
+      },
+      "after": {
+        "uncaught": 0,
+        "observedCatchDepth": 0
+      },
+      "representation": "CppException",
+      "liveReferenceAtEscape": 0,
+      "referenceBeforeEndCatch": 1,
+      "stackRestoreBytes": 2928,
+      "highLevelSeparatelyCaught": true
+    },
+    {
+      "engine": "webkit",
+      "artifact": "rebuiltB4C",
+      "nativeEscapes": 16,
+      "baseline": {
+        "uncaught": 0,
+        "observedCatchDepth": 0
+      },
+      "after": {
+        "uncaught": 0,
+        "observedCatchDepth": 0
+      },
+      "representation": "CppException",
+      "liveReferenceAtEscape": 0,
+      "referenceBeforeEndCatch": 1,
+      "stackRestoreBytes": 2928,
+      "highLevelSeparatelyCaught": true
+    },
+    {
+      "engine": "webkit",
+      "artifact": "gateA",
+      "nativeEscapes": 16,
+      "baseline": {
+        "uncaught": 0,
+        "observedCatchDepth": 0
+      },
+      "after": {
+        "uncaught": 0,
+        "observedCatchDepth": 0
+      },
+      "representation": "CppException",
+      "liveReferenceAtEscape": 0,
+      "referenceBeforeEndCatch": 1,
+      "stackRestoreBytes": 2928,
+      "highLevelSeparatelyCaught": true
+    },
+    {
+      "engine": "webkit",
+      "artifact": "diagnosticB4C",
+      "nativeEscapes": 16,
+      "baseline": {
+        "uncaught": 0,
+        "observedCatchDepth": 0
+      },
+      "after": {
+        "uncaught": 0,
+        "observedCatchDepth": 0
+      },
+      "representation": "CppException",
+      "liveReferenceAtEscape": 0,
+      "referenceBeforeEndCatch": 1,
+      "stackRestoreBytes": 2928,
+      "highLevelSeparatelyCaught": true
+    },
+    {
+      "engine": "webkit",
+      "artifact": "diagnosticGateA",
+      "nativeEscapes": 16,
+      "baseline": {
+        "uncaught": 0,
+        "observedCatchDepth": 0
+      },
+      "after": {
+        "uncaught": 0,
+        "observedCatchDepth": 0
+      },
+      "representation": "CppException",
+      "liveReferenceAtEscape": 0,
+      "referenceBeforeEndCatch": 1,
+      "stackRestoreBytes": 2928,
+      "highLevelSeparatelyCaught": true
+    }
+  ],
+  "activation": [
+    {
+      "engine": "chromium",
+      "artifact": "rebuiltB4C",
+      "fullVLE": false,
+      "records": 7,
+      "loggingOnOffUninstrumentedExact": true,
+      "actualCompiledPathObserved": true
+    },
+    {
+      "engine": "chromium",
+      "artifact": "rebuiltB4C",
+      "fullVLE": true,
+      "records": 7,
+      "loggingOnOffUninstrumentedExact": true,
+      "actualCompiledPathObserved": true
+    },
+    {
+      "engine": "chromium",
+      "artifact": "gateA",
+      "fullVLE": false,
+      "records": 7,
+      "loggingOnOffUninstrumentedExact": true,
+      "actualCompiledPathObserved": true
+    },
+    {
+      "engine": "chromium",
+      "artifact": "gateA",
+      "fullVLE": true,
+      "records": 7,
+      "loggingOnOffUninstrumentedExact": true,
+      "actualCompiledPathObserved": true
+    },
+    {
+      "engine": "webkit",
+      "artifact": "rebuiltB4C",
+      "fullVLE": false,
+      "records": 7,
+      "loggingOnOffUninstrumentedExact": true,
+      "actualCompiledPathObserved": true
+    },
+    {
+      "engine": "webkit",
+      "artifact": "rebuiltB4C",
+      "fullVLE": true,
+      "records": 7,
+      "loggingOnOffUninstrumentedExact": true,
+      "actualCompiledPathObserved": true
+    },
+    {
+      "engine": "webkit",
+      "artifact": "gateA",
+      "fullVLE": false,
+      "records": 7,
+      "loggingOnOffUninstrumentedExact": true,
+      "actualCompiledPathObserved": true
+    },
+    {
+      "engine": "webkit",
+      "artifact": "gateA",
+      "fullVLE": true,
+      "records": 7,
+      "loggingOnOffUninstrumentedExact": true,
+      "actualCompiledPathObserved": true
+    }
+  ],
+  "scope": "Exact scientific source and unchanged generated ABI; full VLE accessible through isolated WASI environment harness. Broader scientific/regression/compatibility gates still required."
+}

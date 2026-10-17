@@ -1,0 +1,59 @@
+{
+  "passed": true,
+  "summary": [
+    {
+      "engine": "chromium",
+      "artifact": "rebuiltB4C",
+      "originalSequences": 47,
+      "rejectedPositions": 6,
+      "alternations": 64,
+      "sevenInventories": 7,
+      "mainWorkerNumericAndMeaningExact": true,
+      "memoryBefore": 56360960,
+      "memoryAfter": 56360960,
+      "latencyMS": 7034.199999999953,
+      "maximumHeartbeatGapMS": 76.80000000004657
+    },
+    {
+      "engine": "chromium",
+      "artifact": "gateA",
+      "originalSequences": 47,
+      "rejectedPositions": 6,
+      "alternations": 64,
+      "sevenInventories": 7,
+      "mainWorkerNumericAndMeaningExact": true,
+      "memoryBefore": 56360960,
+      "memoryAfter": 56360960,
+      "latencyMS": 7264.199999999953,
+      "maximumHeartbeatGapMS": 76.80000000004657
+    },
+    {
+      "engine": "webkit",
+      "artifact": "rebuiltB4C",
+      "originalSequences": 47,
+      "rejectedPositions": 6,
+      "alternations": 64,
+      "sevenInventories": 7,
+      "mainWorkerNumericAndMeaningExact": true,
+      "memoryBefore": 56360960,
+      "memoryAfter": 56360960,
+      "latencyMS": 8172,
+      "maximumHeartbeatGapMS": 94
+    },
+    {
+      "engine": "webkit",
+      "artifact": "gateA",
+      "originalSequences": 47,
+      "rejectedPositions": 6,
+      "alternations": 64,
+      "sevenInventories": 7,
+      "mainWorkerNumericAndMeaningExact": true,
+      "memoryBefore": 56360960,
+      "memoryAfter": 56360960,
+      "latencyMS": 7828,
+      "maximumHeartbeatGapMS": 94
+    }
+  ],
+  "physicalSafariOrIPad": false,
+  "scope": "Actual browser workers; no unsupported state accepted, numerical/ownership paths retain main-thread behavior"
+}

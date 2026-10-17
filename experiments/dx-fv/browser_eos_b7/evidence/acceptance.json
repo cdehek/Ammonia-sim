@@ -1,0 +1,67 @@
+{
+  "assessment": "FOCUSED BROWSER GATE A PASS",
+  "gate1": "PASS",
+  "gate2": "PASS",
+  "checks": {
+    "threeResolvedLiquidsAndFourUnresolved": {
+      "file": "seven-science-audit.json",
+      "sha256": "ab071e4cf823889295fe8dd0f3c92cefa66488e6a8f06d64d64a1360c5f747d6",
+      "passed": true
+    },
+    "original250RecordsBothPaths": {
+      "file": "ledger-science-audit.json",
+      "sha256": "2acdb8bb1963b5d8f0bc4eacf6407412cf57f70296bfda8f1cb3829008106054",
+      "passed": true
+    },
+    "inheritedPropertiesAndB6LifecycleAndC1": {
+      "file": "regression-audit.json",
+      "sha256": "6d1e1581431b707d4a07b9b4e0c89a6b7d0c38815a13158812acc723ab261811",
+      "passed": true
+    },
+    "workerParityAndRefusals": {
+      "file": "worker-audit.json",
+      "sha256": "9af7f1c0324e8d4e81d47d48f3a59141be7dbbb25f1ee97d781e8c0824432531",
+      "passed": true
+    },
+    "separate21AndFullVLESignedRegressions": {
+      "file": "additional-audit.json",
+      "sha256": "9b5835ff36f0bf59748d1473f448450553e13eb5171e88ca8c0087b7c4ad825c",
+      "passed": true
+    },
+    "separate21IndependentReferenceComparisons": {
+      "file": "additional-independent-audit.json",
+      "sha256": "54dab9f7dadff9198e2216b10abd8500d4429d42d323dac67f18b0d4835fb78c",
+      "passed": true
+    },
+    "focusedC1A2Compatibility": {
+      "file": "a2-audit.json",
+      "sha256": "1ee4f6ac7271fe68ca480a0e8c1d39e93822adfe750581ce8aac06381e7071f5",
+      "passed": true
+    }
+  },
+  "threeResolvedLiquids": [
+    146,
+    151,
+    152
+  ],
+  "fourUnresolvedEndpoints": [
+    148,
+    162,
+    164,
+    165
+  ],
+  "remainingQualificationBlockers": [
+    "148: unresolved historical QT refusal",
+    "162: numerical homogeneous liquid return; independent physical phase unresolved",
+    "164: unresolved historical QT refusal",
+    "165: unresolved historical QT refusal",
+    "Seven original default browser 35-bar refusals remain; no exact-boundary acceptance qualification",
+    "Two inward false-acceptance hazards and inherited full-VLE boundary returns remain unqualified",
+    "P1 stable-equilibrium/topology/convex-envelope dependency remains unproved",
+    "Full EOS/backend and full accepted A2 qualification remain incomplete",
+    "Physical Safari/iPadOS, broader fluids, critical/mixture regions and long-duration behavior untested",
+    "Substantial observed main-thread initialization/sampling gaps require separate responsiveness engineering"
+  ],
+  "scope": "Limited experimental qualification of the accepted compiled Gate A algorithm through an isolated full-VLE runtime harness in Chromium and desktop WebKit. Historical general browser default path remains superancillary; no full backend, Gate B, complete A2, physical device or production qualification.",
+  "stopForEngineeringReview": true
+}

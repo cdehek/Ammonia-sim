@@ -1,0 +1,12 @@
+{
+  "build-wasm-candidate-diagnostic.log": [],
+  "build-wasm-candidate.log": [],
+  "build-wasm-control-diagnostic.log": [],
+  "build-wasm-control.log": [
+    "/workspace/b7-work/upstream/src/SBTL/SVDSurfaceFactory.cpp:95:48: warning: captured structured bindings are a C++20 extension [-Wc++20-extensions]",
+    "/workspace/b7-work/upstream/src/SBTL/SVDSurfaceFactory.cpp:95:60: warning: captured structured bindings are a C++20 extension [-Wc++20-extensions]",
+    "/workspace/b7-work/upstream/externals/miniz-3.1.1/miniz.c:3203:9: warning: Using fopen, ftello, fseeko, stat() etc. path for file I/O - this path may not support large files. [-W#pragma-messages]"
+  ],
+  "configure-wasm-candidate.log": [],
+  "configure-wasm-control.log": []
+}

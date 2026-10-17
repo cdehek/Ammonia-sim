@@ -1,0 +1,104 @@
+--- a/src/Backends/Helmholtz/FlashRoutines.cpp
++++ b/src/Backends/Helmholtz/FlashRoutines.cpp
+@@ -1,3 +1,10 @@
++#include <cstdio>
++#include <cstdlib>
++namespace {
++inline void b7log(const char* event, double a=0, double b=0, double c=0, double d=0) {
++ if(std::getenv("B7_TRACE")) std::fprintf(stderr,"{\"event\":\"%s\",\"a\":%.17g,\"b\":%.17g,\"c\":%.17g,\"d\":%.17g}\n",event,a,b,c,d);
++}
++}
+ #include "VLERoutines.h"
+ #include "FlashRoutines.h"
+ 
+@@ -1711,6 +1718,7 @@
+ }
+ // D given and one of P,H,S,U
+ void FlashRoutines::HSU_D_flash(HelmholtzEOSMixtureBackend& HEOS, parameters other) {
++    b7log("HSU_D_entry_rho_u_config_other",HEOS._rhomolar,HEOS._umolar,get_config_bool(ENABLE_SUPERANCILLARIES),other);
+     // Two-phase residual for the superancillary "happy path": for a trial
+     // saturation temperature T it reads the saturated densities (and pressure)
+     // straight off the superancillary, sets the SatL/SatV sub-states, and
+@@ -2115,6 +2123,7 @@
+             }
+         }
+         // ===================== legacy ancillary "sad path" =====================
++        b7log("legacy_DU_entry",HEOS._rhomolar,HEOS._umolar);
+ 
+         CoolPropFluid& component = HEOS.components[0];
+ 
+@@ -2230,6 +2239,7 @@
+             optionsD.omega = 1;
+             optionsD.use_logdelta = false;
+             optionsD.max_iterations = 200;
++            b7log("DU_saturation_options_polish_other",0,other,HEOS._rhomolar,optionsD.max_iterations);
+             for (int i_try = 0; i_try < 7; i_try++) {
+                 try {
+                     if (HEOS._rhomolar > HEOS.rhomolar_critical()) {
+@@ -2254,7 +2264,9 @@
+             }
+ 
+             // If it is above, it is not two-phase and either liquid, vapor or supercritical
+-            if (value > Sat->keyed_output(other)) {
++            const CoolPropDbl b7_satvalue=Sat->keyed_output(other);
++            b7log("DU_caloric_value_satvalue_T_rho",value,b7_satvalue,Sat->_T,Sat->_rhomolar);
++            if (value > b7_satvalue) {
+                 solver_resid resid(&HEOS, HEOS._rhomolar, value, other, Sat->keyed_output(iT), HEOS.Tmax() * 1.5);
+                 CoolPropDbl T_converged;
+                 try {
+@@ -2293,6 +2305,7 @@
+                 } else {
+                     // Residual is difference in quality calculated from density and quality calculated from the other parameter
+                     // Iterate to find T
++                    b7log("legacy_dispatch_twophase",HEOS._rhomolar,value);
+                     HSU_D_flash_twophase(HEOS, HEOS._rhomolar, other, value);
+                     HEOS._phase = iphase_twophase;
+                 }
+--- a/src/Backends/Helmholtz/VLERoutines.cpp
++++ b/src/Backends/Helmholtz/VLERoutines.cpp
+@@ -1,3 +1,10 @@
++#include <cstdio>
++#include <cstdlib>
++namespace {
++inline void b7log(const char* event, double a=0, double b=0, double c=0, double d=0) {
++ if(std::getenv("B7_TRACE")) std::fprintf(stderr,"{\"event\":\"%s\",\"a\":%.17g,\"b\":%.17g,\"c\":%.17g,\"d\":%.17g}\n",event,a,b,c,d);
++}
++}
+ 
+ #include "HelmholtzEOSMixtureBackend.h"
+ #include "VLERoutines.h"
+@@ -610,6 +617,7 @@
+ 
+     Ancillary equations are used to get a sensible starting point
+     */
++    b7log("saturation_D_entry_rho_polish_imposed_iterations",rhomolar,0,options.imposed_rho,options.max_iterations);
+     std::vector<CoolPropDbl> r(2, _HUGE), v;
+     std::vector<std::vector<CoolPropDbl>> J(2, std::vector<CoolPropDbl>(2, _HUGE));
+ 
+@@ -654,6 +662,7 @@
+         // Calculate once to save on calls to EOS
+         SatL->update(DmolarT_INPUTS, rhoL, T);
+         SatV->update(DmolarT_INPUTS, rhoV, T);
++        b7log("saturation_D_evaluated_T_rhoL_rhoV_iteration",T,rhoL,rhoV,iter);
+ 
+         CoolPropDbl pL = SatL->p();
+         CoolPropDbl pV = SatV->p();
+@@ -700,7 +709,9 @@
+ 
+         //double DET = J[0][0]*J[1][1]-J[0][1]*J[1][0];
+ 
++        b7log("saturation_D_residual_r0_r1_pL_pV",r[0],r[1],pL,pV);
+         v = linsolve(J, r);
++        b7log("saturation_D_correction_tau_delta_tau",v[0],v[1],tau);
+ 
+         double omega = options.omega;
+ 
+@@ -748,6 +759,8 @@
+               format("saturation_D_pure solver did not converge after %d iterations with rho: %g mol/m^3", options.max_iterations, rhomolar));
+         }
+     } while (error > 1e-9);
++    b7log("saturation_D_final_T_rhoL_rhoV_error",T,rhoL,rhoV,error);
++    b7log("saturation_D_cached_TL_rhoL_TV_rhoV",SatL->T(),SatL->rhomolar(),SatV->T(),SatV->rhomolar());
+     CoolPropDbl p_error_limit = 1e-3;
+     if (std::abs(p_error) > p_error_limit) {
+         throw SolutionError(format("saturation_D_pure solver abs error on p [%Lg] > limit [%Lg]", p_error, p_error_limit));

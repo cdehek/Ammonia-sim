@@ -1,0 +1,90 @@
+{
+  "packages": [
+    {
+      "file": "libmanette-0.2-0_0.2.12-1_amd64.deb",
+      "url": "https://deb.debian.org/debian/pool/main/libm/libmanette/libmanette-0.2-0_0.2.12-1_amd64.deb",
+      "sha256": "98841a467692c46fd1870275113235691ebbfe71a3524f6b2a0fa7e9c33c6e56",
+      "matchesPreservedB4A": true
+    },
+    {
+      "file": "libhyphen0_2.8.8-7+b2_amd64.deb",
+      "url": "https://deb.debian.org/debian/pool/main/h/hyphen/libhyphen0_2.8.8-7+b2_amd64.deb",
+      "sha256": "fa9dca7b8cf1381fd52800c44a385c5725a78a88bd705f7c39b1046a5293435e",
+      "matchesPreservedB4A": true
+    },
+    {
+      "file": "libharfbuzz-icu0_10.2.0-1+deb13u1_amd64.deb",
+      "url": "https://deb.debian.org/debian/pool/main/h/harfbuzz/libharfbuzz-icu0_10.2.0-1+deb13u1_amd64.deb",
+      "sha256": "0b45d951629e98673c0da73b2bcd0886a467d833bb3b7499892a168f247165d2",
+      "matchesPreservedB4A": true
+    },
+    {
+      "file": "libopengl0_1.7.0-1+b2_amd64.deb",
+      "url": "https://deb.debian.org/debian/pool/main/libg/libglvnd/libopengl0_1.7.0-1+b2_amd64.deb",
+      "sha256": "50ea65a1141cbf6b02e41492963656ad0ba71d257cc4066ee9756bca7a6c1ac3",
+      "matchesPreservedB4A": true
+    },
+    {
+      "file": "libegl1_1.7.0-1+b2_amd64.deb",
+      "url": "https://deb.debian.org/debian/pool/main/libg/libglvnd/libegl1_1.7.0-1+b2_amd64.deb",
+      "sha256": "62e7bc8ccd47a60e55aad17f83d8d474310d782eb8589bbce2ab714c31712406",
+      "matchesPreservedB4A": true
+    },
+    {
+      "file": "libgles2_1.7.0-1+b2_amd64.deb",
+      "url": "https://deb.debian.org/debian/pool/main/libg/libglvnd/libgles2_1.7.0-1+b2_amd64.deb",
+      "sha256": "e12c18aa77939d122ee1dea520ba0440b97dc19200b7396e03dff03a3ece74c1",
+      "matchesPreservedB4A": true
+    }
+  ],
+  "browserExecutablesSHA256": {
+    "/workspace/b7-browsers/webkit-2336/minibrowser-gtk/MiniBrowser": "98384046ffbca250cfb254be6849210749f6455b0a5f18ebae022daf6bd39382",
+    "/workspace/b7-browsers/webkit-2336/minibrowser-wpe/MiniBrowser": "990aafd77eb05fb166c0ab5ae9765d1e6ea728e1643f3d61773cb19be869e277",
+    "/workspace/b7-browsers/webkit-2336/minibrowser-gtk/bin/MiniBrowser": "52fa54d6776076509495a9b1a9a2958db05dbf43c4b72694120e217d3f7132af",
+    "/workspace/b7-browsers/webkit-2336/minibrowser-wpe/bin/MiniBrowser": "deee549ad18d8ee5c4a44d78f846bd62fe90959b3e115f0cd33d681897db592e",
+    "/workspace/b7-browsers/chromium-1234/chrome-linux64/chrome": "0b20b130e7edd9dd51873be867761295fe0cfad490c2b9a64f95bd3cfc08fa71"
+  },
+  "sysrootFilesSHA256": {
+    "usr/lib/x86_64-linux-gnu/libmanette-0.2.so.0": "dd7f16e036f30544c25c97f6d1d0ef76d5d33a294f82cfa2ea35d36a18dc60ee",
+    "usr/lib/x86_64-linux-gnu/libEGL.so.1.1.0": "f4b60a4618fbf760f395f64dfd53320446ba1011151a80e411742b3232b194e6",
+    "usr/lib/x86_64-linux-gnu/libGLESv2.so.2.1.0": "a705c66de30ca4e883120c70acae0f1011d7c3f97605eef331e03493beae3812",
+    "usr/lib/x86_64-linux-gnu/libOpenGL.so.0.0.0": "b437e2bc5a58dd89f7ec78cac73ddb34b22fc724d5a2246d93ee06a8453f0e86",
+    "usr/lib/x86_64-linux-gnu/libhyphen.so.0.3.0": "10067ece9b6d1b77b64b4df23062cec0d2e8638c89ccf91d8276065433149ab2",
+    "usr/lib/x86_64-linux-gnu/libOpenGL.so.0": "b437e2bc5a58dd89f7ec78cac73ddb34b22fc724d5a2246d93ee06a8453f0e86",
+    "usr/lib/x86_64-linux-gnu/libEGL.so.1": "f4b60a4618fbf760f395f64dfd53320446ba1011151a80e411742b3232b194e6",
+    "usr/lib/x86_64-linux-gnu/libharfbuzz-icu.so.0": "2f4a4b769aa49d0d1a5ffc74969e27c0800a0af4e3557d5a1726058ea516ffd2",
+    "usr/lib/x86_64-linux-gnu/libGLESv2.so.2": "a705c66de30ca4e883120c70acae0f1011d7c3f97605eef331e03493beae3812",
+    "usr/lib/x86_64-linux-gnu/libhyphen.so.0": "10067ece9b6d1b77b64b4df23062cec0d2e8638c89ccf91d8276065433149ab2",
+    "usr/lib/x86_64-linux-gnu/libharfbuzz-icu.so.0.61020.0": "2f4a4b769aa49d0d1a5ffc74969e27c0800a0af4e3557d5a1726058ea516ffd2",
+    "usr/share/bug/libgles2/control": "97d4601cba0a9374b200bc3c1a5435db226f0f9ab6fdf2caa369e01d45d1fca2",
+    "usr/share/bug/libopengl0/control": "97d4601cba0a9374b200bc3c1a5435db226f0f9ab6fdf2caa369e01d45d1fca2",
+    "usr/share/bug/libegl1/control": "97d4601cba0a9374b200bc3c1a5435db226f0f9ab6fdf2caa369e01d45d1fca2",
+    "usr/share/doc/libgles2/changelog.Debian.amd64.gz": "9e3bc1c93d51c58fe4ad275d2c0825b4134ee86001612b70b730dbc4c2c35c83",
+    "usr/share/doc/libgles2/copyright": "37920f219f60efa2fde5d003c51be0608b2159cc74c5eb6d70d630907db2d9a3",
+    "usr/share/doc/libgles2/changelog.Debian.gz": "0d314d07474ca410574d6eba6cf0e0be852d8a1ef8913f8af0967f3034490eb6",
+    "usr/share/doc/libopengl0/changelog.Debian.amd64.gz": "9e3bc1c93d51c58fe4ad275d2c0825b4134ee86001612b70b730dbc4c2c35c83",
+    "usr/share/doc/libopengl0/copyright": "37920f219f60efa2fde5d003c51be0608b2159cc74c5eb6d70d630907db2d9a3",
+    "usr/share/doc/libopengl0/changelog.Debian.gz": "f03dde46a875270d0a41017d3650caf57f6d32ce4017b9693dd152093418e222",
+    "usr/share/doc/libharfbuzz-icu0/copyright": "9295e101a07824e8ae77c448884bd357a64b831cd4c47f125bf4ac7ea0d8f911",
+    "usr/share/doc/libharfbuzz-icu0/changelog.Debian.gz": "479adbb493191413cca9d38a11bd0287c0ed43935fd2ec59c2caa2771b948ff9",
+    "usr/share/doc/libmanette-0.2-0/copyright": "f1bf59338bd942d3c75ae49968a0115e5f0bc98359476dbb579f0cd232cd6459",
+    "usr/share/doc/libmanette-0.2-0/README.md": "af09d7779e7b7a36dbe84ac47e5974e132492a7637ec2a213ce281cf8c230796",
+    "usr/share/doc/libmanette-0.2-0/changelog.Debian.gz": "31170c8a7e57b10078592507569123196b8f8e99ecddfa1f5dc6cfed7b062fa5",
+    "usr/share/doc/libmanette-0.2-0/NEWS.gz": "6a84a58fe8d28c12f99e8a590c44356283131dfa58bf6278eeb605d7c503e656",
+    "usr/share/doc/libegl1/changelog.Debian.amd64.gz": "9e3bc1c93d51c58fe4ad275d2c0825b4134ee86001612b70b730dbc4c2c35c83",
+    "usr/share/doc/libegl1/copyright": "37920f219f60efa2fde5d003c51be0608b2159cc74c5eb6d70d630907db2d9a3",
+    "usr/share/doc/libegl1/changelog.Debian.gz": "b456adbf04a860721750dda4c9d0b63834926089957274a6485d2641f19ecfd9",
+    "usr/share/doc/libhyphen0/changelog.Debian.amd64.gz": "3a74c9d0d97e1db570699d927348e5282544c946cf56a411dfc5526b2a8728cc",
+    "usr/share/doc/libhyphen0/copyright": "3419e19f01880c9b319a6e80d89b5975185706a2b568aa634eb0efd6bde0856e",
+    "usr/share/doc/libhyphen0/README": "a2a50aca2787a14511b0d118b718760584714a83594f6a8b8344fa4d5c4a4751",
+    "usr/share/doc/libhyphen0/changelog.Debian.gz": "8c6db9c2ec96c80a700e920c2f74577c65809b12ad898ebe85c681d82d6a7fd9",
+    "usr/share/doc/libhyphen0/TODO": "41a4c6a226a6ee9e780982db87a5fec5616d639410b1c843555d2ea77af8db69",
+    "usr/share/doc/libhyphen0/README.nonstandard.gz": "cb2d647497fb53b0c2ab89ea0e3874b0508a2d363df838393aa643d31fc239f0",
+    "usr/share/doc/libhyphen0/changelog.gz": "94ae3a6b73706588bafee31bab37a5b51e57be602c548f91ae1ec9922d5c02b1",
+    "usr/share/doc/libhyphen0/README.hyphen.gz": "367ddfb5881553300360c2ac26b551f075df6168d5e5b23f61c15447d3f3d2f7",
+    "usr/share/lintian/overrides/libgles2": "66454aaed4f6d3eede117495c4d7b9dfb5490108f6a223fc9844de994a1a1a8f"
+  },
+  "launcherSHA256": "522d4df77d816caf799944805b840207570e285029a109ae49092dab578cc70a",
+  "hostPackagesUnchanged": true,
+  "physicalSafariOrIPad": false
+}

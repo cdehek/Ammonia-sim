@@ -1,0 +1,27 @@
+Resolving SDK version '4.0.12' to 'sdk-releases-209b886304498eff50dd835850dc5715803401ed-64bit'
+Installing SDK 'sdk-releases-209b886304498eff50dd835850dc5715803401ed-64bit'..
+Installing tool 'node-22.16.0-64bit'..
+Downloading: /workspace/b7-work/emsdk/downloads/node-v22.16.0-linux-x64.tar.xz from https://storage.googleapis.com/webassembly/emscripten-releases-builds/deps/node-v22.16.0-linux-x64.tar.xz, 30425588 Bytes
+ [----------------------------------------------------------------------------]
+Unpacking '/workspace/b7-work/emsdk/downloads/node-v22.16.0-linux-x64.tar.xz' to '/workspace/b7-work/emsdk/node/22.16.0_64bit'
+Done installing tool 'node-22.16.0-64bit'.
+Installing tool 'releases-209b886304498eff50dd835850dc5715803401ed-64bit'..
+Downloading: /workspace/b7-work/emsdk/downloads/209b886304498eff50dd835850dc5715803401ed-wasm-binaries.tar.xz from https://storage.googleapis.com/webassembly/emscripten-releases-builds/linux/209b886304498eff50dd835850dc5715803401ed/wasm-binaries.tar.xz, 347943992 Bytes
+ [----------------------------------------------------------------------------]
+Unpacking '/workspace/b7-work/emsdk/downloads/209b886304498eff50dd835850dc5715803401ed-wasm-binaries.tar.xz' to '/workspace/b7-work/emsdk/upstream'
+Done installing tool 'releases-209b886304498eff50dd835850dc5715803401ed-64bit'.
+Done installing SDK 'sdk-releases-209b886304498eff50dd835850dc5715803401ed-64bit'.
+Resolving SDK version '4.0.12' to 'sdk-releases-209b886304498eff50dd835850dc5715803401ed-64bit'
+Setting the following tools as active:
+   node-22.16.0-64bit
+   releases-209b886304498eff50dd835850dc5715803401ed-64bit
+
+Next steps:
+- To conveniently access emsdk tools from the command line,
+  consider adding the following directories to your PATH:
+    /workspace/b7-work/emsdk
+    /workspace/b7-work/emsdk/upstream/emscripten
+- This can be done for the current shell by running:
+    source "/workspace/b7-work/emsdk/emsdk_env.sh"
+- Configure emsdk in your shell startup scripts by running:
+    echo 'source "/workspace/b7-work/emsdk/emsdk_env.sh"' >> $HOME/.bash_profile

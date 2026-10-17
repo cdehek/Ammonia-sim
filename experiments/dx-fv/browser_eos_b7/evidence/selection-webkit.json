@@ -1,0 +1,106 @@
+{
+  "result": {
+    "passed": true,
+    "historicalDefaultControlAExact": true,
+    "qualificationRequiresExplicitVerifiedIdentity": true,
+    "rows": [
+      {
+        "request": {
+          "mode": "PT",
+          "args": [
+            350000,
+            300
+          ]
+        },
+        "state": {
+          "values": {
+            "p": 349999.99999999994,
+            "T": 300,
+            "h": 1680932.6312187368,
+            "s": 6454.416542652696,
+            "rho": 2.4800949227013804,
+            "u": 1539809.0005075498,
+            "Q": -1
+          },
+          "bits": {
+            "p": "41155cbfffffffff",
+            "T": "4072c00000000000",
+            "h": "4139a624a1978d17",
+            "s": "40b9366aa28a0eb8",
+            "rho": "4003d73c01bfd31a",
+            "u": "41377ee100214346",
+            "Q": "bff0000000000000"
+          }
+        }
+      },
+      {
+        "request": {
+          "mode": "PH",
+          "args": [
+            799999.9981754856,
+            1624022.744737779
+          ]
+        },
+        "state": {
+          "values": {
+            "p": 799999.9981754855,
+            "T": 291.0143614933305,
+            "h": 1624022.744737746,
+            "s": 5883.286551863658,
+            "rho": 6.2665509034297315,
+            "u": 1496360.8122801895,
+            "Q": -1
+          },
+          "bits": {
+            "p": "412869ffff10db74",
+            "T": "4072303ad31e02d2",
+            "h": "4138c7d6bea72207",
+            "s": "40b6fb495b768305",
+            "rho": "401910f2b853ccc0",
+            "u": "4136d528cff19831",
+            "Q": "bff0000000000000"
+          }
+        }
+      },
+      {
+        "request": {
+          "mode": "PQ",
+          "args": [
+            350000,
+            0.4
+          ]
+        },
+        "state": {
+          "values": {
+            "p": 350000,
+            "T": 267.8114351963941,
+            "h": 833247.8311379438,
+            "s": 3305.4344581722467,
+            "rho": 7.075435591681791,
+            "u": 783780.9120395031,
+            "Q": 0.4
+          },
+          "bits": {
+            "p": "41155cc000000000",
+            "T": "4070bcfba378f560",
+            "h": "41296dbfa98ae99e",
+            "s": "40a9d2de714d328f",
+            "rho": "401c4d3efcdce92b",
+            "u": "4127eb49d2f6d77d",
+            "Q": "3fd999999999999a"
+          }
+        }
+      }
+    ],
+    "errors": [
+      "Explicit B7 JS/WASM artifact identity is required",
+      "Explicit B7 JS/WASM artifact identity is required",
+      "Generated JS identity mismatch"
+    ]
+  },
+  "engine": "webkit",
+  "browserVersion": "26.5",
+  "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.5 Safari/605.1.15",
+  "physicalSafariOrIPad": false,
+  "console": []
+}

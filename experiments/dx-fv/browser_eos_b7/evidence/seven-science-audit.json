@@ -1,0 +1,1655 @@
+{
+  "stage": "seven",
+  "passed": true,
+  "rows": [
+    {
+      "engine": "chromium",
+      "key": "native-ledger-146",
+      "disposition": "resolved-stable-liquid",
+      "input": {
+        "values": {
+          "M": 0.3129191406602219,
+          "U_kJ": 218.14080371522428,
+          "V": 0.0006000000000000001,
+          "rho": 521.5319011003699,
+          "u": 697115.5655578412
+        },
+        "bits": {
+          "M": "3fd406de00db659d",
+          "U_kJ": "406b448176cb0165",
+          "V": "3f43a92a30553262",
+          "rho": "40804c41555d365c",
+          "u": "412546372190cc20"
+        }
+      },
+      "control": {
+        "error": {
+          "message": "Input vapor quality [Q] must be between 0 and 1",
+          "name": "Error",
+          "nativeException": {
+            "representation": "CppException",
+            "name": "CoolProp::CoolPropError<(CoolProp::CoolPropBaseError::ErrCode)3>",
+            "message": "Input vapor quality [Q] must be between 0 and 1",
+            "cleanup": "generated-begin/end-catch"
+          }
+        },
+        "after": {
+          "stack": 5706976,
+          "memory": 56360960
+        },
+        "before": {
+          "stack": 5706976,
+          "memory": 56360960
+        },
+        "trace": []
+      },
+      "candidate": {
+        "state": {
+          "values": {
+            "p": 3499999.9999996712,
+            "T": 345.56367341878774,
+            "h": 703826.564429847,
+            "s": 2625.843410197631,
+            "rho": 521.5319011003699,
+            "u": 697115.5655578412,
+            "Q": 10000,
+            "phase": 0
+          },
+          "bits": {
+            "p": "414ab3effffffd3e",
+            "T": "40759904ce6b3516",
+            "h": "41257aa520fcf2ec",
+            "s": "40a483afd3761fe0",
+            "rho": "40804c41555d365c",
+            "u": "412546372190cc20",
+            "Q": "40c3880000000000",
+            "phase": "0000000000000000"
+          }
+        },
+        "after": {
+          "stack": 5706976,
+          "memory": 56360960
+        },
+        "before": {
+          "stack": 5706976,
+          "memory": 56360960
+        },
+        "trace": []
+      },
+      "science": {
+        "canonical": {
+          "p": -3.287568688392639e-07,
+          "h": -6.984919309616089e-10,
+          "T": -3.410605131648481e-13
+        },
+        "referenceDifference": {
+          "p": 4.0605664253234863e-07,
+          "h": 6.984919309616089e-10,
+          "T": 0.0
+        },
+        "mathematicalReferenceSelection": "homogeneous",
+        "freshEOS": {
+          "p": 3499999.9999996712,
+          "h": 703826.564429847,
+          "u": 697115.5655578412,
+          "rho": 521.5319011003699,
+          "T": 345.56367341878774
+        },
+        "getterDifference": {
+          "p": 0.0,
+          "h": 0.0,
+          "u": 0.0
+        },
+        "normalizedMassEnergy": {
+          "mass": 0.0,
+          "energy": 1.3029066064828305e-16
+        },
+        "stability": {
+          "cp": 5538.221370307084,
+          "cv": 2748.7862427649043,
+          "kappa": 4.1764801428051265e-09,
+          "pRho": 459101.4882347514
+        },
+        "physicalQuality": true,
+        "strictRawPressureSupport": true,
+        "canonicalPass": true,
+        "standalonePass": true,
+        "referenceComparisonPass": true,
+        "freshEOSPass": true,
+        "pass_": true
+      },
+      "nativeDifference": {
+        "p": 0.0,
+        "h": 0.0,
+        "T": 0.0
+      },
+      "pressureResidual": 1.3364478945732117e-07,
+      "chemicalPotentialResidual": 3.5587546035111693e-10,
+      "independentSaturation": [
+        {
+          "trueUminusSatU": "0.0000425572685279519259346888128544831580493416907487597834308371",
+          "cachedUminusTrueSatU": "-0.00000000076392143095996063862670817391038728531654564860752096792669",
+          "inputMinusCachedSatU": "0.0000425580324493828858953274395626570684366270072944083909518051",
+          "finalTerror": "-0.000000000000323938043622880784868466857269311295928467689250565789760134",
+          "dps": 65
+        },
+        {
+          "trueUminusSatU": "0.0000425572685279519259346888128544831580493416907487597834314584",
+          "cachedUminusTrueSatU": "-0.000000000763921430959960638626708173910387285316545648607520632051114",
+          "inputMinusCachedSatU": "0.0000425580324493828858953274395626570684366270072944083909520905",
+          "finalTerror": "-0.000000000000323938043622880784868466857269311295928467689250565789760652",
+          "dps": 90
+        }
+      ],
+      "physicalQualification": true
+    },
+    {
+      "engine": "chromium",
+      "key": "native-ledger-148",
+      "disposition": "unresolved historical QT refusal",
+      "input": {
+        "values": {
+          "M": 0.016830826468318547,
+          "U_kJ": 25.301752334073395,
+          "V": 0.0006000000000000001,
+          "rho": 28.051377447197577,
+          "u": 1503298.271282166
+        },
+        "bits": {
+          "M": "3f913c19a4fbfc39",
+          "U_kJ": "40394d3fa416563f",
+          "V": "3f43a92a30553262",
+          "rho": "403c0d271287772f",
+          "u": "4136f0424572bf7f"
+        }
+      },
+      "control": {
+        "error": {
+          "message": "Input vapor quality [Q] must be between 0 and 1",
+          "name": "Error",
+          "nativeException": {
+            "representation": "CppException",
+            "name": "CoolProp::CoolPropError<(CoolProp::CoolPropBaseError::ErrCode)3>",
+            "message": "Input vapor quality [Q] must be between 0 and 1",
+            "cleanup": "generated-begin/end-catch"
+          }
+        },
+        "after": {
+          "stack": 5706976,
+          "memory": 56360960
+        },
+        "before": {
+          "stack": 5706976,
+          "memory": 56360960
+        },
+        "trace": []
+      },
+      "candidate": {
+        "error": {
+          "message": "Input vapor quality [Q] must be between 0 and 1",
+          "name": "Error",
+          "nativeException": {
+            "representation": "CppException",
+            "name": "CoolProp::CoolPropError<(CoolProp::CoolPropBaseError::ErrCode)3>",
+            "message": "Input vapor quality [Q] must be between 0 and 1",
+            "cleanup": "generated-begin/end-catch"
+          }
+        },
+        "after": {
+          "stack": 5706976,
+          "memory": 56360960
+        },
+        "before": {
+          "stack": 5706976,
+          "memory": 56360960
+        },
+        "trace": []
+      },
+      "science": null,
+      "nativeDifference": null,
+      "pressureResidual": -1.6111880540847778e-07,
+      "chemicalPotentialResidual": -7.117509211060266e-10,
+      "independentSaturation": [
+        {
+          "trueUminusSatU": "-0.000000000142178188022048933829939229779538896493013692581444406794524",
+          "cachedUminusTrueSatU": "-0.000000000142178188022048933829939229779538896493013692581444406794524",
+          "inputMinusCachedSatU": "0.0",
+          "finalTerror": "-0.000000000000216758912816736685632833380738182915352045586351527091029655",
+          "dps": 65
+        },
+        {
+          "trueUminusSatU": "-0.000000000142178188022048933829939229779538896493013692578676908557999",
+          "cachedUminusTrueSatU": "-0.000000000142178188022048933829939229779538896493013692578676908557999",
+          "inputMinusCachedSatU": "0.0",
+          "finalTerror": "-0.000000000000216758912816736685632833380738182915352045586350482093626979",
+          "dps": 90
+        }
+      ],
+      "physicalQualification": false
+    },
+    {
+      "engine": "chromium",
+      "key": "native-ledger-151",
+      "disposition": "resolved-stable-liquid",
+      "input": {
+        "values": {
+          "M": 0.3129191406444639,
+          "U_kJ": 218.14080372494715,
+          "V": 0.0006000000000000001,
+          "rho": 521.5319010741065,
+          "u": 697115.5656240181
+        },
+        "bits": {
+          "M": "3fd406de00d710be",
+          "U_kJ": "406b448176d039b2",
+          "V": "3f43a92a30553262",
+          "rho": "40804c415559aff5",
+          "u": "41254637219978a7"
+        }
+      },
+      "control": {
+        "error": {
+          "message": "Input vapor quality [Q] must be between 0 and 1",
+          "name": "Error",
+          "nativeException": {
+            "representation": "CppException",
+            "name": "CoolProp::CoolPropError<(CoolProp::CoolPropBaseError::ErrCode)3>",
+            "message": "Input vapor quality [Q] must be between 0 and 1",
+            "cleanup": "generated-begin/end-catch"
+          }
+        },
+        "after": {
+          "stack": 5706976,
+          "memory": 56360960
+        },
+        "before": {
+          "stack": 5706976,
+          "memory": 56360960
+        },
+        "trace": []
+      },
+      "candidate": {
+        "state": {
+          "values": {
+            "p": 3499999.9999997276,
+            "T": 345.5636734307981,
+            "h": 703826.5644963618,
+            "s": 2625.843410390112,
+            "rho": 521.5319010741065,
+            "u": 697115.5656240177,
+            "Q": 10000,
+            "phase": 0
+          },
+          "bits": {
+            "p": "414ab3effffffdb7",
+            "T": "40759904ce6e6e6e",
+            "h": "41257aa52105aac9",
+            "s": "40a483afd37c9546",
+            "rho": "40804c415559aff5",
+            "u": "41254637219978a4",
+            "Q": "40c3880000000000",
+            "phase": "0000000000000000"
+          }
+        },
+        "after": {
+          "stack": 5706976,
+          "memory": 56360960
+        },
+        "before": {
+          "stack": 5706976,
+          "memory": 56360960
+        },
+        "trace": []
+      },
+      "science": {
+        "canonical": {
+          "p": -2.7241185307502747e-07,
+          "h": -8.149072527885437e-10,
+          "T": -2.2737367544323206e-13
+        },
+        "referenceDifference": {
+          "p": -5.667097866535187e-07,
+          "h": -1.3969838619232178e-09,
+          "T": -3.410605131648481e-13
+        },
+        "mathematicalReferenceSelection": "homogeneous",
+        "freshEOS": {
+          "p": 3499999.9999997276,
+          "h": 703826.5644963618,
+          "u": 697115.5656240177,
+          "rho": 521.5319010741065,
+          "T": 345.5636734307981
+        },
+        "getterDifference": {
+          "p": 0.0,
+          "h": 0.0,
+          "u": 0.0
+        },
+        "normalizedMassEnergy": {
+          "mass": 0.0,
+          "energy": 6.514533032123789e-16
+        },
+        "stability": {
+          "cp": 5538.2213707088995,
+          "cv": 2748.786242773273,
+          "kappa": 4.176480144319285e-09,
+          "pRho": 459101.48809142644
+        },
+        "physicalQuality": true,
+        "strictRawPressureSupport": true,
+        "canonicalPass": true,
+        "standalonePass": true,
+        "referenceComparisonPass": true,
+        "freshEOSPass": true,
+        "pass_": true
+      },
+      "nativeDifference": {
+        "p": 0.0,
+        "h": 0.0,
+        "T": 0.0
+      },
+      "pressureResidual": 1.3830140233039856e-07,
+      "chemicalPotentialResidual": 1.6857258648846918e-10,
+      "independentSaturation": [
+        {
+          "trueUminusSatU": "0.0000397293314994496779708043858339646963134132408030300701233319",
+          "cachedUminusTrueSatU": "0.00000000127389736159059647077452958563087661524603267745642710043275",
+          "inputMinusCachedSatU": "0.0000397280576020880873743336113043790654367979947703526136962315",
+          "finalTerror": "0.000000000000234974192277894412338711881558562735811648379860619614236484",
+          "dps": 65
+        },
+        {
+          "trueUminusSatU": "0.0000397293314994496779708043858339646963134132408030300701234658",
+          "cachedUminusTrueSatU": "0.0000000012738973615905964707745295856308766152460326774564276943149",
+          "inputMinusCachedSatU": "0.0000397280576020880873743336113043790654367979947703526136957715",
+          "finalTerror": "0.000000000000234974192277894412338711881558562735811648379860619614236158",
+          "dps": 90
+        }
+      ],
+      "physicalQualification": true
+    },
+    {
+      "engine": "chromium",
+      "key": "native-ledger-152",
+      "disposition": "resolved-stable-liquid",
+      "input": {
+        "values": {
+          "M": 0.312919140640084,
+          "U_kJ": 218.14080372764874,
+          "V": 0.0006000000000000001,
+          "rho": 521.5319010668067,
+          "u": 697115.5656424091
+        },
+        "bits": {
+          "M": "3fd406de00d5dc89",
+          "U_kJ": "406b448176d1ad00",
+          "V": "3f43a92a30553262",
+          "rho": "40804c415558b523",
+          "u": "41254637219be1c1"
+        }
+      },
+      "control": {
+        "error": {
+          "message": "Input vapor quality [Q] must be between 0 and 1",
+          "name": "Error",
+          "nativeException": {
+            "representation": "CppException",
+            "name": "CoolProp::CoolPropError<(CoolProp::CoolPropBaseError::ErrCode)3>",
+            "message": "Input vapor quality [Q] must be between 0 and 1",
+            "cleanup": "generated-begin/end-catch"
+          }
+        },
+        "after": {
+          "stack": 5706976,
+          "memory": 56360960
+        },
+        "before": {
+          "stack": 5706976,
+          "memory": 56360960
+        },
+        "trace": []
+      },
+      "candidate": {
+        "state": {
+          "values": {
+            "p": 3499999.9999993723,
+            "T": 345.56367343413575,
+            "h": 703826.5645148464,
+            "s": 2625.843410443604,
+            "rho": 521.5319010668067,
+            "u": 697115.565642409,
+            "Q": 10000,
+            "phase": 0
+          },
+          "bits": {
+            "p": "414ab3effffffabc",
+            "T": "40759904ce6f53cb",
+            "h": "41257aa521081707",
+            "s": "40a483afd37e60c5",
+            "rho": "40804c415558b523",
+            "u": "41254637219be1c0",
+            "Q": "40c3880000000000",
+            "phase": "0000000000000000"
+          }
+        },
+        "after": {
+          "stack": 5706976,
+          "memory": 56360960
+        },
+        "before": {
+          "stack": 5706976,
+          "memory": 56360960
+        },
+        "trace": []
+      },
+      "science": {
+        "canonical": {
+          "p": -6.277114152908325e-07,
+          "h": -1.0477378964424133e-09,
+          "T": -2.8421709430404007e-13
+        },
+        "referenceDifference": {
+          "p": -2.491287887096405e-07,
+          "h": -3.4924596548080444e-10,
+          "T": 0.0
+        },
+        "mathematicalReferenceSelection": "homogeneous",
+        "freshEOS": {
+          "p": 3499999.9999993723,
+          "h": 703826.5645148464,
+          "u": 697115.565642409,
+          "rho": 521.5319010668067,
+          "T": 345.56367343413575
+        },
+        "getterDifference": {
+          "p": 0.0,
+          "h": 0.0,
+          "u": 0.0
+        },
+        "normalizedMassEnergy": {
+          "mass": 0.0,
+          "energy": 1.302906606408622e-16
+        },
+        "stability": {
+          "cp": 5538.221370820607,
+          "cv": 2748.7862427756,
+          "kappa": 4.176480144740198e-09,
+          "pRho": 459101.48805158335
+        },
+        "physicalQuality": true,
+        "strictRawPressureSupport": true,
+        "canonicalPass": true,
+        "standalonePass": true,
+        "referenceComparisonPass": true,
+        "freshEOSPass": true,
+        "pass_": true
+      },
+      "nativeDifference": {
+        "p": 0.0,
+        "h": 0.0,
+        "T": 0.0
+      },
+      "pressureResidual": 4.6566128730773926e-09,
+      "chemicalPotentialResidual": 1.8730287387804122e-10,
+      "independentSaturation": [
+        {
+          "trueUminusSatU": "0.0000389406731198648488412153284501415187948011082492788185935646",
+          "cachedUminusTrueSatU": "0.000000000321756408975351706954291173091647697367983942484987778914468",
+          "inputMinusCachedSatU": "0.0000389403513634558734895083741589684271471037402653363336057857",
+          "finalTerror": "0.000000000000112220059605806143357353819976105679202021930013758462250839",
+          "dps": 65
+        },
+        {
+          "trueUminusSatU": "0.0000389406731198648488412153284501415187948011082492788185942641",
+          "cachedUminusTrueSatU": "0.000000000321756408975351706954291173091647697367983942484988519528",
+          "inputMinusCachedSatU": "0.0000389403513634558734895083741589684271471037402653363336057446",
+          "finalTerror": "0.000000000000112220059605806143357353819976105679202021930013758462254693",
+          "dps": 90
+        }
+      ],
+      "physicalQualification": true
+    },
+    {
+      "engine": "chromium",
+      "key": "native-ledger-162",
+      "disposition": "unresolved physical phase despite raw liquid return",
+      "input": {
+        "values": {
+          "M": 0.31291914042330304,
+          "U_kJ": 218.1408038613936,
+          "V": 0.0006000000000000001,
+          "rho": 521.531900705505,
+          "u": 697115.5665527601
+        },
+        "bits": {
+          "M": "3fd406de009a45ee",
+          "U_kJ": "406b448177197ac1",
+          "V": "3f43a92a30553262",
+          "rho": "40804c41552836e8",
+          "u": "4125463722133410"
+        }
+      },
+      "control": {
+        "error": {
+          "message": "Input vapor quality [Q] must be between 0 and 1",
+          "name": "Error",
+          "nativeException": {
+            "representation": "CppException",
+            "name": "CoolProp::CoolPropError<(CoolProp::CoolPropBaseError::ErrCode)3>",
+            "message": "Input vapor quality [Q] must be between 0 and 1",
+            "cleanup": "generated-begin/end-catch"
+          }
+        },
+        "after": {
+          "stack": 5706976,
+          "memory": 56360960
+        },
+        "before": {
+          "stack": 5706976,
+          "memory": 56360960
+        },
+        "trace": []
+      },
+      "candidate": {
+        "state": {
+          "values": {
+            "p": 3500000.0000012456,
+            "T": 345.563673599352,
+            "h": 703826.5654298502,
+            "s": 2625.8434130914547,
+            "rho": 521.531900705505,
+            "u": 697115.5665527604,
+            "Q": 10000,
+            "phase": 0
+          },
+          "bits": {
+            "p": "414ab3f000000a73",
+            "T": "40759904ce9bad5e",
+            "h": "41257aa521800576",
+            "s": "40a483afd3d739a2",
+            "rho": "40804c41552836e8",
+            "u": "4125463722133413",
+            "Q": "40c3880000000000",
+            "phase": "0000000000000000"
+          }
+        },
+        "after": {
+          "stack": 5706976,
+          "memory": 56360960
+        },
+        "before": {
+          "stack": 5706976,
+          "memory": 56360960
+        },
+        "trace": []
+      },
+      "science": {
+        "canonical": {
+          "p": 1.2456439435482025e-06,
+          "h": 2.561137080192566e-09,
+          "T": 5.684341886080801e-13
+        },
+        "referenceDifference": {
+          "p": 4.6798959374427795e-07,
+          "h": 1.0477378964424133e-09,
+          "T": 1.1368683772161603e-13
+        },
+        "mathematicalReferenceSelection": "homogeneous",
+        "freshEOS": {
+          "p": 3500000.0000012456,
+          "h": 703826.5654298502,
+          "u": 697115.5665527604,
+          "rho": 521.531900705505,
+          "T": 345.563673599352
+        },
+        "getterDifference": {
+          "p": 0.0,
+          "h": 0.0,
+          "u": 0.0
+        },
+        "normalizedMassEnergy": {
+          "mass": 0.0,
+          "energy": 5.211626422439174e-16
+        },
+        "stability": {
+          "cp": 5538.221376348644,
+          "cv": 2748.7862428906947,
+          "kappa": 4.176480165570998e-09,
+          "pRho": 459101.4860797999
+        },
+        "physicalQuality": true,
+        "strictRawPressureSupport": false,
+        "canonicalPass": true,
+        "standalonePass": true,
+        "referenceComparisonPass": true,
+        "freshEOSPass": true,
+        "pass_": true
+      },
+      "nativeDifference": null,
+      "pressureResidual": 7.683411240577698e-08,
+      "chemicalPotentialResidual": 5.244480471307555e-10,
+      "independentSaturation": [
+        {
+          "trueUminusSatU": "0.00000000233352793036621485484388738669840120280323585439456422096263",
+          "cachedUminusTrueSatU": "-0.00000000076389321137401601429941799864512563124874796194063915622716",
+          "inputMinusCachedSatU": "0.00000000309742114174023086914330538534352683405198381633520337718979",
+          "finalTerror": "-0.000000000000166677879608354997078028582738707371445526038927069010212339",
+          "dps": 65
+        },
+        {
+          "trueUminusSatU": "0.00000000233352793036621485484388738669840120280323585439535346147605",
+          "cachedUminusTrueSatU": "-0.000000000763893211374016014299417998645125631248747961939849604392431",
+          "inputMinusCachedSatU": "0.00000000309742114174023086914330538534352683405198381633520306586848",
+          "finalTerror": "-0.000000000000166677879608354997078028582738707371445526038926782469771217",
+          "dps": 90
+        }
+      ],
+      "physicalQualification": false
+    },
+    {
+      "engine": "chromium",
+      "key": "native-ledger-164",
+      "disposition": "unresolved historical QT refusal",
+      "input": {
+        "values": {
+          "M": 0.01683082646831855,
+          "U_kJ": 25.3017523340734,
+          "V": 0.0006000000000000001,
+          "rho": 28.05137744719758,
+          "u": 1503298.2712821658
+        },
+        "bits": {
+          "M": "3f913c19a4fbfc3a",
+          "U_kJ": "40394d3fa4165640",
+          "V": "3f43a92a30553262",
+          "rho": "403c0d2712877730",
+          "u": "4136f0424572bf7e"
+        }
+      },
+      "control": {
+        "error": {
+          "message": "Input vapor quality [Q] must be between 0 and 1",
+          "name": "Error",
+          "nativeException": {
+            "representation": "CppException",
+            "name": "CoolProp::CoolPropError<(CoolProp::CoolPropBaseError::ErrCode)3>",
+            "message": "Input vapor quality [Q] must be between 0 and 1",
+            "cleanup": "generated-begin/end-catch"
+          }
+        },
+        "after": {
+          "stack": 5706976,
+          "memory": 56360960
+        },
+        "before": {
+          "stack": 5706976,
+          "memory": 56360960
+        },
+        "trace": []
+      },
+      "candidate": {
+        "error": {
+          "message": "Input vapor quality [Q] must be between 0 and 1",
+          "name": "Error",
+          "nativeException": {
+            "representation": "CppException",
+            "name": "CoolProp::CoolPropError<(CoolProp::CoolPropBaseError::ErrCode)3>",
+            "message": "Input vapor quality [Q] must be between 0 and 1",
+            "cleanup": "generated-begin/end-catch"
+          }
+        },
+        "after": {
+          "stack": 5706976,
+          "memory": 56360960
+        },
+        "before": {
+          "stack": 5706976,
+          "memory": 56360960
+        },
+        "trace": []
+      },
+      "science": null,
+      "nativeDifference": null,
+      "pressureResidual": -1.0756775736808777e-07,
+      "chemicalPotentialResidual": -1.3111201178268923e-10,
+      "independentSaturation": [
+        {
+          "trueUminusSatU": "-0.000000000352750032399053245292859984183960920770366888701926803643936",
+          "cachedUminusTrueSatU": "0.0000000000744804699099441159682855862082496770299067411374111640363603",
+          "inputMinusCachedSatU": "-0.000000000427230502308997361261145570392210597800273629839337967680296",
+          "finalTerror": "0.0000000000000619422966825413228585488029511989529766362437572535944682351",
+          "dps": 65
+        },
+        {
+          "trueUminusSatU": "-0.000000000352750032399053245292859984183960920770366888701064163575373",
+          "cachedUminusTrueSatU": "0.0000000000744804699099441159682855862082496770299067411382741903375205",
+          "inputMinusCachedSatU": "-0.000000000427230502308997361261145570392210597800273629839338353912893",
+          "finalTerror": "0.0000000000000619422966825413228585488029511989529766362437575821028488084",
+          "dps": 90
+        }
+      ],
+      "physicalQualification": false
+    },
+    {
+      "engine": "chromium",
+      "key": "native-ledger-165",
+      "disposition": "unresolved historical QT refusal",
+      "input": {
+        "values": {
+          "M": 0.016830826468318544,
+          "U_kJ": 25.301752334073395,
+          "V": 0.0006000000000000001,
+          "rho": 28.05137744719757,
+          "u": 1503298.2712821662
+        },
+        "bits": {
+          "M": "3f913c19a4fbfc38",
+          "U_kJ": "40394d3fa416563f",
+          "V": "3f43a92a30553262",
+          "rho": "403c0d271287772d",
+          "u": "4136f0424572bf80"
+        }
+      },
+      "control": {
+        "error": {
+          "message": "Input vapor quality [Q] must be between 0 and 1",
+          "name": "Error",
+          "nativeException": {
+            "representation": "CppException",
+            "name": "CoolProp::CoolPropError<(CoolProp::CoolPropBaseError::ErrCode)3>",
+            "message": "Input vapor quality [Q] must be between 0 and 1",
+            "cleanup": "generated-begin/end-catch"
+          }
+        },
+        "after": {
+          "stack": 5706976,
+          "memory": 56360960
+        },
+        "before": {
+          "stack": 5706976,
+          "memory": 56360960
+        },
+        "trace": []
+      },
+      "candidate": {
+        "error": {
+          "message": "Input vapor quality [Q] must be between 0 and 1",
+          "name": "Error",
+          "nativeException": {
+            "representation": "CppException",
+            "name": "CoolProp::CoolPropError<(CoolProp::CoolPropBaseError::ErrCode)3>",
+            "message": "Input vapor quality [Q] must be between 0 and 1",
+            "cleanup": "generated-begin/end-catch"
+          }
+        },
+        "after": {
+          "stack": 5706976,
+          "memory": 56360960
+        },
+        "before": {
+          "stack": 5706976,
+          "memory": 56360960
+        },
+        "trace": []
+      },
+      "science": null,
+      "nativeDifference": null,
+      "pressureResidual": -1.885928213596344e-07,
+      "chemicalPotentialResidual": -3.371451731554866e-10,
+      "independentSaturation": [
+        {
+          "trueUminusSatU": "0.0000000000653502495774610104308288438972806943880405651261096146792414",
+          "cachedUminusTrueSatU": "0.0000000000653502495774610104308288438972806943880405651261096146792414",
+          "inputMinusCachedSatU": "0.0",
+          "finalTerror": "0.0000000000000784899510968275225896306177061523718974203462998368132309042",
+          "dps": 65
+        },
+        {
+          "trueUminusSatU": "0.0000000000653502495774610104308288438972806943880405651468115426359303",
+          "cachedUminusTrueSatU": "0.0000000000653502495774610104308288438972806943880405651468115426359303",
+          "inputMinusCachedSatU": "0.0",
+          "finalTerror": "0.0000000000000784899510968275225896306177061523718974203463076624921931812",
+          "dps": 90
+        }
+      ],
+      "physicalQualification": false
+    },
+    {
+      "engine": "webkit",
+      "key": "native-ledger-146",
+      "disposition": "resolved-stable-liquid",
+      "input": {
+        "values": {
+          "M": 0.3129191406602219,
+          "U_kJ": 218.14080371522428,
+          "V": 0.0006000000000000001,
+          "rho": 521.5319011003699,
+          "u": 697115.5655578412
+        },
+        "bits": {
+          "M": "3fd406de00db659d",
+          "U_kJ": "406b448176cb0165",
+          "V": "3f43a92a30553262",
+          "rho": "40804c41555d365c",
+          "u": "412546372190cc20"
+        }
+      },
+      "control": {
+        "error": {
+          "message": "Input vapor quality [Q] must be between 0 and 1",
+          "name": "Error",
+          "nativeException": {
+            "representation": "CppException",
+            "name": "CoolProp::CoolPropError<(CoolProp::CoolPropBaseError::ErrCode)3>",
+            "message": "Input vapor quality [Q] must be between 0 and 1",
+            "cleanup": "generated-begin/end-catch"
+          }
+        },
+        "after": {
+          "stack": 5706976,
+          "memory": 56360960
+        },
+        "before": {
+          "stack": 5706976,
+          "memory": 56360960
+        },
+        "trace": []
+      },
+      "candidate": {
+        "state": {
+          "values": {
+            "p": 3499999.9999996712,
+            "T": 345.56367341878774,
+            "h": 703826.564429847,
+            "s": 2625.843410197631,
+            "rho": 521.5319011003699,
+            "u": 697115.5655578412,
+            "Q": 10000,
+            "phase": 0
+          },
+          "bits": {
+            "p": "414ab3effffffd3e",
+            "T": "40759904ce6b3516",
+            "h": "41257aa520fcf2ec",
+            "s": "40a483afd3761fe0",
+            "rho": "40804c41555d365c",
+            "u": "412546372190cc20",
+            "Q": "40c3880000000000",
+            "phase": "0000000000000000"
+          }
+        },
+        "after": {
+          "stack": 5706976,
+          "memory": 56360960
+        },
+        "before": {
+          "stack": 5706976,
+          "memory": 56360960
+        },
+        "trace": []
+      },
+      "science": {
+        "canonical": {
+          "p": -3.287568688392639e-07,
+          "h": -6.984919309616089e-10,
+          "T": -3.410605131648481e-13
+        },
+        "referenceDifference": {
+          "p": 4.0605664253234863e-07,
+          "h": 6.984919309616089e-10,
+          "T": 0.0
+        },
+        "mathematicalReferenceSelection": "homogeneous",
+        "freshEOS": {
+          "p": 3499999.9999996712,
+          "h": 703826.564429847,
+          "u": 697115.5655578412,
+          "rho": 521.5319011003699,
+          "T": 345.56367341878774
+        },
+        "getterDifference": {
+          "p": 0.0,
+          "h": 0.0,
+          "u": 0.0
+        },
+        "normalizedMassEnergy": {
+          "mass": 0.0,
+          "energy": 1.3029066064828305e-16
+        },
+        "stability": {
+          "cp": 5538.221370307084,
+          "cv": 2748.7862427649043,
+          "kappa": 4.1764801428051265e-09,
+          "pRho": 459101.4882347514
+        },
+        "physicalQuality": true,
+        "strictRawPressureSupport": true,
+        "canonicalPass": true,
+        "standalonePass": true,
+        "referenceComparisonPass": true,
+        "freshEOSPass": true,
+        "pass_": true
+      },
+      "nativeDifference": {
+        "p": 0.0,
+        "h": 0.0,
+        "T": 0.0
+      },
+      "pressureResidual": 1.3364478945732117e-07,
+      "chemicalPotentialResidual": 3.5587546035111693e-10,
+      "independentSaturation": [
+        {
+          "trueUminusSatU": "0.0000425572685279519259346888128544831580493416907487597834308371",
+          "cachedUminusTrueSatU": "-0.00000000076392143095996063862670817391038728531654564860752096792669",
+          "inputMinusCachedSatU": "0.0000425580324493828858953274395626570684366270072944083909518051",
+          "finalTerror": "-0.000000000000323938043622880784868466857269311295928467689250565789760134",
+          "dps": 65
+        },
+        {
+          "trueUminusSatU": "0.0000425572685279519259346888128544831580493416907487597834314584",
+          "cachedUminusTrueSatU": "-0.000000000763921430959960638626708173910387285316545648607520632051114",
+          "inputMinusCachedSatU": "0.0000425580324493828858953274395626570684366270072944083909520905",
+          "finalTerror": "-0.000000000000323938043622880784868466857269311295928467689250565789760652",
+          "dps": 90
+        }
+      ],
+      "physicalQualification": true
+    },
+    {
+      "engine": "webkit",
+      "key": "native-ledger-148",
+      "disposition": "unresolved historical QT refusal",
+      "input": {
+        "values": {
+          "M": 0.016830826468318547,
+          "U_kJ": 25.301752334073395,
+          "V": 0.0006000000000000001,
+          "rho": 28.051377447197577,
+          "u": 1503298.271282166
+        },
+        "bits": {
+          "M": "3f913c19a4fbfc39",
+          "U_kJ": "40394d3fa416563f",
+          "V": "3f43a92a30553262",
+          "rho": "403c0d271287772f",
+          "u": "4136f0424572bf7f"
+        }
+      },
+      "control": {
+        "error": {
+          "message": "Input vapor quality [Q] must be between 0 and 1",
+          "name": "Error",
+          "nativeException": {
+            "representation": "CppException",
+            "name": "CoolProp::CoolPropError<(CoolProp::CoolPropBaseError::ErrCode)3>",
+            "message": "Input vapor quality [Q] must be between 0 and 1",
+            "cleanup": "generated-begin/end-catch"
+          }
+        },
+        "after": {
+          "stack": 5706976,
+          "memory": 56360960
+        },
+        "before": {
+          "stack": 5706976,
+          "memory": 56360960
+        },
+        "trace": []
+      },
+      "candidate": {
+        "error": {
+          "message": "Input vapor quality [Q] must be between 0 and 1",
+          "name": "Error",
+          "nativeException": {
+            "representation": "CppException",
+            "name": "CoolProp::CoolPropError<(CoolProp::CoolPropBaseError::ErrCode)3>",
+            "message": "Input vapor quality [Q] must be between 0 and 1",
+            "cleanup": "generated-begin/end-catch"
+          }
+        },
+        "after": {
+          "stack": 5706976,
+          "memory": 56360960
+        },
+        "before": {
+          "stack": 5706976,
+          "memory": 56360960
+        },
+        "trace": []
+      },
+      "science": null,
+      "nativeDifference": null,
+      "pressureResidual": -1.6111880540847778e-07,
+      "chemicalPotentialResidual": -7.117509211060266e-10,
+      "independentSaturation": [
+        {
+          "trueUminusSatU": "-0.000000000142178188022048933829939229779538896493013692581444406794524",
+          "cachedUminusTrueSatU": "-0.000000000142178188022048933829939229779538896493013692581444406794524",
+          "inputMinusCachedSatU": "0.0",
+          "finalTerror": "-0.000000000000216758912816736685632833380738182915352045586351527091029655",
+          "dps": 65
+        },
+        {
+          "trueUminusSatU": "-0.000000000142178188022048933829939229779538896493013692578676908557999",
+          "cachedUminusTrueSatU": "-0.000000000142178188022048933829939229779538896493013692578676908557999",
+          "inputMinusCachedSatU": "0.0",
+          "finalTerror": "-0.000000000000216758912816736685632833380738182915352045586350482093626979",
+          "dps": 90
+        }
+      ],
+      "physicalQualification": false
+    },
+    {
+      "engine": "webkit",
+      "key": "native-ledger-151",
+      "disposition": "resolved-stable-liquid",
+      "input": {
+        "values": {
+          "M": 0.3129191406444639,
+          "U_kJ": 218.14080372494715,
+          "V": 0.0006000000000000001,
+          "rho": 521.5319010741065,
+          "u": 697115.5656240181
+        },
+        "bits": {
+          "M": "3fd406de00d710be",
+          "U_kJ": "406b448176d039b2",
+          "V": "3f43a92a30553262",
+          "rho": "40804c415559aff5",
+          "u": "41254637219978a7"
+        }
+      },
+      "control": {
+        "error": {
+          "message": "Input vapor quality [Q] must be between 0 and 1",
+          "name": "Error",
+          "nativeException": {
+            "representation": "CppException",
+            "name": "CoolProp::CoolPropError<(CoolProp::CoolPropBaseError::ErrCode)3>",
+            "message": "Input vapor quality [Q] must be between 0 and 1",
+            "cleanup": "generated-begin/end-catch"
+          }
+        },
+        "after": {
+          "stack": 5706976,
+          "memory": 56360960
+        },
+        "before": {
+          "stack": 5706976,
+          "memory": 56360960
+        },
+        "trace": []
+      },
+      "candidate": {
+        "state": {
+          "values": {
+            "p": 3499999.9999997276,
+            "T": 345.5636734307981,
+            "h": 703826.5644963618,
+            "s": 2625.843410390112,
+            "rho": 521.5319010741065,
+            "u": 697115.5656240177,
+            "Q": 10000,
+            "phase": 0
+          },
+          "bits": {
+            "p": "414ab3effffffdb7",
+            "T": "40759904ce6e6e6e",
+            "h": "41257aa52105aac9",
+            "s": "40a483afd37c9546",
+            "rho": "40804c415559aff5",
+            "u": "41254637219978a4",
+            "Q": "40c3880000000000",
+            "phase": "0000000000000000"
+          }
+        },
+        "after": {
+          "stack": 5706976,
+          "memory": 56360960
+        },
+        "before": {
+          "stack": 5706976,
+          "memory": 56360960
+        },
+        "trace": []
+      },
+      "science": {
+        "canonical": {
+          "p": -2.7241185307502747e-07,
+          "h": -8.149072527885437e-10,
+          "T": -2.2737367544323206e-13
+        },
+        "referenceDifference": {
+          "p": -5.667097866535187e-07,
+          "h": -1.3969838619232178e-09,
+          "T": -3.410605131648481e-13
+        },
+        "mathematicalReferenceSelection": "homogeneous",
+        "freshEOS": {
+          "p": 3499999.9999997276,
+          "h": 703826.5644963618,
+          "u": 697115.5656240177,
+          "rho": 521.5319010741065,
+          "T": 345.5636734307981
+        },
+        "getterDifference": {
+          "p": 0.0,
+          "h": 0.0,
+          "u": 0.0
+        },
+        "normalizedMassEnergy": {
+          "mass": 0.0,
+          "energy": 6.514533032123789e-16
+        },
+        "stability": {
+          "cp": 5538.2213707088995,
+          "cv": 2748.786242773273,
+          "kappa": 4.176480144319285e-09,
+          "pRho": 459101.48809142644
+        },
+        "physicalQuality": true,
+        "strictRawPressureSupport": true,
+        "canonicalPass": true,
+        "standalonePass": true,
+        "referenceComparisonPass": true,
+        "freshEOSPass": true,
+        "pass_": true
+      },
+      "nativeDifference": {
+        "p": 0.0,
+        "h": 0.0,
+        "T": 0.0
+      },
+      "pressureResidual": 1.3830140233039856e-07,
+      "chemicalPotentialResidual": 1.6857258648846918e-10,
+      "independentSaturation": [
+        {
+          "trueUminusSatU": "0.0000397293314994496779708043858339646963134132408030300701233319",
+          "cachedUminusTrueSatU": "0.00000000127389736159059647077452958563087661524603267745642710043275",
+          "inputMinusCachedSatU": "0.0000397280576020880873743336113043790654367979947703526136962315",
+          "finalTerror": "0.000000000000234974192277894412338711881558562735811648379860619614236484",
+          "dps": 65
+        },
+        {
+          "trueUminusSatU": "0.0000397293314994496779708043858339646963134132408030300701234658",
+          "cachedUminusTrueSatU": "0.0000000012738973615905964707745295856308766152460326774564276943149",
+          "inputMinusCachedSatU": "0.0000397280576020880873743336113043790654367979947703526136957715",
+          "finalTerror": "0.000000000000234974192277894412338711881558562735811648379860619614236158",
+          "dps": 90
+        }
+      ],
+      "physicalQualification": true
+    },
+    {
+      "engine": "webkit",
+      "key": "native-ledger-152",
+      "disposition": "resolved-stable-liquid",
+      "input": {
+        "values": {
+          "M": 0.312919140640084,
+          "U_kJ": 218.14080372764874,
+          "V": 0.0006000000000000001,
+          "rho": 521.5319010668067,
+          "u": 697115.5656424091
+        },
+        "bits": {
+          "M": "3fd406de00d5dc89",
+          "U_kJ": "406b448176d1ad00",
+          "V": "3f43a92a30553262",
+          "rho": "40804c415558b523",
+          "u": "41254637219be1c1"
+        }
+      },
+      "control": {
+        "error": {
+          "message": "Input vapor quality [Q] must be between 0 and 1",
+          "name": "Error",
+          "nativeException": {
+            "representation": "CppException",
+            "name": "CoolProp::CoolPropError<(CoolProp::CoolPropBaseError::ErrCode)3>",
+            "message": "Input vapor quality [Q] must be between 0 and 1",
+            "cleanup": "generated-begin/end-catch"
+          }
+        },
+        "after": {
+          "stack": 5706976,
+          "memory": 56360960
+        },
+        "before": {
+          "stack": 5706976,
+          "memory": 56360960
+        },
+        "trace": []
+      },
+      "candidate": {
+        "state": {
+          "values": {
+            "p": 3499999.9999993723,
+            "T": 345.56367343413575,
+            "h": 703826.5645148464,
+            "s": 2625.843410443604,
+            "rho": 521.5319010668067,
+            "u": 697115.565642409,
+            "Q": 10000,
+            "phase": 0
+          },
+          "bits": {
+            "p": "414ab3effffffabc",
+            "T": "40759904ce6f53cb",
+            "h": "41257aa521081707",
+            "s": "40a483afd37e60c5",
+            "rho": "40804c415558b523",
+            "u": "41254637219be1c0",
+            "Q": "40c3880000000000",
+            "phase": "0000000000000000"
+          }
+        },
+        "after": {
+          "stack": 5706976,
+          "memory": 56360960
+        },
+        "before": {
+          "stack": 5706976,
+          "memory": 56360960
+        },
+        "trace": []
+      },
+      "science": {
+        "canonical": {
+          "p": -6.277114152908325e-07,
+          "h": -1.0477378964424133e-09,
+          "T": -2.8421709430404007e-13
+        },
+        "referenceDifference": {
+          "p": -2.491287887096405e-07,
+          "h": -3.4924596548080444e-10,
+          "T": 0.0
+        },
+        "mathematicalReferenceSelection": "homogeneous",
+        "freshEOS": {
+          "p": 3499999.9999993723,
+          "h": 703826.5645148464,
+          "u": 697115.565642409,
+          "rho": 521.5319010668067,
+          "T": 345.56367343413575
+        },
+        "getterDifference": {
+          "p": 0.0,
+          "h": 0.0,
+          "u": 0.0
+        },
+        "normalizedMassEnergy": {
+          "mass": 0.0,
+          "energy": 1.302906606408622e-16
+        },
+        "stability": {
+          "cp": 5538.221370820607,
+          "cv": 2748.7862427756,
+          "kappa": 4.176480144740198e-09,
+          "pRho": 459101.48805158335
+        },
+        "physicalQuality": true,
+        "strictRawPressureSupport": true,
+        "canonicalPass": true,
+        "standalonePass": true,
+        "referenceComparisonPass": true,
+        "freshEOSPass": true,
+        "pass_": true
+      },
+      "nativeDifference": {
+        "p": 0.0,
+        "h": 0.0,
+        "T": 0.0
+      },
+      "pressureResidual": 4.6566128730773926e-09,
+      "chemicalPotentialResidual": 1.8730287387804122e-10,
+      "independentSaturation": [
+        {
+          "trueUminusSatU": "0.0000389406731198648488412153284501415187948011082492788185935646",
+          "cachedUminusTrueSatU": "0.000000000321756408975351706954291173091647697367983942484987778914468",
+          "inputMinusCachedSatU": "0.0000389403513634558734895083741589684271471037402653363336057857",
+          "finalTerror": "0.000000000000112220059605806143357353819976105679202021930013758462250839",
+          "dps": 65
+        },
+        {
+          "trueUminusSatU": "0.0000389406731198648488412153284501415187948011082492788185942641",
+          "cachedUminusTrueSatU": "0.000000000321756408975351706954291173091647697367983942484988519528",
+          "inputMinusCachedSatU": "0.0000389403513634558734895083741589684271471037402653363336057446",
+          "finalTerror": "0.000000000000112220059605806143357353819976105679202021930013758462254693",
+          "dps": 90
+        }
+      ],
+      "physicalQualification": true
+    },
+    {
+      "engine": "webkit",
+      "key": "native-ledger-162",
+      "disposition": "unresolved physical phase despite raw liquid return",
+      "input": {
+        "values": {
+          "M": 0.31291914042330304,
+          "U_kJ": 218.1408038613936,
+          "V": 0.0006000000000000001,
+          "rho": 521.531900705505,
+          "u": 697115.5665527601
+        },
+        "bits": {
+          "M": "3fd406de009a45ee",
+          "U_kJ": "406b448177197ac1",
+          "V": "3f43a92a30553262",
+          "rho": "40804c41552836e8",
+          "u": "4125463722133410"
+        }
+      },
+      "control": {
+        "error": {
+          "message": "Input vapor quality [Q] must be between 0 and 1",
+          "name": "Error",
+          "nativeException": {
+            "representation": "CppException",
+            "name": "CoolProp::CoolPropError<(CoolProp::CoolPropBaseError::ErrCode)3>",
+            "message": "Input vapor quality [Q] must be between 0 and 1",
+            "cleanup": "generated-begin/end-catch"
+          }
+        },
+        "after": {
+          "stack": 5706976,
+          "memory": 56360960
+        },
+        "before": {
+          "stack": 5706976,
+          "memory": 56360960
+        },
+        "trace": []
+      },
+      "candidate": {
+        "state": {
+          "values": {
+            "p": 3500000.0000012456,
+            "T": 345.563673599352,
+            "h": 703826.5654298502,
+            "s": 2625.8434130914547,
+            "rho": 521.531900705505,
+            "u": 697115.5665527604,
+            "Q": 10000,
+            "phase": 0
+          },
+          "bits": {
+            "p": "414ab3f000000a73",
+            "T": "40759904ce9bad5e",
+            "h": "41257aa521800576",
+            "s": "40a483afd3d739a2",
+            "rho": "40804c41552836e8",
+            "u": "4125463722133413",
+            "Q": "40c3880000000000",
+            "phase": "0000000000000000"
+          }
+        },
+        "after": {
+          "stack": 5706976,
+          "memory": 56360960
+        },
+        "before": {
+          "stack": 5706976,
+          "memory": 56360960
+        },
+        "trace": []
+      },
+      "science": {
+        "canonical": {
+          "p": 1.2456439435482025e-06,
+          "h": 2.561137080192566e-09,
+          "T": 5.684341886080801e-13
+        },
+        "referenceDifference": {
+          "p": 4.6798959374427795e-07,
+          "h": 1.0477378964424133e-09,
+          "T": 1.1368683772161603e-13
+        },
+        "mathematicalReferenceSelection": "homogeneous",
+        "freshEOS": {
+          "p": 3500000.0000012456,
+          "h": 703826.5654298502,
+          "u": 697115.5665527604,
+          "rho": 521.531900705505,
+          "T": 345.563673599352
+        },
+        "getterDifference": {
+          "p": 0.0,
+          "h": 0.0,
+          "u": 0.0
+        },
+        "normalizedMassEnergy": {
+          "mass": 0.0,
+          "energy": 5.211626422439174e-16
+        },
+        "stability": {
+          "cp": 5538.221376348644,
+          "cv": 2748.7862428906947,
+          "kappa": 4.176480165570998e-09,
+          "pRho": 459101.4860797999
+        },
+        "physicalQuality": true,
+        "strictRawPressureSupport": false,
+        "canonicalPass": true,
+        "standalonePass": true,
+        "referenceComparisonPass": true,
+        "freshEOSPass": true,
+        "pass_": true
+      },
+      "nativeDifference": null,
+      "pressureResidual": 7.683411240577698e-08,
+      "chemicalPotentialResidual": 5.244480471307555e-10,
+      "independentSaturation": [
+        {
+          "trueUminusSatU": "0.00000000233352793036621485484388738669840120280323585439456422096263",
+          "cachedUminusTrueSatU": "-0.00000000076389321137401601429941799864512563124874796194063915622716",
+          "inputMinusCachedSatU": "0.00000000309742114174023086914330538534352683405198381633520337718979",
+          "finalTerror": "-0.000000000000166677879608354997078028582738707371445526038927069010212339",
+          "dps": 65
+        },
+        {
+          "trueUminusSatU": "0.00000000233352793036621485484388738669840120280323585439535346147605",
+          "cachedUminusTrueSatU": "-0.000000000763893211374016014299417998645125631248747961939849604392431",
+          "inputMinusCachedSatU": "0.00000000309742114174023086914330538534352683405198381633520306586848",
+          "finalTerror": "-0.000000000000166677879608354997078028582738707371445526038926782469771217",
+          "dps": 90
+        }
+      ],
+      "physicalQualification": false
+    },
+    {
+      "engine": "webkit",
+      "key": "native-ledger-164",
+      "disposition": "unresolved historical QT refusal",
+      "input": {
+        "values": {
+          "M": 0.01683082646831855,
+          "U_kJ": 25.3017523340734,
+          "V": 0.0006000000000000001,
+          "rho": 28.05137744719758,
+          "u": 1503298.2712821658
+        },
+        "bits": {
+          "M": "3f913c19a4fbfc3a",
+          "U_kJ": "40394d3fa4165640",
+          "V": "3f43a92a30553262",
+          "rho": "403c0d2712877730",
+          "u": "4136f0424572bf7e"
+        }
+      },
+      "control": {
+        "error": {
+          "message": "Input vapor quality [Q] must be between 0 and 1",
+          "name": "Error",
+          "nativeException": {
+            "representation": "CppException",
+            "name": "CoolProp::CoolPropError<(CoolProp::CoolPropBaseError::ErrCode)3>",
+            "message": "Input vapor quality [Q] must be between 0 and 1",
+            "cleanup": "generated-begin/end-catch"
+          }
+        },
+        "after": {
+          "stack": 5706976,
+          "memory": 56360960
+        },
+        "before": {
+          "stack": 5706976,
+          "memory": 56360960
+        },
+        "trace": []
+      },
+      "candidate": {
+        "error": {
+          "message": "Input vapor quality [Q] must be between 0 and 1",
+          "name": "Error",
+          "nativeException": {
+            "representation": "CppException",
+            "name": "CoolProp::CoolPropError<(CoolProp::CoolPropBaseError::ErrCode)3>",
+            "message": "Input vapor quality [Q] must be between 0 and 1",
+            "cleanup": "generated-begin/end-catch"
+          }
+        },
+        "after": {
+          "stack": 5706976,
+          "memory": 56360960
+        },
+        "before": {
+          "stack": 5706976,
+          "memory": 56360960
+        },
+        "trace": []
+      },
+      "science": null,
+      "nativeDifference": null,
+      "pressureResidual": -1.0756775736808777e-07,
+      "chemicalPotentialResidual": -1.3111201178268923e-10,
+      "independentSaturation": [
+        {
+          "trueUminusSatU": "-0.000000000352750032399053245292859984183960920770366888701926803643936",
+          "cachedUminusTrueSatU": "0.0000000000744804699099441159682855862082496770299067411374111640363603",
+          "inputMinusCachedSatU": "-0.000000000427230502308997361261145570392210597800273629839337967680296",
+          "finalTerror": "0.0000000000000619422966825413228585488029511989529766362437572535944682351",
+          "dps": 65
+        },
+        {
+          "trueUminusSatU": "-0.000000000352750032399053245292859984183960920770366888701064163575373",
+          "cachedUminusTrueSatU": "0.0000000000744804699099441159682855862082496770299067411382741903375205",
+          "inputMinusCachedSatU": "-0.000000000427230502308997361261145570392210597800273629839338353912893",
+          "finalTerror": "0.0000000000000619422966825413228585488029511989529766362437575821028488084",
+          "dps": 90
+        }
+      ],
+      "physicalQualification": false
+    },
+    {
+      "engine": "webkit",
+      "key": "native-ledger-165",
+      "disposition": "unresolved historical QT refusal",
+      "input": {
+        "values": {
+          "M": 0.016830826468318544,
+          "U_kJ": 25.301752334073395,
+          "V": 0.0006000000000000001,
+          "rho": 28.05137744719757,
+          "u": 1503298.2712821662
+        },
+        "bits": {
+          "M": "3f913c19a4fbfc38",
+          "U_kJ": "40394d3fa416563f",
+          "V": "3f43a92a30553262",
+          "rho": "403c0d271287772d",
+          "u": "4136f0424572bf80"
+        }
+      },
+      "control": {
+        "error": {
+          "message": "Input vapor quality [Q] must be between 0 and 1",
+          "name": "Error",
+          "nativeException": {
+            "representation": "CppException",
+            "name": "CoolProp::CoolPropError<(CoolProp::CoolPropBaseError::ErrCode)3>",
+            "message": "Input vapor quality [Q] must be between 0 and 1",
+            "cleanup": "generated-begin/end-catch"
+          }
+        },
+        "after": {
+          "stack": 5706976,
+          "memory": 56360960
+        },
+        "before": {
+          "stack": 5706976,
+          "memory": 56360960
+        },
+        "trace": []
+      },
+      "candidate": {
+        "error": {
+          "message": "Input vapor quality [Q] must be between 0 and 1",
+          "name": "Error",
+          "nativeException": {
+            "representation": "CppException",
+            "name": "CoolProp::CoolPropError<(CoolProp::CoolPropBaseError::ErrCode)3>",
+            "message": "Input vapor quality [Q] must be between 0 and 1",
+            "cleanup": "generated-begin/end-catch"
+          }
+        },
+        "after": {
+          "stack": 5706976,
+          "memory": 56360960
+        },
+        "before": {
+          "stack": 5706976,
+          "memory": 56360960
+        },
+        "trace": []
+      },
+      "science": null,
+      "nativeDifference": null,
+      "pressureResidual": -1.885928213596344e-07,
+      "chemicalPotentialResidual": -3.371451731554866e-10,
+      "independentSaturation": [
+        {
+          "trueUminusSatU": "0.0000000000653502495774610104308288438972806943880405651261096146792414",
+          "cachedUminusTrueSatU": "0.0000000000653502495774610104308288438972806943880405651261096146792414",
+          "inputMinusCachedSatU": "0.0",
+          "finalTerror": "0.0000000000000784899510968275225896306177061523718974203462998368132309042",
+          "dps": 65
+        },
+        {
+          "trueUminusSatU": "0.0000000000653502495774610104308288438972806943880405651468115426359303",
+          "cachedUminusTrueSatU": "0.0000000000653502495774610104308288438972806943880405651468115426359303",
+          "inputMinusCachedSatU": "0.0",
+          "finalTerror": "0.0000000000000784899510968275225896306177061523718974203463076624921931812",
+          "dps": 90
+        }
+      ],
+      "physicalQualification": false
+    }
+  ],
+  "failures": [],
+  "budgets": {
+    "canonical": {
+      "p": 0.1,
+      "h": 0.1,
+      "T": 0.0001
+    },
+    "standaloneStrict": {
+      "p": 10,
+      "h": 50,
+      "T": 0.01
+    },
+    "normalizedMassEnergy": 1e-11,
+    "independentReferenceResolution": {
+      "p": 1e-05,
+      "energy": 1e-08
+    }
+  },
+  "unresolvedEndpointsRetained": [
+    "native-ledger-148",
+    "native-ledger-162",
+    "native-ledger-164",
+    "native-ledger-165"
+  ],
+  "fullGateBPassed": false
+}

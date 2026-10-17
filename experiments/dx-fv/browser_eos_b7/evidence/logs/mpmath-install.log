@@ -1,0 +1,9 @@
+WARNING: The directory '/home/agent/.cache/pip' or its parent directory is not owned or is not writable by the current user. The cache has been disabled. Check the permissions and owner of that directory. If executing pip with sudo, you should use sudo's -H flag.
+Collecting mpmath==1.4.1
+  Downloading mpmath-1.4.1-py3-none-any.whl.metadata (9.1 kB)
+Downloading mpmath-1.4.1-py3-none-any.whl (567 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 567.8/567.8 kB 2.8 MB/s  0:00:00
+Installing collected packages: mpmath
+ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+sympy 1.14.0 requires mpmath<1.4,>=1.1.0, but you have mpmath 1.4.1 which is incompatible.
+Successfully installed mpmath-1.4.1
