@@ -1,0 +1,19 @@
+<!doctype html><meta charset="utf-8"><title>B9A isolated research</title>
+<style>body{font:17px system-ui;background:#10202b;color:#e6eef2;padding:2em}button{font:inherit;padding:.7em}pre{white-space:pre-wrap}</style>
+<button id="input" style="position:fixed;left:10px;top:10px">Input acknowledgement</button>
+<h1>Ammonia Simulation Laboratory · B9A</h1><p>Bounded table-backed research. No operator integration or complete scientific qualification.</p><p id="status">Not initialized</p><pre id="reading"></pre>
+<script>window.inputAcks=[];document.querySelector('#input').onclick=e=>{inputAcks.push({phase:window.workPhase??'idle',latencyMS:performance.now()-e.timeStamp});};window.addEventListener('pagehide',()=>window.activeClient?.terminate());</script>
+<label>Mode <select id="mode"><option>A</option><option selected>B</option><option>C</option></select></label>
+<label>Fixture <select id="fixture"><option>cold</option><option>warm</option></select></label>
+<button id="initialize">Initialize / restart</button><button id="advance">Advance frozen checkpoint</button><button id="stop">Scheduling stop</button><button id="details">Detailed diagnostics</button><button id="dispose">Dispose</button>
+<script type="module">
+import {Client} from './client.mjs';import {compact} from './snapshot.mjs';
+let index=0;const times=[0,.0001,.0005,.001];
+function show(r){const c=window.activeClient;if(c&&r.sequence<c.lastDisplaySequence)return;document.querySelector('#status').textContent=`${r.status} · accepted ${r.clock} s · version ${r.acceptedVersion}${c?.displayStale?' · last reading stale':''}`;const s=r.result?.compact??(r.result?.record&&r.result?.state?compact(r.result.record,r.result.state):null);if(s)document.querySelector('#reading').textContent=JSON.stringify(s,null,2);if(!r.success)document.querySelector('#reading').textContent+='\nCurrent refusal: '+JSON.stringify(r.error,null,2);}
+async function action(fn){try{await fn();}catch(e){document.querySelector('#status').textContent='Session lost/refused · '+e.message;}}
+document.querySelector('#initialize').onclick=()=>action(async()=>{window.activeClient?.terminate();window.activeClient=new Client(document.querySelector('#mode').value);index=0;show(await activeClient.request('initialize',{fixture:document.querySelector('#fixture').value}));});
+document.querySelector('#advance').onclick=()=>action(async()=>{if(index>=3)throw Error('Frozen .001 s horizon complete');const r=await activeClient.request('advance',{duration:times[index+1]-times[index]});if(r.success)index++;show(r);});
+document.querySelector('#stop').onclick=()=>action(async()=>show(await activeClient.request('stop')));
+document.querySelector('#details').onclick=()=>action(async()=>{const r=await activeClient.request(activeClient.mode==='A'?'diagnostics':'diagnosticsDetail',activeClient.mode==='A'?{}:{version:activeClient.lastVersion});show(r);if(r.success)document.querySelector('#reading').textContent+='\nDetailed evidence '+JSON.stringify({available:r.result.available??true,scope:r.result.scope??'complete B9',attemptCount:r.result.attempts?.length});});
+document.querySelector('#dispose').onclick=()=>action(async()=>show(await activeClient.dispose()));
+</script>

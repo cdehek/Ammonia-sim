@@ -1,0 +1,18 @@
+baseline-chromium.json.gz False
+Traceback (most recent call last):
+  File "/workspace/Ammonia-sim/experiments/dx-fv/browser_eos_b9a/run-browser.py", line 56, in <module>
+    try:asyncio.run(main())
+        ^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/asyncio/runners.py", line 195, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/asyncio/base_events.py", line 691, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/workspace/Ammonia-sim/experiments/dx-fv/browser_eos_b9a/run-browser.py", line 55, in main
+    if not out['passed']:raise RuntimeError(out.get('harnessError'))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Page.evaluate: TypeError: Failed to fetch dynamically imported module: http://127.0.0.1:37513/experiments/dx-fv/browser_eos_b9a/values.mjs

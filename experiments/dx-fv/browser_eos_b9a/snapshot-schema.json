@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "authority": "detached presentation only",
+  "source": "unchanged accepted A2 record and state",
+  "units": {
+    "clockSeconds": "s",
+    "acceptedVersion": "committed half-step count",
+    "pressureBarAbsolute": "bar absolute",
+    "temperatureK": "K",
+    "massKg": "kg",
+    "internalEnergyKJ": "kJ",
+    "enthalpyKJkg": "kJ/kg",
+    "quality": "original mass fraction or null",
+    "wet": "original bulk indicator",
+    "combinedEnergyResidualKJ": "kJ",
+    "lastAcceptedStepSeconds": "s or null"
+  },
+  "forbiddenUse": "Never reconstruct scientific M/U/V from operator snapshots",
+  "diagnosticRetentionEndpoints": 4,
+  "responseCacheEntries": 256,
+  "maximumPendingRequests": 8,
+  "fieldSources": {
+    "clockSeconds": {
+      "source": "record.seconds",
+      "unit": "s"
+    },
+    "acceptedVersion": {
+      "source": "record.acceptedSteps",
+      "unit": "committed half-step count"
+    },
+    "sections[]": {
+      "count": 5,
+      "pressureBarAbsolute": "record.sections[i].p; bar absolute",
+      "temperatureK": "record.sections[i].T + 273.15; K",
+      "massKg": "state.cells[i].massKg; kg",
+      "internalEnergyKJ": "state.cells[i].internalEnergyKJ; kJ",
+      "phase": "original string",
+      "quality": "original x; mass fraction or null",
+      "wet": "original bulk boolean"
+    },
+    "tubeTemperaturesK": "record.nodes tube-*; K; five",
+    "finTemperaturesK": "record.nodes fin-*; K; five",
+    "airTemperatureK": "record.nodes air; K",
+    "inlet": "specified state.spec.fluid.inlet p in bar absolute / h in kJ/kg; no additional lookup",
+    "terminal/outlet": "original record summary: p bar absolute, h kJ/kg, temperatureK K, quality fraction/null, wet bool, superheatK K; outlet.supported false retains original message",
+    "totalMassKg": "record.totals.massKg; kg",
+    "totalInternalEnergyKJ": "record.totals.internalEnergyKJ; kJ",
+    "accounting": "massResidualKg kg; combinedEnergyResidualKJ, boundaryEnthalpyKJ, airLoadKJ kJ",
+    "lastAcceptedStepSeconds": "last original trace.trialSeconds / 2 for original adaptive TR-BDF2; null initially",
+    "lastFault": "original stop or safe current failure; numerical/domain proof retained",
+    "status": "ready/stopped/numerical-stop/physical-domain-stop/record-unavailable or lifecycle status",
+    "qualification": "explicit bounded research label"
+  }
+}

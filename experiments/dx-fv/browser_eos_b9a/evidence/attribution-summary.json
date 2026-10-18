@@ -1,0 +1,562 @@
+{
+  "chromium": {
+    "cold": {
+      "uninstrumentedAdvanceSumMS": {
+        "n": 3,
+        "median": 75.5000000000291,
+        "p95": 95.30000000001746,
+        "max": 95.30000000001746,
+        "min": 70.5
+      },
+      "instrumentedAdvanceSumMS": {
+        "n": 3,
+        "median": 99.70000000001164,
+        "p95": 123.0000000000291,
+        "max": 123.0000000000291,
+        "min": 88.69999999998254
+      },
+      "inclusiveCostMS": {
+        "engine.ph": {
+          "n": 3,
+          "median": 30.50000000008731,
+          "p95": 31.100000000034925,
+          "max": 31.100000000034925,
+          "min": 26.699999999720603
+        },
+        "engine.sat": {
+          "n": 3,
+          "median": 2.899999999877764,
+          "p95": 3.4000000000814907,
+          "max": 3.4000000000814907,
+          "min": 2.3999999999359716
+        },
+        "thermo.initialize": {
+          "n": 3,
+          "median": 0.09999999997671694,
+          "p95": 0.29999999998835847,
+          "max": 0.29999999998835847,
+          "min": 0
+        },
+        "thermo.ph": {
+          "n": 3,
+          "median": 43.29999999998836,
+          "p95": 47.50000000014552,
+          "max": 47.50000000014552,
+          "min": 36.0999999998603
+        },
+        "engine.stateMVU": {
+          "n": 3,
+          "median": 0.69999999992433,
+          "p95": 0.7999999999301508,
+          "max": 0.7999999999301508,
+          "min": 0.5000000000291038
+        },
+        "thermo.recover": {
+          "n": 3,
+          "median": 1.2000000000407454,
+          "p95": 1.2999999998719431,
+          "max": 1.2999999998719431,
+          "min": 1.1999999998952262
+        },
+        "residualInclusive": {
+          "n": 3,
+          "median": 89.50000000008731,
+          "p95": 112.30000000004657,
+          "max": 112.30000000004657,
+          "min": 78.49999999985448
+        },
+        "linearSolve": {
+          "n": 3,
+          "median": 2.200000000098953,
+          "p95": 2.200000000098953,
+          "max": 2.200000000098953,
+          "min": 1.3999999999359716
+        },
+        "NewtonInclusive": {
+          "n": 3,
+          "median": 95.20000000001164,
+          "p95": 118.30000000007567,
+          "max": 118.30000000007567,
+          "min": 84.30000000001746
+        },
+        "observerCallback": {
+          "n": 3,
+          "median": 0,
+          "p95": 0.09999999997671694,
+          "max": 0.09999999997671694,
+          "min": 0
+        }
+      },
+      "microbenchmarkMS": {
+        "stateClone": {
+          "n": 9,
+          "median": 0.10000000000582077,
+          "p95": 0.10000000000582077,
+          "max": 0.10000000000582077,
+          "min": 0
+        },
+        "attemptClone": {
+          "n": 9,
+          "median": 10,
+          "p95": 12.5,
+          "max": 12.5,
+          "min": 9.300000000017462
+        },
+        "cacheClone": {
+          "n": 9,
+          "median": 9.60000000000582,
+          "p95": 20.39999999999418,
+          "max": 20.39999999999418,
+          "min": 9.39999999999418
+        },
+        "bitTag": {
+          "n": 9,
+          "median": 64.39999999999418,
+          "p95": 85.29999999998836,
+          "max": 85.29999999998836,
+          "min": 37
+        },
+        "fullComparisonSerialization": {
+          "n": 9,
+          "median": 68.30000000001746,
+          "p95": 94.60000000000582,
+          "max": 94.60000000000582,
+          "min": 46
+        },
+        "jsonSizeEstimate": {
+          "n": 9,
+          "median": 7.899999999994179,
+          "p95": 11.099999999976717,
+          "max": 11.099999999976717,
+          "min": 7.5
+        }
+      },
+      "payloadEstimateBytes": 2476191,
+      "eventTypes": {
+        "iteration": 184,
+        "derivative": 2730,
+        "line-search": 130
+      },
+      "instrumentationExactParity": true
+    },
+    "warm": {
+      "uninstrumentedAdvanceSumMS": {
+        "n": 3,
+        "median": 231.29999999998836,
+        "p95": 255.79999999998836,
+        "max": 255.79999999998836,
+        "min": 222.40000000002328
+      },
+      "instrumentedAdvanceSumMS": {
+        "n": 3,
+        "median": 265.3999999999942,
+        "p95": 271.9999999999709,
+        "max": 271.9999999999709,
+        "min": 254.20000000001164
+      },
+      "inclusiveCostMS": {
+        "engine.ph": {
+          "n": 3,
+          "median": 118.9000000001106,
+          "p95": 124.60000000038417,
+          "max": 124.60000000038417,
+          "min": 114.70000000027358
+        },
+        "engine.sat": {
+          "n": 3,
+          "median": 7.900000000023283,
+          "p95": 9.200000000098953,
+          "max": 9.200000000098953,
+          "min": 6.800000000017462
+        },
+        "thermo.initialize": {
+          "n": 3,
+          "median": 0.10000000000582077,
+          "p95": 0.10000000000582077,
+          "max": 0.10000000000582077,
+          "min": 0.10000000000582077
+        },
+        "thermo.ph": {
+          "n": 3,
+          "median": 147.20000000033178,
+          "p95": 154.20000000024447,
+          "max": 154.20000000024447,
+          "min": 139.39999999996508
+        },
+        "engine.stateMVU": {
+          "n": 3,
+          "median": 7.199999999895226,
+          "p95": 10.200000000040745,
+          "max": 10.200000000040745,
+          "min": 6.5000000000873115
+        },
+        "thermo.recover": {
+          "n": 3,
+          "median": 8.999999999796273,
+          "p95": 11.400000000052387,
+          "max": 11.400000000052387,
+          "min": 7.900000000139698
+        },
+        "residualInclusive": {
+          "n": 3,
+          "median": 235.0999999999185,
+          "p95": 239.20000000009895,
+          "max": 239.20000000009895,
+          "min": 219.19999999980791
+        },
+        "linearSolve": {
+          "n": 3,
+          "median": 4.400000000052387,
+          "p95": 5.699999999982538,
+          "max": 5.699999999982538,
+          "min": 3.800000000046566
+        },
+        "NewtonInclusive": {
+          "n": 3,
+          "median": 246.89999999990687,
+          "p95": 252.4000000001106,
+          "max": 252.4000000001106,
+          "min": 232.49999999988358
+        },
+        "observerCallback": {
+          "n": 3,
+          "median": 0,
+          "p95": 0,
+          "max": 0,
+          "min": 0
+        }
+      },
+      "microbenchmarkMS": {
+        "stateClone": {
+          "n": 9,
+          "median": 0.09999999997671694,
+          "p95": 0.10000000000582077,
+          "max": 0.10000000000582077,
+          "min": 0
+        },
+        "attemptClone": {
+          "n": 9,
+          "median": 25.70000000001164,
+          "p95": 27.800000000017462,
+          "max": 27.800000000017462,
+          "min": 25.29999999998836
+        },
+        "cacheClone": {
+          "n": 9,
+          "median": 25.300000000017462,
+          "p95": 27.60000000000582,
+          "max": 27.60000000000582,
+          "min": 25.10000000000582
+        },
+        "bitTag": {
+          "n": 9,
+          "median": 174.89999999999418,
+          "p95": 199.60000000000582,
+          "max": 199.60000000000582,
+          "min": 123.29999999998836
+        },
+        "fullComparisonSerialization": {
+          "n": 9,
+          "median": 204.39999999999418,
+          "p95": 221.39999999999418,
+          "max": 221.39999999999418,
+          "min": 178
+        },
+        "jsonSizeEstimate": {
+          "n": 9,
+          "median": 21.300000000017462,
+          "p95": 23,
+          "max": 23,
+          "min": 20.60000000000582
+        }
+      },
+      "payloadEstimateBytes": 6406662,
+      "eventTypes": {
+        "iteration": 465,
+        "derivative": 7245,
+        "line-search": 345
+      },
+      "instrumentationExactParity": true
+    }
+  },
+  "webkit": {
+    "cold": {
+      "uninstrumentedAdvanceSumMS": {
+        "n": 3,
+        "median": 64,
+        "p95": 153,
+        "max": 153,
+        "min": 57
+      },
+      "instrumentedAdvanceSumMS": {
+        "n": 3,
+        "median": 75,
+        "p95": 80,
+        "max": 80,
+        "min": 71
+      },
+      "inclusiveCostMS": {
+        "engine.ph": {
+          "n": 3,
+          "median": 29,
+          "p95": 37,
+          "max": 37,
+          "min": 26
+        },
+        "engine.sat": {
+          "n": 3,
+          "median": 4,
+          "p95": 4,
+          "max": 4,
+          "min": 4
+        },
+        "thermo.initialize": {
+          "n": 3,
+          "median": 0,
+          "p95": 0,
+          "max": 0,
+          "min": 0
+        },
+        "thermo.ph": {
+          "n": 3,
+          "median": 37,
+          "p95": 46,
+          "max": 46,
+          "min": 35
+        },
+        "engine.stateMVU": {
+          "n": 3,
+          "median": 1,
+          "p95": 2,
+          "max": 2,
+          "min": 1
+        },
+        "thermo.recover": {
+          "n": 3,
+          "median": 3,
+          "p95": 4,
+          "max": 4,
+          "min": 2
+        },
+        "residualInclusive": {
+          "n": 3,
+          "median": 61,
+          "p95": 66,
+          "max": 66,
+          "min": 59
+        },
+        "linearSolve": {
+          "n": 3,
+          "median": 1,
+          "p95": 1,
+          "max": 1,
+          "min": 0
+        },
+        "NewtonInclusive": {
+          "n": 3,
+          "median": 69,
+          "p95": 69,
+          "max": 69,
+          "min": 68
+        },
+        "observerCallback": {
+          "n": 3,
+          "median": 0,
+          "p95": 0,
+          "max": 0,
+          "min": 0
+        }
+      },
+      "microbenchmarkMS": {
+        "stateClone": {
+          "n": 9,
+          "median": 0,
+          "p95": 0,
+          "max": 0,
+          "min": 0
+        },
+        "attemptClone": {
+          "n": 9,
+          "median": 7,
+          "p95": 8,
+          "max": 8,
+          "min": 6
+        },
+        "cacheClone": {
+          "n": 9,
+          "median": 7,
+          "p95": 8,
+          "max": 8,
+          "min": 6
+        },
+        "bitTag": {
+          "n": 9,
+          "median": 40,
+          "p95": 48,
+          "max": 48,
+          "min": 39
+        },
+        "fullComparisonSerialization": {
+          "n": 9,
+          "median": 44,
+          "p95": 60,
+          "max": 60,
+          "min": 42
+        },
+        "jsonSizeEstimate": {
+          "n": 9,
+          "median": 4,
+          "p95": 5,
+          "max": 5,
+          "min": 4
+        }
+      },
+      "payloadEstimateBytes": 2477108,
+      "eventTypes": {
+        "iteration": 184,
+        "derivative": 2730,
+        "line-search": 130
+      },
+      "instrumentationExactParity": true
+    },
+    "warm": {
+      "uninstrumentedAdvanceSumMS": {
+        "n": 3,
+        "median": 235,
+        "p95": 238,
+        "max": 238,
+        "min": 224
+      },
+      "instrumentedAdvanceSumMS": {
+        "n": 3,
+        "median": 242,
+        "p95": 291,
+        "max": 291,
+        "min": 238
+      },
+      "inclusiveCostMS": {
+        "engine.ph": {
+          "n": 3,
+          "median": 132,
+          "p95": 158,
+          "max": 158,
+          "min": 131
+        },
+        "engine.sat": {
+          "n": 3,
+          "median": 6,
+          "p95": 7,
+          "max": 7,
+          "min": 4
+        },
+        "thermo.initialize": {
+          "n": 3,
+          "median": 1,
+          "p95": 1,
+          "max": 1,
+          "min": 0
+        },
+        "thermo.ph": {
+          "n": 3,
+          "median": 144,
+          "p95": 171,
+          "max": 171,
+          "min": 142
+        },
+        "engine.stateMVU": {
+          "n": 3,
+          "median": 5,
+          "p95": 8,
+          "max": 8,
+          "min": 4
+        },
+        "thermo.recover": {
+          "n": 3,
+          "median": 5,
+          "p95": 8,
+          "max": 8,
+          "min": 4
+        },
+        "residualInclusive": {
+          "n": 3,
+          "median": 212,
+          "p95": 252,
+          "max": 252,
+          "min": 205
+        },
+        "linearSolve": {
+          "n": 3,
+          "median": 5,
+          "p95": 11,
+          "max": 11,
+          "min": 4
+        },
+        "NewtonInclusive": {
+          "n": 3,
+          "median": 230,
+          "p95": 268,
+          "max": 268,
+          "min": 225
+        },
+        "observerCallback": {
+          "n": 3,
+          "median": 0,
+          "p95": 0,
+          "max": 0,
+          "min": 0
+        }
+      },
+      "microbenchmarkMS": {
+        "stateClone": {
+          "n": 9,
+          "median": 0,
+          "p95": 1,
+          "max": 1,
+          "min": 0
+        },
+        "attemptClone": {
+          "n": 9,
+          "median": 19,
+          "p95": 22,
+          "max": 22,
+          "min": 16
+        },
+        "cacheClone": {
+          "n": 9,
+          "median": 18,
+          "p95": 27,
+          "max": 27,
+          "min": 17
+        },
+        "bitTag": {
+          "n": 9,
+          "median": 108,
+          "p95": 111,
+          "max": 111,
+          "min": 100
+        },
+        "fullComparisonSerialization": {
+          "n": 9,
+          "median": 125,
+          "p95": 137,
+          "max": 137,
+          "min": 111
+        },
+        "jsonSizeEstimate": {
+          "n": 9,
+          "median": 12,
+          "p95": 20,
+          "max": 20,
+          "min": 11
+        }
+      },
+      "payloadEstimateBytes": 6408088,
+      "eventTypes": {
+        "iteration": 465,
+        "derivative": 7245,
+        "line-search": 345
+      },
+      "instrumentationExactParity": true
+    }
+  }
+}

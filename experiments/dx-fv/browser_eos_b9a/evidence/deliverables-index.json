@@ -1,0 +1,85 @@
+{
+  "reports": [
+    "README.md",
+    "PERFORMANCE_ATTRIBUTION_DESIGN.md",
+    "COMPACT_SNAPSHOT_CONTRACT.md",
+    "WORKER_PROTOCOL_REVIEW.md",
+    "SCIENTIFIC_PARITY_MATRIX.md",
+    "FAILURE_AND_LIFECYCLE_MATRIX.md",
+    "PERFORMANCE_AND_MEMORY.md",
+    "ENGINEERING_REPORT.md",
+    "MECHANICS_REPORT.md",
+    "SCIENTIFIC_CONTRACT_AUDIT.md",
+    "RETAINED_BACKEND_BLOCKERS.md",
+    "NEXT_MILESTONE_RECOMMENDATION.md",
+    "EXECUTION_NOTES.md"
+  ],
+  "implementation": [
+    "service.mjs",
+    "worker.mjs",
+    "client.mjs",
+    "snapshot.mjs",
+    "snapshot-schema.json",
+    "index.html"
+  ],
+  "controls": [
+    "../browser_eos_b9/service.mjs",
+    "../browser_eos_b9/client.mjs",
+    "../browser_eos_b9/accepted-bundle.mjs"
+  ],
+  "comparisonAndFailureHarness": [
+    "experiment.mjs",
+    "benchmark.mjs",
+    "attribution.mjs",
+    "attribution-worker.mjs",
+    "c1-session.mjs",
+    "failure-tests.mjs",
+    "lifecycle.mjs",
+    "retrieval.mjs",
+    "startup.mjs",
+    "startup-worker.mjs"
+  ],
+  "provenance": [
+    "evidence/accepted-source-manifest.json",
+    "evidence/starting-files-sha256.json",
+    "evidence/start-audit.json",
+    "evidence/build-verification.json",
+    "evidence/backend-artifact-verification.json",
+    "evidence/C1-original-git-verification.json",
+    "evidence/runtime-provenance.json",
+    "evidence/benchmark-source-manifest-reviewed.json"
+  ],
+  "rawScienceAndBudgets": [
+    "evidence/scientific-audit.json",
+    "evidence/node-baseline.json",
+    "evidence/parityB-chromium-record-cadence.json.gz",
+    "evidence/parityB-webkit-record-cadence.json.gz",
+    "evidence/parityC-chromium-record-cadence.json.gz",
+    "evidence/parityC-webkit-record-cadence.json.gz"
+  ],
+  "performanceAndLifecycle": [
+    "evidence/performance-summary.json",
+    "evidence/attribution-summary.json",
+    "evidence/verification-summary.json",
+    "evidence/memory-chromium.json",
+    "evidence/memory-webkit.json",
+    "evidence/retrieval-chromium.json.gz",
+    "evidence/retrieval-webkit.json.gz"
+  ],
+  "protection": [
+    "evidence/remote-before.tsv",
+    "evidence/remote-final.tsv",
+    "evidence/pr3-before.json",
+    "evidence/pr3-final.json",
+    "evidence/pr3-additional-metadata.json",
+    "evidence/precommit-preservation.json"
+  ],
+  "optionalB7": "Not executed; preserved backend artifact verification and blockers retained",
+  "excelTracker": [
+    "milestone-status.xlsx",
+    "milestone-status.csv",
+    "milestone-status.json",
+    "evidence/inherited-B8-issue-priorities.csv",
+    "evidence/inherited-B8-issue-priorities.json"
+  ]
+}

@@ -1,0 +1,3172 @@
+{
+  "passed": true,
+  "engines": {
+    "chromium": {
+      "B": [
+        {
+          "fixture": "cold",
+          "exactMUVAllStateAndRecord": true,
+          "exactOriginalObserverAttempts": true,
+          "insideWorker": true,
+          "checkpoints": [
+            0.0,
+            0.0001,
+            0.0005,
+            0.001
+          ],
+          "propertyCounts": {
+            "ph": 8476,
+            "sat": 9261,
+            "stateMVU": 445
+          },
+          "acceptedSteps": [
+            0.0,
+            4.0,
+            12.0,
+            16.0
+          ],
+          "rejectedSteps": [
+            0.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "audits": [
+            {
+              "mass": 0,
+              "fluid": 0,
+              "thermal": 0,
+              "combined": 0,
+              "sections": [
+                {
+                  "massKg": 0,
+                  "energyKJ": 0
+                },
+                {
+                  "massKg": 0,
+                  "energyKJ": 0
+                },
+                {
+                  "massKg": 0,
+                  "energyKJ": 0
+                },
+                {
+                  "massKg": 0,
+                  "energyKJ": 0
+                },
+                {
+                  "massKg": 0,
+                  "energyKJ": 0
+                }
+              ],
+              "nodes": [
+                {
+                  "id": "tube-0",
+                  "residual": 0,
+                  "independent": 0
+                },
+                {
+                  "id": "fin-0",
+                  "residual": 0,
+                  "independent": 0
+                },
+                {
+                  "id": "tube-1",
+                  "residual": 0,
+                  "independent": 0
+                },
+                {
+                  "id": "fin-1",
+                  "residual": 0,
+                  "independent": 0
+                },
+                {
+                  "id": "tube-2",
+                  "residual": 0,
+                  "independent": 0
+                },
+                {
+                  "id": "fin-2",
+                  "residual": 0,
+                  "independent": 0
+                },
+                {
+                  "id": "tube-3",
+                  "residual": 0,
+                  "independent": 0
+                },
+                {
+                  "id": "fin-3",
+                  "residual": 0,
+                  "independent": 0
+                },
+                {
+                  "id": "tube-4",
+                  "residual": 0,
+                  "independent": 0
+                },
+                {
+                  "id": "fin-4",
+                  "residual": 0,
+                  "independent": 0
+                },
+                {
+                  "id": "air",
+                  "residual": 0,
+                  "independent": 0
+                }
+              ]
+            },
+            {
+              "mass": 8.132164273845933e-16,
+              "fluid": 4.0348800689482545e-13,
+              "thermal": -1.228292641208828e-15,
+              "combined": 4.022597142536166e-13,
+              "sections": [
+                {
+                  "massKg": 2.253511039137569e-16,
+                  "energyKJ": 1.1358195471395521e-13
+                },
+                {
+                  "massKg": 1.4333468531198796e-14,
+                  "energyKJ": 7.166605227012027e-12
+                },
+                {
+                  "massKg": -6.445155937263194e-14,
+                  "energyKJ": -3.222635194452799e-11
+                },
+                {
+                  "massKg": -6.8724455059189984e-15,
+                  "energyKJ": -3.436355556661261e-12
+                },
+                {
+                  "massKg": 5.757319738128104e-14,
+                  "energyKJ": 2.8786896504777795e-11
+                }
+              ],
+              "nodes": [
+                {
+                  "id": "tube-0",
+                  "residual": 2.0328790734103208e-20,
+                  "independent": 2.710505431213761e-20
+                },
+                {
+                  "id": "fin-0",
+                  "residual": 0,
+                  "independent": -1.3552527156068805e-20
+                },
+                {
+                  "id": "tube-1",
+                  "residual": -4.743384504624082e-20,
+                  "independent": -5.421010862427522e-20
+                },
+                {
+                  "id": "fin-1",
+                  "residual": 4.0657581468206416e-20,
+                  "independent": 5.421010862427522e-20
+                },
+                {
+                  "id": "tube-2",
+                  "residual": -1.2197274440461925e-19,
+                  "independent": -1.2197274440461925e-19
+                },
+                {
+                  "id": "fin-2",
+                  "residual": 8.131516293641283e-20,
+                  "independent": 8.131516293641283e-20
+                },
+                {
+                  "id": "tube-3",
+                  "residual": -1.4907779871675686e-19,
+                  "independent": -1.4907779871675686e-19
+                },
+                {
+                  "id": "fin-3",
+                  "residual": 1.0842021724855044e-19,
+                  "independent": 1.0842021724855044e-19
+                },
+                {
+                  "id": "tube-4",
+                  "residual": -5.421010862427522e-20,
+                  "independent": -4.743384504624082e-20
+                },
+                {
+                  "id": "fin-4",
+                  "residual": 4.0657581468206416e-20,
+                  "independent": 2.710505431213761e-20
+                },
+                {
+                  "id": "air",
+                  "residual": -1.2281842209915794e-15,
+                  "independent": -1.2282384311002037e-15
+                }
+              ]
+            },
+            {
+              "mass": 2.2283251497256726e-15,
+              "fluid": 1.1178662162603104e-12,
+              "thermal": -5.860546423153146e-15,
+              "combined": 1.1120056698371572e-12,
+              "sections": [
+                {
+                  "massKg": 4.954112749373796e-15,
+                  "energyKJ": 2.4772689867329223e-12
+                },
+                {
+                  "massKg": 1.4759365723273103e-14,
+                  "energyKJ": 7.37869276313044e-12
+                },
+                {
+                  "massKg": -7.960834305505919e-14,
+                  "energyKJ": -3.9803073489073915e-11
+                },
+                {
+                  "massKg": 1.1287912785542154e-14,
+                  "energyKJ": 5.650891592764301e-12
+                },
+                {
+                  "massKg": 5.083527694659581e-14,
+                  "energyKJ": 2.541763918480558e-11
+                }
+              ],
+              "nodes": [
+                {
+                  "id": "tube-0",
+                  "residual": 2.168404344971009e-19,
+                  "independent": 2.168404344971009e-19
+                },
+                {
+                  "id": "fin-0",
+                  "residual": -3.2526065174565133e-19,
+                  "independent": -3.7947076036992655e-19
+                },
+                {
+                  "id": "tube-1",
+                  "residual": -4.87890977618477e-19,
+                  "independent": -5.421010862427522e-19
+                },
+                {
+                  "id": "fin-1",
+                  "residual": 3.2526065174565133e-19,
+                  "independent": 4.336808689942018e-19
+                },
+                {
+                  "id": "tube-2",
+                  "residual": 6.505213034913027e-19,
+                  "independent": 7.047314121155779e-19
+                },
+                {
+                  "id": "fin-2",
+                  "residual": -2.710505431213761e-19,
+                  "independent": -3.2526065174565133e-19
+                },
+                {
+                  "id": "tube-3",
+                  "residual": -1.6263032587282567e-19,
+                  "independent": -1.6263032587282567e-19
+                },
+                {
+                  "id": "fin-3",
+                  "residual": 3.2526065174565133e-19,
+                  "independent": 3.2526065174565133e-19
+                },
+                {
+                  "id": "tube-4",
+                  "residual": -5.421010862427522e-19,
+                  "independent": -4.87890977618477e-19
+                },
+                {
+                  "id": "fin-4",
+                  "residual": 3.7947076036992655e-19,
+                  "independent": 4.336808689942018e-19
+                },
+                {
+                  "id": "air",
+                  "residual": -5.86098010402214e-15,
+                  "independent": -5.860763263587643e-15
+                }
+              ]
+            },
+            {
+              "mass": 2.2352657376954743e-15,
+              "fluid": 1.1303948228846838e-12,
+              "thermal": -4.99036575951628e-15,
+              "combined": 1.1254044571251676e-12,
+              "sections": [
+                {
+                  "massKg": 8.836445911466519e-15,
+                  "energyKJ": 4.419267469329968e-12
+                },
+                {
+                  "massKg": 2.13102681388775e-14,
+                  "energyKJ": 1.0655422724714647e-11
+                },
+                {
+                  "massKg": -7.942325725047994e-14,
+                  "energyKJ": -3.970916347476039e-11
+                },
+                {
+                  "massKg": 4.183095079904938e-15,
+                  "energyKJ": 2.098342875324344e-12
+                },
+                {
+                  "massKg": 4.733738747530634e-14,
+                  "energyKJ": 2.366918954669478e-11
+                }
+              ],
+              "nodes": [
+                {
+                  "id": "tube-0",
+                  "residual": -3.2526065174565133e-19,
+                  "independent": -4.336808689942018e-19
+                },
+                {
+                  "id": "fin-0",
+                  "residual": 1.0842021724855044e-19,
+                  "independent": 1.0842021724855044e-19
+                },
+                {
+                  "id": "tube-1",
+                  "residual": -4.336808689942018e-19,
+                  "independent": -4.336808689942018e-19
+                },
+                {
+                  "id": "fin-1",
+                  "residual": 4.336808689942018e-19,
+                  "independent": 4.336808689942018e-19
+                },
+                {
+                  "id": "tube-2",
+                  "residual": 0,
+                  "independent": 1.0842021724855044e-19
+                },
+                {
+                  "id": "fin-2",
+                  "residual": 3.2526065174565133e-19,
+                  "independent": 3.2526065174565133e-19
+                },
+                {
+                  "id": "tube-3",
+                  "residual": 2.0599841277224584e-18,
+                  "independent": 2.0599841277224584e-18
+                },
+                {
+                  "id": "fin-3",
+                  "residual": -1.3010426069826053e-18,
+                  "independent": -1.3010426069826053e-18
+                },
+                {
+                  "id": "tube-4",
+                  "residual": -2.710505431213761e-18,
+                  "independent": -2.6020852139652106e-18
+                },
+                {
+                  "id": "fin-4",
+                  "residual": 1.8431436932253575e-18,
+                  "independent": 1.734723475976807e-18
+                },
+                {
+                  "id": "air",
+                  "residual": -4.990799440385274e-15,
+                  "independent": -4.991233121254268e-15
+                }
+              ]
+            }
+          ],
+          "events": [
+            [],
+            [],
+            [],
+            []
+          ],
+          "boundaryEvents": [
+            [],
+            [],
+            [],
+            []
+          ]
+        },
+        {
+          "fixture": "warm",
+          "exactMUVAllStateAndRecord": true,
+          "exactOriginalObserverAttempts": true,
+          "insideWorker": true,
+          "checkpoints": [
+            0.0,
+            0.0001,
+            0.0005,
+            0.001
+          ],
+          "propertyCounts": {
+            "ph": 22072,
+            "sat": 23752,
+            "stateMVU": 940
+          },
+          "acceptedSteps": [
+            0.0,
+            10.0,
+            22.0,
+            34.0
+          ],
+          "rejectedSteps": [
+            0.0,
+            3.0,
+            3.0,
+            3.0
+          ],
+          "audits": [
+            {
+              "mass": 0,
+              "fluid": 0,
+              "thermal": 0,
+              "combined": 0,
+              "sections": [
+                {
+                  "massKg": 0,
+                  "energyKJ": 0
+                },
+                {
+                  "massKg": 0,
+                  "energyKJ": 0
+                },
+                {
+                  "massKg": 0,
+                  "energyKJ": 0
+                },
+                {
+                  "massKg": 0,
+                  "energyKJ": 0
+                },
+                {
+                  "massKg": 0,
+                  "energyKJ": 0
+                }
+              ],
+              "nodes": [
+                {
+                  "id": "tube-0",
+                  "residual": 0,
+                  "independent": 0
+                },
+                {
+                  "id": "fin-0",
+                  "residual": 0,
+                  "independent": 0
+                },
+                {
+                  "id": "tube-1",
+                  "residual": 0,
+                  "independent": 0
+                },
+                {
+                  "id": "fin-1",
+                  "residual": 0,
+                  "independent": 0
+                },
+                {
+                  "id": "tube-2",
+                  "residual": 0,
+                  "independent": 0
+                },
+                {
+                  "id": "fin-2",
+                  "residual": 0,
+                  "independent": 0
+                },
+                {
+                  "id": "tube-3",
+                  "residual": 0,
+                  "independent": 0
+                },
+                {
+                  "id": "fin-3",
+                  "residual": 0,
+                  "independent": 0
+                },
+                {
+                  "id": "tube-4",
+                  "residual": 0,
+                  "independent": 0
+                },
+                {
+                  "id": "fin-4",
+                  "residual": 0,
+                  "independent": 0
+                },
+                {
+                  "id": "air",
+                  "residual": 0,
+                  "independent": 0
+                }
+              ]
+            },
+            {
+              "mass": -6.518600390644381e-16,
+              "fluid": -1.075115690918338e-12,
+              "thermal": 1.169317464036479e-14,
+              "combined": -1.0634225162779731e-12,
+              "sections": [
+                {
+                  "massKg": 4.3115332267959494e-16,
+                  "energyKJ": 7.128378697865076e-13
+                },
+                {
+                  "massKg": -2.8728459149851816e-14,
+                  "energyKJ": -4.740303268457261e-11
+                },
+                {
+                  "massKg": 2.1103599193648384e-14,
+                  "energyKJ": 3.482124883032699e-11
+                },
+                {
+                  "massKg": 6.789254098829968e-15,
+                  "energyKJ": 1.1200609382577657e-11
+                },
+                {
+                  "massKg": -2.4762330586621667e-16,
+                  "energyKJ": -4.0810983878338675e-13
+                }
+              ],
+              "nodes": [
+                {
+                  "id": "tube-0",
+                  "residual": 4.1699093180150304e-15,
+                  "independent": 4.1699093180150304e-15
+                },
+                {
+                  "id": "fin-0",
+                  "residual": 5.92078726946348e-16,
+                  "independent": 5.92078726946348e-16
+                },
+                {
+                  "id": "tube-1",
+                  "residual": -4.538185690954044e-15,
+                  "independent": -4.538185690954044e-15
+                },
+                {
+                  "id": "fin-1",
+                  "residual": -1.1584969547150965e-15,
+                  "independent": -1.1584969549218917e-15
+                },
+                {
+                  "id": "tube-2",
+                  "residual": -1.8934100164472167e-15,
+                  "independent": -1.8934100164472167e-15
+                },
+                {
+                  "id": "fin-2",
+                  "residual": -5.36715954132599e-16,
+                  "independent": -5.36715954132599e-16
+                },
+                {
+                  "id": "tube-3",
+                  "residual": 2.2281709897292723e-16,
+                  "independent": 2.2281709897292723e-16
+                },
+                {
+                  "id": "fin-3",
+                  "residual": 4.986310726800077e-15,
+                  "independent": 4.9863107265932815e-15
+                },
+                {
+                  "id": "tube-4",
+                  "residual": 7.502001407241887e-16,
+                  "independent": 7.501865881970327e-16
+                },
+                {
+                  "id": "fin-4",
+                  "residual": 6.185293882534192e-15,
+                  "independent": 6.185293882327397e-15
+                },
+                {
+                  "id": "air",
+                  "residual": 2.913359657685799e-15,
+                  "independent": 2.913373210212955e-15
+                }
+              ]
+            },
+            {
+              "mass": 1.3621760241045583e-14,
+              "fluid": 2.2465789862105567e-11,
+              "thermal": 2.466451522187274e-14,
+              "combined": 2.249045437732744e-11,
+              "sections": [
+                {
+                  "massKg": -6.305538146608508e-15,
+                  "energyKJ": -1.0405661629662305e-11
+                },
+                {
+                  "massKg": -2.264292434479224e-14,
+                  "energyKJ": -3.7357342750916206e-11
+                },
+                {
+                  "massKg": 2.3087486410785108e-14,
+                  "energyKJ": 3.809452877928318e-11
+                },
+                {
+                  "massKg": 1.217719298334842e-14,
+                  "energyKJ": 2.0088450163307375e-11
+                },
+                {
+                  "massKg": 7.305981042588297e-15,
+                  "energyKJ": 1.2044474196216265e-11
+                }
+              ],
+              "nodes": [
+                {
+                  "id": "tube-0",
+                  "residual": 6.5969365387053e-15,
+                  "independent": 6.597044958922549e-15
+                },
+                {
+                  "id": "fin-0",
+                  "residual": -2.6597212267539947e-15,
+                  "independent": -2.6597212399888845e-15
+                },
+                {
+                  "id": "tube-1",
+                  "residual": 1.1129335300563703e-16,
+                  "independent": 1.1129335300563703e-16
+                },
+                {
+                  "id": "fin-1",
+                  "residual": -2.6097218115547492e-15,
+                  "independent": -2.609721818172194e-15
+                },
+                {
+                  "id": "tube-2",
+                  "residual": -5.656987465268992e-15,
+                  "independent": -5.656987465268992e-15
+                },
+                {
+                  "id": "fin-2",
+                  "residual": 2.711503649615933e-15,
+                  "independent": 2.711503649615933e-15
+                },
+                {
+                  "id": "tube-3",
+                  "residual": -3.0020473953951132e-15,
+                  "independent": -3.001993185286489e-15
+                },
+                {
+                  "id": "fin-3",
+                  "residual": 7.929898460648273e-15,
+                  "independent": 7.929898457339551e-15
+                },
+                {
+                  "id": "tube-4",
+                  "residual": 4.8075150631265995e-15,
+                  "independent": 4.8075150631265995e-15
+                },
+                {
+                  "id": "fin-4",
+                  "residual": 1.3132477257422522e-14,
+                  "independent": 1.3132477257422522e-14
+                },
+                {
+                  "id": "air",
+                  "residual": 3.3032387589115864e-15,
+                  "independent": 3.303130338694338e-15
+                }
+              ]
+            },
+            {
+              "mass": -1.9028147926671707e-14,
+              "fluid": -3.127907308164701e-11,
+              "thermal": 2.2507169739061084e-14,
+              "combined": -3.125656591190795e-11,
+              "sections": [
+                {
+                  "massKg": -4.186675742282866e-14,
+                  "energyKJ": -6.896508201754276e-11
+                },
+                {
+                  "massKg": -1.3668761252255777e-15,
+                  "energyKJ": -2.2538305857050522e-12
+                },
+                {
+                  "massKg": 2.070782442547235e-14,
+                  "energyKJ": 3.416702587088344e-11
+                },
+                {
+                  "massKg": -9.146194001816155e-16,
+                  "energyKJ": -1.501837825108876e-12
+                },
+                {
+                  "massKg": 4.412723170806737e-15,
+                  "energyKJ": 7.275077242019368e-12
+                }
+              ],
+              "nodes": [
+                {
+                  "id": "tube-0",
+                  "residual": 5.9910843647204004e-15,
+                  "independent": 5.991192784937649e-15
+                },
+                {
+                  "id": "fin-0",
+                  "residual": 1.8336429746422593e-15,
+                  "independent": 1.8336430275818185e-15
+                },
+                {
+                  "id": "tube-1",
+                  "residual": 1.5178830414797062e-17,
+                  "independent": 1.5178830414797062e-17
+                },
+                {
+                  "id": "fin-1",
+                  "residual": 4.264003044986848e-15,
+                  "independent": 4.264003058221738e-15
+                },
+                {
+                  "id": "tube-2",
+                  "residual": -5.713745448998608e-17,
+                  "independent": -5.692061405548898e-17
+                },
+                {
+                  "id": "fin-2",
+                  "residual": 4.29397539846967e-15,
+                  "independent": 4.29397539846967e-15
+                },
+                {
+                  "id": "tube-3",
+                  "residual": -9.053413400905708e-15,
+                  "independent": -9.053304980688459e-15
+                },
+                {
+                  "id": "fin-3",
+                  "residual": -3.712512532349333e-15,
+                  "independent": -3.712512558819113e-15
+                },
+                {
+                  "id": "tube-4",
+                  "residual": 3.723041840097974e-15,
+                  "independent": 3.723258680532471e-15
+                },
+                {
+                  "id": "fin-4",
+                  "residual": 1.4569793979265637e-14,
+                  "independent": 1.4569793926326078e-14
+                },
+                {
+                  "id": "air",
+                  "residual": 6.390287604629563e-16,
+                  "independent": 6.392456008974534e-16
+                }
+              ]
+            }
+          ],
+          "events": [
+            [],
+            [],
+            [],
+            []
+          ],
+          "boundaryEvents": [
+            [],
+            [],
+            [],
+            []
+          ]
+        }
+      ],
+      "C": [
+        {
+          "fixture": "cold",
+          "exactMUVAllStateAndRecord": true,
+          "exactOriginalObserverAttempts": true,
+          "insideWorker": true,
+          "checkpoints": [
+            0.0,
+            0.0001,
+            0.0005,
+            0.001
+          ],
+          "propertyCounts": {
+            "ph": 8476,
+            "sat": 9261,
+            "stateMVU": 445
+          },
+          "acceptedSteps": [
+            0.0,
+            4.0,
+            12.0,
+            16.0
+          ],
+          "rejectedSteps": [
+            0.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "audits": [
+            {
+              "mass": 0,
+              "fluid": 0,
+              "thermal": 0,
+              "combined": 0,
+              "sections": [
+                {
+                  "massKg": 0,
+                  "energyKJ": 0
+                },
+                {
+                  "massKg": 0,
+                  "energyKJ": 0
+                },
+                {
+                  "massKg": 0,
+                  "energyKJ": 0
+                },
+                {
+                  "massKg": 0,
+                  "energyKJ": 0
+                },
+                {
+                  "massKg": 0,
+                  "energyKJ": 0
+                }
+              ],
+              "nodes": [
+                {
+                  "id": "tube-0",
+                  "residual": 0,
+                  "independent": 0
+                },
+                {
+                  "id": "fin-0",
+                  "residual": 0,
+                  "independent": 0
+                },
+                {
+                  "id": "tube-1",
+                  "residual": 0,
+                  "independent": 0
+                },
+                {
+                  "id": "fin-1",
+                  "residual": 0,
+                  "independent": 0
+                },
+                {
+                  "id": "tube-2",
+                  "residual": 0,
+                  "independent": 0
+                },
+                {
+                  "id": "fin-2",
+                  "residual": 0,
+                  "independent": 0
+                },
+                {
+                  "id": "tube-3",
+                  "residual": 0,
+                  "independent": 0
+                },
+                {
+                  "id": "fin-3",
+                  "residual": 0,
+                  "independent": 0
+                },
+                {
+                  "id": "tube-4",
+                  "residual": 0,
+                  "independent": 0
+                },
+                {
+                  "id": "fin-4",
+                  "residual": 0,
+                  "independent": 0
+                },
+                {
+                  "id": "air",
+                  "residual": 0,
+                  "independent": 0
+                }
+              ]
+            },
+            {
+              "mass": 8.132164273845933e-16,
+              "fluid": 4.0348800689482545e-13,
+              "thermal": -1.228292641208828e-15,
+              "combined": 4.022597142536166e-13,
+              "sections": [
+                {
+                  "massKg": 2.253511039137569e-16,
+                  "energyKJ": 1.1358195471395521e-13
+                },
+                {
+                  "massKg": 1.4333468531198796e-14,
+                  "energyKJ": 7.166605227012027e-12
+                },
+                {
+                  "massKg": -6.445155937263194e-14,
+                  "energyKJ": -3.222635194452799e-11
+                },
+                {
+                  "massKg": -6.8724455059189984e-15,
+                  "energyKJ": -3.436355556661261e-12
+                },
+                {
+                  "massKg": 5.757319738128104e-14,
+                  "energyKJ": 2.8786896504777795e-11
+                }
+              ],
+              "nodes": [
+                {
+                  "id": "tube-0",
+                  "residual": 2.0328790734103208e-20,
+                  "independent": 2.710505431213761e-20
+                },
+                {
+                  "id": "fin-0",
+                  "residual": 0,
+                  "independent": -1.3552527156068805e-20
+                },
+                {
+                  "id": "tube-1",
+                  "residual": -4.743384504624082e-20,
+                  "independent": -5.421010862427522e-20
+                },
+                {
+                  "id": "fin-1",
+                  "residual": 4.0657581468206416e-20,
+                  "independent": 5.421010862427522e-20
+                },
+                {
+                  "id": "tube-2",
+                  "residual": -1.2197274440461925e-19,
+                  "independent": -1.2197274440461925e-19
+                },
+                {
+                  "id": "fin-2",
+                  "residual": 8.131516293641283e-20,
+                  "independent": 8.131516293641283e-20
+                },
+                {
+                  "id": "tube-3",
+                  "residual": -1.4907779871675686e-19,
+                  "independent": -1.4907779871675686e-19
+                },
+                {
+                  "id": "fin-3",
+                  "residual": 1.0842021724855044e-19,
+                  "independent": 1.0842021724855044e-19
+                },
+                {
+                  "id": "tube-4",
+                  "residual": -5.421010862427522e-20,
+                  "independent": -4.743384504624082e-20
+                },
+                {
+                  "id": "fin-4",
+                  "residual": 4.0657581468206416e-20,
+                  "independent": 2.710505431213761e-20
+                },
+                {
+                  "id": "air",
+                  "residual": -1.2281842209915794e-15,
+                  "independent": -1.2282384311002037e-15
+                }
+              ]
+            },
+            {
+              "mass": 2.2283251497256726e-15,
+              "fluid": 1.1178662162603104e-12,
+              "thermal": -5.860546423153146e-15,
+              "combined": 1.1120056698371572e-12,
+              "sections": [
+                {
+                  "massKg": 4.954112749373796e-15,
+                  "energyKJ": 2.4772689867329223e-12
+                },
+                {
+                  "massKg": 1.4759365723273103e-14,
+                  "energyKJ": 7.37869276313044e-12
+                },
+                {
+                  "massKg": -7.960834305505919e-14,
+                  "energyKJ": -3.9803073489073915e-11
+                },
+                {
+                  "massKg": 1.1287912785542154e-14,
+                  "energyKJ": 5.650891592764301e-12
+                },
+                {
+                  "massKg": 5.083527694659581e-14,
+                  "energyKJ": 2.541763918480558e-11
+                }
+              ],
+              "nodes": [
+                {
+                  "id": "tube-0",
+                  "residual": 2.168404344971009e-19,
+                  "independent": 2.168404344971009e-19
+                },
+                {
+                  "id": "fin-0",
+                  "residual": -3.2526065174565133e-19,
+                  "independent": -3.7947076036992655e-19
+                },
+                {
+                  "id": "tube-1",
+                  "residual": -4.87890977618477e-19,
+                  "independent": -5.421010862427522e-19
+                },
+                {
+                  "id": "fin-1",
+                  "residual": 3.2526065174565133e-19,
+                  "independent": 4.336808689942018e-19
+                },
+                {
+                  "id": "tube-2",
+                  "residual": 6.505213034913027e-19,
+                  "independent": 7.047314121155779e-19
+                },
+                {
+                  "id": "fin-2",
+                  "residual": -2.710505431213761e-19,
+                  "independent": -3.2526065174565133e-19
+                },
+                {
+                  "id": "tube-3",
+                  "residual": -1.6263032587282567e-19,
+                  "independent": -1.6263032587282567e-19
+                },
+                {
+                  "id": "fin-3",
+                  "residual": 3.2526065174565133e-19,
+                  "independent": 3.2526065174565133e-19
+                },
+                {
+                  "id": "tube-4",
+                  "residual": -5.421010862427522e-19,
+                  "independent": -4.87890977618477e-19
+                },
+                {
+                  "id": "fin-4",
+                  "residual": 3.7947076036992655e-19,
+                  "independent": 4.336808689942018e-19
+                },
+                {
+                  "id": "air",
+                  "residual": -5.86098010402214e-15,
+                  "independent": -5.860763263587643e-15
+                }
+              ]
+            },
+            {
+              "mass": 2.2352657376954743e-15,
+              "fluid": 1.1303948228846838e-12,
+              "thermal": -4.99036575951628e-15,
+              "combined": 1.1254044571251676e-12,
+              "sections": [
+                {
+                  "massKg": 8.836445911466519e-15,
+                  "energyKJ": 4.419267469329968e-12
+                },
+                {
+                  "massKg": 2.13102681388775e-14,
+                  "energyKJ": 1.0655422724714647e-11
+                },
+                {
+                  "massKg": -7.942325725047994e-14,
+                  "energyKJ": -3.970916347476039e-11
+                },
+                {
+                  "massKg": 4.183095079904938e-15,
+                  "energyKJ": 2.098342875324344e-12
+                },
+                {
+                  "massKg": 4.733738747530634e-14,
+                  "energyKJ": 2.366918954669478e-11
+                }
+              ],
+              "nodes": [
+                {
+                  "id": "tube-0",
+                  "residual": -3.2526065174565133e-19,
+                  "independent": -4.336808689942018e-19
+                },
+                {
+                  "id": "fin-0",
+                  "residual": 1.0842021724855044e-19,
+                  "independent": 1.0842021724855044e-19
+                },
+                {
+                  "id": "tube-1",
+                  "residual": -4.336808689942018e-19,
+                  "independent": -4.336808689942018e-19
+                },
+                {
+                  "id": "fin-1",
+                  "residual": 4.336808689942018e-19,
+                  "independent": 4.336808689942018e-19
+                },
+                {
+                  "id": "tube-2",
+                  "residual": 0,
+                  "independent": 1.0842021724855044e-19
+                },
+                {
+                  "id": "fin-2",
+                  "residual": 3.2526065174565133e-19,
+                  "independent": 3.2526065174565133e-19
+                },
+                {
+                  "id": "tube-3",
+                  "residual": 2.0599841277224584e-18,
+                  "independent": 2.0599841277224584e-18
+                },
+                {
+                  "id": "fin-3",
+                  "residual": -1.3010426069826053e-18,
+                  "independent": -1.3010426069826053e-18
+                },
+                {
+                  "id": "tube-4",
+                  "residual": -2.710505431213761e-18,
+                  "independent": -2.6020852139652106e-18
+                },
+                {
+                  "id": "fin-4",
+                  "residual": 1.8431436932253575e-18,
+                  "independent": 1.734723475976807e-18
+                },
+                {
+                  "id": "air",
+                  "residual": -4.990799440385274e-15,
+                  "independent": -4.991233121254268e-15
+                }
+              ]
+            }
+          ],
+          "events": [
+            [],
+            [],
+            [],
+            []
+          ],
+          "boundaryEvents": [
+            [],
+            [],
+            [],
+            []
+          ]
+        },
+        {
+          "fixture": "warm",
+          "exactMUVAllStateAndRecord": true,
+          "exactOriginalObserverAttempts": true,
+          "insideWorker": true,
+          "checkpoints": [
+            0.0,
+            0.0001,
+            0.0005,
+            0.001
+          ],
+          "propertyCounts": {
+            "ph": 22072,
+            "sat": 23752,
+            "stateMVU": 940
+          },
+          "acceptedSteps": [
+            0.0,
+            10.0,
+            22.0,
+            34.0
+          ],
+          "rejectedSteps": [
+            0.0,
+            3.0,
+            3.0,
+            3.0
+          ],
+          "audits": [
+            {
+              "mass": 0,
+              "fluid": 0,
+              "thermal": 0,
+              "combined": 0,
+              "sections": [
+                {
+                  "massKg": 0,
+                  "energyKJ": 0
+                },
+                {
+                  "massKg": 0,
+                  "energyKJ": 0
+                },
+                {
+                  "massKg": 0,
+                  "energyKJ": 0
+                },
+                {
+                  "massKg": 0,
+                  "energyKJ": 0
+                },
+                {
+                  "massKg": 0,
+                  "energyKJ": 0
+                }
+              ],
+              "nodes": [
+                {
+                  "id": "tube-0",
+                  "residual": 0,
+                  "independent": 0
+                },
+                {
+                  "id": "fin-0",
+                  "residual": 0,
+                  "independent": 0
+                },
+                {
+                  "id": "tube-1",
+                  "residual": 0,
+                  "independent": 0
+                },
+                {
+                  "id": "fin-1",
+                  "residual": 0,
+                  "independent": 0
+                },
+                {
+                  "id": "tube-2",
+                  "residual": 0,
+                  "independent": 0
+                },
+                {
+                  "id": "fin-2",
+                  "residual": 0,
+                  "independent": 0
+                },
+                {
+                  "id": "tube-3",
+                  "residual": 0,
+                  "independent": 0
+                },
+                {
+                  "id": "fin-3",
+                  "residual": 0,
+                  "independent": 0
+                },
+                {
+                  "id": "tube-4",
+                  "residual": 0,
+                  "independent": 0
+                },
+                {
+                  "id": "fin-4",
+                  "residual": 0,
+                  "independent": 0
+                },
+                {
+                  "id": "air",
+                  "residual": 0,
+                  "independent": 0
+                }
+              ]
+            },
+            {
+              "mass": -6.518600390644381e-16,
+              "fluid": -1.075115690918338e-12,
+              "thermal": 1.169317464036479e-14,
+              "combined": -1.0634225162779731e-12,
+              "sections": [
+                {
+                  "massKg": 4.3115332267959494e-16,
+                  "energyKJ": 7.128378697865076e-13
+                },
+                {
+                  "massKg": -2.8728459149851816e-14,
+                  "energyKJ": -4.740303268457261e-11
+                },
+                {
+                  "massKg": 2.1103599193648384e-14,
+                  "energyKJ": 3.482124883032699e-11
+                },
+                {
+                  "massKg": 6.789254098829968e-15,
+                  "energyKJ": 1.1200609382577657e-11
+                },
+                {
+                  "massKg": -2.4762330586621667e-16,
+                  "energyKJ": -4.0810983878338675e-13
+                }
+              ],
+              "nodes": [
+                {
+                  "id": "tube-0",
+                  "residual": 4.1699093180150304e-15,
+                  "independent": 4.1699093180150304e-15
+                },
+                {
+                  "id": "fin-0",
+                  "residual": 5.92078726946348e-16,
+                  "independent": 5.92078726946348e-16
+                },
+                {
+                  "id": "tube-1",
+                  "residual": -4.538185690954044e-15,
+                  "independent": -4.538185690954044e-15
+                },
+                {
+                  "id": "fin-1",
+                  "residual": -1.1584969547150965e-15,
+                  "independent": -1.1584969549218917e-15
+                },
+                {
+                  "id": "tube-2",
+                  "residual": -1.8934100164472167e-15,
+                  "independent": -1.8934100164472167e-15
+                },
+                {
+                  "id": "fin-2",
+                  "residual": -5.36715954132599e-16,
+                  "independent": -5.36715954132599e-16
+                },
+                {
+                  "id": "tube-3",
+                  "residual": 2.2281709897292723e-16,
+                  "independent": 2.2281709897292723e-16
+                },
+                {
+                  "id": "fin-3",
+                  "residual": 4.986310726800077e-15,
+                  "independent": 4.9863107265932815e-15
+                },
+                {
+                  "id": "tube-4",
+                  "residual": 7.502001407241887e-16,
+                  "independent": 7.501865881970327e-16
+                },
+                {
+                  "id": "fin-4",
+                  "residual": 6.185293882534192e-15,
+                  "independent": 6.185293882327397e-15
+                },
+                {
+                  "id": "air",
+                  "residual": 2.913359657685799e-15,
+                  "independent": 2.913373210212955e-15
+                }
+              ]
+            },
+            {
+              "mass": 1.3621760241045583e-14,
+              "fluid": 2.2465789862105567e-11,
+              "thermal": 2.466451522187274e-14,
+              "combined": 2.249045437732744e-11,
+              "sections": [
+                {
+                  "massKg": -6.305538146608508e-15,
+                  "energyKJ": -1.0405661629662305e-11
+                },
+                {
+                  "massKg": -2.264292434479224e-14,
+                  "energyKJ": -3.7357342750916206e-11
+                },
+                {
+                  "massKg": 2.3087486410785108e-14,
+                  "energyKJ": 3.809452877928318e-11
+                },
+                {
+                  "massKg": 1.217719298334842e-14,
+                  "energyKJ": 2.0088450163307375e-11
+                },
+                {
+                  "massKg": 7.305981042588297e-15,
+                  "energyKJ": 1.2044474196216265e-11
+                }
+              ],
+              "nodes": [
+                {
+                  "id": "tube-0",
+                  "residual": 6.5969365387053e-15,
+                  "independent": 6.597044958922549e-15
+                },
+                {
+                  "id": "fin-0",
+                  "residual": -2.6597212267539947e-15,
+                  "independent": -2.6597212399888845e-15
+                },
+                {
+                  "id": "tube-1",
+                  "residual": 1.1129335300563703e-16,
+                  "independent": 1.1129335300563703e-16
+                },
+                {
+                  "id": "fin-1",
+                  "residual": -2.6097218115547492e-15,
+                  "independent": -2.609721818172194e-15
+                },
+                {
+                  "id": "tube-2",
+                  "residual": -5.656987465268992e-15,
+                  "independent": -5.656987465268992e-15
+                },
+                {
+                  "id": "fin-2",
+                  "residual": 2.711503649615933e-15,
+                  "independent": 2.711503649615933e-15
+                },
+                {
+                  "id": "tube-3",
+                  "residual": -3.0020473953951132e-15,
+                  "independent": -3.001993185286489e-15
+                },
+                {
+                  "id": "fin-3",
+                  "residual": 7.929898460648273e-15,
+                  "independent": 7.929898457339551e-15
+                },
+                {
+                  "id": "tube-4",
+                  "residual": 4.8075150631265995e-15,
+                  "independent": 4.8075150631265995e-15
+                },
+                {
+                  "id": "fin-4",
+                  "residual": 1.3132477257422522e-14,
+                  "independent": 1.3132477257422522e-14
+                },
+                {
+                  "id": "air",
+                  "residual": 3.3032387589115864e-15,
+                  "independent": 3.303130338694338e-15
+                }
+              ]
+            },
+            {
+              "mass": -1.9028147926671707e-14,
+              "fluid": -3.127907308164701e-11,
+              "thermal": 2.2507169739061084e-14,
+              "combined": -3.125656591190795e-11,
+              "sections": [
+                {
+                  "massKg": -4.186675742282866e-14,
+                  "energyKJ": -6.896508201754276e-11
+                },
+                {
+                  "massKg": -1.3668761252255777e-15,
+                  "energyKJ": -2.2538305857050522e-12
+                },
+                {
+                  "massKg": 2.070782442547235e-14,
+                  "energyKJ": 3.416702587088344e-11
+                },
+                {
+                  "massKg": -9.146194001816155e-16,
+                  "energyKJ": -1.501837825108876e-12
+                },
+                {
+                  "massKg": 4.412723170806737e-15,
+                  "energyKJ": 7.275077242019368e-12
+                }
+              ],
+              "nodes": [
+                {
+                  "id": "tube-0",
+                  "residual": 5.9910843647204004e-15,
+                  "independent": 5.991192784937649e-15
+                },
+                {
+                  "id": "fin-0",
+                  "residual": 1.8336429746422593e-15,
+                  "independent": 1.8336430275818185e-15
+                },
+                {
+                  "id": "tube-1",
+                  "residual": 1.5178830414797062e-17,
+                  "independent": 1.5178830414797062e-17
+                },
+                {
+                  "id": "fin-1",
+                  "residual": 4.264003044986848e-15,
+                  "independent": 4.264003058221738e-15
+                },
+                {
+                  "id": "tube-2",
+                  "residual": -5.713745448998608e-17,
+                  "independent": -5.692061405548898e-17
+                },
+                {
+                  "id": "fin-2",
+                  "residual": 4.29397539846967e-15,
+                  "independent": 4.29397539846967e-15
+                },
+                {
+                  "id": "tube-3",
+                  "residual": -9.053413400905708e-15,
+                  "independent": -9.053304980688459e-15
+                },
+                {
+                  "id": "fin-3",
+                  "residual": -3.712512532349333e-15,
+                  "independent": -3.712512558819113e-15
+                },
+                {
+                  "id": "tube-4",
+                  "residual": 3.723041840097974e-15,
+                  "independent": 3.723258680532471e-15
+                },
+                {
+                  "id": "fin-4",
+                  "residual": 1.4569793979265637e-14,
+                  "independent": 1.4569793926326078e-14
+                },
+                {
+                  "id": "air",
+                  "residual": 6.390287604629563e-16,
+                  "independent": 6.392456008974534e-16
+                }
+              ]
+            }
+          ],
+          "events": [
+            [],
+            [],
+            [],
+            []
+          ],
+          "boundaryEvents": [
+            [],
+            [],
+            [],
+            []
+          ]
+        }
+      ]
+    },
+    "webkit": {
+      "B": [
+        {
+          "fixture": "cold",
+          "exactMUVAllStateAndRecord": true,
+          "exactOriginalObserverAttempts": true,
+          "insideWorker": true,
+          "checkpoints": [
+            0.0,
+            0.0001,
+            0.0005,
+            0.001
+          ],
+          "propertyCounts": {
+            "ph": 8476,
+            "sat": 9261,
+            "stateMVU": 445
+          },
+          "acceptedSteps": [
+            0.0,
+            4.0,
+            12.0,
+            16.0
+          ],
+          "rejectedSteps": [
+            0.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "audits": [
+            {
+              "mass": 0,
+              "fluid": 0,
+              "thermal": 0,
+              "combined": 0,
+              "sections": [
+                {
+                  "massKg": 0,
+                  "energyKJ": 0
+                },
+                {
+                  "massKg": 0,
+                  "energyKJ": 0
+                },
+                {
+                  "massKg": 0,
+                  "energyKJ": 0
+                },
+                {
+                  "massKg": 0,
+                  "energyKJ": 0
+                },
+                {
+                  "massKg": 0,
+                  "energyKJ": 0
+                }
+              ],
+              "nodes": [
+                {
+                  "id": "tube-0",
+                  "residual": 0,
+                  "independent": 0
+                },
+                {
+                  "id": "fin-0",
+                  "residual": 0,
+                  "independent": 0
+                },
+                {
+                  "id": "tube-1",
+                  "residual": 0,
+                  "independent": 0
+                },
+                {
+                  "id": "fin-1",
+                  "residual": 0,
+                  "independent": 0
+                },
+                {
+                  "id": "tube-2",
+                  "residual": 0,
+                  "independent": 0
+                },
+                {
+                  "id": "fin-2",
+                  "residual": 0,
+                  "independent": 0
+                },
+                {
+                  "id": "tube-3",
+                  "residual": 0,
+                  "independent": 0
+                },
+                {
+                  "id": "fin-3",
+                  "residual": 0,
+                  "independent": 0
+                },
+                {
+                  "id": "tube-4",
+                  "residual": 0,
+                  "independent": 0
+                },
+                {
+                  "id": "fin-4",
+                  "residual": 0,
+                  "independent": 0
+                },
+                {
+                  "id": "air",
+                  "residual": 0,
+                  "independent": 0
+                }
+              ]
+            },
+            {
+              "mass": 7.993382160603052e-16,
+              "fluid": 3.9638236269678995e-13,
+              "thermal": -1.2282384311002037e-15,
+              "combined": 3.9515412426568974e-13,
+              "sections": [
+                {
+                  "massKg": 2.197967912412552e-16,
+                  "energyKJ": 1.0985412883177115e-13
+                },
+                {
+                  "massKg": 1.4330313439349393e-14,
+                  "energyKJ": 7.1649860388300554e-12
+                },
+                {
+                  "massKg": -6.445152400900639e-14,
+                  "energyKJ": -3.222633425848005e-11
+                },
+                {
+                  "massKg": -6.8724455059189984e-15,
+                  "energyKJ": -3.436355556661261e-12
+                },
+                {
+                  "massKg": 5.757319738128104e-14,
+                  "energyKJ": 2.8786896504777795e-11
+                }
+              ],
+              "nodes": [
+                {
+                  "id": "tube-0",
+                  "residual": 3.3881317890172014e-20,
+                  "independent": 3.3881317890172014e-20
+                },
+                {
+                  "id": "fin-0",
+                  "residual": 0,
+                  "independent": -1.3552527156068805e-20
+                },
+                {
+                  "id": "tube-1",
+                  "residual": -4.743384504624082e-20,
+                  "independent": -5.421010862427522e-20
+                },
+                {
+                  "id": "fin-1",
+                  "residual": 4.0657581468206416e-20,
+                  "independent": 5.421010862427522e-20
+                },
+                {
+                  "id": "tube-2",
+                  "residual": -1.2197274440461925e-19,
+                  "independent": -1.2197274440461925e-19
+                },
+                {
+                  "id": "fin-2",
+                  "residual": 8.131516293641283e-20,
+                  "independent": 8.131516293641283e-20
+                },
+                {
+                  "id": "tube-3",
+                  "residual": -1.4907779871675686e-19,
+                  "independent": -1.4907779871675686e-19
+                },
+                {
+                  "id": "fin-3",
+                  "residual": 1.0842021724855044e-19,
+                  "independent": 1.0842021724855044e-19
+                },
+                {
+                  "id": "tube-4",
+                  "residual": -5.421010862427522e-20,
+                  "independent": -4.743384504624082e-20
+                },
+                {
+                  "id": "fin-4",
+                  "residual": 4.0657581468206416e-20,
+                  "independent": 2.710505431213761e-20
+                },
+                {
+                  "id": "air",
+                  "residual": -1.2281842209915794e-15,
+                  "independent": -1.2282384311002037e-15
+                }
+              ]
+            },
+            {
+              "mass": 2.245133671530987e-15,
+              "fluid": 1.1264361839125048e-12,
+              "thermal": -5.860546423153146e-15,
+              "combined": 1.1205756374893516e-12,
+              "sections": [
+                {
+                  "massKg": 4.940348887497387e-15,
+                  "energyKJ": 2.469454762205059e-12
+                },
+                {
+                  "massKg": 1.4764328065794592e-14,
+                  "energyKJ": 7.382909713270214e-12
+                },
+                {
+                  "massKg": -7.959046155426794e-14,
+                  "energyKJ": -3.979665257275791e-11
+                },
+                {
+                  "massKg": 1.1298111697501806e-14,
+                  "energyKJ": 5.649280793596639e-12
+                },
+                {
+                  "massKg": 5.084148103941797e-14,
+                  "energyKJ": 2.5423219736017688e-11
+                }
+              ],
+              "nodes": [
+                {
+                  "id": "tube-0",
+                  "residual": 5.963111948670274e-19,
+                  "independent": 7.047314121155779e-19
+                },
+                {
+                  "id": "fin-0",
+                  "residual": -3.2526065174565133e-19,
+                  "independent": -3.7947076036992655e-19
+                },
+                {
+                  "id": "tube-1",
+                  "residual": -3.7947076036992655e-19,
+                  "independent": -4.336808689942018e-19
+                },
+                {
+                  "id": "fin-1",
+                  "residual": 3.2526065174565133e-19,
+                  "independent": 4.336808689942018e-19
+                },
+                {
+                  "id": "tube-2",
+                  "residual": 5.421010862427522e-19,
+                  "independent": 5.421010862427522e-19
+                },
+                {
+                  "id": "fin-2",
+                  "residual": -2.710505431213761e-19,
+                  "independent": -3.2526065174565133e-19
+                },
+                {
+                  "id": "tube-3",
+                  "residual": -4.336808689942018e-19,
+                  "independent": -4.336808689942018e-19
+                },
+                {
+                  "id": "fin-3",
+                  "residual": 3.2526065174565133e-19,
+                  "independent": 3.2526065174565133e-19
+                },
+                {
+                  "id": "tube-4",
+                  "residual": -7.047314121155779e-19,
+                  "independent": -5.963111948670274e-19
+                },
+                {
+                  "id": "fin-4",
+                  "residual": 3.7947076036992655e-19,
+                  "independent": 4.336808689942018e-19
+                },
+                {
+                  "id": "air",
+                  "residual": -5.86098010402214e-15,
+                  "independent": -5.860763263587643e-15
+                }
+              ]
+            },
+            {
+              "mass": 2.286543418256355e-15,
+              "fluid": 1.1530633219070108e-12,
+              "thermal": -4.99036575951628e-15,
+              "combined": 1.1480729561474945e-12,
+              "sections": [
+                {
+                  "massKg": 8.83018294985452e-15,
+                  "energyKJ": 4.416215223373987e-12
+                },
+                {
+                  "massKg": 2.1329995536219053e-14,
+                  "energyKJ": 1.0666219209948258e-11
+                },
+                {
+                  "massKg": -7.942452779990082e-14,
+                  "energyKJ": -3.970986300200208e-11
+                },
+                {
+                  "massKg": 4.201467224530884e-15,
+                  "energyKJ": 2.099206659195163e-12
+                },
+                {
+                  "massKg": 4.735636609552252e-14,
+                  "energyKJ": 2.3678620587712362e-11
+                }
+              ],
+              "nodes": [
+                {
+                  "id": "tube-0",
+                  "residual": 0,
+                  "independent": 1.0842021724855044e-19
+                },
+                {
+                  "id": "fin-0",
+                  "residual": 1.0842021724855044e-19,
+                  "independent": 1.0842021724855044e-19
+                },
+                {
+                  "id": "tube-1",
+                  "residual": -1.0842021724855044e-19,
+                  "independent": 0
+                },
+                {
+                  "id": "fin-1",
+                  "residual": 4.336808689942018e-19,
+                  "independent": 4.336808689942018e-19
+                },
+                {
+                  "id": "tube-2",
+                  "residual": -1.0842021724855044e-19,
+                  "independent": -1.0842021724855044e-19
+                },
+                {
+                  "id": "fin-2",
+                  "residual": 3.2526065174565133e-19,
+                  "independent": 3.2526065174565133e-19
+                },
+                {
+                  "id": "tube-3",
+                  "residual": 1.8431436932253575e-18,
+                  "independent": 1.8431436932253575e-18
+                },
+                {
+                  "id": "fin-3",
+                  "residual": -1.3010426069826053e-18,
+                  "independent": -1.3010426069826053e-18
+                },
+                {
+                  "id": "tube-4",
+                  "residual": -2.710505431213761e-18,
+                  "independent": -2.6020852139652106e-18
+                },
+                {
+                  "id": "fin-4",
+                  "residual": 1.8431436932253575e-18,
+                  "independent": 1.734723475976807e-18
+                },
+                {
+                  "id": "air",
+                  "residual": -4.990799440385274e-15,
+                  "independent": -4.991233121254268e-15
+                }
+              ]
+            }
+          ],
+          "events": [
+            [],
+            [],
+            [],
+            []
+          ],
+          "boundaryEvents": [
+            [],
+            [],
+            [],
+            []
+          ]
+        },
+        {
+          "fixture": "warm",
+          "exactMUVAllStateAndRecord": true,
+          "exactOriginalObserverAttempts": true,
+          "insideWorker": true,
+          "checkpoints": [
+            0.0,
+            0.0001,
+            0.0005,
+            0.001
+          ],
+          "propertyCounts": {
+            "ph": 22072,
+            "sat": 23752,
+            "stateMVU": 940
+          },
+          "acceptedSteps": [
+            0.0,
+            10.0,
+            22.0,
+            34.0
+          ],
+          "rejectedSteps": [
+            0.0,
+            3.0,
+            3.0,
+            3.0
+          ],
+          "audits": [
+            {
+              "mass": 0,
+              "fluid": 0,
+              "thermal": 0,
+              "combined": 0,
+              "sections": [
+                {
+                  "massKg": 0,
+                  "energyKJ": 0
+                },
+                {
+                  "massKg": 0,
+                  "energyKJ": 0
+                },
+                {
+                  "massKg": 0,
+                  "energyKJ": 0
+                },
+                {
+                  "massKg": 0,
+                  "energyKJ": 0
+                },
+                {
+                  "massKg": 0,
+                  "energyKJ": 0
+                }
+              ],
+              "nodes": [
+                {
+                  "id": "tube-0",
+                  "residual": 0,
+                  "independent": 0
+                },
+                {
+                  "id": "fin-0",
+                  "residual": 0,
+                  "independent": 0
+                },
+                {
+                  "id": "tube-1",
+                  "residual": 0,
+                  "independent": 0
+                },
+                {
+                  "id": "fin-1",
+                  "residual": 0,
+                  "independent": 0
+                },
+                {
+                  "id": "tube-2",
+                  "residual": 0,
+                  "independent": 0
+                },
+                {
+                  "id": "fin-2",
+                  "residual": 0,
+                  "independent": 0
+                },
+                {
+                  "id": "tube-3",
+                  "residual": 0,
+                  "independent": 0
+                },
+                {
+                  "id": "fin-3",
+                  "residual": 0,
+                  "independent": 0
+                },
+                {
+                  "id": "tube-4",
+                  "residual": 0,
+                  "independent": 0
+                },
+                {
+                  "id": "fin-4",
+                  "residual": 0,
+                  "independent": 0
+                },
+                {
+                  "id": "air",
+                  "residual": 0,
+                  "independent": 0
+                }
+              ]
+            },
+            {
+              "mass": -6.954648716726158e-16,
+              "fluid": -1.1449994598289326e-12,
+              "thermal": 1.1173191278440742e-14,
+              "combined": -1.1338262685504918e-12,
+              "sections": [
+                {
+                  "massKg": 4.319623450233412e-16,
+                  "energyKJ": 7.14604251965921e-13
+                },
+                {
+                  "massKg": -2.871727809657238e-14,
+                  "energyKJ": -4.738429071858563e-11
+                },
+                {
+                  "massKg": 2.1119583975912494e-14,
+                  "energyKJ": 3.484768154376691e-11
+                },
+                {
+                  "massKg": 6.858505818531585e-15,
+                  "energyKJ": 1.1315416024960598e-11
+                },
+                {
+                  "massKg": -3.873710366689674e-16,
+                  "energyKJ": -6.384086781354575e-13
+                }
+              ],
+              "nodes": [
+                {
+                  "id": "tube-0",
+                  "residual": 4.1699093180150304e-15,
+                  "independent": 4.1699093180150304e-15
+                },
+                {
+                  "id": "fin-0",
+                  "residual": 5.92078726946348e-16,
+                  "independent": 5.92078726946348e-16
+                },
+                {
+                  "id": "tube-1",
+                  "residual": -4.5382670061169805e-15,
+                  "independent": -4.5382670061169805e-15
+                },
+                {
+                  "id": "fin-1",
+                  "residual": -1.1584969547150965e-15,
+                  "independent": -1.1584969549218917e-15
+                },
+                {
+                  "id": "tube-2",
+                  "residual": -1.8935455417187774e-15,
+                  "independent": -1.8935455417187774e-15
+                },
+                {
+                  "id": "fin-2",
+                  "residual": -5.36715954132599e-16,
+                  "independent": -5.36715954132599e-16
+                },
+                {
+                  "id": "tube-3",
+                  "residual": 2.2125855834997932e-16,
+                  "independent": 2.2125855834997932e-16
+                },
+                {
+                  "id": "fin-3",
+                  "residual": 4.986310726800077e-15,
+                  "independent": 4.9863107265932815e-15
+                },
+                {
+                  "id": "tube-4",
+                  "residual": 2.3193794974896154e-16,
+                  "independent": 2.3192439722180547e-16
+                },
+                {
+                  "id": "fin-4",
+                  "residual": 6.185293882534192e-15,
+                  "independent": 6.185293882327397e-15
+                },
+                {
+                  "id": "air",
+                  "residual": 2.913359657685799e-15,
+                  "independent": 2.913373210212955e-15
+                }
+              ]
+            },
+            {
+              "mass": 1.8967405499958206e-14,
+              "fluid": 3.122980454968449e-11,
+              "thermal": -1.5202682862591743e-15,
+              "combined": 3.122828428139823e-11,
+              "sections": [
+                {
+                  "massKg": 1.2311719179547822e-14,
+                  "energyKJ": 2.0234127795591e-11
+                },
+                {
+                  "massKg": -3.0458091090930343e-14,
+                  "energyKJ": -5.0251781468640955e-11
+                },
+                {
+                  "massKg": 3.035898813022247e-14,
+                  "energyKJ": 5.0092832497034695e-11
+                },
+                {
+                  "massKg": 1.888750149391192e-14,
+                  "energyKJ": 3.1160655002485105e-11
+                },
+                {
+                  "massKg": -1.2132493360655916e-14,
+                  "energyKJ": -2.0006468541295536e-11
+                }
+              ],
+              "nodes": [
+                {
+                  "id": "tube-0",
+                  "residual": 7.304378456252092e-15,
+                  "independent": 7.304378456252092e-15
+                },
+                {
+                  "id": "fin-0",
+                  "residual": -2.6461182217282254e-15,
+                  "independent": -2.6461182084933356e-15
+                },
+                {
+                  "id": "tube-1",
+                  "residual": -1.337634430303991e-15,
+                  "independent": -1.337634430303991e-15
+                },
+                {
+                  "id": "fin-1",
+                  "residual": -2.6076363171769356e-15,
+                  "independent": -2.6076363171769356e-15
+                },
+                {
+                  "id": "tube-2",
+                  "residual": -1.2988742026376343e-15,
+                  "independent": -1.2989826228548829e-15
+                },
+                {
+                  "id": "fin-2",
+                  "residual": -8.384397582997361e-16,
+                  "independent": -8.384397582997361e-16
+                },
+                {
+                  "id": "tube-3",
+                  "residual": 9.634383135032065e-15,
+                  "independent": 9.63443734514069e-15
+                },
+                {
+                  "id": "fin-3",
+                  "residual": 4.3776882800691885e-15,
+                  "independent": 4.377688276760466e-15
+                },
+                {
+                  "id": "tube-4",
+                  "residual": 1.4307131868118717e-15,
+                  "independent": 1.4307131868118717e-15
+                },
+                {
+                  "id": "fin-4",
+                  "residual": 9.582490508551478e-15,
+                  "independent": 9.582490508551478e-15
+                },
+                {
+                  "id": "air",
+                  "residual": -2.5121181176923635e-14,
+                  "independent": -2.5121289597140883e-14
+                }
+              ]
+            },
+            {
+              "mass": 2.3881002969398935e-14,
+              "fluid": 3.932221345412379e-11,
+              "thermal": -2.835275417223393e-14,
+              "combined": 3.9293860699951555e-11,
+              "sections": [
+                {
+                  "massKg": 3.2232381911093122e-15,
+                  "energyKJ": 5.224875545238594e-12
+                },
+                {
+                  "massKg": -2.86551114766023e-14,
+                  "energyKJ": -4.727616757273234e-11
+                },
+                {
+                  "massKg": 3.544691599163645e-14,
+                  "energyKJ": 5.84863964984278e-11
+                },
+                {
+                  "massKg": 2.1312392497509214e-14,
+                  "energyKJ": 3.51637985222808e-11
+                },
+                {
+                  "massKg": -7.445128227031445e-15,
+                  "energyKJ": -1.2277592896341172e-11
+                }
+              ],
+              "nodes": [
+                {
+                  "id": "tube-0",
+                  "residual": 3.778010890242989e-15,
+                  "independent": 3.778010890242989e-15
+                },
+                {
+                  "id": "fin-0",
+                  "residual": 1.4909918365169707e-15,
+                  "independent": 1.4909918365169707e-15
+                },
+                {
+                  "id": "tube-1",
+                  "residual": -3.961566318044785e-15,
+                  "independent": -3.961457897827536e-15
+                },
+                {
+                  "id": "fin-1",
+                  "residual": -9.971314815529917e-15,
+                  "independent": -9.971314815529917e-15
+                },
+                {
+                  "id": "tube-2",
+                  "residual": 8.151031932746022e-16,
+                  "independent": 8.148863528401051e-16
+                },
+                {
+                  "id": "fin-2",
+                  "residual": 7.822841645498725e-15,
+                  "independent": 7.822841658733614e-15
+                },
+                {
+                  "id": "tube-3",
+                  "residual": 8.970038253841572e-15,
+                  "independent": 8.970038253841572e-15
+                },
+                {
+                  "id": "fin-3",
+                  "residual": 6.909973922686921e-15,
+                  "independent": 6.909973922686921e-15
+                },
+                {
+                  "id": "tube-4",
+                  "residual": -2.5266247427602195e-15,
+                  "independent": -2.5268415831947166e-15
+                },
+                {
+                  "id": "fin-4",
+                  "residual": 1.454111378777874e-14,
+                  "independent": 1.454111378777874e-14
+                },
+                {
+                  "id": "air",
+                  "residual": -5.622130365423583e-14,
+                  "independent": -5.6221737335104827e-14
+                }
+              ]
+            }
+          ],
+          "events": [
+            [],
+            [],
+            [],
+            []
+          ],
+          "boundaryEvents": [
+            [],
+            [],
+            [],
+            []
+          ]
+        }
+      ],
+      "C": [
+        {
+          "fixture": "cold",
+          "exactMUVAllStateAndRecord": true,
+          "exactOriginalObserverAttempts": true,
+          "insideWorker": true,
+          "checkpoints": [
+            0.0,
+            0.0001,
+            0.0005,
+            0.001
+          ],
+          "propertyCounts": {
+            "ph": 8476,
+            "sat": 9261,
+            "stateMVU": 445
+          },
+          "acceptedSteps": [
+            0.0,
+            4.0,
+            12.0,
+            16.0
+          ],
+          "rejectedSteps": [
+            0.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "audits": [
+            {
+              "mass": 0,
+              "fluid": 0,
+              "thermal": 0,
+              "combined": 0,
+              "sections": [
+                {
+                  "massKg": 0,
+                  "energyKJ": 0
+                },
+                {
+                  "massKg": 0,
+                  "energyKJ": 0
+                },
+                {
+                  "massKg": 0,
+                  "energyKJ": 0
+                },
+                {
+                  "massKg": 0,
+                  "energyKJ": 0
+                },
+                {
+                  "massKg": 0,
+                  "energyKJ": 0
+                }
+              ],
+              "nodes": [
+                {
+                  "id": "tube-0",
+                  "residual": 0,
+                  "independent": 0
+                },
+                {
+                  "id": "fin-0",
+                  "residual": 0,
+                  "independent": 0
+                },
+                {
+                  "id": "tube-1",
+                  "residual": 0,
+                  "independent": 0
+                },
+                {
+                  "id": "fin-1",
+                  "residual": 0,
+                  "independent": 0
+                },
+                {
+                  "id": "tube-2",
+                  "residual": 0,
+                  "independent": 0
+                },
+                {
+                  "id": "fin-2",
+                  "residual": 0,
+                  "independent": 0
+                },
+                {
+                  "id": "tube-3",
+                  "residual": 0,
+                  "independent": 0
+                },
+                {
+                  "id": "fin-3",
+                  "residual": 0,
+                  "independent": 0
+                },
+                {
+                  "id": "tube-4",
+                  "residual": 0,
+                  "independent": 0
+                },
+                {
+                  "id": "fin-4",
+                  "residual": 0,
+                  "independent": 0
+                },
+                {
+                  "id": "air",
+                  "residual": 0,
+                  "independent": 0
+                }
+              ]
+            },
+            {
+              "mass": 7.993382160603052e-16,
+              "fluid": 3.9638236269678995e-13,
+              "thermal": -1.2282384311002037e-15,
+              "combined": 3.9515412426568974e-13,
+              "sections": [
+                {
+                  "massKg": 2.197967912412552e-16,
+                  "energyKJ": 1.0985412883177115e-13
+                },
+                {
+                  "massKg": 1.4330313439349393e-14,
+                  "energyKJ": 7.1649860388300554e-12
+                },
+                {
+                  "massKg": -6.445152400900639e-14,
+                  "energyKJ": -3.222633425848005e-11
+                },
+                {
+                  "massKg": -6.8724455059189984e-15,
+                  "energyKJ": -3.436355556661261e-12
+                },
+                {
+                  "massKg": 5.757319738128104e-14,
+                  "energyKJ": 2.8786896504777795e-11
+                }
+              ],
+              "nodes": [
+                {
+                  "id": "tube-0",
+                  "residual": 3.3881317890172014e-20,
+                  "independent": 3.3881317890172014e-20
+                },
+                {
+                  "id": "fin-0",
+                  "residual": 0,
+                  "independent": -1.3552527156068805e-20
+                },
+                {
+                  "id": "tube-1",
+                  "residual": -4.743384504624082e-20,
+                  "independent": -5.421010862427522e-20
+                },
+                {
+                  "id": "fin-1",
+                  "residual": 4.0657581468206416e-20,
+                  "independent": 5.421010862427522e-20
+                },
+                {
+                  "id": "tube-2",
+                  "residual": -1.2197274440461925e-19,
+                  "independent": -1.2197274440461925e-19
+                },
+                {
+                  "id": "fin-2",
+                  "residual": 8.131516293641283e-20,
+                  "independent": 8.131516293641283e-20
+                },
+                {
+                  "id": "tube-3",
+                  "residual": -1.4907779871675686e-19,
+                  "independent": -1.4907779871675686e-19
+                },
+                {
+                  "id": "fin-3",
+                  "residual": 1.0842021724855044e-19,
+                  "independent": 1.0842021724855044e-19
+                },
+                {
+                  "id": "tube-4",
+                  "residual": -5.421010862427522e-20,
+                  "independent": -4.743384504624082e-20
+                },
+                {
+                  "id": "fin-4",
+                  "residual": 4.0657581468206416e-20,
+                  "independent": 2.710505431213761e-20
+                },
+                {
+                  "id": "air",
+                  "residual": -1.2281842209915794e-15,
+                  "independent": -1.2282384311002037e-15
+                }
+              ]
+            },
+            {
+              "mass": 2.245133671530987e-15,
+              "fluid": 1.1264361839125048e-12,
+              "thermal": -5.860546423153146e-15,
+              "combined": 1.1205756374893516e-12,
+              "sections": [
+                {
+                  "massKg": 4.940348887497387e-15,
+                  "energyKJ": 2.469454762205059e-12
+                },
+                {
+                  "massKg": 1.4764328065794592e-14,
+                  "energyKJ": 7.382909713270214e-12
+                },
+                {
+                  "massKg": -7.959046155426794e-14,
+                  "energyKJ": -3.979665257275791e-11
+                },
+                {
+                  "massKg": 1.1298111697501806e-14,
+                  "energyKJ": 5.649280793596639e-12
+                },
+                {
+                  "massKg": 5.084148103941797e-14,
+                  "energyKJ": 2.5423219736017688e-11
+                }
+              ],
+              "nodes": [
+                {
+                  "id": "tube-0",
+                  "residual": 5.963111948670274e-19,
+                  "independent": 7.047314121155779e-19
+                },
+                {
+                  "id": "fin-0",
+                  "residual": -3.2526065174565133e-19,
+                  "independent": -3.7947076036992655e-19
+                },
+                {
+                  "id": "tube-1",
+                  "residual": -3.7947076036992655e-19,
+                  "independent": -4.336808689942018e-19
+                },
+                {
+                  "id": "fin-1",
+                  "residual": 3.2526065174565133e-19,
+                  "independent": 4.336808689942018e-19
+                },
+                {
+                  "id": "tube-2",
+                  "residual": 5.421010862427522e-19,
+                  "independent": 5.421010862427522e-19
+                },
+                {
+                  "id": "fin-2",
+                  "residual": -2.710505431213761e-19,
+                  "independent": -3.2526065174565133e-19
+                },
+                {
+                  "id": "tube-3",
+                  "residual": -4.336808689942018e-19,
+                  "independent": -4.336808689942018e-19
+                },
+                {
+                  "id": "fin-3",
+                  "residual": 3.2526065174565133e-19,
+                  "independent": 3.2526065174565133e-19
+                },
+                {
+                  "id": "tube-4",
+                  "residual": -7.047314121155779e-19,
+                  "independent": -5.963111948670274e-19
+                },
+                {
+                  "id": "fin-4",
+                  "residual": 3.7947076036992655e-19,
+                  "independent": 4.336808689942018e-19
+                },
+                {
+                  "id": "air",
+                  "residual": -5.86098010402214e-15,
+                  "independent": -5.860763263587643e-15
+                }
+              ]
+            },
+            {
+              "mass": 2.286543418256355e-15,
+              "fluid": 1.1530633219070108e-12,
+              "thermal": -4.99036575951628e-15,
+              "combined": 1.1480729561474945e-12,
+              "sections": [
+                {
+                  "massKg": 8.83018294985452e-15,
+                  "energyKJ": 4.416215223373987e-12
+                },
+                {
+                  "massKg": 2.1329995536219053e-14,
+                  "energyKJ": 1.0666219209948258e-11
+                },
+                {
+                  "massKg": -7.942452779990082e-14,
+                  "energyKJ": -3.970986300200208e-11
+                },
+                {
+                  "massKg": 4.201467224530884e-15,
+                  "energyKJ": 2.099206659195163e-12
+                },
+                {
+                  "massKg": 4.735636609552252e-14,
+                  "energyKJ": 2.3678620587712362e-11
+                }
+              ],
+              "nodes": [
+                {
+                  "id": "tube-0",
+                  "residual": 0,
+                  "independent": 1.0842021724855044e-19
+                },
+                {
+                  "id": "fin-0",
+                  "residual": 1.0842021724855044e-19,
+                  "independent": 1.0842021724855044e-19
+                },
+                {
+                  "id": "tube-1",
+                  "residual": -1.0842021724855044e-19,
+                  "independent": 0
+                },
+                {
+                  "id": "fin-1",
+                  "residual": 4.336808689942018e-19,
+                  "independent": 4.336808689942018e-19
+                },
+                {
+                  "id": "tube-2",
+                  "residual": -1.0842021724855044e-19,
+                  "independent": -1.0842021724855044e-19
+                },
+                {
+                  "id": "fin-2",
+                  "residual": 3.2526065174565133e-19,
+                  "independent": 3.2526065174565133e-19
+                },
+                {
+                  "id": "tube-3",
+                  "residual": 1.8431436932253575e-18,
+                  "independent": 1.8431436932253575e-18
+                },
+                {
+                  "id": "fin-3",
+                  "residual": -1.3010426069826053e-18,
+                  "independent": -1.3010426069826053e-18
+                },
+                {
+                  "id": "tube-4",
+                  "residual": -2.710505431213761e-18,
+                  "independent": -2.6020852139652106e-18
+                },
+                {
+                  "id": "fin-4",
+                  "residual": 1.8431436932253575e-18,
+                  "independent": 1.734723475976807e-18
+                },
+                {
+                  "id": "air",
+                  "residual": -4.990799440385274e-15,
+                  "independent": -4.991233121254268e-15
+                }
+              ]
+            }
+          ],
+          "events": [
+            [],
+            [],
+            [],
+            []
+          ],
+          "boundaryEvents": [
+            [],
+            [],
+            [],
+            []
+          ]
+        },
+        {
+          "fixture": "warm",
+          "exactMUVAllStateAndRecord": true,
+          "exactOriginalObserverAttempts": true,
+          "insideWorker": true,
+          "checkpoints": [
+            0.0,
+            0.0001,
+            0.0005,
+            0.001
+          ],
+          "propertyCounts": {
+            "ph": 22072,
+            "sat": 23752,
+            "stateMVU": 940
+          },
+          "acceptedSteps": [
+            0.0,
+            10.0,
+            22.0,
+            34.0
+          ],
+          "rejectedSteps": [
+            0.0,
+            3.0,
+            3.0,
+            3.0
+          ],
+          "audits": [
+            {
+              "mass": 0,
+              "fluid": 0,
+              "thermal": 0,
+              "combined": 0,
+              "sections": [
+                {
+                  "massKg": 0,
+                  "energyKJ": 0
+                },
+                {
+                  "massKg": 0,
+                  "energyKJ": 0
+                },
+                {
+                  "massKg": 0,
+                  "energyKJ": 0
+                },
+                {
+                  "massKg": 0,
+                  "energyKJ": 0
+                },
+                {
+                  "massKg": 0,
+                  "energyKJ": 0
+                }
+              ],
+              "nodes": [
+                {
+                  "id": "tube-0",
+                  "residual": 0,
+                  "independent": 0
+                },
+                {
+                  "id": "fin-0",
+                  "residual": 0,
+                  "independent": 0
+                },
+                {
+                  "id": "tube-1",
+                  "residual": 0,
+                  "independent": 0
+                },
+                {
+                  "id": "fin-1",
+                  "residual": 0,
+                  "independent": 0
+                },
+                {
+                  "id": "tube-2",
+                  "residual": 0,
+                  "independent": 0
+                },
+                {
+                  "id": "fin-2",
+                  "residual": 0,
+                  "independent": 0
+                },
+                {
+                  "id": "tube-3",
+                  "residual": 0,
+                  "independent": 0
+                },
+                {
+                  "id": "fin-3",
+                  "residual": 0,
+                  "independent": 0
+                },
+                {
+                  "id": "tube-4",
+                  "residual": 0,
+                  "independent": 0
+                },
+                {
+                  "id": "fin-4",
+                  "residual": 0,
+                  "independent": 0
+                },
+                {
+                  "id": "air",
+                  "residual": 0,
+                  "independent": 0
+                }
+              ]
+            },
+            {
+              "mass": -6.954648716726158e-16,
+              "fluid": -1.1449994598289326e-12,
+              "thermal": 1.1173191278440742e-14,
+              "combined": -1.1338262685504918e-12,
+              "sections": [
+                {
+                  "massKg": 4.319623450233412e-16,
+                  "energyKJ": 7.14604251965921e-13
+                },
+                {
+                  "massKg": -2.871727809657238e-14,
+                  "energyKJ": -4.738429071858563e-11
+                },
+                {
+                  "massKg": 2.1119583975912494e-14,
+                  "energyKJ": 3.484768154376691e-11
+                },
+                {
+                  "massKg": 6.858505818531585e-15,
+                  "energyKJ": 1.1315416024960598e-11
+                },
+                {
+                  "massKg": -3.873710366689674e-16,
+                  "energyKJ": -6.384086781354575e-13
+                }
+              ],
+              "nodes": [
+                {
+                  "id": "tube-0",
+                  "residual": 4.1699093180150304e-15,
+                  "independent": 4.1699093180150304e-15
+                },
+                {
+                  "id": "fin-0",
+                  "residual": 5.92078726946348e-16,
+                  "independent": 5.92078726946348e-16
+                },
+                {
+                  "id": "tube-1",
+                  "residual": -4.5382670061169805e-15,
+                  "independent": -4.5382670061169805e-15
+                },
+                {
+                  "id": "fin-1",
+                  "residual": -1.1584969547150965e-15,
+                  "independent": -1.1584969549218917e-15
+                },
+                {
+                  "id": "tube-2",
+                  "residual": -1.8935455417187774e-15,
+                  "independent": -1.8935455417187774e-15
+                },
+                {
+                  "id": "fin-2",
+                  "residual": -5.36715954132599e-16,
+                  "independent": -5.36715954132599e-16
+                },
+                {
+                  "id": "tube-3",
+                  "residual": 2.2125855834997932e-16,
+                  "independent": 2.2125855834997932e-16
+                },
+                {
+                  "id": "fin-3",
+                  "residual": 4.986310726800077e-15,
+                  "independent": 4.9863107265932815e-15
+                },
+                {
+                  "id": "tube-4",
+                  "residual": 2.3193794974896154e-16,
+                  "independent": 2.3192439722180547e-16
+                },
+                {
+                  "id": "fin-4",
+                  "residual": 6.185293882534192e-15,
+                  "independent": 6.185293882327397e-15
+                },
+                {
+                  "id": "air",
+                  "residual": 2.913359657685799e-15,
+                  "independent": 2.913373210212955e-15
+                }
+              ]
+            },
+            {
+              "mass": 1.8967405499958206e-14,
+              "fluid": 3.122980454968449e-11,
+              "thermal": -1.5202682862591743e-15,
+              "combined": 3.122828428139823e-11,
+              "sections": [
+                {
+                  "massKg": 1.2311719179547822e-14,
+                  "energyKJ": 2.0234127795591e-11
+                },
+                {
+                  "massKg": -3.0458091090930343e-14,
+                  "energyKJ": -5.0251781468640955e-11
+                },
+                {
+                  "massKg": 3.035898813022247e-14,
+                  "energyKJ": 5.0092832497034695e-11
+                },
+                {
+                  "massKg": 1.888750149391192e-14,
+                  "energyKJ": 3.1160655002485105e-11
+                },
+                {
+                  "massKg": -1.2132493360655916e-14,
+                  "energyKJ": -2.0006468541295536e-11
+                }
+              ],
+              "nodes": [
+                {
+                  "id": "tube-0",
+                  "residual": 7.304378456252092e-15,
+                  "independent": 7.304378456252092e-15
+                },
+                {
+                  "id": "fin-0",
+                  "residual": -2.6461182217282254e-15,
+                  "independent": -2.6461182084933356e-15
+                },
+                {
+                  "id": "tube-1",
+                  "residual": -1.337634430303991e-15,
+                  "independent": -1.337634430303991e-15
+                },
+                {
+                  "id": "fin-1",
+                  "residual": -2.6076363171769356e-15,
+                  "independent": -2.6076363171769356e-15
+                },
+                {
+                  "id": "tube-2",
+                  "residual": -1.2988742026376343e-15,
+                  "independent": -1.2989826228548829e-15
+                },
+                {
+                  "id": "fin-2",
+                  "residual": -8.384397582997361e-16,
+                  "independent": -8.384397582997361e-16
+                },
+                {
+                  "id": "tube-3",
+                  "residual": 9.634383135032065e-15,
+                  "independent": 9.63443734514069e-15
+                },
+                {
+                  "id": "fin-3",
+                  "residual": 4.3776882800691885e-15,
+                  "independent": 4.377688276760466e-15
+                },
+                {
+                  "id": "tube-4",
+                  "residual": 1.4307131868118717e-15,
+                  "independent": 1.4307131868118717e-15
+                },
+                {
+                  "id": "fin-4",
+                  "residual": 9.582490508551478e-15,
+                  "independent": 9.582490508551478e-15
+                },
+                {
+                  "id": "air",
+                  "residual": -2.5121181176923635e-14,
+                  "independent": -2.5121289597140883e-14
+                }
+              ]
+            },
+            {
+              "mass": 2.3881002969398935e-14,
+              "fluid": 3.932221345412379e-11,
+              "thermal": -2.835275417223393e-14,
+              "combined": 3.9293860699951555e-11,
+              "sections": [
+                {
+                  "massKg": 3.2232381911093122e-15,
+                  "energyKJ": 5.224875545238594e-12
+                },
+                {
+                  "massKg": -2.86551114766023e-14,
+                  "energyKJ": -4.727616757273234e-11
+                },
+                {
+                  "massKg": 3.544691599163645e-14,
+                  "energyKJ": 5.84863964984278e-11
+                },
+                {
+                  "massKg": 2.1312392497509214e-14,
+                  "energyKJ": 3.51637985222808e-11
+                },
+                {
+                  "massKg": -7.445128227031445e-15,
+                  "energyKJ": -1.2277592896341172e-11
+                }
+              ],
+              "nodes": [
+                {
+                  "id": "tube-0",
+                  "residual": 3.778010890242989e-15,
+                  "independent": 3.778010890242989e-15
+                },
+                {
+                  "id": "fin-0",
+                  "residual": 1.4909918365169707e-15,
+                  "independent": 1.4909918365169707e-15
+                },
+                {
+                  "id": "tube-1",
+                  "residual": -3.961566318044785e-15,
+                  "independent": -3.961457897827536e-15
+                },
+                {
+                  "id": "fin-1",
+                  "residual": -9.971314815529917e-15,
+                  "independent": -9.971314815529917e-15
+                },
+                {
+                  "id": "tube-2",
+                  "residual": 8.151031932746022e-16,
+                  "independent": 8.148863528401051e-16
+                },
+                {
+                  "id": "fin-2",
+                  "residual": 7.822841645498725e-15,
+                  "independent": 7.822841658733614e-15
+                },
+                {
+                  "id": "tube-3",
+                  "residual": 8.970038253841572e-15,
+                  "independent": 8.970038253841572e-15
+                },
+                {
+                  "id": "fin-3",
+                  "residual": 6.909973922686921e-15,
+                  "independent": 6.909973922686921e-15
+                },
+                {
+                  "id": "tube-4",
+                  "residual": -2.5266247427602195e-15,
+                  "independent": -2.5268415831947166e-15
+                },
+                {
+                  "id": "fin-4",
+                  "residual": 1.454111378777874e-14,
+                  "independent": 1.454111378777874e-14
+                },
+                {
+                  "id": "air",
+                  "residual": -5.622130365423583e-14,
+                  "independent": -5.6221737335104827e-14
+                }
+              ]
+            }
+          ],
+          "events": [
+            [],
+            [],
+            [],
+            []
+          ],
+          "boundaryEvents": [
+            [],
+            [],
+            [],
+            []
+          ]
+        }
+      ]
+    }
+  },
+  "crossEngine": [
+    {
+      "fixture": "cold",
+      "checkpoint": 0,
+      "errors": {
+        "pressureBar": 0.0,
+        "enthalpyKJkg": 0,
+        "fluidK": 0.0,
+        "thermalK": 0.0
+      },
+      "originalLimitsPass": true
+    },
+    {
+      "fixture": "cold",
+      "checkpoint": 1,
+      "errors": {
+        "pressureBar": 2.6645352591003757e-15,
+        "enthalpyKJkg": 5.684341886080802e-14,
+        "fluidK": 1.687538997430238e-14,
+        "thermalK": 0.0
+      },
+      "originalLimitsPass": true
+    },
+    {
+      "fixture": "cold",
+      "checkpoint": 2,
+      "errors": {
+        "pressureBar": 1.7763568394002505e-15,
+        "enthalpyKJkg": 5.115907697472721e-13,
+        "fluidK": 1.687538997430238e-14,
+        "thermalK": 0.0
+      },
+      "originalLimitsPass": true
+    },
+    {
+      "fixture": "cold",
+      "checkpoint": 3,
+      "errors": {
+        "pressureBar": 8.881784197001252e-16,
+        "enthalpyKJkg": 6.821210263296962e-13,
+        "fluidK": 6.217248937900877e-15,
+        "thermalK": 0.0
+      },
+      "originalLimitsPass": true
+    },
+    {
+      "fixture": "warm",
+      "checkpoint": 0,
+      "errors": {
+        "pressureBar": 0.0,
+        "enthalpyKJkg": 0.0,
+        "fluidK": 0.0,
+        "thermalK": 0.0
+      },
+      "originalLimitsPass": true
+    },
+    {
+      "fixture": "warm",
+      "checkpoint": 1,
+      "errors": {
+        "pressureBar": 1.4209522447572454e-11,
+        "enthalpyKJkg": 1.3710632629226893e-10,
+        "fluidK": 1.0058975874471798e-10,
+        "thermalK": 0.0
+      },
+      "originalLimitsPass": true
+    },
+    {
+      "fixture": "warm",
+      "checkpoint": 2,
+      "errors": {
+        "pressureBar": 3.540545634450609e-11,
+        "enthalpyKJkg": 3.369677870068699e-10,
+        "fluidK": 2.504805252101505e-10,
+        "thermalK": 0.0
+      },
+      "originalLimitsPass": true
+    },
+    {
+      "fixture": "warm",
+      "checkpoint": 3,
+      "errors": {
+        "pressureBar": 7.833733661755105e-11,
+        "enthalpyKJkg": 7.639755494892597e-10,
+        "fluidK": 5.619256171485176e-10,
+        "thermalK": 1.1368683772161603e-13
+      },
+      "originalLimitsPass": true
+    }
+  ],
+  "fullA2Qualification": false
+}

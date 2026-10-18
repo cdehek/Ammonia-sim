@@ -1,0 +1,65 @@
+{
+  "passed": true,
+  "browserArtifacts": {
+    "rebuiltB4C": {
+      "id": "rebuiltB4C",
+      "label": "control",
+      "jsPath": "vendor/control/coolprop.js",
+      "wasmPath": "vendor/control/coolprop.wasm",
+      "jsSHA256": "ebd02f5721abc10fee3e6560b0d96c1a17b8ae1f01bc144a4f9a1af8cf1e3217",
+      "wasmSHA256": "cbd0df37784aa4c8fb90e094904823e869da8075eca54f8767ad1a44599fd771",
+      "jsBytes": 167060,
+      "wasmBytes": 9196646
+    },
+    "gateA": {
+      "id": "gateA",
+      "label": "candidate",
+      "jsPath": "vendor/candidate/coolprop.js",
+      "wasmPath": "vendor/candidate/coolprop.wasm",
+      "jsSHA256": "ebd02f5721abc10fee3e6560b0d96c1a17b8ae1f01bc144a4f9a1af8cf1e3217",
+      "wasmSHA256": "2af8363686c402d6dcd9775355e829a5f3257de56372f290c66ed9285db8db45",
+      "jsBytes": 167060,
+      "wasmBytes": 9196872
+    },
+    "diagnosticB4C": {
+      "id": "diagnosticB4C",
+      "label": "control-diagnostic",
+      "jsPath": "vendor/control-diagnostic/coolprop.js",
+      "wasmPath": "vendor/control-diagnostic/coolprop.wasm",
+      "jsSHA256": "ebd02f5721abc10fee3e6560b0d96c1a17b8ae1f01bc144a4f9a1af8cf1e3217",
+      "wasmSHA256": "6d1c01416ea21cb563ff59268385d1b2c09488bd288ee49141460c144f1e5778",
+      "jsBytes": 167060,
+      "wasmBytes": 9198367
+    },
+    "diagnosticGateA": {
+      "id": "diagnosticGateA",
+      "label": "candidate-diagnostic",
+      "jsPath": "vendor/candidate-diagnostic/coolprop.js",
+      "wasmPath": "vendor/candidate-diagnostic/coolprop.wasm",
+      "jsSHA256": "ebd02f5721abc10fee3e6560b0d96c1a17b8ae1f01bc144a4f9a1af8cf1e3217",
+      "wasmSHA256": "d31a8f68d939e6c6e5e1685f159e1972d32c9885ca1216f998582bd715c223d9",
+      "jsBytes": 167060,
+      "wasmBytes": 9198610
+    }
+  },
+  "nativeArchives": {
+    "control": {
+      "archive": "experiments/dx-fv/browser_eos_b5a/artifacts/libCoolProp-control.so.xz",
+      "archiveSHA256": "4fd3de5b59a750bca444298ad6733835e5229ac0acbba8cae466be626f6e0e44",
+      "binarySHA256": "6dfeaffb397df603997f77bae2d19f0e85efe830d417e0b5faa90562320ba71f",
+      "bytes": 12912824,
+      "scientificSource": "Verified B4C",
+      "matchedNativeCompiler": "GCC 14.2.0, archived original B5A matched build"
+    },
+    "candidate": {
+      "archive": "experiments/dx-fv/browser_eos_b5a/artifacts/libCoolProp-A1.so.xz",
+      "archiveSHA256": "2341cfdc164388df12fd642d89032558fedd80b8f21ee38a5871ea3d44eaedbf",
+      "binarySHA256": "3cbe3fd0ad16309ca498ccce7ec6c89f37bf7b1fe9036a5799f37ce612fba6f0",
+      "bytes": 12912824,
+      "scientificSource": "Exact accepted B5A A1",
+      "matchedNativeCompiler": "GCC 14.2.0, archived original B5A matched build"
+    }
+  },
+  "B7ExecutionInB9A": false,
+  "noRebuild": true
+}

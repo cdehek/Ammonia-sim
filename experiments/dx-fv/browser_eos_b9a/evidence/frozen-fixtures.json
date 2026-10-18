@@ -1,0 +1,238 @@
+{
+  "predeclaredInCommit": "81e43e4",
+  "fixtures": {
+    "cold": {
+      "values": {
+        "sectionCount": 5,
+        "initial": [
+          {
+            "p": 3.5,
+            "h": 500
+          },
+          {
+            "p": 3.5,
+            "h": 500
+          },
+          {
+            "p": 3.5,
+            "h": 500
+          },
+          {
+            "p": 3.5,
+            "h": 500
+          },
+          {
+            "p": 3.5,
+            "h": 500
+          }
+        ],
+        "thermal": {
+          "tubeProfileK": 273.15,
+          "finProfileK": 273.15,
+          "airInitialK": 278.15,
+          "airLoadKW": 1
+        }
+      },
+      "exact": {
+        "sectionCount": {
+          "f64": "4014000000000000"
+        },
+        "initial": [
+          {
+            "p": {
+              "f64": "400c000000000000"
+            },
+            "h": {
+              "f64": "407f400000000000"
+            }
+          },
+          {
+            "p": {
+              "f64": "400c000000000000"
+            },
+            "h": {
+              "f64": "407f400000000000"
+            }
+          },
+          {
+            "p": {
+              "f64": "400c000000000000"
+            },
+            "h": {
+              "f64": "407f400000000000"
+            }
+          },
+          {
+            "p": {
+              "f64": "400c000000000000"
+            },
+            "h": {
+              "f64": "407f400000000000"
+            }
+          },
+          {
+            "p": {
+              "f64": "400c000000000000"
+            },
+            "h": {
+              "f64": "407f400000000000"
+            }
+          }
+        ],
+        "thermal": {
+          "tubeProfileK": {
+            "f64": "4071126666666666"
+          },
+          "finProfileK": {
+            "f64": "4071126666666666"
+          },
+          "airInitialK": {
+            "f64": "4071626666666666"
+          },
+          "airLoadKW": {
+            "f64": "3ff0000000000000"
+          }
+        }
+      }
+    },
+    "warm": {
+      "values": {
+        "sectionCount": 5,
+        "initial": [
+          {
+            "p": 3.65,
+            "h": 1650
+          },
+          {
+            "p": 3.65,
+            "h": 1650
+          },
+          {
+            "p": 3.65,
+            "h": 1650
+          },
+          {
+            "p": 3.65,
+            "h": 1650
+          },
+          {
+            "p": 3.65,
+            "h": 1650
+          }
+        ],
+        "thermal": {
+          "tubeProfileK": 293.15,
+          "finProfileK": 293.15,
+          "airInitialK": 293.15,
+          "airLoadKW": 1
+        }
+      },
+      "exact": {
+        "sectionCount": {
+          "f64": "4014000000000000"
+        },
+        "initial": [
+          {
+            "p": {
+              "f64": "400d333333333333"
+            },
+            "h": {
+              "f64": "4099c80000000000"
+            }
+          },
+          {
+            "p": {
+              "f64": "400d333333333333"
+            },
+            "h": {
+              "f64": "4099c80000000000"
+            }
+          },
+          {
+            "p": {
+              "f64": "400d333333333333"
+            },
+            "h": {
+              "f64": "4099c80000000000"
+            }
+          },
+          {
+            "p": {
+              "f64": "400d333333333333"
+            },
+            "h": {
+              "f64": "4099c80000000000"
+            }
+          },
+          {
+            "p": {
+              "f64": "400d333333333333"
+            },
+            "h": {
+              "f64": "4099c80000000000"
+            }
+          }
+        ],
+        "thermal": {
+          "tubeProfileK": {
+            "f64": "4072526666666666"
+          },
+          "finProfileK": {
+            "f64": "4072526666666666"
+          },
+          "airInitialK": {
+            "f64": "4072526666666666"
+          },
+          "airLoadKW": {
+            "f64": "3ff0000000000000"
+          }
+        }
+      }
+    }
+  },
+  "settings": {
+    "method": "tr-bdf2",
+    "adaptive": true,
+    "maxStep": 0.5,
+    "minStep": 1e-9,
+    "relativeTolerance": 0.000001,
+    "massAbsoluteKg": 1e-11,
+    "energyAbsoluteKJ": 1e-8,
+    "pressureAbsoluteBar": 0.000001,
+    "enthalpyAbsoluteKJkg": 0.0001,
+    "eventStepSeconds": 0.002,
+    "temperatureAbsoluteK": 0.0001,
+    "temperatureScaleK": 50,
+    "nonlinearTolerance": 1e-11,
+    "thermalResidualK": 1e-12,
+    "maxIterations": 30,
+    "maxAttempts": 100000,
+    "trace": true,
+    "timestepGrowth": "failure-aware"
+  },
+  "times": [
+    0,
+    0.0001,
+    0.0005,
+    0.001
+  ],
+  "durations": [
+    0.0001,
+    0.0004,
+    0.0005
+  ],
+  "balancedOrder": [
+    [
+      "main",
+      "worker"
+    ],
+    [
+      "worker",
+      "main"
+    ],
+    [
+      "main",
+      "worker"
+    ]
+  ]
+}

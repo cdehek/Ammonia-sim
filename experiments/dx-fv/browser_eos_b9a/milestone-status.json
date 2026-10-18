@@ -1,0 +1,25 @@
+{
+  "classification": "B9A COMPACT-WORKER FEASIBILITY PASS",
+  "gates": {
+    "1": "PASS",
+    "2": "PASS",
+    "3": "PASS",
+    "4": "PASS"
+  },
+  "scientificParity": "PASS",
+  "failureRollback": "PASS",
+  "responsivenessImprovement": "YES",
+  "physicsThroughputImprovement": "INCONCLUSIVE",
+  "startupImprovement": "INCONCLUSIVE",
+  "memoryImprovement": "INCONCLUSIVE",
+  "furtherIsolatedResearch": "GO",
+  "operatorWorkstationIntegration": "NO-GO",
+  "remainingPrimaryBottleneck": "Solver/property evaluation",
+  "secondaryBottlenecks": [
+    "Diagnostic copying",
+    "Message transport",
+    "Browser scheduling/rendering"
+  ],
+  "B7Execution": "DEFERRED",
+  "completeA2Qualification": false
+}
