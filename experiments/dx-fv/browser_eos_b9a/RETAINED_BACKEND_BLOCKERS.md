@@ -25,4 +25,4 @@ Priority is not sorted solely by severity. All P2 items remain scientific or con
 
 The accepted table model does not call the B7 loader. No P0 is claimed from diagnostic exposure alone; no P1 is manufactured by calling experimental full-VLE use baseline. Unknown dynamic exact-input occurrence remains explicit in each affected record. An observed supported-path invalid acceptance would require reclassification to P0; a required supported calculation blocked by an unresolved property would require P1.
 
-Machine-readable [JSON](evidence/issue-priorities.json) and [CSV](evidence/issue-priorities.csv) are suitable for Excel import. No external tracker was edited.
+Machine-readable [JSON](evidence/inherited-B8-issue-priorities.json) and [CSV](evidence/inherited-B8-issue-priorities.csv) are suitable for Excel import. No external tracker was edited.
