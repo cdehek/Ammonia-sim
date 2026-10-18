@@ -1,0 +1,205 @@
+--- accepted/coupled-model.cjs
++++ profiling-only/coupled-model.cjs
+@@ -77,9 +77,19 @@
+       cause.evidence = {...cause.evidence,source:'refrigerant',section,stage}; throw cause;
+     }
+   }
+-  function coordinates(c,i) { return fluidCall(()=>thermo.ph(c.pressureGuess,(c.internalEnergyKJ+100*c.pressureGuess*c.volumeM3)/c.massKg),i,'coordinates'); }
+-  function recover(c,i) { return fluidCall(()=>thermo.recover(c),i,'canonical-recovery'); }
++  function coordinates(c,i) {
++/* B9B observation */ const __b9bEnd=globalThis.__b9b.enter("model.coordinates",[]);try{
++ return fluidCall(()=>thermo.ph(c.pressureGuess,(c.internalEnergyKJ+100*c.pressureGuess*c.volumeM3)/c.massKg),i,'coordinates'); 
++}finally{__b9bEnd();}/* B9B observation */
++}
++  function recover(c,i) {
++/* B9B observation */ const __b9bEnd=globalThis.__b9b.enter("model.recover",[]);try{
++ return fluidCall(()=>thermo.recover(c),i,'canonical-recovery'); 
++}finally{__b9bEnd();}/* B9B observation */
++}
+   function temperatures(spec, energies, stage) {
++/* B9B observation */ const __b9bEnd=globalThis.__b9b.enter("model.temperatures",[]);try{
++
+     return energies.map((e,i) => {
+       const t = ANCHOR_K+e/spec.thermal.nodes[i].capacityKJK;
+       if (!Number.isFinite(t) || t<spec.thermal.domainK[0] || t>spec.thermal.domainK[1]) throw Object.assign(Error('Coupled thermal state outside supported domain.'), {
+@@ -87,7 +97,9 @@
+       });
+       return t;
+     });
+-  }
++  
++}finally{__b9bEnd();}/* B9B observation */
++}
+   function patchSpec(spec, patch) {
+     fields(patch,['inlet','outlet','airLoadKW']);
+     const next = clone(spec);
+@@ -135,6 +147,8 @@
+       ...(failureAware?{growthHistory:createGrowthHistory()}: {})};
+   }
+   function evaluate(spec, states, energies) {
++/* B9B observation */ const __b9bEnd=globalThis.__b9b.enter("model.evaluate",[]);try{
++
+     const t=temperatures(spec,energies,'rate'),ix=new Map(spec.thermal.nodes.map((n,i)=>[n.id,i]));
+     const nodes=[thermo.ph(spec.fluid.inlet.p,spec.fluid.inlet.h),...states,thermo.ph(spec.fluid.outlet.p,spec.fluid.outlet.h)];
+     const faces=spec.fluid.connections.map((f,i)=>{const m=f.closed?0:connectionFlow(nodes[i],nodes[i+1],f);return C.flux(m,m>=0?nodes[i]:nodes[i+1]);});
+@@ -148,13 +162,21 @@
+       thermalRates[tube]-=q; return q;
+     });
+     return {faces,links,tubeRefrigerant,thermalRates,airLoad:spec.thermal.loadsKW.air||0,fluidRates:C.assemble(faces,tubeRefrigerant)};
+-  }
++  
++}finally{__b9bEnd();}/* B9B observation */
++}
+   function blend(terms) {
++/* B9B observation */ const __b9bEnd=globalThis.__b9b.enter("model.blend",[]);try{
++
+     const array = key => terms[0][1][key].map((_,i)=>sum(terms.map(([w,v])=>w*v[key][i])));
+     return {faces:terms[0][1].faces.map((_,i)=>({massKgS:sum(terms.map(([w,v])=>w*v.faces[i].massKgS)),energyKW:sum(terms.map(([w,v])=>w*v.faces[i].energyKW))})),
+       links:array('links'),tubeRefrigerant:array('tubeRefrigerant'),thermalRates:array('thermalRates'),airLoad:sum(terms.map(([w,v])=>w*v.airLoad))};
+-  }
++  
++}finally{__b9bEnd();}/* B9B observation */
++}
+   function solveStage(s, dt, known, weight, guess, work) {
++/* B9B observation */ const __b9bEnd=globalThis.__b9b.enter("model.solveStage",[dt,weight]);try{
++
+     const fluidScales=s.cells.flatMap(c=>[Math.max(.01,c.massKg),Math.max(1,Math.abs(c.internalEnergyKJ))]);
+     const variables=s.cells.flatMap((_,section)=>[{kind:'pressure',section},{kind:'enthalpy',section}]).concat(s.spec.thermal.nodes.map(n=>({kind:'thermal-energy',capacityKJK:n.capacityKJK})));
+     const initial=guess.states.flatMap(v=>[v.p,v.h]).concat(guess.energies.map((e,i)=>e-s.energies[i]));
+@@ -169,7 +191,7 @@
+       fluidScales.concat(s.spec.thermal.nodes.map(n=>n.capacityKJK*settings.thermalResidualK/settings.nonlinearTolerance))):null;
+     const solved=coupledNewton(x=>{
+       const states=s.cells.map((_,i)=>{
+-        const key=`${x[2*i]}:${x[2*i+1]}`;
++        const key=`${x[2*i]}:${x[2*i+1]}`;globalThis.__b9b.cache(key,properties.has(key));
+         if(!properties.has(key))properties.set(key,fluidCall(()=>thermo.ph(x[2*i],x[2*i+1]),i,'implicit-PH'));
+         return properties.get(key);
+       });
+@@ -189,8 +211,12 @@
+     });
+     temperatures(s.spec,solved.value.energies,'stage-acceptance');
+     return {...solved.value,error:solved.error};
+-  }
++  
++}finally{__b9bEnd();}/* B9B observation */
++}
+   function trial(s, dt, work={evaluations:0,iterations:0,linearSolves:0}) {
++/* B9B observation */ const __b9bEnd=globalThis.__b9b.enter("model.trial",[s.seconds,dt]);try{
++
+     positive(dt,'trial interval');
+     const previous={states:s.cells.map(coordinates),energies:s.energies};
+     s.cells.forEach(recover); const t=temperatures(s.spec,s.energies,'trial-initial');
+@@ -204,13 +230,21 @@
+     const stage=solveStage(s,gamma*dt,[[.5,initial]],.5,previous,work);
+     const end=solveStage(s,dt,[[a,initial],[a,stage.endpoint]],b,stage,work);
+     end.error=Math.max(stage.error,end.error); return end;
+-  }
++  
++}finally{__b9bEnd();}/* B9B observation */
++}
+   function errorEstimate(s, coarse, fine) {
++/* B9B observation */ const __b9bEnd=globalThis.__b9b.enter("model.errorEstimate",[]);try{
++
+     const fluid=Time.estimate(coarse,fine,{cells:s.cells,states:s.cells.map(coordinates)},order,settings);
+     const thermal=Math.max(...fine.energies.map((e,i)=>Math.abs(e-coarse.energies[i])/(2**order-1)/s.spec.thermal.nodes[i].capacityKJK/(settings.temperatureAbsoluteK+settings.relativeTolerance*settings.temperatureScaleK)));
+     return Math.max(fluid,thermal);
+-  }
++  
++}finally{__b9bEnd();}/* B9B observation */
++}
+   function commit(s, piece, dt, start) {
++/* B9B observation */ const __b9bEnd=globalThis.__b9b.enter("model.commit",[start,dt]);try{
++
+     for (const e of Time.crossings(s.cells.map(coordinates),piece.states,engine.sat)) s.events.push({...e,seconds:start+dt*Math.abs(e.left)/(Math.abs(e.left)+Math.abs(e.right)),bracketStartSeconds:start,bracketEndSeconds:start+dt});
+     const r=piece.integratedRate;
+     r.faces.forEach((f,i)=>{s.ledger.faces[i].massKg+=dt*f.massKgS;s.ledger.faces[i].energyKJ+=dt*f.energyKW;});
+@@ -222,7 +256,9 @@
+     s.ledger.boundaryEnthalpyKJ+=dt*(r.faces[0].energyKW-r.faces.at(-1).energyKW);
+     s.cells=piece.cells; s.energies=piece.energies; s.acceptedSteps++; s.lastResidual=piece.error;
+     s.minAcceptedStepSeconds=s.minAcceptedStepSeconds===null?dt:Math.min(s.minAcceptedStepSeconds,dt);s.maxAcceptedStepSeconds=Math.max(s.maxAcceptedStepSeconds,dt);
+-  }
++  
++}finally{__b9bEnd();}/* B9B observation */
++}
+   function applyBoundary(s,patch,scheduled) {
+     const next=patchSpec(s.spec,patch);
+     s.spec=next;s.nextStepSeconds=Math.min(.05,settings.maxStep);
+@@ -317,7 +353,7 @@
+       // exception while preparing the second half cannot install the first half.
+       const accepted={...s,ledger:clone(s.ledger),events:[...s.events]};
+       for(const [piece,h]of pieces){commit(accepted,piece,h,start+offset);offset+=h;}
+-      Object.assign(s,accepted);
++      Object.assign(s,accepted);globalThis.__b9b.note('state-install',[start,dt]);
+       s.seconds=dt===remaining?boundary:start+dt;s.lastTimeError=error;
+       if(settings.trace)s.trace.push({startSeconds:start,endSeconds:s.seconds,trialSeconds:dt,error});
+       const proposal=Math.min(settings.maxStep,settings.adaptive?dt*Time.factor(error,order,true):settings.maxStep);
+@@ -332,6 +368,8 @@
+   }
+   function update(s,patch) {if(s.stop)throw Error('Stopped coupled state is frozen.');applyBoundary(s,patch,false);return record(s);}
+   function record(s) {
++/* B9B observation */ const __b9bEnd=globalThis.__b9b.enter("model.record",[s.seconds]);try{
++
+     const sections=s.cells.map(recover),t=temperatures(s.spec,s.energies,'record'),initial=C.totals(s.initialCells),totals=C.totals(s.cells),q=sum(s.ledger.tubeRefrigerantKJ);
+     const massResidualKg=totals.massKg-initial.massKg-s.ledger.boundaryMassKg;
+     const refrigerantEnergyResidualKJ=totals.internalEnergyKJ-initial.internalEnergyKJ-s.ledger.boundaryEnthalpyKJ-q;
+@@ -352,7 +390,9 @@
+       minAcceptedStepSeconds:s.minAcceptedStepSeconds,maxAcceptedStepSeconds:s.maxAcceptedStepSeconds,lastTimeError:s.lastTimeError,lastResidual:s.lastResidual,
+       events:s.events,boundaryEvents:s.boundaryEvents,trace:s.trace,rejectionTrace:s.rejectionTrace,stop:s.stop,
+       ...(failureAware?{growthHistory:s.growthHistory}: {})});
+-  }
++  
++}finally{__b9bEnd();}/* B9B observation */
++}
+   return {create,trial,advance,update,record,settings};
+ }
+ module.exports={createCoupledModel,exactThermalColumns,createGrowthHistory,resetGrowth,noteNonlinearFailure,recoveredGrowth};
+--- accepted/engine.js
++++ profiling-only/engine.js
+@@ -8,15 +8,15 @@
+  const logs=data.p.map(Math.log);
+  function pBracket(p){if(!(p>0))throw Error('Absolute pressure must be positive.');return bracket(logs,Math.log(p));}
+  function mixRow(a,b,w){if(!a||!b)throw Error('Liquid state below the property table temperature limit.');return [lerp(a[0],b[0],w),lerp(a[1],b[1],w),Math.exp(lerp(Math.log(a[2]),Math.log(b[2]),w))];}
+- function sat(p){const [i,w]=pBracket(p),a=data.sat[i],b=data.sat[i+1];return {p,T:lerp(a[0],b[0],w),hf:lerp(a[1],b[1],w),sf:lerp(a[2],b[2],w),rhof:Math.exp(lerp(Math.log(a[3]),Math.log(b[3]),w)),hg:lerp(a[4],b[4],w),sg:lerp(a[5],b[5],w),rhog:Math.exp(lerp(Math.log(a[6]),Math.log(b[6]),w))};}
++ function sat(p){globalThis.__b9b.count("internal.sat");const [i,w]=pBracket(p),a=data.sat[i],b=data.sat[i+1];return {p,T:lerp(a[0],b[0],w),hf:lerp(a[1],b[1],w),sf:lerp(a[2],b[2],w),rhof:Math.exp(lerp(Math.log(a[3]),Math.log(b[3]),w)),hg:lerp(a[4],b[4],w),sg:lerp(a[5],b[5],w),rhog:Math.exp(lerp(Math.log(a[6]),Math.log(b[6]),w))};}
+  function satP(T){const temps=data.sat.map(row=>row[0]),[i,w]=bracket(temps,T);return Math.exp(lerp(logs[i],logs[i+1],w));}
+- function branch(p,offset,kind){const axis=kind==='vapor'?data.sh:data.sc,[j,u]=bracket(axis,offset),[i,w]=pBracket(p);return mixRow(mixRow(data[kind][i][j],data[kind][i][j+1],u),mixRow(data[kind][i+1][j],data[kind][i+1][j+1],u),w);}
+- function statePT(p,T,kind){const a=sat(p),d=T-a.T;
++ function branch(p,offset,kind){globalThis.__b9b.count("internal.branch");const axis=kind==='vapor'?data.sh:data.sc,[j,u]=bracket(axis,offset),[i,w]=pBracket(p);return mixRow(mixRow(data[kind][i][j],data[kind][i][j+1],u),mixRow(data[kind][i+1][j],data[kind][i+1][j+1],u),w);}
++ function statePT(p,T,kind){globalThis.__b9b.count("internal.statePT");const a=sat(p),d=T-a.T;
+   if(kind==='liquid'||d < -eps){const r=branch(p,Math.max(0,-d),'liquid');return {p,T,h:r[0],s:r[1],rho:r[2],x:null,phase:d<-eps?'Subcooled liquid':'Saturated liquid'};}
+   const r=branch(p,Math.max(0,d),'vapor');return {p,T,h:r[0],s:r[1],rho:r[2],x:null,phase:d>eps?'Superheated vapor':'Saturated vapor'};
+  }
+- function statePX(p,x){if(x<0||x>1)throw Error('Vapor quality must be between zero and one.');const a=sat(p);return {p,T:a.T,h:lerp(a.hf,a.hg,x),s:lerp(a.sf,a.sg,x),rho:1/((1-x)/a.rhof+x/a.rhog),x,phase:x===0?'Saturated liquid':x===1?'Saturated vapor':'Liquid + vapor'};}
+- function inverse(p,target,key){const a=sat(p),f=key==='h'?a.hf:a.sf,g=key==='h'?a.hg:a.sg;
++ function statePX(p,x){globalThis.__b9b.count("internal.statePX");if(x<0||x>1)throw Error('Vapor quality must be between zero and one.');const a=sat(p);return {p,T:a.T,h:lerp(a.hf,a.hg,x),s:lerp(a.sf,a.sg,x),rho:1/((1-x)/a.rhof+x/a.rhog),x,phase:x===0?'Saturated liquid':x===1?'Saturated vapor':'Liquid + vapor'};}
++ function inverse(p,target,key){globalThis.__b9b.count("internal.inverse");const a=sat(p),f=key==='h'?a.hf:a.sf,g=key==='h'?a.hg:a.sg;globalThis.__b9b.count(target>=f-eps&&target<=g+eps?"inverse.mixture":"inverse.single-phase");
+   if(target>=f-eps&&target<=g+eps)return statePX(p,Math.max(0,Math.min(1,(target-f)/(g-f))));
+   const kind=target>g?'vapor':'liquid',col=key==='h'?0:1,max=kind==='vapor'?data.sh[data.sh.length-1]:branchLimit(p,'liquid');
+   if(kind==='liquid'){
+@@ -37,7 +37,7 @@
+   while(j>0&&(!data.liquid[i][j]||!data.liquid[i+1][j]))j--;
+   return j===data.sc.length-1?data.sc[j]:Math.max(0,data.sc[j]-1e-7);
+  }
+- function atDensity(p,rho){
++ function atDensity(p,rho){globalThis.__b9b.count("internal.atDensity");
+   const a=sat(p);let state;
+   if(rho>=a.rhog&&rho<=a.rhof){const x=(1/rho-1/a.rhof)/(1/a.rhog-1/a.rhof);state=statePX(p,x);}
+   else{
+@@ -49,7 +49,7 @@
+   }
+   return {...state,u:state.h-p*100/state.rho};
+  }
+- function stateDU(rho,u,guess){
++ function stateDU(rho,u,guess){globalThis.__b9b.count("internal.stateDU");
+   if(!Number.isFinite(rho)||rho<=0||!Number.isFinite(u))throw propertyError('domain','Stored density must be positive and internal energy finite.');
+   const min=data.p[0],max=data.p[data.p.length-1],tol=1e-7;
+   const evaluate=p=>{const state=atDensity(p,rho);return state?{state,error:state.u-u}:null;};
+@@ -73,7 +73,7 @@
+   }
+   throw propertyError('solver','Stored-state property inversion did not converge.');
+  }
+- function stateMVU(massKg,volumeM3,internalEnergyKJ,guess){
++ function stateMVU(massKg,volumeM3,internalEnergyKJ,guess){globalThis.__b9b.count("internal.stateMVU");
+   if(!Number.isFinite(massKg)||massKg<=0||!Number.isFinite(volumeM3)||volumeM3<=0||!Number.isFinite(internalEnergyKJ))throw propertyError('domain','Stored mass and volume must be positive, and energy finite.');
+   const state=stateDU(massKg/volumeM3,internalEnergyKJ/massKg,guess);
+   const liquidVolumeFraction=state.x===null?(state.phase.includes('liquid')?1:0):(1-state.x)*(massKg/volumeM3)/sat(state.p).rhof;

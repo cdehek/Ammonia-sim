@@ -1,0 +1,558 @@
+{
+  "passed": true,
+  "method": "Original unchanged Time.factor, same browser engine, post-run saved errors; every clipped attempt and endpoint proposal checked exactly; no property calls",
+  "engines": {
+    "chromium": [
+      {
+        "fixture": "cold",
+        "passed": true,
+        "advances": [
+          {
+            "target": 0.0001,
+            "history": [
+              {
+                "startSeconds": 0,
+                "originalProposal": 0.5,
+                "clippedTrial": 0.0001,
+                "temporalError": 1.1122008032464923,
+                "accepted": false,
+                "nextProposal": 8e-05
+              },
+              {
+                "startSeconds": 0,
+                "originalProposal": 8e-05,
+                "clippedTrial": 8e-05,
+                "temporalError": 0.8093715931580302,
+                "accepted": true,
+                "nextProposal": 7.296696124038055e-05
+              },
+              {
+                "startSeconds": 8e-05,
+                "originalProposal": 7.296696124038055e-05,
+                "clippedTrial": 1.9999999999999998e-05,
+                "temporalError": 0.0013509016889865955,
+                "accepted": true,
+                "nextProposal": 3.9999999999999996e-05
+              }
+            ]
+          },
+          {
+            "target": 0.0005,
+            "history": [
+              {
+                "startSeconds": 0.0001,
+                "originalProposal": 3.9999999999999996e-05,
+                "clippedTrial": 3.9999999999999996e-05,
+                "temporalError": 0.006797523796098614,
+                "accepted": true,
+                "nextProposal": 7.999999999999999e-05
+              },
+              {
+                "startSeconds": 0.00014,
+                "originalProposal": 7.999999999999999e-05,
+                "clippedTrial": 7.999999999999999e-05,
+                "temporalError": 0.027454698790241407,
+                "accepted": true,
+                "nextProposal": 0.00015999999999999999
+              },
+              {
+                "startSeconds": 0.00021999999999999998,
+                "originalProposal": 0.00015999999999999999,
+                "clippedTrial": 0.00015999999999999999,
+                "temporalError": 0.08776648821980235,
+                "accepted": true,
+                "nextProposal": 0.00030602905972089515
+              },
+              {
+                "startSeconds": 0.00037999999999999997,
+                "originalProposal": 0.00030602905972089515,
+                "clippedTrial": 0.00012000000000000004,
+                "temporalError": 0.01864393030093007,
+                "accepted": true,
+                "nextProposal": 0.0002400000000000001
+              }
+            ]
+          },
+          {
+            "target": 0.001,
+            "history": [
+              {
+                "startSeconds": 0.0005,
+                "originalProposal": 0.0002400000000000001,
+                "clippedTrial": 0.0002400000000000001,
+                "temporalError": 0.07343272674215225,
+                "accepted": true,
+                "nextProposal": 0.0004800000000000002
+              },
+              {
+                "startSeconds": 0.0007400000000000001,
+                "originalProposal": 0.0004800000000000002,
+                "clippedTrial": 0.0002599999999999999,
+                "temporalError": 0.04688050744825999,
+                "accepted": true,
+                "nextProposal": 0.0005199999999999998
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "fixture": "warm",
+        "passed": true,
+        "advances": [
+          {
+            "target": 0.0001,
+            "history": [
+              {
+                "startSeconds": 0,
+                "originalProposal": 0.5,
+                "clippedTrial": 0.0001,
+                "temporalError": 23.964909342254884,
+                "accepted": false,
+                "nextProposal": 2.9482229930170047e-05
+              },
+              {
+                "startSeconds": 0,
+                "originalProposal": 2.9482229930170047e-05,
+                "clippedTrial": 2.9482229930170047e-05,
+                "temporalError": 4.054197885589227,
+                "accepted": false,
+                "nextProposal": 1.5716081550217727e-05
+              },
+              {
+                "startSeconds": 0,
+                "originalProposal": 1.5716081550217727e-05,
+                "clippedTrial": 1.5716081550217727e-05,
+                "temporalError": 1.5807520113428104,
+                "accepted": false,
+                "nextProposal": 1.1467672589901118e-05
+              },
+              {
+                "startSeconds": 0,
+                "originalProposal": 1.1467672589901118e-05,
+                "clippedTrial": 1.1467672589901118e-05,
+                "temporalError": 0.980357392842383,
+                "accepted": true,
+                "nextProposal": 9.812192685776733e-06
+              },
+              {
+                "startSeconds": 1.1467672589901118e-05,
+                "originalProposal": 9.812192685776733e-06,
+                "clippedTrial": 9.812192685776733e-06,
+                "temporalError": 0.05037728573620561,
+                "accepted": true,
+                "nextProposal": 1.9624385371553466e-05
+              },
+              {
+                "startSeconds": 2.127986527567785e-05,
+                "originalProposal": 1.9624385371553466e-05,
+                "clippedTrial": 1.9624385371553466e-05,
+                "temporalError": 0.15359760657054394,
+                "accepted": true,
+                "nextProposal": 3.114728331943482e-05
+              },
+              {
+                "startSeconds": 4.0904250647231316e-05,
+                "originalProposal": 3.114728331943482e-05,
+                "clippedTrial": 3.114728331943482e-05,
+                "temporalError": 0.24609018488000162,
+                "accepted": true,
+                "nextProposal": 4.224814724911858e-05
+              },
+              {
+                "startSeconds": 7.205153396666614e-05,
+                "originalProposal": 4.224814724911858e-05,
+                "clippedTrial": 2.794846603333387e-05,
+                "temporalError": 0.09347822884299964,
+                "accepted": true,
+                "nextProposal": 5.234478380324713e-05
+              }
+            ]
+          },
+          {
+            "target": 0.0005,
+            "history": [
+              {
+                "startSeconds": 0.0001,
+                "originalProposal": 5.234478380324713e-05,
+                "clippedTrial": 5.234478380324713e-05,
+                "temporalError": 0.3400781350938382,
+                "accepted": true,
+                "nextProposal": 6.37430391493289e-05
+              },
+              {
+                "startSeconds": 0.00015234478380324714,
+                "originalProposal": 6.37430391493289e-05,
+                "clippedTrial": 6.37430391493289e-05,
+                "temporalError": 0.34418265354112937,
+                "accepted": true,
+                "nextProposal": 7.731350555257223e-05
+              },
+              {
+                "startSeconds": 0.00021608782295257605,
+                "originalProposal": 7.731350555257223e-05,
+                "clippedTrial": 7.731350555257223e-05,
+                "temporalError": 0.37131032891228255,
+                "accepted": true,
+                "nextProposal": 9.14313813393008e-05
+              },
+              {
+                "startSeconds": 0.00029340132850514826,
+                "originalProposal": 9.14313813393008e-05,
+                "clippedTrial": 9.14313813393008e-05,
+                "temporalError": 0.390172585598336,
+                "accepted": true,
+                "nextProposal": 0.0001063559904321305
+              },
+              {
+                "startSeconds": 0.00038483270984444905,
+                "originalProposal": 0.0001063559904321305,
+                "clippedTrial": 0.0001063559904321305,
+                "temporalError": 0.4044596481563092,
+                "accepted": true,
+                "nextProposal": 0.0001222425728857534
+              },
+              {
+                "startSeconds": 0.0004911887002765796,
+                "originalProposal": 0.0001222425728857534,
+                "clippedTrial": 8.811299723420407e-06,
+                "temporalError": 0.00020540448931703046,
+                "accepted": true,
+                "nextProposal": 1.7622599446840814e-05
+              }
+            ]
+          },
+          {
+            "target": 0.001,
+            "history": [
+              {
+                "startSeconds": 0.0005,
+                "originalProposal": 1.7622599446840814e-05,
+                "clippedTrial": 1.7622599446840814e-05,
+                "temporalError": 0.0015545933769033366,
+                "accepted": true,
+                "nextProposal": 3.524519889368163e-05
+              },
+              {
+                "startSeconds": 0.0005176225994468408,
+                "originalProposal": 3.524519889368163e-05,
+                "clippedTrial": 3.524519889368163e-05,
+                "temporalError": 0.011240925690575481,
+                "accepted": true,
+                "nextProposal": 7.049039778736325e-05
+              },
+              {
+                "startSeconds": 0.0005528677983405225,
+                "originalProposal": 7.049039778736325e-05,
+                "clippedTrial": 7.049039778736325e-05,
+                "temporalError": 0.07450161066126597,
+                "accepted": true,
+                "nextProposal": 0.0001409807955747265
+              },
+              {
+                "startSeconds": 0.0006233581961278857,
+                "originalProposal": 0.0001409807955747265,
+                "clippedTrial": 0.0001409807955747265,
+                "temporalError": 0.4257294192461622,
+                "accepted": true,
+                "nextProposal": 0.00015929457857568694
+              },
+              {
+                "startSeconds": 0.0007643389917026122,
+                "originalProposal": 0.00015929457857568694,
+                "clippedTrial": 0.00015929457857568694,
+                "temporalError": 0.4280588335779004,
+                "accepted": true,
+                "nextProposal": 0.0001796602914054339
+              },
+              {
+                "startSeconds": 0.0009236335702782992,
+                "originalProposal": 0.0001796602914054339,
+                "clippedTrial": 7.636642972170084e-05,
+                "temporalError": 0.03902422842901616,
+                "accepted": true,
+                "nextProposal": 0.0001527328594434017
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "webkit": [
+      {
+        "fixture": "cold",
+        "passed": true,
+        "advances": [
+          {
+            "target": 0.0001,
+            "history": [
+              {
+                "startSeconds": 0,
+                "originalProposal": 0.5,
+                "clippedTrial": 0.0001,
+                "temporalError": 1.1122008032464923,
+                "accepted": false,
+                "nextProposal": 8e-05
+              },
+              {
+                "startSeconds": 0,
+                "originalProposal": 8e-05,
+                "clippedTrial": 8e-05,
+                "temporalError": 0.8093715931580302,
+                "accepted": true,
+                "nextProposal": 7.296696124038055e-05
+              },
+              {
+                "startSeconds": 8e-05,
+                "originalProposal": 7.296696124038055e-05,
+                "clippedTrial": 1.9999999999999998e-05,
+                "temporalError": 0.0013509018947466427,
+                "accepted": true,
+                "nextProposal": 3.9999999999999996e-05
+              }
+            ]
+          },
+          {
+            "target": 0.0005,
+            "history": [
+              {
+                "startSeconds": 0.0001,
+                "originalProposal": 3.9999999999999996e-05,
+                "clippedTrial": 3.9999999999999996e-05,
+                "temporalError": 0.006797524001851219,
+                "accepted": true,
+                "nextProposal": 7.999999999999999e-05
+              },
+              {
+                "startSeconds": 0.00014,
+                "originalProposal": 7.999999999999999e-05,
+                "clippedTrial": 7.999999999999999e-05,
+                "temporalError": 0.027454699047415248,
+                "accepted": true,
+                "nextProposal": 0.00015999999999999999
+              },
+              {
+                "startSeconds": 0.00021999999999999998,
+                "originalProposal": 0.00015999999999999999,
+                "clippedTrial": 0.00015999999999999999,
+                "temporalError": 0.08776648827123132,
+                "accepted": true,
+                "nextProposal": 0.00030602905966112
+              },
+              {
+                "startSeconds": 0.00037999999999999997,
+                "originalProposal": 0.00030602905966112,
+                "clippedTrial": 0.00012000000000000004,
+                "temporalError": 0.01864393009523016,
+                "accepted": true,
+                "nextProposal": 0.0002400000000000001
+              }
+            ]
+          },
+          {
+            "target": 0.001,
+            "history": [
+              {
+                "startSeconds": 0.0005,
+                "originalProposal": 0.0002400000000000001,
+                "clippedTrial": 0.0002400000000000001,
+                "temporalError": 0.07343272638222563,
+                "accepted": true,
+                "nextProposal": 0.0004800000000000002
+              },
+              {
+                "startSeconds": 0.0007400000000000001,
+                "originalProposal": 0.0004800000000000002,
+                "clippedTrial": 0.0002599999999999999,
+                "temporalError": 0.04688050765390616,
+                "accepted": true,
+                "nextProposal": 0.0005199999999999998
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "fixture": "warm",
+        "passed": true,
+        "advances": [
+          {
+            "target": 0.0001,
+            "history": [
+              {
+                "startSeconds": 0,
+                "originalProposal": 0.5,
+                "clippedTrial": 0.0001,
+                "temporalError": 23.964909342254884,
+                "accepted": false,
+                "nextProposal": 2.9482229930170047e-05
+              },
+              {
+                "startSeconds": 0,
+                "originalProposal": 2.9482229930170047e-05,
+                "clippedTrial": 2.9482229930170047e-05,
+                "temporalError": 4.054197885589227,
+                "accepted": false,
+                "nextProposal": 1.5716081550217727e-05
+              },
+              {
+                "startSeconds": 0,
+                "originalProposal": 1.5716081550217727e-05,
+                "clippedTrial": 1.5716081550217727e-05,
+                "temporalError": 1.5807520113428104,
+                "accepted": false,
+                "nextProposal": 1.1467672589901118e-05
+              },
+              {
+                "startSeconds": 0,
+                "originalProposal": 1.1467672589901118e-05,
+                "clippedTrial": 1.1467672589901118e-05,
+                "temporalError": 0.980357392842383,
+                "accepted": true,
+                "nextProposal": 9.812192685776733e-06
+              },
+              {
+                "startSeconds": 1.1467672589901118e-05,
+                "originalProposal": 9.812192685776733e-06,
+                "clippedTrial": 9.812192685776733e-06,
+                "temporalError": 0.05037728573620561,
+                "accepted": true,
+                "nextProposal": 1.9624385371553466e-05
+              },
+              {
+                "startSeconds": 2.127986527567785e-05,
+                "originalProposal": 1.9624385371553466e-05,
+                "clippedTrial": 1.9624385371553466e-05,
+                "temporalError": 0.15359760657054394,
+                "accepted": true,
+                "nextProposal": 3.114728331943482e-05
+              },
+              {
+                "startSeconds": 4.0904250647231316e-05,
+                "originalProposal": 3.114728331943482e-05,
+                "clippedTrial": 3.114728331943482e-05,
+                "temporalError": 0.24609018488000162,
+                "accepted": true,
+                "nextProposal": 4.224814724911858e-05
+              },
+              {
+                "startSeconds": 7.205153396666614e-05,
+                "originalProposal": 4.224814724911858e-05,
+                "clippedTrial": 2.794846603333387e-05,
+                "temporalError": 0.0934781784089853,
+                "accepted": true,
+                "nextProposal": 5.234479321705596e-05
+              }
+            ]
+          },
+          {
+            "target": 0.0005,
+            "history": [
+              {
+                "startSeconds": 0.0001,
+                "originalProposal": 5.234479321705596e-05,
+                "clippedTrial": 5.234479321705596e-05,
+                "temporalError": 0.34007806124295575,
+                "accepted": true,
+                "nextProposal": 6.374305522714404e-05
+              },
+              {
+                "startSeconds": 0.00015234479321705595,
+                "originalProposal": 6.374305522714404e-05,
+                "clippedTrial": 6.374305522714404e-05,
+                "temporalError": 0.344182905744263,
+                "accepted": true,
+                "nextProposal": 7.731350616918066e-05
+              },
+              {
+                "startSeconds": 0.0002160878484442,
+                "originalProposal": 7.731350616918066e-05,
+                "clippedTrial": 7.731350616918066e-05,
+                "temporalError": 0.37130952331978073,
+                "accepted": true,
+                "nextProposal": 9.14314481915805e-05
+              },
+              {
+                "startSeconds": 0.00029340135461338064,
+                "originalProposal": 9.14314481915805e-05,
+                "clippedTrial": 9.14314481915805e-05,
+                "temporalError": 0.3901716527314303,
+                "accepted": true,
+                "nextProposal": 0.00010635615295957483
+              },
+              {
+                "startSeconds": 0.00038483280280496117,
+                "originalProposal": 0.00010635615295957483,
+                "clippedTrial": 0.00010635615295957483,
+                "temporalError": 0.4044640620335608,
+                "accepted": true,
+                "nextProposal": 0.00012224231501411473
+              },
+              {
+                "startSeconds": 0.000491188955764536,
+                "originalProposal": 0.00012224231501411473,
+                "clippedTrial": 8.811044235463986e-06,
+                "temporalError": 0.0002045070203450096,
+                "accepted": true,
+                "nextProposal": 1.7622088470927973e-05
+              }
+            ]
+          },
+          {
+            "target": 0.001,
+            "history": [
+              {
+                "startSeconds": 0.0005,
+                "originalProposal": 1.7622088470927973e-05,
+                "clippedTrial": 1.7622088470927973e-05,
+                "temporalError": 0.001555841914918773,
+                "accepted": true,
+                "nextProposal": 3.5244176941855946e-05
+              },
+              {
+                "startSeconds": 0.000517622088470928,
+                "originalProposal": 3.5244176941855946e-05,
+                "clippedTrial": 3.5244176941855946e-05,
+                "temporalError": 0.011240991024793692,
+                "accepted": true,
+                "nextProposal": 7.048835388371189e-05
+              },
+              {
+                "startSeconds": 0.0005528662654127839,
+                "originalProposal": 7.048835388371189e-05,
+                "clippedTrial": 7.048835388371189e-05,
+                "temporalError": 0.07449643158622503,
+                "accepted": true,
+                "nextProposal": 0.00014097670776742378
+              },
+              {
+                "startSeconds": 0.0006233546192964958,
+                "originalProposal": 0.00014097670776742378,
+                "clippedTrial": 0.00014097670776742378,
+                "temporalError": 0.42569848868511323,
+                "accepted": true,
+                "nextProposal": 0.00015929381757445296
+              },
+              {
+                "startSeconds": 0.0007643313270639196,
+                "originalProposal": 0.00015929381757445296,
+                "clippedTrial": 0.00015929381757445296,
+                "temporalError": 0.4280606276997809,
+                "accepted": true,
+                "nextProposal": 0.0001796591821093278
+              },
+              {
+                "startSeconds": 0.0009236251446383725,
+                "originalProposal": 0.0001796591821093278,
+                "clippedTrial": 7.637485536162749e-05,
+                "temporalError": 0.03903766031786781,
+                "accepted": true,
+                "nextProposal": 0.00015274971072325497
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

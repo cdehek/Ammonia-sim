@@ -1,0 +1,4 @@
+<!doctype html><meta charset="utf-8"><title>B9B isolated diagnostic forensics</title><p>B9B — accepted table-backed startup profiling. No operator integration.</p>
+<script type="module">
+window.workerRun=async function(args){const start=performance.now(),w=new Worker('./worker.mjs',{type:'module'});try{return await new Promise((resolve,reject)=>{const timer=setTimeout(()=>reject(Error('30 s bounded worker timeout')),30000);w.onmessage=e=>{clearTimeout(timer);e.data.success?resolve({...e.data.result,workerRoundtripMS:performance.now()-start}):reject(Error(JSON.stringify(e.data.error)));};w.onerror=e=>reject(Error(e.message));w.postMessage(args);});}finally{w.terminate();}};
+</script>

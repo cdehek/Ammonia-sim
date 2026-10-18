@@ -1,0 +1,62 @@
+[
+  {
+    "engine": "chromium",
+    "fixture": "cold",
+    "requestedSeconds": 0.001,
+    "acceptedSeconds": 0.001,
+    "advanceMedianMS": 106.14999999990687,
+    "residualsPerRequestedOrAcceptedSecond": 2914000.0,
+    "residualsPerAttemptedStage": 53.96296296296296,
+    "residualsPerAcceptedHalfStep": 182.125,
+    "residualsPerNewtonCorrection": 22.415384615384614,
+    "advancePHPerResidual": 2.8953328757721346,
+    "advanceMedianMSPerResidual": 0.036427590940256306,
+    "advanceMedianMSPerRealPH": 0.01258148631028883,
+    "limitation": "Mixed whole-advance normalization; never an isolated property/residual latency"
+  },
+  {
+    "engine": "chromium",
+    "fixture": "warm",
+    "requestedSeconds": 0.001,
+    "acceptedSeconds": 0.001,
+    "advanceMedianMS": 305.9000000000233,
+    "residualsPerRequestedOrAcceptedSecond": 7710000.0,
+    "residualsPerAttemptedStage": 64.25,
+    "residualsPerAcceptedHalfStep": 226.76470588235293,
+    "residualsPerNewtonCorrection": 22.347826086956523,
+    "advancePHPerResidual": 2.8577172503242543,
+    "advanceMedianMSPerResidual": 0.03967574578469822,
+    "advanceMedianMSPerRealPH": 0.013883719874734411,
+    "limitation": "Mixed whole-advance normalization; never an isolated property/residual latency"
+  },
+  {
+    "engine": "webkit",
+    "fixture": "cold",
+    "requestedSeconds": 0.001,
+    "acceptedSeconds": 0.001,
+    "advanceMedianMS": 139.5,
+    "residualsPerRequestedOrAcceptedSecond": 2914000.0,
+    "residualsPerAttemptedStage": 53.96296296296296,
+    "residualsPerAcceptedHalfStep": 182.125,
+    "residualsPerNewtonCorrection": 22.415384615384614,
+    "advancePHPerResidual": 2.8953328757721346,
+    "advanceMedianMSPerResidual": 0.047872340425531915,
+    "advanceMedianMSPerRealPH": 0.016534313144482636,
+    "limitation": "Mixed whole-advance normalization; never an isolated property/residual latency"
+  },
+  {
+    "engine": "webkit",
+    "fixture": "warm",
+    "requestedSeconds": 0.001,
+    "acceptedSeconds": 0.001,
+    "advanceMedianMS": 314.5,
+    "residualsPerRequestedOrAcceptedSecond": 7710000.0,
+    "residualsPerAttemptedStage": 64.25,
+    "residualsPerAcceptedHalfStep": 226.76470588235293,
+    "residualsPerNewtonCorrection": 22.347826086956523,
+    "advancePHPerResidual": 2.8577172503242543,
+    "advanceMedianMSPerResidual": 0.04079118028534371,
+    "advanceMedianMSPerRealPH": 0.014274043480234195,
+    "limitation": "Mixed whole-advance normalization; never an isolated property/residual latency"
+  }
+]

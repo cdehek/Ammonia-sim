@@ -1,0 +1,19 @@
+passive-chromium.json.gz False
+Traceback (most recent call last):
+  File "/workspace/Ammonia-sim/experiments/dx-fv/browser_eos_b9b/run-browser.py", line 78, in <module>
+    try:asyncio.run(main())
+        ^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/asyncio/runners.py", line 195, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/asyncio/base_events.py", line 691, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/workspace/Ammonia-sim/experiments/dx-fv/browser_eos_b9b/run-browser.py", line 77, in main
+    if not out['passed']:raise RuntimeError(out.get('error'))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Page.evaluate: Error: {"message":"Cannot read properties of null (reading 'failures')","stack":"TypeError: Cannot read properties of null (reading 'failures')\n    at self.onmessage (http://127.0.0.1:44307/experiments/dx-fv/browser_eos_b9b/worker.mjs:2:45)"}
+    at window.sampleWorker.onmessage (eval at evaluate (:311:30), <anonymous>:1:224)

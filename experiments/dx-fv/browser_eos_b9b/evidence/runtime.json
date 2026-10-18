@@ -1,0 +1,77 @@
+{
+  "python": "3.12.14",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.41",
+  "playwright": "1.62.0",
+  "node": {
+    "version": "v24.19.0",
+    "versions": {
+      "node": "24.19.0",
+      "acorn": "8.17.0",
+      "ada": "3.4.4",
+      "amaro": "1.1.10",
+      "ares": "1.34.6",
+      "brotli": "1.2.0",
+      "cldr": "48.0",
+      "icu": "78.3",
+      "llhttp": "9.4.3",
+      "merve": "1.2.2",
+      "modules": "137",
+      "napi": "10",
+      "nbytes": "0.1.4",
+      "ncrypto": "0.0.1",
+      "nghttp2": "1.69.0",
+      "nghttp3": "",
+      "ngtcp2": "",
+      "openssl": "3.5.7",
+      "simdjson": "4.6.4",
+      "simdutf": "6.4.0",
+      "sqlite": "3.53.3",
+      "tz": "2026b",
+      "undici": "7.29.0",
+      "unicode": "17.0",
+      "uv": "1.52.1",
+      "uvwasi": "0.0.23",
+      "v8": "13.6.233.17-node.51",
+      "zlib": "1.3.2.1-motley-3246f1b",
+      "zstd": "1.5.7"
+    }
+  },
+  "browsers": {
+    "chromium": {
+      "version": "151.0.7922.34",
+      "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/151.0.7922.34 Safari/537.36",
+      "launch": {
+        "headless": true,
+        "timeout": 30000
+      },
+      "physicalIPad": false
+    },
+    "webkit": {
+      "version": "26.5",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.5 Safari/605.1.15",
+      "launch": {
+        "headless": true,
+        "timeout": 30000,
+        "executable_path": "/workspace/b9-runtime/webkit.sh"
+      },
+      "physicalIPad": false
+    }
+  },
+  "profilingDesignCommit": "5fae85a57ebb4e73458a00cd171b800024752c1f",
+  "chromiumHeadless": {
+    "path": "/workspace/b9-runtime/browsers/chromium_headless_shell-1234/chrome-headless-shell-linux64/chrome-headless-shell",
+    "sha256": "e11fc9ce65c96313476f7ee9844b6fb6a9220fb048693cfe9eee00acf4170a9f"
+  },
+  "chromium": {
+    "path": "/workspace/b9-runtime/browsers/chromium-1234/chrome-linux64/chrome",
+    "sha256": "0b20b130e7edd9dd51873be867761295fe0cfad490c2b9a64f95bd3cfc08fa71"
+  },
+  "webkitMiniBrowser": {
+    "path": "/workspace/b9-runtime/browsers/webkit-2336/minibrowser-wpe/bin/MiniBrowser",
+    "sha256": "deee549ad18d8ee5c4a44d78f846bd62fe90959b3e115f0cd33d681897db592e"
+  },
+  "webkitLauncher": {
+    "path": "/workspace/b9-runtime/webkit.sh",
+    "sha256": "d37c4d0a55ec8c488e758e73a773214f3b370de5e88a106d25f2cf16d36371b5"
+  }
+}
