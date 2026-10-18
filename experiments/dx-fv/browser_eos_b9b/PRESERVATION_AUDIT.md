@@ -20,6 +20,15 @@ remote tags at the start. The complete original PR #3 API record is retained.
 Pre-push `remote-final.tsv` / `pr3-final.json` compare exactly for protected
 identities. The only allowed new remote ref is the named B9B branch.
 
+After the authorized research push, GitHub's raw PR API embeds a changed
+repository-global `pushed_at` in `head.repo` and `base.repo`. The raw responses
+are preserved. Post-push comparison normalizes only those two timestamp fields
+and asserts every other API field unchanged, including all PR identities,
+content, own timestamps, head/base SHAs and state. These repository timestamps
+are not a PR #3 edit. The initial unpushed receipt command continued after its
+overstrict raw-response comparison failed; the receipt was corrected and all
+checks rerun before publishing that receipt commit.
+
 `preservation.py` rechecks historical bytes, branch/ancestry, additive-only Git
 scope, protected refs and complete PR #3 data. It permits no changed or deleted
 historical tracked path, even if the resulting scientific output would agree.
