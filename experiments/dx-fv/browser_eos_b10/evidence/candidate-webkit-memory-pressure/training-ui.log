@@ -1,0 +1,16 @@
+locator.click: Timeout 30000ms exceeded.
+Call log:
+[2m  - waiting for locator('#training-advance')[22m
+[2m    - locator resolved to <button class="btn" type="button" id="training-advance">Advance 10 seconds</button>[22m
+[2m  - attempting click action[22m
+[2m    - waiting for element to be visible, enabled and stable[22m
+
+    at /workspace/Ammonia-sim/experiments/dx-fv/browser_eos_b10/.runtime/candidate/tests/training-ui.cjs:17:192 {
+  log: [
+    "  - waiting for locator('#training-advance')",
+    '    - locator resolved to <button class="btn" type="button" id="training-advance">Advance 10 seconds</button>',
+    '  - attempting click action',
+    '    - waiting for element to be visible, enabled and stable'
+  ],
+  name: 'TimeoutError'
+}

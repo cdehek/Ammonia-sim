@@ -1,0 +1,42 @@
+[
+  {
+    "browser": "chromium",
+    "missingModule": {
+      "status": "unqualified-backend",
+      "snapshot": null,
+      "error": {
+        "name": "TypeError",
+        "message": "Failed to fetch"
+      }
+    },
+    "offline": {
+      "status": "lost",
+      "snapshot": null
+    },
+    "nativeFile": {
+      "originalReady": true,
+      "A2Loaded": false,
+      "panelText": "A2 scientific panel unavailable \u00b7 Failed to fetch dynamically imported module: file:///experiments/dx-fv/browser_eos_b10/panel.mjs \u00b7 use local HTTP serving. Original workstation remains available."
+    }
+  },
+  {
+    "browser": "webkit",
+    "missingModule": {
+      "status": "unqualified-backend",
+      "snapshot": null,
+      "error": {
+        "name": "TypeError",
+        "message": "Load failed"
+      }
+    },
+    "offline": {
+      "status": "lost",
+      "snapshot": null
+    },
+    "nativeFile": {
+      "originalReady": true,
+      "A2Loaded": false,
+      "panelText": "A2 scientific panel unavailable \u00b7 Importing a module script failed. \u00b7 use local HTTP serving. Original workstation remains available."
+    }
+  }
+]

@@ -1,0 +1,17 @@
+id,decision,result,evidence,reviewRequired
+A,Source and historical preservation,PASS,"preservation-final.json; 2,958 historical hashes; protected refs and PR #3",False
+B,Actual workstation derivation,PASS,build-manifest.json; exact reverse recovery; 574 pinned inputs,False
+C,Two-model scientific/state isolation,PASS,isolation-*.json.gz; original full state/history hashes and separate clocks,False
+D,Genuine A2 shadow-panel integration,PASS,"integration-*.json.gz; real console slot, source/render/viewport receipts",False
+E,Exact scientific parity,PASS,review-*.json.gz; B9C same-engine hashes; integrated four checkpoints and all attempt hashes,False
+F,Failure and rollback,PASS,original C1 and genuine A2 numerical/200/400 K; duplicate/stale/lost/dispose,False
+G,Original training/export preservation,PASS,five complete byte-identical exercise exports in each browser; actual SI histories,False
+H,Original Live Plant/Assist/history preservation,PASS,"19 original Chromium suites; WebKit baseline 7/9, candidate 8/9; exact original hashes/CSVs/Assist",False
+I,Chromium browser behavior,PASS,"19/19 original suites plus original console, retained readings and B10 checks",False
+J,Desktop WebKit browser behavior,PARTIAL,"B10 checks pass; baseline 7/9, candidate 8/9; inherited chart failure, variable training pause assertion",True
+K,Performance/responsiveness characterization,PASS,matched A/B/C/D/E and bare B9C; actual outliers and memory observations retained,False
+L,Served research workstation readiness,CONDITIONAL GO,bounded opt-in served engineering review only; inherited WebKit findings remain,True
+M,Offline/local-file readiness,NOT QUALIFIED,module-worker/packaging startup limitations; no offline claim,True
+N,Physical iPad readiness,NOT TESTED,desktop viewport/touch emulation only,True
+O,Production workstation merge,NO-GO,no merge or deployment authorized,True
+P,Live Plant/plant-wide backend,NO-GO,five-section evaporator only; no plant coupling,True

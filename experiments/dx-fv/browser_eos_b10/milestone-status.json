@@ -1,0 +1,122 @@
+{
+  "classification": "B10 OPERATOR WORKSTATION SHADOW HOOK-UP PASS",
+  "scope": "bounded local HTTP-served research",
+  "decisions": [
+    {
+      "id": "A",
+      "decision": "Source and historical preservation",
+      "result": "PASS",
+      "evidence": "preservation-final.json; 2,958 historical hashes; protected refs and PR #3",
+      "reviewRequired": false
+    },
+    {
+      "id": "B",
+      "decision": "Actual workstation derivation",
+      "result": "PASS",
+      "evidence": "build-manifest.json; exact reverse recovery; 574 pinned inputs",
+      "reviewRequired": false
+    },
+    {
+      "id": "C",
+      "decision": "Two-model scientific/state isolation",
+      "result": "PASS",
+      "evidence": "isolation-*.json.gz; original full state/history hashes and separate clocks",
+      "reviewRequired": false
+    },
+    {
+      "id": "D",
+      "decision": "Genuine A2 shadow-panel integration",
+      "result": "PASS",
+      "evidence": "integration-*.json.gz; real console slot, source/render/viewport receipts",
+      "reviewRequired": false
+    },
+    {
+      "id": "E",
+      "decision": "Exact scientific parity",
+      "result": "PASS",
+      "evidence": "review-*.json.gz; B9C same-engine hashes; integrated four checkpoints and all attempt hashes",
+      "reviewRequired": false
+    },
+    {
+      "id": "F",
+      "decision": "Failure and rollback",
+      "result": "PASS",
+      "evidence": "original C1 and genuine A2 numerical/200/400 K; duplicate/stale/lost/dispose",
+      "reviewRequired": false
+    },
+    {
+      "id": "G",
+      "decision": "Original training/export preservation",
+      "result": "PASS",
+      "evidence": "five complete byte-identical exercise exports in each browser; actual SI histories",
+      "reviewRequired": false
+    },
+    {
+      "id": "H",
+      "decision": "Original Live Plant/Assist/history preservation",
+      "result": "PASS",
+      "evidence": "19 original Chromium suites; WebKit baseline 7/9, candidate 8/9; exact original hashes/CSVs/Assist",
+      "reviewRequired": false
+    },
+    {
+      "id": "I",
+      "decision": "Chromium browser behavior",
+      "result": "PASS",
+      "evidence": "19/19 original suites plus original console, retained readings and B10 checks",
+      "reviewRequired": false
+    },
+    {
+      "id": "J",
+      "decision": "Desktop WebKit browser behavior",
+      "result": "PARTIAL",
+      "evidence": "B10 checks pass; baseline 7/9, candidate 8/9; inherited chart failure, variable training pause assertion",
+      "reviewRequired": true
+    },
+    {
+      "id": "K",
+      "decision": "Performance/responsiveness characterization",
+      "result": "PASS",
+      "evidence": "matched A/B/C/D/E and bare B9C; actual outliers and memory observations retained",
+      "reviewRequired": false
+    },
+    {
+      "id": "L",
+      "decision": "Served research workstation readiness",
+      "result": "CONDITIONAL GO",
+      "evidence": "bounded opt-in served engineering review only; inherited WebKit findings remain",
+      "reviewRequired": true
+    },
+    {
+      "id": "M",
+      "decision": "Offline/local-file readiness",
+      "result": "NOT QUALIFIED",
+      "evidence": "module-worker/packaging startup limitations; no offline claim",
+      "reviewRequired": true
+    },
+    {
+      "id": "N",
+      "decision": "Physical iPad readiness",
+      "result": "NOT TESTED",
+      "evidence": "desktop viewport/touch emulation only",
+      "reviewRequired": true
+    },
+    {
+      "id": "O",
+      "decision": "Production workstation merge",
+      "result": "NO-GO",
+      "evidence": "no merge or deployment authorized",
+      "reviewRequired": true
+    },
+    {
+      "id": "P",
+      "decision": "Live Plant/plant-wide backend",
+      "result": "NO-GO",
+      "evidence": "five-section evaporator only; no plant coupling",
+      "reviewRequired": true
+    }
+  ],
+  "backlog": "QUALIFICATION_BACKLOG.md",
+  "nextMilestone": "Engineering review; separately scope inherited WebKit and intended packaging/device investigation",
+  "productionMerge": "NO-GO",
+  "plantBackend": "NO-GO"
+}

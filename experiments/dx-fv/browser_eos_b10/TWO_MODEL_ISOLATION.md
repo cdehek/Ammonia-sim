@@ -5,3 +5,7 @@ The original workstation owns its illustrative connected circuit, compressor/con
 There is no shared physical state object, pressure matching, boundary transfer, control dispatch or automatic synchronization. Messages are structured clones from the dedicated worker. Panel units are local view preferences. Console navigation is presentation only. Original playback cannot send worker commands; A2 initialize/advance/dispose cannot call original model functions. A2 errors are caught and displayed locally, avoiding original global error/pause handlers. A2 stops never become plant alarms or original history samples.
 
 Test evidence will include exact original storage CSV and history CSV bytes, Assist text, original clock and A2 snapshots/session/history, before and after all required independent workflows. Full original state hashes are collected only through test-time observation of the existing createStorage return API; no such hook ships in the workstation artifact. A2 testDetail is test-worker-only. Resource and lifecycle checks are bounded observations, not long-duration leak qualification.
+
+## Verified B10 result
+
+Both browsers pass all fourteen required independence workflows. evidence/isolation-*.json.gz contains exact full original state/history hashes, independent clock/session/snapshot/history hashes, Assist text, CSV parity, pending trusted input and all five complete export receipts. Original playback continues after actual A2 worker startup loss.

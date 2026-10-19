@@ -1,0 +1,26 @@
+chromium {'task': 'hardening'}
+chromium {'mode': 'control', 'fixture': 'cold'}
+chromium {'mode': 'candidate', 'fixture': 'cold'}
+chromium {'mode': 'control', 'fixture': 'warm'}
+chromium {'mode': 'candidate', 'fixture': 'warm'}
+chromium {'task': 'regressions', 'mode': 'control'}
+chromium Page.evaluate: Error: closure source
+    at w.onmessage (http://127.0.0.1:36711/experiments/dx-fv/browser_eos_b10/review.html:1:306)
+Traceback (most recent call last):
+  File "/workspace/Ammonia-sim/experiments/dx-fv/browser_eos_b10/run-scientific-review.py", line 43, in <module>
+    try:asyncio.run(main())
+        ^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/asyncio/runners.py", line 195, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/asyncio/base_events.py", line 691, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/workspace/Ammonia-sim/experiments/dx-fv/browser_eos_b10/run-scientific-review.py", line 42, in main
+    if not out['passed']:raise RuntimeError(out['error'])
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Page.evaluate: Error: closure source
+    at w.onmessage (http://127.0.0.1:36711/experiments/dx-fv/browser_eos_b10/review.html:1:306)
