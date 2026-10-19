@@ -36,3 +36,7 @@ Location query strings, HARs, login screenshots, cookies, storage or JWTs.
 
 No privacy PASS is claimed from configuration text. See evidence/access-tests.json
 for explicit NOT TESTED entries and OWNER_ACTION_CHECKLIST.md for the next action.
+
+The owner-approved 404 staging exception grants no access-policy/publication
+approval. Its root 404.html and missing-resource responses must be covered by both
+Access scopes too. Local HTTP 404 checks provide no evidence of Access enforcement.

@@ -31,4 +31,13 @@ for p in ['artifact-audit.json', 'preservation.json', 'retained-b11-results.json
     assert json.loads((B / 'evidence' / p).read_text())['passed']
 rows = list(csv.DictReader(io.StringIO((B / 'milestone-status.csv').read_text())))
 assert {r['decision']: r['status'] for r in rows} == status['decisions']
+for name in ['staging-tests.json', 'followup-preservation.json']:
+    assert json.loads((B / 'evidence' / name).read_text())['passed']
+plan = json.loads((B / 'hosting-plan.json').read_text())
+assert plan['hostingWrapperExceptionApproved'] and plan['exactStaticRoot'] == '.runtime/staging/approved-preview'
+assert plan['actualPagesResponseBehavior'] == 'UNVERIFIED UNTIL DEPLOYMENT'
+assert status['followup404']['approvedAdditionalFiles'] == ['404.html']
+assert status['followup404']['cloudflareProjectCreationOrUploadAuthorized'] is False
+baseline = json.loads(__import__('subprocess').check_output(['git', 'show', '1ab61278159a51fb3f86bb817ea1f03b049443d8:experiments/dx-fv/browser_eos_b12/milestone-status.json'], cwd=B.parents[2]))
+assert status['decisions'] == baseline['decisions'] and status['classification'] == baseline['classification']
 print('PASS: required deliverables, preserved backlog, machine tracker and honest blocked/untested boundaries')

@@ -1,0 +1,759 @@
+{
+  "a2FailClosedRuntimeSource": "UNCHANGED; no new runtime claim",
+  "actualCloudflarePages": "NOT VERIFIED; NO DEPLOYMENT",
+  "allStagedManifestsMatchCommittedEvidence": true,
+  "approvedExtraFiles": [
+    "404.html"
+  ],
+  "httpObservations": [
+    {
+      "label": "UNWRAPPED: documented Pages fallback EMULATION negative control",
+      "passed": true,
+      "rows": [
+        {
+          "matchesManifest": true,
+          "method": "GET",
+          "mime": "application/json",
+          "path": "/asset-manifest.json",
+          "sha256": "b3aaf9f7a33ba1b8e591e8ed00dc4dca8c6432cbb2dd89426db461452fbe46be",
+          "status": 200
+        },
+        {
+          "matchesManifest": true,
+          "method": "GET",
+          "mime": "text/javascript",
+          "path": "/client.mjs",
+          "sha256": "48738455836c150bfa607e1a59861ad4a814d80239e58774c6047e9f53b1d761",
+          "status": 200
+        },
+        {
+          "matchesManifest": true,
+          "method": "GET",
+          "mime": "text/html",
+          "path": "/",
+          "sha256": "dc204dbe5291dcf45040d1863761f6fa7b59a81cee7a5a348764e849e0b275fe",
+          "status": 200
+        },
+        {
+          "matchesManifest": true,
+          "method": "GET",
+          "mime": "text/css",
+          "path": "/panel.css",
+          "sha256": "ae235ed71ef4de28ab9064d4da09c1af72a9bda84121628a87941d5ea2593b73",
+          "status": 200
+        },
+        {
+          "matchesManifest": true,
+          "method": "GET",
+          "mime": "text/javascript",
+          "path": "/panel.mjs",
+          "sha256": "00769fb11a0f270574859a475fb7b61cabf0cab29a42363111e06022bc05687e",
+          "status": 200
+        },
+        {
+          "matchesManifest": true,
+          "method": "GET",
+          "mime": "text/javascript",
+          "path": "/science/candidate-bundle.mjs",
+          "sha256": "f1f028e5454b8090b61c06a8afebcaaac332b3c70f3cd8ac1d4fbc0b2c0bf919",
+          "status": 200
+        },
+        {
+          "matchesManifest": true,
+          "method": "GET",
+          "mime": "text/javascript",
+          "path": "/service.mjs",
+          "sha256": "454767ab066432dd5732c96c1724dd03866310da5e6c8cb65439d0c9dd0e8923",
+          "status": 200
+        },
+        {
+          "matchesManifest": true,
+          "method": "GET",
+          "mime": "text/javascript",
+          "path": "/snapshot.mjs",
+          "sha256": "4c4c390e3000c07fb8e9642124582c1462aaa0bd1849736837dfc9007d93a8f5",
+          "status": 200
+        },
+        {
+          "matchesManifest": true,
+          "method": "GET",
+          "mime": "text/javascript",
+          "path": "/support/snapshot.mjs",
+          "sha256": "4712463af8f1aab3172a796c5ee31ca734838e109c4e630062086997770d5803",
+          "status": 200
+        },
+        {
+          "matchesManifest": true,
+          "method": "GET",
+          "mime": "text/javascript",
+          "path": "/support/values.mjs",
+          "sha256": "74c07610e5fed288653fb24dd0f1b59b86eb5374ce7af879d1e0d82eb8e751dd",
+          "status": 200
+        },
+        {
+          "matchesManifest": true,
+          "method": "GET",
+          "mime": "text/javascript",
+          "path": "/support/view.mjs",
+          "sha256": "18baacb5fd0cb00fe499dfa2ff5ec31107ea7ff0665c6073b5467e421b4fb296",
+          "status": 200
+        },
+        {
+          "matchesManifest": true,
+          "method": "GET",
+          "mime": "text/javascript",
+          "path": "/view.mjs",
+          "sha256": "8f8314990b7db246923b353c1b747de96d167abe34c8bd3b65830172e2ae327f",
+          "status": 200
+        },
+        {
+          "matchesManifest": true,
+          "method": "GET",
+          "mime": "text/javascript",
+          "path": "/worker.mjs",
+          "sha256": "a7e1ceb05e119be932642da516ef1f52b03cb33af4214bc26098b97b76b56f4c",
+          "status": 200
+        },
+        {
+          "applicationHTMLServed": true,
+          "bodySHA256": "dc204dbe5291dcf45040d1863761f6fa7b59a81cee7a5a348764e849e0b275fe",
+          "method": "GET",
+          "mime": "text/html",
+          "path": "/__missing__",
+          "status": 200
+        },
+        {
+          "applicationHTMLServed": false,
+          "bodySHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "method": "HEAD",
+          "mime": "text/html",
+          "path": "/__missing__",
+          "status": 200
+        },
+        {
+          "applicationHTMLServed": true,
+          "bodySHA256": "dc204dbe5291dcf45040d1863761f6fa7b59a81cee7a5a348764e849e0b275fe",
+          "method": "GET",
+          "mime": "text/html",
+          "path": "/__missing__.mjs",
+          "status": 200
+        },
+        {
+          "applicationHTMLServed": false,
+          "bodySHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "method": "HEAD",
+          "mime": "text/html",
+          "path": "/__missing__.mjs",
+          "status": 200
+        },
+        {
+          "applicationHTMLServed": true,
+          "bodySHA256": "dc204dbe5291dcf45040d1863761f6fa7b59a81cee7a5a348764e849e0b275fe",
+          "method": "GET",
+          "mime": "text/html",
+          "path": "/__missing-worker__.js",
+          "status": 200
+        },
+        {
+          "applicationHTMLServed": false,
+          "bodySHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "method": "HEAD",
+          "mime": "text/html",
+          "path": "/__missing-worker__.js",
+          "status": 200
+        },
+        {
+          "applicationHTMLServed": true,
+          "bodySHA256": "dc204dbe5291dcf45040d1863761f6fa7b59a81cee7a5a348764e849e0b275fe",
+          "method": "GET",
+          "mime": "text/html",
+          "path": "/science/__missing__.mjs",
+          "status": 200
+        },
+        {
+          "applicationHTMLServed": false,
+          "bodySHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "method": "HEAD",
+          "mime": "text/html",
+          "path": "/science/__missing__.mjs",
+          "status": 200
+        },
+        {
+          "applicationHTMLServed": true,
+          "bodySHA256": "dc204dbe5291dcf45040d1863761f6fa7b59a81cee7a5a348764e849e0b275fe",
+          "method": "GET",
+          "mime": "text/html",
+          "path": "/support/__missing__.mjs",
+          "status": 200
+        },
+        {
+          "applicationHTMLServed": false,
+          "bodySHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "method": "HEAD",
+          "mime": "text/html",
+          "path": "/support/__missing__.mjs",
+          "status": 200
+        },
+        {
+          "applicationHTMLServed": true,
+          "bodySHA256": "dc204dbe5291dcf45040d1863761f6fa7b59a81cee7a5a348764e849e0b275fe",
+          "method": "GET",
+          "mime": "text/html",
+          "path": "/__missing__.css",
+          "status": 200
+        },
+        {
+          "applicationHTMLServed": false,
+          "bodySHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "method": "HEAD",
+          "mime": "text/html",
+          "path": "/__missing__.css",
+          "status": 200
+        },
+        {
+          "applicationHTMLServed": true,
+          "bodySHA256": "dc204dbe5291dcf45040d1863761f6fa7b59a81cee7a5a348764e849e0b275fe",
+          "method": "GET",
+          "mime": "text/html",
+          "path": "/__missing__.json",
+          "status": 200
+        },
+        {
+          "applicationHTMLServed": false,
+          "bodySHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "method": "HEAD",
+          "mime": "text/html",
+          "path": "/__missing__.json",
+          "status": 200
+        },
+        {
+          "applicationHTMLServed": true,
+          "bodySHA256": "dc204dbe5291dcf45040d1863761f6fa7b59a81cee7a5a348764e849e0b275fe",
+          "method": "GET",
+          "mime": "text/html",
+          "path": "/science/__missing__.mjs?probe=404",
+          "status": 200
+        },
+        {
+          "applicationHTMLServed": false,
+          "bodySHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "method": "HEAD",
+          "mime": "text/html",
+          "path": "/science/__missing__.mjs?probe=404",
+          "status": 200
+        }
+      ],
+      "scope": "Actual loopback HTTP transport; local handler only"
+    },
+    {
+      "label": "WRAPPED: documented Pages 404 routing EMULATION",
+      "passed": true,
+      "rows": [
+        {
+          "matchesManifest": true,
+          "method": "GET",
+          "mime": "text/html",
+          "path": "/404.html",
+          "sha256": "e636a54fddfdcf2a1e52f6379e6f50b518abbb413535b99c387e9bdecbe6a041",
+          "status": 200
+        },
+        {
+          "matchesManifest": true,
+          "method": "GET",
+          "mime": "application/json",
+          "path": "/asset-manifest.json",
+          "sha256": "b3aaf9f7a33ba1b8e591e8ed00dc4dca8c6432cbb2dd89426db461452fbe46be",
+          "status": 200
+        },
+        {
+          "matchesManifest": true,
+          "method": "GET",
+          "mime": "text/javascript",
+          "path": "/client.mjs",
+          "sha256": "48738455836c150bfa607e1a59861ad4a814d80239e58774c6047e9f53b1d761",
+          "status": 200
+        },
+        {
+          "matchesManifest": true,
+          "method": "GET",
+          "mime": "text/html",
+          "path": "/",
+          "sha256": "dc204dbe5291dcf45040d1863761f6fa7b59a81cee7a5a348764e849e0b275fe",
+          "status": 200
+        },
+        {
+          "matchesManifest": true,
+          "method": "GET",
+          "mime": "text/css",
+          "path": "/panel.css",
+          "sha256": "ae235ed71ef4de28ab9064d4da09c1af72a9bda84121628a87941d5ea2593b73",
+          "status": 200
+        },
+        {
+          "matchesManifest": true,
+          "method": "GET",
+          "mime": "text/javascript",
+          "path": "/panel.mjs",
+          "sha256": "00769fb11a0f270574859a475fb7b61cabf0cab29a42363111e06022bc05687e",
+          "status": 200
+        },
+        {
+          "matchesManifest": true,
+          "method": "GET",
+          "mime": "text/javascript",
+          "path": "/science/candidate-bundle.mjs",
+          "sha256": "f1f028e5454b8090b61c06a8afebcaaac332b3c70f3cd8ac1d4fbc0b2c0bf919",
+          "status": 200
+        },
+        {
+          "matchesManifest": true,
+          "method": "GET",
+          "mime": "text/javascript",
+          "path": "/service.mjs",
+          "sha256": "454767ab066432dd5732c96c1724dd03866310da5e6c8cb65439d0c9dd0e8923",
+          "status": 200
+        },
+        {
+          "matchesManifest": true,
+          "method": "GET",
+          "mime": "text/javascript",
+          "path": "/snapshot.mjs",
+          "sha256": "4c4c390e3000c07fb8e9642124582c1462aaa0bd1849736837dfc9007d93a8f5",
+          "status": 200
+        },
+        {
+          "matchesManifest": true,
+          "method": "GET",
+          "mime": "text/javascript",
+          "path": "/support/snapshot.mjs",
+          "sha256": "4712463af8f1aab3172a796c5ee31ca734838e109c4e630062086997770d5803",
+          "status": 200
+        },
+        {
+          "matchesManifest": true,
+          "method": "GET",
+          "mime": "text/javascript",
+          "path": "/support/values.mjs",
+          "sha256": "74c07610e5fed288653fb24dd0f1b59b86eb5374ce7af879d1e0d82eb8e751dd",
+          "status": 200
+        },
+        {
+          "matchesManifest": true,
+          "method": "GET",
+          "mime": "text/javascript",
+          "path": "/support/view.mjs",
+          "sha256": "18baacb5fd0cb00fe499dfa2ff5ec31107ea7ff0665c6073b5467e421b4fb296",
+          "status": 200
+        },
+        {
+          "matchesManifest": true,
+          "method": "GET",
+          "mime": "text/javascript",
+          "path": "/view.mjs",
+          "sha256": "8f8314990b7db246923b353c1b747de96d167abe34c8bd3b65830172e2ae327f",
+          "status": 200
+        },
+        {
+          "matchesManifest": true,
+          "method": "GET",
+          "mime": "text/javascript",
+          "path": "/worker.mjs",
+          "sha256": "a7e1ceb05e119be932642da516ef1f52b03cb33af4214bc26098b97b76b56f4c",
+          "status": 200
+        },
+        {
+          "applicationHTMLServed": false,
+          "bodySHA256": "e636a54fddfdcf2a1e52f6379e6f50b518abbb413535b99c387e9bdecbe6a041",
+          "method": "GET",
+          "mime": "text/html",
+          "path": "/__missing__",
+          "status": 404
+        },
+        {
+          "applicationHTMLServed": false,
+          "bodySHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "method": "HEAD",
+          "mime": "text/html",
+          "path": "/__missing__",
+          "status": 404
+        },
+        {
+          "applicationHTMLServed": false,
+          "bodySHA256": "e636a54fddfdcf2a1e52f6379e6f50b518abbb413535b99c387e9bdecbe6a041",
+          "method": "GET",
+          "mime": "text/html",
+          "path": "/__missing__.mjs",
+          "status": 404
+        },
+        {
+          "applicationHTMLServed": false,
+          "bodySHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "method": "HEAD",
+          "mime": "text/html",
+          "path": "/__missing__.mjs",
+          "status": 404
+        },
+        {
+          "applicationHTMLServed": false,
+          "bodySHA256": "e636a54fddfdcf2a1e52f6379e6f50b518abbb413535b99c387e9bdecbe6a041",
+          "method": "GET",
+          "mime": "text/html",
+          "path": "/__missing-worker__.js",
+          "status": 404
+        },
+        {
+          "applicationHTMLServed": false,
+          "bodySHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "method": "HEAD",
+          "mime": "text/html",
+          "path": "/__missing-worker__.js",
+          "status": 404
+        },
+        {
+          "applicationHTMLServed": false,
+          "bodySHA256": "e636a54fddfdcf2a1e52f6379e6f50b518abbb413535b99c387e9bdecbe6a041",
+          "method": "GET",
+          "mime": "text/html",
+          "path": "/science/__missing__.mjs",
+          "status": 404
+        },
+        {
+          "applicationHTMLServed": false,
+          "bodySHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "method": "HEAD",
+          "mime": "text/html",
+          "path": "/science/__missing__.mjs",
+          "status": 404
+        },
+        {
+          "applicationHTMLServed": false,
+          "bodySHA256": "e636a54fddfdcf2a1e52f6379e6f50b518abbb413535b99c387e9bdecbe6a041",
+          "method": "GET",
+          "mime": "text/html",
+          "path": "/support/__missing__.mjs",
+          "status": 404
+        },
+        {
+          "applicationHTMLServed": false,
+          "bodySHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "method": "HEAD",
+          "mime": "text/html",
+          "path": "/support/__missing__.mjs",
+          "status": 404
+        },
+        {
+          "applicationHTMLServed": false,
+          "bodySHA256": "e636a54fddfdcf2a1e52f6379e6f50b518abbb413535b99c387e9bdecbe6a041",
+          "method": "GET",
+          "mime": "text/html",
+          "path": "/__missing__.css",
+          "status": 404
+        },
+        {
+          "applicationHTMLServed": false,
+          "bodySHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "method": "HEAD",
+          "mime": "text/html",
+          "path": "/__missing__.css",
+          "status": 404
+        },
+        {
+          "applicationHTMLServed": false,
+          "bodySHA256": "e636a54fddfdcf2a1e52f6379e6f50b518abbb413535b99c387e9bdecbe6a041",
+          "method": "GET",
+          "mime": "text/html",
+          "path": "/__missing__.json",
+          "status": 404
+        },
+        {
+          "applicationHTMLServed": false,
+          "bodySHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "method": "HEAD",
+          "mime": "text/html",
+          "path": "/__missing__.json",
+          "status": 404
+        },
+        {
+          "applicationHTMLServed": false,
+          "bodySHA256": "e636a54fddfdcf2a1e52f6379e6f50b518abbb413535b99c387e9bdecbe6a041",
+          "method": "GET",
+          "mime": "text/html",
+          "path": "/science/__missing__.mjs?probe=404",
+          "status": 404
+        },
+        {
+          "applicationHTMLServed": false,
+          "bodySHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "method": "HEAD",
+          "mime": "text/html",
+          "path": "/science/__missing__.mjs?probe=404",
+          "status": 404
+        }
+      ],
+      "scope": "Actual loopback HTTP transport; local handler only"
+    },
+    {
+      "label": "WRAPPED: ordinary strict Python static server (no Pages emulation)",
+      "passed": true,
+      "rows": [
+        {
+          "matchesManifest": true,
+          "method": "GET",
+          "mime": "text/html",
+          "path": "/404.html",
+          "sha256": "e636a54fddfdcf2a1e52f6379e6f50b518abbb413535b99c387e9bdecbe6a041",
+          "status": 200
+        },
+        {
+          "matchesManifest": true,
+          "method": "GET",
+          "mime": "application/json",
+          "path": "/asset-manifest.json",
+          "sha256": "b3aaf9f7a33ba1b8e591e8ed00dc4dca8c6432cbb2dd89426db461452fbe46be",
+          "status": 200
+        },
+        {
+          "matchesManifest": true,
+          "method": "GET",
+          "mime": "text/javascript",
+          "path": "/client.mjs",
+          "sha256": "48738455836c150bfa607e1a59861ad4a814d80239e58774c6047e9f53b1d761",
+          "status": 200
+        },
+        {
+          "matchesManifest": true,
+          "method": "GET",
+          "mime": "text/html",
+          "path": "/",
+          "sha256": "dc204dbe5291dcf45040d1863761f6fa7b59a81cee7a5a348764e849e0b275fe",
+          "status": 200
+        },
+        {
+          "matchesManifest": true,
+          "method": "GET",
+          "mime": "text/css",
+          "path": "/panel.css",
+          "sha256": "ae235ed71ef4de28ab9064d4da09c1af72a9bda84121628a87941d5ea2593b73",
+          "status": 200
+        },
+        {
+          "matchesManifest": true,
+          "method": "GET",
+          "mime": "text/javascript",
+          "path": "/panel.mjs",
+          "sha256": "00769fb11a0f270574859a475fb7b61cabf0cab29a42363111e06022bc05687e",
+          "status": 200
+        },
+        {
+          "matchesManifest": true,
+          "method": "GET",
+          "mime": "text/javascript",
+          "path": "/science/candidate-bundle.mjs",
+          "sha256": "f1f028e5454b8090b61c06a8afebcaaac332b3c70f3cd8ac1d4fbc0b2c0bf919",
+          "status": 200
+        },
+        {
+          "matchesManifest": true,
+          "method": "GET",
+          "mime": "text/javascript",
+          "path": "/service.mjs",
+          "sha256": "454767ab066432dd5732c96c1724dd03866310da5e6c8cb65439d0c9dd0e8923",
+          "status": 200
+        },
+        {
+          "matchesManifest": true,
+          "method": "GET",
+          "mime": "text/javascript",
+          "path": "/snapshot.mjs",
+          "sha256": "4c4c390e3000c07fb8e9642124582c1462aaa0bd1849736837dfc9007d93a8f5",
+          "status": 200
+        },
+        {
+          "matchesManifest": true,
+          "method": "GET",
+          "mime": "text/javascript",
+          "path": "/support/snapshot.mjs",
+          "sha256": "4712463af8f1aab3172a796c5ee31ca734838e109c4e630062086997770d5803",
+          "status": 200
+        },
+        {
+          "matchesManifest": true,
+          "method": "GET",
+          "mime": "text/javascript",
+          "path": "/support/values.mjs",
+          "sha256": "74c07610e5fed288653fb24dd0f1b59b86eb5374ce7af879d1e0d82eb8e751dd",
+          "status": 200
+        },
+        {
+          "matchesManifest": true,
+          "method": "GET",
+          "mime": "text/javascript",
+          "path": "/support/view.mjs",
+          "sha256": "18baacb5fd0cb00fe499dfa2ff5ec31107ea7ff0665c6073b5467e421b4fb296",
+          "status": 200
+        },
+        {
+          "matchesManifest": true,
+          "method": "GET",
+          "mime": "text/javascript",
+          "path": "/view.mjs",
+          "sha256": "8f8314990b7db246923b353c1b747de96d167abe34c8bd3b65830172e2ae327f",
+          "status": 200
+        },
+        {
+          "matchesManifest": true,
+          "method": "GET",
+          "mime": "text/javascript",
+          "path": "/worker.mjs",
+          "sha256": "a7e1ceb05e119be932642da516ef1f52b03cb33af4214bc26098b97b76b56f4c",
+          "status": 200
+        },
+        {
+          "applicationHTMLServed": false,
+          "bodySHA256": "860b53ed6ea6a0cf602fae632cfcd28dbcf637f85a8bee28d2ee9c6cc9081669",
+          "method": "GET",
+          "mime": "text/html",
+          "path": "/__missing__",
+          "status": 404
+        },
+        {
+          "applicationHTMLServed": false,
+          "bodySHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "method": "HEAD",
+          "mime": "text/html",
+          "path": "/__missing__",
+          "status": 404
+        },
+        {
+          "applicationHTMLServed": false,
+          "bodySHA256": "860b53ed6ea6a0cf602fae632cfcd28dbcf637f85a8bee28d2ee9c6cc9081669",
+          "method": "GET",
+          "mime": "text/html",
+          "path": "/__missing__.mjs",
+          "status": 404
+        },
+        {
+          "applicationHTMLServed": false,
+          "bodySHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "method": "HEAD",
+          "mime": "text/html",
+          "path": "/__missing__.mjs",
+          "status": 404
+        },
+        {
+          "applicationHTMLServed": false,
+          "bodySHA256": "860b53ed6ea6a0cf602fae632cfcd28dbcf637f85a8bee28d2ee9c6cc9081669",
+          "method": "GET",
+          "mime": "text/html",
+          "path": "/__missing-worker__.js",
+          "status": 404
+        },
+        {
+          "applicationHTMLServed": false,
+          "bodySHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "method": "HEAD",
+          "mime": "text/html",
+          "path": "/__missing-worker__.js",
+          "status": 404
+        },
+        {
+          "applicationHTMLServed": false,
+          "bodySHA256": "860b53ed6ea6a0cf602fae632cfcd28dbcf637f85a8bee28d2ee9c6cc9081669",
+          "method": "GET",
+          "mime": "text/html",
+          "path": "/science/__missing__.mjs",
+          "status": 404
+        },
+        {
+          "applicationHTMLServed": false,
+          "bodySHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "method": "HEAD",
+          "mime": "text/html",
+          "path": "/science/__missing__.mjs",
+          "status": 404
+        },
+        {
+          "applicationHTMLServed": false,
+          "bodySHA256": "860b53ed6ea6a0cf602fae632cfcd28dbcf637f85a8bee28d2ee9c6cc9081669",
+          "method": "GET",
+          "mime": "text/html",
+          "path": "/support/__missing__.mjs",
+          "status": 404
+        },
+        {
+          "applicationHTMLServed": false,
+          "bodySHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "method": "HEAD",
+          "mime": "text/html",
+          "path": "/support/__missing__.mjs",
+          "status": 404
+        },
+        {
+          "applicationHTMLServed": false,
+          "bodySHA256": "860b53ed6ea6a0cf602fae632cfcd28dbcf637f85a8bee28d2ee9c6cc9081669",
+          "method": "GET",
+          "mime": "text/html",
+          "path": "/__missing__.css",
+          "status": 404
+        },
+        {
+          "applicationHTMLServed": false,
+          "bodySHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "method": "HEAD",
+          "mime": "text/html",
+          "path": "/__missing__.css",
+          "status": 404
+        },
+        {
+          "applicationHTMLServed": false,
+          "bodySHA256": "860b53ed6ea6a0cf602fae632cfcd28dbcf637f85a8bee28d2ee9c6cc9081669",
+          "method": "GET",
+          "mime": "text/html",
+          "path": "/__missing__.json",
+          "status": 404
+        },
+        {
+          "applicationHTMLServed": false,
+          "bodySHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "method": "HEAD",
+          "mime": "text/html",
+          "path": "/__missing__.json",
+          "status": 404
+        },
+        {
+          "applicationHTMLServed": false,
+          "bodySHA256": "860b53ed6ea6a0cf602fae632cfcd28dbcf637f85a8bee28d2ee9c6cc9081669",
+          "method": "GET",
+          "mime": "text/html",
+          "path": "/science/__missing__.mjs?probe=404",
+          "status": 404
+        },
+        {
+          "applicationHTMLServed": false,
+          "bodySHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "method": "HEAD",
+          "mime": "text/html",
+          "path": "/science/__missing__.mjs?probe=404",
+          "status": 404
+        }
+      ],
+      "scope": "Actual loopback HTTP transport; local handler only"
+    }
+  ],
+  "newRuntimeDependencies": 0,
+  "numericalSuites": "NOT RERUN",
+  "originalAssetsUnchanged": 13,
+  "packagingRefusals": [
+    "existing stage cannot be overwritten",
+    "B11 directory cannot be a staging target",
+    "symlinked staging parent rejected",
+    "changed scientific bundle rejected",
+    "unapproved extra file rejected",
+    "changed wrapper rejected"
+  ],
+  "passed": true,
+  "realHTTPSBrowserTests": "NOT RUN",
+  "reproducibleStages": 2,
+  "schema": 1,
+  "scope": "Targeted packaging and loopback HTTP only"
+}

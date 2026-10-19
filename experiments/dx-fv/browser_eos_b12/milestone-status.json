@@ -23,7 +23,7 @@
   },
   "gates": {
     "0_provenancePreservation": "PASS",
-    "1_isolatedHostingDesign": "PREPARED; COMPATIBILITY BLOCKED",
+    "1_isolatedHostingDesign": "PREPARED; APPROVED 13+1 STAGE CHECKED LOCALLY; PAGES UNVERIFIED",
     "2_privateAccessBeforePublishing": "PRIVATE ACCESS BLOCKED",
     "3_exactArtifactDeployment": "NOT EXECUTED",
     "4_realHTTPSBrowserVerification": "NOT TESTED",
@@ -38,10 +38,32 @@
     "physicalIPad": "AWAITING OWNER DEVICE REVIEW",
     "externalProductionIntegrationSettings": "UNOBSERVED; NO CHANGES PERFORMED"
   },
-  "normalA2IntervalsSeconds": [0.0001, 0.0004, 0.0005],
+  "normalA2IntervalsSeconds": [
+    0.0001,
+    0.0004,
+    0.0005
+  ],
   "normalA2HorizonSeconds": 0.001,
   "actualDeploymentURL": null,
   "actualDeploymentId": null,
-  "ownerActions": ["Authenticate intended Cloudflare account", "Explicitly approve owner Access identity", "Resolve Pages 404/exact-file-set conflict in engineering review", "Create separate empty project and verify both Access scopes before any workstation upload"],
-  "stopForEngineeringReview": true
+  "ownerActions": [
+    "Authenticate intended Cloudflare account",
+    "Explicitly approve owner Access identity",
+    "Review the approved one-file staging implementation; verify actual Pages routing only after permitted deployment",
+    "Create separate empty project and verify both Access scopes before any workstation upload"
+  ],
+  "stopForEngineeringReview": true,
+  "followup404": {
+    "startingCommit": "1ab61278159a51fb3f86bb817ea1f03b049443d8",
+    "ownerExceptionApproved": true,
+    "approvedAdditionalFiles": [
+      "404.html"
+    ],
+    "originalB11AssetCount": 13,
+    "combinedStagedAssetCount": 14,
+    "localStagingChecks": "PASS",
+    "actualCloudflarePages": "UNVERIFIED UNTIL DEPLOYMENT",
+    "cloudflareProjectCreationOrUploadAuthorized": false,
+    "privateAccessAndPublicationGatesChanged": false
+  }
 }

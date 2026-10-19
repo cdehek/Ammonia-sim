@@ -3,7 +3,9 @@
 No Cloudflare project, account operation or public research URL was created. No
 public accessibility exception is approved. PRIVATE ACCESS BLOCKED until supported
 authentication, owner identity approval and both hostname policies are verified.
-The exact package also has a documented missing-404 compatibility conflict.
+The owner-approved one-file stage resolves the missing-404 packaging concern;
+actual Pages routing remains unverified until deployment. This grants no project
+creation, upload, public access or Access-policy authorization in this follow-up.
 
 GitHub publication of B12 documentation is explicitly authorized; no extra copy of
 the science ZIP or runtime assets is added. Existing B11 artifact visibility is

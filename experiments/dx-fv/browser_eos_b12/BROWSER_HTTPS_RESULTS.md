@@ -2,6 +2,9 @@
 
 There is no actual deployment URL. Chromium and WebKit have not navigated to a
 B12 HTTPS preview. No localhost, emulation or saved B11 receipt is counted here.
+The approved 13+1 staging follow-up ran only bounded packaging and real loopback
+HTTP GET/HEAD tests with Python handlers. No browser/numerical suite was rerun.
+Pages-rule emulation is labeled separately; actual Cloudflare behavior is unverified.
 
 | Required remote check | Chromium | WebKit |
 |---|---|---|

@@ -10,8 +10,10 @@ for independent unauthenticated denial checks. The probe is prepared tooling,
 not a completed access receipt; owner-login/denied-identity checks remain manual.
 
 After successful owner login use browser network requests on the same origin to
-retrieve all 13 manifest paths and compare decoded response byte length/SHA-256
-against `evidence/deployment-package-manifest.json`. Use GET, not only HEAD; a
+retrieve all 14 candidate paths and compare decoded response byte length/SHA-256
+against `evidence/staged-deployment-manifest.json`. Its original 13 entries must
+also match deployment-package-manifest.json; the sole addition is the approved
+static 404.html. Use GET, not only HEAD; a
 200 login page must fail the expected MIME/hash checks. Request `/` for index.html
 because Pages may canonicalize `/index.html`. Any redirect for scientific assets
 must be reviewed; cross-origin asset redirection is disallowed. Record MIME,

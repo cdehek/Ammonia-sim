@@ -5,7 +5,8 @@ account and explicitly approve the identity allowed to access this private previ
 No credentials, API tokens, cookies or login links with session parameters should
 be sent in chat. The developer may assist with documented authenticated dashboard
 actions. No package upload is authorized until protection is independently checked.
-The additional routing conflict below needs engineering resolution too.
+The one-file staging exception below is explicitly approved. This follow-up does
+not authorize Cloudflare project creation or uploads; private-access gates remain.
 
 1. Open [Cloudflare dashboard](https://dash.cloudflare.com/) yourself, log in and
    select the intended account. Confirm permission to create a separate Pages
@@ -14,11 +15,11 @@ The additional routing conflict below needs engineering resolution too.
 2. Explicitly approve the owner-only identity for Access; do not infer it from Git.
    Keep the identity itself in owner-private configuration. Supply a nonsecret
    confirmation that owner approval occurred for the review record.
-3. Review STATIC_HOSTING_CONFIGURATION.md: the exact B11 file set lacks 404.html;
-   documented Pages fallback conflicts with genuine 404 requirements. Engineering
-   must approve an explicit hosting-only exception or verify another documented
-   solution preserving the exact package. Do not add a file or weaken the check
-   without that resolution. Login alone does not make this deployment ready.
+3. Review STATIC_HOSTING_CONFIGURATION.md and the approved 13+1 manifests. All B11
+   files stay unchanged; exactly one root static 404.html is added only in a NEW
+   B12 stage. Local checks pass; actual Pages behavior still needs deployed
+   authenticated missing-path GET/HEAD checks. No further files/runtime changes
+   are approved. Login alone does not establish private access.
 4. In Workers & Pages review existing projects without editing them. Create only
    a NEW empty Direct Upload project, using an available `ammonia-lab-research-b12`
    prefix. Use a research-only production branch name such as `b12-sealed`.
@@ -36,8 +37,8 @@ The additional routing conflict below needs engineering resolution too.
    before login, owner access after login, disallowed identity refusal, root and
    direct module/worker/bundle-path protection. A 404 alone is insufficient.
    Never upload science as an access experiment. Keep any probe aliases protected.
-7. After BOTH access and routing gates pass, run the local artifact checks below.
-   Upload only the extracted preview directory. Record returned IDs/URL/UTC and
+7. After access and local staging checks pass, use only the approved 14-file B12
+   staging directory for any separately permitted upload. Record returned IDs/URL/UTC and
    approved hosting configuration; review sensitive identifiers before committing.
 8. Complete served-byte, MIME, genuine 404, browser/science/five-export and
    authentication tests on every actual origin. Only then place the working URL
@@ -62,12 +63,17 @@ After revalidating the exact B11 checkout plus B12 branch:
 
 ```sh
 python3 experiments/dx-fv/browser_eos_b12/verify.py --extract
+# Use a NEW staging path each run; existing output is never overwritten.
+python3 experiments/dx-fv/browser_eos_b12/stage.py --out experiments/dx-fv/browser_eos_b12/.runtime/staging/approved-preview
+python3 experiments/dx-fv/browser_eos_b12/test-staging.py
 ```
 
 Conditional future upload, **BLOCKED in this delivery**: from an otherwise empty
 local staging directory with no functions/, .env, .dev.vars or inherited Wrangler
 configuration, explicitly select the new account/project. Replace B12_STATIC_ROOT
-with the absolute `.runtime/extracted/preview` path, never the ZIP or its parent:
+with the absolute verified `.runtime/staging/approved-preview` path, never the
+original extraction, ZIP or parent. Retain both original and wrapper manifests
+with the future deployment receipt:
 
 ```sh
 wrangler pages deploy "$B12_STATIC_ROOT" --project-name "$B12_PROJECT" --branch b12-sealed --commit-hash 909de1579051bfadca0e282adf93eaedc0e24b9c

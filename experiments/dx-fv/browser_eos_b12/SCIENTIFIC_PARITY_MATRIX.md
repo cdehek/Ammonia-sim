@@ -3,6 +3,7 @@
 | Check | B12 result | Evidence boundary |
 |---|---|---|
 | Exact B11 ZIP, manifest and 13 assets | PASS | Fresh local byte/hash verification |
+| B12 13+1 hosting stage | PASS locally | Same 13 hashes plus only approved static 404.html; no runtime edits |
 | Exact B9C scientific bundle | PASS | Direct comparison with protected Git blob |
 | Accepted A2 fourteen-file source closure | PASS | Direct pinned-source comparisons |
 | B11 cold/warm state/record/attempt hashes | PASS, retained evidence | Both browser receipts revalidated; no fresh execution |

@@ -39,7 +39,7 @@ def main():
     if args.output:
         dest = args.output.resolve()
         assert dest.is_relative_to(B) and not dest.exists()
-    manifest = json.loads((B / 'evidence/deployment-package-manifest.json').read_text())
+    manifest = json.loads((B / 'evidence/staged-deployment-manifest.json').read_text())
     opener = urllib.request.build_opener(NoRedirect)
     rows = []
     # All existing assets plus unknown paths; no cookies, auth or redirects.

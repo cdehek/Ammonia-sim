@@ -3,7 +3,10 @@
 All 3,438 tracked files at B11 retain their committed bytes, including B11 source,
 ZIP, extracted preview, reports, scientific data and evidence. The original
 workstation derivation verifies 574 original source inputs and exact original HTML.
-No application/UI/model/Operator Assist/training code is modified. New source,
+No application/UI/model/Operator Assist/training code is modified. The owner-approved
+follow-up adds one static 404.html only to a separate NEW B12 staging copy; B11's
+ZIP/extracted preview and 13 original assets stay unchanged. Separate manifests and
+followup-preservation.json seal that distinction. New source,
 manifests, evidence and reports are confined to browser_eos_b12.
 
 Fresh checks revalidate B11's sealed receipts: original Chromium 19/19; desktop

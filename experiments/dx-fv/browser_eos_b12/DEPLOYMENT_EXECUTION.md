@@ -15,11 +15,16 @@ No science was regenerated and no historical script that writes evidence was run
 Gate 0 and artifact checks passed. Cloudflare readiness found no credential
 bindings, supported connector or Wrangler session configuration. No owner email
 has been approved. PRIVATE ACCESS BLOCKED: account operations stopped there.
-Documentation review additionally found the exact package's missing-404 conflict.
+Documentation review originally found the exact package's missing-404 conflict.
+The owner follow-up approves precisely one static root 404.html in a NEW B12 stage.
+The new 14-file candidate preserves all 13 B11 bytes and canonical identity; local
+packaging/HTTP checks pass. Actual Pages behavior remains unverified. This follow-up
+creates no Cloudflare project and uploads no files.
 
-Next execution requires the authenticated owner checklist and an engineering
-resolution for routing. Only after private protection and compatibility are
-verified may the exact folder be selected for an explicitly named Direct Upload.
+Next execution requires review of the implemented exception and the authenticated
+owner checklist. Only after private protection is verified may the separately
+manifested 13+1 stage be selected for a permitted Direct Upload. Actual routing
+and all served-byte/browser checks must pass afterward.
 The two-phase create/protect/deploy procedure avoids publishing science to
 discover whether access control works. Do not use implicit project creation by
 the deploy command, inherited Wrangler cache, or a production-linked Git project.

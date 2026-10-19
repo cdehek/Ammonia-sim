@@ -20,10 +20,16 @@ all 574 original source inputs verify. Fourteen accepted A2 closure files verify
 The local module dependency graph resolves inside the package; the unchanged B11
 portability receipts also establish no historical runtime asset requests.
 
-`evidence/deployment-package-manifest.json` lists every deployed-candidate byte,
+`evidence/deployment-package-manifest.json` lists every original B11 byte,
 MIME and SHA-256, including the JSON manifest; asset-manifest.json preserves source
 commit/blob mappings. `evidence/artifact-audit.json` is the local verification
 receipt. No served-byte or HTTPS scientific parity result exists.
 
-Absence of `404.html`, `_headers`, `_redirects` and server functions is deliberate
-preservation of the reviewed file set, not a claim of Pages compatibility.
+The original retains no `404.html`, `_headers`, `_redirects` or server functions.
+The owner approved one root static `404.html` in a NEW B12 stage. `stage.py`
+independently checks the committed ZIP, identity and original files before/after
+adding it. staging-original-manifest.json describes the 13 originals;
+hosting-wrapper-manifest.json describes the sole addition and separate wrapper
+identity; staged-deployment-manifest.json inventories all 14. staging-sha256.json
+seals them. No wrapper identity replaces B11's canonical identity. Actual Pages
+404/served-byte behavior remains unverified until deployment.

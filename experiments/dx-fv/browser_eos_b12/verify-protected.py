@@ -14,12 +14,17 @@ def refs(path):
 
 ap = argparse.ArgumentParser()
 ap.add_argument('--published', action='store_true', help='Also require recorded remote B12 == current HEAD')
+ap.add_argument('--followup', action='store_true', help='Use the 404 follow-up snapshots; B12 already exists')
 args = ap.parse_args()
-before, after = refs(E / 'remote-refs-before.txt'), refs(E / 'remote-refs-after.txt')
-assert OWN not in before, 'B12 was not a new remote branch'
-assert {k: v for k, v in after.items() if k != OWN} == before, 'Protected remote ref/tag changed'
+prefix = '404-' if args.followup else ''
+before, after = [refs(E / f'remote-refs-{prefix}{p}.txt') for p in ['before', 'after']]
+if args.followup:
+    assert before[OWN] == '1ab61278159a51fb3f86bb817ea1f03b049443d8'
+else:
+    assert OWN not in before, 'B12 was not a new remote branch'
+assert {k: v for k, v in after.items() if k != OWN} == {k: v for k, v in before.items() if k != OWN}, 'Protected remote ref/tag changed'
 keys = ['number', 'state', 'merged', 'base', 'base_sha', 'head', 'head_sha', 'head_repo_full_name', 'draft']
-a, b = [json.loads((E / f'pr3-{phase}.json').read_text()) for phase in ('before', 'after')]
+a, b = [json.loads((E / f'pr3-{prefix}{phase}.json').read_text()) for phase in ('before', 'after')]
 assert {k: a[k] for k in keys} == {k: b[k] for k in keys}, 'PR #3 changed'
 if args.published:
     assert after[OWN] == subprocess.check_output(['git', 'rev-parse', 'HEAD'], cwd=R).decode().strip()

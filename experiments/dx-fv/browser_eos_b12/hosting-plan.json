@@ -13,12 +13,23 @@
   "customDomains": [],
   "recurringDeployments": false,
   "paidFeaturesAuthorized": false,
-  "requiredAccessHostnames": ["PROJECT.pages.dev", "*.PROJECT.pages.dev"],
+  "requiredAccessHostnames": [
+    "PROJECT.pages.dev",
+    "*.PROJECT.pages.dev"
+  ],
   "ownerIdentityApproved": false,
   "ownerPolicyConfigured": false,
   "actualPackageUploaded": false,
-  "exactStaticRoot": ".runtime/extracted/preview",
-  "packageManifest": "evidence/deployment-package-manifest.json",
-  "compatibilityBlocker": "B11 lacks top-level 404.html; documented Pages SPA fallback conflicts with genuine 404 requirement",
-  "hostingWrapperExceptionApproved": false
+  "exactStaticRoot": ".runtime/staging/approved-preview",
+  "packageManifest": "evidence/staged-deployment-manifest.json",
+  "compatibilityBlocker": null,
+  "hostingWrapperExceptionApproved": true,
+  "originalPackageManifest": "evidence/deployment-package-manifest.json",
+  "hostingWrapperManifest": "evidence/hosting-wrapper-manifest.json",
+  "approvedAdditionalFiles": [
+    "404.html"
+  ],
+  "localStagingChecks": "PASS",
+  "actualPagesResponseBehavior": "UNVERIFIED UNTIL DEPLOYMENT",
+  "followupProjectCreationOrUploadAuthorized": false
 }

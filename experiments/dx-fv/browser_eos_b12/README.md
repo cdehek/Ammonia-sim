@@ -5,12 +5,13 @@ Exact B11 artifact integrity: PASS. Private Access: NOT CONFIGURED.
 Physical iPad: **AWAITING OWNER DEVICE REVIEW**.
 
 The environment lacks Cloudflare authentication and an approved owner Access
-identity. A separate compatibility review is also required: the sealed B11 folder
-has no 404.html and Pages documents SPA fallback without it, conflicting with the
-required genuine 404s. No workstation assets were uploaded or modified.
+identity. The owner has approved exactly one static root `404.html` in a NEW B12
+staging copy. Reproducible 13+1 staging resolves the local packaging concern while
+preserving every original byte and the canonical B11 identity. Actual Pages 404
+behavior is **UNVERIFIED until deployment**. No workstation assets were uploaded.
 
 Start with [owner actions](OWNER_ACTION_CHECKLIST.md), [engineering decisions](ENGINEERING_REPORT.md),
-[private-access review](ACCESS_CONTROL_REVIEW.md) and [hosting blocker](STATIC_HOSTING_CONFIGURATION.md).
+[private-access review](ACCESS_CONTROL_REVIEW.md) and [approved hosting wrapper](STATIC_HOSTING_CONFIGURATION.md).
 The [iPad handoff](IPAD_OWNER_HANDOFF.md) is conditional on a real verified URL.
 There is no fabricated URL, login, HTTPS result or device result.
 
@@ -24,12 +25,17 @@ From repository root, local verification (no credentials/network needed):
 ```sh
 python3 experiments/dx-fv/browser_eos_b12/verify.py --extract
 python3 experiments/dx-fv/browser_eos_b12/verify-protected.py
+# Choose a NEW output path; existing staging directories are never replaced.
+python3 experiments/dx-fv/browser_eos_b12/stage.py --out experiments/dx-fv/browser_eos_b12/.runtime/staging/approved-preview
+python3 experiments/dx-fv/browser_eos_b12/test-staging.py
 ```
 
 The original workstation commit is outside B11 ancestry. A fresh clone may need
 `git fetch --no-tags --no-write-fetch-head origin 262b6092b2ed694073ad9ffd41265f44dd0b6ca0`
 before checks. This reads an object without moving protected refs. Extraction stays
-under ignored `.runtime/`; do not upload that parent folder or rebuild B11.
+under ignored `.runtime/`. The original extraction stays separate from the approved
+`.runtime/staging/approved-preview` candidate. Never upload either parent or rebuild
+B11. Local HTTP tests need loopback socket permission, not Internet access.
 
 Reports, manifests, source checks and machine-readable milestone status are all
 confined to this directory. Production merge and full Live Plant coupling: NO-GO.

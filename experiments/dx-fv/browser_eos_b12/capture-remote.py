@@ -12,9 +12,10 @@ import urllib.request
 
 B = Path(__file__).resolve().parent
 ap = argparse.ArgumentParser()
-ap.add_argument('--phase', required=True, choices=['before', 'after', 'publication'])
+ap.add_argument('--phase', required=True, choices=['before', 'after', 'publication',
+                '404-before', '404-after', '404-publication'])
 args = ap.parse_args()
-out = B / ('.runtime' if args.phase == 'publication' else 'evidence')
+out = B / ('.runtime' if args.phase.endswith('publication') else 'evidence')
 out.mkdir(exist_ok=True)
 dest = out / f'remote-refs-{args.phase}.txt'
 prdest = out / f'pr3-{args.phase}.json'

@@ -1,20 +1,35 @@
-# Static-hosting contract — compatibility review required
+# Static-hosting contract — approved one-file staging exception
 
-The artifact has 13 files, 3,222,883 bytes, root index.html and no server build.
+The original artifact has 13 files, 3,222,883 bytes, root index.html and no server build.
 No Wrangler configuration pointing at any account/project is committed. Desired
 configuration is in `hosting-plan.json`, with null actual project/account fields.
 
-**BLOCKER: genuine missing-file 404.** The exact B11 package has no top-level
-`404.html`. Cloudflare's documented Pages default then treats unmatched paths as
-SPA routes and serves the root. An upload of the unchanged folder therefore cannot
-currently be signed off against the required genuine 404 contract. This is a
-documentation-based incompatibility finding, not a measured remote response.
+**Approved resolution:** the owner follow-up from B12 checkpoint
+`1ab61278159a51fb3f86bb817ea1f03b049443d8` permits exactly one minimal static
+root `404.html` in a NEW B12 staging copy. It resolves the local packaging/design
+concern. The B11 ZIP, original extraction and all 13 original files are unchanged.
+The added HTML has only a title, heading and nonproduction missing-resource message;
+no scripts, styles, links, external assets or runtime dependencies.
+
+Run `stage.py --out NEW_B12_STAGING_PATH` to independently verify the committed
+ZIP, canonical identity and every asset, extract into a fresh `.runtime/staging/`
+directory, verify again, then add only `hosting/404.html`. Existing or symlinked
+targets are refused. No manifests/test servers are placed in the served root.
+The original-only, wrapper-only and combined manifests are staging-original-
+manifest.json, hosting-wrapper-manifest.json and staged-deployment-manifest.json
+in evidence/. staging-sha256.json seals them. The combined stage has 14 files;
+the canonical B11 identity still describes only the 13 originals.
+
+Actual loopback GET/HEAD checks return 404 for missing root/nested modules,
+worker paths, CSS, JSON and extensionless resources. A labeled local Pages-rule
+emulator serves the wrapper with 404; its unwrapped negative control serves
+index.html with 200. An ordinary Python static server returns genuine 404s too.
+These are local transport/handler observations, not Cloudflare implementation tests.
+**Actual Cloudflare Pages response behavior remains UNVERIFIED until deployment.**
 See [the official routing behavior](https://developers.cloudflare.com/pages/configuration/serving-pages/).
-No documented account-side override satisfying the unchanged file set was verified.
-Engineering must approve a precise hosting-only exception, such as a separately
-manifested 404 wrapper, or demonstrate an acceptable documented routing solution.
-Such an exception is not implemented or authorized here. Keep the B11 ZIP/extracted
-folder unchanged; do not silently add `404.html`, `_headers` or a Worker.
+No Pages Functions, redirects, service workers, `_headers`, `_redirects`, Worker,
+runtime dependency, extra asset or scientific change is introduced. No project
+creation or upload occurs. All private-access/publication/HTTPS/device gates remain.
 
 For any approved hosting plan require: HTML text/html; .mjs/.js JavaScript MIME;
 CSS text/css; JSON application/json; same-origin modules, worker, digest fetch;

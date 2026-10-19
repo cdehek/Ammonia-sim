@@ -11,11 +11,22 @@ B11 commit: `909de1579051bfadca0e282adf93eaedc0e24b9c`.
 ZIP SHA-256:
 `a642fe22078e7637f9e5c12ce0efbc6f8b7de317da3853b6a52b03452a3ee078`.
 
+The approved future host candidate has these same 13 B11 files plus exactly one
+static root 404.html in a NEW B12 staging copy. Its separate wrapper/combined
+identities are recorded in evidence/hosting-wrapper-manifest.json and
+evidence/staged-deployment-manifest.json. This does not alter the scientific package
+identity above. Local HTTP checks pass; actual Cloudflare Pages response behavior
+remains unverified until deployment. No project or upload is authorized by this
+follow-up, and the private-access/publication gates remain unchanged.
+
 Once a verified URL exists, open it in Safari with normal security and sign into
 the explicitly approved owner identity on the expected Cloudflare Access screen.
 Never bypass a certificate warning. A denied identity should receive no app or
 science assets. Report an unexpected login loop; do not enable public access.
 This is a nonproduction research workstation, never the production simulator.
+After a future qualified deployment, a genuinely missing resource should return
+HTTP 404 rather than reopen the workstation; unauthenticated requests must still
+be denied by Access. Local emulation is no proof of either deployed condition.
 
 1. Record iPad model, iPadOS/Safari version, date/time, orientation, zoom and network.
    Measure your observed login and original-workstation readiness separately.

@@ -11,10 +11,14 @@ intended account control are established. The actual project name is not reserve
 Label the project and Access applications **B12 NONPRODUCTION RESEARCH**. Preserve
 the reviewed HTML exactly; do not inject a banner into the sealed artifact.
 
-The only upload candidate is the extracted `preview/` inside the committed B11
-ZIP, SHA-256 `a642fe22078e7637f9e5c12ce0efbc6f8b7de317da3853b6a52b03452a3ee078`.
+The approved candidate is a NEW B12 staging copy of the exact `preview/` inside
+the committed B11 ZIP, plus exactly one static root `404.html`.
+ZIP SHA-256 is `a642fe22078e7637f9e5c12ce0efbc6f8b7de317da3853b6a52b03452a3ee078`.
 Package identity is `b7803a5bf93ddc102c7367b80e7dc4c620c21daec0dbad6ef1a988161e3a2914`.
 No scientific build, minification, rebundling or runtime external service.
+The canonical B11 package identity refers to its 13 original files only. The
+hosting wrapper and complete 14-file candidate have separate manifests/hashes.
+The owner follow-up authorizes staging only; access/publishing gates remain.
 
 Before uploading any workstation asset, establish owner-only Access on BOTH
 `PROJECT.pages.dev` and `*.PROJECT.pages.dev`, covering the entire path space.
@@ -27,7 +31,7 @@ If a harmless probe is needed, use only a separately identified nonscientific
 sentinel within this isolated project, retain no sentinel in the final package,
 and keep its deployment aliases under Access too. Never use science as the probe.
 
-Only then upload the exact extracted directory, record actual deployment IDs and
+Only then upload the verified 14-file B12 staging directory, record actual deployment IDs and
 UTC time, verify all downloaded decoded bytes/MIME/404/security headers, and run
 real HTTPS Chromium and WebKit qualification. Auth receipts must omit cookies,
 tokens, email, account identifiers and session content. Physical iPad remains

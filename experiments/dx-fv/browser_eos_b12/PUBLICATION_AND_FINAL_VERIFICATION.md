@@ -24,5 +24,12 @@ Final checks include `git diff --check`, B12-only committed path scope and clean
 production host, PR #3 or original-workstation branch is changed. The account-side
 external integration settings remain unobserved; no account mutation was possible.
 
-All unresolved deployment/security/routing gates remain blocked after publication.
+The owner-approved follow-up starts at `1ab61278159a51fb3f86bb817ea1f03b049443d8`.
+Separate 404-before/after ref and PR receipts protect this existing B12 branch's
+starting head; only B12 may advance. The final 404-publication observation is kept
+under .runtime and checked against local HEAD after the push. Original snapshots
+remain retained. Approved static 13+1 staging resolves only the local packaging
+concern; actual Pages routing remains unverified until deployment.
+
+All deployment/security gates remain blocked after publication.
 No actual HTTPS or physical iPad qualification is inferred from this report.
