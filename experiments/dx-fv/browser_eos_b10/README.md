@@ -53,3 +53,5 @@ python3 experiments/dx-fv/browser_eos_b10/preservation.py --check-only
 ```
 
 `evidence/delivery-sha256.json` hashes every nonignored B10 file except itself; Git seals that manifest. The packaging check also verifies all ten complete training exports and the preserved pre-implementation WebKit receipts directly. `preservation.py` checks the saved remote/PR snapshots; a fresh live remote/connector comparison is required for publication. `write-reports.py` regenerates reports and tracker from completed receipts, and `seal-delivery.py` refreshes the manifest after authorized B10 delivery changes. These commands do not advance either physical model.
+
+After publication, `preservation.py --check-only --live` additionally reads the current remote refs and requires the B10 remote head to equal local HEAD. It does not write receipts. See PUBLICATION_AND_FINAL_VERIFICATION.md for the sealed publication identity and final read-only procedure.
