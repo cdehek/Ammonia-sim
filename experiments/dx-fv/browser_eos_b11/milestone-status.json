@@ -1,0 +1,312 @@
+{
+  "milestone": "B11",
+  "classification": "B11 PORTABLE SERVED-PREVIEW PASS",
+  "packageIdentity": "b7803a5bf93ddc102c7367b80e7dc4c620c21daec0dbad6ef1a988161e3a2914",
+  "artifact": {
+    "root": "preview/",
+    "zip": "preview.zip",
+    "zipSHA256": "a642fe22078e7637f9e5c12ce0efbc6f8b7de317da3853b6a52b03452a3ee078",
+    "runtimeAssets": 12,
+    "manifest": "preview/asset-manifest.json",
+    "branch": "research/b11-portable-ipad-preview-20261019"
+  },
+  "pins": {
+    "A2": "be9eb35a4ddf5098e685182f8104685127c6a6ee",
+    "B9C": "b67afb3215075b2ec82bef376d39e03953dc0da2",
+    "B9D": "20ddac46423a7a742af19ac415ef8796cf3a429f",
+    "B10": "a49c5c4ade306fe02117139cf81c30a59727a7b1",
+    "original": "262b6092b2ed694073ad9ffd41265f44dd0b6ca0"
+  },
+  "architectureCommit": "9b7827c7204b72bba96ec6092ac9cb4f6d9a8e91",
+  "declaredPassedExecutionTarget": "Independent static HTTP root/nested path on desktop Chromium and desktop WPE WebKit loopback; original inherited WebKit findings retained",
+  "gates": {
+    "A_source_and_science": "PASS",
+    "B_portable_served_package": "PASS",
+    "C_workstation_preservation": "PASS",
+    "D_browser_compatibility": "SEPARATE RESULTS BELOW",
+    "E_performance_characterization": "PASS",
+    "F_physical_iPad": "NOT TESTED / AWAITING USER",
+    "G_deployment_authorization": "NO-GO"
+  },
+  "independent": {
+    "portableArtifact": "PASS",
+    "exactA2ScientificParity": "PASS",
+    "originalWorkstationPreservation": "PASS",
+    "chromium": "PASS",
+    "desktopWebKit": "PARTIAL",
+    "offline": "NOT QUALIFIED",
+    "localNetworkOrigin": "BLOCKED",
+    "localNetworkDetail": "Direct cloud private-address HTTP returned 503 before app startup. Reserved nonsecure HTTP origin with locally fulfilled exact package bytes proves crypto unavailability/unqualified A2 while original operates; this is origin-policy evidence only. Owner-network device reachability UNTESTED. Trusted HTTPS feasible but not hosted/tested.",
+    "physicalIPad": "AWAITING USER",
+    "physicalIPadStatus": "AWAITING USER DEVICE REVIEW",
+    "researchPreviewDeployment": "AWAITING APPROVAL",
+    "productionMerge": "NO-GO",
+    "fullLivePlantCoupling": "NO-GO"
+  },
+  "normalA2HorizonSeconds": 0.001,
+  "normalCheckpointsSeconds": [
+    0,
+    0.0001,
+    0.0005,
+    0.001
+  ],
+  "trainingExportsByteIdentical": 10,
+  "protectedHistoryFiles": 3221,
+  "remoteHosted": false,
+  "originalSuites": {
+    "chromium": {
+      "baselinePass": 19,
+      "candidatePass": 19,
+      "total": 19,
+      "rows": [
+        {
+          "suite": "focus-mode-ui",
+          "baseline": 0,
+          "candidate": 0,
+          "failureContext": {},
+          "sameFailedAssertion": null,
+          "historicalVariableTrainingPauseRemainsOpen": false
+        },
+        {
+          "suite": "default-units",
+          "baseline": 0,
+          "candidate": 0,
+          "failureContext": {},
+          "sameFailedAssertion": null,
+          "historicalVariableTrainingPauseRemainsOpen": false
+        },
+        {
+          "suite": "tab-errors",
+          "baseline": 0,
+          "candidate": 0,
+          "failureContext": {},
+          "sameFailedAssertion": null,
+          "historicalVariableTrainingPauseRemainsOpen": false
+        },
+        {
+          "suite": "browser",
+          "baseline": 0,
+          "candidate": 0,
+          "failureContext": {},
+          "sameFailedAssertion": null,
+          "historicalVariableTrainingPauseRemainsOpen": false
+        },
+        {
+          "suite": "live-ui",
+          "baseline": 0,
+          "candidate": 0,
+          "failureContext": {},
+          "sameFailedAssertion": null,
+          "historicalVariableTrainingPauseRemainsOpen": false
+        },
+        {
+          "suite": "profiles-ui",
+          "baseline": 0,
+          "candidate": 0,
+          "failureContext": {},
+          "sameFailedAssertion": null,
+          "historicalVariableTrainingPauseRemainsOpen": false
+        },
+        {
+          "suite": "fault-ui",
+          "baseline": 0,
+          "candidate": 0,
+          "failureContext": {},
+          "sameFailedAssertion": null,
+          "historicalVariableTrainingPauseRemainsOpen": false
+        },
+        {
+          "suite": "initialization-ui",
+          "baseline": 0,
+          "candidate": 0,
+          "failureContext": {},
+          "sameFailedAssertion": null,
+          "historicalVariableTrainingPauseRemainsOpen": false
+        },
+        {
+          "suite": "storage-ui",
+          "baseline": 0,
+          "candidate": 0,
+          "failureContext": {},
+          "sameFailedAssertion": null,
+          "historicalVariableTrainingPauseRemainsOpen": false
+        },
+        {
+          "suite": "valves-ui",
+          "baseline": 0,
+          "candidate": 0,
+          "failureContext": {},
+          "sameFailedAssertion": null,
+          "historicalVariableTrainingPauseRemainsOpen": false
+        },
+        {
+          "suite": "release-ui",
+          "baseline": 0,
+          "candidate": 0,
+          "failureContext": {},
+          "sameFailedAssertion": null,
+          "historicalVariableTrainingPauseRemainsOpen": false
+        },
+        {
+          "suite": "schematic-ui",
+          "baseline": 0,
+          "candidate": 0,
+          "failureContext": {},
+          "sameFailedAssertion": null,
+          "historicalVariableTrainingPauseRemainsOpen": false
+        },
+        {
+          "suite": "history-ui",
+          "baseline": 0,
+          "candidate": 0,
+          "failureContext": {},
+          "sameFailedAssertion": null,
+          "historicalVariableTrainingPauseRemainsOpen": false
+        },
+        {
+          "suite": "training-ui",
+          "baseline": 0,
+          "candidate": 0,
+          "failureContext": {},
+          "sameFailedAssertion": null,
+          "historicalVariableTrainingPauseRemainsOpen": false
+        },
+        {
+          "suite": "dashboard-ui",
+          "baseline": 0,
+          "candidate": 0,
+          "failureContext": {},
+          "sameFailedAssertion": null,
+          "historicalVariableTrainingPauseRemainsOpen": false
+        },
+        {
+          "suite": "visual-pass2-ui",
+          "baseline": 0,
+          "candidate": 0,
+          "failureContext": {},
+          "sameFailedAssertion": null,
+          "historicalVariableTrainingPauseRemainsOpen": false
+        },
+        {
+          "suite": "industrial-styling-ui",
+          "baseline": 0,
+          "candidate": 0,
+          "failureContext": {},
+          "sameFailedAssertion": null,
+          "historicalVariableTrainingPauseRemainsOpen": false
+        },
+        {
+          "suite": "hmi-uplift-ui",
+          "baseline": 0,
+          "candidate": 0,
+          "failureContext": {},
+          "sameFailedAssertion": null,
+          "historicalVariableTrainingPauseRemainsOpen": false
+        },
+        {
+          "suite": "operator-assist-ui",
+          "baseline": 0,
+          "candidate": 0,
+          "failureContext": {},
+          "sameFailedAssertion": null,
+          "historicalVariableTrainingPauseRemainsOpen": false
+        }
+      ]
+    },
+    "webkit": {
+      "baselinePass": 7,
+      "candidatePass": 8,
+      "total": 9,
+      "rows": [
+        {
+          "suite": "focus-mode-ui",
+          "baseline": 0,
+          "candidate": 0,
+          "failureContext": {},
+          "sameFailedAssertion": null,
+          "historicalVariableTrainingPauseRemainsOpen": false
+        },
+        {
+          "suite": "release-ui",
+          "baseline": 0,
+          "candidate": 0,
+          "failureContext": {},
+          "sameFailedAssertion": null,
+          "historicalVariableTrainingPauseRemainsOpen": false
+        },
+        {
+          "suite": "schematic-ui",
+          "baseline": 0,
+          "candidate": 0,
+          "failureContext": {},
+          "sameFailedAssertion": null,
+          "historicalVariableTrainingPauseRemainsOpen": false
+        },
+        {
+          "suite": "history-ui",
+          "baseline": 0,
+          "candidate": 0,
+          "failureContext": {},
+          "sameFailedAssertion": null,
+          "historicalVariableTrainingPauseRemainsOpen": false
+        },
+        {
+          "suite": "training-ui",
+          "baseline": 1,
+          "candidate": 0,
+          "failureContext": {
+            "baseline": "AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:\n\n  assert(await page.locator('#storage-pause').isDisabled())\n\n    at /workspace/Ammonia-sim/experiments/dx-fv/browser_eos_b11/.runtime/pinned/tests/training-ui.cjs:34:584 {\n  generatedMessage: true,\n  code: 'ERR_ASSERTION',\n  actual: false,\n  expected: true,\n  operator: '==',\n  diff: 'simple'\n}\n"
+          },
+          "sameFailedAssertion": null,
+          "historicalVariableTrainingPauseRemainsOpen": true
+        },
+        {
+          "suite": "visual-pass2-ui",
+          "baseline": 1,
+          "candidate": 1,
+          "failureContext": {
+            "baseline": "AssertionError [ERR_ASSERTION]: Chart geometry expands at desktop width\n    at /workspace/Ammonia-sim/experiments/dx-fv/browser_eos_b11/.runtime/pinned/tests/visual-pass2-ui.cjs:22:230\n    at runNextTicks (node:internal/process/task_queues:65:5)\n    at process.processImmediate (node:internal/timers:502:9) {\n  generatedMessage: false,\n  code: 'ERR_ASSERTION',\n  actual: false,\n  expected: true,\n  operator: '==',\n  diff: 'simple'\n}\n",
+            "candidate": "AssertionError [ERR_ASSERTION]: Chart geometry expands at desktop width\n    at /workspace/Ammonia-sim/experiments/dx-fv/browser_eos_b11/.runtime/candidate/tests/visual-pass2-ui.cjs:22:230\n    at runNextTicks (node:internal/process/task_queues:65:5)\n    at process.processImmediate (node:internal/timers:502:9) {\n  generatedMessage: false,\n  code: 'ERR_ASSERTION',\n  actual: false,\n  expected: true,\n  operator: '==',\n  diff: 'simple'\n}\n"
+          },
+          "sameFailedAssertion": true,
+          "historicalVariableTrainingPauseRemainsOpen": false
+        },
+        {
+          "suite": "industrial-styling-ui",
+          "baseline": 0,
+          "candidate": 0,
+          "failureContext": {},
+          "sameFailedAssertion": null,
+          "historicalVariableTrainingPauseRemainsOpen": false
+        },
+        {
+          "suite": "hmi-uplift-ui",
+          "baseline": 0,
+          "candidate": 0,
+          "failureContext": {},
+          "sameFailedAssertion": null,
+          "historicalVariableTrainingPauseRemainsOpen": false
+        },
+        {
+          "suite": "operator-assist-ui",
+          "baseline": 0,
+          "candidate": 0,
+          "failureContext": {},
+          "sameFailedAssertion": null,
+          "historicalVariableTrainingPauseRemainsOpen": false
+        }
+      ]
+    }
+  },
+  "evidence": [
+    "source-integrity.json",
+    "reproducibility.json",
+    "integration-{browser}.json.gz",
+    "review-{browser}.json.gz",
+    "isolation-{browser}.json.gz",
+    "portability-{browser}.json",
+    "performance-{browser}.json",
+    "regression-comparison.json",
+    "preservation.json"
+  ]
+}

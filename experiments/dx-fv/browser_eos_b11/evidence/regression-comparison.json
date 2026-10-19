@@ -1,0 +1,248 @@
+{
+  "newRequiredSuiteRegressions": [],
+  "browsers": {
+    "chromium": {
+      "baselinePass": 19,
+      "candidatePass": 19,
+      "total": 19,
+      "rows": [
+        {
+          "suite": "focus-mode-ui",
+          "baseline": 0,
+          "candidate": 0,
+          "failureContext": {},
+          "sameFailedAssertion": null,
+          "historicalVariableTrainingPauseRemainsOpen": false
+        },
+        {
+          "suite": "default-units",
+          "baseline": 0,
+          "candidate": 0,
+          "failureContext": {},
+          "sameFailedAssertion": null,
+          "historicalVariableTrainingPauseRemainsOpen": false
+        },
+        {
+          "suite": "tab-errors",
+          "baseline": 0,
+          "candidate": 0,
+          "failureContext": {},
+          "sameFailedAssertion": null,
+          "historicalVariableTrainingPauseRemainsOpen": false
+        },
+        {
+          "suite": "browser",
+          "baseline": 0,
+          "candidate": 0,
+          "failureContext": {},
+          "sameFailedAssertion": null,
+          "historicalVariableTrainingPauseRemainsOpen": false
+        },
+        {
+          "suite": "live-ui",
+          "baseline": 0,
+          "candidate": 0,
+          "failureContext": {},
+          "sameFailedAssertion": null,
+          "historicalVariableTrainingPauseRemainsOpen": false
+        },
+        {
+          "suite": "profiles-ui",
+          "baseline": 0,
+          "candidate": 0,
+          "failureContext": {},
+          "sameFailedAssertion": null,
+          "historicalVariableTrainingPauseRemainsOpen": false
+        },
+        {
+          "suite": "fault-ui",
+          "baseline": 0,
+          "candidate": 0,
+          "failureContext": {},
+          "sameFailedAssertion": null,
+          "historicalVariableTrainingPauseRemainsOpen": false
+        },
+        {
+          "suite": "initialization-ui",
+          "baseline": 0,
+          "candidate": 0,
+          "failureContext": {},
+          "sameFailedAssertion": null,
+          "historicalVariableTrainingPauseRemainsOpen": false
+        },
+        {
+          "suite": "storage-ui",
+          "baseline": 0,
+          "candidate": 0,
+          "failureContext": {},
+          "sameFailedAssertion": null,
+          "historicalVariableTrainingPauseRemainsOpen": false
+        },
+        {
+          "suite": "valves-ui",
+          "baseline": 0,
+          "candidate": 0,
+          "failureContext": {},
+          "sameFailedAssertion": null,
+          "historicalVariableTrainingPauseRemainsOpen": false
+        },
+        {
+          "suite": "release-ui",
+          "baseline": 0,
+          "candidate": 0,
+          "failureContext": {},
+          "sameFailedAssertion": null,
+          "historicalVariableTrainingPauseRemainsOpen": false
+        },
+        {
+          "suite": "schematic-ui",
+          "baseline": 0,
+          "candidate": 0,
+          "failureContext": {},
+          "sameFailedAssertion": null,
+          "historicalVariableTrainingPauseRemainsOpen": false
+        },
+        {
+          "suite": "history-ui",
+          "baseline": 0,
+          "candidate": 0,
+          "failureContext": {},
+          "sameFailedAssertion": null,
+          "historicalVariableTrainingPauseRemainsOpen": false
+        },
+        {
+          "suite": "training-ui",
+          "baseline": 0,
+          "candidate": 0,
+          "failureContext": {},
+          "sameFailedAssertion": null,
+          "historicalVariableTrainingPauseRemainsOpen": false
+        },
+        {
+          "suite": "dashboard-ui",
+          "baseline": 0,
+          "candidate": 0,
+          "failureContext": {},
+          "sameFailedAssertion": null,
+          "historicalVariableTrainingPauseRemainsOpen": false
+        },
+        {
+          "suite": "visual-pass2-ui",
+          "baseline": 0,
+          "candidate": 0,
+          "failureContext": {},
+          "sameFailedAssertion": null,
+          "historicalVariableTrainingPauseRemainsOpen": false
+        },
+        {
+          "suite": "industrial-styling-ui",
+          "baseline": 0,
+          "candidate": 0,
+          "failureContext": {},
+          "sameFailedAssertion": null,
+          "historicalVariableTrainingPauseRemainsOpen": false
+        },
+        {
+          "suite": "hmi-uplift-ui",
+          "baseline": 0,
+          "candidate": 0,
+          "failureContext": {},
+          "sameFailedAssertion": null,
+          "historicalVariableTrainingPauseRemainsOpen": false
+        },
+        {
+          "suite": "operator-assist-ui",
+          "baseline": 0,
+          "candidate": 0,
+          "failureContext": {},
+          "sameFailedAssertion": null,
+          "historicalVariableTrainingPauseRemainsOpen": false
+        }
+      ]
+    },
+    "webkit": {
+      "baselinePass": 7,
+      "candidatePass": 8,
+      "total": 9,
+      "rows": [
+        {
+          "suite": "focus-mode-ui",
+          "baseline": 0,
+          "candidate": 0,
+          "failureContext": {},
+          "sameFailedAssertion": null,
+          "historicalVariableTrainingPauseRemainsOpen": false
+        },
+        {
+          "suite": "release-ui",
+          "baseline": 0,
+          "candidate": 0,
+          "failureContext": {},
+          "sameFailedAssertion": null,
+          "historicalVariableTrainingPauseRemainsOpen": false
+        },
+        {
+          "suite": "schematic-ui",
+          "baseline": 0,
+          "candidate": 0,
+          "failureContext": {},
+          "sameFailedAssertion": null,
+          "historicalVariableTrainingPauseRemainsOpen": false
+        },
+        {
+          "suite": "history-ui",
+          "baseline": 0,
+          "candidate": 0,
+          "failureContext": {},
+          "sameFailedAssertion": null,
+          "historicalVariableTrainingPauseRemainsOpen": false
+        },
+        {
+          "suite": "training-ui",
+          "baseline": 1,
+          "candidate": 0,
+          "failureContext": {
+            "baseline": "AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:\n\n  assert(await page.locator('#storage-pause').isDisabled())\n\n    at /workspace/Ammonia-sim/experiments/dx-fv/browser_eos_b11/.runtime/pinned/tests/training-ui.cjs:34:584 {\n  generatedMessage: true,\n  code: 'ERR_ASSERTION',\n  actual: false,\n  expected: true,\n  operator: '==',\n  diff: 'simple'\n}\n"
+          },
+          "sameFailedAssertion": null,
+          "historicalVariableTrainingPauseRemainsOpen": true
+        },
+        {
+          "suite": "visual-pass2-ui",
+          "baseline": 1,
+          "candidate": 1,
+          "failureContext": {
+            "baseline": "AssertionError [ERR_ASSERTION]: Chart geometry expands at desktop width\n    at /workspace/Ammonia-sim/experiments/dx-fv/browser_eos_b11/.runtime/pinned/tests/visual-pass2-ui.cjs:22:230\n    at runNextTicks (node:internal/process/task_queues:65:5)\n    at process.processImmediate (node:internal/timers:502:9) {\n  generatedMessage: false,\n  code: 'ERR_ASSERTION',\n  actual: false,\n  expected: true,\n  operator: '==',\n  diff: 'simple'\n}\n",
+            "candidate": "AssertionError [ERR_ASSERTION]: Chart geometry expands at desktop width\n    at /workspace/Ammonia-sim/experiments/dx-fv/browser_eos_b11/.runtime/candidate/tests/visual-pass2-ui.cjs:22:230\n    at runNextTicks (node:internal/process/task_queues:65:5)\n    at process.processImmediate (node:internal/timers:502:9) {\n  generatedMessage: false,\n  code: 'ERR_ASSERTION',\n  actual: false,\n  expected: true,\n  operator: '==',\n  diff: 'simple'\n}\n"
+          },
+          "sameFailedAssertion": true,
+          "historicalVariableTrainingPauseRemainsOpen": false
+        },
+        {
+          "suite": "industrial-styling-ui",
+          "baseline": 0,
+          "candidate": 0,
+          "failureContext": {},
+          "sameFailedAssertion": null,
+          "historicalVariableTrainingPauseRemainsOpen": false
+        },
+        {
+          "suite": "hmi-uplift-ui",
+          "baseline": 0,
+          "candidate": 0,
+          "failureContext": {},
+          "sameFailedAssertion": null,
+          "historicalVariableTrainingPauseRemainsOpen": false
+        },
+        {
+          "suite": "operator-assist-ui",
+          "baseline": 0,
+          "candidate": 0,
+          "failureContext": {},
+          "sameFailedAssertion": null,
+          "historicalVariableTrainingPauseRemainsOpen": false
+        }
+      ]
+    }
+  }
+}

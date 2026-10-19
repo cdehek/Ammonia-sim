@@ -1,0 +1,3966 @@
+{
+  "browser": "chromium",
+  "version": "151.0.7922.34",
+  "passed": true,
+  "samples": [
+    {
+      "mode": "B10",
+      "fixture": "cold",
+      "round": 0,
+      "navigationToOriginalReadyMS": 257.86905500012836,
+      "originalInitializeMS": 173.769873999845,
+      "originalModelCreateMS": 2.300000000046566,
+      "lazyPanelMS": 174.46969399998125,
+      "session": {
+        "fixture": "cold",
+        "workerCreationMS": 0.30000000004656613,
+        "firstAcceptedAndRenderedMS": 73.19999999995343
+      },
+      "initialization": {
+        "type": "initialize",
+        "timing": {
+          "assetVerificationMS": 18.100000000093132,
+          "importAndOwnedTableMS": 31.699999999953434,
+          "createAndRecordMS": 6.399999999906868,
+          "serviceMS": 56.5
+        },
+        "delivery": {
+          "roundtripMS": 71.80000000004657,
+          "transferAndDispatchMS": 0.2001953125
+        }
+      },
+      "memoryReady": {
+        "processes": [
+          {
+            "name": "MainThread",
+            "rssKiB": 170084
+          },
+          {
+            "name": "chrome-headless",
+            "rssKiB": 100456
+          },
+          {
+            "name": "chrome-headless",
+            "rssKiB": 36924
+          },
+          {
+            "name": "chrome-headless",
+            "rssKiB": 37176
+          },
+          {
+            "name": "chrome-headless",
+            "rssKiB": 88228
+          },
+          {
+            "name": "chrome-headless",
+            "rssKiB": 70676
+          },
+          {
+            "name": "chrome-headless",
+            "rssKiB": 225224
+          }
+        ],
+        "totalRSSKiB": 728768,
+        "limit": "Browser/driver descendants; shared pages may be counted more than once; no worker heap isolation"
+      },
+      "switchDuringComputeMS": 45.70409499979178,
+      "threeAdvanceWithToolsMS": 838.2345809998242,
+      "workerMetrics": [
+        {
+          "type": "initialize",
+          "timing": {
+            "assetVerificationMS": 18.100000000093132,
+            "importAndOwnedTableMS": 31.699999999953434,
+            "createAndRecordMS": 6.399999999906868,
+            "serviceMS": 56.5
+          },
+          "delivery": {
+            "roundtripMS": 71.80000000004657,
+            "transferAndDispatchMS": 0.2001953125
+          }
+        },
+        {
+          "type": "advance",
+          "timing": {
+            "advanceMS": 53,
+            "projectionMS": 0.10000000009313226,
+            "serviceMS": 53.10000000009313
+          },
+          "delivery": {
+            "roundtripMS": 56.199999999953434,
+            "transferAndDispatchMS": 1.5
+          }
+        },
+        {
+          "type": "advance",
+          "timing": {
+            "advanceMS": 56,
+            "projectionMS": 0.09999999986030161,
+            "serviceMS": 56.0999999998603
+          },
+          "delivery": {
+            "roundtripMS": 79.30000000004657,
+            "transferAndDispatchMS": 22.10009765625
+          }
+        },
+        {
+          "type": "advance",
+          "timing": {
+            "advanceMS": 19.699999999953434,
+            "projectionMS": 0.10000000009313226,
+            "serviceMS": 19.9000000001397
+          },
+          "delivery": {
+            "roundtripMS": 21.0999999998603,
+            "transferAndDispatchMS": 0.100341796875
+          }
+        }
+      ],
+      "renderMS": [
+        0.19999999995343387,
+        0,
+        0,
+        0.8999999999068677,
+        0.6000000000931323,
+        1.1999999999534339,
+        0.6999999999534339,
+        1.2000000001862645,
+        0.8999999999068677,
+        0.8999999999068677,
+        0.5,
+        0.6999999999534339,
+        0.7000000001862645,
+        0.5
+      ],
+      "observations": {
+        "data": {
+          "heartbeat": [
+            9.5,
+            10,
+            10,
+            9.899999999906868,
+            10.100000000093132,
+            20.5,
+            9.399999999906868,
+            10.100000000093132,
+            10,
+            10,
+            15.699999999953434,
+            4.300000000046566,
+            9.899999999906868,
+            10,
+            10.100000000093132,
+            9.899999999906868,
+            10,
+            11.300000000046566,
+            8.699999999953434,
+            10,
+            10.100000000093132,
+            9.899999999906868,
+            265.39999999990687,
+            71.30000000004657,
+            6.199999999953434,
+            7.2000000001862645,
+            50.199999999953434,
+            13.300000000046566,
+            7.5,
+            9,
+            9.899999999906868,
+            10.699999999953434,
+            9.400000000139698,
+            10,
+            20.299999999813735,
+            9.700000000186265,
+            75,
+            5.599999999860302,
+            9.400000000139698,
+            9.899999999906868,
+            10.399999999906868,
+            12,
+            7.600000000093132,
+            19.199999999953434,
+            1,
+            9.800000000046566,
+            10.100000000093132,
+            9.899999999906868,
+            10,
+            10,
+            20.899999999906868
+          ],
+          "frames": [
+            16.800000000000068,
+            16.600000000000023,
+            33.299999999999955,
+            16.799999999999955,
+            16.600000000000023,
+            16.700000000000045,
+            16.600000000000023,
+            16.699999999999932,
+            16.600000000000023,
+            16.700000000000045,
+            16.59999999999991,
+            250,
+            66.70000000000005,
+            33.40000000000009,
+            33.19999999999982,
+            50,
+            16.800000000000182,
+            16.699999999999818,
+            33.200000000000045,
+            50.100000000000136,
+            49.899999999999864,
+            16.799999999999955,
+            16.600000000000136,
+            33.299999999999955,
+            16.700000000000045,
+            16.700000000000045
+          ],
+          "clicks": [
+            {
+              "id": "console-tools",
+              "trusted": true,
+              "ackMS": 0.10000000009313226,
+              "pending": 0
+            },
+            {
+              "id": "storage-schematic",
+              "trusted": true,
+              "ackMS": 2.699999999953434,
+              "pending": 0
+            },
+            {
+              "id": "b10-a2-link",
+              "trusted": true,
+              "ackMS": 1,
+              "pending": 0
+            },
+            {
+              "id": "storage-pause",
+              "trusted": true,
+              "ackMS": 1.6000000000931323,
+              "pending": 0
+            }
+          ],
+          "tools": [
+            {
+              "tool": "plant-diagnostics",
+              "atMS": 921.5
+            },
+            {
+              "tool": "b10-a2-shadow",
+              "atMS": 1510.7999999998137
+            }
+          ],
+          "originalModelCreateMS": []
+        },
+        "heap": {
+          "used": 16100000,
+          "total": 31200000
+        },
+        "nav": [
+          {
+            "domContentLoaded": 202.89999999990687,
+            "load": 228.79999999981374,
+            "responseEnd": 15.399999999906868
+          }
+        ]
+      },
+      "memoryAfter": {
+        "processes": [
+          {
+            "name": "MainThread",
+            "rssKiB": 171688
+          },
+          {
+            "name": "chrome-headless",
+            "rssKiB": 100648
+          },
+          {
+            "name": "chrome-headless",
+            "rssKiB": 36924
+          },
+          {
+            "name": "chrome-headless",
+            "rssKiB": 37176
+          },
+          {
+            "name": "chrome-headless",
+            "rssKiB": 93032
+          },
+          {
+            "name": "chrome-headless",
+            "rssKiB": 70680
+          },
+          {
+            "name": "chrome-headless",
+            "rssKiB": 273312
+          }
+        ],
+        "totalRSSKiB": 783460,
+        "limit": "Browser/driver descendants; shared pages may be counted more than once; no worker heap isolation"
+      },
+      "clock": 0.001,
+      "scientificSnapshot": {
+        "clockSeconds": 0.001,
+        "sections": [
+          {
+            "pressureBarAbsolute": 3.5020754953733304,
+            "temperatureC": -5.323315044994557,
+            "massKg": 0.01191595780241458,
+            "internalEnergyKJ": 5.748618128444814,
+            "volumeM3": 0.0006000000000000001,
+            "enthalpyKJkg": 500.0640953058569,
+            "phase": "Liquid + vapor",
+            "quality": 0.13973305145841577,
+            "wet": true,
+            "superheatK": 0
+          },
+          {
+            "pressureBarAbsolute": 3.501410901049252,
+            "temperatureC": -5.3281624627937765,
+            "massKg": 0.011912805414491284,
+            "internalEnergyKJ": 5.747042782472179,
+            "volumeM3": 0.0006000000000000001,
+            "enthalpyKJkg": 500.0608361560754,
+            "phase": "Liquid + vapor",
+            "quality": 0.13974607071511247,
+            "wet": true,
+            "superheatK": 0
+          },
+          {
+            "pressureBarAbsolute": 3.501028298199602,
+            "temperatureC": -5.330953508622231,
+            "massKg": 0.01191099282280236,
+            "internalEnergyKJ": 5.746136599588074,
+            "volumeM3": 0.0006000000000000001,
+            "enthalpyKJkg": 500.05892758809546,
+            "phase": "Liquid + vapor",
+            "quality": 0.13975354178382127,
+            "wet": true,
+            "superheatK": 0
+          },
+          {
+            "pressureBarAbsolute": 3.5007609913515427,
+            "temperatureC": -5.332903663760113,
+            "massKg": 0.011909726585033076,
+            "internalEnergyKJ": 5.745503549352668,
+            "volumeM3": 0.0006000000000000001,
+            "enthalpyKJkg": 500.0575929524767,
+            "phase": "Liquid + vapor",
+            "quality": 0.13975876104418272,
+            "wet": true,
+            "superheatK": 0
+          },
+          {
+            "pressureBarAbsolute": 3.500506149728084,
+            "temperatureC": -5.33476301666975,
+            "massKg": 0.011908519441558761,
+            "internalEnergyKJ": 5.744900045863533,
+            "volumeM3": 0.0006000000000000001,
+            "enthalpyKJkg": 500.0563205250769,
+            "phase": "Liquid + vapor",
+            "quality": 0.13976373728809777,
+            "wet": true,
+            "superheatK": 0
+          }
+        ],
+        "nodes": [
+          {
+            "id": "tube-0",
+            "temperatureK": 273.14937920495527,
+            "energyKJ": -0.000604671755785637
+          },
+          {
+            "id": "fin-0",
+            "temperatureK": 273.15103387695723,
+            "energyKJ": 0.0008779701200974487
+          },
+          {
+            "id": "tube-1",
+            "temperatureK": 273.1493788001693,
+            "energyKJ": -0.0006050660286668443
+          },
+          {
+            "id": "fin-1",
+            "temperatureK": 273.15103387688174,
+            "energyKJ": 0.0008779700560122112
+          },
+          {
+            "id": "tube-2",
+            "temperatureK": 273.1493786150404,
+            "energyKJ": -0.0006052463493835533
+          },
+          {
+            "id": "fin-2",
+            "temperatureK": 273.15103387685184,
+            "energyKJ": 0.0008779700306107316
+          },
+          {
+            "id": "tube-3",
+            "temperatureK": 273.1493785006446,
+            "energyKJ": -0.0006053577741241529
+          },
+          {
+            "id": "fin-3",
+            "temperatureK": 273.15103387683473,
+            "energyKJ": 0.0008779700160775935
+          },
+          {
+            "id": "tube-4",
+            "temperatureK": 273.14937839307794,
+            "energyKJ": -0.0006054625470423564
+          },
+          {
+            "id": "fin-4",
+            "temperatureK": 273.15103387681864,
+            "energyKJ": 0.0008779700024243304
+          },
+          {
+            "id": "air",
+            "temperatureK": 278.1491726318937,
+            "energyKJ": 21.53643569819803
+          }
+        ],
+        "flows": {
+          "inlet": {
+            "massKgS": 0.015455088312802533,
+            "energyKW": 7.727544156401266
+          },
+          "outlet": {
+            "massKgS": 0.008111071453319055,
+            "energyKW": 4.055992546462715
+          },
+          "scope": "instantaneous signed accepted-endpoint faces; positive inlet-to-outlet"
+        },
+        "totals": {
+          "massKg": 0.059558002066300055,
+          "internalEnergyKJ": 28.732201105721266
+        },
+        "conservation": {
+          "massResidualKg": 2.2352657376954743e-15,
+          "refrigerantEnergyResidualKJ": 1.1303948228846838e-12,
+          "thermalEnergyResidualKJ": -4.99036575951628e-15,
+          "combinedEnergyResidualKJ": 1.1254044571251676e-12,
+          "boundaryMassKg": 1.0043121306735793e-05,
+          "boundaryEnthalpyKJ": 0.005021377192848497,
+          "airLoadKJ": 0.001
+        },
+        "numerics": {
+          "acceptedSteps": 16,
+          "rejectedSteps": 1,
+          "nextStepSeconds": 0.0005199999999999998,
+          "lastAcceptedInterval": {
+            "startSeconds": 0.0007400000000000001,
+            "endSeconds": 0.001,
+            "trialSeconds": 0.0002599999999999999,
+            "error": 0.04688050744825999
+          },
+          "minAcceptedStepSeconds": 9.999999999999999e-06,
+          "maxAcceptedStepSeconds": 0.00012999999999999996,
+          "lastTimeError": 0.04688050744825999,
+          "lastResidual": 2.3643324112563515e-13
+        }
+      },
+      "disposeMS": 8.845632999964437,
+      "restart": {
+        "fixture": "cold",
+        "workerCreationMS": 0,
+        "firstAcceptedAndRenderedMS": 59.60000000009313
+      },
+      "resources": {
+        "ended": false,
+        "heartbeatActive": false,
+        "frameActive": false,
+        "pending": 0
+      }
+    },
+    {
+      "mode": "B11",
+      "fixture": "cold",
+      "round": 0,
+      "navigationToOriginalReadyMS": 228.4029739998914,
+      "originalInitializeMS": 130.39197200009767,
+      "originalModelCreateMS": 1.5999999998603016,
+      "lazyPanelMS": 218.9944330000344,
+      "session": {
+        "fixture": "cold",
+        "workerCreationMS": 0.30000000004656613,
+        "firstAcceptedAndRenderedMS": 67.80000000004657
+      },
+      "initialization": {
+        "type": "initialize",
+        "timing": {
+          "assetVerificationMS": 16,
+          "importAndOwnedTableMS": 29.399999999906868,
+          "createAndRecordMS": 6.7000000001862645,
+          "serviceMS": 52.5
+        },
+        "delivery": {
+          "roundtripMS": 66.5,
+          "transferAndDispatchMS": 0.2998046875
+        }
+      },
+      "memoryReady": {
+        "processes": [
+          {
+            "name": "MainThread",
+            "rssKiB": 173504
+          },
+          {
+            "name": "chrome-headless",
+            "rssKiB": 102360
+          },
+          {
+            "name": "chrome-headless",
+            "rssKiB": 36924
+          },
+          {
+            "name": "chrome-headless",
+            "rssKiB": 37340
+          },
+          {
+            "name": "chrome-headless",
+            "rssKiB": 89036
+          },
+          {
+            "name": "chrome-headless",
+            "rssKiB": 72372
+          },
+          {
+            "name": "chrome-headless",
+            "rssKiB": 225612
+          }
+        ],
+        "totalRSSKiB": 737148,
+        "limit": "Browser/driver descendants; shared pages may be counted more than once; no worker heap isolation"
+      },
+      "switchDuringComputeMS": 55.886088000079326,
+      "threeAdvanceWithToolsMS": 817.826961000037,
+      "workerMetrics": [
+        {
+          "type": "initialize",
+          "timing": {
+            "assetVerificationMS": 16,
+            "importAndOwnedTableMS": 29.399999999906868,
+            "createAndRecordMS": 6.7000000001862645,
+            "serviceMS": 52.5
+          },
+          "delivery": {
+            "roundtripMS": 66.5,
+            "transferAndDispatchMS": 0.2998046875
+          }
+        },
+        {
+          "type": "advance",
+          "timing": {
+            "advanceMS": 63.299999999813735,
+            "projectionMS": 0.10000000009313226,
+            "serviceMS": 63.5
+          },
+          "delivery": {
+            "roundtripMS": 65,
+            "transferAndDispatchMS": 0.199951171875
+          }
+        },
+        {
+          "type": "advance",
+          "timing": {
+            "advanceMS": 48.0999999998603,
+            "projectionMS": 0,
+            "serviceMS": 48.0999999998603
+          },
+          "delivery": {
+            "roundtripMS": 75,
+            "transferAndDispatchMS": 25.699951171875
+          }
+        },
+        {
+          "type": "advance",
+          "timing": {
+            "advanceMS": 12.399999999906868,
+            "projectionMS": 0,
+            "serviceMS": 12.399999999906868
+          },
+          "delivery": {
+            "roundtripMS": 13.399999999906868,
+            "transferAndDispatchMS": 0.199951171875
+          }
+        }
+      ],
+      "renderMS": [
+        0.20000000018626451,
+        0,
+        0,
+        0.8000000000465661,
+        0.5,
+        1,
+        1.9000000001396984,
+        0.7999999998137355,
+        0.6999999999534339,
+        0.6999999999534339,
+        0.4000000001396984,
+        0.4000000001396984,
+        0.6000000000931323,
+        0.39999999990686774
+      ],
+      "observations": {
+        "data": {
+          "heartbeat": [
+            4,
+            8.5,
+            9.800000000046566,
+            10.600000000093132,
+            13.899999999906868,
+            5.5,
+            9.899999999906868,
+            18.5,
+            1.5,
+            10.100000000093132,
+            9.899999999906868,
+            10.100000000093132,
+            10,
+            21.600000000093132,
+            8.399999999906868,
+            10,
+            10,
+            10,
+            9.899999999906868,
+            10.100000000093132,
+            10.300000000046566,
+            9.599999999860302,
+            10,
+            242.5,
+            7.800000000046566,
+            90.4000000001397,
+            12.799999999813735,
+            47.9000000001397,
+            8.699999999953434,
+            10,
+            10,
+            10,
+            10,
+            10,
+            23.5,
+            6.5,
+            10,
+            65.30000000004657,
+            4.699999999953434,
+            10,
+            10.600000000093132,
+            9.299999999813735,
+            12.300000000046566,
+            7.699999999953434,
+            20.700000000186265,
+            9.299999999813735,
+            10.100000000093132,
+            10,
+            9.899999999906868,
+            22.800000000046566
+          ],
+          "frames": [
+            16.700000000000045,
+            16.600000000000023,
+            33.39999999999998,
+            33.299999999999955,
+            16.700000000000045,
+            16.600000000000023,
+            16.699999999999932,
+            16.700000000000045,
+            16.600000000000023,
+            16.699999999999932,
+            16.700000000000045,
+            216.60000000000002,
+            66.70000000000005,
+            33.399999999999864,
+            49.90000000000009,
+            16.700000000000045,
+            50,
+            16.59999999999991,
+            16.700000000000045,
+            33.299999999999955,
+            50,
+            33.40000000000009,
+            16.59999999999991,
+            16.700000000000045,
+            16.59999999999991,
+            33.40000000000009,
+            16.700000000000045
+          ],
+          "clicks": [
+            {
+              "id": "console-tools",
+              "trusted": true,
+              "ackMS": 0.8999999999068677,
+              "pending": 0
+            },
+            {
+              "id": "storage-schematic",
+              "trusted": true,
+              "ackMS": 1,
+              "pending": 0
+            },
+            {
+              "id": "b10-a2-link",
+              "trusted": true,
+              "ackMS": 0.8000000000465661,
+              "pending": 0
+            },
+            {
+              "id": "storage-pause",
+              "trusted": true,
+              "ackMS": 1.0999999998603016,
+              "pending": 0
+            }
+          ],
+          "tools": [
+            {
+              "tool": "plant-diagnostics",
+              "atMS": 904.3999999999069
+            },
+            {
+              "tool": "b10-a2-shadow",
+              "atMS": 1472.5
+            }
+          ],
+          "originalModelCreateMS": []
+        },
+        "heap": {
+          "used": 10600000,
+          "total": 29400000
+        },
+        "nav": [
+          {
+            "domContentLoaded": 172.19999999995343,
+            "load": 203.10000000009313,
+            "responseEnd": 8.300000000046566
+          }
+        ]
+      },
+      "memoryAfter": {
+        "processes": [
+          {
+            "name": "MainThread",
+            "rssKiB": 171096
+          },
+          {
+            "name": "chrome-headless",
+            "rssKiB": 102428
+          },
+          {
+            "name": "chrome-headless",
+            "rssKiB": 36924
+          },
+          {
+            "name": "chrome-headless",
+            "rssKiB": 37340
+          },
+          {
+            "name": "chrome-headless",
+            "rssKiB": 93748
+          },
+          {
+            "name": "chrome-headless",
+            "rssKiB": 72372
+          },
+          {
+            "name": "chrome-headless",
+            "rssKiB": 274016
+          }
+        ],
+        "totalRSSKiB": 787924,
+        "limit": "Browser/driver descendants; shared pages may be counted more than once; no worker heap isolation"
+      },
+      "clock": 0.001,
+      "scientificSnapshot": {
+        "clockSeconds": 0.001,
+        "sections": [
+          {
+            "pressureBarAbsolute": 3.5020754953733304,
+            "temperatureC": -5.323315044994557,
+            "massKg": 0.01191595780241458,
+            "internalEnergyKJ": 5.748618128444814,
+            "volumeM3": 0.0006000000000000001,
+            "enthalpyKJkg": 500.0640953058569,
+            "phase": "Liquid + vapor",
+            "quality": 0.13973305145841577,
+            "wet": true,
+            "superheatK": 0
+          },
+          {
+            "pressureBarAbsolute": 3.501410901049252,
+            "temperatureC": -5.3281624627937765,
+            "massKg": 0.011912805414491284,
+            "internalEnergyKJ": 5.747042782472179,
+            "volumeM3": 0.0006000000000000001,
+            "enthalpyKJkg": 500.0608361560754,
+            "phase": "Liquid + vapor",
+            "quality": 0.13974607071511247,
+            "wet": true,
+            "superheatK": 0
+          },
+          {
+            "pressureBarAbsolute": 3.501028298199602,
+            "temperatureC": -5.330953508622231,
+            "massKg": 0.01191099282280236,
+            "internalEnergyKJ": 5.746136599588074,
+            "volumeM3": 0.0006000000000000001,
+            "enthalpyKJkg": 500.05892758809546,
+            "phase": "Liquid + vapor",
+            "quality": 0.13975354178382127,
+            "wet": true,
+            "superheatK": 0
+          },
+          {
+            "pressureBarAbsolute": 3.5007609913515427,
+            "temperatureC": -5.332903663760113,
+            "massKg": 0.011909726585033076,
+            "internalEnergyKJ": 5.745503549352668,
+            "volumeM3": 0.0006000000000000001,
+            "enthalpyKJkg": 500.0575929524767,
+            "phase": "Liquid + vapor",
+            "quality": 0.13975876104418272,
+            "wet": true,
+            "superheatK": 0
+          },
+          {
+            "pressureBarAbsolute": 3.500506149728084,
+            "temperatureC": -5.33476301666975,
+            "massKg": 0.011908519441558761,
+            "internalEnergyKJ": 5.744900045863533,
+            "volumeM3": 0.0006000000000000001,
+            "enthalpyKJkg": 500.0563205250769,
+            "phase": "Liquid + vapor",
+            "quality": 0.13976373728809777,
+            "wet": true,
+            "superheatK": 0
+          }
+        ],
+        "nodes": [
+          {
+            "id": "tube-0",
+            "temperatureK": 273.14937920495527,
+            "energyKJ": -0.000604671755785637
+          },
+          {
+            "id": "fin-0",
+            "temperatureK": 273.15103387695723,
+            "energyKJ": 0.0008779701200974487
+          },
+          {
+            "id": "tube-1",
+            "temperatureK": 273.1493788001693,
+            "energyKJ": -0.0006050660286668443
+          },
+          {
+            "id": "fin-1",
+            "temperatureK": 273.15103387688174,
+            "energyKJ": 0.0008779700560122112
+          },
+          {
+            "id": "tube-2",
+            "temperatureK": 273.1493786150404,
+            "energyKJ": -0.0006052463493835533
+          },
+          {
+            "id": "fin-2",
+            "temperatureK": 273.15103387685184,
+            "energyKJ": 0.0008779700306107316
+          },
+          {
+            "id": "tube-3",
+            "temperatureK": 273.1493785006446,
+            "energyKJ": -0.0006053577741241529
+          },
+          {
+            "id": "fin-3",
+            "temperatureK": 273.15103387683473,
+            "energyKJ": 0.0008779700160775935
+          },
+          {
+            "id": "tube-4",
+            "temperatureK": 273.14937839307794,
+            "energyKJ": -0.0006054625470423564
+          },
+          {
+            "id": "fin-4",
+            "temperatureK": 273.15103387681864,
+            "energyKJ": 0.0008779700024243304
+          },
+          {
+            "id": "air",
+            "temperatureK": 278.1491726318937,
+            "energyKJ": 21.53643569819803
+          }
+        ],
+        "flows": {
+          "inlet": {
+            "massKgS": 0.015455088312802533,
+            "energyKW": 7.727544156401266
+          },
+          "outlet": {
+            "massKgS": 0.008111071453319055,
+            "energyKW": 4.055992546462715
+          },
+          "scope": "instantaneous signed accepted-endpoint faces; positive inlet-to-outlet"
+        },
+        "totals": {
+          "massKg": 0.059558002066300055,
+          "internalEnergyKJ": 28.732201105721266
+        },
+        "conservation": {
+          "massResidualKg": 2.2352657376954743e-15,
+          "refrigerantEnergyResidualKJ": 1.1303948228846838e-12,
+          "thermalEnergyResidualKJ": -4.99036575951628e-15,
+          "combinedEnergyResidualKJ": 1.1254044571251676e-12,
+          "boundaryMassKg": 1.0043121306735793e-05,
+          "boundaryEnthalpyKJ": 0.005021377192848497,
+          "airLoadKJ": 0.001
+        },
+        "numerics": {
+          "acceptedSteps": 16,
+          "rejectedSteps": 1,
+          "nextStepSeconds": 0.0005199999999999998,
+          "lastAcceptedInterval": {
+            "startSeconds": 0.0007400000000000001,
+            "endSeconds": 0.001,
+            "trialSeconds": 0.0002599999999999999,
+            "error": 0.04688050744825999
+          },
+          "minAcceptedStepSeconds": 9.999999999999999e-06,
+          "maxAcceptedStepSeconds": 0.00012999999999999996,
+          "lastTimeError": 0.04688050744825999,
+          "lastResidual": 2.3643324112563515e-13
+        }
+      },
+      "disposeMS": 5.060044000174457,
+      "restart": {
+        "fixture": "cold",
+        "workerCreationMS": 0.30000000004656613,
+        "firstAcceptedAndRenderedMS": 55.5
+      },
+      "resources": {
+        "ended": false,
+        "heartbeatActive": false,
+        "frameActive": false,
+        "pending": 0
+      }
+    },
+    {
+      "mode": "B10",
+      "fixture": "warm",
+      "round": 0,
+      "navigationToOriginalReadyMS": 228.03757099995892,
+      "originalInitializeMS": 115.71872200011057,
+      "originalModelCreateMS": 2,
+      "lazyPanelMS": 218.28802999993968,
+      "session": {
+        "fixture": "warm",
+        "workerCreationMS": 0.30000000004656613,
+        "firstAcceptedAndRenderedMS": 67
+      },
+      "initialization": {
+        "type": "initialize",
+        "timing": {
+          "assetVerificationMS": 13.699999999953434,
+          "importAndOwnedTableMS": 27.4000000001397,
+          "createAndRecordMS": 6.099999999860302,
+          "serviceMS": 47.39999999990687
+        },
+        "delivery": {
+          "roundtripMS": 65.69999999995343,
+          "transferAndDispatchMS": 0.300048828125
+        }
+      },
+      "memoryReady": {
+        "processes": [
+          {
+            "name": "MainThread",
+            "rssKiB": 172532
+          },
+          {
+            "name": "chrome-headless",
+            "rssKiB": 102620
+          },
+          {
+            "name": "chrome-headless",
+            "rssKiB": 36924
+          },
+          {
+            "name": "chrome-headless",
+            "rssKiB": 37340
+          },
+          {
+            "name": "chrome-headless",
+            "rssKiB": 90456
+          },
+          {
+            "name": "chrome-headless",
+            "rssKiB": 72828
+          },
+          {
+            "name": "chrome-headless",
+            "rssKiB": 227364
+          }
+        ],
+        "totalRSSKiB": 740064,
+        "limit": "Browser/driver descendants; shared pages may be counted more than once; no worker heap isolation"
+      },
+      "switchDuringComputeMS": 294.3851840000207,
+      "threeAdvanceWithToolsMS": 1158.37008099993,
+      "workerMetrics": [
+        {
+          "type": "initialize",
+          "timing": {
+            "assetVerificationMS": 13.699999999953434,
+            "importAndOwnedTableMS": 27.4000000001397,
+            "createAndRecordMS": 6.099999999860302,
+            "serviceMS": 47.39999999990687
+          },
+          "delivery": {
+            "roundtripMS": 65.69999999995343,
+            "transferAndDispatchMS": 0.300048828125
+          }
+        },
+        {
+          "type": "advance",
+          "timing": {
+            "advanceMS": 197.69999999995343,
+            "projectionMS": 0.09999999986030161,
+            "serviceMS": 198
+          },
+          "delivery": {
+            "roundtripMS": 202.30000000004657,
+            "transferAndDispatchMS": 3.10009765625
+          }
+        },
+        {
+          "type": "advance",
+          "timing": {
+            "advanceMS": 132.5999999998603,
+            "projectionMS": 0,
+            "serviceMS": 132.5999999998603
+          },
+          "delivery": {
+            "roundtripMS": 134.10000000009313,
+            "transferAndDispatchMS": 0.099853515625
+          }
+        },
+        {
+          "type": "advance",
+          "timing": {
+            "advanceMS": 107.10000000009313,
+            "projectionMS": 0.09999999986030161,
+            "serviceMS": 107.29999999981374
+          },
+          "delivery": {
+            "roundtripMS": 108.30000000004657,
+            "transferAndDispatchMS": 0.099853515625
+          }
+        }
+      ],
+      "renderMS": [
+        0.19999999995343387,
+        0,
+        0,
+        0.8000000000465661,
+        0.5,
+        0.8000000000465661,
+        1,
+        0.5,
+        1.0999999998603016,
+        1.0999999998603016,
+        0.4000000001396984,
+        0.8000000000465661,
+        3.0999999998603016,
+        0.4000000001396984
+      ],
+      "observations": {
+        "data": {
+          "heartbeat": [
+            6.600000000093132,
+            10,
+            10,
+            13.099999999860302,
+            11.300000000046566,
+            5.699999999953434,
+            12.800000000046566,
+            8.100000000093132,
+            9.099999999860302,
+            9.900000000139698,
+            11.399999999906868,
+            8.600000000093132,
+            10,
+            10,
+            10,
+            10,
+            10,
+            10,
+            10,
+            10,
+            10.099999999860302,
+            10.900000000139698,
+            9,
+            10,
+            236.79999999981374,
+            3.1000000000931323,
+            12,
+            118.5,
+            9.600000000093132,
+            10.099999999860302,
+            9.900000000139698,
+            10,
+            10,
+            10.099999999860302,
+            9.900000000139698,
+            10,
+            10.099999999860302,
+            9.900000000139698,
+            27.899999999906868,
+            58.199999999953434,
+            3.9000000001396984,
+            10,
+            10,
+            10,
+            10,
+            31.0999999998603,
+            8.900000000139698,
+            10.099999999860302,
+            10.900000000139698,
+            9,
+            10,
+            10,
+            10,
+            10,
+            10,
+            10,
+            10,
+            10,
+            58,
+            3,
+            9,
+            10,
+            10,
+            11.399999999906868,
+            8.600000000093132,
+            10,
+            10,
+            10,
+            10,
+            10.099999999860302,
+            9.900000000139698,
+            14.099999999860302,
+            5.900000000139698,
+            9.899999999906868,
+            10,
+            10.100000000093132,
+            10,
+            10,
+            25.199999999953434,
+            5.199999999953434
+          ],
+          "frames": [
+            33.39999999999998,
+            16.700000000000045,
+            16.59999999999991,
+            16.800000000000068,
+            16.600000000000023,
+            16.59999999999991,
+            16.700000000000045,
+            16.700000000000045,
+            16.699999999999932,
+            16.600000000000023,
+            16.700000000000045,
+            16.699999999999932,
+            216.60000000000002,
+            50,
+            16.700000000000045,
+            16.700000000000045,
+            49.899999999999864,
+            33.40000000000009,
+            16.59999999999991,
+            16.700000000000045,
+            33.299999999999955,
+            16.700000000000045,
+            16.700000000000045,
+            50,
+            33.299999999999955,
+            16.700000000000045,
+            33.299999999999955,
+            16.700000000000045,
+            16.59999999999991,
+            16.600000000000136,
+            16.799999999999955,
+            16.59999999999991,
+            16.700000000000045,
+            16.59999999999991,
+            16.700000000000045,
+            33.40000000000009,
+            49.899999999999864,
+            33.30000000000018,
+            16.799999999999955,
+            33.200000000000045,
+            16.799999999999955,
+            16.59999999999991,
+            16.700000000000045,
+            16.59999999999991,
+            16.700000000000045
+          ],
+          "clicks": [
+            {
+              "id": "console-tools",
+              "trusted": true,
+              "ackMS": 3.8999999999068677,
+              "pending": 0
+            },
+            {
+              "id": "storage-schematic",
+              "trusted": true,
+              "ackMS": 0.9000000001396984,
+              "pending": 0
+            },
+            {
+              "id": "b10-a2-link",
+              "trusted": true,
+              "ackMS": 0.9000000001396984,
+              "pending": 0
+            },
+            {
+              "id": "storage-pause",
+              "trusted": true,
+              "ackMS": 1.0999999998603016,
+              "pending": 0
+            }
+          ],
+          "tools": [
+            {
+              "tool": "plant-diagnostics",
+              "atMS": 1225.4000000001397
+            },
+            {
+              "tool": "b10-a2-shadow",
+              "atMS": 1573.9000000001397
+            }
+          ],
+          "originalModelCreateMS": []
+        },
+        "heap": {
+          "used": 15200000,
+          "total": 29400000
+        },
+        "nav": [
+          {
+            "domContentLoaded": 169.19999999995343,
+            "load": 201.30000000004657,
+            "responseEnd": 7.5
+          }
+        ]
+      },
+      "memoryAfter": {
+        "processes": [
+          {
+            "name": "MainThread",
+            "rssKiB": 178504
+          },
+          {
+            "name": "chrome-headless",
+            "rssKiB": 102472
+          },
+          {
+            "name": "chrome-headless",
+            "rssKiB": 36924
+          },
+          {
+            "name": "chrome-headless",
+            "rssKiB": 37340
+          },
+          {
+            "name": "chrome-headless",
+            "rssKiB": 92780
+          },
+          {
+            "name": "chrome-headless",
+            "rssKiB": 72936
+          },
+          {
+            "name": "chrome-headless",
+            "rssKiB": 284092
+          }
+        ],
+        "totalRSSKiB": 805048,
+        "limit": "Browser/driver descendants; shared pages may be counted more than once; no worker heap isolation"
+      },
+      "clock": 0.001,
+      "scientificSnapshot": {
+        "clockSeconds": 0.001,
+        "sections": [
+          {
+            "pressureBarAbsolute": 3.6303545131821546,
+            "temperatureC": 10.574289164494553,
+            "massKg": 0.0016521413772025817,
+            "internalEnergyKJ": 2.492836423120858,
+            "volumeM3": 0.0006000000000000001,
+            "enthalpyKJkg": 1640.6935455697064,
+            "phase": "Superheated vapor",
+            "quality": null,
+            "wet": false,
+            "superheatK": 14.973441924666986
+          },
+          {
+            "pressureBarAbsolute": 3.6307323350447107,
+            "temperatureC": 14.237596417681925,
+            "massKg": 0.0016267234011596516,
+            "internalEnergyKJ": 2.4657726738965677,
+            "volumeM3": 0.0006000000000000001,
+            "enthalpyKJkg": 1649.7067738180735,
+            "phase": "Superheated vapor",
+            "quality": null,
+            "wet": false,
+            "superheatK": 18.634068401297554
+          },
+          {
+            "pressureBarAbsolute": 3.6291687571498694,
+            "temperatureC": 14.209501864490361,
+            "massKg": 0.0016261796561648852,
+            "internalEnergyKJ": 2.464877283242702,
+            "volumeM3": 0.0006000000000000001,
+            "enthalpyKJkg": 1649.6500853483817,
+            "phase": "Superheated vapor",
+            "quality": null,
+            "wet": false,
+            "superheatK": 18.61706978525035
+          },
+          {
+            "pressureBarAbsolute": 3.6193877365576275,
+            "temperatureC": 14.034986516208983,
+            "massKg": 0.001622766732816856,
+            "internalEnergyKJ": 2.459263764117378,
+            "volumeM3": 0.0006000000000000001,
+            "enthalpyKJkg": 1649.2986787657076,
+            "phase": "Superheated vapor",
+            "quality": null,
+            "wet": false,
+            "superheatK": 18.51207416621037
+          },
+          {
+            "pressureBarAbsolute": 3.591159665087296,
+            "temperatureC": 13.533815960174714,
+            "massKg": 0.0016128702011369246,
+            "internalEnergyKJ": 2.4430123113421325,
+            "volumeM3": 0.0006000000000000001,
+            "enthalpyKJkg": 1648.292521788559,
+            "phase": "Superheated vapor",
+            "quality": null,
+            "wet": false,
+            "superheatK": 18.21259639109485
+          }
+        ],
+        "nodes": [
+          {
+            "id": "tube-0",
+            "temperatureK": 293.1490755634338,
+            "energyKJ": 19.47965957290037
+          },
+          {
+            "id": "fin-0",
+            "temperatureK": 293.14999982482993,
+            "energyKJ": 16.984034826767523
+          },
+          {
+            "id": "tube-1",
+            "temperatureK": 293.1493039406118,
+            "energyKJ": 19.479882018666263
+          },
+          {
+            "id": "fin-1",
+            "temperatureK": 293.1499998610407,
+            "energyKJ": 16.984034857517777
+          },
+          {
+            "id": "tube-2",
+            "temperatureK": 293.14930252649845,
+            "energyKJ": 19.479880641280268
+          },
+          {
+            "id": "fin-2",
+            "temperatureK": 293.1499998608643,
+            "energyKJ": 16.984034857367927
+          },
+          {
+            "id": "tube-3",
+            "temperatureK": 293.14928994957336,
+            "energyKJ": 19.47986839100305
+          },
+          {
+            "id": "fin-3",
+            "temperatureK": 293.1499998587734,
+            "energyKJ": 16.984034855592395
+          },
+          {
+            "id": "tube-4",
+            "temperatureK": 293.1492432871132,
+            "energyKJ": 19.479822940460327
+          },
+          {
+            "id": "fin-4",
+            "temperatureK": 293.14999984976737,
+            "energyKJ": 16.984034847944432
+          },
+          {
+            "id": "air",
+            "temperatureK": 293.15023209872436,
+            "energyKJ": 86.1609998813047
+          }
+        ],
+        "flows": {
+          "inlet": {
+            "massKgS": 0.013316232304362038,
+            "energyKW": 6.658116152181019
+          },
+          "outlet": {
+            "massKgS": 0.040378010088558035,
+            "energyKW": 66.55477207612081
+          },
+          "scope": "instantaneous signed accepted-endpoint faces; positive inlet-to-outlet"
+        },
+        "totals": {
+          "massKg": 0.008140681368480899,
+          "internalEnergyKJ": 12.325762455719637
+        },
+        "conservation": {
+          "massResidualKg": -1.9028147926671707e-14,
+          "refrigerantEnergyResidualKJ": -3.127907308164701e-11,
+          "thermalEnergyResidualKJ": 2.2507169739061084e-14,
+          "combinedEnergyResidualKJ": -3.125656591190795e-11,
+          "boundaryMassKg": -3.2073101432023055e-05,
+          "boundaryEnthalpyKJ": -0.06796960644291593,
+          "airLoadKJ": 0.0009999999999999998
+        },
+        "numerics": {
+          "acceptedSteps": 34,
+          "rejectedSteps": 3,
+          "nextStepSeconds": 0.0001527328594434017,
+          "lastAcceptedInterval": {
+            "startSeconds": 0.0009236335702782992,
+            "endSeconds": 0.001,
+            "trialSeconds": 7.636642972170084e-05,
+            "error": 0.03902422842901616
+          },
+          "minAcceptedStepSeconds": 4.405649861710203e-06,
+          "maxAcceptedStepSeconds": 7.964728928784347e-05,
+          "lastTimeError": 0.03902422842901616,
+          "lastResidual": 3.3240247222011844e-12
+        }
+      },
+      "disposeMS": 7.639498000116873,
+      "restart": {
+        "fixture": "warm",
+        "workerCreationMS": 0.30000000004656613,
+        "firstAcceptedAndRenderedMS": 60.199999999953434
+      },
+      "resources": {
+        "ended": false,
+        "heartbeatActive": false,
+        "frameActive": false,
+        "pending": 0
+      }
+    },
+    {
+      "mode": "B11",
+      "fixture": "warm",
+      "round": 0,
+      "navigationToOriginalReadyMS": 248.55357199999162,
+      "originalInitializeMS": 126.84939299992948,
+      "originalModelCreateMS": 2.7999999998137355,
+      "lazyPanelMS": 219.0879650001989,
+      "session": {
+        "fixture": "warm",
+        "workerCreationMS": 0.19999999995343387,
+        "firstAcceptedAndRenderedMS": 77
+      },
+      "initialization": {
+        "type": "initialize",
+        "timing": {
+          "assetVerificationMS": 18.799999999813735,
+          "importAndOwnedTableMS": 30.9000000001397,
+          "createAndRecordMS": 5.899999999906868,
+          "serviceMS": 56
+        },
+        "delivery": {
+          "roundtripMS": 75.5,
+          "transferAndDispatchMS": 0.60009765625
+        }
+      },
+      "memoryReady": {
+        "processes": [
+          {
+            "name": "MainThread",
+            "rssKiB": 185204
+          },
+          {
+            "name": "chrome-headless",
+            "rssKiB": 102408
+          },
+          {
+            "name": "chrome-headless",
+            "rssKiB": 36924
+          },
+          {
+            "name": "chrome-headless",
+            "rssKiB": 37340
+          },
+          {
+            "name": "chrome-headless",
+            "rssKiB": 89600
+          },
+          {
+            "name": "chrome-headless",
+            "rssKiB": 72496
+          },
+          {
+            "name": "chrome-headless",
+            "rssKiB": 225748
+          }
+        ],
+        "totalRSSKiB": 749720,
+        "limit": "Browser/driver descendants; shared pages may be counted more than once; no worker heap isolation"
+      },
+      "switchDuringComputeMS": 370.77170599991405,
+      "threeAdvanceWithToolsMS": 1133.8777410001057,
+      "workerMetrics": [
+        {
+          "type": "initialize",
+          "timing": {
+            "assetVerificationMS": 18.799999999813735,
+            "importAndOwnedTableMS": 30.9000000001397,
+            "createAndRecordMS": 5.899999999906868,
+            "serviceMS": 56
+          },
+          "delivery": {
+            "roundtripMS": 75.5,
+            "transferAndDispatchMS": 0.60009765625
+          }
+        },
+        {
+          "type": "advance",
+          "timing": {
+            "advanceMS": 205.60000000009313,
+            "projectionMS": 0,
+            "serviceMS": 205.80000000004657
+          },
+          "delivery": {
+            "roundtripMS": 207.29999999981374,
+            "transferAndDispatchMS": 0.300048828125
+          }
+        },
+        {
+          "type": "advance",
+          "timing": {
+            "advanceMS": 122.19999999995343,
+            "projectionMS": 0,
+            "serviceMS": 122.30000000004657
+          },
+          "delivery": {
+            "roundtripMS": 156.69999999995343,
+            "transferAndDispatchMS": 33
+          }
+        },
+        {
+          "type": "advance",
+          "timing": {
+            "advanceMS": 79.70000000018626,
+            "projectionMS": 0.19999999995343387,
+            "serviceMS": 79.9000000001397
+          },
+          "delivery": {
+            "roundtripMS": 80.69999999995343,
+            "transferAndDispatchMS": 0.199951171875
+          }
+        }
+      ],
+      "renderMS": [
+        0.30000000004656613,
+        0.10000000009313226,
+        0,
+        0.8999999999068677,
+        0.5999999998603016,
+        0.8999999999068677,
+        0.8000000000465661,
+        3,
+        1.0999999998603016,
+        0.6999999999534339,
+        0.4000000001396984,
+        0.6000000000931323,
+        1,
+        0.39999999990686774
+      ],
+      "observations": {
+        "data": {
+          "heartbeat": [
+            6.400000000139698,
+            9.800000000046566,
+            9.899999999906868,
+            10.699999999953434,
+            10.800000000046566,
+            14,
+            4.600000000093132,
+            12.299999999813735,
+            9,
+            30.800000000046566,
+            7.800000000046566,
+            10,
+            10.100000000093132,
+            10,
+            10,
+            10,
+            10,
+            10.699999999953434,
+            9.300000000046566,
+            18.799999999813735,
+            1.7000000001862645,
+            9.5,
+            249.19999999995343,
+            79.19999999995343,
+            2.8999999999068677,
+            8.900000000139698,
+            53.199999999953434,
+            6.600000000093132,
+            10,
+            10,
+            10,
+            10,
+            10.099999999860302,
+            10.400000000139698,
+            9.5,
+            9.899999999906868,
+            10.100000000093132,
+            27.799999999813735,
+            57.800000000046566,
+            4.5,
+            9.900000000139698,
+            10.099999999860302,
+            9.900000000139698,
+            10,
+            11.399999999906868,
+            13.699999999953434,
+            4.900000000139698,
+            15.799999999813735,
+            4.2000000001862645,
+            10,
+            9.899999999906868,
+            10.100000000093132,
+            10.699999999953434,
+            9.199999999953434,
+            10.100000000093132,
+            10,
+            10,
+            54.799999999813735,
+            5.2000000001862645,
+            10,
+            10,
+            15.399999999906868,
+            4.600000000093132,
+            10,
+            10,
+            10,
+            10,
+            11.5,
+            8.5,
+            9.899999999906868,
+            10,
+            10.100000000093132,
+            10,
+            11.599999999860302,
+            8.300000000046566,
+            10.899999999906868,
+            23.800000000046566
+          ],
+          "frames": [
+            33.39999999999998,
+            66.60000000000002,
+            16.699999999999932,
+            16.700000000000045,
+            16.600000000000023,
+            16.600000000000023,
+            16.699999999999932,
+            16.700000000000045,
+            233.30000000000007,
+            33.399999999999864,
+            50,
+            33.40000000000009,
+            49.899999999999864,
+            16.600000000000136,
+            16.700000000000045,
+            16.699999999999818,
+            16.700000000000045,
+            16.600000000000136,
+            16.699999999999818,
+            50,
+            49.90000000000009,
+            16.700000000000045,
+            16.700000000000045,
+            16.699999999999818,
+            16.600000000000136,
+            16.700000000000045,
+            16.699999999999818,
+            16.700000000000045,
+            16.700000000000045,
+            16.59999999999991,
+            33.30000000000018,
+            33.299999999999955,
+            16.700000000000045,
+            16.699999999999818,
+            16.700000000000045,
+            16.600000000000136,
+            16.59999999999991,
+            16.700000000000045,
+            33.399999999999864,
+            16.700000000000045,
+            16.600000000000136
+          ],
+          "clicks": [
+            {
+              "id": "console-tools",
+              "trusted": true,
+              "ackMS": 3.5999999998603016,
+              "pending": 0
+            },
+            {
+              "id": "storage-schematic",
+              "trusted": true,
+              "ackMS": 1,
+              "pending": 0
+            },
+            {
+              "id": "b10-a2-link",
+              "trusted": true,
+              "ackMS": 1.3999999999068677,
+              "pending": 0
+            },
+            {
+              "id": "storage-pause",
+              "trusted": true,
+              "ackMS": 1.5,
+              "pending": 0
+            }
+          ],
+          "tools": [
+            {
+              "tool": "plant-diagnostics",
+              "atMS": 1359.6000000000931
+            },
+            {
+              "tool": "b10-a2-shadow",
+              "atMS": 1646.7000000001863
+            }
+          ],
+          "originalModelCreateMS": []
+        },
+        "heap": {
+          "used": 14300000,
+          "total": 29400000
+        },
+        "nav": [
+          {
+            "domContentLoaded": 172,
+            "load": 206.70000000018626,
+            "responseEnd": 8.400000000139698
+          }
+        ]
+      },
+      "memoryAfter": {
+        "processes": [
+          {
+            "name": "MainThread",
+            "rssKiB": 191892
+          },
+          {
+            "name": "chrome-headless",
+            "rssKiB": 102596
+          },
+          {
+            "name": "chrome-headless",
+            "rssKiB": 36924
+          },
+          {
+            "name": "chrome-headless",
+            "rssKiB": 37340
+          },
+          {
+            "name": "chrome-headless",
+            "rssKiB": 93032
+          },
+          {
+            "name": "chrome-headless",
+            "rssKiB": 72496
+          },
+          {
+            "name": "chrome-headless",
+            "rssKiB": 280596
+          }
+        ],
+        "totalRSSKiB": 814876,
+        "limit": "Browser/driver descendants; shared pages may be counted more than once; no worker heap isolation"
+      },
+      "clock": 0.001,
+      "scientificSnapshot": {
+        "clockSeconds": 0.001,
+        "sections": [
+          {
+            "pressureBarAbsolute": 3.6303545131821546,
+            "temperatureC": 10.574289164494553,
+            "massKg": 0.0016521413772025817,
+            "internalEnergyKJ": 2.492836423120858,
+            "volumeM3": 0.0006000000000000001,
+            "enthalpyKJkg": 1640.6935455697064,
+            "phase": "Superheated vapor",
+            "quality": null,
+            "wet": false,
+            "superheatK": 14.973441924666986
+          },
+          {
+            "pressureBarAbsolute": 3.6307323350447107,
+            "temperatureC": 14.237596417681925,
+            "massKg": 0.0016267234011596516,
+            "internalEnergyKJ": 2.4657726738965677,
+            "volumeM3": 0.0006000000000000001,
+            "enthalpyKJkg": 1649.7067738180735,
+            "phase": "Superheated vapor",
+            "quality": null,
+            "wet": false,
+            "superheatK": 18.634068401297554
+          },
+          {
+            "pressureBarAbsolute": 3.6291687571498694,
+            "temperatureC": 14.209501864490361,
+            "massKg": 0.0016261796561648852,
+            "internalEnergyKJ": 2.464877283242702,
+            "volumeM3": 0.0006000000000000001,
+            "enthalpyKJkg": 1649.6500853483817,
+            "phase": "Superheated vapor",
+            "quality": null,
+            "wet": false,
+            "superheatK": 18.61706978525035
+          },
+          {
+            "pressureBarAbsolute": 3.6193877365576275,
+            "temperatureC": 14.034986516208983,
+            "massKg": 0.001622766732816856,
+            "internalEnergyKJ": 2.459263764117378,
+            "volumeM3": 0.0006000000000000001,
+            "enthalpyKJkg": 1649.2986787657076,
+            "phase": "Superheated vapor",
+            "quality": null,
+            "wet": false,
+            "superheatK": 18.51207416621037
+          },
+          {
+            "pressureBarAbsolute": 3.591159665087296,
+            "temperatureC": 13.533815960174714,
+            "massKg": 0.0016128702011369246,
+            "internalEnergyKJ": 2.4430123113421325,
+            "volumeM3": 0.0006000000000000001,
+            "enthalpyKJkg": 1648.292521788559,
+            "phase": "Superheated vapor",
+            "quality": null,
+            "wet": false,
+            "superheatK": 18.21259639109485
+          }
+        ],
+        "nodes": [
+          {
+            "id": "tube-0",
+            "temperatureK": 293.1490755634338,
+            "energyKJ": 19.47965957290037
+          },
+          {
+            "id": "fin-0",
+            "temperatureK": 293.14999982482993,
+            "energyKJ": 16.984034826767523
+          },
+          {
+            "id": "tube-1",
+            "temperatureK": 293.1493039406118,
+            "energyKJ": 19.479882018666263
+          },
+          {
+            "id": "fin-1",
+            "temperatureK": 293.1499998610407,
+            "energyKJ": 16.984034857517777
+          },
+          {
+            "id": "tube-2",
+            "temperatureK": 293.14930252649845,
+            "energyKJ": 19.479880641280268
+          },
+          {
+            "id": "fin-2",
+            "temperatureK": 293.1499998608643,
+            "energyKJ": 16.984034857367927
+          },
+          {
+            "id": "tube-3",
+            "temperatureK": 293.14928994957336,
+            "energyKJ": 19.47986839100305
+          },
+          {
+            "id": "fin-3",
+            "temperatureK": 293.1499998587734,
+            "energyKJ": 16.984034855592395
+          },
+          {
+            "id": "tube-4",
+            "temperatureK": 293.1492432871132,
+            "energyKJ": 19.479822940460327
+          },
+          {
+            "id": "fin-4",
+            "temperatureK": 293.14999984976737,
+            "energyKJ": 16.984034847944432
+          },
+          {
+            "id": "air",
+            "temperatureK": 293.15023209872436,
+            "energyKJ": 86.1609998813047
+          }
+        ],
+        "flows": {
+          "inlet": {
+            "massKgS": 0.013316232304362038,
+            "energyKW": 6.658116152181019
+          },
+          "outlet": {
+            "massKgS": 0.040378010088558035,
+            "energyKW": 66.55477207612081
+          },
+          "scope": "instantaneous signed accepted-endpoint faces; positive inlet-to-outlet"
+        },
+        "totals": {
+          "massKg": 0.008140681368480899,
+          "internalEnergyKJ": 12.325762455719637
+        },
+        "conservation": {
+          "massResidualKg": -1.9028147926671707e-14,
+          "refrigerantEnergyResidualKJ": -3.127907308164701e-11,
+          "thermalEnergyResidualKJ": 2.2507169739061084e-14,
+          "combinedEnergyResidualKJ": -3.125656591190795e-11,
+          "boundaryMassKg": -3.2073101432023055e-05,
+          "boundaryEnthalpyKJ": -0.06796960644291593,
+          "airLoadKJ": 0.0009999999999999998
+        },
+        "numerics": {
+          "acceptedSteps": 34,
+          "rejectedSteps": 3,
+          "nextStepSeconds": 0.0001527328594434017,
+          "lastAcceptedInterval": {
+            "startSeconds": 0.0009236335702782992,
+            "endSeconds": 0.001,
+            "trialSeconds": 7.636642972170084e-05,
+            "error": 0.03902422842901616
+          },
+          "minAcceptedStepSeconds": 4.405649861710203e-06,
+          "maxAcceptedStepSeconds": 7.964728928784347e-05,
+          "lastTimeError": 0.03902422842901616,
+          "lastResidual": 3.3240247222011844e-12
+        }
+      },
+      "disposeMS": 5.090763999987757,
+      "restart": {
+        "fixture": "warm",
+        "workerCreationMS": 0.10000000009313226,
+        "firstAcceptedAndRenderedMS": 61.60000000009313
+      },
+      "resources": {
+        "ended": false,
+        "heartbeatActive": false,
+        "frameActive": false,
+        "pending": 0
+      }
+    },
+    {
+      "mode": "B11",
+      "fixture": "cold",
+      "round": 1,
+      "navigationToOriginalReadyMS": 224.69539400003669,
+      "originalInitializeMS": 130.45368999996754,
+      "originalModelCreateMS": 1.8999999999068677,
+      "lazyPanelMS": 204.27507899989905,
+      "session": {
+        "fixture": "cold",
+        "workerCreationMS": 0.39999999990686774,
+        "firstAcceptedAndRenderedMS": 79.10000000009313
+      },
+      "initialization": {
+        "type": "initialize",
+        "timing": {
+          "assetVerificationMS": 16.800000000046566,
+          "importAndOwnedTableMS": 32.200000000186265,
+          "createAndRecordMS": 5,
+          "serviceMS": 54.39999999990687
+        },
+        "delivery": {
+          "roundtripMS": 77.5999999998603,
+          "transferAndDispatchMS": 0.2998046875
+        }
+      },
+      "memoryReady": {
+        "processes": [
+          {
+            "name": "MainThread",
+            "rssKiB": 191684
+          },
+          {
+            "name": "chrome-headless",
+            "rssKiB": 102784
+          },
+          {
+            "name": "chrome-headless",
+            "rssKiB": 36924
+          },
+          {
+            "name": "chrome-headless",
+            "rssKiB": 37340
+          },
+          {
+            "name": "chrome-headless",
+            "rssKiB": 89348
+          },
+          {
+            "name": "chrome-headless",
+            "rssKiB": 72496
+          },
+          {
+            "name": "chrome-headless",
+            "rssKiB": 226068
+          }
+        ],
+        "totalRSSKiB": 756644,
+        "limit": "Browser/driver descendants; shared pages may be counted more than once; no worker heap isolation"
+      },
+      "switchDuringComputeMS": 47.998093999922276,
+      "threeAdvanceWithToolsMS": 806.027019999874,
+      "workerMetrics": [
+        {
+          "type": "initialize",
+          "timing": {
+            "assetVerificationMS": 16.800000000046566,
+            "importAndOwnedTableMS": 32.200000000186265,
+            "createAndRecordMS": 5,
+            "serviceMS": 54.39999999990687
+          },
+          "delivery": {
+            "roundtripMS": 77.5999999998603,
+            "transferAndDispatchMS": 0.2998046875
+          }
+        },
+        {
+          "type": "advance",
+          "timing": {
+            "advanceMS": 40.39999999990687,
+            "projectionMS": 0.10000000009313226,
+            "serviceMS": 40.5
+          },
+          "delivery": {
+            "roundtripMS": 42,
+            "transferAndDispatchMS": 0.2998046875
+          }
+        },
+        {
+          "type": "advance",
+          "timing": {
+            "advanceMS": 56.300000000046566,
+            "projectionMS": 0.09999999986030161,
+            "serviceMS": 56.39999999990687
+          },
+          "delivery": {
+            "roundtripMS": 94.30000000004657,
+            "transferAndDispatchMS": 37.099853515625
+          }
+        },
+        {
+          "type": "advance",
+          "timing": {
+            "advanceMS": 18.299999999813735,
+            "projectionMS": 0,
+            "serviceMS": 18.399999999906868
+          },
+          "delivery": {
+            "roundtripMS": 19.300000000046566,
+            "transferAndDispatchMS": 0.19970703125
+          }
+        }
+      ],
+      "renderMS": [
+        0.09999999986030161,
+        0.10000000009313226,
+        0.10000000009313226,
+        0.8000000000465661,
+        0.4000000001396984,
+        1.1999999999534339,
+        1,
+        0.39999999990686774,
+        0.7000000001862645,
+        0.9000000001396984,
+        0.30000000004656613,
+        0.5,
+        1,
+        0.30000000004656613
+      ],
+      "observations": {
+        "data": {
+          "heartbeat": [
+            2.4000000001396984,
+            8.800000000046566,
+            10,
+            10.699999999953434,
+            9.399999999906868,
+            19.600000000093132,
+            10.399999999906868,
+            10,
+            10.600000000093132,
+            18.0999999998603,
+            1.3000000000465661,
+            9.900000000139698,
+            10.099999999860302,
+            11.300000000046566,
+            8.699999999953434,
+            9.900000000139698,
+            10.099999999860302,
+            9.900000000139698,
+            10.599999999860302,
+            9.5,
+            10,
+            9.900000000139698,
+            10,
+            239.39999999990687,
+            57.300000000046566,
+            75.69999999995343,
+            9,
+            8.600000000093132,
+            10.099999999860302,
+            9.900000000139698,
+            10.099999999860302,
+            10,
+            27.5,
+            2.5,
+            10.400000000139698,
+            9.5,
+            10.099999999860302,
+            9.900000000139698,
+            48.699999999953434,
+            3.8999999999068677,
+            7.5,
+            10.100000000093132,
+            27.899999999906868,
+            2.1000000000931323,
+            9.800000000046566,
+            10,
+            10.099999999860302,
+            9.900000000139698,
+            10,
+            10.799999999813735,
+            9.200000000186265,
+            28.699999999953434,
+            1.3000000000465661
+          ],
+          "frames": [
+            33.299999999999955,
+            16.700000000000045,
+            16.699999999999932,
+            16.600000000000023,
+            16.700000000000045,
+            16.699999999999932,
+            16.600000000000023,
+            16.700000000000045,
+            16.59999999999991,
+            16.700000000000045,
+            16.600000000000023,
+            216.69999999999993,
+            50,
+            16.700000000000045,
+            33.299999999999955,
+            83.40000000000009,
+            16.59999999999991,
+            16.700000000000045,
+            16.700000000000045,
+            16.59999999999991,
+            16.700000000000045,
+            16.700000000000045,
+            33.299999999999955,
+            33.299999999999955,
+            16.700000000000045,
+            16.700000000000045,
+            16.700000000000045,
+            16.5,
+            16.799999999999955,
+            33.299999999999955
+          ],
+          "clicks": [
+            {
+              "id": "console-tools",
+              "trusted": true,
+              "ackMS": 0.7000000001862645,
+              "pending": 0
+            },
+            {
+              "id": "storage-schematic",
+              "trusted": true,
+              "ackMS": 7.100000000093132,
+              "pending": 0
+            },
+            {
+              "id": "b10-a2-link",
+              "trusted": true,
+              "ackMS": 1,
+              "pending": 0
+            },
+            {
+              "id": "storage-pause",
+              "trusted": true,
+              "ackMS": 1.4000000001396984,
+              "pending": 0
+            }
+          ],
+          "tools": [
+            {
+              "tool": "plant-diagnostics",
+              "atMS": 876.3999999999069
+            },
+            {
+              "tool": "b10-a2-shadow",
+              "atMS": 1449.8000000000466
+            }
+          ],
+          "originalModelCreateMS": []
+        },
+        "heap": {
+          "used": 11200000,
+          "total": 29400000
+        },
+        "nav": [
+          {
+            "domContentLoaded": 179.89999999990687,
+            "load": 201.39999999990687,
+            "responseEnd": 11.699999999953434
+          }
+        ]
+      },
+      "memoryAfter": {
+        "processes": [
+          {
+            "name": "MainThread",
+            "rssKiB": 191724
+          },
+          {
+            "name": "chrome-headless",
+            "rssKiB": 102724
+          },
+          {
+            "name": "chrome-headless",
+            "rssKiB": 36924
+          },
+          {
+            "name": "chrome-headless",
+            "rssKiB": 37340
+          },
+          {
+            "name": "chrome-headless",
+            "rssKiB": 92324
+          },
+          {
+            "name": "chrome-headless",
+            "rssKiB": 72496
+          },
+          {
+            "name": "chrome-headless",
+            "rssKiB": 274352
+          }
+        ],
+        "totalRSSKiB": 807884,
+        "limit": "Browser/driver descendants; shared pages may be counted more than once; no worker heap isolation"
+      },
+      "clock": 0.001,
+      "scientificSnapshot": {
+        "clockSeconds": 0.001,
+        "sections": [
+          {
+            "pressureBarAbsolute": 3.5020754953733304,
+            "temperatureC": -5.323315044994557,
+            "massKg": 0.01191595780241458,
+            "internalEnergyKJ": 5.748618128444814,
+            "volumeM3": 0.0006000000000000001,
+            "enthalpyKJkg": 500.0640953058569,
+            "phase": "Liquid + vapor",
+            "quality": 0.13973305145841577,
+            "wet": true,
+            "superheatK": 0
+          },
+          {
+            "pressureBarAbsolute": 3.501410901049252,
+            "temperatureC": -5.3281624627937765,
+            "massKg": 0.011912805414491284,
+            "internalEnergyKJ": 5.747042782472179,
+            "volumeM3": 0.0006000000000000001,
+            "enthalpyKJkg": 500.0608361560754,
+            "phase": "Liquid + vapor",
+            "quality": 0.13974607071511247,
+            "wet": true,
+            "superheatK": 0
+          },
+          {
+            "pressureBarAbsolute": 3.501028298199602,
+            "temperatureC": -5.330953508622231,
+            "massKg": 0.01191099282280236,
+            "internalEnergyKJ": 5.746136599588074,
+            "volumeM3": 0.0006000000000000001,
+            "enthalpyKJkg": 500.05892758809546,
+            "phase": "Liquid + vapor",
+            "quality": 0.13975354178382127,
+            "wet": true,
+            "superheatK": 0
+          },
+          {
+            "pressureBarAbsolute": 3.5007609913515427,
+            "temperatureC": -5.332903663760113,
+            "massKg": 0.011909726585033076,
+            "internalEnergyKJ": 5.745503549352668,
+            "volumeM3": 0.0006000000000000001,
+            "enthalpyKJkg": 500.0575929524767,
+            "phase": "Liquid + vapor",
+            "quality": 0.13975876104418272,
+            "wet": true,
+            "superheatK": 0
+          },
+          {
+            "pressureBarAbsolute": 3.500506149728084,
+            "temperatureC": -5.33476301666975,
+            "massKg": 0.011908519441558761,
+            "internalEnergyKJ": 5.744900045863533,
+            "volumeM3": 0.0006000000000000001,
+            "enthalpyKJkg": 500.0563205250769,
+            "phase": "Liquid + vapor",
+            "quality": 0.13976373728809777,
+            "wet": true,
+            "superheatK": 0
+          }
+        ],
+        "nodes": [
+          {
+            "id": "tube-0",
+            "temperatureK": 273.14937920495527,
+            "energyKJ": -0.000604671755785637
+          },
+          {
+            "id": "fin-0",
+            "temperatureK": 273.15103387695723,
+            "energyKJ": 0.0008779701200974487
+          },
+          {
+            "id": "tube-1",
+            "temperatureK": 273.1493788001693,
+            "energyKJ": -0.0006050660286668443
+          },
+          {
+            "id": "fin-1",
+            "temperatureK": 273.15103387688174,
+            "energyKJ": 0.0008779700560122112
+          },
+          {
+            "id": "tube-2",
+            "temperatureK": 273.1493786150404,
+            "energyKJ": -0.0006052463493835533
+          },
+          {
+            "id": "fin-2",
+            "temperatureK": 273.15103387685184,
+            "energyKJ": 0.0008779700306107316
+          },
+          {
+            "id": "tube-3",
+            "temperatureK": 273.1493785006446,
+            "energyKJ": -0.0006053577741241529
+          },
+          {
+            "id": "fin-3",
+            "temperatureK": 273.15103387683473,
+            "energyKJ": 0.0008779700160775935
+          },
+          {
+            "id": "tube-4",
+            "temperatureK": 273.14937839307794,
+            "energyKJ": -0.0006054625470423564
+          },
+          {
+            "id": "fin-4",
+            "temperatureK": 273.15103387681864,
+            "energyKJ": 0.0008779700024243304
+          },
+          {
+            "id": "air",
+            "temperatureK": 278.1491726318937,
+            "energyKJ": 21.53643569819803
+          }
+        ],
+        "flows": {
+          "inlet": {
+            "massKgS": 0.015455088312802533,
+            "energyKW": 7.727544156401266
+          },
+          "outlet": {
+            "massKgS": 0.008111071453319055,
+            "energyKW": 4.055992546462715
+          },
+          "scope": "instantaneous signed accepted-endpoint faces; positive inlet-to-outlet"
+        },
+        "totals": {
+          "massKg": 0.059558002066300055,
+          "internalEnergyKJ": 28.732201105721266
+        },
+        "conservation": {
+          "massResidualKg": 2.2352657376954743e-15,
+          "refrigerantEnergyResidualKJ": 1.1303948228846838e-12,
+          "thermalEnergyResidualKJ": -4.99036575951628e-15,
+          "combinedEnergyResidualKJ": 1.1254044571251676e-12,
+          "boundaryMassKg": 1.0043121306735793e-05,
+          "boundaryEnthalpyKJ": 0.005021377192848497,
+          "airLoadKJ": 0.001
+        },
+        "numerics": {
+          "acceptedSteps": 16,
+          "rejectedSteps": 1,
+          "nextStepSeconds": 0.0005199999999999998,
+          "lastAcceptedInterval": {
+            "startSeconds": 0.0007400000000000001,
+            "endSeconds": 0.001,
+            "trialSeconds": 0.0002599999999999999,
+            "error": 0.04688050744825999
+          },
+          "minAcceptedStepSeconds": 9.999999999999999e-06,
+          "maxAcceptedStepSeconds": 0.00012999999999999996,
+          "lastTimeError": 0.04688050744825999,
+          "lastResidual": 2.3643324112563515e-13
+        }
+      },
+      "disposeMS": 5.181367999966824,
+      "restart": {
+        "fixture": "cold",
+        "workerCreationMS": 0.19999999995343387,
+        "firstAcceptedAndRenderedMS": 59.300000000046566
+      },
+      "resources": {
+        "ended": false,
+        "heartbeatActive": false,
+        "frameActive": false,
+        "pending": 0
+      }
+    },
+    {
+      "mode": "B10",
+      "fixture": "cold",
+      "round": 1,
+      "navigationToOriginalReadyMS": 214.49497799994788,
+      "originalInitializeMS": 156.60438600002635,
+      "originalModelCreateMS": 2.1000000000931323,
+      "lazyPanelMS": 171.26588900009665,
+      "session": {
+        "fixture": "cold",
+        "workerCreationMS": 0.2999999998137355,
+        "firstAcceptedAndRenderedMS": 72.19999999995343
+      },
+      "initialization": {
+        "type": "initialize",
+        "timing": {
+          "assetVerificationMS": 15.899999999906868,
+          "importAndOwnedTableMS": 33.699999999953434,
+          "createAndRecordMS": 5.399999999906868,
+          "serviceMS": 55.5999999998603
+        },
+        "delivery": {
+          "roundtripMS": 70.5,
+          "transferAndDispatchMS": 0.2001953125
+        }
+      },
+      "memoryReady": {
+        "processes": [
+          {
+            "name": "MainThread",
+            "rssKiB": 193036
+          },
+          {
+            "name": "chrome-headless",
+            "rssKiB": 102592
+          },
+          {
+            "name": "chrome-headless",
+            "rssKiB": 36924
+          },
+          {
+            "name": "chrome-headless",
+            "rssKiB": 37340
+          },
+          {
+            "name": "chrome-headless",
+            "rssKiB": 89352
+          },
+          {
+            "name": "chrome-headless",
+            "rssKiB": 72512
+          },
+          {
+            "name": "chrome-headless",
+            "rssKiB": 224772
+          }
+        ],
+        "totalRSSKiB": 756528,
+        "limit": "Browser/driver descendants; shared pages may be counted more than once; no worker heap isolation"
+      },
+      "switchDuringComputeMS": 46.91578799997842,
+      "threeAdvanceWithToolsMS": 807.7236899998752,
+      "workerMetrics": [
+        {
+          "type": "initialize",
+          "timing": {
+            "assetVerificationMS": 15.899999999906868,
+            "importAndOwnedTableMS": 33.699999999953434,
+            "createAndRecordMS": 5.399999999906868,
+            "serviceMS": 55.5999999998603
+          },
+          "delivery": {
+            "roundtripMS": 70.5,
+            "transferAndDispatchMS": 0.2001953125
+          }
+        },
+        {
+          "type": "advance",
+          "timing": {
+            "advanceMS": 46.60000000009313,
+            "projectionMS": 0,
+            "serviceMS": 46.800000000046566
+          },
+          "delivery": {
+            "roundtripMS": 49,
+            "transferAndDispatchMS": 0.7001953125
+          }
+        },
+        {
+          "type": "advance",
+          "timing": {
+            "advanceMS": 58.199999999953434,
+            "projectionMS": 0,
+            "serviceMS": 58.199999999953434
+          },
+          "delivery": {
+            "roundtripMS": 59.800000000046566,
+            "transferAndDispatchMS": 0.2001953125
+          }
+        },
+        {
+          "type": "advance",
+          "timing": {
+            "advanceMS": 15.399999999906868,
+            "projectionMS": 0,
+            "serviceMS": 15.5
+          },
+          "delivery": {
+            "roundtripMS": 62.699999999953434,
+            "transferAndDispatchMS": 46.2001953125
+          }
+        }
+      ],
+      "renderMS": [
+        0.4000000001396984,
+        0,
+        0.10000000009313226,
+        1.0999999998603016,
+        0.7000000001862645,
+        1.0999999998603016,
+        1.1999999999534339,
+        0.6999999999534339,
+        1,
+        0.8999999999068677,
+        0.4000000001396984,
+        0.6999999999534339,
+        4.699999999953434,
+        0.5
+      ],
+      "observations": {
+        "data": {
+          "heartbeat": [
+            2.2000000001862645,
+            9.699999999953434,
+            9.899999999906868,
+            11,
+            15.699999999953434,
+            4.5,
+            9.5,
+            13.800000000046566,
+            5.5,
+            11.100000000093132,
+            19.800000000046566,
+            9.099999999860302,
+            10,
+            10,
+            10,
+            10.300000000046566,
+            9.800000000046566,
+            9.899999999906868,
+            10,
+            10,
+            10.199999999953434,
+            24.300000000046566,
+            279,
+            78.80000000004657,
+            7.899999999906868,
+            11.400000000139698,
+            10.699999999953434,
+            7.699999999953434,
+            10,
+            10.5,
+            15.300000000046566,
+            4.300000000046566,
+            10.300000000046566,
+            9.699999999953434,
+            9.899999999906868,
+            10.100000000093132,
+            10.800000000046566,
+            9.799999999813735,
+            68.20000000018626,
+            5.7999999998137355,
+            7.100000000093132,
+            8.199999999953434,
+            10.100000000093132,
+            9.899999999906868,
+            10.100000000093132,
+            9.899999999906868,
+            13.800000000046566,
+            6.699999999953434,
+            9.5,
+            10.100000000093132,
+            10.5,
+            28.899999999906868
+          ],
+          "frames": [
+            33.30000000000007,
+            16.600000000000023,
+            16.699999999999932,
+            16.700000000000045,
+            16.699999999999932,
+            16.600000000000023,
+            16.600000000000023,
+            16.799999999999955,
+            16.600000000000023,
+            16.700000000000045,
+            16.600000000000023,
+            66.69999999999993,
+            216.69999999999993,
+            33.30000000000018,
+            83.29999999999995,
+            16.700000000000045,
+            16.59999999999991,
+            16.700000000000045,
+            16.700000000000045,
+            16.59999999999991,
+            16.700000000000045,
+            16.700000000000045,
+            49.899999999999864,
+            33.40000000000009,
+            16.700000000000045,
+            16.59999999999991,
+            16.700000000000045,
+            33.299999999999955,
+            16.700000000000045
+          ],
+          "clicks": [
+            {
+              "id": "console-tools",
+              "trusted": true,
+              "ackMS": 1.1000000000931323,
+              "pending": 0
+            },
+            {
+              "id": "storage-schematic",
+              "trusted": true,
+              "ackMS": 0.10000000009313226,
+              "pending": 0
+            },
+            {
+              "id": "b10-a2-link",
+              "trusted": true,
+              "ackMS": 0.8000000000465661,
+              "pending": 0
+            },
+            {
+              "id": "storage-pause",
+              "trusted": true,
+              "ackMS": 0,
+              "pending": 0
+            }
+          ],
+          "tools": [
+            {
+              "tool": "plant-diagnostics",
+              "atMS": 823.5999999998603
+            },
+            {
+              "tool": "b10-a2-shadow",
+              "atMS": 1376.8000000000466
+            }
+          ],
+          "originalModelCreateMS": []
+        },
+        "heap": {
+          "used": 11900000,
+          "total": 29400000
+        },
+        "nav": [
+          {
+            "domContentLoaded": 167.69999999995343,
+            "load": 192.80000000004657,
+            "responseEnd": 8.800000000046566
+          }
+        ]
+      },
+      "memoryAfter": {
+        "processes": [
+          {
+            "name": "MainThread",
+            "rssKiB": 193044
+          },
+          {
+            "name": "chrome-headless",
+            "rssKiB": 102720
+          },
+          {
+            "name": "chrome-headless",
+            "rssKiB": 36924
+          },
+          {
+            "name": "chrome-headless",
+            "rssKiB": 37340
+          },
+          {
+            "name": "chrome-headless",
+            "rssKiB": 93300
+          },
+          {
+            "name": "chrome-headless",
+            "rssKiB": 72512
+          },
+          {
+            "name": "chrome-headless",
+            "rssKiB": 269824
+          }
+        ],
+        "totalRSSKiB": 805664,
+        "limit": "Browser/driver descendants; shared pages may be counted more than once; no worker heap isolation"
+      },
+      "clock": 0.001,
+      "scientificSnapshot": {
+        "clockSeconds": 0.001,
+        "sections": [
+          {
+            "pressureBarAbsolute": 3.5020754953733304,
+            "temperatureC": -5.323315044994557,
+            "massKg": 0.01191595780241458,
+            "internalEnergyKJ": 5.748618128444814,
+            "volumeM3": 0.0006000000000000001,
+            "enthalpyKJkg": 500.0640953058569,
+            "phase": "Liquid + vapor",
+            "quality": 0.13973305145841577,
+            "wet": true,
+            "superheatK": 0
+          },
+          {
+            "pressureBarAbsolute": 3.501410901049252,
+            "temperatureC": -5.3281624627937765,
+            "massKg": 0.011912805414491284,
+            "internalEnergyKJ": 5.747042782472179,
+            "volumeM3": 0.0006000000000000001,
+            "enthalpyKJkg": 500.0608361560754,
+            "phase": "Liquid + vapor",
+            "quality": 0.13974607071511247,
+            "wet": true,
+            "superheatK": 0
+          },
+          {
+            "pressureBarAbsolute": 3.501028298199602,
+            "temperatureC": -5.330953508622231,
+            "massKg": 0.01191099282280236,
+            "internalEnergyKJ": 5.746136599588074,
+            "volumeM3": 0.0006000000000000001,
+            "enthalpyKJkg": 500.05892758809546,
+            "phase": "Liquid + vapor",
+            "quality": 0.13975354178382127,
+            "wet": true,
+            "superheatK": 0
+          },
+          {
+            "pressureBarAbsolute": 3.5007609913515427,
+            "temperatureC": -5.332903663760113,
+            "massKg": 0.011909726585033076,
+            "internalEnergyKJ": 5.745503549352668,
+            "volumeM3": 0.0006000000000000001,
+            "enthalpyKJkg": 500.0575929524767,
+            "phase": "Liquid + vapor",
+            "quality": 0.13975876104418272,
+            "wet": true,
+            "superheatK": 0
+          },
+          {
+            "pressureBarAbsolute": 3.500506149728084,
+            "temperatureC": -5.33476301666975,
+            "massKg": 0.011908519441558761,
+            "internalEnergyKJ": 5.744900045863533,
+            "volumeM3": 0.0006000000000000001,
+            "enthalpyKJkg": 500.0563205250769,
+            "phase": "Liquid + vapor",
+            "quality": 0.13976373728809777,
+            "wet": true,
+            "superheatK": 0
+          }
+        ],
+        "nodes": [
+          {
+            "id": "tube-0",
+            "temperatureK": 273.14937920495527,
+            "energyKJ": -0.000604671755785637
+          },
+          {
+            "id": "fin-0",
+            "temperatureK": 273.15103387695723,
+            "energyKJ": 0.0008779701200974487
+          },
+          {
+            "id": "tube-1",
+            "temperatureK": 273.1493788001693,
+            "energyKJ": -0.0006050660286668443
+          },
+          {
+            "id": "fin-1",
+            "temperatureK": 273.15103387688174,
+            "energyKJ": 0.0008779700560122112
+          },
+          {
+            "id": "tube-2",
+            "temperatureK": 273.1493786150404,
+            "energyKJ": -0.0006052463493835533
+          },
+          {
+            "id": "fin-2",
+            "temperatureK": 273.15103387685184,
+            "energyKJ": 0.0008779700306107316
+          },
+          {
+            "id": "tube-3",
+            "temperatureK": 273.1493785006446,
+            "energyKJ": -0.0006053577741241529
+          },
+          {
+            "id": "fin-3",
+            "temperatureK": 273.15103387683473,
+            "energyKJ": 0.0008779700160775935
+          },
+          {
+            "id": "tube-4",
+            "temperatureK": 273.14937839307794,
+            "energyKJ": -0.0006054625470423564
+          },
+          {
+            "id": "fin-4",
+            "temperatureK": 273.15103387681864,
+            "energyKJ": 0.0008779700024243304
+          },
+          {
+            "id": "air",
+            "temperatureK": 278.1491726318937,
+            "energyKJ": 21.53643569819803
+          }
+        ],
+        "flows": {
+          "inlet": {
+            "massKgS": 0.015455088312802533,
+            "energyKW": 7.727544156401266
+          },
+          "outlet": {
+            "massKgS": 0.008111071453319055,
+            "energyKW": 4.055992546462715
+          },
+          "scope": "instantaneous signed accepted-endpoint faces; positive inlet-to-outlet"
+        },
+        "totals": {
+          "massKg": 0.059558002066300055,
+          "internalEnergyKJ": 28.732201105721266
+        },
+        "conservation": {
+          "massResidualKg": 2.2352657376954743e-15,
+          "refrigerantEnergyResidualKJ": 1.1303948228846838e-12,
+          "thermalEnergyResidualKJ": -4.99036575951628e-15,
+          "combinedEnergyResidualKJ": 1.1254044571251676e-12,
+          "boundaryMassKg": 1.0043121306735793e-05,
+          "boundaryEnthalpyKJ": 0.005021377192848497,
+          "airLoadKJ": 0.001
+        },
+        "numerics": {
+          "acceptedSteps": 16,
+          "rejectedSteps": 1,
+          "nextStepSeconds": 0.0005199999999999998,
+          "lastAcceptedInterval": {
+            "startSeconds": 0.0007400000000000001,
+            "endSeconds": 0.001,
+            "trialSeconds": 0.0002599999999999999,
+            "error": 0.04688050744825999
+          },
+          "minAcceptedStepSeconds": 9.999999999999999e-06,
+          "maxAcceptedStepSeconds": 0.00012999999999999996,
+          "lastTimeError": 0.04688050744825999,
+          "lastResidual": 2.3643324112563515e-13
+        }
+      },
+      "disposeMS": 8.189006999828052,
+      "restart": {
+        "fixture": "cold",
+        "workerCreationMS": 0.10000000009313226,
+        "firstAcceptedAndRenderedMS": 56.4000000001397
+      },
+      "resources": {
+        "ended": false,
+        "heartbeatActive": false,
+        "frameActive": false,
+        "pending": 0
+      }
+    },
+    {
+      "mode": "B11",
+      "fixture": "warm",
+      "round": 1,
+      "navigationToOriginalReadyMS": 247.46492999997827,
+      "originalInitializeMS": 170.00175500015757,
+      "originalModelCreateMS": 2,
+      "lazyPanelMS": 191.99226899991118,
+      "session": {
+        "fixture": "warm",
+        "workerCreationMS": 0.4000000001396984,
+        "firstAcceptedAndRenderedMS": 80.9000000001397
+      },
+      "initialization": {
+        "type": "initialize",
+        "timing": {
+          "assetVerificationMS": 17.0999999998603,
+          "importAndOwnedTableMS": 37.699999999953434,
+          "createAndRecordMS": 7.7000000001862645,
+          "serviceMS": 62.799999999813735
+        },
+        "delivery": {
+          "roundtripMS": 79.4000000001397,
+          "transferAndDispatchMS": 0.099853515625
+        }
+      },
+      "memoryReady": {
+        "processes": [
+          {
+            "name": "MainThread",
+            "rssKiB": 191820
+          },
+          {
+            "name": "chrome-headless",
+            "rssKiB": 102680
+          },
+          {
+            "name": "chrome-headless",
+            "rssKiB": 36924
+          },
+          {
+            "name": "chrome-headless",
+            "rssKiB": 37340
+          },
+          {
+            "name": "chrome-headless",
+            "rssKiB": 89428
+          },
+          {
+            "name": "chrome-headless",
+            "rssKiB": 72504
+          },
+          {
+            "name": "chrome-headless",
+            "rssKiB": 225620
+          }
+        ],
+        "totalRSSKiB": 756316,
+        "limit": "Browser/driver descendants; shared pages may be counted more than once; no worker heap isolation"
+      },
+      "switchDuringComputeMS": 152.77105100017252,
+      "threeAdvanceWithToolsMS": 1239.8567279999497,
+      "workerMetrics": [
+        {
+          "type": "initialize",
+          "timing": {
+            "assetVerificationMS": 17.0999999998603,
+            "importAndOwnedTableMS": 37.699999999953434,
+            "createAndRecordMS": 7.7000000001862645,
+            "serviceMS": 62.799999999813735
+          },
+          "delivery": {
+            "roundtripMS": 79.4000000001397,
+            "transferAndDispatchMS": 0.099853515625
+          }
+        },
+        {
+          "type": "advance",
+          "timing": {
+            "advanceMS": 280.0999999998603,
+            "projectionMS": 0,
+            "serviceMS": 280.19999999995343
+          },
+          "delivery": {
+            "roundtripMS": 534.3999999999069,
+            "transferAndDispatchMS": 252.699951171875
+          }
+        },
+        {
+          "type": "advance",
+          "timing": {
+            "advanceMS": 125,
+            "projectionMS": 0,
+            "serviceMS": 125
+          },
+          "delivery": {
+            "roundtripMS": 126.60000000009313,
+            "transferAndDispatchMS": -0.10009765625
+          }
+        },
+        {
+          "type": "advance",
+          "timing": {
+            "advanceMS": 113.69999999995343,
+            "projectionMS": 0,
+            "serviceMS": 113.80000000004657
+          },
+          "delivery": {
+            "roundtripMS": 139.19999999995343,
+            "transferAndDispatchMS": 24.39990234375
+          }
+        }
+      ],
+      "renderMS": [
+        0.19999999995343387,
+        0,
+        0,
+        0.8000000000465661,
+        0.5,
+        1.0999999998603016,
+        1,
+        0.6999999999534339,
+        1.1000000000931323,
+        0.8999999999068677,
+        0.5,
+        0.6999999999534339,
+        1,
+        0.4000000001396984
+      ],
+      "observations": {
+        "data": {
+          "heartbeat": [
+            6.899999999906868,
+            10,
+            10,
+            10,
+            17,
+            3,
+            9.900000000139698,
+            16,
+            4.099999999860302,
+            11.5,
+            21.800000000046566,
+            6.800000000046566,
+            9.899999999906868,
+            10,
+            10,
+            9.900000000139698,
+            10.099999999860302,
+            10,
+            10,
+            341.69999999995343,
+            87.70000000018626,
+            0.6999999999534339,
+            9.899999999906868,
+            13.600000000093132,
+            6.399999999906868,
+            9.900000000139698,
+            10.099999999860302,
+            10,
+            19.5,
+            40.4000000001397,
+            10.099999999860302,
+            10,
+            10,
+            10,
+            10,
+            9.900000000139698,
+            10.199999999953434,
+            9.899999999906868,
+            10.100000000093132,
+            9.899999999906868,
+            10.300000000046566,
+            19.699999999953434,
+            10,
+            10,
+            10,
+            10,
+            10,
+            11.5,
+            24.100000000093132,
+            64.69999999995343,
+            9.699999999953434,
+            10,
+            10,
+            10,
+            10.100000000093132,
+            9.899999999906868,
+            11,
+            13.800000000046566,
+            5.199999999953434,
+            10,
+            10,
+            10,
+            10,
+            10,
+            9.900000000139698,
+            10.099999999860302,
+            9.900000000139698,
+            38.39999999990687,
+            5.399999999906868,
+            6.300000000046566,
+            10,
+            10.600000000093132,
+            9.399999999906868,
+            21.699999999953434,
+            8.300000000046566,
+            10,
+            10,
+            9.900000000139698,
+            27.899999999906868,
+            2.3999999999068677
+          ],
+          "frames": [
+            33.39999999999998,
+            33.299999999999955,
+            33.30000000000007,
+            16.699999999999932,
+            16.600000000000136,
+            16.699999999999818,
+            316.60000000000014,
+            50.09999999999991,
+            50,
+            33.299999999999955,
+            16.600000000000136,
+            16.700000000000045,
+            16.699999999999818,
+            33.30000000000018,
+            33.299999999999955,
+            16.799999999999955,
+            16.59999999999991,
+            16.600000000000136,
+            16.700000000000045,
+            16.699999999999818,
+            16.700000000000045,
+            33.200000000000045,
+            16.700000000000045,
+            33.399999999999864,
+            16.600000000000136,
+            50.09999999999991,
+            33.299999999999955,
+            33.30000000000018,
+            16.59999999999991,
+            33.40000000000009,
+            16.699999999999818,
+            16.600000000000136,
+            16.700000000000045,
+            16.699999999999818,
+            16.700000000000273,
+            33.29999999999973,
+            16.59999999999991,
+            16.700000000000273,
+            33.40000000000009,
+            16.59999999999991,
+            16.59999999999991
+          ],
+          "clicks": [
+            {
+              "id": "console-tools",
+              "trusted": true,
+              "ackMS": 0.6999999999534339,
+              "pending": 0
+            },
+            {
+              "id": "storage-schematic",
+              "trusted": true,
+              "ackMS": 0.8999999999068677,
+              "pending": 0
+            },
+            {
+              "id": "b10-a2-link",
+              "trusted": true,
+              "ackMS": 1,
+              "pending": 0
+            },
+            {
+              "id": "storage-pause",
+              "trusted": true,
+              "ackMS": 0.8000000000465661,
+              "pending": 0
+            }
+          ],
+          "tools": [
+            {
+              "tool": "plant-diagnostics",
+              "atMS": 1555.0999999998603
+            },
+            {
+              "tool": "b10-a2-shadow",
+              "atMS": 1811.5
+            }
+          ],
+          "originalModelCreateMS": []
+        },
+        "heap": {
+          "used": 11200000,
+          "total": 29400000
+        },
+        "nav": [
+          {
+            "domContentLoaded": 194.89999999990687,
+            "load": 225,
+            "responseEnd": 7.399999999906868
+          }
+        ]
+      },
+      "memoryAfter": {
+        "processes": [
+          {
+            "name": "MainThread",
+            "rssKiB": 191828
+          },
+          {
+            "name": "chrome-headless",
+            "rssKiB": 102836
+          },
+          {
+            "name": "chrome-headless",
+            "rssKiB": 36924
+          },
+          {
+            "name": "chrome-headless",
+            "rssKiB": 37340
+          },
+          {
+            "name": "chrome-headless",
+            "rssKiB": 92052
+          },
+          {
+            "name": "chrome-headless",
+            "rssKiB": 72504
+          },
+          {
+            "name": "chrome-headless",
+            "rssKiB": 284624
+          }
+        ],
+        "totalRSSKiB": 818108,
+        "limit": "Browser/driver descendants; shared pages may be counted more than once; no worker heap isolation"
+      },
+      "clock": 0.001,
+      "scientificSnapshot": {
+        "clockSeconds": 0.001,
+        "sections": [
+          {
+            "pressureBarAbsolute": 3.6303545131821546,
+            "temperatureC": 10.574289164494553,
+            "massKg": 0.0016521413772025817,
+            "internalEnergyKJ": 2.492836423120858,
+            "volumeM3": 0.0006000000000000001,
+            "enthalpyKJkg": 1640.6935455697064,
+            "phase": "Superheated vapor",
+            "quality": null,
+            "wet": false,
+            "superheatK": 14.973441924666986
+          },
+          {
+            "pressureBarAbsolute": 3.6307323350447107,
+            "temperatureC": 14.237596417681925,
+            "massKg": 0.0016267234011596516,
+            "internalEnergyKJ": 2.4657726738965677,
+            "volumeM3": 0.0006000000000000001,
+            "enthalpyKJkg": 1649.7067738180735,
+            "phase": "Superheated vapor",
+            "quality": null,
+            "wet": false,
+            "superheatK": 18.634068401297554
+          },
+          {
+            "pressureBarAbsolute": 3.6291687571498694,
+            "temperatureC": 14.209501864490361,
+            "massKg": 0.0016261796561648852,
+            "internalEnergyKJ": 2.464877283242702,
+            "volumeM3": 0.0006000000000000001,
+            "enthalpyKJkg": 1649.6500853483817,
+            "phase": "Superheated vapor",
+            "quality": null,
+            "wet": false,
+            "superheatK": 18.61706978525035
+          },
+          {
+            "pressureBarAbsolute": 3.6193877365576275,
+            "temperatureC": 14.034986516208983,
+            "massKg": 0.001622766732816856,
+            "internalEnergyKJ": 2.459263764117378,
+            "volumeM3": 0.0006000000000000001,
+            "enthalpyKJkg": 1649.2986787657076,
+            "phase": "Superheated vapor",
+            "quality": null,
+            "wet": false,
+            "superheatK": 18.51207416621037
+          },
+          {
+            "pressureBarAbsolute": 3.591159665087296,
+            "temperatureC": 13.533815960174714,
+            "massKg": 0.0016128702011369246,
+            "internalEnergyKJ": 2.4430123113421325,
+            "volumeM3": 0.0006000000000000001,
+            "enthalpyKJkg": 1648.292521788559,
+            "phase": "Superheated vapor",
+            "quality": null,
+            "wet": false,
+            "superheatK": 18.21259639109485
+          }
+        ],
+        "nodes": [
+          {
+            "id": "tube-0",
+            "temperatureK": 293.1490755634338,
+            "energyKJ": 19.47965957290037
+          },
+          {
+            "id": "fin-0",
+            "temperatureK": 293.14999982482993,
+            "energyKJ": 16.984034826767523
+          },
+          {
+            "id": "tube-1",
+            "temperatureK": 293.1493039406118,
+            "energyKJ": 19.479882018666263
+          },
+          {
+            "id": "fin-1",
+            "temperatureK": 293.1499998610407,
+            "energyKJ": 16.984034857517777
+          },
+          {
+            "id": "tube-2",
+            "temperatureK": 293.14930252649845,
+            "energyKJ": 19.479880641280268
+          },
+          {
+            "id": "fin-2",
+            "temperatureK": 293.1499998608643,
+            "energyKJ": 16.984034857367927
+          },
+          {
+            "id": "tube-3",
+            "temperatureK": 293.14928994957336,
+            "energyKJ": 19.47986839100305
+          },
+          {
+            "id": "fin-3",
+            "temperatureK": 293.1499998587734,
+            "energyKJ": 16.984034855592395
+          },
+          {
+            "id": "tube-4",
+            "temperatureK": 293.1492432871132,
+            "energyKJ": 19.479822940460327
+          },
+          {
+            "id": "fin-4",
+            "temperatureK": 293.14999984976737,
+            "energyKJ": 16.984034847944432
+          },
+          {
+            "id": "air",
+            "temperatureK": 293.15023209872436,
+            "energyKJ": 86.1609998813047
+          }
+        ],
+        "flows": {
+          "inlet": {
+            "massKgS": 0.013316232304362038,
+            "energyKW": 6.658116152181019
+          },
+          "outlet": {
+            "massKgS": 0.040378010088558035,
+            "energyKW": 66.55477207612081
+          },
+          "scope": "instantaneous signed accepted-endpoint faces; positive inlet-to-outlet"
+        },
+        "totals": {
+          "massKg": 0.008140681368480899,
+          "internalEnergyKJ": 12.325762455719637
+        },
+        "conservation": {
+          "massResidualKg": -1.9028147926671707e-14,
+          "refrigerantEnergyResidualKJ": -3.127907308164701e-11,
+          "thermalEnergyResidualKJ": 2.2507169739061084e-14,
+          "combinedEnergyResidualKJ": -3.125656591190795e-11,
+          "boundaryMassKg": -3.2073101432023055e-05,
+          "boundaryEnthalpyKJ": -0.06796960644291593,
+          "airLoadKJ": 0.0009999999999999998
+        },
+        "numerics": {
+          "acceptedSteps": 34,
+          "rejectedSteps": 3,
+          "nextStepSeconds": 0.0001527328594434017,
+          "lastAcceptedInterval": {
+            "startSeconds": 0.0009236335702782992,
+            "endSeconds": 0.001,
+            "trialSeconds": 7.636642972170084e-05,
+            "error": 0.03902422842901616
+          },
+          "minAcceptedStepSeconds": 4.405649861710203e-06,
+          "maxAcceptedStepSeconds": 7.964728928784347e-05,
+          "lastTimeError": 0.03902422842901616,
+          "lastResidual": 3.3240247222011844e-12
+        }
+      },
+      "disposeMS": 7.52998200005095,
+      "restart": {
+        "fixture": "warm",
+        "workerCreationMS": 0.6999999999534339,
+        "firstAcceptedAndRenderedMS": 84
+      },
+      "resources": {
+        "ended": false,
+        "heartbeatActive": false,
+        "frameActive": false,
+        "pending": 0
+      }
+    },
+    {
+      "mode": "B10",
+      "fixture": "warm",
+      "round": 1,
+      "navigationToOriginalReadyMS": 232.5602240000535,
+      "originalInitializeMS": 145.9696229999281,
+      "originalModelCreateMS": 2.300000000046566,
+      "lazyPanelMS": 238.3567619999667,
+      "session": {
+        "fixture": "warm",
+        "workerCreationMS": 0.19999999995343387,
+        "firstAcceptedAndRenderedMS": 79.69999999995343
+      },
+      "initialization": {
+        "type": "initialize",
+        "timing": {
+          "assetVerificationMS": 17.899999999906868,
+          "importAndOwnedTableMS": 31.4000000001397,
+          "createAndRecordMS": 7.399999999906868,
+          "serviceMS": 57
+        },
+        "delivery": {
+          "roundtripMS": 76.39999999990687,
+          "transferAndDispatchMS": 0.199951171875
+        }
+      },
+      "memoryReady": {
+        "processes": [
+          {
+            "name": "MainThread",
+            "rssKiB": 193132
+          },
+          {
+            "name": "chrome-headless",
+            "rssKiB": 102756
+          },
+          {
+            "name": "chrome-headless",
+            "rssKiB": 36924
+          },
+          {
+            "name": "chrome-headless",
+            "rssKiB": 37340
+          },
+          {
+            "name": "chrome-headless",
+            "rssKiB": 89768
+          },
+          {
+            "name": "chrome-headless",
+            "rssKiB": 72536
+          },
+          {
+            "name": "chrome-headless",
+            "rssKiB": 225192
+          }
+        ],
+        "totalRSSKiB": 757648,
+        "limit": "Browser/driver descendants; shared pages may be counted more than once; no worker heap isolation"
+      },
+      "switchDuringComputeMS": 390.6176810000943,
+      "threeAdvanceWithToolsMS": 1278.4072010001637,
+      "workerMetrics": [
+        {
+          "type": "initialize",
+          "timing": {
+            "assetVerificationMS": 17.899999999906868,
+            "importAndOwnedTableMS": 31.4000000001397,
+            "createAndRecordMS": 7.399999999906868,
+            "serviceMS": 57
+          },
+          "delivery": {
+            "roundtripMS": 76.39999999990687,
+            "transferAndDispatchMS": 0.199951171875
+          }
+        },
+        {
+          "type": "advance",
+          "timing": {
+            "advanceMS": 204.19999999995343,
+            "projectionMS": 0.10000000009313226,
+            "serviceMS": 204.4000000001397
+          },
+          "delivery": {
+            "roundtripMS": 206.10000000009313,
+            "transferAndDispatchMS": 0.2001953125
+          }
+        },
+        {
+          "type": "advance",
+          "timing": {
+            "advanceMS": 148.19999999995343,
+            "projectionMS": 0,
+            "serviceMS": 148.30000000004657
+          },
+          "delivery": {
+            "roundtripMS": 150.10000000009313,
+            "transferAndDispatchMS": 0.300048828125
+          }
+        },
+        {
+          "type": "advance",
+          "timing": {
+            "advanceMS": 105.5,
+            "projectionMS": 0.10000000009313226,
+            "serviceMS": 105.80000000004657
+          },
+          "delivery": {
+            "roundtripMS": 147.5,
+            "transferAndDispatchMS": 40.7001953125
+          }
+        }
+      ],
+      "renderMS": [
+        0.2999999998137355,
+        0.09999999986030161,
+        0,
+        0.7999999998137355,
+        0.5,
+        1.1000000000931323,
+        1.3000000000465661,
+        0.8999999999068677,
+        1.2000000001862645,
+        1,
+        0.19999999995343387,
+        0.5999999998603016,
+        0.8999999999068677,
+        0.5
+      ],
+      "observations": {
+        "data": {
+          "heartbeat": [
+            2.4000000001396984,
+            9,
+            10.199999999953434,
+            9.899999999906868,
+            15.300000000046566,
+            4.699999999953434,
+            10,
+            10.5,
+            9.5,
+            10,
+            10,
+            10,
+            10,
+            10,
+            12.400000000139698,
+            7.7999999998137355,
+            9.800000000046566,
+            10,
+            10,
+            10.400000000139698,
+            9.599999999860302,
+            12.199999999953434,
+            7.900000000139698,
+            9.899999999906868,
+            264.9000000001397,
+            88.29999999981374,
+            6.900000000139698,
+            55.0999999998603,
+            5.7000000001862645,
+            9.099999999860302,
+            10,
+            10,
+            10,
+            10,
+            10,
+            10,
+            10.100000000093132,
+            63.0999999998603,
+            46.700000000186265,
+            42.39999999990687,
+            7.699999999953434,
+            10,
+            10,
+            9.900000000139698,
+            10.099999999860302,
+            10,
+            24.800000000046566,
+            5.300000000046566,
+            9.899999999906868,
+            82.80000000004657,
+            7.199999999953434,
+            10,
+            9.900000000139698,
+            12.399999999906868,
+            7.699999999953434,
+            10.199999999953434,
+            9.700000000186265,
+            10.299999999813735,
+            13.400000000139698,
+            6.300000000046566,
+            10.099999999860302,
+            11,
+            9,
+            10,
+            10.400000000139698,
+            9.699999999953434,
+            10,
+            51.5,
+            8.399999999906868,
+            10,
+            10,
+            10,
+            10,
+            21.300000000046566,
+            8.699999999953434,
+            10,
+            37.10000000009313
+          ],
+          "frames": [
+            16.700000000000045,
+            33.39999999999998,
+            16.600000000000023,
+            16.700000000000045,
+            16.699999999999932,
+            16.600000000000023,
+            16.700000000000045,
+            16.699999999999932,
+            16.600000000000023,
+            16.700000000000045,
+            16.700000000000045,
+            250,
+            50,
+            33.299999999999955,
+            50,
+            16.700000000000045,
+            33.299999999999955,
+            33.299999999999955,
+            16.700000000000045,
+            16.700000000000045,
+            49.899999999999864,
+            33.299999999999955,
+            33.40000000000009,
+            16.59999999999991,
+            50.100000000000136,
+            16.700000000000045,
+            16.59999999999991,
+            33.40000000000009,
+            66.59999999999991,
+            50,
+            16.700000000000045,
+            33.299999999999955,
+            16.700000000000045,
+            33.299999999999955,
+            16.699999999999818,
+            16.600000000000364,
+            33.29999999999973,
+            33.40000000000009,
+            16.699999999999818,
+            16.600000000000364,
+            16.699999999999818,
+            16.699999999999818,
+            33.30000000000018
+          ],
+          "clicks": [
+            {
+              "id": "console-tools",
+              "trusted": true,
+              "ackMS": 3.3999999999068677,
+              "pending": 0
+            },
+            {
+              "id": "storage-schematic",
+              "trusted": true,
+              "ackMS": 1.1999999999534339,
+              "pending": 0
+            },
+            {
+              "id": "b10-a2-link",
+              "trusted": true,
+              "ackMS": 0.7999999998137355,
+              "pending": 0
+            },
+            {
+              "id": "storage-pause",
+              "trusted": true,
+              "ackMS": 1,
+              "pending": 0
+            }
+          ],
+          "tools": [
+            {
+              "tool": "plant-diagnostics",
+              "atMS": 1428.3000000000466
+            },
+            {
+              "tool": "b10-a2-shadow",
+              "atMS": 1780.4000000001397
+            }
+          ],
+          "originalModelCreateMS": []
+        },
+        "heap": {
+          "used": 17100000,
+          "total": 29400000
+        },
+        "nav": [
+          {
+            "domContentLoaded": 179.9000000001397,
+            "load": 210.4000000001397,
+            "responseEnd": 8.100000000093132
+          }
+        ]
+      },
+      "memoryAfter": {
+        "processes": [
+          {
+            "name": "MainThread",
+            "rssKiB": 193600
+          },
+          {
+            "name": "chrome-headless",
+            "rssKiB": 102996
+          },
+          {
+            "name": "chrome-headless",
+            "rssKiB": 36924
+          },
+          {
+            "name": "chrome-headless",
+            "rssKiB": 37340
+          },
+          {
+            "name": "chrome-headless",
+            "rssKiB": 93156
+          },
+          {
+            "name": "chrome-headless",
+            "rssKiB": 72536
+          },
+          {
+            "name": "chrome-headless",
+            "rssKiB": 288664
+          }
+        ],
+        "totalRSSKiB": 825216,
+        "limit": "Browser/driver descendants; shared pages may be counted more than once; no worker heap isolation"
+      },
+      "clock": 0.001,
+      "scientificSnapshot": {
+        "clockSeconds": 0.001,
+        "sections": [
+          {
+            "pressureBarAbsolute": 3.6303545131821546,
+            "temperatureC": 10.574289164494553,
+            "massKg": 0.0016521413772025817,
+            "internalEnergyKJ": 2.492836423120858,
+            "volumeM3": 0.0006000000000000001,
+            "enthalpyKJkg": 1640.6935455697064,
+            "phase": "Superheated vapor",
+            "quality": null,
+            "wet": false,
+            "superheatK": 14.973441924666986
+          },
+          {
+            "pressureBarAbsolute": 3.6307323350447107,
+            "temperatureC": 14.237596417681925,
+            "massKg": 0.0016267234011596516,
+            "internalEnergyKJ": 2.4657726738965677,
+            "volumeM3": 0.0006000000000000001,
+            "enthalpyKJkg": 1649.7067738180735,
+            "phase": "Superheated vapor",
+            "quality": null,
+            "wet": false,
+            "superheatK": 18.634068401297554
+          },
+          {
+            "pressureBarAbsolute": 3.6291687571498694,
+            "temperatureC": 14.209501864490361,
+            "massKg": 0.0016261796561648852,
+            "internalEnergyKJ": 2.464877283242702,
+            "volumeM3": 0.0006000000000000001,
+            "enthalpyKJkg": 1649.6500853483817,
+            "phase": "Superheated vapor",
+            "quality": null,
+            "wet": false,
+            "superheatK": 18.61706978525035
+          },
+          {
+            "pressureBarAbsolute": 3.6193877365576275,
+            "temperatureC": 14.034986516208983,
+            "massKg": 0.001622766732816856,
+            "internalEnergyKJ": 2.459263764117378,
+            "volumeM3": 0.0006000000000000001,
+            "enthalpyKJkg": 1649.2986787657076,
+            "phase": "Superheated vapor",
+            "quality": null,
+            "wet": false,
+            "superheatK": 18.51207416621037
+          },
+          {
+            "pressureBarAbsolute": 3.591159665087296,
+            "temperatureC": 13.533815960174714,
+            "massKg": 0.0016128702011369246,
+            "internalEnergyKJ": 2.4430123113421325,
+            "volumeM3": 0.0006000000000000001,
+            "enthalpyKJkg": 1648.292521788559,
+            "phase": "Superheated vapor",
+            "quality": null,
+            "wet": false,
+            "superheatK": 18.21259639109485
+          }
+        ],
+        "nodes": [
+          {
+            "id": "tube-0",
+            "temperatureK": 293.1490755634338,
+            "energyKJ": 19.47965957290037
+          },
+          {
+            "id": "fin-0",
+            "temperatureK": 293.14999982482993,
+            "energyKJ": 16.984034826767523
+          },
+          {
+            "id": "tube-1",
+            "temperatureK": 293.1493039406118,
+            "energyKJ": 19.479882018666263
+          },
+          {
+            "id": "fin-1",
+            "temperatureK": 293.1499998610407,
+            "energyKJ": 16.984034857517777
+          },
+          {
+            "id": "tube-2",
+            "temperatureK": 293.14930252649845,
+            "energyKJ": 19.479880641280268
+          },
+          {
+            "id": "fin-2",
+            "temperatureK": 293.1499998608643,
+            "energyKJ": 16.984034857367927
+          },
+          {
+            "id": "tube-3",
+            "temperatureK": 293.14928994957336,
+            "energyKJ": 19.47986839100305
+          },
+          {
+            "id": "fin-3",
+            "temperatureK": 293.1499998587734,
+            "energyKJ": 16.984034855592395
+          },
+          {
+            "id": "tube-4",
+            "temperatureK": 293.1492432871132,
+            "energyKJ": 19.479822940460327
+          },
+          {
+            "id": "fin-4",
+            "temperatureK": 293.14999984976737,
+            "energyKJ": 16.984034847944432
+          },
+          {
+            "id": "air",
+            "temperatureK": 293.15023209872436,
+            "energyKJ": 86.1609998813047
+          }
+        ],
+        "flows": {
+          "inlet": {
+            "massKgS": 0.013316232304362038,
+            "energyKW": 6.658116152181019
+          },
+          "outlet": {
+            "massKgS": 0.040378010088558035,
+            "energyKW": 66.55477207612081
+          },
+          "scope": "instantaneous signed accepted-endpoint faces; positive inlet-to-outlet"
+        },
+        "totals": {
+          "massKg": 0.008140681368480899,
+          "internalEnergyKJ": 12.325762455719637
+        },
+        "conservation": {
+          "massResidualKg": -1.9028147926671707e-14,
+          "refrigerantEnergyResidualKJ": -3.127907308164701e-11,
+          "thermalEnergyResidualKJ": 2.2507169739061084e-14,
+          "combinedEnergyResidualKJ": -3.125656591190795e-11,
+          "boundaryMassKg": -3.2073101432023055e-05,
+          "boundaryEnthalpyKJ": -0.06796960644291593,
+          "airLoadKJ": 0.0009999999999999998
+        },
+        "numerics": {
+          "acceptedSteps": 34,
+          "rejectedSteps": 3,
+          "nextStepSeconds": 0.0001527328594434017,
+          "lastAcceptedInterval": {
+            "startSeconds": 0.0009236335702782992,
+            "endSeconds": 0.001,
+            "trialSeconds": 7.636642972170084e-05,
+            "error": 0.03902422842901616
+          },
+          "minAcceptedStepSeconds": 4.405649861710203e-06,
+          "maxAcceptedStepSeconds": 7.964728928784347e-05,
+          "lastTimeError": 0.03902422842901616,
+          "lastResidual": 3.3240247222011844e-12
+        }
+      },
+      "disposeMS": 6.9431539998277,
+      "restart": {
+        "fixture": "warm",
+        "workerCreationMS": 0.20000000018626451,
+        "firstAcceptedAndRenderedMS": 70.20000000018626
+      },
+      "resources": {
+        "ended": false,
+        "heartbeatActive": false,
+        "frameActive": false,
+        "pending": 0
+      }
+    }
+  ],
+  "viewport": [
+    1440,
+    1000
+  ],
+  "sequential": true
+}

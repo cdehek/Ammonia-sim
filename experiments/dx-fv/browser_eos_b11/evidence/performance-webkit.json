@@ -1,0 +1,4590 @@
+{
+  "browser": "webkit",
+  "version": "26.5",
+  "passed": true,
+  "samples": [
+    {
+      "mode": "B10",
+      "fixture": "cold",
+      "round": 0,
+      "navigationToOriginalReadyMS": 623.7477280001258,
+      "originalInitializeMS": 6081.5588679997745,
+      "originalModelCreateMS": 2,
+      "lazyPanelMS": 1369.7952219999934,
+      "session": {
+        "fixture": "cold",
+        "workerCreationMS": 0,
+        "firstAcceptedAndRenderedMS": 136
+      },
+      "initialization": {
+        "type": "initialize",
+        "timing": {
+          "assetVerificationMS": 26,
+          "importAndOwnedTableMS": 75,
+          "createAndRecordMS": 7,
+          "serviceMS": 108
+        },
+        "delivery": {
+          "roundtripMS": 133,
+          "transferAndDispatchMS": 1
+        }
+      },
+      "memoryReady": {
+        "processes": [
+          {
+            "name": "MainThread",
+            "rssKiB": 193968
+          },
+          {
+            "name": "MiniBrowser",
+            "rssKiB": 107808
+          },
+          {
+            "name": "WPENetworkProce",
+            "rssKiB": 58248
+          },
+          {
+            "name": "WPEWebProcess",
+            "rssKiB": 495740
+          }
+        ],
+        "totalRSSKiB": 855764,
+        "limit": "Browser/driver descendants; shared pages may be counted more than once; no worker heap isolation"
+      },
+      "switchDuringComputeMS": 738.9775690000988,
+      "threeAdvanceWithToolsMS": 2460.612587000014,
+      "workerMetrics": [
+        {
+          "type": "initialize",
+          "timing": {
+            "assetVerificationMS": 26,
+            "importAndOwnedTableMS": 75,
+            "createAndRecordMS": 7,
+            "serviceMS": 108
+          },
+          "delivery": {
+            "roundtripMS": 133,
+            "transferAndDispatchMS": 1
+          }
+        },
+        {
+          "type": "advance",
+          "timing": {
+            "advanceMS": 65,
+            "projectionMS": 0,
+            "serviceMS": 66
+          },
+          "delivery": {
+            "roundtripMS": 72,
+            "transferAndDispatchMS": 1
+          }
+        },
+        {
+          "type": "advance",
+          "timing": {
+            "advanceMS": 102,
+            "projectionMS": 0,
+            "serviceMS": 102
+          },
+          "delivery": {
+            "roundtripMS": 104,
+            "transferAndDispatchMS": 1
+          }
+        },
+        {
+          "type": "advance",
+          "timing": {
+            "advanceMS": 15,
+            "projectionMS": 0,
+            "serviceMS": 15
+          },
+          "delivery": {
+            "roundtripMS": 18,
+            "transferAndDispatchMS": 2
+          }
+        }
+      ],
+      "renderMS": [
+        0,
+        1,
+        1,
+        2,
+        1,
+        5,
+        2,
+        1,
+        1,
+        2,
+        0,
+        1,
+        1,
+        1
+      ],
+      "observations": {
+        "data": {
+          "heartbeat": [
+            7,
+            11,
+            12,
+            13,
+            15,
+            12,
+            21,
+            11,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            297,
+            116,
+            11,
+            12,
+            13,
+            11,
+            13,
+            11,
+            12,
+            12,
+            26,
+            22,
+            78,
+            16,
+            14,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            24,
+            12,
+            12,
+            75,
+            13,
+            12,
+            12,
+            12,
+            13,
+            11,
+            12,
+            26,
+            14,
+            12,
+            12,
+            12,
+            12,
+            88,
+            12,
+            12,
+            12,
+            17,
+            11,
+            12,
+            12,
+            13,
+            11,
+            12,
+            12,
+            12,
+            12,
+            12,
+            56,
+            12,
+            12,
+            12,
+            13,
+            11,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            26,
+            6,
+            12,
+            26,
+            29,
+            14,
+            11,
+            12,
+            15,
+            13,
+            12,
+            12,
+            12,
+            12,
+            12,
+            13,
+            29,
+            36,
+            6,
+            12,
+            12,
+            12,
+            15,
+            13,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            29,
+            22,
+            20,
+            9,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            31,
+            22,
+            11,
+            16,
+            12,
+            13,
+            11,
+            12,
+            12,
+            18,
+            29,
+            9,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            20,
+            12,
+            12,
+            13,
+            11,
+            50,
+            10,
+            12,
+            12,
+            12,
+            28,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            31,
+            30,
+            37,
+            10,
+            25,
+            11
+          ],
+          "frames": [
+            233,
+            16,
+            4,
+            218,
+            210,
+            16,
+            5,
+            184,
+            176,
+            18,
+            154,
+            85,
+            22,
+            165,
+            241,
+            14,
+            6,
+            262,
+            191,
+            15,
+            2,
+            153,
+            192,
+            20
+          ],
+          "clicks": [
+            {
+              "id": "console-tools",
+              "trusted": true,
+              "ackMS": 2,
+              "pending": 0
+            },
+            {
+              "id": "storage-schematic",
+              "trusted": true,
+              "ackMS": 2,
+              "pending": 0
+            },
+            {
+              "id": "b10-a2-link",
+              "trusted": true,
+              "ackMS": 1,
+              "pending": 0
+            },
+            {
+              "id": "storage-pause",
+              "trusted": true,
+              "ackMS": 6,
+              "pending": 0
+            }
+          ],
+          "tools": [
+            {
+              "tool": "plant-diagnostics",
+              "atMS": 9142
+            },
+            {
+              "tool": "b10-a2-shadow",
+              "atMS": 10653
+            }
+          ],
+          "originalModelCreateMS": []
+        },
+        "heap": null,
+        "nav": [
+          {
+            "domContentLoaded": 562,
+            "load": 566,
+            "responseEnd": 9
+          }
+        ]
+      },
+      "memoryAfter": {
+        "processes": [
+          {
+            "name": "MainThread",
+            "rssKiB": 194044
+          },
+          {
+            "name": "MiniBrowser",
+            "rssKiB": 107252
+          },
+          {
+            "name": "WPENetworkProce",
+            "rssKiB": 56900
+          },
+          {
+            "name": "WPEWebProcess",
+            "rssKiB": 523620
+          }
+        ],
+        "totalRSSKiB": 881816,
+        "limit": "Browser/driver descendants; shared pages may be counted more than once; no worker heap isolation"
+      },
+      "clock": 0.001,
+      "scientificSnapshot": {
+        "clockSeconds": 0.001,
+        "sections": [
+          {
+            "pressureBarAbsolute": 3.5020754953733313,
+            "temperatureC": -5.323315044994551,
+            "massKg": 0.011915957802414587,
+            "internalEnergyKJ": 5.748618128444818,
+            "volumeM3": 0.0006000000000000001,
+            "enthalpyKJkg": 500.0640953058569,
+            "phase": "Liquid + vapor",
+            "quality": 0.1397330514584157,
+            "wet": true,
+            "superheatK": 0
+          },
+          {
+            "pressureBarAbsolute": 3.5014109010492525,
+            "temperatureC": -5.32816246279377,
+            "massKg": 0.011912805414491287,
+            "internalEnergyKJ": 5.747042782472182,
+            "volumeM3": 0.0006000000000000001,
+            "enthalpyKJkg": 500.0608361560755,
+            "phase": "Liquid + vapor",
+            "quality": 0.13974607071511247,
+            "wet": true,
+            "superheatK": 0
+          },
+          {
+            "pressureBarAbsolute": 3.5010282981996013,
+            "temperatureC": -5.330953508622236,
+            "massKg": 0.011910992822802354,
+            "internalEnergyKJ": 5.7461365995880715,
+            "volumeM3": 0.0006000000000000001,
+            "enthalpyKJkg": 500.05892758809546,
+            "phase": "Liquid + vapor",
+            "quality": 0.1397535417838213,
+            "wet": true,
+            "superheatK": 0
+          },
+          {
+            "pressureBarAbsolute": 3.500760991351543,
+            "temperatureC": -5.332903663760106,
+            "massKg": 0.011909726585033123,
+            "internalEnergyKJ": 5.745503549352683,
+            "volumeM3": 0.0006000000000000001,
+            "enthalpyKJkg": 500.057592952476,
+            "phase": "Liquid + vapor",
+            "quality": 0.1397587610441822,
+            "wet": true,
+            "superheatK": 0
+          },
+          {
+            "pressureBarAbsolute": 3.500506149728084,
+            "temperatureC": -5.33476301666975,
+            "massKg": 0.011908519441558756,
+            "internalEnergyKJ": 5.74490004586353,
+            "volumeM3": 0.0006000000000000001,
+            "enthalpyKJkg": 500.05632052507696,
+            "phase": "Liquid + vapor",
+            "quality": 0.13976373728809785,
+            "wet": true,
+            "superheatK": 0
+          }
+        ],
+        "nodes": [
+          {
+            "id": "tube-0",
+            "temperatureK": 273.14937920495527,
+            "energyKJ": -0.0006046717557856382
+          },
+          {
+            "id": "fin-0",
+            "temperatureK": 273.15103387695723,
+            "energyKJ": 0.0008779701200974487
+          },
+          {
+            "id": "tube-1",
+            "temperatureK": 273.1493788001693,
+            "energyKJ": -0.0006050660286668439
+          },
+          {
+            "id": "fin-1",
+            "temperatureK": 273.15103387688174,
+            "energyKJ": 0.0008779700560122112
+          },
+          {
+            "id": "tube-2",
+            "temperatureK": 273.1493786150404,
+            "energyKJ": -0.0006052463493835535
+          },
+          {
+            "id": "fin-2",
+            "temperatureK": 273.15103387685184,
+            "energyKJ": 0.0008779700306107316
+          },
+          {
+            "id": "tube-3",
+            "temperatureK": 273.1493785006446,
+            "energyKJ": -0.0006053577741241536
+          },
+          {
+            "id": "fin-3",
+            "temperatureK": 273.15103387683473,
+            "energyKJ": 0.0008779700160775935
+          },
+          {
+            "id": "tube-4",
+            "temperatureK": 273.14937839307794,
+            "energyKJ": -0.0006054625470423562
+          },
+          {
+            "id": "fin-4",
+            "temperatureK": 273.15103387681864,
+            "energyKJ": 0.0008779700024243304
+          },
+          {
+            "id": "air",
+            "temperatureK": 278.1491726318937,
+            "energyKJ": 21.53643569819803
+          }
+        ],
+        "flows": {
+          "inlet": {
+            "massKgS": 0.01545508831280252,
+            "energyKW": 7.72754415640126
+          },
+          "outlet": {
+            "massKgS": 0.008111071453319055,
+            "energyKW": 4.055992546462715
+          },
+          "scope": "instantaneous signed accepted-endpoint faces; positive inlet-to-outlet"
+        },
+        "totals": {
+          "massKg": 0.0595580020663001,
+          "internalEnergyKJ": 28.732201105721288
+        },
+        "conservation": {
+          "massResidualKg": 2.286543418256355e-15,
+          "refrigerantEnergyResidualKJ": 1.1530633219070108e-12,
+          "thermalEnergyResidualKJ": -4.99036575951628e-15,
+          "combinedEnergyResidualKJ": 1.1480729561474945e-12,
+          "boundaryMassKg": 1.0043121306733088e-05,
+          "boundaryEnthalpyKJ": 0.005021377192847143,
+          "airLoadKJ": 0.001
+        },
+        "numerics": {
+          "acceptedSteps": 16,
+          "rejectedSteps": 1,
+          "nextStepSeconds": 0.0005199999999999998,
+          "lastAcceptedInterval": {
+            "startSeconds": 0.0007400000000000001,
+            "endSeconds": 0.001,
+            "trialSeconds": 0.0002599999999999999,
+            "error": 0.04688050765390616
+          },
+          "minAcceptedStepSeconds": 9.999999999999999e-06,
+          "maxAcceptedStepSeconds": 0.00012999999999999996,
+          "lastTimeError": 0.04688050765390616,
+          "lastResidual": 2.367639098976178e-13
+        }
+      },
+      "disposeMS": 12.682565999966755,
+      "restart": {
+        "fixture": "cold",
+        "workerCreationMS": 0,
+        "firstAcceptedAndRenderedMS": 191
+      },
+      "resources": {
+        "ended": false,
+        "heartbeatActive": false,
+        "frameActive": false,
+        "pending": 0
+      }
+    },
+    {
+      "mode": "B11",
+      "fixture": "cold",
+      "round": 0,
+      "navigationToOriginalReadyMS": 588.9317070000288,
+      "originalInitializeMS": 5317.181698000013,
+      "originalModelCreateMS": 2,
+      "lazyPanelMS": 1145.71398399994,
+      "session": {
+        "fixture": "cold",
+        "workerCreationMS": 1,
+        "firstAcceptedAndRenderedMS": 129
+      },
+      "initialization": {
+        "type": "initialize",
+        "timing": {
+          "assetVerificationMS": 23,
+          "importAndOwnedTableMS": 71,
+          "createAndRecordMS": 7,
+          "serviceMS": 101
+        },
+        "delivery": {
+          "roundtripMS": 126,
+          "transferAndDispatchMS": 0
+        }
+      },
+      "memoryReady": {
+        "processes": [
+          {
+            "name": "MainThread",
+            "rssKiB": 196068
+          },
+          {
+            "name": "MiniBrowser",
+            "rssKiB": 109652
+          },
+          {
+            "name": "WPENetworkProce",
+            "rssKiB": 58684
+          },
+          {
+            "name": "WPEWebProcess",
+            "rssKiB": 496156
+          }
+        ],
+        "totalRSSKiB": 860560,
+        "limit": "Browser/driver descendants; shared pages may be counted more than once; no worker heap isolation"
+      },
+      "switchDuringComputeMS": 625.4143779999595,
+      "threeAdvanceWithToolsMS": 2452.067219000128,
+      "workerMetrics": [
+        {
+          "type": "initialize",
+          "timing": {
+            "assetVerificationMS": 23,
+            "importAndOwnedTableMS": 71,
+            "createAndRecordMS": 7,
+            "serviceMS": 101
+          },
+          "delivery": {
+            "roundtripMS": 126,
+            "transferAndDispatchMS": 0
+          }
+        },
+        {
+          "type": "advance",
+          "timing": {
+            "advanceMS": 73,
+            "projectionMS": 0,
+            "serviceMS": 73
+          },
+          "delivery": {
+            "roundtripMS": 76,
+            "transferAndDispatchMS": 0
+          }
+        },
+        {
+          "type": "advance",
+          "timing": {
+            "advanceMS": 37,
+            "projectionMS": 0,
+            "serviceMS": 37
+          },
+          "delivery": {
+            "roundtripMS": 42,
+            "transferAndDispatchMS": 0
+          }
+        },
+        {
+          "type": "advance",
+          "timing": {
+            "advanceMS": 18,
+            "projectionMS": 0,
+            "serviceMS": 18
+          },
+          "delivery": {
+            "roundtripMS": 23,
+            "transferAndDispatchMS": 0
+          }
+        }
+      ],
+      "renderMS": [
+        0,
+        0,
+        0,
+        2,
+        1,
+        3,
+        2,
+        0,
+        1,
+        1,
+        0,
+        5,
+        1,
+        4
+      ],
+      "observations": {
+        "data": {
+          "heartbeat": [
+            11,
+            13,
+            13,
+            11,
+            12,
+            14,
+            56,
+            14,
+            12,
+            12,
+            12,
+            12,
+            12,
+            279,
+            83,
+            10,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            27,
+            20,
+            9,
+            75,
+            13,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            26,
+            14,
+            12,
+            12,
+            12,
+            12,
+            98,
+            14,
+            12,
+            12,
+            12,
+            22,
+            10,
+            12,
+            12,
+            12,
+            12,
+            21,
+            56,
+            11,
+            12,
+            14,
+            30,
+            12,
+            12,
+            12,
+            12,
+            12,
+            17,
+            11,
+            12,
+            12,
+            12,
+            12,
+            39,
+            13,
+            12,
+            19,
+            13,
+            14,
+            14,
+            12,
+            12,
+            14,
+            14,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            36,
+            12,
+            12,
+            31,
+            13,
+            12,
+            12,
+            12,
+            12,
+            12,
+            29,
+            11,
+            12,
+            12,
+            12,
+            12,
+            41,
+            8,
+            11,
+            14,
+            14,
+            12,
+            22,
+            14,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            40,
+            12,
+            14,
+            19,
+            19,
+            18,
+            10,
+            12,
+            24,
+            13,
+            5,
+            21,
+            13,
+            12,
+            12,
+            12,
+            28,
+            12,
+            27,
+            13,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            13,
+            11,
+            13,
+            12,
+            11,
+            47,
+            13,
+            12,
+            12,
+            12,
+            15,
+            13,
+            12,
+            12,
+            21,
+            11,
+            14,
+            42,
+            20,
+            27
+          ],
+          "frames": [
+            211,
+            15,
+            4,
+            196,
+            228,
+            20,
+            1,
+            186,
+            219,
+            17,
+            235,
+            183,
+            5,
+            94,
+            236,
+            15,
+            2,
+            222,
+            171,
+            4,
+            1,
+            55,
+            156,
+            9,
+            36
+          ],
+          "clicks": [
+            {
+              "id": "console-tools",
+              "trusted": true,
+              "ackMS": 3,
+              "pending": 0
+            },
+            {
+              "id": "storage-schematic",
+              "trusted": true,
+              "ackMS": 2,
+              "pending": 0
+            },
+            {
+              "id": "b10-a2-link",
+              "trusted": true,
+              "ackMS": 4,
+              "pending": 0
+            },
+            {
+              "id": "storage-pause",
+              "trusted": true,
+              "ackMS": 2,
+              "pending": 0
+            }
+          ],
+          "tools": [
+            {
+              "tool": "plant-diagnostics",
+              "atMS": 8062
+            },
+            {
+              "tool": "b10-a2-shadow",
+              "atMS": 9698
+            }
+          ],
+          "originalModelCreateMS": []
+        },
+        "heap": null,
+        "nav": [
+          {
+            "domContentLoaded": 526,
+            "load": 531,
+            "responseEnd": 4
+          }
+        ]
+      },
+      "memoryAfter": {
+        "processes": [
+          {
+            "name": "MainThread",
+            "rssKiB": 192156
+          },
+          {
+            "name": "MiniBrowser",
+            "rssKiB": 109020
+          },
+          {
+            "name": "WPENetworkProce",
+            "rssKiB": 57452
+          },
+          {
+            "name": "WPEWebProcess",
+            "rssKiB": 525316
+          }
+        ],
+        "totalRSSKiB": 883944,
+        "limit": "Browser/driver descendants; shared pages may be counted more than once; no worker heap isolation"
+      },
+      "clock": 0.001,
+      "scientificSnapshot": {
+        "clockSeconds": 0.001,
+        "sections": [
+          {
+            "pressureBarAbsolute": 3.5020754953733313,
+            "temperatureC": -5.323315044994551,
+            "massKg": 0.011915957802414587,
+            "internalEnergyKJ": 5.748618128444818,
+            "volumeM3": 0.0006000000000000001,
+            "enthalpyKJkg": 500.0640953058569,
+            "phase": "Liquid + vapor",
+            "quality": 0.1397330514584157,
+            "wet": true,
+            "superheatK": 0
+          },
+          {
+            "pressureBarAbsolute": 3.5014109010492525,
+            "temperatureC": -5.32816246279377,
+            "massKg": 0.011912805414491287,
+            "internalEnergyKJ": 5.747042782472182,
+            "volumeM3": 0.0006000000000000001,
+            "enthalpyKJkg": 500.0608361560755,
+            "phase": "Liquid + vapor",
+            "quality": 0.13974607071511247,
+            "wet": true,
+            "superheatK": 0
+          },
+          {
+            "pressureBarAbsolute": 3.5010282981996013,
+            "temperatureC": -5.330953508622236,
+            "massKg": 0.011910992822802354,
+            "internalEnergyKJ": 5.7461365995880715,
+            "volumeM3": 0.0006000000000000001,
+            "enthalpyKJkg": 500.05892758809546,
+            "phase": "Liquid + vapor",
+            "quality": 0.1397535417838213,
+            "wet": true,
+            "superheatK": 0
+          },
+          {
+            "pressureBarAbsolute": 3.500760991351543,
+            "temperatureC": -5.332903663760106,
+            "massKg": 0.011909726585033123,
+            "internalEnergyKJ": 5.745503549352683,
+            "volumeM3": 0.0006000000000000001,
+            "enthalpyKJkg": 500.057592952476,
+            "phase": "Liquid + vapor",
+            "quality": 0.1397587610441822,
+            "wet": true,
+            "superheatK": 0
+          },
+          {
+            "pressureBarAbsolute": 3.500506149728084,
+            "temperatureC": -5.33476301666975,
+            "massKg": 0.011908519441558756,
+            "internalEnergyKJ": 5.74490004586353,
+            "volumeM3": 0.0006000000000000001,
+            "enthalpyKJkg": 500.05632052507696,
+            "phase": "Liquid + vapor",
+            "quality": 0.13976373728809785,
+            "wet": true,
+            "superheatK": 0
+          }
+        ],
+        "nodes": [
+          {
+            "id": "tube-0",
+            "temperatureK": 273.14937920495527,
+            "energyKJ": -0.0006046717557856382
+          },
+          {
+            "id": "fin-0",
+            "temperatureK": 273.15103387695723,
+            "energyKJ": 0.0008779701200974487
+          },
+          {
+            "id": "tube-1",
+            "temperatureK": 273.1493788001693,
+            "energyKJ": -0.0006050660286668439
+          },
+          {
+            "id": "fin-1",
+            "temperatureK": 273.15103387688174,
+            "energyKJ": 0.0008779700560122112
+          },
+          {
+            "id": "tube-2",
+            "temperatureK": 273.1493786150404,
+            "energyKJ": -0.0006052463493835535
+          },
+          {
+            "id": "fin-2",
+            "temperatureK": 273.15103387685184,
+            "energyKJ": 0.0008779700306107316
+          },
+          {
+            "id": "tube-3",
+            "temperatureK": 273.1493785006446,
+            "energyKJ": -0.0006053577741241536
+          },
+          {
+            "id": "fin-3",
+            "temperatureK": 273.15103387683473,
+            "energyKJ": 0.0008779700160775935
+          },
+          {
+            "id": "tube-4",
+            "temperatureK": 273.14937839307794,
+            "energyKJ": -0.0006054625470423562
+          },
+          {
+            "id": "fin-4",
+            "temperatureK": 273.15103387681864,
+            "energyKJ": 0.0008779700024243304
+          },
+          {
+            "id": "air",
+            "temperatureK": 278.1491726318937,
+            "energyKJ": 21.53643569819803
+          }
+        ],
+        "flows": {
+          "inlet": {
+            "massKgS": 0.01545508831280252,
+            "energyKW": 7.72754415640126
+          },
+          "outlet": {
+            "massKgS": 0.008111071453319055,
+            "energyKW": 4.055992546462715
+          },
+          "scope": "instantaneous signed accepted-endpoint faces; positive inlet-to-outlet"
+        },
+        "totals": {
+          "massKg": 0.0595580020663001,
+          "internalEnergyKJ": 28.732201105721288
+        },
+        "conservation": {
+          "massResidualKg": 2.286543418256355e-15,
+          "refrigerantEnergyResidualKJ": 1.1530633219070108e-12,
+          "thermalEnergyResidualKJ": -4.99036575951628e-15,
+          "combinedEnergyResidualKJ": 1.1480729561474945e-12,
+          "boundaryMassKg": 1.0043121306733088e-05,
+          "boundaryEnthalpyKJ": 0.005021377192847143,
+          "airLoadKJ": 0.001
+        },
+        "numerics": {
+          "acceptedSteps": 16,
+          "rejectedSteps": 1,
+          "nextStepSeconds": 0.0005199999999999998,
+          "lastAcceptedInterval": {
+            "startSeconds": 0.0007400000000000001,
+            "endSeconds": 0.001,
+            "trialSeconds": 0.0002599999999999999,
+            "error": 0.04688050765390616
+          },
+          "minAcceptedStepSeconds": 9.999999999999999e-06,
+          "maxAcceptedStepSeconds": 0.00012999999999999996,
+          "lastTimeError": 0.04688050765390616,
+          "lastResidual": 2.367639098976178e-13
+        }
+      },
+      "disposeMS": 7.558648999975048,
+      "restart": {
+        "fixture": "cold",
+        "workerCreationMS": 0,
+        "firstAcceptedAndRenderedMS": 128
+      },
+      "resources": {
+        "ended": false,
+        "heartbeatActive": false,
+        "frameActive": false,
+        "pending": 0
+      }
+    },
+    {
+      "mode": "B10",
+      "fixture": "warm",
+      "round": 0,
+      "navigationToOriginalReadyMS": 696.6911089998575,
+      "originalInitializeMS": 5012.5858549999975,
+      "originalModelCreateMS": 3,
+      "lazyPanelMS": 1113.4375200001614,
+      "session": {
+        "fixture": "warm",
+        "workerCreationMS": 0,
+        "firstAcceptedAndRenderedMS": 124
+      },
+      "initialization": {
+        "type": "initialize",
+        "timing": {
+          "assetVerificationMS": 15,
+          "importAndOwnedTableMS": 81,
+          "createAndRecordMS": 9,
+          "serviceMS": 105
+        },
+        "delivery": {
+          "roundtripMS": 122,
+          "transferAndDispatchMS": 0
+        }
+      },
+      "memoryReady": {
+        "processes": [
+          {
+            "name": "MainThread",
+            "rssKiB": 194264
+          },
+          {
+            "name": "MiniBrowser",
+            "rssKiB": 109676
+          },
+          {
+            "name": "WPENetworkProce",
+            "rssKiB": 59476
+          },
+          {
+            "name": "WPEWebProcess",
+            "rssKiB": 497588
+          }
+        ],
+        "totalRSSKiB": 861004,
+        "limit": "Browser/driver descendants; shared pages may be counted more than once; no worker heap isolation"
+      },
+      "switchDuringComputeMS": 329.04349299997193,
+      "threeAdvanceWithToolsMS": 3051.5713810000307,
+      "workerMetrics": [
+        {
+          "type": "initialize",
+          "timing": {
+            "assetVerificationMS": 15,
+            "importAndOwnedTableMS": 81,
+            "createAndRecordMS": 9,
+            "serviceMS": 105
+          },
+          "delivery": {
+            "roundtripMS": 122,
+            "transferAndDispatchMS": 0
+          }
+        },
+        {
+          "type": "advance",
+          "timing": {
+            "advanceMS": 266,
+            "projectionMS": 0,
+            "serviceMS": 266
+          },
+          "delivery": {
+            "roundtripMS": 708,
+            "transferAndDispatchMS": 440
+          }
+        },
+        {
+          "type": "advance",
+          "timing": {
+            "advanceMS": 173,
+            "projectionMS": 0,
+            "serviceMS": 174
+          },
+          "delivery": {
+            "roundtripMS": 192,
+            "transferAndDispatchMS": 10
+          }
+        },
+        {
+          "type": "advance",
+          "timing": {
+            "advanceMS": 141,
+            "projectionMS": 0,
+            "serviceMS": 141
+          },
+          "delivery": {
+            "roundtripMS": 156,
+            "transferAndDispatchMS": 0
+          }
+        }
+      ],
+      "renderMS": [
+        1,
+        0,
+        0,
+        1,
+        2,
+        1,
+        2,
+        1,
+        1,
+        2,
+        1,
+        1,
+        2,
+        1
+      ],
+      "observations": {
+        "data": {
+          "heartbeat": [
+            16,
+            14,
+            12,
+            12,
+            12,
+            36,
+            14,
+            14,
+            12,
+            12,
+            12,
+            36,
+            12,
+            364,
+            136,
+            15,
+            13,
+            12,
+            12,
+            12,
+            23,
+            15,
+            85,
+            13,
+            12,
+            12,
+            12,
+            12,
+            13,
+            11,
+            12,
+            31,
+            13,
+            12,
+            12,
+            12,
+            64,
+            12,
+            13,
+            11,
+            12,
+            12,
+            26,
+            14,
+            12,
+            12,
+            13,
+            11,
+            12,
+            12,
+            12,
+            34,
+            14,
+            12,
+            12,
+            12,
+            12,
+            19,
+            13,
+            12,
+            12,
+            12,
+            13,
+            11,
+            12,
+            12,
+            12,
+            15,
+            13,
+            36,
+            25,
+            11,
+            12,
+            12,
+            12,
+            12,
+            19,
+            13,
+            12,
+            12,
+            12,
+            12,
+            12,
+            15,
+            13,
+            12,
+            34,
+            6,
+            12,
+            12,
+            22,
+            10,
+            12,
+            12,
+            12,
+            13,
+            26,
+            13,
+            12,
+            14,
+            10,
+            12,
+            12,
+            55,
+            17,
+            43,
+            13,
+            12,
+            12,
+            14,
+            12,
+            15,
+            11,
+            23,
+            13,
+            12,
+            28,
+            12,
+            12,
+            12,
+            12,
+            13,
+            19,
+            14,
+            10,
+            12,
+            12,
+            19,
+            13,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            39,
+            19,
+            26,
+            23,
+            17,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            41,
+            16,
+            26,
+            13,
+            28,
+            12,
+            12,
+            23,
+            14,
+            11,
+            12,
+            17,
+            11,
+            12,
+            12,
+            24,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            17,
+            11,
+            12,
+            12,
+            12,
+            12,
+            27,
+            13,
+            12,
+            12,
+            31,
+            24,
+            13,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            14
+          ],
+          "frames": [
+            220,
+            224,
+            19,
+            2,
+            181,
+            212,
+            16,
+            6,
+            177,
+            173,
+            12,
+            92,
+            180,
+            48,
+            24,
+            266,
+            209,
+            16,
+            2,
+            289,
+            266,
+            178,
+            14,
+            1,
+            160,
+            36,
+            7,
+            55
+          ],
+          "clicks": [
+            {
+              "id": "console-tools",
+              "trusted": true,
+              "ackMS": 3,
+              "pending": 0
+            },
+            {
+              "id": "storage-schematic",
+              "trusted": true,
+              "ackMS": 2,
+              "pending": 0
+            },
+            {
+              "id": "b10-a2-link",
+              "trusted": true,
+              "ackMS": 6,
+              "pending": 0
+            },
+            {
+              "id": "storage-pause",
+              "trusted": true,
+              "ackMS": 39,
+              "pending": 0
+            }
+          ],
+          "tools": [
+            {
+              "tool": "plant-diagnostics",
+              "atMS": 8150
+            },
+            {
+              "tool": "b10-a2-shadow",
+              "atMS": 9768
+            }
+          ],
+          "originalModelCreateMS": []
+        },
+        "heap": null,
+        "nav": [
+          {
+            "domContentLoaded": 631,
+            "load": 635,
+            "responseEnd": 8
+          }
+        ]
+      },
+      "memoryAfter": {
+        "processes": [
+          {
+            "name": "MainThread",
+            "rssKiB": 194268
+          },
+          {
+            "name": "MiniBrowser",
+            "rssKiB": 109016
+          },
+          {
+            "name": "WPENetworkProce",
+            "rssKiB": 57468
+          },
+          {
+            "name": "WPEWebProcess",
+            "rssKiB": 533672
+          }
+        ],
+        "totalRSSKiB": 894424,
+        "limit": "Browser/driver descendants; shared pages may be counted more than once; no worker heap isolation"
+      },
+      "clock": 0.001,
+      "scientificSnapshot": {
+        "clockSeconds": 0.001,
+        "sections": [
+          {
+            "pressureBarAbsolute": 3.6303545131837742,
+            "temperatureC": 10.574289164506045,
+            "massKg": 0.0016521413772032762,
+            "internalEnergyKJ": 2.4928364231224847,
+            "volumeM3": 0.0006000000000000001,
+            "enthalpyKJkg": 1640.6935455697217,
+            "phase": "Superheated vapor",
+            "quality": null,
+            "wet": false,
+            "superheatK": 14.973441924666986
+          },
+          {
+            "pressureBarAbsolute": 3.6307323350547187,
+            "temperatureC": 14.23759641775293,
+            "massKg": 0.0016267234011638743,
+            "internalEnergyKJ": 2.465772673903487,
+            "volumeM3": 0.0006000000000000001,
+            "enthalpyKJkg": 1649.7067738181704,
+            "phase": "Superheated vapor",
+            "quality": null,
+            "wet": false,
+            "superheatK": 18.634068401297554
+          },
+          {
+            "pressureBarAbsolute": 3.629168757178357,
+            "temperatureC": 14.20950186469257,
+            "massKg": 0.0016261796561769066,
+            "internalEnergyKJ": 2.4648772832625037,
+            "volumeM3": 0.0006000000000000001,
+            "enthalpyKJkg": 1649.6500853486575,
+            "phase": "Superheated vapor",
+            "quality": null,
+            "wet": false,
+            "superheatK": 18.61706978525035
+          },
+          {
+            "pressureBarAbsolute": 3.6193877365902276,
+            "temperatureC": 14.034986516441004,
+            "massKg": 0.0016227667328244275,
+            "internalEnergyKJ": 2.459263764129893,
+            "volumeM3": 0.0006000000000000001,
+            "enthalpyKJkg": 1649.2986787660236,
+            "phase": "Superheated vapor",
+            "quality": null,
+            "wet": false,
+            "superheatK": 18.51207416621037
+          },
+          {
+            "pressureBarAbsolute": 3.5911596651656335,
+            "temperatureC": 13.53381596073664,
+            "massKg": 0.0016128702011639052,
+            "internalEnergyKJ": 2.443012311386887,
+            "volumeM3": 0.0006000000000000001,
+            "enthalpyKJkg": 1648.292521789323,
+            "phase": "Superheated vapor",
+            "quality": null,
+            "wet": false,
+            "superheatK": 18.21259639109485
+          }
+        ],
+        "nodes": [
+          {
+            "id": "tube-0",
+            "temperatureK": 293.14907556343377,
+            "energyKJ": 19.479659572900317
+          },
+          {
+            "id": "fin-0",
+            "temperatureK": 293.14999982482993,
+            "energyKJ": 16.984034826767523
+          },
+          {
+            "id": "tube-1",
+            "temperatureK": 293.14930394061184,
+            "energyKJ": 19.4798820186663
+          },
+          {
+            "id": "fin-1",
+            "temperatureK": 293.1499998610407,
+            "energyKJ": 16.984034857517763
+          },
+          {
+            "id": "tube-2",
+            "temperatureK": 293.1493025264985,
+            "energyKJ": 19.479880641280296
+          },
+          {
+            "id": "fin-2",
+            "temperatureK": 293.1499998608643,
+            "energyKJ": 16.98403485736793
+          },
+          {
+            "id": "tube-3",
+            "temperatureK": 293.14928994957336,
+            "energyKJ": 19.479868391003055
+          },
+          {
+            "id": "fin-3",
+            "temperatureK": 293.1499998587734,
+            "energyKJ": 16.984034855592405
+          },
+          {
+            "id": "tube-4",
+            "temperatureK": 293.1492432871131,
+            "energyKJ": 19.479822940460195
+          },
+          {
+            "id": "fin-4",
+            "temperatureK": 293.14999984976737,
+            "energyKJ": 16.984034847944432
+          },
+          {
+            "id": "air",
+            "temperatureK": 293.15023209872436,
+            "energyKJ": 86.16099988130465
+          }
+        ],
+        "flows": {
+          "inlet": {
+            "massKgS": 0.013316232304332863,
+            "energyKW": 6.658116152166432
+          },
+          "outlet": {
+            "massKgS": 0.040378010106280525,
+            "energyKW": 66.5547721054574
+          },
+          "scope": "instantaneous signed accepted-endpoint faces; positive inlet-to-outlet"
+        },
+        "totals": {
+          "massKg": 0.008140681368532389,
+          "internalEnergyKJ": 12.325762455805256
+        },
+        "conservation": {
+          "massResidualKg": 2.3881002969398935e-14,
+          "refrigerantEnergyResidualKJ": 3.932221345412379e-11,
+          "thermalEnergyResidualKJ": -2.835275417223393e-14,
+          "combinedEnergyResidualKJ": 3.9293860699951555e-11,
+          "boundaryMassKg": -3.2073101423442144e-05,
+          "boundaryEnthalpyKJ": -0.06796960642801826,
+          "airLoadKJ": 0.0010000000000000002
+        },
+        "numerics": {
+          "acceptedSteps": 34,
+          "rejectedSteps": 3,
+          "nextStepSeconds": 0.00015274971072325497,
+          "lastAcceptedInterval": {
+            "startSeconds": 0.0009236251446383725,
+            "endSeconds": 0.001,
+            "trialSeconds": 7.637485536162749e-05,
+            "error": 0.03903766031786781
+          },
+          "minAcceptedStepSeconds": 4.405522117731993e-06,
+          "maxAcceptedStepSeconds": 7.964690878722648e-05,
+          "lastTimeError": 0.03903766031786781,
+          "lastResidual": 4.6307860709587324e-12
+        }
+      },
+      "disposeMS": 11.37162800000624,
+      "restart": {
+        "fixture": "warm",
+        "workerCreationMS": 1,
+        "firstAcceptedAndRenderedMS": 181
+      },
+      "resources": {
+        "ended": false,
+        "heartbeatActive": false,
+        "frameActive": false,
+        "pending": 0
+      }
+    },
+    {
+      "mode": "B11",
+      "fixture": "warm",
+      "round": 0,
+      "navigationToOriginalReadyMS": 557.2312140000122,
+      "originalInitializeMS": 5058.533839999882,
+      "originalModelCreateMS": 2,
+      "lazyPanelMS": 1121.2475480001558,
+      "session": {
+        "fixture": "warm",
+        "workerCreationMS": 0,
+        "firstAcceptedAndRenderedMS": 128
+      },
+      "initialization": {
+        "type": "initialize",
+        "timing": {
+          "assetVerificationMS": 19,
+          "importAndOwnedTableMS": 74,
+          "createAndRecordMS": 9,
+          "serviceMS": 102
+        },
+        "delivery": {
+          "roundtripMS": 126,
+          "transferAndDispatchMS": 1
+        }
+      },
+      "memoryReady": {
+        "processes": [
+          {
+            "name": "MainThread",
+            "rssKiB": 196264
+          },
+          {
+            "name": "MiniBrowser",
+            "rssKiB": 109644
+          },
+          {
+            "name": "WPENetworkProce",
+            "rssKiB": 59180
+          },
+          {
+            "name": "WPEWebProcess",
+            "rssKiB": 496492
+          }
+        ],
+        "totalRSSKiB": 861580,
+        "limit": "Browser/driver descendants; shared pages may be counted more than once; no worker heap isolation"
+      },
+      "switchDuringComputeMS": 348.9771620002102,
+      "threeAdvanceWithToolsMS": 2579.306380999924,
+      "workerMetrics": [
+        {
+          "type": "initialize",
+          "timing": {
+            "assetVerificationMS": 19,
+            "importAndOwnedTableMS": 74,
+            "createAndRecordMS": 9,
+            "serviceMS": 102
+          },
+          "delivery": {
+            "roundtripMS": 126,
+            "transferAndDispatchMS": 1
+          }
+        },
+        {
+          "type": "advance",
+          "timing": {
+            "advanceMS": 307,
+            "projectionMS": 0,
+            "serviceMS": 307
+          },
+          "delivery": {
+            "roundtripMS": 678,
+            "transferAndDispatchMS": 366
+          }
+        },
+        {
+          "type": "advance",
+          "timing": {
+            "advanceMS": 128,
+            "projectionMS": 0,
+            "serviceMS": 128
+          },
+          "delivery": {
+            "roundtripMS": 133,
+            "transferAndDispatchMS": 0
+          }
+        },
+        {
+          "type": "advance",
+          "timing": {
+            "advanceMS": 104,
+            "projectionMS": 0,
+            "serviceMS": 104
+          },
+          "delivery": {
+            "roundtripMS": 130,
+            "transferAndDispatchMS": 25
+          }
+        }
+      ],
+      "renderMS": [
+        0,
+        1,
+        0,
+        2,
+        1,
+        2,
+        1,
+        1,
+        4,
+        2,
+        1,
+        1,
+        1,
+        1
+      ],
+      "observations": {
+        "data": {
+          "heartbeat": [
+            14,
+            15,
+            13,
+            12,
+            12,
+            15,
+            13,
+            13,
+            11,
+            12,
+            36,
+            12,
+            12,
+            12,
+            12,
+            373,
+            96,
+            13,
+            10,
+            12,
+            12,
+            13,
+            11,
+            12,
+            12,
+            12,
+            15,
+            14,
+            11,
+            67,
+            13,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            25,
+            11,
+            13,
+            11,
+            12,
+            12,
+            12,
+            67,
+            13,
+            12,
+            12,
+            12,
+            24,
+            12,
+            13,
+            11,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            42,
+            10,
+            12,
+            12,
+            12,
+            14,
+            14,
+            14,
+            10,
+            14,
+            10,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            22,
+            14,
+            12,
+            22,
+            12,
+            10,
+            12,
+            13,
+            11,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            13,
+            11,
+            30,
+            21,
+            18,
+            18,
+            5,
+            12,
+            14,
+            14,
+            12,
+            12,
+            12,
+            12,
+            12,
+            26,
+            14,
+            12,
+            12,
+            32,
+            12,
+            12,
+            20,
+            12,
+            12,
+            12,
+            12,
+            14,
+            10,
+            12,
+            24,
+            12,
+            22,
+            16,
+            10,
+            64,
+            12,
+            12,
+            19,
+            13,
+            12,
+            12,
+            12,
+            12,
+            12,
+            57,
+            14,
+            36,
+            13,
+            12,
+            12,
+            13,
+            11,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            19,
+            13,
+            12,
+            12,
+            12,
+            12,
+            32,
+            12,
+            12,
+            12,
+            12,
+            12,
+            22,
+            14,
+            12,
+            12,
+            14,
+            10,
+            12,
+            12,
+            20,
+            12,
+            12,
+            30,
+            3,
+            11,
+            42,
+            26,
+            8
+          ],
+          "frames": [
+            218,
+            198,
+            15,
+            1,
+            197,
+            212,
+            12,
+            1,
+            124,
+            84,
+            20,
+            166,
+            49,
+            16,
+            148,
+            223,
+            13,
+            2,
+            252,
+            244,
+            177,
+            13,
+            4,
+            140,
+            38,
+            15
+          ],
+          "clicks": [
+            {
+              "id": "console-tools",
+              "trusted": true,
+              "ackMS": 5,
+              "pending": 0
+            },
+            {
+              "id": "storage-schematic",
+              "trusted": true,
+              "ackMS": 9,
+              "pending": 0
+            },
+            {
+              "id": "b10-a2-link",
+              "trusted": true,
+              "ackMS": 1,
+              "pending": 0
+            },
+            {
+              "id": "storage-pause",
+              "trusted": true,
+              "ackMS": 4,
+              "pending": 0
+            }
+          ],
+          "tools": [
+            {
+              "tool": "plant-diagnostics",
+              "atMS": 8052
+            },
+            {
+              "tool": "b10-a2-shadow",
+              "atMS": 9306
+            }
+          ],
+          "originalModelCreateMS": []
+        },
+        "heap": null,
+        "nav": [
+          {
+            "domContentLoaded": 505,
+            "load": 508,
+            "responseEnd": 9
+          }
+        ]
+      },
+      "memoryAfter": {
+        "processes": [
+          {
+            "name": "MainThread",
+            "rssKiB": 192372
+          },
+          {
+            "name": "MiniBrowser",
+            "rssKiB": 109028
+          },
+          {
+            "name": "WPENetworkProce",
+            "rssKiB": 57624
+          },
+          {
+            "name": "WPEWebProcess",
+            "rssKiB": 539472
+          }
+        ],
+        "totalRSSKiB": 898496,
+        "limit": "Browser/driver descendants; shared pages may be counted more than once; no worker heap isolation"
+      },
+      "clock": 0.001,
+      "scientificSnapshot": {
+        "clockSeconds": 0.001,
+        "sections": [
+          {
+            "pressureBarAbsolute": 3.6303545131837742,
+            "temperatureC": 10.574289164506045,
+            "massKg": 0.0016521413772032762,
+            "internalEnergyKJ": 2.4928364231224847,
+            "volumeM3": 0.0006000000000000001,
+            "enthalpyKJkg": 1640.6935455697217,
+            "phase": "Superheated vapor",
+            "quality": null,
+            "wet": false,
+            "superheatK": 14.973441924666986
+          },
+          {
+            "pressureBarAbsolute": 3.6307323350547187,
+            "temperatureC": 14.23759641775293,
+            "massKg": 0.0016267234011638743,
+            "internalEnergyKJ": 2.465772673903487,
+            "volumeM3": 0.0006000000000000001,
+            "enthalpyKJkg": 1649.7067738181704,
+            "phase": "Superheated vapor",
+            "quality": null,
+            "wet": false,
+            "superheatK": 18.634068401297554
+          },
+          {
+            "pressureBarAbsolute": 3.629168757178357,
+            "temperatureC": 14.20950186469257,
+            "massKg": 0.0016261796561769066,
+            "internalEnergyKJ": 2.4648772832625037,
+            "volumeM3": 0.0006000000000000001,
+            "enthalpyKJkg": 1649.6500853486575,
+            "phase": "Superheated vapor",
+            "quality": null,
+            "wet": false,
+            "superheatK": 18.61706978525035
+          },
+          {
+            "pressureBarAbsolute": 3.6193877365902276,
+            "temperatureC": 14.034986516441004,
+            "massKg": 0.0016227667328244275,
+            "internalEnergyKJ": 2.459263764129893,
+            "volumeM3": 0.0006000000000000001,
+            "enthalpyKJkg": 1649.2986787660236,
+            "phase": "Superheated vapor",
+            "quality": null,
+            "wet": false,
+            "superheatK": 18.51207416621037
+          },
+          {
+            "pressureBarAbsolute": 3.5911596651656335,
+            "temperatureC": 13.53381596073664,
+            "massKg": 0.0016128702011639052,
+            "internalEnergyKJ": 2.443012311386887,
+            "volumeM3": 0.0006000000000000001,
+            "enthalpyKJkg": 1648.292521789323,
+            "phase": "Superheated vapor",
+            "quality": null,
+            "wet": false,
+            "superheatK": 18.21259639109485
+          }
+        ],
+        "nodes": [
+          {
+            "id": "tube-0",
+            "temperatureK": 293.14907556343377,
+            "energyKJ": 19.479659572900317
+          },
+          {
+            "id": "fin-0",
+            "temperatureK": 293.14999982482993,
+            "energyKJ": 16.984034826767523
+          },
+          {
+            "id": "tube-1",
+            "temperatureK": 293.14930394061184,
+            "energyKJ": 19.4798820186663
+          },
+          {
+            "id": "fin-1",
+            "temperatureK": 293.1499998610407,
+            "energyKJ": 16.984034857517763
+          },
+          {
+            "id": "tube-2",
+            "temperatureK": 293.1493025264985,
+            "energyKJ": 19.479880641280296
+          },
+          {
+            "id": "fin-2",
+            "temperatureK": 293.1499998608643,
+            "energyKJ": 16.98403485736793
+          },
+          {
+            "id": "tube-3",
+            "temperatureK": 293.14928994957336,
+            "energyKJ": 19.479868391003055
+          },
+          {
+            "id": "fin-3",
+            "temperatureK": 293.1499998587734,
+            "energyKJ": 16.984034855592405
+          },
+          {
+            "id": "tube-4",
+            "temperatureK": 293.1492432871131,
+            "energyKJ": 19.479822940460195
+          },
+          {
+            "id": "fin-4",
+            "temperatureK": 293.14999984976737,
+            "energyKJ": 16.984034847944432
+          },
+          {
+            "id": "air",
+            "temperatureK": 293.15023209872436,
+            "energyKJ": 86.16099988130465
+          }
+        ],
+        "flows": {
+          "inlet": {
+            "massKgS": 0.013316232304332863,
+            "energyKW": 6.658116152166432
+          },
+          "outlet": {
+            "massKgS": 0.040378010106280525,
+            "energyKW": 66.5547721054574
+          },
+          "scope": "instantaneous signed accepted-endpoint faces; positive inlet-to-outlet"
+        },
+        "totals": {
+          "massKg": 0.008140681368532389,
+          "internalEnergyKJ": 12.325762455805256
+        },
+        "conservation": {
+          "massResidualKg": 2.3881002969398935e-14,
+          "refrigerantEnergyResidualKJ": 3.932221345412379e-11,
+          "thermalEnergyResidualKJ": -2.835275417223393e-14,
+          "combinedEnergyResidualKJ": 3.9293860699951555e-11,
+          "boundaryMassKg": -3.2073101423442144e-05,
+          "boundaryEnthalpyKJ": -0.06796960642801826,
+          "airLoadKJ": 0.0010000000000000002
+        },
+        "numerics": {
+          "acceptedSteps": 34,
+          "rejectedSteps": 3,
+          "nextStepSeconds": 0.00015274971072325497,
+          "lastAcceptedInterval": {
+            "startSeconds": 0.0009236251446383725,
+            "endSeconds": 0.001,
+            "trialSeconds": 7.637485536162749e-05,
+            "error": 0.03903766031786781
+          },
+          "minAcceptedStepSeconds": 4.405522117731993e-06,
+          "maxAcceptedStepSeconds": 7.964690878722648e-05,
+          "lastTimeError": 0.03903766031786781,
+          "lastResidual": 4.6307860709587324e-12
+        }
+      },
+      "disposeMS": 33.031637000021874,
+      "restart": {
+        "fixture": "warm",
+        "workerCreationMS": 0,
+        "firstAcceptedAndRenderedMS": 147
+      },
+      "resources": {
+        "ended": false,
+        "heartbeatActive": false,
+        "frameActive": false,
+        "pending": 0
+      }
+    },
+    {
+      "mode": "B11",
+      "fixture": "cold",
+      "round": 1,
+      "navigationToOriginalReadyMS": 596.9232940001348,
+      "originalInitializeMS": 4703.333074999819,
+      "originalModelCreateMS": 3,
+      "lazyPanelMS": 1176.4622719999807,
+      "session": {
+        "fixture": "cold",
+        "workerCreationMS": 1,
+        "firstAcceptedAndRenderedMS": 154
+      },
+      "initialization": {
+        "type": "initialize",
+        "timing": {
+          "assetVerificationMS": 22,
+          "importAndOwnedTableMS": 100,
+          "createAndRecordMS": 9,
+          "serviceMS": 132
+        },
+        "delivery": {
+          "roundtripMS": 151,
+          "transferAndDispatchMS": -1
+        }
+      },
+      "memoryReady": {
+        "processes": [
+          {
+            "name": "MainThread",
+            "rssKiB": 194468
+          },
+          {
+            "name": "MiniBrowser",
+            "rssKiB": 109672
+          },
+          {
+            "name": "WPENetworkProce",
+            "rssKiB": 58200
+          },
+          {
+            "name": "WPEWebProcess",
+            "rssKiB": 498872
+          }
+        ],
+        "totalRSSKiB": 861212,
+        "limit": "Browser/driver descendants; shared pages may be counted more than once; no worker heap isolation"
+      },
+      "switchDuringComputeMS": 580.0372500000321,
+      "threeAdvanceWithToolsMS": 2073.096134000025,
+      "workerMetrics": [
+        {
+          "type": "initialize",
+          "timing": {
+            "assetVerificationMS": 22,
+            "importAndOwnedTableMS": 100,
+            "createAndRecordMS": 9,
+            "serviceMS": 132
+          },
+          "delivery": {
+            "roundtripMS": 151,
+            "transferAndDispatchMS": -1
+          }
+        },
+        {
+          "type": "advance",
+          "timing": {
+            "advanceMS": 80,
+            "projectionMS": 0,
+            "serviceMS": 80
+          },
+          "delivery": {
+            "roundtripMS": 87,
+            "transferAndDispatchMS": -1
+          }
+        },
+        {
+          "type": "advance",
+          "timing": {
+            "advanceMS": 48,
+            "projectionMS": 1,
+            "serviceMS": 49
+          },
+          "delivery": {
+            "roundtripMS": 57,
+            "transferAndDispatchMS": -1
+          }
+        },
+        {
+          "type": "advance",
+          "timing": {
+            "advanceMS": 17,
+            "projectionMS": 0,
+            "serviceMS": 17
+          },
+          "delivery": {
+            "roundtripMS": 19,
+            "transferAndDispatchMS": -1
+          }
+        }
+      ],
+      "renderMS": [
+        1,
+        0,
+        0,
+        2,
+        1,
+        1,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        3
+      ],
+      "observations": {
+        "data": {
+          "heartbeat": [
+            20,
+            12,
+            12,
+            12,
+            14,
+            11,
+            20,
+            4,
+            11,
+            12,
+            12,
+            30,
+            10,
+            12,
+            12,
+            275,
+            64,
+            13,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            30,
+            13,
+            10,
+            11,
+            12,
+            12,
+            94,
+            10,
+            12,
+            12,
+            12,
+            19,
+            13,
+            12,
+            12,
+            13,
+            11,
+            12,
+            12,
+            53,
+            11,
+            25,
+            11,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            26,
+            10,
+            12,
+            12,
+            12,
+            12,
+            39,
+            5,
+            13,
+            11,
+            28,
+            12,
+            12,
+            13,
+            11,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            13,
+            11,
+            64,
+            17,
+            14,
+            15,
+            10,
+            13,
+            11,
+            12,
+            12,
+            12,
+            22,
+            10,
+            12,
+            12,
+            28,
+            30,
+            7,
+            11,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            18,
+            10,
+            12,
+            12,
+            23,
+            14,
+            14,
+            13,
+            12,
+            31,
+            15,
+            17,
+            32,
+            10,
+            11,
+            12,
+            12,
+            12,
+            13,
+            22,
+            13,
+            14,
+            10,
+            12,
+            13,
+            46,
+            13,
+            12,
+            12,
+            12,
+            12,
+            12,
+            25,
+            12,
+            11,
+            12,
+            12,
+            12,
+            12,
+            26,
+            10,
+            39,
+            13,
+            12,
+            12,
+            22,
+            10,
+            12,
+            12,
+            12,
+            12,
+            13,
+            21,
+            10,
+            12,
+            12,
+            12,
+            12,
+            52,
+            25,
+            27
+          ],
+          "frames": [
+            185,
+            15,
+            3,
+            200,
+            174,
+            17,
+            2,
+            159,
+            83,
+            23,
+            131,
+            56,
+            19,
+            174,
+            203,
+            15,
+            1,
+            224,
+            209,
+            13,
+            4,
+            187,
+            204,
+            17
+          ],
+          "clicks": [
+            {
+              "id": "console-tools",
+              "trusted": true,
+              "ackMS": 4,
+              "pending": 0
+            },
+            {
+              "id": "storage-schematic",
+              "trusted": true,
+              "ackMS": 1,
+              "pending": 0
+            },
+            {
+              "id": "b10-a2-link",
+              "trusted": true,
+              "ackMS": 1,
+              "pending": 0
+            },
+            {
+              "id": "storage-pause",
+              "trusted": true,
+              "ackMS": 4,
+              "pending": 0
+            }
+          ],
+          "tools": [
+            {
+              "tool": "plant-diagnostics",
+              "atMS": 7468
+            },
+            {
+              "tool": "b10-a2-shadow",
+              "atMS": 8724
+            }
+          ],
+          "originalModelCreateMS": []
+        },
+        "heap": null,
+        "nav": [
+          {
+            "domContentLoaded": 531,
+            "load": 534,
+            "responseEnd": 14
+          }
+        ]
+      },
+      "memoryAfter": {
+        "processes": [
+          {
+            "name": "MainThread",
+            "rssKiB": 194488
+          },
+          {
+            "name": "MiniBrowser",
+            "rssKiB": 109020
+          },
+          {
+            "name": "WPENetworkProce",
+            "rssKiB": 56644
+          },
+          {
+            "name": "WPEWebProcess",
+            "rssKiB": 534088
+          }
+        ],
+        "totalRSSKiB": 894240,
+        "limit": "Browser/driver descendants; shared pages may be counted more than once; no worker heap isolation"
+      },
+      "clock": 0.001,
+      "scientificSnapshot": {
+        "clockSeconds": 0.001,
+        "sections": [
+          {
+            "pressureBarAbsolute": 3.5020754953733313,
+            "temperatureC": -5.323315044994551,
+            "massKg": 0.011915957802414587,
+            "internalEnergyKJ": 5.748618128444818,
+            "volumeM3": 0.0006000000000000001,
+            "enthalpyKJkg": 500.0640953058569,
+            "phase": "Liquid + vapor",
+            "quality": 0.1397330514584157,
+            "wet": true,
+            "superheatK": 0
+          },
+          {
+            "pressureBarAbsolute": 3.5014109010492525,
+            "temperatureC": -5.32816246279377,
+            "massKg": 0.011912805414491287,
+            "internalEnergyKJ": 5.747042782472182,
+            "volumeM3": 0.0006000000000000001,
+            "enthalpyKJkg": 500.0608361560755,
+            "phase": "Liquid + vapor",
+            "quality": 0.13974607071511247,
+            "wet": true,
+            "superheatK": 0
+          },
+          {
+            "pressureBarAbsolute": 3.5010282981996013,
+            "temperatureC": -5.330953508622236,
+            "massKg": 0.011910992822802354,
+            "internalEnergyKJ": 5.7461365995880715,
+            "volumeM3": 0.0006000000000000001,
+            "enthalpyKJkg": 500.05892758809546,
+            "phase": "Liquid + vapor",
+            "quality": 0.1397535417838213,
+            "wet": true,
+            "superheatK": 0
+          },
+          {
+            "pressureBarAbsolute": 3.500760991351543,
+            "temperatureC": -5.332903663760106,
+            "massKg": 0.011909726585033123,
+            "internalEnergyKJ": 5.745503549352683,
+            "volumeM3": 0.0006000000000000001,
+            "enthalpyKJkg": 500.057592952476,
+            "phase": "Liquid + vapor",
+            "quality": 0.1397587610441822,
+            "wet": true,
+            "superheatK": 0
+          },
+          {
+            "pressureBarAbsolute": 3.500506149728084,
+            "temperatureC": -5.33476301666975,
+            "massKg": 0.011908519441558756,
+            "internalEnergyKJ": 5.74490004586353,
+            "volumeM3": 0.0006000000000000001,
+            "enthalpyKJkg": 500.05632052507696,
+            "phase": "Liquid + vapor",
+            "quality": 0.13976373728809785,
+            "wet": true,
+            "superheatK": 0
+          }
+        ],
+        "nodes": [
+          {
+            "id": "tube-0",
+            "temperatureK": 273.14937920495527,
+            "energyKJ": -0.0006046717557856382
+          },
+          {
+            "id": "fin-0",
+            "temperatureK": 273.15103387695723,
+            "energyKJ": 0.0008779701200974487
+          },
+          {
+            "id": "tube-1",
+            "temperatureK": 273.1493788001693,
+            "energyKJ": -0.0006050660286668439
+          },
+          {
+            "id": "fin-1",
+            "temperatureK": 273.15103387688174,
+            "energyKJ": 0.0008779700560122112
+          },
+          {
+            "id": "tube-2",
+            "temperatureK": 273.1493786150404,
+            "energyKJ": -0.0006052463493835535
+          },
+          {
+            "id": "fin-2",
+            "temperatureK": 273.15103387685184,
+            "energyKJ": 0.0008779700306107316
+          },
+          {
+            "id": "tube-3",
+            "temperatureK": 273.1493785006446,
+            "energyKJ": -0.0006053577741241536
+          },
+          {
+            "id": "fin-3",
+            "temperatureK": 273.15103387683473,
+            "energyKJ": 0.0008779700160775935
+          },
+          {
+            "id": "tube-4",
+            "temperatureK": 273.14937839307794,
+            "energyKJ": -0.0006054625470423562
+          },
+          {
+            "id": "fin-4",
+            "temperatureK": 273.15103387681864,
+            "energyKJ": 0.0008779700024243304
+          },
+          {
+            "id": "air",
+            "temperatureK": 278.1491726318937,
+            "energyKJ": 21.53643569819803
+          }
+        ],
+        "flows": {
+          "inlet": {
+            "massKgS": 0.01545508831280252,
+            "energyKW": 7.72754415640126
+          },
+          "outlet": {
+            "massKgS": 0.008111071453319055,
+            "energyKW": 4.055992546462715
+          },
+          "scope": "instantaneous signed accepted-endpoint faces; positive inlet-to-outlet"
+        },
+        "totals": {
+          "massKg": 0.0595580020663001,
+          "internalEnergyKJ": 28.732201105721288
+        },
+        "conservation": {
+          "massResidualKg": 2.286543418256355e-15,
+          "refrigerantEnergyResidualKJ": 1.1530633219070108e-12,
+          "thermalEnergyResidualKJ": -4.99036575951628e-15,
+          "combinedEnergyResidualKJ": 1.1480729561474945e-12,
+          "boundaryMassKg": 1.0043121306733088e-05,
+          "boundaryEnthalpyKJ": 0.005021377192847143,
+          "airLoadKJ": 0.001
+        },
+        "numerics": {
+          "acceptedSteps": 16,
+          "rejectedSteps": 1,
+          "nextStepSeconds": 0.0005199999999999998,
+          "lastAcceptedInterval": {
+            "startSeconds": 0.0007400000000000001,
+            "endSeconds": 0.001,
+            "trialSeconds": 0.0002599999999999999,
+            "error": 0.04688050765390616
+          },
+          "minAcceptedStepSeconds": 9.999999999999999e-06,
+          "maxAcceptedStepSeconds": 0.00012999999999999996,
+          "lastTimeError": 0.04688050765390616,
+          "lastResidual": 2.367639098976178e-13
+        }
+      },
+      "disposeMS": 8.316464000017731,
+      "restart": {
+        "fixture": "cold",
+        "workerCreationMS": 0,
+        "firstAcceptedAndRenderedMS": 102
+      },
+      "resources": {
+        "ended": false,
+        "heartbeatActive": false,
+        "frameActive": false,
+        "pending": 0
+      }
+    },
+    {
+      "mode": "B10",
+      "fixture": "cold",
+      "round": 1,
+      "navigationToOriginalReadyMS": 563.414062999982,
+      "originalInitializeMS": 5296.496543000103,
+      "originalModelCreateMS": 3,
+      "lazyPanelMS": 1240.7597650001208,
+      "session": {
+        "fixture": "cold",
+        "workerCreationMS": 1,
+        "firstAcceptedAndRenderedMS": 253
+      },
+      "initialization": {
+        "type": "initialize",
+        "timing": {
+          "assetVerificationMS": 32,
+          "importAndOwnedTableMS": 148,
+          "createAndRecordMS": 11,
+          "serviceMS": 191
+        },
+        "delivery": {
+          "roundtripMS": 249,
+          "transferAndDispatchMS": 1
+        }
+      },
+      "memoryReady": {
+        "processes": [
+          {
+            "name": "MainThread",
+            "rssKiB": 194496
+          },
+          {
+            "name": "MiniBrowser",
+            "rssKiB": 109572
+          },
+          {
+            "name": "WPENetworkProce",
+            "rssKiB": 59004
+          },
+          {
+            "name": "WPEWebProcess",
+            "rssKiB": 494408
+          }
+        ],
+        "totalRSSKiB": 857480,
+        "limit": "Browser/driver descendants; shared pages may be counted more than once; no worker heap isolation"
+      },
+      "switchDuringComputeMS": 742.6603660001092,
+      "threeAdvanceWithToolsMS": 2369.1952100000435,
+      "workerMetrics": [
+        {
+          "type": "initialize",
+          "timing": {
+            "assetVerificationMS": 32,
+            "importAndOwnedTableMS": 148,
+            "createAndRecordMS": 11,
+            "serviceMS": 191
+          },
+          "delivery": {
+            "roundtripMS": 249,
+            "transferAndDispatchMS": 1
+          }
+        },
+        {
+          "type": "advance",
+          "timing": {
+            "advanceMS": 83,
+            "projectionMS": 0,
+            "serviceMS": 87
+          },
+          "delivery": {
+            "roundtripMS": 95,
+            "transferAndDispatchMS": 6
+          }
+        },
+        {
+          "type": "advance",
+          "timing": {
+            "advanceMS": 50,
+            "projectionMS": 0,
+            "serviceMS": 51
+          },
+          "delivery": {
+            "roundtripMS": 60,
+            "transferAndDispatchMS": 7
+          }
+        },
+        {
+          "type": "advance",
+          "timing": {
+            "advanceMS": 23,
+            "projectionMS": 0,
+            "serviceMS": 23
+          },
+          "delivery": {
+            "roundtripMS": 25,
+            "transferAndDispatchMS": 1
+          }
+        }
+      ],
+      "renderMS": [
+        0,
+        0,
+        0,
+        2,
+        1,
+        2,
+        2,
+        0,
+        1,
+        4,
+        1,
+        1,
+        2,
+        1
+      ],
+      "observations": {
+        "data": {
+          "heartbeat": [
+            12,
+            20,
+            14,
+            12,
+            11,
+            12,
+            15,
+            43,
+            10,
+            12,
+            12,
+            12,
+            12,
+            311,
+            94,
+            32,
+            11,
+            12,
+            12,
+            13,
+            15,
+            12,
+            12,
+            18,
+            13,
+            93,
+            12,
+            12,
+            12,
+            13,
+            11,
+            12,
+            12,
+            12,
+            23,
+            13,
+            12,
+            12,
+            12,
+            74,
+            10,
+            13,
+            11,
+            12,
+            12,
+            21,
+            11,
+            12,
+            12,
+            14,
+            10,
+            15,
+            13,
+            12,
+            46,
+            10,
+            12,
+            21,
+            11,
+            12,
+            12,
+            12,
+            12,
+            13,
+            11,
+            13,
+            11,
+            13,
+            11,
+            13,
+            11,
+            37,
+            7,
+            12,
+            13,
+            11,
+            24,
+            12,
+            12,
+            12,
+            13,
+            11,
+            12,
+            12,
+            12,
+            25,
+            11,
+            12,
+            49,
+            28,
+            14,
+            14,
+            11,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            28,
+            12,
+            29,
+            6,
+            5,
+            12,
+            12,
+            12,
+            14,
+            10,
+            12,
+            12,
+            12,
+            13,
+            11,
+            12,
+            12,
+            24,
+            19,
+            20,
+            14,
+            36,
+            35,
+            11,
+            23,
+            10,
+            12,
+            12,
+            12,
+            13,
+            11,
+            12,
+            16,
+            12,
+            14,
+            10,
+            12,
+            40,
+            12,
+            12,
+            12,
+            13,
+            11,
+            12,
+            13,
+            24,
+            13,
+            10,
+            12,
+            12,
+            17,
+            11,
+            12,
+            12,
+            12,
+            31,
+            13,
+            26,
+            10,
+            12,
+            12,
+            12,
+            12,
+            12,
+            20,
+            12,
+            12,
+            12,
+            13,
+            11,
+            37,
+            39,
+            21,
+            7
+          ],
+          "frames": [
+            228,
+            15,
+            3,
+            207,
+            204,
+            14,
+            3,
+            172,
+            167,
+            7,
+            83,
+            195,
+            16,
+            171,
+            219,
+            15,
+            3,
+            242,
+            198,
+            14,
+            165,
+            170,
+            6,
+            50
+          ],
+          "clicks": [
+            {
+              "id": "console-tools",
+              "trusted": true,
+              "ackMS": 7,
+              "pending": 0
+            },
+            {
+              "id": "storage-schematic",
+              "trusted": true,
+              "ackMS": 1,
+              "pending": 0
+            },
+            {
+              "id": "b10-a2-link",
+              "trusted": true,
+              "ackMS": 2,
+              "pending": 0
+            },
+            {
+              "id": "storage-pause",
+              "trusted": true,
+              "ackMS": 2,
+              "pending": 0
+            }
+          ],
+          "tools": [
+            {
+              "tool": "plant-diagnostics",
+              "atMS": 8346
+            },
+            {
+              "tool": "b10-a2-shadow",
+              "atMS": 9813
+            }
+          ],
+          "originalModelCreateMS": []
+        },
+        "heap": null,
+        "nav": [
+          {
+            "domContentLoaded": 509,
+            "load": 512,
+            "responseEnd": 8
+          }
+        ]
+      },
+      "memoryAfter": {
+        "processes": [
+          {
+            "name": "MainThread",
+            "rssKiB": 194508
+          },
+          {
+            "name": "MiniBrowser",
+            "rssKiB": 109024
+          },
+          {
+            "name": "WPENetworkProce",
+            "rssKiB": 57656
+          },
+          {
+            "name": "WPEWebProcess",
+            "rssKiB": 522884
+          }
+        ],
+        "totalRSSKiB": 884072,
+        "limit": "Browser/driver descendants; shared pages may be counted more than once; no worker heap isolation"
+      },
+      "clock": 0.001,
+      "scientificSnapshot": {
+        "clockSeconds": 0.001,
+        "sections": [
+          {
+            "pressureBarAbsolute": 3.5020754953733313,
+            "temperatureC": -5.323315044994551,
+            "massKg": 0.011915957802414587,
+            "internalEnergyKJ": 5.748618128444818,
+            "volumeM3": 0.0006000000000000001,
+            "enthalpyKJkg": 500.0640953058569,
+            "phase": "Liquid + vapor",
+            "quality": 0.1397330514584157,
+            "wet": true,
+            "superheatK": 0
+          },
+          {
+            "pressureBarAbsolute": 3.5014109010492525,
+            "temperatureC": -5.32816246279377,
+            "massKg": 0.011912805414491287,
+            "internalEnergyKJ": 5.747042782472182,
+            "volumeM3": 0.0006000000000000001,
+            "enthalpyKJkg": 500.0608361560755,
+            "phase": "Liquid + vapor",
+            "quality": 0.13974607071511247,
+            "wet": true,
+            "superheatK": 0
+          },
+          {
+            "pressureBarAbsolute": 3.5010282981996013,
+            "temperatureC": -5.330953508622236,
+            "massKg": 0.011910992822802354,
+            "internalEnergyKJ": 5.7461365995880715,
+            "volumeM3": 0.0006000000000000001,
+            "enthalpyKJkg": 500.05892758809546,
+            "phase": "Liquid + vapor",
+            "quality": 0.1397535417838213,
+            "wet": true,
+            "superheatK": 0
+          },
+          {
+            "pressureBarAbsolute": 3.500760991351543,
+            "temperatureC": -5.332903663760106,
+            "massKg": 0.011909726585033123,
+            "internalEnergyKJ": 5.745503549352683,
+            "volumeM3": 0.0006000000000000001,
+            "enthalpyKJkg": 500.057592952476,
+            "phase": "Liquid + vapor",
+            "quality": 0.1397587610441822,
+            "wet": true,
+            "superheatK": 0
+          },
+          {
+            "pressureBarAbsolute": 3.500506149728084,
+            "temperatureC": -5.33476301666975,
+            "massKg": 0.011908519441558756,
+            "internalEnergyKJ": 5.74490004586353,
+            "volumeM3": 0.0006000000000000001,
+            "enthalpyKJkg": 500.05632052507696,
+            "phase": "Liquid + vapor",
+            "quality": 0.13976373728809785,
+            "wet": true,
+            "superheatK": 0
+          }
+        ],
+        "nodes": [
+          {
+            "id": "tube-0",
+            "temperatureK": 273.14937920495527,
+            "energyKJ": -0.0006046717557856382
+          },
+          {
+            "id": "fin-0",
+            "temperatureK": 273.15103387695723,
+            "energyKJ": 0.0008779701200974487
+          },
+          {
+            "id": "tube-1",
+            "temperatureK": 273.1493788001693,
+            "energyKJ": -0.0006050660286668439
+          },
+          {
+            "id": "fin-1",
+            "temperatureK": 273.15103387688174,
+            "energyKJ": 0.0008779700560122112
+          },
+          {
+            "id": "tube-2",
+            "temperatureK": 273.1493786150404,
+            "energyKJ": -0.0006052463493835535
+          },
+          {
+            "id": "fin-2",
+            "temperatureK": 273.15103387685184,
+            "energyKJ": 0.0008779700306107316
+          },
+          {
+            "id": "tube-3",
+            "temperatureK": 273.1493785006446,
+            "energyKJ": -0.0006053577741241536
+          },
+          {
+            "id": "fin-3",
+            "temperatureK": 273.15103387683473,
+            "energyKJ": 0.0008779700160775935
+          },
+          {
+            "id": "tube-4",
+            "temperatureK": 273.14937839307794,
+            "energyKJ": -0.0006054625470423562
+          },
+          {
+            "id": "fin-4",
+            "temperatureK": 273.15103387681864,
+            "energyKJ": 0.0008779700024243304
+          },
+          {
+            "id": "air",
+            "temperatureK": 278.1491726318937,
+            "energyKJ": 21.53643569819803
+          }
+        ],
+        "flows": {
+          "inlet": {
+            "massKgS": 0.01545508831280252,
+            "energyKW": 7.72754415640126
+          },
+          "outlet": {
+            "massKgS": 0.008111071453319055,
+            "energyKW": 4.055992546462715
+          },
+          "scope": "instantaneous signed accepted-endpoint faces; positive inlet-to-outlet"
+        },
+        "totals": {
+          "massKg": 0.0595580020663001,
+          "internalEnergyKJ": 28.732201105721288
+        },
+        "conservation": {
+          "massResidualKg": 2.286543418256355e-15,
+          "refrigerantEnergyResidualKJ": 1.1530633219070108e-12,
+          "thermalEnergyResidualKJ": -4.99036575951628e-15,
+          "combinedEnergyResidualKJ": 1.1480729561474945e-12,
+          "boundaryMassKg": 1.0043121306733088e-05,
+          "boundaryEnthalpyKJ": 0.005021377192847143,
+          "airLoadKJ": 0.001
+        },
+        "numerics": {
+          "acceptedSteps": 16,
+          "rejectedSteps": 1,
+          "nextStepSeconds": 0.0005199999999999998,
+          "lastAcceptedInterval": {
+            "startSeconds": 0.0007400000000000001,
+            "endSeconds": 0.001,
+            "trialSeconds": 0.0002599999999999999,
+            "error": 0.04688050765390616
+          },
+          "minAcceptedStepSeconds": 9.999999999999999e-06,
+          "maxAcceptedStepSeconds": 0.00012999999999999996,
+          "lastTimeError": 0.04688050765390616,
+          "lastResidual": 2.367639098976178e-13
+        }
+      },
+      "disposeMS": 25.135696000006646,
+      "restart": {
+        "fixture": "cold",
+        "workerCreationMS": 0,
+        "firstAcceptedAndRenderedMS": 167
+      },
+      "resources": {
+        "ended": false,
+        "heartbeatActive": false,
+        "frameActive": false,
+        "pending": 0
+      }
+    },
+    {
+      "mode": "B11",
+      "fixture": "warm",
+      "round": 1,
+      "navigationToOriginalReadyMS": 557.2658430000956,
+      "originalInitializeMS": 5063.265545000149,
+      "originalModelCreateMS": 3,
+      "lazyPanelMS": 1115.3709399998206,
+      "session": {
+        "fixture": "warm",
+        "workerCreationMS": 1,
+        "firstAcceptedAndRenderedMS": 123
+      },
+      "initialization": {
+        "type": "initialize",
+        "timing": {
+          "assetVerificationMS": 20,
+          "importAndOwnedTableMS": 75,
+          "createAndRecordMS": 8,
+          "serviceMS": 103
+        },
+        "delivery": {
+          "roundtripMS": 120,
+          "transferAndDispatchMS": 0
+        }
+      },
+      "memoryReady": {
+        "processes": [
+          {
+            "name": "MainThread",
+            "rssKiB": 196544
+          },
+          {
+            "name": "MiniBrowser",
+            "rssKiB": 109676
+          },
+          {
+            "name": "WPENetworkProce",
+            "rssKiB": 59212
+          },
+          {
+            "name": "WPEWebProcess",
+            "rssKiB": 496476
+          }
+        ],
+        "totalRSSKiB": 861908,
+        "limit": "Browser/driver descendants; shared pages may be counted more than once; no worker heap isolation"
+      },
+      "switchDuringComputeMS": 322.695332999956,
+      "threeAdvanceWithToolsMS": 2551.038662999872,
+      "workerMetrics": [
+        {
+          "type": "initialize",
+          "timing": {
+            "assetVerificationMS": 20,
+            "importAndOwnedTableMS": 75,
+            "createAndRecordMS": 8,
+            "serviceMS": 103
+          },
+          "delivery": {
+            "roundtripMS": 120,
+            "transferAndDispatchMS": 0
+          }
+        },
+        {
+          "type": "advance",
+          "timing": {
+            "advanceMS": 377,
+            "projectionMS": 0,
+            "serviceMS": 377
+          },
+          "delivery": {
+            "roundtripMS": 735,
+            "transferAndDispatchMS": 356
+          }
+        },
+        {
+          "type": "advance",
+          "timing": {
+            "advanceMS": 150,
+            "projectionMS": 0,
+            "serviceMS": 150
+          },
+          "delivery": {
+            "roundtripMS": 158,
+            "transferAndDispatchMS": 0
+          }
+        },
+        {
+          "type": "advance",
+          "timing": {
+            "advanceMS": 143,
+            "projectionMS": 0,
+            "serviceMS": 143
+          },
+          "delivery": {
+            "roundtripMS": 145,
+            "transferAndDispatchMS": 0
+          }
+        }
+      ],
+      "renderMS": [
+        0,
+        0,
+        0,
+        2,
+        1,
+        1,
+        1,
+        1,
+        2,
+        2,
+        1,
+        1,
+        2,
+        1
+      ],
+      "observations": {
+        "data": {
+          "heartbeat": [
+            9,
+            12,
+            15,
+            15,
+            14,
+            12,
+            12,
+            12,
+            29,
+            13,
+            14,
+            12,
+            12,
+            12,
+            37,
+            398,
+            112,
+            9,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            24,
+            12,
+            12,
+            67,
+            13,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            29,
+            18,
+            9,
+            12,
+            12,
+            12,
+            17,
+            49,
+            14,
+            26,
+            14,
+            12,
+            14,
+            14,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            13,
+            58,
+            13,
+            12,
+            12,
+            23,
+            15,
+            14,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            50,
+            14,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            37,
+            20,
+            46,
+            13,
+            12,
+            12,
+            13,
+            11,
+            12,
+            13,
+            11,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            15,
+            13,
+            57,
+            11,
+            17,
+            23,
+            12,
+            12,
+            12,
+            13,
+            11,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            24,
+            35,
+            13,
+            12,
+            12,
+            20,
+            12,
+            30,
+            29,
+            2,
+            11,
+            12,
+            18,
+            27,
+            11,
+            34,
+            14,
+            12,
+            12,
+            12,
+            12,
+            12,
+            20,
+            12,
+            14,
+            14,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            41,
+            13,
+            14,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            13,
+            11,
+            12,
+            40,
+            14,
+            14,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            32,
+            29,
+            16,
+            11
+          ],
+          "frames": [
+            216,
+            200,
+            18,
+            3,
+            151,
+            166,
+            4,
+            6,
+            92,
+            189,
+            18,
+            126,
+            33,
+            6,
+            72,
+            199,
+            61,
+            14,
+            4,
+            276,
+            285,
+            178,
+            13,
+            3,
+            232,
+            151,
+            7,
+            53
+          ],
+          "clicks": [
+            {
+              "id": "console-tools",
+              "trusted": true,
+              "ackMS": 2,
+              "pending": 0
+            },
+            {
+              "id": "storage-schematic",
+              "trusted": true,
+              "ackMS": 3,
+              "pending": 0
+            },
+            {
+              "id": "b10-a2-link",
+              "trusted": true,
+              "ackMS": 3,
+              "pending": 0
+            },
+            {
+              "id": "storage-pause",
+              "trusted": true,
+              "ackMS": 2,
+              "pending": 0
+            }
+          ],
+          "tools": [
+            {
+              "tool": "plant-diagnostics",
+              "atMS": 8073
+            },
+            {
+              "tool": "b10-a2-shadow",
+              "atMS": 9215
+            }
+          ],
+          "originalModelCreateMS": []
+        },
+        "heap": null,
+        "nav": [
+          {
+            "domContentLoaded": 504,
+            "load": 507,
+            "responseEnd": 10
+          }
+        ]
+      },
+      "memoryAfter": {
+        "processes": [
+          {
+            "name": "MainThread",
+            "rssKiB": 192632
+          },
+          {
+            "name": "MiniBrowser",
+            "rssKiB": 109008
+          },
+          {
+            "name": "WPENetworkProce",
+            "rssKiB": 57272
+          },
+          {
+            "name": "WPEWebProcess",
+            "rssKiB": 544904
+          }
+        ],
+        "totalRSSKiB": 903816,
+        "limit": "Browser/driver descendants; shared pages may be counted more than once; no worker heap isolation"
+      },
+      "clock": 0.001,
+      "scientificSnapshot": {
+        "clockSeconds": 0.001,
+        "sections": [
+          {
+            "pressureBarAbsolute": 3.6303545131837742,
+            "temperatureC": 10.574289164506045,
+            "massKg": 0.0016521413772032762,
+            "internalEnergyKJ": 2.4928364231224847,
+            "volumeM3": 0.0006000000000000001,
+            "enthalpyKJkg": 1640.6935455697217,
+            "phase": "Superheated vapor",
+            "quality": null,
+            "wet": false,
+            "superheatK": 14.973441924666986
+          },
+          {
+            "pressureBarAbsolute": 3.6307323350547187,
+            "temperatureC": 14.23759641775293,
+            "massKg": 0.0016267234011638743,
+            "internalEnergyKJ": 2.465772673903487,
+            "volumeM3": 0.0006000000000000001,
+            "enthalpyKJkg": 1649.7067738181704,
+            "phase": "Superheated vapor",
+            "quality": null,
+            "wet": false,
+            "superheatK": 18.634068401297554
+          },
+          {
+            "pressureBarAbsolute": 3.629168757178357,
+            "temperatureC": 14.20950186469257,
+            "massKg": 0.0016261796561769066,
+            "internalEnergyKJ": 2.4648772832625037,
+            "volumeM3": 0.0006000000000000001,
+            "enthalpyKJkg": 1649.6500853486575,
+            "phase": "Superheated vapor",
+            "quality": null,
+            "wet": false,
+            "superheatK": 18.61706978525035
+          },
+          {
+            "pressureBarAbsolute": 3.6193877365902276,
+            "temperatureC": 14.034986516441004,
+            "massKg": 0.0016227667328244275,
+            "internalEnergyKJ": 2.459263764129893,
+            "volumeM3": 0.0006000000000000001,
+            "enthalpyKJkg": 1649.2986787660236,
+            "phase": "Superheated vapor",
+            "quality": null,
+            "wet": false,
+            "superheatK": 18.51207416621037
+          },
+          {
+            "pressureBarAbsolute": 3.5911596651656335,
+            "temperatureC": 13.53381596073664,
+            "massKg": 0.0016128702011639052,
+            "internalEnergyKJ": 2.443012311386887,
+            "volumeM3": 0.0006000000000000001,
+            "enthalpyKJkg": 1648.292521789323,
+            "phase": "Superheated vapor",
+            "quality": null,
+            "wet": false,
+            "superheatK": 18.21259639109485
+          }
+        ],
+        "nodes": [
+          {
+            "id": "tube-0",
+            "temperatureK": 293.14907556343377,
+            "energyKJ": 19.479659572900317
+          },
+          {
+            "id": "fin-0",
+            "temperatureK": 293.14999982482993,
+            "energyKJ": 16.984034826767523
+          },
+          {
+            "id": "tube-1",
+            "temperatureK": 293.14930394061184,
+            "energyKJ": 19.4798820186663
+          },
+          {
+            "id": "fin-1",
+            "temperatureK": 293.1499998610407,
+            "energyKJ": 16.984034857517763
+          },
+          {
+            "id": "tube-2",
+            "temperatureK": 293.1493025264985,
+            "energyKJ": 19.479880641280296
+          },
+          {
+            "id": "fin-2",
+            "temperatureK": 293.1499998608643,
+            "energyKJ": 16.98403485736793
+          },
+          {
+            "id": "tube-3",
+            "temperatureK": 293.14928994957336,
+            "energyKJ": 19.479868391003055
+          },
+          {
+            "id": "fin-3",
+            "temperatureK": 293.1499998587734,
+            "energyKJ": 16.984034855592405
+          },
+          {
+            "id": "tube-4",
+            "temperatureK": 293.1492432871131,
+            "energyKJ": 19.479822940460195
+          },
+          {
+            "id": "fin-4",
+            "temperatureK": 293.14999984976737,
+            "energyKJ": 16.984034847944432
+          },
+          {
+            "id": "air",
+            "temperatureK": 293.15023209872436,
+            "energyKJ": 86.16099988130465
+          }
+        ],
+        "flows": {
+          "inlet": {
+            "massKgS": 0.013316232304332863,
+            "energyKW": 6.658116152166432
+          },
+          "outlet": {
+            "massKgS": 0.040378010106280525,
+            "energyKW": 66.5547721054574
+          },
+          "scope": "instantaneous signed accepted-endpoint faces; positive inlet-to-outlet"
+        },
+        "totals": {
+          "massKg": 0.008140681368532389,
+          "internalEnergyKJ": 12.325762455805256
+        },
+        "conservation": {
+          "massResidualKg": 2.3881002969398935e-14,
+          "refrigerantEnergyResidualKJ": 3.932221345412379e-11,
+          "thermalEnergyResidualKJ": -2.835275417223393e-14,
+          "combinedEnergyResidualKJ": 3.9293860699951555e-11,
+          "boundaryMassKg": -3.2073101423442144e-05,
+          "boundaryEnthalpyKJ": -0.06796960642801826,
+          "airLoadKJ": 0.0010000000000000002
+        },
+        "numerics": {
+          "acceptedSteps": 34,
+          "rejectedSteps": 3,
+          "nextStepSeconds": 0.00015274971072325497,
+          "lastAcceptedInterval": {
+            "startSeconds": 0.0009236251446383725,
+            "endSeconds": 0.001,
+            "trialSeconds": 7.637485536162749e-05,
+            "error": 0.03903766031786781
+          },
+          "minAcceptedStepSeconds": 4.405522117731993e-06,
+          "maxAcceptedStepSeconds": 7.964690878722648e-05,
+          "lastTimeError": 0.03903766031786781,
+          "lastResidual": 4.6307860709587324e-12
+        }
+      },
+      "disposeMS": 16.50861600001008,
+      "restart": {
+        "fixture": "warm",
+        "workerCreationMS": 1,
+        "firstAcceptedAndRenderedMS": 187
+      },
+      "resources": {
+        "ended": false,
+        "heartbeatActive": false,
+        "frameActive": false,
+        "pending": 0
+      }
+    },
+    {
+      "mode": "B10",
+      "fixture": "warm",
+      "round": 1,
+      "navigationToOriginalReadyMS": 581.4000719999513,
+      "originalInitializeMS": 4892.603497999971,
+      "originalModelCreateMS": 2,
+      "lazyPanelMS": 1120.5413929999395,
+      "session": {
+        "fixture": "warm",
+        "workerCreationMS": 1,
+        "firstAcceptedAndRenderedMS": 134
+      },
+      "initialization": {
+        "type": "initialize",
+        "timing": {
+          "assetVerificationMS": 23,
+          "importAndOwnedTableMS": 82,
+          "createAndRecordMS": 8,
+          "serviceMS": 114
+        },
+        "delivery": {
+          "roundtripMS": 131,
+          "transferAndDispatchMS": 0
+        }
+      },
+      "memoryReady": {
+        "processes": [
+          {
+            "name": "MainThread",
+            "rssKiB": 194600
+          },
+          {
+            "name": "MiniBrowser",
+            "rssKiB": 109620
+          },
+          {
+            "name": "WPENetworkProce",
+            "rssKiB": 59388
+          },
+          {
+            "name": "WPEWebProcess",
+            "rssKiB": 495012
+          }
+        ],
+        "totalRSSKiB": 858620,
+        "limit": "Browser/driver descendants; shared pages may be counted more than once; no worker heap isolation"
+      },
+      "switchDuringComputeMS": 286.9012640001074,
+      "threeAdvanceWithToolsMS": 2711.6258860000926,
+      "workerMetrics": [
+        {
+          "type": "initialize",
+          "timing": {
+            "assetVerificationMS": 23,
+            "importAndOwnedTableMS": 82,
+            "createAndRecordMS": 8,
+            "serviceMS": 114
+          },
+          "delivery": {
+            "roundtripMS": 131,
+            "transferAndDispatchMS": 0
+          }
+        },
+        {
+          "type": "advance",
+          "timing": {
+            "advanceMS": 339,
+            "projectionMS": 0,
+            "serviceMS": 339
+          },
+          "delivery": {
+            "roundtripMS": 760,
+            "transferAndDispatchMS": 419
+          }
+        },
+        {
+          "type": "advance",
+          "timing": {
+            "advanceMS": 192,
+            "projectionMS": 0,
+            "serviceMS": 192
+          },
+          "delivery": {
+            "roundtripMS": 196,
+            "transferAndDispatchMS": 1
+          }
+        },
+        {
+          "type": "advance",
+          "timing": {
+            "advanceMS": 130,
+            "projectionMS": 0,
+            "serviceMS": 130
+          },
+          "delivery": {
+            "roundtripMS": 158,
+            "transferAndDispatchMS": 25
+          }
+        }
+      ],
+      "renderMS": [
+        0,
+        0,
+        0,
+        2,
+        1,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "observations": {
+        "data": {
+          "heartbeat": [
+            1,
+            12,
+            11,
+            12,
+            15,
+            13,
+            12,
+            51,
+            21,
+            12,
+            25,
+            21,
+            14,
+            422,
+            124,
+            14,
+            12,
+            12,
+            12,
+            12,
+            12,
+            19,
+            13,
+            12,
+            65,
+            11,
+            12,
+            12,
+            12,
+            12,
+            23,
+            22,
+            10,
+            13,
+            12,
+            17,
+            11,
+            12,
+            12,
+            77,
+            11,
+            12,
+            12,
+            12,
+            13,
+            11,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            36,
+            12,
+            12,
+            12,
+            20,
+            14,
+            14,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            17,
+            12,
+            11,
+            12,
+            37,
+            11,
+            13,
+            11,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            23,
+            30,
+            11,
+            12,
+            22,
+            32,
+            6,
+            9,
+            11,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12,
+            21,
+            11,
+            12,
+            12,
+            12,
+            46,
+            14,
+            12,
+            12,
+            12,
+            12,
+            12,
+            28,
+            15,
+            24,
+            13,
+            13,
+            11,
+            13,
+            28,
+            39,
+            12,
+            12,
+            12,
+            12,
+            13,
+            20,
+            11,
+            12,
+            12,
+            31,
+            13,
+            12,
+            12,
+            12,
+            13,
+            54,
+            18,
+            11,
+            12,
+            14,
+            14,
+            12,
+            12,
+            12,
+            24,
+            13,
+            11,
+            12,
+            12,
+            21,
+            22,
+            13,
+            12,
+            12,
+            27,
+            13,
+            12,
+            12,
+            13,
+            11,
+            12,
+            12,
+            12,
+            17,
+            11,
+            12,
+            12,
+            12,
+            34,
+            34,
+            24
+          ],
+          "frames": [
+            215,
+            171,
+            15,
+            2,
+            172,
+            161,
+            6,
+            87,
+            150,
+            8,
+            49,
+            140,
+            5,
+            53,
+            214,
+            191,
+            16,
+            3,
+            284,
+            249,
+            155,
+            15,
+            4,
+            131,
+            32,
+            30,
+            17
+          ],
+          "clicks": [
+            {
+              "id": "console-tools",
+              "trusted": true,
+              "ackMS": 5,
+              "pending": 0
+            },
+            {
+              "id": "storage-schematic",
+              "trusted": true,
+              "ackMS": 2,
+              "pending": 0
+            },
+            {
+              "id": "b10-a2-link",
+              "trusted": true,
+              "ackMS": 2,
+              "pending": 0
+            },
+            {
+              "id": "storage-pause",
+              "trusted": true,
+              "ackMS": 2,
+              "pending": 0
+            }
+          ],
+          "tools": [
+            {
+              "tool": "plant-diagnostics",
+              "atMS": 7928
+            },
+            {
+              "tool": "b10-a2-shadow",
+              "atMS": 9179
+            }
+          ],
+          "originalModelCreateMS": []
+        },
+        "heap": null,
+        "nav": [
+          {
+            "domContentLoaded": 525,
+            "load": 528,
+            "responseEnd": 6
+          }
+        ]
+      },
+      "memoryAfter": {
+        "processes": [
+          {
+            "name": "MainThread",
+            "rssKiB": 194600
+          },
+          {
+            "name": "MiniBrowser",
+            "rssKiB": 109068
+          },
+          {
+            "name": "WPENetworkProce",
+            "rssKiB": 57836
+          },
+          {
+            "name": "WPEWebProcess",
+            "rssKiB": 537728
+          }
+        ],
+        "totalRSSKiB": 899232,
+        "limit": "Browser/driver descendants; shared pages may be counted more than once; no worker heap isolation"
+      },
+      "clock": 0.001,
+      "scientificSnapshot": {
+        "clockSeconds": 0.001,
+        "sections": [
+          {
+            "pressureBarAbsolute": 3.6303545131837742,
+            "temperatureC": 10.574289164506045,
+            "massKg": 0.0016521413772032762,
+            "internalEnergyKJ": 2.4928364231224847,
+            "volumeM3": 0.0006000000000000001,
+            "enthalpyKJkg": 1640.6935455697217,
+            "phase": "Superheated vapor",
+            "quality": null,
+            "wet": false,
+            "superheatK": 14.973441924666986
+          },
+          {
+            "pressureBarAbsolute": 3.6307323350547187,
+            "temperatureC": 14.23759641775293,
+            "massKg": 0.0016267234011638743,
+            "internalEnergyKJ": 2.465772673903487,
+            "volumeM3": 0.0006000000000000001,
+            "enthalpyKJkg": 1649.7067738181704,
+            "phase": "Superheated vapor",
+            "quality": null,
+            "wet": false,
+            "superheatK": 18.634068401297554
+          },
+          {
+            "pressureBarAbsolute": 3.629168757178357,
+            "temperatureC": 14.20950186469257,
+            "massKg": 0.0016261796561769066,
+            "internalEnergyKJ": 2.4648772832625037,
+            "volumeM3": 0.0006000000000000001,
+            "enthalpyKJkg": 1649.6500853486575,
+            "phase": "Superheated vapor",
+            "quality": null,
+            "wet": false,
+            "superheatK": 18.61706978525035
+          },
+          {
+            "pressureBarAbsolute": 3.6193877365902276,
+            "temperatureC": 14.034986516441004,
+            "massKg": 0.0016227667328244275,
+            "internalEnergyKJ": 2.459263764129893,
+            "volumeM3": 0.0006000000000000001,
+            "enthalpyKJkg": 1649.2986787660236,
+            "phase": "Superheated vapor",
+            "quality": null,
+            "wet": false,
+            "superheatK": 18.51207416621037
+          },
+          {
+            "pressureBarAbsolute": 3.5911596651656335,
+            "temperatureC": 13.53381596073664,
+            "massKg": 0.0016128702011639052,
+            "internalEnergyKJ": 2.443012311386887,
+            "volumeM3": 0.0006000000000000001,
+            "enthalpyKJkg": 1648.292521789323,
+            "phase": "Superheated vapor",
+            "quality": null,
+            "wet": false,
+            "superheatK": 18.21259639109485
+          }
+        ],
+        "nodes": [
+          {
+            "id": "tube-0",
+            "temperatureK": 293.14907556343377,
+            "energyKJ": 19.479659572900317
+          },
+          {
+            "id": "fin-0",
+            "temperatureK": 293.14999982482993,
+            "energyKJ": 16.984034826767523
+          },
+          {
+            "id": "tube-1",
+            "temperatureK": 293.14930394061184,
+            "energyKJ": 19.4798820186663
+          },
+          {
+            "id": "fin-1",
+            "temperatureK": 293.1499998610407,
+            "energyKJ": 16.984034857517763
+          },
+          {
+            "id": "tube-2",
+            "temperatureK": 293.1493025264985,
+            "energyKJ": 19.479880641280296
+          },
+          {
+            "id": "fin-2",
+            "temperatureK": 293.1499998608643,
+            "energyKJ": 16.98403485736793
+          },
+          {
+            "id": "tube-3",
+            "temperatureK": 293.14928994957336,
+            "energyKJ": 19.479868391003055
+          },
+          {
+            "id": "fin-3",
+            "temperatureK": 293.1499998587734,
+            "energyKJ": 16.984034855592405
+          },
+          {
+            "id": "tube-4",
+            "temperatureK": 293.1492432871131,
+            "energyKJ": 19.479822940460195
+          },
+          {
+            "id": "fin-4",
+            "temperatureK": 293.14999984976737,
+            "energyKJ": 16.984034847944432
+          },
+          {
+            "id": "air",
+            "temperatureK": 293.15023209872436,
+            "energyKJ": 86.16099988130465
+          }
+        ],
+        "flows": {
+          "inlet": {
+            "massKgS": 0.013316232304332863,
+            "energyKW": 6.658116152166432
+          },
+          "outlet": {
+            "massKgS": 0.040378010106280525,
+            "energyKW": 66.5547721054574
+          },
+          "scope": "instantaneous signed accepted-endpoint faces; positive inlet-to-outlet"
+        },
+        "totals": {
+          "massKg": 0.008140681368532389,
+          "internalEnergyKJ": 12.325762455805256
+        },
+        "conservation": {
+          "massResidualKg": 2.3881002969398935e-14,
+          "refrigerantEnergyResidualKJ": 3.932221345412379e-11,
+          "thermalEnergyResidualKJ": -2.835275417223393e-14,
+          "combinedEnergyResidualKJ": 3.9293860699951555e-11,
+          "boundaryMassKg": -3.2073101423442144e-05,
+          "boundaryEnthalpyKJ": -0.06796960642801826,
+          "airLoadKJ": 0.0010000000000000002
+        },
+        "numerics": {
+          "acceptedSteps": 34,
+          "rejectedSteps": 3,
+          "nextStepSeconds": 0.00015274971072325497,
+          "lastAcceptedInterval": {
+            "startSeconds": 0.0009236251446383725,
+            "endSeconds": 0.001,
+            "trialSeconds": 7.637485536162749e-05,
+            "error": 0.03903766031786781
+          },
+          "minAcceptedStepSeconds": 4.405522117731993e-06,
+          "maxAcceptedStepSeconds": 7.964690878722648e-05,
+          "lastTimeError": 0.03903766031786781,
+          "lastResidual": 4.6307860709587324e-12
+        }
+      },
+      "disposeMS": 10.69991100007428,
+      "restart": {
+        "fixture": "warm",
+        "workerCreationMS": 0,
+        "firstAcceptedAndRenderedMS": 155
+      },
+      "resources": {
+        "ended": false,
+        "heartbeatActive": false,
+        "frameActive": false,
+        "pending": 0
+      }
+    }
+  ],
+  "viewport": [
+    1440,
+    1000
+  ],
+  "sequential": true
+}

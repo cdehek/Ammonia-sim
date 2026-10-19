@@ -1,0 +1,18 @@
+chromium Page.wait_for_function: Timeout 30000ms exceeded.
+Traceback (most recent call last):
+  File "/workspace/Ammonia-sim/experiments/dx-fv/browser_eos_b11/run-integration.py", line 63, in <module>
+    try:asyncio.run(main())
+        ^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/asyncio/runners.py", line 195, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/asyncio/base_events.py", line 691, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/workspace/Ammonia-sim/experiments/dx-fv/browser_eos_b11/run-integration.py", line 62, in main
+    if not out['passed']:raise RuntimeError(out['error'])
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Page.wait_for_function: Timeout 30000ms exceeded.

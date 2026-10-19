@@ -1,0 +1,1110 @@
+{
+  "browser": "chromium",
+  "version": "151.0.7922.34",
+  "independentCopyOutsideCheckout": true,
+  "cases": [
+    {
+      "case": "root",
+      "passed": true,
+      "requests": [
+        "http://127.0.0.1:38113/",
+        "http://127.0.0.1:38113/panel.mjs",
+        "http://127.0.0.1:38113/client.mjs",
+        "http://127.0.0.1:38113/snapshot.mjs",
+        "http://127.0.0.1:38113/view.mjs",
+        "http://127.0.0.1:38113/support/snapshot.mjs",
+        "http://127.0.0.1:38113/support/view.mjs",
+        "http://127.0.0.1:38113/panel.css",
+        "http://127.0.0.1:38113/worker.mjs?sessionId=b2833e9a-69b8-43cf-bf60-a5824c94a6a3",
+        "http://127.0.0.1:38113/service.mjs",
+        "http://127.0.0.1:38113/snapshot.mjs",
+        "http://127.0.0.1:38113/support/values.mjs",
+        "http://127.0.0.1:38113/support/snapshot.mjs",
+        "http://127.0.0.1:38113/science/candidate-bundle.mjs",
+        "http://127.0.0.1:38113/science/candidate-bundle.mjs",
+        "http://127.0.0.1:38113/worker.mjs?sessionId=5803b6e2-ef4a-4160-8b76-ba8f3df46c6d",
+        "http://127.0.0.1:38113/service.mjs",
+        "http://127.0.0.1:38113/snapshot.mjs",
+        "http://127.0.0.1:38113/support/values.mjs",
+        "http://127.0.0.1:38113/support/snapshot.mjs",
+        "http://127.0.0.1:38113/science/candidate-bundle.mjs",
+        "http://127.0.0.1:38113/science/candidate-bundle.mjs",
+        "http://127.0.0.1:38113/worker.mjs?sessionId=91155d28-db98-4877-b283-e914876e7339",
+        "http://127.0.0.1:38113/service.mjs",
+        "http://127.0.0.1:38113/snapshot.mjs",
+        "http://127.0.0.1:38113/support/values.mjs",
+        "http://127.0.0.1:38113/support/snapshot.mjs",
+        "http://127.0.0.1:38113/science/candidate-bundle.mjs",
+        "http://127.0.0.1:38113/science/candidate-bundle.mjs"
+      ],
+      "errors": [],
+      "states": [
+        {
+          "fixture": "cold",
+          "times": [
+            0,
+            0.0001,
+            0.0005,
+            0.001
+          ],
+          "diagnostics": {
+            "clockSeconds": 0.001,
+            "acceptedSteps": 16,
+            "rejectedSteps": 1,
+            "accuracyRejectedSteps": 1,
+            "attemptedResidualEvaluations": 2914,
+            "attemptedIterations": 130,
+            "attemptCount": 9,
+            "stop": null,
+            "proof": null,
+            "source": {
+              "acceptedA2": "be9eb35a4ddf5098e685182f8104685127c6a6ee",
+              "optimizedB9C": "b67afb3215075b2ec82bef376d39e03953dc0da2",
+              "bundleSHA256": "f1f028e5454b8090b61c06a8afebcaaac332b3c70f3cd8ac1d4fbc0b2c0bf919"
+            },
+            "scope": "Original current accepted state; original diagnostic generation; no equipment interpretation"
+          },
+          "snapshot": {
+            "protocol": 1,
+            "backendId": "A2-table-B9C-b67afb3",
+            "source": {
+              "acceptedA2": "be9eb35a4ddf5098e685182f8104685127c6a6ee",
+              "optimizedB9C": "b67afb3215075b2ec82bef376d39e03953dc0da2",
+              "bundleSHA256": "f1f028e5454b8090b61c06a8afebcaaac332b3c70f3cd8ac1d4fbc0b2c0bf919"
+            },
+            "qualification": "Bounded five-section table-backed research; uncalibrated conductance; nonqualified prototype; bulk wet is not compressor suction safety.",
+            "sessionId": "b2833e9a-69b8-43cf-bf60-a5824c94a6a3",
+            "acceptedVersion": 3,
+            "clockSeconds": 0.001,
+            "status": "accepted-state",
+            "freshness": "accepted",
+            "units": {
+              "pressure": "bar absolute",
+              "refrigerantTemperature": "degC",
+              "thermalTemperature": "K",
+              "mass": "kg",
+              "internalEnergy": "kJ",
+              "volume": "m3",
+              "enthalpy": "kJ/kg",
+              "flow": "kg/s",
+              "power": "kW",
+              "time": "s",
+              "quality": "dimensionless",
+              "wet": "boolean"
+            },
+            "sections": [
+              {
+                "pressureBarAbsolute": 3.5020754953733304,
+                "temperatureC": -5.323315044994557,
+                "massKg": 0.01191595780241458,
+                "internalEnergyKJ": 5.748618128444814,
+                "volumeM3": 0.0006000000000000001,
+                "enthalpyKJkg": 500.0640953058569,
+                "phase": "Liquid + vapor",
+                "quality": 0.13973305145841577,
+                "wet": true,
+                "superheatK": 0
+              },
+              {
+                "pressureBarAbsolute": 3.501410901049252,
+                "temperatureC": -5.3281624627937765,
+                "massKg": 0.011912805414491284,
+                "internalEnergyKJ": 5.747042782472179,
+                "volumeM3": 0.0006000000000000001,
+                "enthalpyKJkg": 500.0608361560754,
+                "phase": "Liquid + vapor",
+                "quality": 0.13974607071511247,
+                "wet": true,
+                "superheatK": 0
+              },
+              {
+                "pressureBarAbsolute": 3.501028298199602,
+                "temperatureC": -5.330953508622231,
+                "massKg": 0.01191099282280236,
+                "internalEnergyKJ": 5.746136599588074,
+                "volumeM3": 0.0006000000000000001,
+                "enthalpyKJkg": 500.05892758809546,
+                "phase": "Liquid + vapor",
+                "quality": 0.13975354178382127,
+                "wet": true,
+                "superheatK": 0
+              },
+              {
+                "pressureBarAbsolute": 3.5007609913515427,
+                "temperatureC": -5.332903663760113,
+                "massKg": 0.011909726585033076,
+                "internalEnergyKJ": 5.745503549352668,
+                "volumeM3": 0.0006000000000000001,
+                "enthalpyKJkg": 500.0575929524767,
+                "phase": "Liquid + vapor",
+                "quality": 0.13975876104418272,
+                "wet": true,
+                "superheatK": 0
+              },
+              {
+                "pressureBarAbsolute": 3.500506149728084,
+                "temperatureC": -5.33476301666975,
+                "massKg": 0.011908519441558761,
+                "internalEnergyKJ": 5.744900045863533,
+                "volumeM3": 0.0006000000000000001,
+                "enthalpyKJkg": 500.0563205250769,
+                "phase": "Liquid + vapor",
+                "quality": 0.13976373728809777,
+                "wet": true,
+                "superheatK": 0
+              }
+            ],
+            "nodes": [
+              {
+                "id": "tube-0",
+                "temperatureK": 273.14937920495527,
+                "energyKJ": -0.000604671755785637
+              },
+              {
+                "id": "fin-0",
+                "temperatureK": 273.15103387695723,
+                "energyKJ": 0.0008779701200974487
+              },
+              {
+                "id": "tube-1",
+                "temperatureK": 273.1493788001693,
+                "energyKJ": -0.0006050660286668443
+              },
+              {
+                "id": "fin-1",
+                "temperatureK": 273.15103387688174,
+                "energyKJ": 0.0008779700560122112
+              },
+              {
+                "id": "tube-2",
+                "temperatureK": 273.1493786150404,
+                "energyKJ": -0.0006052463493835533
+              },
+              {
+                "id": "fin-2",
+                "temperatureK": 273.15103387685184,
+                "energyKJ": 0.0008779700306107316
+              },
+              {
+                "id": "tube-3",
+                "temperatureK": 273.1493785006446,
+                "energyKJ": -0.0006053577741241529
+              },
+              {
+                "id": "fin-3",
+                "temperatureK": 273.15103387683473,
+                "energyKJ": 0.0008779700160775935
+              },
+              {
+                "id": "tube-4",
+                "temperatureK": 273.14937839307794,
+                "energyKJ": -0.0006054625470423564
+              },
+              {
+                "id": "fin-4",
+                "temperatureK": 273.15103387681864,
+                "energyKJ": 0.0008779700024243304
+              },
+              {
+                "id": "air",
+                "temperatureK": 278.1491726318937,
+                "energyKJ": 21.53643569819803
+              }
+            ],
+            "flows": {
+              "inlet": {
+                "massKgS": 0.015455088312802533,
+                "energyKW": 7.727544156401266
+              },
+              "outlet": {
+                "massKgS": 0.008111071453319055,
+                "energyKW": 4.055992546462715
+              },
+              "scope": "instantaneous signed accepted-endpoint faces; positive inlet-to-outlet"
+            },
+            "totals": {
+              "massKg": 0.059558002066300055,
+              "internalEnergyKJ": 28.732201105721266
+            },
+            "conservation": {
+              "massResidualKg": 2.2352657376954743e-15,
+              "refrigerantEnergyResidualKJ": 1.1303948228846838e-12,
+              "thermalEnergyResidualKJ": -4.99036575951628e-15,
+              "combinedEnergyResidualKJ": 1.1254044571251676e-12,
+              "boundaryMassKg": 1.0043121306735793e-05,
+              "boundaryEnthalpyKJ": 0.005021377192848497,
+              "airLoadKJ": 0.001
+            },
+            "stop": null,
+            "unavailable": {
+              "compressorState": null,
+              "compressorPerformance": null,
+              "condenserHeatRejection": null,
+              "receiverInventory": null,
+              "receiverLevels": null,
+              "valveActuator": null,
+              "equipmentSafetyTrips": null,
+              "plantWideBalance": null
+            },
+            "heatTransfer": {
+              "tubeRefrigerantKW": [
+                0.6387233099939817,
+                0.6393049515555731,
+                0.6396398548395222,
+                0.6398738597285728,
+                0.6400969691697241
+              ],
+              "totalTubeRefrigerantKW": 3.197638945287374,
+              "airLoadKW": 1
+            },
+            "numerics": {
+              "acceptedSteps": 16,
+              "rejectedSteps": 1,
+              "nextStepSeconds": 0.0005199999999999998,
+              "lastAcceptedInterval": {
+                "startSeconds": 0.0007400000000000001,
+                "endSeconds": 0.001,
+                "trialSeconds": 0.0002599999999999999,
+                "error": 0.04688050744825999
+              },
+              "minAcceptedStepSeconds": 9.999999999999999e-06,
+              "maxAcceptedStepSeconds": 0.00012999999999999996,
+              "lastTimeError": 0.04688050744825999,
+              "lastResidual": 2.3643324112563515e-13
+            }
+          }
+        },
+        {
+          "fixture": "warm",
+          "times": [
+            0,
+            0.0001,
+            0.0005,
+            0.001
+          ],
+          "diagnostics": {
+            "clockSeconds": 0.001,
+            "acceptedSteps": 34,
+            "rejectedSteps": 3,
+            "accuracyRejectedSteps": 3,
+            "attemptedResidualEvaluations": 7710,
+            "attemptedIterations": 345,
+            "attemptCount": 20,
+            "stop": null,
+            "proof": null,
+            "source": {
+              "acceptedA2": "be9eb35a4ddf5098e685182f8104685127c6a6ee",
+              "optimizedB9C": "b67afb3215075b2ec82bef376d39e03953dc0da2",
+              "bundleSHA256": "f1f028e5454b8090b61c06a8afebcaaac332b3c70f3cd8ac1d4fbc0b2c0bf919"
+            },
+            "scope": "Original current accepted state; original diagnostic generation; no equipment interpretation"
+          },
+          "snapshot": {
+            "protocol": 1,
+            "backendId": "A2-table-B9C-b67afb3",
+            "source": {
+              "acceptedA2": "be9eb35a4ddf5098e685182f8104685127c6a6ee",
+              "optimizedB9C": "b67afb3215075b2ec82bef376d39e03953dc0da2",
+              "bundleSHA256": "f1f028e5454b8090b61c06a8afebcaaac332b3c70f3cd8ac1d4fbc0b2c0bf919"
+            },
+            "qualification": "Bounded five-section table-backed research; uncalibrated conductance; nonqualified prototype; bulk wet is not compressor suction safety.",
+            "sessionId": "5803b6e2-ef4a-4160-8b76-ba8f3df46c6d",
+            "acceptedVersion": 3,
+            "clockSeconds": 0.001,
+            "status": "accepted-state",
+            "freshness": "accepted",
+            "units": {
+              "pressure": "bar absolute",
+              "refrigerantTemperature": "degC",
+              "thermalTemperature": "K",
+              "mass": "kg",
+              "internalEnergy": "kJ",
+              "volume": "m3",
+              "enthalpy": "kJ/kg",
+              "flow": "kg/s",
+              "power": "kW",
+              "time": "s",
+              "quality": "dimensionless",
+              "wet": "boolean"
+            },
+            "sections": [
+              {
+                "pressureBarAbsolute": 3.6303545131821546,
+                "temperatureC": 10.574289164494553,
+                "massKg": 0.0016521413772025817,
+                "internalEnergyKJ": 2.492836423120858,
+                "volumeM3": 0.0006000000000000001,
+                "enthalpyKJkg": 1640.6935455697064,
+                "phase": "Superheated vapor",
+                "quality": null,
+                "wet": false,
+                "superheatK": 14.973441924666986
+              },
+              {
+                "pressureBarAbsolute": 3.6307323350447107,
+                "temperatureC": 14.237596417681925,
+                "massKg": 0.0016267234011596516,
+                "internalEnergyKJ": 2.4657726738965677,
+                "volumeM3": 0.0006000000000000001,
+                "enthalpyKJkg": 1649.7067738180735,
+                "phase": "Superheated vapor",
+                "quality": null,
+                "wet": false,
+                "superheatK": 18.634068401297554
+              },
+              {
+                "pressureBarAbsolute": 3.6291687571498694,
+                "temperatureC": 14.209501864490361,
+                "massKg": 0.0016261796561648852,
+                "internalEnergyKJ": 2.464877283242702,
+                "volumeM3": 0.0006000000000000001,
+                "enthalpyKJkg": 1649.6500853483817,
+                "phase": "Superheated vapor",
+                "quality": null,
+                "wet": false,
+                "superheatK": 18.61706978525035
+              },
+              {
+                "pressureBarAbsolute": 3.6193877365576275,
+                "temperatureC": 14.034986516208983,
+                "massKg": 0.001622766732816856,
+                "internalEnergyKJ": 2.459263764117378,
+                "volumeM3": 0.0006000000000000001,
+                "enthalpyKJkg": 1649.2986787657076,
+                "phase": "Superheated vapor",
+                "quality": null,
+                "wet": false,
+                "superheatK": 18.51207416621037
+              },
+              {
+                "pressureBarAbsolute": 3.591159665087296,
+                "temperatureC": 13.533815960174714,
+                "massKg": 0.0016128702011369246,
+                "internalEnergyKJ": 2.4430123113421325,
+                "volumeM3": 0.0006000000000000001,
+                "enthalpyKJkg": 1648.292521788559,
+                "phase": "Superheated vapor",
+                "quality": null,
+                "wet": false,
+                "superheatK": 18.21259639109485
+              }
+            ],
+            "nodes": [
+              {
+                "id": "tube-0",
+                "temperatureK": 293.1490755634338,
+                "energyKJ": 19.47965957290037
+              },
+              {
+                "id": "fin-0",
+                "temperatureK": 293.14999982482993,
+                "energyKJ": 16.984034826767523
+              },
+              {
+                "id": "tube-1",
+                "temperatureK": 293.1493039406118,
+                "energyKJ": 19.479882018666263
+              },
+              {
+                "id": "fin-1",
+                "temperatureK": 293.1499998610407,
+                "energyKJ": 16.984034857517777
+              },
+              {
+                "id": "tube-2",
+                "temperatureK": 293.14930252649845,
+                "energyKJ": 19.479880641280268
+              },
+              {
+                "id": "fin-2",
+                "temperatureK": 293.1499998608643,
+                "energyKJ": 16.984034857367927
+              },
+              {
+                "id": "tube-3",
+                "temperatureK": 293.14928994957336,
+                "energyKJ": 19.47986839100305
+              },
+              {
+                "id": "fin-3",
+                "temperatureK": 293.1499998587734,
+                "energyKJ": 16.984034855592395
+              },
+              {
+                "id": "tube-4",
+                "temperatureK": 293.1492432871132,
+                "energyKJ": 19.479822940460327
+              },
+              {
+                "id": "fin-4",
+                "temperatureK": 293.14999984976737,
+                "energyKJ": 16.984034847944432
+              },
+              {
+                "id": "air",
+                "temperatureK": 293.15023209872436,
+                "energyKJ": 86.1609998813047
+              }
+            ],
+            "flows": {
+              "inlet": {
+                "massKgS": 0.013316232304362038,
+                "energyKW": 6.658116152181019
+              },
+              "outlet": {
+                "massKgS": 0.040378010088558035,
+                "energyKW": 66.55477207612081
+              },
+              "scope": "instantaneous signed accepted-endpoint faces; positive inlet-to-outlet"
+            },
+            "totals": {
+              "massKg": 0.008140681368480899,
+              "internalEnergyKJ": 12.325762455719637
+            },
+            "conservation": {
+              "massResidualKg": -1.9028147926671707e-14,
+              "refrigerantEnergyResidualKJ": -3.127907308164701e-11,
+              "thermalEnergyResidualKJ": 2.2507169739061084e-14,
+              "combinedEnergyResidualKJ": -3.125656591190795e-11,
+              "boundaryMassKg": -3.2073101432023055e-05,
+              "boundaryEnthalpyKJ": -0.06796960644291593,
+              "airLoadKJ": 0.0009999999999999998
+            },
+            "stop": null,
+            "unavailable": {
+              "compressorState": null,
+              "compressorPerformance": null,
+              "condenserHeatRejection": null,
+              "receiverInventory": null,
+              "receiverLevels": null,
+              "valveActuator": null,
+              "equipmentSafetyTrips": null,
+              "plantWideBalance": null
+            },
+            "heatTransfer": {
+              "tubeRefrigerantKW": [
+                1.1309743688004028,
+                0.6914049034609934,
+                0.6947760767670615,
+                0.7157164141319481,
+                0.7758512762312921
+              ],
+              "totalTubeRefrigerantKW": 4.008723039391699,
+              "airLoadKW": 1
+            },
+            "numerics": {
+              "acceptedSteps": 34,
+              "rejectedSteps": 3,
+              "nextStepSeconds": 0.0001527328594434017,
+              "lastAcceptedInterval": {
+                "startSeconds": 0.0009236335702782992,
+                "endSeconds": 0.001,
+                "trialSeconds": 7.636642972170084e-05,
+                "error": 0.03902422842901616
+              },
+              "minAcceptedStepSeconds": 4.405649861710203e-06,
+              "maxAcceptedStepSeconds": 7.964728928784347e-05,
+              "lastTimeError": 0.03902422842901616,
+              "lastResidual": 3.3240247222011844e-12
+            }
+          }
+        }
+      ],
+      "restart": true,
+      "CSP": "same-origin + original inline scripts/styles; no unsafe-eval"
+    },
+    {
+      "case": "nested",
+      "passed": true,
+      "requests": [
+        "http://127.0.0.1:45941/review/b11/",
+        "http://127.0.0.1:45941/review/b11/panel.mjs",
+        "http://127.0.0.1:45941/review/b11/client.mjs",
+        "http://127.0.0.1:45941/review/b11/snapshot.mjs",
+        "http://127.0.0.1:45941/review/b11/view.mjs",
+        "http://127.0.0.1:45941/review/b11/support/snapshot.mjs",
+        "http://127.0.0.1:45941/review/b11/support/view.mjs",
+        "http://127.0.0.1:45941/review/b11/panel.css",
+        "http://127.0.0.1:45941/review/b11/worker.mjs?sessionId=10de0f07-8802-491f-8478-5d72988340a0",
+        "http://127.0.0.1:45941/review/b11/service.mjs",
+        "http://127.0.0.1:45941/review/b11/snapshot.mjs",
+        "http://127.0.0.1:45941/review/b11/support/values.mjs",
+        "http://127.0.0.1:45941/review/b11/support/snapshot.mjs",
+        "http://127.0.0.1:45941/review/b11/science/candidate-bundle.mjs",
+        "http://127.0.0.1:45941/review/b11/science/candidate-bundle.mjs",
+        "http://127.0.0.1:45941/review/b11/worker.mjs?sessionId=5f839623-d3e3-40ad-98b8-7296c5dc01a1",
+        "http://127.0.0.1:45941/review/b11/service.mjs",
+        "http://127.0.0.1:45941/review/b11/snapshot.mjs",
+        "http://127.0.0.1:45941/review/b11/support/values.mjs",
+        "http://127.0.0.1:45941/review/b11/support/snapshot.mjs",
+        "http://127.0.0.1:45941/review/b11/science/candidate-bundle.mjs",
+        "http://127.0.0.1:45941/review/b11/science/candidate-bundle.mjs",
+        "http://127.0.0.1:45941/review/b11/worker.mjs?sessionId=c958eebf-5ca8-42ce-b949-ed4afbbde473",
+        "http://127.0.0.1:45941/review/b11/service.mjs",
+        "http://127.0.0.1:45941/review/b11/snapshot.mjs",
+        "http://127.0.0.1:45941/review/b11/support/values.mjs",
+        "http://127.0.0.1:45941/review/b11/support/snapshot.mjs",
+        "http://127.0.0.1:45941/review/b11/science/candidate-bundle.mjs",
+        "http://127.0.0.1:45941/review/b11/science/candidate-bundle.mjs"
+      ],
+      "errors": [],
+      "states": [
+        {
+          "fixture": "cold",
+          "times": [
+            0,
+            0.0001,
+            0.0005,
+            0.001
+          ],
+          "diagnostics": {
+            "clockSeconds": 0.001,
+            "acceptedSteps": 16,
+            "rejectedSteps": 1,
+            "accuracyRejectedSteps": 1,
+            "attemptedResidualEvaluations": 2914,
+            "attemptedIterations": 130,
+            "attemptCount": 9,
+            "stop": null,
+            "proof": null,
+            "source": {
+              "acceptedA2": "be9eb35a4ddf5098e685182f8104685127c6a6ee",
+              "optimizedB9C": "b67afb3215075b2ec82bef376d39e03953dc0da2",
+              "bundleSHA256": "f1f028e5454b8090b61c06a8afebcaaac332b3c70f3cd8ac1d4fbc0b2c0bf919"
+            },
+            "scope": "Original current accepted state; original diagnostic generation; no equipment interpretation"
+          },
+          "snapshot": {
+            "protocol": 1,
+            "backendId": "A2-table-B9C-b67afb3",
+            "source": {
+              "acceptedA2": "be9eb35a4ddf5098e685182f8104685127c6a6ee",
+              "optimizedB9C": "b67afb3215075b2ec82bef376d39e03953dc0da2",
+              "bundleSHA256": "f1f028e5454b8090b61c06a8afebcaaac332b3c70f3cd8ac1d4fbc0b2c0bf919"
+            },
+            "qualification": "Bounded five-section table-backed research; uncalibrated conductance; nonqualified prototype; bulk wet is not compressor suction safety.",
+            "sessionId": "10de0f07-8802-491f-8478-5d72988340a0",
+            "acceptedVersion": 3,
+            "clockSeconds": 0.001,
+            "status": "accepted-state",
+            "freshness": "accepted",
+            "units": {
+              "pressure": "bar absolute",
+              "refrigerantTemperature": "degC",
+              "thermalTemperature": "K",
+              "mass": "kg",
+              "internalEnergy": "kJ",
+              "volume": "m3",
+              "enthalpy": "kJ/kg",
+              "flow": "kg/s",
+              "power": "kW",
+              "time": "s",
+              "quality": "dimensionless",
+              "wet": "boolean"
+            },
+            "sections": [
+              {
+                "pressureBarAbsolute": 3.5020754953733304,
+                "temperatureC": -5.323315044994557,
+                "massKg": 0.01191595780241458,
+                "internalEnergyKJ": 5.748618128444814,
+                "volumeM3": 0.0006000000000000001,
+                "enthalpyKJkg": 500.0640953058569,
+                "phase": "Liquid + vapor",
+                "quality": 0.13973305145841577,
+                "wet": true,
+                "superheatK": 0
+              },
+              {
+                "pressureBarAbsolute": 3.501410901049252,
+                "temperatureC": -5.3281624627937765,
+                "massKg": 0.011912805414491284,
+                "internalEnergyKJ": 5.747042782472179,
+                "volumeM3": 0.0006000000000000001,
+                "enthalpyKJkg": 500.0608361560754,
+                "phase": "Liquid + vapor",
+                "quality": 0.13974607071511247,
+                "wet": true,
+                "superheatK": 0
+              },
+              {
+                "pressureBarAbsolute": 3.501028298199602,
+                "temperatureC": -5.330953508622231,
+                "massKg": 0.01191099282280236,
+                "internalEnergyKJ": 5.746136599588074,
+                "volumeM3": 0.0006000000000000001,
+                "enthalpyKJkg": 500.05892758809546,
+                "phase": "Liquid + vapor",
+                "quality": 0.13975354178382127,
+                "wet": true,
+                "superheatK": 0
+              },
+              {
+                "pressureBarAbsolute": 3.5007609913515427,
+                "temperatureC": -5.332903663760113,
+                "massKg": 0.011909726585033076,
+                "internalEnergyKJ": 5.745503549352668,
+                "volumeM3": 0.0006000000000000001,
+                "enthalpyKJkg": 500.0575929524767,
+                "phase": "Liquid + vapor",
+                "quality": 0.13975876104418272,
+                "wet": true,
+                "superheatK": 0
+              },
+              {
+                "pressureBarAbsolute": 3.500506149728084,
+                "temperatureC": -5.33476301666975,
+                "massKg": 0.011908519441558761,
+                "internalEnergyKJ": 5.744900045863533,
+                "volumeM3": 0.0006000000000000001,
+                "enthalpyKJkg": 500.0563205250769,
+                "phase": "Liquid + vapor",
+                "quality": 0.13976373728809777,
+                "wet": true,
+                "superheatK": 0
+              }
+            ],
+            "nodes": [
+              {
+                "id": "tube-0",
+                "temperatureK": 273.14937920495527,
+                "energyKJ": -0.000604671755785637
+              },
+              {
+                "id": "fin-0",
+                "temperatureK": 273.15103387695723,
+                "energyKJ": 0.0008779701200974487
+              },
+              {
+                "id": "tube-1",
+                "temperatureK": 273.1493788001693,
+                "energyKJ": -0.0006050660286668443
+              },
+              {
+                "id": "fin-1",
+                "temperatureK": 273.15103387688174,
+                "energyKJ": 0.0008779700560122112
+              },
+              {
+                "id": "tube-2",
+                "temperatureK": 273.1493786150404,
+                "energyKJ": -0.0006052463493835533
+              },
+              {
+                "id": "fin-2",
+                "temperatureK": 273.15103387685184,
+                "energyKJ": 0.0008779700306107316
+              },
+              {
+                "id": "tube-3",
+                "temperatureK": 273.1493785006446,
+                "energyKJ": -0.0006053577741241529
+              },
+              {
+                "id": "fin-3",
+                "temperatureK": 273.15103387683473,
+                "energyKJ": 0.0008779700160775935
+              },
+              {
+                "id": "tube-4",
+                "temperatureK": 273.14937839307794,
+                "energyKJ": -0.0006054625470423564
+              },
+              {
+                "id": "fin-4",
+                "temperatureK": 273.15103387681864,
+                "energyKJ": 0.0008779700024243304
+              },
+              {
+                "id": "air",
+                "temperatureK": 278.1491726318937,
+                "energyKJ": 21.53643569819803
+              }
+            ],
+            "flows": {
+              "inlet": {
+                "massKgS": 0.015455088312802533,
+                "energyKW": 7.727544156401266
+              },
+              "outlet": {
+                "massKgS": 0.008111071453319055,
+                "energyKW": 4.055992546462715
+              },
+              "scope": "instantaneous signed accepted-endpoint faces; positive inlet-to-outlet"
+            },
+            "totals": {
+              "massKg": 0.059558002066300055,
+              "internalEnergyKJ": 28.732201105721266
+            },
+            "conservation": {
+              "massResidualKg": 2.2352657376954743e-15,
+              "refrigerantEnergyResidualKJ": 1.1303948228846838e-12,
+              "thermalEnergyResidualKJ": -4.99036575951628e-15,
+              "combinedEnergyResidualKJ": 1.1254044571251676e-12,
+              "boundaryMassKg": 1.0043121306735793e-05,
+              "boundaryEnthalpyKJ": 0.005021377192848497,
+              "airLoadKJ": 0.001
+            },
+            "stop": null,
+            "unavailable": {
+              "compressorState": null,
+              "compressorPerformance": null,
+              "condenserHeatRejection": null,
+              "receiverInventory": null,
+              "receiverLevels": null,
+              "valveActuator": null,
+              "equipmentSafetyTrips": null,
+              "plantWideBalance": null
+            },
+            "heatTransfer": {
+              "tubeRefrigerantKW": [
+                0.6387233099939817,
+                0.6393049515555731,
+                0.6396398548395222,
+                0.6398738597285728,
+                0.6400969691697241
+              ],
+              "totalTubeRefrigerantKW": 3.197638945287374,
+              "airLoadKW": 1
+            },
+            "numerics": {
+              "acceptedSteps": 16,
+              "rejectedSteps": 1,
+              "nextStepSeconds": 0.0005199999999999998,
+              "lastAcceptedInterval": {
+                "startSeconds": 0.0007400000000000001,
+                "endSeconds": 0.001,
+                "trialSeconds": 0.0002599999999999999,
+                "error": 0.04688050744825999
+              },
+              "minAcceptedStepSeconds": 9.999999999999999e-06,
+              "maxAcceptedStepSeconds": 0.00012999999999999996,
+              "lastTimeError": 0.04688050744825999,
+              "lastResidual": 2.3643324112563515e-13
+            }
+          }
+        },
+        {
+          "fixture": "warm",
+          "times": [
+            0,
+            0.0001,
+            0.0005,
+            0.001
+          ],
+          "diagnostics": {
+            "clockSeconds": 0.001,
+            "acceptedSteps": 34,
+            "rejectedSteps": 3,
+            "accuracyRejectedSteps": 3,
+            "attemptedResidualEvaluations": 7710,
+            "attemptedIterations": 345,
+            "attemptCount": 20,
+            "stop": null,
+            "proof": null,
+            "source": {
+              "acceptedA2": "be9eb35a4ddf5098e685182f8104685127c6a6ee",
+              "optimizedB9C": "b67afb3215075b2ec82bef376d39e03953dc0da2",
+              "bundleSHA256": "f1f028e5454b8090b61c06a8afebcaaac332b3c70f3cd8ac1d4fbc0b2c0bf919"
+            },
+            "scope": "Original current accepted state; original diagnostic generation; no equipment interpretation"
+          },
+          "snapshot": {
+            "protocol": 1,
+            "backendId": "A2-table-B9C-b67afb3",
+            "source": {
+              "acceptedA2": "be9eb35a4ddf5098e685182f8104685127c6a6ee",
+              "optimizedB9C": "b67afb3215075b2ec82bef376d39e03953dc0da2",
+              "bundleSHA256": "f1f028e5454b8090b61c06a8afebcaaac332b3c70f3cd8ac1d4fbc0b2c0bf919"
+            },
+            "qualification": "Bounded five-section table-backed research; uncalibrated conductance; nonqualified prototype; bulk wet is not compressor suction safety.",
+            "sessionId": "5f839623-d3e3-40ad-98b8-7296c5dc01a1",
+            "acceptedVersion": 3,
+            "clockSeconds": 0.001,
+            "status": "accepted-state",
+            "freshness": "accepted",
+            "units": {
+              "pressure": "bar absolute",
+              "refrigerantTemperature": "degC",
+              "thermalTemperature": "K",
+              "mass": "kg",
+              "internalEnergy": "kJ",
+              "volume": "m3",
+              "enthalpy": "kJ/kg",
+              "flow": "kg/s",
+              "power": "kW",
+              "time": "s",
+              "quality": "dimensionless",
+              "wet": "boolean"
+            },
+            "sections": [
+              {
+                "pressureBarAbsolute": 3.6303545131821546,
+                "temperatureC": 10.574289164494553,
+                "massKg": 0.0016521413772025817,
+                "internalEnergyKJ": 2.492836423120858,
+                "volumeM3": 0.0006000000000000001,
+                "enthalpyKJkg": 1640.6935455697064,
+                "phase": "Superheated vapor",
+                "quality": null,
+                "wet": false,
+                "superheatK": 14.973441924666986
+              },
+              {
+                "pressureBarAbsolute": 3.6307323350447107,
+                "temperatureC": 14.237596417681925,
+                "massKg": 0.0016267234011596516,
+                "internalEnergyKJ": 2.4657726738965677,
+                "volumeM3": 0.0006000000000000001,
+                "enthalpyKJkg": 1649.7067738180735,
+                "phase": "Superheated vapor",
+                "quality": null,
+                "wet": false,
+                "superheatK": 18.634068401297554
+              },
+              {
+                "pressureBarAbsolute": 3.6291687571498694,
+                "temperatureC": 14.209501864490361,
+                "massKg": 0.0016261796561648852,
+                "internalEnergyKJ": 2.464877283242702,
+                "volumeM3": 0.0006000000000000001,
+                "enthalpyKJkg": 1649.6500853483817,
+                "phase": "Superheated vapor",
+                "quality": null,
+                "wet": false,
+                "superheatK": 18.61706978525035
+              },
+              {
+                "pressureBarAbsolute": 3.6193877365576275,
+                "temperatureC": 14.034986516208983,
+                "massKg": 0.001622766732816856,
+                "internalEnergyKJ": 2.459263764117378,
+                "volumeM3": 0.0006000000000000001,
+                "enthalpyKJkg": 1649.2986787657076,
+                "phase": "Superheated vapor",
+                "quality": null,
+                "wet": false,
+                "superheatK": 18.51207416621037
+              },
+              {
+                "pressureBarAbsolute": 3.591159665087296,
+                "temperatureC": 13.533815960174714,
+                "massKg": 0.0016128702011369246,
+                "internalEnergyKJ": 2.4430123113421325,
+                "volumeM3": 0.0006000000000000001,
+                "enthalpyKJkg": 1648.292521788559,
+                "phase": "Superheated vapor",
+                "quality": null,
+                "wet": false,
+                "superheatK": 18.21259639109485
+              }
+            ],
+            "nodes": [
+              {
+                "id": "tube-0",
+                "temperatureK": 293.1490755634338,
+                "energyKJ": 19.47965957290037
+              },
+              {
+                "id": "fin-0",
+                "temperatureK": 293.14999982482993,
+                "energyKJ": 16.984034826767523
+              },
+              {
+                "id": "tube-1",
+                "temperatureK": 293.1493039406118,
+                "energyKJ": 19.479882018666263
+              },
+              {
+                "id": "fin-1",
+                "temperatureK": 293.1499998610407,
+                "energyKJ": 16.984034857517777
+              },
+              {
+                "id": "tube-2",
+                "temperatureK": 293.14930252649845,
+                "energyKJ": 19.479880641280268
+              },
+              {
+                "id": "fin-2",
+                "temperatureK": 293.1499998608643,
+                "energyKJ": 16.984034857367927
+              },
+              {
+                "id": "tube-3",
+                "temperatureK": 293.14928994957336,
+                "energyKJ": 19.47986839100305
+              },
+              {
+                "id": "fin-3",
+                "temperatureK": 293.1499998587734,
+                "energyKJ": 16.984034855592395
+              },
+              {
+                "id": "tube-4",
+                "temperatureK": 293.1492432871132,
+                "energyKJ": 19.479822940460327
+              },
+              {
+                "id": "fin-4",
+                "temperatureK": 293.14999984976737,
+                "energyKJ": 16.984034847944432
+              },
+              {
+                "id": "air",
+                "temperatureK": 293.15023209872436,
+                "energyKJ": 86.1609998813047
+              }
+            ],
+            "flows": {
+              "inlet": {
+                "massKgS": 0.013316232304362038,
+                "energyKW": 6.658116152181019
+              },
+              "outlet": {
+                "massKgS": 0.040378010088558035,
+                "energyKW": 66.55477207612081
+              },
+              "scope": "instantaneous signed accepted-endpoint faces; positive inlet-to-outlet"
+            },
+            "totals": {
+              "massKg": 0.008140681368480899,
+              "internalEnergyKJ": 12.325762455719637
+            },
+            "conservation": {
+              "massResidualKg": -1.9028147926671707e-14,
+              "refrigerantEnergyResidualKJ": -3.127907308164701e-11,
+              "thermalEnergyResidualKJ": 2.2507169739061084e-14,
+              "combinedEnergyResidualKJ": -3.125656591190795e-11,
+              "boundaryMassKg": -3.2073101432023055e-05,
+              "boundaryEnthalpyKJ": -0.06796960644291593,
+              "airLoadKJ": 0.0009999999999999998
+            },
+            "stop": null,
+            "unavailable": {
+              "compressorState": null,
+              "compressorPerformance": null,
+              "condenserHeatRejection": null,
+              "receiverInventory": null,
+              "receiverLevels": null,
+              "valveActuator": null,
+              "equipmentSafetyTrips": null,
+              "plantWideBalance": null
+            },
+            "heatTransfer": {
+              "tubeRefrigerantKW": [
+                1.1309743688004028,
+                0.6914049034609934,
+                0.6947760767670615,
+                0.7157164141319481,
+                0.7758512762312921
+              ],
+              "totalTubeRefrigerantKW": 4.008723039391699,
+              "airLoadKW": 1
+            },
+            "numerics": {
+              "acceptedSteps": 34,
+              "rejectedSteps": 3,
+              "nextStepSeconds": 0.0001527328594434017,
+              "lastAcceptedInterval": {
+                "startSeconds": 0.0009236335702782992,
+                "endSeconds": 0.001,
+                "trialSeconds": 7.636642972170084e-05,
+                "error": 0.03902422842901616
+              },
+              "minAcceptedStepSeconds": 4.405649861710203e-06,
+              "maxAcceptedStepSeconds": 7.964728928784347e-05,
+              "lastTimeError": 0.03902422842901616,
+              "lastResidual": 3.3240247222011844e-12
+            }
+          }
+        }
+      ],
+      "restart": true,
+      "CSP": "same-origin + original inline scripts/styles; no unsafe-eval"
+    },
+    {
+      "case": "offline-existing-session",
+      "existingWorkerThreeAdvances": [
+        0.0001,
+        0.0005,
+        0.001
+      ],
+      "offlineFreshRestart": {
+        "status": "lost",
+        "snapshot": null,
+        "error": {
+          "message": "Worker error"
+        }
+      },
+      "originalOperationContinues": "10.0 s simulated",
+      "qualification": "Existing loaded localhost worker only; not offline startup/cache/PWA or HTTPS-disconnected proof"
+    },
+    {
+      "case": "missing",
+      "status": "unqualified-backend",
+      "snapshot": null,
+      "error": {
+        "name": "TypeError",
+        "message": "Failed to fetch"
+      },
+      "originalReady": true
+    },
+    {
+      "case": "corrupt",
+      "status": "unqualified-backend",
+      "snapshot": null,
+      "error": {
+        "name": "Error",
+        "message": "Unqualified scientific bundle identity"
+      },
+      "originalReady": true
+    },
+    {
+      "case": "offline-before-worker",
+      "status": "lost",
+      "snapshot": null,
+      "error": {
+        "message": "Worker error"
+      },
+      "originalReady": true
+    },
+    {
+      "case": "offline-before-panel",
+      "loaded": false,
+      "text": "A2 scientific panel unavailable \u00b7 Failed to fetch dynamically imported module: http://127.0.0.1:38113/panel.mjs \u00b7 use local HTTP serving. Original workstation remains available.",
+      "originalReady": true
+    }
+  ],
+  "passed": true,
+  "file": {
+    "originalReady": true,
+    "loaded": false,
+    "text": "A2 scientific panel unavailable \u00b7 Failed to fetch dynamically imported module: file:///tmp/b11-independent-zchabgp0/root/panel.mjs \u00b7 use local HTTP serving. Original workstation remains available."
+  },
+  "privateNetworkTransport": {
+    "origin": "http://172.26.91.253:38113/",
+    "httpStatus": 503,
+    "originalReady": false,
+    "bodyExcerpt": "upstream connect error or disconnect/reset before headers. reset reason: connection termination",
+    "scope": "Same cloud host non-loopback path only; not an owner-network device test"
+  },
+  "privateHTTP": {
+    "origin": "http://b11-origin-policy.invalid",
+    "secureContext": false,
+    "subtle": false,
+    "randomUUID": "undefined",
+    "status": "unqualified-backend",
+    "snapshot": null,
+    "error": {
+      "message": "crypto.randomUUID is not a function"
+    },
+    "originalReady": true,
+    "scope": "Reserved HTTP .invalid origin with locally fulfilled exact package bytes; browser origin-policy test ONLY, no actual network reachability claim",
+    "originalOperationClock": "10.0 s simulated"
+  },
+  "physicalIPad": "AWAITING USER DEVICE REVIEW",
+  "peerDeviceReachability": "UNTESTED: no second device in owner network",
+  "HTTPS": "Static requirements inspected; no HTTPS host deployed/tested",
+  "serviceWorker": "Absent; offline PWA not implemented"
+}

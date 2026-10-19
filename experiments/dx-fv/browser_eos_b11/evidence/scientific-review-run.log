@@ -1,0 +1,22 @@
+chromium {'task': 'hardening'}
+chromium {'mode': 'control', 'fixture': 'cold'}
+chromium {'mode': 'candidate', 'fixture': 'cold'}
+chromium {'mode': 'control', 'fixture': 'warm'}
+chromium {'mode': 'candidate', 'fixture': 'warm'}
+chromium {'task': 'regressions', 'mode': 'control'}
+chromium {'task': 'regressions', 'mode': 'candidate'}
+chromium {'task': 'additional', 'mode': 'control'}
+chromium {'task': 'additional', 'mode': 'candidate'}
+chromium {'task': 'c1'}
+chromium PASS
+webkit {'task': 'hardening'}
+webkit {'mode': 'control', 'fixture': 'cold'}
+webkit {'mode': 'candidate', 'fixture': 'cold'}
+webkit {'mode': 'control', 'fixture': 'warm'}
+webkit {'mode': 'candidate', 'fixture': 'warm'}
+webkit {'task': 'regressions', 'mode': 'control'}
+webkit {'task': 'regressions', 'mode': 'candidate'}
+webkit {'task': 'additional', 'mode': 'control'}
+webkit {'task': 'additional', 'mode': 'candidate'}
+webkit {'task': 'c1'}
+webkit PASS

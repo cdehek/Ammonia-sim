@@ -1,0 +1,29 @@
+{
+  "os": "Linux-6.18.55-x86_64-with-glibc2.41",
+  "python": "3.12.14",
+  "logicalCPUs": 3,
+  "cpuQuota": "200000 100000",
+  "memoryMaxBytes": "8589934592",
+  "pythonPlaywright": "1.62.0",
+  "nodePlaywright": "1.62.1",
+  "executables": [
+    {
+      "path": ".runtime/browsers/chromium_headless_shell-1234/chrome-headless-shell-linux64/chrome-headless-shell",
+      "sha256": "e11fc9ce65c96313476f7ee9844b6fb6a9220fb048693cfe9eee00acf4170a9f",
+      "bytes": 196975952
+    },
+    {
+      "path": ".runtime/browsers/webkit-2336/minibrowser-wpe/bin/MiniBrowser",
+      "sha256": "deee549ad18d8ee5c4a44d78f846bd62fe90959b3e115f0cd33d681897db592e",
+      "bytes": 2263728
+    },
+    {
+      "path": ".runtime/webkit.sh",
+      "sha256": "77d84a526527aee05a42facbdaa2f985e143ccd0d8d104a298aa683360498fed",
+      "bytes": 471
+    }
+  ],
+  "hostRequirements": "WPE launcher uses B10-pinned extracted libraries; GTK missing is avoided by actual WPE binary, not by altered browser security",
+  "noWebOriginOrCSPBypasses": true,
+  "automationLaunch": "Pinned Playwright headless defaults; no --disable-web-security, file-access override, bypassCSP, ignoreHTTPSerrors or origin-trust override. WPE launcher selects pinned shared libraries only."
+}
