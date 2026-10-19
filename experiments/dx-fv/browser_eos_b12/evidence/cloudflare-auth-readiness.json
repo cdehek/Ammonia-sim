@@ -1,0 +1,26 @@
+{
+  "observedUTC": "2026-10-19T13:57:51.623413+00:00",
+  "method": "Environment variable presence and known Wrangler configuration-file existence only; no secret values read or printed",
+  "credentialEnvironmentPresence": {
+    "CLOUDFLARE_API_TOKEN": false,
+    "CLOUDFLARE_API_KEY": false,
+    "CLOUDFLARE_EMAIL": false,
+    "CLOUDFLARE_ACCOUNT_ID": false,
+    "CF_API_TOKEN": false,
+    "CF_API_KEY": false,
+    "CF_ACCOUNT_ID": false
+  },
+  "wranglerExecutableAvailable": false,
+  "knownWranglerConfigPresent": false,
+  "managedEnvironment": {
+    "observationsCurrent": true,
+    "secretBindings": 0,
+    "runtimeVariables": 0,
+    "outboundIdentities": 0
+  },
+  "cloudflareConnectorAvailable": false,
+  "authenticatedCloudflareAccessAvailable": false,
+  "ownerIdentityApproved": false,
+  "accountAPICallsMade": false,
+  "remoteOperationsStopped": true
+}

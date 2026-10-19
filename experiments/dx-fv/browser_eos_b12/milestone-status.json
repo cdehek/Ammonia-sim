@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "milestone": "B12",
+  "classification": "B12 PARTIAL / BLOCKED",
+  "branch": "research/b12-private-https-ipad-preview-20261019",
+  "startingCommit": "909de1579051bfadca0e282adf93eaedc0e24b9c",
+  "designCommit": "25da88e88d81b746b6c12665746981aa9cf38255",
+  "packageIdentity": "b7803a5bf93ddc102c7367b80e7dc4c620c21daec0dbad6ef1a988161e3a2914",
+  "zipSHA256": "a642fe22078e7637f9e5c12ce0efbc6f8b7de317da3853b6a52b03452a3ee078",
+  "decisions": {
+    "A_exactB11ArtifactIntegrity": "PASS",
+    "B_productionIsolation": "PASS",
+    "C_cloudflareAuthenticationAvailable": "NO",
+    "D_separateProjectCreated": "NO",
+    "E_ownerAccessControlVerified": "NOT CONFIGURED",
+    "F_actualHTTPSResearchDeployment": "BLOCKED",
+    "G_realHTTPSChromium": "NOT TESTED",
+    "H_realHTTPSWebKit": "NOT TESTED",
+    "I_scientificIdentityParity": "PARTIAL",
+    "J_actualPhysicalIPad": "AWAITING OWNER",
+    "K_productionMerge": "NO-GO",
+    "L_fullLivePlantCoupling": "NO-GO"
+  },
+  "gates": {
+    "0_provenancePreservation": "PASS",
+    "1_isolatedHostingDesign": "PREPARED; COMPATIBILITY BLOCKED",
+    "2_privateAccessBeforePublishing": "PRIVATE ACCESS BLOCKED",
+    "3_exactArtifactDeployment": "NOT EXECUTED",
+    "4_realHTTPSBrowserVerification": "NOT TESTED",
+    "5_physicalDeviceHandoff": "PROCEDURE PREPARED; NO WORKING URL",
+    "6_deployedPerformance": "NOT MEASURED"
+  },
+  "independent": {
+    "localSourceIdentity": "PASS",
+    "retainedB11ScienceTrainingReceipts": "PASS",
+    "remoteScientificParity": "NOT TESTED",
+    "historicalDesktopWebKit": "PARTIAL",
+    "physicalIPad": "AWAITING OWNER DEVICE REVIEW",
+    "externalProductionIntegrationSettings": "UNOBSERVED; NO CHANGES PERFORMED"
+  },
+  "normalA2IntervalsSeconds": [0.0001, 0.0004, 0.0005],
+  "normalA2HorizonSeconds": 0.001,
+  "actualDeploymentURL": null,
+  "actualDeploymentId": null,
+  "ownerActions": ["Authenticate intended Cloudflare account", "Explicitly approve owner Access identity", "Resolve Pages 404/exact-file-set conflict in engineering review", "Create separate empty project and verify both Access scopes before any workstation upload"],
+  "stopForEngineeringReview": true
+}
