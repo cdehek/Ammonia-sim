@@ -1,0 +1,57 @@
+--- accepted/coupled-model.cjs
++++ b9c/isolated/coupled-model.cjs
+@@ -62,6 +62,7 @@
+   return proposal;
+ }
+ function createCoupledModel(engine, options={}, observeAttempt=null) {
++  if(!require('./table-only.cjs').owns(engine))throw Error('B9C requires its owned original table engine.');
+   if(observeAttempt!==null&&typeof observeAttempt!=='function')throw Error('Optional diagnostic observer must be a function.');
+   fields(options,['method','adaptive','maxStep','minStep','relativeTolerance','massAbsoluteKg','energyAbsoluteKJ','pressureAbsoluteBar','enthalpyAbsoluteKJkg','eventStepSeconds','temperatureAbsoluteK','temperatureScaleK','nonlinearTolerance','thermalResidualK','maxIterations','maxAttempts','trace','thermalJacobian','timestepGrowth']);
+   if(options.thermalJacobian!==undefined&&!['finite-difference','exact'].includes(options.thermalJacobian))throw Error('Invalid experimental thermal Jacobian selection.');
+@@ -134,9 +135,9 @@
+       nextStepSeconds:settings.maxStep,minAcceptedStepSeconds:null,maxAcceptedStepSeconds:0,lastTimeError:null,lastResidual:null,events:[],boundaryEvents:[],trace:[],rejectionTrace:[],stop:null,
+       ...(failureAware?{growthHistory:createGrowthHistory()}: {})};
+   }
+-  function evaluate(spec, states, energies) {
++  function evaluate(spec, states, energies, boundaryPH=null) {
+     const t=temperatures(spec,energies,'rate'),ix=new Map(spec.thermal.nodes.map((n,i)=>[n.id,i]));
+-    const nodes=[thermo.ph(spec.fluid.inlet.p,spec.fluid.inlet.h),...states,thermo.ph(spec.fluid.outlet.p,spec.fluid.outlet.h)];
++    const nodes=[(boundaryPH?boundaryPH(0,spec.fluid.inlet.p,spec.fluid.inlet.h):thermo.ph(spec.fluid.inlet.p,spec.fluid.inlet.h)),...states,(boundaryPH?boundaryPH(1,spec.fluid.outlet.p,spec.fluid.outlet.h):thermo.ph(spec.fluid.outlet.p,spec.fluid.outlet.h))];
+     const faces=spec.fluid.connections.map((f,i)=>{const m=f.closed?0:connectionFlow(nodes[i],nodes[i+1],f);return C.flux(m,m>=0?nodes[i]:nodes[i+1]);});
+     const thermalRates=spec.thermal.nodes.map(n=>spec.thermal.loadsKW[n.id]||0);
+     const links=spec.thermal.links.map(l=>{
+@@ -165,9 +166,19 @@
+     // A thermal-column probe leaves PH unchanged. Cache exact PH pairs within
+     // this stage only; never reuse properties across changed coordinates/stages.
+     const properties=new Map();
++    // B9C: two successful exact-input properties owned only by this invocation.
++    const boundaries=[undefined,undefined];
++    const boundaryPH=(index,p,h)=>{
++      const entry=boundaries[index];
++      if(entry&&Object.is(entry.p,p)&&Object.is(entry.h,h))return entry.value;
++      boundaries[index]=undefined;
++      const value=thermo.ph(p,h);
++      boundaries[index]={p,h,value};return value;
++    };
+     const exactColumns=settings.thermalJacobian==='exact'?exactThermalColumns(s.spec,dt,weight,
+       fluidScales.concat(s.spec.thermal.nodes.map(n=>n.capacityKJK*settings.thermalResidualK/settings.nonlinearTolerance))):null;
+     const solved=coupledNewton(x=>{
++      try {
+       const states=s.cells.map((_,i)=>{
+         const key=`${x[2*i]}:${x[2*i+1]}`;
+         if(!properties.has(key))properties.set(key,fluidCall(()=>thermo.ph(x[2*i],x[2*i+1]),i,'implicit-PH'));
+@@ -175,12 +186,13 @@
+       });
+       const cells=states.map((v,i)=>({...C.inventory(v,s.cells[i].volumeM3),volumeM3:s.cells[i].volumeM3,pressureGuess:v.p}));
+       const energies=s.energies.map((e,i)=>e+x[10+i]);
+-      const endpoint=evaluate(s.spec,states,energies),integratedRate=blend([...known,[weight,endpoint]]),rates=C.assemble(integratedRate.faces,integratedRate.tubeRefrigerant);
++      const endpoint=evaluate(s.spec,states,energies,boundaryPH),integratedRate=blend([...known,[weight,endpoint]]),rates=C.assemble(integratedRate.faces,integratedRate.tubeRefrigerant);
+       const residual=cells.flatMap((c,i)=>[(c.massKg-s.cells[i].massKg-dt*rates[i].massKgS)/fluidScales[2*i],(c.internalEnergyKJ-s.cells[i].internalEnergyKJ-dt*rates[i].energyKW)/fluidScales[2*i+1]])
+         // Nonlinear thermal closure has its own absolute K budget. The adaptive
+         // 50 K scale is not a license to leave tiny exchanges unresolved forever.
+         .concat(energies.map((_,i)=>(x[10+i]-dt*integratedRate.thermalRates[i])/(s.spec.thermal.nodes[i].capacityKJK*settings.thermalResidualK/settings.nonlinearTolerance)));
+       return {residual,states,cells,energies,endpoint,integratedRate};
++      } catch(cause) { boundaries[0]=boundaries[1]=undefined;throw cause; }
+     },initial,variables,settings,work,exactColumns);
+     const recovered=solved.value.cells.map(recover);
+     recovered.forEach((v,i)=>{

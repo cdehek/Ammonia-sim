@@ -1,0 +1,127 @@
+--- diagnostic-control/before/engine.js
++++ diagnostic-control/observed/engine.js
+@@ -8,15 +8,15 @@
+  const logs=data.p.map(Math.log);
+  function pBracket(p){if(!(p>0))throw Error('Absolute pressure must be positive.');return bracket(logs,Math.log(p));}
+  function mixRow(a,b,w){if(!a||!b)throw Error('Liquid state below the property table temperature limit.');return [lerp(a[0],b[0],w),lerp(a[1],b[1],w),Math.exp(lerp(Math.log(a[2]),Math.log(b[2]),w))];}
+- function sat(p){const [i,w]=pBracket(p),a=data.sat[i],b=data.sat[i+1];return {p,T:lerp(a[0],b[0],w),hf:lerp(a[1],b[1],w),sf:lerp(a[2],b[2],w),rhof:Math.exp(lerp(Math.log(a[3]),Math.log(b[3]),w)),hg:lerp(a[4],b[4],w),sg:lerp(a[5],b[5],w),rhog:Math.exp(lerp(Math.log(a[6]),Math.log(b[6]),w))};}
++ function sat(p){globalThis.__b9c.count('lexical.sat');const [i,w]=pBracket(p),a=data.sat[i],b=data.sat[i+1];return {p,T:lerp(a[0],b[0],w),hf:lerp(a[1],b[1],w),sf:lerp(a[2],b[2],w),rhof:Math.exp(lerp(Math.log(a[3]),Math.log(b[3]),w)),hg:lerp(a[4],b[4],w),sg:lerp(a[5],b[5],w),rhog:Math.exp(lerp(Math.log(a[6]),Math.log(b[6]),w))};}
+  function satP(T){const temps=data.sat.map(row=>row[0]),[i,w]=bracket(temps,T);return Math.exp(lerp(logs[i],logs[i+1],w));}
+- function branch(p,offset,kind){const axis=kind==='vapor'?data.sh:data.sc,[j,u]=bracket(axis,offset),[i,w]=pBracket(p);return mixRow(mixRow(data[kind][i][j],data[kind][i][j+1],u),mixRow(data[kind][i+1][j],data[kind][i+1][j+1],u),w);}
++ function branch(p,offset,kind){globalThis.__b9c.count('lexical.branch');const axis=kind==='vapor'?data.sh:data.sc,[j,u]=bracket(axis,offset),[i,w]=pBracket(p);return mixRow(mixRow(data[kind][i][j],data[kind][i][j+1],u),mixRow(data[kind][i+1][j],data[kind][i+1][j+1],u),w);}
+  function statePT(p,T,kind){const a=sat(p),d=T-a.T;
+   if(kind==='liquid'||d < -eps){const r=branch(p,Math.max(0,-d),'liquid');return {p,T,h:r[0],s:r[1],rho:r[2],x:null,phase:d<-eps?'Subcooled liquid':'Saturated liquid'};}
+   const r=branch(p,Math.max(0,d),'vapor');return {p,T,h:r[0],s:r[1],rho:r[2],x:null,phase:d>eps?'Superheated vapor':'Saturated vapor'};
+  }
+  function statePX(p,x){if(x<0||x>1)throw Error('Vapor quality must be between zero and one.');const a=sat(p);return {p,T:a.T,h:lerp(a.hf,a.hg,x),s:lerp(a.sf,a.sg,x),rho:1/((1-x)/a.rhof+x/a.rhog),x,phase:x===0?'Saturated liquid':x===1?'Saturated vapor':'Liquid + vapor'};}
+- function inverse(p,target,key){const a=sat(p),f=key==='h'?a.hf:a.sf,g=key==='h'?a.hg:a.sg;
++ function inverse(p,target,key){globalThis.__b9c.count('lexical.inverse');const a=sat(p),f=key==='h'?a.hf:a.sf,g=key==='h'?a.hg:a.sg;
+   if(target>=f-eps&&target<=g+eps)return statePX(p,Math.max(0,Math.min(1,(target-f)/(g-f))));
+   const kind=target>g?'vapor':'liquid',col=key==='h'?0:1,max=kind==='vapor'?data.sh[data.sh.length-1]:branchLimit(p,'liquid');
+   if(kind==='liquid'){
+@@ -73,7 +73,7 @@
+   }
+   throw propertyError('solver','Stored-state property inversion did not converge.');
+  }
+- function stateMVU(massKg,volumeM3,internalEnergyKJ,guess){
++ function stateMVU(massKg,volumeM3,internalEnergyKJ,guess){globalThis.__b9c.count('lexical.stateMVU');
+   if(!Number.isFinite(massKg)||massKg<=0||!Number.isFinite(volumeM3)||volumeM3<=0||!Number.isFinite(internalEnergyKJ))throw propertyError('domain','Stored mass and volume must be positive, and energy finite.');
+   const state=stateDU(massKg/volumeM3,internalEnergyKJ/massKg,guess);
+   const liquidVolumeFraction=state.x===null?(state.phase.includes('liquid')?1:0):(1-state.x)*(massKg/volumeM3)/sat(state.p).rhof;
+@@ -163,7 +163,8 @@
+   if(t<duration-1e-7)throw Error('Simulation exceeded its time-resolution limit.');
+   return {rows,firstSetpoint,energy,finalT:T,assumptions:'Fixed cycle pressures and efficiencies; ideal proportional flow/power modulation; UA-limited cooling; lumped thermal mass; thermostat control. Not refrigerant-inventory or startup dynamics.'};
+  }
+- return {sat,satP,statePT,statePX,ph,ps,stateDU,stateMVU,solve,roomSimulation,defaults};
++ const observe=(name,fn)=>(...args)=>globalThis.__b9c.property(name,fn,args);
++ return {sat:observe('sat',sat),satP,statePT,statePX,ph:observe('ph',ph),ps,stateDU,stateMVU:observe('stateMVU',stateMVU),solve,roomSimulation,defaults};
+ }
+ if(typeof module!=='undefined'&&module.exports)module.exports={createEngine};else root.AmmoniaEngine={createEngine};
+ })(typeof globalThis!=='undefined'?globalThis:this);
+--- diagnostic-control/before/coupled-model.cjs
++++ diagnostic-control/observed/coupled-model.cjs
+@@ -135,8 +135,10 @@
+       ...(failureAware?{growthHistory:createGrowthHistory()}: {})};
+   }
+   function evaluate(spec, states, energies) {
++const __done=globalThis.__b9c.enter('evaluate');try{
++
+     const t=temperatures(spec,energies,'rate'),ix=new Map(spec.thermal.nodes.map((n,i)=>[n.id,i]));
+-    const nodes=[thermo.ph(spec.fluid.inlet.p,spec.fluid.inlet.h),...states,thermo.ph(spec.fluid.outlet.p,spec.fluid.outlet.h)];
++    const nodes=[globalThis.__b9c.boundary('inlet',spec.fluid.inlet.p,spec.fluid.inlet.h,()=>thermo.ph(spec.fluid.inlet.p,spec.fluid.inlet.h)),...states,globalThis.__b9c.boundary('outlet',spec.fluid.outlet.p,spec.fluid.outlet.h,()=>thermo.ph(spec.fluid.outlet.p,spec.fluid.outlet.h))];
+     const faces=spec.fluid.connections.map((f,i)=>{const m=f.closed?0:connectionFlow(nodes[i],nodes[i+1],f);return C.flux(m,m>=0?nodes[i]:nodes[i+1]);});
+     const thermalRates=spec.thermal.nodes.map(n=>spec.thermal.loadsKW[n.id]||0);
+     const links=spec.thermal.links.map(l=>{
+@@ -148,13 +150,17 @@
+       thermalRates[tube]-=q; return q;
+     });
+     return {faces,links,tubeRefrigerant,thermalRates,airLoad:spec.thermal.loadsKW.air||0,fluidRates:C.assemble(faces,tubeRefrigerant)};
+-  }
++  
++}finally{__done();}
++}
+   function blend(terms) {
+     const array = key => terms[0][1][key].map((_,i)=>sum(terms.map(([w,v])=>w*v[key][i])));
+     return {faces:terms[0][1].faces.map((_,i)=>({massKgS:sum(terms.map(([w,v])=>w*v.faces[i].massKgS)),energyKW:sum(terms.map(([w,v])=>w*v.faces[i].energyKW))})),
+       links:array('links'),tubeRefrigerant:array('tubeRefrigerant'),thermalRates:array('thermalRates'),airLoad:sum(terms.map(([w,v])=>w*v.airLoad))};
+   }
+   function solveStage(s, dt, known, weight, guess, work) {
++const __done=globalThis.__b9c.enter('stage');try{
++
+     const fluidScales=s.cells.flatMap(c=>[Math.max(.01,c.massKg),Math.max(1,Math.abs(c.internalEnergyKJ))]);
+     const variables=s.cells.flatMap((_,section)=>[{kind:'pressure',section},{kind:'enthalpy',section}]).concat(s.spec.thermal.nodes.map(n=>({kind:'thermal-energy',capacityKJK:n.capacityKJK})));
+     const initial=guess.states.flatMap(v=>[v.p,v.h]).concat(guess.energies.map((e,i)=>e-s.energies[i]));
+@@ -169,7 +175,7 @@
+       fluidScales.concat(s.spec.thermal.nodes.map(n=>n.capacityKJK*settings.thermalResidualK/settings.nonlinearTolerance))):null;
+     const solved=coupledNewton(x=>{
+       const states=s.cells.map((_,i)=>{
+-        const key=`${x[2*i]}:${x[2*i+1]}`;
++        const key=`${x[2*i]}:${x[2*i+1]}`;globalThis.__b9c.section(properties.has(key));
+         if(!properties.has(key))properties.set(key,fluidCall(()=>thermo.ph(x[2*i],x[2*i+1]),i,'implicit-PH'));
+         return properties.get(key);
+       });
+@@ -189,8 +195,12 @@
+     });
+     temperatures(s.spec,solved.value.energies,'stage-acceptance');
+     return {...solved.value,error:solved.error};
+-  }
++  
++}finally{__done();}
++}
+   function trial(s, dt, work={evaluations:0,iterations:0,linearSolves:0}) {
++const __done=globalThis.__b9c.enter('trial');try{
++
+     positive(dt,'trial interval');
+     const previous={states:s.cells.map(coordinates),energies:s.energies};
+     s.cells.forEach(recover); const t=temperatures(s.spec,s.energies,'trial-initial');
+@@ -204,7 +214,9 @@
+     const stage=solveStage(s,gamma*dt,[[.5,initial]],.5,previous,work);
+     const end=solveStage(s,dt,[[a,initial],[a,stage.endpoint]],b,stage,work);
+     end.error=Math.max(stage.error,end.error); return end;
+-  }
++  
++}finally{__done();}
++}
+   function errorEstimate(s, coarse, fine) {
+     const fluid=Time.estimate(coarse,fine,{cells:s.cells,states:s.cells.map(coordinates)},order,settings);
+     const thermal=Math.max(...fine.energies.map((e,i)=>Math.abs(e-coarse.energies[i])/(2**order-1)/s.spec.thermal.nodes[i].capacityKJK/(settings.temperatureAbsoluteK+settings.relativeTolerance*settings.temperatureScaleK)));
+@@ -332,6 +344,8 @@
+   }
+   function update(s,patch) {if(s.stop)throw Error('Stopped coupled state is frozen.');applyBoundary(s,patch,false);return record(s);}
+   function record(s) {
++const __done=globalThis.__b9c.enter('record');try{
++
+     const sections=s.cells.map(recover),t=temperatures(s.spec,s.energies,'record'),initial=C.totals(s.initialCells),totals=C.totals(s.cells),q=sum(s.ledger.tubeRefrigerantKJ);
+     const massResidualKg=totals.massKg-initial.massKg-s.ledger.boundaryMassKg;
+     const refrigerantEnergyResidualKJ=totals.internalEnergyKJ-initial.internalEnergyKJ-s.ledger.boundaryEnthalpyKJ-q;
+@@ -352,7 +366,9 @@
+       minAcceptedStepSeconds:s.minAcceptedStepSeconds,maxAcceptedStepSeconds:s.maxAcceptedStepSeconds,lastTimeError:s.lastTimeError,lastResidual:s.lastResidual,
+       events:s.events,boundaryEvents:s.boundaryEvents,trace:s.trace,rejectionTrace:s.rejectionTrace,stop:s.stop,
+       ...(failureAware?{growthHistory:s.growthHistory}: {})});
+-  }
++  
++}finally{__done();}
++}
+   return {create,trial,advance,update,record,settings};
+ }
+ module.exports={createCoupledModel,exactThermalColumns,createGrowthHistory,resetGrowth,noteNonlinearFailure,recoveredGrowth};

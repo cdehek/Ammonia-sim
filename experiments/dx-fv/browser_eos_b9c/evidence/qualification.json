@@ -1,0 +1,2785 @@
+{
+  "passed": true,
+  "engines": {
+    "chromium": {
+      "fixtures": {
+        "cold": {
+          "exactScience": true,
+          "savedB9BBaselineExact": true,
+          "scienceSHA256": "5d4a30c486acf7be383a18359ae150d00f7002b8fffa1003250ef4bdac4e3815",
+          "componentHashes": {
+            "residuals": "655f626a952ad00b931ad894e44ae2a0af44b4b22709edf7d7bd46df3548dd6b",
+            "linear": "ee452332db56a8c416edb82295e9474a0c817987b4c21df3e6561ed7ca38bec0",
+            "solves": "c165c0430e1b157aea20b343506d0129087e7e31d153e44b61adbc2c3f31168b"
+          },
+          "work": {
+            "residuals": 2914,
+            "corrections": 130,
+            "accepted": 16,
+            "rejected": 1
+          },
+          "property": {
+            "passed": true,
+            "stages": 54.0,
+            "trials": 27.0,
+            "logicalStageBoundaryRequests": {
+              "inlet": 2914,
+              "outlet": 2914
+            },
+            "candidateMisses": {
+              "inlet": 54,
+              "outlet": 54
+            },
+            "successfulHits": 5720,
+            "realPHControl": 8476.0,
+            "realPHCandidate": 2756.0,
+            "realPHReduction": 5720.0,
+            "section": {
+              "requests": 14570.0,
+              "hits": 12398.0,
+              "misses": 2172.0
+            },
+            "publicSATControl": 9261.0,
+            "publicSATCandidate": 3541.0,
+            "nestedSATControl": 18287.0,
+            "nestedSATCandidate": 6847.0,
+            "canonicalRecoveryControl": 445.0,
+            "canonicalRecoveryCandidate": 445.0,
+            "nonStageBoundaryRequests": 122,
+            "nonStagePHControl": 476,
+            "nonStagePHCandidate": 476,
+            "thrownControl": 0,
+            "thrownCandidate": 0,
+            "projectedPropertySequenceExact": true,
+            "eachOmittedInputAndResultExact": true
+          },
+          "conservation": [
+            {
+              "mass": 0,
+              "fluid": 0,
+              "thermal": 0,
+              "combined": 0,
+              "sections": [
+                {
+                  "massKg": 0,
+                  "energyKJ": 0
+                },
+                {
+                  "massKg": 0,
+                  "energyKJ": 0
+                },
+                {
+                  "massKg": 0,
+                  "energyKJ": 0
+                },
+                {
+                  "massKg": 0,
+                  "energyKJ": 0
+                },
+                {
+                  "massKg": 0,
+                  "energyKJ": 0
+                }
+              ],
+              "nodes": [
+                {
+                  "id": "tube-0",
+                  "residual": 0,
+                  "independent": 0
+                },
+                {
+                  "id": "fin-0",
+                  "residual": 0,
+                  "independent": 0
+                },
+                {
+                  "id": "tube-1",
+                  "residual": 0,
+                  "independent": 0
+                },
+                {
+                  "id": "fin-1",
+                  "residual": 0,
+                  "independent": 0
+                },
+                {
+                  "id": "tube-2",
+                  "residual": 0,
+                  "independent": 0
+                },
+                {
+                  "id": "fin-2",
+                  "residual": 0,
+                  "independent": 0
+                },
+                {
+                  "id": "tube-3",
+                  "residual": 0,
+                  "independent": 0
+                },
+                {
+                  "id": "fin-3",
+                  "residual": 0,
+                  "independent": 0
+                },
+                {
+                  "id": "tube-4",
+                  "residual": 0,
+                  "independent": 0
+                },
+                {
+                  "id": "fin-4",
+                  "residual": 0,
+                  "independent": 0
+                },
+                {
+                  "id": "air",
+                  "residual": 0,
+                  "independent": 0
+                }
+              ]
+            },
+            {
+              "mass": 8.132164273845933e-16,
+              "fluid": 4.0348800689482545e-13,
+              "thermal": -1.228292641208828e-15,
+              "combined": 4.022597142536166e-13,
+              "sections": [
+                {
+                  "massKg": 2.253511039137569e-16,
+                  "energyKJ": 1.1358195471395521e-13
+                },
+                {
+                  "massKg": 1.4333468531198796e-14,
+                  "energyKJ": 7.166605227012027e-12
+                },
+                {
+                  "massKg": -6.445155937263194e-14,
+                  "energyKJ": -3.222635194452799e-11
+                },
+                {
+                  "massKg": -6.8724455059189984e-15,
+                  "energyKJ": -3.436355556661261e-12
+                },
+                {
+                  "massKg": 5.757319738128104e-14,
+                  "energyKJ": 2.8786896504777795e-11
+                }
+              ],
+              "nodes": [
+                {
+                  "id": "tube-0",
+                  "residual": 2.0328790734103208e-20,
+                  "independent": 2.710505431213761e-20
+                },
+                {
+                  "id": "fin-0",
+                  "residual": 0,
+                  "independent": -1.3552527156068805e-20
+                },
+                {
+                  "id": "tube-1",
+                  "residual": -4.743384504624082e-20,
+                  "independent": -5.421010862427522e-20
+                },
+                {
+                  "id": "fin-1",
+                  "residual": 4.0657581468206416e-20,
+                  "independent": 5.421010862427522e-20
+                },
+                {
+                  "id": "tube-2",
+                  "residual": -1.2197274440461925e-19,
+                  "independent": -1.2197274440461925e-19
+                },
+                {
+                  "id": "fin-2",
+                  "residual": 8.131516293641283e-20,
+                  "independent": 8.131516293641283e-20
+                },
+                {
+                  "id": "tube-3",
+                  "residual": -1.4907779871675686e-19,
+                  "independent": -1.4907779871675686e-19
+                },
+                {
+                  "id": "fin-3",
+                  "residual": 1.0842021724855044e-19,
+                  "independent": 1.0842021724855044e-19
+                },
+                {
+                  "id": "tube-4",
+                  "residual": -5.421010862427522e-20,
+                  "independent": -4.743384504624082e-20
+                },
+                {
+                  "id": "fin-4",
+                  "residual": 4.0657581468206416e-20,
+                  "independent": 2.710505431213761e-20
+                },
+                {
+                  "id": "air",
+                  "residual": -1.2281842209915794e-15,
+                  "independent": -1.2282384311002037e-15
+                }
+              ]
+            },
+            {
+              "mass": 2.2283251497256726e-15,
+              "fluid": 1.1178662162603104e-12,
+              "thermal": -5.860546423153146e-15,
+              "combined": 1.1120056698371572e-12,
+              "sections": [
+                {
+                  "massKg": 4.954112749373796e-15,
+                  "energyKJ": 2.4772689867329223e-12
+                },
+                {
+                  "massKg": 1.4759365723273103e-14,
+                  "energyKJ": 7.37869276313044e-12
+                },
+                {
+                  "massKg": -7.960834305505919e-14,
+                  "energyKJ": -3.9803073489073915e-11
+                },
+                {
+                  "massKg": 1.1287912785542154e-14,
+                  "energyKJ": 5.650891592764301e-12
+                },
+                {
+                  "massKg": 5.083527694659581e-14,
+                  "energyKJ": 2.541763918480558e-11
+                }
+              ],
+              "nodes": [
+                {
+                  "id": "tube-0",
+                  "residual": 2.168404344971009e-19,
+                  "independent": 2.168404344971009e-19
+                },
+                {
+                  "id": "fin-0",
+                  "residual": -3.2526065174565133e-19,
+                  "independent": -3.7947076036992655e-19
+                },
+                {
+                  "id": "tube-1",
+                  "residual": -4.87890977618477e-19,
+                  "independent": -5.421010862427522e-19
+                },
+                {
+                  "id": "fin-1",
+                  "residual": 3.2526065174565133e-19,
+                  "independent": 4.336808689942018e-19
+                },
+                {
+                  "id": "tube-2",
+                  "residual": 6.505213034913027e-19,
+                  "independent": 7.047314121155779e-19
+                },
+                {
+                  "id": "fin-2",
+                  "residual": -2.710505431213761e-19,
+                  "independent": -3.2526065174565133e-19
+                },
+                {
+                  "id": "tube-3",
+                  "residual": -1.6263032587282567e-19,
+                  "independent": -1.6263032587282567e-19
+                },
+                {
+                  "id": "fin-3",
+                  "residual": 3.2526065174565133e-19,
+                  "independent": 3.2526065174565133e-19
+                },
+                {
+                  "id": "tube-4",
+                  "residual": -5.421010862427522e-19,
+                  "independent": -4.87890977618477e-19
+                },
+                {
+                  "id": "fin-4",
+                  "residual": 3.7947076036992655e-19,
+                  "independent": 4.336808689942018e-19
+                },
+                {
+                  "id": "air",
+                  "residual": -5.86098010402214e-15,
+                  "independent": -5.860763263587643e-15
+                }
+              ]
+            },
+            {
+              "mass": 2.2352657376954743e-15,
+              "fluid": 1.1303948228846838e-12,
+              "thermal": -4.99036575951628e-15,
+              "combined": 1.1254044571251676e-12,
+              "sections": [
+                {
+                  "massKg": 8.836445911466519e-15,
+                  "energyKJ": 4.419267469329968e-12
+                },
+                {
+                  "massKg": 2.13102681388775e-14,
+                  "energyKJ": 1.0655422724714647e-11
+                },
+                {
+                  "massKg": -7.942325725047994e-14,
+                  "energyKJ": -3.970916347476039e-11
+                },
+                {
+                  "massKg": 4.183095079904938e-15,
+                  "energyKJ": 2.098342875324344e-12
+                },
+                {
+                  "massKg": 4.733738747530634e-14,
+                  "energyKJ": 2.366918954669478e-11
+                }
+              ],
+              "nodes": [
+                {
+                  "id": "tube-0",
+                  "residual": -3.2526065174565133e-19,
+                  "independent": -4.336808689942018e-19
+                },
+                {
+                  "id": "fin-0",
+                  "residual": 1.0842021724855044e-19,
+                  "independent": 1.0842021724855044e-19
+                },
+                {
+                  "id": "tube-1",
+                  "residual": -4.336808689942018e-19,
+                  "independent": -4.336808689942018e-19
+                },
+                {
+                  "id": "fin-1",
+                  "residual": 4.336808689942018e-19,
+                  "independent": 4.336808689942018e-19
+                },
+                {
+                  "id": "tube-2",
+                  "residual": 0,
+                  "independent": 1.0842021724855044e-19
+                },
+                {
+                  "id": "fin-2",
+                  "residual": 3.2526065174565133e-19,
+                  "independent": 3.2526065174565133e-19
+                },
+                {
+                  "id": "tube-3",
+                  "residual": 2.0599841277224584e-18,
+                  "independent": 2.0599841277224584e-18
+                },
+                {
+                  "id": "fin-3",
+                  "residual": -1.3010426069826053e-18,
+                  "independent": -1.3010426069826053e-18
+                },
+                {
+                  "id": "tube-4",
+                  "residual": -2.710505431213761e-18,
+                  "independent": -2.6020852139652106e-18
+                },
+                {
+                  "id": "fin-4",
+                  "residual": 1.8431436932253575e-18,
+                  "independent": 1.734723475976807e-18
+                },
+                {
+                  "id": "air",
+                  "residual": -4.990799440385274e-15,
+                  "independent": -4.991233121254268e-15
+                }
+              ]
+            }
+          ]
+        },
+        "warm": {
+          "exactScience": true,
+          "savedB9BBaselineExact": true,
+          "scienceSHA256": "0ed51255b5e2dba674cd407770801743a4a6fce3fcb156cafd64cadda3187d12",
+          "componentHashes": {
+            "residuals": "83ef463abe31a18e52ca6fee5b9c3295455ca9152f93312505a9c9aff85b34a8",
+            "linear": "d57e4be0d9341a95a52234513254df5aa00fa6438673cf761336f942433f920f",
+            "solves": "8eaafb6be4f9a53408f79235acc097797ed3a3c76b5f346b037d2bb6ec671072"
+          },
+          "work": {
+            "residuals": 7710,
+            "corrections": 345,
+            "accepted": 34,
+            "rejected": 3
+          },
+          "property": {
+            "passed": true,
+            "stages": 120.0,
+            "trials": 60.0,
+            "logicalStageBoundaryRequests": {
+              "inlet": 7710,
+              "outlet": 7710
+            },
+            "candidateMisses": {
+              "inlet": 120,
+              "outlet": 120
+            },
+            "successfulHits": 15180,
+            "realPHControl": 22072.0,
+            "realPHCandidate": 6892.0,
+            "realPHReduction": 15180.0,
+            "section": {
+              "requests": 38550.0,
+              "hits": 32871.0,
+              "misses": 5679.0
+            },
+            "publicSATControl": 23752.0,
+            "publicSATCandidate": 8572.0,
+            "nestedSATControl": 46024.0,
+            "nestedSATCandidate": 15664.0,
+            "canonicalRecoveryControl": 940.0,
+            "canonicalRecoveryCandidate": 940.0,
+            "nonStageBoundaryRequests": 254,
+            "nonStagePHControl": 973,
+            "nonStagePHCandidate": 973,
+            "thrownControl": 0,
+            "thrownCandidate": 0,
+            "projectedPropertySequenceExact": true,
+            "eachOmittedInputAndResultExact": true
+          },
+          "conservation": [
+            {
+              "mass": 0,
+              "fluid": 0,
+              "thermal": 0,
+              "combined": 0,
+              "sections": [
+                {
+                  "massKg": 0,
+                  "energyKJ": 0
+                },
+                {
+                  "massKg": 0,
+                  "energyKJ": 0
+                },
+                {
+                  "massKg": 0,
+                  "energyKJ": 0
+                },
+                {
+                  "massKg": 0,
+                  "energyKJ": 0
+                },
+                {
+                  "massKg": 0,
+                  "energyKJ": 0
+                }
+              ],
+              "nodes": [
+                {
+                  "id": "tube-0",
+                  "residual": 0,
+                  "independent": 0
+                },
+                {
+                  "id": "fin-0",
+                  "residual": 0,
+                  "independent": 0
+                },
+                {
+                  "id": "tube-1",
+                  "residual": 0,
+                  "independent": 0
+                },
+                {
+                  "id": "fin-1",
+                  "residual": 0,
+                  "independent": 0
+                },
+                {
+                  "id": "tube-2",
+                  "residual": 0,
+                  "independent": 0
+                },
+                {
+                  "id": "fin-2",
+                  "residual": 0,
+                  "independent": 0
+                },
+                {
+                  "id": "tube-3",
+                  "residual": 0,
+                  "independent": 0
+                },
+                {
+                  "id": "fin-3",
+                  "residual": 0,
+                  "independent": 0
+                },
+                {
+                  "id": "tube-4",
+                  "residual": 0,
+                  "independent": 0
+                },
+                {
+                  "id": "fin-4",
+                  "residual": 0,
+                  "independent": 0
+                },
+                {
+                  "id": "air",
+                  "residual": 0,
+                  "independent": 0
+                }
+              ]
+            },
+            {
+              "mass": -6.518600390644381e-16,
+              "fluid": -1.075115690918338e-12,
+              "thermal": 1.169317464036479e-14,
+              "combined": -1.0634225162779731e-12,
+              "sections": [
+                {
+                  "massKg": 4.3115332267959494e-16,
+                  "energyKJ": 7.128378697865076e-13
+                },
+                {
+                  "massKg": -2.8728459149851816e-14,
+                  "energyKJ": -4.740303268457261e-11
+                },
+                {
+                  "massKg": 2.1103599193648384e-14,
+                  "energyKJ": 3.482124883032699e-11
+                },
+                {
+                  "massKg": 6.789254098829968e-15,
+                  "energyKJ": 1.1200609382577657e-11
+                },
+                {
+                  "massKg": -2.4762330586621667e-16,
+                  "energyKJ": -4.0810983878338675e-13
+                }
+              ],
+              "nodes": [
+                {
+                  "id": "tube-0",
+                  "residual": 4.1699093180150304e-15,
+                  "independent": 4.1699093180150304e-15
+                },
+                {
+                  "id": "fin-0",
+                  "residual": 5.92078726946348e-16,
+                  "independent": 5.92078726946348e-16
+                },
+                {
+                  "id": "tube-1",
+                  "residual": -4.538185690954044e-15,
+                  "independent": -4.538185690954044e-15
+                },
+                {
+                  "id": "fin-1",
+                  "residual": -1.1584969547150965e-15,
+                  "independent": -1.1584969549218917e-15
+                },
+                {
+                  "id": "tube-2",
+                  "residual": -1.8934100164472167e-15,
+                  "independent": -1.8934100164472167e-15
+                },
+                {
+                  "id": "fin-2",
+                  "residual": -5.36715954132599e-16,
+                  "independent": -5.36715954132599e-16
+                },
+                {
+                  "id": "tube-3",
+                  "residual": 2.2281709897292723e-16,
+                  "independent": 2.2281709897292723e-16
+                },
+                {
+                  "id": "fin-3",
+                  "residual": 4.986310726800077e-15,
+                  "independent": 4.9863107265932815e-15
+                },
+                {
+                  "id": "tube-4",
+                  "residual": 7.502001407241887e-16,
+                  "independent": 7.501865881970327e-16
+                },
+                {
+                  "id": "fin-4",
+                  "residual": 6.185293882534192e-15,
+                  "independent": 6.185293882327397e-15
+                },
+                {
+                  "id": "air",
+                  "residual": 2.913359657685799e-15,
+                  "independent": 2.913373210212955e-15
+                }
+              ]
+            },
+            {
+              "mass": 1.3621760241045583e-14,
+              "fluid": 2.2465789862105567e-11,
+              "thermal": 2.466451522187274e-14,
+              "combined": 2.249045437732744e-11,
+              "sections": [
+                {
+                  "massKg": -6.305538146608508e-15,
+                  "energyKJ": -1.0405661629662305e-11
+                },
+                {
+                  "massKg": -2.264292434479224e-14,
+                  "energyKJ": -3.7357342750916206e-11
+                },
+                {
+                  "massKg": 2.3087486410785108e-14,
+                  "energyKJ": 3.809452877928318e-11
+                },
+                {
+                  "massKg": 1.217719298334842e-14,
+                  "energyKJ": 2.0088450163307375e-11
+                },
+                {
+                  "massKg": 7.305981042588297e-15,
+                  "energyKJ": 1.2044474196216265e-11
+                }
+              ],
+              "nodes": [
+                {
+                  "id": "tube-0",
+                  "residual": 6.5969365387053e-15,
+                  "independent": 6.597044958922549e-15
+                },
+                {
+                  "id": "fin-0",
+                  "residual": -2.6597212267539947e-15,
+                  "independent": -2.6597212399888845e-15
+                },
+                {
+                  "id": "tube-1",
+                  "residual": 1.1129335300563703e-16,
+                  "independent": 1.1129335300563703e-16
+                },
+                {
+                  "id": "fin-1",
+                  "residual": -2.6097218115547492e-15,
+                  "independent": -2.609721818172194e-15
+                },
+                {
+                  "id": "tube-2",
+                  "residual": -5.656987465268992e-15,
+                  "independent": -5.656987465268992e-15
+                },
+                {
+                  "id": "fin-2",
+                  "residual": 2.711503649615933e-15,
+                  "independent": 2.711503649615933e-15
+                },
+                {
+                  "id": "tube-3",
+                  "residual": -3.0020473953951132e-15,
+                  "independent": -3.001993185286489e-15
+                },
+                {
+                  "id": "fin-3",
+                  "residual": 7.929898460648273e-15,
+                  "independent": 7.929898457339551e-15
+                },
+                {
+                  "id": "tube-4",
+                  "residual": 4.8075150631265995e-15,
+                  "independent": 4.8075150631265995e-15
+                },
+                {
+                  "id": "fin-4",
+                  "residual": 1.3132477257422522e-14,
+                  "independent": 1.3132477257422522e-14
+                },
+                {
+                  "id": "air",
+                  "residual": 3.3032387589115864e-15,
+                  "independent": 3.303130338694338e-15
+                }
+              ]
+            },
+            {
+              "mass": -1.9028147926671707e-14,
+              "fluid": -3.127907308164701e-11,
+              "thermal": 2.2507169739061084e-14,
+              "combined": -3.125656591190795e-11,
+              "sections": [
+                {
+                  "massKg": -4.186675742282866e-14,
+                  "energyKJ": -6.896508201754276e-11
+                },
+                {
+                  "massKg": -1.3668761252255777e-15,
+                  "energyKJ": -2.2538305857050522e-12
+                },
+                {
+                  "massKg": 2.070782442547235e-14,
+                  "energyKJ": 3.416702587088344e-11
+                },
+                {
+                  "massKg": -9.146194001816155e-16,
+                  "energyKJ": -1.501837825108876e-12
+                },
+                {
+                  "massKg": 4.412723170806737e-15,
+                  "energyKJ": 7.275077242019368e-12
+                }
+              ],
+              "nodes": [
+                {
+                  "id": "tube-0",
+                  "residual": 5.9910843647204004e-15,
+                  "independent": 5.991192784937649e-15
+                },
+                {
+                  "id": "fin-0",
+                  "residual": 1.8336429746422593e-15,
+                  "independent": 1.8336430275818185e-15
+                },
+                {
+                  "id": "tube-1",
+                  "residual": 1.5178830414797062e-17,
+                  "independent": 1.5178830414797062e-17
+                },
+                {
+                  "id": "fin-1",
+                  "residual": 4.264003044986848e-15,
+                  "independent": 4.264003058221738e-15
+                },
+                {
+                  "id": "tube-2",
+                  "residual": -5.713745448998608e-17,
+                  "independent": -5.692061405548898e-17
+                },
+                {
+                  "id": "fin-2",
+                  "residual": 4.29397539846967e-15,
+                  "independent": 4.29397539846967e-15
+                },
+                {
+                  "id": "tube-3",
+                  "residual": -9.053413400905708e-15,
+                  "independent": -9.053304980688459e-15
+                },
+                {
+                  "id": "fin-3",
+                  "residual": -3.712512532349333e-15,
+                  "independent": -3.712512558819113e-15
+                },
+                {
+                  "id": "tube-4",
+                  "residual": 3.723041840097974e-15,
+                  "independent": 3.723258680532471e-15
+                },
+                {
+                  "id": "fin-4",
+                  "residual": 1.4569793979265637e-14,
+                  "independent": 1.4569793926326078e-14
+                },
+                {
+                  "id": "air",
+                  "residual": 6.390287604629563e-16,
+                  "independent": 6.392456008974534e-16
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "regressions": {
+        "flow-reversal": {
+          "exactScience": true,
+          "controlProperties": {
+            "counts": {
+              "lexical.inverse": 12289.0,
+              "lexical.sat": 39087.0,
+              "lexical.branch": 175840.0,
+              "lexical.stateMVU": 475.0
+            },
+            "public": {
+              "ph": 12289.0,
+              "sat": 13084.0,
+              "stateMVU": 475.0
+            },
+            "section": {
+              "requests": 21640.0,
+              "hits": 18478.0,
+              "misses": 3162.0
+            },
+            "stageCount": 60.0,
+            "trialCount": 30.0,
+            "logicalBoundaryHash": "32cd2b3d2d1a9a55187518520ea697bb80dae27680b5de2c93c15acb98e77a21",
+            "boundaryRequests": 8784.0,
+            "stageRequests": 8656.0,
+            "stageMisses": 8656.0,
+            "stageHits": 0.0,
+            "thrown": []
+          },
+          "candidateProperties": {
+            "counts": {
+              "lexical.inverse": 3753.0,
+              "lexical.sat": 13479.0,
+              "lexical.branch": 5120.0,
+              "lexical.stateMVU": 475.0
+            },
+            "public": {
+              "ph": 3753.0,
+              "sat": 4548.0,
+              "stateMVU": 475.0
+            },
+            "section": {
+              "requests": 21640.0,
+              "hits": 18478.0,
+              "misses": 3162.0
+            },
+            "stageCount": 60.0,
+            "trialCount": 30.0,
+            "logicalBoundaryHash": "32cd2b3d2d1a9a55187518520ea697bb80dae27680b5de2c93c15acb98e77a21",
+            "boundaryRequests": 8784.0,
+            "stageRequests": 8656.0,
+            "stageMisses": 120.0,
+            "stageHits": 8536.0,
+            "thrown": []
+          },
+          "componentHashes": {
+            "residuals": "9ed345ad270c620a63d9880c0bb7a685b90a483b95707dfd9795048307d72235",
+            "linear": "c3d3c14ac9b2377456e580764020e29813d74e744123384d63e3e1a8008db354",
+            "solves": "0a9fbdd5de6090e06f4c2312de0a880a28cc6cff5cf2b059a0360a4285897814"
+          }
+        },
+        "scheduled-boundary": {
+          "exactScience": true,
+          "controlProperties": {
+            "counts": {
+              "lexical.inverse": 8575.0,
+              "lexical.sat": 27505.0,
+              "lexical.branch": 122000.0,
+              "lexical.stateMVU": 380.0
+            },
+            "public": {
+              "ph": 8575.0,
+              "sat": 9215.0,
+              "stateMVU": 380.0
+            },
+            "section": {
+              "requests": 14980.0,
+              "hits": 12778.0,
+              "misses": 2202.0
+            },
+            "stageCount": 48.0,
+            "trialCount": 24.0,
+            "logicalBoundaryHash": "9d5180dc27ada2b05a69e8a290df5d7780283a1846d7ec6359385e7af39464aa",
+            "boundaryRequests": 6094.0,
+            "stageRequests": 5992.0,
+            "stageMisses": 5992.0,
+            "stageHits": 0.0,
+            "thrown": []
+          },
+          "candidateProperties": {
+            "counts": {
+              "lexical.inverse": 2679.0,
+              "lexical.sat": 9817.0,
+              "lexical.branch": 4080.0,
+              "lexical.stateMVU": 380.0
+            },
+            "public": {
+              "ph": 2679.0,
+              "sat": 3319.0,
+              "stateMVU": 380.0
+            },
+            "section": {
+              "requests": 14980.0,
+              "hits": 12778.0,
+              "misses": 2202.0
+            },
+            "stageCount": 48.0,
+            "trialCount": 24.0,
+            "logicalBoundaryHash": "9d5180dc27ada2b05a69e8a290df5d7780283a1846d7ec6359385e7af39464aa",
+            "boundaryRequests": 6094.0,
+            "stageRequests": 5992.0,
+            "stageMisses": 96.0,
+            "stageHits": 5896.0,
+            "thrown": []
+          },
+          "componentHashes": {
+            "residuals": "043292958ac9a1c957fd35ca8702689179b119540b124d00995200036352ba79",
+            "linear": "760f6eaf544042bcb1a3b32670e86f70f3dd4ef94d48b79755807deda7adb3b6",
+            "solves": "6fd980a304e3d9a4bcd45a6f1b98540db680cb36fac6bbca2234cf973e1e39db"
+          }
+        },
+        "manual-boundary": {
+          "exactScience": true,
+          "controlProperties": {
+            "counts": {
+              "lexical.inverse": 8581.0,
+              "lexical.sat": 27543.0,
+              "lexical.branch": 122000.0,
+              "lexical.stateMVU": 385.0
+            },
+            "public": {
+              "ph": 8581.0,
+              "sat": 9226.0,
+              "stateMVU": 385.0
+            },
+            "section": {
+              "requests": 14980.0,
+              "hits": 12778.0,
+              "misses": 2202.0
+            },
+            "stageCount": 48.0,
+            "trialCount": 24.0,
+            "logicalBoundaryHash": "d9927c0689d32f347ca7f13588ee4ced3aa772d823550ac50427449cd66db5a2",
+            "boundaryRequests": 6096.0,
+            "stageRequests": 5992.0,
+            "stageMisses": 5992.0,
+            "stageHits": 0.0,
+            "thrown": []
+          },
+          "candidateProperties": {
+            "counts": {
+              "lexical.inverse": 2685.0,
+              "lexical.sat": 9855.0,
+              "lexical.branch": 4080.0,
+              "lexical.stateMVU": 385.0
+            },
+            "public": {
+              "ph": 2685.0,
+              "sat": 3330.0,
+              "stateMVU": 385.0
+            },
+            "section": {
+              "requests": 14980.0,
+              "hits": 12778.0,
+              "misses": 2202.0
+            },
+            "stageCount": 48.0,
+            "trialCount": 24.0,
+            "logicalBoundaryHash": "d9927c0689d32f347ca7f13588ee4ced3aa772d823550ac50427449cd66db5a2",
+            "boundaryRequests": 6096.0,
+            "stageRequests": 5992.0,
+            "stageMisses": 96.0,
+            "stageHits": 5896.0,
+            "thrown": []
+          },
+          "componentHashes": {
+            "residuals": "043292958ac9a1c957fd35ca8702689179b119540b124d00995200036352ba79",
+            "linear": "760f6eaf544042bcb1a3b32670e86f70f3dd4ef94d48b79755807deda7adb3b6",
+            "solves": "6fd980a304e3d9a4bcd45a6f1b98540db680cb36fac6bbca2234cf973e1e39db"
+          }
+        },
+        "saturated-0": {
+          "exactScience": true,
+          "controlProperties": {
+            "counts": {
+              "lexical.inverse": 12299.0,
+              "lexical.sat": 38677.0,
+              "lexical.stateMVU": 380.0
+            },
+            "public": {
+              "ph": 12299.0,
+              "sat": 12939.0,
+              "stateMVU": 380.0
+            },
+            "section": {
+              "requests": 22020.0,
+              "hits": 18906.0,
+              "misses": 3114.0
+            },
+            "stageCount": 48.0,
+            "trialCount": 24.0,
+            "logicalBoundaryHash": "118c23bc1c53886cda68af28c01aba2ea8a379fa19a3d3017e2b9b3747a8fb23",
+            "boundaryRequests": 8910.0,
+            "stageRequests": 8808.0,
+            "stageMisses": 8808.0,
+            "stageHits": 0.0,
+            "thrown": []
+          },
+          "candidateProperties": {
+            "counts": {
+              "lexical.inverse": 3587.0,
+              "lexical.sat": 12541.0,
+              "lexical.stateMVU": 380.0
+            },
+            "public": {
+              "ph": 3587.0,
+              "sat": 4227.0,
+              "stateMVU": 380.0
+            },
+            "section": {
+              "requests": 22020.0,
+              "hits": 18906.0,
+              "misses": 3114.0
+            },
+            "stageCount": 48.0,
+            "trialCount": 24.0,
+            "logicalBoundaryHash": "118c23bc1c53886cda68af28c01aba2ea8a379fa19a3d3017e2b9b3747a8fb23",
+            "boundaryRequests": 8910.0,
+            "stageRequests": 8808.0,
+            "stageMisses": 96.0,
+            "stageHits": 8712.0,
+            "thrown": []
+          },
+          "componentHashes": {
+            "residuals": "6134db832b7ecb40ca28971b5f2fa41e2fee9c2283edc017bff7263756649a2d",
+            "linear": "b5522e74a7ebfe1a9df2d7f152fbbcaad275ed6744caf9668fe200f8e89c9ff7",
+            "solves": "9076da27db40b53f3452ab0daa0382cfec22c4e081f3c0866d4cac8c03f8b836"
+          }
+        },
+        "saturated-1": {
+          "exactScience": true,
+          "controlProperties": {
+            "counts": {
+              "lexical.inverse": 11937.0,
+              "lexical.sat": 37811.0,
+              "lexical.stateMVU": 425.0
+            },
+            "public": {
+              "ph": 11937.0,
+              "sat": 12662.0,
+              "stateMVU": 425.0
+            },
+            "section": {
+              "requests": 21185.0,
+              "hits": 18146.0,
+              "misses": 3039.0
+            },
+            "stageCount": 54.0,
+            "trialCount": 27.0,
+            "logicalBoundaryHash": "216bbd3b8491886feaac17fc12d719671d94fea0ae4416418ddc105b67bfabb7",
+            "boundaryRequests": 8588.0,
+            "stageRequests": 8474.0,
+            "stageMisses": 8474.0,
+            "stageHits": 0.0,
+            "thrown": []
+          },
+          "candidateProperties": {
+            "counts": {
+              "lexical.inverse": 3571.0,
+              "lexical.sat": 12713.0,
+              "lexical.stateMVU": 425.0
+            },
+            "public": {
+              "ph": 3571.0,
+              "sat": 4296.0,
+              "stateMVU": 425.0
+            },
+            "section": {
+              "requests": 21185.0,
+              "hits": 18146.0,
+              "misses": 3039.0
+            },
+            "stageCount": 54.0,
+            "trialCount": 27.0,
+            "logicalBoundaryHash": "216bbd3b8491886feaac17fc12d719671d94fea0ae4416418ddc105b67bfabb7",
+            "boundaryRequests": 8588.0,
+            "stageRequests": 8474.0,
+            "stageMisses": 108.0,
+            "stageHits": 8366.0,
+            "thrown": []
+          },
+          "componentHashes": {
+            "residuals": "9b1939500cc1bbedfa3c170a98f300d37ea7fd77f41e07048e7eddf78f0f5591",
+            "linear": "2b026f964ed02682d7588e5a7128dfa565a127f33cfb9e44c6ed41ee5427eb50",
+            "solves": "b9461e235c25e360f31e48d1e8d8055cad63326fc977188d710208bf6d11e1e0"
+          }
+        },
+        "saturated-0.4": {
+          "exactScience": true,
+          "controlProperties": {
+            "counts": {
+              "lexical.inverse": 12565.0,
+              "lexical.sat": 39695.0,
+              "lexical.stateMVU": 425.0
+            },
+            "public": {
+              "ph": 12565.0,
+              "sat": 13290.0,
+              "stateMVU": 425.0
+            },
+            "section": {
+              "requests": 22380.0,
+              "hits": 19191.0,
+              "misses": 3189.0
+            },
+            "stageCount": 54.0,
+            "trialCount": 27.0,
+            "logicalBoundaryHash": "6800adec3a2cb96aff828d93c86c452f743ac61863a6f25242ceff63d479d0e5",
+            "boundaryRequests": 9066.0,
+            "stageRequests": 8952.0,
+            "stageMisses": 8952.0,
+            "stageHits": 0.0,
+            "thrown": []
+          },
+          "candidateProperties": {
+            "counts": {
+              "lexical.inverse": 3721.0,
+              "lexical.sat": 13163.0,
+              "lexical.stateMVU": 425.0
+            },
+            "public": {
+              "ph": 3721.0,
+              "sat": 4446.0,
+              "stateMVU": 425.0
+            },
+            "section": {
+              "requests": 22380.0,
+              "hits": 19191.0,
+              "misses": 3189.0
+            },
+            "stageCount": 54.0,
+            "trialCount": 27.0,
+            "logicalBoundaryHash": "6800adec3a2cb96aff828d93c86c452f743ac61863a6f25242ceff63d479d0e5",
+            "boundaryRequests": 9066.0,
+            "stageRequests": 8952.0,
+            "stageMisses": 108.0,
+            "stageHits": 8844.0,
+            "thrown": []
+          },
+          "componentHashes": {
+            "residuals": "b80f505fea7160c6a6638c872cbf78083e3cf4f4e980475e72519e0f8d6ba0eb",
+            "linear": "c21206eea57ca4a2711d3e2ecb5e7b9ace9389f5ff97450850a7fa210452e102",
+            "solves": "6a04ba96248c84c122c3fdadc55cc6a08466beeaeae57f15a40a00a528a50e48"
+          }
+        },
+        "superheated-outlet": {
+          "exactScience": true,
+          "controlProperties": {
+            "counts": {
+              "lexical.inverse": 5138.0,
+              "lexical.sat": 16574.0,
+              "lexical.branch": 72960.0,
+              "lexical.stateMVU": 245.0
+            },
+            "public": {
+              "ph": 5138.0,
+              "sat": 5563.0,
+              "stateMVU": 245.0
+            },
+            "section": {
+              "requests": 8950.0,
+              "hits": 7648.0,
+              "misses": 1302.0
+            },
+            "stageCount": 30.0,
+            "trialCount": 15.0,
+            "logicalBoundaryHash": "02f6717e633a098b068028577055c64f42ca00108698a02af577825dbb2f02b3",
+            "boundaryRequests": 3646.0,
+            "stageRequests": 3580.0,
+            "stageMisses": 3580.0,
+            "stageHits": 0.0,
+            "thrown": []
+          },
+          "candidateProperties": {
+            "counts": {
+              "lexical.inverse": 1618.0,
+              "lexical.sat": 6014.0,
+              "lexical.branch": 2560.0,
+              "lexical.stateMVU": 245.0
+            },
+            "public": {
+              "ph": 1618.0,
+              "sat": 2043.0,
+              "stateMVU": 245.0
+            },
+            "section": {
+              "requests": 8950.0,
+              "hits": 7648.0,
+              "misses": 1302.0
+            },
+            "stageCount": 30.0,
+            "trialCount": 15.0,
+            "logicalBoundaryHash": "02f6717e633a098b068028577055c64f42ca00108698a02af577825dbb2f02b3",
+            "boundaryRequests": 3646.0,
+            "stageRequests": 3580.0,
+            "stageMisses": 60.0,
+            "stageHits": 3520.0,
+            "thrown": []
+          },
+          "componentHashes": {
+            "residuals": "4790d5cb4d2e2a155da0dd697ab0daecca7b3c83a393b6a2ec35f3c2d866d955",
+            "linear": "543cead0845eb105466f8f31c4718295333d8eb40b4d9eb83b918f4b2c8d91d7",
+            "solves": "bf67cf50576cc800ace282991d1fbdad29ecf8660370dc5ee905a333652ba030"
+          }
+        },
+        "thermal-200": {
+          "exactScience": true,
+          "controlProperties": {
+            "counts": {
+              "lexical.inverse": 230.0,
+              "lexical.sat": 1350.0,
+              "lexical.branch": 1400.0,
+              "lexical.stateMVU": 155.0
+            },
+            "public": {
+              "ph": 230.0,
+              "sat": 425.0,
+              "stateMVU": 155.0
+            },
+            "section": {
+              "requests": 30.0,
+              "hits": 24.0,
+              "misses": 6.0
+            },
+            "stageCount": 6.0,
+            "trialCount": 20.0,
+            "logicalBoundaryHash": "c0e4165fd538dffb9260d4ab3814e3534d5ee1e67d40979522adcfc36d82081b",
+            "boundaryRequests": 68.0,
+            "stageRequests": 12.0,
+            "stageMisses": 12.0,
+            "stageHits": 0.0,
+            "thrown": []
+          },
+          "candidateProperties": {
+            "counts": {
+              "lexical.inverse": 230.0,
+              "lexical.sat": 1350.0,
+              "lexical.branch": 1400.0,
+              "lexical.stateMVU": 155.0
+            },
+            "public": {
+              "ph": 230.0,
+              "sat": 425.0,
+              "stateMVU": 155.0
+            },
+            "section": {
+              "requests": 30.0,
+              "hits": 24.0,
+              "misses": 6.0
+            },
+            "stageCount": 6.0,
+            "trialCount": 20.0,
+            "logicalBoundaryHash": "c0e4165fd538dffb9260d4ab3814e3534d5ee1e67d40979522adcfc36d82081b",
+            "boundaryRequests": 68.0,
+            "stageRequests": 12.0,
+            "stageMisses": 12.0,
+            "stageHits": 0.0,
+            "thrown": []
+          },
+          "componentHashes": {
+            "residuals": "d08d0bd0805defca07ae7378f18f1ffb271903ae0be50c08071aa8f7cae985bb",
+            "linear": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+            "solves": "63d3d154f935a7ec5e83fdcfad2ad19dbaeb13b47c622f0b62873c470148d934"
+          }
+        },
+        "thermal-400": {
+          "exactScience": true,
+          "controlProperties": {
+            "counts": {
+              "lexical.inverse": 230.0,
+              "lexical.sat": 1350.0,
+              "lexical.branch": 1400.0,
+              "lexical.stateMVU": 155.0
+            },
+            "public": {
+              "ph": 230.0,
+              "sat": 425.0,
+              "stateMVU": 155.0
+            },
+            "section": {
+              "requests": 30.0,
+              "hits": 24.0,
+              "misses": 6.0
+            },
+            "stageCount": 6.0,
+            "trialCount": 20.0,
+            "logicalBoundaryHash": "c0e4165fd538dffb9260d4ab3814e3534d5ee1e67d40979522adcfc36d82081b",
+            "boundaryRequests": 68.0,
+            "stageRequests": 12.0,
+            "stageMisses": 12.0,
+            "stageHits": 0.0,
+            "thrown": []
+          },
+          "candidateProperties": {
+            "counts": {
+              "lexical.inverse": 230.0,
+              "lexical.sat": 1350.0,
+              "lexical.branch": 1400.0,
+              "lexical.stateMVU": 155.0
+            },
+            "public": {
+              "ph": 230.0,
+              "sat": 425.0,
+              "stateMVU": 155.0
+            },
+            "section": {
+              "requests": 30.0,
+              "hits": 24.0,
+              "misses": 6.0
+            },
+            "stageCount": 6.0,
+            "trialCount": 20.0,
+            "logicalBoundaryHash": "c0e4165fd538dffb9260d4ab3814e3534d5ee1e67d40979522adcfc36d82081b",
+            "boundaryRequests": 68.0,
+            "stageRequests": 12.0,
+            "stageMisses": 12.0,
+            "stageHits": 0.0,
+            "thrown": []
+          },
+          "componentHashes": {
+            "residuals": "dcf14c90e042ea876d30d16ebc042fa89c0d1dd5afcb17f92300dd5f5455de93",
+            "linear": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+            "solves": "2ffb1bc8e5dcd2e0038dd6fd57e347be263238fd5ed226f2dce8e2613ea5c7c8"
+          }
+        },
+        "numerical-stop": {
+          "exactScience": true,
+          "controlProperties": {
+            "counts": {
+              "lexical.inverse": 4687.0,
+              "lexical.sat": 16341.0,
+              "lexical.branch": 63000.0,
+              "lexical.stateMVU": 480.0
+            },
+            "public": {
+              "ph": 4687.0,
+              "sat": 5527.0,
+              "stateMVU": 480.0
+            },
+            "section": {
+              "requests": 7475.0,
+              "hits": 6331.0,
+              "misses": 1144.0
+            },
+            "stageCount": 65.0,
+            "trialCount": 38.0,
+            "logicalBoundaryHash": "de62642c8b98977ba529de7fb22bfcddbd325d1f8aeeb974f975db394089a1b3",
+            "boundaryRequests": 3148.0,
+            "stageRequests": 2990.0,
+            "stageMisses": 2990.0,
+            "stageHits": 0.0,
+            "thrown": []
+          },
+          "candidateProperties": {
+            "counts": {
+              "lexical.inverse": 1827.0,
+              "lexical.sat": 7761.0,
+              "lexical.branch": 5800.0,
+              "lexical.stateMVU": 480.0
+            },
+            "public": {
+              "ph": 1827.0,
+              "sat": 2667.0,
+              "stateMVU": 480.0
+            },
+            "section": {
+              "requests": 7475.0,
+              "hits": 6331.0,
+              "misses": 1144.0
+            },
+            "stageCount": 65.0,
+            "trialCount": 38.0,
+            "logicalBoundaryHash": "de62642c8b98977ba529de7fb22bfcddbd325d1f8aeeb974f975db394089a1b3",
+            "boundaryRequests": 3148.0,
+            "stageRequests": 2990.0,
+            "stageMisses": 130.0,
+            "stageHits": 2860.0,
+            "thrown": []
+          },
+          "componentHashes": {
+            "residuals": "646a72e3af445e1013644062cb8cb01ebf0ea8dda732e2641d003339e9f50e9e",
+            "linear": "88a59267be0accb5b880d56f860a53e1e28ec77508271ffb7bcf6aa37cccf9c8",
+            "solves": "3ab6e01be3d43653fb9acb183717ba45e561c5c74251977c2b6a73f74d5ba159"
+          }
+        }
+      },
+      "propertyCases": 31,
+      "invalidUpdates": 4,
+      "C1UnmodifiedPass": true,
+      "backendGuardPass": true
+    },
+    "webkit": {
+      "fixtures": {
+        "cold": {
+          "exactScience": true,
+          "savedB9BBaselineExact": true,
+          "scienceSHA256": "2f519dcb7a0c2f8d975a255c95abdcd3468cf31edda134a14574b8350db541bc",
+          "componentHashes": {
+            "residuals": "fb422f1044650abb782ff3f0cc9d1f788e74ac3490710fe2e8f645fd0e456e2e",
+            "linear": "496b041075cb97a3e390f088ecbfcfcb9fda4268b3a334e66c0152d7cfe34c27",
+            "solves": "53adec33a7582938ffb43bb332dddd1c04f041f0ae578207e879663bbaeadd92"
+          },
+          "work": {
+            "residuals": 2914,
+            "corrections": 130,
+            "accepted": 16,
+            "rejected": 1
+          },
+          "property": {
+            "passed": true,
+            "stages": 54.0,
+            "trials": 27.0,
+            "logicalStageBoundaryRequests": {
+              "inlet": 2914,
+              "outlet": 2914
+            },
+            "candidateMisses": {
+              "inlet": 54,
+              "outlet": 54
+            },
+            "successfulHits": 5720,
+            "realPHControl": 8476.0,
+            "realPHCandidate": 2756.0,
+            "realPHReduction": 5720.0,
+            "section": {
+              "requests": 14570.0,
+              "hits": 12398.0,
+              "misses": 2172.0
+            },
+            "publicSATControl": 9261.0,
+            "publicSATCandidate": 3541.0,
+            "nestedSATControl": 18287.0,
+            "nestedSATCandidate": 6847.0,
+            "canonicalRecoveryControl": 445.0,
+            "canonicalRecoveryCandidate": 445.0,
+            "nonStageBoundaryRequests": 122,
+            "nonStagePHControl": 476,
+            "nonStagePHCandidate": 476,
+            "thrownControl": 0,
+            "thrownCandidate": 0,
+            "projectedPropertySequenceExact": true,
+            "eachOmittedInputAndResultExact": true
+          },
+          "conservation": [
+            {
+              "mass": 0,
+              "fluid": 0,
+              "thermal": 0,
+              "combined": 0,
+              "sections": [
+                {
+                  "massKg": 0,
+                  "energyKJ": 0
+                },
+                {
+                  "massKg": 0,
+                  "energyKJ": 0
+                },
+                {
+                  "massKg": 0,
+                  "energyKJ": 0
+                },
+                {
+                  "massKg": 0,
+                  "energyKJ": 0
+                },
+                {
+                  "massKg": 0,
+                  "energyKJ": 0
+                }
+              ],
+              "nodes": [
+                {
+                  "id": "tube-0",
+                  "residual": 0,
+                  "independent": 0
+                },
+                {
+                  "id": "fin-0",
+                  "residual": 0,
+                  "independent": 0
+                },
+                {
+                  "id": "tube-1",
+                  "residual": 0,
+                  "independent": 0
+                },
+                {
+                  "id": "fin-1",
+                  "residual": 0,
+                  "independent": 0
+                },
+                {
+                  "id": "tube-2",
+                  "residual": 0,
+                  "independent": 0
+                },
+                {
+                  "id": "fin-2",
+                  "residual": 0,
+                  "independent": 0
+                },
+                {
+                  "id": "tube-3",
+                  "residual": 0,
+                  "independent": 0
+                },
+                {
+                  "id": "fin-3",
+                  "residual": 0,
+                  "independent": 0
+                },
+                {
+                  "id": "tube-4",
+                  "residual": 0,
+                  "independent": 0
+                },
+                {
+                  "id": "fin-4",
+                  "residual": 0,
+                  "independent": 0
+                },
+                {
+                  "id": "air",
+                  "residual": 0,
+                  "independent": 0
+                }
+              ]
+            },
+            {
+              "mass": 7.993382160603052e-16,
+              "fluid": 3.9638236269678995e-13,
+              "thermal": -1.2282384311002037e-15,
+              "combined": 3.9515412426568974e-13,
+              "sections": [
+                {
+                  "massKg": 2.197967912412552e-16,
+                  "energyKJ": 1.0985412883177115e-13
+                },
+                {
+                  "massKg": 1.4330313439349393e-14,
+                  "energyKJ": 7.1649860388300554e-12
+                },
+                {
+                  "massKg": -6.445152400900639e-14,
+                  "energyKJ": -3.222633425848005e-11
+                },
+                {
+                  "massKg": -6.8724455059189984e-15,
+                  "energyKJ": -3.436355556661261e-12
+                },
+                {
+                  "massKg": 5.757319738128104e-14,
+                  "energyKJ": 2.8786896504777795e-11
+                }
+              ],
+              "nodes": [
+                {
+                  "id": "tube-0",
+                  "residual": 3.3881317890172014e-20,
+                  "independent": 3.3881317890172014e-20
+                },
+                {
+                  "id": "fin-0",
+                  "residual": 0,
+                  "independent": -1.3552527156068805e-20
+                },
+                {
+                  "id": "tube-1",
+                  "residual": -4.743384504624082e-20,
+                  "independent": -5.421010862427522e-20
+                },
+                {
+                  "id": "fin-1",
+                  "residual": 4.0657581468206416e-20,
+                  "independent": 5.421010862427522e-20
+                },
+                {
+                  "id": "tube-2",
+                  "residual": -1.2197274440461925e-19,
+                  "independent": -1.2197274440461925e-19
+                },
+                {
+                  "id": "fin-2",
+                  "residual": 8.131516293641283e-20,
+                  "independent": 8.131516293641283e-20
+                },
+                {
+                  "id": "tube-3",
+                  "residual": -1.4907779871675686e-19,
+                  "independent": -1.4907779871675686e-19
+                },
+                {
+                  "id": "fin-3",
+                  "residual": 1.0842021724855044e-19,
+                  "independent": 1.0842021724855044e-19
+                },
+                {
+                  "id": "tube-4",
+                  "residual": -5.421010862427522e-20,
+                  "independent": -4.743384504624082e-20
+                },
+                {
+                  "id": "fin-4",
+                  "residual": 4.0657581468206416e-20,
+                  "independent": 2.710505431213761e-20
+                },
+                {
+                  "id": "air",
+                  "residual": -1.2281842209915794e-15,
+                  "independent": -1.2282384311002037e-15
+                }
+              ]
+            },
+            {
+              "mass": 2.245133671530987e-15,
+              "fluid": 1.1264361839125048e-12,
+              "thermal": -5.860546423153146e-15,
+              "combined": 1.1205756374893516e-12,
+              "sections": [
+                {
+                  "massKg": 4.940348887497387e-15,
+                  "energyKJ": 2.469454762205059e-12
+                },
+                {
+                  "massKg": 1.4764328065794592e-14,
+                  "energyKJ": 7.382909713270214e-12
+                },
+                {
+                  "massKg": -7.959046155426794e-14,
+                  "energyKJ": -3.979665257275791e-11
+                },
+                {
+                  "massKg": 1.1298111697501806e-14,
+                  "energyKJ": 5.649280793596639e-12
+                },
+                {
+                  "massKg": 5.084148103941797e-14,
+                  "energyKJ": 2.5423219736017688e-11
+                }
+              ],
+              "nodes": [
+                {
+                  "id": "tube-0",
+                  "residual": 5.963111948670274e-19,
+                  "independent": 7.047314121155779e-19
+                },
+                {
+                  "id": "fin-0",
+                  "residual": -3.2526065174565133e-19,
+                  "independent": -3.7947076036992655e-19
+                },
+                {
+                  "id": "tube-1",
+                  "residual": -3.7947076036992655e-19,
+                  "independent": -4.336808689942018e-19
+                },
+                {
+                  "id": "fin-1",
+                  "residual": 3.2526065174565133e-19,
+                  "independent": 4.336808689942018e-19
+                },
+                {
+                  "id": "tube-2",
+                  "residual": 5.421010862427522e-19,
+                  "independent": 5.421010862427522e-19
+                },
+                {
+                  "id": "fin-2",
+                  "residual": -2.710505431213761e-19,
+                  "independent": -3.2526065174565133e-19
+                },
+                {
+                  "id": "tube-3",
+                  "residual": -4.336808689942018e-19,
+                  "independent": -4.336808689942018e-19
+                },
+                {
+                  "id": "fin-3",
+                  "residual": 3.2526065174565133e-19,
+                  "independent": 3.2526065174565133e-19
+                },
+                {
+                  "id": "tube-4",
+                  "residual": -7.047314121155779e-19,
+                  "independent": -5.963111948670274e-19
+                },
+                {
+                  "id": "fin-4",
+                  "residual": 3.7947076036992655e-19,
+                  "independent": 4.336808689942018e-19
+                },
+                {
+                  "id": "air",
+                  "residual": -5.86098010402214e-15,
+                  "independent": -5.860763263587643e-15
+                }
+              ]
+            },
+            {
+              "mass": 2.286543418256355e-15,
+              "fluid": 1.1530633219070108e-12,
+              "thermal": -4.99036575951628e-15,
+              "combined": 1.1480729561474945e-12,
+              "sections": [
+                {
+                  "massKg": 8.83018294985452e-15,
+                  "energyKJ": 4.416215223373987e-12
+                },
+                {
+                  "massKg": 2.1329995536219053e-14,
+                  "energyKJ": 1.0666219209948258e-11
+                },
+                {
+                  "massKg": -7.942452779990082e-14,
+                  "energyKJ": -3.970986300200208e-11
+                },
+                {
+                  "massKg": 4.201467224530884e-15,
+                  "energyKJ": 2.099206659195163e-12
+                },
+                {
+                  "massKg": 4.735636609552252e-14,
+                  "energyKJ": 2.3678620587712362e-11
+                }
+              ],
+              "nodes": [
+                {
+                  "id": "tube-0",
+                  "residual": 0,
+                  "independent": 1.0842021724855044e-19
+                },
+                {
+                  "id": "fin-0",
+                  "residual": 1.0842021724855044e-19,
+                  "independent": 1.0842021724855044e-19
+                },
+                {
+                  "id": "tube-1",
+                  "residual": -1.0842021724855044e-19,
+                  "independent": 0
+                },
+                {
+                  "id": "fin-1",
+                  "residual": 4.336808689942018e-19,
+                  "independent": 4.336808689942018e-19
+                },
+                {
+                  "id": "tube-2",
+                  "residual": -1.0842021724855044e-19,
+                  "independent": -1.0842021724855044e-19
+                },
+                {
+                  "id": "fin-2",
+                  "residual": 3.2526065174565133e-19,
+                  "independent": 3.2526065174565133e-19
+                },
+                {
+                  "id": "tube-3",
+                  "residual": 1.8431436932253575e-18,
+                  "independent": 1.8431436932253575e-18
+                },
+                {
+                  "id": "fin-3",
+                  "residual": -1.3010426069826053e-18,
+                  "independent": -1.3010426069826053e-18
+                },
+                {
+                  "id": "tube-4",
+                  "residual": -2.710505431213761e-18,
+                  "independent": -2.6020852139652106e-18
+                },
+                {
+                  "id": "fin-4",
+                  "residual": 1.8431436932253575e-18,
+                  "independent": 1.734723475976807e-18
+                },
+                {
+                  "id": "air",
+                  "residual": -4.990799440385274e-15,
+                  "independent": -4.991233121254268e-15
+                }
+              ]
+            }
+          ]
+        },
+        "warm": {
+          "exactScience": true,
+          "savedB9BBaselineExact": true,
+          "scienceSHA256": "619000e7e207573a8f332dbf0ceebb11b0f9407addc5a8fee0cd449fc1f6fd63",
+          "componentHashes": {
+            "residuals": "7f4463ed8d40f0cd34198fa524ebf2a82c89e2003c24ba2aefb71fbd06936af1",
+            "linear": "a54c967b8c600c81510742f9fa698cfe87efdb027c4ec535458f2b2780376d89",
+            "solves": "988637f632b60629ca40eaf87e3afd4b0cd7855811d24882741354e8a1ec6826"
+          },
+          "work": {
+            "residuals": 7710,
+            "corrections": 345,
+            "accepted": 34,
+            "rejected": 3
+          },
+          "property": {
+            "passed": true,
+            "stages": 120.0,
+            "trials": 60.0,
+            "logicalStageBoundaryRequests": {
+              "inlet": 7710,
+              "outlet": 7710
+            },
+            "candidateMisses": {
+              "inlet": 120,
+              "outlet": 120
+            },
+            "successfulHits": 15180,
+            "realPHControl": 22072.0,
+            "realPHCandidate": 6892.0,
+            "realPHReduction": 15180.0,
+            "section": {
+              "requests": 38550.0,
+              "hits": 32871.0,
+              "misses": 5679.0
+            },
+            "publicSATControl": 23752.0,
+            "publicSATCandidate": 8572.0,
+            "nestedSATControl": 46024.0,
+            "nestedSATCandidate": 15664.0,
+            "canonicalRecoveryControl": 940.0,
+            "canonicalRecoveryCandidate": 940.0,
+            "nonStageBoundaryRequests": 254,
+            "nonStagePHControl": 973,
+            "nonStagePHCandidate": 973,
+            "thrownControl": 0,
+            "thrownCandidate": 0,
+            "projectedPropertySequenceExact": true,
+            "eachOmittedInputAndResultExact": true
+          },
+          "conservation": [
+            {
+              "mass": 0,
+              "fluid": 0,
+              "thermal": 0,
+              "combined": 0,
+              "sections": [
+                {
+                  "massKg": 0,
+                  "energyKJ": 0
+                },
+                {
+                  "massKg": 0,
+                  "energyKJ": 0
+                },
+                {
+                  "massKg": 0,
+                  "energyKJ": 0
+                },
+                {
+                  "massKg": 0,
+                  "energyKJ": 0
+                },
+                {
+                  "massKg": 0,
+                  "energyKJ": 0
+                }
+              ],
+              "nodes": [
+                {
+                  "id": "tube-0",
+                  "residual": 0,
+                  "independent": 0
+                },
+                {
+                  "id": "fin-0",
+                  "residual": 0,
+                  "independent": 0
+                },
+                {
+                  "id": "tube-1",
+                  "residual": 0,
+                  "independent": 0
+                },
+                {
+                  "id": "fin-1",
+                  "residual": 0,
+                  "independent": 0
+                },
+                {
+                  "id": "tube-2",
+                  "residual": 0,
+                  "independent": 0
+                },
+                {
+                  "id": "fin-2",
+                  "residual": 0,
+                  "independent": 0
+                },
+                {
+                  "id": "tube-3",
+                  "residual": 0,
+                  "independent": 0
+                },
+                {
+                  "id": "fin-3",
+                  "residual": 0,
+                  "independent": 0
+                },
+                {
+                  "id": "tube-4",
+                  "residual": 0,
+                  "independent": 0
+                },
+                {
+                  "id": "fin-4",
+                  "residual": 0,
+                  "independent": 0
+                },
+                {
+                  "id": "air",
+                  "residual": 0,
+                  "independent": 0
+                }
+              ]
+            },
+            {
+              "mass": -6.954648716726158e-16,
+              "fluid": -1.1449994598289326e-12,
+              "thermal": 1.1173191278440742e-14,
+              "combined": -1.1338262685504918e-12,
+              "sections": [
+                {
+                  "massKg": 4.319623450233412e-16,
+                  "energyKJ": 7.14604251965921e-13
+                },
+                {
+                  "massKg": -2.871727809657238e-14,
+                  "energyKJ": -4.738429071858563e-11
+                },
+                {
+                  "massKg": 2.1119583975912494e-14,
+                  "energyKJ": 3.484768154376691e-11
+                },
+                {
+                  "massKg": 6.858505818531585e-15,
+                  "energyKJ": 1.1315416024960598e-11
+                },
+                {
+                  "massKg": -3.873710366689674e-16,
+                  "energyKJ": -6.384086781354575e-13
+                }
+              ],
+              "nodes": [
+                {
+                  "id": "tube-0",
+                  "residual": 4.1699093180150304e-15,
+                  "independent": 4.1699093180150304e-15
+                },
+                {
+                  "id": "fin-0",
+                  "residual": 5.92078726946348e-16,
+                  "independent": 5.92078726946348e-16
+                },
+                {
+                  "id": "tube-1",
+                  "residual": -4.5382670061169805e-15,
+                  "independent": -4.5382670061169805e-15
+                },
+                {
+                  "id": "fin-1",
+                  "residual": -1.1584969547150965e-15,
+                  "independent": -1.1584969549218917e-15
+                },
+                {
+                  "id": "tube-2",
+                  "residual": -1.8935455417187774e-15,
+                  "independent": -1.8935455417187774e-15
+                },
+                {
+                  "id": "fin-2",
+                  "residual": -5.36715954132599e-16,
+                  "independent": -5.36715954132599e-16
+                },
+                {
+                  "id": "tube-3",
+                  "residual": 2.2125855834997932e-16,
+                  "independent": 2.2125855834997932e-16
+                },
+                {
+                  "id": "fin-3",
+                  "residual": 4.986310726800077e-15,
+                  "independent": 4.9863107265932815e-15
+                },
+                {
+                  "id": "tube-4",
+                  "residual": 2.3193794974896154e-16,
+                  "independent": 2.3192439722180547e-16
+                },
+                {
+                  "id": "fin-4",
+                  "residual": 6.185293882534192e-15,
+                  "independent": 6.185293882327397e-15
+                },
+                {
+                  "id": "air",
+                  "residual": 2.913359657685799e-15,
+                  "independent": 2.913373210212955e-15
+                }
+              ]
+            },
+            {
+              "mass": 1.8967405499958206e-14,
+              "fluid": 3.122980454968449e-11,
+              "thermal": -1.5202682862591743e-15,
+              "combined": 3.122828428139823e-11,
+              "sections": [
+                {
+                  "massKg": 1.2311719179547822e-14,
+                  "energyKJ": 2.0234127795591e-11
+                },
+                {
+                  "massKg": -3.0458091090930343e-14,
+                  "energyKJ": -5.0251781468640955e-11
+                },
+                {
+                  "massKg": 3.035898813022247e-14,
+                  "energyKJ": 5.0092832497034695e-11
+                },
+                {
+                  "massKg": 1.888750149391192e-14,
+                  "energyKJ": 3.1160655002485105e-11
+                },
+                {
+                  "massKg": -1.2132493360655916e-14,
+                  "energyKJ": -2.0006468541295536e-11
+                }
+              ],
+              "nodes": [
+                {
+                  "id": "tube-0",
+                  "residual": 7.304378456252092e-15,
+                  "independent": 7.304378456252092e-15
+                },
+                {
+                  "id": "fin-0",
+                  "residual": -2.6461182217282254e-15,
+                  "independent": -2.6461182084933356e-15
+                },
+                {
+                  "id": "tube-1",
+                  "residual": -1.337634430303991e-15,
+                  "independent": -1.337634430303991e-15
+                },
+                {
+                  "id": "fin-1",
+                  "residual": -2.6076363171769356e-15,
+                  "independent": -2.6076363171769356e-15
+                },
+                {
+                  "id": "tube-2",
+                  "residual": -1.2988742026376343e-15,
+                  "independent": -1.2989826228548829e-15
+                },
+                {
+                  "id": "fin-2",
+                  "residual": -8.384397582997361e-16,
+                  "independent": -8.384397582997361e-16
+                },
+                {
+                  "id": "tube-3",
+                  "residual": 9.634383135032065e-15,
+                  "independent": 9.63443734514069e-15
+                },
+                {
+                  "id": "fin-3",
+                  "residual": 4.3776882800691885e-15,
+                  "independent": 4.377688276760466e-15
+                },
+                {
+                  "id": "tube-4",
+                  "residual": 1.4307131868118717e-15,
+                  "independent": 1.4307131868118717e-15
+                },
+                {
+                  "id": "fin-4",
+                  "residual": 9.582490508551478e-15,
+                  "independent": 9.582490508551478e-15
+                },
+                {
+                  "id": "air",
+                  "residual": -2.5121181176923635e-14,
+                  "independent": -2.5121289597140883e-14
+                }
+              ]
+            },
+            {
+              "mass": 2.3881002969398935e-14,
+              "fluid": 3.932221345412379e-11,
+              "thermal": -2.835275417223393e-14,
+              "combined": 3.9293860699951555e-11,
+              "sections": [
+                {
+                  "massKg": 3.2232381911093122e-15,
+                  "energyKJ": 5.224875545238594e-12
+                },
+                {
+                  "massKg": -2.86551114766023e-14,
+                  "energyKJ": -4.727616757273234e-11
+                },
+                {
+                  "massKg": 3.544691599163645e-14,
+                  "energyKJ": 5.84863964984278e-11
+                },
+                {
+                  "massKg": 2.1312392497509214e-14,
+                  "energyKJ": 3.51637985222808e-11
+                },
+                {
+                  "massKg": -7.445128227031445e-15,
+                  "energyKJ": -1.2277592896341172e-11
+                }
+              ],
+              "nodes": [
+                {
+                  "id": "tube-0",
+                  "residual": 3.778010890242989e-15,
+                  "independent": 3.778010890242989e-15
+                },
+                {
+                  "id": "fin-0",
+                  "residual": 1.4909918365169707e-15,
+                  "independent": 1.4909918365169707e-15
+                },
+                {
+                  "id": "tube-1",
+                  "residual": -3.961566318044785e-15,
+                  "independent": -3.961457897827536e-15
+                },
+                {
+                  "id": "fin-1",
+                  "residual": -9.971314815529917e-15,
+                  "independent": -9.971314815529917e-15
+                },
+                {
+                  "id": "tube-2",
+                  "residual": 8.151031932746022e-16,
+                  "independent": 8.148863528401051e-16
+                },
+                {
+                  "id": "fin-2",
+                  "residual": 7.822841645498725e-15,
+                  "independent": 7.822841658733614e-15
+                },
+                {
+                  "id": "tube-3",
+                  "residual": 8.970038253841572e-15,
+                  "independent": 8.970038253841572e-15
+                },
+                {
+                  "id": "fin-3",
+                  "residual": 6.909973922686921e-15,
+                  "independent": 6.909973922686921e-15
+                },
+                {
+                  "id": "tube-4",
+                  "residual": -2.5266247427602195e-15,
+                  "independent": -2.5268415831947166e-15
+                },
+                {
+                  "id": "fin-4",
+                  "residual": 1.454111378777874e-14,
+                  "independent": 1.454111378777874e-14
+                },
+                {
+                  "id": "air",
+                  "residual": -5.622130365423583e-14,
+                  "independent": -5.6221737335104827e-14
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "regressions": {
+        "flow-reversal": {
+          "exactScience": true,
+          "controlProperties": {
+            "counts": {
+              "lexical.inverse": 12289.0,
+              "lexical.sat": 39087.0,
+              "lexical.branch": 175840.0,
+              "lexical.stateMVU": 475.0
+            },
+            "public": {
+              "ph": 12289.0,
+              "sat": 13084.0,
+              "stateMVU": 475.0
+            },
+            "section": {
+              "requests": 21640.0,
+              "hits": 18478.0,
+              "misses": 3162.0
+            },
+            "stageCount": 60.0,
+            "trialCount": 30.0,
+            "logicalBoundaryHash": "32cd2b3d2d1a9a55187518520ea697bb80dae27680b5de2c93c15acb98e77a21",
+            "boundaryRequests": 8784.0,
+            "stageRequests": 8656.0,
+            "stageMisses": 8656.0,
+            "stageHits": 0.0,
+            "thrown": []
+          },
+          "candidateProperties": {
+            "counts": {
+              "lexical.inverse": 3753.0,
+              "lexical.sat": 13479.0,
+              "lexical.branch": 5120.0,
+              "lexical.stateMVU": 475.0
+            },
+            "public": {
+              "ph": 3753.0,
+              "sat": 4548.0,
+              "stateMVU": 475.0
+            },
+            "section": {
+              "requests": 21640.0,
+              "hits": 18478.0,
+              "misses": 3162.0
+            },
+            "stageCount": 60.0,
+            "trialCount": 30.0,
+            "logicalBoundaryHash": "32cd2b3d2d1a9a55187518520ea697bb80dae27680b5de2c93c15acb98e77a21",
+            "boundaryRequests": 8784.0,
+            "stageRequests": 8656.0,
+            "stageMisses": 120.0,
+            "stageHits": 8536.0,
+            "thrown": []
+          },
+          "componentHashes": {
+            "residuals": "43fd947f9add3d7a68eb58aa994dfbb203d3c09039c783b873ab1514af59ae0a",
+            "linear": "2d2c2573c43f5b4953815a76a8d8ab62e5317e5565fdf8d12430b3129ba744df",
+            "solves": "be53e664dbb0aecb12916d6df37062ec3d2c734ea835f40ba849854204656327"
+          }
+        },
+        "scheduled-boundary": {
+          "exactScience": true,
+          "controlProperties": {
+            "counts": {
+              "lexical.inverse": 8575.0,
+              "lexical.sat": 27505.0,
+              "lexical.branch": 122000.0,
+              "lexical.stateMVU": 380.0
+            },
+            "public": {
+              "ph": 8575.0,
+              "sat": 9215.0,
+              "stateMVU": 380.0
+            },
+            "section": {
+              "requests": 14980.0,
+              "hits": 12778.0,
+              "misses": 2202.0
+            },
+            "stageCount": 48.0,
+            "trialCount": 24.0,
+            "logicalBoundaryHash": "9d5180dc27ada2b05a69e8a290df5d7780283a1846d7ec6359385e7af39464aa",
+            "boundaryRequests": 6094.0,
+            "stageRequests": 5992.0,
+            "stageMisses": 5992.0,
+            "stageHits": 0.0,
+            "thrown": []
+          },
+          "candidateProperties": {
+            "counts": {
+              "lexical.inverse": 2679.0,
+              "lexical.sat": 9817.0,
+              "lexical.branch": 4080.0,
+              "lexical.stateMVU": 380.0
+            },
+            "public": {
+              "ph": 2679.0,
+              "sat": 3319.0,
+              "stateMVU": 380.0
+            },
+            "section": {
+              "requests": 14980.0,
+              "hits": 12778.0,
+              "misses": 2202.0
+            },
+            "stageCount": 48.0,
+            "trialCount": 24.0,
+            "logicalBoundaryHash": "9d5180dc27ada2b05a69e8a290df5d7780283a1846d7ec6359385e7af39464aa",
+            "boundaryRequests": 6094.0,
+            "stageRequests": 5992.0,
+            "stageMisses": 96.0,
+            "stageHits": 5896.0,
+            "thrown": []
+          },
+          "componentHashes": {
+            "residuals": "51d627f71b610c9cd55707774cd0549f1407355695fd9405e92b8bdfd5edd91f",
+            "linear": "8f6ece1e0042480514149344e48ebd2e032700c518ce404ce745b7afb505c760",
+            "solves": "88aede0873c7e9049e04af9840a806e37642773c814554db48abadc12ddab59e"
+          }
+        },
+        "manual-boundary": {
+          "exactScience": true,
+          "controlProperties": {
+            "counts": {
+              "lexical.inverse": 8581.0,
+              "lexical.sat": 27543.0,
+              "lexical.branch": 122000.0,
+              "lexical.stateMVU": 385.0
+            },
+            "public": {
+              "ph": 8581.0,
+              "sat": 9226.0,
+              "stateMVU": 385.0
+            },
+            "section": {
+              "requests": 14980.0,
+              "hits": 12778.0,
+              "misses": 2202.0
+            },
+            "stageCount": 48.0,
+            "trialCount": 24.0,
+            "logicalBoundaryHash": "d9927c0689d32f347ca7f13588ee4ced3aa772d823550ac50427449cd66db5a2",
+            "boundaryRequests": 6096.0,
+            "stageRequests": 5992.0,
+            "stageMisses": 5992.0,
+            "stageHits": 0.0,
+            "thrown": []
+          },
+          "candidateProperties": {
+            "counts": {
+              "lexical.inverse": 2685.0,
+              "lexical.sat": 9855.0,
+              "lexical.branch": 4080.0,
+              "lexical.stateMVU": 385.0
+            },
+            "public": {
+              "ph": 2685.0,
+              "sat": 3330.0,
+              "stateMVU": 385.0
+            },
+            "section": {
+              "requests": 14980.0,
+              "hits": 12778.0,
+              "misses": 2202.0
+            },
+            "stageCount": 48.0,
+            "trialCount": 24.0,
+            "logicalBoundaryHash": "d9927c0689d32f347ca7f13588ee4ced3aa772d823550ac50427449cd66db5a2",
+            "boundaryRequests": 6096.0,
+            "stageRequests": 5992.0,
+            "stageMisses": 96.0,
+            "stageHits": 5896.0,
+            "thrown": []
+          },
+          "componentHashes": {
+            "residuals": "51d627f71b610c9cd55707774cd0549f1407355695fd9405e92b8bdfd5edd91f",
+            "linear": "8f6ece1e0042480514149344e48ebd2e032700c518ce404ce745b7afb505c760",
+            "solves": "88aede0873c7e9049e04af9840a806e37642773c814554db48abadc12ddab59e"
+          }
+        },
+        "saturated-0": {
+          "exactScience": true,
+          "controlProperties": {
+            "counts": {
+              "lexical.inverse": 12299.0,
+              "lexical.sat": 38677.0,
+              "lexical.stateMVU": 380.0
+            },
+            "public": {
+              "ph": 12299.0,
+              "sat": 12939.0,
+              "stateMVU": 380.0
+            },
+            "section": {
+              "requests": 22020.0,
+              "hits": 18906.0,
+              "misses": 3114.0
+            },
+            "stageCount": 48.0,
+            "trialCount": 24.0,
+            "logicalBoundaryHash": "118c23bc1c53886cda68af28c01aba2ea8a379fa19a3d3017e2b9b3747a8fb23",
+            "boundaryRequests": 8910.0,
+            "stageRequests": 8808.0,
+            "stageMisses": 8808.0,
+            "stageHits": 0.0,
+            "thrown": []
+          },
+          "candidateProperties": {
+            "counts": {
+              "lexical.inverse": 3587.0,
+              "lexical.sat": 12541.0,
+              "lexical.stateMVU": 380.0
+            },
+            "public": {
+              "ph": 3587.0,
+              "sat": 4227.0,
+              "stateMVU": 380.0
+            },
+            "section": {
+              "requests": 22020.0,
+              "hits": 18906.0,
+              "misses": 3114.0
+            },
+            "stageCount": 48.0,
+            "trialCount": 24.0,
+            "logicalBoundaryHash": "118c23bc1c53886cda68af28c01aba2ea8a379fa19a3d3017e2b9b3747a8fb23",
+            "boundaryRequests": 8910.0,
+            "stageRequests": 8808.0,
+            "stageMisses": 96.0,
+            "stageHits": 8712.0,
+            "thrown": []
+          },
+          "componentHashes": {
+            "residuals": "8f6ea895c1c6cd74c5ed46e176370114a94e578fd79a2502d7beb1e875a38b8f",
+            "linear": "904fc03453942a5118bfdfaae0df198973d2fb81f896373aff006bbd2763557c",
+            "solves": "ae5b3ecfed14ef8438bae5f2dcd9733f47a6a91b6a198ea8d40b3e1b931ed02f"
+          }
+        },
+        "saturated-1": {
+          "exactScience": true,
+          "controlProperties": {
+            "counts": {
+              "lexical.inverse": 11937.0,
+              "lexical.sat": 37811.0,
+              "lexical.stateMVU": 425.0
+            },
+            "public": {
+              "ph": 11937.0,
+              "sat": 12662.0,
+              "stateMVU": 425.0
+            },
+            "section": {
+              "requests": 21185.0,
+              "hits": 18146.0,
+              "misses": 3039.0
+            },
+            "stageCount": 54.0,
+            "trialCount": 27.0,
+            "logicalBoundaryHash": "216bbd3b8491886feaac17fc12d719671d94fea0ae4416418ddc105b67bfabb7",
+            "boundaryRequests": 8588.0,
+            "stageRequests": 8474.0,
+            "stageMisses": 8474.0,
+            "stageHits": 0.0,
+            "thrown": []
+          },
+          "candidateProperties": {
+            "counts": {
+              "lexical.inverse": 3571.0,
+              "lexical.sat": 12713.0,
+              "lexical.stateMVU": 425.0
+            },
+            "public": {
+              "ph": 3571.0,
+              "sat": 4296.0,
+              "stateMVU": 425.0
+            },
+            "section": {
+              "requests": 21185.0,
+              "hits": 18146.0,
+              "misses": 3039.0
+            },
+            "stageCount": 54.0,
+            "trialCount": 27.0,
+            "logicalBoundaryHash": "216bbd3b8491886feaac17fc12d719671d94fea0ae4416418ddc105b67bfabb7",
+            "boundaryRequests": 8588.0,
+            "stageRequests": 8474.0,
+            "stageMisses": 108.0,
+            "stageHits": 8366.0,
+            "thrown": []
+          },
+          "componentHashes": {
+            "residuals": "38f76764b37c4ef7c67003bb4454d0a6c0829aa99a9ea77764d7b7664bed7523",
+            "linear": "63c5bd481bed3fa8f79953afbbe1814dcf39722f5d509259183a3cd67a1e27fa",
+            "solves": "386a6595fcc51ce09c5bf62a73a1cbdcd2b23d01d45fbe0406b9ebb0ccbf9871"
+          }
+        },
+        "saturated-0.4": {
+          "exactScience": true,
+          "controlProperties": {
+            "counts": {
+              "lexical.inverse": 12565.0,
+              "lexical.sat": 39695.0,
+              "lexical.stateMVU": 425.0
+            },
+            "public": {
+              "ph": 12565.0,
+              "sat": 13290.0,
+              "stateMVU": 425.0
+            },
+            "section": {
+              "requests": 22380.0,
+              "hits": 19191.0,
+              "misses": 3189.0
+            },
+            "stageCount": 54.0,
+            "trialCount": 27.0,
+            "logicalBoundaryHash": "6800adec3a2cb96aff828d93c86c452f743ac61863a6f25242ceff63d479d0e5",
+            "boundaryRequests": 9066.0,
+            "stageRequests": 8952.0,
+            "stageMisses": 8952.0,
+            "stageHits": 0.0,
+            "thrown": []
+          },
+          "candidateProperties": {
+            "counts": {
+              "lexical.inverse": 3721.0,
+              "lexical.sat": 13163.0,
+              "lexical.stateMVU": 425.0
+            },
+            "public": {
+              "ph": 3721.0,
+              "sat": 4446.0,
+              "stateMVU": 425.0
+            },
+            "section": {
+              "requests": 22380.0,
+              "hits": 19191.0,
+              "misses": 3189.0
+            },
+            "stageCount": 54.0,
+            "trialCount": 27.0,
+            "logicalBoundaryHash": "6800adec3a2cb96aff828d93c86c452f743ac61863a6f25242ceff63d479d0e5",
+            "boundaryRequests": 9066.0,
+            "stageRequests": 8952.0,
+            "stageMisses": 108.0,
+            "stageHits": 8844.0,
+            "thrown": []
+          },
+          "componentHashes": {
+            "residuals": "8cc42dddc42b34d332f1555ee794f6cbaa1cf6143a7b44804b46afb84d296c64",
+            "linear": "e62027930611aca152388e4c8be9519c0e0586966b97a7853dcd82b66dd33905",
+            "solves": "ccfbed153c13d8aa23434dc3b30d36df309521cdc151dc61258bd6db294d20b2"
+          }
+        },
+        "superheated-outlet": {
+          "exactScience": true,
+          "controlProperties": {
+            "counts": {
+              "lexical.inverse": 5138.0,
+              "lexical.sat": 16574.0,
+              "lexical.branch": 72960.0,
+              "lexical.stateMVU": 245.0
+            },
+            "public": {
+              "ph": 5138.0,
+              "sat": 5563.0,
+              "stateMVU": 245.0
+            },
+            "section": {
+              "requests": 8950.0,
+              "hits": 7648.0,
+              "misses": 1302.0
+            },
+            "stageCount": 30.0,
+            "trialCount": 15.0,
+            "logicalBoundaryHash": "02f6717e633a098b068028577055c64f42ca00108698a02af577825dbb2f02b3",
+            "boundaryRequests": 3646.0,
+            "stageRequests": 3580.0,
+            "stageMisses": 3580.0,
+            "stageHits": 0.0,
+            "thrown": []
+          },
+          "candidateProperties": {
+            "counts": {
+              "lexical.inverse": 1618.0,
+              "lexical.sat": 6014.0,
+              "lexical.branch": 2560.0,
+              "lexical.stateMVU": 245.0
+            },
+            "public": {
+              "ph": 1618.0,
+              "sat": 2043.0,
+              "stateMVU": 245.0
+            },
+            "section": {
+              "requests": 8950.0,
+              "hits": 7648.0,
+              "misses": 1302.0
+            },
+            "stageCount": 30.0,
+            "trialCount": 15.0,
+            "logicalBoundaryHash": "02f6717e633a098b068028577055c64f42ca00108698a02af577825dbb2f02b3",
+            "boundaryRequests": 3646.0,
+            "stageRequests": 3580.0,
+            "stageMisses": 60.0,
+            "stageHits": 3520.0,
+            "thrown": []
+          },
+          "componentHashes": {
+            "residuals": "7d15f61416e9a16d5a04e0da60d02f5018297b550f5d9da6c05829795bc780f2",
+            "linear": "b46a2384d396d536308c035cefdb52fa00891d112b94b7fb951d3ad3d9debf8c",
+            "solves": "b3d47ede615332fbc3f7955ade55c9846d9908ae20cb0a50ed955ebfe1623f8c"
+          }
+        },
+        "thermal-200": {
+          "exactScience": true,
+          "controlProperties": {
+            "counts": {
+              "lexical.inverse": 230.0,
+              "lexical.sat": 1350.0,
+              "lexical.branch": 1400.0,
+              "lexical.stateMVU": 155.0
+            },
+            "public": {
+              "ph": 230.0,
+              "sat": 425.0,
+              "stateMVU": 155.0
+            },
+            "section": {
+              "requests": 30.0,
+              "hits": 24.0,
+              "misses": 6.0
+            },
+            "stageCount": 6.0,
+            "trialCount": 20.0,
+            "logicalBoundaryHash": "c0e4165fd538dffb9260d4ab3814e3534d5ee1e67d40979522adcfc36d82081b",
+            "boundaryRequests": 68.0,
+            "stageRequests": 12.0,
+            "stageMisses": 12.0,
+            "stageHits": 0.0,
+            "thrown": []
+          },
+          "candidateProperties": {
+            "counts": {
+              "lexical.inverse": 230.0,
+              "lexical.sat": 1350.0,
+              "lexical.branch": 1400.0,
+              "lexical.stateMVU": 155.0
+            },
+            "public": {
+              "ph": 230.0,
+              "sat": 425.0,
+              "stateMVU": 155.0
+            },
+            "section": {
+              "requests": 30.0,
+              "hits": 24.0,
+              "misses": 6.0
+            },
+            "stageCount": 6.0,
+            "trialCount": 20.0,
+            "logicalBoundaryHash": "c0e4165fd538dffb9260d4ab3814e3534d5ee1e67d40979522adcfc36d82081b",
+            "boundaryRequests": 68.0,
+            "stageRequests": 12.0,
+            "stageMisses": 12.0,
+            "stageHits": 0.0,
+            "thrown": []
+          },
+          "componentHashes": {
+            "residuals": "d08d0bd0805defca07ae7378f18f1ffb271903ae0be50c08071aa8f7cae985bb",
+            "linear": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+            "solves": "63d3d154f935a7ec5e83fdcfad2ad19dbaeb13b47c622f0b62873c470148d934"
+          }
+        },
+        "thermal-400": {
+          "exactScience": true,
+          "controlProperties": {
+            "counts": {
+              "lexical.inverse": 230.0,
+              "lexical.sat": 1350.0,
+              "lexical.branch": 1400.0,
+              "lexical.stateMVU": 155.0
+            },
+            "public": {
+              "ph": 230.0,
+              "sat": 425.0,
+              "stateMVU": 155.0
+            },
+            "section": {
+              "requests": 30.0,
+              "hits": 24.0,
+              "misses": 6.0
+            },
+            "stageCount": 6.0,
+            "trialCount": 20.0,
+            "logicalBoundaryHash": "c0e4165fd538dffb9260d4ab3814e3534d5ee1e67d40979522adcfc36d82081b",
+            "boundaryRequests": 68.0,
+            "stageRequests": 12.0,
+            "stageMisses": 12.0,
+            "stageHits": 0.0,
+            "thrown": []
+          },
+          "candidateProperties": {
+            "counts": {
+              "lexical.inverse": 230.0,
+              "lexical.sat": 1350.0,
+              "lexical.branch": 1400.0,
+              "lexical.stateMVU": 155.0
+            },
+            "public": {
+              "ph": 230.0,
+              "sat": 425.0,
+              "stateMVU": 155.0
+            },
+            "section": {
+              "requests": 30.0,
+              "hits": 24.0,
+              "misses": 6.0
+            },
+            "stageCount": 6.0,
+            "trialCount": 20.0,
+            "logicalBoundaryHash": "c0e4165fd538dffb9260d4ab3814e3534d5ee1e67d40979522adcfc36d82081b",
+            "boundaryRequests": 68.0,
+            "stageRequests": 12.0,
+            "stageMisses": 12.0,
+            "stageHits": 0.0,
+            "thrown": []
+          },
+          "componentHashes": {
+            "residuals": "dcf14c90e042ea876d30d16ebc042fa89c0d1dd5afcb17f92300dd5f5455de93",
+            "linear": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+            "solves": "2ffb1bc8e5dcd2e0038dd6fd57e347be263238fd5ed226f2dce8e2613ea5c7c8"
+          }
+        },
+        "numerical-stop": {
+          "exactScience": true,
+          "controlProperties": {
+            "counts": {
+              "lexical.inverse": 4687.0,
+              "lexical.sat": 16341.0,
+              "lexical.branch": 63000.0,
+              "lexical.stateMVU": 480.0
+            },
+            "public": {
+              "ph": 4687.0,
+              "sat": 5527.0,
+              "stateMVU": 480.0
+            },
+            "section": {
+              "requests": 7475.0,
+              "hits": 6331.0,
+              "misses": 1144.0
+            },
+            "stageCount": 65.0,
+            "trialCount": 38.0,
+            "logicalBoundaryHash": "de62642c8b98977ba529de7fb22bfcddbd325d1f8aeeb974f975db394089a1b3",
+            "boundaryRequests": 3148.0,
+            "stageRequests": 2990.0,
+            "stageMisses": 2990.0,
+            "stageHits": 0.0,
+            "thrown": []
+          },
+          "candidateProperties": {
+            "counts": {
+              "lexical.inverse": 1827.0,
+              "lexical.sat": 7761.0,
+              "lexical.branch": 5800.0,
+              "lexical.stateMVU": 480.0
+            },
+            "public": {
+              "ph": 1827.0,
+              "sat": 2667.0,
+              "stateMVU": 480.0
+            },
+            "section": {
+              "requests": 7475.0,
+              "hits": 6331.0,
+              "misses": 1144.0
+            },
+            "stageCount": 65.0,
+            "trialCount": 38.0,
+            "logicalBoundaryHash": "de62642c8b98977ba529de7fb22bfcddbd325d1f8aeeb974f975db394089a1b3",
+            "boundaryRequests": 3148.0,
+            "stageRequests": 2990.0,
+            "stageMisses": 130.0,
+            "stageHits": 2860.0,
+            "thrown": []
+          },
+          "componentHashes": {
+            "residuals": "646a72e3af445e1013644062cb8cb01ebf0ea8dda732e2641d003339e9f50e9e",
+            "linear": "88a59267be0accb5b880d56f860a53e1e28ec77508271ffb7bcf6aa37cccf9c8",
+            "solves": "3ab6e01be3d43653fb9acb183717ba45e561c5c74251977c2b6a73f74d5ba159"
+          }
+        }
+      },
+      "propertyCases": 31,
+      "invalidUpdates": 4,
+      "C1UnmodifiedPass": true,
+      "backendGuardPass": true
+    }
+  }
+}

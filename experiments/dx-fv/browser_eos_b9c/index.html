@@ -1,0 +1,5 @@
+<!doctype html><meta charset="utf-8"><title>B9C isolated research harness</title>
+<p>Isolated original-table research. Operator integration NO-GO.</p>
+<script type="module">
+window.workerRun=args=>new Promise((resolve,reject)=>{const worker=new Worker('./worker.mjs',{type:'module'});worker.onmessage=e=>{worker.terminate();e.data.success?resolve(e.data.result):reject(Error(JSON.stringify(e.data.error)));};worker.onerror=e=>{worker.terminate();reject(Error(e.message));};worker.postMessage(args);});
+</script>

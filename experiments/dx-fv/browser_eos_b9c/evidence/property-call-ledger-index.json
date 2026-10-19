@@ -1,0 +1,170 @@
+{
+  "chromium": {
+    "cold": {
+      "artifact": "parity-chromium.json.gz",
+      "control": "runs[fixture=cold,mode=control].evidence",
+      "candidate": "runs[fixture=cold,mode=candidate].evidence",
+      "scienceSHA256": "5d4a30c486acf7be383a18359ae150d00f7002b8fffa1003250ef4bdac4e3815",
+      "actualCounts": {
+        "passed": true,
+        "stages": 54.0,
+        "trials": 27.0,
+        "logicalStageBoundaryRequests": {
+          "inlet": 2914,
+          "outlet": 2914
+        },
+        "candidateMisses": {
+          "inlet": 54,
+          "outlet": 54
+        },
+        "successfulHits": 5720,
+        "realPHControl": 8476.0,
+        "realPHCandidate": 2756.0,
+        "realPHReduction": 5720.0,
+        "section": {
+          "requests": 14570.0,
+          "hits": 12398.0,
+          "misses": 2172.0
+        },
+        "publicSATControl": 9261.0,
+        "publicSATCandidate": 3541.0,
+        "nestedSATControl": 18287.0,
+        "nestedSATCandidate": 6847.0,
+        "canonicalRecoveryControl": 445.0,
+        "canonicalRecoveryCandidate": 445.0,
+        "nonStageBoundaryRequests": 122,
+        "nonStagePHControl": 476,
+        "nonStagePHCandidate": 476,
+        "thrownControl": 0,
+        "thrownCandidate": 0,
+        "projectedPropertySequenceExact": true,
+        "eachOmittedInputAndResultExact": true
+      }
+    },
+    "warm": {
+      "artifact": "parity-chromium.json.gz",
+      "control": "runs[fixture=warm,mode=control].evidence",
+      "candidate": "runs[fixture=warm,mode=candidate].evidence",
+      "scienceSHA256": "0ed51255b5e2dba674cd407770801743a4a6fce3fcb156cafd64cadda3187d12",
+      "actualCounts": {
+        "passed": true,
+        "stages": 120.0,
+        "trials": 60.0,
+        "logicalStageBoundaryRequests": {
+          "inlet": 7710,
+          "outlet": 7710
+        },
+        "candidateMisses": {
+          "inlet": 120,
+          "outlet": 120
+        },
+        "successfulHits": 15180,
+        "realPHControl": 22072.0,
+        "realPHCandidate": 6892.0,
+        "realPHReduction": 15180.0,
+        "section": {
+          "requests": 38550.0,
+          "hits": 32871.0,
+          "misses": 5679.0
+        },
+        "publicSATControl": 23752.0,
+        "publicSATCandidate": 8572.0,
+        "nestedSATControl": 46024.0,
+        "nestedSATCandidate": 15664.0,
+        "canonicalRecoveryControl": 940.0,
+        "canonicalRecoveryCandidate": 940.0,
+        "nonStageBoundaryRequests": 254,
+        "nonStagePHControl": 973,
+        "nonStagePHCandidate": 973,
+        "thrownControl": 0,
+        "thrownCandidate": 0,
+        "projectedPropertySequenceExact": true,
+        "eachOmittedInputAndResultExact": true
+      }
+    }
+  },
+  "webkit": {
+    "cold": {
+      "artifact": "parity-webkit.json.gz",
+      "control": "runs[fixture=cold,mode=control].evidence",
+      "candidate": "runs[fixture=cold,mode=candidate].evidence",
+      "scienceSHA256": "2f519dcb7a0c2f8d975a255c95abdcd3468cf31edda134a14574b8350db541bc",
+      "actualCounts": {
+        "passed": true,
+        "stages": 54.0,
+        "trials": 27.0,
+        "logicalStageBoundaryRequests": {
+          "inlet": 2914,
+          "outlet": 2914
+        },
+        "candidateMisses": {
+          "inlet": 54,
+          "outlet": 54
+        },
+        "successfulHits": 5720,
+        "realPHControl": 8476.0,
+        "realPHCandidate": 2756.0,
+        "realPHReduction": 5720.0,
+        "section": {
+          "requests": 14570.0,
+          "hits": 12398.0,
+          "misses": 2172.0
+        },
+        "publicSATControl": 9261.0,
+        "publicSATCandidate": 3541.0,
+        "nestedSATControl": 18287.0,
+        "nestedSATCandidate": 6847.0,
+        "canonicalRecoveryControl": 445.0,
+        "canonicalRecoveryCandidate": 445.0,
+        "nonStageBoundaryRequests": 122,
+        "nonStagePHControl": 476,
+        "nonStagePHCandidate": 476,
+        "thrownControl": 0,
+        "thrownCandidate": 0,
+        "projectedPropertySequenceExact": true,
+        "eachOmittedInputAndResultExact": true
+      }
+    },
+    "warm": {
+      "artifact": "parity-webkit.json.gz",
+      "control": "runs[fixture=warm,mode=control].evidence",
+      "candidate": "runs[fixture=warm,mode=candidate].evidence",
+      "scienceSHA256": "619000e7e207573a8f332dbf0ceebb11b0f9407addc5a8fee0cd449fc1f6fd63",
+      "actualCounts": {
+        "passed": true,
+        "stages": 120.0,
+        "trials": 60.0,
+        "logicalStageBoundaryRequests": {
+          "inlet": 7710,
+          "outlet": 7710
+        },
+        "candidateMisses": {
+          "inlet": 120,
+          "outlet": 120
+        },
+        "successfulHits": 15180,
+        "realPHControl": 22072.0,
+        "realPHCandidate": 6892.0,
+        "realPHReduction": 15180.0,
+        "section": {
+          "requests": 38550.0,
+          "hits": 32871.0,
+          "misses": 5679.0
+        },
+        "publicSATControl": 23752.0,
+        "publicSATCandidate": 8572.0,
+        "nestedSATControl": 46024.0,
+        "nestedSATCandidate": 15664.0,
+        "canonicalRecoveryControl": 940.0,
+        "canonicalRecoveryCandidate": 940.0,
+        "nonStageBoundaryRequests": 254,
+        "nonStagePHControl": 973,
+        "nonStagePHCandidate": 973,
+        "thrownControl": 0,
+        "thrownCandidate": 0,
+        "projectedPropertySequenceExact": true,
+        "eachOmittedInputAndResultExact": true
+      }
+    }
+  }
+}

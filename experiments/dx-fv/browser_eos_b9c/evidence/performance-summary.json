@@ -1,0 +1,1004 @@
+{
+  "chromium": {
+    "fixtures": {
+      "cold": {
+        "values": {
+          "control": {
+            "advanceMS": {
+              "median": 131.9000000001397,
+              "min": 121.69999999995343,
+              "max": 148.69999999995343,
+              "stdev": 9.701666523430829,
+              "samples": [
+                146.69999999995343,
+                133.10000000009313,
+                121.69999999995343,
+                130.70000000018626,
+                148.69999999995343,
+                144.39999999990687,
+                140.69999999995343,
+                127.20000000018626,
+                126.10000000009313,
+                127.00000000023283
+              ]
+            },
+            "initializationMS": {
+              "median": 3.299999999930151,
+              "min": 2.6000000000931323,
+              "max": 5.099999999860302,
+              "stdev": 0.7530677997744256,
+              "samples": [
+                5.099999999860302,
+                3.1000000000931323,
+                3.6000000000931323,
+                3.6000000000931323,
+                3.199999999953434,
+                4.2000000001862645,
+                2.8999999999068677,
+                2.7000000001862645,
+                3.3999999999068677,
+                2.6000000000931323
+              ]
+            },
+            "tableAndFactoryConstructionMS": {
+              "median": 18.699999999953434,
+              "min": 16.800000000046566,
+              "max": 23.399999999906868,
+              "stdev": 2.016845722032736,
+              "samples": [
+                23.399999999906868,
+                19,
+                17.5,
+                19.699999999953434,
+                18.5,
+                18,
+                17,
+                18.899999999906868,
+                21.0999999998603,
+                16.800000000046566
+              ]
+            },
+            "extraRecordMS": {
+              "median": 0.4000000002561137,
+              "min": 0.30000000004656613,
+              "max": 0.7000000001862645,
+              "stdev": 0.1269295518112758,
+              "samples": [
+                0.6000000000931323,
+                0.5000000002328306,
+                0.39999999990686774,
+                0.30000000004656613,
+                0.5000000004656613,
+                0.7000000001862645,
+                0.4000000001396984,
+                0.30000000004656613,
+                0.40000000037252903,
+                0.4000000001396984
+              ]
+            },
+            "roundtripMS": {
+              "median": 400.35236450000866,
+              "min": 368.76568800016685,
+              "max": 433.0155199997989,
+              "stdev": 18.354582572910747,
+              "samples": [
+                417.62633400003324,
+                401.9461949999368,
+                368.76568800016685,
+                389.41540000018904,
+                410.0961859999188,
+                410.95890099995813,
+                433.0155199997989,
+                397.44962500003567,
+                382.1084400001382,
+                398.75853400008054
+              ]
+            }
+          },
+          "candidate": {
+            "advanceMS": {
+              "median": 69.10000000009313,
+              "min": 61.39999999990687,
+              "max": 73.30000000004657,
+              "stdev": 4.793433007755584,
+              "samples": [
+                69.10000000009313,
+                65.5,
+                73.30000000004657,
+                61.39999999990687,
+                71.59999999962747
+              ]
+            },
+            "initializationMS": {
+              "median": 3,
+              "min": 2.699999999953434,
+              "max": 3.300000000046566,
+              "stdev": 0.2549509757344335,
+              "samples": [
+                3.300000000046566,
+                3.2000000001862645,
+                3,
+                2.699999999953434,
+                2.800000000046566
+              ]
+            },
+            "tableAndFactoryConstructionMS": {
+              "median": 19.100000000093132,
+              "min": 17.5,
+              "max": 19.5,
+              "stdev": 0.8294576541420913,
+              "samples": [
+                18.699999999953434,
+                17.5,
+                19.5,
+                19.5,
+                19.100000000093132
+              ]
+            },
+            "extraRecordMS": {
+              "median": 0.599999999627471,
+              "min": 0.3000000002793968,
+              "max": 0.9000000001396984,
+              "stdev": 0.2236067976718852,
+              "samples": [
+                0.6999999999534339,
+                0.5000000002328306,
+                0.599999999627471,
+                0.3000000002793968,
+                0.9000000001396984
+              ]
+            },
+            "roundtripMS": {
+              "median": 343.7358350001887,
+              "min": 315.1617360001637,
+              "max": 354.3321500001184,
+              "stdev": 15.135311368144631,
+              "samples": [
+                343.7358350001887,
+                315.1617360001637,
+                338.8244069999473,
+                348.8766840000608,
+                354.3321500001184
+              ]
+            }
+          }
+        },
+        "paired": [
+          {
+            "round": 0,
+            "beforeMS": 146.69999999995343,
+            "candidateMS": 69.10000000009313,
+            "afterMS": 133.10000000009313,
+            "bracketMS": 139.90000000002328,
+            "deltaMS": -70.79999999993015,
+            "reductionPercent": 50.60757684054208
+          },
+          {
+            "round": 1,
+            "beforeMS": 121.69999999995343,
+            "candidateMS": 65.5,
+            "afterMS": 130.70000000018626,
+            "bracketMS": 126.20000000006985,
+            "deltaMS": -60.70000000006985,
+            "reductionPercent": 48.09825673536945
+          },
+          {
+            "round": 2,
+            "beforeMS": 148.69999999995343,
+            "candidateMS": 73.30000000004657,
+            "afterMS": 144.39999999990687,
+            "bracketMS": 146.54999999993015,
+            "deltaMS": -73.24999999988358,
+            "reductionPercent": 49.982940975720574
+          },
+          {
+            "round": 3,
+            "beforeMS": 140.69999999995343,
+            "candidateMS": 61.39999999990687,
+            "afterMS": 127.20000000018626,
+            "bracketMS": 133.95000000006985,
+            "deltaMS": -72.55000000016298,
+            "reductionPercent": 54.16200074664065
+          },
+          {
+            "round": 4,
+            "beforeMS": 126.10000000009313,
+            "candidateMS": 71.59999999962747,
+            "afterMS": 127.00000000023283,
+            "bracketMS": 126.55000000016298,
+            "deltaMS": -54.95000000053551,
+            "reductionPercent": 43.421572501354994
+          }
+        ],
+        "medianPairedReductionPercent": 49.982940975720574,
+        "improvementMeasured": true,
+        "decision": "meaningful improvement in all five matched brackets",
+        "diagnosticAdvanceMS": {
+          "control": 183.10000000009313,
+          "candidate": 95.80000000004657
+        },
+        "diagnosticScopesMS": {
+          "control": {
+            "property.ph": 89.20000000111759,
+            "property.sat": 7.000000001396984,
+            "property.stateMVU": 1.5999999993946403,
+            "evaluate": 112.40000000130385,
+            "record": 2.2000000001862645,
+            "residual": 157.0999999991618,
+            "stage": 176.10000000009313,
+            "trial": 180.0
+          },
+          "candidate": {
+            "property.ph": 9.400000001303852,
+            "property.sat": 2.1999999990221113,
+            "property.stateMVU": 1.2999999993480742,
+            "evaluate": 17.999999998835847,
+            "record": 2.0,
+            "residual": 59.40000000130385,
+            "stage": 83.90000000037253,
+            "trial": 87.00000000069849
+          }
+        }
+      },
+      "warm": {
+        "values": {
+          "control": {
+            "advanceMS": {
+              "median": 480.550000000163,
+              "min": 447.50000000046566,
+              "max": 526.0999999998603,
+              "stdev": 26.672466035947764,
+              "samples": [
+                492.80000000004657,
+                469.60000000009313,
+                454.30000000004657,
+                447.50000000046566,
+                474.8000000002794,
+                526.0999999998603,
+                513.9000000001397,
+                490.99999999976717,
+                449.10000000009313,
+                486.30000000004657
+              ]
+            },
+            "initializationMS": {
+              "median": 5.450000000069849,
+              "min": 4.600000000093132,
+              "max": 6.300000000046566,
+              "stdev": 0.5473166866905232,
+              "samples": [
+                6.2999999998137355,
+                5,
+                5.5,
+                5.600000000093132,
+                5.099999999860302,
+                5.199999999953434,
+                5.800000000046566,
+                5.400000000139698,
+                4.600000000093132,
+                6.300000000046566
+              ]
+            },
+            "tableAndFactoryConstructionMS": {
+              "median": 18.550000000046566,
+              "min": 16.9000000001397,
+              "max": 20.5,
+              "stdev": 1.0004998750414134,
+              "samples": [
+                20.5,
+                18.299999999813735,
+                17.5999999998603,
+                18.600000000093132,
+                16.9000000001397,
+                18.100000000093132,
+                19.399999999906868,
+                19,
+                19.199999999953434,
+                18.5
+              ]
+            },
+            "extraRecordMS": {
+              "median": 1.6500000001396984,
+              "min": 0.8999999996740371,
+              "max": 2.100000000325963,
+              "stdev": 0.44284434197030087,
+              "samples": [
+                1.0999999998603016,
+                1.8999999999068677,
+                0.8999999996740371,
+                1.600000000325963,
+                1.8000000000465661,
+                2.100000000325963,
+                2.1000000000931323,
+                1.1999999999534339,
+                1.6999999999534339,
+                1.1000000000931323
+              ]
+            },
+            "roundtripMS": {
+              "median": 986.6158369999312,
+              "min": 937.0679380001548,
+              "max": 1061.0816240000531,
+              "stdev": 39.189421179072795,
+              "samples": [
+                995.8986389999609,
+                973.596857000075,
+                977.3330349999014,
+                976.3067809999484,
+                962.260667999999,
+                1061.0816240000531,
+                1053.174965999915,
+                998.4216840000499,
+                937.0679380001548,
+                1017.6229470000635
+              ]
+            }
+          },
+          "candidate": {
+            "advanceMS": {
+              "median": 317.1999999997206,
+              "min": 296.79999999981374,
+              "max": 325.39999999990687,
+              "stdev": 12.102561712333546,
+              "samples": [
+                323.89999999990687,
+                317.1999999997206,
+                325.39999999990687,
+                306.79999999981374,
+                296.79999999981374
+              ]
+            },
+            "initializationMS": {
+              "median": 5,
+              "min": 4.100000000093132,
+              "max": 6.399999999906868,
+              "stdev": 0.868907359787508,
+              "samples": [
+                4.100000000093132,
+                5,
+                6.399999999906868,
+                5,
+                4.5
+              ]
+            },
+            "tableAndFactoryConstructionMS": {
+              "median": 18.300000000046566,
+              "min": 16.5,
+              "max": 19.0999999998603,
+              "stdev": 1.1436782763708535,
+              "samples": [
+                19.0999999998603,
+                19.0999999998603,
+                18.300000000046566,
+                17.300000000046566,
+                16.5
+              ]
+            },
+            "extraRecordMS": {
+              "median": 1.1000000000931323,
+              "min": 0.9000000001396984,
+              "max": 1.3000000000465661,
+              "stdev": 0.15811388293479145,
+              "samples": [
+                1.1999999999534339,
+                1.1000000000931323,
+                1.0000000002328306,
+                1.3000000000465661,
+                0.9000000001396984
+              ]
+            },
+            "roundtripMS": {
+              "median": 815.395596999906,
+              "min": 795.5591869999807,
+              "max": 850.308823999967,
+              "stdev": 19.763890686774673,
+              "samples": [
+                815.395596999906,
+                795.5591869999807,
+                815.0007140000071,
+                816.897329999847,
+                850.308823999967
+              ]
+            }
+          }
+        },
+        "paired": [
+          {
+            "round": 0,
+            "beforeMS": 492.80000000004657,
+            "candidateMS": 323.89999999990687,
+            "afterMS": 469.60000000009313,
+            "bracketMS": 481.20000000006985,
+            "deltaMS": -157.30000000016298,
+            "reductionPercent": 32.68911055697011
+          },
+          {
+            "round": 1,
+            "beforeMS": 454.30000000004657,
+            "candidateMS": 317.1999999997206,
+            "afterMS": 447.50000000046566,
+            "bracketMS": 450.9000000002561,
+            "deltaMS": -133.7000000005355,
+            "reductionPercent": 29.651807496220794
+          },
+          {
+            "round": 2,
+            "beforeMS": 474.8000000002794,
+            "candidateMS": 325.39999999990687,
+            "afterMS": 526.0999999998603,
+            "bracketMS": 500.45000000006985,
+            "deltaMS": -175.05000000016298,
+            "reductionPercent": 34.978519332628345
+          },
+          {
+            "round": 3,
+            "beforeMS": 513.9000000001397,
+            "candidateMS": 306.79999999981374,
+            "afterMS": 490.99999999976717,
+            "bracketMS": 502.44999999995343,
+            "deltaMS": -195.6500000001397,
+            "reductionPercent": 38.93919793017371
+          },
+          {
+            "round": 4,
+            "beforeMS": 449.10000000009313,
+            "candidateMS": 296.79999999981374,
+            "afterMS": 486.30000000004657,
+            "bracketMS": 467.70000000006985,
+            "deltaMS": -170.9000000002561,
+            "reductionPercent": 36.54051742574954
+          }
+        ],
+        "medianPairedReductionPercent": 34.978519332628345,
+        "improvementMeasured": true,
+        "decision": "meaningful improvement in all five matched brackets",
+        "diagnosticAdvanceMS": {
+          "control": 537.1999999999534,
+          "candidate": 362.90000000037253
+        },
+        "diagnosticScopesMS": {
+          "control": {
+            "property.ph": 317.9000000015367,
+            "property.sat": 15.299999998882413,
+            "property.stateMVU": 23.499999997904524,
+            "evaluate": 234.19999999995343,
+            "record": 3.4999999997671694,
+            "residual": 457.3999999987427,
+            "stage": 500.4000000008382,
+            "trial": 518.9999999997672
+          },
+          "candidate": {
+            "property.ph": 167.19999999948777,
+            "property.sat": 7.800000000046566,
+            "property.stateMVU": 20.800000002374873,
+            "evaluate": 46.100000001024455,
+            "record": 4.900000000139698,
+            "residual": 292.1999999994878,
+            "stage": 328.0,
+            "trial": 347.900000001071
+          }
+        }
+      }
+    },
+    "heartbeat": {
+      "medianMS": 10,
+      "maxMS": 15.300000000046566,
+      "samples": 1975
+    },
+    "heapBefore": {
+      "used": 10000000,
+      "total": 10000000
+    },
+    "heapAfter": {
+      "used": 10000000,
+      "total": 10000000
+    },
+    "version": "151.0.7922.34",
+    "lifecycle": {
+      "freshWorkerPerRequest": true,
+      "terminatedAfterEachResponse": true,
+      "sessions": 30,
+      "restartExactByParity": true,
+      "retainedCacheReferences": false,
+      "memoryLimit": "main-page heap only; worker leak freedom not inferred"
+    }
+  },
+  "webkit": {
+    "fixtures": {
+      "cold": {
+        "values": {
+          "control": {
+            "advanceMS": {
+              "median": 167.5,
+              "min": 149,
+              "max": 213,
+              "stdev": 20.27477907812232,
+              "samples": [
+                213,
+                149,
+                172,
+                158,
+                152,
+                176,
+                196,
+                163,
+                182,
+                161
+              ]
+            },
+            "initializationMS": {
+              "median": 4.0,
+              "min": 3,
+              "max": 5,
+              "stdev": 0.6324555320336759,
+              "samples": [
+                5,
+                5,
+                4,
+                3,
+                4,
+                5,
+                4,
+                4,
+                4,
+                4
+              ]
+            },
+            "tableAndFactoryConstructionMS": {
+              "median": 46.0,
+              "min": 41,
+              "max": 62,
+              "stdev": 7.528464503321894,
+              "samples": [
+                59,
+                47,
+                43,
+                45,
+                41,
+                43,
+                41,
+                54,
+                48,
+                62
+              ]
+            },
+            "extraRecordMS": {
+              "median": 1.0,
+              "min": 0,
+              "max": 2,
+              "stdev": 0.6666666666666666,
+              "samples": [
+                0,
+                1,
+                0,
+                1,
+                1,
+                2,
+                1,
+                2,
+                1,
+                1
+              ]
+            },
+            "roundtripMS": {
+              "median": 422.38210100003926,
+              "min": 392.7720619999491,
+              "max": 564.0778839999712,
+              "stdev": 51.09940804025716,
+              "samples": [
+                564.0778839999712,
+                409.41895299988573,
+                408.22326299985434,
+                412.3235350000414,
+                392.7720619999491,
+                432.44066700003714,
+                483.5944839999229,
+                434.70420099993134,
+                433.89468500004114,
+                405.4451190002055
+              ]
+            }
+          },
+          "candidate": {
+            "advanceMS": {
+              "median": 77,
+              "min": 76,
+              "max": 90,
+              "stdev": 6.3796551630946325,
+              "samples": [
+                77,
+                76,
+                90,
+                86,
+                77
+              ]
+            },
+            "initializationMS": {
+              "median": 4,
+              "min": 4,
+              "max": 5,
+              "stdev": 0.4472135954999579,
+              "samples": [
+                4,
+                4,
+                4,
+                5,
+                4
+              ]
+            },
+            "tableAndFactoryConstructionMS": {
+              "median": 47,
+              "min": 42,
+              "max": 48,
+              "stdev": 2.3874672772626644,
+              "samples": [
+                48,
+                42,
+                45,
+                47,
+                47
+              ]
+            },
+            "extraRecordMS": {
+              "median": 1,
+              "min": 0,
+              "max": 2,
+              "stdev": 0.8366600265340756,
+              "samples": [
+                2,
+                0,
+                1,
+                1,
+                2
+              ]
+            },
+            "roundtripMS": {
+              "median": 354.81059100015955,
+              "min": 321.85729699995136,
+              "max": 368.0423260000225,
+              "stdev": 18.43147369565914,
+              "samples": [
+                363.106020000032,
+                354.81059100015955,
+                343.1717280000157,
+                368.0423260000225,
+                321.85729699995136
+              ]
+            }
+          }
+        },
+        "paired": [
+          {
+            "round": 0,
+            "beforeMS": 213,
+            "candidateMS": 77,
+            "afterMS": 149,
+            "bracketMS": 181.0,
+            "deltaMS": -104.0,
+            "reductionPercent": 57.4585635359116
+          },
+          {
+            "round": 1,
+            "beforeMS": 172,
+            "candidateMS": 76,
+            "afterMS": 158,
+            "bracketMS": 165.0,
+            "deltaMS": -89.0,
+            "reductionPercent": 53.93939393939394
+          },
+          {
+            "round": 2,
+            "beforeMS": 152,
+            "candidateMS": 90,
+            "afterMS": 176,
+            "bracketMS": 164.0,
+            "deltaMS": -74.0,
+            "reductionPercent": 45.1219512195122
+          },
+          {
+            "round": 3,
+            "beforeMS": 196,
+            "candidateMS": 86,
+            "afterMS": 163,
+            "bracketMS": 179.5,
+            "deltaMS": -93.5,
+            "reductionPercent": 52.089136490250695
+          },
+          {
+            "round": 4,
+            "beforeMS": 182,
+            "candidateMS": 77,
+            "afterMS": 161,
+            "bracketMS": 171.5,
+            "deltaMS": -94.5,
+            "reductionPercent": 55.10204081632653
+          }
+        ],
+        "medianPairedReductionPercent": 53.93939393939394,
+        "improvementMeasured": true,
+        "decision": "meaningful improvement in all five matched brackets",
+        "diagnosticAdvanceMS": {
+          "control": 220,
+          "candidate": 154
+        },
+        "diagnosticScopesMS": {
+          "control": {
+            "property.ph": 119.0,
+            "property.sat": 6.0,
+            "property.stateMVU": 2.0,
+            "evaluate": 149.0,
+            "record": 5.0,
+            "residual": 195.0,
+            "stage": 211.0,
+            "trial": 214.0
+          },
+          "candidate": {
+            "property.ph": 10.0,
+            "property.sat": 2.0,
+            "property.stateMVU": 2.0,
+            "evaluate": 32.0,
+            "record": 2.0,
+            "residual": 114.0,
+            "stage": 139.0,
+            "trial": 146.0
+          }
+        }
+      },
+      "warm": {
+        "values": {
+          "control": {
+            "advanceMS": {
+              "median": 597.0,
+              "min": 564,
+              "max": 617,
+              "stdev": 20.83906587797703,
+              "samples": [
+                570,
+                601,
+                617,
+                580,
+                612,
+                564,
+                570,
+                593,
+                614,
+                613
+              ]
+            },
+            "initializationMS": {
+              "median": 7.0,
+              "min": 5,
+              "max": 9,
+              "stdev": 1.1737877907772674,
+              "samples": [
+                7,
+                9,
+                7,
+                7,
+                5,
+                5,
+                7,
+                6,
+                6,
+                7
+              ]
+            },
+            "tableAndFactoryConstructionMS": {
+              "median": 46.5,
+              "min": 43,
+              "max": 68,
+              "stdev": 7.208020224413605,
+              "samples": [
+                53,
+                46,
+                50,
+                43,
+                45,
+                47,
+                46,
+                68,
+                45,
+                49
+              ]
+            },
+            "extraRecordMS": {
+              "median": 1.0,
+              "min": 1,
+              "max": 2,
+              "stdev": 0.48304589153964794,
+              "samples": [
+                1,
+                1,
+                2,
+                2,
+                1,
+                1,
+                2,
+                1,
+                1,
+                1
+              ]
+            },
+            "roundtripMS": {
+              "median": 1092.9092905000743,
+              "min": 1038.3819329999824,
+              "max": 1132.9277719999027,
+              "stdev": 29.519844436701494,
+              "samples": [
+                1100.974332000078,
+                1092.8055990000303,
+                1126.4724729999216,
+                1038.3819329999824,
+                1093.0129820001184,
+                1062.9777990000093,
+                1085.4198030001498,
+                1132.9277719999027,
+                1126.5579789999265,
+                1087.8389219999463
+              ]
+            }
+          },
+          "candidate": {
+            "advanceMS": {
+              "median": 373,
+              "min": 347,
+              "max": 404,
+              "stdev": 25.323901753086943,
+              "samples": [
+                404,
+                373,
+                350,
+                347,
+                393
+              ]
+            },
+            "initializationMS": {
+              "median": 6,
+              "min": 4,
+              "max": 7,
+              "stdev": 1.3038404810405297,
+              "samples": [
+                7,
+                4,
+                5,
+                7,
+                6
+              ]
+            },
+            "tableAndFactoryConstructionMS": {
+              "median": 44,
+              "min": 42,
+              "max": 51,
+              "stdev": 3.4351128074635335,
+              "samples": [
+                44,
+                46,
+                42,
+                51,
+                44
+              ]
+            },
+            "extraRecordMS": {
+              "median": 2,
+              "min": 1,
+              "max": 3,
+              "stdev": 1.0,
+              "samples": [
+                1,
+                3,
+                1,
+                2,
+                3
+              ]
+            },
+            "roundtripMS": {
+              "median": 892.0376200001101,
+              "min": 830.772960999866,
+              "max": 913.8478329998634,
+              "stdev": 34.0851672224847,
+              "samples": [
+                892.5532490000023,
+                892.0376200001101,
+                830.772960999866,
+                850.7406229998651,
+                913.8478329998634
+              ]
+            }
+          }
+        },
+        "paired": [
+          {
+            "round": 0,
+            "beforeMS": 570,
+            "candidateMS": 404,
+            "afterMS": 601,
+            "bracketMS": 585.5,
+            "deltaMS": -181.5,
+            "reductionPercent": 30.999146029035014
+          },
+          {
+            "round": 1,
+            "beforeMS": 617,
+            "candidateMS": 373,
+            "afterMS": 580,
+            "bracketMS": 598.5,
+            "deltaMS": -225.5,
+            "reductionPercent": 37.677527151211365
+          },
+          {
+            "round": 2,
+            "beforeMS": 612,
+            "candidateMS": 350,
+            "afterMS": 564,
+            "bracketMS": 588.0,
+            "deltaMS": -238.0,
+            "reductionPercent": 40.476190476190474
+          },
+          {
+            "round": 3,
+            "beforeMS": 570,
+            "candidateMS": 347,
+            "afterMS": 593,
+            "bracketMS": 581.5,
+            "deltaMS": -234.5,
+            "reductionPercent": 40.32674118658642
+          },
+          {
+            "round": 4,
+            "beforeMS": 614,
+            "candidateMS": 393,
+            "afterMS": 613,
+            "bracketMS": 613.5,
+            "deltaMS": -220.5,
+            "reductionPercent": 35.94132029339853
+          }
+        ],
+        "medianPairedReductionPercent": 37.677527151211365,
+        "improvementMeasured": true,
+        "decision": "meaningful improvement in all five matched brackets",
+        "diagnosticAdvanceMS": {
+          "control": 773,
+          "candidate": 505
+        },
+        "diagnosticScopesMS": {
+          "control": {
+            "property.ph": 522.0,
+            "property.sat": 17.0,
+            "property.stateMVU": 44.0,
+            "evaluate": 376.0,
+            "record": 7.0,
+            "residual": 659.0,
+            "stage": 712.0,
+            "trial": 748.0
+          },
+          "candidate": {
+            "property.ph": 277.0,
+            "property.sat": 15.0,
+            "property.stateMVU": 38.0,
+            "evaluate": 54.0,
+            "record": 5.0,
+            "residual": 397.0,
+            "stage": 448.0,
+            "trial": 483.0
+          }
+        }
+      }
+    },
+    "heartbeat": {
+      "medianMS": 12,
+      "maxMS": 69,
+      "samples": 1741
+    },
+    "heapBefore": null,
+    "heapAfter": null,
+    "version": "26.5",
+    "lifecycle": {
+      "freshWorkerPerRequest": true,
+      "terminatedAfterEachResponse": true,
+      "sessions": 30,
+      "restartExactByParity": true,
+      "retainedCacheReferences": false,
+      "memoryLimit": "main-page heap only; worker leak freedom not inferred"
+    }
+  }
+}
