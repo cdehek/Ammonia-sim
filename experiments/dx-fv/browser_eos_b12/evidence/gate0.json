@@ -1,0 +1,12 @@
+{
+  "startingBranch": "research/b11-portable-ipad-preview-20261019",
+  "startingHEAD": "909de1579051bfadca0e282adf93eaedc0e24b9c",
+  "startingWorkingTreeClean": true,
+  "newBranch": "research/b12-private-https-ipad-preview-20261019",
+  "bootstrap": "Workspace contained no checkout. Read-only clone of B11 was necessary before local provenance checks. Original-workstation commit was fetched by exact SHA with no ref/FETCH_HEAD update because it is outside B11 ancestry.",
+  "gate0RemoteReads": "Repository bootstrap, remote heads/tags and PR3 metadata only; no remote mutation or Cloudflare account action.",
+  "requestedB11ReportsRead": ["ENGINEERING_REPORT.md", "PREVIEW_HOSTING_HANDOFF.md", "SERVER_AND_ORIGIN_COMPATIBILITY.md", "ASSET_MANIFEST.md", "SOURCE_AND_BUILD_AUDIT.md", "PHYSICAL_IPAD_REVIEW.md", "SCIENTIFIC_PARITY_MATRIX.md", "TRAINING_EXPORT_PARITY.md", "BROWSER_PERFORMANCE.md"],
+  "cloudflareIntegrationAssumptions": "No account/project mapping is present in the audited B11 deployment receipts. Existing external Cloudflare integration remains unobserved and must not be modified. Repository push filters exclude B12; no new workflow or Git integration is introduced.",
+  "designBeforeCloudflareAction": true,
+  "ownerAccessIdentityApproved": false
+}
