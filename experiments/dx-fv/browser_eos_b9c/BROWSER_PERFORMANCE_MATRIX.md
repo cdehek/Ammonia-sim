@@ -38,3 +38,28 @@ may lack performance.memory. RSS double-counts shared pages and does not identif
 live cache bytes. All workers terminate and fresh sessions restart exactly.
 Two boundary result objects per active stage are the only new retained values;
 no evidence establishes long-duration leak freedom or operator readiness.
+
+| Engine | Fixture | Mode | Owned table/factory ms | Create + initial record ms | Extra record sum ms | Research request RTT ms |
+|---|---|---|---|---|---|---|
+| chromium | cold | control | 18.70 | 3.30 | 0.40 | 400.35 |
+| chromium | cold | candidate | 19.10 | 3.00 | 0.60 | 343.74 |
+| chromium | warm | control | 18.55 | 5.45 | 1.65 | 986.62 |
+| chromium | warm | candidate | 18.30 | 5.00 | 1.10 | 815.40 |
+| webkit | cold | control | 46.00 | 4.00 | 1.00 | 422.38 |
+| webkit | cold | candidate | 47.00 | 4.00 | 1.00 | 354.81 |
+| webkit | warm | control | 46.50 | 7.00 | 1.00 | 1092.91 |
+| webkit | warm | candidate | 44.00 | 6.00 | 2.00 | 892.04 |
+
+These are separate per-mode medians, with fresh worker/loader/model sessions;
+"warm" means the warm scientific fixture, not a warm OS/JIT cache. The ownership
+setup is outside model-initialization and advance timers in BOTH modes.
+
+| Engine | Page heap before | Page heap after | Process RSS before KiB | Process RSS after KiB | Heartbeat median ms | Heartbeat max ms |
+|---|---|---|---|---|---|---|
+| chromium | {'used': 10000000, 'total': 10000000} | {'used': 10000000, 'total': 10000000} | 385400 | 521964 | 10.00 | 15.30 |
+| webkit | None | None | 299996 | 597068 | 12.00 | 69.00 |
+
+Memory/heartbeat span all 30 timing requests per engine, both modes interleaved.
+They cannot attribute retained bytes to one mode or prove leak freedom. Process
+RSS includes shared pages; page heap excludes worker-owned heaps. No operator
+input UI or communication-only microbenchmark is claimed.

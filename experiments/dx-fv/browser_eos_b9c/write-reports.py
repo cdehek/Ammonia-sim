@@ -416,4 +416,13 @@ with (E/'matched-performance-samples.csv').open('w',newline='') as f:
    for r in v['paired']:w.writerow([engine,fixture,r['round'],r['beforeMS'],r['candidateMS'],r['afterMS'],r['reductionPercent']])
 index={engine:{fixture:{'artifact':f'parity-{engine}.json.gz','control':'runs[fixture='+fixture+',mode=control].evidence','candidate':'runs[fixture='+fixture+',mode=candidate].evidence','scienceSHA256':v['scienceSHA256'],'actualCounts':v['property']} for fixture,v in e['fixtures'].items()} for engine,e in q['engines'].items()}
 (E/'property-call-ledger-index.json').write_text(json.dumps(index,indent=2)+'\n')
+initial=[];memory=[]
+for engine,e in p.items():
+ raw=read('timing-'+engine+'.json.gz')
+ memory.append([engine,str(raw['heapBefore']),str(raw['heapAfter']),raw['processMemoryBefore']['sumRSSKiB'],raw['processMemoryAfter']['sumRSSKiB'],f"{e['heartbeat']['medianMS']:.2f}",f"{e['heartbeat']['maxMS']:.2f}"])
+ for fixture,v in e['fixtures'].items():
+  for mode,stats in v['values'].items():initial.append([engine,fixture,mode]+[f"{stats[k]['median']:.2f}" for k in ['tableAndFactoryConstructionMS','initializationMS','extraRecordMS','roundtripMS']])
+with (B/'BROWSER_PERFORMANCE_MATRIX.md').open('a') as f:
+ f.write('\n'+table(['Engine','Fixture','Mode','Owned table/factory ms','Create + initial record ms','Extra record sum ms','Research request RTT ms'],initial)+'\n\nThese are separate per-mode medians, with fresh worker/loader/model sessions;\n"warm" means the warm scientific fixture, not a warm OS/JIT cache. The ownership\nsetup is outside model-initialization and advance timers in BOTH modes.\n\n')
+ f.write(table(['Engine','Page heap before','Page heap after','Process RSS before KiB','Process RSS after KiB','Heartbeat median ms','Heartbeat max ms'],memory)+'\n\nMemory/heartbeat span all 30 timing requests per engine, both modes interleaved.\nThey cannot attribute retained bytes to one mode or prove leak freedom. Process\nRSS includes shared pages; page heap excludes worker-owned heaps. No operator\ninput UI or communication-only microbenchmark is claimed.\n')
 print(status,'; performance improvement:',perf)
