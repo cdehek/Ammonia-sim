@@ -1,0 +1,7 @@
+# Exact workstation derivation
+
+Pinned source: `262b6092b2ed694073ad9ffd41265f44dd0b6ca0`, `feature/operator-workstation-bottom-panel-20261014`. The complete Git blob/SHA-256 inventory is `evidence/operator-source-manifest.json`. Baseline build receipt: `evidence/baseline-build.json`; pinned index is 1,736,280 bytes, SHA-256 `0485cdf94b22101f976e365d6e5099bb3f8e15669914d5c12038e3eb37147945`.
+
+The original build runs only in an ignored B10/.runtime archive. Its write to index.html is confined to that archive. No original branch or checkout file is edited. The B10 builder will consume Git objects, verify the manifest and exact original build, insert a single tool registry entry plus mounting/bootstrap presentation, and check reverse recovery. Original scripts, data, scientific inputs, training, scoring, Assist and UI functions remain literal pinned bytes. The generated artifact and reversible transformation evidence are B10-owned. Scientific sidecar modules require the repository's local HTTP origin; this is not a self-contained offline delivery.
+
+Inspected actual sources include app.template.html, tools/build.py, index.html, package.json, operator-console.js/css, storage-app.js, storage-engine.js, storage-history.js, storage-trends.js, live-schematic.js, equipment-profiles.js, training-app.js/engine.js and operator-assist-app.js/operator-assist.js. Existing closures own storage state and training. The only integration interface is presentation registration; no original model API is invoked by the A2 adapter.

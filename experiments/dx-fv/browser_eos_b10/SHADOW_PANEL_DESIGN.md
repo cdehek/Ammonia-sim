@@ -1,0 +1,9 @@
+# A2 research console tool
+
+The original schematic stays primary. A new horizontally reachable console link opens the deliberately separate A2 research region using the existing console's partial/expanded/collapsed behavior. Shadow DOM confines panel style, local control IDs and table overflow. No original control is cloned or moved by B10 code. Existing typography, muted green/slate instrumentation, 44-pixel controls, tabular numerals and focus rings guide the addition. The panel is nonmodal and uses the original console's focus and Escape behavior.
+
+Header: **A2 — Five-Section Evaporator Research**, full accepted A2 and B9C identities, table-backed research badge, independent session status and accepted clock. A compact boundary statement says this is not a complete plant, has uncalibrated conductance, and offers .001 s only. It explicitly marks compressor/condenser/receiver/actuator/protection readings unavailable. Terminal wet is a bulk observation, never compressor safety evidence.
+
+Cold/warm controls explicitly start a new independent A2 session. Advance states the actual next original interval. Latest, diagnostics, stop and dispose are bounded actions. Units are local display choices. A five-row section table includes pressure, refrigerant temperature, M/U, phase, nullable quality, bulk superheat and wet. Further cards show coil totals, signed flows, heat exchange, conservation and numerical diagnostics. Eleven thermal-node readings and a small accepted-state history retain original timestamps. Wide tables scroll inside the panel rather than widening the workstation.
+
+A refusal changes the status and marks previous readings stale. Displayed accepted time, known worker time and failed request interval/stop reason remain distinct. Initialization clears old-session DOM immediately. No animation advances a scientific clock or fabricates changing gauges. A failed/absent backend is visible and leaves original operation available.
