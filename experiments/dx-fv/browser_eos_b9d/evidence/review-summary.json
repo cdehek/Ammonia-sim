@@ -1,0 +1,452 @@
+{
+  "chromium": {
+    "version": "151.0.7922.34",
+    "fixtures": {
+      "cold": {
+        "exact": true,
+        "savedB9CMatch": true,
+        "hash": "5d4a30c486acf7be383a18359ae150d00f7002b8fffa1003250ef4bdac4e3815",
+        "work": {
+          "residuals": 2914,
+          "corrections": 130,
+          "accepted": 16,
+          "rejected": 1
+        }
+      },
+      "warm": {
+        "exact": true,
+        "savedB9CMatch": true,
+        "hash": "0ed51255b5e2dba674cd407770801743a4a6fce3fcb156cafd64cadda3187d12",
+        "work": {
+          "residuals": 7710,
+          "corrections": 345,
+          "accepted": 34,
+          "rejected": 3
+        }
+      }
+    },
+    "cases": [
+      {
+        "name": "flow-reversal",
+        "exact": true,
+        "stop": null
+      },
+      {
+        "name": "scheduled-boundary",
+        "exact": true,
+        "stop": null
+      },
+      {
+        "name": "manual-boundary",
+        "exact": true,
+        "stop": null
+      },
+      {
+        "name": "saturated-0",
+        "exact": true,
+        "stop": null
+      },
+      {
+        "name": "saturated-1",
+        "exact": true,
+        "stop": null
+      },
+      {
+        "name": "saturated-0.4",
+        "exact": true,
+        "stop": null
+      },
+      {
+        "name": "superheated-outlet",
+        "exact": true,
+        "stop": null
+      },
+      {
+        "name": "thermal-200",
+        "exact": true,
+        "stop": {
+          "kind": "domain",
+          "seconds": 0.0001,
+          "attemptedStepSeconds": 1.52587890625e-09,
+          "message": "Thermal trajectory points outward at the supported boundary.",
+          "evidence": {
+            "originalCause": "Thermal trajectory points outward at the supported boundary.",
+            "nonlinearResidual": null,
+            "trial": {
+              "source": "thermal",
+              "node": "air",
+              "stage": "initial-direction",
+              "temperatureK": 200.0,
+              "rateKS": -0.23212627669452182
+            },
+            "confirmed": true,
+            "source": "thermal",
+            "node": "air",
+            "confirmation": "exact-boundary-outward-direction",
+            "temperatureK": 200.0,
+            "rateKS": -0.23212627669452182
+          }
+        }
+      },
+      {
+        "name": "thermal-400",
+        "exact": true,
+        "stop": {
+          "kind": "domain",
+          "seconds": 0.0001,
+          "attemptedStepSeconds": 1.52587890625e-09,
+          "message": "Thermal trajectory points outward at the supported boundary.",
+          "evidence": {
+            "originalCause": "Thermal trajectory points outward at the supported boundary.",
+            "nonlinearResidual": null,
+            "trial": {
+              "source": "thermal",
+              "node": "air",
+              "stage": "initial-direction",
+              "temperatureK": 400.0,
+              "rateKS": 0.23212627669452182
+            },
+            "confirmed": true,
+            "source": "thermal",
+            "node": "air",
+            "confirmation": "exact-boundary-outward-direction",
+            "temperatureK": 400.0,
+            "rateKS": 0.23212627669452182
+          }
+        }
+      },
+      {
+        "name": "numerical-stop",
+        "exact": true,
+        "stop": {
+          "kind": "solver",
+          "seconds": 4.8828125e-07,
+          "message": "Coupled attempt budget exhausted.",
+          "evidence": {
+            "maxAttempts": 20.0
+          }
+        }
+      },
+      {
+        "name": "inlet-phase-0",
+        "exact": true,
+        "stop": null
+      },
+      {
+        "name": "outlet-phase-0",
+        "exact": true,
+        "stop": null
+      },
+      {
+        "name": "inlet-phase-1",
+        "exact": true,
+        "stop": null
+      },
+      {
+        "name": "outlet-phase-1",
+        "exact": true,
+        "stop": null
+      },
+      {
+        "name": "inlet-phase-0.25",
+        "exact": true,
+        "stop": null
+      },
+      {
+        "name": "outlet-phase-0.25",
+        "exact": true,
+        "stop": null
+      },
+      {
+        "name": "inlet-phase-0.75",
+        "exact": true,
+        "stop": null
+      },
+      {
+        "name": "outlet-phase-0.75",
+        "exact": true,
+        "stop": null
+      },
+      {
+        "name": "superheated-inlet",
+        "exact": true,
+        "stop": null
+      },
+      {
+        "name": "manual-inlet-only",
+        "exact": true,
+        "stop": null
+      },
+      {
+        "name": "manual-outlet-only",
+        "exact": true,
+        "stop": null
+      },
+      {
+        "name": "scheduled-two-boundaries",
+        "exact": true,
+        "stop": null
+      },
+      {
+        "name": "strict-valid-boundary-0.3",
+        "exact": true,
+        "stop": null
+      },
+      {
+        "name": "strict-valid-boundary-35",
+        "exact": true,
+        "stop": null
+      }
+    ],
+    "hardening": {
+      "passed": true,
+      "recursivelyFrozenObjects": 38335,
+      "refused": [
+        "unowned-table",
+        "injected",
+        "proxy",
+        "other-registry",
+        "null"
+      ],
+      "mutationRefused": 2,
+      "exactKeys": true,
+      "signedZero": true,
+      "nonfiniteRefusal": true,
+      "noFailedCaching": true,
+      "bothSlotsCleared": true,
+      "newClosureIndependent": true,
+      "mechanicalOnly": true,
+      "assumptions": [
+        "trusted unmodified registry/JS intrinsics",
+        "no third-party callbacks in synchronous stage",
+        "only this worker owns its loader; arbitrary hostile module mutation is outside eligibility contract"
+      ]
+    },
+    "C1": true
+  },
+  "webkit": {
+    "version": "26.5",
+    "fixtures": {
+      "cold": {
+        "exact": true,
+        "savedB9CMatch": true,
+        "hash": "2f519dcb7a0c2f8d975a255c95abdcd3468cf31edda134a14574b8350db541bc",
+        "work": {
+          "residuals": 2914,
+          "corrections": 130,
+          "accepted": 16,
+          "rejected": 1
+        }
+      },
+      "warm": {
+        "exact": true,
+        "savedB9CMatch": true,
+        "hash": "619000e7e207573a8f332dbf0ceebb11b0f9407addc5a8fee0cd449fc1f6fd63",
+        "work": {
+          "residuals": 7710,
+          "corrections": 345,
+          "accepted": 34,
+          "rejected": 3
+        }
+      }
+    },
+    "cases": [
+      {
+        "name": "flow-reversal",
+        "exact": true,
+        "stop": null
+      },
+      {
+        "name": "scheduled-boundary",
+        "exact": true,
+        "stop": null
+      },
+      {
+        "name": "manual-boundary",
+        "exact": true,
+        "stop": null
+      },
+      {
+        "name": "saturated-0",
+        "exact": true,
+        "stop": null
+      },
+      {
+        "name": "saturated-1",
+        "exact": true,
+        "stop": null
+      },
+      {
+        "name": "saturated-0.4",
+        "exact": true,
+        "stop": null
+      },
+      {
+        "name": "superheated-outlet",
+        "exact": true,
+        "stop": null
+      },
+      {
+        "name": "thermal-200",
+        "exact": true,
+        "stop": {
+          "kind": "domain",
+          "seconds": 0.0001,
+          "attemptedStepSeconds": 1.52587890625e-09,
+          "message": "Thermal trajectory points outward at the supported boundary.",
+          "evidence": {
+            "originalCause": "Thermal trajectory points outward at the supported boundary.",
+            "nonlinearResidual": null,
+            "trial": {
+              "source": "thermal",
+              "node": "air",
+              "stage": "initial-direction",
+              "temperatureK": 200.0,
+              "rateKS": -0.23212627669452182
+            },
+            "confirmed": true,
+            "source": "thermal",
+            "node": "air",
+            "confirmation": "exact-boundary-outward-direction",
+            "temperatureK": 200.0,
+            "rateKS": -0.23212627669452182
+          }
+        }
+      },
+      {
+        "name": "thermal-400",
+        "exact": true,
+        "stop": {
+          "kind": "domain",
+          "seconds": 0.0001,
+          "attemptedStepSeconds": 1.52587890625e-09,
+          "message": "Thermal trajectory points outward at the supported boundary.",
+          "evidence": {
+            "originalCause": "Thermal trajectory points outward at the supported boundary.",
+            "nonlinearResidual": null,
+            "trial": {
+              "source": "thermal",
+              "node": "air",
+              "stage": "initial-direction",
+              "temperatureK": 400.0,
+              "rateKS": 0.23212627669452182
+            },
+            "confirmed": true,
+            "source": "thermal",
+            "node": "air",
+            "confirmation": "exact-boundary-outward-direction",
+            "temperatureK": 400.0,
+            "rateKS": 0.23212627669452182
+          }
+        }
+      },
+      {
+        "name": "numerical-stop",
+        "exact": true,
+        "stop": {
+          "kind": "solver",
+          "seconds": 4.8828125e-07,
+          "message": "Coupled attempt budget exhausted.",
+          "evidence": {
+            "maxAttempts": 20.0
+          }
+        }
+      },
+      {
+        "name": "inlet-phase-0",
+        "exact": true,
+        "stop": null
+      },
+      {
+        "name": "outlet-phase-0",
+        "exact": true,
+        "stop": null
+      },
+      {
+        "name": "inlet-phase-1",
+        "exact": true,
+        "stop": null
+      },
+      {
+        "name": "outlet-phase-1",
+        "exact": true,
+        "stop": null
+      },
+      {
+        "name": "inlet-phase-0.25",
+        "exact": true,
+        "stop": null
+      },
+      {
+        "name": "outlet-phase-0.25",
+        "exact": true,
+        "stop": null
+      },
+      {
+        "name": "inlet-phase-0.75",
+        "exact": true,
+        "stop": null
+      },
+      {
+        "name": "outlet-phase-0.75",
+        "exact": true,
+        "stop": null
+      },
+      {
+        "name": "superheated-inlet",
+        "exact": true,
+        "stop": null
+      },
+      {
+        "name": "manual-inlet-only",
+        "exact": true,
+        "stop": null
+      },
+      {
+        "name": "manual-outlet-only",
+        "exact": true,
+        "stop": null
+      },
+      {
+        "name": "scheduled-two-boundaries",
+        "exact": true,
+        "stop": null
+      },
+      {
+        "name": "strict-valid-boundary-0.3",
+        "exact": true,
+        "stop": null
+      },
+      {
+        "name": "strict-valid-boundary-35",
+        "exact": true,
+        "stop": null
+      }
+    ],
+    "hardening": {
+      "passed": true,
+      "recursivelyFrozenObjects": 38335,
+      "refused": [
+        "unowned-table",
+        "injected",
+        "proxy",
+        "other-registry",
+        "null"
+      ],
+      "mutationRefused": 2,
+      "exactKeys": true,
+      "signedZero": true,
+      "nonfiniteRefusal": true,
+      "noFailedCaching": true,
+      "bothSlotsCleared": true,
+      "newClosureIndependent": true,
+      "mechanicalOnly": true,
+      "assumptions": [
+        "trusted unmodified registry/JS intrinsics",
+        "no third-party callbacks in synchronous stage",
+        "only this worker owns its loader; arbitrary hostile module mutation is outside eligibility contract"
+      ]
+    },
+    "C1": true
+  }
+}
