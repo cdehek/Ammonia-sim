@@ -15,6 +15,8 @@ python3 experiments/dx-fv/browser_eos_b9d/run-review.py
 python3 experiments/dx-fv/browser_eos_b9d/summarize-review.py
 # Run the shadow browser validation only when evidence/gates-1-4.json authorizes it.
 python3 experiments/dx-fv/browser_eos_b9d/run-shadow.py
+python3 experiments/dx-fv/browser_eos_b9d/run-performance.py
+python3 experiments/dx-fv/browser_eos_b9d/write-reports.py
 python3 -m http.server 8000 --bind 127.0.0.1
 ```
 

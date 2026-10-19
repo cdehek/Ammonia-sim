@@ -1,0 +1,1039 @@
+{
+  "browser": "webkit",
+  "version": "26.5",
+  "rounds": [
+    {
+      "round": 0,
+      "fixture": "cold",
+      "samples": [
+        {
+          "mode": "control",
+          "computeMS": 166,
+          "timing": [
+            {
+              "duration": 0.0001,
+              "advanceMS": 75,
+              "recordMS": 1
+            },
+            {
+              "duration": 0.0004,
+              "advanceMS": 67,
+              "recordMS": 0
+            },
+            {
+              "duration": 0.0005,
+              "advanceMS": 24,
+              "recordMS": 0
+            }
+          ],
+          "scienceHash": "2f519dcb7a0c2f8d975a255c95abdcd3468cf31edda134a14574b8350db541bc"
+        },
+        {
+          "mode": "candidate",
+          "computeMS": 67,
+          "timing": [
+            {
+              "duration": 0.0001,
+              "advanceMS": 40,
+              "recordMS": 2
+            },
+            {
+              "duration": 0.0004,
+              "advanceMS": 19,
+              "recordMS": 0
+            },
+            {
+              "duration": 0.0005,
+              "advanceMS": 8,
+              "recordMS": 0
+            }
+          ],
+          "scienceHash": "2f519dcb7a0c2f8d975a255c95abdcd3468cf31edda134a14574b8350db541bc"
+        },
+        {
+          "mode": "shadow",
+          "computeMS": 97,
+          "metrics": [
+            {
+              "type": "initialize",
+              "timing": {
+                "assetVerificationMS": 13,
+                "importAndOwnedTableMS": 67,
+                "createAndRecordMS": 6,
+                "serviceMS": 86
+              },
+              "delivery": {
+                "roundtripMS": 98,
+                "transferAndDispatchMS": 0
+              }
+            },
+            {
+              "type": "advance",
+              "timing": {
+                "advanceMS": 39,
+                "projectionMS": 0,
+                "serviceMS": 40
+              },
+              "delivery": {
+                "roundtripMS": 41,
+                "transferAndDispatchMS": 0
+              }
+            },
+            {
+              "type": "advance",
+              "timing": {
+                "advanceMS": 49,
+                "projectionMS": 0,
+                "serviceMS": 49
+              },
+              "delivery": {
+                "roundtripMS": 52,
+                "transferAndDispatchMS": 0
+              }
+            },
+            {
+              "type": "advance",
+              "timing": {
+                "advanceMS": 9,
+                "projectionMS": 0,
+                "serviceMS": 10
+              },
+              "delivery": {
+                "roundtripMS": 12,
+                "transferAndDispatchMS": 1
+              }
+            },
+            {
+              "type": "testDetail",
+              "timing": {
+                "serviceMS": 8
+              },
+              "delivery": {
+                "roundtripMS": 28,
+                "transferAndDispatchMS": 10
+              }
+            },
+            {
+              "type": "dispose",
+              "timing": {
+                "serviceMS": 0
+              },
+              "delivery": {
+                "roundtripMS": 0,
+                "transferAndDispatchMS": 0
+              }
+            }
+          ],
+          "exactOriginalFinalCheckpoint": true,
+          "exactOriginalAllAttemptDiagnostics": true,
+          "testOnlyPreAdvanceCopyOutsideTimer": true
+        },
+        {
+          "mode": "candidate",
+          "computeMS": 90,
+          "timing": [
+            {
+              "duration": 0.0001,
+              "advanceMS": 52,
+              "recordMS": 0
+            },
+            {
+              "duration": 0.0004,
+              "advanceMS": 26,
+              "recordMS": 0
+            },
+            {
+              "duration": 0.0005,
+              "advanceMS": 12,
+              "recordMS": 0
+            }
+          ],
+          "scienceHash": "2f519dcb7a0c2f8d975a255c95abdcd3468cf31edda134a14574b8350db541bc"
+        },
+        {
+          "mode": "control",
+          "computeMS": 153,
+          "timing": [
+            {
+              "duration": 0.0001,
+              "advanceMS": 76,
+              "recordMS": 0
+            },
+            {
+              "duration": 0.0004,
+              "advanceMS": 50,
+              "recordMS": 0
+            },
+            {
+              "duration": 0.0005,
+              "advanceMS": 27,
+              "recordMS": 0
+            }
+          ],
+          "scienceHash": "2f519dcb7a0c2f8d975a255c95abdcd3468cf31edda134a14574b8350db541bc"
+        }
+      ]
+    },
+    {
+      "round": 0,
+      "fixture": "warm",
+      "samples": [
+        {
+          "mode": "control",
+          "computeMS": 581,
+          "timing": [
+            {
+              "duration": 0.0001,
+              "advanceMS": 285,
+              "recordMS": 0
+            },
+            {
+              "duration": 0.0004,
+              "advanceMS": 158,
+              "recordMS": 1
+            },
+            {
+              "duration": 0.0005,
+              "advanceMS": 138,
+              "recordMS": 1
+            }
+          ],
+          "scienceHash": "619000e7e207573a8f332dbf0ceebb11b0f9407addc5a8fee0cd449fc1f6fd63"
+        },
+        {
+          "mode": "candidate",
+          "computeMS": 379,
+          "timing": [
+            {
+              "duration": 0.0001,
+              "advanceMS": 189,
+              "recordMS": 1
+            },
+            {
+              "duration": 0.0004,
+              "advanceMS": 103,
+              "recordMS": 0
+            },
+            {
+              "duration": 0.0005,
+              "advanceMS": 87,
+              "recordMS": 1
+            }
+          ],
+          "scienceHash": "619000e7e207573a8f332dbf0ceebb11b0f9407addc5a8fee0cd449fc1f6fd63"
+        },
+        {
+          "mode": "shadow",
+          "computeMS": 370,
+          "metrics": [
+            {
+              "type": "initialize",
+              "timing": {
+                "assetVerificationMS": 12,
+                "importAndOwnedTableMS": 67,
+                "createAndRecordMS": 9,
+                "serviceMS": 89
+              },
+              "delivery": {
+                "roundtripMS": 100,
+                "transferAndDispatchMS": 0
+              }
+            },
+            {
+              "type": "advance",
+              "timing": {
+                "advanceMS": 186,
+                "projectionMS": 0,
+                "serviceMS": 187
+              },
+              "delivery": {
+                "roundtripMS": 187,
+                "transferAndDispatchMS": 0
+              }
+            },
+            {
+              "type": "advance",
+              "timing": {
+                "advanceMS": 101,
+                "projectionMS": 0,
+                "serviceMS": 101
+              },
+              "delivery": {
+                "roundtripMS": 102,
+                "transferAndDispatchMS": 0
+              }
+            },
+            {
+              "type": "advance",
+              "timing": {
+                "advanceMS": 83,
+                "projectionMS": 0,
+                "serviceMS": 83
+              },
+              "delivery": {
+                "roundtripMS": 87,
+                "transferAndDispatchMS": 0
+              }
+            },
+            {
+              "type": "testDetail",
+              "timing": {
+                "serviceMS": 31
+              },
+              "delivery": {
+                "roundtripMS": 70,
+                "transferAndDispatchMS": 17
+              }
+            },
+            {
+              "type": "dispose",
+              "timing": {
+                "serviceMS": 0
+              },
+              "delivery": {
+                "roundtripMS": 2,
+                "transferAndDispatchMS": 1
+              }
+            }
+          ],
+          "exactOriginalFinalCheckpoint": true,
+          "exactOriginalAllAttemptDiagnostics": true,
+          "testOnlyPreAdvanceCopyOutsideTimer": true
+        },
+        {
+          "mode": "candidate",
+          "computeMS": 337,
+          "timing": [
+            {
+              "duration": 0.0001,
+              "advanceMS": 167,
+              "recordMS": 0
+            },
+            {
+              "duration": 0.0004,
+              "advanceMS": 91,
+              "recordMS": 0
+            },
+            {
+              "duration": 0.0005,
+              "advanceMS": 79,
+              "recordMS": 0
+            }
+          ],
+          "scienceHash": "619000e7e207573a8f332dbf0ceebb11b0f9407addc5a8fee0cd449fc1f6fd63"
+        },
+        {
+          "mode": "control",
+          "computeMS": 576,
+          "timing": [
+            {
+              "duration": 0.0001,
+              "advanceMS": 261,
+              "recordMS": 1
+            },
+            {
+              "duration": 0.0004,
+              "advanceMS": 172,
+              "recordMS": 1
+            },
+            {
+              "duration": 0.0005,
+              "advanceMS": 143,
+              "recordMS": 0
+            }
+          ],
+          "scienceHash": "619000e7e207573a8f332dbf0ceebb11b0f9407addc5a8fee0cd449fc1f6fd63"
+        }
+      ]
+    },
+    {
+      "round": 1,
+      "fixture": "warm",
+      "samples": [
+        {
+          "mode": "control",
+          "computeMS": 613,
+          "timing": [
+            {
+              "duration": 0.0001,
+              "advanceMS": 290,
+              "recordMS": 1
+            },
+            {
+              "duration": 0.0004,
+              "advanceMS": 174,
+              "recordMS": 0
+            },
+            {
+              "duration": 0.0005,
+              "advanceMS": 149,
+              "recordMS": 1
+            }
+          ],
+          "scienceHash": "619000e7e207573a8f332dbf0ceebb11b0f9407addc5a8fee0cd449fc1f6fd63"
+        },
+        {
+          "mode": "candidate",
+          "computeMS": 387,
+          "timing": [
+            {
+              "duration": 0.0001,
+              "advanceMS": 186,
+              "recordMS": 0
+            },
+            {
+              "duration": 0.0004,
+              "advanceMS": 117,
+              "recordMS": 0
+            },
+            {
+              "duration": 0.0005,
+              "advanceMS": 84,
+              "recordMS": 1
+            }
+          ],
+          "scienceHash": "619000e7e207573a8f332dbf0ceebb11b0f9407addc5a8fee0cd449fc1f6fd63"
+        },
+        {
+          "mode": "shadow",
+          "computeMS": 348,
+          "metrics": [
+            {
+              "type": "initialize",
+              "timing": {
+                "assetVerificationMS": 15,
+                "importAndOwnedTableMS": 64,
+                "createAndRecordMS": 7,
+                "serviceMS": 87
+              },
+              "delivery": {
+                "roundtripMS": 99,
+                "transferAndDispatchMS": 0
+              }
+            },
+            {
+              "type": "advance",
+              "timing": {
+                "advanceMS": 168,
+                "projectionMS": 0,
+                "serviceMS": 168
+              },
+              "delivery": {
+                "roundtripMS": 169,
+                "transferAndDispatchMS": 0
+              }
+            },
+            {
+              "type": "advance",
+              "timing": {
+                "advanceMS": 93,
+                "projectionMS": 0,
+                "serviceMS": 93
+              },
+              "delivery": {
+                "roundtripMS": 94,
+                "transferAndDispatchMS": 0
+              }
+            },
+            {
+              "type": "advance",
+              "timing": {
+                "advanceMS": 87,
+                "projectionMS": 0,
+                "serviceMS": 87
+              },
+              "delivery": {
+                "roundtripMS": 87,
+                "transferAndDispatchMS": 0
+              }
+            },
+            {
+              "type": "testDetail",
+              "timing": {
+                "serviceMS": 25
+              },
+              "delivery": {
+                "roundtripMS": 63,
+                "transferAndDispatchMS": 18
+              }
+            },
+            {
+              "type": "dispose",
+              "timing": {
+                "serviceMS": 0
+              },
+              "delivery": {
+                "roundtripMS": 0,
+                "transferAndDispatchMS": 0
+              }
+            }
+          ],
+          "exactOriginalFinalCheckpoint": true,
+          "exactOriginalAllAttemptDiagnostics": true,
+          "testOnlyPreAdvanceCopyOutsideTimer": true
+        },
+        {
+          "mode": "candidate",
+          "computeMS": 360,
+          "timing": [
+            {
+              "duration": 0.0001,
+              "advanceMS": 190,
+              "recordMS": 0
+            },
+            {
+              "duration": 0.0004,
+              "advanceMS": 93,
+              "recordMS": 0
+            },
+            {
+              "duration": 0.0005,
+              "advanceMS": 77,
+              "recordMS": 1
+            }
+          ],
+          "scienceHash": "619000e7e207573a8f332dbf0ceebb11b0f9407addc5a8fee0cd449fc1f6fd63"
+        },
+        {
+          "mode": "control",
+          "computeMS": 635,
+          "timing": [
+            {
+              "duration": 0.0001,
+              "advanceMS": 314,
+              "recordMS": 0
+            },
+            {
+              "duration": 0.0004,
+              "advanceMS": 178,
+              "recordMS": 1
+            },
+            {
+              "duration": 0.0005,
+              "advanceMS": 143,
+              "recordMS": 1
+            }
+          ],
+          "scienceHash": "619000e7e207573a8f332dbf0ceebb11b0f9407addc5a8fee0cd449fc1f6fd63"
+        }
+      ]
+    },
+    {
+      "round": 1,
+      "fixture": "cold",
+      "samples": [
+        {
+          "mode": "control",
+          "computeMS": 183,
+          "timing": [
+            {
+              "duration": 0.0001,
+              "advanceMS": 106,
+              "recordMS": 1
+            },
+            {
+              "duration": 0.0004,
+              "advanceMS": 53,
+              "recordMS": 0
+            },
+            {
+              "duration": 0.0005,
+              "advanceMS": 24,
+              "recordMS": 0
+            }
+          ],
+          "scienceHash": "2f519dcb7a0c2f8d975a255c95abdcd3468cf31edda134a14574b8350db541bc"
+        },
+        {
+          "mode": "candidate",
+          "computeMS": 92,
+          "timing": [
+            {
+              "duration": 0.0001,
+              "advanceMS": 51,
+              "recordMS": 1
+            },
+            {
+              "duration": 0.0004,
+              "advanceMS": 29,
+              "recordMS": 1
+            },
+            {
+              "duration": 0.0005,
+              "advanceMS": 12,
+              "recordMS": 0
+            }
+          ],
+          "scienceHash": "2f519dcb7a0c2f8d975a255c95abdcd3468cf31edda134a14574b8350db541bc"
+        },
+        {
+          "mode": "shadow",
+          "computeMS": 109,
+          "metrics": [
+            {
+              "type": "initialize",
+              "timing": {
+                "assetVerificationMS": 19,
+                "importAndOwnedTableMS": 69,
+                "createAndRecordMS": 7,
+                "serviceMS": 95
+              },
+              "delivery": {
+                "roundtripMS": 105,
+                "transferAndDispatchMS": 0
+              }
+            },
+            {
+              "type": "advance",
+              "timing": {
+                "advanceMS": 51,
+                "projectionMS": 0,
+                "serviceMS": 51
+              },
+              "delivery": {
+                "roundtripMS": 52,
+                "transferAndDispatchMS": -1
+              }
+            },
+            {
+              "type": "advance",
+              "timing": {
+                "advanceMS": 32,
+                "projectionMS": 0,
+                "serviceMS": 32
+              },
+              "delivery": {
+                "roundtripMS": 34,
+                "transferAndDispatchMS": 0
+              }
+            },
+            {
+              "type": "advance",
+              "timing": {
+                "advanceMS": 26,
+                "projectionMS": 0,
+                "serviceMS": 26
+              },
+              "delivery": {
+                "roundtripMS": 33,
+                "transferAndDispatchMS": 4
+              }
+            },
+            {
+              "type": "testDetail",
+              "timing": {
+                "serviceMS": 11
+              },
+              "delivery": {
+                "roundtripMS": 28,
+                "transferAndDispatchMS": 7
+              }
+            },
+            {
+              "type": "dispose",
+              "timing": {
+                "serviceMS": 0
+              },
+              "delivery": {
+                "roundtripMS": 0,
+                "transferAndDispatchMS": -1
+              }
+            }
+          ],
+          "exactOriginalFinalCheckpoint": true,
+          "exactOriginalAllAttemptDiagnostics": true,
+          "testOnlyPreAdvanceCopyOutsideTimer": true
+        },
+        {
+          "mode": "candidate",
+          "computeMS": 82,
+          "timing": [
+            {
+              "duration": 0.0001,
+              "advanceMS": 39,
+              "recordMS": 0
+            },
+            {
+              "duration": 0.0004,
+              "advanceMS": 21,
+              "recordMS": 0
+            },
+            {
+              "duration": 0.0005,
+              "advanceMS": 22,
+              "recordMS": 0
+            }
+          ],
+          "scienceHash": "2f519dcb7a0c2f8d975a255c95abdcd3468cf31edda134a14574b8350db541bc"
+        },
+        {
+          "mode": "control",
+          "computeMS": 206,
+          "timing": [
+            {
+              "duration": 0.0001,
+              "advanceMS": 125,
+              "recordMS": 1
+            },
+            {
+              "duration": 0.0004,
+              "advanceMS": 56,
+              "recordMS": 0
+            },
+            {
+              "duration": 0.0005,
+              "advanceMS": 25,
+              "recordMS": 1
+            }
+          ],
+          "scienceHash": "2f519dcb7a0c2f8d975a255c95abdcd3468cf31edda134a14574b8350db541bc"
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "fixture": "cold",
+      "samples": [
+        {
+          "mode": "control",
+          "computeMS": 178,
+          "timing": [
+            {
+              "duration": 0.0001,
+              "advanceMS": 99,
+              "recordMS": 0
+            },
+            {
+              "duration": 0.0004,
+              "advanceMS": 54,
+              "recordMS": 1
+            },
+            {
+              "duration": 0.0005,
+              "advanceMS": 25,
+              "recordMS": 0
+            }
+          ],
+          "scienceHash": "2f519dcb7a0c2f8d975a255c95abdcd3468cf31edda134a14574b8350db541bc"
+        },
+        {
+          "mode": "candidate",
+          "computeMS": 81,
+          "timing": [
+            {
+              "duration": 0.0001,
+              "advanceMS": 46,
+              "recordMS": 0
+            },
+            {
+              "duration": 0.0004,
+              "advanceMS": 25,
+              "recordMS": 1
+            },
+            {
+              "duration": 0.0005,
+              "advanceMS": 10,
+              "recordMS": 0
+            }
+          ],
+          "scienceHash": "2f519dcb7a0c2f8d975a255c95abdcd3468cf31edda134a14574b8350db541bc"
+        },
+        {
+          "mode": "shadow",
+          "computeMS": 131,
+          "metrics": [
+            {
+              "type": "initialize",
+              "timing": {
+                "assetVerificationMS": 16,
+                "importAndOwnedTableMS": 70,
+                "createAndRecordMS": 7,
+                "serviceMS": 93
+              },
+              "delivery": {
+                "roundtripMS": 103,
+                "transferAndDispatchMS": 0
+              }
+            },
+            {
+              "type": "advance",
+              "timing": {
+                "advanceMS": 63,
+                "projectionMS": 0,
+                "serviceMS": 63
+              },
+              "delivery": {
+                "roundtripMS": 64,
+                "transferAndDispatchMS": 0
+              }
+            },
+            {
+              "type": "advance",
+              "timing": {
+                "advanceMS": 52,
+                "projectionMS": 0,
+                "serviceMS": 53
+              },
+              "delivery": {
+                "roundtripMS": 55,
+                "transferAndDispatchMS": 0
+              }
+            },
+            {
+              "type": "advance",
+              "timing": {
+                "advanceMS": 16,
+                "projectionMS": 0,
+                "serviceMS": 16
+              },
+              "delivery": {
+                "roundtripMS": 19,
+                "transferAndDispatchMS": 0
+              }
+            },
+            {
+              "type": "testDetail",
+              "timing": {
+                "serviceMS": 10
+              },
+              "delivery": {
+                "roundtripMS": 26,
+                "transferAndDispatchMS": 8
+              }
+            },
+            {
+              "type": "dispose",
+              "timing": {
+                "serviceMS": 0
+              },
+              "delivery": {
+                "roundtripMS": 1,
+                "transferAndDispatchMS": 0
+              }
+            }
+          ],
+          "exactOriginalFinalCheckpoint": true,
+          "exactOriginalAllAttemptDiagnostics": true,
+          "testOnlyPreAdvanceCopyOutsideTimer": true
+        },
+        {
+          "mode": "candidate",
+          "computeMS": 79,
+          "timing": [
+            {
+              "duration": 0.0001,
+              "advanceMS": 49,
+              "recordMS": 0
+            },
+            {
+              "duration": 0.0004,
+              "advanceMS": 21,
+              "recordMS": 0
+            },
+            {
+              "duration": 0.0005,
+              "advanceMS": 9,
+              "recordMS": 0
+            }
+          ],
+          "scienceHash": "2f519dcb7a0c2f8d975a255c95abdcd3468cf31edda134a14574b8350db541bc"
+        },
+        {
+          "mode": "control",
+          "computeMS": 156,
+          "timing": [
+            {
+              "duration": 0.0001,
+              "advanceMS": 81,
+              "recordMS": 0
+            },
+            {
+              "duration": 0.0004,
+              "advanceMS": 50,
+              "recordMS": 1
+            },
+            {
+              "duration": 0.0005,
+              "advanceMS": 25,
+              "recordMS": 1
+            }
+          ],
+          "scienceHash": "2f519dcb7a0c2f8d975a255c95abdcd3468cf31edda134a14574b8350db541bc"
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "fixture": "warm",
+      "samples": [
+        {
+          "mode": "control",
+          "computeMS": 584,
+          "timing": [
+            {
+              "duration": 0.0001,
+              "advanceMS": 285,
+              "recordMS": 0
+            },
+            {
+              "duration": 0.0004,
+              "advanceMS": 165,
+              "recordMS": 0
+            },
+            {
+              "duration": 0.0005,
+              "advanceMS": 134,
+              "recordMS": 0
+            }
+          ],
+          "scienceHash": "619000e7e207573a8f332dbf0ceebb11b0f9407addc5a8fee0cd449fc1f6fd63"
+        },
+        {
+          "mode": "candidate",
+          "computeMS": 400,
+          "timing": [
+            {
+              "duration": 0.0001,
+              "advanceMS": 193,
+              "recordMS": 1
+            },
+            {
+              "duration": 0.0004,
+              "advanceMS": 118,
+              "recordMS": 1
+            },
+            {
+              "duration": 0.0005,
+              "advanceMS": 89,
+              "recordMS": 1
+            }
+          ],
+          "scienceHash": "619000e7e207573a8f332dbf0ceebb11b0f9407addc5a8fee0cd449fc1f6fd63"
+        },
+        {
+          "mode": "shadow",
+          "computeMS": 387,
+          "metrics": [
+            {
+              "type": "initialize",
+              "timing": {
+                "assetVerificationMS": 16,
+                "importAndOwnedTableMS": 86,
+                "createAndRecordMS": 8,
+                "serviceMS": 110
+              },
+              "delivery": {
+                "roundtripMS": 123,
+                "transferAndDispatchMS": 0
+              }
+            },
+            {
+              "type": "advance",
+              "timing": {
+                "advanceMS": 196,
+                "projectionMS": 0,
+                "serviceMS": 198
+              },
+              "delivery": {
+                "roundtripMS": 198,
+                "transferAndDispatchMS": -1
+              }
+            },
+            {
+              "type": "advance",
+              "timing": {
+                "advanceMS": 104,
+                "projectionMS": 0,
+                "serviceMS": 104
+              },
+              "delivery": {
+                "roundtripMS": 106,
+                "transferAndDispatchMS": 0
+              }
+            },
+            {
+              "type": "advance",
+              "timing": {
+                "advanceMS": 87,
+                "projectionMS": 0,
+                "serviceMS": 88
+              },
+              "delivery": {
+                "roundtripMS": 88,
+                "transferAndDispatchMS": -1
+              }
+            },
+            {
+              "type": "testDetail",
+              "timing": {
+                "serviceMS": 25
+              },
+              "delivery": {
+                "roundtripMS": 66,
+                "transferAndDispatchMS": 19
+              }
+            },
+            {
+              "type": "dispose",
+              "timing": {
+                "serviceMS": 0
+              },
+              "delivery": {
+                "roundtripMS": 1,
+                "transferAndDispatchMS": 0
+              }
+            }
+          ],
+          "exactOriginalFinalCheckpoint": true,
+          "exactOriginalAllAttemptDiagnostics": true,
+          "testOnlyPreAdvanceCopyOutsideTimer": true
+        },
+        {
+          "mode": "candidate",
+          "computeMS": 402,
+          "timing": [
+            {
+              "duration": 0.0001,
+              "advanceMS": 198,
+              "recordMS": 1
+            },
+            {
+              "duration": 0.0004,
+              "advanceMS": 105,
+              "recordMS": 1
+            },
+            {
+              "duration": 0.0005,
+              "advanceMS": 99,
+              "recordMS": 1
+            }
+          ],
+          "scienceHash": "619000e7e207573a8f332dbf0ceebb11b0f9407addc5a8fee0cd449fc1f6fd63"
+        },
+        {
+          "mode": "control",
+          "computeMS": 566,
+          "timing": [
+            {
+              "duration": 0.0001,
+              "advanceMS": 267,
+              "recordMS": 1
+            },
+            {
+              "duration": 0.0004,
+              "advanceMS": 160,
+              "recordMS": 1
+            },
+            {
+              "duration": 0.0005,
+              "advanceMS": 139,
+              "recordMS": 1
+            }
+          ],
+          "scienceHash": "619000e7e207573a8f332dbf0ceebb11b0f9407addc5a8fee0cd449fc1f6fd63"
+        }
+      ]
+    }
+  ],
+  "passed": true
+}

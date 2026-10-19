@@ -7,6 +7,7 @@ Previously demonstrated evidence remains bounded and source-specific. A2 accepte
 | Exact B9C ownership/equivalence, original limits, failure integrity | Required now; runtime receipts must pass | Required preserved | Required but insufficient |
 | Genuine accepted outputs, units/source identity, unavailable plant fields | Required now | Required; independent A2 panel, no renamed suction/discharge | Required across every coupled subsystem |
 | Session/order/stale/lost/dispose semantics, browser assets | Required for served research prototype | Required for chosen deployment artifact and UI lifecycle | Robust operational protocol additionally needed |
+| Bridge compute overhead versus bare B9C | Measured cold overhead; original optimization and main-thread responsiveness retained | Investigate before stronger performance claims | Qualify intended throughput/duration; cause remains OPEN |
 | Original training, scoring, history, Assist/control ownership | Do not touch existing UI | Explicit adapter/preservation tests mandatory before integration | Requalification for any changed plant semantics |
 | Long-duration five-section operation | OPEN; bounded .001 s display does not need a campaign | Gate any longer/continuous requested horizon | Required for intended service duration |
 | Broader physical envelope / additional phase and boundary transitions | OPEN; display only tested fixtures | Gate newly offered conditions, no unrestricted editors | Full intended envelope qualification |

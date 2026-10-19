@@ -1,0 +1,29 @@
+{
+  "milestone": "B9D",
+  "classification": "B9D HARDENING & SHADOW-BRIDGE FEASIBILITY PASS",
+  "decisions": {
+    "A_B9C_HARDENING": "PASS",
+    "B_A2_WORKSTATION_FIELD_MAPPING": "VERIFIED",
+    "C_WORKER_DISPLAY_CONTRACT": "PASS",
+    "D_ISOLATED_READ_ONLY_SHADOW_PROTOTYPE": "PASS",
+    "E_SCIENTIFIC_PARITY": "PASS",
+    "F_FAILURE_ROLLBACK": "PASS",
+    "G_CHROMIUM": "PASS \u2014 local HTTP; native-file/offline startup unavailable",
+    "G_DESKTOP_WEBKIT": "PASS \u2014 local HTTP; native-file/offline startup unavailable",
+    "H_FIRST_SHADOW_HOOKUP_READINESS": "CONDITIONAL GO \u2014 served isolated research only; explicit engineering review and deployment target selection",
+    "I_EXISTING_WORKSTATION_INTEGRATION": "NO-GO",
+    "J_PRODUCTION_LIVE_PLANT": "NO-GO"
+  },
+  "startingCommit": "b67afb3215075b2ec82bef376d39e03953dc0da2",
+  "branch": "research/browser-eos-b9d-hardening-hookup-readiness-20261018",
+  "prerequisiteGateCommit": "6d9bb14cf708630d9f48dce085179a77172efd99",
+  "scientificAlgorithmChanged": false,
+  "optimizedBackend": "original owned accepted table only",
+  "researchHorizonSeconds": 0.001,
+  "physicalIPadTested": false,
+  "offlineWorkstationPackaging": "OPEN / NOT COMPATIBLE AS CURRENT MULTI-FILE ARTIFACT",
+  "mergeAuthorized": false,
+  "deploymentAuthorized": false,
+  "nextMilestone": "After explicit review, select offline/browser packaging and design one opt-in workstation shadow panel with independent session/history and original training/history/Assist/control preservation tests.",
+  "performanceScope": "Worker responsiveness retained; observed cold compute overhead versus bare B9C, cause unisolated; no zero-overhead or real-time claim."
+}

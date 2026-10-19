@@ -9,3 +9,8 @@ Supported B9D execution target: a local HTTP server serving the unchanged reposi
 A future offline workstation hook-up must choose and test packaging deliberately: for example a separately reviewed single-file classic bootstrap with owned worker bundle and embedded assets may be investigable, but has not been built or qualified here. Blob module workers, dynamic import resolution, CSP, Safari worker support, memory and disposal all need evidence for the chosen artifact. No compatibility follows merely from those APIs existing in a desktop browser.
 
 Actual B9D HTTP/file/missing-asset/offline outcomes are recorded in `evidence/shadow-*.json.gz` when Gate 5 is authorized. A native file or offline failure is a reported deployment limitation, not hidden by substituting an illustrative backend. Physical iPadOS Safari performance, local file workflow and workstation full WebKit release readiness remain **OPEN**. Actual workstation integration and offline packaging remain **NO-GO** pending explicit engineering review.
+
+## B9D actual outcomes
+
+- chromium 151.0.7922.34: local HTTP PASS; missing bundle `unqualified-backend` with null snapshot; browser-offline `lost` with no snapshot; native file returned, application module loaded=False. Exact error/status is retained in the browser receipt.
+- webkit 26.5: local HTTP PASS; missing bundle `unqualified-backend` with null snapshot; browser-offline `lost` with no snapshot; native file returned, application module loaded=False. Exact error/status is retained in the browser receipt.

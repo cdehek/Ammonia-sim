@@ -1,0 +1,895 @@
+{
+  "passed": true,
+  "classification": "B9D HARDENING & SHADOW-BRIDGE FEASIBILITY PASS",
+  "decisions": {
+    "A_B9C_HARDENING": "PASS",
+    "B_A2_WORKSTATION_FIELD_MAPPING": "VERIFIED",
+    "C_WORKER_DISPLAY_CONTRACT": "PASS",
+    "D_ISOLATED_READ_ONLY_SHADOW_PROTOTYPE": "PASS",
+    "E_SCIENTIFIC_PARITY": "PASS",
+    "F_FAILURE_ROLLBACK": "PASS",
+    "G_CHROMIUM": "PASS \u2014 local HTTP; native-file/offline startup unavailable",
+    "G_DESKTOP_WEBKIT": "PASS \u2014 local HTTP; native-file/offline startup unavailable",
+    "H_FIRST_SHADOW_HOOKUP_READINESS": "CONDITIONAL GO \u2014 served isolated research only; explicit engineering review and deployment target selection",
+    "I_EXISTING_WORKSTATION_INTEGRATION": "NO-GO",
+    "J_PRODUCTION_LIVE_PLANT": "NO-GO"
+  },
+  "browsers": {
+    "chromium": {
+      "version": "151.0.7922.34",
+      "packaging": {
+        "missingScientificBundle": {
+          "status": "unqualified-backend",
+          "snapshot": null,
+          "fault": {
+            "name": "TypeError",
+            "message": "Failed to fetch"
+          }
+        },
+        "servedLocalAssets": "PASS; local HTTP origin, exact table bundle, no external application backend",
+        "browserOffline": {
+          "status": "lost",
+          "snapshot": null,
+          "fault": {
+            "message": "Worker error"
+          }
+        },
+        "nativeFile": {
+          "navigation": "returned",
+          "status": "Unqualified backend \u00b7 scientific interface assets unavailable. No substitute physics or plant readings.",
+          "appLoaded": false,
+          "pageErrors": []
+        }
+      },
+      "science": [
+        {
+          "fixture": "cold",
+          "checkpointHashes": [
+            "c1659bb4eafebbbe411e6e90f2229091a07a65dd61e038b22562ce505295fad1",
+            "2f0309acf01f8b9535fa8f9b1995c146c58454b6b7bf3d8ba15bcc792ac56f48",
+            "fe6b5968435ae9071f2b4a6c45e60c3df45ab100cc93279dbc06e2d11cb38c08",
+            "9c9f371f506636cd4c5bdc09f350583ef4ede7387b9e9b6ce5c62c34c1a3f2a5"
+          ],
+          "exactOriginalControlCheckpoints": true
+        },
+        {
+          "fixture": "warm",
+          "checkpointHashes": [
+            "3bf15fa871abc0575d7e21cae007835dff7babf430200b14aba2f83f19d80f17",
+            "ec6b3c6f9ee3452df39d4081689b5ded490234c6cd717a86005a2cd4f94f9c91",
+            "1b34c75b0aec0c0f8c0ef73cab2b7fc1becadc3bde4f86d1ad1b58e54a467bf8",
+            "5d40c74e4d5b5a3f09e1bf059aef14b57531e5274645bad0a4ddd34758378a0c"
+          ],
+          "exactOriginalControlCheckpoints": true
+        }
+      ],
+      "lifecycle": {
+        "passed": true,
+        "rows": [
+          {
+            "fixture": "numerical",
+            "refused": {
+              "protocol": {
+                "f64": "3ff0000000000000"
+              },
+              "backendId": "A2-table-B9C-b67afb3",
+              "sessionId": "b41724cf-1afc-4ee2-8e89-276c8038e559",
+              "requestId": "3412c8f8-9d8a-4a19-bf87-a6c50fea036a",
+              "sequence": {
+                "f64": "4008000000000000"
+              },
+              "type": "advance",
+              "status": "numerical-refusal",
+              "clockSeconds": {
+                "f64": "3ea0624dd2f1a9fc"
+              },
+              "acceptedVersion": {
+                "f64": "3ff0000000000000"
+              },
+              "fault": {
+                "kind": "solver",
+                "seconds": {
+                  "f64": "3ea0624dd2f1a9fc"
+                },
+                "message": "Coupled attempt budget exhausted.",
+                "evidence": {
+                  "maxAttempts": {
+                    "f64": "4034000000000000"
+                  }
+                }
+              },
+              "success": false,
+              "snapshot": null,
+              "error": {
+                "kind": "solver",
+                "seconds": {
+                  "f64": "3ea0624dd2f1a9fc"
+                },
+                "message": "Coupled attempt budget exhausted.",
+                "evidence": {
+                  "maxAttempts": {
+                    "f64": "4034000000000000"
+                  }
+                }
+              },
+              "stale": true,
+              "timing": {
+                "advanceMS": {
+                  "f64": "4048b33333338000"
+                },
+                "serviceMS": {
+                  "f64": "40494ccccccc8000"
+                }
+              },
+              "sentEpochMS": {
+                "f64": "427a15254ecc519a"
+              },
+              "delivery": {
+                "roundtripMS": {
+                  "f64": "4049800000000000"
+                },
+                "transferAndDispatchMS": {
+                  "f64": "3fb9900000000000"
+                }
+              }
+            },
+            "proof": {
+              "wholeAdvancePhysicalUnchanged": false,
+              "wholeAdvanceIdentityUnchanged": false,
+              "acceptedStepsBefore": 0,
+              "acceptedStepsAfter": 18,
+              "scope": "Whole requested interval; prior accepted substeps are retained. Per-rejection rollback is separately verified by original C1 tests."
+            },
+            "dispose": {
+              "ownerReferencesDropped": true,
+              "lastAcceptedClockSeconds": 4.8828125e-07,
+              "attemptsReleased": 20
+            }
+          },
+          {
+            "fixture": "thermal200",
+            "refused": {
+              "protocol": {
+                "f64": "3ff0000000000000"
+              },
+              "backendId": "A2-table-B9C-b67afb3",
+              "sessionId": "7bb5e589-df16-420c-b413-e98775f5ef34",
+              "requestId": "3baf8508-5e1e-4670-b5b3-0640a1b7f24e",
+              "sequence": {
+                "f64": "4008000000000000"
+              },
+              "type": "advance",
+              "status": "modeled-domain-stop",
+              "clockSeconds": {
+                "f64": "0000000000000000"
+              },
+              "acceptedVersion": {
+                "f64": "0000000000000000"
+              },
+              "fault": {
+                "kind": "domain",
+                "seconds": {
+                  "f64": "0000000000000000"
+                },
+                "attemptedStepSeconds": {
+                  "f64": "3e1a36e2eb1c432d"
+                },
+                "message": "Thermal trajectory points outward at the supported boundary.",
+                "evidence": {
+                  "originalCause": "Thermal trajectory points outward at the supported boundary.",
+                  "nonlinearResidual": null,
+                  "trial": {
+                    "source": "thermal",
+                    "node": "air",
+                    "stage": "initial-direction",
+                    "temperatureK": {
+                      "f64": "4069000000000000"
+                    },
+                    "rateKS": {
+                      "f64": "bfcdb6505778fce9"
+                    }
+                  },
+                  "confirmed": true,
+                  "source": "thermal",
+                  "node": "air",
+                  "confirmation": "exact-boundary-outward-direction",
+                  "temperatureK": {
+                    "f64": "4069000000000000"
+                  },
+                  "rateKS": {
+                    "f64": "bfcdb6505778fce9"
+                  }
+                }
+              },
+              "success": false,
+              "snapshot": null,
+              "error": {
+                "kind": "domain",
+                "seconds": {
+                  "f64": "0000000000000000"
+                },
+                "attemptedStepSeconds": {
+                  "f64": "3e1a36e2eb1c432d"
+                },
+                "message": "Thermal trajectory points outward at the supported boundary.",
+                "evidence": {
+                  "originalCause": "Thermal trajectory points outward at the supported boundary.",
+                  "nonlinearResidual": null,
+                  "trial": {
+                    "source": "thermal",
+                    "node": "air",
+                    "stage": "initial-direction",
+                    "temperatureK": {
+                      "f64": "4069000000000000"
+                    },
+                    "rateKS": {
+                      "f64": "bfcdb6505778fce9"
+                    }
+                  },
+                  "confirmed": true,
+                  "source": "thermal",
+                  "node": "air",
+                  "confirmation": "exact-boundary-outward-direction",
+                  "temperatureK": {
+                    "f64": "4069000000000000"
+                  },
+                  "rateKS": {
+                    "f64": "bfcdb6505778fce9"
+                  }
+                }
+              },
+              "stale": true,
+              "timing": {
+                "advanceMS": {
+                  "f64": "400a666666680000"
+                },
+                "serviceMS": {
+                  "f64": "4012000000000000"
+                }
+              },
+              "sentEpochMS": {
+                "f64": "427a15254ed8d4cd"
+              },
+              "delivery": {
+                "roundtripMS": {
+                  "f64": "4016000000000000"
+                },
+                "transferAndDispatchMS": {
+                  "f64": "3fe99a0000000000"
+                }
+              }
+            },
+            "proof": {
+              "wholeAdvancePhysicalUnchanged": true,
+              "wholeAdvanceIdentityUnchanged": true,
+              "acceptedStepsBefore": 0,
+              "acceptedStepsAfter": 0,
+              "scope": "Whole requested interval; prior accepted substeps are retained. Per-rejection rollback is separately verified by original C1 tests."
+            },
+            "dispose": {
+              "ownerReferencesDropped": true,
+              "lastAcceptedClockSeconds": 0,
+              "attemptsReleased": 17
+            }
+          },
+          {
+            "fixture": "thermal400",
+            "refused": {
+              "protocol": {
+                "f64": "3ff0000000000000"
+              },
+              "backendId": "A2-table-B9C-b67afb3",
+              "sessionId": "45f60f3e-797e-412c-a338-e362b0e92021",
+              "requestId": "bbe6cdd5-1da9-4ad5-8ee9-ebe8117e4430",
+              "sequence": {
+                "f64": "4008000000000000"
+              },
+              "type": "advance",
+              "status": "modeled-domain-stop",
+              "clockSeconds": {
+                "f64": "0000000000000000"
+              },
+              "acceptedVersion": {
+                "f64": "0000000000000000"
+              },
+              "fault": {
+                "kind": "domain",
+                "seconds": {
+                  "f64": "0000000000000000"
+                },
+                "attemptedStepSeconds": {
+                  "f64": "3e1a36e2eb1c432d"
+                },
+                "message": "Thermal trajectory points outward at the supported boundary.",
+                "evidence": {
+                  "originalCause": "Thermal trajectory points outward at the supported boundary.",
+                  "nonlinearResidual": null,
+                  "trial": {
+                    "source": "thermal",
+                    "node": "air",
+                    "stage": "initial-direction",
+                    "temperatureK": {
+                      "f64": "4079000000000000"
+                    },
+                    "rateKS": {
+                      "f64": "3fcdb6505778fce9"
+                    }
+                  },
+                  "confirmed": true,
+                  "source": "thermal",
+                  "node": "air",
+                  "confirmation": "exact-boundary-outward-direction",
+                  "temperatureK": {
+                    "f64": "4079000000000000"
+                  },
+                  "rateKS": {
+                    "f64": "3fcdb6505778fce9"
+                  }
+                }
+              },
+              "success": false,
+              "snapshot": null,
+              "error": {
+                "kind": "domain",
+                "seconds": {
+                  "f64": "0000000000000000"
+                },
+                "attemptedStepSeconds": {
+                  "f64": "3e1a36e2eb1c432d"
+                },
+                "message": "Thermal trajectory points outward at the supported boundary.",
+                "evidence": {
+                  "originalCause": "Thermal trajectory points outward at the supported boundary.",
+                  "nonlinearResidual": null,
+                  "trial": {
+                    "source": "thermal",
+                    "node": "air",
+                    "stage": "initial-direction",
+                    "temperatureK": {
+                      "f64": "4079000000000000"
+                    },
+                    "rateKS": {
+                      "f64": "3fcdb6505778fce9"
+                    }
+                  },
+                  "confirmed": true,
+                  "source": "thermal",
+                  "node": "air",
+                  "confirmation": "exact-boundary-outward-direction",
+                  "temperatureK": {
+                    "f64": "4079000000000000"
+                  },
+                  "rateKS": {
+                    "f64": "3fcdb6505778fce9"
+                  }
+                }
+              },
+              "stale": true,
+              "timing": {
+                "advanceMS": {
+                  "f64": "400a666666680000"
+                },
+                "serviceMS": {
+                  "f64": "4012666666680000"
+                }
+              },
+              "sentEpochMS": {
+                "f64": "427a15254edee999"
+              },
+              "delivery": {
+                "roundtripMS": {
+                  "f64": "40139999999c0000"
+                },
+                "transferAndDispatchMS": {
+                  "f64": "3fc9a00000000000"
+                }
+              }
+            },
+            "proof": {
+              "wholeAdvancePhysicalUnchanged": true,
+              "wholeAdvanceIdentityUnchanged": true,
+              "acceptedStepsBefore": 0,
+              "acceptedStepsAfter": 0,
+              "scope": "Whole requested interval; prior accepted substeps are retained. Per-rejection rollback is separately verified by original C1 tests."
+            },
+            "dispose": {
+              "ownerReferencesDropped": true,
+              "lastAcceptedClockSeconds": 0,
+              "attemptsReleased": 17
+            }
+          },
+          {
+            "stopDuringPending": {
+              "advanceClock": 0.0001,
+              "stopClock": 0.0001,
+              "duplicate": "Physics advance already pending",
+              "status": "scheduling-stopped"
+            }
+          },
+          {
+            "termination": true,
+            "restartOriginal": true,
+            "freshInitialization": {
+              "type": "initialize",
+              "timing": {
+                "assetVerificationMS": 7.699999999953434,
+                "importAndOwnedTableMS": 26.300000000046566,
+                "createAndRecordMS": 6.300000000046566,
+                "serviceMS": 40.60000000009313
+              },
+              "delivery": {
+                "roundtripMS": 55.39999999990687,
+                "transferAndDispatchMS": 0
+              }
+            }
+          },
+          {
+            "actualPendingTermination": true,
+            "deadlineTestOnlyMS": 50,
+            "reason": "Worker deadline; in-flight state unknown"
+          },
+          {
+            "newSessionClearsOldDOM": true
+          },
+          {
+            "productionReducerOrdering": true,
+            "syntheticTransportOnly": true
+          },
+          {
+            "duplicateDisposal": true,
+            "commandDuringDisposalRefused": true
+          },
+          {
+            "duplicateInitializationRefused": true
+          }
+        ],
+        "raw": {
+          "passed": true,
+          "duplicateReplay": true,
+          "alteredDuplicateRefused": true,
+          "outOfOrderRefused": true,
+          "staleExpectedVersionRefused": true,
+          "clockAfterDuplicate": 0.0001
+        }
+      }
+    },
+    "webkit": {
+      "version": "26.5",
+      "packaging": {
+        "missingScientificBundle": {
+          "status": "unqualified-backend",
+          "snapshot": null,
+          "fault": {
+            "name": "TypeError",
+            "message": "Load failed"
+          }
+        },
+        "servedLocalAssets": "PASS; local HTTP origin, exact table bundle, no external application backend",
+        "browserOffline": {
+          "status": "lost",
+          "snapshot": null,
+          "fault": {
+            "message": "Worker error"
+          }
+        },
+        "nativeFile": {
+          "navigation": "returned",
+          "status": "Unqualified backend \u00b7 scientific interface assets unavailable. No substitute physics or plant readings.",
+          "appLoaded": false,
+          "pageErrors": []
+        }
+      },
+      "science": [
+        {
+          "fixture": "cold",
+          "checkpointHashes": [
+            "c1659bb4eafebbbe411e6e90f2229091a07a65dd61e038b22562ce505295fad1",
+            "facde2083cd986635cbb789fc2d783c8bb6bff1a43719f26a2efbbf5ce4711a7",
+            "48387d786c529d9fe8a0b21429fa04a8fefe5503181bf85960841bbe3abfedf6",
+            "58daf603303f3eb524b25f758af5a340dc7296f7cbc0d32489c1db277f5d3c8d"
+          ],
+          "exactOriginalControlCheckpoints": true
+        },
+        {
+          "fixture": "warm",
+          "checkpointHashes": [
+            "3bf15fa871abc0575d7e21cae007835dff7babf430200b14aba2f83f19d80f17",
+            "571dd211c0eabc10496d13f012e02a1ceef5f529df54135c46fe66bd9013315a",
+            "ba882aac82d88f75cab4669704c4610cf0499c90a378c4b04980eefdd5b4abb1",
+            "4eefba9579aa50e6f3be1ec10058eafdbd4a8b1880d506b59ab05d5086c0555c"
+          ],
+          "exactOriginalControlCheckpoints": true
+        }
+      ],
+      "lifecycle": {
+        "passed": true,
+        "rows": [
+          {
+            "fixture": "numerical",
+            "refused": {
+              "protocol": {
+                "f64": "3ff0000000000000"
+              },
+              "backendId": "A2-table-B9C-b67afb3",
+              "sessionId": "bb9d3c5f-6e3f-4248-921e-840f711528e6",
+              "requestId": "069731f8-3735-468d-8014-3c7480768254",
+              "sequence": {
+                "f64": "4008000000000000"
+              },
+              "type": "advance",
+              "status": "numerical-refusal",
+              "clockSeconds": {
+                "f64": "3ea0624dd2f1a9fc"
+              },
+              "acceptedVersion": {
+                "f64": "3ff0000000000000"
+              },
+              "fault": {
+                "kind": "solver",
+                "seconds": {
+                  "f64": "3ea0624dd2f1a9fc"
+                },
+                "message": "Coupled attempt budget exhausted.",
+                "evidence": {
+                  "maxAttempts": {
+                    "f64": "4034000000000000"
+                  }
+                }
+              },
+              "success": false,
+              "snapshot": null,
+              "error": {
+                "kind": "solver",
+                "seconds": {
+                  "f64": "3ea0624dd2f1a9fc"
+                },
+                "message": "Coupled attempt budget exhausted.",
+                "evidence": {
+                  "maxAttempts": {
+                    "f64": "4034000000000000"
+                  }
+                }
+              },
+              "stale": true,
+              "timing": {
+                "advanceMS": {
+                  "f64": "404e800000000000"
+                },
+                "serviceMS": {
+                  "f64": "4050000000000000"
+                }
+              },
+              "sentEpochMS": {
+                "f64": "427a152553056000"
+              },
+              "delivery": {
+                "roundtripMS": {
+                  "f64": "4050400000000000"
+                },
+                "transferAndDispatchMS": {
+                  "f64": "3ff0000000000000"
+                }
+              }
+            },
+            "proof": {
+              "wholeAdvancePhysicalUnchanged": false,
+              "wholeAdvanceIdentityUnchanged": false,
+              "acceptedStepsBefore": 0,
+              "acceptedStepsAfter": 18,
+              "scope": "Whole requested interval; prior accepted substeps are retained. Per-rejection rollback is separately verified by original C1 tests."
+            },
+            "dispose": {
+              "ownerReferencesDropped": true,
+              "lastAcceptedClockSeconds": 4.8828125e-07,
+              "attemptsReleased": 20
+            }
+          },
+          {
+            "fixture": "thermal200",
+            "refused": {
+              "protocol": {
+                "f64": "3ff0000000000000"
+              },
+              "backendId": "A2-table-B9C-b67afb3",
+              "sessionId": "f774e474-43cb-4527-a879-b5a2ad6331d6",
+              "requestId": "68da59fe-f6f6-4bd8-a65a-318cd104f377",
+              "sequence": {
+                "f64": "4008000000000000"
+              },
+              "type": "advance",
+              "status": "modeled-domain-stop",
+              "clockSeconds": {
+                "f64": "0000000000000000"
+              },
+              "acceptedVersion": {
+                "f64": "0000000000000000"
+              },
+              "fault": {
+                "kind": "domain",
+                "seconds": {
+                  "f64": "0000000000000000"
+                },
+                "attemptedStepSeconds": {
+                  "f64": "3e1a36e2eb1c432d"
+                },
+                "message": "Thermal trajectory points outward at the supported boundary.",
+                "evidence": {
+                  "originalCause": "Thermal trajectory points outward at the supported boundary.",
+                  "nonlinearResidual": null,
+                  "trial": {
+                    "source": "thermal",
+                    "node": "air",
+                    "stage": "initial-direction",
+                    "temperatureK": {
+                      "f64": "4069000000000000"
+                    },
+                    "rateKS": {
+                      "f64": "bfcdb6505778fce9"
+                    }
+                  },
+                  "confirmed": true,
+                  "source": "thermal",
+                  "node": "air",
+                  "confirmation": "exact-boundary-outward-direction",
+                  "temperatureK": {
+                    "f64": "4069000000000000"
+                  },
+                  "rateKS": {
+                    "f64": "bfcdb6505778fce9"
+                  }
+                }
+              },
+              "success": false,
+              "snapshot": null,
+              "error": {
+                "kind": "domain",
+                "seconds": {
+                  "f64": "0000000000000000"
+                },
+                "attemptedStepSeconds": {
+                  "f64": "3e1a36e2eb1c432d"
+                },
+                "message": "Thermal trajectory points outward at the supported boundary.",
+                "evidence": {
+                  "originalCause": "Thermal trajectory points outward at the supported boundary.",
+                  "nonlinearResidual": null,
+                  "trial": {
+                    "source": "thermal",
+                    "node": "air",
+                    "stage": "initial-direction",
+                    "temperatureK": {
+                      "f64": "4069000000000000"
+                    },
+                    "rateKS": {
+                      "f64": "bfcdb6505778fce9"
+                    }
+                  },
+                  "confirmed": true,
+                  "source": "thermal",
+                  "node": "air",
+                  "confirmation": "exact-boundary-outward-direction",
+                  "temperatureK": {
+                    "f64": "4069000000000000"
+                  },
+                  "rateKS": {
+                    "f64": "bfcdb6505778fce9"
+                  }
+                }
+              },
+              "stale": true,
+              "timing": {
+                "advanceMS": {
+                  "f64": "4010000000000000"
+                },
+                "serviceMS": {
+                  "f64": "4014000000000000"
+                }
+              },
+              "sentEpochMS": {
+                "f64": "427a15255319a000"
+              },
+              "delivery": {
+                "roundtripMS": {
+                  "f64": "4018000000000000"
+                },
+                "transferAndDispatchMS": {
+                  "f64": "4000000000000000"
+                }
+              }
+            },
+            "proof": {
+              "wholeAdvancePhysicalUnchanged": true,
+              "wholeAdvanceIdentityUnchanged": true,
+              "acceptedStepsBefore": 0,
+              "acceptedStepsAfter": 0,
+              "scope": "Whole requested interval; prior accepted substeps are retained. Per-rejection rollback is separately verified by original C1 tests."
+            },
+            "dispose": {
+              "ownerReferencesDropped": true,
+              "lastAcceptedClockSeconds": 0,
+              "attemptsReleased": 17
+            }
+          },
+          {
+            "fixture": "thermal400",
+            "refused": {
+              "protocol": {
+                "f64": "3ff0000000000000"
+              },
+              "backendId": "A2-table-B9C-b67afb3",
+              "sessionId": "dcccfdaa-98ca-47af-9cff-eac9b6f791d7",
+              "requestId": "9ae2dea6-70d5-48d5-a47b-3a6a0272d82d",
+              "sequence": {
+                "f64": "4008000000000000"
+              },
+              "type": "advance",
+              "status": "modeled-domain-stop",
+              "clockSeconds": {
+                "f64": "0000000000000000"
+              },
+              "acceptedVersion": {
+                "f64": "0000000000000000"
+              },
+              "fault": {
+                "kind": "domain",
+                "seconds": {
+                  "f64": "0000000000000000"
+                },
+                "attemptedStepSeconds": {
+                  "f64": "3e1a36e2eb1c432d"
+                },
+                "message": "Thermal trajectory points outward at the supported boundary.",
+                "evidence": {
+                  "originalCause": "Thermal trajectory points outward at the supported boundary.",
+                  "nonlinearResidual": null,
+                  "trial": {
+                    "source": "thermal",
+                    "node": "air",
+                    "stage": "initial-direction",
+                    "temperatureK": {
+                      "f64": "4079000000000000"
+                    },
+                    "rateKS": {
+                      "f64": "3fcdb6505778fce9"
+                    }
+                  },
+                  "confirmed": true,
+                  "source": "thermal",
+                  "node": "air",
+                  "confirmation": "exact-boundary-outward-direction",
+                  "temperatureK": {
+                    "f64": "4079000000000000"
+                  },
+                  "rateKS": {
+                    "f64": "3fcdb6505778fce9"
+                  }
+                }
+              },
+              "success": false,
+              "snapshot": null,
+              "error": {
+                "kind": "domain",
+                "seconds": {
+                  "f64": "0000000000000000"
+                },
+                "attemptedStepSeconds": {
+                  "f64": "3e1a36e2eb1c432d"
+                },
+                "message": "Thermal trajectory points outward at the supported boundary.",
+                "evidence": {
+                  "originalCause": "Thermal trajectory points outward at the supported boundary.",
+                  "nonlinearResidual": null,
+                  "trial": {
+                    "source": "thermal",
+                    "node": "air",
+                    "stage": "initial-direction",
+                    "temperatureK": {
+                      "f64": "4079000000000000"
+                    },
+                    "rateKS": {
+                      "f64": "3fcdb6505778fce9"
+                    }
+                  },
+                  "confirmed": true,
+                  "source": "thermal",
+                  "node": "air",
+                  "confirmation": "exact-boundary-outward-direction",
+                  "temperatureK": {
+                    "f64": "4079000000000000"
+                  },
+                  "rateKS": {
+                    "f64": "3fcdb6505778fce9"
+                  }
+                }
+              },
+              "stale": true,
+              "timing": {
+                "advanceMS": {
+                  "f64": "4008000000000000"
+                },
+                "serviceMS": {
+                  "f64": "4010000000000000"
+                }
+              },
+              "sentEpochMS": {
+                "f64": "427a152553248000"
+              },
+              "delivery": {
+                "roundtripMS": {
+                  "f64": "4014000000000000"
+                },
+                "transferAndDispatchMS": {
+                  "f64": "3ff0000000000000"
+                }
+              }
+            },
+            "proof": {
+              "wholeAdvancePhysicalUnchanged": true,
+              "wholeAdvanceIdentityUnchanged": true,
+              "acceptedStepsBefore": 0,
+              "acceptedStepsAfter": 0,
+              "scope": "Whole requested interval; prior accepted substeps are retained. Per-rejection rollback is separately verified by original C1 tests."
+            },
+            "dispose": {
+              "ownerReferencesDropped": true,
+              "lastAcceptedClockSeconds": 0,
+              "attemptsReleased": 17
+            }
+          },
+          {
+            "stopDuringPending": {
+              "advanceClock": 0.0001,
+              "stopClock": 0.0001,
+              "duplicate": "Physics advance already pending",
+              "status": "scheduling-stopped"
+            }
+          },
+          {
+            "termination": true,
+            "restartOriginal": true,
+            "freshInitialization": {
+              "type": "initialize",
+              "timing": {
+                "assetVerificationMS": 13,
+                "importAndOwnedTableMS": 59,
+                "createAndRecordMS": 7,
+                "serviceMS": 79
+              },
+              "delivery": {
+                "roundtripMS": 86,
+                "transferAndDispatchMS": 0
+              }
+            }
+          },
+          {
+            "actualPendingTermination": true,
+            "deadlineTestOnlyMS": 50,
+            "reason": "Worker deadline; in-flight state unknown"
+          },
+          {
+            "newSessionClearsOldDOM": true
+          },
+          {
+            "productionReducerOrdering": true,
+            "syntheticTransportOnly": true
+          },
+          {
+            "duplicateDisposal": true,
+            "commandDuringDisposalRefused": true
+          },
+          {
+            "duplicateInitializationRefused": true
+          }
+        ],
+        "raw": {
+          "passed": true,
+          "duplicateReplay": true,
+          "alteredDuplicateRefused": true,
+          "outOfOrderRefused": true,
+          "staleExpectedVersionRefused": true,
+          "clockAfterDuplicate": 0.0001
+        }
+      }
+    }
+  }
+}

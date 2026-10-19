@@ -1,0 +1,27 @@
+chromium shadow science cold
+chromium shadow science warm
+chromium lifecycle
+chromium Page.evaluate: Error: exact physical/identity rollback
+    at assert (http://127.0.0.1:35159/experiments/dx-fv/browser_eos_b9/values.mjs:5:69)
+    at Module.lifecycle (http://127.0.0.1:35159/experiments/dx-fv/browser_eos_b9d/shadow-tests.mjs:49:3)
+    at async <anonymous>:337:30
+Traceback (most recent call last):
+  File "/workspace/Ammonia-sim/experiments/dx-fv/browser_eos_b9d/run-shadow.py", line 72, in <module>
+    try:asyncio.run(main())
+        ^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/asyncio/runners.py", line 195, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/asyncio/base_events.py", line 691, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/workspace/Ammonia-sim/experiments/dx-fv/browser_eos_b9d/run-shadow.py", line 71, in main
+    if not out['passed']:raise RuntimeError(out['error'])
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Page.evaluate: Error: exact physical/identity rollback
+    at assert (http://127.0.0.1:35159/experiments/dx-fv/browser_eos_b9/values.mjs:5:69)
+    at Module.lifecycle (http://127.0.0.1:35159/experiments/dx-fv/browser_eos_b9d/shadow-tests.mjs:49:3)
+    at async <anonymous>:337:30

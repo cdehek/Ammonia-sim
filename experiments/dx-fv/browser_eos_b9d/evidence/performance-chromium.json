@@ -1,0 +1,1039 @@
+{
+  "browser": "chromium",
+  "version": "151.0.7922.34",
+  "rounds": [
+    {
+      "round": 0,
+      "fixture": "cold",
+      "samples": [
+        {
+          "mode": "control",
+          "computeMS": 130.1999999997206,
+          "timing": [
+            {
+              "duration": 0.0001,
+              "advanceMS": 63.299999999813735,
+              "recordMS": 0.19999999995343387
+            },
+            {
+              "duration": 0.0004,
+              "advanceMS": 44.699999999953434,
+              "recordMS": 0.30000000004656613
+            },
+            {
+              "duration": 0.0005,
+              "advanceMS": 22.199999999953434,
+              "recordMS": 0.19999999995343387
+            }
+          ],
+          "scienceHash": "5d4a30c486acf7be383a18359ae150d00f7002b8fffa1003250ef4bdac4e3815"
+        },
+        {
+          "mode": "candidate",
+          "computeMS": 57.5999999998603,
+          "timing": [
+            {
+              "duration": 0.0001,
+              "advanceMS": 29.199999999953434,
+              "recordMS": 0.39999999990686774
+            },
+            {
+              "duration": 0.0004,
+              "advanceMS": 19,
+              "recordMS": 0.10000000009313226
+            },
+            {
+              "duration": 0.0005,
+              "advanceMS": 9.399999999906868,
+              "recordMS": 0.10000000009313226
+            }
+          ],
+          "scienceHash": "5d4a30c486acf7be383a18359ae150d00f7002b8fffa1003250ef4bdac4e3815"
+        },
+        {
+          "mode": "shadow",
+          "computeMS": 90.00000000023283,
+          "metrics": [
+            {
+              "type": "initialize",
+              "timing": {
+                "assetVerificationMS": 7,
+                "importAndOwnedTableMS": 30.5,
+                "createAndRecordMS": 3.7000000001862645,
+                "serviceMS": 41.4000000001397
+              },
+              "delivery": {
+                "roundtripMS": 53.60000000009313,
+                "transferAndDispatchMS": 0.100341796875
+              }
+            },
+            {
+              "type": "advance",
+              "timing": {
+                "advanceMS": 37.800000000046566,
+                "projectionMS": 0,
+                "serviceMS": 38.199999999953434
+              },
+              "delivery": {
+                "roundtripMS": 39.299999999813735,
+                "transferAndDispatchMS": 0.10009765625
+              }
+            },
+            {
+              "type": "advance",
+              "timing": {
+                "advanceMS": 41,
+                "projectionMS": 0,
+                "serviceMS": 41.200000000186265
+              },
+              "delivery": {
+                "roundtripMS": 42.0999999998603,
+                "transferAndDispatchMS": 0.10009765625
+              }
+            },
+            {
+              "type": "advance",
+              "timing": {
+                "advanceMS": 11.200000000186265,
+                "projectionMS": 0,
+                "serviceMS": 11.399999999906868
+              },
+              "delivery": {
+                "roundtripMS": 22.600000000093132,
+                "transferAndDispatchMS": -0.099853515625
+              }
+            },
+            {
+              "type": "testDetail",
+              "timing": {
+                "serviceMS": 12.299999999813735
+              },
+              "delivery": {
+                "roundtripMS": 40,
+                "transferAndDispatchMS": 14.900390625
+              }
+            },
+            {
+              "type": "dispose",
+              "timing": {
+                "serviceMS": 0.09999999986030161
+              },
+              "delivery": {
+                "roundtripMS": 3,
+                "transferAndDispatchMS": 2.60009765625
+              }
+            }
+          ],
+          "exactOriginalFinalCheckpoint": true,
+          "exactOriginalAllAttemptDiagnostics": true,
+          "testOnlyPreAdvanceCopyOutsideTimer": true
+        },
+        {
+          "mode": "candidate",
+          "computeMS": 87.19999999995343,
+          "timing": [
+            {
+              "duration": 0.0001,
+              "advanceMS": 43,
+              "recordMS": 0.10000000009313226
+            },
+            {
+              "duration": 0.0004,
+              "advanceMS": 31.199999999953434,
+              "recordMS": 0.19999999995343387
+            },
+            {
+              "duration": 0.0005,
+              "advanceMS": 13,
+              "recordMS": 0.19999999995343387
+            }
+          ],
+          "scienceHash": "5d4a30c486acf7be383a18359ae150d00f7002b8fffa1003250ef4bdac4e3815"
+        },
+        {
+          "mode": "control",
+          "computeMS": 139.6999999997206,
+          "timing": [
+            {
+              "duration": 0.0001,
+              "advanceMS": 65.79999999981374,
+              "recordMS": 0.19999999995343387
+            },
+            {
+              "duration": 0.0004,
+              "advanceMS": 51.199999999953434,
+              "recordMS": 0.19999999995343387
+            },
+            {
+              "duration": 0.0005,
+              "advanceMS": 22.699999999953434,
+              "recordMS": 0.30000000004656613
+            }
+          ],
+          "scienceHash": "5d4a30c486acf7be383a18359ae150d00f7002b8fffa1003250ef4bdac4e3815"
+        }
+      ]
+    },
+    {
+      "round": 0,
+      "fixture": "warm",
+      "samples": [
+        {
+          "mode": "control",
+          "computeMS": 446.5,
+          "timing": [
+            {
+              "duration": 0.0001,
+              "advanceMS": 210,
+              "recordMS": 0.30000000004656613
+            },
+            {
+              "duration": 0.0004,
+              "advanceMS": 118,
+              "recordMS": 0.30000000004656613
+            },
+            {
+              "duration": 0.0005,
+              "advanceMS": 118.5,
+              "recordMS": 0.30000000004656613
+            }
+          ],
+          "scienceHash": "0ed51255b5e2dba674cd407770801743a4a6fce3fcb156cafd64cadda3187d12"
+        },
+        {
+          "mode": "candidate",
+          "computeMS": 316.80000000004657,
+          "timing": [
+            {
+              "duration": 0.0001,
+              "advanceMS": 137.80000000004657,
+              "recordMS": 0.30000000004656613
+            },
+            {
+              "duration": 0.0004,
+              "advanceMS": 85.80000000004657,
+              "recordMS": 0.5
+            },
+            {
+              "duration": 0.0005,
+              "advanceMS": 93.19999999995343,
+              "recordMS": 0.39999999990686774
+            }
+          ],
+          "scienceHash": "0ed51255b5e2dba674cd407770801743a4a6fce3fcb156cafd64cadda3187d12"
+        },
+        {
+          "mode": "shadow",
+          "computeMS": 326.80000000004657,
+          "metrics": [
+            {
+              "type": "initialize",
+              "timing": {
+                "assetVerificationMS": 9.099999999860302,
+                "importAndOwnedTableMS": 26.199999999953434,
+                "createAndRecordMS": 5.7000000001862645,
+                "serviceMS": 41.299999999813735
+              },
+              "delivery": {
+                "roundtripMS": 56.300000000046566,
+                "transferAndDispatchMS": -0.099853515625
+              }
+            },
+            {
+              "type": "advance",
+              "timing": {
+                "advanceMS": 151.30000000004657,
+                "projectionMS": 0,
+                "serviceMS": 151.5
+              },
+              "delivery": {
+                "roundtripMS": 152,
+                "transferAndDispatchMS": 0
+              }
+            },
+            {
+              "type": "advance",
+              "timing": {
+                "advanceMS": 104.30000000004657,
+                "projectionMS": 0,
+                "serviceMS": 106.60000000009313
+              },
+              "delivery": {
+                "roundtripMS": 108.5999999998603,
+                "transferAndDispatchMS": -0.10009765625
+              }
+            },
+            {
+              "type": "advance",
+              "timing": {
+                "advanceMS": 71.19999999995343,
+                "projectionMS": 0,
+                "serviceMS": 71.30000000004657
+              },
+              "delivery": {
+                "roundtripMS": 72.20000000018626,
+                "transferAndDispatchMS": -0.199951171875
+              }
+            },
+            {
+              "type": "testDetail",
+              "timing": {
+                "serviceMS": 32.699999999953434
+              },
+              "delivery": {
+                "roundtripMS": 106.30000000004657,
+                "transferAndDispatchMS": 41.300048828125
+              }
+            },
+            {
+              "type": "dispose",
+              "timing": {
+                "serviceMS": 0
+              },
+              "delivery": {
+                "roundtripMS": 3.5999999998603016,
+                "transferAndDispatchMS": 3.099853515625
+              }
+            }
+          ],
+          "exactOriginalFinalCheckpoint": true,
+          "exactOriginalAllAttemptDiagnostics": true,
+          "testOnlyPreAdvanceCopyOutsideTimer": true
+        },
+        {
+          "mode": "candidate",
+          "computeMS": 294.9000000001397,
+          "timing": [
+            {
+              "duration": 0.0001,
+              "advanceMS": 129.89999999990687,
+              "recordMS": 0.4000000001396984
+            },
+            {
+              "duration": 0.0004,
+              "advanceMS": 81.4000000001397,
+              "recordMS": 0.5
+            },
+            {
+              "duration": 0.0005,
+              "advanceMS": 83.60000000009313,
+              "recordMS": 0.39999999990686774
+            }
+          ],
+          "scienceHash": "0ed51255b5e2dba674cd407770801743a4a6fce3fcb156cafd64cadda3187d12"
+        },
+        {
+          "mode": "control",
+          "computeMS": 481.60000000009313,
+          "timing": [
+            {
+              "duration": 0.0001,
+              "advanceMS": 232.60000000009313,
+              "recordMS": 0.39999999990686774
+            },
+            {
+              "duration": 0.0004,
+              "advanceMS": 122.5,
+              "recordMS": 0.39999999990686774
+            },
+            {
+              "duration": 0.0005,
+              "advanceMS": 126.5,
+              "recordMS": 0.4000000001396984
+            }
+          ],
+          "scienceHash": "0ed51255b5e2dba674cd407770801743a4a6fce3fcb156cafd64cadda3187d12"
+        }
+      ]
+    },
+    {
+      "round": 1,
+      "fixture": "warm",
+      "samples": [
+        {
+          "mode": "control",
+          "computeMS": 491.0,
+          "timing": [
+            {
+              "duration": 0.0001,
+              "advanceMS": 223.10000000009313,
+              "recordMS": 0.39999999990686774
+            },
+            {
+              "duration": 0.0004,
+              "advanceMS": 127.5,
+              "recordMS": 2.699999999953434
+            },
+            {
+              "duration": 0.0005,
+              "advanceMS": 140.39999999990687,
+              "recordMS": 0.39999999990686774
+            }
+          ],
+          "scienceHash": "0ed51255b5e2dba674cd407770801743a4a6fce3fcb156cafd64cadda3187d12"
+        },
+        {
+          "mode": "candidate",
+          "computeMS": 423.0999999998603,
+          "timing": [
+            {
+              "duration": 0.0001,
+              "advanceMS": 195.29999999981374,
+              "recordMS": 0.39999999990686774
+            },
+            {
+              "duration": 0.0004,
+              "advanceMS": 118.69999999995343,
+              "recordMS": 0.6000000000931323
+            },
+            {
+              "duration": 0.0005,
+              "advanceMS": 109.10000000009313,
+              "recordMS": 0.39999999990686774
+            }
+          ],
+          "scienceHash": "0ed51255b5e2dba674cd407770801743a4a6fce3fcb156cafd64cadda3187d12"
+        },
+        {
+          "mode": "shadow",
+          "computeMS": 364.50000000023283,
+          "metrics": [
+            {
+              "type": "initialize",
+              "timing": {
+                "assetVerificationMS": 8.100000000093132,
+                "importAndOwnedTableMS": 55,
+                "createAndRecordMS": 6.399999999906868,
+                "serviceMS": 69.80000000004657
+              },
+              "delivery": {
+                "roundtripMS": 82.80000000004657,
+                "transferAndDispatchMS": -0.099853515625
+              }
+            },
+            {
+              "type": "advance",
+              "timing": {
+                "advanceMS": 186.30000000004657,
+                "projectionMS": 0,
+                "serviceMS": 186.5999999998603
+              },
+              "delivery": {
+                "roundtripMS": 187.19999999995343,
+                "transferAndDispatchMS": 0.099853515625
+              }
+            },
+            {
+              "type": "advance",
+              "timing": {
+                "advanceMS": 112.60000000009313,
+                "projectionMS": 0.10000000009313226,
+                "serviceMS": 113
+              },
+              "delivery": {
+                "roundtripMS": 114.30000000004657,
+                "transferAndDispatchMS": -0.099853515625
+              }
+            },
+            {
+              "type": "advance",
+              "timing": {
+                "advanceMS": 65.60000000009313,
+                "projectionMS": 0,
+                "serviceMS": 65.69999999995343
+              },
+              "delivery": {
+                "roundtripMS": 66.30000000004657,
+                "transferAndDispatchMS": 0
+              }
+            },
+            {
+              "type": "testDetail",
+              "timing": {
+                "serviceMS": 39.800000000046566
+              },
+              "delivery": {
+                "roundtripMS": 127.69999999995343,
+                "transferAndDispatchMS": 56.800048828125
+              }
+            },
+            {
+              "type": "dispose",
+              "timing": {
+                "serviceMS": 0
+              },
+              "delivery": {
+                "roundtripMS": 2.800000000046566,
+                "transferAndDispatchMS": 2.400146484375
+              }
+            }
+          ],
+          "exactOriginalFinalCheckpoint": true,
+          "exactOriginalAllAttemptDiagnostics": true,
+          "testOnlyPreAdvanceCopyOutsideTimer": true
+        },
+        {
+          "mode": "candidate",
+          "computeMS": 302.49999999976717,
+          "timing": [
+            {
+              "duration": 0.0001,
+              "advanceMS": 134,
+              "recordMS": 0.30000000004656613
+            },
+            {
+              "duration": 0.0004,
+              "advanceMS": 78.39999999990687,
+              "recordMS": 0.39999999990686774
+            },
+            {
+              "duration": 0.0005,
+              "advanceMS": 90.0999999998603,
+              "recordMS": 0.39999999990686774
+            }
+          ],
+          "scienceHash": "0ed51255b5e2dba674cd407770801743a4a6fce3fcb156cafd64cadda3187d12"
+        },
+        {
+          "mode": "control",
+          "computeMS": 501.60000000032596,
+          "timing": [
+            {
+              "duration": 0.0001,
+              "advanceMS": 223.60000000009313,
+              "recordMS": 0.30000000004656613
+            },
+            {
+              "duration": 0.0004,
+              "advanceMS": 143.60000000009313,
+              "recordMS": 1.6999999999534339
+            },
+            {
+              "duration": 0.0005,
+              "advanceMS": 134.4000000001397,
+              "recordMS": 0.5
+            }
+          ],
+          "scienceHash": "0ed51255b5e2dba674cd407770801743a4a6fce3fcb156cafd64cadda3187d12"
+        }
+      ]
+    },
+    {
+      "round": 1,
+      "fixture": "cold",
+      "samples": [
+        {
+          "mode": "control",
+          "computeMS": 120.99999999976717,
+          "timing": [
+            {
+              "duration": 0.0001,
+              "advanceMS": 56.699999999953434,
+              "recordMS": 0
+            },
+            {
+              "duration": 0.0004,
+              "advanceMS": 43.699999999953434,
+              "recordMS": 0.10000000009313226
+            },
+            {
+              "duration": 0.0005,
+              "advanceMS": 20.5999999998603,
+              "recordMS": 0.20000000018626451
+            }
+          ],
+          "scienceHash": "5d4a30c486acf7be383a18359ae150d00f7002b8fffa1003250ef4bdac4e3815"
+        },
+        {
+          "mode": "candidate",
+          "computeMS": 60.5,
+          "timing": [
+            {
+              "duration": 0.0001,
+              "advanceMS": 30.399999999906868,
+              "recordMS": 0.10000000009313226
+            },
+            {
+              "duration": 0.0004,
+              "advanceMS": 20.5,
+              "recordMS": 0.30000000004656613
+            },
+            {
+              "duration": 0.0005,
+              "advanceMS": 9.600000000093132,
+              "recordMS": 0.19999999995343387
+            }
+          ],
+          "scienceHash": "5d4a30c486acf7be383a18359ae150d00f7002b8fffa1003250ef4bdac4e3815"
+        },
+        {
+          "mode": "shadow",
+          "computeMS": 93.5999999998603,
+          "metrics": [
+            {
+              "type": "initialize",
+              "timing": {
+                "assetVerificationMS": 7.899999999906868,
+                "importAndOwnedTableMS": 29.5,
+                "createAndRecordMS": 3.3999999999068677,
+                "serviceMS": 42.39999999990687
+              },
+              "delivery": {
+                "roundtripMS": 54.5,
+                "transferAndDispatchMS": 0.10009765625
+              }
+            },
+            {
+              "type": "advance",
+              "timing": {
+                "advanceMS": 34.699999999953434,
+                "projectionMS": 0,
+                "serviceMS": 34.799999999813735
+              },
+              "delivery": {
+                "roundtripMS": 35.39999999990687,
+                "transferAndDispatchMS": 0.10009765625
+              }
+            },
+            {
+              "type": "advance",
+              "timing": {
+                "advanceMS": 47.5,
+                "projectionMS": 0.09999999986030161,
+                "serviceMS": 47.699999999953434
+              },
+              "delivery": {
+                "roundtripMS": 48.5,
+                "transferAndDispatchMS": 0.100341796875
+              }
+            },
+            {
+              "type": "advance",
+              "timing": {
+                "advanceMS": 11.399999999906868,
+                "projectionMS": 0,
+                "serviceMS": 11.5
+              },
+              "delivery": {
+                "roundtripMS": 21,
+                "transferAndDispatchMS": 0.600341796875
+              }
+            },
+            {
+              "type": "testDetail",
+              "timing": {
+                "serviceMS": 13.099999999860302
+              },
+              "delivery": {
+                "roundtripMS": 33.5,
+                "transferAndDispatchMS": 10.100341796875
+              }
+            },
+            {
+              "type": "dispose",
+              "timing": {
+                "serviceMS": 0
+              },
+              "delivery": {
+                "roundtripMS": 2.3999999999068677,
+                "transferAndDispatchMS": 0.60009765625
+              }
+            }
+          ],
+          "exactOriginalFinalCheckpoint": true,
+          "exactOriginalAllAttemptDiagnostics": true,
+          "testOnlyPreAdvanceCopyOutsideTimer": true
+        },
+        {
+          "mode": "candidate",
+          "computeMS": 71.9000000001397,
+          "timing": [
+            {
+              "duration": 0.0001,
+              "advanceMS": 37.5,
+              "recordMS": 0.19999999995343387
+            },
+            {
+              "duration": 0.0004,
+              "advanceMS": 23.100000000093132,
+              "recordMS": 0.19999999995343387
+            },
+            {
+              "duration": 0.0005,
+              "advanceMS": 11.300000000046566,
+              "recordMS": 0.09999999986030161
+            }
+          ],
+          "scienceHash": "5d4a30c486acf7be383a18359ae150d00f7002b8fffa1003250ef4bdac4e3815"
+        },
+        {
+          "mode": "control",
+          "computeMS": 125.00000000023283,
+          "timing": [
+            {
+              "duration": 0.0001,
+              "advanceMS": 62.5,
+              "recordMS": 0.10000000009313226
+            },
+            {
+              "duration": 0.0004,
+              "advanceMS": 42.10000000009313,
+              "recordMS": 0.19999999995343387
+            },
+            {
+              "duration": 0.0005,
+              "advanceMS": 20.4000000001397,
+              "recordMS": 0.19999999995343387
+            }
+          ],
+          "scienceHash": "5d4a30c486acf7be383a18359ae150d00f7002b8fffa1003250ef4bdac4e3815"
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "fixture": "cold",
+      "samples": [
+        {
+          "mode": "control",
+          "computeMS": 127.89999999967404,
+          "timing": [
+            {
+              "duration": 0.0001,
+              "advanceMS": 63.299999999813735,
+              "recordMS": 0.10000000009313226
+            },
+            {
+              "duration": 0.0004,
+              "advanceMS": 42.0999999998603,
+              "recordMS": 0.19999999995343387
+            },
+            {
+              "duration": 0.0005,
+              "advanceMS": 22.5,
+              "recordMS": 0.10000000009313226
+            }
+          ],
+          "scienceHash": "5d4a30c486acf7be383a18359ae150d00f7002b8fffa1003250ef4bdac4e3815"
+        },
+        {
+          "mode": "candidate",
+          "computeMS": 75.19999999995343,
+          "timing": [
+            {
+              "duration": 0.0001,
+              "advanceMS": 35.9000000001397,
+              "recordMS": 0.19999999995343387
+            },
+            {
+              "duration": 0.0004,
+              "advanceMS": 26.799999999813735,
+              "recordMS": 0.19999999995343387
+            },
+            {
+              "duration": 0.0005,
+              "advanceMS": 12.5,
+              "recordMS": 0.10000000009313226
+            }
+          ],
+          "scienceHash": "5d4a30c486acf7be383a18359ae150d00f7002b8fffa1003250ef4bdac4e3815"
+        },
+        {
+          "mode": "shadow",
+          "computeMS": 87.00000000023283,
+          "metrics": [
+            {
+              "type": "initialize",
+              "timing": {
+                "assetVerificationMS": 7.100000000093132,
+                "importAndOwnedTableMS": 24.199999999953434,
+                "createAndRecordMS": 4.199999999953434,
+                "serviceMS": 35.60000000009313
+              },
+              "delivery": {
+                "roundtripMS": 48,
+                "transferAndDispatchMS": 0
+              }
+            },
+            {
+              "type": "advance",
+              "timing": {
+                "advanceMS": 35.9000000001397,
+                "projectionMS": 0,
+                "serviceMS": 36.300000000046566
+              },
+              "delivery": {
+                "roundtripMS": 37,
+                "transferAndDispatchMS": 0.300048828125
+              }
+            },
+            {
+              "type": "advance",
+              "timing": {
+                "advanceMS": 41.199999999953434,
+                "projectionMS": 0,
+                "serviceMS": 41.300000000046566
+              },
+              "delivery": {
+                "roundtripMS": 43.60000000009313,
+                "transferAndDispatchMS": 0
+              }
+            },
+            {
+              "type": "advance",
+              "timing": {
+                "advanceMS": 9.900000000139698,
+                "projectionMS": 0,
+                "serviceMS": 10
+              },
+              "delivery": {
+                "roundtripMS": 17.5,
+                "transferAndDispatchMS": 0.199951171875
+              }
+            },
+            {
+              "type": "testDetail",
+              "timing": {
+                "serviceMS": 11.899999999906868
+              },
+              "delivery": {
+                "roundtripMS": 34.4000000001397,
+                "transferAndDispatchMS": 12.300048828125
+              }
+            },
+            {
+              "type": "dispose",
+              "timing": {
+                "serviceMS": 0.10000000009313226
+              },
+              "delivery": {
+                "roundtripMS": 2.5,
+                "transferAndDispatchMS": 2.199951171875
+              }
+            }
+          ],
+          "exactOriginalFinalCheckpoint": true,
+          "exactOriginalAllAttemptDiagnostics": true,
+          "testOnlyPreAdvanceCopyOutsideTimer": true
+        },
+        {
+          "mode": "candidate",
+          "computeMS": 64.10000000009313,
+          "timing": [
+            {
+              "duration": 0.0001,
+              "advanceMS": 32.5,
+              "recordMS": 0.19999999995343387
+            },
+            {
+              "duration": 0.0004,
+              "advanceMS": 21.800000000046566,
+              "recordMS": 0.19999999995343387
+            },
+            {
+              "duration": 0.0005,
+              "advanceMS": 9.800000000046566,
+              "recordMS": 0.10000000009313226
+            }
+          ],
+          "scienceHash": "5d4a30c486acf7be383a18359ae150d00f7002b8fffa1003250ef4bdac4e3815"
+        },
+        {
+          "mode": "control",
+          "computeMS": 136.4000000001397,
+          "timing": [
+            {
+              "duration": 0.0001,
+              "advanceMS": 66.89999999990687,
+              "recordMS": 0.20000000018626451
+            },
+            {
+              "duration": 0.0004,
+              "advanceMS": 47.800000000046566,
+              "recordMS": 0.10000000009313226
+            },
+            {
+              "duration": 0.0005,
+              "advanceMS": 21.700000000186265,
+              "recordMS": 0.5
+            }
+          ],
+          "scienceHash": "5d4a30c486acf7be383a18359ae150d00f7002b8fffa1003250ef4bdac4e3815"
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "fixture": "warm",
+      "samples": [
+        {
+          "mode": "control",
+          "computeMS": 434.5999999998603,
+          "timing": [
+            {
+              "duration": 0.0001,
+              "advanceMS": 199.19999999995343,
+              "recordMS": 0.39999999990686774
+            },
+            {
+              "duration": 0.0004,
+              "advanceMS": 122.69999999995343,
+              "recordMS": 0.39999999990686774
+            },
+            {
+              "duration": 0.0005,
+              "advanceMS": 112.69999999995343,
+              "recordMS": 0.2999999998137355
+            }
+          ],
+          "scienceHash": "0ed51255b5e2dba674cd407770801743a4a6fce3fcb156cafd64cadda3187d12"
+        },
+        {
+          "mode": "candidate",
+          "computeMS": 306.59999999962747,
+          "timing": [
+            {
+              "duration": 0.0001,
+              "advanceMS": 138.0999999998603,
+              "recordMS": 0.30000000004656613
+            },
+            {
+              "duration": 0.0004,
+              "advanceMS": 82.19999999995343,
+              "recordMS": 0.30000000004656613
+            },
+            {
+              "duration": 0.0005,
+              "advanceMS": 86.29999999981374,
+              "recordMS": 0.39999999990686774
+            }
+          ],
+          "scienceHash": "0ed51255b5e2dba674cd407770801743a4a6fce3fcb156cafd64cadda3187d12"
+        },
+        {
+          "mode": "shadow",
+          "computeMS": 288.70000000018626,
+          "metrics": [
+            {
+              "type": "initialize",
+              "timing": {
+                "assetVerificationMS": 7.899999999906868,
+                "importAndOwnedTableMS": 29.100000000093132,
+                "createAndRecordMS": 6.699999999953434,
+                "serviceMS": 43.89999999990687
+              },
+              "delivery": {
+                "roundtripMS": 53.5999999998603,
+                "transferAndDispatchMS": 0
+              }
+            },
+            {
+              "type": "advance",
+              "timing": {
+                "advanceMS": 134.69999999995343,
+                "projectionMS": 0,
+                "serviceMS": 134.9000000001397
+              },
+              "delivery": {
+                "roundtripMS": 135.5,
+                "transferAndDispatchMS": -0.099853515625
+              }
+            },
+            {
+              "type": "advance",
+              "timing": {
+                "advanceMS": 88.60000000009313,
+                "projectionMS": 0,
+                "serviceMS": 88.80000000004657
+              },
+              "delivery": {
+                "roundtripMS": 92.89999999990687,
+                "transferAndDispatchMS": -0.099853515625
+              }
+            },
+            {
+              "type": "advance",
+              "timing": {
+                "advanceMS": 65.4000000001397,
+                "projectionMS": 0,
+                "serviceMS": 65.4000000001397
+              },
+              "delivery": {
+                "roundtripMS": 66,
+                "transferAndDispatchMS": -0.099853515625
+              }
+            },
+            {
+              "type": "testDetail",
+              "timing": {
+                "serviceMS": 35.60000000009313
+              },
+              "delivery": {
+                "roundtripMS": 106.30000000004657,
+                "transferAndDispatchMS": 40.000244140625
+              }
+            },
+            {
+              "type": "dispose",
+              "timing": {
+                "serviceMS": 0
+              },
+              "delivery": {
+                "roundtripMS": 5.199999999953434,
+                "transferAndDispatchMS": 4.699951171875
+              }
+            }
+          ],
+          "exactOriginalFinalCheckpoint": true,
+          "exactOriginalAllAttemptDiagnostics": true,
+          "testOnlyPreAdvanceCopyOutsideTimer": true
+        },
+        {
+          "mode": "candidate",
+          "computeMS": 311.69999999995343,
+          "timing": [
+            {
+              "duration": 0.0001,
+              "advanceMS": 135.19999999995343,
+              "recordMS": 0.30000000004656613
+            },
+            {
+              "duration": 0.0004,
+              "advanceMS": 91.69999999995343,
+              "recordMS": 0.4000000001396984
+            },
+            {
+              "duration": 0.0005,
+              "advanceMS": 84.80000000004657,
+              "recordMS": 0.39999999990686774
+            }
+          ],
+          "scienceHash": "0ed51255b5e2dba674cd407770801743a4a6fce3fcb156cafd64cadda3187d12"
+        },
+        {
+          "mode": "control",
+          "computeMS": 479.5,
+          "timing": [
+            {
+              "duration": 0.0001,
+              "advanceMS": 232.80000000004657,
+              "recordMS": 0.39999999990686774
+            },
+            {
+              "duration": 0.0004,
+              "advanceMS": 123.69999999995343,
+              "recordMS": 1.1000000000931323
+            },
+            {
+              "duration": 0.0005,
+              "advanceMS": 123,
+              "recordMS": 0.5
+            }
+          ],
+          "scienceHash": "0ed51255b5e2dba674cd407770801743a4a6fce3fcb156cafd64cadda3187d12"
+        }
+      ]
+    }
+  ],
+  "passed": true
+}
