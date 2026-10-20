@@ -1,0 +1,178 @@
+{
+  "assets": [
+    {
+      "bytes": 4079,
+      "mime": "text/javascript",
+      "path": "client.mjs",
+      "relocations": [],
+      "sha256": "48738455836c150bfa607e1a59861ad4a814d80239e58774c6047e9f53b1d761",
+      "sourceCommit": "a49c5c4ade306fe02117139cf81c30a59727a7b1",
+      "sourceGitBlob": "71e356cf4536810dc086f231de599cbb1467fe7f",
+      "sourcePath": "experiments/dx-fv/browser_eos_b10/client.mjs",
+      "sourceSHA256": "48738455836c150bfa607e1a59861ad4a814d80239e58774c6047e9f53b1d761"
+    },
+    {
+      "bytes": 1737490,
+      "mime": "text/html",
+      "path": "index.html",
+      "relocations": [
+        {
+          "count": 1,
+          "from": "/experiments/dx-fv/browser_eos_b10/panel.mjs",
+          "to": "./panel.mjs"
+        }
+      ],
+      "sha256": "dc204dbe5291dcf45040d1863761f6fa7b59a81cee7a5a348764e849e0b275fe",
+      "sourceCommit": "a49c5c4ade306fe02117139cf81c30a59727a7b1",
+      "sourceGitBlob": "9228dbaa8c9318e7a92ad35c76817c7fa5ff2bb0",
+      "sourcePath": "experiments/dx-fv/browser_eos_b10/index.html",
+      "sourceSHA256": "f6f733db118131c4bff7b65386cd27e21c6e6c51400593b1511c35b77e3329f0"
+    },
+    {
+      "bytes": 2723,
+      "mime": "text/css",
+      "path": "panel.css",
+      "relocations": [],
+      "sha256": "ae235ed71ef4de28ab9064d4da09c1af72a9bda84121628a87941d5ea2593b73",
+      "sourceCommit": "a49c5c4ade306fe02117139cf81c30a59727a7b1",
+      "sourceGitBlob": "ad85ce09afd74359ac2f7977a24b9994ea89fcb7",
+      "sourcePath": "experiments/dx-fv/browser_eos_b10/panel.css",
+      "sourceSHA256": "ae235ed71ef4de28ab9064d4da09c1af72a9bda84121628a87941d5ea2593b73"
+    },
+    {
+      "bytes": 6637,
+      "mime": "text/javascript",
+      "path": "panel.mjs",
+      "relocations": [],
+      "sha256": "00769fb11a0f270574859a475fb7b61cabf0cab29a42363111e06022bc05687e",
+      "sourceCommit": "a49c5c4ade306fe02117139cf81c30a59727a7b1",
+      "sourceGitBlob": "81cc16bd360b0839a53cebe9de9da96140139e03",
+      "sourcePath": "experiments/dx-fv/browser_eos_b10/panel.mjs",
+      "sourceSHA256": "00769fb11a0f270574859a475fb7b61cabf0cab29a42363111e06022bc05687e"
+    },
+    {
+      "bytes": 1442705,
+      "mime": "text/javascript",
+      "path": "science/candidate-bundle.mjs",
+      "relocations": [],
+      "sha256": "f1f028e5454b8090b61c06a8afebcaaac332b3c70f3cd8ac1d4fbc0b2c0bf919",
+      "sourceCommit": "b67afb3215075b2ec82bef376d39e03953dc0da2",
+      "sourceGitBlob": "37c19d6e34735ef72d5446eebaa94dc6cd2643a6",
+      "sourcePath": "experiments/dx-fv/browser_eos_b9c/candidate-bundle.mjs",
+      "sourceSHA256": "f1f028e5454b8090b61c06a8afebcaaac332b3c70f3cd8ac1d4fbc0b2c0bf919"
+    },
+    {
+      "bytes": 7601,
+      "mime": "text/javascript",
+      "path": "service.mjs",
+      "relocations": [
+        {
+          "count": 1,
+          "from": "../browser_eos_b9/values.mjs",
+          "to": "./support/values.mjs"
+        },
+        {
+          "count": 1,
+          "from": "../browser_eos_b9c/candidate-bundle.mjs",
+          "to": "./science/candidate-bundle.mjs"
+        }
+      ],
+      "sha256": "454767ab066432dd5732c96c1724dd03866310da5e6c8cb65439d0c9dd0e8923",
+      "sourceCommit": "a49c5c4ade306fe02117139cf81c30a59727a7b1",
+      "sourceGitBlob": "5db4e9f0d2ac5638c52a61de6cf1a8896f4fadaa",
+      "sourcePath": "experiments/dx-fv/browser_eos_b10/service.mjs",
+      "sourceSHA256": "6e63f9fc489653f894a1b7d19e875491e3bac59281180c43a4fc3a6a740d2664"
+    },
+    {
+      "bytes": 736,
+      "mime": "text/javascript",
+      "path": "snapshot.mjs",
+      "relocations": [
+        {
+          "count": 2,
+          "from": "../browser_eos_b9d/snapshot.mjs",
+          "to": "./support/snapshot.mjs"
+        }
+      ],
+      "sha256": "4c4c390e3000c07fb8e9642124582c1462aaa0bd1849736837dfc9007d93a8f5",
+      "sourceCommit": "a49c5c4ade306fe02117139cf81c30a59727a7b1",
+      "sourceGitBlob": "a6291572ca2652fd11570f246e611b1073b1890e",
+      "sourcePath": "experiments/dx-fv/browser_eos_b10/snapshot.mjs",
+      "sourceSHA256": "6b25208a4df16342f3f640a73e0b994e0a2dfdf63afd7612818e99e17d66782c"
+    },
+    {
+      "bytes": 1991,
+      "mime": "text/javascript",
+      "path": "support/snapshot.mjs",
+      "relocations": [],
+      "sha256": "4712463af8f1aab3172a796c5ee31ca734838e109c4e630062086997770d5803",
+      "sourceCommit": "20ddac46423a7a742af19ac415ef8796cf3a429f",
+      "sourceGitBlob": "feaa340745498e553ce34c46afd40b896b602e38",
+      "sourcePath": "experiments/dx-fv/browser_eos_b9d/snapshot.mjs",
+      "sourceSHA256": "4712463af8f1aab3172a796c5ee31ca734838e109c4e630062086997770d5803"
+    },
+    {
+      "bytes": 2748,
+      "mime": "text/javascript",
+      "path": "support/values.mjs",
+      "relocations": [],
+      "sha256": "74c07610e5fed288653fb24dd0f1b59b86eb5374ce7af879d1e0d82eb8e751dd",
+      "sourceCommit": "a49c5c4ade306fe02117139cf81c30a59727a7b1",
+      "sourceGitBlob": "ef257a234a6d9cf0bf78d01c74c9d66d3841c65b",
+      "sourcePath": "experiments/dx-fv/browser_eos_b9/values.mjs",
+      "sourceSHA256": "74c07610e5fed288653fb24dd0f1b59b86eb5374ce7af879d1e0d82eb8e751dd"
+    },
+    {
+      "bytes": 3130,
+      "mime": "text/javascript",
+      "path": "support/view.mjs",
+      "relocations": [],
+      "sha256": "18baacb5fd0cb00fe499dfa2ff5ec31107ea7ff0665c6073b5467e421b4fb296",
+      "sourceCommit": "20ddac46423a7a742af19ac415ef8796cf3a429f",
+      "sourceGitBlob": "9cc4771df3196d928d7d82448c5f3ea0ee6e8b96",
+      "sourcePath": "experiments/dx-fv/browser_eos_b9d/view.mjs",
+      "sourceSHA256": "18baacb5fd0cb00fe499dfa2ff5ec31107ea7ff0665c6073b5467e421b4fb296"
+    },
+    {
+      "bytes": 5097,
+      "mime": "text/javascript",
+      "path": "view.mjs",
+      "relocations": [
+        {
+          "count": 2,
+          "from": "../browser_eos_b9d/view.mjs",
+          "to": "./support/view.mjs"
+        }
+      ],
+      "sha256": "8f8314990b7db246923b353c1b747de96d167abe34c8bd3b65830172e2ae327f",
+      "sourceCommit": "a49c5c4ade306fe02117139cf81c30a59727a7b1",
+      "sourceGitBlob": "56dfabd2c109b414f9b3d89ca3573c84120cdb95",
+      "sourcePath": "experiments/dx-fv/browser_eos_b10/view.mjs",
+      "sourceSHA256": "1d3633bfd8d2b36f1250a39c1f95994d8e7af3435bb819c36ddd84c8591d7faa"
+    },
+    {
+      "bytes": 293,
+      "mime": "text/javascript",
+      "path": "worker.mjs",
+      "relocations": [],
+      "sha256": "a7e1ceb05e119be932642da516ef1f52b03cb33af4214bc26098b97b76b56f4c",
+      "sourceCommit": "a49c5c4ade306fe02117139cf81c30a59727a7b1",
+      "sourceGitBlob": "8aa4d3b44464909634c8220d6fd5af1a832b7371",
+      "sourcePath": "experiments/dx-fv/browser_eos_b10/worker.mjs",
+      "sourceSHA256": "a7e1ceb05e119be932642da516ef1f52b03cb33af4214bc26098b97b76b56f4c"
+    },
+    {
+      "bytes": 7653,
+      "mime": "application/json",
+      "path": "asset-manifest.json",
+      "sha256": "b3aaf9f7a33ba1b8e591e8ed00dc4dca8c6432cbb2dd89426db461452fbe46be"
+    }
+  ],
+  "packageIdentity": "b7803a5bf93ddc102c7367b80e7dc4c620c21daec0dbad6ef1a988161e3a2914",
+  "schema": 1,
+  "sourceCommit": "909de1579051bfadca0e282adf93eaedc0e24b9c",
+  "staticRootInZip": "preview/",
+  "totalBytes": 3222883,
+  "zipRepositoryPath": "experiments/dx-fv/browser_eos_b11/preview.zip",
+  "zipSHA256": "a642fe22078e7637f9e5c12ce0efbc6f8b7de317da3853b6a52b03452a3ee078"
+}
