@@ -1,0 +1,28 @@
+{
+  "command": [
+    "node",
+    "--max-old-space-size=512",
+    "/workspace/Ammonia-sim/experiments/dx-fv/browser_eos_b13/probe.mjs",
+    "canonical",
+    "warm",
+    "0.0001,0.0005,0.001,0.002,0.005,0.01"
+  ],
+  "wallLimitSeconds": 1,
+  "cpuLimitSeconds": 1,
+  "v8HeapLimitMiB": 512,
+  "fileLimitMiB": 128,
+  "returncode": -24,
+  "timedOut": false,
+  "processWallSeconds": 1.129401160000043,
+  "complete": false,
+  "lastCheckpointSeconds": 0.0005,
+  "lastObservedAcceptedSeconds": 0.0007643417046642742,
+  "stderr": "",
+  "host": {
+    "platform": "Linux-6.18.55-x86_64-with-glibc2.41",
+    "cpu": "",
+    "logicalCPUs": 3
+  },
+  "output": "budget-termination-warm-010.jsonl.gz",
+  "terminationKind": "cpu-budget-signal"
+}
