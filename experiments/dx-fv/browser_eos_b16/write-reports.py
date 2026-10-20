@@ -295,5 +295,5 @@ status={'milestone':'B16-A0','classification':'B16-A0 DESKTOP/WORKER READINESS P
 status['gates']={'0': 'PASS: exact B15, clean start, protected source/ref/PR audit; design committed first', 'A': 'PASS diagnostic characterization; causal cold root cause remains unresolved', 'B': 'PASS actual Linux Chromium Workers; Edge/WebKit NOT TESTED', 'C': 'PASS exact same-runtime science and original failures', 'D': 'PASS bounded service, lifecycle and minimal-harness responsiveness measurements', 'E': 'PASS bounded research matrix, absolute/relative tradeoffs and hypothetical-only mixes', 'F': 'PASS six-pair primary counterbalanced samples; all valid extremes retained', 'G': 'PASS local handoff prepared and cloud UI/download verified; owner device NOT TESTED', 'H': 'CONDITIONAL GO recommendation only; no integration authorized or performed'}
 (B/'milestone-status.json').write_text(json.dumps(status,indent=2)+'\n')
 with (B/'milestone-status.csv').open('w',newline='') as f:
- w=csv.writer(f);w.writerow(['field','value']);w.writerows(status.items())
+ w=csv.writer(f,lineterminator='\n');w.writerow(['field','value']);w.writerows((k,json.dumps(v)if isinstance(v,dict)else v)for k,v in status.items())
 print('Rendered 12 measurement-driven reports plus JSON/CSV milestone status')
