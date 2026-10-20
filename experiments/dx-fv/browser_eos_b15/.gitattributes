@@ -1,0 +1,4 @@
+# Preserve literal registry derivatives and exact unified-diff context bytes.
+*-bundle.mjs -whitespace
+*.patch -whitespace
+ORIGINAL_VS_CANDIDATE_SOURCE_DIFF.md -whitespace

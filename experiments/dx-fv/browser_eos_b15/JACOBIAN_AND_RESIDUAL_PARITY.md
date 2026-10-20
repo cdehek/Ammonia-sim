@@ -1,0 +1,7 @@
+# Jacobian and residual parity
+
+PASS: 76,768 complete residual-object comparisons and 3,430 actual matrices/corrections across six Node fixture/schedule pairs. Original schedules alone: cold 5,272 residuals / 235 matrices; warm 19,380 / 867. Matrices are 21×21.
+
+Actual `solveLinear` input matrices, right-hand sides and returned corrections are hashed from binary64 data, as are x and complete residual evaluation objects. The actual matrix captured by B14's before-solve hook must also equal an independently reconstructed matrix: each original derivative event supplies signed step and perturbed residual; each element is reconstructed in original `(perturbed-base)/step` order. Full original attempt events, including every residual, signed finite-difference selection, Newton status and line search, compare bit exactly. A full first matrix/RHS/correction is retained in exact encoding for inspection; all matrices can be reconstructed from retained original attempts and checked against actual hashes.
+
+Raw receipts retain ordered matrix/correction/residual hashes, column probes and attempts. Failure/regression cases also compare full linear/residual/solve component hashes from the original B9C observer. Browser comparisons check every actual matrix/correction and residual vector directly in the same Chromium runtime. No finite-difference formula, analytic derivative, solver stopping or line search change exists.

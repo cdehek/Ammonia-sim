@@ -1,0 +1,73 @@
+{
+  "passed": true,
+  "left": "candidate-cold-added",
+  "right": "observe-candidate-cold-added",
+  "sources": {
+    "left": {
+      "variant": "candidate",
+      "sha256": "afab073693d6d4eb3e734f84a847805ff9866dada75114add92ca6f911f483c7"
+    },
+    "right": {
+      "variant": "observe-candidate",
+      "sha256": "d7fe9bfb2bc129796f4405175b864982ece9393ba8c54398532122031585d07b"
+    }
+  },
+  "fixture": "cold",
+  "schedule": "added",
+  "checkpoints": [
+    {
+      "seconds": 0,
+      "scienceHash": "42e16a97e38606d843cae06f0d8b08e2934f401a294130782bb037402f5f1151",
+      "attemptsHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "seconds": 0.0001,
+      "scienceHash": "541498d43b15114e183bcbd30f0432d37ea583c3f2e8a2e2cef73cf17f7dce7a",
+      "attemptsHash": "c2000d94f8534fa83f082106eb2324079fdfd2dcb1adb498c3a8059f8743325c"
+    },
+    {
+      "seconds": 0.0005,
+      "scienceHash": "5e27e8882f57403d5e3c99051901b0bc060c6ee72af195a9bee91ec35b242923",
+      "attemptsHash": "0538787b20fee0f4e32eb736fae25993d3ef0d6e18df1c2ff6dd49109841f875"
+    },
+    {
+      "seconds": 0.001,
+      "scienceHash": "d865da14415d725b23d9266ad0e07c5ce97077b15077eabbeaf28015643268f5",
+      "attemptsHash": "6bb3594c9113e63ed02d6d1958c6698ae18c3230960de28e0d2ca39e84c8b974"
+    },
+    {
+      "seconds": 0.002,
+      "scienceHash": "5f16558dcf2740f9e59385122b96462798646a585dcb878bde7a46d9231bc0f6",
+      "attemptsHash": "b8b9175f0882fa8d51b4189bf210281f7eda8c64535065770607522b8364f4e7"
+    },
+    {
+      "seconds": 0.005,
+      "scienceHash": "6c56951bf7dd4283721c6cf8919c02346972c20b80e8d383f6bd1fd23541da87",
+      "attemptsHash": "4806870445b14a80bfa500c1641afcde419001cf8b78b5978ba0054fa0cad3cb"
+    },
+    {
+      "seconds": 0.00525,
+      "scienceHash": "c0394f578c916bf993d3bc84f0db7c4d54cacd9b048f14f087448ccb5fcdf098",
+      "attemptsHash": "d83470e81551e855e9c2da64b82fbd52c6669dec3c7f56e0b5a225d16426b4a7"
+    },
+    {
+      "seconds": 0.0055,
+      "scienceHash": "642cf4ebee6d58aa25b67bc50f653083225ef1d927859ab7a20b316c1c5a6dd6",
+      "attemptsHash": "47eea686a38023717463b254cc4674a7e5888cb2de583d0f0683afdd18df3f34"
+    },
+    {
+      "seconds": 0.01,
+      "scienceHash": "6a25f30a4d2b6afa1d60bae2f940ae8ba2858eac9fbcea27d8cc8561a4a4a9c8",
+      "attemptsHash": "a1ad5c3951bb6eb9bf770d67a2720f858b898784921d1ac8eb8c2b68af25da08"
+    }
+  ],
+  "historicalB14Checkpoints": [],
+  "allScientificObjectsBitExact": true,
+  "originalAttemptsBitExact": true,
+  "independentFullJacobianReconstructions": 269,
+  "actualMatricesAndCorrectionsCompared": 0,
+  "completeResidualObjectsCompared": 0,
+  "acceptedHalfStepsAndTemporalDecisionsCompared": false,
+  "conservation": null,
+  "counts": null
+}

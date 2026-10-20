@@ -1,0 +1,56 @@
+{
+  "command": [
+    "node",
+    "--max-old-space-size=512",
+    "/workspace/Ammonia-sim/experiments/dx-fv/browser_eos_b15/probe.mjs",
+    "candidate",
+    "warm",
+    "fine",
+    "0.01"
+  ],
+  "wallLimitSeconds": 40,
+  "cpuLimitSeconds": 40,
+  "v8HeapLimitMiB": 512,
+  "fileLimitMiB": 64,
+  "processGroupTermination": true,
+  "returncode": 0,
+  "timedOut": false,
+  "wallSeconds": 6.16981242199995,
+  "complete": {
+    "type": "complete",
+    "seconds": 0.01,
+    "stop": null,
+    "resource": {
+      "userCPUTime": 7048288,
+      "systemCPUTime": 354735,
+      "maxRSS": 448568,
+      "sharedMemorySize": 0,
+      "unsharedDataSize": 0,
+      "unsharedStackSize": 0,
+      "minorPageFault": 198782,
+      "majorPageFault": 0,
+      "swappedOut": 0,
+      "fsRead": 0,
+      "fsWrite": 32632,
+      "ipcSent": 0,
+      "ipcReceived": 0,
+      "signalsCount": 0,
+      "voluntaryContextSwitches": 1703,
+      "involuntaryContextSwitches": 504
+    },
+    "memory": {
+      "rss": 443207680,
+      "heapTotal": 251084800,
+      "heapUsed": 133543856,
+      "external": 6369763,
+      "arrayBuffers": 263411
+    },
+    "stackEmpty": true
+  },
+  "lastCheckpointSeconds": 0.01,
+  "lastIndependentlyAcceptedSeconds": 0.01,
+  "stderr": "",
+  "uncompressedBytes": 16705773,
+  "compressedBytes": 2086259,
+  "terminationKind": "completed"
+}

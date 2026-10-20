@@ -1,0 +1,41 @@
+{
+  "passed": true,
+  "case": {
+    "p": 4,
+    "h": 1700
+  },
+  "control": {
+    "phCalls": 1,
+    "inversions": 1,
+    "saturations": 2,
+    "pressureBrackets": 42,
+    "pressureLogs": 42,
+    "pressureAxisReads": 588,
+    "pressureComparisons": 336,
+    "bracketArrays": 82,
+    "branches": 40,
+    "offsetAxisReads": 508,
+    "branchRowReads4": 40,
+    "mixRows": 120,
+    "mixComponentReads6": 120,
+    "bisections": 38
+  },
+  "candidate": {
+    "phCalls": 1,
+    "inversions": 1,
+    "saturations": 2,
+    "pressureBrackets": 3,
+    "pressureLogs": 3,
+    "pressureAxisReads": 42,
+    "pressureComparisons": 24,
+    "bracketArrays": 43,
+    "ownedHolders": 1,
+    "branches": 40,
+    "offsetAxisReads": 508,
+    "branchRowReads4": 40,
+    "mixRows": 120,
+    "mixComponentReads6": 120,
+    "bisections": 38
+  },
+  "counting": "detached equal source hooks, excludes engine construction; rowReads4 and componentReads6 are site counts with indicated multipliers"
+}

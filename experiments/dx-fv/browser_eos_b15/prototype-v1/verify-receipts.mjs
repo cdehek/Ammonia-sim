@@ -1,0 +1,2 @@
+import fs from'node:fs';import{createHash}from'node:crypto';import{readReceipt}from'../receipts.mjs';
+const index=JSON.parse(fs.readFileSync(new URL('./receipt-compaction.json',import.meta.url)));for(const r of index.receipts){const h=createHash('sha256').update(JSON.stringify(readReceipt(r.name))).digest('hex');if(h!==r.resolvedJSONSHA256)throw Error('preliminary receipt mismatch '+r.name);}console.log('PASS: preliminary compacted receipts retained losslessly');

@@ -1,0 +1,48 @@
+--- pinned-B9C-control
++++ B15-candidate
+@@ -4,7 +4,7 @@
+ /* Ammonia Lab v0.2.0: bounded real-fluid interpolation and cycle solver. */
+ (function(root){
+ 'use strict';
+-function createEngine(data){
++function createEngine(data,reuseVaporPH=false){
+  const eps=1e-8;
+  const lerp=(a,b,w)=>a+(b-a)*w;
+  function bracket(values,x){if(x<values[0]-eps||x>values[values.length-1]+eps)throw Error('State outside the validated property domain.');if(x>=values[values.length-1])return [values.length-2,1];let lo=0,hi=values.length-1;while(hi-lo>1){const m=(lo+hi)>>1;if(values[m]<=x)lo=m;else hi=m;}return [lo,(x-values[lo])/(values[lo+1]-values[lo])];}
+@@ -13,10 +13,10 @@
+  function mixRow(a,b,w){if(!a||!b)throw Error('Liquid state below the property table temperature limit.');return [lerp(a[0],b[0],w),lerp(a[1],b[1],w),Math.exp(lerp(Math.log(a[2]),Math.log(b[2]),w))];}
+  function sat(p){const [i,w]=pBracket(p),a=data.sat[i],b=data.sat[i+1];return {p,T:lerp(a[0],b[0],w),hf:lerp(a[1],b[1],w),sf:lerp(a[2],b[2],w),rhof:Math.exp(lerp(Math.log(a[3]),Math.log(b[3]),w)),hg:lerp(a[4],b[4],w),sg:lerp(a[5],b[5],w),rhog:Math.exp(lerp(Math.log(a[6]),Math.log(b[6]),w))};}
+  function satP(T){const temps=data.sat.map(row=>row[0]),[i,w]=bracket(temps,T);return Math.exp(lerp(logs[i],logs[i+1],w));}
+- function branch(p,offset,kind){const axis=kind==='vapor'?data.sh:data.sc,[j,u]=bracket(axis,offset),[i,w]=pBracket(p);return mixRow(mixRow(data[kind][i][j],data[kind][i][j+1],u),mixRow(data[kind][i+1][j],data[kind][i+1][j+1],u),w);}
+- function statePT(p,T,kind){const a=sat(p),d=T-a.T;
++ function branch(p,offset,kind,owned){const axis=kind==='vapor'?data.sh:data.sc,[j,u]=bracket(axis,offset),[i,w]=owned?(owned.value||(owned.value=pBracket(p))):pBracket(p);return mixRow(mixRow(data[kind][i][j],data[kind][i][j+1],u),mixRow(data[kind][i+1][j],data[kind][i+1][j+1],u),w);}
++ function statePT(p,T,kind,owned){const a=sat(p),d=T-a.T;
+   if(kind==='liquid'||d < -eps){const r=branch(p,Math.max(0,-d),'liquid');return {p,T,h:r[0],s:r[1],rho:r[2],x:null,phase:d<-eps?'Subcooled liquid':'Saturated liquid'};}
+-  const r=branch(p,Math.max(0,d),'vapor');return {p,T,h:r[0],s:r[1],rho:r[2],x:null,phase:d>eps?'Superheated vapor':'Saturated vapor'};
++  const r=branch(p,Math.max(0,d),'vapor',owned);return {p,T,h:r[0],s:r[1],rho:r[2],x:null,phase:d>eps?'Superheated vapor':'Saturated vapor'};
+  }
+  function statePX(p,x){if(x<0||x>1)throw Error('Vapor quality must be between zero and one.');const a=sat(p);return {p,T:a.T,h:lerp(a.hf,a.hg,x),s:lerp(a.sf,a.sg,x),rho:1/((1-x)/a.rhof+x/a.rhog),x,phase:x===0?'Saturated liquid':x===1?'Saturated vapor':'Liquid + vapor'};}
+  function inverse(p,target,key){const a=sat(p),f=key==='h'?a.hf:a.sf,g=key==='h'?a.hg:a.sg;
+@@ -27,9 +27,10 @@
+    let low=0,high=max;for(let i=0;i<38;i++){const mid=(low+high)/2;if(branch(p,mid,kind)[col]>target)low=mid;else high=mid;}
+    const result=statePT(p,a.T-(low+high)/2,'liquid');result[key]=target;return result;
+   }
+-  if(branch(p,max,kind)[col]<target-eps)throw Error('Compressor discharge exceeds the property table (250 K superheat). Use a lower ratio or higher efficiency.');
+-  let low=0,high=max;for(let i=0;i<38;i++){const mid=(low+high)/2;if(branch(p,mid,kind)[col]<target)low=mid;else high=mid;}
+-  const result=statePT(p,a.T+(low+high)/2);result[key]=target;return result;
++  const owned=reuseVaporPH&&key==='h'&&Number.isFinite(p)&&Number.isFinite(target)?{value:null}:undefined;
++  if(branch(p,max,kind,owned)[col]<target-eps)throw Error('Compressor discharge exceeds the property table (250 K superheat). Use a lower ratio or higher efficiency.');
++  let low=0,high=max;for(let i=0;i<38;i++){const mid=(low+high)/2;if(branch(p,mid,kind,owned)[col]<target)low=mid;else high=mid;}
++  const result=statePT(p,a.T+(low+high)/2,undefined,owned);result[key]=target;return result;
+  }
+  const ph=(p,h)=>inverse(p,h,'h'),ps=(p,s)=>inverse(p,s,'s');
+  // Invert the same bounded EOS grid at fixed density; never extrapolate a stored state.
+@@ -1280,7 +1281,7 @@
+ function freeze(value){if(value&&typeof value==='object'&&!Object.isFrozen(value)){Object.values(value).forEach(freeze);Object.freeze(value);}return value;}
+ function createTableEngine(){
+  const data=freeze(require('./properties.json'));
+- const engine=Object.freeze(createEngine(data));owned.add(engine);return engine;
++ const engine=Object.freeze(createEngine(data,true));owned.add(engine);return engine;
+ }
+ module.exports={createTableEngine,owns:engine=>owned.has(engine)};
+ 

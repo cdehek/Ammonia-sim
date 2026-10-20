@@ -1,0 +1,31 @@
+{
+  "passed": true,
+  "cases": 59862,
+  "gridPressures": 963,
+  "extraHistoricalStates": 0,
+  "ownership": [
+    {
+      "callerMutationIndependent": true,
+      "freshSuccessiveResults": true,
+      "alternatingPressuresIndependent": true,
+      "failedThenValidIndependent": true,
+      "separateEngineIndependent": true
+    },
+    {
+      "callerMutationIndependent": true,
+      "freshSuccessiveResults": true,
+      "alternatingPressuresIndependent": true,
+      "failedThenValidIndependent": true,
+      "separateEngineIndependent": true
+    }
+  ],
+  "fields": "all own enumerable result fields and own error fields except runtime stack; binary64, undefined/null, signed zero, property order and constructor",
+  "runtime": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
+  "browserVersion": "154.0.8037.57",
+  "sourceBuilds": {
+    "control": "f1f028e5454b8090b61c06a8afebcaaac332b3c70f3cd8ac1d4fbc0b2c0bf919",
+    "candidate": "afab073693d6d4eb3e734f84a847805ff9866dada75114add92ca6f911f483c7",
+    "observe-control": "0857a0870d911f905b50712fd94c5f186845586105b739e340ec4dbdc273768d",
+    "observe-candidate": "d7fe9bfb2bc129796f4405175b864982ece9393ba8c54398532122031585d07b"
+  }
+}

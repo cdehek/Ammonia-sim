@@ -1,0 +1,2 @@
+import fs from'node:fs';import{createHash}from'node:crypto';import{readReceipt}from'./receipts.mjs';
+const E=new URL('./evidence/',import.meta.url),x=JSON.parse(fs.readFileSync(new URL('receipt-compaction.json',E)));for(const r of x.receipts){const h=createHash('sha256').update(JSON.stringify(readReceipt(r.name))).digest('hex');if(h!==r.resolvedJSONSHA256)throw Error('lossless resolution mismatch '+r.name);}console.log('PASS lossless parsed JSON for every compacted scientific receipt');

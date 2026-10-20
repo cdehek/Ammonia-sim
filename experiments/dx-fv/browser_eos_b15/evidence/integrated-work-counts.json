@@ -1,0 +1,170 @@
+{
+  "passed": true,
+  "scope": "Advance only; independent exact initialization subtracted; source read/construction counts, not allocator bytes",
+  "fixtures": {
+    "cold": {
+      "control": {
+        "initialCounts": {
+          "phCalls": 15,
+          "inversions": 15,
+          "saturations": 85,
+          "pressureBrackets": 165,
+          "pressureLogs": 165,
+          "pressureAxisReads": 2310,
+          "pressureComparisons": 1320,
+          "bracketArrays": 245,
+          "branches": 80,
+          "offsetAxisReads": 1016,
+          "branchRowReads4": 80,
+          "mixRows": 240,
+          "mixComponentReads6": 240,
+          "bisections": 76
+        },
+        "advanceCounts": {
+          "phCalls": 5028,
+          "inversions": 5028,
+          "saturations": 18924,
+          "pressureBrackets": 27324,
+          "pressureLogs": 27324,
+          "pressureAxisReads": 382536,
+          "pressureComparisons": 218592,
+          "bracketArrays": 35724,
+          "branches": 8400,
+          "offsetAxisReads": 106680,
+          "branchRowReads4": 8400,
+          "mixRows": 25200,
+          "mixComponentReads6": 25200,
+          "bisections": 7980
+        },
+        "vaporPH": {
+          "calls": 210,
+          "branches": 8400
+        },
+        "allPH": 5028
+      },
+      "candidate": {
+        "initialCounts": {
+          "phCalls": 15,
+          "inversions": 15,
+          "saturations": 85,
+          "pressureBrackets": 87,
+          "pressureLogs": 87,
+          "pressureAxisReads": 1218,
+          "pressureComparisons": 696,
+          "bracketArrays": 167,
+          "ownedHolders": 2,
+          "branches": 80,
+          "offsetAxisReads": 1016,
+          "branchRowReads4": 80,
+          "mixRows": 240,
+          "mixComponentReads6": 240,
+          "bisections": 76
+        },
+        "advanceCounts": {
+          "phCalls": 5028,
+          "inversions": 5028,
+          "saturations": 18924,
+          "pressureBrackets": 19134,
+          "pressureLogs": 19134,
+          "pressureAxisReads": 267876,
+          "pressureComparisons": 153072,
+          "bracketArrays": 27534,
+          "ownedHolders": 210,
+          "branches": 8400,
+          "offsetAxisReads": 106680,
+          "branchRowReads4": 8400,
+          "mixRows": 25200,
+          "mixComponentReads6": 25200,
+          "bisections": 7980
+        },
+        "vaporPH": {
+          "calls": 210,
+          "branches": 8400
+        },
+        "allPH": 5028
+      }
+    },
+    "warm": {
+      "control": {
+        "initialCounts": {
+          "phCalls": 15,
+          "inversions": 15,
+          "saturations": 75,
+          "pressureBrackets": 935,
+          "pressureLogs": 935,
+          "pressureAxisReads": 13090,
+          "pressureComparisons": 7480,
+          "bracketArrays": 1795,
+          "branches": 860,
+          "offsetAxisReads": 10904,
+          "branchRowReads4": 860,
+          "mixRows": 2580,
+          "mixComponentReads6": 2580,
+          "bisections": 494
+        },
+        "advanceCounts": {
+          "phCalls": 17416,
+          "inversions": 17416,
+          "saturations": 61259,
+          "pressureBrackets": 764565,
+          "pressureLogs": 764565,
+          "pressureAxisReads": 10703910,
+          "pressureComparisons": 6116520,
+          "bracketArrays": 1467871,
+          "branches": 703306,
+          "offsetAxisReads": 8921192,
+          "branchRowReads4": 703306,
+          "mixRows": 2109918,
+          "mixComponentReads6": 2109918,
+          "bisections": 598082
+        },
+        "vaporPH": {
+          "calls": 15739,
+          "branches": 629560
+        },
+        "allPH": 17416
+      },
+      "candidate": {
+        "initialCounts": {
+          "phCalls": 15,
+          "inversions": 15,
+          "saturations": 75,
+          "pressureBrackets": 428,
+          "pressureLogs": 428,
+          "pressureAxisReads": 5992,
+          "pressureComparisons": 3424,
+          "bracketArrays": 1288,
+          "ownedHolders": 13,
+          "branches": 860,
+          "offsetAxisReads": 10904,
+          "branchRowReads4": 860,
+          "mixRows": 2580,
+          "mixComponentReads6": 2580,
+          "bisections": 494
+        },
+        "advanceCounts": {
+          "phCalls": 17416,
+          "inversions": 17416,
+          "saturations": 61259,
+          "pressureBrackets": 150744,
+          "pressureLogs": 150744,
+          "pressureAxisReads": 2110416,
+          "pressureComparisons": 1205952,
+          "bracketArrays": 854050,
+          "ownedHolders": 15739,
+          "branches": 703306,
+          "offsetAxisReads": 8921192,
+          "branchRowReads4": 703306,
+          "mixRows": 2109918,
+          "mixComponentReads6": 2109918,
+          "bisections": 598082
+        },
+        "vaporPH": {
+          "calls": 15739,
+          "branches": 629560
+        },
+        "allPH": 17416
+      }
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "milestone": "B15-A1",
+  "classification": "B15-A1 EXACT-EQUIVALENCE OPTIMIZATION PASS",
+  "branch": "research/b15-vapor-ph-bracket-reuse-20261020",
+  "startingB14": "71608010fe49946dc542a4d85dff315c875274ad",
+  "designCommit": "90806af",
+  "candidateBuildSHA256": "afab073693d6d4eb3e734f84a847805ff9866dada75114add92ca6f911f483c7",
+  "prototypeV1InterfaceCounterexampleRetained": true,
+  "finalInterfaceCorrectionRegressedNodeAndChromium": true,
+  "qualificationSeconds": 0.001,
+  "maximumResearchSeconds": 0.01,
+  "gates": {
+    "0-source-and-design": "PASS",
+    "A-prototype": "PASS",
+    "B-property": "PASS",
+    "C-work-reduction": "PASS",
+    "D-coupled-science": "PASS",
+    "E-refusal-rollback": "PASS",
+    "F-controlled-measurements": "PASS",
+    "G-conservation-phase": "PASS",
+    "H-isolation": "PASS"
+  },
+  "nodePropertyComparisons": 60274,
+  "sameChromiumScience": true,
+  "warmFasterPairs": 6,
+  "coldFasterPairs": 1,
+  "productionPromotion": false,
+  "unresolved": [
+    "Desktop Windows/macOS Chrome/Edge Worker performance",
+    "JIT/GC/small-sample and aggregate-workload uncertainty",
+    "Finite input coverage and explicit frozen-table precondition",
+    "Actual allocation bytes/exclusive GC attribution",
+    "Preliminary vapor timing outlier"
+  ],
+  "reviewState": "STOP FOR ENGINEERING REVIEW",
+  "finalSHA": "branch HEAD supplied at delivery; commit cannot embed self-hash"
+}

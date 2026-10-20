@@ -1,0 +1,9 @@
+{
+  "wallSeconds": 0.1652488510000012,
+  "wallBudgetSeconds": 40,
+  "cpuLimitInheritedPerProcessSeconds": 40,
+  "heapMiB": 512,
+  "returncode": 1,
+  "externalTermination": false,
+  "stderr": "Traceback (most recent call last):\n  File \"/workspace/Ammonia-sim/experiments/dx-fv/browser_eos_b15/browser.py\", line 11, in <module>\n    server=http.server.ThreadingHTTPServer(('127.0.0.1',0),Handler);threading.Thread(target=server.serve_forever,daemon=True).start();base='http://127.0.0.1:'+str(server.server_port)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/socketserver.py\", line 453, in __init__\n    self.socket = socket.socket(self.address_family,\n                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/socket.py\", line 233, in __init__\n    _socket.socket.__init__(self, family, type, proto, fileno)\nPermissionError: [Errno 1] Operation not permitted\n"
+}

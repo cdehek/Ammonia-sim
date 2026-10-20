@@ -1,0 +1,26 @@
+{
+  "command": [
+    "node",
+    "--max-old-space-size=512",
+    "/workspace/Ammonia-sim/experiments/dx-fv/browser_eos_b15/probe.mjs",
+    "candidate",
+    "warm",
+    "original",
+    "0.01"
+  ],
+  "wallLimitSeconds": 1,
+  "cpuLimitSeconds": 1,
+  "v8HeapLimitMiB": 512,
+  "fileLimitMiB": 64,
+  "processGroupTermination": true,
+  "returncode": -24,
+  "timedOut": false,
+  "wallSeconds": 0.8262201560000904,
+  "complete": null,
+  "lastCheckpointSeconds": 0.0005,
+  "lastIndependentlyAcceptedSeconds": 0.0009236366510514928,
+  "stderr": "",
+  "uncompressedBytes": 100706,
+  "compressedBytes": 21907,
+  "terminationKind": "external-cpu-budget"
+}

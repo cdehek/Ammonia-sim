@@ -1,0 +1,38 @@
+[
+  {
+    "variant": "control",
+    "fixture": "cold",
+    "gcEvents": 32,
+    "processWidePauseMS": 24.1,
+    "maxPauseMS": 4.2,
+    "stderr": "",
+    "scope": "Entire fresh process, including initialization and record, trace instrumentation perturbs runtime; not timed advance attribution or primary sample"
+  },
+  {
+    "variant": "candidate",
+    "fixture": "cold",
+    "gcEvents": 32,
+    "processWidePauseMS": 24.3,
+    "maxPauseMS": 4.2,
+    "stderr": "",
+    "scope": "Entire fresh process, including initialization and record, trace instrumentation perturbs runtime; not timed advance attribution or primary sample"
+  },
+  {
+    "variant": "control",
+    "fixture": "warm",
+    "gcEvents": 102,
+    "processWidePauseMS": 73.4,
+    "maxPauseMS": 4.1,
+    "stderr": "",
+    "scope": "Entire fresh process, including initialization and record, trace instrumentation perturbs runtime; not timed advance attribution or primary sample"
+  },
+  {
+    "variant": "candidate",
+    "fixture": "warm",
+    "gcEvents": 89,
+    "processWidePauseMS": 47.1,
+    "maxPauseMS": 4.2,
+    "stderr": "",
+    "scope": "Entire fresh process, including initialization and record, trace instrumentation perturbs runtime; not timed advance attribution or primary sample"
+  }
+]

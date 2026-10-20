@@ -1,0 +1,24 @@
+{
+  "passed": true,
+  "cases": 60274,
+  "gridPressures": 963,
+  "extraHistoricalStates": 206,
+  "ownership": [
+    {
+      "callerMutationIndependent": true,
+      "freshSuccessiveResults": true,
+      "alternatingPressuresIndependent": true,
+      "failedThenValidIndependent": true,
+      "separateEngineIndependent": true
+    },
+    {
+      "callerMutationIndependent": true,
+      "freshSuccessiveResults": true,
+      "alternatingPressuresIndependent": true,
+      "failedThenValidIndependent": true,
+      "separateEngineIndependent": true
+    }
+  ],
+  "fields": "all own enumerable result fields and own error fields except runtime stack; binary64, undefined/null, signed zero, property order and constructor",
+  "receiptSHA256": "38b624e7e25b27d77dbc12f5aec502a7e1dd7f07c91f98b95fb319711ae1fd61"
+}

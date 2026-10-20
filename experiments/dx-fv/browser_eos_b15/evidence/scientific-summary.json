@@ -1,0 +1,164 @@
+{
+  "passed": true,
+  "schedules": [
+    {
+      "fixture": "cold",
+      "schedule": "original",
+      "checkpoints": 7,
+      "residuals": 5272,
+      "jacobiansAndCorrections": 235,
+      "acceptedHalfStates": 32,
+      "conservation": {
+        "passed": true,
+        "acceptedHalfStates": 32,
+        "max": {
+          "mass": 1.2636987878106472e-14,
+          "fluid": 6.3338639888499415e-12,
+          "thermal": 9.787309851461146e-15,
+          "combined": 6.3248850601382856e-12,
+          "sectionMass": 1.0992706853292511e-13,
+          "sectionEnergy": 5.498880864540645e-11,
+          "node": 9.783840404509192e-15
+        },
+        "thresholds": {
+          "massKg": 1e-8,
+          "energyKJ": 0.000001
+        },
+        "allElevenThermalNodesAndSignedDonors": true
+      }
+    },
+    {
+      "fixture": "cold",
+      "schedule": "added",
+      "checkpoints": 9,
+      "residuals": 6038,
+      "jacobiansAndCorrections": 269,
+      "acceptedHalfStates": 38,
+      "conservation": {
+        "passed": true,
+        "acceptedHalfStates": 38,
+        "max": {
+          "mass": 1.0415930271068241e-14,
+          "fluid": 5.223363408468629e-12,
+          "thermal": 8.042178034628478e-15,
+          "combined": 5.2190335386725906e-12,
+          "sectionMass": 9.596110798343327e-14,
+          "sectionEnergy": 4.8002668680269256e-11,
+          "node": 8.03523914072457e-15
+        },
+        "thresholds": {
+          "massKg": 1e-8,
+          "energyKJ": 0.000001
+        },
+        "allElevenThermalNodesAndSignedDonors": true
+      }
+    },
+    {
+      "fixture": "cold",
+      "schedule": "fine",
+      "checkpoints": 13,
+      "residuals": 7366,
+      "jacobiansAndCorrections": 328,
+      "acceptedHalfStates": 48,
+      "conservation": {
+        "passed": true,
+        "acceptedHalfStates": 48,
+        "max": {
+          "mass": 9.764645790891462e-15,
+          "fluid": 4.887493187943903e-12,
+          "thermal": 7.105427357601002e-15,
+          "combined": 4.880387760586302e-12,
+          "sectionMass": 9.293084422649922e-14,
+          "sectionEnergy": 4.64882984538284e-11,
+          "node": 7.0915495697931874e-15
+        },
+        "thresholds": {
+          "massKg": 1e-8,
+          "energyKJ": 0.000001
+        },
+        "allElevenThermalNodesAndSignedDonors": true
+      }
+    },
+    {
+      "fixture": "warm",
+      "schedule": "original",
+      "checkpoints": 7,
+      "residuals": 19380,
+      "jacobiansAndCorrections": 867,
+      "acceptedHalfStates": 86,
+      "conservation": {
+        "passed": true,
+        "acceptedHalfStates": 86,
+        "max": {
+          "mass": 9.134019766671858e-14,
+          "fluid": 1.560128207178657e-10,
+          "thermal": 1.6275869541004795e-13,
+          "combined": 1.5617557941327576e-10,
+          "sectionMass": 6.0548442616052e-14,
+          "sectionEnergy": 9.932753577968079e-11,
+          "node": 5.759281940243e-14
+        },
+        "thresholds": {
+          "massKg": 1e-8,
+          "energyKJ": 0.000001
+        },
+        "allElevenThermalNodesAndSignedDonors": true
+      }
+    },
+    {
+      "fixture": "warm",
+      "schedule": "added",
+      "checkpoints": 9,
+      "residuals": 19182,
+      "jacobiansAndCorrections": 858,
+      "acceptedHalfStates": 88,
+      "conservation": {
+        "passed": true,
+        "acceptedHalfStates": 88,
+        "max": {
+          "mass": 8.55155383354747e-14,
+          "fluid": 1.414219297224406e-10,
+          "thermal": 9.526060495979038e-14,
+          "combined": 1.4150108168520248e-10,
+          "sectionMass": 7.513478026050825e-14,
+          "sectionEnergy": 1.2263912455012793e-10,
+          "node": 4.90510410067202e-14
+        },
+        "thresholds": {
+          "massKg": 1e-8,
+          "energyKJ": 0.000001
+        },
+        "allElevenThermalNodesAndSignedDonors": true
+      }
+    },
+    {
+      "fixture": "warm",
+      "schedule": "fine",
+      "checkpoints": 13,
+      "residuals": 19530,
+      "jacobiansAndCorrections": 873,
+      "acceptedHalfStates": 98,
+      "conservation": {
+        "passed": true,
+        "acceptedHalfStates": 98,
+        "max": {
+          "mass": 9.899539684093267e-14,
+          "fluid": 1.6134345942608874e-10,
+          "thermal": 1.0692488561225844e-13,
+          "combined": 1.614476330402681e-10,
+          "sectionMass": 9.958241777843421e-14,
+          "sectionEnergy": 1.6210605080502205e-10,
+          "node": 5.760149301980988e-14
+        },
+        "thresholds": {
+          "massKg": 1e-8,
+          "energyKJ": 0.000001
+        },
+        "allElevenThermalNodesAndSignedDonors": true
+      }
+    }
+  ],
+  "residuals": 76768,
+  "jacobiansAndCorrections": 3430,
+  "allHistoricalOriginalCheckpointsBitExact": true
+}

@@ -1,0 +1,5 @@
+import fs from'node:fs';import{same,assert}from'../browser_eos_b9/values.mjs';
+const out={};for(const variant of ['control','candidate']){const {loader}=await import('./count-'+variant+'-bundle.mjs');const counts={};globalThis.__b15count=k=>counts[k]=(counts[k]||0)+1;const e=loader()('table-only.cjs').createTableEngine();const before={...counts};e.ph(4,1700);out[variant]=Object.fromEntries(Object.entries(counts).map(([k,v])=>[k,v-(before[k]||0)]));}
+for(const k of ['phCalls','inversions','saturations','branches','bisections','branchRowReads4','mixRows','mixComponentReads6','offsetAxisReads'])assert(out.control[k]===out.candidate[k],'required work changed '+k);
+assert(out.control.pressureBrackets===42&&out.candidate.pressureBrackets===3,'pressure reuse failed');
+fs.writeFileSync(new URL('./evidence/property-work-counts.json',import.meta.url),JSON.stringify({passed:true,case:{p:4,h:1700},...out,counting:'detached equal source hooks, excludes engine construction; rowReads4 and componentReads6 are site counts with indicated multipliers'},null,2)+'\n');console.log(JSON.stringify(out));

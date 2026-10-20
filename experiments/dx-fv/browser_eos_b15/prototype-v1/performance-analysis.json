@@ -1,0 +1,831 @@
+{
+  "primarySamples": 36,
+  "supplementalSamples": 8,
+  "validPairsPerWorkload": 6,
+  "allSamplesRetained": true,
+  "statistics": {
+    "ph-vapor": {
+      "pairs": [
+        {
+          "pair": 1,
+          "order": "AB",
+          "controlWallMS": 603.019687,
+          "candidateWallMS": 425.89209500000004,
+          "savedWallMS": 177.12759199999994,
+          "improvementPercent": 29.37343437014519,
+          "controlCpuMS": 608.221,
+          "candidateCpuMS": 436.019,
+          "savedCpuMS": 172.202,
+          "cpuImprovementPercent": 28.312406181305803
+        },
+        {
+          "pair": 2,
+          "order": "BA",
+          "controlWallMS": 580.845434,
+          "candidateWallMS": 1199.204723,
+          "savedWallMS": -618.3592890000001,
+          "improvementPercent": -106.45849184724763,
+          "controlCpuMS": 586.455,
+          "candidateCpuMS": 1205.879,
+          "savedCpuMS": -619.4239999999999,
+          "cpuImprovementPercent": -105.62174420884807
+        },
+        {
+          "pair": 3,
+          "order": "BA",
+          "controlWallMS": 724.3574930000001,
+          "candidateWallMS": 409.727795,
+          "savedWallMS": 314.6296980000001,
+          "improvementPercent": 43.435693154346936,
+          "controlCpuMS": 728.016,
+          "candidateCpuMS": 418.215,
+          "savedCpuMS": 309.801,
+          "cpuImprovementPercent": 42.55414716160084
+        },
+        {
+          "pair": 4,
+          "order": "AB",
+          "controlWallMS": 631.885548,
+          "candidateWallMS": 432.39490700000005,
+          "savedWallMS": 199.49064099999993,
+          "improvementPercent": 31.570692134266054,
+          "controlCpuMS": 637.326,
+          "candidateCpuMS": 437.436,
+          "savedCpuMS": 199.89000000000004,
+          "cpuImprovementPercent": 31.36385460502161
+        },
+        {
+          "pair": 5,
+          "order": "AB",
+          "controlWallMS": 552.8977990000001,
+          "candidateWallMS": 417.640321,
+          "savedWallMS": 135.2574780000001,
+          "improvementPercent": 24.46337790539841,
+          "controlCpuMS": 558.615,
+          "candidateCpuMS": 426.747,
+          "savedCpuMS": 131.868,
+          "cpuImprovementPercent": 23.60624043393035
+        },
+        {
+          "pair": 6,
+          "order": "BA",
+          "controlWallMS": 557.285862,
+          "candidateWallMS": 423.24013099999996,
+          "savedWallMS": 134.045731,
+          "improvementPercent": 24.05331628527838,
+          "controlCpuMS": 562.029,
+          "candidateCpuMS": 429.355,
+          "savedCpuMS": 132.67399999999998,
+          "cpuImprovementPercent": 23.60625519323736
+        }
+      ],
+      "metrics": {
+        "control": {
+          "wallMS": {
+            "n": 6,
+            "median": 591.9325604999999,
+            "min": 552.8977990000001,
+            "max": 724.3574930000001
+          },
+          "cpuMS": {
+            "n": 6,
+            "median": 597.338,
+            "min": 558.615,
+            "max": 728.016
+          },
+          "rssKiB": {
+            "n": 6,
+            "median": 63964.0,
+            "min": 62792,
+            "max": 64436
+          },
+          "heapUsedBytes": {
+            "n": 6,
+            "median": 17796960.0,
+            "min": 11703992,
+            "max": 19819624
+          },
+          "engineConstructionMS": {
+            "n": 6,
+            "median": 39.6622025,
+            "min": 34.496451,
+            "max": 64.36493599999999
+          },
+          "modelInitializationMS": {
+            "n": 6,
+            "median": 0.0,
+            "min": 0,
+            "max": 0
+          }
+        },
+        "candidate": {
+          "wallMS": {
+            "n": 6,
+            "median": 424.566113,
+            "min": 409.727795,
+            "max": 1199.204723
+          },
+          "cpuMS": {
+            "n": 6,
+            "median": 432.687,
+            "min": 418.215,
+            "max": 1205.879
+          },
+          "rssKiB": {
+            "n": 6,
+            "median": 63904.0,
+            "min": 63428,
+            "max": 64656
+          },
+          "heapUsedBytes": {
+            "n": 6,
+            "median": 16969876.0,
+            "min": 11446208,
+            "max": 17161856
+          },
+          "engineConstructionMS": {
+            "n": 6,
+            "median": 39.831216,
+            "min": 36.267635,
+            "max": 50.511340000000004
+          },
+          "modelInitializationMS": {
+            "n": 6,
+            "median": 0.0,
+            "min": 0,
+            "max": 0
+          }
+        }
+      },
+      "pairedImprovementPercent": {
+        "n": 6,
+        "median": 26.9184061377718,
+        "min": -106.45849184724763,
+        "max": 43.435693154346936
+      },
+      "pairedSavedWallMS": {
+        "n": 6,
+        "median": 156.19253500000002,
+        "min": -618.3592890000001,
+        "max": 314.6296980000001
+      },
+      "pairedSavedCpuMS": {
+        "n": 6,
+        "median": 152.438,
+        "min": -619.4239999999999,
+        "max": 309.801
+      },
+      "candidateFasterPairs": 5,
+      "medianBootstrap95Percent": [
+        -41.20258778098462,
+        37.503192644306495
+      ],
+      "bootstrapCaveat": "Exact empirical resampling of six observed pairs; descriptive, weak small-sample inference, not a guarantee or host population interval"
+    },
+    "ph-mixed": {
+      "pairs": [
+        {
+          "pair": 1,
+          "order": "AB",
+          "controlWallMS": 323.90786,
+          "candidateWallMS": 218.82117800000003,
+          "savedWallMS": 105.086682,
+          "improvementPercent": 32.44338744975192,
+          "controlCpuMS": 323.216,
+          "candidateCpuMS": 218.798,
+          "savedCpuMS": 104.418,
+          "cpuImprovementPercent": 32.30595020048512
+        },
+        {
+          "pair": 2,
+          "order": "BA",
+          "controlWallMS": 478.03945999999996,
+          "candidateWallMS": 373.80375300000014,
+          "savedWallMS": 104.23570699999982,
+          "improvementPercent": 21.804833224437125,
+          "controlCpuMS": 477.943,
+          "candidateCpuMS": 373.189,
+          "savedCpuMS": 104.75399999999996,
+          "cpuImprovementPercent": 21.91767637563474
+        },
+        {
+          "pair": 3,
+          "order": "BA",
+          "controlWallMS": 362.334824,
+          "candidateWallMS": 212.179037,
+          "savedWallMS": 150.15578700000003,
+          "improvementPercent": 41.44116906632193,
+          "controlCpuMS": 362.36,
+          "candidateCpuMS": 212.129,
+          "savedCpuMS": 150.23100000000002,
+          "cpuImprovementPercent": 41.45904625234574
+        },
+        {
+          "pair": 4,
+          "order": "AB",
+          "controlWallMS": 332.92550300000005,
+          "candidateWallMS": 218.84452700000008,
+          "savedWallMS": 114.08097599999996,
+          "improvementPercent": 34.266217208358455,
+          "controlCpuMS": 332.936,
+          "candidateCpuMS": 218.846,
+          "savedCpuMS": 114.08999999999997,
+          "cpuImprovementPercent": 34.267847273950544
+        },
+        {
+          "pair": 5,
+          "order": "AB",
+          "controlWallMS": 285.686375,
+          "candidateWallMS": 213.5444080000001,
+          "savedWallMS": 72.14196699999991,
+          "improvementPercent": 25.252155269917896,
+          "controlCpuMS": 285.702,
+          "candidateCpuMS": 213.54,
+          "savedCpuMS": 72.162,
+          "cpuImprovementPercent": 25.257786084801648
+        },
+        {
+          "pair": 6,
+          "order": "BA",
+          "controlWallMS": 277.2867110000001,
+          "candidateWallMS": 227.864151,
+          "savedWallMS": 49.42256000000009,
+          "improvementPercent": 17.82363093484133,
+          "controlCpuMS": 277.244,
+          "candidateCpuMS": 227.811,
+          "savedCpuMS": 49.43300000000002,
+          "cpuImprovementPercent": 17.830142401638994
+        }
+      ],
+      "metrics": {
+        "control": {
+          "wallMS": {
+            "n": 6,
+            "median": 328.41668150000004,
+            "min": 277.2867110000001,
+            "max": 478.03945999999996
+          },
+          "cpuMS": {
+            "n": 6,
+            "median": 328.076,
+            "min": 277.244,
+            "max": 477.943
+          },
+          "rssKiB": {
+            "n": 6,
+            "median": 63964.0,
+            "min": 62792,
+            "max": 64436
+          },
+          "heapUsedBytes": {
+            "n": 6,
+            "median": 17796960.0,
+            "min": 11703992,
+            "max": 19819624
+          },
+          "engineConstructionMS": {
+            "n": 6,
+            "median": 39.6622025,
+            "min": 34.496451,
+            "max": 64.36493599999999
+          },
+          "modelInitializationMS": {
+            "n": 6,
+            "median": 0.0,
+            "min": 0,
+            "max": 0
+          }
+        },
+        "candidate": {
+          "wallMS": {
+            "n": 6,
+            "median": 218.83285250000006,
+            "min": 212.179037,
+            "max": 373.80375300000014
+          },
+          "cpuMS": {
+            "n": 6,
+            "median": 218.822,
+            "min": 212.129,
+            "max": 373.189
+          },
+          "rssKiB": {
+            "n": 6,
+            "median": 63904.0,
+            "min": 63428,
+            "max": 64656
+          },
+          "heapUsedBytes": {
+            "n": 6,
+            "median": 16969876.0,
+            "min": 11446208,
+            "max": 17161856
+          },
+          "engineConstructionMS": {
+            "n": 6,
+            "median": 39.831216,
+            "min": 36.267635,
+            "max": 50.511340000000004
+          },
+          "modelInitializationMS": {
+            "n": 6,
+            "median": 0.0,
+            "min": 0,
+            "max": 0
+          }
+        }
+      },
+      "pairedImprovementPercent": {
+        "n": 6,
+        "median": 28.84777135983491,
+        "min": 17.82363093484133,
+        "max": 41.44116906632193
+      },
+      "pairedSavedWallMS": {
+        "n": 6,
+        "median": 104.66119449999991,
+        "min": 49.42256000000009,
+        "max": 150.15578700000003
+      },
+      "pairedSavedCpuMS": {
+        "n": 6,
+        "median": 104.58599999999998,
+        "min": 49.43300000000002,
+        "max": 150.23100000000002
+      },
+      "candidateFasterPairs": 6,
+      "medianBootstrap95Percent": [
+        19.814232079639226,
+        37.853693137340194
+      ],
+      "bootstrapCaveat": "Exact empirical resampling of six observed pairs; descriptive, weak small-sample inference, not a guarantee or host population interval"
+    },
+    "cold-advance": {
+      "pairs": [
+        {
+          "pair": 1,
+          "order": "AB",
+          "controlWallMS": 137.938487,
+          "candidateWallMS": 156.670073,
+          "savedWallMS": -18.731585999999993,
+          "improvementPercent": -13.579666130454227,
+          "controlCpuMS": 237.147,
+          "candidateCpuMS": 258.464,
+          "savedCpuMS": -21.317000000000007,
+          "cpuImprovementPercent": -8.988939349854741
+        },
+        {
+          "pair": 2,
+          "order": "BA",
+          "controlWallMS": 160.894467,
+          "candidateWallMS": 167.52000800000002,
+          "savedWallMS": -6.625541000000027,
+          "improvementPercent": -4.117942104249006,
+          "controlCpuMS": 265.147,
+          "candidateCpuMS": 278.628,
+          "savedCpuMS": -13.480999999999995,
+          "cpuImprovementPercent": -5.0843494363504105
+        },
+        {
+          "pair": 3,
+          "order": "BA",
+          "controlWallMS": 146.795665,
+          "candidateWallMS": 168.95597899999999,
+          "savedWallMS": -22.16031399999997,
+          "improvementPercent": -15.09602752915078,
+          "controlCpuMS": 258.585,
+          "candidateCpuMS": 273.929,
+          "savedCpuMS": -15.343999999999994,
+          "cpuImprovementPercent": -5.933832202177225
+        },
+        {
+          "pair": 4,
+          "order": "AB",
+          "controlWallMS": 164.038087,
+          "candidateWallMS": 173.02674199999998,
+          "savedWallMS": -8.988654999999994,
+          "improvementPercent": -5.479614621450679,
+          "controlCpuMS": 268.113,
+          "candidateCpuMS": 284.181,
+          "savedCpuMS": -16.067999999999984,
+          "cpuImprovementPercent": -5.992995490707265
+        },
+        {
+          "pair": 5,
+          "order": "AB",
+          "controlWallMS": 175.835265,
+          "candidateWallMS": 173.907014,
+          "savedWallMS": 1.9282509999999888,
+          "improvementPercent": 1.0966235925427115,
+          "controlCpuMS": 291.385,
+          "candidateCpuMS": 278.731,
+          "savedCpuMS": 12.653999999999996,
+          "cpuImprovementPercent": 4.342708100966075
+        },
+        {
+          "pair": 6,
+          "order": "BA",
+          "controlWallMS": 169.67393499999997,
+          "candidateWallMS": 159.28473400000001,
+          "savedWallMS": 10.389200999999957,
+          "improvementPercent": 6.12303887453306,
+          "controlCpuMS": 280.209,
+          "candidateCpuMS": 260.584,
+          "savedCpuMS": 19.625,
+          "cpuImprovementPercent": 7.003700809038971
+        }
+      ],
+      "metrics": {
+        "control": {
+          "wallMS": {
+            "n": 6,
+            "median": 162.466277,
+            "min": 137.938487,
+            "max": 175.835265
+          },
+          "cpuMS": {
+            "n": 6,
+            "median": 266.63,
+            "min": 237.147,
+            "max": 291.385
+          },
+          "rssKiB": {
+            "n": 6,
+            "median": 67628.0,
+            "min": 67100,
+            "max": 68252
+          },
+          "heapUsedBytes": {
+            "n": 6,
+            "median": 20160160.0,
+            "min": 11460432,
+            "max": 21540864
+          },
+          "engineConstructionMS": {
+            "n": 6,
+            "median": 35.90175249999999,
+            "min": 32.28928,
+            "max": 47.305188
+          },
+          "modelInitializationMS": {
+            "n": 6,
+            "median": 4.4091074999999975,
+            "min": 3.7894840000000016,
+            "max": 14.391021999999992
+          }
+        },
+        "candidate": {
+          "wallMS": {
+            "n": 6,
+            "median": 168.23799350000002,
+            "min": 156.670073,
+            "max": 173.907014
+          },
+          "cpuMS": {
+            "n": 6,
+            "median": 276.2785,
+            "min": 258.464,
+            "max": 284.181
+          },
+          "rssKiB": {
+            "n": 6,
+            "median": 67676.0,
+            "min": 67316,
+            "max": 68280
+          },
+          "heapUsedBytes": {
+            "n": 6,
+            "median": 17940232.0,
+            "min": 11460744,
+            "max": 21050376
+          },
+          "engineConstructionMS": {
+            "n": 6,
+            "median": 35.938874999999996,
+            "min": 31.842059999999996,
+            "max": 39.247142
+          },
+          "modelInitializationMS": {
+            "n": 6,
+            "median": 3.9364835000000014,
+            "min": 3.722616000000002,
+            "max": 4.952899000000002
+          }
+        }
+      },
+      "pairedImprovementPercent": {
+        "n": 6,
+        "median": -4.798778362849843,
+        "min": -15.09602752915078,
+        "max": 6.12303887453306
+      },
+      "pairedSavedWallMS": {
+        "n": 6,
+        "median": -7.8070980000000105,
+        "min": -22.16031399999997,
+        "max": 10.389200999999957
+      },
+      "pairedSavedCpuMS": {
+        "n": 6,
+        "median": -14.412499999999994,
+        "min": -21.317000000000007,
+        "max": 19.625
+      },
+      "candidateFasterPairs": 2,
+      "medianBootstrap95Percent": [
+        -14.337846829802503,
+        3.6098312335378857
+      ],
+      "bootstrapCaveat": "Exact empirical resampling of six observed pairs; descriptive, weak small-sample inference, not a guarantee or host population interval"
+    },
+    "warm-advance": {
+      "pairs": [
+        {
+          "pair": 1,
+          "order": "AB",
+          "controlWallMS": 1000.736245,
+          "candidateWallMS": 818.9293029999999,
+          "savedWallMS": 181.80694200000016,
+          "improvementPercent": 18.167318602515504,
+          "controlCpuMS": 1304.499,
+          "candidateCpuMS": 1119.3,
+          "savedCpuMS": 185.19900000000007,
+          "cpuImprovementPercent": 14.19694457412386
+        },
+        {
+          "pair": 2,
+          "order": "BA",
+          "controlWallMS": 1101.489848,
+          "candidateWallMS": 901.080676,
+          "savedWallMS": 200.4091719999999,
+          "improvementPercent": 18.194373045188517,
+          "controlCpuMS": 1525.278,
+          "candidateCpuMS": 1200.38,
+          "savedCpuMS": 324.8979999999999,
+          "cpuImprovementPercent": 21.300903835235275
+        },
+        {
+          "pair": 3,
+          "order": "BA",
+          "controlWallMS": 966.2680839999999,
+          "candidateWallMS": 857.721844,
+          "savedWallMS": 108.5462399999999,
+          "improvementPercent": 11.233553275469655,
+          "controlCpuMS": 1317.135,
+          "candidateCpuMS": 1096.132,
+          "savedCpuMS": 221.00299999999993,
+          "cpuImprovementPercent": 16.779069723300942
+        },
+        {
+          "pair": 4,
+          "order": "AB",
+          "controlWallMS": 997.2745739999999,
+          "candidateWallMS": 857.219023,
+          "savedWallMS": 140.05555099999992,
+          "improvementPercent": 14.043830520841084,
+          "controlCpuMS": 1307.084,
+          "candidateCpuMS": 1107.892,
+          "savedCpuMS": 199.192,
+          "cpuImprovementPercent": 15.239418430644092
+        },
+        {
+          "pair": 5,
+          "order": "AB",
+          "controlWallMS": 950.2364070000001,
+          "candidateWallMS": 866.640899,
+          "savedWallMS": 83.59550800000011,
+          "improvementPercent": 8.797337944977313,
+          "controlCpuMS": 1231.187,
+          "candidateCpuMS": 1165.864,
+          "savedCpuMS": 65.32299999999987,
+          "cpuImprovementPercent": 5.305692798900563
+        },
+        {
+          "pair": 6,
+          "order": "BA",
+          "controlWallMS": 908.313189,
+          "candidateWallMS": 785.953672,
+          "savedWallMS": 122.35951699999998,
+          "improvementPercent": 13.471071265045786,
+          "controlCpuMS": 1177.929,
+          "candidateCpuMS": 1079.252,
+          "savedCpuMS": 98.67700000000013,
+          "cpuImprovementPercent": 8.377160253292015
+        }
+      ],
+      "metrics": {
+        "control": {
+          "wallMS": {
+            "n": 6,
+            "median": 981.7713289999999,
+            "min": 908.313189,
+            "max": 1101.489848
+          },
+          "cpuMS": {
+            "n": 6,
+            "median": 1305.7915,
+            "min": 1177.929,
+            "max": 1525.278
+          },
+          "rssKiB": {
+            "n": 6,
+            "median": 96954.0,
+            "min": 93148,
+            "max": 100872
+          },
+          "heapUsedBytes": {
+            "n": 6,
+            "median": 23602984.0,
+            "min": 19022112,
+            "max": 32487328
+          },
+          "engineConstructionMS": {
+            "n": 6,
+            "median": 35.667632499999996,
+            "min": 32.422095000000006,
+            "max": 67.140405
+          },
+          "modelInitializationMS": {
+            "n": 6,
+            "median": 5.451976999999999,
+            "min": 5.036690000000007,
+            "max": 6.356958999999989
+          }
+        },
+        "candidate": {
+          "wallMS": {
+            "n": 6,
+            "median": 857.4704335,
+            "min": 785.953672,
+            "max": 901.080676
+          },
+          "cpuMS": {
+            "n": 6,
+            "median": 1113.596,
+            "min": 1079.252,
+            "max": 1200.38
+          },
+          "rssKiB": {
+            "n": 6,
+            "median": 95790.0,
+            "min": 93752,
+            "max": 96944
+          },
+          "heapUsedBytes": {
+            "n": 6,
+            "median": 22571928.0,
+            "min": 19630264,
+            "max": 32778464
+          },
+          "engineConstructionMS": {
+            "n": 6,
+            "median": 38.122748,
+            "min": 32.565513,
+            "max": 38.698072
+          },
+          "modelInitializationMS": {
+            "n": 6,
+            "median": 5.577730999999993,
+            "min": 4.932679999999991,
+            "max": 6.274687
+          }
+        }
+      },
+      "pairedImprovementPercent": {
+        "n": 6,
+        "median": 13.757450892943435,
+        "min": 8.797337944977313,
+        "max": 18.194373045188517
+      },
+      "pairedSavedWallMS": {
+        "n": 6,
+        "median": 131.20753399999995,
+        "min": 83.59550800000011,
+        "max": 200.4091719999999
+      },
+      "pairedSavedCpuMS": {
+        "n": 6,
+        "median": 192.19550000000004,
+        "min": 65.32299999999987,
+        "max": 324.8979999999999
+      },
+      "candidateFasterPairs": 6,
+      "medianBootstrap95Percent": [
+        10.015445610223484,
+        18.18084582385201
+      ],
+      "bootstrapCaveat": "Exact empirical resampling of six observed pairs; descriptive, weak small-sample inference, not a guarantee or host population interval"
+    }
+  },
+  "overhead": {
+    "cold": {
+      "control": {
+        "primaryMedianAdvanceMS": 162.466277,
+        "countOnlyAdvanceMS": 195.05762999999996,
+        "countOnlyRatioToPrimaryMedian": 1.2006038028433432,
+        "noInnerTimerProcessWallMS": 274.97952099997747,
+        "primaryMedianProcessWallMS": 264.25648999997975,
+        "noInnerTimerPhysicalChecksumEqual": true,
+        "counts": {
+          "phCalls": 5035,
+          "inversions": 5035,
+          "saturations": 18965,
+          "pressureBrackets": 27405,
+          "pressureLogs": 27405,
+          "pressureAxisReads": 383670,
+          "pressureComparisons": 219240,
+          "bracketArrays": 35845,
+          "branches": 8440,
+          "offsetAxisReads": 107188,
+          "branchRowReads4": 8440,
+          "mixRows": 25320,
+          "mixComponentReads6": 25320,
+          "bisections": 8018
+        }
+      },
+      "candidate": {
+        "primaryMedianAdvanceMS": 168.23799350000002,
+        "countOnlyAdvanceMS": 199.52607700000002,
+        "countOnlyRatioToPrimaryMedian": 1.1859751346832366,
+        "noInnerTimerProcessWallMS": 277.19219999994493,
+        "primaryMedianProcessWallMS": 266.442424499985,
+        "noInnerTimerPhysicalChecksumEqual": true,
+        "counts": {
+          "phCalls": 5035,
+          "inversions": 5035,
+          "saturations": 18965,
+          "pressureBrackets": 19176,
+          "pressureLogs": 19176,
+          "pressureAxisReads": 268464,
+          "pressureComparisons": 153408,
+          "bracketArrays": 27616,
+          "ownedHolders": 211,
+          "branches": 8440,
+          "offsetAxisReads": 107188,
+          "branchRowReads4": 8440,
+          "mixRows": 25320,
+          "mixComponentReads6": 25320,
+          "bisections": 8018
+        }
+      }
+    },
+    "warm": {
+      "control": {
+        "primaryMedianAdvanceMS": 981.7713289999999,
+        "countOnlyAdvanceMS": 1494.700715,
+        "countOnlyRatioToPrimaryMedian": 1.5224530100328486,
+        "noInnerTimerProcessWallMS": 1099.810375000061,
+        "primaryMedianProcessWallMS": 1080.3039925000348,
+        "noInnerTimerPhysicalChecksumEqual": true,
+        "counts": {
+          "phCalls": 17423,
+          "inversions": 17423,
+          "saturations": 61295,
+          "pressureBrackets": 765011,
+          "pressureLogs": 765011,
+          "pressureAxisReads": 10710154,
+          "pressureComparisons": 6120088,
+          "bracketArrays": 1468727,
+          "branches": 703716,
+          "offsetAxisReads": 8926390,
+          "branchRowReads4": 703716,
+          "mixRows": 2111148,
+          "mixComponentReads6": 2111148,
+          "bisections": 598310
+        }
+      },
+      "candidate": {
+        "primaryMedianAdvanceMS": 857.4704335,
+        "countOnlyAdvanceMS": 1166.332301,
+        "countOnlyRatioToPrimaryMedian": 1.3602011864587513,
+        "noInnerTimerProcessWallMS": 880.0139859999945,
+        "primaryMedianProcessWallMS": 953.6870109999427,
+        "noInnerTimerPhysicalChecksumEqual": true,
+        "counts": {
+          "phCalls": 17423,
+          "inversions": 17423,
+          "saturations": 61295,
+          "pressureBrackets": 150956,
+          "pressureLogs": 150956,
+          "pressureAxisReads": 2113384,
+          "pressureComparisons": 1207648,
+          "bracketArrays": 854672,
+          "ownedHolders": 15745,
+          "branches": 703716,
+          "offsetAxisReads": 8926390,
+          "branchRowReads4": 703716,
+          "mixRows": 2111148,
+          "mixComponentReads6": 2111148,
+          "bisections": 598310
+        }
+      }
+    }
+  },
+  "limitations": [
+    "Fresh-process JIT/GC variation; sample 2 candidate vapor CPU/wall outlier retained without attribution",
+    "Cold slowdown in four of six pairs; optimization not uniformly faster",
+    "No browser performance benchmark, service latency or worker transport measurement",
+    "No causal sum of nested diagnostic scopes",
+    "GC PerformanceObserver arrays empty at disconnect, not evidence of zero collections; supplemental V8 trace used separately"
+  ]
+}

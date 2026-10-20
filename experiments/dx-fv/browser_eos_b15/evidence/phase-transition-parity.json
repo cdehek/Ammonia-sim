@@ -1,0 +1,1544 @@
+{
+  "passed": true,
+  "event": {
+    "section": 0,
+    "boundary": "vapor",
+    "direction": "cooling",
+    "left": 0.12753262334285864,
+    "right": -0.05172204394148139,
+    "seconds": 0.005375427816982592,
+    "bracketStartSeconds": 0.005359127601674843,
+    "bracketEndSeconds": 0.005382038521211082
+  },
+  "eventBinary64": {
+    "section": {
+      "f64": "0000000000000000"
+    },
+    "boundary": "vapor",
+    "direction": "cooling",
+    "left": {
+      "f64": "3fc052fd2f372000"
+    },
+    "right": {
+      "f64": "bfaa7b4fce6c0000"
+    },
+    "seconds": {
+      "f64": "3f76048b6ad0afcd"
+    },
+    "bracketStartSeconds": {
+      "f64": "3f75f373dc8c6dc3"
+    },
+    "bracketEndSeconds": {
+      "f64": "3f760b79f6f35be2"
+    }
+  },
+  "eventIsInterpolatedNotRootSolved": true,
+  "endpointsBinary64": [
+    {
+      "startSeconds": {
+        "f64": "3f75db6dc2257fa4"
+      },
+      "seconds": {
+        "f64": "3f75f373dc8c6dc3"
+      },
+      "dt": {
+        "f64": "3ef8061a66ee1f4e"
+      },
+      "cells": [
+        {
+          "massKg": {
+            "f64": "3f5c46d9c7645ee0"
+          },
+          "internalEnergyKJ": {
+            "f64": "40046b905fa2a35f"
+          },
+          "volumeM3": {
+            "f64": "3f43a92a30553262"
+          },
+          "pressureGuess": {
+            "f64": "400c4b36483ae0e8"
+          }
+        },
+        {
+          "massKg": {
+            "f64": "3f5a078944d9b940"
+          },
+          "internalEnergyKJ": {
+            "f64": "40034042d0a6f55c"
+          },
+          "volumeM3": {
+            "f64": "3f43a92a30553262"
+          },
+          "pressureGuess": {
+            "f64": "400c4c60b2594952"
+          }
+        },
+        {
+          "massKg": {
+            "f64": "3f5a06d3e5a9f663"
+          },
+          "internalEnergyKJ": {
+            "f64": "40033fb99e12a222"
+          },
+          "volumeM3": {
+            "f64": "3f43a92a30553262"
+          },
+          "pressureGuess": {
+            "f64": "400c4b8cd532226f"
+          }
+        },
+        {
+          "massKg": {
+            "f64": "3f5a00be7717da23"
+          },
+          "internalEnergyKJ": {
+            "f64": "40033b0c9978e5b2"
+          },
+          "volumeM3": {
+            "f64": "3f43a92a30553262"
+          },
+          "pressureGuess": {
+            "f64": "400c4413cd451a4d"
+          }
+        },
+        {
+          "massKg": {
+            "f64": "3f59f0fc802cca7c"
+          },
+          "internalEnergyKJ": {
+            "f64": "40032ef7293b93b1"
+          },
+          "volumeM3": {
+            "f64": "3f43a92a30553262"
+          },
+          "pressureGuess": {
+            "f64": "400c30db8ce5f3ac"
+          }
+        }
+      ],
+      "energies": [
+        {
+          "f64": "40337874de2aa184"
+        },
+        {
+          "f64": "4030fbe92ec0a4be"
+        },
+        {
+          "f64": "40337a02aded7ba2"
+        },
+        {
+          "f64": "4030fbe97a7ac775"
+        },
+        {
+          "f64": "40337a01c288df6d"
+        },
+        {
+          "f64": "4030fbe97a323d25"
+        },
+        {
+          "f64": "403379fc6b4b9902"
+        },
+        {
+          "f64": "4030fbe97888e1c9"
+        },
+        {
+          "f64": "403379eec2b53c33"
+        },
+        {
+          "f64": "4030fbe97404fced"
+        },
+        {
+          "f64": "40558a952fc38b8b"
+        }
+      ],
+      "states": [
+        {
+          "p": {
+            "f64": "400c4b36483ae0e8"
+          },
+          "T": {
+            "f64": "c014169c71df938c"
+          },
+          "h": {
+            "f64": "409907b356a23eb1"
+          },
+          "s": {
+            "f64": "4018aef6bc60a1b5"
+          },
+          "rho": {
+            "f64": "400702fde54403e0"
+          },
+          "x": null,
+          "phase": "Superheated vapor",
+          "superheatK": {
+            "f64": "3fa9070eb5f80000"
+          },
+          "wet": false
+        },
+        {
+          "p": {
+            "f64": "400c4c60b2594952"
+          },
+          "T": {
+            "f64": "402ab3ca310b07e4"
+          },
+          "h": {
+            "f64": "4099c10e75f99b56"
+          },
+          "s": {
+            "f64": "40195a1e4509eef7"
+          },
+          "rho": {
+            "f64": "40052eccb5b2846c"
+          },
+          "x": null,
+          "phase": "Superheated vapor",
+          "superheatK": {
+            "f64": "40326b0139bbdc00"
+          },
+          "wet": false
+        },
+        {
+          "p": {
+            "f64": "400c4b8cd532226f"
+          },
+          "T": {
+            "f64": "402ab223496050b2"
+          },
+          "h": {
+            "f64": "4099c1099e5aad0c"
+          },
+          "s": {
+            "f64": "40195a27e8af1498"
+          },
+          "rho": {
+            "f64": "40052e391be6a62d"
+          },
+          "x": null,
+          "phase": "Superheated vapor",
+          "superheatK": {
+            "f64": "40326aedd243fc00"
+          },
+          "wet": false
+        },
+        {
+          "p": {
+            "f64": "400c4413cd451a4d"
+          },
+          "T": {
+            "f64": "402a9d74ffe128d4"
+          },
+          "h": {
+            "f64": "4099c0c1cd99826a"
+          },
+          "s": {
+            "f64": "40195a65f71288d3"
+          },
+          "rho": {
+            "f64": "40052945aaeb13da"
+          },
+          "x": null,
+          "phase": "Superheated vapor",
+          "superheatK": {
+            "f64": "4032675dc714ac00"
+          },
+          "wet": false
+        },
+        {
+          "p": {
+            "f64": "400c30db8ce5f3ac"
+          },
+          "T": {
+            "f64": "402a6a23686e890d"
+          },
+          "h": {
+            "f64": "4099c012646667ff"
+          },
+          "s": {
+            "f64": "40195b0e6fd7106e"
+          },
+          "rho": {
+            "f64": "40051c72d1a47372"
+          },
+          "x": null,
+          "phase": "Superheated vapor",
+          "superheatK": {
+            "f64": "40325f2bd8342400"
+          },
+          "wet": false
+        }
+      ],
+      "ledger": {
+        "faces": [
+          {
+            "massKg": {
+              "f64": "3f13a5fb5c73b6c7"
+            },
+            "energyKJ": {
+              "f64": "3fa330177849007d"
+            }
+          },
+          {
+            "massKg": {
+              "f64": "bef12b1a463131bb"
+            },
+            "energyKJ": {
+              "f64": "bf9ba60919bf759b"
+            }
+          },
+          {
+            "massKg": {
+              "f64": "3efee5fea5bee153"
+            },
+            "energyKJ": {
+              "f64": "3fa8e1098a7b7c87"
+            }
+          },
+          {
+            "massKg": {
+              "f64": "3f13c91bd73780e5"
+            },
+            "energyKJ": {
+              "f64": "3fbfdc9dd195fa7b"
+            }
+          },
+          {
+            "massKg": {
+              "f64": "3f201d077711aa70"
+            },
+            "energyKJ": {
+              "f64": "3fc9f1d82fa75a46"
+            }
+          },
+          {
+            "massKg": {
+              "f64": "3f26d390b9fa28d4"
+            },
+            "energyKJ": {
+              "f64": "3fd25ec788ee341e"
+            }
+          }
+        ],
+        "tubeRefrigerantKJ": [
+          {
+            "f64": "3f848d90f7ee81d6"
+          },
+          {
+            "f64": "3f703954d46e9fdf"
+          },
+          {
+            "f64": "3f70480fbb5236d1"
+          },
+          {
+            "f64": "3f709d9e9da68aa7"
+          },
+          {
+            "f64": "3f71787188d83037"
+          }
+        ],
+        "thermalLinksKJ": [
+          {
+            "f64": "3e87597d7293b7c4"
+          },
+          {
+            "f64": "3ea3baa6d07d15e6"
+          },
+          {
+            "f64": "3ee24e5573c4ed8d"
+          },
+          {
+            "f64": "3e79be333ebdc179"
+          },
+          {
+            "f64": "3ea3afcb99478c35"
+          },
+          {
+            "f64": "3ed1acc6d3dce741"
+          },
+          {
+            "f64": "3e79d2476c520eaf"
+          },
+          {
+            "f64": "3ea3afd892cb4d1b"
+          },
+          {
+            "f64": "3ed1beeb064845d2"
+          },
+          {
+            "f64": "3e7a48057c7ca9d4"
+          },
+          {
+            "f64": "3ea3b027c4625b89"
+          },
+          {
+            "f64": "3ed2294bc3858be0"
+          },
+          {
+            "f64": "3e7b88011c1a3cb4"
+          },
+          {
+            "f64": "3ea3b10b24d24799"
+          },
+          {
+            "f64": "3ed34a6166372707"
+          }
+        ],
+        "thermalNodesKJ": [
+          {
+            "f64": "bf8488e609141e05"
+          },
+          {
+            "f64": "bee112ab06bd1c2e"
+          },
+          {
+            "f64": "bf7034cfe48669e8"
+          },
+          {
+            "f64": "bece6d9ac167eb74"
+          },
+          {
+            "f64": "bf7043862e49386e"
+          },
+          {
+            "f64": "bece91dfe7ddb85c"
+          },
+          {
+            "f64": "bf7098fa02b02cc7"
+          },
+          {
+            "f64": "becf668d95f280dd"
+          },
+          {
+            "f64": "bf717383687d8652"
+          },
+          {
+            "f64": "bed0d440019cde12"
+          },
+          {
+            "f64": "3f75efc7ed2116d1"
+          }
+        ],
+        "airLoadKJ": {
+          "f64": "3f75f373dc8c6dc4"
+        },
+        "boundaryMassKg": {
+          "f64": "bf1a012617809ae2"
+        },
+        "boundaryEnthalpyKJ": {
+          "f64": "bfcff18933ca281b"
+        }
+      },
+      "integratedRate": {
+        "faces": [
+          {
+            "massKgS": {
+              "f64": "3f8e86608d30401c"
+            },
+            "energyKW": {
+              "f64": "401dcf3a49e11e9c"
+            }
+          },
+          {
+            "massKgS": {
+              "f64": "bf6e4d6821f15868"
+            },
+            "energyKW": {
+              "f64": "c018634ae56f1aaa"
+            }
+          },
+          {
+            "massKgS": {
+              "f64": "3f696744df387c2d"
+            },
+            "energyKW": {
+              "f64": "401471f0f5e59251"
+            }
+          },
+          {
+            "massKgS": {
+              "f64": "3f84042b8629dd01"
+            },
+            "energyKW": {
+              "f64": "40301c01b899f908"
+            }
+          },
+          {
+            "massKgS": {
+              "f64": "3f902feeec3258af"
+            },
+            "energyKW": {
+              "f64": "403a0de898ead6b5"
+            }
+          },
+          {
+            "massKgS": {
+              "f64": "3f94f6bca68e81c2"
+            },
+            "energyKW": {
+              "f64": "4040de969e74a5f3"
+            }
+          }
+        ],
+        "links": [
+          {
+            "f64": "3f14d60fd4b03e9e"
+          },
+          {
+            "f64": "3f2cc9737b6cf94e"
+          },
+          {
+            "f64": "3f70cae421b4c46d"
+          },
+          {
+            "f64": "3f032ea268589aac"
+          },
+          {
+            "f64": "3f2caa5053d2b7e8"
+          },
+          {
+            "f64": "3f5a88448ae89366"
+          },
+          {
+            "f64": "3f033bfe56075831"
+          },
+          {
+            "f64": "3f2caa6e39f1aa92"
+          },
+          {
+            "f64": "3f5aa064d1b5704c"
+          },
+          {
+            "f64": "3f03898f26fdb8eb"
+          },
+          {
+            "f64": "3f2cab1d8d770514"
+          },
+          {
+            "f64": "3f5b2c7913211e8c"
+          },
+          {
+            "f64": "3f044fee2ef47c6c"
+          },
+          {
+            "f64": "3f2cacfa1ada84cd"
+          },
+          {
+            "f64": "3f5c92b042eb037d"
+          }
+        ],
+        "tubeRefrigerant": [
+          {
+            "f64": "4007f9d859ebe13e"
+          },
+          {
+            "f64": "3fe98320675b049d"
+          },
+          {
+            "f64": "3fe9865ce98cf190"
+          },
+          {
+            "f64": "3fe9ae658a24649b"
+          },
+          {
+            "f64": "3fea119b6a65adc6"
+          }
+        ],
+        "thermalRates": [
+          {
+            "f64": "c007f1493bbb5d7b"
+          },
+          {
+            "f64": "bf6fc9310bb2b946"
+          },
+          {
+            "f64": "bfe9758f8a8beef0"
+          },
+          {
+            "f64": "bf56f2fa806e3c68"
+          },
+          {
+            "f64": "bfe978bfc72abebb"
+          },
+          {
+            "f64": "bf570b170a773afa"
+          },
+          {
+            "f64": "bfe9a081275e3816"
+          },
+          {
+            "f64": "bf57971561723deb"
+          },
+          {
+            "f64": "bfea0300d28b7c72"
+          },
+          {
+            "f64": "bf58fd10ff8fb2e3"
+          },
+          {
+            "f64": "3feff528da6df108"
+          }
+        ],
+        "airLoad": {
+          "f64": "3ff0000000000000"
+        }
+      },
+      "endpoint": {
+        "faces": [
+          {
+            "massKgS": {
+              "f64": "3f8e87e6820c34e7"
+            },
+            "energyKW": {
+              "f64": "401dd0b71affebaa"
+            }
+          },
+          {
+            "massKgS": {
+              "f64": "bf6e568f1ee131b1"
+            },
+            "energyKW": {
+              "f64": "c0186aa79509eaa0"
+            }
+          },
+          {
+            "massKgS": {
+              "f64": "3f6942db3524c7d5"
+            },
+            "energyKW": {
+              "f64": "401454a1e5fea587"
+            }
+          },
+          {
+            "massKgS": {
+              "f64": "3f83f4b6a62ae389"
+            },
+            "energyKW": {
+              "f64": "40300f909effe52c"
+            }
+          },
+          {
+            "massKgS": {
+              "f64": "3f90258ee20c306a"
+            },
+            "energyKW": {
+              "f64": "4039fd3588534610"
+            }
+          },
+          {
+            "massKgS": {
+              "f64": "3f94ea8d0231157d"
+            },
+            "energyKW": {
+              "f64": "4040d4c97d52b8c8"
+            }
+          }
+        ],
+        "links": [
+          {
+            "f64": "3f14e79fe98182a4"
+          },
+          {
+            "f64": "3f2cd96a51dc2d17"
+          },
+          {
+            "f64": "3f70d9a2d8760000"
+          },
+          {
+            "f64": "3f0339c76051d3d3"
+          },
+          {
+            "f64": "3f2cba14a6e42a98"
+          },
+          {
+            "f64": "3f5a97ef51de6667"
+          },
+          {
+            "f64": "3f0347246320f629"
+          },
+          {
+            "f64": "3f2cba32aaf9cc4a"
+          },
+          {
+            "f64": "3f5ab011854ffffe"
+          },
+          {
+            "f64": "3f0394c2bc0b1b01"
+          },
+          {
+            "f64": "3f2cbae2ac767001"
+          },
+          {
+            "f64": "3f5b3c3e0da00003"
+          },
+          {
+            "f64": "3f045b434c391dc8"
+          },
+          {
+            "f64": "3f2cbcc0f6bd66d9"
+          },
+          {
+            "f64": "3f5ca2b162f7fffe"
+          }
+        ],
+        "tubeRefrigerant": [
+          {
+            "f64": "400802e59404d62e"
+          },
+          {
+            "f64": "3fe9841720837e8f"
+          },
+          {
+            "f64": "3fe9873f7abe1799"
+          },
+          {
+            "f64": "3fe9aedf748b015c"
+          },
+          {
+            "f64": "3fea1131c8a5368f"
+          }
+        ],
+        "thermalRates": [
+          {
+            "f64": "c007fa4ef358c82b"
+          },
+          {
+            "f64": "bf6fe5af0bce3d2f"
+          },
+          {
+            "f64": "bfe9767e41bd0e14"
+          },
+          {
+            "f64": "bf5700acbd01e114"
+          },
+          {
+            "f64": "bfe9799a5569e315"
+          },
+          {
+            "f64": "bf5718cb2ff0c675"
+          },
+          {
+            "f64": "bfe9a0f302794130"
+          },
+          {
+            "f64": "bf57a4e1b8113203"
+          },
+          {
+            "f64": "bfea028f02e689ab"
+          },
+          {
+            "f64": "bf590b1944205323"
+          },
+          {
+            "f64": "3feff522a9e51639"
+          }
+        ],
+        "airLoad": {
+          "f64": "3ff0000000000000"
+        },
+        "fluidRates": [
+          {
+            "massKgS": {
+              "f64": "3f930ec524e240aa"
+            },
+            "energyKW": {
+              "f64": "40308f345e831058"
+            }
+          },
+          {
+            "massKgS": {
+              "f64": "bf7bccb52a02fcc3"
+            },
+            "energyKW": {
+              "f64": "c024c7634b7c102a"
+            }
+          },
+          {
+            "massKgS": {
+              "f64": "bf7b47ffb1c36328"
+            },
+            "energyKW": {
+              "f64": "c0245c5c5354961b"
+            }
+          },
+          {
+            "massKgS": {
+              "f64": "bf78acce3bdafa96"
+            },
+            "energyKW": {
+              "f64": "c022405bdb5e11b2"
+            }
+          },
+          {
+            "massKgS": {
+              "f64": "bf7313f88093944c"
+            },
+            "energyKW": {
+              "f64": "c01b6f4f90340730"
+            }
+          }
+        ]
+      },
+      "error": {
+        "f64": "3d8aab727a71bd65"
+      }
+    },
+    {
+      "startSeconds": {
+        "f64": "3f75f373dc8c6dc3"
+      },
+      "seconds": {
+        "f64": "3f760b79f6f35be2"
+      },
+      "dt": {
+        "f64": "3ef8061a66ee1f4e"
+      },
+      "cells": [
+        {
+          "massKg": {
+            "f64": "3f5c489d928d57b9"
+          },
+          "internalEnergyKJ": {
+            "f64": "40046c526fc96fa7"
+          },
+          "volumeM3": {
+            "f64": "3f43a92a30553262"
+          },
+          "pressureGuess": {
+            "f64": "400c4af65d6878d2"
+          }
+        },
+        {
+          "massKg": {
+            "f64": "3f5a06e8650758a0"
+          },
+          "internalEnergyKJ": {
+            "f64": "40033fcaeb8af69f"
+          },
+          "volumeM3": {
+            "f64": "3f43a92a30553262"
+          },
+          "pressureGuess": {
+            "f64": "400c4badb09d545a"
+          }
+        },
+        {
+          "massKg": {
+            "f64": "3f5a0630c2c66187"
+          },
+          "internalEnergyKJ": {
+            "f64": "40033f3fe83f5e65"
+          },
+          "volumeM3": {
+            "f64": "3f43a92a30553262"
+          },
+          "pressureGuess": {
+            "f64": "400c4ad6aab90a2b"
+          }
+        },
+        {
+          "massKg": {
+            "f64": "3f5a002a8704f7fc"
+          },
+          "internalEnergyKJ": {
+            "f64": "40033a9f310f3919"
+          },
+          "volumeM3": {
+            "f64": "3f43a92a30553262"
+          },
+          "pressureGuess": {
+            "f64": "400c4373625ed017"
+          }
+        },
+        {
+          "massKg": {
+            "f64": "3f59f08a16e28147"
+          },
+          "internalEnergyKJ": {
+            "f64": "40032ea4e9324fa2"
+          },
+          "volumeM3": {
+            "f64": "3f43a92a30553262"
+          },
+          "pressureGuess": {
+            "f64": "400c306b3443a547"
+          }
+        }
+      ],
+      "energies": [
+        {
+          "f64": "403378705cb8ad2a"
+        },
+        {
+          "f64": "4030fbe92d402827"
+        },
+        {
+          "f64": "40337a017c07d3ef"
+        },
+        {
+          "f64": "4030fbe979f04e08"
+        },
+        {
+          "f64": "40337a00907ddef5"
+        },
+        {
+          "f64": "4030fbe979a732d2"
+        },
+        {
+          "f64": "403379fb376cc8b5"
+        },
+        {
+          "f64": "4030fbe977fa8d8a"
+        },
+        {
+          "f64": "403379ed8a4c93e1"
+        },
+        {
+          "f64": "4030fbe9736e3fdb"
+        },
+        {
+          "f64": "40558a958fbb4243"
+        }
+      ],
+      "states": [
+        {
+          "p": {
+            "f64": "400c4af65d6878d2"
+          },
+          "T": {
+            "f64": "c0144992581ef1ef"
+          },
+          "h": {
+            "f64": "409906fabd4f3ead"
+          },
+          "s": {
+            "f64": "4018ae4b0f4e381e"
+          },
+          "rho": {
+            "f64": "4007046d90ee5bb8"
+          },
+          "x": {
+            "f64": "3fefffab3977382a"
+          },
+          "phase": "Liquid + vapor",
+          "superheatK": {
+            "f64": "0000000000000000"
+          },
+          "wet": true
+        },
+        {
+          "p": {
+            "f64": "400c4badb09d545a"
+          },
+          "T": {
+            "f64": "402ab2f0b2df1840"
+          },
+          "h": {
+            "f64": "4099c10d0886a69b"
+          },
+          "s": {
+            "f64": "40195a28ca0fc92f"
+          },
+          "rho": {
+            "f64": "40052e49ca37a51f"
+          },
+          "x": null,
+          "phase": "Superheated vapor",
+          "superheatK": {
+            "f64": "40326b36bdf1c400"
+          },
+          "wet": false
+        },
+        {
+          "p": {
+            "f64": "400c4ad6aab90a2b"
+          },
+          "T": {
+            "f64": "402ab13b546c314d"
+          },
+          "h": {
+            "f64": "4099c107f6b64c04"
+          },
+          "s": {
+            "f64": "40195a326f72b40c"
+          },
+          "rho": {
+            "f64": "40052db4592cc6b3"
+          },
+          "x": null,
+          "phase": "Superheated vapor",
+          "superheatK": {
+            "f64": "40326b1efd0ad400"
+          },
+          "wet": false
+        },
+        {
+          "p": {
+            "f64": "400c4373625ed017"
+          },
+          "T": {
+            "f64": "402a9cf6ae06e0fe"
+          },
+          "h": {
+            "f64": "4099c0c1d54d0987"
+          },
+          "s": {
+            "f64": "40195a7092726077"
+          },
+          "rho": {
+            "f64": "400528cd468bb5cf"
+          },
+          "x": null,
+          "phase": "Superheated vapor",
+          "superheatK": {
+            "f64": "403267b032434c00"
+          },
+          "wet": false
+        },
+        {
+          "p": {
+            "f64": "400c306b3443a547"
+          },
+          "T": {
+            "f64": "402a6a90d405f3b0"
+          },
+          "h": {
+            "f64": "4099c0162fa6a237"
+          },
+          "s": {
+            "f64": "40195b194025fce7"
+          },
+          "rho": {
+            "f64": "40051c15b5f4ff34"
+          },
+          "x": null,
+          "phase": "Superheated vapor",
+          "superheatK": {
+            "f64": "40325fc8c75fe400"
+          },
+          "wet": false
+        }
+      ],
+      "ledger": {
+        "faces": [
+          {
+            "massKg": {
+              "f64": "3f13bce7ceb5ae9c"
+            },
+            "energyKJ": {
+              "f64": "3fa3467a5fdd6c83"
+            }
+          },
+          {
+            "massKg": {
+              "f64": "bef1405b476788b4"
+            },
+            "energyKJ": {
+              "f64": "bf9bc83f1de8f59b"
+            }
+          },
+          {
+            "massKg": {
+              "f64": "3efef8f5990f8a85"
+            },
+            "energyKJ": {
+              "f64": "3fa8f04ce2104c19"
+            }
+          },
+          {
+            "massKg": {
+              "f64": "3f13d80bc249ac82"
+            },
+            "energyKJ": {
+              "f64": "3fbff4a8e7188731"
+            }
+          },
+          {
+            "massKg": {
+              "f64": "3f20291eed318d54"
+            },
+            "energyKJ": {
+              "f64": "3fca054e843b77a5"
+            }
+          },
+          {
+            "massKg": {
+              "f64": "3f26e33b7a6c9901"
+            },
+            "energyKJ": {
+              "f64": "3fd26b62f9b8b8de"
+            }
+          }
+        ],
+        "tubeRefrigerantKJ": [
+          {
+            "f64": "3f84b1a978161a50"
+          },
+          {
+            "f64": "3f704c7d6a2c1666"
+          },
+          {
+            "f64": "3f705b3aafd3f849"
+          },
+          {
+            "f64": "3f70b0e704b5ed02"
+          },
+          {
+            "f64": "3f718c03165ffe6c"
+          }
+        ],
+        "thermalLinksKJ": [
+          {
+            "f64": "3e8798791f324730"
+          },
+          {
+            "f64": "3ea3e60fea1c02cb"
+          },
+          {
+            "f64": "3ee2811b983ce00c"
+          },
+          {
+            "f64": "3e79f810b892c4d1"
+          },
+          {
+            "f64": "3ea3db055a13de78"
+          },
+          {
+            "f64": "3ed1d4cc672bbe78"
+          },
+          {
+            "f64": "3e7a0c4d0a8b69e4"
+          },
+          {
+            "f64": "3ea3db1280d63520"
+          },
+          {
+            "f64": "3ed1e714d8e897d3"
+          },
+          {
+            "f64": "3e7a82f458e9a43d"
+          },
+          {
+            "f64": "3ea3db62bbb822ee"
+          },
+          {
+            "f64": "3ed25248323e820e"
+          },
+          {
+            "f64": "3e7bc54474d82633"
+          },
+          {
+            "f64": "3ea3dc48ecea9883"
+          },
+          {
+            "f64": "3ed37578639d7e1a"
+          }
+        ],
+        "thermalNodesKJ": [
+          {
+            "f64": "bf84acf198b6ebe4"
+          },
+          {
+            "f64": "bee142ba999b1fde"
+          },
+          {
+            "f64": "bf7047ee3f0192e4"
+          },
+          {
+            "f64": "beceb2d777d28550"
+          },
+          {
+            "f64": "bf7056a6de50b398"
+          },
+          {
+            "f64": "beced765119ba25c"
+          },
+          {
+            "f64": "bf70ac37efb50478"
+          },
+          {
+            "f64": "becfadb7b58efb5f"
+          },
+          {
+            "f64": "bf718709f302a234"
+          },
+          {
+            "f64": "bed0f9ef46002b07"
+          },
+          {
+            "f64": "3f7607c5dacf1f58"
+          }
+        ],
+        "airLoadKJ": {
+          "f64": "3f760b79f6f35be3"
+        },
+        "boundaryMassKg": {
+          "f64": "bf1a098f26238366"
+        },
+        "boundaryEnthalpyKJ": {
+          "f64": "bfd00293adbd0b4d"
+        }
+      },
+      "integratedRate": {
+        "faces": [
+          {
+            "massKgS": {
+              "f64": "3f8e88d48ba21fa8"
+            },
+            "energyKW": {
+              "f64": "401dd19f905c52ea"
+            }
+          },
+          {
+            "massKgS": {
+              "f64": "bf6c4f794549f270"
+            },
+            "energyKW": {
+              "f64": "c016c8e227c93b52"
+            }
+          },
+          {
+            "massKgS": {
+              "f64": "3f6942d7eb7b6d0a"
+            },
+            "energyKW": {
+              "f64": "4014549e9691f6f3"
+            }
+          },
+          {
+            "massKgS": {
+              "f64": "3f83e57f7fbb5268"
+            },
+            "energyKW": {
+              "f64": "403003513a74e2e6"
+            }
+          },
+          {
+            "massKgS": {
+              "f64": "3f901b2fa6bdde3e"
+            },
+            "energyKW": {
+              "f64": "4039ec83ca775f20"
+            }
+          },
+          {
+            "massKgS": {
+              "f64": "3f94de5cb7034748"
+            },
+            "energyKW": {
+              "f64": "4040cafbd5d01874"
+            }
+          }
+        ],
+        "links": [
+          {
+            "f64": "3f14f9397e894194"
+          },
+          {
+            "f64": "3f2ce96198b9f5bc"
+          },
+          {
+            "f64": "3f70e86a1e7d6557"
+          },
+          {
+            "f64": "3f0344ecd9262013"
+          },
+          {
+            "f64": "3f2cc9d911253f16"
+          },
+          {
+            "f64": "3f5aa79afb42a54b"
+          },
+          {
+            "f64": "3f03524ae9b55f96"
+          },
+          {
+            "f64": "3f2cc9f73334c112"
+          },
+          {
+            "f64": "3f5abfbf0e0134ab"
+          },
+          {
+            "f64": "3f039ff68fe47f6c"
+          },
+          {
+            "f64": "3f2ccaa7e2db6394"
+          },
+          {
+            "f64": "3f5b4c037307115c"
+          },
+          {
+            "f64": "3f04669827f5e6fe"
+          },
+          {
+            "f64": "3f2ccc87ea7a6bdc"
+          },
+          {
+            "f64": "3f5cb2b205b8e746"
+          }
+        ],
+        "tubeRefrigerant": [
+          {
+            "f64": "40080a386f72b22d"
+          },
+          {
+            "f64": "3fe984f501e1e03f"
+          },
+          {
+            "f64": "3fe9881d3a13f871"
+          },
+          {
+            "f64": "3fe9af56a81337ce"
+          },
+          {
+            "f64": "3fea10c6817c47f2"
+          }
+        ],
+        "thermalRates": [
+          {
+            "f64": "c008019a47f07668"
+          },
+          {
+            "f64": "bf70011f11b795a9"
+          },
+          {
+            "f64": "bfe9775420b0da55"
+          },
+          {
+            "f64": "bf570e5fd91dfd69"
+          },
+          {
+            "f64": "bfe97a7011615101"
+          },
+          {
+            "f64": "bf572680279a9c88"
+          },
+          {
+            "f64": "bfe9a162267f74b4"
+          },
+          {
+            "f64": "bf57b2ae76aba4e9"
+          },
+          {
+            "f64": "bfea021b8e18cba7"
+          },
+          {
+            "f64": "bf591921086999cb"
+          },
+          {
+            "f64": "3feff51c78ff7a42"
+          }
+        ],
+        "airLoad": {
+          "f64": "3ff0000000000000"
+        }
+      },
+      "endpoint": {
+        "faces": [
+          {
+            "massKgS": {
+              "f64": "3f8e88edc34f3a02"
+            },
+            "energyKW": {
+              "f64": "401dd1b830bb5ea6"
+            }
+          },
+          {
+            "massKgS": {
+              "f64": "bf675d5776a2641c"
+            },
+            "energyKW": {
+              "f64": "c012cde0d0579035"
+            }
+          },
+          {
+            "massKgS": {
+              "f64": "3f69762ecb146fff"
+            },
+            "energyKW": {
+              "f64": "40147defb7ac7c6a"
+            }
+          },
+          {
+            "massKgS": {
+              "f64": "3f83d69c27881e5b"
+            },
+            "energyKW": {
+              "f64": "402feeaa992b82f8"
+            }
+          },
+          {
+            "massKgS": {
+              "f64": "3f9010d1289cd3d7"
+            },
+            "energyKW": {
+              "f64": "4039dbd33e6499be"
+            }
+          },
+          {
+            "massKgS": {
+              "f64": "3f94d22c4af6cda6"
+            },
+            "energyKW": {
+              "f64": "4040c12e13d229e5"
+            }
+          }
+        ],
+        "links": [
+          {
+            "f64": "3f150ad4369f8086"
+          },
+          {
+            "f64": "3f2cf958f6eac933"
+          },
+          {
+            "f64": "3f70f7326a0a6667"
+          },
+          {
+            "f64": "3f035012673951f4"
+          },
+          {
+            "f64": "3f2cd99d80347e15"
+          },
+          {
+            "f64": "3f5ab746c9b4cccd"
+          },
+          {
+            "f64": "3f035d7188ccb38a"
+          },
+          {
+            "f64": "3f2cd9bbc03ea8d1"
+          },
+          {
+            "f64": "3f5acf6cc1a7fffe"
+          },
+          {
+            "f64": "3f03ab2a70826637"
+          },
+          {
+            "f64": "3f2cda6d1e163982"
+          },
+          {
+            "f64": "3f5b5bc8ee24cccf"
+          },
+          {
+            "f64": "3f0471ecf5fc7c22"
+          },
+          {
+            "f64": "3f2cdc4ee32bd0a3"
+          },
+          {
+            "f64": "3f5cc2b28e44cccb"
+          }
+        ],
+        "tubeRefrigerant": [
+          {
+            "f64": "40080f1c273ec19e"
+          },
+          {
+            "f64": "3fe985b400a311c2"
+          },
+          {
+            "f64": "3fe988f81fa1d4b8"
+          },
+          {
+            "f64": "3fe9afcd3f797852"
+          },
+          {
+            "f64": "3fea105ae2c0743d"
+          }
+        ],
+        "thermalRates": [
+          {
+            "f64": "c008067678614f2c"
+          },
+          {
+            "f64": "bf700f67a253101d"
+          },
+          {
+            "f64": "bfe9780b1cf49a76"
+          },
+          {
+            "f64": "bf571c1319ae3d0a"
+          },
+          {
+            "f64": "bfe97b42f37add85"
+          },
+          {
+            "f64": "bf57343549a02ae4"
+          },
+          {
+            "f64": "bfe9a1d0ae58a3e2"
+          },
+          {
+            "f64": "bf57c07b4a62059f"
+          },
+          {
+            "f64": "bfea01a7c1c579e5"
+          },
+          {
+            "f64": "bf592728b1df52b7"
+          },
+          {
+            "f64": "3feff516480d66ef"
+          }
+        ],
+        "airLoad": {
+          "f64": "3ff0000000000000"
+        },
+        "fluidRates": [
+          {
+            "massKgS": {
+              "f64": "3f923021d07be984"
+            },
+            "energyKW": {
+              "f64": "402e53938a5927d4"
+            }
+          },
+          {
+            "massKgS": {
+              "f64": "bf7869c320db6a0e"
+            },
+            "energyKW": {
+              "f64": "c0220d8d03f7d534"
+            }
+          },
+          {
+            "massKgS": {
+              "f64": "bf7af220e98604b6"
+            },
+            "energyKW": {
+              "f64": "c02417233b5b2778"
+            }
+          },
+          {
+            "massKgS": {
+              "f64": "bf78960c536312a6"
+            },
+            "energyKW": {
+              "f64": "c0222dff0fa618fe"
+            }
+          },
+          {
+            "massKgS": {
+              "f64": "bf73056c8967e73c"
+            },
+            "energyKW": {
+              "f64": "c01b581848a6d9a8"
+            }
+          }
+        ]
+      },
+      "error": {
+        "f64": "3d8ed8538b32993d"
+      }
+    }
+  ],
+  "followingFace1Reversals": [
+    [
+      0.005382038521211082,
+      0.005397063933720186
+    ]
+  ],
+  "allNormalizedTemporalErrorsAndControllersBitExact": true,
+  "allLedgersBitExact": true
+}

@@ -1,0 +1,122 @@
+{
+  "passed": true,
+  "left": "observe-control-cold",
+  "right": "observe-candidate-cold",
+  "sources": {
+    "left": {
+      "variant": "observe-control",
+      "sha256": "0857a0870d911f905b50712fd94c5f186845586105b739e340ec4dbdc273768d"
+    },
+    "right": {
+      "variant": "observe-candidate",
+      "sha256": "d7fe9bfb2bc129796f4405175b864982ece9393ba8c54398532122031585d07b"
+    }
+  },
+  "fixture": "cold",
+  "schedule": "original",
+  "checkpoints": [
+    {
+      "seconds": 0,
+      "scienceHash": "42e16a97e38606d843cae06f0d8b08e2934f401a294130782bb037402f5f1151",
+      "attemptsHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "seconds": 0.0001,
+      "scienceHash": "541498d43b15114e183bcbd30f0432d37ea583c3f2e8a2e2cef73cf17f7dce7a",
+      "attemptsHash": "c2000d94f8534fa83f082106eb2324079fdfd2dcb1adb498c3a8059f8743325c"
+    },
+    {
+      "seconds": 0.0005,
+      "scienceHash": "5e27e8882f57403d5e3c99051901b0bc060c6ee72af195a9bee91ec35b242923",
+      "attemptsHash": "0538787b20fee0f4e32eb736fae25993d3ef0d6e18df1c2ff6dd49109841f875"
+    },
+    {
+      "seconds": 0.001,
+      "scienceHash": "d865da14415d725b23d9266ad0e07c5ce97077b15077eabbeaf28015643268f5",
+      "attemptsHash": "6bb3594c9113e63ed02d6d1958c6698ae18c3230960de28e0d2ca39e84c8b974"
+    },
+    {
+      "seconds": 0.002,
+      "scienceHash": "5f16558dcf2740f9e59385122b96462798646a585dcb878bde7a46d9231bc0f6",
+      "attemptsHash": "b8b9175f0882fa8d51b4189bf210281f7eda8c64535065770607522b8364f4e7"
+    },
+    {
+      "seconds": 0.005,
+      "scienceHash": "6c56951bf7dd4283721c6cf8919c02346972c20b80e8d383f6bd1fd23541da87",
+      "attemptsHash": "4806870445b14a80bfa500c1641afcde419001cf8b78b5978ba0054fa0cad3cb"
+    },
+    {
+      "seconds": 0.01,
+      "scienceHash": "e1c5a4973c09bb97d316644b0c51725f159cfb0c7c0d74eb394770adb601eef2",
+      "attemptsHash": "f4fbbf8db1b4a3d21734d758b19cb1bca5650c40a8b4399aeb6669fd50c84a5a"
+    }
+  ],
+  "historicalB14Checkpoints": [
+    0,
+    0.0001,
+    0.0005,
+    0.001,
+    0.002,
+    0.005,
+    0.01
+  ],
+  "allScientificObjectsBitExact": true,
+  "originalAttemptsBitExact": true,
+  "independentFullJacobianReconstructions": 235,
+  "actualMatricesAndCorrectionsCompared": 235,
+  "completeResidualObjectsCompared": 5272,
+  "acceptedHalfStepsAndTemporalDecisionsCompared": true,
+  "conservation": {
+    "passed": true,
+    "acceptedHalfStates": 32,
+    "max": {
+      "mass": 1.2636987878106472e-14,
+      "fluid": 6.3338639888499415e-12,
+      "thermal": 9.787309851461146e-15,
+      "combined": 6.3248850601382856e-12,
+      "sectionMass": 1.0992706853292511e-13,
+      "sectionEnergy": 5.498880864540645e-11,
+      "node": 9.783840404509192e-15
+    },
+    "thresholds": {
+      "massKg": 1e-8,
+      "energyKJ": 0.000001
+    },
+    "allElevenThermalNodesAndSignedDonors": true
+  },
+  "counts": {
+    "control": {
+      "phCalls": 5043,
+      "inversions": 5043,
+      "saturations": 19009,
+      "pressureBrackets": 27489,
+      "pressureLogs": 27489,
+      "pressureAxisReads": 384846,
+      "pressureComparisons": 219912,
+      "bracketArrays": 35969,
+      "branches": 8480,
+      "offsetAxisReads": 107696,
+      "branchRowReads4": 8480,
+      "mixRows": 25440,
+      "mixComponentReads6": 25440,
+      "bisections": 8056
+    },
+    "candidate": {
+      "phCalls": 5043,
+      "inversions": 5043,
+      "saturations": 19009,
+      "pressureBrackets": 19221,
+      "pressureLogs": 19221,
+      "pressureAxisReads": 269094,
+      "pressureComparisons": 153768,
+      "bracketArrays": 27701,
+      "ownedHolders": 212,
+      "branches": 8480,
+      "offsetAxisReads": 107696,
+      "branchRowReads4": 8480,
+      "mixRows": 25440,
+      "mixComponentReads6": 25440,
+      "bisections": 8056
+    }
+  }
+}

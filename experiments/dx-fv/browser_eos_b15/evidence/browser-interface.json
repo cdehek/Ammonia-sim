@@ -1,0 +1,94 @@
+{
+  "passed": true,
+  "prototypeV1Counterexample": {
+    "input": {
+      "p": {
+        "f64": "4010000000000000"
+      },
+      "T": {
+        "f64": "4049000000000000"
+      },
+      "kind": {
+        "undefined": true
+      },
+      "fourth": {
+        "value": [
+          {
+            "f64": "0000000000000000"
+          },
+          {
+            "f64": "0000000000000000"
+          }
+        ]
+      }
+    },
+    "original": {
+      "p": {
+        "f64": "4010000000000000"
+      },
+      "T": {
+        "f64": "4049000000000000"
+      },
+      "h": {
+        "f64": "409b11b89e28fc5f"
+      },
+      "s": {
+        "f64": "401a3a22b3120557"
+      },
+      "rho": {
+        "f64": "4004ee44627b1970"
+      },
+      "x": null,
+      "phase": "Superheated vapor"
+    },
+    "v1": {
+      "p": {
+        "f64": "4010000000000000"
+      },
+      "T": {
+        "f64": "4049000000000000"
+      },
+      "h": {
+        "f64": "40999668533a3aae"
+      },
+      "s": {
+        "f64": "401dedbb447963bd"
+      },
+      "rho": {
+        "f64": "3fcd4553d9c016f2"
+      },
+      "x": null,
+      "phase": "Superheated vapor"
+    },
+    "corrected": {
+      "p": {
+        "f64": "4010000000000000"
+      },
+      "T": {
+        "f64": "4049000000000000"
+      },
+      "h": {
+        "f64": "409b11b89e28fc5f"
+      },
+      "s": {
+        "f64": "401a3a22b3120557"
+      },
+      "rho": {
+        "f64": "4004ee44627b1970"
+      },
+      "x": null,
+      "phase": "Superheated vapor"
+    }
+  },
+  "rootCause": "Optional private bracket parameter was reachable as a fourth public PT argument; now public PT forwards only original p/T/kind. Internal PH still uses the original helper and local holder.",
+  "additionalPublicInterfaceComparisons": 18,
+  "finalPublicArity": 3,
+  "runtime": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
+  "browserVersion": "154.0.8037.57",
+  "sourceBuilds": {
+    "control": "f1f028e5454b8090b61c06a8afebcaaac332b3c70f3cd8ac1d4fbc0b2c0bf919",
+    "candidate": "afab073693d6d4eb3e734f84a847805ff9866dada75114add92ca6f911f483c7",
+    "observe-control": "0857a0870d911f905b50712fd94c5f186845586105b739e340ec4dbdc273768d",
+    "observe-candidate": "d7fe9bfb2bc129796f4405175b864982ece9393ba8c54398532122031585d07b"
+  }
+}

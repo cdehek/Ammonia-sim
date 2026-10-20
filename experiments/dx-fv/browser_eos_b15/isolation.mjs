@@ -1,0 +1,6 @@
+import{loader as control}from'./control-bundle.mjs';import{loader as candidate}from'./candidate-bundle.mjs';import{same,exact,assert}from'../browser_eos_b9/values.mjs';
+function exercise(loader){const load=loader(),engine=load('table-only.cjs').createTableEngine(),factory=load('coupled-model.cjs').createCoupledModel;
+ const a=factory(engine,{trace:true,timestepGrowth:'failure-aware'}),b=factory(engine,{trace:true,timestepGrowth:'failure-aware'}),sa=a.create(load('coupled-fixtures.cjs').fixture('warm')),sb=b.create(load('coupled-fixtures.cjs').fixture('cold')),beforeB=structuredClone(sb);
+ a.advance(sa,.0001);assert(same(sb,beforeB),'other model changed');const beforeA=structuredClone(sa);b.advance(sb,.0001);assert(same(sa,beforeA),'first model changed');
+ const la=loader(),ea=la('table-only.cjs').createTableEngine();assert(engine!==ea,'separate loader engines');assert(same(engine.ph(4,1700),ea.ph(4,1700)),'separate loader properties');return {sa,sb,separateModels:true,separateLoaders:true,propertyResultFresh:engine.ph(4,1700)!==engine.ph(4,1700)};}
+const a=exercise(control),b=exercise(candidate);assert(same(a,b),'isolation parity');console.log(JSON.stringify({passed:true,scope:'Real two-model, same engine and separate loader isolation; no Worker lifecycle changes',result:exact(a)}));

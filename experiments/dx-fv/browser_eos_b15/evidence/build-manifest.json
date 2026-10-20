@@ -1,0 +1,116 @@
+{
+  "pinnedB9C": "b67afb3215075b2ec82bef376d39e03953dc0da2",
+  "builds": {
+    "regress-control": {
+      "sha256": "acf5476a99f8d8d4e6fc40d9f164d842d1e1ec37266578aea2c73907c17412fb",
+      "bytes": 1443507
+    },
+    "regress-candidate": {
+      "sha256": "8e78bfd0a6b0bcc9241f453c98c4b0d5c2afbbbbe35edef17f536aae6fd49cbd",
+      "bytes": 1443761
+    },
+    "control": {
+      "sha256": "f1f028e5454b8090b61c06a8afebcaaac332b3c70f3cd8ac1d4fbc0b2c0bf919",
+      "bytes": 1442705
+    },
+    "candidate": {
+      "sha256": "afab073693d6d4eb3e734f84a847805ff9866dada75114add92ca6f911f483c7",
+      "bytes": 1442959
+    },
+    "count-control": {
+      "sha256": "9c399b43cec0a2b2a7c8250b8e901c33e3a00c9ee1e19c6ea05883f395269104",
+      "bytes": 1443247
+    },
+    "count-candidate": {
+      "sha256": "669bf1dca148910ef2ee6c8c033ba22e15d7999b3f311bcc132c69e1fad84f83",
+      "bytes": 1443525
+    },
+    "observe-control": {
+      "sha256": "0857a0870d911f905b50712fd94c5f186845586105b739e340ec4dbdc273768d",
+      "bytes": 1444461
+    },
+    "observe-candidate": {
+      "sha256": "d7fe9bfb2bc129796f4405175b864982ece9393ba8c54398532122031585d07b",
+      "bytes": 1444739
+    }
+  },
+  "candidatePatchSHA256": "4ff893bede47bff99a54e23ac10e6fbc7d9419b501cd033ec9f832ee40641cf6",
+  "unchangedSolverAndTable": true,
+  "modules": {
+    "engine.js": {
+      "control": "646a346f16d481e8fc6cc33f0e376d2ad598c1ce6cc1002b9508bd8f6306f99b",
+      "candidate": "185b85f9054175074bd63737bba5df5f50f9799878fa4b093dd186c38ee9ecce",
+      "unchanged": false
+    },
+    "properties.json": {
+      "control": "10134b46bcb0d39709f6af9d4dc024b7697f13ec100c4ad01f8d1a4648c5b972",
+      "candidate": "10134b46bcb0d39709f6af9d4dc024b7697f13ec100c4ad01f8d1a4648c5b972",
+      "unchanged": true
+    },
+    "conservation.cjs": {
+      "control": "7336ac2e0248a82b8770c95cfc85c2c452803d4603798d414c9b39fb2828d6d0",
+      "candidate": "7336ac2e0248a82b8770c95cfc85c2c452803d4603798d414c9b39fb2828d6d0",
+      "unchanged": true
+    },
+    "coupled-fixtures.cjs": {
+      "control": "be4c6d7b5c1bd1436812d7cb725945db7dd5d7ac6b4aa189b8f55459b45e448f",
+      "candidate": "be4c6d7b5c1bd1436812d7cb725945db7dd5d7ac6b4aa189b8f55459b45e448f",
+      "unchanged": true
+    },
+    "coupled-implicit.cjs": {
+      "control": "29b4aab695c8023e3ba2c1fe04029dc3c6f8d319420bef498f3ecf8b9af2acea",
+      "candidate": "29b4aab695c8023e3ba2c1fe04029dc3c6f8d319420bef498f3ecf8b9af2acea",
+      "unchanged": true
+    },
+    "coupled-model.cjs": {
+      "control": "5f90b82b143cf6c09da2831433362560af0ad267016f45c50d992b3f753ae59f",
+      "candidate": "5f90b82b143cf6c09da2831433362560af0ad267016f45c50d992b3f753ae59f",
+      "unchanged": true
+    },
+    "evaporator.cjs": {
+      "control": "8d2ce32a8364751f0c8afdf4a5677a1abf24309ef6f2287d7a0bdc7dfb7631aa",
+      "candidate": "8d2ce32a8364751f0c8afdf4a5677a1abf24309ef6f2287d7a0bdc7dfb7631aa",
+      "unchanged": true
+    },
+    "hydraulics.cjs": {
+      "control": "6db3d4c4b7e350aeeb26653ff73f126931dd433755ba0ef03cada91ee5c84ae0",
+      "candidate": "6db3d4c4b7e350aeeb26653ff73f126931dd433755ba0ef03cada91ee5c84ae0",
+      "unchanged": true
+    },
+    "implicit.cjs": {
+      "control": "0874921195b9c59d8545f8d433a4727b42f6990bbf49fff643cc642bc92f3a80",
+      "candidate": "0874921195b9c59d8545f8d433a4727b42f6990bbf49fff643cc642bc92f3a80",
+      "unchanged": true
+    },
+    "spatial-fixtures.cjs": {
+      "control": "ee25cc43bafbebea42d75a4426aef5d17a2d3a1be285eaaaf9cd4bee8f18bd3c",
+      "candidate": "ee25cc43bafbebea42d75a4426aef5d17a2d3a1be285eaaaf9cd4bee8f18bd3c",
+      "unchanged": true
+    },
+    "thermal-geometry.cjs": {
+      "control": "74c3cfa0ad90ebe9d273a8dd7c82508048bfabfe19497866e7f6fde0ecfa363e",
+      "candidate": "74c3cfa0ad90ebe9d273a8dd7c82508048bfabfe19497866e7f6fde0ecfa363e",
+      "unchanged": true
+    },
+    "thermal-network.cjs": {
+      "control": "7663a9d9b749994967aad12544c193d899d15a7f40ddf742cc4a618d9ec04d1a",
+      "candidate": "7663a9d9b749994967aad12544c193d899d15a7f40ddf742cc4a618d9ec04d1a",
+      "unchanged": true
+    },
+    "thermodynamics.cjs": {
+      "control": "c65955b606d5e3476379d07bd065e0edeeb41a9251d9030c99dd844a7888647c",
+      "candidate": "c65955b606d5e3476379d07bd065e0edeeb41a9251d9030c99dd844a7888647c",
+      "unchanged": true
+    },
+    "time-control.cjs": {
+      "control": "fd51db7de471c5b4e666f0a90fda6701d32bcc207e42e903eaf60b7ab03289a1",
+      "candidate": "fd51db7de471c5b4e666f0a90fda6701d32bcc207e42e903eaf60b7ab03289a1",
+      "unchanged": true
+    },
+    "table-only.cjs": {
+      "control": "61386b88c89f097577b79181532d488333969f39fc0b775e2e1bea9c9cf61b6d",
+      "candidate": "ddd2ec5d35436608586203b3558db59674d4cbe855e84b5f10c8d19288fff6ee",
+      "unchanged": false
+    }
+  }
+}
