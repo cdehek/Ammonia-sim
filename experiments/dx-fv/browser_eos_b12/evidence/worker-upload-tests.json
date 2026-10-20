@@ -1,0 +1,32 @@
+{
+  "all14FilesMatchExistingEvidence": true,
+  "byteIdenticalZIPs": true,
+  "cloudflareAccountOperations": false,
+  "corruptionRejections": [
+    "missing asset",
+    "unapproved extra file",
+    "enclosing folder instead of root index.html",
+    "duplicate member",
+    "path traversal",
+    "symlink member",
+    "changed bytes with valid CRC: science/candidate-bundle.mjs",
+    "changed bytes with valid CRC: worker.mjs",
+    "changed bytes with valid CRC: 404.html",
+    "truncated archive",
+    "external checksum mismatch",
+    "corrupt extracted asset"
+  ],
+  "externalChecksumMatches": true,
+  "independentFreshStageBuilds": 2,
+  "memberCount": 14,
+  "passed": true,
+  "preservedNestedPaths": [
+    "science/candidate-bundle.mjs",
+    "support/snapshot.mjs",
+    "support/values.mjs",
+    "support/view.mjs"
+  ],
+  "rootIndexHTML": true,
+  "scope": "Packaging only; no runtime, browser, scientific or Cloudflare campaign",
+  "zipSHA256": "d7a766bc3c91c017dba3244a74d02472f23a35a6112ecc5105208e6c4c032956"
+}

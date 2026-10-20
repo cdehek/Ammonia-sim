@@ -40,4 +40,11 @@ assert status['followup404']['approvedAdditionalFiles'] == ['404.html']
 assert status['followup404']['cloudflareProjectCreationOrUploadAuthorized'] is False
 baseline = json.loads(__import__('subprocess').check_output(['git', 'show', '1ab61278159a51fb3f86bb817ea1f03b049443d8:experiments/dx-fv/browser_eos_b12/milestone-status.json'], cwd=B.parents[2]))
 assert status['decisions'] == baseline['decisions'] and status['classification'] == baseline['classification']
+from worker_upload import NAME, sealed_evidence, verify_archive, verify_checksum
+zipraw = (B / NAME).read_bytes()
+verify_checksum(zipraw, (B / (NAME + '.sha256')).read_text().split()[0])
+verify_archive(zipraw, sealed_evidence()[2])
+assert json.loads((B / 'evidence/worker-upload-tests.json').read_text())['passed']
+assert status['workerUploadHandoff']['zipSHA256'] == __import__('hashlib').sha256(zipraw).hexdigest()
+assert not status['workerUploadHandoff']['cloudflareAccountOperationsPerformed']
 print('PASS: required deliverables, preserved backlog, machine tracker and honest blocked/untested boundaries')

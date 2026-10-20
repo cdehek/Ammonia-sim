@@ -1,5 +1,14 @@
 # B12 publication and final verification
 
+The Worker ZIP handoff starts at `f66566af56bf14beb822b5b8951f74e488b01f1e` with
+a clean tree. `worker-upload-before/after` ref and PR snapshots protect this
+packaging change; run `verify-protected.py --worker-upload`. After the B12-only
+push, capture `worker-upload-publication` under ignored .runtime and verify the
+remote branch equals local HEAD and all other refs/PR #3 match. Download the ZIP
+from the actual published GitHub commit and independently verify its external
+SHA-256. GitHub artifact publication is authorized by this task; it is not a
+Cloudflare upload or deployment. No Worker URL, privacy or device PASS is implied.
+
 Only `research/b12-private-https-ipad-preview-20261019` may be pushed, without force,
 tags, PR creation or merge. Its parent history starts at exact B11. The design
 commit is `25da88e88d81b746b6c12665746981aa9cf38255`.

@@ -1,5 +1,13 @@
 # Owner action checklist — stop before publishing science
 
+**Current Worker handoff, 2026-10-20:** use WORKER_STATIC_UPLOAD_HANDOFF.md for the
+owner-reported existing `ammonia-lab-research-b12` Worker. The owner reports its
+placeholder and owner-only Access All traffic policy. Independently verify direct
+asset protection before owner publishing. Do not create a Pages project or use
+the historical Pages CLI steps below for this Worker. This packaging task runs
+no Cloudflare/Access/Wrangler/upload operation. The older Pages plan is retained
+as historical context, not the current action checklist.
+
 The smallest immediate action is to authenticate on the intended Cloudflare
 account and explicitly approve the identity allowed to access this private preview.
 No credentials, API tokens, cookies or login links with session parameters should

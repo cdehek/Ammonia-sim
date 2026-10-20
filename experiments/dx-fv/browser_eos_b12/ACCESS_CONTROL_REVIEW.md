@@ -1,5 +1,13 @@
 # Access review — PRIVATE ACCESS BLOCKED
 
+2026-10-20 owner report: `ammonia-lab-research-b12` now exists as a separate Worker
+with a harmless placeholder and owner-only Access policy covering All traffic.
+The earlier NOT CONFIGURED receipt below predates that report. Independent direct-
+asset/alias/owner-login/denied-access checks remain pending and no privacy PASS is
+claimed. This task changes no Access policy and makes no requests to that Worker.
+Use WORKER_STATIC_UPLOAD_HANDOFF.md; a Pages-only hostname probe is not a Worker
+access test and must not be relabeled as one.
+
 Owner access: **NOT CONFIGURED**. There is no actual hostname, Access application,
 approved email, authenticated session, account-control proof or denial receipt.
 `evidence/cloudflare-auth-readiness.json` records absent environment bindings and

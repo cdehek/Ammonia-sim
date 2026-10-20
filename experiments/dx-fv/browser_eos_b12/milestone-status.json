@@ -47,10 +47,10 @@
   "actualDeploymentURL": null,
   "actualDeploymentId": null,
   "ownerActions": [
-    "Authenticate intended Cloudflare account",
-    "Explicitly approve owner Access identity",
-    "Review the approved one-file staging implementation; verify actual Pages routing only after permitted deployment",
-    "Create separate empty project and verify both Access scopes before any workstation upload"
+    "Use the already-created research Worker; do not create a new Pages project for this handoff",
+    "Independently verify owner-only Access on actual direct asset URLs and all Worker aliases before science upload",
+    "Download/checksum/extract the 14-asset ZIP and use the existing Worker folder upload on a supported desktop browser",
+    "Owner verifies actual missing-file status, all served hashes, real HTTPS browsers and physical iPad after publishing"
   ],
   "stopForEngineeringReview": true,
   "followup404": {
@@ -65,5 +65,20 @@
     "actualCloudflarePages": "UNVERIFIED UNTIL DEPLOYMENT",
     "cloudflareProjectCreationOrUploadAuthorized": false,
     "privateAccessAndPublicationGatesChanged": false
+  },
+  "decisionsScope": "Original agent-verified B12 dispositions; newer owner-reported Worker facts are separate and do not establish deployment/private access PASS",
+  "workerUploadHandoff": {
+    "startingCommit": "f66566af56bf14beb822b5b8951f74e488b01f1e",
+    "status": "PACKAGING PASS; AWAITING OWNER UPLOAD AND INDEPENDENT ACCESS/HTTPS REVIEW",
+    "ownerReportedWorkerName": "ammonia-lab-research-b12",
+    "ownerReportedAccessScope": "owner-only; All traffic",
+    "ownerReportIndependentlyVerified": false,
+    "archive": "cloudflare-worker-static-upload.zip",
+    "zipSHA256": "d7a766bc3c91c017dba3244a74d02472f23a35a6112ecc5105208e6c4c032956",
+    "rootAssetCount": 14,
+    "workerScriptAdded": false,
+    "cloudflareAccountOperationsPerformed": false,
+    "actualWorkersNotFoundHandling": "UNVERIFIED",
+    "physicalIPad": "AWAITING OWNER DEVICE REVIEW"
   }
 }

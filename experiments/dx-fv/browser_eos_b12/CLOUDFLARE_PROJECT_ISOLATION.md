@@ -1,5 +1,10 @@
 # Production isolation
 
+Current 2026-10-20 scope: package/download handoff for the owner-reported existing
+`ammonia-lab-research-b12` Worker. No account action or creation is performed.
+The NEW Pages project design below is historical; do not create it for this handoff.
+See WORKER_STATIC_UPLOAD_HANDOFF.md. All production exclusions remain unchanged.
+
 Only a new Direct Upload research project is authorized. Existing production
 Pages, public simulator URL, GitHub Pages, domains/DNS, secrets, environment
 variables, hooks, main, demo, PR #3 and original workstation branch are excluded.

@@ -1,5 +1,10 @@
 # Official documentation checked 2026-10-19 UTC
 
+Workers follow-up checked 2026-10-20: see WORKERS_STATIC_ASSET_REVIEW.md for current
+official Workers asset routing, custom 404 configuration, HTML handling and
+Wrangler references. Pages-specific missing-file rules do not establish Worker
+behavior. No authenticated Cloudflare documentation/dashboard session was used.
+
 These are documentation observations, not account or deployment receipts.
 
 - [Direct Upload](https://developers.cloudflare.com/pages/get-started/direct-upload/): prebuilt directory upload; Wrangler can create an empty project. Dashboard also accepts ZIPs, but the sealed ZIP wraps its files in `preview/`; choose the extracted folder to avoid a wrong static root. Do not use combined implicit create-and-deploy.

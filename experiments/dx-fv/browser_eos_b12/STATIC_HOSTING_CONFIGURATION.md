@@ -1,5 +1,11 @@
 # Static-hosting contract — approved one-file staging exception
 
+The 2026-10-20 Worker upload handoff targets an owner-reported EXISTING Worker,
+not a newly created Pages project. WORKERS_STATIC_ASSET_REVIEW.md documents the
+different missing-file/script routing and explicit assets.not_found_handling.
+The ZIP provides assets only and applies no routing configuration. All Pages-specific
+behavior below remains historical/documentation context, not proof about Workers.
+
 The original artifact has 13 files, 3,222,883 bytes, root index.html and no server build.
 No Wrangler configuration pointing at any account/project is committed. Desired
 configuration is in `hosting-plan.json`, with null actual project/account fields.

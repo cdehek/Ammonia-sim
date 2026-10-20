@@ -15,10 +15,14 @@ def refs(path):
 ap = argparse.ArgumentParser()
 ap.add_argument('--published', action='store_true', help='Also require recorded remote B12 == current HEAD')
 ap.add_argument('--followup', action='store_true', help='Use the 404 follow-up snapshots; B12 already exists')
+ap.add_argument('--worker-upload', action='store_true', help='Use the Worker ZIP packaging snapshots')
 args = ap.parse_args()
-prefix = '404-' if args.followup else ''
+assert not (args.followup and args.worker_upload), 'Choose one snapshot series'
+prefix = 'worker-upload-' if args.worker_upload else '404-' if args.followup else ''
 before, after = [refs(E / f'remote-refs-{prefix}{p}.txt') for p in ['before', 'after']]
-if args.followup:
+if args.worker_upload:
+    assert before[OWN] == 'f66566af56bf14beb822b5b8951f74e488b01f1e'
+elif args.followup:
     assert before[OWN] == '1ab61278159a51fb3f86bb817ea1f03b049443d8'
 else:
     assert OWN not in before, 'B12 was not a new remote branch'

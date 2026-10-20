@@ -13,7 +13,8 @@ import urllib.request
 B = Path(__file__).resolve().parent
 ap = argparse.ArgumentParser()
 ap.add_argument('--phase', required=True, choices=['before', 'after', 'publication',
-                '404-before', '404-after', '404-publication'])
+                '404-before', '404-after', '404-publication',
+                'worker-upload-before', 'worker-upload-after', 'worker-upload-publication'])
 args = ap.parse_args()
 out = B / ('.runtime' if args.phase.endswith('publication') else 'evidence')
 out.mkdir(exist_ok=True)

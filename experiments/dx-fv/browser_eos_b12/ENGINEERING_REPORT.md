@@ -1,5 +1,19 @@
 # B12 engineering disposition
 
+2026-10-20 packaging update: the owner reports a separate existing Worker named
+`ammonia-lab-research-b12`, harmless deployed placeholder and owner-only Access for
+All traffic. These are owner observations, not independently verified access or
+deployment receipts. The new reproducible cloudflare-worker-static-upload.zip
+contains exactly the sealed 14 staged assets at ZIP root; all hashes, two fresh
+builds and twelve corruption-rejection checks pass. No scientific/browser campaign
+or Cloudflare operation was run. WORKER_STATIC_UPLOAD_HANDOFF.md supersedes the
+earlier proposed new-Pages-project workflow for this handoff. Workers 404 routing
+must be reviewed separately; merely adding 404.html does not configure it.
+
+The original decision table below records earlier agent-verified B12 dispositions.
+Current owner-reported Worker facts are separately tracked without promoting
+Access, HTTPS, deployed science or physical iPad qualification to PASS.
+
 **B12 PARTIAL / BLOCKED**
 
 The exact B11 artifact is locally verified and preserved, and an isolated private

@@ -1,7 +1,13 @@
 # B12 physical iPad owner handoff
 
-**AWAITING OWNER DEVICE REVIEW.** Actual HTTPS URL: **not created**.
-Access/login: **not configured**. This checklist becomes executable only after
+2026-10-20: the owner reports an existing B12 Worker placeholder and owner-only
+Access policy. WORKER_STATIC_UPLOAD_HANDOFF.md provides the new downloadable
+14-asset package. No workstation URL was supplied or verified here and no assets
+were uploaded by this task. Physical iPad review and all real HTTPS qualification
+remain pending; upload-folder support on iPad Safari is itself untested.
+
+**AWAITING OWNER DEVICE REVIEW.** Verified workstation HTTPS URL: **not supplied**.
+Access/login: **owner-reported configured; independently unverified**. This checklist becomes executable only after
 an actual private URL passes HTTPS desktop qualification and is supplied here.
 Do not try a suggested project name as though it were a verified URL.
 

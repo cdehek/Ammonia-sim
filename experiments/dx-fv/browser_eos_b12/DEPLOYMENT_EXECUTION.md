@@ -1,5 +1,11 @@
 # Deployment execution — BLOCKED
 
+2026-10-20 owner report: a separate Worker `ammonia-lab-research-b12` already has
+a harmless placeholder and owner-only Access All traffic policy. The new ZIP is a
+packaging handoff to that existing Worker only. No account/Access/Wrangler/upload
+operation was executed here and no workstation deployment is claimed. Earlier
+Pages planning/execution history below is not the current Worker procedure.
+
 Design commit: `25da88e88d81b746b6c12665746981aa9cf38255`.
 No Cloudflare remote account operation, project creation, login, Access mutation,
 hostname reservation or asset upload was performed. No deployment ID, deployment

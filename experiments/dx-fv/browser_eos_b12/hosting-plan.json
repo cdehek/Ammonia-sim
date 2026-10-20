@@ -7,7 +7,7 @@
   "actualProjectId": null,
   "accountId": null,
   "actualDeploymentUrl": null,
-  "strategy": "NEW Cloudflare Pages Direct Upload; empty create then protect then upload",
+  "strategy": "CURRENT: packaging-only handoff to owner-reported existing Worker; earlier Pages fields retained as historical design",
   "proposedIsolatedProductionBranch": "b12-sealed",
   "gitIntegration": false,
   "customDomains": [],
@@ -31,5 +31,13 @@
   ],
   "localStagingChecks": "PASS",
   "actualPagesResponseBehavior": "UNVERIFIED UNTIL DEPLOYMENT",
-  "followupProjectCreationOrUploadAuthorized": false
+  "followupProjectCreationOrUploadAuthorized": false,
+  "ownerReportedExistingWorker": {
+    "name": "ammonia-lab-research-b12",
+    "placeholderDeployed": true,
+    "accessPolicy": "owner-only; All traffic",
+    "independentlyVerified": false
+  },
+  "workerStaticUploadArchive": "cloudflare-worker-static-upload.zip",
+  "actualWorkersNotFoundHandling": "UNVERIFIED; root 404.html alone does not configure it"
 }

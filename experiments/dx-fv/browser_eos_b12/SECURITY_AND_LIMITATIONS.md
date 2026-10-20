@@ -1,6 +1,8 @@
 # Security boundaries and limitations
 
-No Cloudflare project, account operation or public research URL was created. No
+No Cloudflare project, account operation or public research URL was created by this
+task. The owner now reports a separate existing research Worker and Access policy;
+that report does not establish verified direct-asset privacy or HTTPS science. No
 public accessibility exception is approved. PRIVATE ACCESS BLOCKED until supported
 authentication, owner identity approval and both hostname policies are verified.
 The owner-approved one-file stage resolves the missing-404 packaging concern;
