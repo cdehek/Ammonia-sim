@@ -1,0 +1,41 @@
+{
+  "milestone": "B14-A0",
+  "classification": "B14-A0 PHASE/JACOBIAN DIAGNOSTIC PASS",
+  "diagnosticOnly": true,
+  "baselineSHA": "eddb2e7add904238162ead68ef9e2c1b8874f04d",
+  "branch": "research/b14-phase-jacobian-diagnostics-20261019",
+  "designCommit": "12dae83",
+  "finalCommitLocator": "git rev-parse research/b14-phase-jacobian-diagnostics-20261019; exact SHA in delivery response",
+  "scientificEquivalence": "PASS",
+  "exploredHorizonSeconds": 0.01,
+  "acceptedQualifiedHorizonSeconds": 0.001,
+  "phaseDirection": "superheated vapor to liquid + vapor; cooling",
+  "phaseBracketSeconds": [
+    0.005359127601674843,
+    0.005382038521211082
+  ],
+  "interpolatedEventSeconds": 0.005375427816982592,
+  "gates": {
+    "0": "PASS",
+    "A": "PASS",
+    "B": "PASS",
+    "C": "PASS",
+    "D": "PASS",
+    "E": "PASS",
+    "F": "PASS",
+    "G": "PASS",
+    "H": "PASS"
+  },
+  "unresolved": [
+    "causal partition of coupled dynamics",
+    "exclusive pressure-bracket CPU fraction",
+    "original allocation/GC attribution",
+    "formal convergence and long-duration qualification",
+    "desktop browser performance"
+  ],
+  "nextExperiment": "exact pressure-bracket reuse only within one vapor PH inversion",
+  "optimizationImplemented": false,
+  "merge": false,
+  "deployment": false,
+  "engineeringReview": "AWAITING"
+}

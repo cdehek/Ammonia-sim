@@ -1,0 +1,58 @@
+{
+  "passed": true,
+  "canonical": "canonical-warm-r1",
+  "observed": "observed-warm-r1",
+  "node": "v24.19.0",
+  "checkpointCount": 7,
+  "bitExactStatesRecordsLedgersEventsStopsAndControllers": true,
+  "bitExactOriginalAttempts": true,
+  "bitExactDerivativeResiduals": true,
+  "independentlyReconstructedActualJacobianHashes": 867,
+  "actualJacobianHashesCompared": 867,
+  "historicalB13Checkpoints": [
+    0,
+    0.0001,
+    0.0005,
+    0.001,
+    0.002,
+    0.005,
+    0.01
+  ],
+  "checks": [
+    {
+      "seconds": 0,
+      "scienceHash": "87a4f3ab3ce8d0469012940817d3978799b7339861c8c6916f005b366b81f4b9",
+      "attemptsHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "seconds": 0.0001,
+      "scienceHash": "ba2e0c57f940895e0429c5a06c33fb58512f785e6cdf6e1a5563c5c9594d3e17",
+      "attemptsHash": "27cfcdf7536722a0c2f1fa51f3ff436a79724117b3e462479bc657c61b4b3a94"
+    },
+    {
+      "seconds": 0.0005,
+      "scienceHash": "3a39238c4a3b25d811513969f7009b4924aba047f312795fa4f3f7a94625c8ed",
+      "attemptsHash": "50d1550995858f944890f7012a74da814402e187314a32cd90aeff10e0d9e05e"
+    },
+    {
+      "seconds": 0.001,
+      "scienceHash": "109e8e2759ea2b2dd6491acf42a3ce9462cc3aab1f093040d938fd659ba5a024",
+      "attemptsHash": "161c7388b0a27a88e596c93eaf25240770177b3ad2660cab03fdffe3b5cb3193"
+    },
+    {
+      "seconds": 0.002,
+      "scienceHash": "7a6996771afbf80aaa8ea34f47ee5820d5a09fa08ce9826ef499e89464d721f5",
+      "attemptsHash": "d7ba37b02ee0fab4961d8029df89dc0867e9ba632af7278ff87a961d17e92d95"
+    },
+    {
+      "seconds": 0.005,
+      "scienceHash": "bcb08dc966ff36099e92c738edd577c112cb32529fa4f4466f9b2f4116552240",
+      "attemptsHash": "c5379387e9a21916bb7621a07b030d469f62ee177f4bffeef87bea312355226f"
+    },
+    {
+      "seconds": 0.01,
+      "scienceHash": "1ea1db9eeade1a0af58646b7c8f9f6267f804dca3c2e6cacace427fbc934b1d4",
+      "attemptsHash": "3b6eaf7f9eff85dbdfd74ea763ff7c89908348ca93d0782ebb68f054912061fe"
+    }
+  ]
+}

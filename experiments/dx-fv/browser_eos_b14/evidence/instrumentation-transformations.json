@@ -1,0 +1,35 @@
+{
+  "basePath": "/workspace/Ammonia-sim/experiments/dx-fv/browser_eos_b9c/diagnostic-candidate-bundle.mjs",
+  "baseSHA256": "acf5476a99f8d8d4e6fc40d9f164d842d1e1ec37266578aea2c73907c17412fb",
+  "transformedSHA256": "9131d26bfac750fe8b757fb3008bd1eb8b2d218e14d02c2d9395523cbcb44cc4",
+  "changes": [
+    {
+      "before": "for (let k = 0; k < x.length; k++) {",
+      "after": "const __jacDone=globalThis.__b14.enter('jacobian');\nfor (let k = 0; k < x.length; k++) {\nconst __columnDone=globalThis.__b14.column(k,variables[k],x[k]);try{"
+    },
+    {
+      "before": "      }\n      work.linearSolves++;",
+      "after": "      }finally{__columnDone();}\n      }\n      globalThis.__b14.matrix(jacobian);__jacDone();\n      work.linearSolves++;"
+    },
+    {
+      "before": "  function errorEstimate(s, coarse, fine) {",
+      "after": "  function errorEstimate(s, coarse, fine) {"
+    },
+    {
+      "before": "    return Math.max(fluid,thermal);",
+      "after": "    const __result=Math.max(fluid,thermal);globalThis.__b14.temporal(s,coarse,fine,__result);return __result;"
+    },
+    {
+      "before": "      s.nextStepSeconds=dt;",
+      "after": "      s.nextStepSeconds=dt;globalThis.__b14.controller(s.seconds,proposal,dt);"
+    },
+    {
+      "before": "s.maxAcceptedStepSeconds=Math.max(s.maxAcceptedStepSeconds,dt);\n  }\n  function applyBoundary",
+      "after": "s.maxAcceptedStepSeconds=Math.max(s.maxAcceptedStepSeconds,dt);globalThis.__b14.committed(s,piece,dt,start);\n  }\n  function applyBoundary"
+    },
+    {
+      "before": "              const next = counted(probe);",
+      "after": "              const next = counted(probe);globalThis.__b14.probe(step,shrink);"
+    }
+  ]
+}

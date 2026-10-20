@@ -1,0 +1,151 @@
+{
+  "passed": true,
+  "classification": "B14-A0 PHASE/JACOBIAN DIAGNOSTIC PASS",
+  "exactPairComparisons": [
+    {
+      "canonical": "canonical-cold-r1",
+      "observed": "observed-cold-r1-fixed",
+      "passed": true
+    },
+    {
+      "canonical": "canonical-cold-r2",
+      "observed": "observed-cold-r2",
+      "passed": true
+    },
+    {
+      "canonical": "canonical-cold-r3",
+      "observed": "observed-cold-r3",
+      "passed": true
+    },
+    {
+      "canonical": "canonical-warm-r1",
+      "observed": "observed-warm-r1",
+      "passed": true
+    },
+    {
+      "canonical": "canonical-warm-r2",
+      "observed": "observed-warm-r2",
+      "passed": true
+    },
+    {
+      "canonical": "canonical-warm-r3",
+      "observed": "observed-warm-r3",
+      "passed": true
+    },
+    {
+      "schedule": "added",
+      "passed": true
+    },
+    {
+      "schedule": "fine",
+      "passed": true
+    }
+  ],
+  "all31TermEstimatesExact": true,
+  "allNormalNewtonAndDerivativeChecks": true,
+  "allAcceptedConservationChecks": true,
+  "originalA2Baseline": true,
+  "domainRollbackAndExternalTerminationDistinct": true,
+  "requiredReports": 16,
+  "processReceipts": [
+    {
+      "file": "observed-cold-r3.exit.json",
+      "returncode": 0
+    },
+    {
+      "file": "canonical-warm-r3.exit.json",
+      "returncode": 0
+    },
+    {
+      "file": "canonical-cold-r3.exit.json",
+      "returncode": 0
+    },
+    {
+      "file": "observed-warm-r1.exit.json",
+      "returncode": 0
+    },
+    {
+      "file": "initialization-cold.exit.json",
+      "returncode": 0
+    },
+    {
+      "file": "observed-warm-fine.exit.json",
+      "returncode": 0
+    },
+    {
+      "file": "observed-cold-r2.exit.json",
+      "returncode": 0
+    },
+    {
+      "file": "canonical-warm-r1.exit.json",
+      "returncode": 0
+    },
+    {
+      "file": "contracts.exit.json",
+      "returncode": 0
+    },
+    {
+      "file": "control-cold-baseline.exit.json",
+      "returncode": 0
+    },
+    {
+      "file": "observed-cold-r1.exit.json",
+      "returncode": 1
+    },
+    {
+      "file": "canonical-warm-r2.exit.json",
+      "returncode": 0
+    },
+    {
+      "file": "observed-warm-added.exit.json",
+      "returncode": 0
+    },
+    {
+      "file": "observed-cold-r1-fixed.exit.json",
+      "returncode": 0
+    },
+    {
+      "file": "canonical-cold-r1.exit.json",
+      "returncode": 0
+    },
+    {
+      "file": "control-warm-baseline.exit.json",
+      "returncode": 0
+    },
+    {
+      "file": "observed-warm-r2.exit.json",
+      "returncode": 0
+    },
+    {
+      "file": "initialization-warm.exit.json",
+      "returncode": 0
+    },
+    {
+      "file": "observed-warm-r3.exit.json",
+      "returncode": 0
+    },
+    {
+      "file": "external-budget-witness.exit.json",
+      "returncode": -9
+    },
+    {
+      "file": "canonical-cold-r2.exit.json",
+      "returncode": 0
+    },
+    {
+      "file": "canonical-warm-fine.exit.json",
+      "returncode": 0
+    },
+    {
+      "file": "canonical-warm-added.exit.json",
+      "returncode": 0
+    }
+  ],
+  "remainingUncertainties": [
+    "causal partition of coupled dynamics",
+    "exclusive pressure-bracket CPU fraction",
+    "original allocation/GC attribution",
+    "formal convergence and long-duration qualification",
+    "desktop browser performance"
+  ]
+}

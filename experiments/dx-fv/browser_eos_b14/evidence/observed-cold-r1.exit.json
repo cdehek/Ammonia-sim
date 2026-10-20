@@ -1,0 +1,26 @@
+{
+  "command": [
+    "node",
+    "--max-old-space-size=512",
+    "/workspace/Ammonia-sim/experiments/dx-fv/browser_eos_b14/probe.mjs",
+    "observed",
+    "cold",
+    "original",
+    "0.01"
+  ],
+  "wallLimitSeconds": 40,
+  "cpuLimitSeconds": 40,
+  "v8HeapLimitMiB": 512,
+  "fileLimitMiB": 64,
+  "processGroupTermination": true,
+  "returncode": 1,
+  "timedOut": false,
+  "wallSeconds": 0.06712044500000047,
+  "complete": null,
+  "lastCheckpointSeconds": null,
+  "lastIndependentlyAcceptedSeconds": 0,
+  "stderr": "file:///workspace/Ammonia-sim/experiments/dx-fv/browser_eos_b14/instrument.mjs:7\n const change=(before,after)=>{if(src.split(before).length!==2)throw Error('Anchor drift: '+before);src=src.replace(before,after);changes.push({before,after});};\n                                                                     ^\n\nError: Anchor drift: s.maxAcceptedStepSeconds=Math.max(s.maxAcceptedStepSeconds,dt);\n    at change (file:///workspace/Ammonia-sim/experiments/dx-fv/browser_eos_b14/instrument.mjs:7:70)\n    at instrument (file:///workspace/Ammonia-sim/experiments/dx-fv/browser_eos_b14/instrument.mjs:14:2)\n    at file:///workspace/Ammonia-sim/experiments/dx-fv/browser_eos_b14/probe.mjs:58:22\n    at ModuleJob.run (node:internal/modules/esm/module_job:439:25)\n    at async node:internal/modules/esm/loader:643:26\n    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5)\n\nNode.js v24.19.0\n",
+  "uncompressedBytes": 0,
+  "compressedBytes": 43,
+  "terminationKind": "process-failure"
+}
