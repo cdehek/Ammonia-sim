@@ -1,0 +1,534 @@
+[
+  {
+    "variant": "control",
+    "kind": "cold",
+    "warmups": 0,
+    "pair": 0,
+    "order": "observed",
+    "flags": [
+      "--trace-opt",
+      "--trace-deopt",
+      "--trace-turbo-inlining",
+      "--trace-file-names",
+      "--trace-gc-nvp"
+    ],
+    "externalWallTermination": false,
+    "returncode": 0,
+    "processWallMS": 272.3008950001713,
+    "limits": {
+      "wallSeconds": 65,
+      "cpuSeconds": 60,
+      "heapMiB": 512
+    },
+    "stderr": "",
+    "schedule": "original",
+    "node": "v24.19.0",
+    "execArgv": [
+      "--max-old-space-size=512",
+      "--trace-opt",
+      "--trace-deopt",
+      "--trace-turbo-inlining",
+      "--trace-file-names",
+      "--trace-gc-nvp"
+    ],
+    "importMS": 24.699341999999994,
+    "tableMS": 41.140077,
+    "scopes": {
+      "untimedWarmup": {
+        "startMS": 105.07925,
+        "endMS": 105.128113,
+        "wallMS": 0.05011500000000524,
+        "cpuMS": 0.037
+      },
+      "initialize": {
+        "startMS": 105.139951,
+        "endMS": 108.134777,
+        "wallMS": 2.995978000000008,
+        "cpuMS": 3.381
+      },
+      "compute": {
+        "startMS": 108.139504,
+        "endMS": 251.116074,
+        "wallMS": 142.976941,
+        "cpuMS": 214.066
+      }
+    },
+    "result": {
+      "clock": 0.01,
+      "accepted": 32,
+      "rejected": 1,
+      "residuals": 5272,
+      "corrections": 235,
+      "attempts": 17,
+      "physical": 50.331460389926136,
+      "recordResiduals": [
+        1.2636987878106472e-14,
+        6.3248850601382856e-12
+      ],
+      "advanceCounts": {},
+      "intervals": [
+        {
+          "target": 0.0001,
+          "wallMS": 46.45712000000002
+        },
+        {
+          "target": 0.0005,
+          "wallMS": 16.206507999999985
+        },
+        {
+          "target": 0.001,
+          "wallMS": 8.626739000000015
+        },
+        {
+          "target": 0.002,
+          "wallMS": 17.045027000000005
+        },
+        {
+          "target": 0.005,
+          "wallMS": 13.536770999999987
+        },
+        {
+          "target": 0.01,
+          "wallMS": 40.997142999999994
+        }
+      ]
+    },
+    "memoryStart": {
+      "rss": 25288704,
+      "heapTotal": 6549504,
+      "heapUsed": 4351488,
+      "external": 1624630,
+      "arrayBuffers": 137759
+    },
+    "memoryEnd": {
+      "rss": 89509888,
+      "heapTotal": 50360320,
+      "heapUsed": 23796104,
+      "external": 4510058,
+      "arrayBuffers": 137775
+    },
+    "resources": {
+      "userCPUTime": 224485,
+      "systemCPUTime": 114883,
+      "maxRSS": 87412,
+      "sharedMemorySize": 0,
+      "unsharedDataSize": 0,
+      "unsharedStackSize": 0,
+      "minorPageFault": 23338,
+      "majorPageFault": 0,
+      "swappedOut": 0,
+      "fsRead": 0,
+      "fsWrite": 0,
+      "ipcSent": 0,
+      "ipcReceived": 0,
+      "signalsCount": 0,
+      "voluntaryContextSwitches": 394,
+      "involuntaryContextSwitches": 135
+    },
+    "gc": [],
+    "counts": {},
+    "primaryCounting": false,
+    "scientificHashingInTimedScope": false,
+    "traceFile": "trace-control-cold.txt.gz",
+    "traceLines": 554
+  },
+  {
+    "variant": "candidate",
+    "kind": "cold",
+    "warmups": 0,
+    "pair": 0,
+    "order": "observed",
+    "flags": [
+      "--trace-opt",
+      "--trace-deopt",
+      "--trace-turbo-inlining",
+      "--trace-file-names",
+      "--trace-gc-nvp"
+    ],
+    "externalWallTermination": false,
+    "returncode": 0,
+    "processWallMS": 163.27697399992758,
+    "limits": {
+      "wallSeconds": 65,
+      "cpuSeconds": 60,
+      "heapMiB": 512
+    },
+    "stderr": "",
+    "schedule": "original",
+    "node": "v24.19.0",
+    "execArgv": [
+      "--max-old-space-size=512",
+      "--trace-opt",
+      "--trace-deopt",
+      "--trace-turbo-inlining",
+      "--trace-file-names",
+      "--trace-gc-nvp"
+    ],
+    "importMS": 7.450244000000001,
+    "tableMS": 22.671713,
+    "scopes": {
+      "untimedWarmup": {
+        "startMS": 48.044902,
+        "endMS": 48.088518,
+        "wallMS": 0.044837000000001126,
+        "cpuMS": 0.032
+      },
+      "initialize": {
+        "startMS": 48.100125,
+        "endMS": 50.604444,
+        "wallMS": 2.505531000000005,
+        "cpuMS": 2.827
+      },
+      "compute": {
+        "startMS": 50.609031,
+        "endMS": 145.803323,
+        "wallMS": 95.194532,
+        "cpuMS": 166.716
+      }
+    },
+    "result": {
+      "clock": 0.01,
+      "accepted": 32,
+      "rejected": 1,
+      "residuals": 5272,
+      "corrections": 235,
+      "attempts": 17,
+      "physical": 50.331460389926136,
+      "recordResiduals": [
+        1.2636987878106472e-14,
+        6.3248850601382856e-12
+      ],
+      "advanceCounts": {},
+      "intervals": [
+        {
+          "target": 0.0001,
+          "wallMS": 25.918506999999998
+        },
+        {
+          "target": 0.0005,
+          "wallMS": 23.075900000000004
+        },
+        {
+          "target": 0.001,
+          "wallMS": 10.145229999999998
+        },
+        {
+          "target": 0.002,
+          "wallMS": 9.536384999999996
+        },
+        {
+          "target": 0.005,
+          "wallMS": 11.926523000000003
+        },
+        {
+          "target": 0.01,
+          "wallMS": 14.531795000000017
+        }
+      ]
+    },
+    "memoryStart": {
+      "rss": 25288704,
+      "heapTotal": 6549504,
+      "heapUsed": 4351488,
+      "external": 1624630,
+      "arrayBuffers": 137759
+    },
+    "memoryEnd": {
+      "rss": 85114880,
+      "heapTotal": 50622464,
+      "heapUsed": 29243112,
+      "external": 4510566,
+      "arrayBuffers": 137775
+    },
+    "resources": {
+      "userCPUTime": 175215,
+      "systemCPUTime": 50954,
+      "maxRSS": 83120,
+      "sharedMemorySize": 0,
+      "unsharedDataSize": 0,
+      "unsharedStackSize": 0,
+      "minorPageFault": 22221,
+      "majorPageFault": 0,
+      "swappedOut": 0,
+      "fsRead": 0,
+      "fsWrite": 0,
+      "ipcSent": 0,
+      "ipcReceived": 0,
+      "signalsCount": 0,
+      "voluntaryContextSwitches": 373,
+      "involuntaryContextSwitches": 88
+    },
+    "gc": [],
+    "counts": {},
+    "primaryCounting": false,
+    "scientificHashingInTimedScope": false,
+    "traceFile": "trace-candidate-cold.txt.gz",
+    "traceLines": 550
+  },
+  {
+    "variant": "control",
+    "kind": "warm",
+    "warmups": 0,
+    "pair": 0,
+    "order": "observed",
+    "flags": [
+      "--trace-opt",
+      "--trace-deopt",
+      "--trace-turbo-inlining",
+      "--trace-file-names",
+      "--trace-gc-nvp"
+    ],
+    "externalWallTermination": false,
+    "returncode": 0,
+    "processWallMS": 637.5161430000844,
+    "limits": {
+      "wallSeconds": 65,
+      "cpuSeconds": 60,
+      "heapMiB": 512
+    },
+    "stderr": "",
+    "schedule": "original",
+    "node": "v24.19.0",
+    "execArgv": [
+      "--max-old-space-size=512",
+      "--trace-opt",
+      "--trace-deopt",
+      "--trace-turbo-inlining",
+      "--trace-file-names",
+      "--trace-gc-nvp"
+    ],
+    "importMS": 4.377101,
+    "tableMS": 25.203966,
+    "scopes": {
+      "untimedWarmup": {
+        "startMS": 45.959173,
+        "endMS": 45.999364,
+        "wallMS": 0.04140199999999794,
+        "cpuMS": 0.029
+      },
+      "initialize": {
+        "startMS": 46.009889,
+        "endMS": 49.177124,
+        "wallMS": 3.168506999999998,
+        "cpuMS": 3.905
+      },
+      "compute": {
+        "startMS": 49.18142,
+        "endMS": 620.136341,
+        "wallMS": 570.955171,
+        "cpuMS": 772.094
+      }
+    },
+    "result": {
+      "clock": 0.01,
+      "accepted": 86,
+      "rejected": 8,
+      "residuals": 19380,
+      "corrections": 867,
+      "attempts": 51,
+      "physical": 280.5559760042121,
+      "recordResiduals": [
+        -8.730626085366039e-14,
+        -1.495165033449375e-10
+      ],
+      "advanceCounts": {},
+      "intervals": [
+        {
+          "target": 0.0001,
+          "wallMS": 130.048953
+        },
+        {
+          "target": 0.0005,
+          "wallMS": 81.09836200000001
+        },
+        {
+          "target": 0.001,
+          "wallMS": 51.597064999999986
+        },
+        {
+          "target": 0.002,
+          "wallMS": 68.99647399999998
+        },
+        {
+          "target": 0.005,
+          "wallMS": 69.43138699999997
+        },
+        {
+          "target": 0.01,
+          "wallMS": 169.716591
+        }
+      ]
+    },
+    "memoryStart": {
+      "rss": 25288704,
+      "heapTotal": 6811648,
+      "heapUsed": 4351488,
+      "external": 1624630,
+      "arrayBuffers": 137759
+    },
+    "memoryEnd": {
+      "rss": 97914880,
+      "heapTotal": 58486784,
+      "heapUsed": 26112032,
+      "external": 4510022,
+      "arrayBuffers": 137739
+    },
+    "resources": {
+      "userCPUTime": 750081,
+      "systemCPUTime": 82695,
+      "maxRSS": 96512,
+      "sharedMemorySize": 0,
+      "unsharedDataSize": 0,
+      "unsharedStackSize": 0,
+      "minorPageFault": 26428,
+      "majorPageFault": 0,
+      "swappedOut": 0,
+      "fsRead": 0,
+      "fsWrite": 0,
+      "ipcSent": 0,
+      "ipcReceived": 0,
+      "signalsCount": 0,
+      "voluntaryContextSwitches": 905,
+      "involuntaryContextSwitches": 125
+    },
+    "gc": [],
+    "counts": {},
+    "primaryCounting": false,
+    "scientificHashingInTimedScope": false,
+    "traceFile": "trace-control-warm.txt.gz",
+    "traceLines": 1468
+  },
+  {
+    "variant": "candidate",
+    "kind": "warm",
+    "warmups": 0,
+    "pair": 0,
+    "order": "observed",
+    "flags": [
+      "--trace-opt",
+      "--trace-deopt",
+      "--trace-turbo-inlining",
+      "--trace-file-names",
+      "--trace-gc-nvp"
+    ],
+    "externalWallTermination": false,
+    "returncode": 0,
+    "processWallMS": 551.6764809999586,
+    "limits": {
+      "wallSeconds": 65,
+      "cpuSeconds": 60,
+      "heapMiB": 512
+    },
+    "stderr": "",
+    "schedule": "original",
+    "node": "v24.19.0",
+    "execArgv": [
+      "--max-old-space-size=512",
+      "--trace-opt",
+      "--trace-deopt",
+      "--trace-turbo-inlining",
+      "--trace-file-names",
+      "--trace-gc-nvp"
+    ],
+    "importMS": 6.790021999999997,
+    "tableMS": 25.891667999999996,
+    "scopes": {
+      "untimedWarmup": {
+        "startMS": 53.381484,
+        "endMS": 53.431589,
+        "wallMS": 0.05127699999999891,
+        "cpuMS": 0.04
+      },
+      "initialize": {
+        "startMS": 53.443097,
+        "endMS": 57.011123,
+        "wallMS": 3.5692069999999987,
+        "cpuMS": 4.186
+      },
+      "compute": {
+        "startMS": 57.015589,
+        "endMS": 535.013997,
+        "wallMS": 477.99880800000005,
+        "cpuMS": 662.22
+      }
+    },
+    "result": {
+      "clock": 0.01,
+      "accepted": 86,
+      "rejected": 8,
+      "residuals": 19380,
+      "corrections": 867,
+      "attempts": 51,
+      "physical": 280.5559760042121,
+      "recordResiduals": [
+        -8.730626085366039e-14,
+        -1.495165033449375e-10
+      ],
+      "advanceCounts": {},
+      "intervals": [
+        {
+          "target": 0.0001,
+          "wallMS": 100.83075200000002
+        },
+        {
+          "target": 0.0005,
+          "wallMS": 59.685146
+        },
+        {
+          "target": 0.001,
+          "wallMS": 44.02868299999997
+        },
+        {
+          "target": 0.002,
+          "wallMS": 53.319841
+        },
+        {
+          "target": 0.005,
+          "wallMS": 55.152282000000014
+        },
+        {
+          "target": 0.01,
+          "wallMS": 164.91921699999995
+        }
+      ]
+    },
+    "memoryStart": {
+      "rss": 25296896,
+      "heapTotal": 6549504,
+      "heapUsed": 4351488,
+      "external": 1624630,
+      "arrayBuffers": 137759
+    },
+    "memoryEnd": {
+      "rss": 97656832,
+      "heapTotal": 57438208,
+      "heapUsed": 24034808,
+      "external": 4510530,
+      "arrayBuffers": 137739
+    },
+    "resources": {
+      "userCPUTime": 681496,
+      "systemCPUTime": 50369,
+      "maxRSS": 97592,
+      "sharedMemorySize": 0,
+      "unsharedDataSize": 0,
+      "unsharedStackSize": 0,
+      "minorPageFault": 27308,
+      "majorPageFault": 0,
+      "swappedOut": 0,
+      "fsRead": 0,
+      "fsWrite": 0,
+      "ipcSent": 0,
+      "ipcReceived": 0,
+      "signalsCount": 0,
+      "voluntaryContextSwitches": 935,
+      "involuntaryContextSwitches": 1585
+    },
+    "gc": [],
+    "counts": {},
+    "primaryCounting": false,
+    "scientificHashingInTimedScope": false,
+    "traceFile": "trace-candidate-warm.txt.gz",
+    "traceLines": 1693
+  }
+]

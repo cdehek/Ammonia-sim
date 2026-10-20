@@ -1,0 +1,3626 @@
+[
+  {
+    "variant": "count-control",
+    "kind": "cold",
+    "warmups": 0,
+    "pair": 1,
+    "order": "AB",
+    "flags": [],
+    "externalWallTermination": false,
+    "returncode": 0,
+    "processWallMS": 142.14800299987473,
+    "limits": {
+      "wallSeconds": 65,
+      "cpuSeconds": 60,
+      "heapMiB": 512
+    },
+    "stderr": "",
+    "schedule": "original",
+    "node": "v24.19.0",
+    "execArgv": [
+      "--max-old-space-size=512"
+    ],
+    "importMS": 6.778282000000003,
+    "tableMS": 17.855272999999997,
+    "scopes": {
+      "untimedWarmup": {
+        "startMS": 39.725386,
+        "endMS": 39.785396,
+        "wallMS": 0.061222000000000776,
+        "cpuMS": 0.029
+      },
+      "initialize": {
+        "startMS": 39.795441,
+        "endMS": 42.312232,
+        "wallMS": 2.517802000000003,
+        "cpuMS": 3.056
+      },
+      "compute": {
+        "startMS": 42.315957,
+        "endMS": 128.272851,
+        "wallMS": 85.957144,
+        "cpuMS": 143.774
+      }
+    },
+    "result": {
+      "clock": 0.01,
+      "accepted": 32,
+      "rejected": 1,
+      "residuals": 5272,
+      "corrections": 235,
+      "attempts": 17,
+      "physical": 50.331460389926136,
+      "recordResiduals": [
+        1.2636987878106472e-14,
+        6.3248850601382856e-12
+      ],
+      "advanceCounts": {
+        "phCalls": 5028,
+        "inversions": 5028,
+        "saturations": 18924,
+        "pressureBrackets": 27324,
+        "pressureLogs": 27324,
+        "pressureAxisReads": 382536,
+        "pressureComparisons": 218592,
+        "bracketArrays": 35724,
+        "branches": 8400,
+        "offsetAxisReads": 106680,
+        "branchRowReads4": 8400,
+        "mixRows": 25200,
+        "mixComponentReads6": 25200,
+        "bisections": 7980
+      },
+      "intervals": [
+        {
+          "target": 0.0001,
+          "wallMS": 26.489151999999997
+        },
+        {
+          "target": 0.0005,
+          "wallMS": 15.822528000000005
+        },
+        {
+          "target": 0.001,
+          "wallMS": 7.441649999999996
+        },
+        {
+          "target": 0.002,
+          "wallMS": 7.540036999999998
+        },
+        {
+          "target": 0.005,
+          "wallMS": 12.889201999999997
+        },
+        {
+          "target": 0.01,
+          "wallMS": 15.71836300000001
+        }
+      ]
+    },
+    "memoryStart": {
+      "rss": 25141248,
+      "heapTotal": 6287360,
+      "heapUsed": 4343584,
+      "external": 1624630,
+      "arrayBuffers": 137759
+    },
+    "memoryEnd": {
+      "rss": 86446080,
+      "heapTotal": 50622464,
+      "heapUsed": 16749656,
+      "external": 4511142,
+      "arrayBuffers": 137775
+    },
+    "resources": {
+      "userCPUTime": 152115,
+      "systemCPUTime": 46209,
+      "maxRSS": 84420,
+      "sharedMemorySize": 0,
+      "unsharedDataSize": 0,
+      "unsharedStackSize": 0,
+      "minorPageFault": 22616,
+      "majorPageFault": 0,
+      "swappedOut": 0,
+      "fsRead": 0,
+      "fsWrite": 0,
+      "ipcSent": 0,
+      "ipcReceived": 0,
+      "signalsCount": 0,
+      "voluntaryContextSwitches": 320,
+      "involuntaryContextSwitches": 24
+    },
+    "gc": [],
+    "counts": {
+      "phCalls": 5035,
+      "inversions": 5035,
+      "saturations": 18965,
+      "pressureBrackets": 27405,
+      "pressureLogs": 27405,
+      "pressureAxisReads": 383670,
+      "pressureComparisons": 219240,
+      "bracketArrays": 35845,
+      "branches": 8440,
+      "offsetAxisReads": 107188,
+      "branchRowReads4": 8440,
+      "mixRows": 25320,
+      "mixComponentReads6": 25320,
+      "bisections": 8018
+    },
+    "primaryCounting": true,
+    "scientificHashingInTimedScope": false
+  },
+  {
+    "variant": "count-candidate",
+    "kind": "cold",
+    "warmups": 0,
+    "pair": 1,
+    "order": "AB",
+    "flags": [],
+    "externalWallTermination": false,
+    "returncode": 0,
+    "processWallMS": 138.6700089999522,
+    "limits": {
+      "wallSeconds": 65,
+      "cpuSeconds": 60,
+      "heapMiB": 512
+    },
+    "stderr": "",
+    "schedule": "original",
+    "node": "v24.19.0",
+    "execArgv": [
+      "--max-old-space-size=512"
+    ],
+    "importMS": 6.511531,
+    "tableMS": 20.131881999999997,
+    "scopes": {
+      "untimedWarmup": {
+        "startMS": 40.941964,
+        "endMS": 40.976596,
+        "wallMS": 0.035783999999999594,
+        "cpuMS": 0.025
+      },
+      "initialize": {
+        "startMS": 40.985359,
+        "endMS": 43.40952,
+        "wallMS": 2.425103,
+        "cpuMS": 2.961
+      },
+      "compute": {
+        "startMS": 43.413226,
+        "endMS": 125.098028,
+        "wallMS": 81.685033,
+        "cpuMS": 139.443
+      }
+    },
+    "result": {
+      "clock": 0.01,
+      "accepted": 32,
+      "rejected": 1,
+      "residuals": 5272,
+      "corrections": 235,
+      "attempts": 17,
+      "physical": 50.331460389926136,
+      "recordResiduals": [
+        1.2636987878106472e-14,
+        6.3248850601382856e-12
+      ],
+      "advanceCounts": {
+        "phCalls": 5028,
+        "inversions": 5028,
+        "saturations": 18924,
+        "pressureBrackets": 19134,
+        "pressureLogs": 19134,
+        "pressureAxisReads": 267876,
+        "pressureComparisons": 153072,
+        "bracketArrays": 27534,
+        "ownedHolders": 210,
+        "branches": 8400,
+        "offsetAxisReads": 106680,
+        "branchRowReads4": 8400,
+        "mixRows": 25200,
+        "mixComponentReads6": 25200,
+        "bisections": 7980
+      },
+      "intervals": [
+        {
+          "target": 0.0001,
+          "wallMS": 26.400895
+        },
+        {
+          "target": 0.0005,
+          "wallMS": 15.884410000000003
+        },
+        {
+          "target": 0.001,
+          "wallMS": 7.223621999999992
+        },
+        {
+          "target": 0.002,
+          "wallMS": 6.948548000000002
+        },
+        {
+          "target": 0.005,
+          "wallMS": 10.156767000000002
+        },
+        {
+          "target": 0.01,
+          "wallMS": 15.016058000000001
+        }
+      ]
+    },
+    "memoryStart": {
+      "rss": 25141248,
+      "heapTotal": 6287360,
+      "heapUsed": 4343584,
+      "external": 1624630,
+      "arrayBuffers": 137759
+    },
+    "memoryEnd": {
+      "rss": 85372928,
+      "heapTotal": 50884608,
+      "heapUsed": 16691080,
+      "external": 4511698,
+      "arrayBuffers": 137775
+    },
+    "resources": {
+      "userCPUTime": 158532,
+      "systemCPUTime": 33350,
+      "maxRSS": 83372,
+      "sharedMemorySize": 0,
+      "unsharedDataSize": 0,
+      "unsharedStackSize": 0,
+      "minorPageFault": 22337,
+      "majorPageFault": 0,
+      "swappedOut": 0,
+      "fsRead": 0,
+      "fsWrite": 0,
+      "ipcSent": 0,
+      "ipcReceived": 0,
+      "signalsCount": 0,
+      "voluntaryContextSwitches": 347,
+      "involuntaryContextSwitches": 21
+    },
+    "gc": [],
+    "counts": {
+      "phCalls": 5035,
+      "inversions": 5035,
+      "saturations": 18965,
+      "pressureBrackets": 19176,
+      "pressureLogs": 19176,
+      "pressureAxisReads": 268464,
+      "pressureComparisons": 153408,
+      "bracketArrays": 27616,
+      "ownedHolders": 211,
+      "branches": 8440,
+      "offsetAxisReads": 107188,
+      "branchRowReads4": 8440,
+      "mixRows": 25320,
+      "mixComponentReads6": 25320,
+      "bisections": 8018
+    },
+    "primaryCounting": true,
+    "scientificHashingInTimedScope": false
+  },
+  {
+    "variant": "count-candidate",
+    "kind": "cold",
+    "warmups": 0,
+    "pair": 2,
+    "order": "BA",
+    "flags": [],
+    "externalWallTermination": false,
+    "returncode": 0,
+    "processWallMS": 134.70461299993985,
+    "limits": {
+      "wallSeconds": 65,
+      "cpuSeconds": 60,
+      "heapMiB": 512
+    },
+    "stderr": "",
+    "schedule": "original",
+    "node": "v24.19.0",
+    "execArgv": [
+      "--max-old-space-size=512"
+    ],
+    "importMS": 3.5904430000000005,
+    "tableMS": 18.860711999999996,
+    "scopes": {
+      "untimedWarmup": {
+        "startMS": 38.57683,
+        "endMS": 38.612133,
+        "wallMS": 0.036454999999996573,
+        "cpuMS": 0.025
+      },
+      "initialize": {
+        "startMS": 38.620636,
+        "endMS": 41.073521,
+        "wallMS": 2.4541970000000006,
+        "cpuMS": 2.972
+      },
+      "compute": {
+        "startMS": 41.077667,
+        "endMS": 121.393336,
+        "wallMS": 80.31591900000001,
+        "cpuMS": 140.08
+      }
+    },
+    "result": {
+      "clock": 0.01,
+      "accepted": 32,
+      "rejected": 1,
+      "residuals": 5272,
+      "corrections": 235,
+      "attempts": 17,
+      "physical": 50.331460389926136,
+      "recordResiduals": [
+        1.2636987878106472e-14,
+        6.3248850601382856e-12
+      ],
+      "advanceCounts": {
+        "phCalls": 5028,
+        "inversions": 5028,
+        "saturations": 18924,
+        "pressureBrackets": 19134,
+        "pressureLogs": 19134,
+        "pressureAxisReads": 267876,
+        "pressureComparisons": 153072,
+        "bracketArrays": 27534,
+        "ownedHolders": 210,
+        "branches": 8400,
+        "offsetAxisReads": 106680,
+        "branchRowReads4": 8400,
+        "mixRows": 25200,
+        "mixComponentReads6": 25200,
+        "bisections": 7980
+      },
+      "intervals": [
+        {
+          "target": 0.0001,
+          "wallMS": 26.450574000000003
+        },
+        {
+          "target": 0.0005,
+          "wallMS": 15.120935000000003
+        },
+        {
+          "target": 0.001,
+          "wallMS": 7.163701000000003
+        },
+        {
+          "target": 0.002,
+          "wallMS": 6.808198000000004
+        },
+        {
+          "target": 0.005,
+          "wallMS": 10.693714
+        },
+        {
+          "target": 0.01,
+          "wallMS": 14.025388000000007
+        }
+      ]
+    },
+    "memoryStart": {
+      "rss": 25272320,
+      "heapTotal": 6287360,
+      "heapUsed": 4343584,
+      "external": 1624630,
+      "arrayBuffers": 137759
+    },
+    "memoryEnd": {
+      "rss": 89645056,
+      "heapTotal": 51671040,
+      "heapUsed": 22058568,
+      "external": 4511698,
+      "arrayBuffers": 137775
+    },
+    "resources": {
+      "userCPUTime": 174354,
+      "systemCPUTime": 15672,
+      "maxRSS": 87544,
+      "sharedMemorySize": 0,
+      "unsharedDataSize": 0,
+      "unsharedStackSize": 0,
+      "minorPageFault": 23362,
+      "majorPageFault": 0,
+      "swappedOut": 0,
+      "fsRead": 0,
+      "fsWrite": 0,
+      "ipcSent": 0,
+      "ipcReceived": 0,
+      "signalsCount": 0,
+      "voluntaryContextSwitches": 327,
+      "involuntaryContextSwitches": 24
+    },
+    "gc": [],
+    "counts": {
+      "phCalls": 5035,
+      "inversions": 5035,
+      "saturations": 18965,
+      "pressureBrackets": 19176,
+      "pressureLogs": 19176,
+      "pressureAxisReads": 268464,
+      "pressureComparisons": 153408,
+      "bracketArrays": 27616,
+      "ownedHolders": 211,
+      "branches": 8440,
+      "offsetAxisReads": 107188,
+      "branchRowReads4": 8440,
+      "mixRows": 25320,
+      "mixComponentReads6": 25320,
+      "bisections": 8018
+    },
+    "primaryCounting": true,
+    "scientificHashingInTimedScope": false
+  },
+  {
+    "variant": "count-control",
+    "kind": "cold",
+    "warmups": 0,
+    "pair": 2,
+    "order": "BA",
+    "flags": [],
+    "externalWallTermination": false,
+    "returncode": 0,
+    "processWallMS": 132.0321010000498,
+    "limits": {
+      "wallSeconds": 65,
+      "cpuSeconds": 60,
+      "heapMiB": 512
+    },
+    "stderr": "",
+    "schedule": "original",
+    "node": "v24.19.0",
+    "execArgv": [
+      "--max-old-space-size=512"
+    ],
+    "importMS": 3.622411999999999,
+    "tableMS": 16.300386999999997,
+    "scopes": {
+      "untimedWarmup": {
+        "startMS": 35.513738,
+        "endMS": 35.549432,
+        "wallMS": 0.03685600000000022,
+        "cpuMS": 0.026
+      },
+      "initialize": {
+        "startMS": 35.558756,
+        "endMS": 38.086022,
+        "wallMS": 2.5282979999999995,
+        "cpuMS": 3.011
+      },
+      "compute": {
+        "startMS": 38.089868,
+        "endMS": 119.580793,
+        "wallMS": 81.491186,
+        "cpuMS": 139.913
+      }
+    },
+    "result": {
+      "clock": 0.01,
+      "accepted": 32,
+      "rejected": 1,
+      "residuals": 5272,
+      "corrections": 235,
+      "attempts": 17,
+      "physical": 50.331460389926136,
+      "recordResiduals": [
+        1.2636987878106472e-14,
+        6.3248850601382856e-12
+      ],
+      "advanceCounts": {
+        "phCalls": 5028,
+        "inversions": 5028,
+        "saturations": 18924,
+        "pressureBrackets": 27324,
+        "pressureLogs": 27324,
+        "pressureAxisReads": 382536,
+        "pressureComparisons": 218592,
+        "bracketArrays": 35724,
+        "branches": 8400,
+        "offsetAxisReads": 106680,
+        "branchRowReads4": 8400,
+        "mixRows": 25200,
+        "mixComponentReads6": 25200,
+        "bisections": 7980
+      },
+      "intervals": [
+        {
+          "target": 0.0001,
+          "wallMS": 25.990752999999998
+        },
+        {
+          "target": 0.0005,
+          "wallMS": 16.045855000000003
+        },
+        {
+          "target": 0.001,
+          "wallMS": 7.735420000000005
+        },
+        {
+          "target": 0.002,
+          "wallMS": 7.091833000000008
+        },
+        {
+          "target": 0.005,
+          "wallMS": 10.505751000000004
+        },
+        {
+          "target": 0.01,
+          "wallMS": 14.067743000000007
+        }
+      ]
+    },
+    "memoryStart": {
+      "rss": 25272320,
+      "heapTotal": 6287360,
+      "heapUsed": 4343584,
+      "external": 1624630,
+      "arrayBuffers": 137759
+    },
+    "memoryEnd": {
+      "rss": 87142400,
+      "heapTotal": 50622464,
+      "heapUsed": 16711024,
+      "external": 4511142,
+      "arrayBuffers": 137775
+    },
+    "resources": {
+      "userCPUTime": 170776,
+      "systemCPUTime": 20023,
+      "maxRSS": 85100,
+      "sharedMemorySize": 0,
+      "unsharedDataSize": 0,
+      "unsharedStackSize": 0,
+      "minorPageFault": 22817,
+      "majorPageFault": 0,
+      "swappedOut": 0,
+      "fsRead": 0,
+      "fsWrite": 0,
+      "ipcSent": 0,
+      "ipcReceived": 0,
+      "signalsCount": 0,
+      "voluntaryContextSwitches": 336,
+      "involuntaryContextSwitches": 16
+    },
+    "gc": [],
+    "counts": {
+      "phCalls": 5035,
+      "inversions": 5035,
+      "saturations": 18965,
+      "pressureBrackets": 27405,
+      "pressureLogs": 27405,
+      "pressureAxisReads": 383670,
+      "pressureComparisons": 219240,
+      "bracketArrays": 35845,
+      "branches": 8440,
+      "offsetAxisReads": 107188,
+      "branchRowReads4": 8440,
+      "mixRows": 25320,
+      "mixComponentReads6": 25320,
+      "bisections": 8018
+    },
+    "primaryCounting": true,
+    "scientificHashingInTimedScope": false
+  },
+  {
+    "variant": "count-candidate",
+    "kind": "cold",
+    "warmups": 0,
+    "pair": 3,
+    "order": "BA",
+    "flags": [],
+    "externalWallTermination": false,
+    "returncode": 0,
+    "processWallMS": 144.5223610000994,
+    "limits": {
+      "wallSeconds": 65,
+      "cpuSeconds": 60,
+      "heapMiB": 512
+    },
+    "stderr": "",
+    "schedule": "original",
+    "node": "v24.19.0",
+    "execArgv": [
+      "--max-old-space-size=512"
+    ],
+    "importMS": 3.7091720000000006,
+    "tableMS": 16.505925,
+    "scopes": {
+      "untimedWarmup": {
+        "startMS": 35.437264,
+        "endMS": 35.471586,
+        "wallMS": 0.03550400000000309,
+        "cpuMS": 0.024
+      },
+      "initialize": {
+        "startMS": 35.480279,
+        "endMS": 37.974766,
+        "wallMS": 2.4956889999999987,
+        "cpuMS": 3.045
+      },
+      "compute": {
+        "startMS": 37.978963,
+        "endMS": 130.791213,
+        "wallMS": 92.81249,
+        "cpuMS": 141.667
+      }
+    },
+    "result": {
+      "clock": 0.01,
+      "accepted": 32,
+      "rejected": 1,
+      "residuals": 5272,
+      "corrections": 235,
+      "attempts": 17,
+      "physical": 50.331460389926136,
+      "recordResiduals": [
+        1.2636987878106472e-14,
+        6.3248850601382856e-12
+      ],
+      "advanceCounts": {
+        "phCalls": 5028,
+        "inversions": 5028,
+        "saturations": 18924,
+        "pressureBrackets": 19134,
+        "pressureLogs": 19134,
+        "pressureAxisReads": 267876,
+        "pressureComparisons": 153072,
+        "bracketArrays": 27534,
+        "ownedHolders": 210,
+        "branches": 8400,
+        "offsetAxisReads": 106680,
+        "branchRowReads4": 8400,
+        "mixRows": 25200,
+        "mixComponentReads6": 25200,
+        "bisections": 7980
+      },
+      "intervals": [
+        {
+          "target": 0.0001,
+          "wallMS": 31.241799999999998
+        },
+        {
+          "target": 0.0005,
+          "wallMS": 22.557835999999995
+        },
+        {
+          "target": 0.001,
+          "wallMS": 7.560017000000002
+        },
+        {
+          "target": 0.002,
+          "wallMS": 7.905355
+        },
+        {
+          "target": 0.005,
+          "wallMS": 10.531079999999989
+        },
+        {
+          "target": 0.01,
+          "wallMS": 12.963334000000003
+        }
+      ]
+    },
+    "memoryStart": {
+      "rss": 25272320,
+      "heapTotal": 6287360,
+      "heapUsed": 4343584,
+      "external": 1624630,
+      "arrayBuffers": 137759
+    },
+    "memoryEnd": {
+      "rss": 84221952,
+      "heapTotal": 50622464,
+      "heapUsed": 28653776,
+      "external": 4511698,
+      "arrayBuffers": 137775
+    },
+    "resources": {
+      "userCPUTime": 171216,
+      "systemCPUTime": 21184,
+      "maxRSS": 82248,
+      "sharedMemorySize": 0,
+      "unsharedDataSize": 0,
+      "unsharedStackSize": 0,
+      "minorPageFault": 22032,
+      "majorPageFault": 0,
+      "swappedOut": 0,
+      "fsRead": 0,
+      "fsWrite": 0,
+      "ipcSent": 0,
+      "ipcReceived": 0,
+      "signalsCount": 0,
+      "voluntaryContextSwitches": 417,
+      "involuntaryContextSwitches": 106
+    },
+    "gc": [],
+    "counts": {
+      "phCalls": 5035,
+      "inversions": 5035,
+      "saturations": 18965,
+      "pressureBrackets": 19176,
+      "pressureLogs": 19176,
+      "pressureAxisReads": 268464,
+      "pressureComparisons": 153408,
+      "bracketArrays": 27616,
+      "ownedHolders": 211,
+      "branches": 8440,
+      "offsetAxisReads": 107188,
+      "branchRowReads4": 8440,
+      "mixRows": 25320,
+      "mixComponentReads6": 25320,
+      "bisections": 8018
+    },
+    "primaryCounting": true,
+    "scientificHashingInTimedScope": false
+  },
+  {
+    "variant": "count-control",
+    "kind": "cold",
+    "warmups": 0,
+    "pair": 3,
+    "order": "BA",
+    "flags": [],
+    "externalWallTermination": false,
+    "returncode": 0,
+    "processWallMS": 136.69339099988065,
+    "limits": {
+      "wallSeconds": 65,
+      "cpuSeconds": 60,
+      "heapMiB": 512
+    },
+    "stderr": "",
+    "schedule": "original",
+    "node": "v24.19.0",
+    "execArgv": [
+      "--max-old-space-size=512"
+    ],
+    "importMS": 3.674548999999999,
+    "tableMS": 16.510742999999998,
+    "scopes": {
+      "untimedWarmup": {
+        "startMS": 35.728862,
+        "endMS": 35.764696,
+        "wallMS": 0.038347000000001685,
+        "cpuMS": 0.026
+      },
+      "initialize": {
+        "startMS": 35.774771,
+        "endMS": 38.216829,
+        "wallMS": 2.4431099999999972,
+        "cpuMS": 2.914
+      },
+      "compute": {
+        "startMS": 38.220625,
+        "endMS": 123.470507,
+        "wallMS": 85.250102,
+        "cpuMS": 141.093
+      }
+    },
+    "result": {
+      "clock": 0.01,
+      "accepted": 32,
+      "rejected": 1,
+      "residuals": 5272,
+      "corrections": 235,
+      "attempts": 17,
+      "physical": 50.331460389926136,
+      "recordResiduals": [
+        1.2636987878106472e-14,
+        6.3248850601382856e-12
+      ],
+      "advanceCounts": {
+        "phCalls": 5028,
+        "inversions": 5028,
+        "saturations": 18924,
+        "pressureBrackets": 27324,
+        "pressureLogs": 27324,
+        "pressureAxisReads": 382536,
+        "pressureComparisons": 218592,
+        "bracketArrays": 35724,
+        "branches": 8400,
+        "offsetAxisReads": 106680,
+        "branchRowReads4": 8400,
+        "mixRows": 25200,
+        "mixComponentReads6": 25200,
+        "bisections": 7980
+      },
+      "intervals": [
+        {
+          "target": 0.0001,
+          "wallMS": 28.603367999999996
+        },
+        {
+          "target": 0.0005,
+          "wallMS": 16.290770999999992
+        },
+        {
+          "target": 0.001,
+          "wallMS": 7.380566999999999
+        },
+        {
+          "target": 0.002,
+          "wallMS": 7.242439999999988
+        },
+        {
+          "target": 0.005,
+          "wallMS": 11.262939000000003
+        },
+        {
+          "target": 0.01,
+          "wallMS": 14.414653999999999
+        }
+      ]
+    },
+    "memoryStart": {
+      "rss": 25145344,
+      "heapTotal": 6287360,
+      "heapUsed": 4343584,
+      "external": 1624630,
+      "arrayBuffers": 137759
+    },
+    "memoryEnd": {
+      "rss": 87490560,
+      "heapTotal": 50622464,
+      "heapUsed": 16709264,
+      "external": 4511142,
+      "arrayBuffers": 137775
+    },
+    "resources": {
+      "userCPUTime": 179251,
+      "systemCPUTime": 12262,
+      "maxRSS": 85440,
+      "sharedMemorySize": 0,
+      "unsharedDataSize": 0,
+      "unsharedStackSize": 0,
+      "minorPageFault": 22862,
+      "majorPageFault": 0,
+      "swappedOut": 0,
+      "fsRead": 0,
+      "fsWrite": 0,
+      "ipcSent": 0,
+      "ipcReceived": 0,
+      "signalsCount": 0,
+      "voluntaryContextSwitches": 321,
+      "involuntaryContextSwitches": 23
+    },
+    "gc": [],
+    "counts": {
+      "phCalls": 5035,
+      "inversions": 5035,
+      "saturations": 18965,
+      "pressureBrackets": 27405,
+      "pressureLogs": 27405,
+      "pressureAxisReads": 383670,
+      "pressureComparisons": 219240,
+      "bracketArrays": 35845,
+      "branches": 8440,
+      "offsetAxisReads": 107188,
+      "branchRowReads4": 8440,
+      "mixRows": 25320,
+      "mixComponentReads6": 25320,
+      "bisections": 8018
+    },
+    "primaryCounting": true,
+    "scientificHashingInTimedScope": false
+  },
+  {
+    "variant": "count-control",
+    "kind": "cold",
+    "warmups": 0,
+    "pair": 4,
+    "order": "AB",
+    "flags": [],
+    "externalWallTermination": false,
+    "returncode": 0,
+    "processWallMS": 133.28816499983986,
+    "limits": {
+      "wallSeconds": 65,
+      "cpuSeconds": 60,
+      "heapMiB": 512
+    },
+    "stderr": "",
+    "schedule": "original",
+    "node": "v24.19.0",
+    "execArgv": [
+      "--max-old-space-size=512"
+    ],
+    "importMS": 3.6264179999999993,
+    "tableMS": 17.107488999999998,
+    "scopes": {
+      "untimedWarmup": {
+        "startMS": 36.685519,
+        "endMS": 36.724848,
+        "wallMS": 0.0404710000000037,
+        "cpuMS": 0.028
+      },
+      "initialize": {
+        "startMS": 36.735835,
+        "endMS": 39.250473,
+        "wallMS": 2.5157389999999964,
+        "cpuMS": 3.06
+      },
+      "compute": {
+        "startMS": 39.254418,
+        "endMS": 117.421019,
+        "wallMS": 78.166861,
+        "cpuMS": 139.804
+      }
+    },
+    "result": {
+      "clock": 0.01,
+      "accepted": 32,
+      "rejected": 1,
+      "residuals": 5272,
+      "corrections": 235,
+      "attempts": 17,
+      "physical": 50.331460389926136,
+      "recordResiduals": [
+        1.2636987878106472e-14,
+        6.3248850601382856e-12
+      ],
+      "advanceCounts": {
+        "phCalls": 5028,
+        "inversions": 5028,
+        "saturations": 18924,
+        "pressureBrackets": 27324,
+        "pressureLogs": 27324,
+        "pressureAxisReads": 382536,
+        "pressureComparisons": 218592,
+        "bracketArrays": 35724,
+        "branches": 8400,
+        "offsetAxisReads": 106680,
+        "branchRowReads4": 8400,
+        "mixRows": 25200,
+        "mixComponentReads6": 25200,
+        "bisections": 7980
+      },
+      "intervals": [
+        {
+          "target": 0.0001,
+          "wallMS": 26.093727
+        },
+        {
+          "target": 0.0005,
+          "wallMS": 16.031853000000012
+        },
+        {
+          "target": 0.001,
+          "wallMS": 7.0220179999999885
+        },
+        {
+          "target": 0.002,
+          "wallMS": 6.736108999999999
+        },
+        {
+          "target": 0.005,
+          "wallMS": 10.040593000000001
+        },
+        {
+          "target": 0.01,
+          "wallMS": 12.190211000000005
+        }
+      ]
+    },
+    "memoryStart": {
+      "rss": 25272320,
+      "heapTotal": 6287360,
+      "heapUsed": 4343584,
+      "external": 1624630,
+      "arrayBuffers": 137759
+    },
+    "memoryEnd": {
+      "rss": 80187392,
+      "heapTotal": 49836032,
+      "heapUsed": 11606976,
+      "external": 4511142,
+      "arrayBuffers": 137739
+    },
+    "resources": {
+      "userCPUTime": 199089,
+      "systemCPUTime": 4693,
+      "maxRSS": 78308,
+      "sharedMemorySize": 0,
+      "unsharedDataSize": 0,
+      "unsharedStackSize": 0,
+      "minorPageFault": 21029,
+      "majorPageFault": 0,
+      "swappedOut": 0,
+      "fsRead": 0,
+      "fsWrite": 0,
+      "ipcSent": 0,
+      "ipcReceived": 0,
+      "signalsCount": 0,
+      "voluntaryContextSwitches": 380,
+      "involuntaryContextSwitches": 33
+    },
+    "gc": [],
+    "counts": {
+      "phCalls": 5035,
+      "inversions": 5035,
+      "saturations": 18965,
+      "pressureBrackets": 27405,
+      "pressureLogs": 27405,
+      "pressureAxisReads": 383670,
+      "pressureComparisons": 219240,
+      "bracketArrays": 35845,
+      "branches": 8440,
+      "offsetAxisReads": 107188,
+      "branchRowReads4": 8440,
+      "mixRows": 25320,
+      "mixComponentReads6": 25320,
+      "bisections": 8018
+    },
+    "primaryCounting": true,
+    "scientificHashingInTimedScope": false
+  },
+  {
+    "variant": "count-candidate",
+    "kind": "cold",
+    "warmups": 0,
+    "pair": 4,
+    "order": "AB",
+    "flags": [],
+    "externalWallTermination": false,
+    "returncode": 0,
+    "processWallMS": 138.88691400006792,
+    "limits": {
+      "wallSeconds": 65,
+      "cpuSeconds": 60,
+      "heapMiB": 512
+    },
+    "stderr": "",
+    "schedule": "original",
+    "node": "v24.19.0",
+    "execArgv": [
+      "--max-old-space-size=512"
+    ],
+    "importMS": 3.7093529999999983,
+    "tableMS": 16.513085,
+    "scopes": {
+      "untimedWarmup": {
+        "startMS": 36.231546,
+        "endMS": 36.265757,
+        "wallMS": 0.035382999999995945,
+        "cpuMS": 0.025
+      },
+      "initialize": {
+        "startMS": 36.27383,
+        "endMS": 38.898112,
+        "wallMS": 2.6253930000000025,
+        "cpuMS": 3.219
+      },
+      "compute": {
+        "startMS": 38.902578,
+        "endMS": 123.985129,
+        "wallMS": 85.082821,
+        "cpuMS": 148.471
+      }
+    },
+    "result": {
+      "clock": 0.01,
+      "accepted": 32,
+      "rejected": 1,
+      "residuals": 5272,
+      "corrections": 235,
+      "attempts": 17,
+      "physical": 50.331460389926136,
+      "recordResiduals": [
+        1.2636987878106472e-14,
+        6.3248850601382856e-12
+      ],
+      "advanceCounts": {
+        "phCalls": 5028,
+        "inversions": 5028,
+        "saturations": 18924,
+        "pressureBrackets": 19134,
+        "pressureLogs": 19134,
+        "pressureAxisReads": 267876,
+        "pressureComparisons": 153072,
+        "bracketArrays": 27534,
+        "ownedHolders": 210,
+        "branches": 8400,
+        "offsetAxisReads": 106680,
+        "branchRowReads4": 8400,
+        "mixRows": 25200,
+        "mixComponentReads6": 25200,
+        "bisections": 7980
+      },
+      "intervals": [
+        {
+          "target": 0.0001,
+          "wallMS": 28.96341900000001
+        },
+        {
+          "target": 0.0005,
+          "wallMS": 16.93765400000001
+        },
+        {
+          "target": 0.001,
+          "wallMS": 7.456329999999994
+        },
+        {
+          "target": 0.002,
+          "wallMS": 7.096920999999995
+        },
+        {
+          "target": 0.005,
+          "wallMS": 10.689678999999998
+        },
+        {
+          "target": 0.01,
+          "wallMS": 13.879689000000013
+        }
+      ]
+    },
+    "memoryStart": {
+      "rss": 25141248,
+      "heapTotal": 6287360,
+      "heapUsed": 4343584,
+      "external": 1624630,
+      "arrayBuffers": 137759
+    },
+    "memoryEnd": {
+      "rss": 85602304,
+      "heapTotal": 50884608,
+      "heapUsed": 16704672,
+      "external": 4511698,
+      "arrayBuffers": 137775
+    },
+    "resources": {
+      "userCPUTime": 166617,
+      "systemCPUTime": 33546,
+      "maxRSS": 83596,
+      "sharedMemorySize": 0,
+      "unsharedDataSize": 0,
+      "unsharedStackSize": 0,
+      "minorPageFault": 22406,
+      "majorPageFault": 0,
+      "swappedOut": 0,
+      "fsRead": 0,
+      "fsWrite": 0,
+      "ipcSent": 0,
+      "ipcReceived": 0,
+      "signalsCount": 0,
+      "voluntaryContextSwitches": 332,
+      "involuntaryContextSwitches": 24
+    },
+    "gc": [],
+    "counts": {
+      "phCalls": 5035,
+      "inversions": 5035,
+      "saturations": 18965,
+      "pressureBrackets": 19176,
+      "pressureLogs": 19176,
+      "pressureAxisReads": 268464,
+      "pressureComparisons": 153408,
+      "bracketArrays": 27616,
+      "ownedHolders": 211,
+      "branches": 8440,
+      "offsetAxisReads": 107188,
+      "branchRowReads4": 8440,
+      "mixRows": 25320,
+      "mixComponentReads6": 25320,
+      "bisections": 8018
+    },
+    "primaryCounting": true,
+    "scientificHashingInTimedScope": false
+  },
+  {
+    "variant": "count-control",
+    "kind": "cold",
+    "warmups": 0,
+    "pair": 5,
+    "order": "AB",
+    "flags": [],
+    "externalWallTermination": false,
+    "returncode": 0,
+    "processWallMS": 143.41314000012062,
+    "limits": {
+      "wallSeconds": 65,
+      "cpuSeconds": 60,
+      "heapMiB": 512
+    },
+    "stderr": "",
+    "schedule": "original",
+    "node": "v24.19.0",
+    "execArgv": [
+      "--max-old-space-size=512"
+    ],
+    "importMS": 3.7639139999999998,
+    "tableMS": 17.472688,
+    "scopes": {
+      "untimedWarmup": {
+        "startMS": 36.078747,
+        "endMS": 36.119418,
+        "wallMS": 0.04193300000000022,
+        "cpuMS": 0.03
+      },
+      "initialize": {
+        "startMS": 36.129444,
+        "endMS": 39.112094,
+        "wallMS": 2.984192,
+        "cpuMS": 3.805
+      },
+      "compute": {
+        "startMS": 39.118133,
+        "endMS": 127.638137,
+        "wallMS": 88.520314,
+        "cpuMS": 145.569
+      }
+    },
+    "result": {
+      "clock": 0.01,
+      "accepted": 32,
+      "rejected": 1,
+      "residuals": 5272,
+      "corrections": 235,
+      "attempts": 17,
+      "physical": 50.331460389926136,
+      "recordResiduals": [
+        1.2636987878106472e-14,
+        6.3248850601382856e-12
+      ],
+      "advanceCounts": {
+        "phCalls": 5028,
+        "inversions": 5028,
+        "saturations": 18924,
+        "pressureBrackets": 27324,
+        "pressureLogs": 27324,
+        "pressureAxisReads": 382536,
+        "pressureComparisons": 218592,
+        "bracketArrays": 35724,
+        "branches": 8400,
+        "offsetAxisReads": 106680,
+        "branchRowReads4": 8400,
+        "mixRows": 25200,
+        "mixComponentReads6": 25200,
+        "bisections": 7980
+      },
+      "intervals": [
+        {
+          "target": 0.0001,
+          "wallMS": 31.205607000000008
+        },
+        {
+          "target": 0.0005,
+          "wallMS": 16.170931999999993
+        },
+        {
+          "target": 0.001,
+          "wallMS": 8.130513000000008
+        },
+        {
+          "target": 0.002,
+          "wallMS": 7.370342000000008
+        },
+        {
+          "target": 0.005,
+          "wallMS": 11.183960999999996
+        },
+        {
+          "target": 0.01,
+          "wallMS": 14.401003000000003
+        }
+      ]
+    },
+    "memoryStart": {
+      "rss": 25272320,
+      "heapTotal": 6287360,
+      "heapUsed": 4343584,
+      "external": 1624630,
+      "arrayBuffers": 137759
+    },
+    "memoryEnd": {
+      "rss": 86614016,
+      "heapTotal": 50884608,
+      "heapUsed": 16695944,
+      "external": 4511142,
+      "arrayBuffers": 137775
+    },
+    "resources": {
+      "userCPUTime": 159488,
+      "systemCPUTime": 38089,
+      "maxRSS": 84584,
+      "sharedMemorySize": 0,
+      "unsharedDataSize": 0,
+      "unsharedStackSize": 0,
+      "minorPageFault": 22624,
+      "majorPageFault": 0,
+      "swappedOut": 0,
+      "fsRead": 0,
+      "fsWrite": 0,
+      "ipcSent": 0,
+      "ipcReceived": 0,
+      "signalsCount": 0,
+      "voluntaryContextSwitches": 340,
+      "involuntaryContextSwitches": 19
+    },
+    "gc": [],
+    "counts": {
+      "phCalls": 5035,
+      "inversions": 5035,
+      "saturations": 18965,
+      "pressureBrackets": 27405,
+      "pressureLogs": 27405,
+      "pressureAxisReads": 383670,
+      "pressureComparisons": 219240,
+      "bracketArrays": 35845,
+      "branches": 8440,
+      "offsetAxisReads": 107188,
+      "branchRowReads4": 8440,
+      "mixRows": 25320,
+      "mixComponentReads6": 25320,
+      "bisections": 8018
+    },
+    "primaryCounting": true,
+    "scientificHashingInTimedScope": false
+  },
+  {
+    "variant": "count-candidate",
+    "kind": "cold",
+    "warmups": 0,
+    "pair": 5,
+    "order": "AB",
+    "flags": [],
+    "externalWallTermination": false,
+    "returncode": 0,
+    "processWallMS": 143.50524199994652,
+    "limits": {
+      "wallSeconds": 65,
+      "cpuSeconds": 60,
+      "heapMiB": 512
+    },
+    "stderr": "",
+    "schedule": "original",
+    "node": "v24.19.0",
+    "execArgv": [
+      "--max-old-space-size=512"
+    ],
+    "importMS": 3.763652999999998,
+    "tableMS": 18.261513,
+    "scopes": {
+      "untimedWarmup": {
+        "startMS": 37.113892,
+        "endMS": 37.147402,
+        "wallMS": 0.03465200000000124,
+        "cpuMS": 0.024
+      },
+      "initialize": {
+        "startMS": 37.157167,
+        "endMS": 39.72224,
+        "wallMS": 2.566175000000001,
+        "cpuMS": 3.181
+      },
+      "compute": {
+        "startMS": 39.726607,
+        "endMS": 129.187088,
+        "wallMS": 89.46076099999999,
+        "cpuMS": 144.957
+      }
+    },
+    "result": {
+      "clock": 0.01,
+      "accepted": 32,
+      "rejected": 1,
+      "residuals": 5272,
+      "corrections": 235,
+      "attempts": 17,
+      "physical": 50.331460389926136,
+      "recordResiduals": [
+        1.2636987878106472e-14,
+        6.3248850601382856e-12
+      ],
+      "advanceCounts": {
+        "phCalls": 5028,
+        "inversions": 5028,
+        "saturations": 18924,
+        "pressureBrackets": 19134,
+        "pressureLogs": 19134,
+        "pressureAxisReads": 267876,
+        "pressureComparisons": 153072,
+        "bracketArrays": 27534,
+        "ownedHolders": 210,
+        "branches": 8400,
+        "offsetAxisReads": 106680,
+        "branchRowReads4": 8400,
+        "mixRows": 25200,
+        "mixComponentReads6": 25200,
+        "bisections": 7980
+      },
+      "intervals": [
+        {
+          "target": 0.0001,
+          "wallMS": 31.03665300000001
+        },
+        {
+          "target": 0.0005,
+          "wallMS": 16.74225100000001
+        },
+        {
+          "target": 0.001,
+          "wallMS": 7.4906019999999955
+        },
+        {
+          "target": 0.002,
+          "wallMS": 9.248337000000006
+        },
+        {
+          "target": 0.005,
+          "wallMS": 11.376650999999995
+        },
+        {
+          "target": 0.01,
+          "wallMS": 13.50860200000001
+        }
+      ]
+    },
+    "memoryStart": {
+      "rss": 25145344,
+      "heapTotal": 6287360,
+      "heapUsed": 4343584,
+      "external": 1624630,
+      "arrayBuffers": 137759
+    },
+    "memoryEnd": {
+      "rss": 84111360,
+      "heapTotal": 50884608,
+      "heapUsed": 16732488,
+      "external": 4511698,
+      "arrayBuffers": 137775
+    },
+    "resources": {
+      "userCPUTime": 162436,
+      "systemCPUTime": 37320,
+      "maxRSS": 82140,
+      "sharedMemorySize": 0,
+      "unsharedDataSize": 0,
+      "unsharedStackSize": 0,
+      "minorPageFault": 22028,
+      "majorPageFault": 0,
+      "swappedOut": 0,
+      "fsRead": 0,
+      "fsWrite": 0,
+      "ipcSent": 0,
+      "ipcReceived": 0,
+      "signalsCount": 0,
+      "voluntaryContextSwitches": 376,
+      "involuntaryContextSwitches": 90
+    },
+    "gc": [],
+    "counts": {
+      "phCalls": 5035,
+      "inversions": 5035,
+      "saturations": 18965,
+      "pressureBrackets": 19176,
+      "pressureLogs": 19176,
+      "pressureAxisReads": 268464,
+      "pressureComparisons": 153408,
+      "bracketArrays": 27616,
+      "ownedHolders": 211,
+      "branches": 8440,
+      "offsetAxisReads": 107188,
+      "branchRowReads4": 8440,
+      "mixRows": 25320,
+      "mixComponentReads6": 25320,
+      "bisections": 8018
+    },
+    "primaryCounting": true,
+    "scientificHashingInTimedScope": false
+  },
+  {
+    "variant": "count-candidate",
+    "kind": "cold",
+    "warmups": 0,
+    "pair": 6,
+    "order": "BA",
+    "flags": [],
+    "externalWallTermination": false,
+    "returncode": 0,
+    "processWallMS": 140.0888689997828,
+    "limits": {
+      "wallSeconds": 65,
+      "cpuSeconds": 60,
+      "heapMiB": 512
+    },
+    "stderr": "",
+    "schedule": "original",
+    "node": "v24.19.0",
+    "execArgv": [
+      "--max-old-space-size=512"
+    ],
+    "importMS": 3.72813,
+    "tableMS": 18.163674999999998,
+    "scopes": {
+      "untimedWarmup": {
+        "startMS": 38.574787,
+        "endMS": 38.612293,
+        "wallMS": 0.03862800000000277,
+        "cpuMS": 0.028
+      },
+      "initialize": {
+        "startMS": 38.620866,
+        "endMS": 41.096064,
+        "wallMS": 2.4763299999999973,
+        "cpuMS": 3.071
+      },
+      "compute": {
+        "startMS": 41.09991,
+        "endMS": 125.089148,
+        "wallMS": 83.98947799999999,
+        "cpuMS": 143.005
+      }
+    },
+    "result": {
+      "clock": 0.01,
+      "accepted": 32,
+      "rejected": 1,
+      "residuals": 5272,
+      "corrections": 235,
+      "attempts": 17,
+      "physical": 50.331460389926136,
+      "recordResiduals": [
+        1.2636987878106472e-14,
+        6.3248850601382856e-12
+      ],
+      "advanceCounts": {
+        "phCalls": 5028,
+        "inversions": 5028,
+        "saturations": 18924,
+        "pressureBrackets": 19134,
+        "pressureLogs": 19134,
+        "pressureAxisReads": 267876,
+        "pressureComparisons": 153072,
+        "bracketArrays": 27534,
+        "ownedHolders": 210,
+        "branches": 8400,
+        "offsetAxisReads": 106680,
+        "branchRowReads4": 8400,
+        "mixRows": 25200,
+        "mixComponentReads6": 25200,
+        "bisections": 7980
+      },
+      "intervals": [
+        {
+          "target": 0.0001,
+          "wallMS": 29.994638000000002
+        },
+        {
+          "target": 0.0005,
+          "wallMS": 15.884862999999996
+        },
+        {
+          "target": 0.001,
+          "wallMS": 7.093586000000002
+        },
+        {
+          "target": 0.002,
+          "wallMS": 6.9291589999999985
+        },
+        {
+          "target": 0.005,
+          "wallMS": 10.35225100000001
+        },
+        {
+          "target": 0.01,
+          "wallMS": 13.664928000000003
+        }
+      ]
+    },
+    "memoryStart": {
+      "rss": 25145344,
+      "heapTotal": 6287360,
+      "heapUsed": 4343584,
+      "external": 1624630,
+      "arrayBuffers": 137759
+    },
+    "memoryEnd": {
+      "rss": 85483520,
+      "heapTotal": 51146752,
+      "heapUsed": 16688152,
+      "external": 4511698,
+      "arrayBuffers": 137775
+    },
+    "resources": {
+      "userCPUTime": 172882,
+      "systemCPUTime": 25698,
+      "maxRSS": 83480,
+      "sharedMemorySize": 0,
+      "unsharedDataSize": 0,
+      "unsharedStackSize": 0,
+      "minorPageFault": 22356,
+      "majorPageFault": 0,
+      "swappedOut": 0,
+      "fsRead": 0,
+      "fsWrite": 0,
+      "ipcSent": 0,
+      "ipcReceived": 0,
+      "signalsCount": 0,
+      "voluntaryContextSwitches": 376,
+      "involuntaryContextSwitches": 60
+    },
+    "gc": [],
+    "counts": {
+      "phCalls": 5035,
+      "inversions": 5035,
+      "saturations": 18965,
+      "pressureBrackets": 19176,
+      "pressureLogs": 19176,
+      "pressureAxisReads": 268464,
+      "pressureComparisons": 153408,
+      "bracketArrays": 27616,
+      "ownedHolders": 211,
+      "branches": 8440,
+      "offsetAxisReads": 107188,
+      "branchRowReads4": 8440,
+      "mixRows": 25320,
+      "mixComponentReads6": 25320,
+      "bisections": 8018
+    },
+    "primaryCounting": true,
+    "scientificHashingInTimedScope": false
+  },
+  {
+    "variant": "count-control",
+    "kind": "cold",
+    "warmups": 0,
+    "pair": 6,
+    "order": "BA",
+    "flags": [],
+    "externalWallTermination": false,
+    "returncode": 0,
+    "processWallMS": 140.9243630000674,
+    "limits": {
+      "wallSeconds": 65,
+      "cpuSeconds": 60,
+      "heapMiB": 512
+    },
+    "stderr": "",
+    "schedule": "original",
+    "node": "v24.19.0",
+    "execArgv": [
+      "--max-old-space-size=512"
+    ],
+    "importMS": 3.7065279999999987,
+    "tableMS": 19.499041000000002,
+    "scopes": {
+      "untimedWarmup": {
+        "startMS": 37.639482,
+        "endMS": 37.67122,
+        "wallMS": 0.03305999999999898,
+        "cpuMS": 0.024
+      },
+      "initialize": {
+        "startMS": 37.679693,
+        "endMS": 40.17462,
+        "wallMS": 2.496189000000001,
+        "cpuMS": 3.076
+      },
+      "compute": {
+        "startMS": 40.178897,
+        "endMS": 126.52842,
+        "wallMS": 86.349773,
+        "cpuMS": 146.389
+      }
+    },
+    "result": {
+      "clock": 0.01,
+      "accepted": 32,
+      "rejected": 1,
+      "residuals": 5272,
+      "corrections": 235,
+      "attempts": 17,
+      "physical": 50.331460389926136,
+      "recordResiduals": [
+        1.2636987878106472e-14,
+        6.3248850601382856e-12
+      ],
+      "advanceCounts": {
+        "phCalls": 5028,
+        "inversions": 5028,
+        "saturations": 18924,
+        "pressureBrackets": 27324,
+        "pressureLogs": 27324,
+        "pressureAxisReads": 382536,
+        "pressureComparisons": 218592,
+        "bracketArrays": 35724,
+        "branches": 8400,
+        "offsetAxisReads": 106680,
+        "branchRowReads4": 8400,
+        "mixRows": 25200,
+        "mixComponentReads6": 25200,
+        "bisections": 7980
+      },
+      "intervals": [
+        {
+          "target": 0.0001,
+          "wallMS": 28.733122
+        },
+        {
+          "target": 0.0005,
+          "wallMS": 17.280699
+        },
+        {
+          "target": 0.001,
+          "wallMS": 7.461358000000004
+        },
+        {
+          "target": 0.002,
+          "wallMS": 9.122174000000001
+        },
+        {
+          "target": 0.005,
+          "wallMS": 11.253955000000005
+        },
+        {
+          "target": 0.01,
+          "wallMS": 12.439926
+        }
+      ]
+    },
+    "memoryStart": {
+      "rss": 25276416,
+      "heapTotal": 6287360,
+      "heapUsed": 4343584,
+      "external": 1624630,
+      "arrayBuffers": 137759
+    },
+    "memoryEnd": {
+      "rss": 79519744,
+      "heapTotal": 50360320,
+      "heapUsed": 21686224,
+      "external": 4511142,
+      "arrayBuffers": 137775
+    },
+    "resources": {
+      "userCPUTime": 176640,
+      "systemCPUTime": 24685,
+      "maxRSS": 77656,
+      "sharedMemorySize": 0,
+      "unsharedDataSize": 0,
+      "unsharedStackSize": 0,
+      "minorPageFault": 20922,
+      "majorPageFault": 0,
+      "swappedOut": 0,
+      "fsRead": 0,
+      "fsWrite": 0,
+      "ipcSent": 0,
+      "ipcReceived": 0,
+      "signalsCount": 0,
+      "voluntaryContextSwitches": 374,
+      "involuntaryContextSwitches": 65
+    },
+    "gc": [],
+    "counts": {
+      "phCalls": 5035,
+      "inversions": 5035,
+      "saturations": 18965,
+      "pressureBrackets": 27405,
+      "pressureLogs": 27405,
+      "pressureAxisReads": 383670,
+      "pressureComparisons": 219240,
+      "bracketArrays": 35845,
+      "branches": 8440,
+      "offsetAxisReads": 107188,
+      "branchRowReads4": 8440,
+      "mixRows": 25320,
+      "mixComponentReads6": 25320,
+      "bisections": 8018
+    },
+    "primaryCounting": true,
+    "scientificHashingInTimedScope": false
+  },
+  {
+    "variant": "count-control",
+    "kind": "warm",
+    "warmups": 0,
+    "pair": 1,
+    "order": "AB",
+    "flags": [],
+    "externalWallTermination": false,
+    "returncode": 0,
+    "processWallMS": 786.9058879998647,
+    "limits": {
+      "wallSeconds": 65,
+      "cpuSeconds": 60,
+      "heapMiB": 512
+    },
+    "stderr": "",
+    "schedule": "original",
+    "node": "v24.19.0",
+    "execArgv": [
+      "--max-old-space-size=512"
+    ],
+    "importMS": 3.724786,
+    "tableMS": 20.799814,
+    "scopes": {
+      "untimedWarmup": {
+        "startMS": 39.176531,
+        "endMS": 39.210492,
+        "wallMS": 0.03518300000000352,
+        "cpuMS": 0.025
+      },
+      "initialize": {
+        "startMS": 39.218644,
+        "endMS": 43.533977,
+        "wallMS": 4.316645000000001,
+        "cpuMS": 5.04
+      },
+      "compute": {
+        "startMS": 43.538664,
+        "endMS": 774.621705,
+        "wallMS": 731.083322,
+        "cpuMS": 891.093
+      }
+    },
+    "result": {
+      "clock": 0.01,
+      "accepted": 86,
+      "rejected": 8,
+      "residuals": 19380,
+      "corrections": 867,
+      "attempts": 51,
+      "physical": 280.5559760042121,
+      "recordResiduals": [
+        -8.730626085366039e-14,
+        -1.495165033449375e-10
+      ],
+      "advanceCounts": {
+        "phCalls": 17416,
+        "inversions": 17416,
+        "saturations": 61259,
+        "pressureBrackets": 764565,
+        "pressureLogs": 764565,
+        "pressureAxisReads": 10703910,
+        "pressureComparisons": 6116520,
+        "bracketArrays": 1467871,
+        "branches": 703306,
+        "offsetAxisReads": 8921192,
+        "branchRowReads4": 703306,
+        "mixRows": 2109918,
+        "mixComponentReads6": 2109918,
+        "bisections": 598082
+      },
+      "intervals": [
+        {
+          "target": 0.0001,
+          "wallMS": 146.47065700000002
+        },
+        {
+          "target": 0.0005,
+          "wallMS": 97.65628299999997
+        },
+        {
+          "target": 0.001,
+          "wallMS": 73.70654100000002
+        },
+        {
+          "target": 0.002,
+          "wallMS": 83.44463000000002
+        },
+        {
+          "target": 0.005,
+          "wallMS": 95.90366600000004
+        },
+        {
+          "target": 0.01,
+          "wallMS": 233.835015
+        }
+      ]
+    },
+    "memoryStart": {
+      "rss": 25145344,
+      "heapTotal": 6287360,
+      "heapUsed": 4343584,
+      "external": 1624630,
+      "arrayBuffers": 137759
+    },
+    "memoryEnd": {
+      "rss": 98304000,
+      "heapTotal": 57962496,
+      "heapUsed": 24597304,
+      "external": 4511106,
+      "arrayBuffers": 137739
+    },
+    "resources": {
+      "userCPUTime": 918653,
+      "systemCPUTime": 27741,
+      "maxRSS": 97040,
+      "sharedMemorySize": 0,
+      "unsharedDataSize": 0,
+      "unsharedStackSize": 0,
+      "minorPageFault": 26598,
+      "majorPageFault": 0,
+      "swappedOut": 0,
+      "fsRead": 0,
+      "fsWrite": 0,
+      "ipcSent": 0,
+      "ipcReceived": 0,
+      "signalsCount": 0,
+      "voluntaryContextSwitches": 1081,
+      "involuntaryContextSwitches": 336
+    },
+    "gc": [],
+    "counts": {
+      "phCalls": 17423,
+      "inversions": 17423,
+      "saturations": 61295,
+      "pressureBrackets": 765011,
+      "pressureLogs": 765011,
+      "pressureAxisReads": 10710154,
+      "pressureComparisons": 6120088,
+      "bracketArrays": 1468727,
+      "branches": 703716,
+      "offsetAxisReads": 8926390,
+      "branchRowReads4": 703716,
+      "mixRows": 2111148,
+      "mixComponentReads6": 2111148,
+      "bisections": 598310
+    },
+    "primaryCounting": true,
+    "scientificHashingInTimedScope": false
+  },
+  {
+    "variant": "count-candidate",
+    "kind": "warm",
+    "warmups": 0,
+    "pair": 1,
+    "order": "AB",
+    "flags": [],
+    "externalWallTermination": false,
+    "returncode": 0,
+    "processWallMS": 606.9817550001062,
+    "limits": {
+      "wallSeconds": 65,
+      "cpuSeconds": 60,
+      "heapMiB": 512
+    },
+    "stderr": "",
+    "schedule": "original",
+    "node": "v24.19.0",
+    "execArgv": [
+      "--max-old-space-size=512"
+    ],
+    "importMS": 3.83408,
+    "tableMS": 20.654716999999998,
+    "scopes": {
+      "untimedWarmup": {
+        "startMS": 40.991868,
+        "endMS": 41.028173,
+        "wallMS": 0.03737700000000643,
+        "cpuMS": 0.025
+      },
+      "initialize": {
+        "startMS": 41.037457,
+        "endMS": 44.838407,
+        "wallMS": 3.802080999999994,
+        "cpuMS": 5.051
+      },
+      "compute": {
+        "startMS": 44.842663,
+        "endMS": 595.214643,
+        "wallMS": 550.37222,
+        "cpuMS": 718.169
+      }
+    },
+    "result": {
+      "clock": 0.01,
+      "accepted": 86,
+      "rejected": 8,
+      "residuals": 19380,
+      "corrections": 867,
+      "attempts": 51,
+      "physical": 280.5559760042121,
+      "recordResiduals": [
+        -8.730626085366039e-14,
+        -1.495165033449375e-10
+      ],
+      "advanceCounts": {
+        "phCalls": 17416,
+        "inversions": 17416,
+        "saturations": 61259,
+        "pressureBrackets": 150744,
+        "pressureLogs": 150744,
+        "pressureAxisReads": 2110416,
+        "pressureComparisons": 1205952,
+        "bracketArrays": 854050,
+        "ownedHolders": 15739,
+        "branches": 703306,
+        "offsetAxisReads": 8921192,
+        "branchRowReads4": 703306,
+        "mixRows": 2109918,
+        "mixComponentReads6": 2109918,
+        "bisections": 598082
+      },
+      "intervals": [
+        {
+          "target": 0.0001,
+          "wallMS": 112.257441
+        },
+        {
+          "target": 0.0005,
+          "wallMS": 69.369867
+        },
+        {
+          "target": 0.001,
+          "wallMS": 54.602993999999995
+        },
+        {
+          "target": 0.002,
+          "wallMS": 65.20593200000002
+        },
+        {
+          "target": 0.005,
+          "wallMS": 69.56144499999999
+        },
+        {
+          "target": 0.01,
+          "wallMS": 179.31054400000005
+        }
+      ]
+    },
+    "memoryStart": {
+      "rss": 25145344,
+      "heapTotal": 6025216,
+      "heapUsed": 4317712,
+      "external": 1624630,
+      "arrayBuffers": 137759
+    },
+    "memoryEnd": {
+      "rss": 99471360,
+      "heapTotal": 58486784,
+      "heapUsed": 31652672,
+      "external": 4511662,
+      "arrayBuffers": 137739
+    },
+    "resources": {
+      "userCPUTime": 722678,
+      "systemCPUTime": 51855,
+      "maxRSS": 100696,
+      "sharedMemorySize": 0,
+      "unsharedDataSize": 0,
+      "unsharedStackSize": 0,
+      "minorPageFault": 26867,
+      "majorPageFault": 0,
+      "swappedOut": 0,
+      "fsRead": 0,
+      "fsWrite": 0,
+      "ipcSent": 0,
+      "ipcReceived": 0,
+      "signalsCount": 0,
+      "voluntaryContextSwitches": 792,
+      "involuntaryContextSwitches": 97
+    },
+    "gc": [],
+    "counts": {
+      "phCalls": 17423,
+      "inversions": 17423,
+      "saturations": 61295,
+      "pressureBrackets": 150956,
+      "pressureLogs": 150956,
+      "pressureAxisReads": 2113384,
+      "pressureComparisons": 1207648,
+      "bracketArrays": 854672,
+      "ownedHolders": 15745,
+      "branches": 703716,
+      "offsetAxisReads": 8926390,
+      "branchRowReads4": 703716,
+      "mixRows": 2111148,
+      "mixComponentReads6": 2111148,
+      "bisections": 598310
+    },
+    "primaryCounting": true,
+    "scientificHashingInTimedScope": false
+  },
+  {
+    "variant": "count-candidate",
+    "kind": "warm",
+    "warmups": 0,
+    "pair": 2,
+    "order": "BA",
+    "flags": [],
+    "externalWallTermination": false,
+    "returncode": 0,
+    "processWallMS": 619.5410940001693,
+    "limits": {
+      "wallSeconds": 65,
+      "cpuSeconds": 60,
+      "heapMiB": 512
+    },
+    "stderr": "",
+    "schedule": "original",
+    "node": "v24.19.0",
+    "execArgv": [
+      "--max-old-space-size=512"
+    ],
+    "importMS": 3.7019009999999994,
+    "tableMS": 20.044766000000003,
+    "scopes": {
+      "untimedWarmup": {
+        "startMS": 39.082013,
+        "endMS": 39.123355,
+        "wallMS": 0.04249399999999781,
+        "cpuMS": 0.03
+      },
+      "initialize": {
+        "startMS": 39.132369,
+        "endMS": 42.262921,
+        "wallMS": 3.1314840000000004,
+        "cpuMS": 4.483
+      },
+      "compute": {
+        "startMS": 42.267008,
+        "endMS": 608.014159,
+        "wallMS": 565.747451,
+        "cpuMS": 722.621
+      }
+    },
+    "result": {
+      "clock": 0.01,
+      "accepted": 86,
+      "rejected": 8,
+      "residuals": 19380,
+      "corrections": 867,
+      "attempts": 51,
+      "physical": 280.5559760042121,
+      "recordResiduals": [
+        -8.730626085366039e-14,
+        -1.495165033449375e-10
+      ],
+      "advanceCounts": {
+        "phCalls": 17416,
+        "inversions": 17416,
+        "saturations": 61259,
+        "pressureBrackets": 150744,
+        "pressureLogs": 150744,
+        "pressureAxisReads": 2110416,
+        "pressureComparisons": 1205952,
+        "bracketArrays": 854050,
+        "ownedHolders": 15739,
+        "branches": 703306,
+        "offsetAxisReads": 8921192,
+        "branchRowReads4": 703306,
+        "mixRows": 2109918,
+        "mixComponentReads6": 2109918,
+        "bisections": 598082
+      },
+      "intervals": [
+        {
+          "target": 0.0001,
+          "wallMS": 114.043451
+        },
+        {
+          "target": 0.0005,
+          "wallMS": 70.24154000000001
+        },
+        {
+          "target": 0.001,
+          "wallMS": 55.746512000000024
+        },
+        {
+          "target": 0.002,
+          "wallMS": 63.436533999999995
+        },
+        {
+          "target": 0.005,
+          "wallMS": 69.69924199999997
+        },
+        {
+          "target": 0.01,
+          "wallMS": 192.513823
+        }
+      ]
+    },
+    "memoryStart": {
+      "rss": 25272320,
+      "heapTotal": 6287360,
+      "heapUsed": 4343584,
+      "external": 1624630,
+      "arrayBuffers": 137759
+    },
+    "memoryEnd": {
+      "rss": 99385344,
+      "heapTotal": 58486784,
+      "heapUsed": 35629136,
+      "external": 4511662,
+      "arrayBuffers": 137739
+    },
+    "resources": {
+      "userCPUTime": 750135,
+      "systemCPUTime": 24518,
+      "maxRSS": 98924,
+      "sharedMemorySize": 0,
+      "unsharedDataSize": 0,
+      "unsharedStackSize": 0,
+      "minorPageFault": 26820,
+      "majorPageFault": 0,
+      "swappedOut": 0,
+      "fsRead": 0,
+      "fsWrite": 0,
+      "ipcSent": 0,
+      "ipcReceived": 0,
+      "signalsCount": 0,
+      "voluntaryContextSwitches": 833,
+      "involuntaryContextSwitches": 120
+    },
+    "gc": [],
+    "counts": {
+      "phCalls": 17423,
+      "inversions": 17423,
+      "saturations": 61295,
+      "pressureBrackets": 150956,
+      "pressureLogs": 150956,
+      "pressureAxisReads": 2113384,
+      "pressureComparisons": 1207648,
+      "bracketArrays": 854672,
+      "ownedHolders": 15745,
+      "branches": 703716,
+      "offsetAxisReads": 8926390,
+      "branchRowReads4": 703716,
+      "mixRows": 2111148,
+      "mixComponentReads6": 2111148,
+      "bisections": 598310
+    },
+    "primaryCounting": true,
+    "scientificHashingInTimedScope": false
+  },
+  {
+    "variant": "count-control",
+    "kind": "warm",
+    "warmups": 0,
+    "pair": 2,
+    "order": "BA",
+    "flags": [],
+    "externalWallTermination": false,
+    "returncode": 0,
+    "processWallMS": 833.625500999915,
+    "limits": {
+      "wallSeconds": 65,
+      "cpuSeconds": 60,
+      "heapMiB": 512
+    },
+    "stderr": "",
+    "schedule": "original",
+    "node": "v24.19.0",
+    "execArgv": [
+      "--max-old-space-size=512"
+    ],
+    "importMS": 3.790574000000001,
+    "tableMS": 19.160693000000002,
+    "scopes": {
+      "untimedWarmup": {
+        "startMS": 38.894116,
+        "endMS": 38.941648,
+        "wallMS": 0.048674000000005435,
+        "cpuMS": 0.035
+      },
+      "initialize": {
+        "startMS": 38.952805,
+        "endMS": 43.165904,
+        "wallMS": 4.216113,
+        "cpuMS": 5.436
+      },
+      "compute": {
+        "startMS": 43.173335,
+        "endMS": 820.396964,
+        "wallMS": 777.223969,
+        "cpuMS": 952.268
+      }
+    },
+    "result": {
+      "clock": 0.01,
+      "accepted": 86,
+      "rejected": 8,
+      "residuals": 19380,
+      "corrections": 867,
+      "attempts": 51,
+      "physical": 280.5559760042121,
+      "recordResiduals": [
+        -8.730626085366039e-14,
+        -1.495165033449375e-10
+      ],
+      "advanceCounts": {
+        "phCalls": 17416,
+        "inversions": 17416,
+        "saturations": 61259,
+        "pressureBrackets": 764565,
+        "pressureLogs": 764565,
+        "pressureAxisReads": 10703910,
+        "pressureComparisons": 6116520,
+        "bracketArrays": 1467871,
+        "branches": 703306,
+        "offsetAxisReads": 8921192,
+        "branchRowReads4": 703306,
+        "mixRows": 2109918,
+        "mixComponentReads6": 2109918,
+        "bisections": 598082
+      },
+      "intervals": [
+        {
+          "target": 0.0001,
+          "wallMS": 156.021454
+        },
+        {
+          "target": 0.0005,
+          "wallMS": 90.65848700000001
+        },
+        {
+          "target": 0.001,
+          "wallMS": 73.44962499999997
+        },
+        {
+          "target": 0.002,
+          "wallMS": 84.08651500000002
+        },
+        {
+          "target": 0.005,
+          "wallMS": 100.85600500000004
+        },
+        {
+          "target": 0.01,
+          "wallMS": 272.079375
+        }
+      ]
+    },
+    "memoryStart": {
+      "rss": 24752128,
+      "heapTotal": 6287360,
+      "heapUsed": 4337400,
+      "external": 1624630,
+      "arrayBuffers": 137759
+    },
+    "memoryEnd": {
+      "rss": 98983936,
+      "heapTotal": 57962496,
+      "heapUsed": 24649656,
+      "external": 4511106,
+      "arrayBuffers": 137739
+    },
+    "resources": {
+      "userCPUTime": 972416,
+      "systemCPUTime": 36326,
+      "maxRSS": 97620,
+      "sharedMemorySize": 0,
+      "unsharedDataSize": 0,
+      "unsharedStackSize": 0,
+      "minorPageFault": 26737,
+      "majorPageFault": 0,
+      "swappedOut": 0,
+      "fsRead": 0,
+      "fsWrite": 0,
+      "ipcSent": 0,
+      "ipcReceived": 0,
+      "signalsCount": 0,
+      "voluntaryContextSwitches": 906,
+      "involuntaryContextSwitches": 174
+    },
+    "gc": [],
+    "counts": {
+      "phCalls": 17423,
+      "inversions": 17423,
+      "saturations": 61295,
+      "pressureBrackets": 765011,
+      "pressureLogs": 765011,
+      "pressureAxisReads": 10710154,
+      "pressureComparisons": 6120088,
+      "bracketArrays": 1468727,
+      "branches": 703716,
+      "offsetAxisReads": 8926390,
+      "branchRowReads4": 703716,
+      "mixRows": 2111148,
+      "mixComponentReads6": 2111148,
+      "bisections": 598310
+    },
+    "primaryCounting": true,
+    "scientificHashingInTimedScope": false
+  },
+  {
+    "variant": "count-candidate",
+    "kind": "warm",
+    "warmups": 0,
+    "pair": 3,
+    "order": "BA",
+    "flags": [],
+    "externalWallTermination": false,
+    "returncode": 0,
+    "processWallMS": 676.5342790001796,
+    "limits": {
+      "wallSeconds": 65,
+      "cpuSeconds": 60,
+      "heapMiB": 512
+    },
+    "stderr": "",
+    "schedule": "original",
+    "node": "v24.19.0",
+    "execArgv": [
+      "--max-old-space-size=512"
+    ],
+    "importMS": 3.9025719999999993,
+    "tableMS": 17.429792999999997,
+    "scopes": {
+      "untimedWarmup": {
+        "startMS": 36.559719,
+        "endMS": 36.595874,
+        "wallMS": 0.03738599999999792,
+        "cpuMS": 0.025
+      },
+      "initialize": {
+        "startMS": 36.605829,
+        "endMS": 40.488831,
+        "wallMS": 3.884304,
+        "cpuMS": 5.536
+      },
+      "compute": {
+        "startMS": 40.494079,
+        "endMS": 664.350342,
+        "wallMS": 623.856704,
+        "cpuMS": 798.354
+      }
+    },
+    "result": {
+      "clock": 0.01,
+      "accepted": 86,
+      "rejected": 8,
+      "residuals": 19380,
+      "corrections": 867,
+      "attempts": 51,
+      "physical": 280.5559760042121,
+      "recordResiduals": [
+        -8.730626085366039e-14,
+        -1.495165033449375e-10
+      ],
+      "advanceCounts": {
+        "phCalls": 17416,
+        "inversions": 17416,
+        "saturations": 61259,
+        "pressureBrackets": 150744,
+        "pressureLogs": 150744,
+        "pressureAxisReads": 2110416,
+        "pressureComparisons": 1205952,
+        "bracketArrays": 854050,
+        "ownedHolders": 15739,
+        "branches": 703306,
+        "offsetAxisReads": 8921192,
+        "branchRowReads4": 703306,
+        "mixRows": 2109918,
+        "mixComponentReads6": 2109918,
+        "bisections": 598082
+      },
+      "intervals": [
+        {
+          "target": 0.0001,
+          "wallMS": 144.265645
+        },
+        {
+          "target": 0.0005,
+          "wallMS": 82.959972
+        },
+        {
+          "target": 0.001,
+          "wallMS": 58.38668799999999
+        },
+        {
+          "target": 0.002,
+          "wallMS": 64.91854999999998
+        },
+        {
+          "target": 0.005,
+          "wallMS": 72.597084
+        },
+        {
+          "target": 0.01,
+          "wallMS": 200.650707
+        }
+      ]
+    },
+    "memoryStart": {
+      "rss": 25276416,
+      "heapTotal": 6287360,
+      "heapUsed": 4343584,
+      "external": 1624630,
+      "arrayBuffers": 137759
+    },
+    "memoryEnd": {
+      "rss": 97251328,
+      "heapTotal": 58224640,
+      "heapUsed": 28498240,
+      "external": 4511662,
+      "arrayBuffers": 137739
+    },
+    "resources": {
+      "userCPUTime": 805340,
+      "systemCPUTime": 48169,
+      "maxRSS": 97760,
+      "sharedMemorySize": 0,
+      "unsharedDataSize": 0,
+      "unsharedStackSize": 0,
+      "minorPageFault": 26643,
+      "majorPageFault": 0,
+      "swappedOut": 0,
+      "fsRead": 0,
+      "fsWrite": 0,
+      "ipcSent": 0,
+      "ipcReceived": 0,
+      "signalsCount": 0,
+      "voluntaryContextSwitches": 871,
+      "involuntaryContextSwitches": 213
+    },
+    "gc": [],
+    "counts": {
+      "phCalls": 17423,
+      "inversions": 17423,
+      "saturations": 61295,
+      "pressureBrackets": 150956,
+      "pressureLogs": 150956,
+      "pressureAxisReads": 2113384,
+      "pressureComparisons": 1207648,
+      "bracketArrays": 854672,
+      "ownedHolders": 15745,
+      "branches": 703716,
+      "offsetAxisReads": 8926390,
+      "branchRowReads4": 703716,
+      "mixRows": 2111148,
+      "mixComponentReads6": 2111148,
+      "bisections": 598310
+    },
+    "primaryCounting": true,
+    "scientificHashingInTimedScope": false
+  },
+  {
+    "variant": "count-control",
+    "kind": "warm",
+    "warmups": 0,
+    "pair": 3,
+    "order": "BA",
+    "flags": [],
+    "externalWallTermination": false,
+    "returncode": 0,
+    "processWallMS": 765.4471240000476,
+    "limits": {
+      "wallSeconds": 65,
+      "cpuSeconds": 60,
+      "heapMiB": 512
+    },
+    "stderr": "",
+    "schedule": "original",
+    "node": "v24.19.0",
+    "execArgv": [
+      "--max-old-space-size=512"
+    ],
+    "importMS": 3.937946,
+    "tableMS": 20.689748999999996,
+    "scopes": {
+      "untimedWarmup": {
+        "startMS": 40.686449,
+        "endMS": 40.732267,
+        "wallMS": 0.04701000000000022,
+        "cpuMS": 0.034
+      },
+      "initialize": {
+        "startMS": 40.743755,
+        "endMS": 45.352398,
+        "wallMS": 4.611538000000003,
+        "cpuMS": 5.833
+      },
+      "compute": {
+        "startMS": 45.359169,
+        "endMS": 751.850053,
+        "wallMS": 706.4910950000001,
+        "cpuMS": 868.546
+      }
+    },
+    "result": {
+      "clock": 0.01,
+      "accepted": 86,
+      "rejected": 8,
+      "residuals": 19380,
+      "corrections": 867,
+      "attempts": 51,
+      "physical": 280.5559760042121,
+      "recordResiduals": [
+        -8.730626085366039e-14,
+        -1.495165033449375e-10
+      ],
+      "advanceCounts": {
+        "phCalls": 17416,
+        "inversions": 17416,
+        "saturations": 61259,
+        "pressureBrackets": 764565,
+        "pressureLogs": 764565,
+        "pressureAxisReads": 10703910,
+        "pressureComparisons": 6116520,
+        "bracketArrays": 1467871,
+        "branches": 703306,
+        "offsetAxisReads": 8921192,
+        "branchRowReads4": 703306,
+        "mixRows": 2109918,
+        "mixComponentReads6": 2109918,
+        "bisections": 598082
+      },
+      "intervals": [
+        {
+          "target": 0.0001,
+          "wallMS": 151.541564
+        },
+        {
+          "target": 0.0005,
+          "wallMS": 87.175354
+        },
+        {
+          "target": 0.001,
+          "wallMS": 70.64709600000003
+        },
+        {
+          "target": 0.002,
+          "wallMS": 78.41919100000001
+        },
+        {
+          "target": 0.005,
+          "wallMS": 89.73788400000007
+        },
+        {
+          "target": 0.01,
+          "wallMS": 228.90068199999996
+        }
+      ]
+    },
+    "memoryStart": {
+      "rss": 25276416,
+      "heapTotal": 6287360,
+      "heapUsed": 4343584,
+      "external": 1624630,
+      "arrayBuffers": 137759
+    },
+    "memoryEnd": {
+      "rss": 99180544,
+      "heapTotal": 57700352,
+      "heapUsed": 24589864,
+      "external": 4511106,
+      "arrayBuffers": 137739
+    },
+    "resources": {
+      "userCPUTime": 888938,
+      "systemCPUTime": 36698,
+      "maxRSS": 97248,
+      "sharedMemorySize": 0,
+      "unsharedDataSize": 0,
+      "unsharedStackSize": 0,
+      "minorPageFault": 26712,
+      "majorPageFault": 0,
+      "swappedOut": 0,
+      "fsRead": 0,
+      "fsWrite": 0,
+      "ipcSent": 0,
+      "ipcReceived": 0,
+      "signalsCount": 0,
+      "voluntaryContextSwitches": 899,
+      "involuntaryContextSwitches": 103
+    },
+    "gc": [],
+    "counts": {
+      "phCalls": 17423,
+      "inversions": 17423,
+      "saturations": 61295,
+      "pressureBrackets": 765011,
+      "pressureLogs": 765011,
+      "pressureAxisReads": 10710154,
+      "pressureComparisons": 6120088,
+      "bracketArrays": 1468727,
+      "branches": 703716,
+      "offsetAxisReads": 8926390,
+      "branchRowReads4": 703716,
+      "mixRows": 2111148,
+      "mixComponentReads6": 2111148,
+      "bisections": 598310
+    },
+    "primaryCounting": true,
+    "scientificHashingInTimedScope": false
+  },
+  {
+    "variant": "count-control",
+    "kind": "warm",
+    "warmups": 0,
+    "pair": 4,
+    "order": "AB",
+    "flags": [],
+    "externalWallTermination": false,
+    "returncode": 0,
+    "processWallMS": 768.1591040000058,
+    "limits": {
+      "wallSeconds": 65,
+      "cpuSeconds": 60,
+      "heapMiB": 512
+    },
+    "stderr": "",
+    "schedule": "original",
+    "node": "v24.19.0",
+    "execArgv": [
+      "--max-old-space-size=512"
+    ],
+    "importMS": 3.6793169999999993,
+    "tableMS": 16.686047000000002,
+    "scopes": {
+      "untimedWarmup": {
+        "startMS": 34.932566,
+        "endMS": 34.965505,
+        "wallMS": 0.034110999999995784,
+        "cpuMS": 0.024
+      },
+      "initialize": {
+        "startMS": 34.974158,
+        "endMS": 38.136649,
+        "wallMS": 3.1636019999999974,
+        "cpuMS": 4.476
+      },
+      "compute": {
+        "startMS": 38.140595,
+        "endMS": 755.280779,
+        "wallMS": 717.140394,
+        "cpuMS": 881.653
+      }
+    },
+    "result": {
+      "clock": 0.01,
+      "accepted": 86,
+      "rejected": 8,
+      "residuals": 19380,
+      "corrections": 867,
+      "attempts": 51,
+      "physical": 280.5559760042121,
+      "recordResiduals": [
+        -8.730626085366039e-14,
+        -1.495165033449375e-10
+      ],
+      "advanceCounts": {
+        "phCalls": 17416,
+        "inversions": 17416,
+        "saturations": 61259,
+        "pressureBrackets": 764565,
+        "pressureLogs": 764565,
+        "pressureAxisReads": 10703910,
+        "pressureComparisons": 6116520,
+        "bracketArrays": 1467871,
+        "branches": 703306,
+        "offsetAxisReads": 8921192,
+        "branchRowReads4": 703306,
+        "mixRows": 2109918,
+        "mixComponentReads6": 2109918,
+        "bisections": 598082
+      },
+      "intervals": [
+        {
+          "target": 0.0001,
+          "wallMS": 141.371717
+        },
+        {
+          "target": 0.0005,
+          "wallMS": 90.40512600000002
+        },
+        {
+          "target": 0.001,
+          "wallMS": 73.94416799999999
+        },
+        {
+          "target": 0.002,
+          "wallMS": 80.10990099999998
+        },
+        {
+          "target": 0.005,
+          "wallMS": 92.152221
+        },
+        {
+          "target": 0.01,
+          "wallMS": 239.09085199999993
+        }
+      ]
+    },
+    "memoryStart": {
+      "rss": 25145344,
+      "heapTotal": 6287360,
+      "heapUsed": 4343584,
+      "external": 1624630,
+      "arrayBuffers": 137759
+    },
+    "memoryEnd": {
+      "rss": 98533376,
+      "heapTotal": 58224640,
+      "heapUsed": 37903216,
+      "external": 4511106,
+      "arrayBuffers": 137739
+    },
+    "resources": {
+      "userCPUTime": 899305,
+      "systemCPUTime": 34180,
+      "maxRSS": 97328,
+      "sharedMemorySize": 0,
+      "unsharedDataSize": 0,
+      "unsharedStackSize": 0,
+      "minorPageFault": 26637,
+      "majorPageFault": 0,
+      "swappedOut": 0,
+      "fsRead": 0,
+      "fsWrite": 0,
+      "ipcSent": 0,
+      "ipcReceived": 0,
+      "signalsCount": 0,
+      "voluntaryContextSwitches": 835,
+      "involuntaryContextSwitches": 42
+    },
+    "gc": [],
+    "counts": {
+      "phCalls": 17423,
+      "inversions": 17423,
+      "saturations": 61295,
+      "pressureBrackets": 765011,
+      "pressureLogs": 765011,
+      "pressureAxisReads": 10710154,
+      "pressureComparisons": 6120088,
+      "bracketArrays": 1468727,
+      "branches": 703716,
+      "offsetAxisReads": 8926390,
+      "branchRowReads4": 703716,
+      "mixRows": 2111148,
+      "mixComponentReads6": 2111148,
+      "bisections": 598310
+    },
+    "primaryCounting": true,
+    "scientificHashingInTimedScope": false
+  },
+  {
+    "variant": "count-candidate",
+    "kind": "warm",
+    "warmups": 0,
+    "pair": 4,
+    "order": "AB",
+    "flags": [],
+    "externalWallTermination": false,
+    "returncode": 0,
+    "processWallMS": 656.9184219999897,
+    "limits": {
+      "wallSeconds": 65,
+      "cpuSeconds": 60,
+      "heapMiB": 512
+    },
+    "stderr": "",
+    "schedule": "original",
+    "node": "v24.19.0",
+    "execArgv": [
+      "--max-old-space-size=512"
+    ],
+    "importMS": 3.7340409999999995,
+    "tableMS": 17.087117,
+    "scopes": {
+      "untimedWarmup": {
+        "startMS": 35.326934,
+        "endMS": 35.361526,
+        "wallMS": 0.03576400000000035,
+        "cpuMS": 0.025
+      },
+      "initialize": {
+        "startMS": 35.371611,
+        "endMS": 38.953934,
+        "wallMS": 3.5837549999999965,
+        "cpuMS": 6.534
+      },
+      "compute": {
+        "startMS": 38.959643,
+        "endMS": 643.267494,
+        "wallMS": 604.308051,
+        "cpuMS": 742.107
+      }
+    },
+    "result": {
+      "clock": 0.01,
+      "accepted": 86,
+      "rejected": 8,
+      "residuals": 19380,
+      "corrections": 867,
+      "attempts": 51,
+      "physical": 280.5559760042121,
+      "recordResiduals": [
+        -8.730626085366039e-14,
+        -1.495165033449375e-10
+      ],
+      "advanceCounts": {
+        "phCalls": 17416,
+        "inversions": 17416,
+        "saturations": 61259,
+        "pressureBrackets": 150744,
+        "pressureLogs": 150744,
+        "pressureAxisReads": 2110416,
+        "pressureComparisons": 1205952,
+        "bracketArrays": 854050,
+        "ownedHolders": 15739,
+        "branches": 703306,
+        "offsetAxisReads": 8921192,
+        "branchRowReads4": 703306,
+        "mixRows": 2109918,
+        "mixComponentReads6": 2109918,
+        "bisections": 598082
+      },
+      "intervals": [
+        {
+          "target": 0.0001,
+          "wallMS": 139.85116799999997
+        },
+        {
+          "target": 0.0005,
+          "wallMS": 80.269082
+        },
+        {
+          "target": 0.001,
+          "wallMS": 57.34637200000003
+        },
+        {
+          "target": 0.002,
+          "wallMS": 72.01229999999998
+        },
+        {
+          "target": 0.005,
+          "wallMS": 70.345936
+        },
+        {
+          "target": 0.01,
+          "wallMS": 184.40749099999994
+        }
+      ]
+    },
+    "memoryStart": {
+      "rss": 25272320,
+      "heapTotal": 6287360,
+      "heapUsed": 4343584,
+      "external": 1624630,
+      "arrayBuffers": 137759
+    },
+    "memoryEnd": {
+      "rss": 98426880,
+      "heapTotal": 57438208,
+      "heapUsed": 29591312,
+      "external": 4511662,
+      "arrayBuffers": 137739
+    },
+    "resources": {
+      "userCPUTime": 769646,
+      "systemCPUTime": 23561,
+      "maxRSS": 99292,
+      "sharedMemorySize": 0,
+      "unsharedDataSize": 0,
+      "unsharedStackSize": 0,
+      "minorPageFault": 26582,
+      "majorPageFault": 0,
+      "swappedOut": 0,
+      "fsRead": 0,
+      "fsWrite": 0,
+      "ipcSent": 0,
+      "ipcReceived": 0,
+      "signalsCount": 0,
+      "voluntaryContextSwitches": 928,
+      "involuntaryContextSwitches": 214
+    },
+    "gc": [],
+    "counts": {
+      "phCalls": 17423,
+      "inversions": 17423,
+      "saturations": 61295,
+      "pressureBrackets": 150956,
+      "pressureLogs": 150956,
+      "pressureAxisReads": 2113384,
+      "pressureComparisons": 1207648,
+      "bracketArrays": 854672,
+      "ownedHolders": 15745,
+      "branches": 703716,
+      "offsetAxisReads": 8926390,
+      "branchRowReads4": 703716,
+      "mixRows": 2111148,
+      "mixComponentReads6": 2111148,
+      "bisections": 598310
+    },
+    "primaryCounting": true,
+    "scientificHashingInTimedScope": false
+  },
+  {
+    "variant": "count-control",
+    "kind": "warm",
+    "warmups": 0,
+    "pair": 5,
+    "order": "AB",
+    "flags": [],
+    "externalWallTermination": false,
+    "returncode": 0,
+    "processWallMS": 741.1851890001344,
+    "limits": {
+      "wallSeconds": 65,
+      "cpuSeconds": 60,
+      "heapMiB": 512
+    },
+    "stderr": "",
+    "schedule": "original",
+    "node": "v24.19.0",
+    "execArgv": [
+      "--max-old-space-size=512"
+    ],
+    "importMS": 3.641762,
+    "tableMS": 19.134206000000002,
+    "scopes": {
+      "untimedWarmup": {
+        "startMS": 36.497709,
+        "endMS": 36.533743,
+        "wallMS": 0.03720599999999763,
+        "cpuMS": 0.024
+      },
+      "initialize": {
+        "startMS": 36.543077,
+        "endMS": 39.791298,
+        "wallMS": 3.2495330000000067,
+        "cpuMS": 4.68
+      },
+      "compute": {
+        "startMS": 39.795765,
+        "endMS": 729.539375,
+        "wallMS": 689.743951,
+        "cpuMS": 854.481
+      }
+    },
+    "result": {
+      "clock": 0.01,
+      "accepted": 86,
+      "rejected": 8,
+      "residuals": 19380,
+      "corrections": 867,
+      "attempts": 51,
+      "physical": 280.5559760042121,
+      "recordResiduals": [
+        -8.730626085366039e-14,
+        -1.495165033449375e-10
+      ],
+      "advanceCounts": {
+        "phCalls": 17416,
+        "inversions": 17416,
+        "saturations": 61259,
+        "pressureBrackets": 764565,
+        "pressureLogs": 764565,
+        "pressureAxisReads": 10703910,
+        "pressureComparisons": 6116520,
+        "bracketArrays": 1467871,
+        "branches": 703306,
+        "offsetAxisReads": 8921192,
+        "branchRowReads4": 703306,
+        "mixRows": 2109918,
+        "mixComponentReads6": 2109918,
+        "bisections": 598082
+      },
+      "intervals": [
+        {
+          "target": 0.0001,
+          "wallMS": 139.245528
+        },
+        {
+          "target": 0.0005,
+          "wallMS": 87.510458
+        },
+        {
+          "target": 0.001,
+          "wallMS": 71.24961399999995
+        },
+        {
+          "target": 0.002,
+          "wallMS": 77.64294999999998
+        },
+        {
+          "target": 0.005,
+          "wallMS": 88.23679099999998
+        },
+        {
+          "target": 0.01,
+          "wallMS": 225.794534
+        }
+      ]
+    },
+    "memoryStart": {
+      "rss": 25141248,
+      "heapTotal": 6287360,
+      "heapUsed": 4343584,
+      "external": 1624630,
+      "arrayBuffers": 137759
+    },
+    "memoryEnd": {
+      "rss": 99389440,
+      "heapTotal": 58224640,
+      "heapUsed": 24914448,
+      "external": 4511106,
+      "arrayBuffers": 137739
+    },
+    "resources": {
+      "userCPUTime": 880184,
+      "systemCPUTime": 24186,
+      "maxRSS": 97904,
+      "sharedMemorySize": 0,
+      "unsharedDataSize": 0,
+      "unsharedStackSize": 0,
+      "minorPageFault": 26853,
+      "majorPageFault": 0,
+      "swappedOut": 0,
+      "fsRead": 0,
+      "fsWrite": 0,
+      "ipcSent": 0,
+      "ipcReceived": 0,
+      "signalsCount": 0,
+      "voluntaryContextSwitches": 887,
+      "involuntaryContextSwitches": 42
+    },
+    "gc": [],
+    "counts": {
+      "phCalls": 17423,
+      "inversions": 17423,
+      "saturations": 61295,
+      "pressureBrackets": 765011,
+      "pressureLogs": 765011,
+      "pressureAxisReads": 10710154,
+      "pressureComparisons": 6120088,
+      "bracketArrays": 1468727,
+      "branches": 703716,
+      "offsetAxisReads": 8926390,
+      "branchRowReads4": 703716,
+      "mixRows": 2111148,
+      "mixComponentReads6": 2111148,
+      "bisections": 598310
+    },
+    "primaryCounting": true,
+    "scientificHashingInTimedScope": false
+  },
+  {
+    "variant": "count-candidate",
+    "kind": "warm",
+    "warmups": 0,
+    "pair": 5,
+    "order": "AB",
+    "flags": [],
+    "externalWallTermination": false,
+    "returncode": 0,
+    "processWallMS": 631.4192219999768,
+    "limits": {
+      "wallSeconds": 65,
+      "cpuSeconds": 60,
+      "heapMiB": 512
+    },
+    "stderr": "",
+    "schedule": "original",
+    "node": "v24.19.0",
+    "execArgv": [
+      "--max-old-space-size=512"
+    ],
+    "importMS": 3.683004000000002,
+    "tableMS": 20.121616000000003,
+    "scopes": {
+      "untimedWarmup": {
+        "startMS": 38.838292,
+        "endMS": 38.87685,
+        "wallMS": 0.039819999999998856,
+        "cpuMS": 0.028
+      },
+      "initialize": {
+        "startMS": 38.887205,
+        "endMS": 42.003888,
+        "wallMS": 3.1178549999999987,
+        "cpuMS": 4.499
+      },
+      "compute": {
+        "startMS": 42.007985,
+        "endMS": 619.903814,
+        "wallMS": 577.8960490000001,
+        "cpuMS": 723.977
+      }
+    },
+    "result": {
+      "clock": 0.01,
+      "accepted": 86,
+      "rejected": 8,
+      "residuals": 19380,
+      "corrections": 867,
+      "attempts": 51,
+      "physical": 280.5559760042121,
+      "recordResiduals": [
+        -8.730626085366039e-14,
+        -1.495165033449375e-10
+      ],
+      "advanceCounts": {
+        "phCalls": 17416,
+        "inversions": 17416,
+        "saturations": 61259,
+        "pressureBrackets": 150744,
+        "pressureLogs": 150744,
+        "pressureAxisReads": 2110416,
+        "pressureComparisons": 1205952,
+        "bracketArrays": 854050,
+        "ownedHolders": 15739,
+        "branches": 703306,
+        "offsetAxisReads": 8921192,
+        "branchRowReads4": 703306,
+        "mixRows": 2109918,
+        "mixComponentReads6": 2109918,
+        "bisections": 598082
+      },
+      "intervals": [
+        {
+          "target": 0.0001,
+          "wallMS": 112.87991100000002
+        },
+        {
+          "target": 0.0005,
+          "wallMS": 69.79342599999998
+        },
+        {
+          "target": 0.001,
+          "wallMS": 57.20688200000001
+        },
+        {
+          "target": 0.002,
+          "wallMS": 79.29602
+        },
+        {
+          "target": 0.005,
+          "wallMS": 73.12024599999995
+        },
+        {
+          "target": 0.01,
+          "wallMS": 185.53905300000002
+        }
+      ]
+    },
+    "memoryStart": {
+      "rss": 25272320,
+      "heapTotal": 6287360,
+      "heapUsed": 4343584,
+      "external": 1624630,
+      "arrayBuffers": 137759
+    },
+    "memoryEnd": {
+      "rss": 98611200,
+      "heapTotal": 57176064,
+      "heapUsed": 36313168,
+      "external": 4511662,
+      "arrayBuffers": 137739
+    },
+    "resources": {
+      "userCPUTime": 747509,
+      "systemCPUTime": 28391,
+      "maxRSS": 97484,
+      "sharedMemorySize": 0,
+      "unsharedDataSize": 0,
+      "unsharedStackSize": 0,
+      "minorPageFault": 26630,
+      "majorPageFault": 0,
+      "swappedOut": 0,
+      "fsRead": 0,
+      "fsWrite": 0,
+      "ipcSent": 0,
+      "ipcReceived": 0,
+      "signalsCount": 0,
+      "voluntaryContextSwitches": 839,
+      "involuntaryContextSwitches": 137
+    },
+    "gc": [],
+    "counts": {
+      "phCalls": 17423,
+      "inversions": 17423,
+      "saturations": 61295,
+      "pressureBrackets": 150956,
+      "pressureLogs": 150956,
+      "pressureAxisReads": 2113384,
+      "pressureComparisons": 1207648,
+      "bracketArrays": 854672,
+      "ownedHolders": 15745,
+      "branches": 703716,
+      "offsetAxisReads": 8926390,
+      "branchRowReads4": 703716,
+      "mixRows": 2111148,
+      "mixComponentReads6": 2111148,
+      "bisections": 598310
+    },
+    "primaryCounting": true,
+    "scientificHashingInTimedScope": false
+  },
+  {
+    "variant": "count-candidate",
+    "kind": "warm",
+    "warmups": 0,
+    "pair": 6,
+    "order": "BA",
+    "flags": [],
+    "externalWallTermination": false,
+    "returncode": 0,
+    "processWallMS": 604.1041720000067,
+    "limits": {
+      "wallSeconds": 65,
+      "cpuSeconds": 60,
+      "heapMiB": 512
+    },
+    "stderr": "",
+    "schedule": "original",
+    "node": "v24.19.0",
+    "execArgv": [
+      "--max-old-space-size=512"
+    ],
+    "importMS": 3.6661089999999987,
+    "tableMS": 16.629688999999996,
+    "scopes": {
+      "untimedWarmup": {
+        "startMS": 34.839904,
+        "endMS": 34.898562,
+        "wallMS": 0.05984899999999982,
+        "cpuMS": 0.047
+      },
+      "initialize": {
+        "startMS": 34.907986,
+        "endMS": 37.967423,
+        "wallMS": 3.0607490000000013,
+        "cpuMS": 4.309
+      },
+      "compute": {
+        "startMS": 37.971699,
+        "endMS": 592.762985,
+        "wallMS": 554.791506,
+        "cpuMS": 709.895
+      }
+    },
+    "result": {
+      "clock": 0.01,
+      "accepted": 86,
+      "rejected": 8,
+      "residuals": 19380,
+      "corrections": 867,
+      "attempts": 51,
+      "physical": 280.5559760042121,
+      "recordResiduals": [
+        -8.730626085366039e-14,
+        -1.495165033449375e-10
+      ],
+      "advanceCounts": {
+        "phCalls": 17416,
+        "inversions": 17416,
+        "saturations": 61259,
+        "pressureBrackets": 150744,
+        "pressureLogs": 150744,
+        "pressureAxisReads": 2110416,
+        "pressureComparisons": 1205952,
+        "bracketArrays": 854050,
+        "ownedHolders": 15739,
+        "branches": 703306,
+        "offsetAxisReads": 8921192,
+        "branchRowReads4": 703306,
+        "mixRows": 2109918,
+        "mixComponentReads6": 2109918,
+        "bisections": 598082
+      },
+      "intervals": [
+        {
+          "target": 0.0001,
+          "wallMS": 113.13865
+        },
+        {
+          "target": 0.0005,
+          "wallMS": 68.59151999999997
+        },
+        {
+          "target": 0.001,
+          "wallMS": 55.66923299999996
+        },
+        {
+          "target": 0.002,
+          "wallMS": 64.375405
+        },
+        {
+          "target": 0.005,
+          "wallMS": 69.86795799999999
+        },
+        {
+          "target": 0.01,
+          "wallMS": 183.08716900000002
+        }
+      ]
+    },
+    "memoryStart": {
+      "rss": 25145344,
+      "heapTotal": 6287360,
+      "heapUsed": 4343584,
+      "external": 1624630,
+      "arrayBuffers": 137759
+    },
+    "memoryEnd": {
+      "rss": 101150720,
+      "heapTotal": 58224640,
+      "heapUsed": 31506224,
+      "external": 4511662,
+      "arrayBuffers": 137739
+    },
+    "resources": {
+      "userCPUTime": 736177,
+      "systemCPUTime": 23738,
+      "maxRSS": 100452,
+      "sharedMemorySize": 0,
+      "unsharedDataSize": 0,
+      "unsharedStackSize": 0,
+      "minorPageFault": 27250,
+      "majorPageFault": 0,
+      "swappedOut": 0,
+      "fsRead": 0,
+      "fsWrite": 0,
+      "ipcSent": 0,
+      "ipcReceived": 0,
+      "signalsCount": 0,
+      "voluntaryContextSwitches": 757,
+      "involuntaryContextSwitches": 33
+    },
+    "gc": [],
+    "counts": {
+      "phCalls": 17423,
+      "inversions": 17423,
+      "saturations": 61295,
+      "pressureBrackets": 150956,
+      "pressureLogs": 150956,
+      "pressureAxisReads": 2113384,
+      "pressureComparisons": 1207648,
+      "bracketArrays": 854672,
+      "ownedHolders": 15745,
+      "branches": 703716,
+      "offsetAxisReads": 8926390,
+      "branchRowReads4": 703716,
+      "mixRows": 2111148,
+      "mixComponentReads6": 2111148,
+      "bisections": 598310
+    },
+    "primaryCounting": true,
+    "scientificHashingInTimedScope": false
+  },
+  {
+    "variant": "count-control",
+    "kind": "warm",
+    "warmups": 0,
+    "pair": 6,
+    "order": "BA",
+    "flags": [],
+    "externalWallTermination": false,
+    "returncode": 0,
+    "processWallMS": 753.6736800000199,
+    "limits": {
+      "wallSeconds": 65,
+      "cpuSeconds": 60,
+      "heapMiB": 512
+    },
+    "stderr": "",
+    "schedule": "original",
+    "node": "v24.19.0",
+    "execArgv": [
+      "--max-old-space-size=512"
+    ],
+    "importMS": 3.709153999999998,
+    "tableMS": 18.057455,
+    "scopes": {
+      "untimedWarmup": {
+        "startMS": 39.305263,
+        "endMS": 39.351292,
+        "wallMS": 0.047151000000006604,
+        "cpuMS": 0.034
+      },
+      "initialize": {
+        "startMS": 39.361698,
+        "endMS": 42.741737,
+        "wallMS": 3.381571000000001,
+        "cpuMS": 4.712
+      },
+      "compute": {
+        "startMS": 42.746194,
+        "endMS": 741.860084,
+        "wallMS": 699.11412,
+        "cpuMS": 852.889
+      }
+    },
+    "result": {
+      "clock": 0.01,
+      "accepted": 86,
+      "rejected": 8,
+      "residuals": 19380,
+      "corrections": 867,
+      "attempts": 51,
+      "physical": 280.5559760042121,
+      "recordResiduals": [
+        -8.730626085366039e-14,
+        -1.495165033449375e-10
+      ],
+      "advanceCounts": {
+        "phCalls": 17416,
+        "inversions": 17416,
+        "saturations": 61259,
+        "pressureBrackets": 764565,
+        "pressureLogs": 764565,
+        "pressureAxisReads": 10703910,
+        "pressureComparisons": 6116520,
+        "bracketArrays": 1467871,
+        "branches": 703306,
+        "offsetAxisReads": 8921192,
+        "branchRowReads4": 703306,
+        "mixRows": 2109918,
+        "mixComponentReads6": 2109918,
+        "bisections": 598082
+      },
+      "intervals": [
+        {
+          "target": 0.0001,
+          "wallMS": 139.451044
+        },
+        {
+          "target": 0.0005,
+          "wallMS": 94.26942600000001
+        },
+        {
+          "target": 0.001,
+          "wallMS": 70.17116400000003
+        },
+        {
+          "target": 0.002,
+          "wallMS": 78.01428900000002
+        },
+        {
+          "target": 0.005,
+          "wallMS": 88.23842400000001
+        },
+        {
+          "target": 0.01,
+          "wallMS": 228.904627
+        }
+      ]
+    },
+    "memoryStart": {
+      "rss": 25149440,
+      "heapTotal": 6287360,
+      "heapUsed": 4343584,
+      "external": 1624630,
+      "arrayBuffers": 137759
+    },
+    "memoryEnd": {
+      "rss": 99459072,
+      "heapTotal": 58224640,
+      "heapUsed": 37741512,
+      "external": 4511106,
+      "arrayBuffers": 137739
+    },
+    "resources": {
+      "userCPUTime": 883056,
+      "systemCPUTime": 23709,
+      "maxRSS": 97872,
+      "sharedMemorySize": 0,
+      "unsharedDataSize": 0,
+      "unsharedStackSize": 0,
+      "minorPageFault": 26784,
+      "majorPageFault": 0,
+      "swappedOut": 0,
+      "fsRead": 0,
+      "fsWrite": 0,
+      "ipcSent": 0,
+      "ipcReceived": 0,
+      "signalsCount": 0,
+      "voluntaryContextSwitches": 869,
+      "involuntaryContextSwitches": 90
+    },
+    "gc": [],
+    "counts": {
+      "phCalls": 17423,
+      "inversions": 17423,
+      "saturations": 61295,
+      "pressureBrackets": 765011,
+      "pressureLogs": 765011,
+      "pressureAxisReads": 10710154,
+      "pressureComparisons": 6120088,
+      "bracketArrays": 1468727,
+      "branches": 703716,
+      "offsetAxisReads": 8926390,
+      "branchRowReads4": 703716,
+      "mixRows": 2111148,
+      "mixComponentReads6": 2111148,
+      "bisections": 598310
+    },
+    "primaryCounting": true,
+    "scientificHashingInTimedScope": false
+  }
+]

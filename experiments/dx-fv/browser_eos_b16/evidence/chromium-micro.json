@@ -1,0 +1,452 @@
+{
+  "passed": true,
+  "rows": [
+    {
+      "pair": 1,
+      "variant": "control",
+      "order": "AB",
+      "result": {
+        "vapor": {
+          "wallMS": 276.5,
+          "calls": 20000,
+          "warmupCalls": 3000,
+          "checksum": 86764.90115829949
+        },
+        "twoPhase": {
+          "wallMS": 7.2000000001862645,
+          "calls": 20000,
+          "warmupCalls": 3000,
+          "checksum": 313893.2225213017
+        },
+        "mixed": {
+          "wallMS": 128.30000000004657,
+          "calls": 20000,
+          "warmupCalls": 3000,
+          "checksum": 133896.04698785298
+        }
+      },
+      "metric": {
+        "type": "micro",
+        "id": "42ea3480-c774-40c6-9b03-06ff8e591a53",
+        "roundtripMS": 509.29999999981374,
+        "mainPostMS": 0.09999999986030161,
+        "dispatchToWorkerMS": 0,
+        "returnDeliveryMS": 0.400146484375,
+        "handlerMS": 0.10000000009313226,
+        "textAssignmentMS": 0,
+        "computeMS": 508.80000000004657,
+        "serviceMS": 508.9000000001397
+      }
+    },
+    {
+      "pair": 1,
+      "variant": "candidate",
+      "order": "AB",
+      "result": {
+        "vapor": {
+          "wallMS": 191.10000000009313,
+          "calls": 20000,
+          "warmupCalls": 3000,
+          "checksum": 86764.90115829949
+        },
+        "twoPhase": {
+          "wallMS": 7.199999999953434,
+          "calls": 20000,
+          "warmupCalls": 3000,
+          "checksum": 313893.2225213017
+        },
+        "mixed": {
+          "wallMS": 95.10000000009313,
+          "calls": 20000,
+          "warmupCalls": 3000,
+          "checksum": 133896.04698785298
+        }
+      },
+      "metric": {
+        "type": "micro",
+        "id": "572a6199-4c5a-4502-8ec6-d1dcff6206f3",
+        "roundtripMS": 353.10000000009313,
+        "mainPostMS": 0.10000000009313226,
+        "dispatchToWorkerMS": 0.10009765625,
+        "returnDeliveryMS": 0.10009765625,
+        "handlerMS": 0.09999999986030161,
+        "textAssignmentMS": 0,
+        "computeMS": 352.80000000004657,
+        "serviceMS": 352.89999999990687
+      }
+    },
+    {
+      "pair": 2,
+      "variant": "candidate",
+      "order": "BA",
+      "result": {
+        "vapor": {
+          "wallMS": 182.80000000004657,
+          "calls": 20000,
+          "warmupCalls": 3000,
+          "checksum": 86764.90115829949
+        },
+        "twoPhase": {
+          "wallMS": 7.2000000001862645,
+          "calls": 20000,
+          "warmupCalls": 3000,
+          "checksum": 313893.2225213017
+        },
+        "mixed": {
+          "wallMS": 95.69999999995343,
+          "calls": 20000,
+          "warmupCalls": 3000,
+          "checksum": 133896.04698785298
+        }
+      },
+      "metric": {
+        "type": "micro",
+        "id": "08e7e0fc-8179-4557-8893-3841c3ce8203",
+        "roundtripMS": 340,
+        "mainPostMS": 0,
+        "dispatchToWorkerMS": 1.300048828125,
+        "returnDeliveryMS": 0.2998046875,
+        "handlerMS": 0,
+        "textAssignmentMS": 0,
+        "computeMS": 338.4000000001397,
+        "serviceMS": 338.4000000001397
+      }
+    },
+    {
+      "pair": 2,
+      "variant": "control",
+      "order": "BA",
+      "result": {
+        "vapor": {
+          "wallMS": 244,
+          "calls": 20000,
+          "warmupCalls": 3000,
+          "checksum": 86764.90115829949
+        },
+        "twoPhase": {
+          "wallMS": 7.199999999953434,
+          "calls": 20000,
+          "warmupCalls": 3000,
+          "checksum": 313893.2225213017
+        },
+        "mixed": {
+          "wallMS": 126.30000000004657,
+          "calls": 20000,
+          "warmupCalls": 3000,
+          "checksum": 133896.04698785298
+        }
+      },
+      "metric": {
+        "type": "micro",
+        "id": "306cee83-98bc-4e13-b729-936fb4231eb2",
+        "roundtripMS": 441.19999999995343,
+        "mainPostMS": 0.10000000009313226,
+        "dispatchToWorkerMS": 0.000244140625,
+        "returnDeliveryMS": 0.199951171875,
+        "handlerMS": 0.10000000009313226,
+        "textAssignmentMS": 0,
+        "computeMS": 441,
+        "serviceMS": 441
+      }
+    },
+    {
+      "pair": 3,
+      "variant": "candidate",
+      "order": "BA",
+      "result": {
+        "vapor": {
+          "wallMS": 206.5,
+          "calls": 20000,
+          "warmupCalls": 3000,
+          "checksum": 86764.90115829949
+        },
+        "twoPhase": {
+          "wallMS": 7.7000000001862645,
+          "calls": 20000,
+          "warmupCalls": 3000,
+          "checksum": 313893.2225213017
+        },
+        "mixed": {
+          "wallMS": 97,
+          "calls": 20000,
+          "warmupCalls": 3000,
+          "checksum": 133896.04698785298
+        }
+      },
+      "metric": {
+        "type": "micro",
+        "id": "3f231aaa-e250-4b1f-9ad8-709c03130107",
+        "roundtripMS": 362.30000000004657,
+        "mainPostMS": 0,
+        "dispatchToWorkerMS": 1.10009765625,
+        "returnDeliveryMS": 0.10009765625,
+        "handlerMS": 0,
+        "textAssignmentMS": 0,
+        "computeMS": 361,
+        "serviceMS": 361
+      }
+    },
+    {
+      "pair": 3,
+      "variant": "control",
+      "order": "BA",
+      "result": {
+        "vapor": {
+          "wallMS": 244.19999999995343,
+          "calls": 20000,
+          "warmupCalls": 3000,
+          "checksum": 86764.90115829949
+        },
+        "twoPhase": {
+          "wallMS": 7.199999999953434,
+          "calls": 20000,
+          "warmupCalls": 3000,
+          "checksum": 313893.2225213017
+        },
+        "mixed": {
+          "wallMS": 126,
+          "calls": 20000,
+          "warmupCalls": 3000,
+          "checksum": 133896.04698785298
+        }
+      },
+      "metric": {
+        "type": "micro",
+        "id": "c93d623b-6b45-4f36-a4ad-fcb0557fab7b",
+        "roundtripMS": 442.0999999998603,
+        "mainPostMS": 0,
+        "dispatchToWorkerMS": 0.199951171875,
+        "returnDeliveryMS": 0.2001953125,
+        "handlerMS": 0.10000000009313226,
+        "textAssignmentMS": 0,
+        "computeMS": 441.5999999998603,
+        "serviceMS": 441.69999999995343
+      }
+    },
+    {
+      "pair": 4,
+      "variant": "control",
+      "order": "AB",
+      "result": {
+        "vapor": {
+          "wallMS": 251.5999999998603,
+          "calls": 20000,
+          "warmupCalls": 3000,
+          "checksum": 86764.90115829949
+        },
+        "twoPhase": {
+          "wallMS": 7.100000000093132,
+          "calls": 20000,
+          "warmupCalls": 3000,
+          "checksum": 313893.2225213017
+        },
+        "mixed": {
+          "wallMS": 130.60000000009313,
+          "calls": 20000,
+          "warmupCalls": 3000,
+          "checksum": 133896.04698785298
+        }
+      },
+      "metric": {
+        "type": "micro",
+        "id": "f80348ca-bb1b-47e7-80b1-b49200a515fa",
+        "roundtripMS": 452.89999999990687,
+        "mainPostMS": 0,
+        "dispatchToWorkerMS": -0.000244140625,
+        "returnDeliveryMS": 0.2001953125,
+        "handlerMS": 0,
+        "textAssignmentMS": 0,
+        "computeMS": 452.60000000009313,
+        "serviceMS": 452.60000000009313
+      }
+    },
+    {
+      "pair": 4,
+      "variant": "candidate",
+      "order": "AB",
+      "result": {
+        "vapor": {
+          "wallMS": 190.19999999995343,
+          "calls": 20000,
+          "warmupCalls": 3000,
+          "checksum": 86764.90115829949
+        },
+        "twoPhase": {
+          "wallMS": 7.600000000093132,
+          "calls": 20000,
+          "warmupCalls": 3000,
+          "checksum": 313893.2225213017
+        },
+        "mixed": {
+          "wallMS": 97,
+          "calls": 20000,
+          "warmupCalls": 3000,
+          "checksum": 133896.04698785298
+        }
+      },
+      "metric": {
+        "type": "micro",
+        "id": "41257197-5ba5-43da-919d-47ea616fb7f9",
+        "roundtripMS": 348.30000000004657,
+        "mainPostMS": 0,
+        "dispatchToWorkerMS": -0.10009765625,
+        "returnDeliveryMS": 0.199951171875,
+        "handlerMS": 0.19999999995343387,
+        "textAssignmentMS": 0,
+        "computeMS": 348.20000000018626,
+        "serviceMS": 348.20000000018626
+      }
+    },
+    {
+      "pair": 5,
+      "variant": "control",
+      "order": "AB",
+      "result": {
+        "vapor": {
+          "wallMS": 251,
+          "calls": 20000,
+          "warmupCalls": 3000,
+          "checksum": 86764.90115829949
+        },
+        "twoPhase": {
+          "wallMS": 7.199999999953434,
+          "calls": 20000,
+          "warmupCalls": 3000,
+          "checksum": 313893.2225213017
+        },
+        "mixed": {
+          "wallMS": 131.80000000004657,
+          "calls": 20000,
+          "warmupCalls": 3000,
+          "checksum": 133896.04698785298
+        }
+      },
+      "metric": {
+        "type": "micro",
+        "id": "8118f478-3912-4f1d-aab5-55ed0d742753",
+        "roundtripMS": 460.39999999990687,
+        "mainPostMS": 0,
+        "dispatchToWorkerMS": 0,
+        "returnDeliveryMS": 0.300048828125,
+        "handlerMS": 0.10000000009313226,
+        "textAssignmentMS": 0,
+        "computeMS": 460.10000000009313,
+        "serviceMS": 460.10000000009313
+      }
+    },
+    {
+      "pair": 5,
+      "variant": "candidate",
+      "order": "AB",
+      "result": {
+        "vapor": {
+          "wallMS": 184.70000000018626,
+          "calls": 20000,
+          "warmupCalls": 3000,
+          "checksum": 86764.90115829949
+        },
+        "twoPhase": {
+          "wallMS": 7.199999999953434,
+          "calls": 20000,
+          "warmupCalls": 3000,
+          "checksum": 313893.2225213017
+        },
+        "mixed": {
+          "wallMS": 97.39999999990687,
+          "calls": 20000,
+          "warmupCalls": 3000,
+          "checksum": 133896.04698785298
+        }
+      },
+      "metric": {
+        "type": "micro",
+        "id": "92da1cf6-4d57-4d0f-a06c-ec61d8f0ba5a",
+        "roundtripMS": 340.10000000009313,
+        "mainPostMS": 0,
+        "dispatchToWorkerMS": 0,
+        "returnDeliveryMS": 0.300048828125,
+        "handlerMS": 0.09999999986030161,
+        "textAssignmentMS": 0,
+        "computeMS": 339.80000000004657,
+        "serviceMS": 339.80000000004657
+      }
+    },
+    {
+      "pair": 6,
+      "variant": "candidate",
+      "order": "BA",
+      "result": {
+        "vapor": {
+          "wallMS": 187.30000000004657,
+          "calls": 20000,
+          "warmupCalls": 3000,
+          "checksum": 86764.90115829949
+        },
+        "twoPhase": {
+          "wallMS": 7.100000000093132,
+          "calls": 20000,
+          "warmupCalls": 3000,
+          "checksum": 313893.2225213017
+        },
+        "mixed": {
+          "wallMS": 97.19999999995343,
+          "calls": 20000,
+          "warmupCalls": 3000,
+          "checksum": 133896.04698785298
+        }
+      },
+      "metric": {
+        "type": "micro",
+        "id": "74d8badb-b198-458d-bbdf-8b8f5ba55e91",
+        "roundtripMS": 344,
+        "mainPostMS": 0,
+        "dispatchToWorkerMS": 0.099853515625,
+        "returnDeliveryMS": 0.2001953125,
+        "handlerMS": 0.09999999986030161,
+        "textAssignmentMS": 0,
+        "computeMS": 343.69999999995343,
+        "serviceMS": 343.69999999995343
+      }
+    },
+    {
+      "pair": 6,
+      "variant": "control",
+      "order": "BA",
+      "result": {
+        "vapor": {
+          "wallMS": 255.69999999995343,
+          "calls": 20000,
+          "warmupCalls": 3000,
+          "checksum": 86764.90115829949
+        },
+        "twoPhase": {
+          "wallMS": 7.100000000093132,
+          "calls": 20000,
+          "warmupCalls": 3000,
+          "checksum": 313893.2225213017
+        },
+        "mixed": {
+          "wallMS": 127.4000000001397,
+          "calls": 20000,
+          "warmupCalls": 3000,
+          "checksum": 133896.04698785298
+        }
+      },
+      "metric": {
+        "type": "micro",
+        "id": "acc5fbc7-adae-4229-ad78-a9f9aea44f1a",
+        "roundtripMS": 457.60000000009313,
+        "mainPostMS": 0,
+        "dispatchToWorkerMS": 1.5,
+        "returnDeliveryMS": 0.300048828125,
+        "handlerMS": 0,
+        "textAssignmentMS": 0,
+        "computeMS": 455.79999999981374,
+        "serviceMS": 455.79999999981374
+      }
+    }
+  ],
+  "browserVersion": "154.0.8037.57",
+  "browser": "chromium",
+  "errors": []
+}

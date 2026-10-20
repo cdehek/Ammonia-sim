@@ -1,0 +1,66 @@
+{
+  "acceptedA2ClosureFiles": 14,
+  "allChangesB16Only": true,
+  "b15ExactEquivalenceReceipt": {
+    "actualMatricesAndCorrectionsCompared": 3430,
+    "allTimingSamplesRetained": 44,
+    "classification": "B15-A1 EXACT-EQUIVALENCE OPTIMIZATION PASS",
+    "externalTerminationAndSetupFailuresSeparate": true,
+    "finalCandidateScientificMismatches": 0,
+    "losslessReferencesVerified": true,
+    "maximumResearchSeconds": 0.01,
+    "passed": true,
+    "preliminaryTimingAndInterfaceCounterexampleRetained": true,
+    "propertyCases": 60274,
+    "protectedSourcesRefsAndPR3": true,
+    "qualificationSeconds": 0.001,
+    "requiredReports": 19,
+    "residualObjectsCompared": 76768,
+    "sameBrowserCases": 59862,
+    "sixNodeAndSixChromiumFixtureSchedulePairs": true,
+    "sourceModuleHashesVerified": true
+  },
+  "b15SealedFiles": 312,
+  "frozenBuilds": {
+    "candidate": {
+      "bytes": 1442959,
+      "sha256": "afab073693d6d4eb3e734f84a847805ff9866dada75114add92ca6f911f483c7"
+    },
+    "control": {
+      "bytes": 1442705,
+      "sha256": "f1f028e5454b8090b61c06a8afebcaaac332b3c70f3cd8ac1d4fbc0b2c0bf919"
+    },
+    "count-candidate": {
+      "bytes": 1443525,
+      "sha256": "669bf1dca148910ef2ee6c8c033ba22e15d7999b3f311bcc132c69e1fad84f83"
+    },
+    "count-control": {
+      "bytes": 1443247,
+      "sha256": "9c399b43cec0a2b2a7c8250b8e901c33e3a00c9ee1e19c6ea05883f395269104"
+    },
+    "observe-candidate": {
+      "bytes": 1444739,
+      "sha256": "d7fe9bfb2bc129796f4405175b864982ece9393ba8c54398532122031585d07b"
+    },
+    "observe-control": {
+      "bytes": 1444461,
+      "sha256": "0857a0870d911f905b50712fd94c5f186845586105b739e340ec4dbdc273768d"
+    },
+    "regress-candidate": {
+      "bytes": 1443761,
+      "sha256": "8e78bfd0a6b0bcc9241f453c98c4b0d5c2afbbbbe35edef17f536aae6fd49cbd"
+    },
+    "regress-control": {
+      "bytes": 1443507,
+      "sha256": "acf5476a99f8d8d4e6fc40d9f164d842d1e1ec37266578aea2c73907c17412fb"
+    }
+  },
+  "headAtAudit": "20406dbd070eb716b6b6167e6fa23cb8cacacb2d",
+  "historicalBytesUnchanged": true,
+  "historicalFileCount": 4057,
+  "initialCheckpoint": "Exact B15 branch HEAD and empty git status observed before B16 creation; no AGENTS.md found.",
+  "originalTableAndAllHistoricalB12FilesUnchanged": true,
+  "passed": true,
+  "publicInterfaceFixPresent": true,
+  "startingSHA": "eb3856cfdc0b6a602d8e8ae347e6b4a955b7bf35"
+}

@@ -1,0 +1,38 @@
+field,value
+milestone,B16-A0
+classification,B16-A0 DESKTOP/WORKER READINESS PASS
+integrationReadinessDecision,CONDITIONAL GO
+startingB15SHA,eb3856cfdc0b6a602d8e8ae347e6b4a955b7bf35
+branch,research/b16-desktop-worker-performance-20261020
+designCommit,20406db
+scientificParity,True
+historicalTrackedFiles,4057
+frozenB15,True
+actualChromiumWebWorkers,True
+residualObjectsComparedPerVariant,77258
+actualMatricesAndCorrectionsPerVariant,3452
+workerSolverSamples,64
+workerPrimaryPairsPerCase,6
+nodePrimarySamples,60
+nodeCounterSamples,24
+nodeJitlessSamples,12
+nodeTracedSamples,4
+workerMicroSamples,12
+retentionSessions,12
+ownerPackageCloudValidationSamples,24
+ownerDevice,NOT TESTED
+actualEdge,NOT TESTED
+desktopWebKit,NOT TESTED
+windowsHardware,NOT TESTED
+macOSHardware,NOT TESTED
+coldRootCause,"unresolved; runtime/JIT-sensitive tradeoff, small warmed Chromium regression"
+qualificationSeconds,0.001
+maximumExploratorySeconds,0.01
+productionMerge,False
+cloudflareAccessOrDeployment,False
+workstationIntegration,False
+acceptedSourcePromotion,False
+PR3Modified,False
+rollback,"select exact independent B9C control, dispose candidate, new original session"
+deliveryHEAD,Final committed/pushed branch HEAD supplied in delivery; no self-referential commit hash
+gates,"{""0"": ""PASS: exact B15, clean start, protected source/ref/PR audit; design committed first"", ""A"": ""PASS diagnostic characterization; causal cold root cause remains unresolved"", ""B"": ""PASS actual Linux Chromium Workers; Edge/WebKit NOT TESTED"", ""C"": ""PASS exact same-runtime science and original failures"", ""D"": ""PASS bounded service, lifecycle and minimal-harness responsiveness measurements"", ""E"": ""PASS bounded research matrix, absolute/relative tradeoffs and hypothetical-only mixes"", ""F"": ""PASS six-pair primary counterbalanced samples; all valid extremes retained"", ""G"": ""PASS local handoff prepared and cloud UI/download verified; owner device NOT TESTED"", ""H"": ""CONDITIONAL GO recommendation only; no integration authorized or performed""}"

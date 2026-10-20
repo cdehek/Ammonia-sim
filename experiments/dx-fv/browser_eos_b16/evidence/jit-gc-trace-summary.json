@@ -1,0 +1,278 @@
+{
+  "rows": [
+    {
+      "file": "trace-candidate-cold.txt.gz",
+      "traceLines": 550,
+      "deoptimizationCount": 8,
+      "deoptimizationReasons": {
+        "wrong map": 5,
+        "not a Smi": 1,
+        "(unknown": 2
+      },
+      "gcEvents": 30,
+      "gcPauseMS": 18.1,
+      "functions": {
+        "pBracket": {
+          "optimizationLines": 3,
+          "inliningLines": 2,
+          "deoptimizationLines": 0,
+          "examples": [
+            "[marking 0x3fd3318d7179 <JSFunction pBracket <file:///workspace/Ammonia-sim/experiments/dx-fv/browser_eos_b16/assets/candidate-bundle.mjs> (sfi = 0x3b918fcc81)> for optimization to MAGLEV, ConcurrencyMode::kConcurrent, reason: hot and stable]",
+            "[compiling method 0x3fd3318d7179 <JSFunction pBracket <file:///workspace/Ammonia-sim/experiments/dx-fv/browser_eos_b16/assets/candidate-bundle.mjs> (sfi = 0x3b918fcc81)> (target MAGLEV), mode: ConcurrencyMode::kConcurrent]"
+          ]
+        },
+        "branch": {
+          "optimizationLines": 3,
+          "inliningLines": 0,
+          "deoptimizationLines": 0,
+          "examples": [
+            "[marking 0x2ee6f0358c01 <JSFunction branch <file:///workspace/Ammonia-sim/experiments/dx-fv/browser_eos_b16/assets/candidate-bundle.mjs> (sfi = 0x3b918fcda1)> for optimization to MAGLEV, ConcurrencyMode::kConcurrent, reason: hot and stable]",
+            "[compiling method 0x2ee6f0358c01 <JSFunction branch <file:///workspace/Ammonia-sim/experiments/dx-fv/browser_eos_b16/assets/candidate-bundle.mjs> (sfi = 0x3b918fcda1)> (target MAGLEV), mode: ConcurrencyMode::kConcurrent]"
+          ]
+        },
+        "inverse": {
+          "optimizationLines": 3,
+          "inliningLines": 0,
+          "deoptimizationLines": 0,
+          "examples": [
+            "[marking 0x2ee6f0358999 <JSFunction inverse <file:///workspace/Ammonia-sim/experiments/dx-fv/browser_eos_b16/assets/candidate-bundle.mjs> (sfi = 0x3b918fce79)> for optimization to MAGLEV, ConcurrencyMode::kConcurrent, reason: hot and stable]",
+            "[compiling method 0x2ee6f0358999 <JSFunction inverse <file:///workspace/Ammonia-sim/experiments/dx-fv/browser_eos_b16/assets/candidate-bundle.mjs> (sfi = 0x3b918fce79)> (target MAGLEV), mode: ConcurrencyMode::kConcurrent]"
+          ]
+        },
+        "statePT": {
+          "optimizationLines": 0,
+          "inliningLines": 0,
+          "deoptimizationLines": 0,
+          "examples": []
+        },
+        "coupledNewton": {
+          "optimizationLines": 14,
+          "inliningLines": 0,
+          "deoptimizationLines": 3,
+          "examples": [
+            "[marking 0x01ee0e85b011 <JSFunction coupledNewton <file:///workspace/Ammonia-sim/experiments/dx-fv/browser_eos_b16/assets/candidate-bundle.mjs> (sfi = 0x18f26cb06019)> for optimization to MAGLEV, ConcurrencyMode::kConcurrent, reason: hot and stable]",
+            "[compiling method 0x01ee0e85b011 <JSFunction coupledNewton <file:///workspace/Ammonia-sim/experiments/dx-fv/browser_eos_b16/assets/candidate-bundle.mjs> (sfi = 0x18f26cb06019)> (target MAGLEV), mode: ConcurrencyMode::kConcurrent]"
+          ]
+        },
+        "solveLinear": {
+          "optimizationLines": 16,
+          "inliningLines": 2,
+          "deoptimizationLines": 1,
+          "examples": [
+            "[marking 0x3fd3318ea3d9 <JSFunction solveLinear <file:///workspace/Ammonia-sim/experiments/dx-fv/browser_eos_b16/assets/candidate-bundle.mjs> (sfi = 0x18f26cb03b79)> for optimization to MAGLEV, ConcurrencyMode::kConcurrent, reason: hot and stable]",
+            "[compiling method 0x3fd3318ea3d9 <JSFunction solveLinear <file:///workspace/Ammonia-sim/experiments/dx-fv/browser_eos_b16/assets/candidate-bundle.mjs> (sfi = 0x18f26cb03b79)> (target MAGLEV) OSR, mode: ConcurrencyMode::kConcurrent]"
+          ]
+        }
+      },
+      "scope": "whole observed process, inclusive startup/init/compute; overhead disclosed; no exclusive causation"
+    },
+    {
+      "file": "trace-candidate-warm.txt.gz",
+      "traceLines": 1693,
+      "deoptimizationCount": 27,
+      "deoptimizationReasons": {
+        "wrong map": 22,
+        "not a Smi": 1,
+        "(unknown": 2,
+        "Insufficient type feedback for compare operation": 1,
+        "Insufficient type feedback for binary operation": 1
+      },
+      "gcEvents": 89,
+      "gcPauseMS": 30.900000000000002,
+      "functions": {
+        "pBracket": {
+          "optimizationLines": 6,
+          "inliningLines": 6,
+          "deoptimizationLines": 0,
+          "examples": [
+            "[marking 0x1d2504840139 <JSFunction pBracket <file:///workspace/Ammonia-sim/experiments/dx-fv/browser_eos_b16/assets/candidate-bundle.mjs> (sfi = 0x3a091b481f69)> for optimization to MAGLEV, ConcurrencyMode::kConcurrent, reason: hot and stable]",
+            "[compiling method 0x1d2504840139 <JSFunction pBracket <file:///workspace/Ammonia-sim/experiments/dx-fv/browser_eos_b16/assets/candidate-bundle.mjs> (sfi = 0x3a091b481f69)> (target MAGLEV), mode: ConcurrencyMode::kConcurrent]"
+          ]
+        },
+        "branch": {
+          "optimizationLines": 6,
+          "inliningLines": 17,
+          "deoptimizationLines": 0,
+          "examples": [
+            "[marking 0x1d2504840239 <JSFunction branch <file:///workspace/Ammonia-sim/experiments/dx-fv/browser_eos_b16/assets/candidate-bundle.mjs> (sfi = 0x3a091b482089)> for optimization to MAGLEV, ConcurrencyMode::kConcurrent, reason: hot and stable]",
+            "[compiling method 0x1d2504840239 <JSFunction branch <file:///workspace/Ammonia-sim/experiments/dx-fv/browser_eos_b16/assets/candidate-bundle.mjs> (sfi = 0x3a091b482089)> (target MAGLEV), mode: ConcurrencyMode::kConcurrent]"
+          ]
+        },
+        "inverse": {
+          "optimizationLines": 6,
+          "inliningLines": 2,
+          "deoptimizationLines": 0,
+          "examples": [
+            "[marking 0x07c061726dc9 <JSFunction inverse <file:///workspace/Ammonia-sim/experiments/dx-fv/browser_eos_b16/assets/candidate-bundle.mjs> (sfi = 0x3a091b482161)> for optimization to MAGLEV, ConcurrencyMode::kConcurrent, reason: hot and stable]",
+            "[compiling method 0x07c061726dc9 <JSFunction inverse <file:///workspace/Ammonia-sim/experiments/dx-fv/browser_eos_b16/assets/candidate-bundle.mjs> (sfi = 0x3a091b482161)> (target MAGLEV), mode: ConcurrencyMode::kConcurrent]"
+          ]
+        },
+        "statePT": {
+          "optimizationLines": 3,
+          "inliningLines": 2,
+          "deoptimizationLines": 0,
+          "examples": [
+            "[marking 0x1cff1ac95a21 <JSFunction statePT <file:///workspace/Ammonia-sim/experiments/dx-fv/browser_eos_b16/assets/candidate-bundle.mjs> (sfi = 0x3a091b4820d1)> for optimization to MAGLEV, ConcurrencyMode::kConcurrent, reason: hot and stable]",
+            "[compiling method 0x1cff1ac95a21 <JSFunction statePT <file:///workspace/Ammonia-sim/experiments/dx-fv/browser_eos_b16/assets/candidate-bundle.mjs> (sfi = 0x3a091b4820d1)> (target MAGLEV), mode: ConcurrencyMode::kConcurrent]"
+          ]
+        },
+        "coupledNewton": {
+          "optimizationLines": 30,
+          "inliningLines": 26,
+          "deoptimizationLines": 4,
+          "examples": [
+            "[marking 0x2e8659130889 <JSFunction coupledNewton <file:///workspace/Ammonia-sim/experiments/dx-fv/browser_eos_b16/assets/candidate-bundle.mjs> (sfi = 0x3a091b4882e1)> for optimization to MAGLEV, ConcurrencyMode::kConcurrent, reason: hot and stable]",
+            "[compiling method 0x2e8659130889 <JSFunction coupledNewton <file:///workspace/Ammonia-sim/experiments/dx-fv/browser_eos_b16/assets/candidate-bundle.mjs> (sfi = 0x3a091b4882e1)> (target MAGLEV), mode: ConcurrencyMode::kConcurrent]"
+          ]
+        },
+        "solveLinear": {
+          "optimizationLines": 16,
+          "inliningLines": 4,
+          "deoptimizationLines": 1,
+          "examples": [
+            "[marking 0x07c061728d01 <JSFunction solveLinear <file:///workspace/Ammonia-sim/experiments/dx-fv/browser_eos_b16/assets/candidate-bundle.mjs> (sfi = 0x3a091b485e41)> for optimization to MAGLEV, ConcurrencyMode::kConcurrent, reason: hot and stable]",
+            "[compiling method 0x07c061728d01 <JSFunction solveLinear <file:///workspace/Ammonia-sim/experiments/dx-fv/browser_eos_b16/assets/candidate-bundle.mjs> (sfi = 0x3a091b485e41)> (target MAGLEV) OSR, mode: ConcurrencyMode::kConcurrent]"
+          ]
+        }
+      },
+      "scope": "whole observed process, inclusive startup/init/compute; overhead disclosed; no exclusive causation"
+    },
+    {
+      "file": "trace-control-cold.txt.gz",
+      "traceLines": 554,
+      "deoptimizationCount": 8,
+      "deoptimizationReasons": {
+        "wrong map": 4,
+        "not a Smi": 1,
+        "(unknown": 3
+      },
+      "gcEvents": 30,
+      "gcPauseMS": 28.6,
+      "functions": {
+        "pBracket": {
+          "optimizationLines": 3,
+          "inliningLines": 2,
+          "deoptimizationLines": 0,
+          "examples": [
+            "[marking 0x038a90eaea39 <JSFunction pBracket <file:///workspace/Ammonia-sim/experiments/dx-fv/browser_eos_b16/assets/control-bundle.mjs> (sfi = 0x1ba3e6b4ebb9)> for optimization to MAGLEV, ConcurrencyMode::kConcurrent, reason: hot and stable]",
+            "[compiling method 0x038a90eaea39 <JSFunction pBracket <file:///workspace/Ammonia-sim/experiments/dx-fv/browser_eos_b16/assets/control-bundle.mjs> (sfi = 0x1ba3e6b4ebb9)> (target MAGLEV), mode: ConcurrencyMode::kConcurrent]"
+          ]
+        },
+        "branch": {
+          "optimizationLines": 3,
+          "inliningLines": 0,
+          "deoptimizationLines": 0,
+          "examples": [
+            "[marking 0x32ab0ce9c729 <JSFunction branch <file:///workspace/Ammonia-sim/experiments/dx-fv/browser_eos_b16/assets/control-bundle.mjs> (sfi = 0x1ba3e6b4ecd9)> for optimization to MAGLEV, ConcurrencyMode::kConcurrent, reason: hot and stable]",
+            "[compiling method 0x32ab0ce9c729 <JSFunction branch <file:///workspace/Ammonia-sim/experiments/dx-fv/browser_eos_b16/assets/control-bundle.mjs> (sfi = 0x1ba3e6b4ecd9)> (target MAGLEV), mode: ConcurrencyMode::kConcurrent]"
+          ]
+        },
+        "inverse": {
+          "optimizationLines": 3,
+          "inliningLines": 0,
+          "deoptimizationLines": 0,
+          "examples": [
+            "[marking 0x32ab0ce9c671 <JSFunction inverse <file:///workspace/Ammonia-sim/experiments/dx-fv/browser_eos_b16/assets/control-bundle.mjs> (sfi = 0x1ba3e6b4edb1)> for optimization to MAGLEV, ConcurrencyMode::kConcurrent, reason: hot and stable]",
+            "[compiling method 0x32ab0ce9c671 <JSFunction inverse <file:///workspace/Ammonia-sim/experiments/dx-fv/browser_eos_b16/assets/control-bundle.mjs> (sfi = 0x1ba3e6b4edb1)> (target MAGLEV), mode: ConcurrencyMode::kConcurrent]"
+          ]
+        },
+        "statePT": {
+          "optimizationLines": 0,
+          "inliningLines": 0,
+          "deoptimizationLines": 0,
+          "examples": []
+        },
+        "coupledNewton": {
+          "optimizationLines": 21,
+          "inliningLines": 0,
+          "deoptimizationLines": 4,
+          "examples": [
+            "[marking 0x0d277d3a02f1 <JSFunction coupledNewton <file:///workspace/Ammonia-sim/experiments/dx-fv/browser_eos_b16/assets/control-bundle.mjs> (sfi = 0x1ba3e6b54ed1)> for optimization to MAGLEV, ConcurrencyMode::kConcurrent, reason: hot and stable]",
+            "[compiling method 0x0d277d3a02f1 <JSFunction coupledNewton <file:///workspace/Ammonia-sim/experiments/dx-fv/browser_eos_b16/assets/control-bundle.mjs> (sfi = 0x1ba3e6b54ed1)> (target MAGLEV), mode: ConcurrencyMode::kConcurrent]"
+          ]
+        },
+        "solveLinear": {
+          "optimizationLines": 16,
+          "inliningLines": 2,
+          "deoptimizationLines": 1,
+          "examples": [
+            "[marking 0x23409f641c91 <JSFunction solveLinear <file:///workspace/Ammonia-sim/experiments/dx-fv/browser_eos_b16/assets/control-bundle.mjs> (sfi = 0x1ba3e6b52a31)> for optimization to MAGLEV, ConcurrencyMode::kConcurrent, reason: hot and stable]",
+            "[compiling method 0x23409f641c91 <JSFunction solveLinear <file:///workspace/Ammonia-sim/experiments/dx-fv/browser_eos_b16/assets/control-bundle.mjs> (sfi = 0x1ba3e6b52a31)> (target MAGLEV) OSR, mode: ConcurrencyMode::kConcurrent]"
+          ]
+        }
+      },
+      "scope": "whole observed process, inclusive startup/init/compute; overhead disclosed; no exclusive causation"
+    },
+    {
+      "file": "trace-control-warm.txt.gz",
+      "traceLines": 1468,
+      "deoptimizationCount": 24,
+      "deoptimizationReasons": {
+        "wrong map": 18,
+        "not a Smi": 1,
+        "(unknown": 3,
+        "Insufficient type feedback for compare operation": 1,
+        "Insufficient type feedback for binary operation": 1
+      },
+      "gcEvents": 101,
+      "gcPauseMS": 41.9,
+      "functions": {
+        "pBracket": {
+          "optimizationLines": 3,
+          "inliningLines": 4,
+          "deoptimizationLines": 0,
+          "examples": [
+            "[marking 0x3c07386d0bb9 <JSFunction pBracket <file:///workspace/Ammonia-sim/experiments/dx-fv/browser_eos_b16/assets/control-bundle.mjs> (sfi = 0x24ed3ebd85d1)> for optimization to MAGLEV, ConcurrencyMode::kConcurrent, reason: hot and stable]",
+            "[compiling method 0x3c07386d0bb9 <JSFunction pBracket <file:///workspace/Ammonia-sim/experiments/dx-fv/browser_eos_b16/assets/control-bundle.mjs> (sfi = 0x24ed3ebd85d1)> (target MAGLEV), mode: ConcurrencyMode::kConcurrent]"
+          ]
+        },
+        "branch": {
+          "optimizationLines": 6,
+          "inliningLines": 14,
+          "deoptimizationLines": 0,
+          "examples": [
+            "[marking 0x3c07386d0cb9 <JSFunction branch <file:///workspace/Ammonia-sim/experiments/dx-fv/browser_eos_b16/assets/control-bundle.mjs> (sfi = 0x24ed3ebd86f1)> for optimization to MAGLEV, ConcurrencyMode::kConcurrent, reason: hot and stable]",
+            "[compiling method 0x3c07386d0cb9 <JSFunction branch <file:///workspace/Ammonia-sim/experiments/dx-fv/browser_eos_b16/assets/control-bundle.mjs> (sfi = 0x24ed3ebd86f1)> (target MAGLEV), mode: ConcurrencyMode::kConcurrent]"
+          ]
+        },
+        "inverse": {
+          "optimizationLines": 6,
+          "inliningLines": 2,
+          "deoptimizationLines": 0,
+          "examples": [
+            "[marking 0x346be77f6aa9 <JSFunction inverse <file:///workspace/Ammonia-sim/experiments/dx-fv/browser_eos_b16/assets/control-bundle.mjs> (sfi = 0x24ed3ebd87c9)> for optimization to MAGLEV, ConcurrencyMode::kConcurrent, reason: hot and stable]",
+            "[compiling method 0x0a68fead5701 <JSFunction inverse <file:///workspace/Ammonia-sim/experiments/dx-fv/browser_eos_b16/assets/control-bundle.mjs> (sfi = 0x24ed3ebd87c9)> (target MAGLEV), mode: ConcurrencyMode::kConcurrent]"
+          ]
+        },
+        "statePT": {
+          "optimizationLines": 3,
+          "inliningLines": 2,
+          "deoptimizationLines": 0,
+          "examples": [
+            "[marking 0x0a68fead48e9 <JSFunction statePT <file:///workspace/Ammonia-sim/experiments/dx-fv/browser_eos_b16/assets/control-bundle.mjs> (sfi = 0x24ed3ebd8739)> for optimization to MAGLEV, ConcurrencyMode::kConcurrent, reason: hot and stable]",
+            "[compiling method 0x0a68fead48e9 <JSFunction statePT <file:///workspace/Ammonia-sim/experiments/dx-fv/browser_eos_b16/assets/control-bundle.mjs> (sfi = 0x24ed3ebd8739)> (target MAGLEV), mode: ConcurrencyMode::kConcurrent]"
+          ]
+        },
+        "coupledNewton": {
+          "optimizationLines": 26,
+          "inliningLines": 13,
+          "deoptimizationLines": 4,
+          "examples": [
+            "[marking 0x1422b727b691 <JSFunction coupledNewton <file:///workspace/Ammonia-sim/experiments/dx-fv/browser_eos_b16/assets/control-bundle.mjs> (sfi = 0x24ed3ebde8e9)> for optimization to MAGLEV, ConcurrencyMode::kConcurrent, reason: hot and stable]",
+            "[compiling method 0x1422b727b691 <JSFunction coupledNewton <file:///workspace/Ammonia-sim/experiments/dx-fv/browser_eos_b16/assets/control-bundle.mjs> (sfi = 0x24ed3ebde8e9)> (target MAGLEV), mode: ConcurrencyMode::kConcurrent]"
+          ]
+        },
+        "solveLinear": {
+          "optimizationLines": 16,
+          "inliningLines": 3,
+          "deoptimizationLines": 1,
+          "examples": [
+            "[marking 0x346be77c0159 <JSFunction solveLinear <file:///workspace/Ammonia-sim/experiments/dx-fv/browser_eos_b16/assets/control-bundle.mjs> (sfi = 0x24ed3ebdc449)> for optimization to MAGLEV, ConcurrencyMode::kConcurrent, reason: hot and stable]",
+            "[compiling method 0x346be77c0159 <JSFunction solveLinear <file:///workspace/Ammonia-sim/experiments/dx-fv/browser_eos_b16/assets/control-bundle.mjs> (sfi = 0x24ed3ebdc449)> (target MAGLEV) OSR, mode: ConcurrencyMode::kConcurrent]"
+          ]
+        }
+      },
+      "scope": "whole observed process, inclusive startup/init/compute; overhead disclosed; no exclusive causation"
+    }
+  ]
+}
